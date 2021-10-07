@@ -13,19 +13,19 @@ let package = Package(
         .library(name: "AATKit-M1-Core", targets: ["AATKit-M1-Core"]),
         
         // Dependencies
-        .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
-        .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
-        .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
-        .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
-        .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato"]),
-        .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd"]),
-        .library(name: "AATKit-AdColony", targets: ["AATKit-AdColony"]),
-        .library(name: "AATKit-YOC", targets: ["AATKit-YOC"]),
-        .library(name: "AATKit-InMobi", targets: ["AATKit-InMobi"]),
-        .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
-        .library(name: "AATKit-MoPub", targets: ["AATKit-MoPub"]),
-        .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
-        .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
+        .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds", "AATKit-Core"]),
+        .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin", "AATKit-Core"]),
+        .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon", "AATKit-Core"]),
+        .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP", "AATKit-Core"]),
+        .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato", "AATKit-Core"]),
+        .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd", "AATKit-Core"]),
+        .library(name: "AATKit-AdColony", targets: ["AATKit-AdColony", "AATKit-Core"]),
+        .library(name: "AATKit-YOC", targets: ["AATKit-YOC", "AATKit-Core"]),
+        .library(name: "AATKit-InMobi", targets: ["AATKit-InMobi", "AATKit-Core"]),
+        .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus", "AATKit-Core"]),
+        .library(name: "AATKit-MoPub", targets: ["AATKit-MoPub", "AATKit-Core"]),
+        .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative", "AATKit-Core"]),
+        .library(name: "AATKit-Unity", targets: ["AATKit-Unity", "AATKit-Core"]),
         
         // Default Dependencies
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
@@ -71,17 +71,14 @@ let package = Package(
         
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
-                dependencies: ["AATKitFramework",
-                               "GoogleMobileAds",
+                dependencies: [ "GoogleMobileAds",
                                "AATDependencyHelper",
                                .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
                               ],
                 path: "./Sources/GoogleMobileAdsSources"),
         
             .target(name: "AATKit-AppLovin",
-                    dependencies: ["AATKitFramework",
-                                   "AppLovin",
-                                  ],
+                    dependencies: ["AppLovin"],
                     path: "./Sources/AppLovinSources",
                     resources: [
                         .process("../../Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
