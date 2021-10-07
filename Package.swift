@@ -16,7 +16,6 @@ let package = Package(
         .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
-        .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
         .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato"]),
         .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd"]),
         .library(name: "AATKit-AdColony", targets: ["AATKit-AdColony"]),
@@ -26,12 +25,17 @@ let package = Package(
         .library(name: "AATKit-MoPub", targets: ["AATKit-MoPub"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
+
+        // CMPs
+        .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
+        .library(name: "AATKit-GoogleCMP", targets: ["AATKit-GoogleCMP"]),
         
         // Default Dependencies
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
                                                    "AATKit-AppLovin",
                                                    "AATKit-Amazon",
                                                    "AATKit-OguryCMP",
+                                                   "AATKit-GoogleCMP",
                                                    "AATKit-Smaato",
                                                    "AATKit-SmartAd",
                                                    "AATKit-AdColony",
@@ -41,11 +45,12 @@ let package = Package(
                                                    "AATKit-MoPub",
                                                    "AATKit-PubNative",
                                                    "AATKit-Unity"]),
-        
+        // M1 Default dependencies
         .library(name: "AATKit-M1-Default", targets: ["AATKit-GoogleMobileAds",
                                                       "AATKit-AppLovin",
                                                       "AATKit-Amazon",
                                                       "AATKit-OguryCMP",
+                                                      "AATKit-GoogleCMP",
                                                       "AATKit-Smaato",
                                                       "AATKit-SmartAd",
                                                       "AATKit-AdColony",
@@ -72,8 +77,8 @@ let package = Package(
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
                 dependencies: [ "GoogleMobileAds",
-                               "AATDependencyHelper",
-                               .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
+                                "AATDependencyHelper",
+                                .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
                               ],
                 path: "./Sources/GoogleMobileAdsSources"),
         
@@ -92,6 +97,10 @@ let package = Package(
             .target(name:"AATKit-OguryCMP",
                     dependencies: ["OguryCMP"],
                     path: "./Sources/OguryCMPSources"),
+
+            .target(name:"AATKit-GoogleCMP",
+                    dependencies: ["GoogleCMP"],
+                    path: "./Sources/GoogleCMPSources"),
         
             .target(name:"AATKit-Smaato",
                     dependencies: ["OMSDK_Smaato",
@@ -144,14 +153,16 @@ let package = Package(
         
         // Google
         .binaryTarget(name: "GoogleMobileAds", path: "./Dependencies/Google/GoogleMobileAds.xcframework"),
-        .binaryTarget(name: "GoogleCMP", path: "./Dependencies/Google/UserMessagingPlatform.xcframework"),
         .binaryTarget(name: "AATDependencyHelper", path: "./Dependencies/Google/AATDependencyHelper.xcframework"),
         
         // Amazon
         .binaryTarget(name: "DTBiOSSDK", path: "./Dependencies/Amazon/DTBiOSSDK.xcframework"),
         
-        // Ogury
+        // Ogury CMP
         .binaryTarget(name: "OguryCMP", path: "./Dependencies/Ogury/OguryChoiceManager.xcframework"),
+
+        // Google CMP
+        .binaryTarget(name: "GoogleCMP", path: "./Dependencies/Google/UserMessagingPlatform.xcframework"),
         
         // AppLovin
         .binaryTarget(name: "AppLovin", path: "./Dependencies/AppLovin/AppLovinSDK.xcframework"),
