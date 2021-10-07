@@ -15,7 +15,10 @@ let package = Package(
         .library(
             name: "AATKitSPM-M1",
             targets: ["AATKitSPM-M1"]
-        )
+        ),
+        .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
+        .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
+        
     ],
     dependencies: [
         // AdNetworks supporting SPM
@@ -25,18 +28,35 @@ let package = Package(
     targets: [
         .target(name: "AATKitSPM",
                 dependencies: [
-                    "AATKitFramework", "DTBiOSSDK", "OguryCMP", "AppLovin",
+                    "AATKitFramework", "DTBiOSSDK", "OguryCMP",
                     "OMSDK_Smaato","SmaatoSDKBanner", "SmaatoSDKCore", "SmaatoSDKInterstitial", "SmaatoSDKNative", "SmaatoSDKOpenMeasurement", "SmaatoSDKOutstream", "SmaatoSDKRewardedAds", "SmaatoSDKRichMedia", "SmaatoSDKVideo",
                     "SASDisplayKit","SCSCoreKit","AATAdColonyAdapter","AdColony", "VisxSDK", "InMobiSDK",
                     "AppNexusSDK", "MoPubSDK", "OMSDK_Mopub", "Pubnative",
-                    "GoogleMobileAds", "GoogleCMP", "AATDependencyHelper", "Unity",
-                    .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
+                    "Unity"
                 ],
                 path: "./Sources/AATKitSPM",
                 resources: [
                     .process("../../Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
                 ]
                ),
+        
+            .target(name: "AATKit-GoogleMobileAds",
+                    dependencies: ["AATKitFramework",
+                                   "GoogleMobileAds",
+                                   "AATDependencyHelper",
+                                    .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
+                                  ],
+                     path: "./Sources/GoogleMobileAdsWrapper"),
+        
+            .target(name: "AATKit-AppLovin",
+                    dependencies: ["AATKitFramework",
+                                   "AppLovin",
+                                   ],
+                     path: "./Sources/AppLovinWrapper",
+                    resources: [
+                        .process("../../Dependencies/AppLovin/Bundle/AppLovinSDKResources.bundle")
+                    ]
+                   ),
         
         .target(name: "AATKitSPM-M1",
                 dependencies: [
@@ -53,6 +73,8 @@ let package = Package(
                 ]
                ),
         
+        
+// Mark: Binary Targets
         .binaryTarget(name: "AATKitFramework", path: "./Dependencies/AATKit/AATKit.xcframework"),
         .binaryTarget(name: "AATKitFramework-M1", path: "./Dependencies/AATKit-M1/AATKit.xcframework"),
         
