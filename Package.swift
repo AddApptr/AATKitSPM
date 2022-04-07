@@ -8,7 +8,6 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [.iOS(.v10)],
     products: [
-
         .library(name: "AATKit-Core", targets: ["AATKit-Core"]),
         .library(name: "AATKit-AATAdMobMediationAdapter", targets: ["AATKit-AATAdMobMediationAdapter"]),
 
@@ -16,44 +15,35 @@ let package = Package(
         .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
-        .library(name: "AATKit-FeedAd", targets: ["AATKit-FeedAd"]),
         .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato"]),
         .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd"]),
         .library(name: "AATKit-AdColony", targets: ["AATKit-AdColony"]),
-        .library(name: "AATKit-YOC", targets: ["AATKit-YOC"]),
         .library(name: "AATKit-InMobi", targets: ["AATKit-InMobi"]),
         .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-MoPub", targets: ["AATKit-MoPub"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Prebid", targets: ["AATKit-Prebid"]),
-        .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
-        .library(name: "AATKit-Vungle", targets: ["AATKit-Vungle"]),
         .library(name: "AATKit-OguryAds", targets: ["AATKit-OguryAds"]),
 
         // CMPs
         .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
         .library(name: "AATKit-GoogleCMP", targets: ["AATKit-GoogleCMP"]),
 
-        // Default Dependencies
+        // M1 Default dependencies
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
-                                                   "AATKit-AppLovin",
-                                                   "AATKit-Amazon",
-                                                   "AATKit-FeedAd",
-                                                   "AATKit-OguryCMP",
-                                                   "AATKit-GoogleCMP",
-                                                   "AATKit-Smaato",
-                                                   "AATKit-SmartAd",
-                                                   "AATKit-AdColony",
-                                                   "AATKit-YOC",
-                                                   "AATKit-InMobi",
-                                                   "AATKit-AppNexus",
-                                                   "AATKit-MoPub",
-                                                   "AATKit-OguryAds",
-                                                   "AATKit-PubNative",
-                                                   "AATKit-Prebid",
-                                                   "AATKit-Unity",
-                                                   "AATKit-Vungle"
-                                                  ]),
+                                                      "AATKit-AppLovin",
+                                                      "AATKit-Amazon",
+                                                      "AATKit-OguryCMP",
+                                                      "AATKit-GoogleCMP",
+                                                      "AATKit-Smaato",
+                                                      "AATKit-SmartAd",
+                                                      "AATKit-AdColony",
+                                                      "AATKit-InMobi",
+                                                      "AATKit-AppNexus",
+                                                      "AATKit-MoPub",
+                                                      "AATKit-PubNative",
+                                                      "AATKit-Prebid",
+                                                     ]),
 
     ],
     dependencies: [
@@ -63,11 +53,11 @@ let package = Package(
         .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("10.3.7"))
     ],
     targets: [
-        // AATKit target
+        // AATKit M1 target
         .target(name:"AATKit-Core",
                 dependencies: ["AATKit"],
                 path: "./Sources/AATKit"),
-        
+
         // AATAdMobMediationAdapter target
         .target(name:"AATKit-AATAdMobMediationAdapter",
                 dependencies: [ "AATKit-GoogleMobileAds",
