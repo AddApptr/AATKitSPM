@@ -10,7 +10,6 @@ let package = Package(
     products: [
 
         .library(name: "AATKit-Core", targets: ["AATKit-Core"]),
-        .library(name: "AATKit-M1-Core", targets: ["AATKit-M1-Core"]),
         .library(name: "AATKit-AATAdMobMediationAdapter", targets: ["AATKit-AATAdMobMediationAdapter"]),
 
         // Dependencies
@@ -55,21 +54,6 @@ let package = Package(
                                                    "AATKit-Unity",
                                                    "AATKit-Vungle"
                                                   ]),
-        // M1 Default dependencies
-        .library(name: "AATKit-M1-Default", targets: ["AATKit-GoogleMobileAds",
-                                                      "AATKit-AppLovin",
-                                                      "AATKit-Amazon",
-                                                      "AATKit-OguryCMP",
-                                                      "AATKit-GoogleCMP",
-                                                      "AATKit-Smaato",
-                                                      "AATKit-SmartAd",
-                                                      "AATKit-AdColony",
-                                                      "AATKit-InMobi",
-                                                      "AATKit-AppNexus",
-                                                      "AATKit-MoPub",
-                                                      "AATKit-PubNative",
-                                                      "AATKit-Prebid",
-                                                     ]),
 
     ],
     dependencies: [
@@ -84,11 +68,6 @@ let package = Package(
                 dependencies: ["AATKit"],
                 path: "./Sources/AATKit"),
         
-        // AATKit M1 target
-        .target(name:"AATKit-M1-Core",
-                dependencies: ["AATKit-M1"],
-                path: "./Sources/AATKit-M1"),
-
         // AATAdMobMediationAdapter target
         .target(name:"AATKit-AATAdMobMediationAdapter",
                 dependencies: [ "AATKit-GoogleMobileAds",
@@ -185,7 +164,6 @@ let package = Package(
         // Mark: Binary Targets
         // AATKit
         .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
-        .binaryTarget(name: "AATKit-M1", path: "./Dependencies/AATKit-M1/AATKit-M1.xcframework"),
 
         // AATAdMobMediationAdapter
         .binaryTarget(name: "AATAdMobMediationAdapter", path: "./Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"),
