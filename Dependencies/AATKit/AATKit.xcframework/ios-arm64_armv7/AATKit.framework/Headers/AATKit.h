@@ -15,7 +15,7 @@ FOUNDATION_EXPORT double AATKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char AATKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <M1AATKit/PublicHeader.h>
-#import "AATKit/AATKit.h"
+#import <AATKit/AATKit.h>
 /**
  * Ad Networks
  *
@@ -30,25 +30,30 @@ typedef NS_ENUM(NSInteger, AATKitAdNetwork) {
     AATAdX,
     AATAmazonHB,
     AATApplovin,
+    AATApplovinMax,
     AATAppnexus,
     AATBluestack,
     AATCriteoSDK,
     AATDFP,
+    AATDFPDirect,
     AATFacebook,
+    AATFeedAd,
     AATInmobi,
-    AATMoPub,
     AATOgury,
     AATRubicon,
     AATSmaato,
     AATSmartAd,
     AATSmartAdDirect,
     AATUnity,
-    AATYandex,
+    AATVungle,
     AATTeads,
     AATPubNative,
     AATYOC,
     AATUnknownNetwork,
 };
+
+NSString* AATKitAdNetworkGetDescription(AATKitAdNetwork network)
+    NS_SWIFT_NAME(getter:AATKitAdNetwork.description(self:));
 
 typedef NS_ENUM(NSInteger, AATConsent) {
     AATConsentUnknown,
@@ -64,6 +69,93 @@ typedef NS_ENUM(NSInteger, AATManagedConsentState) {
 };
 
 NS_ASSUME_NONNULL_BEGIN
+
+#pragma mark - AdMob Custom Events Adapter Protocols
+
+@protocol AATAdMobCustomEventsInteractionDelegate <NSObject>
+
+- (void)reportImpression;
+- (void)customEventWillPresentModal;
+- (void)customEventWillDismissModal;
+- (void)customEventDidDismissModal;
+- (void)customEventWasClicked;
+
+@end
+
+@protocol AATAdMobCustomEventLoaderDelegate <NSObject>
+
+- (void)customEventLoaderDidFailAd;
+- (void)customEventLoaderDidReceiveAd;
+
+@end
+
+@protocol AATAdMobCustomEventRewardedDelegate <NSObject>
+
+- (void)didStartVideo;
+- (void)didEndVideo;
+- (void)didRewardUserWithReward:(NSString *)name andValue:(NSDecimalNumber *)amount;
+
+@end
+
+/**
+ AATKitStatisticsDelegate notify you with all placements reporting events Like: - countAdSpace - countImpression ... etc
+ */
+@protocol AATKitStatisticsDelegate <NSObject>
+
+@optional
+
+/**
+Will notify the AATKitStatisticsDelegate with every ad space counting event
+ */
+- (void)AATKitCountedAdSpace;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every ad request event
+@param network the Ad Network that performed the reported request
+ */
+- (void)AATKitCountedRequestForNetwork:(AATKitAdNetwork)network;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every ad response event
+@param network the Ad Network that returned the reported response
+ */
+- (void)AATKitCountedResponseForNetwork:(AATKitAdNetwork)network;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every impression counting event
+@param network the Ad Network that returned the adv for this impression
+ */
+- (void)AATKitCountedImpressionForNetwork:(AATKitAdNetwork)network;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every viewable impression counting event
+@param network the Ad Network that returned the adv for this viewable impression
+ */
+- (void)AATKitCountedVImpressionForNetwork:(AATKitAdNetwork)network;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every click event
+@param network the Ad Network that returned the adv for this click
+ */
+- (void)AATKitCountedClickForNetwork:(AATKitAdNetwork)network;
+
+/**
+ Will notify the AATKitStatisticsDelegate with every impression counting event for Direct Deal rules
+@param network the Ad Network that returned the adv for this impression
+ */
+- (void)AATKitCountedDirectDealsImpressionForNetwork:(AATKitAdNetwork)network;
+
+
+@end
+
+/**
+ AATReportsDelegate notify you with reporting request parameters
+ */
+@protocol AATReportsDelegate <NSObject>
+
+- (void)onReportSent:(NSString *)report;
+
+@end
 
 @protocol AATAdRequestDelegate;
 
@@ -203,6 +295,9 @@ typedef void (^AATBannerCompletionHandler) (UIView* __nullable bannerView, NSErr
 /// @see +[AATKit createBannerPlacementWithName:configuration:]
 @protocol AATBannerPlacementProtocol
 
+/// This property should be used only through AATAdMobMediationAdapter
+@property (nullable, weak) NSObject<AATAdMobCustomEventsInteractionDelegate> *adMobCustomEventsInteractionDelegate;
+
 /// Execute an Ad Request
 ///
 /// This method will queue an ad request for processing. If a worker is
@@ -264,6 +359,13 @@ typedef void (^AATBannerCompletionHandler) (UIView* __nullable bannerView, NSErr
 /// **NOTE:** Call this method only when you are completely done with this placement
 
 - (void)cleanPlacementData;
+
+/// Update the placement statistics delegate
+///
+/// Should be called when you need to change the statistics events listener
+///
+/// @param statisticsDelegate the new statistics events listener
+- (void)updateStatisticsDelegate:(nonnull NSObject <AATKitStatisticsDelegate> *)statisticsDelegate;
 
 @end
 
@@ -396,56 +498,34 @@ typedef void (^AATBannerCompletionHandler) (UIView* __nullable bannerView, NSErr
 @end
 
 /**
- AATKitStatisticsDelegate notify you with all placements reporting events Like: - countAdSpace - countImpression ... etc
+ * AATKit rule mediation type
+ *
+ *
+ * @see +[AATKit setPlacementAlign:forPlacement:]
  */
-@protocol AATKitStatisticsDelegate <NSObject>
+typedef NS_ENUM(NSUInteger, AATMediation) {
+    AATMedationAny,
+    AATMediationWaterfall,
+    AATMediationAuction,
+    AATMediationMayo,
+};
 
-@optional
+@interface AATKitImpression : NSObject
 
-/**
-Will notify the AATKitStatisticsDelegate with every ad space counting event
- */
-- (void)AATKitCountedAdSpace;
+@property NSString * _Nullable bannerSize;
+@property AATKitAdNetwork adNetwork;
+@property NSString * _Nullable networkKey;
+@property BOOL isDirectDeal;
+@property AATMediation mediationType;
+@property double price;
 
-/**
- Will notify the AATKitStatisticsDelegate with every ad request event
-@param network the Ad Network that performed the reported request
- */
-- (void)AATKitCountedRequestForNetwork:(AATKitAdNetwork)network;
-
-/**
- Will notify the AATKitStatisticsDelegate with every ad response event
-@param network the Ad Network that returned the reported response
- */
-- (void)AATKitCountedResponseForNetwork:(AATKitAdNetwork)network;
-
-/**
- Will notify the AATKitStatisticsDelegate with every impression counting event
-@param network the Ad Network that returned the adv for this impression
- */
-- (void)AATKitCountedImpressionForNetwork:(AATKitAdNetwork)network;
-
-/**
- Will notify the AATKitStatisticsDelegate with every viewable impression counting event
-@param network the Ad Network that returned the adv for this viewable impression
- */
-- (void)AATKitCountedVImpressionForNetwork:(AATKitAdNetwork)network;
-
-/**
- Will notify the AATKitStatisticsDelegate with every click event
-@param network the Ad Network that returned the adv for this click
- */
-- (void)AATKitCountedClickForNetwork:(AATKitAdNetwork)network;
-
+- (instancetype)init NS_UNAVAILABLE;
+- (NSString *) getAdNetworkName;
+- (NSString *) getMediationTypeName;
 @end
 
-/**
- AATReportsDelegate notify you with reporting request parameters
- */
-@protocol AATReportsDelegate <NSObject>
-
-- (void)onReportSent:(NSString *)report;
-
+@protocol AATImpressionDelegate <NSObject>
+- (void) didCountImpression:(AATKitImpression *)impression;
 @end
 
 /**
@@ -508,6 +588,11 @@ NS_SWIFT_NAME(init(configuration:statisticsDelegate:));
 /// Change the BannerCache delegate
 /// Set a new delegate to receive  firstBannerLoaded notification
 - (void)setCacheDelegate:(nullable id<AATBannerCacheDelegate>)delegate;
+
+/// Change the impressions counting delegate
+/// Set a new delegate to receive  impressions notification
+- (void)setImpressionDelegate:(nullable id<AATImpressionDelegate>)impressionsDelegate;
+
 /// @brief Returns  banner ad view,
 /// This method respects the frequency capping, set by AATBannerCacheConfiguration.minimumDelay
 /// @return UIView
@@ -517,9 +602,10 @@ NS_SWIFT_NAME(init(configuration:statisticsDelegate:));
 /// @param forceConsume  true if cache should try to return banner ignoring the frequency capping set by AATBannerCacheConfiguration.minimumDelay
 /// @return UIView
 - (nullable UIView *)consume:(BOOL) forceConsume;
+
 /// Method to update the used AATAdRequest
 /// No need to call startLoadBanners method after this method
-/// It will automatically call startLoadBanners
+/// It will automatically call startLoadBanners method if shouldRefresh is true
 /// @param request the new ad request
 /// @param shouldRefresh if this boolean set to true:
 /// - Cancel current requests
@@ -660,6 +746,20 @@ NS_ASSUME_NONNULL_END
  */
 @protocol AATKitPlacement <NSObject>
 @property (copy) NSString * _Nonnull name;
+
+/// This property should be used only through AATAdMobMediationAdapter
+@property (nullable, weak) NSObject<AATAdMobCustomEventsInteractionDelegate> *adMobCustomEventsInteractionDelegate;
+
+/// This property should be used only through AATAdMobMediationAdapter
+@property (nullable, weak) NSObject<AATAdMobCustomEventLoaderDelegate> *adMobCustomEventsLoaderDelegate;
+
+/// This property should be used only through AATAdMobMediationAdapter
+@property (nullable, weak) NSObject<AATAdMobCustomEventRewardedDelegate> *adMobCustomEventsRewardedDelegate;
+/// Update the placement statistics delegate
+///
+/// Should be called when you need to change the statistics events listener
+/// @param statisticsDelegate the new statistics events listener
+- (void)updateStatisticsDelegate:(nonnull NSObject <AATKitStatisticsDelegate> *)statisticsDelegate;
 @end
 
 /**
@@ -989,6 +1089,12 @@ typedef NS_ENUM(NSInteger, AdChoicesIconPosition) {
 // FIXME: Provide some example snippets for the different kinds of ads.
 @interface AATKit : NSObject
 
+/// @name Initialization
+
+/// Check if AATKit is already initialized
+///
++ (BOOL)isSDKInitialized;
+
 /// @name Initialization and Configuration
 
 /// Initialize AATKit
@@ -1288,6 +1394,24 @@ typedef NS_ENUM(NSInteger, AdChoicesIconPosition) {
 + (nullable NSObject<AATKitPlacement>*)createNativeAdPlacement:(nonnull NSString*)placementName
                                              supportsMainImage:(BOOL)supportsMainImage
                                          andStatisticsDelegate:(nullable NSObject <AATKitStatisticsDelegate>*)statisticsDelegate;
+
+/**
+ * Set impressionDelegate for in-feed banner placement.
+ *
+ * @param impressionDelegate The delegate that would be notified with the impressions counting events
+ * @param placement The placement that you want to observe impressions countig for
+ *
+ */
++ (void)setPlacementImpressionDelegate:(NSObject <AATImpressionDelegate>* _Nonnull)impressionDelegate forBannerPlacement:(id _Nonnull)placement;
+
+/**
+ * Set impressionDelegate for AATKitPlacement.
+ *
+ * @param impressionDelegate The delegate that would be notified with the impressions counting events
+ * @param placement The placement that you want to observe impressions countig for
+ *
+ */
++ (void)setPlacementImpressionDelegate:(NSObject <AATImpressionDelegate>* _Nonnull)impressionDelegate forPlacement:(NSObject <AATKitPlacement> *_Nonnull)placement;
 
 /**
  * Obtain a reference to a previously created placement.
