@@ -100,8 +100,7 @@ let package = Package(
 
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
-                dependencies: [ //"GoogleMobileAds",
-                                "AATDependencyHelper",
+                dependencies: [ "AATDependencyHelper",
                                 .product(name: "GoogleMobileAds", package: "GoogleMobileAds")
                               ],
                 path: "./Sources/GoogleMobileAdsSources"),
@@ -194,7 +193,6 @@ let package = Package(
         .binaryTarget(name: "AATAdMobMediationAdapter", path: "./Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"),
 
         // Google
-//        .binaryTarget(name: "GoogleMobileAds", path: "./Dependencies/Google/GoogleMobileAds.xcframework"),
         .binaryTarget(name: "AATDependencyHelper", path: "./Dependencies/Google/AATDependencyHelper.xcframework"),
 
         // Amazon
@@ -209,9 +207,6 @@ let package = Package(
         .binaryTarget(name: "OguryAds", path: "./Dependencies/Ogury/OguryAds.xcframework"),
         .binaryTarget(name: "OMSDK_Ogury", path: "./Dependencies/Ogury/OMSDK_Ogury.xcframework"),
         .binaryTarget(name: "OgurySdk", path: "./Dependencies/Ogury/OgurySdk.xcframework"),
-
-        // Google CMP
-//        .binaryTarget(name: "UserMessagingPlatform", path: "./Dependencies/Google/UserMessagingPlatform.xcframework"),
 
         // Smaato
         .binaryTarget(name: "OMSDK_Smaato", path: "./Dependencies/Smaato/OMSDK_Smaato.xcframework"),
