@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, SMAMaxAdContentRating) {
 /**
  A configuration that is used to initialize the SDK.
  */
-@interface SMAConfiguration : NSObject
+@interface SMAConfiguration: NSObject
 
 /**
  Set this flag to YES to require secure creatives.
@@ -72,6 +72,10 @@ typedef NS_ENUM(NSUInteger, SMAMaxAdContentRating) {
 @property (nonatomic) BOOL disableSessionTracking;
 
 /**
+ private
+ */
+
+/**
  Creates a configuration object initialized with the specified publisherId.
 
  @param publisherId     Publisher identifier assigned by Smaato.
@@ -84,7 +88,7 @@ typedef NS_ENUM(NSUInteger, SMAMaxAdContentRating) {
 /**
  Unavailable. Please use class properties/methods instead.
  */
-+ (null_unspecified instancetype) new NS_UNAVAILABLE;
++ (null_unspecified instancetype)new NS_UNAVAILABLE;
 
 /**
  Unavailable. Please use class properties/methods instead.

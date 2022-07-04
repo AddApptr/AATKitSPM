@@ -17,6 +17,7 @@ __deprecated __attribute__((deprecated("Use new api OguryThumbnailAd instead")))
 
 @property (nonatomic, weak) id<OguryAdsThumbnailAdDelegate> thumbnailAdDelegate;
 @property (nonatomic, assign) BOOL isLoaded;
+@property (nonatomic, assign, readonly) BOOL isExpanded;
 @property (nonatomic, strong) NSString  * _Nullable adUnitID;
 
 #pragma mark - Initialization

@@ -101,7 +101,7 @@ Sent when the ad view impression has been tracked by the sdk.
 /**
 \c SMANativeAd class encapsulates public properties and methods and acts as entry point for Native ad request.
 */
-@interface SMANativeAd : NSObject
+@interface SMANativeAd: NSObject
 
 /**
 Ad space identifier assigned by Smaato.

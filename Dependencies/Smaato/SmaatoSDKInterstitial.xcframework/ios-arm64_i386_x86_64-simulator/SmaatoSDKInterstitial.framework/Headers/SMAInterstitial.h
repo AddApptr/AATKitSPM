@@ -74,7 +74,7 @@
  \c SMAInterstitial class encapsulates public properties and methods for Interstitial Ad management. An instance of \c SMAInterstitial class
  could be obtained over invocation of \c loadInterstitialForPublisherId:adSpaceId:delegate: static method of main \c SmaatoSDK class.
  */
-@interface SMAInterstitial : NSObject
+@interface SMAInterstitial: NSObject
 
 /**
  Registered adSpaceId (assigned by Smaato in SPX dashboard).
@@ -121,7 +121,7 @@
 /**
  Call `[SmaatoSDK loadInterstitialForAdSpaceId:delegate:]` instead.
  */
-+ (null_unspecified instancetype) new NS_UNAVAILABLE;
++ (null_unspecified instancetype)new NS_UNAVAILABLE;
 
 /**
  Call `[SmaatoSDK loadInterstitialForAdSpaceId:delegate:]` instead.

@@ -5,6 +5,8 @@
 #import <Foundation/Foundation.h>
 #import "OguryLogger.h"
 
+typedef NS_ENUM(NSInteger, OguryLogLevel);
+
 @class OguryLogMessage;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -14,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Properties
 
 @property (nonatomic, strong, nullable) id<OguryLogFormatter> logFormatter;
+@property (nonatomic, assign, readwrite) OguryLogLevel logLevel;
 
 #pragma mark - Initialization
 

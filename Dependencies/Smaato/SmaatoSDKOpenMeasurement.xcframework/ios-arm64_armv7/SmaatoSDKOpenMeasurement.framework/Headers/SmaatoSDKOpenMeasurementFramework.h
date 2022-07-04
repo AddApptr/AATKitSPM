@@ -11,9 +11,9 @@
 #import <Foundation/Foundation.h>
 
 static NSString *const kSmaatoSDKOpenMeasurementFramework =
-    @"SmaatoSDKOpenMeasurementFramework_I_am_mandatory_dependency_for_SmaatoSDK_Please_add_me";
+@"SmaatoSDKOpenMeasurementFramework_I_am_mandatory_dependency_for_SmaatoSDK_Please_add_me";
 
-@interface SmaatoSDKOpenMeasurementFramework_I_am_mandatory_dependency_for_SmaatoSDK_Please_add_me : NSObject
+@interface SmaatoSDKOpenMeasurementFramework_I_am_mandatory_dependency_for_SmaatoSDK_Please_add_me: NSObject
 
 + (void)hello;
 

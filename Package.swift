@@ -24,12 +24,12 @@ let package = Package(
         .library(name: "AATKit-YOC", targets: ["AATKit-YOC"]),
         .library(name: "AATKit-InMobi", targets: ["AATKit-InMobi"]),
         .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
-        .library(name: "AATKit-MoPub", targets: ["AATKit-MoPub"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Prebid", targets: ["AATKit-Prebid"]),
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
         .library(name: "AATKit-Vungle", targets: ["AATKit-Vungle"]),
-        .library(name: "AATKit-OguryAds", targets: ["AATKit-OguryAds"]),
+        .library(name: "AATKit-OguryAds", targets: ["AATKit-OgurySdk"]),
+        .library(name: "AATKit-IronSource", targets: ["AATKit-IronSource"]),
 
         // CMPs
         .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
@@ -48,12 +48,12 @@ let package = Package(
                                                    "AATKit-YOC",
                                                    "AATKit-InMobi",
                                                    "AATKit-AppNexus",
-                                                   "AATKit-MoPub",
-                                                   "AATKit-OguryAds",
+                                                   "AATKit-OgurySdk",
                                                    "AATKit-PubNative",
                                                    "AATKit-Prebid",
                                                    "AATKit-Unity",
-                                                   "AATKit-Vungle"
+                                                   "AATKit-Vungle",
+                                                   "AATKit-IronSource"
                                                   ]),
         // M1 Default dependencies
         .library(name: "AATKit-M1-Default", targets: ["AATKit-GoogleMobileAds",
@@ -66,7 +66,6 @@ let package = Package(
                                                       "AATKit-AdColony",
                                                       "AATKit-InMobi",
                                                       "AATKit-AppNexus",
-                                                      "AATKit-MoPub",
                                                       "AATKit-PubNative",
                                                       "AATKit-Prebid",
                                                      ]),
@@ -74,9 +73,11 @@ let package = Package(
     ],
     dependencies: [
         // AdNetworks supporting SPM
-        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("7.18.0")),
-        .package(name: "GoogleAppMeasurement", url: "https://github.com/google/GoogleAppMeasurement.git", .exact("8.9.1")),
-        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("10.3.7"))
+        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("7.22.0")),
+        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("11.4.3")),
+        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("9.6.0")),
+        // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
+        .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
     ],
     targets: [
         // AATKit target
@@ -99,9 +100,9 @@ let package = Package(
 
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
-                dependencies: [ "GoogleMobileAds",
+                dependencies: [ //"GoogleMobileAds",
                                 "AATDependencyHelper",
-                                .product(name: "GoogleAppMeasurement", package: "GoogleAppMeasurement")
+                                .product(name: "GoogleMobileAds", package: "GoogleMobileAds")
                               ],
                 path: "./Sources/GoogleMobileAdsSources"),
 
@@ -126,15 +127,15 @@ let package = Package(
                 path: "./Sources/FeedAdSources"),
 
         .target(name:"AATKit-OguryCMP",
-                dependencies: ["OguryChoiceManager", "OguryCore"],
+                dependencies: ["OguryChoiceManager", "OguryCore", "OgurySdk"],
                 path: "./Sources/OguryCMPSources"),
 
-        .target(name:"AATKit-OguryAds",
-                dependencies: ["OguryAds", "OguryCore", "OMSDK_Ogury"],
+        .target(name:"AATKit-OgurySdk",
+                dependencies: ["OgurySdk", "OguryAds", "OguryCore", "OMSDK_Ogury"],
                 path: "./Sources/OguryAdsSources"),
 
         .target(name:"AATKit-GoogleCMP",
-                dependencies: ["UserMessagingPlatform"],
+                dependencies: [.product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform")],
                 path: "./Sources/GoogleCMPSources"),
 
         .target(name:"AATKit-Smaato",
@@ -162,16 +163,12 @@ let package = Package(
                 dependencies: ["InMobiSDK"],
                 path: "./Sources/InMobiSources"),
 
-        .target(name:"AATKit-MoPub",
-                dependencies: ["MoPubSDK", "OMSDK_Mopub"],
-                path: "./Sources/MoPubSources"),
-
         .target(name:"AATKit-PubNative",
                 dependencies: ["HyBid", "OMSDK_Pubnativenet"],
                 path: "./Sources/PubnativeSources"),
 
         .target(name:"AATKit-Prebid",
-                dependencies: ["Prebid"],
+                dependencies: ["PrebidMobile", "OMSDK_Prebidorg"],
                 path: "./Sources/PrebidSources"),
 
         .target(name:"AATKit-Unity",
@@ -182,6 +179,12 @@ let package = Package(
                 dependencies: ["VungleSDK"],
                 path: "./Sources/VungleSources"),
 
+        
+        .target(name:"AATKit-IronSource",
+                dependencies: ["IronSource"],
+                path: "./Sources/IronSourceSources"),
+
+        
         // Mark: Binary Targets
         // AATKit
         .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
@@ -191,7 +194,7 @@ let package = Package(
         .binaryTarget(name: "AATAdMobMediationAdapter", path: "./Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"),
 
         // Google
-        .binaryTarget(name: "GoogleMobileAds", path: "./Dependencies/Google/GoogleMobileAds.xcframework"),
+//        .binaryTarget(name: "GoogleMobileAds", path: "./Dependencies/Google/GoogleMobileAds.xcframework"),
         .binaryTarget(name: "AATDependencyHelper", path: "./Dependencies/Google/AATDependencyHelper.xcframework"),
 
         // Amazon
@@ -205,9 +208,10 @@ let package = Package(
         .binaryTarget(name: "OguryCore", path: "./Dependencies/Ogury/OguryCore.xcframework"),
         .binaryTarget(name: "OguryAds", path: "./Dependencies/Ogury/OguryAds.xcframework"),
         .binaryTarget(name: "OMSDK_Ogury", path: "./Dependencies/Ogury/OMSDK_Ogury.xcframework"),
+        .binaryTarget(name: "OgurySdk", path: "./Dependencies/Ogury/OgurySdk.xcframework"),
 
         // Google CMP
-        .binaryTarget(name: "UserMessagingPlatform", path: "./Dependencies/Google/UserMessagingPlatform.xcframework"),
+//        .binaryTarget(name: "UserMessagingPlatform", path: "./Dependencies/Google/UserMessagingPlatform.xcframework"),
 
         // Smaato
         .binaryTarget(name: "OMSDK_Smaato", path: "./Dependencies/Smaato/OMSDK_Smaato.xcframework"),
@@ -235,22 +239,22 @@ let package = Package(
         // InMobi
         .binaryTarget(name: "InMobiSDK", path: "./Dependencies/InMobi/InMobiSDK.xcframework"),
 
-        // MoPub
-        .binaryTarget(name: "MoPubSDK", path: "./Dependencies/MoPub/MoPubSDK.xcframework"),
-        .binaryTarget(name: "OMSDK_Mopub", path: "./Dependencies/MoPub/OMSDK_Mopub.xcframework"),
-
         // PubNative
         .binaryTarget(name: "HyBid", path: "./Dependencies/Pubnative/HyBid.xcframework"),
         .binaryTarget(name: "OMSDK_Pubnativenet", path: "./Dependencies/Pubnative/OMSDK_Pubnativenet.xcframework"),
 
         // Prebid
-        .binaryTarget(name: "Prebid", path: "./Dependencies/Prebid/Prebid.xcframework"),
+        .binaryTarget(name: "PrebidMobile", path: "./Dependencies/Prebid/PrebidMobile.xcframework"),
+        .binaryTarget(name: "OMSDK_Prebidorg", path: "./Dependencies/Prebid/OMSDK_Prebidorg.xcframework"),
 
         // Unity
         .binaryTarget(name: "UnityAds", path: "./Dependencies/Unity/UnityAds.xcframework"),
 
         // Vungle
         .binaryTarget(name: "VungleSDK", path: "./Dependencies/Vungle/VungleSDK.xcframework"),
+        
+        // IronSource
+        .binaryTarget(name: "IronSource", path: "./Dependencies/IronSource/IronSource.xcframework"),
     ]
 )
 

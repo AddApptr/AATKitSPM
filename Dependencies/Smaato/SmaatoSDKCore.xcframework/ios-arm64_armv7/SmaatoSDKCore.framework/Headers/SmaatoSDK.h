@@ -16,7 +16,7 @@
 
  @warning   You must initialize the SDK by calling the \c initSDK: before using any SDK's API.
  */
-@interface SmaatoSDK : NSObject
+@interface SmaatoSDK: NSObject
 
 /// Version of the Smaato SDK.
 @property (class, nonatomic, readonly, nonnull) NSString *sdkVersion;
@@ -37,7 +37,7 @@
 /**
  Unavailable. Please use class properties/methods instead.
  */
-+ (null_unspecified instancetype) new NS_UNAVAILABLE;
++ (null_unspecified instancetype)new NS_UNAVAILABLE;
 
 /**
  Unavailable. Please use class properties/methods instead.
@@ -124,9 +124,9 @@ typedef NS_ENUM(NSUInteger, SMAGender) {
 
 /// Set to YES to indicate that LGPD consent will added to all demands.
 /// The default value is \c NO.
-@property (class, nonatomic, nullable) NSNumber* isLGPDConsentEnabled;
+@property (class, nonatomic, nullable) NSNumber *isLGPDConsentEnabled;
 
 /// Returns static informations about the SDK and settings as JSON-String
-@property (class, nonatomic, readonly) NSString* _Nonnull collectSignals;
+@property (class, nonatomic, readonly) NSString *_Nonnull collectSignals;
 
 @end

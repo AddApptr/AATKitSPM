@@ -72,7 +72,9 @@
 @end
 
 /**
- \c SMARewardedNetworkEvent should be implemented by the CSM adapter in order to have access to the set of methods used to communicate with the ad network of choice. Use \c requestRewardedAdWithCustomData: to load the rewarded ad request with the ad unit Id parsed from the \c customData dictionary that has been previously set up on the SPX dashboard.
+ \c SMARewardedNetworkEvent should be implemented by the CSM adapter in order to have access to the set of methods used to communicate with
+ the ad network of choice. Use \c requestRewardedAdWithCustomData: to load the rewarded ad request with the ad unit Id parsed from the \c
+ customData dictionary that has been previously set up on the SPX dashboard.
 */
 @protocol SMARewardedNetworkEvent <SMANetworkEvent>
 
@@ -81,7 +83,9 @@
 @optional
 - (void)requestRewardedAdWithCustomData:(NSDictionary *_Nonnull)customData objectExtras:(NSDictionary *_Nullable)objectExtras;
 
-- (void)requestRewardedWithAdUnitId:(NSString *_Nonnull)adUnitId appId:(NSString *_Nonnull)appId objectExtras:(NSDictionary *_Nullable)objectExtras;
+- (void)requestRewardedWithAdUnitId:(NSString *_Nonnull)adUnitId
+                              appId:(NSString *_Nonnull)appId
+                       objectExtras:(NSDictionary *_Nullable)objectExtras;
 
 @required
 - (void)showRewardedAdFromViewController:(UIViewController *_Nonnull)viewController;

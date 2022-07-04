@@ -73,7 +73,9 @@ A set of methods that are called by the \c SMABannerView instance in response to
 */
 
 /**
- \c SMAInterstitialNetworkEvent should be implemented by the CSM adapter in order to have access to the set of methods used to communicate with the ad network of choice. Use \c requestInterstitialAdWithCustomData to load the interstitial request with the ad unit Id parsed from the \c customData dictionary that has been previously set up on the SPX dashboard.
+ \c SMAInterstitialNetworkEvent should be implemented by the CSM adapter in order to have access to the set of methods used to communicate
+ with the ad network of choice. Use \c requestInterstitialAdWithCustomData to load the interstitial request with the ad unit Id parsed from
+ the \c customData dictionary that has been previously set up on the SPX dashboard.
 */
 @protocol SMAInterstitialNetworkEvent <SMANetworkEvent>
 
@@ -82,7 +84,9 @@ A set of methods that are called by the \c SMABannerView instance in response to
 @optional
 - (void)requestInterstitialAdWithCustomData:(NSDictionary *_Nonnull)customData objectExtras:(NSDictionary *_Nullable)objectExtras;
 
-- (void)requestInterstitialWithAdUnitId:(NSString *_Nonnull)adUnitId appId:(NSString *_Nonnull)appId objectExtras:(NSDictionary *_Nullable)objectExtras;
+- (void)requestInterstitialWithAdUnitId:(NSString *_Nonnull)adUnitId
+                                  appId:(NSString *_Nonnull)appId
+                           objectExtras:(NSDictionary *_Nullable)objectExtras;
 
 @required
 - (void)showInterstitialFromViewController:(UIViewController *_Nonnull)viewController;

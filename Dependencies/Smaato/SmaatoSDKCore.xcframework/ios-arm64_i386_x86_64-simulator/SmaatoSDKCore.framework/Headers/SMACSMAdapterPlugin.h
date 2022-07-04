@@ -11,10 +11,9 @@
 #import <Foundation/Foundation.h>
 
 static NSString *const kSMACSMNetworkKey = @"network";
-static NSString *const kSMACSMMoPubNetworkValue = @"mopub";
 static NSString *const kSMACSMAdMobNetworkValue = @"admob";
 
-@interface SMACSMAdapterPlugin : NSObject
+@interface SMACSMAdapterPlugin: NSObject
 
 + (void)registerAdapterClass:(Class)adapterClass;
 

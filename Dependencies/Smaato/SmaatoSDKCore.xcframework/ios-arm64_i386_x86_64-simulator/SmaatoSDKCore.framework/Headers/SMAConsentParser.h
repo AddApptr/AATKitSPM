@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SMAConsentParser : NSObject
+@interface SMAConsentParser: NSObject
 
 + (NSNumber *)parseConsentVersionFrom:(NSString *)consentString;
 + (NSString *)parseCreatedFrom:(NSString *)consentString;

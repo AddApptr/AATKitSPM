@@ -39,6 +39,7 @@ typedef NS_ENUM(NSInteger, AATKitAdNetwork) {
     AATFacebook,
     AATFeedAd,
     AATInmobi,
+    AATIronSource,
     AATOgury,
     AATRubicon,
     AATSmaato,
@@ -1000,11 +1001,15 @@ typedef NS_ENUM(NSInteger, AATKitBannerAlign) {
  */
 typedef NS_ENUM(NSInteger, AATKitAdType) {
     /// Default small banner.
-    AATKitBanner320x53,
+    AATKitBanner320x53, AATKitBanner320x50,
     /// An iPhone 6 wrapper for the 320x53 banner size.
-    AATKitBanner375x53,
-    /// An iPhone 6 Plus wrapper for the 320x53 banner size.
-    AATKitBanner414x53,
+    AATKitBanner375x53, AATKitBanner375x50,
+    /// An [iPhone 13/12] and [iPhone 13/12 Pro]
+    AATKitBanner390x53, AATKitBanner390x50,
+    /// An [iPhone 6 Plus/7 Plus/8 Plus/11/XR/XS MAX] wrapper for the 320x53 banner size.
+    AATKitBanner414x53,AATKitBanner414x50,
+    /// An [iPhone 13/12 Pro Max]
+    AATKitBanner428x53, AATKitBanner428x50,
     /// A banner size for iPad devices.
     AATKitBanner768x90,
     /// The standard “medium rectangle”.

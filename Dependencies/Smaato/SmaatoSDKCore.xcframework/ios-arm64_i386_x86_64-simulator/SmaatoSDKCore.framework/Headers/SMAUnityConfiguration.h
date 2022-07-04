@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SMAUnityConfiguration : SMAConfiguration
+@interface SMAUnityConfiguration: SMAConfiguration
 
 /// Version of the Unity SDK.
 @property (nonatomic, nonnull, copy) NSString *unityVersion;

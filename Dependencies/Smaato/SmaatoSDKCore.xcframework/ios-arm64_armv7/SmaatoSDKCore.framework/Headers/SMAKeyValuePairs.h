@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SMAKeyValuePairs : NSObject
+@interface SMAKeyValuePairs: NSObject
 
 // If aKey already exists in the dictionary, anObject is appended to the existing objects. Otherwise, key-value pair is added.
 - (void)addTargetingValue:(NSString *_Nonnull)anObject forKey:(NSString *_Nonnull)aKey;

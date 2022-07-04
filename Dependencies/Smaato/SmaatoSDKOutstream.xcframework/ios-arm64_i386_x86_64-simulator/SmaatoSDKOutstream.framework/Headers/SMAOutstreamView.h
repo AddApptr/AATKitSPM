@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SMAOutstreamView : SMABannerView
+@interface SMAOutstreamView: SMABannerView
 
 /**
  Load new outstream ad. You must call this method programmatically to initiate loading of the first ad.
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
  Otherwise, the \c SMAOutstreamView won't display the ad and impressions won't be counted.
  */
 - (void)loadWithAdSpaceId:(NSString *)adSpaceId
-            outstreamAdSize:(SMAOutstreamAdSize)adSize
+          outstreamAdSize:(SMAOutstreamAdSize)adSize
             requestParams:(SMAAdRequestParams *_Nullable)requestParams;
 
 @end

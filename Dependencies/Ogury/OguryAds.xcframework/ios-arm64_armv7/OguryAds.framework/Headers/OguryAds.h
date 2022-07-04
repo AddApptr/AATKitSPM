@@ -16,20 +16,20 @@
 typedef void (^SetupCompletionBlock)(NSError *error);
 typedef void (^LoadCompletionBlock)(void);
 
-__deprecated_msg("Use 'Ogury.startWithConfiguration' to start Ogury SDK instead.")
+
 @interface OguryAds : NSObject
 
 @property (nonatomic, strong) NSString *sdkVersion __deprecated_msg("Use 'Ogury.getSdkVersion' method instead");
 
 + (instancetype)shared;
 
-- (void)setupWithAssetKey:(NSString *)assetKey;
+- (void)setupWithAssetKey:(NSString *)assetKey __deprecated_msg("Use 'Ogury.startWithConfiguration' to start Ogury SDK instead.");
 
-- (void)setupWithAssetKey:(NSString *)assetKey andCompletionHandler:(SetupCompletionBlock)completionHandler;
+- (void)setupWithAssetKey:(NSString *)assetKey andCompletionHandler:(SetupCompletionBlock)completionHandler __deprecated_msg("Use 'Ogury.startWithConfiguration' to start Ogury SDK instead.");
 
-- (void)setupWithAssetKey:(NSString *)assetKey andMediationName:(NSString *)mediationName;
+- (void)setupWithAssetKey:(NSString *)assetKey andMediationName:(NSString *)mediationName __deprecated_msg("Use 'Ogury.startWithConfiguration' to start Ogury SDK instead.");
 
-- (void)setupWithAssetKey:(NSString *)assetKey mediationName:(NSString *)mediationName andCompletionHandler:(SetupCompletionBlock)completionHandler;
+- (void)setupWithAssetKey:(NSString *)assetKey mediationName:(NSString *)mediationName andCompletionHandler:(SetupCompletionBlock)completionHandler __deprecated_msg("Use 'Ogury.startWithConfiguration' to start Ogury SDK instead.");
 
 - (void)defineSDKType:(NSUInteger)sdkType;
 

@@ -16,7 +16,7 @@
 ad rendering publisher should register a view container with ad content for impression tracking and touches handling.
 */
 
-@interface SMANativeAdRenderer : NSObject
+@interface SMANativeAdRenderer: NSObject
 
 /**
  Method to register ad view for impression tracking. A publisher has to call this method to enable rendered
@@ -83,7 +83,7 @@ Call to render native ad inside custom view.
 @interface SMANativeAdRenderer (AdapterSupport)
 
 /**
- Privacy icon view, that might be requested my Admob or Mopub SDKs
+ Privacy icon view, that might be requested by Admob SDK
  */
 @property (nonatomic, nullable, readonly) UIView *privacyView;
 

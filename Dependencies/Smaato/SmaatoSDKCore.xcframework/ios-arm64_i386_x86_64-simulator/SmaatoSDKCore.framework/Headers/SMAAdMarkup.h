@@ -10,11 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SMAAdMarkup : NSObject
+@class SMANativeAdVideo;
+
+@interface SMAAdMarkup: NSObject
 @property (nonatomic, copy, readonly, nullable) NSString *markup;
 @property (nonatomic, copy, readonly, nullable) NSString *type;
 
 - (instancetype)initWithMarkup:(NSString *)markup andType:(NSString *)type;
+- (instancetype)initWithVideo:(SMANativeAdVideo*)video;
 
 @end
 

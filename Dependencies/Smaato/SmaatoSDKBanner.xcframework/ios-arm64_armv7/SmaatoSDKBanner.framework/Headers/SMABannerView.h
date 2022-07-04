@@ -102,7 +102,7 @@
 /**
  Banner view used to display Image and RichMedia ad formats.
  */
-@interface SMABannerView : UIView
+@interface SMABannerView: UIView
 
 /**
  Ad space identifier assigned by Smaato.

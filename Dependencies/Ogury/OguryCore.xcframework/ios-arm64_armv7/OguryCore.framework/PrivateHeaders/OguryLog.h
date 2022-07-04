@@ -4,18 +4,11 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger, OguryLogLevel);
+
 @protocol OguryLogger;
 
 NS_ASSUME_NONNULL_BEGIN
-
-typedef NS_ENUM(NSInteger, OguryLogLevel) {
-    OguryLogLevelOff = -1,
-    OguryLogLevelError,
-    OguryLogLevelWarning,
-    OguryLogLevelInfo,
-    OguryLogLevelDebug,
-    OguryLogLevelAll = NSIntegerMax
-};
 
 @interface OguryLog : NSObject
 
@@ -30,6 +23,8 @@ typedef NS_ENUM(NSInteger, OguryLogLevel) {
 - (void)addLogger:(id<OguryLogger>)logger;
 
 - (void)clearLoggers;
+
+- (void)setLogLevel:(OguryLogLevel)logLevel;
 
 - (void)logMessage:(NSString *)message level:(OguryLogLevel)level;
 

@@ -59,7 +59,7 @@
 
 @end
 
-@interface SMARewardedInterstitial : NSObject
+@interface SMARewardedInterstitial: NSObject
 /**
  Registered adSpaceId (assigned by Smaato in SPX dashboard).
  */
@@ -93,7 +93,7 @@
 /**
  Not recommended to use. Call `[SmaatoSDK loadRewardedInterstitialForAdSpaceId:delegate:]` instead.
  */
-+ (null_unspecified instancetype) new NS_UNAVAILABLE;
++ (null_unspecified instancetype)new NS_UNAVAILABLE;
 
 /**
  Not recommended to use. Call `[SmaatoSDK loadRewardedInterstitialForAdSpaceId:delegate:]` instead.

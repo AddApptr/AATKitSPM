@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/HyBid.h</key>
 		<data>
-		0MSWAl2z6eA2s6vUGpk7zfq77sU=
+		LCteCHnluoLMmlT4rWhxQZ8QotE=
 		</data>
 		<key>Headers/HyBidAd.h</key>
 		<data>
@@ -22,15 +22,15 @@
 		</data>
 		<key>Headers/HyBidAdPresenter.h</key>
 		<data>
-		DVObpjeMtGvTuwhaBr8luA1f4+k=
+		TwIlvgPC+UHCUc7oTR/00/ZvbvU=
 		</data>
 		<key>Headers/HyBidAdPresenterFactory.h</key>
 		<data>
-		zej8Siaa9XVffTd7N22C6aKAH9Q=
+		0FncrjnJLQIcIigDqS72X0Khfzw=
 		</data>
 		<key>Headers/HyBidAdRequest.h</key>
 		<data>
-		sdL5lxoTVNaYjR3Bppiz7jMqbDw=
+		0lQKN0suDKI2myRYRBs+3X3F1pU=
 		</data>
 		<key>Headers/HyBidAdSize.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/HyBidAdView.h</key>
 		<data>
-		eU+oV10eYHk/NTKqpOyRCdinEMk=
+		cCn895R+lQ3gzQ4nVbTxfas4boQ=
 		</data>
 		<key>Headers/HyBidBannerAdRequest.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/HyBidContentInfoView.h</key>
 		<data>
-		UKkLJw9+yiULVoVMjwCubQRmd2Y=
+		xQqZQFbnDQc/T/qJomA+V9dhu04=
 		</data>
 		<key>Headers/HyBidDataModel.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/HyBidError.h</key>
 		<data>
-		kRunQy61G6qJxMjZ8C1q+qg82XM=
+		bHfa3YQP1LUAsaRZtoHWDb0OG5c=
 		</data>
 		<key>Headers/HyBidHeaderBiddingUtils.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/HyBidInterstitialAd.h</key>
 		<data>
-		Ak/MaFYZM4JJlnOkj4LjwkFnPKw=
+		Xag46+IS7UdrGD3vDtODzWTrdEE=
 		</data>
 		<key>Headers/HyBidInterstitialAdRequest.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/HyBidInterstitialPresenter.h</key>
 		<data>
-		Eb5Zhjrgu6ERE0oRZt5HEZtdtAo=
+		lWio9xaFIntP7dQhtR/yEJEKwrA=
 		</data>
 		<key>Headers/HyBidInterstitialPresenterFactory.h</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Headers/HyBidNativeAdLoader.h</key>
 		<data>
-		Q8sFMHIeaMYR0WLVuHMy1LOEP84=
+		C7kFvANGF/nOAHIAkEAa/fWM0l8=
 		</data>
 		<key>Headers/HyBidNativeAdRenderer.h</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Headers/HyBidReporting.h</key>
 		<data>
-		TaLs6JXV8fuH5E4ld/LymwrV3Fc=
+		GPgsYA/njIYEQiCcA68Qu6Pwl9g=
 		</data>
 		<key>Headers/HyBidReportingEvent.h</key>
 		<data>
@@ -178,15 +178,15 @@
 		</data>
 		<key>Headers/HyBidRequestParameter.h</key>
 		<data>
-		L62kKMPGov4nGf/NxJtAwrhrqEU=
+		yWxDY1qK4y6+JO9/j1CST64pnzA=
 		</data>
 		<key>Headers/HyBidRewardedAd.h</key>
 		<data>
-		F+qdBPzKYfEAoZ7Cq3d+TJ9gxfg=
+		7RY6c/Qdwvt+zAXqxByiw3N1c1U=
 		</data>
 		<key>Headers/HyBidSettings.h</key>
 		<data>
-		qDJPzxApg3Nmf5hrEnThVgMDdjE=
+		1i6CA4WWJNwymg2NSWddSUK6bi8=
 		</data>
 		<key>Headers/HyBidSkAdNetworkModel.h</key>
 		<data>
@@ -204,13 +204,25 @@
 		<data>
 		brKOyL6TClyke7Gj0AdrL8vmodY=
 		</data>
+		<key>Headers/HyBidVASTIconViewTracking.h</key>
+		<data>
+		3qt2xArL0cqhdtqI6saSYqjYyMA=
+		</data>
 		<key>Headers/HyBidViewabilityManager.h</key>
 		<data>
 		z/eJgV2tosIlMVarjqiFmUcNtJs=
 		</data>
+		<key>Headers/HyBidXML.h</key>
+		<data>
+		f5RyQHDgqHIkbQglZstvKCkdY3I=
+		</data>
+		<key>Headers/HyBidXMLElementEx.h</key>
+		<data>
+		IMKQnG5H/vZc1tZkzhH6EfjRa20=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		cJnpsomX410KmFH67C/HBUM8C5k=
+		RO6Q/jVw5kUSNmwaqFII5ioNp7o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -276,6 +288,10 @@
 		<data>
 		J8s5MkDacBrK0cjD/YhorJtz2o0=
 		</data>
+		<key>PNLiteSkip.png</key>
+		<data>
+		3sSkqxP4rHFRH1ZPe2Lbq+QCKXo=
+		</data>
 		<key>PNLiteUnmute.png</key>
 		<data>
 		UuvE9CMJS+dRjKGTQbOlEgkNkqk=
@@ -286,31 +302,31 @@
 		</data>
 		<key>PNLiteVASTPlayerFullScreenViewController.nib/objects-11.0+.nib</key>
 		<data>
-		ljbrSCGFLfgsRXvDnMOuPZBZscM=
+		Fcc4Aeg5vDwbq9vwjL/05Dg5eFE=
 		</data>
 		<key>PNLiteVASTPlayerFullScreenViewController.nib/runtime.nib</key>
 		<data>
-		FV18215NfXkLDri9kM2lK9teys8=
+		RjiHnUSiMulQF9L2WFZmvTfybFA=
 		</data>
 		<key>PNLiteVASTPlayerInterstitialViewController.nib</key>
 		<data>
-		ecjqKLCtf0CKGKIQINGMPIViJ3o=
+		iDguDwvN0Efof7+NUuR4n7i4Veg=
 		</data>
 		<key>PNLiteVASTPlayerRewardedViewController.nib/objects-11.0+.nib</key>
 		<data>
-		8NsJt2l3dFazAVLVDncIYAsmjZw=
+		Irk5uXGlfiRyR+I8pXVsnpdXBZ8=
 		</data>
 		<key>PNLiteVASTPlayerRewardedViewController.nib/runtime.nib</key>
 		<data>
-		YUrxeOlzrWyiHtoPkeI4Ugl0XDM=
+		o8k512VueRQZ2mfTiFcxbF1gUJY=
 		</data>
 		<key>PNLiteVASTPlayerViewController.nib/objects-11.0+.nib</key>
 		<data>
-		JWRm3BBsQbuICv+Be6UgY84Rt5Q=
+		1uRms/YG/57g7ZcFmoCT8kyKXSw=
 		</data>
 		<key>PNLiteVASTPlayerViewController.nib/runtime.nib</key>
 		<data>
-		cAWW7u6XgU1O06NKnALcHtk+Vss=
+		l0dqikgU6qXoIV9WpP8LTQ+jsWk=
 		</data>
 		<key>VerveContentInfo.png</key>
 		<data>
@@ -330,7 +346,7 @@
 		</data>
 		<key>omsdk.js</key>
 		<data>
-		yuLBB+yK9sn1wmJTHmfjw1CETlM=
+		5L69vpuAtJ/FDkm4JlJPNHilna4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -339,11 +355,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0MSWAl2z6eA2s6vUGpk7zfq77sU=
+			LCteCHnluoLMmlT4rWhxQZ8QotE=
 			</data>
 			<key>hash2</key>
 			<data>
-			e0ywkSlrEXBVz2rHHD2AIGdWJ4064GuGOnm9fq6JRTc=
+			OUGdbbOeOizWuVCDebMQpW+e4b91/wNvPcs//5fYR4o=
 			</data>
 		</dict>
 		<key>Headers/HyBidAd.h</key>
@@ -383,33 +399,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DVObpjeMtGvTuwhaBr8luA1f4+k=
+			TwIlvgPC+UHCUc7oTR/00/ZvbvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			hefJp8YOfGBO0CYQoQSEliBBXM2GPIyoLLF4zpQOtNc=
+			mHebZurRRoa+WGSBMeQT496sRwYhSUQY9zKuW4TvITU=
 			</data>
 		</dict>
 		<key>Headers/HyBidAdPresenterFactory.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zej8Siaa9XVffTd7N22C6aKAH9Q=
+			0FncrjnJLQIcIigDqS72X0Khfzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			1vroaHiDGjqKG/QYfO2vvuZaFKXcAyDnpZL/bPrU2os=
+			VvZHrxOURe6P7TW8YR2ieNkJSxvMQKqxmk7HFOifnsg=
 			</data>
 		</dict>
 		<key>Headers/HyBidAdRequest.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sdL5lxoTVNaYjR3Bppiz7jMqbDw=
+			0lQKN0suDKI2myRYRBs+3X3F1pU=
 			</data>
 			<key>hash2</key>
 			<data>
-			TINEC9JULjHF5SA/KvezGFDii8m4S+ZQUXCr51HsxdI=
+			EqDEc2N+82jaBdw21Du6eLOhRxxT8CnMzTrtebxL+gQ=
 			</data>
 		</dict>
 		<key>Headers/HyBidAdSize.h</key>
@@ -427,11 +443,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eU+oV10eYHk/NTKqpOyRCdinEMk=
+			cCn895R+lQ3gzQ4nVbTxfas4boQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			yxUjVLIfUz3jnKg2yajHYFAi7OsdpdThbbZgebMgC68=
+			NbV4cwplpBTDc0Rq6eclHp3Qd95McDSn7tysC/IlTlo=
 			</data>
 		</dict>
 		<key>Headers/HyBidBannerAdRequest.h</key>
@@ -482,11 +498,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UKkLJw9+yiULVoVMjwCubQRmd2Y=
+			xQqZQFbnDQc/T/qJomA+V9dhu04=
 			</data>
 			<key>hash2</key>
 			<data>
-			fMk0Mry+6qFAasmiWR/WpYNynuu8zOXycUNSOehbChs=
+			hfdlpnwR8CWWwclg9eAqMZYsS16oXP1E+zICJYxut4c=
 			</data>
 		</dict>
 		<key>Headers/HyBidDataModel.h</key>
@@ -515,11 +531,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kRunQy61G6qJxMjZ8C1q+qg82XM=
+			bHfa3YQP1LUAsaRZtoHWDb0OG5c=
 			</data>
 			<key>hash2</key>
 			<data>
-			f+55yeEIKEmTMEpWfWMHNZEZplrRMNRqK2ubFruduHU=
+			4q/lRXZ2puw9NlAJJrIxN+iN4VMQnXsOCQ+urRA1nwE=
 			</data>
 		</dict>
 		<key>Headers/HyBidHeaderBiddingUtils.h</key>
@@ -559,11 +575,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ak/MaFYZM4JJlnOkj4LjwkFnPKw=
+			Xag46+IS7UdrGD3vDtODzWTrdEE=
 			</data>
 			<key>hash2</key>
 			<data>
-			cNdm8rbofihVaTNsveKwC+6yH03t0Hc/0TfXEa+2W1s=
+			Ztw2RJLD7955IIqXgQ7M8Ot4IBjd5Tw5jEPQzV3qP54=
 			</data>
 		</dict>
 		<key>Headers/HyBidInterstitialAdRequest.h</key>
@@ -581,11 +597,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Eb5Zhjrgu6ERE0oRZt5HEZtdtAo=
+			lWio9xaFIntP7dQhtR/yEJEKwrA=
 			</data>
 			<key>hash2</key>
 			<data>
-			fShoAIDPmq3ksHdYiW1h1wYz36PUsNtxEsLLyKFw8KM=
+			wl26ohmZZVPlxZZ4p7erRSBzxFWF//MRqqPN/qYStyQ=
 			</data>
 		</dict>
 		<key>Headers/HyBidInterstitialPresenterFactory.h</key>
@@ -724,11 +740,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q8sFMHIeaMYR0WLVuHMy1LOEP84=
+			C7kFvANGF/nOAHIAkEAa/fWM0l8=
 			</data>
 			<key>hash2</key>
 			<data>
-			zKBxvMlRAIbpJIgTjlh7H1Pt/tUk3u50/890dmDJY+4=
+			B/ymW7HQK6Fm3FO7ZM51C0EweNNZSz7hrPez4SCvHBk=
 			</data>
 		</dict>
 		<key>Headers/HyBidNativeAdRenderer.h</key>
@@ -779,11 +795,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TaLs6JXV8fuH5E4ld/LymwrV3Fc=
+			GPgsYA/njIYEQiCcA68Qu6Pwl9g=
 			</data>
 			<key>hash2</key>
 			<data>
-			E2hyDv/H8yIpBISHh6uu9pUAobV/9TOnvELjowTb0yY=
+			ZNk1K7Y0G00dIV1YS1h3TB5uj/Tx8fkqsIKYnDJ7eKE=
 			</data>
 		</dict>
 		<key>Headers/HyBidReportingEvent.h</key>
@@ -812,33 +828,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L62kKMPGov4nGf/NxJtAwrhrqEU=
+			yWxDY1qK4y6+JO9/j1CST64pnzA=
 			</data>
 			<key>hash2</key>
 			<data>
-			U4sK4Bu1IefT8fijPV9n1xLrxcKMPRPTItXR8XI+X8k=
+			tmIWUa8X++vQxO8Mkw//b49ZWHn/IV4BrH6i2qqTWT4=
 			</data>
 		</dict>
 		<key>Headers/HyBidRewardedAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F+qdBPzKYfEAoZ7Cq3d+TJ9gxfg=
+			7RY6c/Qdwvt+zAXqxByiw3N1c1U=
 			</data>
 			<key>hash2</key>
 			<data>
-			wEOkILcGNUvq7bPjdq5Rgdnzio2IeI3z8UqqoKRHScg=
+			Tl8KLDZ4DPLaTgT3aYzKzkRCOpwB4ZHDLWFyhHb28Co=
 			</data>
 		</dict>
 		<key>Headers/HyBidSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qDJPzxApg3Nmf5hrEnThVgMDdjE=
+			1i6CA4WWJNwymg2NSWddSUK6bi8=
 			</data>
 			<key>hash2</key>
 			<data>
-			e4XJZCEzX5syk2dwsUp+vuE0qmmRcMkrp22+JJ1iS4o=
+			cU6FeGEwpxzLUod9b0nlhTlhspzNBWntYj5emRGd/jE=
 			</data>
 		</dict>
 		<key>Headers/HyBidSkAdNetworkModel.h</key>
@@ -885,6 +901,17 @@
 			6KGvMNgKS9DHD1N6+eifkGeMA4n14fnsO+4L2VoGmLk=
 			</data>
 		</dict>
+		<key>Headers/HyBidVASTIconViewTracking.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3qt2xArL0cqhdtqI6saSYqjYyMA=
+			</data>
+			<key>hash2</key>
+			<data>
+			OktJCsvlmucZqVnuk2yaHKxUvUZZNVNuajLhSKiX0VE=
+			</data>
+		</dict>
 		<key>Headers/HyBidViewabilityManager.h</key>
 		<dict>
 			<key>hash</key>
@@ -894,6 +921,28 @@
 			<key>hash2</key>
 			<data>
 			tjZF9t42xboU4Tnzgdt2syRPj5aqUlAaFnZMS8Ju9U0=
+			</data>
+		</dict>
+		<key>Headers/HyBidXML.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f5RyQHDgqHIkbQglZstvKCkdY3I=
+			</data>
+			<key>hash2</key>
+			<data>
+			oa72rtUcmk2PHOsaEwVP6ttOSkT472aBdomMmdfVdzU=
+			</data>
+		</dict>
+		<key>Headers/HyBidXMLElementEx.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IMKQnG5H/vZc1tZkzhH6EfjRa20=
+			</data>
+			<key>hash2</key>
+			<data>
+			4EyC/vr1OUZTaLYtR3Gk9umBeIB31/rQY2V3MrhzbI4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1072,6 +1121,17 @@
 			ngc6OxvLLBw5YyZEXoBLicwMo3tVzROq6v4pJx+dRt0=
 			</data>
 		</dict>
+		<key>PNLiteSkip.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3sSkqxP4rHFRH1ZPe2Lbq+QCKXo=
+			</data>
+			<key>hash2</key>
+			<data>
+			0kT9JuQH/BLg/5bNG9NaM7Sz6pFzo8zpC03FroiveoE=
+			</data>
+		</dict>
 		<key>PNLiteUnmute.png</key>
 		<dict>
 			<key>hash</key>
@@ -1098,77 +1158,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ljbrSCGFLfgsRXvDnMOuPZBZscM=
+			Fcc4Aeg5vDwbq9vwjL/05Dg5eFE=
 			</data>
 			<key>hash2</key>
 			<data>
-			rmUJKp1bAHldOKmgq/yIFwD3rcALXPVLNna+nTJ8NXo=
+			7lLAxc7vZsvzBxebedbimArcp3b2c2gqhgw7+2umQ4Y=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerFullScreenViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FV18215NfXkLDri9kM2lK9teys8=
+			RjiHnUSiMulQF9L2WFZmvTfybFA=
 			</data>
 			<key>hash2</key>
 			<data>
-			a40UU0jXEsma4azwmaIxD8KMri5r1Mp1d2iCHHt78Zg=
+			18pPHr2/90vlR+FOMr/8fOfzSAfwZcUQ2QhJAeGkf/0=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerInterstitialViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ecjqKLCtf0CKGKIQINGMPIViJ3o=
+			iDguDwvN0Efof7+NUuR4n7i4Veg=
 			</data>
 			<key>hash2</key>
 			<data>
-			c7u8LyXOOZYl8BDqk8ujz9XOKGM6/1gK7rmy/gmPcXo=
+			KbO29kZPWL7WnGU22iHYmNpOIPgEguaP6kILMtjxYCg=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerRewardedViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8NsJt2l3dFazAVLVDncIYAsmjZw=
+			Irk5uXGlfiRyR+I8pXVsnpdXBZ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			XFiVtjmIu7y1a5ElngnB5t/lChTZXjlvT5UYmjxPZdA=
+			1DY8e3pcSIcwcYASJLxBpaXsmLZBZ50i4Y6u28hNpY8=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerRewardedViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YUrxeOlzrWyiHtoPkeI4Ugl0XDM=
+			o8k512VueRQZ2mfTiFcxbF1gUJY=
 			</data>
 			<key>hash2</key>
 			<data>
-			pZC0n0fU5OnJx5Qs7WxM4pZkejO86u4+3wZSppuPi7w=
+			VGMcuF7zqnP7jwXGm8NI78yuXm6v+3AK5FaMhNHGPrI=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JWRm3BBsQbuICv+Be6UgY84Rt5Q=
+			1uRms/YG/57g7ZcFmoCT8kyKXSw=
 			</data>
 			<key>hash2</key>
 			<data>
-			urF7JXCFqbVF3y5AGXWMcwAYoT+quHIS1uSDt64EIZU=
+			mXkxSb5tFLIY06FQ5S4bQhCSJCCEavcPR/FARhEx99c=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cAWW7u6XgU1O06NKnALcHtk+Vss=
+			l0dqikgU6qXoIV9WpP8LTQ+jsWk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Df3QY0bu62qHci13kyt8pHb3KUbOeJ7Mh1BLqCam4iM=
+			wR+dr5Av57yHyXDC3vzxaR87ha97Ckhhe43fIAfZjCc=
 			</data>
 		</dict>
 		<key>VerveContentInfo.png</key>
@@ -1219,11 +1279,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yuLBB+yK9sn1wmJTHmfjw1CETlM=
+			5L69vpuAtJ/FDkm4JlJPNHilna4=
 			</data>
 			<key>hash2</key>
 			<data>
-			LgRZNz4yxaRdluwj39gmf13luEutw3AlpWJX5PhKDZQ=
+			sTiQXuhHefAkjC1Wlu3lZAdS8VFInyl8eUgRTOtq78I=
 			</data>
 		</dict>
 	</dict>

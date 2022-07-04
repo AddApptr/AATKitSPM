@@ -7,13 +7,13 @@
 #import "OguryRectCorner.h"
 #import "OguryOffset.h"
 
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OguryThumbnailAd : NSObject
 
 @property (nonatomic, strong, readonly) NSString *adUnitId;
 @property (nonatomic, weak, nullable) id<OguryThumbnailAdDelegate> delegate;
+@property (nonatomic, assign, readonly) BOOL isExpanded;
 
 - (instancetype)initWithAdUnitId:(NSString* _Nonnull)adUnitId;
 

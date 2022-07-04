@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SMAMRAIDSettings : NSObject
+@interface SMAMRAIDSettings: NSObject
 
 @property (nonatomic, readonly) NSUInteger mraidViewObservingFrequency;
 @property (nonatomic, readonly) NSUInteger mraidViewLoadingCheckFrequency;

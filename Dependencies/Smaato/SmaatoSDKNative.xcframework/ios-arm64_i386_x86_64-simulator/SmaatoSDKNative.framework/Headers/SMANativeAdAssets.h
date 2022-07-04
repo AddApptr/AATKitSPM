@@ -13,7 +13,7 @@
 /**
 \c SMANativeAdAssets class contains raw data (values) from Native ad response.
 */
-@interface SMANativeAdAssets : NSObject
+@interface SMANativeAdAssets: NSObject
 
 /**
 Text\string that should be rendered as main text (or description) on view with native ad

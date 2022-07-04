@@ -17,6 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)getBuildVersion;
 
+- (void)defineSDKType:(NSUInteger)sdkType;
+
+- (void)defineMediationName:(NSString *)mediationName;
+
 @end
 
 NS_ASSUME_NONNULL_END

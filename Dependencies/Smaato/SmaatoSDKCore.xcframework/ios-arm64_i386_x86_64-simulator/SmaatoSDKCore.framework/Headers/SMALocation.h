@@ -13,7 +13,7 @@
 /**
  A \c SMALocation object contains the geographical location and altitude of a user.
  */
-@interface SMALocation : NSObject <NSCopying>
+@interface SMALocation: NSObject <NSCopying>
 
 /**
  The latitude associated with the location, specified using the WGS 84 reference frame.
@@ -57,7 +57,7 @@
                                horizontalAccuracy:(double)horizontalAccuracy
                                         timestamp:(NSDate *_Nonnull)timestamp NS_DESIGNATED_INITIALIZER;
 
-+ (null_unspecified instancetype) new NS_UNAVAILABLE;
++ (null_unspecified instancetype)new NS_UNAVAILABLE;
 - (null_unspecified instancetype)init NS_UNAVAILABLE;
 
 @end

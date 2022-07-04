@@ -11,7 +11,7 @@
 /**
 \SMANativeAdRequest class contains settings and data for Native ads request customization
 */
-@interface SMANativeAdRequest : NSObject
+@interface SMANativeAdRequest: NSObject
 
 /**
  Ad space identifier assigned by Smaato
@@ -39,9 +39,10 @@ If the value is not set, SDK will download the privacy URL, Defaults to YES
  */
 @property (nonatomic) BOOL allowMultipleImages;
 
+
 - (instancetype _Nonnull)init NS_UNAVAILABLE;
 
-- (instancetype _Nonnull) new NS_UNAVAILABLE;
+- (instancetype _Nonnull)new NS_UNAVAILABLE;
 
 /**
  Create Native ad request

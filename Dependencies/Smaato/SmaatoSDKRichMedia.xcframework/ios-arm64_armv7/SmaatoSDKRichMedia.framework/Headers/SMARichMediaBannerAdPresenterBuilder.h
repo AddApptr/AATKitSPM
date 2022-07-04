@@ -11,7 +11,7 @@
 #import <SmaatoSDKCore/SMAAPIContext.h>
 #import <SmaatoSDKCore/SMAAdPresenterBuilding.h>
 
-@interface SMARichMediaBannerAdPresenterBuilder : NSObject <SMAAdPresenterBuilding>
+@interface SMARichMediaBannerAdPresenterBuilder: NSObject <SMAAdPresenterBuilding>
 
 /**
  Unavailable.

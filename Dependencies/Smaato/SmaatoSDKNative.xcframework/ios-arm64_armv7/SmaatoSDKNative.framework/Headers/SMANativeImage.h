@@ -11,7 +11,7 @@
 /**
 \SMANativeImage class represents image object of Native ads assets
 */
-@interface SMANativeImage : NSObject
+@interface SMANativeImage: NSObject
 
 /**
 URL of image where it might be downloaded from

@@ -18,12 +18,12 @@ typedef NS_ENUM(NSUInteger, SMAImageAdEventType) {
     SMAImageAdEventTypeOM = 555
 };
 
-@interface SMAImageAdEvent : SMAModelObject
+@interface SMAImageAdEvent: SMAModelObject
 
 @property (nonatomic, readonly) SMAImageAdEventType eventType;
 @property (nonatomic, copy, readonly) NSURL *url;
 @property (nonatomic, copy, readonly) NSDictionary *extension;
-@property (nonatomic, copy) NSArray<SMAViewabilityVerificationResource*> *resources;
+@property (nonatomic, copy) NSArray<SMAViewabilityVerificationResource *> *resources;
 @end
 
 NS_ASSUME_NONNULL_END

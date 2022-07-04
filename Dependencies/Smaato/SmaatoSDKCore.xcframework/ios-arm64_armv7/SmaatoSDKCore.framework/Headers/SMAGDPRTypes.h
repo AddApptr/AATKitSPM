@@ -12,15 +12,15 @@
 #define SMAGDPRTypes_h
 
 /**
- |      Field       |   Purpose #1  |   Purpose #3  |
- |  gps             |               |       X       |
- |  iosadid         |       X       |       X       |
- |  fcid            |       X       |       X       |
- |  iosadtracking   |       X       |               |
- |  gender          |               |       X       |
- |  age             |               |       X       |
- |  zip             |               |       X       |
- |  devicemodel     |               |       X       |
+ |      Field          |   Purpose #1  |   Purpose #3  |
+ |  gps                |                        |        X            |
+ |  iosadid          |          X            |        X            |
+ |  fcid                |          X            |        X            |
+ |  iosadtracking |         X            |                      |
+ |  gender           |                       |        X            |
+ |  age                |                       |        X            |
+ |  zip                  |                       |        X           |
+ |  devicemodel  |                       |        X            |
  */
 typedef NS_ENUM(NSInteger, SMAAdPrivateData) {
     kSMAAdPrivateDataGpsCoordinates,                 // gps

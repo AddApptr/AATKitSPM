@@ -62,15 +62,22 @@
 @end
 
 /**
- \c SMABannerNetworkEvent should be implemented by the CSM adapter in order to have access to the set of methods used to communicate with the ad network of choice. Use \c requestBannerAdWithSize:customData to load the banner request with the ad unit Id parsed from the \c customData dictionary that has been previously set up on the SPX dashboard.
+ \c SMABannerNetworkEvent should be implemented by the CSM adapter in order to have access to the set of methods used to communicate with
+ the ad network of choice. Use \c requestBannerAdWithSize:customData to load the banner request with the ad unit Id parsed from the \c
+ customData dictionary that has been previously set up on the SPX dashboard.
 */
 @protocol SMABannerNetworkEvent <SMANetworkEvent>
 
 @property (nonatomic, weak) id<SMABannerNetworkEventDelegate> _Nullable delegate;
 
 @optional
-- (void)requestBannerAdWithSize:(CGSize)adSize customData:(NSDictionary *_Nonnull)customData objectExtras:(NSDictionary *_Nullable)objectExtras;
+- (void)requestBannerAdWithSize:(CGSize)adSize
+                     customData:(NSDictionary *_Nonnull)customData
+                   objectExtras:(NSDictionary *_Nullable)objectExtras;
 
-- (void)requestBannerAdWithSize:(CGSize)adSize adUnitId:(NSString *_Nonnull)adUnitId appId:(NSString *_Nullable)appId objectExtras:(NSDictionary *_Nullable)objectExtras;
+- (void)requestBannerAdWithSize:(CGSize)adSize
+                       adUnitId:(NSString *_Nonnull)adUnitId
+                          appId:(NSString *_Nullable)appId
+                   objectExtras:(NSDictionary *_Nullable)objectExtras;
 
 @end

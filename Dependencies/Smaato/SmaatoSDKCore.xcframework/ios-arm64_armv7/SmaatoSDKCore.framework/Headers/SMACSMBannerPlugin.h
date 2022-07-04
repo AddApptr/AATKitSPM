@@ -11,6 +11,6 @@
 #import <Foundation/Foundation.h>
 #import <SmaatoSDKCore/SMACSMAdapterPlugin.h>
 
-@interface SMACSMBannerPlugin : SMACSMAdapterPlugin
+@interface SMACSMBannerPlugin: SMACSMAdapterPlugin
 
 @end

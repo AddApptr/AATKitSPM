@@ -9,7 +9,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OguryOptinVideoAd : NSObject
  
-@property (nonatomic, weak, nullable) id <OguryOptinVideoAdDelegate> delegate;
+@property (nonatomic, weak, nullable) id<OguryOptinVideoAdDelegate> delegate;
 @property (nonatomic, strong, readonly) NSString  *adUnitId;
 @property (nonatomic, strong, nullable) NSString * userId;
 
