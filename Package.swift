@@ -73,14 +73,13 @@ let package = Package(
         // AATAdMobMediationAdapter target
         .target(name:"AATKit-AATAdMobMediationAdapter",
                 dependencies: [ "AATKit-GoogleMobileAds",
-                                "AATDependencyHelper",
                                 "AATKit"
                               ],
                 path: "./Sources/AATAdMobMediationAdapter"),
 
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
-                dependencies: [ "AATDependencyHelper", "AATGoogleAdsAdapter",
+                dependencies: [ "AATGoogleAdsAdapter",
                                 .product(name: "GoogleMobileAds", package: "GoogleMobileAds")
                               ],
                 path: "./Sources/GoogleMobileAdsSources"),
@@ -170,9 +169,6 @@ let package = Package(
 
         // AATAdMobMediationAdapter
         .binaryTarget(name: "AATAdMobMediationAdapter", path: "./Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"),
-
-        // Google
-        .binaryTarget(name: "AATDependencyHelper", path: "./Dependencies/Google/AATDependencyHelper.xcframework"),
 
         // Amazon
         .binaryTarget(name: "DTBiOSSDK", path: "./Dependencies/Amazon/DTBiOSSDK.xcframework"),
