@@ -1,0 +1,11 @@
+framework module AATOguryAdapter {
+  umbrella header "AATOguryAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATOguryAdapter.Swift {
+    header "AATOguryAdapter-Swift.h"
+    requires objc
+}

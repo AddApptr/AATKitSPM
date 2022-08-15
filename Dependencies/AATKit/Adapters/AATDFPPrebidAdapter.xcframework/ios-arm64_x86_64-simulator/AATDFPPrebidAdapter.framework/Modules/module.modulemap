@@ -1,0 +1,4 @@
+framework module AATDFPPrebidAdapter {
+  header "AATDFPPrebidAdapter-Swift.h"
+  requires objc
+}

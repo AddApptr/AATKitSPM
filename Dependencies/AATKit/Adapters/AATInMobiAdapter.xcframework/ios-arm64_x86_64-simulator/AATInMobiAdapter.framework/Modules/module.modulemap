@@ -1,0 +1,11 @@
+framework module AATInMobiAdapter {
+  umbrella header "AATInMobiAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATInMobiAdapter.Swift {
+    header "AATInMobiAdapter-Swift.h"
+    requires objc
+}

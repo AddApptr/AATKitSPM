@@ -1,0 +1,11 @@
+framework module AATUnityAdapter {
+  umbrella header "AATUnityAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATUnityAdapter.Swift {
+    header "AATUnityAdapter-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+framework module AATGoogleCMPAdapter {
+  umbrella header "AATGoogleCMPAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATGoogleCMPAdapter.Swift {
+    header "AATGoogleCMPAdapter-Swift.h"
+    requires objc
+}

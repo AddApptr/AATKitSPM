@@ -1,0 +1,11 @@
+framework module AATAdColonyAdapter {
+  umbrella header "AATAdColonyAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATAdColonyAdapter.Swift {
+    header "AATAdColonyAdapter-Swift.h"
+    requires objc
+}

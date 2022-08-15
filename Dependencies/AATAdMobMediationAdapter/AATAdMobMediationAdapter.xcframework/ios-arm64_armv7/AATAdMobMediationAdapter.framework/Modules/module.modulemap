@@ -4,3 +4,8 @@ framework module AATAdMobMediationAdapter {
   export *
   module * { export * }
 }
+
+module AATAdMobMediationAdapter.Swift {
+    header "AATAdMobMediationAdapter-Swift.h"
+    requires objc
+}

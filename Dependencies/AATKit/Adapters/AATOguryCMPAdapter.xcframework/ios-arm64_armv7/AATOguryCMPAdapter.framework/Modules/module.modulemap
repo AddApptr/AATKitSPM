@@ -1,0 +1,11 @@
+framework module AATOguryCMPAdapter {
+  umbrella header "AATOguryCMPAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATOguryCMPAdapter.Swift {
+    header "AATOguryCMPAdapter-Swift.h"
+    requires objc
+}

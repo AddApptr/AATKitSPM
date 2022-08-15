@@ -1,0 +1,11 @@
+framework module AATFacebookAdapter {
+  umbrella header "AATFacebookAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATFacebookAdapter.Swift {
+    header "AATFacebookAdapter-Swift.h"
+    requires objc
+}

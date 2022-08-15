@@ -1,0 +1,11 @@
+framework module AATAmazonAdapter {
+  umbrella header "AATAmazonAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATAmazonAdapter.Swift {
+    header "AATAmazonAdapter-Swift.h"
+    requires objc
+}

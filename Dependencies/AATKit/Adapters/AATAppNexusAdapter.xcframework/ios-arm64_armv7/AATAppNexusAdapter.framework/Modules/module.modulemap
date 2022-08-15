@@ -1,0 +1,11 @@
+framework module AATAppNexusAdapter {
+  umbrella header "AATAppNexusAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATAppNexusAdapter.Swift {
+    header "AATAppNexusAdapter-Swift.h"
+    requires objc
+}

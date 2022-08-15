@@ -1,0 +1,11 @@
+framework module AATVungleAdapter {
+  umbrella header "AATVungleAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATVungleAdapter.Swift {
+    header "AATVungleAdapter-Swift.h"
+    requires objc
+}

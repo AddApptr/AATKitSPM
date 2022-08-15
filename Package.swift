@@ -10,12 +10,12 @@ let package = Package(
     products: [
 
         .library(name: "AATKit-Core", targets: ["AATKit-Core"]),
-        .library(name: "AATKit-M1-Core", targets: ["AATKit-M1-Core"]),
         .library(name: "AATKit-AATAdMobMediationAdapter", targets: ["AATKit-AATAdMobMediationAdapter"]),
 
         // Dependencies
         .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
+        .library(name: "AATKit-AppLovinMax", targets: ["AATKit-AppLovinMax"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
         .library(name: "AATKit-FeedAd", targets: ["AATKit-FeedAd"]),
         .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato"]),
@@ -29,8 +29,7 @@ let package = Package(
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
         .library(name: "AATKit-Vungle", targets: ["AATKit-Vungle"]),
         .library(name: "AATKit-OguryAds", targets: ["AATKit-OgurySdk"]),
-        .library(name: "AATKit-IronSource", targets: ["AATKit-IronSource"]),
-
+        
         // CMPs
         .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
         .library(name: "AATKit-GoogleCMP", targets: ["AATKit-GoogleCMP"]),
@@ -38,6 +37,7 @@ let package = Package(
         // Default Dependencies
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
                                                    "AATKit-AppLovin",
+                                                   "AATKit-AppLovinMax",
                                                    "AATKit-Amazon",
                                                    "AATKit-FeedAd",
                                                    "AATKit-OguryCMP",
@@ -53,22 +53,7 @@ let package = Package(
                                                    "AATKit-Prebid",
                                                    "AATKit-Unity",
                                                    "AATKit-Vungle",
-                                                   "AATKit-IronSource"
                                                   ]),
-        // M1 Default dependencies
-        .library(name: "AATKit-M1-Default", targets: ["AATKit-GoogleMobileAds",
-                                                      "AATKit-AppLovin",
-                                                      "AATKit-Amazon",
-                                                      "AATKit-OguryCMP",
-                                                      "AATKit-GoogleCMP",
-                                                      "AATKit-Smaato",
-                                                      "AATKit-SmartAd",
-                                                      "AATKit-AdColony",
-                                                      "AATKit-InMobi",
-                                                      "AATKit-AppNexus",
-                                                      "AATKit-PubNative",
-                                                      "AATKit-Prebid",
-                                                     ]),
 
     ],
     dependencies: [
@@ -84,11 +69,6 @@ let package = Package(
         .target(name:"AATKit-Core",
                 dependencies: ["AATKit"],
                 path: "./Sources/AATKit"),
-        
-        // AATKit M1 target
-        .target(name:"AATKit-M1-Core",
-                dependencies: ["AATKit-M1"],
-                path: "./Sources/AATKit-M1"),
 
         // AATAdMobMediationAdapter target
         .target(name:"AATKit-AATAdMobMediationAdapter",
@@ -100,7 +80,7 @@ let package = Package(
 
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
-                dependencies: [ "AATDependencyHelper",
+                dependencies: [ "AATDependencyHelper", "AATGoogleAdsAdapter",
                                 .product(name: "GoogleMobileAds", package: "GoogleMobileAds")
                               ],
                 path: "./Sources/GoogleMobileAdsSources"),
@@ -110,31 +90,35 @@ let package = Package(
                 path: "./Sources/AdColonySources"),
 
         .target(name: "AATKit-AppLovin",
-                dependencies: ["AppLovinSDK"],
+                dependencies: ["AppLovinSDK", "AATAppLovinAdapter"],
                 path: "./Sources/AppLovinSources"),
+        
+            .target(name: "AATKit-AppLovinMax",
+                    dependencies: ["AppLovinSDK", "AATAppLovinMaxAdapter"],
+                    path: "./Sources/AppLovinMaxSources"),
 
         .target(name:"AATKit-AppNexus",
-                dependencies: ["AppNexusSDK"],
+                dependencies: ["AppNexusSDK", "AATAppNexusAdapter"],
                 path: "./Sources/AppNexusSources"),
 
         .target(name:"AATKit-Amazon",
-                dependencies: ["DTBiOSSDK"],
+                dependencies: ["DTBiOSSDK", "AATAmazonAdapter"],
                 path: "./Sources/AmazonSources"),
 
         .target(name:"AATKit-FeedAd",
-                dependencies: ["FeedAd"],
+                dependencies: ["FeedAd", "AATFeedAdAdapter"],
                 path: "./Sources/FeedAdSources"),
 
         .target(name:"AATKit-OguryCMP",
-                dependencies: ["OguryChoiceManager", "OguryCore", "OgurySdk"],
+                dependencies: ["OguryChoiceManager", "OguryCore", "OgurySdk", "AATOguryCMPAdapter"],
                 path: "./Sources/OguryCMPSources"),
 
         .target(name:"AATKit-OgurySdk",
-                dependencies: ["OgurySdk", "OguryAds", "OguryCore", "OMSDK_Ogury"],
+                dependencies: ["OgurySdk", "OguryAds", "OguryCore", "OMSDK_Ogury", "AATOguryAdapter"],
                 path: "./Sources/OguryAdsSources"),
 
         .target(name:"AATKit-GoogleCMP",
-                dependencies: [.product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform")],
+                dependencies: [.product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform"), "AATGoogleCMPAdapter"],
                 path: "./Sources/GoogleCMPSources"),
 
         .target(name:"AATKit-Smaato",
@@ -147,47 +131,42 @@ let package = Package(
                                "SmaatoSDKOutstream",
                                "SmaatoSDKRewardedAds",
                                "SmaatoSDKRichMedia",
-                               "SmaatoSDKVideo"],
+                               "SmaatoSDKVideo",
+                              "AATSmaatoAdapter"],
                 path: "./Sources/SmaatoSources"),
 
         .target(name:"AATKit-SmartAd",
-                dependencies: ["SASDisplayKit","SCSCoreKit"],
+                dependencies: ["SASDisplayKit","SCSCoreKit", "AATSmartAdAdapter"],
                 path: "./Sources/SmartAdSources"),
 
         .target(name:"AATKit-YOC",
-               dependencies: ["VisxSDK"],
+               dependencies: ["VisxSDK", "AATYOCAdapter"],
                path: "./Sources/YOCSources"),
 
         .target(name:"AATKit-InMobi",
-                dependencies: ["InMobiSDK"],
+                dependencies: ["InMobiSDK", "AATInMobiAdapter"],
                 path: "./Sources/InMobiSources"),
 
         .target(name:"AATKit-PubNative",
-                dependencies: ["HyBid", "OMSDK_Pubnativenet"],
+                dependencies: ["HyBid", "OMSDK_Pubnativenet", "AATPubNativeAdapter"],
                 path: "./Sources/PubnativeSources"),
 
         .target(name:"AATKit-Prebid",
-                dependencies: ["PrebidMobile", "OMSDK-Static_Prebidorg"],
+                dependencies: ["PrebidMobile", "OMSDK-Static_Prebidorg", "AATDFPPrebidAdapter"],
                 path: "./Sources/PrebidSources"),
 
         .target(name:"AATKit-Unity",
-                dependencies: ["UnityAds"],
+                dependencies: ["UnityAds", "AATUnityAdapter"],
                 path: "./Sources/UnitySources"),
 
         .target(name:"AATKit-Vungle",
-                dependencies: ["VungleSDK"],
+                dependencies: ["VungleSDK", "AATVungleAdapter"],
                 path: "./Sources/VungleSources"),
-
         
-        .target(name:"AATKit-IronSource",
-                dependencies: ["IronSource"],
-                path: "./Sources/IronSourceSources"),
-
         
         // Mark: Binary Targets
         // AATKit
         .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
-        .binaryTarget(name: "AATKit-M1", path: "./Dependencies/AATKit-M1/AATKit-M1.xcframework"),
 
         // AATAdMobMediationAdapter
         .binaryTarget(name: "AATAdMobMediationAdapter", path: "./Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"),
@@ -225,7 +204,6 @@ let package = Package(
         .binaryTarget(name: "SCSCoreKit", path: "./Dependencies/SmartAd/SCSCoreKit.xcframework"),
 
         //AdColony
-        .binaryTarget(name: "AATAdColonyAdapter", path: "./Dependencies/AdColony/AATAdColonyAdapter.xcframework"),
         .binaryTarget(name: "AdColony", path: "./Dependencies/AdColony/AdColony.xcframework"),
 
         // YOC
@@ -248,8 +226,26 @@ let package = Package(
         // Vungle
         .binaryTarget(name: "VungleSDK", path: "./Dependencies/Vungle/VungleSDK.xcframework"),
         
-        // IronSource
-        .binaryTarget(name: "IronSource", path: "./Dependencies/IronSource/IronSource.xcframework"),
+        // AATKit Adapters
+        .binaryTarget(name: "AATAdColonyAdapter", path: "./Dependencies/AATKit/Adapters/AATAdColonyAdapter.xcframework"),
+        .binaryTarget(name: "AATAmazonAdapter", path: "./Dependencies/AATKit/Adapters/AATAmazonAdapter.xcframework"),
+        .binaryTarget(name: "AATAppLovinAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinAdapter.xcframework"),
+        .binaryTarget(name: "AATAppLovinMaxAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinMaxAdapter.xcframework"),
+        .binaryTarget(name: "AATAppNexusAdapter", path: "./Dependencies/AATKit/Adapters/AATAppNexusAdapter.xcframework"),
+        .binaryTarget(name: "AATDFPPrebidAdapter", path: "./Dependencies/AATKit/Adapters/AATDFPPrebidAdapter.xcframework"),
+        .binaryTarget(name: "AATFacebookAdapter", path: "./Dependencies/AATKit/Adapters/AATFacebookAdapter.xcframework"),
+        .binaryTarget(name: "AATFeedAdAdapter", path: "./Dependencies/AATKit/Adapters/AATFeedAdAdapter.xcframework"),
+        .binaryTarget(name: "AATGoogleAdsAdapter", path: "./Dependencies/AATKit/Adapters/AATGoogleAdsAdapter.xcframework"),
+        .binaryTarget(name: "AATGoogleCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATGoogleCMPAdapter.xcframework"),
+        .binaryTarget(name: "AATInMobiAdapter", path: "./Dependencies/AATKit/Adapters/AATInMobiAdapter.xcframework"),
+        .binaryTarget(name: "AATOguryAdapter", path: "./Dependencies/AATKit/Adapters/AATOguryAdapter.xcframework"),
+        .binaryTarget(name: "AATOguryCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATOguryCMPAdapter.xcframework"),
+        .binaryTarget(name: "AATPubNativeAdapter", path: "./Dependencies/AATKit/Adapters/AATPubNativeAdapter.xcframework"),
+        .binaryTarget(name: "AATSmaatoAdapter", path: "./Dependencies/AATKit/Adapters/AATSmaatoAdapter.xcframework"),
+        .binaryTarget(name: "AATSmartAdAdapter", path: "./Dependencies/AATKit/Adapters/AATSmartAdAdapter.xcframework"),
+        .binaryTarget(name: "AATUnityAdapter", path: "./Dependencies/AATKit/Adapters/AATUnityAdapter.xcframework"),
+        .binaryTarget(name: "AATVungleAdapter", path: "./Dependencies/AATKit/Adapters/AATVungleAdapter.xcframework"),
+        .binaryTarget(name: "AATYOCAdapter", path: "./Dependencies/AATKit/Adapters/AATYOCAdapter.xcframework"),
     ]
 )
 

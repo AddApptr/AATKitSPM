@@ -1,0 +1,11 @@
+framework module AATSmartAdAdapter {
+  umbrella header "AATSmartAdAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATSmartAdAdapter.Swift {
+    header "AATSmartAdAdapter-Swift.h"
+    requires objc
+}

@@ -4,56 +4,146 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/AATAdMobMediationAdapter-Swift.h</key>
+		<data>
+		4h4o9NFkWgmwat5Izv3zsIXHzhU=
+		</data>
 		<key>Headers/AATAdMobMediationAdapter.h</key>
 		<data>
-		NfOVNjwppDIIpst42Y6xr3bUBKg=
+		3zogg0MjzYuUYAMsciL36vMDa18=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mhEpAoErSBvWL0jGs6X7idmtsxw=
+		mZ0porYEjYCeCMWmGvap+L4Jogc=
 		</data>
-		<key>LICENSE</key>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ATUkm5ksn4eII3dsfTcBMnongXo=
+		P1QX6Dtf25WL7N6fXoxk1bCoxLM=
+		</data>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		dmjunrFR1K/RmWd/xg7xzvVQUeo=
+		</data>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		FVNnmoSZsX4oarC26UQjr3ThST0=
+		</data>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		KPOyoeV1bwQjIk3/s4+JUXqqckY=
+		</data>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		mQFuCsXScCGwUSoE0bJOejANc1M=
+		</data>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		6cx3X4SkvZashRoMUEEJAPIhNbM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		R/0nzYbXJyrTshsCTAWoFW0LMcM=
+		lQZZl8+IFKEOJuKJl9mKq5St3qc=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/AATAdMobMediationAdapter-Swift.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4h4o9NFkWgmwat5Izv3zsIXHzhU=
+			</data>
+			<key>hash2</key>
+			<data>
+			awgmbvolUyieelLTIOUd792B/JIeAe190cX4RKeA7p0=
+			</data>
+		</dict>
 		<key>Headers/AATAdMobMediationAdapter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NfOVNjwppDIIpst42Y6xr3bUBKg=
+			3zogg0MjzYuUYAMsciL36vMDa18=
 			</data>
 			<key>hash2</key>
 			<data>
-			TvQB1yT1eigEND+zx4UXCH/vMZunjUQmuc3Dyx/xWtQ=
+			Y7ULPU5WscKY4TZK5a0fl9gT/7wlpgOQH68oG8/WzVQ=
 			</data>
 		</dict>
-		<key>LICENSE</key>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ATUkm5ksn4eII3dsfTcBMnongXo=
+			P1QX6Dtf25WL7N6fXoxk1bCoxLM=
 			</data>
 			<key>hash2</key>
 			<data>
-			aTDwcLVuVwNb5tdJNCUEVkMmpGjPeU3YwWbtrgTlh2U=
+			vwRZTx62KU3xq1f+8eAu9Dnac1DI9Q6W6/J53Xvhkd8=
+			</data>
+		</dict>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dmjunrFR1K/RmWd/xg7xzvVQUeo=
+			</data>
+			<key>hash2</key>
+			<data>
+			//dGnuee5iFS/YB7Y9DSUGI/rZX33ZtICDvIrcWC7HQ=
+			</data>
+		</dict>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FVNnmoSZsX4oarC26UQjr3ThST0=
+			</data>
+			<key>hash2</key>
+			<data>
+			VGOrRRFnjrnTMWm1/M+A37n2ahstxawuN0UMXAtxYvs=
+			</data>
+		</dict>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KPOyoeV1bwQjIk3/s4+JUXqqckY=
+			</data>
+			<key>hash2</key>
+			<data>
+			ewqDMg8rhd/Xe6HYOq3Ysq7UvDmgwBsL+hkTCo4Nkio=
+			</data>
+		</dict>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mQFuCsXScCGwUSoE0bJOejANc1M=
+			</data>
+			<key>hash2</key>
+			<data>
+			iZz5Zaw9XtS+oSzcnfZunS3VYbuyhVgb0HhyPE62VXE=
+			</data>
+		</dict>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6cx3X4SkvZashRoMUEEJAPIhNbM=
+			</data>
+			<key>hash2</key>
+			<data>
+			mbC9Kozcm7PzmvQZNBtvUkVjGHVnIHFw6iv14Z/rbxw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R/0nzYbXJyrTshsCTAWoFW0LMcM=
+			lQZZl8+IFKEOJuKJl9mKq5St3qc=
 			</data>
 			<key>hash2</key>
 			<data>
-			UHY5H7m/AGycC+OhlsXpR+ks7TfdNLGzYxM5Xr/5p90=
+			pJ064UYnI7h15QrUf7xJtszTJx8rce45EMwwO88HRoo=
 			</data>
 		</dict>
 	</dict>

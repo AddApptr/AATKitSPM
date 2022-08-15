@@ -1,0 +1,27 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AATGoogleCMPAdapter
+@_exported import AATGoogleCMPAdapter
+import AATKit
+import Foundation
+import Swift
+import UserMessagingPlatform
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class AATCMPGoogle : ObjectiveC.NSObject, AATKit.AATCMPProtocol, AATKit.AATAdDriverLoggerProtocol {
+  @objc weak public var cmpDelegate: AATKit.AATCMPDelegate?
+  @objc override dynamic public init()
+  @objc public func isSuccessfullyInitialized(_ source: Swift.String) -> Swift.Bool
+  @objc public func start(_ source: Swift.String)
+  public func stateUpdated()
+  @objc deinit
+}
+extension AATGoogleCMPAdapter.AATCMPGoogle {
+  @objc dynamic public func showIfNeeded(_ source: Swift.String, _ viewController: UIKit.UIViewController)
+  @objc dynamic public func editConsent(_ source: Swift.String, _ viewController: UIKit.UIViewController)
+  @objc dynamic public func getConsentForNetwork(_ source: Swift.String, _ network: AATKit.AATAdNetwork) -> AATKit.NonIABConsent
+  @objc dynamic public func reload(_ source: Swift.String, _ viewController: UIKit.UIViewController)
+  @objc dynamic public func setDelegate(_ source: Swift.String, _ delegate: AATKit.AATCMPDelegate)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}

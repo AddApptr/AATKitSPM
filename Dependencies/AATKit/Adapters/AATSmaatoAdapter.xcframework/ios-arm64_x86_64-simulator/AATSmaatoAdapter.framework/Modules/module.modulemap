@@ -1,0 +1,11 @@
+framework module AATSmaatoAdapter {
+  umbrella header "AATSmaatoAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATSmaatoAdapter.Swift {
+    header "AATSmaatoAdapter-Swift.h"
+    requires objc
+}

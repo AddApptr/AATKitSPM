@@ -1,0 +1,11 @@
+framework module AATYOCAdapter {
+  umbrella header "AATYOCAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATYOCAdapter.Swift {
+    header "AATYOCAdapter-Swift.h"
+    requires objc
+}
