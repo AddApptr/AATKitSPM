@@ -76,7 +76,7 @@ public enum AATNativeAdAssetsType : Swift.String {
     get
   }
 }
-@objc @_hasMissingDesignatedInitializers public class AATSimpleConsent : AATKit.AATConsentImplementation {
+@_hasMissingDesignatedInitializers @objc public class AATSimpleConsent : AATKit.AATConsentImplementation {
   @objc public init(nonIABConsent: AATKit.NonIABConsent)
   @objc deinit
 }
@@ -253,7 +253,7 @@ public protocol AATAdNetworkDriverManager : AnyObject {
 extension AATKit.AATRuntimeConfiguration : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
-@objc @_inheritsConvenienceInitializers public class AATConfiguration : AATKit.AATRuntimeConfiguration {
+@_inheritsConvenienceInitializers @objc public class AATConfiguration : AATKit.AATRuntimeConfiguration {
   @objc weak public var delegate: AATKit.AATDelegate?
   @objc public var initialRules: Swift.String?
   @objc public var shouldCacheRules: Swift.Bool
@@ -295,16 +295,16 @@ extension UIKit.UIColor {
   @objc func cancel(request: AATKit.AATBannerRequest)
   @objc func countAdSpace()
 }
-@objc public protocol AATBannerPlacement {
-  typealias AATRequestCompletion = ((_ view: AATKit.AATBannerPlacementWrapperView?, _ error: AATKit.AATBannerRequestError?) -> Swift.Void)
-  @objc func requestAd(request: AATKit.AATBannerRequest, completion: @escaping Self.AATRequestCompletion)
-  @objc func cancel(request: AATKit.AATBannerRequest)
-  @objc func countAdSpace()
-}
 public protocol AATApplovinDriverProtocol {
   static func setHasUserConsent(isObtained: Swift.Bool)
 }
-@objc @_hasMissingDesignatedInitializers public class AATImpression : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc public class AATImpression : ObjectiveC.NSObject {
+  @objc final public let bannerSize: Swift.String?
+  @objc final public let adNetwork: AATKit.AATAdNetwork
+  @objc final public let networkKey: Swift.String
+  @objc final public let isDirectDeal: Swift.Bool
+  @objc final public let mediationType: AATKit.AATMediationType
+  @objc final public let price: Swift.Double
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -347,7 +347,7 @@ public enum AATDriverLog : Foundation.LocalizedError {
   @objc func getConsentForNetwork(_ network: AATKit.AATAdNetwork) -> AATKit.NonIABConsent
   @objc func getConsentForAddapptr() -> AATKit.NonIABConsent
 }
-@objc @_hasMissingDesignatedInitializers public class AATVendorConsent : AATKit.AATConsentImplementation {
+@_hasMissingDesignatedInitializers @objc public class AATVendorConsent : AATKit.AATConsentImplementation {
   @objc public init(delegate: AATKit.AATVendorConsentDelegate?)
   @objc deinit
 }
@@ -396,7 +396,7 @@ extension AATKit.AATBannerCacheConfiguration : Foundation.NSCopying {
 }
 public protocol AATBannerAdDriverProtocol : AATKit.AATAdDriverProtocol {
   var delegate: AATKit.AATAdDriverEventsDelegate? { get set }
-  func load(viewController: UIKit.UIViewController, adID: Swift.String, size: AATKit.AATBannerSize, extraInfo: Swift.String?) -> Swift.Bool
+  func load(viewController: UIKit.UIViewController, adID: Swift.String, size: AATKit.AATBannerSize, extraConfiguration: AATKit.AATAdRequestConfiguration?) -> Swift.Bool
   func getBannerView() -> UIKit.UIView?
 }
 @objc public enum AATLogLevel : Swift.Int {
@@ -413,6 +413,10 @@ public protocol AATBannerAdDriverProtocol : AATKit.AATAdDriverProtocol {
   public var rawValue: Swift.Int {
     get
   }
+}
+public struct AATAdRequestConfiguration {
+  public var extraInfo: Swift.String?
+  public var publisherProvidedID: Swift.String?
 }
 public protocol AATAdColonyDriverProtocol {
   static var shared: Self { get }
@@ -613,21 +617,22 @@ public protocol AATNetworkDriverFactory {
   @objc public static func setLogLevel(logLevel: AATKit.AATLogLevel)
   @objc public static func setVideoAdsMuted(_ isMuted: Swift.Bool)
   @objc public static func setReportsDelegate(_ delegate: AATKit.AATReportsDelegate)
+  @objc public static func setPublisherProvidedId(_ publisherProvidedId: Swift.String)
   @objc deinit
 }
 public protocol AATFullscreenAdDriverProtocol : AATKit.AATAdDriverProtocol {
   var delegate: AATKit.AATFullscreenDriverEventsDelegate? { get set }
-  func load(viewController: UIKit.UIViewController, adID: Swift.String, extraInfo: Swift.String?) -> Swift.Bool
+  func load(viewController: UIKit.UIViewController, adID: Swift.String, extraConfiguration: AATKit.AATAdRequestConfiguration?) -> Swift.Bool
   func showInternal() -> Swift.Bool
   func canLoadRewardedAd() -> Swift.Bool
 }
 extension AATKit.AATFullscreenAdDriverProtocol {
   public func canLoadRewardedAd() -> Swift.Bool
 }
-@frozen public enum AATMediationType : Swift.Int {
-  case WATERFALL
-  case AUCTION
-  case MAYO
+@frozen @objc public enum AATMediationType : Swift.Int {
+  case WATERFALL = 1
+  case AUCTION = 2
+  case MAYO = 3
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -683,7 +688,7 @@ public protocol AATAmazonHBDriverProtocol {
 extension AATKit.NetworkReachabilityManager.NetworkReachabilityStatus : Swift.Equatable {
 }
 public func == (lhs: AATKit.NetworkReachabilityManager.NetworkReachabilityStatus, rhs: AATKit.NetworkReachabilityManager.NetworkReachabilityStatus) -> Swift.Bool
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class AATBannerPlacementWrapperView : UIKit.UIView {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class AATBannerPlacementWrapperView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
   @objc deinit
 }
@@ -826,7 +831,7 @@ extension AATKit.AATLocationUtils : CoreLocation.CLLocationManagerDelegate {
 }
 public protocol AATNativeAdDriverProtocol : AATKit.AATAdDriverProtocol {
   var delegate: AATKit.AATNativeAdDriverEventsDelegate? { get set }
-  func load(viewController: UIKit.UIViewController, adID: Swift.String, extraInfo: Swift.String?) -> Swift.Bool
+  func load(viewController: UIKit.UIViewController, adID: Swift.String, extraConfiguration: AATKit.AATAdRequestConfiguration?) -> Swift.Bool
   func attachToView(_ view: UIKit.UIView, mainImageView: UIKit.UIView?, iconView: UIKit.UIView?, ctaView: UIKit.UIView?)
   func isReady() -> Swift.Bool
 }

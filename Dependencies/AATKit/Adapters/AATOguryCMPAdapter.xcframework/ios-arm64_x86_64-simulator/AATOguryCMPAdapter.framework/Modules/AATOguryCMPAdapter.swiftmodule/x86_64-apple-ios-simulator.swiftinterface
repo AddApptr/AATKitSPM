@@ -5,6 +5,7 @@ import AATKit
 @_exported import AATOguryCMPAdapter
 import Foundation
 import OguryChoiceManager
+import OgurySdk
 import Swift
 import UIKit
 import _Concurrency

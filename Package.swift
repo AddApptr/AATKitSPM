@@ -58,7 +58,7 @@ let package = Package(
     ],
     dependencies: [
         // AdNetworks supporting SPM
-        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("7.22.0")),
+        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("8.0.0")),
         .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("11.4.3")),
         .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("9.6.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file

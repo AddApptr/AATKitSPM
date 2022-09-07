@@ -393,19 +393,15 @@ typedef SWIFT_ENUM(NSInteger, VerticalAlign, open) {
 @class AATBannerPlacementWrapperView;
 
 /// A cache of automatically preloaded banner ads.
-/// The cache will always try to have a defined amount of banners available for immediate handout to the app whenever they are needed. <em>Note:</em> The BannerCache needs to be destroyed when no longer needed. See <code>AATBannerCache/init(cacheConfiguration:)</code> and <code>AATBannerCache/init(cacheConfiguration:statisticsListener:)</code>
-/// \param cacheConfiguration instance used to configure the cache.
-///
+/// The cache will always try to have a defined amount of banners available for immediate handout to the app whenever they are needed. <em>Note:</em> The BannerCache needs to be destroyed when no longer needed. See <code>AATBannerCache/init(cacheConfiguration:)</code>
 SWIFT_CLASS("_TtC6AATKit14AATBannerCache")
 @interface AATBannerCache : NSObject
 /// set statistics delegate
-/// \param statisticsDelegate <code>AATStatisticsDelegate</code> implementation that will be notified about statistics events.
-///
+/// <code>AATStatisticsDelegate</code> implementation that will be notified about statistics events.
 @property (nonatomic, weak) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
 /// Setting impressions delegate
 /// Set the banner cache <code>AATImpressionDelegate</code>
-/// \param impressionDelegate the <code>AATImpressionDelegate</code> instance
-///
+/// <code>AATImpressionDelegate</code> instance
 @property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
 /// Creates a cache of automatically preloaded banner ads.
 /// \param cacheConfiguration instance of <code>AATBannerCacheConfiguration</code> used to configure the cache.
@@ -488,15 +484,6 @@ SWIFT_CLASS("_TtC6AATKit22AATBannerConfiguration")
 
 @interface AATBannerConfiguration (SWIFT_EXTENSION(AATKit)) <NSCopying>
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-/// In-feed banners placement
-SWIFT_PROTOCOL("_TtP6AATKit18AATBannerPlacement_")
-@protocol AATBannerPlacement
-- (void)requestAdWithRequest:(AATBannerRequest * _Nonnull)request completion:(void (^ _Nonnull)(AATBannerPlacementWrapperView * _Nullable, AATBannerRequestError * _Nullable))completion;
-- (void)cancelWithRequest:(AATBannerRequest * _Nonnull)request;
-- (void)countAdSpace;
 @end
 
 typedef SWIFT_ENUM(NSInteger, AATBannerPlacementSize, open) {
@@ -656,7 +643,7 @@ SWIFT_PROTOCOL("_TtP6AATKit11AATDelegate_")
 @protocol AATDelegate
 @optional
 /// Notifies that the AATKit has obtained ad rules.
-/// \param fromTheServer Indicates if the rules came from the server. It will return false if the currently used rules come from the <code>AATSDK/setInitialRules(rules:)</code> method or the cached rules are used.
+/// \param fromTheServer Indicates if the rules came from the server. It will return false if the currently used rules come from the <code>AATSDK.setInitialRules(rules:)</code> method or the cached rules are used.
 ///
 - (void)AATKitObtainedAdRulesFromTheServer:(BOOL)fromTheServer;
 /// Notifies that application’s bundle ID was not recognized by the AddApptr server.
@@ -705,10 +692,17 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 
 
 
+enum AATMediationType : NSInteger;
 
-/// Object containing impression level information.
+/// An object contains impression level information.
 SWIFT_CLASS("_TtC6AATKit13AATImpression")
 @interface AATImpression : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable bannerSize;
+@property (nonatomic, readonly) enum AATAdNetwork adNetwork;
+@property (nonatomic, readonly, copy) NSString * _Nonnull networkKey;
+@property (nonatomic, readonly) BOOL isDirectDeal;
+@property (nonatomic, readonly) enum AATMediationType mediationType;
+@property (nonatomic, readonly) double price;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -719,14 +713,13 @@ SWIFT_CLASS("_TtC6AATKit13AATImpression")
 SWIFT_PROTOCOL("_TtP6AATKit21AATImpressionDelegate_")
 @protocol AATImpressionDelegate
 /// Notifies that AATKit has counted an impression.
-/// \param impression the <code>AATImpression</code> object
+/// \param impression the AATImpression object
 ///
 - (void)didCountImpression:(AATImpression * _Nonnull)impression;
 @end
 
 @protocol AATInfeedBannerPlacementDelegate;
 
-/// This protocol should replace <code>AATBannerPlacement</code>
 SWIFT_PROTOCOL("_TtP6AATKit24AATInfeedBannerPlacement_")
 @protocol AATInfeedBannerPlacement
 /// Set the placement delegate that will listen to ad loading and display events
@@ -824,6 +817,17 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATManagedConsentDelegate_")
 - (void)managedConsentCMPFailedToLoad:(AATManagedConsent * _Nonnull)managedConsent with:(NSString * _Nonnull)error;
 - (void)managedConsentCMPFailedToShow:(AATManagedConsent * _Nonnull)managedConsent with:(NSString * _Nonnull)error;
 @end
+
+/// <ul>
+///   <li>
+///     AATKit rule mediation type
+///   </li>
+/// </ul>
+typedef SWIFT_ENUM(NSInteger, AATMediationType, closed) {
+  AATMediationTypeWATERFALL = 1,
+  AATMediationTypeAUCTION = 2,
+  AATMediationTypeMAYO = 3,
+};
 
 @protocol AATMultiSizeBannerPlacementDelegate;
 
@@ -1176,8 +1180,6 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// <b>Only one Rewarded Video placement can be used within the app.</b>
 /// \param name Unique name of placement. The same name will be used in addapptr.com account.
 ///
-/// \param statisticsListener AATStatisticsListener implementation that will be notified about statistics events.
-///
 ///
 /// returns:
 /// AATPlacement, or nil if placement cannot be created.
@@ -1187,8 +1189,6 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// \param name Unique name of placement. The same name will be used in addapptr.com account.
 ///
 /// \param size Size of placement. Use <code>AATBannerPlacementSize</code>.
-///
-/// \param statisticsListener AATStatisticsListener implementation that will be notified about statistics events.
 ///
 ///
 /// returns:
@@ -1202,13 +1202,11 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// <code>AATMultiSizeBannerPlacement</code> instance, or nil if placement cannot be created.
 + (id <AATMultiSizeBannerPlacement> _Nullable)createMultiSizeBannerPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 /// Creates a new banner placement. If the banner placement of given name already exists, it will be returned.
-/// The placement will create a copy of the configuration.</b> Any changes made to the configuration after placement is created will be ignored.
+/// The placement will create a copy of the configuration.Any changes made to the configuration after placement is created will be ignored.
 /// The placement will ignore any changes made to configuration after it was created.
 /// \param name Unique name of placement. The same name will be used in addapptr.com account.
 ///
 /// \param configuration The <code>AATBannerConfiguration</code> for this placement.
-///
-/// \param statisticsListener AATStatisticsListener implementation that will be notified about statistics events.
 ///
 ///
 /// returns:
@@ -1217,7 +1215,7 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// Creates a new AppOpen placement.
 /// <em>NOTE:</em> You should register your <code>placementName</code> on the AddApptr website
 /// if you intend to target it with specific rules.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// \param placementName Unique name of placement. The same name will be used in addapptr.com account.
 ///
 ///
 /// returns:
@@ -1264,12 +1262,12 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 + (void)setOptionWithOptionName:(NSString * _Nonnull)optionName optionValue:(NSString * _Nonnull)optionValue;
 /// Sets the targeting information for the application.
 /// This information will be used only if no placement-specific targeting is available.
-/// \param info Map with targeting information. see <code>setTargetingInfo(placement:info:)</code>
+/// \param info Map with targeting information.
 ///
 + (void)setTargetingInfoWithInfo:(NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)info;
 /// Sets the content targeting url for the application.
 /// This information will be used only if no placement-specific targeting is available.
-/// \param targetingUrl The targeting url. see <code>setContentTargetingUrl(placement:targetingUrl:)</code>
+/// \param targetingUrl The targeting url
 ///
 + (void)setContentTargetingUrlWithTargetingUrl:(NSString * _Nonnull)targetingUrl;
 /// Adds an ad network to the list of ad networks that receive targeting keywords (if any set).
@@ -1297,6 +1295,10 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 + (void)setLogLevelWithLogLevel:(enum AATLogLevel)logLevel;
 + (void)setVideoAdsMuted:(BOOL)isMuted;
 + (void)setReportsDelegate:(id <AATReportsDelegate> _Nonnull)delegate;
+/// Allow passing PublisherProvidedId to AdNetworks that support it
+/// \param publisherProvidedId Publisher Provided Id
+///
++ (void)setPublisherProvidedId:(NSString * _Nonnull)publisherProvidedId;
 @end
 
 
@@ -1866,19 +1868,15 @@ typedef SWIFT_ENUM(NSInteger, VerticalAlign, open) {
 @class AATBannerPlacementWrapperView;
 
 /// A cache of automatically preloaded banner ads.
-/// The cache will always try to have a defined amount of banners available for immediate handout to the app whenever they are needed. <em>Note:</em> The BannerCache needs to be destroyed when no longer needed. See <code>AATBannerCache/init(cacheConfiguration:)</code> and <code>AATBannerCache/init(cacheConfiguration:statisticsListener:)</code>
-/// \param cacheConfiguration instance used to configure the cache.
-///
+/// The cache will always try to have a defined amount of banners available for immediate handout to the app whenever they are needed. <em>Note:</em> The BannerCache needs to be destroyed when no longer needed. See <code>AATBannerCache/init(cacheConfiguration:)</code>
 SWIFT_CLASS("_TtC6AATKit14AATBannerCache")
 @interface AATBannerCache : NSObject
 /// set statistics delegate
-/// \param statisticsDelegate <code>AATStatisticsDelegate</code> implementation that will be notified about statistics events.
-///
+/// <code>AATStatisticsDelegate</code> implementation that will be notified about statistics events.
 @property (nonatomic, weak) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
 /// Setting impressions delegate
 /// Set the banner cache <code>AATImpressionDelegate</code>
-/// \param impressionDelegate the <code>AATImpressionDelegate</code> instance
-///
+/// <code>AATImpressionDelegate</code> instance
 @property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
 /// Creates a cache of automatically preloaded banner ads.
 /// \param cacheConfiguration instance of <code>AATBannerCacheConfiguration</code> used to configure the cache.
@@ -1961,15 +1959,6 @@ SWIFT_CLASS("_TtC6AATKit22AATBannerConfiguration")
 
 @interface AATBannerConfiguration (SWIFT_EXTENSION(AATKit)) <NSCopying>
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
-@end
-
-
-/// In-feed banners placement
-SWIFT_PROTOCOL("_TtP6AATKit18AATBannerPlacement_")
-@protocol AATBannerPlacement
-- (void)requestAdWithRequest:(AATBannerRequest * _Nonnull)request completion:(void (^ _Nonnull)(AATBannerPlacementWrapperView * _Nullable, AATBannerRequestError * _Nullable))completion;
-- (void)cancelWithRequest:(AATBannerRequest * _Nonnull)request;
-- (void)countAdSpace;
 @end
 
 typedef SWIFT_ENUM(NSInteger, AATBannerPlacementSize, open) {
@@ -2129,7 +2118,7 @@ SWIFT_PROTOCOL("_TtP6AATKit11AATDelegate_")
 @protocol AATDelegate
 @optional
 /// Notifies that the AATKit has obtained ad rules.
-/// \param fromTheServer Indicates if the rules came from the server. It will return false if the currently used rules come from the <code>AATSDK/setInitialRules(rules:)</code> method or the cached rules are used.
+/// \param fromTheServer Indicates if the rules came from the server. It will return false if the currently used rules come from the <code>AATSDK.setInitialRules(rules:)</code> method or the cached rules are used.
 ///
 - (void)AATKitObtainedAdRulesFromTheServer:(BOOL)fromTheServer;
 /// Notifies that application’s bundle ID was not recognized by the AddApptr server.
@@ -2178,10 +2167,17 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 
 
 
+enum AATMediationType : NSInteger;
 
-/// Object containing impression level information.
+/// An object contains impression level information.
 SWIFT_CLASS("_TtC6AATKit13AATImpression")
 @interface AATImpression : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable bannerSize;
+@property (nonatomic, readonly) enum AATAdNetwork adNetwork;
+@property (nonatomic, readonly, copy) NSString * _Nonnull networkKey;
+@property (nonatomic, readonly) BOOL isDirectDeal;
+@property (nonatomic, readonly) enum AATMediationType mediationType;
+@property (nonatomic, readonly) double price;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2192,14 +2188,13 @@ SWIFT_CLASS("_TtC6AATKit13AATImpression")
 SWIFT_PROTOCOL("_TtP6AATKit21AATImpressionDelegate_")
 @protocol AATImpressionDelegate
 /// Notifies that AATKit has counted an impression.
-/// \param impression the <code>AATImpression</code> object
+/// \param impression the AATImpression object
 ///
 - (void)didCountImpression:(AATImpression * _Nonnull)impression;
 @end
 
 @protocol AATInfeedBannerPlacementDelegate;
 
-/// This protocol should replace <code>AATBannerPlacement</code>
 SWIFT_PROTOCOL("_TtP6AATKit24AATInfeedBannerPlacement_")
 @protocol AATInfeedBannerPlacement
 /// Set the placement delegate that will listen to ad loading and display events
@@ -2297,6 +2292,17 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATManagedConsentDelegate_")
 - (void)managedConsentCMPFailedToLoad:(AATManagedConsent * _Nonnull)managedConsent with:(NSString * _Nonnull)error;
 - (void)managedConsentCMPFailedToShow:(AATManagedConsent * _Nonnull)managedConsent with:(NSString * _Nonnull)error;
 @end
+
+/// <ul>
+///   <li>
+///     AATKit rule mediation type
+///   </li>
+/// </ul>
+typedef SWIFT_ENUM(NSInteger, AATMediationType, closed) {
+  AATMediationTypeWATERFALL = 1,
+  AATMediationTypeAUCTION = 2,
+  AATMediationTypeMAYO = 3,
+};
 
 @protocol AATMultiSizeBannerPlacementDelegate;
 
@@ -2649,8 +2655,6 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// <b>Only one Rewarded Video placement can be used within the app.</b>
 /// \param name Unique name of placement. The same name will be used in addapptr.com account.
 ///
-/// \param statisticsListener AATStatisticsListener implementation that will be notified about statistics events.
-///
 ///
 /// returns:
 /// AATPlacement, or nil if placement cannot be created.
@@ -2660,8 +2664,6 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// \param name Unique name of placement. The same name will be used in addapptr.com account.
 ///
 /// \param size Size of placement. Use <code>AATBannerPlacementSize</code>.
-///
-/// \param statisticsListener AATStatisticsListener implementation that will be notified about statistics events.
 ///
 ///
 /// returns:
@@ -2675,13 +2677,11 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// <code>AATMultiSizeBannerPlacement</code> instance, or nil if placement cannot be created.
 + (id <AATMultiSizeBannerPlacement> _Nullable)createMultiSizeBannerPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 /// Creates a new banner placement. If the banner placement of given name already exists, it will be returned.
-/// The placement will create a copy of the configuration.</b> Any changes made to the configuration after placement is created will be ignored.
+/// The placement will create a copy of the configuration.Any changes made to the configuration after placement is created will be ignored.
 /// The placement will ignore any changes made to configuration after it was created.
 /// \param name Unique name of placement. The same name will be used in addapptr.com account.
 ///
 /// \param configuration The <code>AATBannerConfiguration</code> for this placement.
-///
-/// \param statisticsListener AATStatisticsListener implementation that will be notified about statistics events.
 ///
 ///
 /// returns:
@@ -2690,7 +2690,7 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// Creates a new AppOpen placement.
 /// <em>NOTE:</em> You should register your <code>placementName</code> on the AddApptr website
 /// if you intend to target it with specific rules.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// \param placementName Unique name of placement. The same name will be used in addapptr.com account.
 ///
 ///
 /// returns:
@@ -2737,12 +2737,12 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 + (void)setOptionWithOptionName:(NSString * _Nonnull)optionName optionValue:(NSString * _Nonnull)optionValue;
 /// Sets the targeting information for the application.
 /// This information will be used only if no placement-specific targeting is available.
-/// \param info Map with targeting information. see <code>setTargetingInfo(placement:info:)</code>
+/// \param info Map with targeting information.
 ///
 + (void)setTargetingInfoWithInfo:(NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)info;
 /// Sets the content targeting url for the application.
 /// This information will be used only if no placement-specific targeting is available.
-/// \param targetingUrl The targeting url. see <code>setContentTargetingUrl(placement:targetingUrl:)</code>
+/// \param targetingUrl The targeting url
 ///
 + (void)setContentTargetingUrlWithTargetingUrl:(NSString * _Nonnull)targetingUrl;
 /// Adds an ad network to the list of ad networks that receive targeting keywords (if any set).
@@ -2770,6 +2770,10 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 + (void)setLogLevelWithLogLevel:(enum AATLogLevel)logLevel;
 + (void)setVideoAdsMuted:(BOOL)isMuted;
 + (void)setReportsDelegate:(id <AATReportsDelegate> _Nonnull)delegate;
+/// Allow passing PublisherProvidedId to AdNetworks that support it
+/// \param publisherProvidedId Publisher Provided Id
+///
++ (void)setPublisherProvidedId:(NSString * _Nonnull)publisherProvidedId;
 @end
 
 
