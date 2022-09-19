@@ -341,6 +341,7 @@ public enum AATDriverLog : Foundation.LocalizedError {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AATConsentImplementation : ObjectiveC.NSObject {
   public func setNoConsentNetworkStopSet(_ stopSet: Swift.Set<AATKit.AATAdNetwork>)
+  @objc(setNoConsentNetworkStopSet:) public func objc_setNoConsentNetworkStopSet(_ stopSet: Swift.Set<Swift.Int>)
   @objc deinit
 }
 @objc public protocol AATVendorConsentDelegate {
@@ -363,7 +364,7 @@ extension AATKit.AATVendorConsent {
     @objc set
   }
   @objc public var shouldCacheAdditionalAdAtStart: Swift.Bool
-  @objc public var requestConfiguration: AATKit.AATBannerRequest?
+  @objc public var requestConfiguration: AATKit.AATBannerRequest
   @objc public var minDelay: Swift.Double
   public init(placementName: Swift.String, size: Swift.Int)
   @objc override dynamic public var description: Swift.String {
@@ -524,7 +525,7 @@ extension AATKit.AATBannerCache : AATKit.AATBannerRequestCompletionListener {
   @objc public var targetingInformation: [Swift.String : [Swift.String]]?
   @objc public var contentTargetingUrl: Swift.String?
   @objc weak public var delegate: AATKit.AATBannerRequestDelegate?
-  @objc public init(delegate: AATKit.AATBannerRequestDelegate)
+  @objc public init(delegate: AATKit.AATBannerRequestDelegate?)
   public func setRequestBannerSizes(sizes: Swift.Set<AATKit.AATBannerSize>)
   @objc(setRequestBannerSizes:) public func objc_setRequestBannerSizes(sizes: Swift.Set<Swift.Int>)
   @objc override dynamic public var description: Swift.String {
@@ -593,7 +594,7 @@ public protocol AATNetworkDriverFactory {
   @objc(fittingBannerSizesPortrait) public static func objc_fittingBannerSizesPortrait() -> Swift.Set<Swift.String>
   public static func fittingBannerSizesLandscape() -> Swift.Set<AATKit.AATBannerSize>
   @objc(fittingBannerSizesLandscape) public static func objc_fittingBannerSizesLandscape() -> Swift.Set<Swift.String>
-  @objc public static func controllerViewWillAppear(controller: UIKit.UIViewController)
+  @objc public static func controllerViewDidAppear(controller: UIKit.UIViewController)
   @objc public static func controllerViewWillDisappear()
   @objc public static func createFullscreenPlacement(name: Swift.String) -> AATKit.AATFullscreenPlacement?
   @objc public static func createNativeAdPlacement(name: Swift.String, supportsMainImage: Swift.Bool) -> AATKit.AATNativeAdPlacement?
@@ -755,6 +756,25 @@ extension AATKit.AATManagedConsent {
     @objc get
   }
   @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class AATPluginVersioningTool : ObjectiveC.NSObject {
+  @objc public static func appendPluginInformation(_ pluginName: AATKit.AATPluginName, patchLevel: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum AATPluginName : Swift.Int {
+  case Adobe = 1
+  case Corona = 2
+  case Marmalade = 3
+  case Unity = 4
+  case Xamarin = 5
+  case ReactNative = 6
+  case Cordova = 7
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public protocol AATBannerRequestCompletionListener : AnyObject {
   func requestCompletedSuccessfully(request: AATKit.AATBannerRequest, with view: AATKit.AATBannerPlacementWrapperView)
@@ -939,6 +959,9 @@ extension AATKit.NetworkReachabilityManager.ConnectionType : Swift.Equatable {}
 extension AATKit.NetworkReachabilityManager.ConnectionType : Swift.Hashable {}
 extension AATKit.AATManagedConsent.ManagedConsentState : Swift.Equatable {}
 extension AATKit.AATManagedConsent.ManagedConsentState : Swift.Hashable {}
+extension AATKit.AATPluginName : Swift.Equatable {}
+extension AATKit.AATPluginName : Swift.Hashable {}
+extension AATKit.AATPluginName : Swift.RawRepresentable {}
 extension AATKit.AATBannerAlign.HorizontalAlign : Swift.Hashable {}
 extension AATKit.AATBannerAlign.HorizontalAlign : Swift.RawRepresentable {}
 extension AATKit.AATBannerAlign.VerticalAlign : Swift.Hashable {}

@@ -453,7 +453,7 @@ SWIFT_CLASS("_TtC6AATKit27AATBannerCacheConfiguration")
 @property (nonatomic, weak) id <AATBannerCacheDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <AATBannerRequestDelegate> _Nullable bannerRequestDelegate;
 @property (nonatomic) BOOL shouldCacheAdditionalAdAtStart;
-@property (nonatomic, strong) AATBannerRequest * _Nullable requestConfiguration;
+@property (nonatomic, strong) AATBannerRequest * _Nonnull requestConfiguration;
 @property (nonatomic) NSTimeInterval minDelay;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -522,7 +522,7 @@ SWIFT_CLASS("_TtC6AATKit16AATBannerRequest")
 @property (nonatomic, weak) id <AATBannerRequestDelegate> _Nullable delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (nonnull instancetype)initWithDelegate:(id <AATBannerRequestDelegate> _Nonnull)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithDelegate:(id <AATBannerRequestDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 /// Update request sizes
 /// \param sizes a set of <code>AATBannerSize</code>
 ///
@@ -630,6 +630,7 @@ SWIFT_CLASS("_TtC6AATKit24AATConsentImplementation")
 @interface AATConsentImplementation : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setNoConsentNetworkStopSet:(NSSet<NSNumber *> * _Nonnull)stopSet;
 @end
 
 
@@ -1026,6 +1027,23 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATNativePlacementDelegate_")
 @end
 
 
+typedef SWIFT_ENUM(NSInteger, AATPluginName, open) {
+  AATPluginNameAdobe = 1,
+  AATPluginNameCorona = 2,
+  AATPluginNameMarmalade = 3,
+  AATPluginNameUnity = 4,
+  AATPluginNameXamarin = 5,
+  AATPluginNameReactNative = 6,
+  AATPluginNameCordova = 7,
+};
+
+
+SWIFT_CLASS("_TtC6AATKit23AATPluginVersioningTool")
+@interface AATPluginVersioningTool : NSObject
++ (void)appendPluginInformation:(enum AATPluginName)pluginName patchLevel:(NSString * _Nonnull)patchLevel;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 /// Will be notified with reports event
 SWIFT_PROTOCOL("_TtP6AATKit18AATReportsDelegate_")
@@ -1150,11 +1168,11 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 + (enum AATBannerPlacementSize)maximumBannerSizeLandscape SWIFT_WARN_UNUSED_RESULT;
 + (NSSet<NSString *> * _Nonnull)fittingBannerSizesPortrait SWIFT_WARN_UNUSED_RESULT;
 + (NSSet<NSString *> * _Nonnull)fittingBannerSizesLandscape SWIFT_WARN_UNUSED_RESULT;
-/// Notifies AATKit about viewController viewWillAppear.
+/// Notifies AATKit about viewController viewDidAppear.
 /// <em>NOTE:</em> This method will update the view controller for all existing placements
-/// \param controller the UIViewController that will appear
+/// \param controller the UIViewController that did appear
 ///
-+ (void)controllerViewWillAppearWithController:(UIViewController * _Nonnull)controller;
++ (void)controllerViewDidAppearWithController:(UIViewController * _Nonnull)controller;
 /// Notifies AATKit about activity pause. Invoke this method in every activity that uses AATKit.
 + (void)controllerViewWillDisappear;
 /// Creates a new fullscreen ad placement.
@@ -1928,7 +1946,7 @@ SWIFT_CLASS("_TtC6AATKit27AATBannerCacheConfiguration")
 @property (nonatomic, weak) id <AATBannerCacheDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <AATBannerRequestDelegate> _Nullable bannerRequestDelegate;
 @property (nonatomic) BOOL shouldCacheAdditionalAdAtStart;
-@property (nonatomic, strong) AATBannerRequest * _Nullable requestConfiguration;
+@property (nonatomic, strong) AATBannerRequest * _Nonnull requestConfiguration;
 @property (nonatomic) NSTimeInterval minDelay;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1997,7 +2015,7 @@ SWIFT_CLASS("_TtC6AATKit16AATBannerRequest")
 @property (nonatomic, weak) id <AATBannerRequestDelegate> _Nullable delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (nonnull instancetype)initWithDelegate:(id <AATBannerRequestDelegate> _Nonnull)delegate OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithDelegate:(id <AATBannerRequestDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 /// Update request sizes
 /// \param sizes a set of <code>AATBannerSize</code>
 ///
@@ -2105,6 +2123,7 @@ SWIFT_CLASS("_TtC6AATKit24AATConsentImplementation")
 @interface AATConsentImplementation : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setNoConsentNetworkStopSet:(NSSet<NSNumber *> * _Nonnull)stopSet;
 @end
 
 
@@ -2501,6 +2520,23 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATNativePlacementDelegate_")
 @end
 
 
+typedef SWIFT_ENUM(NSInteger, AATPluginName, open) {
+  AATPluginNameAdobe = 1,
+  AATPluginNameCorona = 2,
+  AATPluginNameMarmalade = 3,
+  AATPluginNameUnity = 4,
+  AATPluginNameXamarin = 5,
+  AATPluginNameReactNative = 6,
+  AATPluginNameCordova = 7,
+};
+
+
+SWIFT_CLASS("_TtC6AATKit23AATPluginVersioningTool")
+@interface AATPluginVersioningTool : NSObject
++ (void)appendPluginInformation:(enum AATPluginName)pluginName patchLevel:(NSString * _Nonnull)patchLevel;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 /// Will be notified with reports event
 SWIFT_PROTOCOL("_TtP6AATKit18AATReportsDelegate_")
@@ -2625,11 +2661,11 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 + (enum AATBannerPlacementSize)maximumBannerSizeLandscape SWIFT_WARN_UNUSED_RESULT;
 + (NSSet<NSString *> * _Nonnull)fittingBannerSizesPortrait SWIFT_WARN_UNUSED_RESULT;
 + (NSSet<NSString *> * _Nonnull)fittingBannerSizesLandscape SWIFT_WARN_UNUSED_RESULT;
-/// Notifies AATKit about viewController viewWillAppear.
+/// Notifies AATKit about viewController viewDidAppear.
 /// <em>NOTE:</em> This method will update the view controller for all existing placements
-/// \param controller the UIViewController that will appear
+/// \param controller the UIViewController that did appear
 ///
-+ (void)controllerViewWillAppearWithController:(UIViewController * _Nonnull)controller;
++ (void)controllerViewDidAppearWithController:(UIViewController * _Nonnull)controller;
 /// Notifies AATKit about activity pause. Invoke this method in every activity that uses AATKit.
 + (void)controllerViewWillDisappear;
 /// Creates a new fullscreen ad placement.
