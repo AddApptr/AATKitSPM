@@ -68,9 +68,7 @@ let package = Package(
         // AATKit target
         .target(name:"AATKit-Core",
                 dependencies: ["AATKit"],
-                path: "./Sources/AATKit",
-                linkerSettings: [.unsafeFlags(["-ObjC"])]
-               ),
+                path: "./Sources/AATKit"),
 
         // AATAdMobMediationAdapter target
         .target(name:"AATKit-AATAdMobMediationAdapter",
