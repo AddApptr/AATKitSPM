@@ -455,6 +455,12 @@ SWIFT_CLASS("_TtC6AATKit27AATBannerCacheConfiguration")
 @property (nonatomic) BOOL shouldCacheAdditionalAdAtStart;
 @property (nonatomic, strong) AATBannerRequest * _Nonnull requestConfiguration;
 @property (nonatomic) NSTimeInterval minDelay;
+/// Init the <code>AATBannerCacheConfiguration</code> object
+/// \param placementName the placement name
+///
+/// \param size the desired cache size
+///
+- (nonnull instancetype)initWithPlacementName:(NSString * _Nonnull)placementName size:(NSInteger)size OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1948,6 +1954,12 @@ SWIFT_CLASS("_TtC6AATKit27AATBannerCacheConfiguration")
 @property (nonatomic) BOOL shouldCacheAdditionalAdAtStart;
 @property (nonatomic, strong) AATBannerRequest * _Nonnull requestConfiguration;
 @property (nonatomic) NSTimeInterval minDelay;
+/// Init the <code>AATBannerCacheConfiguration</code> object
+/// \param placementName the placement name
+///
+/// \param size the desired cache size
+///
+- (nonnull instancetype)initWithPlacementName:(NSString * _Nonnull)placementName size:(NSInteger)size OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

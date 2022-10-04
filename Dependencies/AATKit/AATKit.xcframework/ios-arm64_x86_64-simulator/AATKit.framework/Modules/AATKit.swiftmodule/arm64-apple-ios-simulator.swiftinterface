@@ -366,7 +366,7 @@ extension AATKit.AATVendorConsent {
   @objc public var shouldCacheAdditionalAdAtStart: Swift.Bool
   @objc public var requestConfiguration: AATKit.AATBannerRequest
   @objc public var minDelay: Swift.Double
-  public init(placementName: Swift.String, size: Swift.Int)
+  @objc public init(placementName: Swift.String, size: Swift.Int)
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
