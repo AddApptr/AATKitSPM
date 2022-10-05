@@ -418,6 +418,7 @@ public protocol AATBannerAdDriverProtocol : AATKit.AATAdDriverProtocol {
 public struct AATAdRequestConfiguration {
   public var extraInfo: Swift.String?
   public var publisherProvidedID: Swift.String?
+  public var isRTARule: Swift.Bool?
 }
 public protocol AATAdColonyDriverProtocol {
   static var shared: Self { get }
