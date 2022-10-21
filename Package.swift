@@ -151,7 +151,7 @@ let package = Package(
                 path: "./Sources/PubnativeSources"),
 
         .target(name:"AATKit-Prebid",
-                dependencies: ["PrebidMobile", "OMSDK-Static_Prebidorg", "AATDFPPrebidAdapter"],
+                dependencies: ["PrebidMobile", "AATDFPPrebidAdapter"],
                 path: "./Sources/PrebidSources"),
 
         .target(name:"AATKit-Unity",
@@ -214,7 +214,6 @@ let package = Package(
 
         // Prebid
         .binaryTarget(name: "PrebidMobile", path: "./Dependencies/Prebid/PrebidMobile.xcframework"),
-        .binaryTarget(name: "OMSDK-Static_Prebidorg", path: "./Dependencies/Prebid/OMSDK-Static_Prebidorg.xcframework"),
 
         // Unity
         .binaryTarget(name: "UnityAds", path: "./Dependencies/Unity/UnityAds.xcframework"),
