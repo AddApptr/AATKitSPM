@@ -1,6 +1,6 @@
 # AATKitSPM
 
-A swift package manager that wraps AATKit and ad metworks (Only ad networks with xcframework binaries are considered)
+A swift package manager that wraps AATKit and ad networks (Only ad networks with xcframework binaries are considered)
 
 * For more information about integration steps, please refer to the [integration documentation](https://bitbucket.org/addapptr/aatkit-ios/wiki/Swift%20Package%20Manager) 
 
