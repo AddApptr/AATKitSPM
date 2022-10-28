@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "AATKit"
-    spec.version      = "3.0.10"
+    spec.version      = "3.0.11"
     spec.summary      = 'Mobile Ad Mediation Framework'
     spec.xcconfig =
     {
@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
     
      spec.source       = {
        :http   => "https://ios-sdk.aatkit.com/aatkit-#{spec.version.to_s}.zip",
-       :sha256 => '4549d00af3c59796f0b35df3be193ac4807510e30bd0255db0c7cc76dc586ee4'
+       :sha256 => '98ddf2a02d878180a231d73c195be3bd77d95af66443619a7d90331e4b9f5f26'
      }
 
     

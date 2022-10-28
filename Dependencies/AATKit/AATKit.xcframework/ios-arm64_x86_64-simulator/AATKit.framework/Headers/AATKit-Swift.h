@@ -1491,7 +1491,6 @@ typedef SWIFT_ENUM(NSInteger, NonIABConsent, open) {
 
 
 
-
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -2987,7 +2986,6 @@ typedef SWIFT_ENUM(NSInteger, NonIABConsent, open) {
 /// </ul>
   NonIABConsentWithheld = 3,
 };
-
 
 
 
