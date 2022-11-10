@@ -222,6 +222,11 @@ public enum AATADLoadingState : Swift.Equatable {
     get
   }
 }
+extension AATKit.AATBannerSize : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
 public protocol AATAdNetworkDriverManager : AnyObject {
   static var shared: Self { get }
   func setDebugEnabled(enabled: Swift.Bool)
