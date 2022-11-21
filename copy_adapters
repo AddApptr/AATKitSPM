@@ -1,0 +1,69 @@
+set -e
+
+NOCOLOR='\033[0m'
+RED='\033[0;31m'
+GREEN="$(tput setaf 2)"
+YELLOW="$(tput setaf 3)"
+RESET="$(tput sgr0)"
+
+aatkit_version_selection() {
+  
+  echo 'Which AATKit Version?'
+
+  read -p 'Version: ' versionvar
+
+  echo
+
+  zipvar="aatkit-$versionvar.zip"
+
+  urlvar="https://ios-sdk.aatkit.com/$zipvar"
+
+  echo "👉 ${GREEN}Downloading version: $versionvar from $urlvar ...${RESET}"
+
+  wget $urlvar
+
+  downloadedfolder="AATKit_$versionvar"
+
+  echo "👉 ${GREEN}Extracting $zipvar ...${RESET}"
+  
+  unzip $zipvar -d $downloadedfolder
+
+  aatkitpathvar="Dependencies/AATKit/AATKit.xcframework"
+  admobmediationadapter="Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"
+  adapterspathvar="Dependencies/AATKit/Adapters"
+
+  echo "👉 ${GREEN}Replacing AATKit.xcframework${RESET}"
+  if [ -d "$aatkitpathvar" ]; then rm -Rf $aatkitpathvar; fi
+  mv "$downloadedfolder/AATKit/AATKit.xcframework" $aatkitpathvar
+
+  echo "👉 ${GREEN}Replacing AATAdMobMediationAdapter.xcframework${RESET}"
+  if [ -d "$admobmediationadapter" ]; then rm -Rf $admobmediationadapter; fi
+  mv "$downloadedfolder/AATKit/AATAdMobMediationAdapter.xcframework" $admobmediationadapter
+
+  echo "👉 ${YELLOW}Clearing AAT adapters directory...${RESET}"
+  find "$adapterspathvar" -name *.xcframework |while read adapter; do
+    echo "removing $adapter"
+    if [ -d "$adapter" ]; then rm -Rf $adapter; fi
+    echo
+  done
+
+  echo "👉 ${GREEN}Copying AAT adapters to $adapterspathvar ${RESET}"
+  rsync -avt "$downloadedfolder/AATKit/" \
+  --exclude .DS_Store \
+  --exclude .git \
+  --exclude subSDKs \
+  --exclude AATKitUniversalFramework.xcframework \
+  --exclude AATiOS11Universal.xcframework \
+  --exclude AATKit.xcframework \
+  --exclude .gitignore \
+  $adapterspathvar
+
+  echo "👉 ${YELLOW}Cleaning data... ${RESET}"
+  echo "👉 ${YELLOW}Removing $zipvar ${RESET}"
+  rm -rf $zipvar
+  echo "👉 ${YELLOW}Removing $downloadedfolder ${RESET}"
+  if [ -d "$downloadedfolder" ]; then rm -Rf $downloadedfolder; fi
+  echo "👉 ${GREEN}Done...${RESET}"
+}
+
+aatkit_version_selection
