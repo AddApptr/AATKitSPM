@@ -17,6 +17,7 @@ let package = Package(
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
         .library(name: "AATKit-AppLovinMax", targets: ["AATKit-AppLovinMax"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
+        .library(name: "AATKit-Bluestack", targets: ["AATKit-Bluestack"]),
         .library(name: "AATKit-FeedAd", targets: ["AATKit-FeedAd"]),
         .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato"]),
         .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd"]),
@@ -26,6 +27,7 @@ let package = Package(
         .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Prebid", targets: ["AATKit-Prebid"]),
+        .library(name: "AATKit-Teads", targets: ["AATKit-Teads"]),
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
         .library(name: "AATKit-Vungle", targets: ["AATKit-Vungle"]),
         .library(name: "AATKit-OguryAds", targets: ["AATKit-OgurySdk"]),
@@ -39,6 +41,7 @@ let package = Package(
                                                    "AATKit-AppLovin",
                                                    "AATKit-AppLovinMax",
                                                    "AATKit-Amazon",
+                                                   "AATKit-Bluestack",
                                                    "AATKit-FeedAd",
                                                    "AATKit-OguryCMP",
                                                    "AATKit-GoogleCMP",
@@ -63,6 +66,7 @@ let package = Package(
         .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("9.6.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
+        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.0.17")),
     ],
     targets: [
         // AATKit target
@@ -103,6 +107,10 @@ let package = Package(
         .target(name:"AATKit-Amazon",
                 dependencies: ["DTBiOSSDK", "AATAmazonAdapter"],
                 path: "./Sources/AmazonSources"),
+
+        .target(name:"AATKit-Bluestack",
+                dependencies: ["BlueStackSDK", "OMSDK_Madvertise", "AATBluestackAdapter"],
+                path: "./Sources/BluestackSources"),
 
         .target(name:"AATKit-FeedAd",
                 dependencies: ["FeedAd", "AATFeedAdAdapter"],
@@ -154,6 +162,10 @@ let package = Package(
                 dependencies: ["PrebidMobile", "AATDFPPrebidAdapter"],
                 path: "./Sources/PrebidSources"),
 
+            .target(name:"AATKit-Teads",
+                    dependencies: ["TeadsSDK", "AATTeadsAdapter"],
+                    path: "./Sources/TeadsSources"),
+
         .target(name:"AATKit-Unity",
                 dependencies: ["UnityAds", "AATUnityAdapter"],
                 path: "./Sources/UnitySources"),
@@ -172,6 +184,10 @@ let package = Package(
 
         // Amazon
         .binaryTarget(name: "DTBiOSSDK", path: "./Dependencies/Amazon/DTBiOSSDK.xcframework"),
+
+        // Bluestack
+        .binaryTarget(name: "BlueStackSDK", path: "./Dependencies/Bluestack/BlueStackSDK.xcframework"),
+        .binaryTarget(name: "OMSDK_Madvertise", path: "./Dependencies/Bluestack/OMSDK_Madvertise.xcframework"),
 
         // FeedAd
         .binaryTarget(name: "FeedAd", path: "./Dependencies/FeedAd/FeedAd.xcframework"),
@@ -227,6 +243,7 @@ let package = Package(
         .binaryTarget(name: "AATAppLovinAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinAdapter.xcframework"),
         .binaryTarget(name: "AATAppLovinMaxAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinMaxAdapter.xcframework"),
         .binaryTarget(name: "AATAppNexusAdapter", path: "./Dependencies/AATKit/Adapters/AATAppNexusAdapter.xcframework"),
+        .binaryTarget(name: "AATBluestackAdapter", path: "./Dependencies/AATKit/Adapters/AATBluestackAdapter.xcframework"),
         .binaryTarget(name: "AATDFPPrebidAdapter", path: "./Dependencies/AATKit/Adapters/AATDFPPrebidAdapter.xcframework"),
         .binaryTarget(name: "AATFacebookAdapter", path: "./Dependencies/AATKit/Adapters/AATFacebookAdapter.xcframework"),
         .binaryTarget(name: "AATFeedAdAdapter", path: "./Dependencies/AATKit/Adapters/AATFeedAdAdapter.xcframework"),
@@ -238,6 +255,7 @@ let package = Package(
         .binaryTarget(name: "AATPubNativeAdapter", path: "./Dependencies/AATKit/Adapters/AATPubNativeAdapter.xcframework"),
         .binaryTarget(name: "AATSmaatoAdapter", path: "./Dependencies/AATKit/Adapters/AATSmaatoAdapter.xcframework"),
         .binaryTarget(name: "AATSmartAdAdapter", path: "./Dependencies/AATKit/Adapters/AATSmartAdAdapter.xcframework"),
+        .binaryTarget(name: "AATTeadsAdapter", path: "./Dependencies/AATKit/Adapters/AATTeadsAdapter.xcframework"),
         .binaryTarget(name: "AATUnityAdapter", path: "./Dependencies/AATKit/Adapters/AATUnityAdapter.xcframework"),
         .binaryTarget(name: "AATVungleAdapter", path: "./Dependencies/AATKit/Adapters/AATVungleAdapter.xcframework"),
         .binaryTarget(name: "AATYOCAdapter", path: "./Dependencies/AATKit/Adapters/AATYOCAdapter.xcframework"),
