@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DTBAdInterstitialViewController : UIViewController
 
 @property(nonatomic, weak) DTBAdView *adView;
-@property (weak, nonatomic) AVAudioSession *audioSession;
 
 @property(nonatomic) id<DTBAdInterstitialDispatcherDelegate> dispatcherDelegate;
 

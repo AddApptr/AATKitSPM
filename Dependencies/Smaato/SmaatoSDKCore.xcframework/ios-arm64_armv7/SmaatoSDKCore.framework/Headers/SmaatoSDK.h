@@ -10,6 +10,7 @@
 
 #import <SmaatoSDKCore/SMAConfiguration.h>
 #import <SmaatoSDKCore/SMALocation.h>
+#import <SmaatoSDKCore/SMARemoteConfig.h>
 
 /**
  The root class which provides the SDK configuration options.
@@ -117,10 +118,6 @@ typedef NS_ENUM(NSUInteger, SMAGender) {
 /// Set to YES to indicate that we have to apply LGPD restrictions.
 /// The default value is \c NO.
 @property (class, nonatomic, readonly) BOOL hasLGPD;
-
-/// Set to YES to indicate that LGPD should always be applied.
-/// The default value is \c NO.
-@property (class, nonatomic) BOOL forceLGPD;
 
 /// Set to YES to indicate that LGPD consent will added to all demands.
 /// The default value is \c NO.

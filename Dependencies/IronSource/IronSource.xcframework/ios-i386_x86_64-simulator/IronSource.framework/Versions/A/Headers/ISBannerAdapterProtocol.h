@@ -44,6 +44,7 @@
                                adapterConfig:(nonnull ISAdapterConfig *)adapterConfig
                                     delegate:(nonnull id<ISBannerAdapterDelegate>)delegate;
 
+// used for banner, bidders + non-bidders(one-flow) for demand only
 - (void)loadBannerForBiddingWithServerData:(nonnull NSString *)serverData
                             viewController:(nonnull UIViewController *)viewController
                                       size:(nonnull ISBannerSize *)size

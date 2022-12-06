@@ -16,17 +16,17 @@
 
 @interface APSOmSdkHelper : NSObject
 
-+ (BOOL) initOmSdk;
-+ (BOOL) getFeatureEnableFlag;
++ (void)initOmSdk;
++ (BOOL)getFeatureEnableFlag;
 
-- (id)init;
-- (BOOL) isInitialized;
-- (BOOL) startHTMLDisplayOMSDKAdSession:(WKWebView *)webView;
-- (BOOL) startVideoOMSDKAdSession:(WKWebView *)webView;
-- (BOOL) signalAdImpression;
-- (BOOL) signalAdLoaded;
-- (BOOL) addFriendlyObstruction:(UIView *)view;
-- (void) cleanup;
+- (instancetype)init;
+- (BOOL)isInitialized;
+- (void)startHTMLDisplayOMSDKAdSession:(WKWebView *)webView;
+- (void)startVideoOMSDKAdSession:(WKWebView *)webView;
+- (void)signalAdImpression;
+- (void)signalAdLoaded;
+- (void)addFriendlyObstruction:(UIView *)view;
+- (void)cleanup;
 
 @end
 

@@ -22,6 +22,7 @@
 @property (assign)              NSUInteger      delayLoadFailureNotificationInSeconds;
 @property (readonly,assign)     NSInteger       expiredDurationInMinutes;
 @property (readonly,assign)     NSInteger       delayLoadFailureTimeout;
+@property (readonly,assign)     BOOL            isOneFlow;
 
 
 
@@ -34,5 +35,6 @@ delayLoadFailureNotificationInSeconds:(NSUInteger)delayLoadFailure
                backFillProviderName:(NSString *)backFillProviderName
                 premiumProviderName:(NSString *)premiumProviderName
            expiredDurationInMinutes:(NSInteger)expiredDurationInMinutes
-            delayLoadFailureTimeout:(NSInteger)delayLoadFailureTimeout;
+            delayLoadFailureTimeout:(NSInteger)delayLoadFailureTimeout
+                          isOneFlow:(BOOL)isOneFlow;
 @end

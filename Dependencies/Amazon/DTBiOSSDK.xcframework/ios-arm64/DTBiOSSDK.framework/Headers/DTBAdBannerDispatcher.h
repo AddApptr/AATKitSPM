@@ -2,7 +2,7 @@
 //  DTBAdDispatcher.h
 //  DTBiOSSDK
 //
-//  Copyright (c) 2021 Amazon Publisher Services. All rights reserved.
+//  Copyright (c) 2022 Amazon Publisher Services. All rights reserved.
 
 #import <UIKit/UIKit.h>
 #import "DTBAdDispatcher.h"
@@ -13,13 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DTBAdBannerDispatcher : DTBAdDispatcher
 
--(instancetype)initWithAdFrame:(CGRect)frame delegate:(id<DTBAdBannerDispatcherDelegate>) delegate;
+- (instancetype)initWithAdFrame:(CGRect)frame delegate:(id<DTBAdBannerDispatcherDelegate>)delegate;
 
--(void)fetchBannerAdWithParameters:(NSDictionary *)parameters;
+- (void)fetchBannerAdWithParameters:(NSDictionary *)parameters;
 
--(void)fetchBannerAd:(NSString * _Nonnull)htmlString;
+- (void)fetchBannerAd:(NSString * _Nonnull)htmlString;
 
--(void)fetchBannerAd:(NSString * _Nonnull)htmlString params:(NSDictionary * _Nullable) params;
+- (void)fetchBannerAd:(NSString * _Nonnull)htmlString params:(NSDictionary * _Nullable)params;
 
 @end
 

@@ -8,7 +8,7 @@
 
 #import "SMAIABDataStorageProtocol.h"
 
-@interface SMAIABDataStorageVTwoUserDefaults: NSObject <SMAGDPRDataStorageProtocol>
+@interface SMAIABDataStorageVTwoUserDefaults: NSObject <SMAGDPRDataStorageProtocol,SMACCPAStorageProtocol>
 
 + (instancetype)sharedInstance;
 

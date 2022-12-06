@@ -984,11 +984,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Host * _Nonn
 - (BOOL)verifyUrlWithUrlString:(NSString * _Nullable)urlString SWIFT_WARN_UNUSED_RESULT;
 @end
 
-typedef SWIFT_ENUM(NSInteger, IMAAdSlotSize, open) {
-  IMAAdSlotSizeSize400x300 = 0,
-  IMAAdSlotSizeSize640x480 = 1,
-  IMAAdSlotSizeSize320x480 = 2,
-};
+
+SWIFT_CLASS("_TtC12PrebidMobile13IMAAdSlotSize")
+@interface IMAAdSlotSize : SingleContainerInt
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMAAdSlotSize * _Nonnull Size400x300;)
++ (IMAAdSlotSize * _Nonnull)Size400x300 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMAAdSlotSize * _Nonnull Size640x480;)
++ (IMAAdSlotSize * _Nonnull)Size640x480 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMAAdSlotSize * _Nonnull Size320x480;)
++ (IMAAdSlotSize * _Nonnull)Size320x480 SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithIntegerLiteral:(NSInteger)value OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC12PrebidMobile8IMAUtils")
@@ -997,6 +1003,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMAUtils * _
 + (IMAUtils * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (NSString * _Nullable)generateInstreamUriForGAMWithAdUnitID:(NSString * _Nonnull)adUnitID adSlotSizes:(NSArray<IMAAdSlotSize *> * _Nonnull)adSlotSizes customKeywords:(NSDictionary<NSString *, NSString *> * _Nullable)customKeywords error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1732,21 +1739,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @property (nonatomic) BOOL pbsDebug;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull customHeaders;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull storedBidResponses;
-/// <ul>
-///   <li>
-///     This property is set by the developer when he is willing to assign the assetID for Native ad.
-///   </li>
-///   <li>
-///   </li>
-/// </ul>
+/// This property is set by the developer when he is willing to assign the assetID for Native ad.
+/// *
 @property (nonatomic) BOOL shouldAssignNativeAssetID;
-/// <ul>
-///   <li>
-///     This property is set by the developer when he is willing to share the location for better ad targeting
-///   </li>
-///   <li>
-///   </li>
-/// </ul>
+/// This property is set by the developer when he is willing to share the location for better ad targeting
+/// *
 @property (nonatomic) BOOL shareGeoLocation;
 /// Set the desidered verbosity of the logs
 @property (nonatomic, strong) LogLevel * _Nonnull logLevel;
@@ -1772,6 +1769,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 - (NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable)getStoredBidResponses SWIFT_WARN_UNUSED_RESULT;
 - (void)addCustomHeaderWithName:(NSString * _Nonnull)name value:(NSString * _Nonnull)value;
 - (void)clearCustomHeaders;
+/// Initializes PrebidMobile SDK.
+/// Use this SDK initializer if you’re using PrebidMobile with GMA SDK.
+/// \param gadMobileAdsObject GADMobileAds object
+///
+/// \param completion returns initialization status and optional error
+///
++ (void)initializeSDK:(id _Nullable)gadMobileAdsObject :(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
+/// Initializes PrebidMobile SDK.
+/// Use this SDK initializer if you’re using PrebidMobile without GMA SDK.
+/// \param completion returns initialization status and optional error
+///
 + (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1990,6 +1998,7 @@ SWIFT_CLASS_NAMED("Parameters") SWIFT_DEPRECATED_MSG("This class is deprecated. 
 SWIFT_CLASS("_TtC12PrebidMobile19RewardedVideoAdUnit")
 @interface RewardedVideoAdUnit : VideoBaseAdUnit
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId minWidthPerc:(NSInteger)minWidthPerc minHeightPerc:(NSInteger)minHeightPerc;
 @end
 
 @class PBMUserAgentService;
@@ -2401,6 +2410,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 
 
 
+/// @c UserConsentDataManager is responsible retrieving user consent according to the
+/// IAB Transparency & Consent Framework
+/// The design of the framework is that a publisher integrated Consent Management
+/// Platform (CMP) is responsible for storing user consent applicability and data
+/// in @c UserDefaults. All advertising SDKs are to query this data regularly for
+/// updates and pass that data downstream and act accordingly.
+SWIFT_CLASS("_TtC12PrebidMobile22UserConsentDataManager")
+@interface UserConsentDataManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UserConsentDataManager * _Nonnull shared;)
++ (UserConsentDataManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@property (nonatomic, readonly, copy) NSString * _Nullable usPrivacyString;
+@property (nonatomic, readonly, strong) NSNumber * _Nullable subjectToGDPR_NSNumber;
+@property (nonatomic, copy) NSString * _Nullable gdprConsentString;
+@property (nonatomic, copy) NSString * _Nullable purposeConsents;
+- (BOOL)isAllowedAccessDeviceData SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
 SWIFT_CLASS("_TtC12PrebidMobile5Utils")
 @interface Utils : NSObject
 /// The class is created as a singleton object & used
@@ -2457,6 +2487,7 @@ SWIFT_CLASS("_TtC12PrebidMobile26VideoControlsConfiguration")
 SWIFT_CLASS("_TtC12PrebidMobile23VideoInterstitialAdUnit")
 @interface VideoInterstitialAdUnit : VideoBaseAdUnit
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId minWidthPerc:(NSInteger)minWidthPerc minHeightPerc:(NSInteger)minHeightPerc;
 @end
 
 
@@ -3491,11 +3522,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Host * _Nonn
 - (BOOL)verifyUrlWithUrlString:(NSString * _Nullable)urlString SWIFT_WARN_UNUSED_RESULT;
 @end
 
-typedef SWIFT_ENUM(NSInteger, IMAAdSlotSize, open) {
-  IMAAdSlotSizeSize400x300 = 0,
-  IMAAdSlotSizeSize640x480 = 1,
-  IMAAdSlotSizeSize320x480 = 2,
-};
+
+SWIFT_CLASS("_TtC12PrebidMobile13IMAAdSlotSize")
+@interface IMAAdSlotSize : SingleContainerInt
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMAAdSlotSize * _Nonnull Size400x300;)
++ (IMAAdSlotSize * _Nonnull)Size400x300 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMAAdSlotSize * _Nonnull Size640x480;)
++ (IMAAdSlotSize * _Nonnull)Size640x480 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMAAdSlotSize * _Nonnull Size320x480;)
++ (IMAAdSlotSize * _Nonnull)Size320x480 SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithIntegerLiteral:(NSInteger)value OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC12PrebidMobile8IMAUtils")
@@ -3504,6 +3541,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMAUtils * _
 + (IMAUtils * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (NSString * _Nullable)generateInstreamUriForGAMWithAdUnitID:(NSString * _Nonnull)adUnitID adSlotSizes:(NSArray<IMAAdSlotSize *> * _Nonnull)adSlotSizes customKeywords:(NSDictionary<NSString *, NSString *> * _Nullable)customKeywords error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -4239,21 +4277,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @property (nonatomic) BOOL pbsDebug;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull customHeaders;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull storedBidResponses;
-/// <ul>
-///   <li>
-///     This property is set by the developer when he is willing to assign the assetID for Native ad.
-///   </li>
-///   <li>
-///   </li>
-/// </ul>
+/// This property is set by the developer when he is willing to assign the assetID for Native ad.
+/// *
 @property (nonatomic) BOOL shouldAssignNativeAssetID;
-/// <ul>
-///   <li>
-///     This property is set by the developer when he is willing to share the location for better ad targeting
-///   </li>
-///   <li>
-///   </li>
-/// </ul>
+/// This property is set by the developer when he is willing to share the location for better ad targeting
+/// *
 @property (nonatomic) BOOL shareGeoLocation;
 /// Set the desidered verbosity of the logs
 @property (nonatomic, strong) LogLevel * _Nonnull logLevel;
@@ -4279,6 +4307,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 - (NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable)getStoredBidResponses SWIFT_WARN_UNUSED_RESULT;
 - (void)addCustomHeaderWithName:(NSString * _Nonnull)name value:(NSString * _Nonnull)value;
 - (void)clearCustomHeaders;
+/// Initializes PrebidMobile SDK.
+/// Use this SDK initializer if you’re using PrebidMobile with GMA SDK.
+/// \param gadMobileAdsObject GADMobileAds object
+///
+/// \param completion returns initialization status and optional error
+///
++ (void)initializeSDK:(id _Nullable)gadMobileAdsObject :(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
+/// Initializes PrebidMobile SDK.
+/// Use this SDK initializer if you’re using PrebidMobile without GMA SDK.
+/// \param completion returns initialization status and optional error
+///
 + (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -4497,6 +4536,7 @@ SWIFT_CLASS_NAMED("Parameters") SWIFT_DEPRECATED_MSG("This class is deprecated. 
 SWIFT_CLASS("_TtC12PrebidMobile19RewardedVideoAdUnit")
 @interface RewardedVideoAdUnit : VideoBaseAdUnit
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId minWidthPerc:(NSInteger)minWidthPerc minHeightPerc:(NSInteger)minHeightPerc;
 @end
 
 @class PBMUserAgentService;
@@ -4908,6 +4948,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 
 
 
+/// @c UserConsentDataManager is responsible retrieving user consent according to the
+/// IAB Transparency & Consent Framework
+/// The design of the framework is that a publisher integrated Consent Management
+/// Platform (CMP) is responsible for storing user consent applicability and data
+/// in @c UserDefaults. All advertising SDKs are to query this data regularly for
+/// updates and pass that data downstream and act accordingly.
+SWIFT_CLASS("_TtC12PrebidMobile22UserConsentDataManager")
+@interface UserConsentDataManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UserConsentDataManager * _Nonnull shared;)
++ (UserConsentDataManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@property (nonatomic, readonly, copy) NSString * _Nullable usPrivacyString;
+@property (nonatomic, readonly, strong) NSNumber * _Nullable subjectToGDPR_NSNumber;
+@property (nonatomic, copy) NSString * _Nullable gdprConsentString;
+@property (nonatomic, copy) NSString * _Nullable purposeConsents;
+- (BOOL)isAllowedAccessDeviceData SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
 SWIFT_CLASS("_TtC12PrebidMobile5Utils")
 @interface Utils : NSObject
 /// The class is created as a singleton object & used
@@ -4964,6 +5025,7 @@ SWIFT_CLASS("_TtC12PrebidMobile26VideoControlsConfiguration")
 SWIFT_CLASS("_TtC12PrebidMobile23VideoInterstitialAdUnit")
 @interface VideoInterstitialAdUnit : VideoBaseAdUnit
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId minWidthPerc:(NSInteger)minWidthPerc minHeightPerc:(NSInteger)minHeightPerc;
 @end
 
 

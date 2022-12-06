@@ -78,10 +78,10 @@ let package = Package(
     ],
     dependencies: [
         // AdNetworks supporting SPM
-        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("7.22.0")),
-        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("11.4.3")),
-        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("9.6.0")),
-        // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
+        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("8.2.0")),
+        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("11.6.0")),
+        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("9.13.0")),
+        // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads/blob/main/Package.swift package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
     ],
     targets: [
@@ -172,7 +172,7 @@ let package = Package(
                 path: "./Sources/PubnativeSources"),
 
         .target(name:"AATKit-Prebid",
-                dependencies: ["PrebidMobile", "OMSDK-Static_Prebidorg"],
+                dependencies: ["PrebidMobile"],
                 path: "./Sources/PrebidSources"),
 
         .target(name:"AATKit-Unity",
@@ -189,7 +189,7 @@ let package = Package(
                 path: "./Sources/IronSourceSources"),
 
         
-        // Mark: Binary Targets
+        // Mark: - Binary Targets
         // AATKit
         .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
         .binaryTarget(name: "AATKit-M1", path: "./Dependencies/AATKit-M1/AATKit-M1.xcframework"),
@@ -245,7 +245,6 @@ let package = Package(
 
         // Prebid
         .binaryTarget(name: "PrebidMobile", path: "./Dependencies/Prebid/PrebidMobile.xcframework"),
-        .binaryTarget(name: "OMSDK-Static_Prebidorg", path: "./Dependencies/Prebid/OMSDK-Static_Prebidorg.xcframework"),
 
         // Unity
         .binaryTarget(name: "UnityAds", path: "./Dependencies/Unity/UnityAds.xcframework"),

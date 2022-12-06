@@ -49,25 +49,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DTBAdInterstitialDispatcher : DTBAdDispatcher
 
-@property(nonatomic, weak)id<DTBAdInterstitialDispatcherDelegate> delegate;
+@property(nonatomic, weak) id<DTBAdInterstitialDispatcherDelegate> delegate;
 
-@property(nonatomic) BOOL interstitialLoaded;
+@property(nonatomic, assign) BOOL interstitialLoaded;
 
 - (instancetype)init NS_UNAVAILABLE;
 
-- (instancetype)initWithDelegate:(id<DTBAdInterstitialDispatcherDelegate>) delegate;
+- (instancetype)initWithDelegate:(id<DTBAdInterstitialDispatcherDelegate>)delegate;
 - (void)fetchAd:(NSString *)bidInfo;
 - (void)fetchAdWithParameters:(NSDictionary *)params;
 - (void)fetchAd:(NSString *)bidInfo params:(NSDictionary * _Nullable)params;
 - (void)showFromController:(UIViewController *_Nonnull)controller ;
 
--(void) interstitialWillAppear;
--(void) interstitialDidAppear;
--(void) interstitialWillDisappear;
--(void) interstitialDidDisappear;
+- (void)interstitialWillAppear;
+- (void)interstitialDidAppear;
+- (void)interstitialWillDisappear;
+- (void)interstitialDidDisappear;
 
 
-+(void)showInterstitialFromController:(UIViewController * _Nonnull )controller;
++ (void)showInterstitialFromController:(UIViewController * _Nonnull)controller;
 
 @end
 

@@ -6,6 +6,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 // Log level for the DTBLog util class.
 // Lower = finer-grained logs.
 typedef enum
@@ -28,18 +30,18 @@ typedef enum
 /**
  * delegate is call with a message originated from DTBLog
  */
--(void)onMessageLogged:(NSString * _Nonnull) message;
+- (void)onMessageLogged:(NSString *)message;
 
 @end
 
 
 @protocol DTBLogTagDelegate
 
--(NSString * _Nonnull) requestedTag;
+- (NSString * _Nonnull) requestedTag;
 /**
  * delegate is call with a message originated from DTBLog
  */
--(void)onMessageLogged:(NSString * _Nonnull) message;
+- (void)onMessageLogged:(NSString *)message;
 
 @end
 
@@ -50,27 +52,29 @@ typedef enum
 @interface DTBLog : NSObject
 
 // Returns the current set log level
-+(DTBLogLevel) logLevel;
++ (DTBLogLevel)logLevel;
 
 // Set's the log level
-+(void) setLogLevel:(DTBLogLevel) level;
++ (void)setLogLevel:(DTBLogLevel) level;
 
-+(void)setDelegate:(id<DTBLogDelegate> _Nullable)delegate;
++ (void)setDelegate:(id<DTBLogDelegate> _Nullable)delegate;
 
-+(void)setTagDelegate:(id<DTBLogTagDelegate> _Nullable)delegate;
++ (void)setTagDelegate:(id<DTBLogTagDelegate> _Nullable)delegate;
 
-+(void) trace:(NSString * _Nonnull) format, ...;
-+(void) debug:(NSString * _Nonnull) format, ...;
-+(void) info: (NSString * _Nonnull) format, ...;
-+(void) warn: (NSString * _Nonnull) format, ...;
-+(void) error:(NSString * _Nonnull) format, ...;
-+(void) fatal:(NSString * _Nonnull) format, ...;
++ (void)trace:(NSString *)message;
++ (void)debug:(NSString *)message;
++ (void)info:(NSString *)message;
++ (void)warn:(NSString *)message;
++ (void)error:(NSString *)message;
++ (void)fatal:(NSString *)message;
 
-+(void) traceWithTag:(NSString * _Nonnull)tag format: (NSString * _Nonnull) format, ...;
-+(void) debugWithTag:(NSString * _Nonnull)tag format: (NSString * _Nonnull) format, ...;
-+(void) infoWithTag: (NSString * _Nonnull)tag format: (NSString * _Nonnull) format, ...;
-+(void) warnWithTag: (NSString * _Nonnull)tag format: (NSString * _Nonnull) format, ...;
-+(void) errorWithTag:(NSString * _Nonnull)tag format: (NSString * _Nonnull) format, ...;
-+(void) fatalWithTag:(NSString * _Nonnull)tag format: (NSString * _Nonnull) format, ...;
++ (void)traceWithTag:(NSString *)tag message:(NSString *)message;
++ (void)debugWithTag:(NSString *)tag message:(NSString *)message;
++ (void)infoWithTag:(NSString *)tag message:(NSString *)message;
++ (void)warnWithTag:(NSString *)tag message:(NSString *)message;
++ (void)errorWithTag:(NSString *)tag message:(NSString *)message;
++ (void)fatalWithTag:(NSString *)tag message:(NSString *)message;
+
 @end
 
+NS_ASSUME_NONNULL_END

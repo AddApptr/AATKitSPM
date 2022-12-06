@@ -38,8 +38,8 @@
 @property (nonatomic, strong)   NSDictionary                        *rvServerParams;
 @property (nonatomic, assign)   NSInteger                           consent;
 @property (nonatomic, assign)   BOOL                                didSetConsent;
-@property (nonatomic, strong)   NSDictionary                        *batchGenricParams;
-@property (nonatomic, strong)   NSDictionary                        *eventGenricParams;
+@property (nonatomic, strong)   NSDictionary                        *batchGenericParams;
+@property (nonatomic, strong)   NSDictionary                        *eventGenericParams;
 @property (nonatomic, strong)   NSDictionary                        *eventPixelParams;
 
 /*!

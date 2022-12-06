@@ -38,6 +38,14 @@
 #import "ISAdapterErrors.h"
 #import "ISDataKeys.h"
 
+// imports used for the new delegates with ad info
+#import "ISAdInfo.h"
+#import "LevelPlayRewardedVideoBaseDelegate.h"
+#import "LevelPlayRewardedVideoManualDelegate.h"
+#import "LevelPlayRewardedVideoDelegate.h"
+#import "LevelPlayInterstitialDelegate.h"
+#import "LevelPlayBannerDelegate.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 #define IS_REWARDED_VIDEO @"rewardedvideo"
@@ -45,8 +53,8 @@ NS_ASSUME_NONNULL_BEGIN
 #define IS_OFFERWALL @"offerwall"
 #define IS_BANNER @"banner"
 
-static NSString * const MEDIATION_SDK_VERSION     = @"7.2.2.1";
-static NSString * GitHash = @"9bf452961";
+static NSString * const MEDIATION_SDK_VERSION     = @"7.2.5.1";
+static NSString * GitHash = @"3bd3581db";
 
 /*
     This constant is for sending an external impression data from mopub
@@ -85,7 +93,7 @@ static NSString * const DataSource_MOPUB     = @"MoPub";
 
 /**
  @abstract Sets a dynamic identifier for the current user.
- @discussion This parameter can be changed throughout the session and will be received in the server-to-server ad rewarded callbacks. 
+ @discussion This parameter can be changed throughout the session and will be received in the server-to-server ad rewarded callbacks.
  
  It helps verify AdRewarded transactions and must be set before calling showRewardedVideo.
 
@@ -96,7 +104,7 @@ static NSString * const DataSource_MOPUB     = @"MoPub";
 
 /**
  @abstract Retrieves the device's current advertising identifier.
- @discussion Will first try to retrive IDFA, if impossible, will try to retrive IDFV.
+ @discussion Will first try to retrieve IDFA, if impossible, will try to retrieve IDFV.
  
  @return The device's current advertising identifier.
  */
@@ -247,6 +255,13 @@ static NSString * const DataSource_MOPUB     = @"MoPub";
 + (void)setRewardedVideoDelegate:(id<ISRewardedVideoDelegate>)delegate;
 
 /**
+ @abstract Sets the delegate for LevelPlay rewarded video callbacks.
+
+ @param delegate The 'LevelPlayRewardedVideoDelegate' for IronSource to send callbacks to.
+ */
++ (void)setLevelPlayRewardedVideoDelegate:(nullable id<LevelPlayRewardedVideoDelegate>)delegate;
+
+/**
  @abstract Shows a rewarded video using the default placement.
 
  @param viewController The UIViewController to display the rewarded video within.
@@ -279,7 +294,7 @@ static NSString * const DataSource_MOPUB     = @"MoPub";
 + (BOOL)isRewardedVideoCappedForPlacement:(NSString *)placementName;
 
 /**
- @abstract Retrive an object containing the placement's reward name and amount.
+ @abstract Retrieve an object containing the placement's reward name and amount.
 
  @param placementName The placement name as was defined in the platform.
  @return ISPlacementInfo representing the placement's information.
@@ -346,6 +361,16 @@ static NSString * const DataSource_MOPUB     = @"MoPub";
 + (void)setRewardedVideoManualDelegate:(nullable id<ISRewardedVideoManualDelegate>)delegate;
 
 /**
+ @abstract Sets Rewarded Video flow for LevelPlay manual load.
+ @discussion The ironSource SDK fires several events to inform you of ad availability.
+ @discussion By implementing the LevelPlayRewardedVideoManualDelegate you will receive the LevelPlay Rewarded Video events.
+ @discussion Pass this object within the ISRewardedVideoManualDelegate(…) method.
+ @discussion The SDK will notify your delegate of all possible events.
+ @param delegate The 'LevelPlayRewardedVideoManualDelegate' for IronSource to send callbacks to.
+ */
++ (void)setLevelPlayRewardedVideoManualDelegate:(nullable id<LevelPlayRewardedVideoManualDelegate>)delegate;
+
+/**
  @abstract Loads a Rewarded Video.
  @discussion This method will load Rewarded Video ads from the underlying ad networks according to their priority when in manual Rewarded Video mode.
  */
@@ -360,6 +385,13 @@ static NSString * const DataSource_MOPUB     = @"MoPub";
  @param delegate The 'ISInterstitialDelegate' for IronSource to send callbacks to.
  */
 + (void)setInterstitialDelegate:(id<ISInterstitialDelegate>)delegate;
+
+/**
+ @abstract Sets the delegate for LevelPlay interstitial callbacks.
+
+ @param delegate The 'LevelPlayInterstitialDelegate' for IronSource to send callbacks to.
+ */
++ (void)setLevelPlayInterstitialDelegate:(nullable id<LevelPlayInterstitialDelegate>)delegate;
 
 /**
  @abstract Loads an interstitial.
@@ -462,7 +494,7 @@ static NSString * const DataSource_MOPUB     = @"MoPub";
 + (void)showOfferwallWithViewController:(UIViewController *)viewController placement:(nullable NSString *)placementName;
 
 /**
- @abstract Retrive information on the user’s total credits and any new credits the user has earned.
+ @abstract Retrieve information on the user’s total credits and any new credits the user has earned.
  @discussion The function can be called at any point during the user’s engagement with the app.
  */
 + (void)offerwallCredits;
@@ -482,6 +514,13 @@ static NSString * const DataSource_MOPUB     = @"MoPub";
  @param delegate The 'ISBannerDelegate' for IronSource to send callbacks to.
  */
 + (void)setBannerDelegate:(id<ISBannerDelegate>)delegate;
+
+/**
+ @abstract Sets the delegate for LevelPlay banner callbacks.
+ 
+ @param delegate The 'LevelPlayBannerDelegate' for IronSource to send callbacks to.
+ */
++ (void)setLevelPlayBannerDelegate:(nullable id<LevelPlayBannerDelegate>)delegate;
 
 /**
  @abstract Loads a banner using the default placement.
@@ -541,12 +580,32 @@ static NSString * const DataSource_MOPUB     = @"MoPub";
 /**
  @abstract Loads a demand only Banner for a bidder instance.
  @discussion This method will load a demand only Banner ad for a bidder instance.
+ @param adm The ad markup
  @param instanceId The demand only instance id to be used to display the Banner.
+ @param viewController The view controller on which the banner should be presented
+ @param size The required banner ad size
+ */
++ (void)loadISDemandOnlyBannerWithAdm:(NSString *)adm
+                           instanceId:(NSString *)instanceId
+                       viewController:(UIViewController *)viewController
+                                 size:(ISBannerSize *)size;
+
+/**
+ @abstract Loads a demand only Banner for a non bidder instance.
+ @discussion This method will load a demand only Banner ad for a non bidder instance.
+ @param instanceId The demand only instance id to be used to display the Banner.
+ @param viewController The view controller on which the banner should be presented
+ @param size The required banner ad size
  */
 + (void)loadISDemandOnlyBannerWithInstanceId:(NSString *)instanceId
-                                         adm:(nullable NSString *)adm
                               viewController:(UIViewController *)viewController
                                         size:(ISBannerSize *)size;
+
+/**
+ @abstract Removes the banner from memory.
+ @param instanceId The demand only instance id of the Banner that should be destroyed.
+ */
++ (void)destroyISDemandOnlyBannerWithInstanceId:(NSString *)instanceId;
 
 #pragma mark - Logging
 

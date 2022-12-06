@@ -10,8 +10,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol DTBExpectedSize <NSObject>
 
-@property(nonatomic)NSNumber * _Nullable expectedWidth;
-@property(nonatomic)NSNumber * _Nullable expectedHeight;
+@property(nonatomic)NSNumber * _Nullable targetWidth;
+@property(nonatomic)NSNumber * _Nullable targetHeight;
 
 @end
 

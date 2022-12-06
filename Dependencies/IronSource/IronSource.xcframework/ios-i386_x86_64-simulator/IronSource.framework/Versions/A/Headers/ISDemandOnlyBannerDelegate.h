@@ -6,19 +6,20 @@
 //  Copyright © 2021 IronSource. All rights reserved.
 //
 
+#import "ISDemandOnlyBannerView.h"
+
 #ifndef IS_DEMAND_ONLY_BANNER_DELEGATE_H
 #define IS_DEMAND_ONLY_BANNER_DELEGATE_H
-
-#import "ISBannerView.h"
 
 @protocol ISDemandOnlyBannerDelegate <NSObject>
 
 @required
 /**
  Called after a banner ad has been successfully loaded
+ @param bannerView The view that contains the ad.
  @param instanceId The demand only instance id to be used to display the banner.
  */
-- (void)bannerDidLoad:(ISBannerView *)bannerView instanceId:(NSString *)instanceId;
+- (void)bannerDidLoad:(ISDemandOnlyBannerView *)bannerView instanceId:(NSString *)instanceId;
 
 /**
  Called after a banner has attempted to load an ad but failed.
@@ -50,20 +51,6 @@
 
  */
 - (void)bannerWillLeaveApplication:(NSString *)instanceId;
-
-/**
- Called when a banner is about to present a full screen content.
- @param instanceId The demand only instance id that present a full screen.
-
- */
-- (void)bannerWillPresentScreen:(NSString *)instanceId;
-
-/**
- Called after a full screen content has been dismissed.
- @param instanceId The demand only instance id that full screen content has been dismissed.
-
- */
-- (void)bannerDidDismissScreen:(NSString *)instanceId;
 
 @end
 
