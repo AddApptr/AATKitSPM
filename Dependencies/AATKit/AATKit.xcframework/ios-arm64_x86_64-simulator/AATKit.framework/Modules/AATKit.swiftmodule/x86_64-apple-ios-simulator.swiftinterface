@@ -263,15 +263,9 @@ extension AATKit.AATRuntimeConfiguration : Foundation.NSCopying {
   @objc public var initialRules: Swift.String?
   @objc public var shouldCacheRules: Swift.Bool
   @objc public var shouldSkipRules: Swift.Bool
-  @objc public var alternativeBundleId: Swift.String? {
-    @objc get
-    @objc set
-  }
+  @objc public var alternativeBundleId: Swift.String?
   @objc public var shouldReportUsingAlternativeBundleId: Swift.Bool
-  @objc public var testModeAccountId: Foundation.NSNumber? {
-    @objc get
-    @objc set
-  }
+  @objc public var testModeAccountId: Foundation.NSNumber?
   @objc public var useDebugShake: Swift.Bool
   @objc override dynamic public var description: Swift.String {
     @objc get
