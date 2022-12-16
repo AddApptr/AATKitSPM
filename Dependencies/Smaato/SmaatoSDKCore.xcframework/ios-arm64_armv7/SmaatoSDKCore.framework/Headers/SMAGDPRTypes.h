@@ -14,7 +14,7 @@
 /**
  |      Field          |   Purpose #1  |   Purpose #3  |
  |  gps                |                        |        X            |
- |  iosadid          |          X            |        X            |
+ |  ifa          |          X            |        X            |
  |  fcid                |          X            |        X            |
  |  iosadtracking |         X            |                      |
  |  gender           |                       |        X            |
@@ -24,7 +24,7 @@
  */
 typedef NS_ENUM(NSInteger, SMAAdPrivateData) {
     kSMAAdPrivateDataGpsCoordinates,                 // gps
-    kSMAAdPrivateDataAdvertisingIdentifier,          // iosadid
+    kSMAAdPrivateDataAdvertisingIdentifier,          // ifa
     kSMAAdPrivateDataFcid,                           // fcid
     kSMAAdPrivateDataUserGender,                     // gender
     kSMAAdPrivateDataUserAge,                        // age

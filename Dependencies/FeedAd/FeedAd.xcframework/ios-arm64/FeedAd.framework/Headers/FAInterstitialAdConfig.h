@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// URL of content for the current screen (optional)
 ///
-/// iOS Universal Link for the current screen where the ad is displayed.
+/// iOS Universal Link for the screen where the ad will be displayed.
 @property (nonatomic, strong, nullable) NSURL *contentURL;
 
 /// Custom tracking parameters (optional)
@@ -37,6 +37,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// and numbers from 0 to 9. The words can be separated by hyphens
 /// or underscores. Multiple separators must not follow each other.
 @property (nonatomic, copy, nullable) NSString *placementId;
+
+/// URL to page of the publisher's website equivalent for the current screen (optional)
+///
+/// Can be an iOS Universal Link or a regular website URL to the equivalent page
+/// on the publisher's website for the screen where the ad will be displayed.
+@property (nonatomic, strong, nullable) NSURL *webContentURL;
 
 @end
 

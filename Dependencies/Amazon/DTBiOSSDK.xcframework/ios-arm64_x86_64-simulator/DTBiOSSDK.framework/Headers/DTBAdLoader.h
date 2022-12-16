@@ -13,6 +13,10 @@
 #define A9_PRICE_POINTS_KEY @"amznslots"
 #define A9_VID_KEY @"amzn_vid"
 #define A9_SKADN_KEY @"amzn_skadn"
+#define APS_VIDEO_FLAG @"isv"
+#define APS_VIDEO_TYPE @"vtype"
+#define APS_VIDEO_SKIP_AFTER @"skipafter"
+#define APS_APP_KEY @"appkey"
 
 @interface DTBAdLoader : NSObject
 

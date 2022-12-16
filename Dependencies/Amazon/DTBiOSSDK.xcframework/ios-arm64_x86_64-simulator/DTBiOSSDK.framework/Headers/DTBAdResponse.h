@@ -65,7 +65,7 @@ typedef enum {
 /**
  @deprecated
  */
-- (NSString * _Nullable)pricePoints:(DTBAdSize *)adSize __deprecated;
+- (NSString * _Nullable)pricePoints:(DTBAdSize * _Nullable)adSize __deprecated;
 
 /**
  @deprecated
@@ -75,7 +75,7 @@ typedef enum {
 /**
  @return A DTBAdSize of the first DTBPricePoint in the internal array.
  */
-- (DTBAdSize *)adSize;
+- (DTBAdSize * _Nullable)adSize;
 
 /**
  @return A dictionary with string keys and values of custom targeting from all price points in the internal array.

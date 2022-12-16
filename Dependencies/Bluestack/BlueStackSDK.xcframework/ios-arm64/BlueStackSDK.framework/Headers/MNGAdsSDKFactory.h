@@ -63,6 +63,8 @@ typedef NS_ENUM(NSInteger, MAdvertiseError) {
 //DEBUG
 
 +(void)setDebugModeEnabled:(BOOL)enabled;
++(void)setAudioMixedWithOthersEnabled:(BOOL)enabled;
++(BOOL)getAudioMixedWithOthersEnabled;
 
 +(NSUInteger)numberOfRunningFactory;
 -(BOOL)initRequest:(NSString *)method preferences:(MNGPreference *)preferences error:(NSError **)error;

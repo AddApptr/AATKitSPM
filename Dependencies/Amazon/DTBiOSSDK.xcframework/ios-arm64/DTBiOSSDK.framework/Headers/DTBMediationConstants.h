@@ -1,11 +1,11 @@
 //
-//  AmazonMediationConstants.h
+//  DTBMediationConstants.h
 //  DTBiOSSDK
 //
 //  Copyright (c) 2021 Amazon Publisher Services. All rights reserved.
 
-#ifndef AmazonMediationConstants_h
-#define AmazonMediationConstants_h
+#ifndef DTBMediationConstants_h
+#define DTBMediationConstants_h
 
 #define BID_INFO                @"bidInfo"
 #define PLACEMENT_HINT          @"pHint"
@@ -28,4 +28,4 @@ typedef NS_ENUM(NSInteger, DTBAdErrorCode) {
 };
 
 
-#endif /* AmazonMediationConstants_h */
+#endif /* DTBMediationConstants_h */

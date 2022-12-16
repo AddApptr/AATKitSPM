@@ -232,19 +232,16 @@ public let PREBID_VERSION: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public enum IMAAdSlotSize : Swift.Int {
-  case Size400x300
-  case Size640x480
-  case Size320x480
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+@_inheritsConvenienceInitializers @objc public class IMAAdSlotSize : PrebidMobile.SingleContainerInt {
+  @objc public static let Size400x300: PrebidMobile.IMAAdSlotSize
+  @objc public static let Size640x480: PrebidMobile.IMAAdSlotSize
+  @objc public static let Size320x480: PrebidMobile.IMAAdSlotSize
+  @objc required public init(integerLiteral value: Swift.Int)
+  @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class IMAUtils : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class IMAUtils : ObjectiveC.NSObject {
   @objc public static let shared: PrebidMobile.IMAUtils
-  final public func generateInstreamUriForGAM(adUnitID: Swift.String, adSlotSizes: [PrebidMobile.IMAAdSlotSize], customKeywords: [Swift.String : Swift.String]?) throws -> Swift.String
+  @objc final public func generateInstreamUriForGAM(adUnitID: Swift.String, adSlotSizes: [PrebidMobile.IMAAdSlotSize], customKeywords: [Swift.String : Swift.String]?) throws -> Swift.String
   @objc deinit
 }
 @objc public protocol DisplayViewInteractionDelegate : ObjectiveC.NSObjectProtocol {
@@ -797,6 +794,7 @@ extension UIKit.UIView {
 }
 @objc public class VideoInterstitialAdUnit : PrebidMobile.VideoBaseAdUnit {
   @objc public init(configId: Swift.String)
+  @objc convenience public init(configId: Swift.String, minWidthPerc: Swift.Int, minHeightPerc: Swift.Int)
   @objc deinit
 }
 @objc public class BaseInterstitialAdUnit : ObjectiveC.NSObject, PrebidMobile.PBMInterstitialAdLoaderDelegate, PrebidMobile.AdLoadFlowControllerDelegate, PrebidMobile.InterstitialControllerInteractionDelegate, PrebidMobile.InterstitialEventInteractionDelegate, PrebidMobile.BaseInterstitialAdUnitProtocol {
@@ -904,6 +902,7 @@ extension UIKit.UIView {
 }
 @objc public class RewardedVideoAdUnit : PrebidMobile.VideoBaseAdUnit {
   @objc public init(configId: Swift.String)
+  @objc convenience public init(configId: Swift.String, minWidthPerc: Swift.Int, minHeightPerc: Swift.Int)
   @objc deinit
 }
 @objc public protocol RewardedEventLoadingDelegate : PrebidMobile.InterstitialEventLoadingDelegate {
@@ -1083,6 +1082,7 @@ extension UIKit.UIView {
   @objc public func getStoredBidResponses() -> [[Swift.String : Swift.String]]?
   @objc public func addCustomHeader(name: Swift.String, value: Swift.String)
   @objc public func clearCustomHeaders()
+  @objc public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: ((PrebidMobile.PrebidInitializationStatus, Swift.Error?) -> Swift.Void)? = nil)
   @objc public static func initializeSDK(_ completion: ((PrebidMobile.PrebidInitializationStatus, Swift.Error?) -> Swift.Void)? = nil)
   @objc deinit
 }
@@ -1378,6 +1378,35 @@ extension UIKit.UIView {
   public var rawValue: Swift.Int {
     get
   }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class UserConsentDataManager : ObjectiveC.NSObject {
+  @objc public static let shared: PrebidMobile.UserConsentDataManager
+  public var subjectToCOPPA: Swift.Bool? {
+    get
+    set
+  }
+  @objc public var usPrivacyString: Swift.String? {
+    @objc get
+  }
+  public var subjectToGDPR: Swift.Bool? {
+    get
+    set
+  }
+  @objc public var subjectToGDPR_NSNumber: Foundation.NSNumber? {
+    @objc get
+  }
+  @objc public var gdprConsentString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var purposeConsents: Swift.String? {
+    @objc get
+    @objc set
+  }
+  public func getDeviceAccessConsent() -> Swift.Bool?
+  public func getPurposeConsent(index: Swift.Int) -> Swift.Bool?
+  @objc public func isAllowedAccessDeviceData() -> Swift.Bool
+  @objc deinit
 }
 @objc public protocol InterstitialControllerInteractionDelegate : ObjectiveC.NSObjectProtocol {
   @objc func trackImpression(forInterstitialController: PrebidMobile.InterstitialController)
@@ -1859,9 +1888,6 @@ public typealias ServerResponseCallback = (PrebidMobile.ServerResponse) -> Swift
   @objc public func findNative(adObject: Swift.AnyObject)
   @objc deinit
 }
-extension PrebidMobile.IMAAdSlotSize : Swift.Equatable {}
-extension PrebidMobile.IMAAdSlotSize : Swift.Hashable {}
-extension PrebidMobile.IMAAdSlotSize : Swift.RawRepresentable {}
 extension PrebidMobile.NativeDataAssetType : Swift.Equatable {}
 extension PrebidMobile.NativeDataAssetType : Swift.Hashable {}
 extension PrebidMobile.NativeDataAssetType : Swift.RawRepresentable {}

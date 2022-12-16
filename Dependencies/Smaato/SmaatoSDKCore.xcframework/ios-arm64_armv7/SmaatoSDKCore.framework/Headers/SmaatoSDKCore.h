@@ -30,3 +30,4 @@
 #import <SmaatoSDKCore/SMAIABDataStorageVTwoUserDefaults.h>
 #import <SmaatoSDKCore/SMAConsentParser.h>
 #import <SmaatoSDKCore/SMAAdMarkup.h>
+
