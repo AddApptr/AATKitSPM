@@ -12,6 +12,6 @@ import _Concurrency
   public static let shared: AATAdMobMediationAdapter.AATAdMobMediationAdapterManager
   public func initAATKit(with testModeAccId: Swift.Int? = nil)
   public func viewControllerDidAppear(_ viewController: UIKit.UIViewController)
-  public func viewControllerWillDisappear(_ viewController: UIKit.UIViewController)
+  public func viewControllerWillDisappear()
   @objc deinit
 }

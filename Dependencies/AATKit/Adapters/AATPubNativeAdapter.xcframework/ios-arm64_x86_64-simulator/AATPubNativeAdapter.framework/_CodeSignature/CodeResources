@@ -16,10 +16,6 @@
 		<data>
 		TzEkhBXkFk7mp0OrppvGSxC03c8=
 		</data>
-		<key>LICENSE</key>
-		<data>
-		ksMuKaDQcwG1Tku3N4ZyswQaLQw=
-		</data>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
 		EFTnSdZmm4AHu2iXvawsFVM3QFQ=
@@ -30,7 +26,7 @@
 		</data>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vMHVv108n72VdYL8M2MIIAj+n7U=
+		G1vXWoPXLnqFpXAQW7edk9x88yU=
 		</data>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,7 +38,7 @@
 		</data>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hXgDfw7XRaDks19MrmeTucy7Krg=
+		ud2KGBoa3GrFr7YqSF/0yUv9PtE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,17 +69,6 @@
 			F2WBAR4t/eNtUn02Hl0JDLJwVeoTbISBWmOjarsuCSI=
 			</data>
 		</dict>
-		<key>LICENSE</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ksMuKaDQcwG1Tku3N4ZyswQaLQw=
-			</data>
-			<key>hash2</key>
-			<data>
-			3PT9mDJcl94a8RCz73KQaYlelXNLZWEiIrT/S99ixfA=
-			</data>
-		</dict>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
@@ -110,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vMHVv108n72VdYL8M2MIIAj+n7U=
+			G1vXWoPXLnqFpXAQW7edk9x88yU=
 			</data>
 			<key>hash2</key>
 			<data>
-			3qbysKUrmF1XGuE4XJnyuZAQLJh3VxuZXuI2Yvyhrz0=
+			a4Q+B+w94eMapLRbVbArm0Sf9TsPYuVdrnb8e2A0FKQ=
 			</data>
 		</dict>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -143,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hXgDfw7XRaDks19MrmeTucy7Krg=
+			ud2KGBoa3GrFr7YqSF/0yUv9PtE=
 			</data>
 			<key>hash2</key>
 			<data>
-			9YF1779vJDnyU4rQqP/Kfn9gQ1USzHj94kg2tMI/4Yk=
+			8rHQyWpwJc6bXNIMTD66pXXQma8XILxJL6DqdrnHqzE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

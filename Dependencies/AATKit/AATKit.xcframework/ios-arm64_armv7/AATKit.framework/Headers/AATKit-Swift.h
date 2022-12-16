@@ -226,14 +226,15 @@ typedef SWIFT_ENUM(NSInteger, AATAdChoicesIconPosition, closed) {
   AATAdChoicesIconPositionBottomRight = 3,
 };
 
+@protocol AATPlacement;
 
 /// Conform to this protocol to be notified about the ads display events
 SWIFT_PROTOCOL("_TtP6AATKit20AATAdDisplayDelegate_")
 @protocol AATAdDisplayDelegate
 /// This method will be called with the ad display event
-- (void)aatAdCurrentlyDisplayed;
+- (void)aatAdCurrentlyDisplayedWithPlacement:(id <AATPlacement> _Nonnull)placement;
 /// This method will be called when the app resumes after displaying an ad
-- (void)aatResumeAfterAd;
+- (void)aatResumeAfterAdWithPlacement:(id <AATPlacement> _Nonnull)placement;
 @end
 
 @protocol AATAdMobCustomEventsDelegate;
@@ -285,6 +286,19 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkDFPDIRECT = 24,
 };
 
+
+SWIFT_PROTOCOL("_TtP6AATKit16AATInitializable_")
+@protocol AATInitializable
+- (nonnull instancetype)init;
+@end
+
+@class NSString;
+
+SWIFT_PROTOCOL("_TtP6AATKit33AATAdNetworkDriverVersionProtocol_")
+@protocol AATAdNetworkDriverVersionProtocol <AATInitializable>
+- (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
+@end
+
 typedef SWIFT_ENUM(NSInteger, AATAdType, open) {
   AATAdTypeFullscreen = 0,
   AATAdTypeBanner = 1,
@@ -293,13 +307,18 @@ typedef SWIFT_ENUM(NSInteger, AATAdType, open) {
   AATAdTypeAppOpen = 4,
 };
 
+
+SWIFT_PROTOCOL("_TtP6AATKit12AATPlacement_")
+@protocol AATPlacement
+- (NSString * _Nonnull)getName SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @protocol AATAppOpenPlacementDelegate;
 @protocol AATStatisticsDelegate;
 @protocol AATImpressionDelegate;
-@class NSString;
 
 SWIFT_PROTOCOL("_TtP6AATKit21AATAppOpenAdPlacement_")
-@protocol AATAppOpenAdPlacement
+@protocol AATAppOpenAdPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events.
 @property (nonatomic, strong) id <AATAppOpenPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -342,7 +361,7 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATAppOpenAdPlacement_")
 SWIFT_PROTOCOL("_TtP6AATKit15AATNoAdDelegate_")
 @protocol AATNoAdDelegate
 /// This method will be called when there is no ad available
-- (void)aatNoAd;
+- (void)aatNoAdWithPlacement:(id <AATPlacement> _Nonnull)placement;
 @end
 
 
@@ -350,7 +369,7 @@ SWIFT_PROTOCOL("_TtP6AATKit15AATNoAdDelegate_")
 SWIFT_PROTOCOL("_TtP6AATKit17AATHaveAdDelegate_")
 @protocol AATHaveAdDelegate
 /// This method will be called when there is an ad
-- (void)aatHaveAd;
+- (void)aatHaveAdWithPlacement:(id <AATPlacement> _Nonnull)placement;
 @end
 
 
@@ -571,17 +590,18 @@ typedef SWIFT_ENUM(NSInteger, AATBannerSize, open) {
   AATBannerSizeBanner428x50 = 16,
 };
 
-enum NonIABConsent : NSInteger;
+enum AATManagedConsentState : NSInteger;
 
 SWIFT_PROTOCOL("_TtP6AATKit14AATCMPDelegate_")
 @protocol AATCMPDelegate
-- (void)consentDidUpdate:(enum NonIABConsent)state;
+- (void)consentDidUpdate:(enum AATManagedConsentState)state;
 - (void)CMPFailedToShowWith:(NSString * _Nonnull)error;
 - (void)CMPFailedToLoadWith:(NSString * _Nonnull)error;
 - (void)CMPNeedsUI;
 @end
 
 @class UIViewController;
+enum NonIABConsent : NSInteger;
 
 SWIFT_PROTOCOL("_TtP6AATKit14AATCMPProtocol_")
 @protocol AATCMPProtocol
@@ -659,7 +679,7 @@ SWIFT_PROTOCOL("_TtP6AATKit11AATDelegate_")
 
 
 SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
-@protocol AATFullscreenPlacement
+@protocol AATFullscreenPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events.
 @property (nonatomic, strong) id <AATFullscreenPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -711,6 +731,16 @@ SWIFT_CLASS("_TtC6AATKit13AATImpression")
 @property (nonatomic, readonly) enum AATMediationType mediationType;
 @property (nonatomic, readonly) double price;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// A method to get the name of the impression ad network
+///
+/// returns:
+/// A string represents the name of the ad network
+- (NSString * _Nonnull)getAdNetworkName SWIFT_WARN_UNUSED_RESULT;
+/// A method to get the mediation type
+///
+/// returns:
+/// A string represents the mediation type
+- (NSString * _Nonnull)getMediationTypeName SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -728,7 +758,7 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATImpressionDelegate_")
 @protocol AATInfeedBannerPlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit24AATInfeedBannerPlacement_")
-@protocol AATInfeedBannerPlacement
+@protocol AATInfeedBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATInfeedBannerPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -756,11 +786,6 @@ SWIFT_PROTOCOL("_TtP6AATKit32AATInfeedBannerPlacementDelegate_")
 @end
 
 
-SWIFT_PROTOCOL("_TtP6AATKit16AATInitializable_")
-@protocol AATInitializable
-- (nonnull instancetype)init;
-@end
-
 
 SWIFT_CLASS("_TtC6AATKit16AATLocationUtils")
 @interface AATLocationUtils : NSObject
@@ -778,11 +803,11 @@ SWIFT_CLASS("_TtC6AATKit16AATLocationUtils")
 
 /// Desired log level
 typedef SWIFT_ENUM(NSInteger, AATLogLevel, open) {
-  AATLogLevelVerbose = 0,
-  AATLogLevelDebug = 1,
-  AATLogLevelInfo = 2,
-  AATLogLevelWarn = 3,
-  AATLogLevelError = 4,
+  AATLogLevelVerbose = 1,
+  AATLogLevelDebug = 2,
+  AATLogLevelInfo = 3,
+  AATLogLevelWarn = 4,
+  AATLogLevelError = 5,
 };
 
 
@@ -790,6 +815,7 @@ SWIFT_CLASS("_TtC6AATKit9AATLogger")
 @interface AATLogger : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 @protocol AATManagedConsentDelegate;
 
@@ -803,14 +829,13 @@ SWIFT_CLASS("_TtC6AATKit17AATManagedConsent")
 @end
 
 
-
 @interface AATManagedConsent (SWIFT_EXTENSION(AATKit))
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 
 @interface AATManagedConsent (SWIFT_EXTENSION(AATKit)) <AATCMPDelegate>
-- (void)consentDidUpdate:(enum NonIABConsent)state;
+- (void)consentDidUpdate:(enum AATManagedConsentState)state;
 - (void)CMPFailedToShowWith:(NSString * _Nonnull)error;
 - (void)CMPFailedToLoadWith:(NSString * _Nonnull)error;
 - (void)CMPNeedsUI;
@@ -820,10 +845,37 @@ SWIFT_CLASS("_TtC6AATKit17AATManagedConsent")
 SWIFT_PROTOCOL("_TtP6AATKit25AATManagedConsentDelegate_")
 @protocol AATManagedConsentDelegate
 - (void)managedConsentNeedsUserInterface:(AATManagedConsent * _Nonnull)managedConsent;
-- (void)managedConsentCMPFinishedWith:(enum NonIABConsent)state;
+- (void)managedConsentCMPFinishedWith:(enum AATManagedConsentState)state;
 - (void)managedConsentCMPFailedToLoad:(AATManagedConsent * _Nonnull)managedConsent with:(NSString * _Nonnull)error;
 - (void)managedConsentCMPFailedToShow:(AATManagedConsent * _Nonnull)managedConsent with:(NSString * _Nonnull)error;
 @end
+
+typedef SWIFT_ENUM(NSInteger, AATManagedConsentState, open) {
+/// <ul>
+///   <li>
+///     No information about consent state.
+///   </li>
+/// </ul>
+  AATManagedConsentStateUnknown = 0,
+/// <ul>
+///   <li>
+///     Consent has been declined by the user.
+///   </li>
+/// </ul>
+  AATManagedConsentStateWithheld = 1,
+/// <ul>
+///   <li>
+///     Partial consent has been granted by the user - at least some purposes and some vendors were given consent.
+///   </li>
+/// </ul>
+  AATManagedConsentStateCustom = 2,
+/// <ul>
+///   <li>
+///     Full consent has been granted by the user.
+///   </li>
+/// </ul>
+  AATManagedConsentStateObtained = 3,
+};
 
 /// <ul>
 ///   <li>
@@ -839,7 +891,7 @@ typedef SWIFT_ENUM(NSInteger, AATMediationType, closed) {
 @protocol AATMultiSizeBannerPlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_")
-@protocol AATMultiSizeBannerPlacement
+@protocol AATMultiSizeBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATMultiSizeBannerPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -888,7 +940,7 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_")
 SWIFT_PROTOCOL("_TtP6AATKit35AATMultiSizeBannerPlacementDelegate_")
 @protocol AATMultiSizeBannerPlacementDelegate <AATAdDisplayDelegate, AATNoAdDelegate>
 /// This method will be called when there is an ad
-- (void)aatHaveAdWithBannerViewWithBannerView:(AATBannerPlacementWrapperView * _Nonnull)bannerView;
+- (void)aatHaveAdWithBannerViewWithPlacement:(id <AATPlacement> _Nonnull)placement bannerView:(AATBannerPlacementWrapperView * _Nonnull)bannerView;
 @end
 
 @class AATNativeAdRating;
@@ -969,7 +1021,7 @@ SWIFT_PROTOCOL("_TtP6AATKit15AATNativeAdData_")
 @protocol AATNativePlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit20AATNativeAdPlacement_")
-@protocol AATNativeAdPlacement
+@protocol AATNativeAdPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events.
 @property (nonatomic, strong) id <AATNativePlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -1013,6 +1065,8 @@ SWIFT_PROTOCOL("_TtP6AATKit20AATNativeAdPlacement_")
 SWIFT_CLASS("_TtC6AATKit17AATNativeAdRating")
 @interface AATNativeAdRating : NSObject
 - (nonnull instancetype)initWithValue:(double)value scale:(double)scale OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) double value;
+@property (nonatomic, readonly) double scale;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1031,6 +1085,7 @@ typedef SWIFT_ENUM(NSInteger, AATNativeAdType, open) {
 SWIFT_PROTOCOL("_TtP6AATKit26AATNativePlacementDelegate_")
 @protocol AATNativePlacementDelegate <AATAdDisplayDelegate, AATHaveAdDelegate, AATNoAdDelegate>
 @end
+
 
 
 typedef SWIFT_ENUM(NSInteger, AATPluginName, open) {
@@ -1075,7 +1130,7 @@ SWIFT_CLASS("_TtC6AATKit9AATReward")
 @protocol AATRewardedVideoPlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
-@protocol AATRewardedVideoPlacement
+@protocol AATRewardedVideoPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATRewardedVideoPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -1118,7 +1173,7 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
 SWIFT_PROTOCOL("_TtP6AATKit33AATRewardedVideoPlacementDelegate_")
 @protocol AATRewardedVideoPlacementDelegate <AATFullscreenPlacementDelegate>
 /// This method will be called when the user gets rewarded
-- (void)aatUserEarnedIncentiveWithAatReward:(AATReward * _Nonnull)aatReward;
+- (void)aatUserEarnedIncentiveWithPlacement:(id <AATPlacement> _Nonnull)placement aatReward:(AATReward * _Nonnull)aatReward;
 @end
 
 
@@ -1343,13 +1398,13 @@ SWIFT_CLASS("_TtC6AATKit16AATSimpleConsent")
 
 SWIFT_PROTOCOL("_TtP6AATKit21AATStatisticsDelegate_")
 @protocol AATStatisticsDelegate
-/// Notifies that an adspace has been counted.
+/// Notifies that an ad space has been counted.
 - (void)AATKitCountedAdSpace;
-/// Notifies that an request has been counted for a given network.
+/// Notifies that a request has been counted for a given network.
 /// \param network Network for which the request has been counted.
 ///
 - (void)AATKitCountedRequestFor:(enum AATAdNetwork)network;
-/// Notifies that an response has been counted for a given network.
+/// Notifies that a response has been counted for a given network.
 /// \param network Network for which the response has been counted.
 ///
 - (void)AATKitCountedResponseFor:(enum AATAdNetwork)network;
@@ -1357,19 +1412,19 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATStatisticsDelegate_")
 /// \param network Network for which the impression has been counted.
 ///
 - (void)AATKitCountedImpressionFor:(enum AATAdNetwork)network;
-/// Notifies that an viewable impression has been counted for a given network.
+/// Notifies that a viewable impression has been counted for a given network.
 /// \param network Network for which the viewable impression has been counted.
 ///
 - (void)AATKitCountedVImpressionFor:(enum AATAdNetwork)network;
-/// Notifies that an click has been counted for a given network.
+/// Notifies that a click has been counted for a given network.
 /// \param network Network for which the click has been counted.
 ///
 - (void)AATKitCountedClickFor:(enum AATAdNetwork)network;
-/// Notifies that an direct deal impression has been counted for a given network.
+/// Notifies that a direct deal impression has been counted for a given network.
 /// \param network Network for which the direct deal impression has been counted.
 ///
 - (void)AATKitCountedDirectDealImpressionFor:(enum AATAdNetwork)network;
-/// Notifies than an mediation cycle has been counted.
+/// Notifies than a mediation cycle has been counted.
 - (void)AATKitCountedMediationCycle;
 @end
 
@@ -1377,7 +1432,7 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATStatisticsDelegate_")
 @class UIImage;
 
 SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_")
-@protocol AATStickyBannerPlacement
+@protocol AATStickyBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATStickyBannerPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -1440,6 +1495,14 @@ SWIFT_PROTOCOL("_TtP6AATKit32AATStickyBannerPlacementDelegate_")
 @protocol AATStickyBannerPlacementDelegate <AATAdDisplayDelegate, AATHaveAdDelegate, AATNoAdDelegate>
 @end
 
+
+SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
+@interface AATSupplyChainData : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol AATVendorConsentDelegate;
 
 /// AATKit simple consent. Should be initialised with <code>AATVendorConsentDelegate</code>
@@ -1477,16 +1540,10 @@ typedef SWIFT_ENUM(NSInteger, NonIABConsent, open) {
   NonIABConsentObtained = 1,
 /// <ul>
 ///   <li>
-///     Consent has been partially granted by the user.
-///   </li>
-/// </ul>
-  NonIABConsentCustom = 2,
-/// <ul>
-///   <li>
 ///     Consent has been declined by the user.
 ///   </li>
 /// </ul>
-  NonIABConsentWithheld = 3,
+  NonIABConsentWithheld = 2,
 };
 
 
@@ -1724,14 +1781,15 @@ typedef SWIFT_ENUM(NSInteger, AATAdChoicesIconPosition, closed) {
   AATAdChoicesIconPositionBottomRight = 3,
 };
 
+@protocol AATPlacement;
 
 /// Conform to this protocol to be notified about the ads display events
 SWIFT_PROTOCOL("_TtP6AATKit20AATAdDisplayDelegate_")
 @protocol AATAdDisplayDelegate
 /// This method will be called with the ad display event
-- (void)aatAdCurrentlyDisplayed;
+- (void)aatAdCurrentlyDisplayedWithPlacement:(id <AATPlacement> _Nonnull)placement;
 /// This method will be called when the app resumes after displaying an ad
-- (void)aatResumeAfterAd;
+- (void)aatResumeAfterAdWithPlacement:(id <AATPlacement> _Nonnull)placement;
 @end
 
 @protocol AATAdMobCustomEventsDelegate;
@@ -1783,6 +1841,19 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkDFPDIRECT = 24,
 };
 
+
+SWIFT_PROTOCOL("_TtP6AATKit16AATInitializable_")
+@protocol AATInitializable
+- (nonnull instancetype)init;
+@end
+
+@class NSString;
+
+SWIFT_PROTOCOL("_TtP6AATKit33AATAdNetworkDriverVersionProtocol_")
+@protocol AATAdNetworkDriverVersionProtocol <AATInitializable>
+- (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
+@end
+
 typedef SWIFT_ENUM(NSInteger, AATAdType, open) {
   AATAdTypeFullscreen = 0,
   AATAdTypeBanner = 1,
@@ -1791,13 +1862,18 @@ typedef SWIFT_ENUM(NSInteger, AATAdType, open) {
   AATAdTypeAppOpen = 4,
 };
 
+
+SWIFT_PROTOCOL("_TtP6AATKit12AATPlacement_")
+@protocol AATPlacement
+- (NSString * _Nonnull)getName SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @protocol AATAppOpenPlacementDelegate;
 @protocol AATStatisticsDelegate;
 @protocol AATImpressionDelegate;
-@class NSString;
 
 SWIFT_PROTOCOL("_TtP6AATKit21AATAppOpenAdPlacement_")
-@protocol AATAppOpenAdPlacement
+@protocol AATAppOpenAdPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events.
 @property (nonatomic, strong) id <AATAppOpenPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -1840,7 +1916,7 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATAppOpenAdPlacement_")
 SWIFT_PROTOCOL("_TtP6AATKit15AATNoAdDelegate_")
 @protocol AATNoAdDelegate
 /// This method will be called when there is no ad available
-- (void)aatNoAd;
+- (void)aatNoAdWithPlacement:(id <AATPlacement> _Nonnull)placement;
 @end
 
 
@@ -1848,7 +1924,7 @@ SWIFT_PROTOCOL("_TtP6AATKit15AATNoAdDelegate_")
 SWIFT_PROTOCOL("_TtP6AATKit17AATHaveAdDelegate_")
 @protocol AATHaveAdDelegate
 /// This method will be called when there is an ad
-- (void)aatHaveAd;
+- (void)aatHaveAdWithPlacement:(id <AATPlacement> _Nonnull)placement;
 @end
 
 
@@ -2069,17 +2145,18 @@ typedef SWIFT_ENUM(NSInteger, AATBannerSize, open) {
   AATBannerSizeBanner428x50 = 16,
 };
 
-enum NonIABConsent : NSInteger;
+enum AATManagedConsentState : NSInteger;
 
 SWIFT_PROTOCOL("_TtP6AATKit14AATCMPDelegate_")
 @protocol AATCMPDelegate
-- (void)consentDidUpdate:(enum NonIABConsent)state;
+- (void)consentDidUpdate:(enum AATManagedConsentState)state;
 - (void)CMPFailedToShowWith:(NSString * _Nonnull)error;
 - (void)CMPFailedToLoadWith:(NSString * _Nonnull)error;
 - (void)CMPNeedsUI;
 @end
 
 @class UIViewController;
+enum NonIABConsent : NSInteger;
 
 SWIFT_PROTOCOL("_TtP6AATKit14AATCMPProtocol_")
 @protocol AATCMPProtocol
@@ -2157,7 +2234,7 @@ SWIFT_PROTOCOL("_TtP6AATKit11AATDelegate_")
 
 
 SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
-@protocol AATFullscreenPlacement
+@protocol AATFullscreenPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events.
 @property (nonatomic, strong) id <AATFullscreenPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -2209,6 +2286,16 @@ SWIFT_CLASS("_TtC6AATKit13AATImpression")
 @property (nonatomic, readonly) enum AATMediationType mediationType;
 @property (nonatomic, readonly) double price;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+/// A method to get the name of the impression ad network
+///
+/// returns:
+/// A string represents the name of the ad network
+- (NSString * _Nonnull)getAdNetworkName SWIFT_WARN_UNUSED_RESULT;
+/// A method to get the mediation type
+///
+/// returns:
+/// A string represents the mediation type
+- (NSString * _Nonnull)getMediationTypeName SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2226,7 +2313,7 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATImpressionDelegate_")
 @protocol AATInfeedBannerPlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit24AATInfeedBannerPlacement_")
-@protocol AATInfeedBannerPlacement
+@protocol AATInfeedBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATInfeedBannerPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -2254,11 +2341,6 @@ SWIFT_PROTOCOL("_TtP6AATKit32AATInfeedBannerPlacementDelegate_")
 @end
 
 
-SWIFT_PROTOCOL("_TtP6AATKit16AATInitializable_")
-@protocol AATInitializable
-- (nonnull instancetype)init;
-@end
-
 
 SWIFT_CLASS("_TtC6AATKit16AATLocationUtils")
 @interface AATLocationUtils : NSObject
@@ -2276,11 +2358,11 @@ SWIFT_CLASS("_TtC6AATKit16AATLocationUtils")
 
 /// Desired log level
 typedef SWIFT_ENUM(NSInteger, AATLogLevel, open) {
-  AATLogLevelVerbose = 0,
-  AATLogLevelDebug = 1,
-  AATLogLevelInfo = 2,
-  AATLogLevelWarn = 3,
-  AATLogLevelError = 4,
+  AATLogLevelVerbose = 1,
+  AATLogLevelDebug = 2,
+  AATLogLevelInfo = 3,
+  AATLogLevelWarn = 4,
+  AATLogLevelError = 5,
 };
 
 
@@ -2288,6 +2370,7 @@ SWIFT_CLASS("_TtC6AATKit9AATLogger")
 @interface AATLogger : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 @protocol AATManagedConsentDelegate;
 
@@ -2301,14 +2384,13 @@ SWIFT_CLASS("_TtC6AATKit17AATManagedConsent")
 @end
 
 
-
 @interface AATManagedConsent (SWIFT_EXTENSION(AATKit))
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 
 @interface AATManagedConsent (SWIFT_EXTENSION(AATKit)) <AATCMPDelegate>
-- (void)consentDidUpdate:(enum NonIABConsent)state;
+- (void)consentDidUpdate:(enum AATManagedConsentState)state;
 - (void)CMPFailedToShowWith:(NSString * _Nonnull)error;
 - (void)CMPFailedToLoadWith:(NSString * _Nonnull)error;
 - (void)CMPNeedsUI;
@@ -2318,10 +2400,37 @@ SWIFT_CLASS("_TtC6AATKit17AATManagedConsent")
 SWIFT_PROTOCOL("_TtP6AATKit25AATManagedConsentDelegate_")
 @protocol AATManagedConsentDelegate
 - (void)managedConsentNeedsUserInterface:(AATManagedConsent * _Nonnull)managedConsent;
-- (void)managedConsentCMPFinishedWith:(enum NonIABConsent)state;
+- (void)managedConsentCMPFinishedWith:(enum AATManagedConsentState)state;
 - (void)managedConsentCMPFailedToLoad:(AATManagedConsent * _Nonnull)managedConsent with:(NSString * _Nonnull)error;
 - (void)managedConsentCMPFailedToShow:(AATManagedConsent * _Nonnull)managedConsent with:(NSString * _Nonnull)error;
 @end
+
+typedef SWIFT_ENUM(NSInteger, AATManagedConsentState, open) {
+/// <ul>
+///   <li>
+///     No information about consent state.
+///   </li>
+/// </ul>
+  AATManagedConsentStateUnknown = 0,
+/// <ul>
+///   <li>
+///     Consent has been declined by the user.
+///   </li>
+/// </ul>
+  AATManagedConsentStateWithheld = 1,
+/// <ul>
+///   <li>
+///     Partial consent has been granted by the user - at least some purposes and some vendors were given consent.
+///   </li>
+/// </ul>
+  AATManagedConsentStateCustom = 2,
+/// <ul>
+///   <li>
+///     Full consent has been granted by the user.
+///   </li>
+/// </ul>
+  AATManagedConsentStateObtained = 3,
+};
 
 /// <ul>
 ///   <li>
@@ -2337,7 +2446,7 @@ typedef SWIFT_ENUM(NSInteger, AATMediationType, closed) {
 @protocol AATMultiSizeBannerPlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_")
-@protocol AATMultiSizeBannerPlacement
+@protocol AATMultiSizeBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATMultiSizeBannerPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -2386,7 +2495,7 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_")
 SWIFT_PROTOCOL("_TtP6AATKit35AATMultiSizeBannerPlacementDelegate_")
 @protocol AATMultiSizeBannerPlacementDelegate <AATAdDisplayDelegate, AATNoAdDelegate>
 /// This method will be called when there is an ad
-- (void)aatHaveAdWithBannerViewWithBannerView:(AATBannerPlacementWrapperView * _Nonnull)bannerView;
+- (void)aatHaveAdWithBannerViewWithPlacement:(id <AATPlacement> _Nonnull)placement bannerView:(AATBannerPlacementWrapperView * _Nonnull)bannerView;
 @end
 
 @class AATNativeAdRating;
@@ -2467,7 +2576,7 @@ SWIFT_PROTOCOL("_TtP6AATKit15AATNativeAdData_")
 @protocol AATNativePlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit20AATNativeAdPlacement_")
-@protocol AATNativeAdPlacement
+@protocol AATNativeAdPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events.
 @property (nonatomic, strong) id <AATNativePlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -2511,6 +2620,8 @@ SWIFT_PROTOCOL("_TtP6AATKit20AATNativeAdPlacement_")
 SWIFT_CLASS("_TtC6AATKit17AATNativeAdRating")
 @interface AATNativeAdRating : NSObject
 - (nonnull instancetype)initWithValue:(double)value scale:(double)scale OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) double value;
+@property (nonatomic, readonly) double scale;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2529,6 +2640,7 @@ typedef SWIFT_ENUM(NSInteger, AATNativeAdType, open) {
 SWIFT_PROTOCOL("_TtP6AATKit26AATNativePlacementDelegate_")
 @protocol AATNativePlacementDelegate <AATAdDisplayDelegate, AATHaveAdDelegate, AATNoAdDelegate>
 @end
+
 
 
 typedef SWIFT_ENUM(NSInteger, AATPluginName, open) {
@@ -2573,7 +2685,7 @@ SWIFT_CLASS("_TtC6AATKit9AATReward")
 @protocol AATRewardedVideoPlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
-@protocol AATRewardedVideoPlacement
+@protocol AATRewardedVideoPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATRewardedVideoPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -2616,7 +2728,7 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
 SWIFT_PROTOCOL("_TtP6AATKit33AATRewardedVideoPlacementDelegate_")
 @protocol AATRewardedVideoPlacementDelegate <AATFullscreenPlacementDelegate>
 /// This method will be called when the user gets rewarded
-- (void)aatUserEarnedIncentiveWithAatReward:(AATReward * _Nonnull)aatReward;
+- (void)aatUserEarnedIncentiveWithPlacement:(id <AATPlacement> _Nonnull)placement aatReward:(AATReward * _Nonnull)aatReward;
 @end
 
 
@@ -2841,13 +2953,13 @@ SWIFT_CLASS("_TtC6AATKit16AATSimpleConsent")
 
 SWIFT_PROTOCOL("_TtP6AATKit21AATStatisticsDelegate_")
 @protocol AATStatisticsDelegate
-/// Notifies that an adspace has been counted.
+/// Notifies that an ad space has been counted.
 - (void)AATKitCountedAdSpace;
-/// Notifies that an request has been counted for a given network.
+/// Notifies that a request has been counted for a given network.
 /// \param network Network for which the request has been counted.
 ///
 - (void)AATKitCountedRequestFor:(enum AATAdNetwork)network;
-/// Notifies that an response has been counted for a given network.
+/// Notifies that a response has been counted for a given network.
 /// \param network Network for which the response has been counted.
 ///
 - (void)AATKitCountedResponseFor:(enum AATAdNetwork)network;
@@ -2855,19 +2967,19 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATStatisticsDelegate_")
 /// \param network Network for which the impression has been counted.
 ///
 - (void)AATKitCountedImpressionFor:(enum AATAdNetwork)network;
-/// Notifies that an viewable impression has been counted for a given network.
+/// Notifies that a viewable impression has been counted for a given network.
 /// \param network Network for which the viewable impression has been counted.
 ///
 - (void)AATKitCountedVImpressionFor:(enum AATAdNetwork)network;
-/// Notifies that an click has been counted for a given network.
+/// Notifies that a click has been counted for a given network.
 /// \param network Network for which the click has been counted.
 ///
 - (void)AATKitCountedClickFor:(enum AATAdNetwork)network;
-/// Notifies that an direct deal impression has been counted for a given network.
+/// Notifies that a direct deal impression has been counted for a given network.
 /// \param network Network for which the direct deal impression has been counted.
 ///
 - (void)AATKitCountedDirectDealImpressionFor:(enum AATAdNetwork)network;
-/// Notifies than an mediation cycle has been counted.
+/// Notifies than a mediation cycle has been counted.
 - (void)AATKitCountedMediationCycle;
 @end
 
@@ -2875,7 +2987,7 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATStatisticsDelegate_")
 @class UIImage;
 
 SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_")
-@protocol AATStickyBannerPlacement
+@protocol AATStickyBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATStickyBannerPlacementDelegate> _Nullable delegate;
 /// Sets the placement statistics delegate
@@ -2938,6 +3050,14 @@ SWIFT_PROTOCOL("_TtP6AATKit32AATStickyBannerPlacementDelegate_")
 @protocol AATStickyBannerPlacementDelegate <AATAdDisplayDelegate, AATHaveAdDelegate, AATNoAdDelegate>
 @end
 
+
+SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
+@interface AATSupplyChainData : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol AATVendorConsentDelegate;
 
 /// AATKit simple consent. Should be initialised with <code>AATVendorConsentDelegate</code>
@@ -2975,16 +3095,10 @@ typedef SWIFT_ENUM(NSInteger, NonIABConsent, open) {
   NonIABConsentObtained = 1,
 /// <ul>
 ///   <li>
-///     Consent has been partially granted by the user.
-///   </li>
-/// </ul>
-  NonIABConsentCustom = 2,
-/// <ul>
-///   <li>
 ///     Consent has been declined by the user.
 ///   </li>
 /// </ul>
-  NonIABConsentWithheld = 3,
+  NonIABConsentWithheld = 2,
 };
 
 
