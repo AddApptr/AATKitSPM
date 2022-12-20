@@ -17,6 +17,8 @@ let package = Package(
         .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
+        .library(name: "AATKit-Bluestack", targets: ["AATKit-Bluestack"]),
+        .library(name: "AATKit-Criteo", targets: ["AATKit-Criteo"]),
         .library(name: "AATKit-FeedAd", targets: ["AATKit-FeedAd"]),
         .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato"]),
         .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd"]),
@@ -39,6 +41,8 @@ let package = Package(
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
                                                    "AATKit-AppLovin",
                                                    "AATKit-Amazon",
+                                                   "AATKit-Bluestack",
+                                                   "AATKit-Criteo",
                                                    "AATKit-FeedAd",
                                                    "AATKit-OguryCMP",
                                                    "AATKit-GoogleCMP",
@@ -59,6 +63,8 @@ let package = Package(
         .library(name: "AATKit-M1-Default", targets: ["AATKit-GoogleMobileAds",
                                                       "AATKit-AppLovin",
                                                       "AATKit-Amazon",
+                                                      "AATKit-Bluestack",
+                                                      "AATKit-Criteo",
                                                       "AATKit-FeedAd",
                                                       "AATKit-OguryCMP",
                                                       "AATKit-GoogleCMP",
@@ -125,6 +131,14 @@ let package = Package(
         .target(name:"AATKit-Amazon",
                 dependencies: ["DTBiOSSDK"],
                 path: "./Sources/AmazonSources"),
+
+        .target(name:"AATKit-Bluestack",
+                dependencies: ["BlueStackSDK", "OMSDK_Madvertise"],
+                path: "./Sources/BluestackSources"),
+
+        .target(name:"AATKit-Criteo",
+                dependencies: ["CriteoPublisherSdk"],
+                path: "./Sources/CriteoSources"),
 
         .target(name:"AATKit-FeedAd",
                 dependencies: ["FeedAd"],
@@ -202,6 +216,13 @@ let package = Package(
 
         // Amazon
         .binaryTarget(name: "DTBiOSSDK", path: "./Dependencies/Amazon/DTBiOSSDK.xcframework"),
+
+        // Bluestack
+        .binaryTarget(name: "BlueStackSDK", path: "./Dependencies/Bluestack/BlueStackSDK.xcframework"),
+        .binaryTarget(name: "OMSDK_Madvertise", path: "./Dependencies/Bluestack/OMSDK_Madvertise.xcframework"),
+
+        // Criteo
+        .binaryTarget(name: "CriteoPublisherSdk", path: "./Dependencies/Criteo/CriteoPublisherSdk.xcframework"),
 
         // FeedAd
         .binaryTarget(name: "FeedAd", path: "./Dependencies/FeedAd/FeedAd.xcframework"),
