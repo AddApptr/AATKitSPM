@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/HyBid-Swift.h</key>
 		<data>
-		9Q4G2v4V+8Rgxd+n9qYJdY7jSd0=
+		BLN3xtIBhDlYARJFtfQqNWhgc/U=
 		</data>
 		<key>Headers/HyBid.h</key>
 		<data>
-		lqU1w9RH+nPZF+/OjoEszPdMjmY=
+		7T+hbr62bAjvFNSWcVkH/Hye8k8=
 		</data>
 		<key>Headers/HyBidAd.h</key>
 		<data>
-		Cnl61OrrkCP3dS0lk52r5KcxCFg=
+		8dhk8IiYAS+rQegNCGMsanD/k6M=
 		</data>
 		<key>Headers/HyBidAdCache.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/HyBidAdRequest.h</key>
 		<data>
-		3Z6Xe+knsLjm+XU3B3CYOQI933M=
+		lrfxRWQ+XgF1zM94yNFNZDT14QM=
 		</data>
 		<key>Headers/HyBidAdSize.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/HyBidAdView.h</key>
 		<data>
-		WfS2kKqQYFH7L7n1ZlpF0oP2VTs=
+		wS/zx8nGO9Vl+n0YKQ3+MN6NTQA=
 		</data>
 		<key>Headers/HyBidBannerAdRequest.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/HyBidDataModel.h</key>
 		<data>
-		NpmOfdPP3Jp3JRS6iX04ImNqFD8=
+		QZ+IyOKwjUOFVWVZEzPnpAIG+DM=
 		</data>
 		<key>Headers/HyBidDiagnosticsManager.h</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Headers/HyBidNativeAdLoader.h</key>
 		<data>
-		C7kFvANGF/nOAHIAkEAa/fWM0l8=
+		TyK1mytVdbIfKT6++eOPJnAvCtM=
 		</data>
 		<key>Headers/HyBidNativeAdRenderer.h</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Headers/HyBidRequestParameter.h</key>
 		<data>
-		sZVHhWHjqLT3m2XmuP/Ag/dHuSc=
+		5aXTh5c+a2dPGhprTaifNA4kR9g=
 		</data>
 		<key>Headers/HyBidRewardedAdRequest.h</key>
 		<data>
@@ -266,19 +266,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		J3mmwrJ83W0ZUrCzXgZ6yiCeYcE=
+		W3flWQyPyrloo9XywJSu0b7APB8=
 		</data>
 		<key>Modules/HyBid.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		dgA1ohRExfANPas521jRQrz5hJ4=
+		Ru0/+EDQ0s3gXpvCwjZXqRCjyuM=
 		</data>
 		<key>Modules/HyBid.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		nSYn0LVgmu3Xbq5rppjMc0LqVys=
+		rPBySU5VDXtGQyvFcIt67NS6Fbs=
 		</data>
 		<key>Modules/HyBid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		XPmWLYpqw4e2G7gi0TbAdYLhJRg=
+		UMkHmKXJKJ+0Sq2pu1q8QI5b6Zs=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -286,11 +286,11 @@
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aYZKzQqAUgThG2rwOWMVLCemxhU=
+		bxrUcz8GbO4XJgbArOz6OKt7SmM=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JfLaHRWN8mOm3or7JWFvf46xD08=
+		hv9ug7dvG1DZOPHAul2m6McjTYs=
 		</data>
 		<key>Modules/HyBid.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -298,11 +298,11 @@
 		</data>
 		<key>Modules/HyBid.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		njv1Bkft0oV7ozROzdEpcNOYQ9I=
+		nrFd0HLwj+gQsjg+R+4obVHK0zA=
 		</data>
 		<key>Modules/HyBid.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		opXUlqKMBKya7iU2eqYJrEuhVnY=
+		d34xcHV9XbKYuuAdkuZWZnYEerU=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -310,11 +310,11 @@
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zMJ4+EzlWhB50JRc6pnP6xJ6Aek=
+		686iks2YxUYxZQCUoG05ZAmySRg=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Dm1IeFvNgRG8nEjFnFXM0gqECmo=
+		+RJUTC62Xe6AWwgeNnb3k4g8QpU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -447,33 +447,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9Q4G2v4V+8Rgxd+n9qYJdY7jSd0=
+			BLN3xtIBhDlYARJFtfQqNWhgc/U=
 			</data>
 			<key>hash2</key>
 			<data>
-			niJ3GcOQcmwYhNruiVrXFzOmIEl9XP8SJvPvxb3mvQA=
+			7LQTaq0sYmTcf3XnbIDXZSDlfZ34oELyiUqBu1AQ2HU=
 			</data>
 		</dict>
 		<key>Headers/HyBid.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lqU1w9RH+nPZF+/OjoEszPdMjmY=
+			7T+hbr62bAjvFNSWcVkH/Hye8k8=
 			</data>
 			<key>hash2</key>
 			<data>
-			L95lFK1XAK5zKGB/p4Tl7U8PoZ/ui5TdLW10Bd4U6kg=
+			g7ym97mfa1I4Q4Iu8h3bdolF3u7x42RxCXekb6V32j4=
 			</data>
 		</dict>
 		<key>Headers/HyBidAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cnl61OrrkCP3dS0lk52r5KcxCFg=
+			8dhk8IiYAS+rQegNCGMsanD/k6M=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y2v86rdrD89KcWfYo3lQ7sUwHnIIeMaxtEDdOFVmH0E=
+			RpMCF+JcVUCUAq2Z1w0hargAON7pfar8X/XIwn9iuVo=
 			</data>
 		</dict>
 		<key>Headers/HyBidAdCache.h</key>
@@ -535,11 +535,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Z6Xe+knsLjm+XU3B3CYOQI933M=
+			lrfxRWQ+XgF1zM94yNFNZDT14QM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Iq9VPVRlUbliflY1A0jTZ0T79+P5xDVMaeo/hFyPS2s=
+			8chqDFjG8Z5OfkJmT9N//v1ey3Ka1oRmTFv7abKhEog=
 			</data>
 		</dict>
 		<key>Headers/HyBidAdSize.h</key>
@@ -568,11 +568,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WfS2kKqQYFH7L7n1ZlpF0oP2VTs=
+			wS/zx8nGO9Vl+n0YKQ3+MN6NTQA=
 			</data>
 			<key>hash2</key>
 			<data>
-			yGpfXxqbhgjdmQs/6VGKIsrqHkbTTWXmseBcArdgWWc=
+			BBL+YuoJGrFBEZq4WPLaokvUgh28Y+gS725G8FjV4yI=
 			</data>
 		</dict>
 		<key>Headers/HyBidBannerAdRequest.h</key>
@@ -634,11 +634,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NpmOfdPP3Jp3JRS6iX04ImNqFD8=
+			QZ+IyOKwjUOFVWVZEzPnpAIG+DM=
 			</data>
 			<key>hash2</key>
 			<data>
-			MKUUhKG8o+TxWvcpBPM/GoGUo+En9izY/f+N89qoFjY=
+			PffGr56ShKUoLxqwOEJpJUvLnjWdW7RKcrxZoDLYA/w=
 			</data>
 		</dict>
 		<key>Headers/HyBidDiagnosticsManager.h</key>
@@ -832,11 +832,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C7kFvANGF/nOAHIAkEAa/fWM0l8=
+			TyK1mytVdbIfKT6++eOPJnAvCtM=
 			</data>
 			<key>hash2</key>
 			<data>
-			B/ymW7HQK6Fm3FO7ZM51C0EweNNZSz7hrPez4SCvHBk=
+			8RkkjrvleSwg7m0hJ65IJEpOrGMfE+ysnyAlq/KG7ZE=
 			</data>
 		</dict>
 		<key>Headers/HyBidNativeAdRenderer.h</key>
@@ -1019,11 +1019,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sZVHhWHjqLT3m2XmuP/Ag/dHuSc=
+			5aXTh5c+a2dPGhprTaifNA4kR9g=
 			</data>
 			<key>hash2</key>
 			<data>
-			bDFJFiSxu/bF22uBcvF2Ad7qIosz51MAWYLQIph4gsc=
+			M0bzNDTxnrHB/vReYrsIVBoqCe/alDcUg81rHviKrH0=
 			</data>
 		</dict>
 		<key>Headers/HyBidRewardedAdRequest.h</key>
@@ -1162,33 +1162,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dgA1ohRExfANPas521jRQrz5hJ4=
+			Ru0/+EDQ0s3gXpvCwjZXqRCjyuM=
 			</data>
 			<key>hash2</key>
 			<data>
-			cVQQmcGmawfHpy/DGMmWQ+daMr2WS4nbYk6W6cukJXo=
+			/1UGbkWUfpQ8MySZq+JfQ65stS6xFnQfWXBHIss8f3Y=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nSYn0LVgmu3Xbq5rppjMc0LqVys=
+			rPBySU5VDXtGQyvFcIt67NS6Fbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			R0gAj+KFQxud1kMHrYdBzzO19i6HJMQi5pJ3M7hoRhg=
+			F4JKZQj3bfPl4/OwGJ1nhwLyQwegKVSJcK3yoGBc6Ao=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XPmWLYpqw4e2G7gi0TbAdYLhJRg=
+			UMkHmKXJKJ+0Sq2pu1q8QI5b6Zs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Wom8cZyYxYSPqyG77IjOyksmt/VFOC3fXMQjOgB8QZc=
+			umeY5wlDfgWYwBSXMrKUytRzBrfVJAOSeWMOrajLJFE=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1206,22 +1206,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aYZKzQqAUgThG2rwOWMVLCemxhU=
+			bxrUcz8GbO4XJgbArOz6OKt7SmM=
 			</data>
 			<key>hash2</key>
 			<data>
-			iDv4xbgIuu1FZ6iHi3bvfWDyFwO9Ecn06EvV0Ha1dDE=
+			1L9mQWCiUh3E+qfpIQzZr+PWf+1BZd1bt6XwPTkB0KY=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JfLaHRWN8mOm3or7JWFvf46xD08=
+			hv9ug7dvG1DZOPHAul2m6McjTYs=
 			</data>
 			<key>hash2</key>
 			<data>
-			SKR/J5na/wnuAM6GOxsq4zVDBoSiO5JmRx/Xv2j+5jI=
+			ymJOBuFZXAtFUOdi+T4y6/NE39XDwJE7AEbAAM3KwWk=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -1239,22 +1239,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			njv1Bkft0oV7ozROzdEpcNOYQ9I=
+			nrFd0HLwj+gQsjg+R+4obVHK0zA=
 			</data>
 			<key>hash2</key>
 			<data>
-			UWfiRXzPjDXxKdWAs4PDM2SuYT+h3bI6JvDhaOPYjeg=
+			FmNxAPf7PK7EiB5vtt3jpADeaQ8ikg5oY1D0Gxkp15U=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			opXUlqKMBKya7iU2eqYJrEuhVnY=
+			d34xcHV9XbKYuuAdkuZWZnYEerU=
 			</data>
 			<key>hash2</key>
 			<data>
-			I0MnQgztqWQBAhQTtL4E2VbSFVTgTw6d9PwGTx54l+0=
+			oliuPrOGHlk5QZwEKYNAc494MZSueV42trkof5PlyvE=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1272,22 +1272,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zMJ4+EzlWhB50JRc6pnP6xJ6Aek=
+			686iks2YxUYxZQCUoG05ZAmySRg=
 			</data>
 			<key>hash2</key>
 			<data>
-			1jzraXLnCCuzBYa01RZSaz0F6d1UrpMkJAFVnJA6lkc=
+			OE9TGV+e+7YsCpl49QCrp/h/a/iXlzTCbW7nCSemII8=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Dm1IeFvNgRG8nEjFnFXM0gqECmo=
+			+RJUTC62Xe6AWwgeNnb3k4g8QpU=
 			</data>
 			<key>hash2</key>
 			<data>
-			cWroHmcvkYalg71JWCqXj0P5Q7CawoL8BkOnRBHQzS4=
+			JP0Snn0lVfxOK/4EaWnFJs5YzhlVVJvUrTAJg2+gwMk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

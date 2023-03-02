@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 //! Project version number for AATAdMobMediationAdapter.
 FOUNDATION_EXPORT double AATAdMobMediationAdapterVersionNumber;
@@ -51,6 +52,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)checkAATKitInitStatus:(nullable NSNumber *)testModeAccId;
 
+- (nullable Class<GADAdNetworkExtras>)networkExtrasClass;
+- (GADVersionNumber)adapterVersion;
+- (GADVersionNumber)adSDKVersion;
 @end
 
 NS_ASSUME_NONNULL_END

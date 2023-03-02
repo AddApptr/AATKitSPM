@@ -20,6 +20,22 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidFeedbackConfig : ObjectiveC.NSObject {
+  @objc public static let sharedConfig: HyBid.HyBidFeedbackConfig
+  @objc public var adFeedback: Swift.Bool
+  @objc public var contentInfoURL: Swift.String?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidSDKConfig : ObjectiveC.NSObject {
+  @objc public static let sharedConfig: HyBid.HyBidSDKConfig
+  @objc public var test: Swift.Bool
+  @objc public var targeting: HyBid.HyBidTargetingModel?
+  @objc public var appToken: Swift.String?
+  @objc public var apiURL: Swift.String
+  @objc public var openRtbApiURL: Swift.String
+  @objc public var appID: Swift.String?
+  @objc deinit
+}
 @objc public protocol HyBidReportingDelegate {
   @objc func onEvent(with event: HyBid.HyBidReportingEvent)
 }
@@ -35,32 +51,7 @@ import _Concurrency
 }
 @_inheritsConvenienceInitializers @objc public class HyBidSettings : ObjectiveC.NSObject {
   @objc public static let sharedInstance: HyBid.HyBidSettings
-  @objc public var test: Swift.Bool
-  @objc public var coppa: Swift.Bool
-  @objc public var targeting: HyBid.HyBidTargetingModel?
-  @objc public var appToken: Swift.String?
-  @objc public var apiURL: Swift.String?
-  @objc public var openRtbApiURL: Swift.String?
-  @objc public var appID: Swift.String?
-  @objc public var videoSkipOffset: HyBid.HyBidSkipOffset
-  @objc public var htmlSkipOffset: HyBid.HyBidSkipOffset
-  @objc public var endCardCloseOffset: HyBid.HyBidSkipOffset
-  @objc public var showEndCard: Swift.Bool {
-    @objc get
-    @objc set
-  }
   @objc public var supportMultipleFidelities: Swift.Bool
-  @objc public var interstitialActionBehaviour: HyBid.HyBidInterstitialActionBehaviour
-  @objc public var interstitialCloseOnFinish: Swift.Bool
-  @objc public var isInterstitialCloseOnFinishSet: Swift.Bool
-  @objc public var rewardedCloseOnFinish: Swift.Bool
-  @objc public var isRewardedCloseOnFinishSet: Swift.Bool
-  @objc public var audioStatus: HyBid.HyBidAudioStatus
-  @objc public var mraidExpand: Swift.Bool
-  @objc public var interstitialSKOverlay: Swift.Bool
-  @objc public var rewardedSKOverlay: Swift.Bool
-  @objc public var adFeedback: Swift.Bool
-  @objc public var contentInfoURL: Swift.String?
   @objc public var advertisingId: Swift.String? {
     @objc get
   }
@@ -98,12 +89,6 @@ import _Concurrency
   @objc public var appVersion: Swift.String? {
     @objc get
   }
-  @objc public var locationTrackingEnabled: Swift.Bool {
-    @objc get
-  }
-  @objc public var locationUpdatesEnabled: Swift.Bool {
-    @objc get
-  }
   @objc public var location: CoreLocation.CLLocation? {
     @objc get
   }
@@ -111,9 +96,6 @@ import _Concurrency
     @objc get
   }
   @objc public var ip: Swift.String? {
-    @objc get
-  }
-  @objc public var bannerSKOverlay: Swift.Bool {
     @objc get
   }
   @objc public var appTrackingTransparency: Foundation.NSNumber? {
@@ -134,6 +116,23 @@ public typealias ReportingKey = Swift.String
   @objc public var offset: Foundation.NSNumber?
   @objc public var isCustom: Swift.Bool
   @objc public init(offset: Foundation.NSNumber?, isCustom: Swift.Bool)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidSessionManager : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: HyBid.HyBidSessionManager
+  @objc public var impressionCounter: [Swift.String : Swift.Int]
+  @objc public var sessionDuration: Swift.String
+  @objc public func setStartSession()
+  @objc public func updateSession(zoneID: Swift.String)
+  @objc public func incrementImpressionCounter(zoneID: Swift.String)
+  @objc public func sessionDuration(zoneID: Swift.String)
+  @objc public func setAgeOfAppSinceCreated()
+  @objc public func getAgeOfApp() -> Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidConsentConfig : ObjectiveC.NSObject {
+  @objc public static let sharedConfig: HyBid.HyBidConsentConfig
+  @objc public var coppa: Swift.Bool
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class HyBidTargetingModel : ObjectiveC.NSObject {
@@ -177,6 +176,7 @@ public typealias ReportingKey = Swift.String
   @objc public func prepare()
   @objc(setMediationVendor:) public func setMediationVendor(with mediationVendor: Swift.String)
   @objc(prepareAdWithContent:) public func prepareAdWithContent(adContent: Swift.String)
+  @objc(prepareAdWithAdReponse:) public func prepareAdWithAdReponse(adReponse: Swift.String)
   @objc(prepareVideoTagFrom:) public func prepareVideoTag(from url: Swift.String)
   @objc(prepareCustomMarkupFrom:) public func prepareCustomMarkupFrom(_ markup: Swift.String)
   @objc public func show()
@@ -208,9 +208,22 @@ public typealias ReportingKey = Swift.String
   @objc public func prepare()
   @objc(setMediationVendor:) public func setMediationVendor(with mediationVendor: Swift.String)
   @objc(prepareAdWithContent:) public func prepareAdWithContent(adContent: Swift.String)
+  @objc(prepareAdWithAdReponse:) public func prepareAdWithAdReponse(adReponse: Swift.String)
   @objc public func show()
   @objc(showFromViewController:) public func show(from viewController: UIKit.UIViewController)
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidLocationConfig : ObjectiveC.NSObject {
+  @objc public static let sharedConfig: HyBid.HyBidLocationConfig
+  @objc public var locationTrackingEnabled: Swift.Bool {
+    @objc get
+    @objc set(enabled)
+  }
+  @objc public var locationUpdatesEnabled: Swift.Bool {
+    @objc get
+    @objc set(enabled)
+  }
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class HyBidReportingProperties : ObjectiveC.NSObject {
@@ -241,6 +254,11 @@ public typealias ReportingKey = Swift.String
   @objc public static let ERROR_MESSAGE: Swift.String
   @objc public static let CREATIVE: Swift.String
   @objc public static let HAS_END_CARD: Swift.String
+  @objc public static let LAST_SESSION_TIMESTAMP: Swift.String
+  @objc public static let IMPRESSION_SESSION_COUNT: Swift.String
+  @objc public static let START_SESSION_TIMESTAMP: Swift.String
+  @objc public static let SESSION_DURATION: Swift.String
+  @objc public static let AGE_OF_APP: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -279,6 +297,7 @@ public typealias ReportingKey = Swift.String
   @objc public static let RENDER_ERROR: Swift.String
   @objc public static let COMPANION_VIEW: Swift.String
   @objc public static let REWARD: Swift.String
+  @objc public static let SESSION_REPORT_INFO: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -294,5 +313,26 @@ public typealias ReportingKey = Swift.String
   @objc public static let FULLSCREEN: Swift.String
   @objc public static let REWARDED: Swift.String
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidRenderingConfig : ObjectiveC.NSObject {
+  @objc public static let sharedConfig: HyBid.HyBidRenderingConfig
+  @objc public var videoSkipOffset: HyBid.HyBidSkipOffset
+  @objc public var htmlSkipOffset: HyBid.HyBidSkipOffset
+  @objc public var endCardCloseOffset: HyBid.HyBidSkipOffset
+  @objc public var showEndCard: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var interstitialActionBehaviour: HyBid.HyBidInterstitialActionBehaviour
+  @objc public var interstitialCloseOnFinish: Swift.Bool
+  @objc public var rewardedCloseOnFinish: Swift.Bool
+  @objc public var audioStatus: HyBid.HyBidAudioStatus
+  @objc public var mraidExpand: Swift.Bool
+  @objc public var interstitialSKOverlay: Swift.Bool
+  @objc public var rewardedSKOverlay: Swift.Bool
+  @objc public var bannerSKOverlay: Swift.Bool {
+    @objc get
+  }
   @objc deinit
 }

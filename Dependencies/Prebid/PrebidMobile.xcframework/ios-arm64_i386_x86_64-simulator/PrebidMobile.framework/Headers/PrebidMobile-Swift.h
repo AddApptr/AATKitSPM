@@ -237,6 +237,7 @@ SWIFT_CLASS("_TtC12PrebidMobile22AutoRefreshCountConfig")
 /// Contains all the data needed to load an ad.
 SWIFT_CLASS("_TtC12PrebidMobile15AdConfiguration")
 @interface AdConfiguration : AutoRefreshCountConfig
+@property (nonatomic) BOOL isOriginalAPI;
 @property (nonatomic, copy) NSSet<AdFormat *> * _Nonnull adFormats;
 /// Describes an OpenRTB banner object
 @property (nonatomic, strong) BannerParameters * _Nonnull bannerParameters;
@@ -2311,8 +2312,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 @property (nonatomic, copy) NSString * _Nullable userID;
 /// Buyer-specific ID for the user as mapped by the exchange for the buyer.
 @property (nonatomic, copy) NSString * _Nullable buyerUID;
-/// Comma separated list of keywords, interests, or intent.
-@property (nonatomic, copy) NSString * _Nullable keywords;
 /// Optional feature to pass bidder data that was set in the
 /// exchange’s cookie. The string must be in base85 cookie safe
 /// characters and be in any format. Proper JSON encoding must
@@ -2389,7 +2388,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 - (void)removeUserKeyword:(NSString * _Nonnull)element;
 - (void)clearUserKeywords;
 - (NSArray<NSString *> * _Nonnull)getUserKeywords SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull userKeywords;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull userKeywords SWIFT_DEPRECATED_MSG("This property is deprecated. Please, use getUserKeywords method instead.");
 - (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
 - (void)updateContextDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
 - (void)removeContextDataFor:(NSString * _Nonnull)key;
@@ -2408,26 +2407,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 
 
 
-
-
-/// @c UserConsentDataManager is responsible retrieving user consent according to the
-/// IAB Transparency & Consent Framework
-/// The design of the framework is that a publisher integrated Consent Management
-/// Platform (CMP) is responsible for storing user consent applicability and data
-/// in @c UserDefaults. All advertising SDKs are to query this data regularly for
-/// updates and pass that data downstream and act accordingly.
-SWIFT_CLASS("_TtC12PrebidMobile22UserConsentDataManager")
-@interface UserConsentDataManager : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UserConsentDataManager * _Nonnull shared;)
-+ (UserConsentDataManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@property (nonatomic, readonly, copy) NSString * _Nullable usPrivacyString;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable subjectToGDPR_NSNumber;
-@property (nonatomic, copy) NSString * _Nullable gdprConsentString;
-@property (nonatomic, copy) NSString * _Nullable purposeConsents;
-- (BOOL)isAllowedAccessDeviceData SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
@@ -2775,6 +2754,7 @@ SWIFT_CLASS("_TtC12PrebidMobile22AutoRefreshCountConfig")
 /// Contains all the data needed to load an ad.
 SWIFT_CLASS("_TtC12PrebidMobile15AdConfiguration")
 @interface AdConfiguration : AutoRefreshCountConfig
+@property (nonatomic) BOOL isOriginalAPI;
 @property (nonatomic, copy) NSSet<AdFormat *> * _Nonnull adFormats;
 /// Describes an OpenRTB banner object
 @property (nonatomic, strong) BannerParameters * _Nonnull bannerParameters;
@@ -4849,8 +4829,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 @property (nonatomic, copy) NSString * _Nullable userID;
 /// Buyer-specific ID for the user as mapped by the exchange for the buyer.
 @property (nonatomic, copy) NSString * _Nullable buyerUID;
-/// Comma separated list of keywords, interests, or intent.
-@property (nonatomic, copy) NSString * _Nullable keywords;
 /// Optional feature to pass bidder data that was set in the
 /// exchange’s cookie. The string must be in base85 cookie safe
 /// characters and be in any format. Proper JSON encoding must
@@ -4927,7 +4905,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 - (void)removeUserKeyword:(NSString * _Nonnull)element;
 - (void)clearUserKeywords;
 - (NSArray<NSString *> * _Nonnull)getUserKeywords SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull userKeywords;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull userKeywords SWIFT_DEPRECATED_MSG("This property is deprecated. Please, use getUserKeywords method instead.");
 - (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
 - (void)updateContextDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
 - (void)removeContextDataFor:(NSString * _Nonnull)key;
@@ -4946,26 +4924,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 
 
 
-
-
-/// @c UserConsentDataManager is responsible retrieving user consent according to the
-/// IAB Transparency & Consent Framework
-/// The design of the framework is that a publisher integrated Consent Management
-/// Platform (CMP) is responsible for storing user consent applicability and data
-/// in @c UserDefaults. All advertising SDKs are to query this data regularly for
-/// updates and pass that data downstream and act accordingly.
-SWIFT_CLASS("_TtC12PrebidMobile22UserConsentDataManager")
-@interface UserConsentDataManager : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UserConsentDataManager * _Nonnull shared;)
-+ (UserConsentDataManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@property (nonatomic, readonly, copy) NSString * _Nullable usPrivacyString;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable subjectToGDPR_NSNumber;
-@property (nonatomic, copy) NSString * _Nullable gdprConsentString;
-@property (nonatomic, copy) NSString * _Nullable purposeConsents;
-- (BOOL)isAllowedAccessDeviceData SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 
@@ -5313,6 +5271,7 @@ SWIFT_CLASS("_TtC12PrebidMobile22AutoRefreshCountConfig")
 /// Contains all the data needed to load an ad.
 SWIFT_CLASS("_TtC12PrebidMobile15AdConfiguration")
 @interface AdConfiguration : AutoRefreshCountConfig
+@property (nonatomic) BOOL isOriginalAPI;
 @property (nonatomic, copy) NSSet<AdFormat *> * _Nonnull adFormats;
 /// Describes an OpenRTB banner object
 @property (nonatomic, strong) BannerParameters * _Nonnull bannerParameters;
@@ -7387,8 +7346,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 @property (nonatomic, copy) NSString * _Nullable userID;
 /// Buyer-specific ID for the user as mapped by the exchange for the buyer.
 @property (nonatomic, copy) NSString * _Nullable buyerUID;
-/// Comma separated list of keywords, interests, or intent.
-@property (nonatomic, copy) NSString * _Nullable keywords;
 /// Optional feature to pass bidder data that was set in the
 /// exchange’s cookie. The string must be in base85 cookie safe
 /// characters and be in any format. Proper JSON encoding must
@@ -7465,7 +7422,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 - (void)removeUserKeyword:(NSString * _Nonnull)element;
 - (void)clearUserKeywords;
 - (NSArray<NSString *> * _Nonnull)getUserKeywords SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull userKeywords;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull userKeywords SWIFT_DEPRECATED_MSG("This property is deprecated. Please, use getUserKeywords method instead.");
 - (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
 - (void)updateContextDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
 - (void)removeContextDataFor:(NSString * _Nonnull)key;
@@ -7484,26 +7441,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 
 
 
-
-
-/// @c UserConsentDataManager is responsible retrieving user consent according to the
-/// IAB Transparency & Consent Framework
-/// The design of the framework is that a publisher integrated Consent Management
-/// Platform (CMP) is responsible for storing user consent applicability and data
-/// in @c UserDefaults. All advertising SDKs are to query this data regularly for
-/// updates and pass that data downstream and act accordingly.
-SWIFT_CLASS("_TtC12PrebidMobile22UserConsentDataManager")
-@interface UserConsentDataManager : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UserConsentDataManager * _Nonnull shared;)
-+ (UserConsentDataManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@property (nonatomic, readonly, copy) NSString * _Nullable usPrivacyString;
-@property (nonatomic, readonly, strong) NSNumber * _Nullable subjectToGDPR_NSNumber;
-@property (nonatomic, copy) NSString * _Nullable gdprConsentString;
-@property (nonatomic, copy) NSString * _Nullable purposeConsents;
-- (BOOL)isAllowedAccessDeviceData SWIFT_WARN_UNUSED_RESULT;
-@end
 
 
 

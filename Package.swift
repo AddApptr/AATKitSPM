@@ -10,7 +10,6 @@ let package = Package(
     products: [
 
         .library(name: "AATKit-Core", targets: ["AATKit-Core"]),
-        .library(name: "AATKit-M1-Core", targets: ["AATKit-M1-Core"]),
         .library(name: "AATKit-AATAdMobMediationAdapter", targets: ["AATKit-AATAdMobMediationAdapter"]),
 
         // Dependencies
@@ -59,34 +58,13 @@ let package = Package(
                                                    "AATKit-Vungle",
                                                    "AATKit-IronSource"
                                                   ]),
-        // M1 Default dependencies
-        .library(name: "AATKit-M1-Default", targets: ["AATKit-GoogleMobileAds",
-                                                      "AATKit-AppLovin",
-                                                      "AATKit-Amazon",
-                                                      "AATKit-Bluestack",
-                                                      "AATKit-Criteo",
-                                                      "AATKit-FeedAd",
-                                                      "AATKit-OguryCMP",
-                                                      "AATKit-GoogleCMP",
-                                                      "AATKit-Smaato",
-                                                      "AATKit-SmartAd",
-                                                      "AATKit-AdColony",
-                                                      "AATKit-YOC",
-                                                      "AATKit-InMobi",
-                                                      "AATKit-AppNexus",
-                                                      "AATKit-OgurySdk",
-                                                      "AATKit-PubNative",
-                                                      "AATKit-Prebid",
-                                                      "AATKit-Unity",
-                                                      "AATKit-Vungle",
-                                                     ]),
 
     ],
     dependencies: [
         // AdNetworks supporting SPM
-        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("8.2.0")),
-        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("11.6.0")),
-        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("9.13.0")),
+        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("8.3.0")),
+        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("11.7.1")),
+        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("10.1.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads/blob/main/Package.swift package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
     ],
@@ -95,11 +73,6 @@ let package = Package(
         .target(name:"AATKit-Core",
                 dependencies: ["AATKit"],
                 path: "./Sources/AATKit"),
-        
-        // AATKit M1 target
-        .target(name:"AATKit-M1-Core",
-                dependencies: ["AATKit-M1"],
-                path: "./Sources/AATKit-M1"),
 
         // AATAdMobMediationAdapter target
         .target(name:"AATKit-AATAdMobMediationAdapter",
@@ -206,7 +179,6 @@ let package = Package(
         // Mark: - Binary Targets
         // AATKit
         .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
-        .binaryTarget(name: "AATKit-M1", path: "./Dependencies/AATKit-M1/AATKit-M1.xcframework"),
 
         // AATAdMobMediationAdapter
         .binaryTarget(name: "AATAdMobMediationAdapter", path: "./Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"),

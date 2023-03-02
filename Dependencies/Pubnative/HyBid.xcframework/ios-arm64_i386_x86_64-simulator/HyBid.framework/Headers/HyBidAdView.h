@@ -40,6 +40,9 @@ typedef enum {
 - (void)adViewDidTrackImpression:(HyBidAdView *)adView;
 - (void)adViewDidTrackClick:(HyBidAdView *)adView;
 
+@optional
+- (void)adViewWillRefresh:(HyBidAdView *)adView;
+
 @end
 
 @interface HyBidAdView : UIView <HyBidAdRequestDelegate, HyBidAdPresenterDelegate>
@@ -62,6 +65,7 @@ typedef enum {
 - (void)setupAdView:(UIView *)adView;
 - (void)renderAd;
 - (void)renderAdWithContent:(NSString *)adContent withDelegate:(NSObject<HyBidAdViewDelegate> *)delegate;
+- (void)renderAdWithAdResponse:(NSString *)adReponse withDelegate:(NSObject<HyBidAdViewDelegate> *)delegate;
 - (void)startTracking;
 - (void)stopTracking;
 - (void)prepare;
