@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/MNGAdsAdapter.h</key>
 		<data>
-		h1MxA2ghMIjxuslIwV69tlRRQSc=
+		1OigdcvcU2qbuxU4cFAOS1wG9YE=
 		</data>
 		<key>Headers/MNGAdsSDKFactory.h</key>
 		<data>
-		B9HPDGiWHVeF/3X/FKC/aoWJFvE=
+		KMk7W1du7WW2LK6iaTcoZFwt/l8=
 		</data>
 		<key>Headers/MNGNAtiveObject.h</key>
 		<data>
@@ -38,15 +38,19 @@
 		</data>
 		<key>Headers/Protocols.h</key>
 		<data>
-		sicPDcAQzEFMs67BBle5tMySvV4=
+		0KtM04G9z0dO6iy0x+ZAMQKE86c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		T9GS2kURCJwIkQ5FsaGtVwZHbPI=
+		CBvzUAxK8Z3IDp+LKpMt3i/rgk4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		HV44fVPaGGxiBxIo5oZc+SZlzIQ=
+		</data>
+		<key>example.json</key>
+		<data>
+		cc/nYTJbKNiQfccUpxFl0JLmuuA=
 		</data>
 		<key>omsdk-v1.js</key>
 		<data>
@@ -91,14 +95,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r95KSrUEKZMk1W3iOgTaa+OTk1ccZZGHrBISe8Wwsyo=
+			hB3fFiWdB1tEUhohPGxyzDJhbqfx+AdxH1fkh5+XPj0=
 			</data>
 		</dict>
 		<key>Headers/MNGAdsSDKFactory.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aFv58Bxq/wYS79qhPltTI7rpbCryCbSMPHP06xFuG2s=
+			CdGp+FkXJezFhtg4Lro/XmgIG2jmw6qLtSB/L5pSjQc=
 			</data>
 		</dict>
 		<key>Headers/MNGNAtiveObject.h</key>
@@ -119,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			owQkpKGL6gvEXALG9J9jSNNpUwrcG791WPrzy++2fFI=
+			yEuryEcTQkOANGLm28A6FCLJTFkmLLVK00uPvxwmles=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -127,6 +131,13 @@
 			<key>hash2</key>
 			<data>
 			/XUceiv6Of41iPnFvFIQ9Qlzsp1oXBhJ1/0Wy0sAew0=
+			</data>
+		</dict>
+		<key>example.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			i8FH1qlTJjJigJve/NtM7fsO1EJqAEBGjfoia4ymoKE=
 			</data>
 		</dict>
 		<key>omsdk-v1.js</key>

@@ -38,8 +38,6 @@ extension AATKit.AATAdDriverProtocol {
   public func cancelLoading()
 }
 @objc public protocol AATNativeAdData : ObjectiveC.NSObjectProtocol {
-  @objc func attachToView(_ view: UIKit.UIView, mainImageView: UIKit.UIView?, iconView: UIKit.UIView?, ctaView: UIKit.UIView?)
-  @objc func detachFromLayout()
   @objc var title: Swift.String? { get }
   @objc var adDescription: Swift.String? { get }
   @objc var callToAction: Swift.String? { get }
@@ -49,8 +47,14 @@ extension AATKit.AATAdDriverProtocol {
   @objc var brandingLogo: UIKit.UIView? { get }
   @objc var advertiser: Swift.String? { get }
   @objc var network: AATKit.AATAdNetwork { get }
+  @objc func attachToView(_ view: UIKit.UIView, mainImageView: UIKit.UIView?, iconView: UIKit.UIView?, ctaView: UIKit.UIView?)
+  @objc func detachFromLayout()
   @objc func isExpired() -> Swift.Bool
   @objc func isReady() -> Swift.Bool
+}
+public protocol AATIronSourceDriverProtocol {
+  func setHasUserConsent(isObtained: Swift.Bool)
+  func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 @objc public class AATNativeAdRating : ObjectiveC.NSObject {
   @objc public init(value: Swift.Double, scale: Swift.Double)
@@ -87,6 +91,11 @@ extension AATKit.AATSimpleConsent {
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
+}
+@_hasMissingDesignatedInitializers public class AATAccountRulesManager {
+  public static let shared: AATKit.AATAccountRulesManager
+  public func getChildAccountId(for network: AATKit.AATAdNetwork, parentAccountId: Swift.String) -> Swift.String?
+  @objc deinit
 }
 public protocol AATFacebookDriverProtocol {
   static var shared: Self { get }
@@ -145,6 +154,7 @@ public protocol AATFacebookDriverProtocol {
   case YOC
   case VUNGLE2
   case DFPDIRECT
+  case IRONSOURCE
   public typealias AllCases = [AATKit.AATAdNetwork]
   public static var allCases: [AATKit.AATAdNetwork] {
     get
@@ -174,20 +184,52 @@ extension AATKit.AATAdNetwork : Swift.CustomStringConvertible {
     get
   }
 }
+@objc public protocol AATAutoLoadBannerPlacement : AATKit.AATPlacement {
+  @objc var delegate: AATKit.AATAutoLoadBannerPlacementDelegate? { get set }
+  @objc var statisticsDelegate: AATKit.AATStatisticsDelegate? { get set }
+  @objc var impressionDelegate: AATKit.AATImpressionDelegate? { get set }
+  @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
+  @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc func startAutoReload()
+  @objc func stopAutoReload()
+  @objc func hasAd() -> Swift.Bool
+  @objc func getPlacementView() -> UIKit.UIView?
+  @objc func setDefaultImage(image: UIKit.UIImage)
+  @objc func setBannerAlign(alignment: AATKit.AATBannerAlign)
+}
 @objc public protocol AATDelegate {
   @objc optional func AATKitObtainedAdRules(fromTheServer: Swift.Bool)
   @objc optional func AATKitUnknownBundleId()
 }
-public enum AATADLoadingState : Swift.Equatable {
+public enum AATBannerAdState : Swift.Equatable {
+  case none
+  case loadingAD
+  case loaded(ad: Any?)
+  case failedToLoad(error: Swift.String)
+  case pauseForBannerAd
+  case willResumeAfterBannerAd
+  case didResumeAfterBannerAd
+  public static func == (lhs: AATKit.AATBannerAdState, rhs: AATKit.AATBannerAdState) -> Swift.Bool
+}
+public enum AATFullscreenAdState : Swift.Equatable {
   case none
   case loadingAD
   case loaded(ad: Any?)
   case failedToLoad(error: Swift.String)
   case displayed
-  case empty
-  case didDismiss
   case willDismiss
-  public static func == (lhs: AATKit.AATADLoadingState, rhs: AATKit.AATADLoadingState) -> Swift.Bool
+  case didDismiss
+  public static func == (lhs: AATKit.AATFullscreenAdState, rhs: AATKit.AATFullscreenAdState) -> Swift.Bool
+}
+public enum AATNativeAdState : Swift.Equatable {
+  case none
+  case loadingAD
+  case loaded(ad: Any?)
+  case failedToLoad(error: Swift.String)
+  case pauseForNativeAd
+  case willResumeAfterNativeAd
+  case didResumeAfterNativeAd
+  public static func == (lhs: AATKit.AATNativeAdState, rhs: AATKit.AATNativeAdState) -> Swift.Bool
 }
 @objc public protocol AATRewardedVideoPlacement : AATKit.AATPlacement {
   @objc var delegate: AATKit.AATRewardedVideoPlacementDelegate? { get set }
@@ -239,6 +281,8 @@ extension AATKit.AATBannerSize : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
+}
+public protocol AATRewardedAdDriverProtocol : AATKit.AATFullscreenAdDriverProtocol {
 }
 @objc public protocol AATAdNetworkDriverVersionProtocol : AATKit.AATInitializable {
   @objc func getVersion() -> Swift.String
@@ -295,6 +339,7 @@ extension AATKit.AATConfiguration {
 public protocol AATVungleDriverProtocol {
   static var shared: Self { get }
   func updateConsent(isEnabled: Swift.Bool)
+  func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 @objc public protocol AATManagedConsentDelegate {
   @objc func managedConsentNeedsUserInterface(_ managedConsent: AATKit.AATManagedConsent)
@@ -318,6 +363,7 @@ extension UIKit.UIColor {
 }
 public protocol AATApplovinDriverProtocol {
   static func setHasUserConsent(isObtained: Swift.Bool)
+  static func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers @objc public class AATImpression : ObjectiveC.NSObject {
   @objc final public let bannerSize: Swift.String?
@@ -326,6 +372,8 @@ public protocol AATApplovinDriverProtocol {
   @objc final public let isDirectDeal: Swift.Bool
   @objc final public let mediationType: AATKit.AATMediationType
   @objc final public let price: Swift.Double
+  @objc final public let currencyCode: Swift.String?
+  @objc final public let precision: AATKit.AATImpressionPricePrecisionType
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -411,14 +459,26 @@ extension AATKit.AATBannerCacheConfiguration : Foundation.NSCopying {
   @objc var contentTargetingUrl: Swift.String? { get set }
 }
 @objc @_inheritsConvenienceInitializers public class AATLogger : ObjectiveC.NSObject {
-  public static func log(level: AATKit.AATLogLevel, message: Swift.String, withoutAATFormatting: Swift.Bool = false, callingMethod: Swift.String = #function, file: Swift.String = #file)
+  public static func log(level: AATKit.AATLogLevel, message: Swift.String, withoutAATFormatting: Swift.Bool = false, callingMethod: Swift.String = #function, file: Swift.String = #file, tag: Swift.String = "AATKit")
   @objc override dynamic public init()
   @objc deinit
 }
 public protocol AATBannerAdDriverProtocol : AATKit.AATAdDriverProtocol {
-  var delegate: AATKit.AATAdDriverEventsDelegate? { get set }
+  var delegate: AATKit.AATBannerDriverEventsDelegate? { get set }
   func load(viewController: UIKit.UIViewController, adID: Swift.String, size: AATKit.AATBannerSize, extraConfiguration: AATKit.AATAdRequestConfiguration?) -> Swift.Bool
   func getBannerView() -> UIKit.UIView?
+}
+public class AATNetworkImpression {
+  final public let price: Swift.Double
+  final public let currencyCode: Swift.String
+  final public let precision: AATKit.AATImpressionPricePrecisionType
+  public init(price: Swift.Double, currencyCode: Swift.String, precision: AATKit.AATImpressionPricePrecisionType)
+  @objc deinit
+}
+extension AATKit.AATNetworkImpression : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
 }
 @objc public enum AATLogLevel : Swift.Int {
   case verbose = 1
@@ -443,10 +503,12 @@ public struct AATAdRequestConfiguration {
 public protocol AATAdColonyDriverProtocol {
   static var shared: Self { get }
   func configureConsent(gdprApplies: Swift.Bool, consentString: Swift.String?)
+  func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 public protocol AATPubNativeDriverProtocol {
   static var shared: Self { get }
   func updateConsent(isEnabled: Swift.Bool)
+  func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 @objc public enum AATAdType : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
   public typealias RawValue = Swift.String
@@ -467,7 +529,7 @@ public protocol AATPubNativeDriverProtocol {
 extension AATKit.AATAdType : Swift.Hashable {
   public func hash(into hasher: inout Swift.Hasher)
 }
-@objc public class AATBannerCache : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc public class AATBannerCache : ObjectiveC.NSObject {
   @objc weak public var statisticsDelegate: AATKit.AATStatisticsDelegate? {
     @objc get
     @objc set
@@ -476,7 +538,7 @@ extension AATKit.AATAdType : Swift.Hashable {
     @objc get
     @objc set
   }
-  @objc public init(cacheConfiguration: AATKit.AATBannerCacheConfiguration)
+  @objc convenience public init(cacheConfiguration: AATKit.AATBannerCacheConfiguration)
   @objc public func updateRequestConfiguration(_ requestConfiguration: AATKit.AATBannerRequest, shouldRefresh: Swift.Bool)
   @objc public func consume(force: Swift.Bool = false) -> AATKit.AATBannerPlacementWrapperView?
   @objc public func destroy()
@@ -577,8 +639,8 @@ extension AATKit.AATAdDriverLoggerProtocol where Self : AATKit.AATAdDriverProtoc
   public func logDriverMessage(logLevel: AATKit.AATLogLevel = .debug, driverLog: AATKit.AATDriverLog, callingMethod: Swift.String = #function, file: Swift.String = #file)
 }
 extension AATKit.AATAdDriverLoggerProtocol {
-  public func logDriverMessage(logLevel: AATKit.AATLogLevel = .debug, driverLog: AATKit.AATDriverLog, callingMethod: Swift.String = #function, file: Swift.String = #file)
   public static func logDriverMessage(logLevel: AATKit.AATLogLevel = .debug, driverLog: AATKit.AATDriverLog, callingMethod: Swift.String = #function, file: Swift.String = #file)
+  public func logDriverMessage(logLevel: AATKit.AATLogLevel = .debug, driverLog: AATKit.AATDriverLog, callingMethod: Swift.String = #function, file: Swift.String = #file)
 }
 @objc public protocol AATCMPDelegate {
   @objc func consentDidUpdate(_ state: AATKit.AATManagedConsentState)
@@ -587,20 +649,25 @@ extension AATKit.AATAdDriverLoggerProtocol {
   @objc func CMPNeedsUI()
 }
 public protocol AATNativeAdDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate {
+  var state: AATKit.AATNativeAdState { get set }
   var adType: AATKit.AATNativeAdType { get set }
   var brandingLogo: UIKit.UIView? { get set }
   var rating: AATKit.AATNativeAdRating? { get set }
   func setAsset(_ type: AATKit.AATNativeAdAssetsType, value: Swift.String)
 }
 public protocol AATNetworkDriverFactory {
-  func getNetworkManagerDriver() -> AATKit.AATAdNetworkDriverManager?
-  func getNetworkBannerDriver() -> AATKit.AATInitializable?
-  func getNetworkNativeAdDriver() -> AATKit.AATInitializable?
-  func getNetworkFullScreenDriver() -> AATKit.AATInitializable?
+  var networkManagerDriverName: Swift.String { get }
+  var bannerDriverName: Swift.String? { get }
+  var nativeAdDriverName: Swift.String? { get }
+  var fullScreenDriverName: Swift.String? { get }
+  var rewardedDriverName: Swift.String? { get }
   func muteVideoAd(_ isMuted: Swift.Bool)
   func setAdChoicesIconPosition(position: AATKit.AATAdChoicesIconPosition?)
   func isNetworkSDKAvailable() -> Swift.Bool
-  func getNetworkManagerDriverName() -> Swift.String
+  func setIsChildDirected(_ isChildDirected: Swift.Bool)
+}
+public protocol AATSmaatoDriverProtocol {
+  func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AATSDK : ObjectiveC.NSObject {
   @objc public static func getVersion() -> Swift.String
@@ -618,13 +685,15 @@ public protocol AATNetworkDriverFactory {
   @objc(fittingBannerSizesLandscape) public static func objc_fittingBannerSizesLandscape() -> Swift.Set<Swift.String>
   @objc public static func controllerViewDidAppear(controller: UIKit.UIViewController)
   @objc public static func controllerViewWillDisappear()
-  @objc public static func createFullscreenPlacement(name: Swift.String) -> AATKit.AATFullscreenPlacement?
-  @objc public static func createNativeAdPlacement(name: Swift.String, supportsMainImage: Swift.Bool) -> AATKit.AATNativeAdPlacement?
-  @objc public static func createRewardedVideoPlacement(name: Swift.String) -> AATKit.AATRewardedVideoPlacement?
   @objc public static func createStickyBannerPlacement(name: Swift.String, size: AATKit.AATBannerPlacementSize) -> AATKit.AATStickyBannerPlacement?
   @objc public static func createMultiSizeBannerPlacement(name: Swift.String) -> AATKit.AATMultiSizeBannerPlacement?
+  @objc public static func createAutoLoadBannerPlacement(name: Swift.String, size: AATKit.AATBannerPlacementSize) -> AATKit.AATAutoLoadBannerPlacement?
+  @objc public static func createAutoLoadMultiSizeBannerPlacement(name: Swift.String) -> AATKit.AATAutoLoadMultiSizeBannerPlacement?
   @objc public static func createInfeedBannerPlacement(name: Swift.String, configuration: AATKit.AATBannerConfiguration) -> AATKit.AATInfeedBannerPlacement?
+  @objc public static func createFullscreenPlacement(name: Swift.String) -> AATKit.AATFullscreenPlacement?
+  @objc public static func createRewardedVideoPlacement(name: Swift.String) -> AATKit.AATRewardedVideoPlacement?
   @objc public static func createAppOpenAdPlacement(placementName: Swift.String) -> AATKit.AATAppOpenAdPlacement?
+  @objc public static func createNativeAdPlacement(name: Swift.String, supportsMainImage: Swift.Bool) -> AATKit.AATNativeAdPlacement?
   @objc public static func setAdChoicesIconPosition(position: AATKit.AATAdChoicesIconPosition)
   @objc public static func setNetworkEnabled(network: AATKit.AATAdNetwork, enabled: Swift.Bool)
   @objc public static func isNetworkEnabled(network: AATKit.AATAdNetwork) -> Swift.Bool
@@ -639,6 +708,7 @@ public protocol AATNetworkDriverFactory {
   @objc public static func setRuleCachingEnabled(enabled: Swift.Bool)
   @objc public static func setLogLevel(logLevel: AATKit.AATLogLevel)
   @objc public static func setVideoAdsMuted(_ isMuted: Swift.Bool)
+  @objc public static func setIsChildDirected(_ isChildDirected: Swift.Bool)
   @objc public static func setReportsDelegate(_ delegate: AATKit.AATReportsDelegate)
   @objc public static func setPublisherProvidedId(_ publisherProvidedId: Swift.String)
   @objc deinit
@@ -647,10 +717,13 @@ public protocol AATFullscreenAdDriverProtocol : AATKit.AATAdDriverProtocol {
   var delegate: AATKit.AATFullscreenDriverEventsDelegate? { get set }
   func load(viewController: UIKit.UIViewController, adID: Swift.String, extraConfiguration: AATKit.AATAdRequestConfiguration?) -> Swift.Bool
   func showInternal() -> Swift.Bool
-  func canLoadRewardedAd() -> Swift.Bool
+  func canLoad() -> Swift.Bool
 }
 extension AATKit.AATFullscreenAdDriverProtocol {
-  public func canLoadRewardedAd() -> Swift.Bool
+  public func canLoad() -> Swift.Bool
+}
+public protocol AATBannerDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate {
+  var state: AATKit.AATBannerAdState { get set }
 }
 @frozen @objc public enum AATMediationType : Swift.Int {
   case WATERFALL = 1
@@ -661,6 +734,15 @@ extension AATKit.AATFullscreenAdDriverProtocol {
   public var rawValue: Swift.Int {
     get
   }
+}
+@objc public protocol AATAutoLoadMultiSizeBannerPlacement : AATKit.AATPlacement {
+  @objc var delegate: AATKit.AATAutoLoadMultiSizeBannerPlacementDelegate? { get set }
+  @objc var statisticsDelegate: AATKit.AATStatisticsDelegate? { get set }
+  @objc var impressionDelegate: AATKit.AATImpressionDelegate? { get set }
+  @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
+  @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc func startAutoReload()
+  @objc func stopAutoReload()
 }
 public protocol AATAmazonHBDriverProtocol {
   static var shared: Self { get }
@@ -717,6 +799,7 @@ public func == (lhs: AATKit.NetworkReachabilityManager.NetworkReachabilityStatus
 }
 public protocol AATApplovinMaxDriverProtocol {
   static func setHasUserConsent(isObtained: Swift.Bool)
+  static func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers @objc public class AATManagedConsent : AATKit.AATConsentImplementation {
   @objc public init?(cmp: AATKit.AATCMPProtocol?, delegate: AATKit.AATManagedConsentDelegate)
@@ -760,6 +843,18 @@ extension AATKit.AATManagedConsent {
   }
   @objc deinit
 }
+@objc public enum AATImpressionPricePrecisionType : Swift.Int {
+  case unknown = 0
+  case estimated = 1
+  case floorPrice = 2
+  case publisherProvided = 3
+  case precise = 4
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc public class AATPluginVersioningTool : ObjectiveC.NSObject {
   @objc public static func appendPluginInformation(_ pluginName: AATKit.AATPluginName, patchLevel: Swift.String)
   @objc override dynamic public init()
@@ -787,12 +882,12 @@ public protocol AATBannerRequestCompletionListener : AnyObject {
   @objc func onReportSent(_ report: Swift.String)
 }
 @objc public protocol AATImpressionDelegate {
-  @objc func didCountImpression(_ impression: AATKit.AATImpression)
+  @objc func didCountImpression(placement: AATKit.AATPlacement?, _ impression: AATKit.AATImpression)
 }
 public protocol AATAdDriverEventsDelegate : AnyObject {
-  var state: AATKit.AATADLoadingState { get set }
   func getTargetingInformation() -> AATKit.AATTargetingInformationProtocol?
   func notifyListenerThatAdWasClicked()
+  func notifyListenerWithNetworkImpression(networkImpression: AATKit.AATNetworkImpression)
   func notifyListenerThatAdExpired(adView: UIKit.UIView?)
   func getSupplyChainData() -> AATKit.AATSupplyChainData?
 }
@@ -801,7 +896,7 @@ public protocol AATInMobiDriverProtocol {
   func configureConsent(gdprApplies: Swift.Bool, consentString: Swift.String?)
 }
 @objc public protocol AATAdDisplayDelegate {
-  @objc func aatAdCurrentlyDisplayed(placement: AATKit.AATPlacement)
+  @objc func aatPauseForAd(placement: AATKit.AATPlacement)
   @objc func aatResumeAfterAd(placement: AATKit.AATPlacement)
 }
 @objc public protocol AATHaveAdDelegate {
@@ -812,7 +907,12 @@ public protocol AATInMobiDriverProtocol {
 }
 @objc public protocol AATStickyBannerPlacementDelegate : AATKit.AATAdDisplayDelegate, AATKit.AATHaveAdDelegate, AATKit.AATNoAdDelegate {
 }
+@objc public protocol AATAutoLoadBannerPlacementDelegate : AATKit.AATAdDisplayDelegate, AATKit.AATHaveAdDelegate, AATKit.AATNoAdDelegate {
+}
 @objc public protocol AATMultiSizeBannerPlacementDelegate : AATKit.AATAdDisplayDelegate, AATKit.AATNoAdDelegate {
+  @objc func aatHaveAdWithBannerView(placement: AATKit.AATPlacement, bannerView: AATKit.AATBannerPlacementWrapperView)
+}
+@objc public protocol AATAutoLoadMultiSizeBannerPlacementDelegate : AATKit.AATAdDisplayDelegate, AATKit.AATNoAdDelegate {
   @objc func aatHaveAdWithBannerView(placement: AATKit.AATPlacement, bannerView: AATKit.AATBannerPlacementWrapperView)
 }
 @objc public protocol AATInfeedBannerPlacementDelegate : AATKit.AATAdDisplayDelegate {
@@ -862,19 +962,24 @@ public protocol AATNativeAdDriverProtocol : AATKit.AATAdDriverProtocol {
 public protocol AATUnityAdsDriverProtocol {
   static var shared: Self { get }
   func setHasUserConsent(isObtained: Swift.Bool)
+  func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 public protocol AATGoogleDriverProtocol {
   static var shared: Self { get }
   func setAdChoicesIconPosition(position: AATKit.AATAdChoicesIconPosition?)
   func muteVideoAd(_ isMuted: Swift.Bool)
   func configureConsent(gdprApplies: Swift.Bool, consentStatus: AATKit.NonIABConsent, isVersion2: Swift.Bool, isAdPersonalizationAllowed: Swift.Bool)
+  func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 public protocol AATDFPPreBidDriverProtocol {
+  static var timeOutInSeconds: Foundation.TimeInterval { get }
   static func loadBannerAd(extraInfo: Swift.String, bannerSize: CoreGraphics.CGSize, request: Any, completion: @escaping ((Any) -> Swift.Void))
   static func loadFullscreenAd(extraInfo: Swift.String, request: Any, completion: @escaping ((Any) -> Swift.Void))
   static func loadRewardedAd(extraInfo: Swift.String, request: Any, completion: @escaping ((Any) -> Swift.Void))
+  static func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 public protocol AATFullscreenDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate {
+  var state: AATKit.AATFullscreenAdState { get set }
   func notifyListenerThatUserEarnedIncentive(with reward: AATKit.AATReward)
 }
 @_hasMissingDesignatedInitializers @objc public class AATBannerRequestError : ObjectiveC.NSObject, Foundation.LocalizedError {
@@ -884,8 +989,8 @@ public protocol AATFullscreenDriverEventsDelegate : AATKit.AATAdDriverEventsDele
   @objc deinit
 }
 @objc public class AATBannerAlign : ObjectiveC.NSObject {
-  final public let verticalAlign: AATKit.AATBannerAlign.VerticalAlign
-  final public let horizontalAlign: AATKit.AATBannerAlign.HorizontalAlign
+  @objc final public let verticalAlign: AATKit.AATBannerAlign.VerticalAlign
+  @objc final public let horizontalAlign: AATKit.AATBannerAlign.HorizontalAlign
   @objc public init(horizontalAlign: AATKit.AATBannerAlign.HorizontalAlign, verticalAlign: AATKit.AATBannerAlign.VerticalAlign)
   @objc public enum HorizontalAlign : Swift.Int, Swift.Equatable {
     case leading
@@ -925,14 +1030,15 @@ extension AATKit.AATBannerConfiguration : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
 @objc public protocol AATStatisticsDelegate {
-  @objc func AATKitCountedAdSpace()
-  @objc func AATKitCountedRequest(for network: AATKit.AATAdNetwork)
-  @objc func AATKitCountedResponse(for network: AATKit.AATAdNetwork)
-  @objc func AATKitCountedImpression(for network: AATKit.AATAdNetwork)
-  @objc func AATKitCountedVImpression(for network: AATKit.AATAdNetwork)
-  @objc func AATKitCountedClick(for network: AATKit.AATAdNetwork)
-  @objc func AATKitCountedDirectDealImpression(for network: AATKit.AATAdNetwork)
-  @objc func AATKitCountedMediationCycle()
+  @objc func AATKitCountedAdSpace(placement: AATKit.AATPlacement?)
+  @objc func AATKitCountedRequest(placement: AATKit.AATPlacement?, for network: AATKit.AATAdNetwork)
+  @objc func AATKitCountedResponse(placement: AATKit.AATPlacement?, for network: AATKit.AATAdNetwork)
+  @objc func AATKitCountedImpression(placement: AATKit.AATPlacement?, for network: AATKit.AATAdNetwork)
+  @objc func AATKitCountedNetworkImpression(placement: AATKit.AATPlacement?, for network: AATKit.AATAdNetwork)
+  @objc func AATKitCountedVImpression(placement: AATKit.AATPlacement?, for network: AATKit.AATAdNetwork)
+  @objc func AATKitCountedClick(placement: AATKit.AATPlacement?, for network: AATKit.AATAdNetwork)
+  @objc func AATKitCountedDirectDealImpression(placement: AATKit.AATPlacement?, for network: AATKit.AATAdNetwork)
+  @objc func AATKitCountedMediationCycle(placement: AATKit.AATPlacement?)
 }
 @objc @_hasMissingDesignatedInitializers public class AATSupplyChainData : ObjectiveC.NSObject {
   final public let domain: Swift.String
@@ -972,6 +1078,9 @@ extension AATKit.AATMediationType : Swift.RawRepresentable {}
 extension AATKit.AATMediationType : Swift.Sendable {}
 extension AATKit.NetworkReachabilityManager.ConnectionType : Swift.Equatable {}
 extension AATKit.NetworkReachabilityManager.ConnectionType : Swift.Hashable {}
+extension AATKit.AATImpressionPricePrecisionType : Swift.Equatable {}
+extension AATKit.AATImpressionPricePrecisionType : Swift.Hashable {}
+extension AATKit.AATImpressionPricePrecisionType : Swift.RawRepresentable {}
 extension AATKit.AATPluginName : Swift.Equatable {}
 extension AATKit.AATPluginName : Swift.Hashable {}
 extension AATKit.AATPluginName : Swift.RawRepresentable {}

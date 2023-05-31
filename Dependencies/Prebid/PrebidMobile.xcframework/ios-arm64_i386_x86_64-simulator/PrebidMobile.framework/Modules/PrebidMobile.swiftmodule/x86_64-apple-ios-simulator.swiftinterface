@@ -469,7 +469,6 @@ public typealias NetworkReachableBlock = (PrebidMobile.Reachability?) -> Swift.V
     @objc set
   }
   @objc public var buyerUID: Swift.String?
-  @objc public var keywords: Swift.String?
   @objc public var userCustomData: Swift.String?
   @objc public var eids: [[Swift.String : Swift.AnyHashable]]?
   @objc public var userExt: [Swift.String : Swift.AnyHashable]?
@@ -544,7 +543,8 @@ public typealias NetworkReachableBlock = (PrebidMobile.Reachability?) -> Swift.V
   @objc public func removeUserKeyword(_ element: Swift.String)
   @objc public func clearUserKeywords()
   @objc public func getUserKeywords() -> [Swift.String]
-  @objc public var userKeywords: [Swift.String] {
+  @objc @available(*, deprecated, message: "This property is deprecated. Please, use getUserKeywords method instead.")
+  public var userKeywords: [Swift.String] {
     @objc get
   }
   @objc public func addContextData(key: Swift.String, value: Swift.String)
@@ -1379,35 +1379,6 @@ extension UIKit.UIView {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class UserConsentDataManager : ObjectiveC.NSObject {
-  @objc public static let shared: PrebidMobile.UserConsentDataManager
-  public var subjectToCOPPA: Swift.Bool? {
-    get
-    set
-  }
-  @objc public var usPrivacyString: Swift.String? {
-    @objc get
-  }
-  public var subjectToGDPR: Swift.Bool? {
-    get
-    set
-  }
-  @objc public var subjectToGDPR_NSNumber: Foundation.NSNumber? {
-    @objc get
-  }
-  @objc public var gdprConsentString: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc public var purposeConsents: Swift.String? {
-    @objc get
-    @objc set
-  }
-  public func getDeviceAccessConsent() -> Swift.Bool?
-  public func getPurposeConsent(index: Swift.Int) -> Swift.Bool?
-  @objc public func isAllowedAccessDeviceData() -> Swift.Bool
-  @objc deinit
-}
 @objc public protocol InterstitialControllerInteractionDelegate : ObjectiveC.NSObjectProtocol {
   @objc func trackImpression(forInterstitialController: PrebidMobile.InterstitialController)
   @objc func interstitialControllerDidClickAd(_ interstitialController: PrebidMobile.InterstitialController)
@@ -1799,6 +1770,7 @@ public typealias AdRequestCallback = (PrebidMobile.ServerResponse?, Swift.Error?
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class AdConfiguration : PrebidMobile.AutoRefreshCountConfig {
+  @objc public var isOriginalAPI: Swift.Bool
   @objc public var adFormats: Swift.Set<PrebidMobile.AdFormat>
   @objc public var bannerParameters: PrebidMobile.BannerParameters {
     @objc get

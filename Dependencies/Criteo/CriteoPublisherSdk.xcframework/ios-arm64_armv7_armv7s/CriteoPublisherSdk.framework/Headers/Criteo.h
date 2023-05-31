@@ -62,8 +62,10 @@ NS_ASSUME_NONNULL_BEGIN
 /** Set a custom opt-out/opt-in with same behaviour as the CCPA (US Privacy). */
 - (void)setUsPrivacyOptOut:(BOOL)usPrivacyOptOut;
 
-/** Set the privacy consent string owned by the Mopub SDK. */
-- (void)setMopubConsent:(NSString *)mopubConsent;
+/** Set the privacy consent string owned by the Mopub SDK.
+ @deprecated Mopub SDK is not supported anymore
+ */
+- (void)setMopubConsent:(NSString *)mopubConsent __deprecated;
 
 #pragma mark - User data
 
@@ -71,6 +73,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setUserData:(CRUserData *)userData;
 
 #pragma mark - Bidding
+
+/// Set to true if you think that your mobile app is intended specifically for children, so we treat
+/// bidding as child-directed in whole or in part for the purposes of the Children's Online Privacy
+/// Protection Act (COPPA).
+@property(nonatomic) NSNumber *_Nullable childDirectedTreatment;
 
 /**
  * Request asynchronously a bid from Criteo
@@ -95,7 +102,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * App bidding API, enrich your ad object with Criteo metadata
- * @param object The object to enrich, supports GAM and MoPub
+ * @param object The object to enrich, supports GAM
  * @param bid The bid obtained from Criteo
  */
 - (void)enrichAdObject:(id)object withBid:(CRBid *_Nullable)bid;
@@ -103,6 +110,10 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Debug
 
 + (void)setVerboseLogsEnabled:(BOOL)enabled;
+
+#pragma mark - Testing
+
++ (void)setSharedInstance:(Criteo *)instance;
 
 @end
 NS_ASSUME_NONNULL_END

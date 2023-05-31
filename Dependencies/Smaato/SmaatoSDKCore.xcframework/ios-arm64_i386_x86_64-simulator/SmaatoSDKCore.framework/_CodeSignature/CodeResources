@@ -106,7 +106,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fHfid5PDjQNzFltRJNIK8306EFg=
+		iymNJbB1hr6LRE7atqnfgrP+1Xk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -530,7 +530,7 @@
 		</data>
 		<key>PrivateHeaders/SMAInterstitialViewController.h</key>
 		<data>
-		Ka/AcSeqcA3YGsB5yhsSd+9DoxQ=
+		lBGlSICaBCaJR0zQTcUXyRrL5NA=
 		</data>
 		<key>PrivateHeaders/SMAJSONMapper.h</key>
 		<data>
@@ -688,6 +688,14 @@
 		<data>
 		NnSYBowiXWygwoGYfCZFzcPN9kY=
 		</data>
+		<key>PrivateHeaders/SMAResource.h</key>
+		<data>
+		BAn0ld6Z0tqcluktpw/KDj8njuY=
+		</data>
+		<key>PrivateHeaders/SMAResourceConstants.h</key>
+		<data>
+		a/g/O4fyiCoNQ0N2Y3lZwMzP6iM=
+		</data>
 		<key>PrivateHeaders/SMAResponseBucketing.h</key>
 		<data>
 		s04JmyZg5JiCNlN1tre418yzwiw=
@@ -719,6 +727,10 @@
 		<key>PrivateHeaders/SMASKAdNetwork.h</key>
 		<data>
 		5zGVtBN3oa7k9jDirp9eynEuhiY=
+		</data>
+		<key>PrivateHeaders/SMASKOverlayPresenter.h</key>
+		<data>
+		I68ep11eL89FBcROSHwEpg+SCxM=
 		</data>
 		<key>PrivateHeaders/SMAScheduler.h</key>
 		<data>
@@ -2297,11 +2309,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ka/AcSeqcA3YGsB5yhsSd+9DoxQ=
+			lBGlSICaBCaJR0zQTcUXyRrL5NA=
 			</data>
 			<key>hash2</key>
 			<data>
-			VE9Zk89wHT2/HP5nmTZ5ENhue7Z5hokhMokMs7Ap9qM=
+			ImwPAEw1LT1m6wtniFzoR0ptMpN8iwtqdzxxIQ1xHWQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAJSONMapper.h</key>
@@ -2733,6 +2745,28 @@
 			CCwIP5Kdo1sfEgEbxoDd8jCsSyFQG8YRULZ7xe2odro=
 			</data>
 		</dict>
+		<key>PrivateHeaders/SMAResource.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BAn0ld6Z0tqcluktpw/KDj8njuY=
+			</data>
+			<key>hash2</key>
+			<data>
+			a/d/64gIjjXEnuEoSuOr+srYNsdtWAEH/Qyb6LteLls=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMAResourceConstants.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			a/g/O4fyiCoNQ0N2Y3lZwMzP6iM=
+			</data>
+			<key>hash2</key>
+			<data>
+			vTthdzApH66OUb8cyxYtUtyX5H2TiWPPP/lgMiPlQPw=
+			</data>
+		</dict>
 		<key>PrivateHeaders/SMAResponseBucketing.h</key>
 		<dict>
 			<key>hash</key>
@@ -2819,6 +2853,17 @@
 			<key>hash2</key>
 			<data>
 			CP5+zeIynP3tccGDmlRCni5dWm7EMlpefKHtudVWqVw=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMASKOverlayPresenter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I68ep11eL89FBcROSHwEpg+SCxM=
+			</data>
+			<key>hash2</key>
+			<data>
+			+A3oudjcxkpDdeAO24dLBqzqvs7dR75G+UcAXQ86PLs=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAScheduler.h</key>

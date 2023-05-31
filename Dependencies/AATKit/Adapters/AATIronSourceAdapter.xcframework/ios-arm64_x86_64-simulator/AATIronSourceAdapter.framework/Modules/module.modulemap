@@ -1,0 +1,11 @@
+framework module AATIronSourceAdapter {
+  umbrella header "AATIronSourceAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATIronSourceAdapter.Swift {
+    header "AATIronSourceAdapter-Swift.h"
+    requires objc
+}
