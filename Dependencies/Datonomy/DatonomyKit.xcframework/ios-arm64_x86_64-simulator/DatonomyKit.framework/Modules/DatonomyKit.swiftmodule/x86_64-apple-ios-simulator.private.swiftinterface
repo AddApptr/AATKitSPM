@@ -1,0 +1,110 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DatonomyKit
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AdSupport
+@_exported import DatonomyKit
+import Foundation
+import SQLite3
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import os.log
+import os
+public enum SdkState : Swift.String {
+  case initialized
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class AdImpression {
+  public init(revenue: Swift.Double, networkName: Swift.String, typeAds: DatonomyKit.AdsType)
+  @objc deinit
+}
+public enum DatonomySDKError : Swift.Error {
+  case invalidApiKey(message: Swift.String)
+  case sdkNotInitialized(message: Swift.String)
+  case invalidEvent(message: Swift.String)
+  case processingError(message: Swift.String)
+  case notAuthorized
+}
+@objc public enum DatonomySDKLogLevel : Swift.Int {
+  case off = 0
+  case error = 1
+  case warning = 2
+  case info = 3
+  case debug = 4
+  case verbose = 5
+  public var name: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension DatonomyKit.DatonomySDKLogLevel : Swift.Comparable {
+  public static func < (lhs: DatonomyKit.DatonomySDKLogLevel, rhs: DatonomyKit.DatonomySDKLogLevel) -> Swift.Bool
+}
+public enum AdsType : Swift.String {
+  case banner
+  case video
+  case interstitial
+  case rewarded
+  case mrec
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class AdsRevenuePaid {
+  public init(type: DatonomyKit.AdsType, revenue: Swift.Double)
+  @objc deinit
+}
+public class DatonomySdk : DatonomyKit.DatonomyKitProtocol {
+  public func notifyEnterBackground()
+  public func notifyDidBecomeActivate()
+  public init()
+  public func initialize(apiKey: Swift.String, _ completionHandler: @escaping (DatonomyKit.SdkState?, DatonomyKit.DatonomySDKError?) -> Swift.Void)
+  public func getLTVScore(_ completionHandler: @escaping (Swift.Double?, DatonomyKit.DatonomySDKError?) -> Swift.Void)
+  public func event(event: DatonomyKit.AdEvent, _ completionHandler: @escaping (Swift.Double?, DatonomyKit.DatonomySDKError?) -> Swift.Void)
+  public func getLTVScore() throws -> Swift.Double?
+  @objc deinit
+}
+public enum AdEventType {
+  case impression
+  case sessionTime
+  public static func == (a: DatonomyKit.AdEventType, b: DatonomyKit.AdEventType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class AdEvent {
+  public init(type: DatonomyKit.AdEventType, sessionTime: Swift.Double? = nil, impression: DatonomyKit.AdImpression? = nil)
+  @objc deinit
+}
+public protocol DatonomyKitProtocol {
+  func initialize(apiKey: Swift.String, _ completionHandler: @escaping (DatonomyKit.SdkState?, DatonomyKit.DatonomySDKError?) -> Swift.Void)
+  func getLTVScore(_ completionHandler: @escaping (Swift.Double?, DatonomyKit.DatonomySDKError?) -> Swift.Void)
+  func event(event: DatonomyKit.AdEvent, _ completionHandler: @escaping (Swift.Double?, DatonomyKit.DatonomySDKError?) -> Swift.Void)
+  func getLTVScore() throws -> Swift.Double?
+  func notifyEnterBackground()
+  func notifyDidBecomeActivate()
+}
+extension DatonomyKit.SdkState : Swift.Equatable {}
+extension DatonomyKit.SdkState : Swift.Hashable {}
+extension DatonomyKit.SdkState : Swift.RawRepresentable {}
+extension DatonomyKit.DatonomySDKLogLevel : Swift.Hashable {}
+extension DatonomyKit.DatonomySDKLogLevel : Swift.RawRepresentable {}
+extension DatonomyKit.AdsType : Swift.Equatable {}
+extension DatonomyKit.AdsType : Swift.Hashable {}
+extension DatonomyKit.AdsType : Swift.RawRepresentable {}
+extension DatonomyKit.AdEventType : Swift.Equatable {}
+extension DatonomyKit.AdEventType : Swift.Hashable {}

@@ -4,6 +4,31 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/StoreKitTest.framework/Info.plist</key>
+		<data>
+		QfQfR1Ox8j+r9H+P9wmMEY+FORQ=
+		</data>
+		<key>Frameworks/StoreKitTest.framework/StoreKitTest</key>
+		<data>
+		QcWeFvW7sp0tXYOeVap2zAzBhc8=
+		</data>
+		<key>Frameworks/StoreKitTest.framework/_CodeSignature/CodeResources</key>
+		<data>
+		7W1mO18LD2hiuFLFOcJc5YYNnGE=
+		</data>
+		<key>Frameworks/StoreKitTest.framework/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b8In97NdpYYRCX56i+mKOFaX4Ng=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/StoreKitTest.framework/version.plist</key>
+		<data>
+		QVSC/5p/oJHp0+H7Ttd/dluWvZM=
+		</data>
 		<key>Headers/OGARewardItem.h</key>
 		<data>
 		idV78jJYOFUvcoDh0sWCcQ/MJGk=
@@ -86,7 +111,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RmwK9wdQ38NjFpND7/5TbRI6qFc=
+		d5LRUHyASWZdsrECRppfC73YEm0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,6 +124,63 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/StoreKitTest.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QfQfR1Ox8j+r9H+P9wmMEY+FORQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			RH8vMqglkH+6DTZ1FLGhP3m3JrEV+4c+Yf6aZY75ebs=
+			</data>
+		</dict>
+		<key>Frameworks/StoreKitTest.framework/StoreKitTest</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QcWeFvW7sp0tXYOeVap2zAzBhc8=
+			</data>
+			<key>hash2</key>
+			<data>
+			JL4V5BUqoQKfUedTg4yjVO7rQgM6oN5Cufw0mO2w95I=
+			</data>
+		</dict>
+		<key>Frameworks/StoreKitTest.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7W1mO18LD2hiuFLFOcJc5YYNnGE=
+			</data>
+			<key>hash2</key>
+			<data>
+			ex03Kg0dUC6rwHWJA8AAFxc7C3y4TCRqQDBetqY8nPs=
+			</data>
+		</dict>
+		<key>Frameworks/StoreKitTest.framework/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			b8In97NdpYYRCX56i+mKOFaX4Ng=
+			</data>
+			<key>hash2</key>
+			<data>
+			+04p9YFYplL820dCwnSm0fDlxjam7CVYXeurYq5SOIM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/StoreKitTest.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QVSC/5p/oJHp0+H7Ttd/dluWvZM=
+			</data>
+			<key>hash2</key>
+			<data>
+			N4ep+IaZqZCmXe91s2DWpEuLi9atts/IXz7FK7mrQ7Q=
+			</data>
+		</dict>
 		<key>Headers/OGARewardItem.h</key>
 		<dict>
 			<key>hash</key>

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AATSmartAdAdapter-Swift.h</key>
 		<data>
-		nkhqYPtpWS1kbWkJX7+JA12g3Kc=
+		980dz2goAOhtTs8FLeRRNf4VDFc=
 		</data>
 		<key>Headers/AATSmartAdAdapter.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6M21Mj6SlcdLFt6pa4g6fSmm/Eo=
+		svXRpEaVXyYQPL8T7p0DNv6hFo0=
+		</data>
+		<key>Modules/AATSmartAdAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		WlPGE02/OgsAT/vnzevpWXRL9CI=
+		</data>
+		<key>Modules/AATSmartAdAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		2ZbovPn7YGweDKqIhw+fe7SiRxY=
 		</data>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fqNhE3l+0f4U6wr8DyWRrPgLCUI=
+		rd4siQRrVNB1W/epoVteR45F9a0=
 		</data>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0LUZzSYcZN+6BrzWS2b+SlA3eV0=
+		2ZbovPn7YGweDKqIhw+fe7SiRxY=
 		</data>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		S/UulNCykVoFLyKQF/+DcU5TF1U=
+		rq4XEvEDeSJryIC5gZw16BRG8T4=
+		</data>
+		<key>Modules/AATSmartAdAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		WlPGE02/OgsAT/vnzevpWXRL9CI=
+		</data>
+		<key>Modules/AATSmartAdAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		dV+IEW70JHrP9CNwpGgemZdxiRE=
 		</data>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pURhc1YKtFL4ui6GUMlAmx7jU0s=
+		jPRhWyjXx66J7Xd0t76SKGhQ2rM=
 		</data>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9UMq6lO4P7vZkZgTR7W3Pa7NCko=
+		dV+IEW70JHrP9CNwpGgemZdxiRE=
 		</data>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4XkBllH5aF+PbrxvUfYMsr5l/go=
+		xz1RJ+s+k2U7nvatgP7j3jl/6fk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		uuHUuIJU43IqoMZZdviGUuH6QcE=
+		KgPRNFDgbqlTkUAlcCcHh3OC018=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nkhqYPtpWS1kbWkJX7+JA12g3Kc=
+			980dz2goAOhtTs8FLeRRNf4VDFc=
 			</data>
 			<key>hash2</key>
 			<data>
-			v97J+truGktXFcDNt4cB73ICK9JuDbVLBossY3kCSH8=
+			/EtT68fIyt2kdGv/x3uQdMbDaB3SLFmW5aWb9tB1oXM=
 			</data>
 		</dict>
 		<key>Headers/AATSmartAdAdapter.h</key>
@@ -69,81 +85,125 @@
 			zRJIQ7iVLbtgH5LWg3V6H+RQgsQ1N93LN5hJ1BKHKOc=
 			</data>
 		</dict>
+		<key>Modules/AATSmartAdAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WlPGE02/OgsAT/vnzevpWXRL9CI=
+			</data>
+			<key>hash2</key>
+			<data>
+			xYsYUWBUi9m92fy4nshNAYWebu3rdckwY3RFslLUzMA=
+			</data>
+		</dict>
+		<key>Modules/AATSmartAdAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2ZbovPn7YGweDKqIhw+fe7SiRxY=
+			</data>
+			<key>hash2</key>
+			<data>
+			p+Xeq+9Qu6EFg6tlmI+wxL4MAW/JTawg1XmS4ZSG8J8=
+			</data>
+		</dict>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fqNhE3l+0f4U6wr8DyWRrPgLCUI=
+			rd4siQRrVNB1W/epoVteR45F9a0=
 			</data>
 			<key>hash2</key>
 			<data>
-			l/D9RJeo9r0R9R4Sl74xLrrE6zual42rFQ9mdZxp54I=
+			HMN6Rdki/OrcdJs2ZEuk9mbD/L0sf2pNLEV9NIDNgB8=
 			</data>
 		</dict>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0LUZzSYcZN+6BrzWS2b+SlA3eV0=
+			2ZbovPn7YGweDKqIhw+fe7SiRxY=
 			</data>
 			<key>hash2</key>
 			<data>
-			9iWjgGmjA0YeJIKsRPPufRkOhZrVfQSRDfqrZyzjPGw=
+			p+Xeq+9Qu6EFg6tlmI+wxL4MAW/JTawg1XmS4ZSG8J8=
 			</data>
 		</dict>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S/UulNCykVoFLyKQF/+DcU5TF1U=
+			rq4XEvEDeSJryIC5gZw16BRG8T4=
 			</data>
 			<key>hash2</key>
 			<data>
-			2dEVoplpIfqX0a6FteDvRwH7NKkY96VWRj1166HHzVY=
+			007Hp2aI29nhUklxb/ilOfnZoIoQxi2QTYU1zGhuUbo=
+			</data>
+		</dict>
+		<key>Modules/AATSmartAdAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WlPGE02/OgsAT/vnzevpWXRL9CI=
+			</data>
+			<key>hash2</key>
+			<data>
+			xYsYUWBUi9m92fy4nshNAYWebu3rdckwY3RFslLUzMA=
+			</data>
+		</dict>
+		<key>Modules/AATSmartAdAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dV+IEW70JHrP9CNwpGgemZdxiRE=
+			</data>
+			<key>hash2</key>
+			<data>
+			sNQ+MnVQ5vQPDrNeloofba6c+QUEo9XdOzZjwoCgObc=
 			</data>
 		</dict>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pURhc1YKtFL4ui6GUMlAmx7jU0s=
+			jPRhWyjXx66J7Xd0t76SKGhQ2rM=
 			</data>
 			<key>hash2</key>
 			<data>
-			5xi05PyZ37AgZy5je5y1DWYArEBkeLw4zUtFIgoX0cs=
+			mVvYt/H8y4xOLhL6lolsjtMI3eyI90gcSL0Lx4tSCmw=
 			</data>
 		</dict>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9UMq6lO4P7vZkZgTR7W3Pa7NCko=
+			dV+IEW70JHrP9CNwpGgemZdxiRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			vaeAyuAHChIG4eduhefBxDiE1LrCzRGIDcLLmXveYMk=
+			sNQ+MnVQ5vQPDrNeloofba6c+QUEo9XdOzZjwoCgObc=
 			</data>
 		</dict>
 		<key>Modules/AATSmartAdAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4XkBllH5aF+PbrxvUfYMsr5l/go=
+			xz1RJ+s+k2U7nvatgP7j3jl/6fk=
 			</data>
 			<key>hash2</key>
 			<data>
-			MkAR15lFSjxoNcKV/u9SPNhlnpxBYM5XE4/v+/FmHvU=
+			Cfg6nHeLWkkjxrJvEEsDpLvMlkj143LqvNGC2EaAsxs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uuHUuIJU43IqoMZZdviGUuH6QcE=
+			KgPRNFDgbqlTkUAlcCcHh3OC018=
 			</data>
 			<key>hash2</key>
 			<data>
-			AhtLG3VzyLfUrLmD0ncQGwxiYz6eFZMt7piXuCqEQ3k=
+			Y+9l2YsdWheF9Eiy2UskEEvQgBbPW+K/wa3h+Mol0GU=
 			</data>
 		</dict>
 	</dict>

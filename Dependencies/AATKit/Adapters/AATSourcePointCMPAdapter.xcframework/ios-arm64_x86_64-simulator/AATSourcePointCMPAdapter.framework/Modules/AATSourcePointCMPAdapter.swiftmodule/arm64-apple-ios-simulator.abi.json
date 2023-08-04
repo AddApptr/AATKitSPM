@@ -1,0 +1,1158 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATSourcePointCMPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ConsentViewController",
+        "printedName": "ConsentViewController",
+        "declKind": "Import",
+        "moduleName": "AATSourcePointCMPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATSourcePointCMPAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AATCMPSourcepoint",
+        "printedName": "AATCMPSourcepoint",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isSuccessfullyInitialized",
+            "printedName": "isSuccessfullyInitialized(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)isSuccessfullyInitialized:",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC25isSuccessfullyInitializedySbSSF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "isSuccessfullyInitialized:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(accountId:propertyId:propertyName:pmId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATCMPSourcepoint",
+                "printedName": "AATSourcePointCMPAdapter.AATCMPSourcepoint",
+                "usr": "c:@M@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)initWithAccountId:propertyId:propertyName:pmId:",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC9accountId08propertyF00G4Name02pmF0ACSS_S3Stcfc",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "initWithAccountId:propertyId:propertyName:pmId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATCMPSourcepoint",
+                "printedName": "AATSourcePointCMPAdapter.AATCMPSourcepoint",
+                "usr": "c:@M@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)init",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointCACycfc",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)start:",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC5startyySSF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "start:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showIfNeeded",
+            "printedName": "showIfNeeded(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)showIfNeeded::",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC12showIfNeededyySS_So16UIViewControllerCtF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "showIfNeeded::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "editConsent",
+            "printedName": "editConsent(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)editConsent::",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC11editConsentyySS_So16UIViewControllerCtF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "editConsent::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATCMPDelegate",
+                "printedName": "AATKit.AATCMPDelegate",
+                "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)setDelegate::",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC11setDelegateyySS_6AATKit14AATCMPDelegate_ptF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "setDelegate::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reload",
+            "printedName": "reload(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)reload::",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC6reloadyySS_So16UIViewControllerCtF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "reload::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getConsentForNetwork",
+            "printedName": "getConsentForNetwork(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NonIABConsent",
+                "printedName": "AATKit.NonIABConsent",
+                "usr": "c:@M@AATKit@E@NonIABConsent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATAdNetwork",
+                "printedName": "AATKit.AATAdNetwork",
+                "usr": "c:@M@AATKit@E@AATAdNetwork"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)getConsentForNetwork::",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC20getConsentForNetworky6AATKit13NonIABConsentOSS_AE05AATAdH0OtF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "getConsentForNetwork::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(py)description",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC11descriptionSSvp",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)description",
+                "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC11descriptionSSvg",
+                "moduleName": "AATSourcePointCMPAdapter",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "onSPUIReady",
+            "printedName": "onSPUIReady(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)onSPUIReady:",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC11onSPUIReadyyySo16UIViewControllerCF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "onSPUIReady:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSPUIFinished",
+            "printedName": "onSPUIFinished(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)onSPUIFinished:",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC14onSPUIFinishedyySo16UIViewControllerCF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "onSPUIFinished:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAction",
+            "printedName": "onAction(_:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SPAction",
+                "printedName": "ConsentViewController.SPAction",
+                "usr": "c:@M@ConsentViewController@objc(cs)SPAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)onAction:from:",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC8onAction_4fromy21ConsentViewController8SPActionC_So06UIViewJ0CtF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "onAction:from:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onConsentReady",
+            "printedName": "onConsentReady(userData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SPUserData",
+                "printedName": "ConsentViewController.SPUserData",
+                "usr": "c:@M@ConsentViewController@objc(cs)SPUserData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)onConsentReadyWithUserData:",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC14onConsentReady8userDatay0F14ViewController06SPUserI0C_tF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "onConsentReadyWithUserData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSPFinished",
+            "printedName": "onSPFinished(userData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SPUserData",
+                "printedName": "ConsentViewController.SPUserData",
+                "usr": "c:@M@ConsentViewController@objc(cs)SPUserData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)onSPFinishedWithUserData:",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC12onSPFinished8userDatay21ConsentViewController06SPUserH0C_tF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "onSPFinishedWithUserData:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SPError",
+                "printedName": "ConsentViewController.SPError",
+                "usr": "c:@M@ConsentViewController@objc(cs)SPError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)onErrorWithError:",
+            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC7onError5errory21ConsentViewController7SPErrorC_tF",
+            "moduleName": "AATSourcePointCMPAdapter",
+            "objc_name": "onErrorWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint",
+        "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC",
+        "moduleName": "AATSourcePointCMPAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AATAdDriverLoggerProtocol",
+            "printedName": "AATAdDriverLoggerProtocol",
+            "usr": "s:6AATKit25AATAdDriverLoggerProtocolP",
+            "mangledName": "$s6AATKit25AATAdDriverLoggerProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AATCMPProtocol",
+            "printedName": "AATCMPProtocol",
+            "usr": "c:@M@AATKit@objc(pl)AATCMPProtocol",
+            "mangledName": "$s6AATKit14AATCMPProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SPDelegate",
+            "printedName": "SPDelegate",
+            "usr": "c:@M@ConsentViewController@objc(pl)SPDelegate",
+            "mangledName": "$s21ConsentViewController10SPDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SPConsentDelegate",
+            "printedName": "SPConsentDelegate",
+            "usr": "c:@M@ConsentViewController@objc(pl)SPConsentDelegate",
+            "mangledName": "$s21ConsentViewController17SPConsentDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SPConsentUIDelegate",
+            "printedName": "SPConsentUIDelegate",
+            "usr": "c:@M@ConsentViewController@objc(pl)SPConsentUIDelegate",
+            "mangledName": "$s21ConsentViewController19SPConsentUIDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATSourcePointCMPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATSourcePointCMPAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 221,
+      "length": 23,
+      "value": "\"AATSafeManagedConsent\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 536,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 725,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 751,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 812,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1124,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1304,
+      "length": 103,
+      "value": "\"Invalid SourcePoint CMP parameters: accountId: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1364,
+      "length": 1,
+      "value": "\", propertyId: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1391,
+      "length": 1,
+      "value": "\", pmID: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1406,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1686,
+      "length": 130,
+      "value": "\"Initialize SourcePoint CMP with accountId: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1742,
+      "length": 1,
+      "value": "\", propertyId: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1769,
+      "length": 1,
+      "value": "\", propertyName: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1800,
+      "length": 1,
+      "value": "\", pmId: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 1815,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2326,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2431,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 2464,
+      "length": 87,
+      "value": "\"Couldn't get \"Property Name\" from: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 2517,
+      "length": 1,
+      "value": "\"  - \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 2550,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 2634,
+      "length": 13,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 2646,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 2879,
+      "length": 24,
+      "value": "\"SourcePoint idle state\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 3007,
+      "length": 28,
+      "value": "\"SourcePoint setup finished\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 3158,
+      "length": 39,
+      "value": "\"SourcePoint CMP setup error: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 3196,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 3346,
+      "length": 17,
+      "value": "\"loading consent\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 3500,
+      "length": 14,
+      "value": "\"Edit consent\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 3700,
+      "length": 24,
+      "value": "\"Form ready to be shown\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 3927,
+      "length": 25,
+      "value": "\"Form has been dismissed\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3996,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4136,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 4322,
+      "length": 17,
+      "value": "\"State: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 4338,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 17,
+      "value": "\"AATSourcePointCMPAdapter.AATCMPSourcepoint\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 4637,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 4663,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 4990,
+      "length": 52,
+      "value": "\"SourcePoint didn't return a proper ViewController!\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5129,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 5331,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 5357,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 5645,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 5671,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 5997,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 6023,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 6305,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 6331,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 6491,
+      "length": 158,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 6648,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 7320,
+      "length": 44,
+      "value": "\"AATSourcePointCMPAdapter.AATCMPSourcepoint\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 7560,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 7574,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 7761,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 7775,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 8007,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 8021,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 8474,
+      "length": 21,
+      "value": "\"Not related action.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 8589,
+      "length": 21,
+      "value": "\"Not related action.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 8745,
+      "length": 23,
+      "value": "\"userData: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 8767,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 8891,
+      "length": 23,
+      "value": "\"userData: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 8913,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 9026,
+      "length": 53,
+      "value": "\"Something went wrong: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "kind": "StringLiteral",
+      "offset": 9078,
+      "length": 3,
+      "value": "\"\""
+    }
+  ]
+}

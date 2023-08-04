@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AATAppNexusAdapter-Swift.h</key>
 		<data>
-		EEcqJSFpLrH9ZzQKsN39paNod1w=
+		aZxuL8C0pYODIXMpyxlJbVey6y8=
 		</data>
 		<key>Headers/AATAppNexusAdapter.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		e/OkCnkJb1v9Led4y3EtCO4bQ9Q=
+		aJ05TcA0KDC7aIPhPulv4Y6R/pk=
+		</data>
+		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		1Kkrny1Lvuovj2+c3AbPkCr7wa8=
+		</data>
+		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		o98H4wG7AEyeTX2fiZfTwYlkYRw=
 		</data>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		W+hB0enQuOy/YJnDzbgTZoE1sso=
+		wflg92dEbDtoyg7Zc/bKe1CqZH4=
 		</data>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7qiIrsOHfhG7fA3qtnB5BdTf4OY=
+		o98H4wG7AEyeTX2fiZfTwYlkYRw=
 		</data>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		u3wi2or1oEoaCP13nSqdnpydttc=
+		aWqU8zJudjQ0heb+niwfRTda4fc=
+		</data>
+		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		1Kkrny1Lvuovj2+c3AbPkCr7wa8=
+		</data>
+		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		3dhmHpkzleDTIbOBcqe19n3Qz7I=
 		</data>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		RRgJVtx5lB1bX4YxHqtWjAou6MY=
+		/vZG862HETyQA3ofUle/SPFX1Yc=
 		</data>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		V+HHzL98+8kXcoqV/1uCCtS+5HQ=
+		3dhmHpkzleDTIbOBcqe19n3Qz7I=
 		</data>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Tx84nti3DsPCg08Z08+x6DSdN6s=
+		q/x3VNsGxkBQjr5hmN/Wg226NpM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		PX4JR1ppt93N3/bld7muvSMdHfY=
+		wd0p/uimu8v2gwJBJLtvlbNc0zI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EEcqJSFpLrH9ZzQKsN39paNod1w=
+			aZxuL8C0pYODIXMpyxlJbVey6y8=
 			</data>
 			<key>hash2</key>
 			<data>
-			OxFMrDpGhebG4Bsh/uo2Ov8I28aYrnwGu4LfcAYDJjM=
+			fuwvhXkIHTW7/sMk4QB/nz4bwxhoHoDmEk4T8uVszMo=
 			</data>
 		</dict>
 		<key>Headers/AATAppNexusAdapter.h</key>
@@ -69,81 +85,125 @@
 			+JgrPMPl6TqBSenDcGFJCY4YclAKN6kOMiQh8q4A3KA=
 			</data>
 		</dict>
+		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Kkrny1Lvuovj2+c3AbPkCr7wa8=
+			</data>
+			<key>hash2</key>
+			<data>
+			XUcnu45olaDpdC2RgFiumToidLYRI+qK4aCqBEizfwY=
+			</data>
+		</dict>
+		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			o98H4wG7AEyeTX2fiZfTwYlkYRw=
+			</data>
+			<key>hash2</key>
+			<data>
+			rGl4Vfc4yg7jzDKm5OT5KOy/IbS7f5RMX5LHT+6MSwU=
+			</data>
+		</dict>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W+hB0enQuOy/YJnDzbgTZoE1sso=
+			wflg92dEbDtoyg7Zc/bKe1CqZH4=
 			</data>
 			<key>hash2</key>
 			<data>
-			O80PeNs+fTo4DG0wcp3vt+7j2eTBQE7NHzvqpsCzbLA=
+			YSnw1dt/6icWrxRVUK9XfCVvfg1kqxrtzFrH5LLZt7o=
 			</data>
 		</dict>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7qiIrsOHfhG7fA3qtnB5BdTf4OY=
+			o98H4wG7AEyeTX2fiZfTwYlkYRw=
 			</data>
 			<key>hash2</key>
 			<data>
-			wPOjjc01TEK6/M/ahxy4S75Cgbl5Or/GQob2s003Cms=
+			rGl4Vfc4yg7jzDKm5OT5KOy/IbS7f5RMX5LHT+6MSwU=
 			</data>
 		</dict>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			u3wi2or1oEoaCP13nSqdnpydttc=
+			aWqU8zJudjQ0heb+niwfRTda4fc=
 			</data>
 			<key>hash2</key>
 			<data>
-			qyH9xxeY62Hu99qpMmWFZMzcnNnW5+QddMJFq+2q/qA=
+			1q7yj8X5fDJ9afqfVNLF5yGE9YjeRCrKkl6c7G/9Dvc=
+			</data>
+		</dict>
+		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Kkrny1Lvuovj2+c3AbPkCr7wa8=
+			</data>
+			<key>hash2</key>
+			<data>
+			XUcnu45olaDpdC2RgFiumToidLYRI+qK4aCqBEizfwY=
+			</data>
+		</dict>
+		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3dhmHpkzleDTIbOBcqe19n3Qz7I=
+			</data>
+			<key>hash2</key>
+			<data>
+			Oxao+nelwd3/tG5lmiQz4FpujZWu170SxAiHAFp0/Is=
 			</data>
 		</dict>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RRgJVtx5lB1bX4YxHqtWjAou6MY=
+			/vZG862HETyQA3ofUle/SPFX1Yc=
 			</data>
 			<key>hash2</key>
 			<data>
-			s4/2fKyoSJVu7F2qcVQTgxzoGrFWBi504D2FZd8qy8Q=
+			ExMylnmYcy0bCXIPkww/Y9nzDRZzZkMP5JVVaYwgFoc=
 			</data>
 		</dict>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V+HHzL98+8kXcoqV/1uCCtS+5HQ=
+			3dhmHpkzleDTIbOBcqe19n3Qz7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			7zE2oGe0psHKdE2FXG3XqWcb29VPP/BEfWIMWIUvl/E=
+			Oxao+nelwd3/tG5lmiQz4FpujZWu170SxAiHAFp0/Is=
 			</data>
 		</dict>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Tx84nti3DsPCg08Z08+x6DSdN6s=
+			q/x3VNsGxkBQjr5hmN/Wg226NpM=
 			</data>
 			<key>hash2</key>
 			<data>
-			pmV+rmyBdqLLkInXaYGFSMPyP+vPUwJnA0HG4/ifr8M=
+			ZajM+tGi5zwtcwAIf1vPmaAEoePzz63GYeVu3kpt1Fc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PX4JR1ppt93N3/bld7muvSMdHfY=
+			wd0p/uimu8v2gwJBJLtvlbNc0zI=
 			</data>
 			<key>hash2</key>
 			<data>
-			IyB4vpuyQvbenbcYlISnMS5p5ZWBo620dQpQIdRoI1A=
+			CAJPpqm6opQqOYZKZuMMtM69Vrhql5maEZbQglP68Zk=
 			</data>
 		</dict>
 	</dict>

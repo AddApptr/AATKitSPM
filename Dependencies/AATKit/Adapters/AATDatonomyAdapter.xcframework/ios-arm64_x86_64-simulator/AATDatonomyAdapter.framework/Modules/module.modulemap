@@ -1,0 +1,11 @@
+framework module AATDatonomyAdapter {
+  umbrella header "AATDatonomyAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATDatonomyAdapter.Swift {
+  header "AATDatonomyAdapter-Swift.h"
+  requires objc
+}

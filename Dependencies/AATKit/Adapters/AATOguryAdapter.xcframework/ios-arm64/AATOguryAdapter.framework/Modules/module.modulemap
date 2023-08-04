@@ -6,6 +6,6 @@ framework module AATOguryAdapter {
 }
 
 module AATOguryAdapter.Swift {
-    header "AATOguryAdapter-Swift.h"
-    requires objc
+  header "AATOguryAdapter-Swift.h"
+  requires objc
 }

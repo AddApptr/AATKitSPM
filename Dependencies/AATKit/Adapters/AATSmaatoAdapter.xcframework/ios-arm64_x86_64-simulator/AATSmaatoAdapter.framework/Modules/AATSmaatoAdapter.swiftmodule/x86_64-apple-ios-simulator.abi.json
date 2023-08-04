@@ -1,0 +1,451 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SmaatoSDKCore",
+        "printedName": "SmaatoSDKCore",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SmaatoSDKBanner",
+        "printedName": "SmaatoSDKBanner",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "SmaatoSDKCore",
+        "printedName": "SmaatoSDKCore",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SmaatoSDKCore",
+        "printedName": "SmaatoSDKCore",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "SmaatoSDKInterstitial",
+        "printedName": "SmaatoSDKInterstitial",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "SmaatoSDKRewardedAds",
+        "printedName": "SmaatoSDKRewardedAds",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SmaatoSDKCore",
+        "printedName": "SmaatoSDKCore",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "SmaatoSDKInterstitial",
+        "printedName": "SmaatoSDKInterstitial",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "SmaatoSDKRewardedAds",
+        "printedName": "SmaatoSDKRewardedAds",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATSmaatoAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 367,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoManager.swift",
+      "kind": "StringLiteral",
+      "offset": 574,
+      "length": 61,
+      "value": "\"Failed to configure Smaato with publisherId: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoManager.swift",
+      "kind": "StringLiteral",
+      "offset": 634,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 657,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 700,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 872,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 509,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 843,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 877,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 976,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1025,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1058,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1241,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1426,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1463,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 1820,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2049,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3331,
+      "length": 65,
+      "value": "\"Failed to find a presenting UIViewController for Smaato banner.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3716,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 5514,
+      "length": 20,
+      "value": "\"Resume for \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 5533,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 804,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "IntegerLiteral",
+      "offset": 914,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "IntegerLiteral",
+      "offset": 947,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "IntegerLiteral",
+      "offset": 982,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1092,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1288,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 1587,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1783,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 1951,
+      "length": 51,
+      "value": "\"Failed to show Ad, due to missing viewController.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2024,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2162,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 3576,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 3587,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 802,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 912,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 945,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 980,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1090,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1286,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 1585,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1769,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 1937,
+      "length": 51,
+      "value": "\"Failed to show Ad, due to missing viewController.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2010,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSmaatoAdapter\/AATSmaatoFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2152,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

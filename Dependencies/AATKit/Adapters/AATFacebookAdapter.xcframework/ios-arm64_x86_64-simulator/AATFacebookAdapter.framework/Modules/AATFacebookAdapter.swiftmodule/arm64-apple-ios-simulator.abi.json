@@ -1,0 +1,43 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATFacebookAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "AATFacebookAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFacebookAdapter\/AATFacebookManager.swift",
+      "kind": "StringLiteral",
+      "offset": 645,
+      "length": 10,
+      "value": "\"6.12.0.1\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFacebookAdapter\/AATFacebookManager.swift",
+      "kind": "StringLiteral",
+      "offset": 658,
+      "length": 3,
+      "value": "\"~\""
+    }
+  ]
+}

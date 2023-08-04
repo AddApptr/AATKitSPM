@@ -1,0 +1,183 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATDatonomyAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DatonomyKit",
+        "printedName": "DatonomyKit",
+        "declKind": "Import",
+        "moduleName": "AATDatonomyAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATDatonomyAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 578,
+      "length": 90,
+      "value": "\"Error while initializing Datonomy SDK: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 651,
+      "length": 15,
+      "value": "\"Unknown Error\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 667,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 778,
+      "length": 65,
+      "value": "\"Datonomy SDK has been initialized: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 842,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1111,
+      "length": 53,
+      "value": "\"Couldn't map \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1134,
+      "length": 2,
+      "value": "\" to a proper Datonomy ad type\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1671,
+      "length": 69,
+      "value": "\"Error sending impression to Datonomy: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1739,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1891,
+      "length": 55,
+      "value": "\"Data point session time successfully sent: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1944,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2300,
+      "length": 91,
+      "value": "\"Error while reporting session duration: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2374,
+      "length": 15,
+      "value": "\"Unknown error\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2390,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2544,
+      "length": 56,
+      "value": "\"Data point session time successfully sent - \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2599,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2810,
+      "length": 96,
+      "value": "\"Score: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2846,
+      "length": 1,
+      "value": "\", error: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2905,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3430,
+      "length": 47,
+      "value": "\"Native ads aren't supported with Datonomy SDK\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDatonomyAdapter\/AATDatonomyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3693,
+      "length": 9,
+      "value": "\"300x250\""
+    }
+  ]
+}

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AATAmazonAdapter-Swift.h</key>
 		<data>
-		pJp1VUpAe428HG3Z1Wt4VWRRBto=
+		O4RrMZqIH1TeexnlZtfoSCIHlRc=
 		</data>
 		<key>Headers/AATAmazonAdapter.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bkqQ+ZlU3F9wr10oqR24nPzfb8Q=
+		kWUZHX9oZWMt1tyjDK9xlO464dM=
+		</data>
+		<key>Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		/A+1WWlt6Bn2aLZUuHENTVBz7BM=
+		</data>
+		<key>Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		ivf5PLvZpQsVqO9/EoeWpBAGrts=
 		</data>
 		<key>Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		WexDgR/gBB6/8K78BpkwBZWqhKU=
+		nzruOkxMIBg/BCRGp3/ShEdkGgY=
 		</data>
 		<key>Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VswngoemUonhNJPTObcokA2gAuc=
+		ivf5PLvZpQsVqO9/EoeWpBAGrts=
 		</data>
 		<key>Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VGVplw7h8dDKdaLmril02SGxTro=
+		fBuXinwqMIbNq3CISxVJBJCot9I=
+		</data>
+		<key>Modules/AATAmazonAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		/A+1WWlt6Bn2aLZUuHENTVBz7BM=
+		</data>
+		<key>Modules/AATAmazonAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		KxAW0IsaQhCf+IKKHCn8HrMGsw0=
 		</data>
 		<key>Modules/AATAmazonAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		1mPO6hQbKzZ8LUcZkSSnCQ1VnZE=
+		t0RAGzVG+6Ey7u3WUCbXNU3jlJw=
 		</data>
 		<key>Modules/AATAmazonAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WyBm6GJGJ2MU7yuAZak+zus7j7A=
+		KxAW0IsaQhCf+IKKHCn8HrMGsw0=
 		</data>
 		<key>Modules/AATAmazonAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		K9D3x8MaCYE8EZb2Uv5MaVEmAa0=
+		R+XtnN+OMCdNdA4BprH2ohslmrc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		eF2taJJAGnl8v6AUQy2/dFOzEUc=
+		n5xNi2L4TuO/fG06ZljUUwuiRF8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pJp1VUpAe428HG3Z1Wt4VWRRBto=
+			O4RrMZqIH1TeexnlZtfoSCIHlRc=
 			</data>
 			<key>hash2</key>
 			<data>
-			kC3svM9fc/V+oXGjsrH80w9SAuKPOdx+bgULJcmLa1Q=
+			Zge7MSKUqySIHA59SaR/hAxQv0hH14jHVE9LzHJ93Aw=
 			</data>
 		</dict>
 		<key>Headers/AATAmazonAdapter.h</key>
@@ -69,81 +85,125 @@
 			FapGCNz0qz5SUPKMvtWcNBv+AaCH9aogM9kTrX5ENCA=
 			</data>
 		</dict>
+		<key>Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/A+1WWlt6Bn2aLZUuHENTVBz7BM=
+			</data>
+			<key>hash2</key>
+			<data>
+			eqCkzTvKaIQdByavrwub9HGLAU40A+/k9gDBqOX871I=
+			</data>
+		</dict>
+		<key>Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ivf5PLvZpQsVqO9/EoeWpBAGrts=
+			</data>
+			<key>hash2</key>
+			<data>
+			e+0AaURzWVItXe+F0HnhmDFYjzbI6l5M7JywMVsZ/A8=
+			</data>
+		</dict>
 		<key>Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WexDgR/gBB6/8K78BpkwBZWqhKU=
+			nzruOkxMIBg/BCRGp3/ShEdkGgY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uvh4RM3B27fSJZlQZNfcWIT1niYEUAjHLUkYQmWR0mg=
+			lTGrdEClQeqIAnIru6QPuW/HVzJu3/KwzmdS0FCxquo=
 			</data>
 		</dict>
 		<key>Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VswngoemUonhNJPTObcokA2gAuc=
+			ivf5PLvZpQsVqO9/EoeWpBAGrts=
 			</data>
 			<key>hash2</key>
 			<data>
-			8+iOI8kn3Or1TJm0cnV/cdXFW4BbEk6H9DZZCkQ2zds=
+			e+0AaURzWVItXe+F0HnhmDFYjzbI6l5M7JywMVsZ/A8=
 			</data>
 		</dict>
 		<key>Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VGVplw7h8dDKdaLmril02SGxTro=
+			fBuXinwqMIbNq3CISxVJBJCot9I=
 			</data>
 			<key>hash2</key>
 			<data>
-			FFmyCRQpwaHP50xJgLsioetEyczirJeN3ZrmEIqWIIQ=
+			KLrIWOkehIDsimDOv6RqWu1OPIl2P4qYEv0AXtk5SZE=
+			</data>
+		</dict>
+		<key>Modules/AATAmazonAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/A+1WWlt6Bn2aLZUuHENTVBz7BM=
+			</data>
+			<key>hash2</key>
+			<data>
+			eqCkzTvKaIQdByavrwub9HGLAU40A+/k9gDBqOX871I=
+			</data>
+		</dict>
+		<key>Modules/AATAmazonAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KxAW0IsaQhCf+IKKHCn8HrMGsw0=
+			</data>
+			<key>hash2</key>
+			<data>
+			mG1bgiRxiEfvchRrI5swszLe1jhkyH8TKAza7Y0X2Vs=
 			</data>
 		</dict>
 		<key>Modules/AATAmazonAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1mPO6hQbKzZ8LUcZkSSnCQ1VnZE=
+			t0RAGzVG+6Ey7u3WUCbXNU3jlJw=
 			</data>
 			<key>hash2</key>
 			<data>
-			OV80cje5NGyvYzaNn7Ab3d3infrO6WG6+rcyeS8erIs=
+			5VmmMOKHneVRy9HnEdkK4Gi/ai2IhPDVh95rAm54ts0=
 			</data>
 		</dict>
 		<key>Modules/AATAmazonAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WyBm6GJGJ2MU7yuAZak+zus7j7A=
+			KxAW0IsaQhCf+IKKHCn8HrMGsw0=
 			</data>
 			<key>hash2</key>
 			<data>
-			QAZfSkhWMxHCq/8S/4tl5WYwa9jLfsKalg5HfF/S1ag=
+			mG1bgiRxiEfvchRrI5swszLe1jhkyH8TKAza7Y0X2Vs=
 			</data>
 		</dict>
 		<key>Modules/AATAmazonAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K9D3x8MaCYE8EZb2Uv5MaVEmAa0=
+			R+XtnN+OMCdNdA4BprH2ohslmrc=
 			</data>
 			<key>hash2</key>
 			<data>
-			LF6qIX+IhxHXLYvhsKTwlTJFLl+Nd/mzqORnigzNAh8=
+			QQw5n2HmWFmyidllXlM7Vt4nFWZEWyMcdyF/PZ/iabM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eF2taJJAGnl8v6AUQy2/dFOzEUc=
+			n5xNi2L4TuO/fG06ZljUUwuiRF8=
 			</data>
 			<key>hash2</key>
 			<data>
-			MQYst3b+VFlo3DiqmiPIE1qnXWdml3TtTTb0Tp/n3qY=
+			QI55jGf7TgvLFoswK82UoyBi0iohSfiLx+IukrDXQxQ=
 			</data>
 		</dict>
 	</dict>

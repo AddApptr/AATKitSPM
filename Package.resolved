@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git",
         "state": {
           "branch": null,
-          "revision": "8e393dc7cc225541f6435ab992312ad14daf43c9",
-          "version": "11.7.1"
+          "revision": "1ca0fb386a0b49c6ae10b9941e335dbabb252b61",
+          "version": "11.10.1"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/google/GoogleAppMeasurement.git",
         "state": {
           "branch": null,
-          "revision": "192cce3e0486aecfdb61102a9c694c78dc89dc48",
-          "version": "9.1.0"
+          "revision": "03b9beee1a61f62d32c521e172e192a1663a5e8b",
+          "version": "10.13.0"
         }
       },
       {
@@ -24,17 +24,8 @@
         "repositoryURL": "https://github.com/google/GoogleUtilities.git",
         "state": {
           "branch": null,
-          "revision": "f4abe56ce62a779e64b525eb133c8fc2a84bbc1f",
-          "version": "7.7.1"
-        }
-      },
-      {
-        "package": "AppNexusSDK",
-        "repositoryURL": "https://github.com/appnexus/mobile-sdk-ios",
-        "state": {
-          "branch": null,
-          "revision": "12544f71664b6dccc4ee6b3522c84dd224f7adf8",
-          "version": "8.3.0"
+          "revision": "c38ce365d77b04a9a300c31061c5227589e5597b",
+          "version": "7.11.5"
         }
       },
       {
@@ -51,8 +42,8 @@
         "repositoryURL": "https://github.com/google/promises.git",
         "state": {
           "branch": null,
-          "revision": "3e4e743631e86c8c70dbc6efdc7beaa6e90fd3bb",
-          "version": "2.1.1"
+          "revision": "e70e889c0196c76d22759eb50d6a0270ca9f1d9e",
+          "version": "2.3.1"
         }
       },
       {
@@ -60,8 +51,8 @@
         "repositoryURL": "https://github.com/googleads/swift-package-manager-google-mobile-ads",
         "state": {
           "branch": null,
-          "revision": "e165216151b484e7135412f57d2b9328cc72481b",
-          "version": "10.0.0"
+          "revision": "a6e24f2167295d95371bfc3049e47381a73a9e43",
+          "version": "10.7.0"
         }
       },
       {
@@ -69,8 +60,8 @@
         "repositoryURL": "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git",
         "state": {
           "branch": null,
-          "revision": "3b924ce3313a5fd2fc6a8dc889a8c38f76890fe3",
-          "version": "2.0.0"
+          "revision": "129fa838520cd02174f890ae0cfe0242e60714ae",
+          "version": "2.1.0"
         }
       },
       {
@@ -78,8 +69,8 @@
         "repositoryURL": "https://github.com/teads/TeadsSDK-iOS",
         "state": {
           "branch": null,
-          "revision": "85b174f90f39d0d2efb5ecaa5a94f170099fa8a4",
-          "version": "5.0.26"
+          "revision": "b42ba6799e1f8fef9a20f0dde2a9045589f8e6c4",
+          "version": "5.0.27"
         }
       }
     ]

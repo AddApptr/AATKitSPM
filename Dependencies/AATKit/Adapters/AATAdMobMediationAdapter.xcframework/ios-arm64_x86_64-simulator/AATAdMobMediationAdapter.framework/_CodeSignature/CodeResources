@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AATAdMobMediationAdapter-Swift.h</key>
 		<data>
-		4h4o9NFkWgmwat5Izv3zsIXHzhU=
+		OsDQTHCrlpiQR/znp9rpF1XkCzE=
 		</data>
 		<key>Headers/AATAdMobMediationAdapter.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pdDOwbhPg1/JN08lYOTGBYreug8=
+		AMJ7o3Ls4WtybbcvVcD2F4o65S8=
+		</data>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		XWYK/BW6jvzLyXCQ18XohlMRIj4=
+		</data>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		ux9r0aZdtMwM3EkH6ofdri1Ukzk=
 		</data>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		iKkKUGtxAsi3hZ8OFI/45NSic6A=
+		XbKpuNyp7poktR5AWOwgagfHVSk=
 		</data>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PUAp/DtHbEejEkTuKLYBWxqXt6s=
+		ux9r0aZdtMwM3EkH6ofdri1Ukzk=
 		</data>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rF7AQd717OPAOSvXgBgg4EkpVZ0=
+		PGf0qNARFDwSBFr9YOCWGcmLUXM=
+		</data>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		XWYK/BW6jvzLyXCQ18XohlMRIj4=
+		</data>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		RHkDi/zGBicIBWN76EifN7qSm5M=
 		</data>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vzPAArlvzmmwi4FjrdwscDLSHFs=
+		6p+tXWXBfu41TQLmpC7UFPnHcKw=
 		</data>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ps/GC2fIeoUa9pBgVG0xvjMx/Pk=
+		RHkDi/zGBicIBWN76EifN7qSm5M=
 		</data>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		t5j0uF1V8nNunvEiJGtAl9Obnr0=
+		djM9W4Z8n3Lz6dUi05oV0CQvuP0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		lQZZl8+IFKEOJuKJl9mKq5St3qc=
+		6HH/MXaE/a06YqRUaMIR96mbu1E=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4h4o9NFkWgmwat5Izv3zsIXHzhU=
+			OsDQTHCrlpiQR/znp9rpF1XkCzE=
 			</data>
 			<key>hash2</key>
 			<data>
-			awgmbvolUyieelLTIOUd792B/JIeAe190cX4RKeA7p0=
+			pD/EZCa8nzO7NUcHtM65KG6s7OQCsXAyWqa4ctt30+E=
 			</data>
 		</dict>
 		<key>Headers/AATAdMobMediationAdapter.h</key>
@@ -69,81 +85,125 @@
 			Y7ULPU5WscKY4TZK5a0fl9gT/7wlpgOQH68oG8/WzVQ=
 			</data>
 		</dict>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XWYK/BW6jvzLyXCQ18XohlMRIj4=
+			</data>
+			<key>hash2</key>
+			<data>
+			QMgJchEmSHJX+hbD8czRa9OhE+qdZ0BZetfZm9XHlwU=
+			</data>
+		</dict>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ux9r0aZdtMwM3EkH6ofdri1Ukzk=
+			</data>
+			<key>hash2</key>
+			<data>
+			TbVpGzSi2Zj3IFR/MaHDCO55YvaST9z4+ZSiUqS/iFQ=
+			</data>
+		</dict>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iKkKUGtxAsi3hZ8OFI/45NSic6A=
+			XbKpuNyp7poktR5AWOwgagfHVSk=
 			</data>
 			<key>hash2</key>
 			<data>
-			virXxY7EUBIkmbOsoPYAT98JGDUj/CbQKSzA6tDZ76g=
+			JXaJ6E/28vCEcqu93RiAV/2VcCrRmLnqgBCYiXJvr7U=
 			</data>
 		</dict>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PUAp/DtHbEejEkTuKLYBWxqXt6s=
+			ux9r0aZdtMwM3EkH6ofdri1Ukzk=
 			</data>
 			<key>hash2</key>
 			<data>
-			zeflhGkA/t3eTkqeNfbR3NkYlZjMtaqrlzNuuiGdMII=
+			TbVpGzSi2Zj3IFR/MaHDCO55YvaST9z4+ZSiUqS/iFQ=
 			</data>
 		</dict>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rF7AQd717OPAOSvXgBgg4EkpVZ0=
+			PGf0qNARFDwSBFr9YOCWGcmLUXM=
 			</data>
 			<key>hash2</key>
 			<data>
-			DhLhciJ9x8ZhmRf5DnLNS/bx7kvLmVtye3zKTtEEbTc=
+			6WsDooBhRxzC0xWu3oYBGCMiKwr/+W4sT/8Gwngxyp0=
+			</data>
+		</dict>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XWYK/BW6jvzLyXCQ18XohlMRIj4=
+			</data>
+			<key>hash2</key>
+			<data>
+			QMgJchEmSHJX+hbD8czRa9OhE+qdZ0BZetfZm9XHlwU=
+			</data>
+		</dict>
+		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RHkDi/zGBicIBWN76EifN7qSm5M=
+			</data>
+			<key>hash2</key>
+			<data>
+			MoCpXcxtGlt5/3dPP7hekRuLntXANIS006iBgbH+LUo=
 			</data>
 		</dict>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vzPAArlvzmmwi4FjrdwscDLSHFs=
+			6p+tXWXBfu41TQLmpC7UFPnHcKw=
 			</data>
 			<key>hash2</key>
 			<data>
-			QAavv2+wzdyrBFgXqgOthvhKjAQu8vyjz96hhbPsXB8=
+			p7p3q948aElxLZ9p2Gow7FC0+9p1mA1S4BHmjfiD69o=
 			</data>
 		</dict>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ps/GC2fIeoUa9pBgVG0xvjMx/Pk=
+			RHkDi/zGBicIBWN76EifN7qSm5M=
 			</data>
 			<key>hash2</key>
 			<data>
-			ieEG5C0GEDTfDSwpDVEd2O9DI4sSvKDzDWgu/rkW0p0=
+			MoCpXcxtGlt5/3dPP7hekRuLntXANIS006iBgbH+LUo=
 			</data>
 		</dict>
 		<key>Modules/AATAdMobMediationAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			t5j0uF1V8nNunvEiJGtAl9Obnr0=
+			djM9W4Z8n3Lz6dUi05oV0CQvuP0=
 			</data>
 			<key>hash2</key>
 			<data>
-			K7OfBnRhWOZKxoamoVa7ujy3HmGgWFuZD77VvjzXWTE=
+			tsAVa2XrBHdqDBVqZb5d9kLKfY4py9P0NMZRnR44KEs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lQZZl8+IFKEOJuKJl9mKq5St3qc=
+			6HH/MXaE/a06YqRUaMIR96mbu1E=
 			</data>
 			<key>hash2</key>
 			<data>
-			pJ064UYnI7h15QrUf7xJtszTJx8rce45EMwwO88HRoo=
+			6xBKXI3L01w+PbOlujvGnGgIlLLFkVMS4D+VgCLdP9g=
 			</data>
 		</dict>
 	</dict>

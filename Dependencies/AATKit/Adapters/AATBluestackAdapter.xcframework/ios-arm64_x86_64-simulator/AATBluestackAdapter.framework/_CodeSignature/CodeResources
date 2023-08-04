@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AATBluestackAdapter-Swift.h</key>
 		<data>
-		X+lxHdfDg0DL5A+vMmsHMw9kHfM=
+		ZYHHoghPcJXzUN6ZkPKen4jxAm0=
 		</data>
 		<key>Headers/AATBluestackAdapter.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fMphsfiEgjWvHtLCGHqekHGvX8w=
+		KebBa5AeNvkFHY2cZjlZxTQYiNA=
+		</data>
+		<key>Modules/AATBluestackAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		dzjZEBFzyu7RzLJpnaZNf9ZQXek=
+		</data>
+		<key>Modules/AATBluestackAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		1/wO34DBDTL/M4AvwFB85wixcMM=
 		</data>
 		<key>Modules/AATBluestackAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ekO6jpQ4mYar9MlafvuKQfnsBtI=
+		ChCBgIc2KHlXOOzKFwVrFnbe/8E=
 		</data>
 		<key>Modules/AATBluestackAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3fbKM0jAgLiYwD7/v5vmP6SjIxU=
+		1/wO34DBDTL/M4AvwFB85wixcMM=
 		</data>
 		<key>Modules/AATBluestackAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		k/gRR3LGGdgtF/qqroLfYiRyJ7U=
+		onv1Q8DLtrJO+R1IiG/oUCv82Nc=
+		</data>
+		<key>Modules/AATBluestackAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		dzjZEBFzyu7RzLJpnaZNf9ZQXek=
+		</data>
+		<key>Modules/AATBluestackAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		crRZPZB67D2mYDz93Sln+jS3FMA=
 		</data>
 		<key>Modules/AATBluestackAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+T0cV1monPiJ4PRCiosG02IWklY=
+		s/mcvaVthX5n0YBOBZisQb2w4gs=
 		</data>
 		<key>Modules/AATBluestackAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qUs3I+uXIFx/5qI45I1ACKPc2rY=
+		crRZPZB67D2mYDz93Sln+jS3FMA=
 		</data>
 		<key>Modules/AATBluestackAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/760S5SHz+jgFKe7HQg8fYefcsA=
+		p/yezBBL+KIo0b9vN7rLxV1A7wk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		FdjNWhmvdfuNXlgZzKivZh2//yo=
+		2yw7Iu7zRYrw6XP6wA6z82o2YWw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			X+lxHdfDg0DL5A+vMmsHMw9kHfM=
+			ZYHHoghPcJXzUN6ZkPKen4jxAm0=
 			</data>
 			<key>hash2</key>
 			<data>
-			owTKkjZg1kauW6QCAfAlOpJJ61fXUoiJJxOnrd03s20=
+			RzBkDi5z8p4H473HZluCT7NWJrOKje/vPFodSR8BcE0=
 			</data>
 		</dict>
 		<key>Headers/AATBluestackAdapter.h</key>
@@ -69,81 +85,125 @@
 			0LWRqS0+KV3bqFcTO72SULbeNTF3pGGQEj6n0gdiLSo=
 			</data>
 		</dict>
+		<key>Modules/AATBluestackAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzjZEBFzyu7RzLJpnaZNf9ZQXek=
+			</data>
+			<key>hash2</key>
+			<data>
+			RC6c7RkMOmALC1ECDbmTp5sBHRt9gN51cOckpKpWH8w=
+			</data>
+		</dict>
+		<key>Modules/AATBluestackAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1/wO34DBDTL/M4AvwFB85wixcMM=
+			</data>
+			<key>hash2</key>
+			<data>
+			+kyQYosOGg/OIcNOYHHnywCy7PUQo90JkVjY3h3RNng=
+			</data>
+		</dict>
 		<key>Modules/AATBluestackAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ekO6jpQ4mYar9MlafvuKQfnsBtI=
+			ChCBgIc2KHlXOOzKFwVrFnbe/8E=
 			</data>
 			<key>hash2</key>
 			<data>
-			II3UA+9Jxh0b7rRjVJaxPwy3TCVEJrsLGnFtN9InWrQ=
+			J69r2oZuhn01JKcXokk0DsgJq100Z6cyo9Fvlz82faY=
 			</data>
 		</dict>
 		<key>Modules/AATBluestackAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3fbKM0jAgLiYwD7/v5vmP6SjIxU=
+			1/wO34DBDTL/M4AvwFB85wixcMM=
 			</data>
 			<key>hash2</key>
 			<data>
-			APVbLt0oLvDPkR1XarDhKEr6JIBKI3Ujrk5MQ0qb7xU=
+			+kyQYosOGg/OIcNOYHHnywCy7PUQo90JkVjY3h3RNng=
 			</data>
 		</dict>
 		<key>Modules/AATBluestackAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k/gRR3LGGdgtF/qqroLfYiRyJ7U=
+			onv1Q8DLtrJO+R1IiG/oUCv82Nc=
 			</data>
 			<key>hash2</key>
 			<data>
-			sBy638ZqHr9xMs3B0NqpiMkL8sLyFy7m5jcEtWGGWRc=
+			cfbKqUosRu4geWzcEANYlsLPXjZkwNdYgzZosLrrGk4=
+			</data>
+		</dict>
+		<key>Modules/AATBluestackAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dzjZEBFzyu7RzLJpnaZNf9ZQXek=
+			</data>
+			<key>hash2</key>
+			<data>
+			RC6c7RkMOmALC1ECDbmTp5sBHRt9gN51cOckpKpWH8w=
+			</data>
+		</dict>
+		<key>Modules/AATBluestackAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			crRZPZB67D2mYDz93Sln+jS3FMA=
+			</data>
+			<key>hash2</key>
+			<data>
+			ha+Qsy01MLoo1qwySegWcpuXPkiQuhysvkYFVwBy0pU=
 			</data>
 		</dict>
 		<key>Modules/AATBluestackAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+T0cV1monPiJ4PRCiosG02IWklY=
+			s/mcvaVthX5n0YBOBZisQb2w4gs=
 			</data>
 			<key>hash2</key>
 			<data>
-			WDQrDp2Ekn1YAJhZecLmcY/4RU8kS0zviKvSllGAILE=
+			Y3YErU84h/t4KtmCBnvPQjix9IB6F1/heHdoDm/Ngj0=
 			</data>
 		</dict>
 		<key>Modules/AATBluestackAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qUs3I+uXIFx/5qI45I1ACKPc2rY=
+			crRZPZB67D2mYDz93Sln+jS3FMA=
 			</data>
 			<key>hash2</key>
 			<data>
-			tFp3yuTnNdnSPVnk2vUi3DFWIgQlUiqefLoCssd6Duw=
+			ha+Qsy01MLoo1qwySegWcpuXPkiQuhysvkYFVwBy0pU=
 			</data>
 		</dict>
 		<key>Modules/AATBluestackAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/760S5SHz+jgFKe7HQg8fYefcsA=
+			p/yezBBL+KIo0b9vN7rLxV1A7wk=
 			</data>
 			<key>hash2</key>
 			<data>
-			qHvTT54CO2pqAXbdUjzFVkikHK7mA7BLRMEK+Da0Eb0=
+			xgwLf1WgK3FrKYVM/3xfEt18+ixTPavVqecEn+ShpEM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FdjNWhmvdfuNXlgZzKivZh2//yo=
+			2yw7Iu7zRYrw6XP6wA6z82o2YWw=
 			</data>
 			<key>hash2</key>
 			<data>
-			49gnf7DjZP6Vsyg/GFXaYQW/S1xxQvIru9O3h2puQYg=
+			U1XLWOnp83+Hw7OZFwrIAPq+lT+5IHaKCyLWQOpH58k=
 			</data>
 		</dict>
 	</dict>

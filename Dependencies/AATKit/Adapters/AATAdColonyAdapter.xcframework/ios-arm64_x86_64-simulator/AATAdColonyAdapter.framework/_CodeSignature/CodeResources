@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AATAdColonyAdapter-Swift.h</key>
 		<data>
-		c6rAO2APDQjfAGi+bKDIO2ySWuE=
+		KGKFI3iN8sEUBiOu2gecfy7Vr1w=
 		</data>
 		<key>Headers/AATAdColonyAdapter.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		poIiNFnuRGMktSEDtPf5aP3bTWQ=
+		6KltT6PjcJJ4InWLbB3SL+sKPTo=
+		</data>
+		<key>Modules/AATAdColonyAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		Ztm2bGAJJoZNcjkvtVjCLcmyMtY=
+		</data>
+		<key>Modules/AATAdColonyAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		k0fsvGbW/zR/7fyvvo5AZWq1lcg=
 		</data>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		q2QtD0Yc4VJO9SewiBj4duMTTq8=
+		SMTCAl5PL9nYrDJiaQ/Ql40NNvo=
 		</data>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VvshQBYO636juUNKd9WdXLtBQYw=
+		k0fsvGbW/zR/7fyvvo5AZWq1lcg=
 		</data>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IEI7y8QyugHiU/7usEzwcSTooAc=
+		I9nFbpVKZqFk7czjSslk+xocx8w=
+		</data>
+		<key>Modules/AATAdColonyAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		Ztm2bGAJJoZNcjkvtVjCLcmyMtY=
+		</data>
+		<key>Modules/AATAdColonyAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		vlhMaWper1yJT1pRmkckuL+vkQg=
 		</data>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vNQHEiDOsKlYD6J0DWqvE82q4No=
+		E4IXSOf3CGfNu0dozOiyhOuO/5I=
 		</data>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jV5GauJpAbuHoOMU4EHvZ3F9ZCA=
+		vlhMaWper1yJT1pRmkckuL+vkQg=
 		</data>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		k+TKQr1YLjkxlW6D3vTUDjwzkvY=
+		2eD6za9abPyrVdUZMUyemWaEM78=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		NaHTLKpli/BVanpeLG68NNmVgJI=
+		bvAmTcDqTvXgmReGJXUVBdouFcc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c6rAO2APDQjfAGi+bKDIO2ySWuE=
+			KGKFI3iN8sEUBiOu2gecfy7Vr1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			VL5CW05nCwlXnBGuMGTJ8k0tB8kAk4E3r3ntZkbIxhU=
+			OygQ1ZfKRI2yr21ffr2UBLrrQuKTLFkylkfYg5/5l3U=
 			</data>
 		</dict>
 		<key>Headers/AATAdColonyAdapter.h</key>
@@ -69,81 +85,125 @@
 			8wYSCRkwZIlSuUYxQBBrkqwUyFag24nCuuDjJxjgOg0=
 			</data>
 		</dict>
+		<key>Modules/AATAdColonyAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ztm2bGAJJoZNcjkvtVjCLcmyMtY=
+			</data>
+			<key>hash2</key>
+			<data>
+			to1ieNexFQwNrsF7fFfZ7XWaH2A+yC0bjVDjBEc8J3o=
+			</data>
+		</dict>
+		<key>Modules/AATAdColonyAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k0fsvGbW/zR/7fyvvo5AZWq1lcg=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZldvMr4dOsgPljjSW4fdDkrLGofqy5vzO7rt9+OuM2U=
+			</data>
+		</dict>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q2QtD0Yc4VJO9SewiBj4duMTTq8=
+			SMTCAl5PL9nYrDJiaQ/Ql40NNvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			I2pup7yh59Z1iwhvhLWBi8Xmdosamy2W2cYvA5Tdb5I=
+			Wo9S5KGOPoVlj8Db4Oah1fF2pRpbooAMBMcz2nLF6jo=
 			</data>
 		</dict>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VvshQBYO636juUNKd9WdXLtBQYw=
+			k0fsvGbW/zR/7fyvvo5AZWq1lcg=
 			</data>
 			<key>hash2</key>
 			<data>
-			hmN9LsDEFMvJchDnvupAzj/nMVk9mTO44ElPxyO2mTU=
+			ZldvMr4dOsgPljjSW4fdDkrLGofqy5vzO7rt9+OuM2U=
 			</data>
 		</dict>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IEI7y8QyugHiU/7usEzwcSTooAc=
+			I9nFbpVKZqFk7czjSslk+xocx8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			QOzTaopD8dPUxNLEBNHP1NF8/FQ/Rm4PAIgQGXBqjbg=
+			5qQxc+86EJSLyejHL2x0ynexmJWNb7jA6Z4AWUNxOUQ=
+			</data>
+		</dict>
+		<key>Modules/AATAdColonyAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ztm2bGAJJoZNcjkvtVjCLcmyMtY=
+			</data>
+			<key>hash2</key>
+			<data>
+			to1ieNexFQwNrsF7fFfZ7XWaH2A+yC0bjVDjBEc8J3o=
+			</data>
+		</dict>
+		<key>Modules/AATAdColonyAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vlhMaWper1yJT1pRmkckuL+vkQg=
+			</data>
+			<key>hash2</key>
+			<data>
+			zMGVW+zGFlj9nT2NUMN2jnydGhkGlXSSqRy5I4ako3Y=
 			</data>
 		</dict>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vNQHEiDOsKlYD6J0DWqvE82q4No=
+			E4IXSOf3CGfNu0dozOiyhOuO/5I=
 			</data>
 			<key>hash2</key>
 			<data>
-			nD8c2Xao+oFQjITwDGaLXdGfcspO3cYOeRH3fiKiSr4=
+			1QqnFzY2wgwfWYjfzLjNW/TJ8d2ekPSTOL1WQuQqrjI=
 			</data>
 		</dict>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jV5GauJpAbuHoOMU4EHvZ3F9ZCA=
+			vlhMaWper1yJT1pRmkckuL+vkQg=
 			</data>
 			<key>hash2</key>
 			<data>
-			J85po6T5yjrycDPnOTRW5h2tsSHMtMC+OLOii23+o6o=
+			zMGVW+zGFlj9nT2NUMN2jnydGhkGlXSSqRy5I4ako3Y=
 			</data>
 		</dict>
 		<key>Modules/AATAdColonyAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k+TKQr1YLjkxlW6D3vTUDjwzkvY=
+			2eD6za9abPyrVdUZMUyemWaEM78=
 			</data>
 			<key>hash2</key>
 			<data>
-			VvsdyCoTFaWuGP9JqK9TB5W5Fsj69RbaBvhXHYmRxDc=
+			yt1W10+Rtt3EqM8Wtc9gni0RJ0qh+N5Um/NSv6fGkdQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NaHTLKpli/BVanpeLG68NNmVgJI=
+			bvAmTcDqTvXgmReGJXUVBdouFcc=
 			</data>
 			<key>hash2</key>
 			<data>
-			UV3cUp60La0yDUGAv0uO3apxcFBjheLRC1SdYuFPVvs=
+			uH6PtfpT/42hadItTJEok2BDkzV7oJVJt153tmFNvKU=
 			</data>
 		</dict>
 	</dict>

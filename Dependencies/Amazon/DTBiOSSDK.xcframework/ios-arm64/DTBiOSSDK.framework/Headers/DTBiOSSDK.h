@@ -2,18 +2,31 @@
 //  DTBiOSSDK.h
 //  DTBiOSSDK
 //
-//  Copyright (c) 2021 Amazon Publisher Services. All rights reserved.
+//  Copyright (c) 2021-Present Amazon Publisher Services. All rights reserved.
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for DTBiOSSDK.
+// ! Project version number for DTBiOSSDK.
 FOUNDATION_EXPORT double DTBiOSSDKVersionNumber;
 
-//! Project version string for DTBiOSSDK.
+// ! Project version string for DTBiOSSDK.
 FOUNDATION_EXPORT const unsigned char DTBiOSSDKVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <DTBiOSSDK/PublicHeader.h>
-
+#import <DTBiOSSDK/APS.h>
+#import <DTBiOSSDK/APSAd.h>
+#import <DTBiOSSDK/APSAd+AdMobAdditions.h>
+#import <DTBiOSSDK/APSAd+MAXAdditions.h>
+#import <DTBiOSSDK/APSAd+UnityLevelPlayAdditions.h>
+#import <DTBiOSSDK/APSAdDelegate.h>
+#import <DTBiOSSDK/APSAdController.h>
+#import <DTBiOSSDK/APSAdFormat.h>
+#import <DTBiOSSDK/APSAdMediaType.h>
+#import <DTBiOSSDK/APSAdRequest.h>
+#import <DTBiOSSDK/APSDeprecatedMessage.h>
+#import <DTBiOSSDK/APSError.h>
+#import <DTBiOSSDK/APSInitConfig.h>
+#import <DTBiOSSDK/APSLogger.h>
+#import <DTBiOSSDK/APSStoreKit.h>
 #import <DTBiOSSDK/DTBAds.h>
 #import <DTBiOSSDK/DTBAdLoader.h>
 #import <DTBiOSSDK/DTBAdCallback.h>
@@ -52,3 +65,5 @@ FOUNDATION_EXPORT const unsigned char DTBiOSSDKVersionString[];
 #import <DTBiOSSDK/OMIDScriptInjector.h>
 #import <DTBiOSSDK/OMIDVASTProperties.h>
 #import <DTBiOSSDK/OMIDVerificationScriptResource.h>
+#import <DTBiOSSDK/APSAdFormatProperties.h>
+#import <DTBiOSSDK/APSAdFormatPropertyBuilder.h>

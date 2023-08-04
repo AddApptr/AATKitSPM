@@ -11,19 +11,19 @@
 
 #define APS_ANALYTICS_EXCEPTION_LOG_SIZE 2048
 #define APS_ANALYTICS_TRUNCATE_SEPARATOR @"..."
-#define APS_ANALYTICS_EMPTY_STRING @""
-#define APS_ANALYTICS_OS_NAME @"iOS"
-#define APS_ANALYTICS_MANUFACTURER @"Apple"
+#define APS_ANALYTICS_EMPTY_STRING       @""
+#define APS_ANALYTICS_OS_NAME            @"iOS"
+#define APS_ANALYTICS_MANUFACTURER       @"Apple"
 
-#define APS_ANALYTICS_HW_MACHINE "hw.machine"
+#define APS_ANALYTICS_HW_MACHINE         "hw.machine"
 
-#define APS_ANALYTICS_TYPE_EXCEPTION @"Exception"
-#define APS_ANALYTICS_TYPE_LOG @"Log"
-#define APS_ANALYTICS_SEVERITY_FATAL @"Fatal"
-#define APS_ANALYTICS_SEVERITY_ERROR @"Error"
-#define APS_ANALYTICS_SEVERITY_INFO @"Info"
-#define APS_ANALYTICS_SEVERITY_WARN @"Warn"
-#define APS_ANALYTICS_SEVERITY_DEBUG @"Debug"
+#define APS_ANALYTICS_TYPE_EXCEPTION     @"Exception"
+#define APS_ANALYTICS_TYPE_LOG           @"Log"
+#define APS_ANALYTICS_SEVERITY_FATAL     @"Fatal"
+#define APS_ANALYTICS_SEVERITY_ERROR     @"Error"
+#define APS_ANALYTICS_SEVERITY_INFO      @"Info"
+#define APS_ANALYTICS_SEVERITY_WARN      @"Warn"
+#define APS_ANALYTICS_SEVERITY_DEBUG     @"Debug"
 
 typedef enum APSEventSeverity {
     APSEventSeverityFatal,
@@ -40,7 +40,14 @@ typedef enum APSEventType {
 
 @interface APSEvent : NSObject
 
-@property NSString *sdkVersion;
+/**
+ * @abstract A version that logs the event.
+ * @description The version is set from @{ref APSAnalytics} with @{ref setSdkVersion:} and optional
+ * @{ref setAdapterVersion:}. If the adapterVersion is set, the version format will be @"sdkVersion_adapterVersion",
+ * for example, @"aps-ios-4.6.0_admob-2.2.1".  If it is not set, the version will be sdkVersion.  If the sdkVersion
+ * is not set, the default value is APS_ANALYTICS_SDK_VERSION.
+ */
+@property NSString *version;
 
 @property NSString *eventType;
 @property NSString *timestamp;

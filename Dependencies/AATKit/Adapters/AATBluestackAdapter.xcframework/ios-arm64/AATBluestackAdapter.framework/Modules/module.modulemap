@@ -6,6 +6,6 @@ framework module AATBluestackAdapter {
 }
 
 module AATBluestackAdapter.Swift {
-    header "AATBluestackAdapter-Swift.h"
-    requires objc
+  header "AATBluestackAdapter-Swift.h"
+  requires objc
 }

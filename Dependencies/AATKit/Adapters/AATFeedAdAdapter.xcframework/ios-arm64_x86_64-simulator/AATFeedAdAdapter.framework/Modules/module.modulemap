@@ -6,6 +6,6 @@ framework module AATFeedAdAdapter {
 }
 
 module AATFeedAdAdapter.Swift {
-    header "AATFeedAdAdapter-Swift.h"
-    requires objc
+  header "AATFeedAdAdapter-Swift.h"
+  requires objc
 }

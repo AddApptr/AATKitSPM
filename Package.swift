@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "AATKitSPM",
     defaultLocalization: "en",
-    platforms: [.iOS(.v10)],
+    platforms: [.iOS(.v11)],
     products: [
 
         .library(name: "AATKit-Core", targets: ["AATKit-Core"]),
@@ -32,10 +32,14 @@ let package = Package(
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
         .library(name: "AATKit-Vungle", targets: ["AATKit-Vungle"]),
         .library(name: "AATKit-OguryAds", targets: ["AATKit-OgurySdk"]),
-        
+        .library(name: "AATKit-Datonomy", targets: ["AATKit-Datonomy"]),
+        .library(name: "AATKit-Mintegral", targets: ["AATKit-Mintegral"]),
+
         // CMPs
         .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
         .library(name: "AATKit-GoogleCMP", targets: ["AATKit-GoogleCMP"]),
+        .library(name: "AATKit-SourcePointCMP", targets: ["AATKit-SourcePointCMP"]),
+
 
         // Default Dependencies
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
@@ -47,6 +51,7 @@ let package = Package(
                                                    "AATKit-FeedAd",
                                                    "AATKit-OguryCMP",
                                                    "AATKit-GoogleCMP",
+                                                   "AATKit-SourcePointCMP",
                                                    "AATKit-Smaato",
                                                    "AATKit-SmartAd",
                                                    "AATKit-AdColony",
@@ -58,17 +63,18 @@ let package = Package(
                                                    "AATKit-Prebid",
                                                    "AATKit-Unity",
                                                    "AATKit-Vungle",
+                                                   "AATKit-Datonomy",
+                                                   "AATKit-Mintegral",
                                                   ]),
 
     ],
     dependencies: [
         // AdNetworks supporting SPM
-        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("8.3.0")),
-        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("11.7.1")),
-        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("10.0.0")),
+        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("11.10.1")),
+        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("10.7.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
-        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.0.26")),
+        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.0.27")),
     ],
     targets: [
         // AATKit target
@@ -103,7 +109,7 @@ let package = Package(
                     path: "./Sources/AppLovinMaxSources"),
 
         .target(name:"AATKit-AppNexus",
-                dependencies: ["AppNexusSDK", "AATAppNexusAdapter"],
+                dependencies: ["AppNexusSDK", "AATAppNexusAdapter", "OMSDK_Appnexus"],
                 path: "./Sources/AppNexusSources"),
 
         .target(name:"AATKit-Amazon",
@@ -179,8 +185,19 @@ let package = Package(
         .target(name:"AATKit-Vungle",
                 dependencies: ["VungleSDK", "AATVungleAdapter"],
                 path: "./Sources/VungleSources"),
-        
-        
+
+        .target(name:"AATKit-Datonomy",
+                dependencies: ["DatonomyKit", "AATDatonomyAdapter"],
+                path: "./Sources/DatonomySources"),
+
+        .target(name:"AATKit-Mintegral",
+                dependencies: ["MTGSDK", "MTGSDKNativeAdvanced", "MTGSDKBanner", "MTGSDKNewInterstitial", "MTGSDKBidding", "MTGSDKReward", "MTGSDKCNAddition", "MTGSDKSplash", "MTGSDKInterstitial", "MTGSDKInterstitialVideo", "AATMintegralAdapter"],
+                path: "./Sources/MintegralSources"),
+
+        .target(name:"AATKit-SourcePointCMP",
+                    dependencies: ["ConsentViewController", "AATSourcePointCMPAdapter"],
+                    path: "./Sources/SourcePointSources"),
+
         // Mark: Binary Targets
         // AATKit
         .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
@@ -244,8 +261,30 @@ let package = Package(
         .binaryTarget(name: "UnityAds", path: "./Dependencies/Unity/UnityAds.xcframework"),
 
         // Vungle
-        .binaryTarget(name: "VungleSDK", path: "./Dependencies/Vungle/VungleSDK.xcframework"),
-        
+        .binaryTarget(name: "VungleSDK", path: "./Dependencies/Vungle/VungleAdsSDK.xcframework"),
+
+        // Datonomy
+        .binaryTarget(name: "DatonomyKit", path: "./Dependencies/Datonomy/DatonomyKit.xcframework"),
+
+        // AppNexusSDK
+        .binaryTarget(name: "AppNexusSDK", path: "./Dependencies/AppNexusSDK/AppNexusSDK.xcframework"),
+        .binaryTarget(name: "OMSDK_Appnexus", path: "./Dependencies/AppNexusSDK/OMSDK_Appnexus.xcframework"),
+
+        // Mintegral
+        .binaryTarget(name: "MTGSDK", path:"./Dependencies/Mintegral/MTGSDK.xcframework"),
+        .binaryTarget(name: "MTGSDKNativeAdvanced", path:"./Dependencies/Mintegral/MTGSDKNativeAdvanced.xcframework"),
+        .binaryTarget(name: "MTGSDKBanner", path:"./Dependencies/Mintegral/MTGSDKBanner.xcframework"),
+        .binaryTarget(name: "MTGSDKNewInterstitial", path:"./Dependencies/Mintegral/MTGSDKNewInterstitial.xcframework"),
+        .binaryTarget(name: "MTGSDKBidding", path:"./Dependencies/Mintegral/MTGSDKBidding.xcframework"),
+        .binaryTarget(name: "MTGSDKReward", path:"./Dependencies/Mintegral/MTGSDKReward.xcframework"),
+        .binaryTarget(name: "MTGSDKCNAddition", path:"./Dependencies/Mintegral/MTGSDKCNAddition.xcframework"),
+        .binaryTarget(name: "MTGSDKSplash", path:"./Dependencies/Mintegral/MTGSDKSplash.xcframework"),
+        .binaryTarget(name: "MTGSDKInterstitial", path:"./Dependencies/Mintegral/MTGSDKInterstitial.xcframework"),
+        .binaryTarget(name: "MTGSDKInterstitialVideo", path:"./Dependencies/Mintegral/MTGSDKInterstitialVideo.xcframework"),
+
+        // SourcePoint
+        .binaryTarget(name: "ConsentViewController", path: "./Dependencies/SourcePoint/ConsentViewController.xcframework"),
+
         // AATKit Adapters
         .binaryTarget(name: "AATAdColonyAdapter", path: "./Dependencies/AATKit/Adapters/AATAdColonyAdapter.xcframework"),
         .binaryTarget(name: "AATAmazonAdapter", path: "./Dependencies/AATKit/Adapters/AATAmazonAdapter.xcframework"),
@@ -269,6 +308,9 @@ let package = Package(
         .binaryTarget(name: "AATUnityAdapter", path: "./Dependencies/AATKit/Adapters/AATUnityAdapter.xcframework"),
         .binaryTarget(name: "AATVungleAdapter", path: "./Dependencies/AATKit/Adapters/AATVungleAdapter.xcframework"),
         .binaryTarget(name: "AATYOCAdapter", path: "./Dependencies/AATKit/Adapters/AATYOCAdapter.xcframework"),
+        .binaryTarget(name: "AATDatonomyAdapter", path: "./Dependencies/AATKit/Adapters/AATDatonomyAdapter.xcframework"),
+        .binaryTarget(name: "AATMintegralAdapter", path: "./Dependencies/AATKit/Adapters/AATMintegralAdapter.xcframework"),
+        .binaryTarget(name: "AATSourcePointCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATSourcePointCMPAdapter.xcframework"),
     ]
 )
 

@@ -1,0 +1,887 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATGoogleCMPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATGoogleCMPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATGoogleCMPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UserMessagingPlatform",
+        "printedName": "UserMessagingPlatform",
+        "declKind": "Import",
+        "moduleName": "AATGoogleCMPAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AATCMPGoogle",
+        "printedName": "AATCMPGoogle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cmpDelegate",
+            "printedName": "cmpDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "AATKit.AATCMPDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(py)cmpDelegate",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC11cmpDelegate6AATKit14AATCMPDelegate_pSgvp",
+            "moduleName": "AATGoogleCMPAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AATKit.AATCMPDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATCMPDelegate",
+                        "printedName": "AATKit.AATCMPDelegate",
+                        "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)cmpDelegate",
+                "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC11cmpDelegate6AATKit14AATCMPDelegate_pSgvg",
+                "moduleName": "AATGoogleCMPAdapter",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AATKit.AATCMPDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATCMPDelegate",
+                        "printedName": "AATKit.AATCMPDelegate",
+                        "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)setCmpDelegate:",
+                "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC11cmpDelegate6AATKit14AATCMPDelegate_pSgvs",
+                "moduleName": "AATGoogleCMPAdapter",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19AATGoogleCMPAdapter12AATCMPGoogleC11cmpDelegate6AATKit14AATCMPDelegate_pSgvM",
+                "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC11cmpDelegate6AATKit14AATCMPDelegate_pSgvM",
+                "moduleName": "AATGoogleCMPAdapter",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATCMPGoogle",
+                "printedName": "AATGoogleCMPAdapter.AATCMPGoogle",
+                "usr": "c:@M@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)init",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleCACycfc",
+            "moduleName": "AATGoogleCMPAdapter",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "isSuccessfullyInitialized",
+            "printedName": "isSuccessfullyInitialized(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)isSuccessfullyInitialized:",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC25isSuccessfullyInitializedySbSSF",
+            "moduleName": "AATGoogleCMPAdapter",
+            "objc_name": "isSuccessfullyInitialized:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)start:",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC5startyySSF",
+            "moduleName": "AATGoogleCMPAdapter",
+            "objc_name": "start:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stateUpdated",
+            "printedName": "stateUpdated()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:19AATGoogleCMPAdapter12AATCMPGoogleC12stateUpdatedyyF",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC12stateUpdatedyyF",
+            "moduleName": "AATGoogleCMPAdapter",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showIfNeeded",
+            "printedName": "showIfNeeded(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)showIfNeeded::",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC12showIfNeededyySS_So16UIViewControllerCtF",
+            "moduleName": "AATGoogleCMPAdapter",
+            "objc_name": "showIfNeeded::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "editConsent",
+            "printedName": "editConsent(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)editConsent::",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC11editConsentyySS_So16UIViewControllerCtF",
+            "moduleName": "AATGoogleCMPAdapter",
+            "objc_name": "editConsent::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getConsentForNetwork",
+            "printedName": "getConsentForNetwork(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NonIABConsent",
+                "printedName": "AATKit.NonIABConsent",
+                "usr": "c:@M@AATKit@E@NonIABConsent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATAdNetwork",
+                "printedName": "AATKit.AATAdNetwork",
+                "usr": "c:@M@AATKit@E@AATAdNetwork"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)getConsentForNetwork::",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC20getConsentForNetworky6AATKit13NonIABConsentOSS_AE05AATAdG0OtF",
+            "moduleName": "AATGoogleCMPAdapter",
+            "objc_name": "getConsentForNetwork::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reload",
+            "printedName": "reload(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)reload::",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC6reloadyySS_So16UIViewControllerCtF",
+            "moduleName": "AATGoogleCMPAdapter",
+            "objc_name": "reload::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATCMPDelegate",
+                "printedName": "AATKit.AATCMPDelegate",
+                "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)setDelegate::",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC11setDelegateyySS_6AATKit14AATCMPDelegate_ptF",
+            "moduleName": "AATGoogleCMPAdapter",
+            "objc_name": "setDelegate::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(py)description",
+            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC11descriptionSSvp",
+            "moduleName": "AATGoogleCMPAdapter",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)description",
+                "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC11descriptionSSvg",
+                "moduleName": "AATGoogleCMPAdapter",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle",
+        "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC",
+        "moduleName": "AATGoogleCMPAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AATCMPProtocol",
+            "printedName": "AATCMPProtocol",
+            "usr": "c:@M@AATKit@objc(pl)AATCMPProtocol",
+            "mangledName": "$s6AATKit14AATCMPProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AATAdDriverLoggerProtocol",
+            "printedName": "AATAdDriverLoggerProtocol",
+            "usr": "s:6AATKit25AATAdDriverLoggerProtocolP",
+            "mangledName": "$s6AATKit25AATAdDriverLoggerProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATGoogleCMPState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 556,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATGoogleCMPState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 597,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 220,
+      "length": 23,
+      "value": "\"AATSafeManagedConsent\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 595,
+      "length": 21,
+      "value": "\"IABTCF_AddtlConsent\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 644,
+      "length": 23,
+      "value": "\"IABTCF_VendorConsents\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 696,
+      "length": 24,
+      "value": "\"IABTCF_PurposeConsents\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 934,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 1169,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 1195,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1256,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 1467,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 1493,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 1744,
+      "length": 10,
+      "value": "\"idle cmp\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 1852,
+      "length": 17,
+      "value": "\"loading consent\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 2210,
+      "length": 21,
+      "value": "\"consent info loaded\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 2368,
+      "length": 14,
+      "value": "\"loading form\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 2787,
+      "length": 39,
+      "value": "\"form loaded and ready to be presented\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 3215,
+      "length": 47,
+      "value": "\"consent has been updated with state: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 3261,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 3801,
+      "length": 62,
+      "value": "\"Failed to update consent info: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 3862,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 4241,
+      "length": 57,
+      "value": "\"error loading google form \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 4297,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 4436,
+      "length": 52,
+      "value": "\"error loading google form (error and form are nil)\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 5014,
+      "length": 31,
+      "value": "\"consent has been given before\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 5248,
+      "length": 24,
+      "value": "\"consent form not ready\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 5536,
+      "length": 68,
+      "value": "\"cannot show consent form with error: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 5603,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 6367,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6375,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 6443,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6451,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 6891,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 6917,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 7308,
+      "length": 65,
+      "value": "\"consent already obtained and edit should be called to change it\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 7582,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 7608,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 7946,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 7972,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 8628,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 8654,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 9087,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 9113,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 9316,
+      "length": 34,
+      "value": "\"AATGoogleCMPAdapter.AATCMPGoogle\""
+    }
+  ]
+}

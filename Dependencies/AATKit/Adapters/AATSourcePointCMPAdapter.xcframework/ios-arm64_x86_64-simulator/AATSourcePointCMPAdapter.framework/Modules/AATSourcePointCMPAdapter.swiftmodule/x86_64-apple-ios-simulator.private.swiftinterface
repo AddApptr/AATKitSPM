@@ -1,0 +1,34 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AATSourcePointCMPAdapter
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AATKit
+import ConsentViewController
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@objc public class AATCMPSourcepoint : ObjectiveC.NSObject, AATKit.AATAdDriverLoggerProtocol {
+  @objc public func isSuccessfullyInitialized(_ source: Swift.String) -> Swift.Bool
+  @objc public init(accountId: Swift.String, propertyId: Swift.String, propertyName: Swift.String, pmId: Swift.String)
+  @objc deinit
+}
+extension AATSourcePointCMPAdapter.AATCMPSourcepoint : AATKit.AATCMPProtocol {
+  @objc dynamic public func start(_ source: Swift.String)
+  @objc dynamic public func showIfNeeded(_ source: Swift.String, _ viewController: UIKit.UIViewController)
+  @objc dynamic public func editConsent(_ source: Swift.String, _ viewController: UIKit.UIViewController)
+  @objc dynamic public func setDelegate(_ source: Swift.String, _ delegate: any AATKit.AATCMPDelegate)
+  @objc dynamic public func reload(_ source: Swift.String, _ viewController: UIKit.UIViewController)
+  @objc dynamic public func getConsentForNetwork(_ source: Swift.String, _ network: AATKit.AATAdNetwork) -> AATKit.NonIABConsent
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}
+extension AATSourcePointCMPAdapter.AATCMPSourcepoint : ConsentViewController.SPDelegate {
+  @objc dynamic public func onSPUIReady(_ controller: UIKit.UIViewController)
+  @objc dynamic public func onSPUIFinished(_ controller: UIKit.UIViewController)
+  @objc dynamic public func onAction(_ action: ConsentViewController.SPAction, from controller: UIKit.UIViewController)
+  @objc dynamic public func onConsentReady(userData: ConsentViewController.SPUserData)
+  @objc dynamic public func onSPFinished(userData: ConsentViewController.SPUserData)
+  @objc dynamic public func onError(error: ConsentViewController.SPError)
+}

@@ -1,0 +1,11 @@
+framework module AATMintegralAdapter {
+  umbrella header "AATMintegralAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATMintegralAdapter.Swift {
+  header "AATMintegralAdapter-Swift.h"
+  requires objc
+}

@@ -7,7 +7,7 @@
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 #import <AVFoundation/AVFoundation.h>
-
+#import "APSDeprecatedMessage.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DTBAdInterstitialViewController : UIViewController
 
-@property(nonatomic, weak) DTBAdView *adView;
+@property(nonatomic, weak) DTBAdView *adView APS_DEPRECATED_MESSAGE();
 
-@property(nonatomic) id<DTBAdInterstitialDispatcherDelegate> dispatcherDelegate;
+@property(nonatomic, strong) id<DTBAdInterstitialDispatcherDelegate> dispatcherDelegate APS_DEPRECATED_MESSAGE();
 
 @end
 

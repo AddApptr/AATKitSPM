@@ -6,6 +6,6 @@ framework module AATYOCAdapter {
 }
 
 module AATYOCAdapter.Swift {
-    header "AATYOCAdapter-Swift.h"
-    requires objc
+  header "AATYOCAdapter-Swift.h"
+  requires objc
 }

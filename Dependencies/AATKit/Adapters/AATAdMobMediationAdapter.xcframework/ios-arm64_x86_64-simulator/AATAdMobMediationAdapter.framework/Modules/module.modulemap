@@ -6,6 +6,6 @@ framework module AATAdMobMediationAdapter {
 }
 
 module AATAdMobMediationAdapter.Swift {
-    header "AATAdMobMediationAdapter-Swift.h"
-    requires objc
+  header "AATAdMobMediationAdapter-Swift.h"
+  requires objc
 }

@@ -1,0 +1,675 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATFeedAdAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FeedAd",
+        "printedName": "FeedAd",
+        "declKind": "Import",
+        "moduleName": "AATFeedAdAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATFeedAdAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FeedAd",
+        "printedName": "FeedAd",
+        "declKind": "Import",
+        "moduleName": "AATFeedAdAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATFeedAdAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FeedAd",
+        "printedName": "FeedAd",
+        "declKind": "Import",
+        "moduleName": "AATFeedAdAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATFeedAdAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATFeedAdAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FeedAd",
+        "printedName": "FeedAd",
+        "declKind": "Import",
+        "moduleName": "AATFeedAdAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATFeedAdAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 315,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 703,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 737,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 868,
+      "length": 23,
+      "value": "\"Invalid adID: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 890,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 912,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1116,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1385,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1549,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 1888,
+      "length": 27,
+      "value": "\"AATKitFeedAdShutterColour\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2019,
+      "length": 63,
+      "value": "\"AATKitFeedAdShutterColour doesn't exist in the app info.plist\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2201,
+      "length": 59,
+      "value": "\"found value \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2225,
+      "length": 3,
+      "value": "\" for key AATKitFeedAdShutterColour\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2403,
+      "length": 50,
+      "value": "\"Couldn't convert \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2432,
+      "length": 2,
+      "value": "\" to a proper UIColor\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2572,
+      "length": 44,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2584,
+      "length": 3,
+      "value": "\" has been converted to \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2615,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3648,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3654,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3752,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3758,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 4106,
+      "length": 104,
+      "value": "\"Resizing adView to width: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 4153,
+      "length": 3,
+      "value": "\" and height: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 4209,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4257,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4263,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4367,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4373,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 4762,
+      "length": 24,
+      "value": "\"feedAdDidFinishPlaying\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 4959,
+      "length": 21,
+      "value": "\"feedAdDidChangeSize\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 5293,
+      "length": 37,
+      "value": "\"feedAdShouldDisplayLoadingIndicator\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 5415,
+      "length": 28,
+      "value": "\"AATKitFeedAdDisableSpinner\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5480,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 6368,
+      "length": 20,
+      "value": "\"Resume for \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 6387,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 479,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 722,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 820,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 877,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 912,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 1054,
+      "length": 23,
+      "value": "\"Invalid adID: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 1076,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1098,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 1175,
+      "length": 64,
+      "value": "\"ApplicationId: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 1207,
+      "length": 1,
+      "value": "\" \n placementId: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 1238,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2013,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 2105,
+      "length": 42,
+      "value": "\"FeedAd FAInterstitialAd is not available\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2165,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2421,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 3876,
+      "length": 32,
+      "value": "\"interstitialAdDidFinishPlaying\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 3991,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 4002,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 4506,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4526,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 4984,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5017,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 5171,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 433,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 467,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 752,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "IntegerLiteral",
+      "offset": 850,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "IntegerLiteral",
+      "offset": 888,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "IntegerLiteral",
+      "offset": 923,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 1065,
+      "length": 23,
+      "value": "\"Invalid adID: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 1087,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1109,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 1186,
+      "length": 64,
+      "value": "\"ApplicationId: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 1218,
+      "length": 1,
+      "value": "\" \n placementId: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 1249,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2024,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 2116,
+      "length": 42,
+      "value": "\"FeedAd FAInterstitialAd is not available\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2176,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2428,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 3881,
+      "length": 32,
+      "value": "\"interstitialAdDidFinishPlaying\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 3996,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 4007,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 4511,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4531,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 4989,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5022,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 5176,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

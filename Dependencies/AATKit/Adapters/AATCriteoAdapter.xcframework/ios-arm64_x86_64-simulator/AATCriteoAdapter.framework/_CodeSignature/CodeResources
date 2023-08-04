@@ -4,9 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>CriteoMRAIDResource.bundle/Info.plist</key>
+		<data>
+		/7CSeU0bd4BpC5zvx6p9Aje0kU0=
+		</data>
+		<key>CriteoMRAIDResource.bundle/criteo-mraid.js</key>
+		<data>
+		MNIsnet21yLJlsSMkpiDWeOJIfQ=
+		</data>
 		<key>Headers/AATCriteoAdapter-Swift.h</key>
 		<data>
-		QgHftnzLZB0Fim0XkutDCz8eFOc=
+		LA/h/sGO8PELTRsU5RZmKtRqcOA=
 		</data>
 		<key>Headers/AATCriteoAdapter.h</key>
 		<data>
@@ -14,48 +22,86 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NAQNv8rBd4EJJFu4rYzKfNnw8As=
+		oWo5Zk8Cn80x/ogBzvElZCXtLAo=
+		</data>
+		<key>Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		qHTWTPd5Zc7SINJJX78bgWnfW3c=
+		</data>
+		<key>Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		mWEjfaexyFbMVW4nOYV+oipHdjM=
 		</data>
 		<key>Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0SSbRkgkc5tWh7R2kKQjxSSznLo=
+		SMauao0Zld3aAkUK6WtJ2TbR8t0=
 		</data>
 		<key>Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EicwQkMxWAZgYkcT/e/yyTdqcBg=
+		mWEjfaexyFbMVW4nOYV+oipHdjM=
 		</data>
 		<key>Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4fb48SnB/OB0mmWQlJXjv7/Gbc0=
+		BUDm/B3+3wY5xfT9vblryUyGOO4=
+		</data>
+		<key>Modules/AATCriteoAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		qHTWTPd5Zc7SINJJX78bgWnfW3c=
+		</data>
+		<key>Modules/AATCriteoAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		qjErx9lML2GWcpnFHQgP01WFS7s=
 		</data>
 		<key>Modules/AATCriteoAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XNeA1h+uEuozLieWE+mxlsmpg8Q=
+		nj5/q45HfyPDDEbQs7sBh2yJnk0=
 		</data>
 		<key>Modules/AATCriteoAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JTSqc6EfVm+rluIXUOf6Q0CWN3E=
+		qjErx9lML2GWcpnFHQgP01WFS7s=
 		</data>
 		<key>Modules/AATCriteoAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UD9kbfFzzZI+o1aMVBlqvwtng6g=
+		1QdJgwlTGGj1S+ANqgh6Za7zoI8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		EY7WpJvhxnt6pjlG0xC3py3OmaU=
+		dm7bh3+tLxotz04QfliTSpIhIwE=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>CriteoMRAIDResource.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/7CSeU0bd4BpC5zvx6p9Aje0kU0=
+			</data>
+			<key>hash2</key>
+			<data>
+			pbrpip0t//ggsN7CUbBmXRStX9PXDRrDEYeuAhOLZa4=
+			</data>
+		</dict>
+		<key>CriteoMRAIDResource.bundle/criteo-mraid.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MNIsnet21yLJlsSMkpiDWeOJIfQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			jbSIv1TilpkIhXxI0LmOmoMUDkfJ9CUWnJJY9xrRJfE=
+			</data>
+		</dict>
 		<key>Headers/AATCriteoAdapter-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QgHftnzLZB0Fim0XkutDCz8eFOc=
+			LA/h/sGO8PELTRsU5RZmKtRqcOA=
 			</data>
 			<key>hash2</key>
 			<data>
-			zW1SxHUclemqXOJ/POTpwCbTp9TTo3aMEr/JhWoWUNM=
+			wFV+aMUhSdy6ke938Ho9R8MyyrtTSWooWTw6POIOqaM=
 			</data>
 		</dict>
 		<key>Headers/AATCriteoAdapter.h</key>
@@ -69,81 +115,125 @@
 			gxq2Z6bvaQbzuuGmT+N2OZhCOe0Lz64rbpuFa4E+0s8=
 			</data>
 		</dict>
+		<key>Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qHTWTPd5Zc7SINJJX78bgWnfW3c=
+			</data>
+			<key>hash2</key>
+			<data>
+			8Wct7g07Kab5FbyOg5gwNCJrd+Ldc/o6sAYAhFNwOr0=
+			</data>
+		</dict>
+		<key>Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mWEjfaexyFbMVW4nOYV+oipHdjM=
+			</data>
+			<key>hash2</key>
+			<data>
+			tG2tp7Pgh2cMsgw6cydQTUx3NZhoRIswKheezShIg3w=
+			</data>
+		</dict>
 		<key>Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0SSbRkgkc5tWh7R2kKQjxSSznLo=
+			SMauao0Zld3aAkUK6WtJ2TbR8t0=
 			</data>
 			<key>hash2</key>
 			<data>
-			8TlJCHw04sL6NVR4NGXSYIoOKcN22ZdZEKfez19HLW8=
+			cn38rzhfMZPFj4fPiwzjiKBH2FOtmPWJU9g76gEFNX0=
 			</data>
 		</dict>
 		<key>Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EicwQkMxWAZgYkcT/e/yyTdqcBg=
+			mWEjfaexyFbMVW4nOYV+oipHdjM=
 			</data>
 			<key>hash2</key>
 			<data>
-			+ZzdT7IYNMMUWgkww15ODaAg8RRusSCfmnlmInZnWcs=
+			tG2tp7Pgh2cMsgw6cydQTUx3NZhoRIswKheezShIg3w=
 			</data>
 		</dict>
 		<key>Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4fb48SnB/OB0mmWQlJXjv7/Gbc0=
+			BUDm/B3+3wY5xfT9vblryUyGOO4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kij9wXSSNpfSFmZCDdMTMvV14YJYP3os9Alue0EZaUY=
+			Be9a1Ied0IGO8K/62aQ5nNyKp+QtVPW85u7wYTX2IVA=
+			</data>
+		</dict>
+		<key>Modules/AATCriteoAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qHTWTPd5Zc7SINJJX78bgWnfW3c=
+			</data>
+			<key>hash2</key>
+			<data>
+			8Wct7g07Kab5FbyOg5gwNCJrd+Ldc/o6sAYAhFNwOr0=
+			</data>
+		</dict>
+		<key>Modules/AATCriteoAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qjErx9lML2GWcpnFHQgP01WFS7s=
+			</data>
+			<key>hash2</key>
+			<data>
+			ldnATluTC9rsdqW89NZIDpmB0LHdaVMxGgKg/FNKQTE=
 			</data>
 		</dict>
 		<key>Modules/AATCriteoAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XNeA1h+uEuozLieWE+mxlsmpg8Q=
+			nj5/q45HfyPDDEbQs7sBh2yJnk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			RWx+dMHUG2nCruaFAQLEb3xK3JzCQuP/fpqVoi7tOUw=
+			lv7YcPaqTZbVGRf6f77NjF02IElrpHEhzdybJn9mgLg=
 			</data>
 		</dict>
 		<key>Modules/AATCriteoAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JTSqc6EfVm+rluIXUOf6Q0CWN3E=
+			qjErx9lML2GWcpnFHQgP01WFS7s=
 			</data>
 			<key>hash2</key>
 			<data>
-			boMFgr7x8xU95anJ7aG1zKdqQnRiZ1GSSMXXVKYWxqE=
+			ldnATluTC9rsdqW89NZIDpmB0LHdaVMxGgKg/FNKQTE=
 			</data>
 		</dict>
 		<key>Modules/AATCriteoAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UD9kbfFzzZI+o1aMVBlqvwtng6g=
+			1QdJgwlTGGj1S+ANqgh6Za7zoI8=
 			</data>
 			<key>hash2</key>
 			<data>
-			sJu7V0yB5G4bZ9qnZkB0IlP+nn7Ion/XDYx/ZQPAWyY=
+			F41lniTRLqwbiiwzg7TDbaBE2mZAxs+WEJfBlE3VXWk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EY7WpJvhxnt6pjlG0xC3py3OmaU=
+			dm7bh3+tLxotz04QfliTSpIhIwE=
 			</data>
 			<key>hash2</key>
 			<data>
-			B8Fz/8WqSnFO9FeB3nm3WBiE44+ao5H1nPvXgZzXmlg=
+			KS3nCDr0HLySvtw0Dtr1uGlZr5DRVxE/oF0IxTJELgw=
 			</data>
 		</dict>
 	</dict>

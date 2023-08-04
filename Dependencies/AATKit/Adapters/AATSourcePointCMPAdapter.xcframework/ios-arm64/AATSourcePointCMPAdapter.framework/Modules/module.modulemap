@@ -1,0 +1,4 @@
+framework module AATSourcePointCMPAdapter {
+  header "AATSourcePointCMPAdapter-Swift.h"
+  requires objc
+}

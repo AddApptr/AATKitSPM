@@ -1,0 +1,843 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATOguryCMPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATOguryCMPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATOguryCMPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATOguryCMPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "OguryChoiceManager",
+        "printedName": "OguryChoiceManager",
+        "declKind": "Import",
+        "moduleName": "AATOguryCMPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "OgurySdk",
+        "printedName": "OgurySdk",
+        "declKind": "Import",
+        "moduleName": "AATOguryCMPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATOguryCMPAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AATCMPOgury",
+        "printedName": "AATCMPOgury",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isSuccessfullyInitialized",
+            "printedName": "isSuccessfullyInitialized(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)isSuccessfullyInitialized:",
+            "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC25isSuccessfullyInitializedySbSSF",
+            "moduleName": "AATOguryCMPAdapter",
+            "objc_name": "isSuccessfullyInitialized:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AATOguryCMPAdapter.AATCMPOgury?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATCMPOgury",
+                    "printedName": "AATOguryCMPAdapter.AATCMPOgury",
+                    "usr": "c:@M@AATOguryCMPAdapter@objc(cs)AATCMPOgury"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)initWith:",
+            "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC4withACSgSS_tcfc",
+            "moduleName": "AATOguryCMPAdapter",
+            "objc_name": "initWith:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATCMPOgury",
+                "printedName": "AATOguryCMPAdapter.AATCMPOgury",
+                "usr": "c:@M@AATOguryCMPAdapter@objc(cs)AATCMPOgury"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)init",
+            "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryCACycfc",
+            "moduleName": "AATOguryCMPAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)start:",
+            "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC5startyySSF",
+            "moduleName": "AATOguryCMPAdapter",
+            "objc_name": "start:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showIfNeeded",
+            "printedName": "showIfNeeded(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)showIfNeeded::",
+            "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC12showIfNeededyySS_So16UIViewControllerCtF",
+            "moduleName": "AATOguryCMPAdapter",
+            "objc_name": "showIfNeeded::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "editConsent",
+            "printedName": "editConsent(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)editConsent::",
+            "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC11editConsentyySS_So16UIViewControllerCtF",
+            "moduleName": "AATOguryCMPAdapter",
+            "objc_name": "editConsent::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATCMPDelegate",
+                "printedName": "AATKit.AATCMPDelegate",
+                "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)setDelegate::",
+            "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC11setDelegateyySS_6AATKit14AATCMPDelegate_ptF",
+            "moduleName": "AATOguryCMPAdapter",
+            "objc_name": "setDelegate::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reload",
+            "printedName": "reload(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)reload::",
+            "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC6reloadyySS_So16UIViewControllerCtF",
+            "moduleName": "AATOguryCMPAdapter",
+            "objc_name": "reload::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getConsentForNetwork",
+            "printedName": "getConsentForNetwork(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NonIABConsent",
+                "printedName": "AATKit.NonIABConsent",
+                "usr": "c:@M@AATKit@E@NonIABConsent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATAdNetwork",
+                "printedName": "AATKit.AATAdNetwork",
+                "usr": "c:@M@AATKit@E@AATAdNetwork"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)getConsentForNetwork::",
+            "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC20getConsentForNetworky6AATKit13NonIABConsentOSS_AE05AATAdG0OtF",
+            "moduleName": "AATOguryCMPAdapter",
+            "objc_name": "getConsentForNetwork::",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@AATOguryCMPAdapter@objc(cs)AATCMPOgury(py)description",
+            "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC11descriptionSSvp",
+            "moduleName": "AATOguryCMPAdapter",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)description",
+                "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC11descriptionSSvg",
+                "moduleName": "AATOguryCMPAdapter",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AATOguryCMPAdapter@objc(cs)AATCMPOgury",
+        "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC",
+        "moduleName": "AATOguryCMPAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AATCMPProtocol",
+            "printedName": "AATCMPProtocol",
+            "usr": "c:@M@AATKit@objc(pl)AATCMPProtocol",
+            "mangledName": "$s6AATKit14AATCMPProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AATAdDriverLoggerProtocol",
+            "printedName": "AATAdDriverLoggerProtocol",
+            "usr": "s:6AATKit25AATAdDriverLoggerProtocolP",
+            "mangledName": "$s6AATKit25AATAdDriverLoggerProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATOguryCMPState.swift",
+      "kind": "BooleanLiteral",
+      "offset": 306,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 246,
+      "length": 23,
+      "value": "\"AATSafeManagedConsent\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 645,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 671,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "BooleanLiteral",
+      "offset": 732,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1077,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 1176,
+      "length": 18,
+      "value": "\"Ogury idle state\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 1290,
+      "length": 22,
+      "value": "\"Ogury setup finished\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 1457,
+      "length": 52,
+      "value": "\"Ogury CMP error: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 1486,
+      "length": 21,
+      "value": "\"Unknown Ogury Error\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 1508,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 1568,
+      "length": 21,
+      "value": "\"Unknown Ogury Error\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 290,
+      "length": 11,
+      "value": "\"AATOguryCMPAdapter.AATCMPOgury\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 1962,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 1988,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 2293,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 2319,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 3599,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 3625,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 4247,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 4273,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 4567,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 4593,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 4875,
+      "length": 65,
+      "value": "\"Invalid source: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 4901,
+      "length": 1,
+      "value": "\", this method is not for public usage.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5221,
+      "length": 3,
+      "value": "459"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5305,
+      "length": 3,
+      "value": "227"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5403,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5486,
+      "length": 3,
+      "value": "280"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5570,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5650,
+      "length": 3,
+      "value": "297"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5735,
+      "length": 3,
+      "value": "606"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5816,
+      "length": 3,
+      "value": "278"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5898,
+      "length": 3,
+      "value": "248"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6003,
+      "length": 2,
+      "value": "34"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6083,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6163,
+      "length": 3,
+      "value": "308"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6248,
+      "length": 3,
+      "value": "140"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6331,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6412,
+      "length": 3,
+      "value": "432"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6496,
+      "length": 3,
+      "value": "524"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6580,
+      "length": 3,
+      "value": "515"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6665,
+      "length": 2,
+      "value": "69"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6743,
+      "length": 3,
+      "value": "337"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6829,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 6914,
+      "length": 85,
+      "value": "\"No mapping for network: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 6958,
+      "length": 9,
+      "value": "\" available, treating consent as wittheld\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
+      "kind": "StringLiteral",
+      "offset": 7326,
+      "length": 32,
+      "value": "\"AATOguryCMPAdapter.AATCMPOgury\""
+    }
+  ]
+}

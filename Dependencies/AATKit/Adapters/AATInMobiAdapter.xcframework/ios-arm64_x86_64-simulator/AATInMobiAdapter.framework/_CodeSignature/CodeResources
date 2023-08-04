@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AATInMobiAdapter-Swift.h</key>
 		<data>
-		B56alhrBO97BksSIcjsDpbPn2wI=
+		tU/0O+DIf0MSL9Ya1aKmmhJ3cIE=
 		</data>
 		<key>Headers/AATInMobiAdapter.h</key>
 		<data>
@@ -14,35 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3J85Z8nEz0x3yoSZdu6Snbf4kOE=
+		trdqxCigjCzC7jK7p3nPb5PtDs0=
+		</data>
+		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		fh6CB5vVTRhLxzsnFXzcYrseRoA=
+		</data>
+		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		P1bdKP21AHQSwTkOW0RbPE03QJA=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		bfo3IDQ0+lE8qvykEPFxqUsy3Mw=
+		FbTa4JJ4ET0Q0inVyrOF0KF2sqM=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SinTD6szUpXBHLGuJ6s/NC451yE=
+		P1bdKP21AHQSwTkOW0RbPE03QJA=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6uFiJAjUMOSZ0BbwFfz7gsYZ1CA=
+		VtqIgFEEifphBLKJCM70FrkLphk=
+		</data>
+		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		fh6CB5vVTRhLxzsnFXzcYrseRoA=
+		</data>
+		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		/D1wFKYZLoNSzOFYIUAjroTe3Mo=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8v1q4RPf4fALjH7EpC0hDHeipTg=
+		xM16VShrcHjbPPIlqgND1UosWfA=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hvUAM7y1krlSAYTBuJb9KEFsMyY=
+		/D1wFKYZLoNSzOFYIUAjroTe3Mo=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZdsoT34DCSkoZnGi5OgOLClD2XM=
+		e8XPn9b82Jf1w//0IKLsndMxxcs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		JCDi9cuaG69EzaUa51W7C71jHV8=
+		zMkKpqwF3FZ2UGwAzQlJsM5rJJU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B56alhrBO97BksSIcjsDpbPn2wI=
+			tU/0O+DIf0MSL9Ya1aKmmhJ3cIE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tc4QmVGRgeyhEsYOMPn1jiSjSq5r2wdLZoXXIWeZvg4=
+			LpajpAqvfacTGDm1Z4V1wVKq24ojssHW7HkXaMdK1Pk=
 			</data>
 		</dict>
 		<key>Headers/AATInMobiAdapter.h</key>
@@ -69,81 +85,125 @@
 			KDKOSf9leR4X439/8vSKaBKXsddA9YESQ8fTRf7Zl6w=
 			</data>
 		</dict>
+		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fh6CB5vVTRhLxzsnFXzcYrseRoA=
+			</data>
+			<key>hash2</key>
+			<data>
+			0/3fti7C10/Fh2KsE5ldbR6egWasmoe5louko/CkUgI=
+			</data>
+		</dict>
+		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P1bdKP21AHQSwTkOW0RbPE03QJA=
+			</data>
+			<key>hash2</key>
+			<data>
+			oHLRwnJeK4B3EAzCdRoeoEB/Qkuc6GhOyc+jNsEFKtc=
+			</data>
+		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bfo3IDQ0+lE8qvykEPFxqUsy3Mw=
+			FbTa4JJ4ET0Q0inVyrOF0KF2sqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			RCD9CW/PG2tJH97KKXrkTQQIaC7dBh5Q7ZphnKjRIi4=
+			8/OzaQOewIpBRUJTJhURUIeje5T1xSfQFdRCkSf13gs=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SinTD6szUpXBHLGuJ6s/NC451yE=
+			P1bdKP21AHQSwTkOW0RbPE03QJA=
 			</data>
 			<key>hash2</key>
 			<data>
-			0UgJTuizoM4Vtuix+TXrmTGb9JlisYlT+el6+b/tdZc=
+			oHLRwnJeK4B3EAzCdRoeoEB/Qkuc6GhOyc+jNsEFKtc=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6uFiJAjUMOSZ0BbwFfz7gsYZ1CA=
+			VtqIgFEEifphBLKJCM70FrkLphk=
 			</data>
 			<key>hash2</key>
 			<data>
-			YImkennoW0iHaLlbpwkSgbUSLc6DPwCiNn/COjwtdA0=
+			SGGz1ArkRw/T00FqTQ6okQlPoeSp/sQtHFy5MLu7dKU=
+			</data>
+		</dict>
+		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fh6CB5vVTRhLxzsnFXzcYrseRoA=
+			</data>
+			<key>hash2</key>
+			<data>
+			0/3fti7C10/Fh2KsE5ldbR6egWasmoe5louko/CkUgI=
+			</data>
+		</dict>
+		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/D1wFKYZLoNSzOFYIUAjroTe3Mo=
+			</data>
+			<key>hash2</key>
+			<data>
+			Cix+2plzD4fBRx2s9mXYT3ZYRIywoCtdgLFV0qgYyzs=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8v1q4RPf4fALjH7EpC0hDHeipTg=
+			xM16VShrcHjbPPIlqgND1UosWfA=
 			</data>
 			<key>hash2</key>
 			<data>
-			lXEcHNY2vexzbBhTW0fxyFLrGrj7FgUA9hsXaq4Pj9A=
+			YgTOMqyQiCQz8AjXJ8a1DGXN3LdB3GFetwg7FGlZVOc=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hvUAM7y1krlSAYTBuJb9KEFsMyY=
+			/D1wFKYZLoNSzOFYIUAjroTe3Mo=
 			</data>
 			<key>hash2</key>
 			<data>
-			KsbRN/pVV9OTkSLmSSssqUk8wsdfsuZ53nVZECj8iA4=
+			Cix+2plzD4fBRx2s9mXYT3ZYRIywoCtdgLFV0qgYyzs=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZdsoT34DCSkoZnGi5OgOLClD2XM=
+			e8XPn9b82Jf1w//0IKLsndMxxcs=
 			</data>
 			<key>hash2</key>
 			<data>
-			+sUh33Ru16rmnPj4Fw3/9TaYzkqRqimTh7zMASj2VCw=
+			IOBWMIY5pKOOBmi81+tg5FngE21M8TLTL9kGLHgwvxw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JCDi9cuaG69EzaUa51W7C71jHV8=
+			zMkKpqwF3FZ2UGwAzQlJsM5rJJU=
 			</data>
 			<key>hash2</key>
 			<data>
-			rHZpuJ0f7jKB06lSCFEuEOPiwm4JoEIA/JWIcS3OUvE=
+			k8AWtJr38MXF7W3L+BdehHKl7INajxEMTZmt6oMepsk=
 			</data>
 		</dict>
 	</dict>

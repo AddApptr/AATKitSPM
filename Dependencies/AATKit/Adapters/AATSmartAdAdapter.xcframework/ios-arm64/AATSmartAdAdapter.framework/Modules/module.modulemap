@@ -6,6 +6,6 @@ framework module AATSmartAdAdapter {
 }
 
 module AATSmartAdAdapter.Swift {
-    header "AATSmartAdAdapter-Swift.h"
-    requires objc
+  header "AATSmartAdAdapter-Swift.h"
+  requires objc
 }
