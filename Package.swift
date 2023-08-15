@@ -63,7 +63,6 @@ let package = Package(
                                                    "AATKit-Prebid",
                                                    "AATKit-Unity",
                                                    "AATKit-Vungle",
-                                                   "AATKit-Datonomy",
                                                    "AATKit-Mintegral",
                                                   ]),
 
