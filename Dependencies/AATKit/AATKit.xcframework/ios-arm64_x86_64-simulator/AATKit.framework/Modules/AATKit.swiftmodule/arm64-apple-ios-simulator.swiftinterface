@@ -247,7 +247,7 @@ public enum AATNativeAdState : Swift.Equatable {
 public protocol AATDatonomyDriver {
   static var shared: Self { get }
   func initializeDatonomySDK(apiKey: Swift.String)
-  func reportImpression(impression: AATKit.AATImpression, adType: AATKit.AATAdType)
+  func reportImpression(impression: AATKit.AATImpression, adType: AATKit.AATAdType, currencyCode: Swift.String?)
   func reportSessionDuration(duration: Swift.Double)
   func getLTVScore(completion: @escaping (Swift.Double?, Swift.String?) -> Swift.Void)
 }

@@ -7848,7 +7848,7 @@
           {
             "kind": "Function",
             "name": "reportImpression",
-            "printedName": "reportImpression(impression:adType:)",
+            "printedName": "reportImpression(impression:adType:currencyCode:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7866,11 +7866,25 @@
                 "name": "AATAdType",
                 "printedName": "AATKit.AATAdType",
                 "usr": "c:@M@AATKit@E@AATAdType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit17AATDatonomyDriverP16reportImpression10impression6adTypeyAA13AATImpressionC_AA05AATAdH0OtF",
-            "mangledName": "$s6AATKit17AATDatonomyDriverP16reportImpression10impression6adTypeyAA13AATImpressionC_AA05AATAdH0OtF",
+            "usr": "s:6AATKit17AATDatonomyDriverP16reportImpression10impression6adType12currencyCodeyAA13AATImpressionC_AA05AATAdH0OSSSgtF",
+            "mangledName": "$s6AATKit17AATDatonomyDriverP16reportImpression10impression6adType12currencyCodeyAA13AATImpressionC_AA05AATAdH0OSSSgtF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATDatonomyDriver>",
             "sugared_genericSig": "<Self where Self : AATKit.AATDatonomyDriver>",
@@ -43339,7 +43353,7 @@
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATDatonomyDriver.swift",
       "kind": "StringLiteral",
-      "offset": 609,
+      "offset": 632,
       "length": 39,
       "value": "\"AATDatonomyAdapter.AATDatonomyManager\""
     },
@@ -44872,42 +44886,42 @@
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementImplementation+ImpDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3315,
+      "offset": 3354,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementImplementation+ImpDelegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 3408,
+      "offset": 3447,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementImplementation+ImpDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 4375,
+      "offset": 4414,
       "length": 5,
       "value": "\"USD\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementImplementation+ImpDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 4428,
+      "offset": 4467,
       "length": 5,
       "value": "\"EUR\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementImplementation+ImpDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 4511,
+      "offset": 4550,
       "length": 21,
       "value": "\"Waterfall ad config\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementImplementation+ImpDelegate.swift",
       "kind": "StringLiteral",
-      "offset": 4968,
+      "offset": 5007,
       "length": 21,
       "value": "\"Waterfall ad config\""
     },
@@ -47583,7 +47597,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 7,
-      "value": "\"3.3.0\""
+      "value": "\"3.3.2\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",

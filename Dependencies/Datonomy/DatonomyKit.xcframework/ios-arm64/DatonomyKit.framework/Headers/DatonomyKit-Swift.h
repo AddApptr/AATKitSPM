@@ -230,6 +230,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import ObjectiveC;
 #endif
 
 #endif
@@ -250,6 +251,13 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC11DatonomyKit7AdEvent")
+@interface AdEvent : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, DatonomySDKLogLevel, open) {
 /// If the filter level is set to OptimizelyLogLevelOff, all log messages will be suppressed.
   DatonomySDKLogLevelOff = 0,
@@ -265,6 +273,15 @@ typedef SWIFT_ENUM(NSInteger, DatonomySDKLogLevel, open) {
   DatonomySDKLogLevelVerbose = 5,
 };
 
+
+
+SWIFT_EXTERN void datonomyKit_initialize(char const * _Nonnull apiKey, void (* _Nonnull onComplete)(NSInteger));
+
+
+SWIFT_EXTERN void DatonomyKit_getLTVScore(void (* _Nonnull onComplete)(double));
+
+
+SWIFT_EXTERN void DatonomyKit_event(char const * _Nonnull payload, void (* _Nonnull onComplete)(NSInteger));
 
 #endif
 #if defined(__cplusplus)
