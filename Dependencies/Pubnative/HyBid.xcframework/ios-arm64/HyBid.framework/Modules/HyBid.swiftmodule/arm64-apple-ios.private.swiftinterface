@@ -177,6 +177,7 @@ public typealias ReportingKey = Swift.String
   @objc(initWithZoneID:andWithDelegate:) convenience public init(zoneID: Swift.String?, andWith delegate: HyBidInterstitialAdDelegate)
   @objc(initWithZoneID:withAppToken:andWithDelegate:) convenience public init(zoneID: Swift.String?, withAppToken appToken: Swift.String?, andWith delegate: HyBidInterstitialAdDelegate)
   @objc public func load()
+  @objc public func loadExchangeAd()
   @objc(setSkipOffset:) public func setSkipOffset(_ seconds: Swift.Int)
   @objc(setVideoSkipOffset:) public func setVideoSkipOffset(_ seconds: Swift.Int)
   @objc(setHTMLSkipOffset:) public func setHTMLSkipOffset(_ seconds: Swift.Int)
@@ -212,6 +213,7 @@ public typealias ReportingKey = Swift.String
   @objc(initWithZoneID:andWithDelegate:) convenience public init(zoneID: Swift.String?, andWith delegate: HyBidRewardedAdDelegate)
   @objc(initWithZoneID:withAppToken:andWithDelegate:) convenience public init(zoneID: Swift.String?, withAppToken appToken: Swift.String?, andWith delegate: HyBidRewardedAdDelegate)
   @objc public func load()
+  @objc public func loadExchangeAd()
   @objc(setSkipOffset:) public func setSkipOffset(_ seconds: Swift.Int)
   @objc(setHTMLSkipOffset:) public func setHTMLSkipOffset(_ seconds: Swift.Int)
   @objc(setCloseOnFinish:) public func setCloseOnFinish(_ closeOnFinish: Swift.Bool)
@@ -266,6 +268,7 @@ public typealias ReportingKey = Swift.String
   @objc public static let AD_REQUEST: Swift.String
   @objc public static let AD_RESPONSE: Swift.String
   @objc public static let RESPONSE_TIME: Swift.String
+  @objc public static let REQUEST_TYPE: Swift.String
   @objc public static let RENDER_TIME: Swift.String
   @objc public static let AD_POSITION: Swift.String
   @objc public static let ERROR_CODE: Swift.String
@@ -342,7 +345,11 @@ public typealias ReportingKey = Swift.String
   @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
   @objc public var rewardedHtmlSkipOffset: HyBidSkipOffset
   @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
+  @objc public var rewardedVideoSkipOffset: HyBidSkipOffset
+  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
   @objc public var endCardCloseOffset: HyBidSkipOffset
+  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
+  @objc public var nativeCloseButtonOffset: HyBidSkipOffset
   @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
   @objc public var showEndCard: Swift.Bool {
     @objc get

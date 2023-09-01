@@ -6450,6 +6450,27 @@
           },
           {
             "kind": "Function",
+            "name": "loadExchangeAd",
+            "printedName": "loadExchangeAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(cs)HyBidInterstitialAd(im)loadExchangeAd",
+            "mangledName": "$s5HyBid0aB14InterstitialAdC012loadExchangeD0yyF",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setSkipOffset",
             "printedName": "setSkipOffset(_:)",
             "children": [
@@ -7597,6 +7618,27 @@
             "declKind": "Func",
             "usr": "c:@M@HyBid@objc(cs)HyBidRewardedAd(im)load",
             "mangledName": "$s5HyBid0aB10RewardedAdC4loadyyF",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadExchangeAd",
+            "printedName": "loadExchangeAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(cs)HyBidRewardedAd(im)loadExchangeAd",
+            "mangledName": "$s5HyBid0aB10RewardedAdC012loadExchangeD0yyF",
             "moduleName": "HyBid",
             "declAttributes": [
               "AccessControl",
@@ -9736,6 +9778,59 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@HyBid@objc(cs)HyBidReportingCommon(cm)RESPONSE_TIME",
                 "mangledName": "$s5HyBid6CommonC13RESPONSE_TIMESSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "REQUEST_TYPE",
+            "printedName": "REQUEST_TYPE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidReportingCommon(cpy)REQUEST_TYPE",
+            "mangledName": "$s5HyBid6CommonC12REQUEST_TYPESSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidReportingCommon(cm)REQUEST_TYPE",
+                "mangledName": "$s5HyBid6CommonC12REQUEST_TYPESSvgZ",
                 "moduleName": "HyBid",
                 "static": true,
                 "implicit": true,
@@ -13261,6 +13356,105 @@
           },
           {
             "kind": "Var",
+            "name": "rewardedVideoSkipOffset",
+            "printedName": "rewardedVideoSkipOffset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidSkipOffset",
+                "printedName": "HyBid.HyBidSkipOffset",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(py)rewardedVideoSkipOffset",
+            "mangledName": "$s5HyBid0aB15RenderingConfigC23rewardedVideoSkipOffsetAA0abgH0Cvp",
+            "moduleName": "HyBid",
+            "deprecated": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidSkipOffset",
+                    "printedName": "HyBid.HyBidSkipOffset",
+                    "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)rewardedVideoSkipOffset",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC23rewardedVideoSkipOffsetAA0abgH0Cvg",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidSkipOffset",
+                    "printedName": "HyBid.HyBidSkipOffset",
+                    "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)setRewardedVideoSkipOffset:",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC23rewardedVideoSkipOffsetAA0abgH0Cvs",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5HyBid0aB15RenderingConfigC23rewardedVideoSkipOffsetAA0abgH0CvM",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC23rewardedVideoSkipOffsetAA0abgH0CvM",
+                "moduleName": "HyBid",
+                "deprecated": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "endCardCloseOffset",
             "printedName": "endCardCloseOffset",
             "children": [
@@ -13348,6 +13542,105 @@
                 "declKind": "Accessor",
                 "usr": "s:5HyBid0aB15RenderingConfigC18endCardCloseOffsetAA0ab4SkipH0CvM",
                 "mangledName": "$s5HyBid0aB15RenderingConfigC18endCardCloseOffsetAA0ab4SkipH0CvM",
+                "moduleName": "HyBid",
+                "deprecated": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nativeCloseButtonOffset",
+            "printedName": "nativeCloseButtonOffset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidSkipOffset",
+                "printedName": "HyBid.HyBidSkipOffset",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(py)nativeCloseButtonOffset",
+            "mangledName": "$s5HyBid0aB15RenderingConfigC23nativeCloseButtonOffsetAA0ab4SkipH0Cvp",
+            "moduleName": "HyBid",
+            "deprecated": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidSkipOffset",
+                    "printedName": "HyBid.HyBidSkipOffset",
+                    "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)nativeCloseButtonOffset",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC23nativeCloseButtonOffsetAA0ab4SkipH0Cvg",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidSkipOffset",
+                    "printedName": "HyBid.HyBidSkipOffset",
+                    "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)setNativeCloseButtonOffset:",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC23nativeCloseButtonOffsetAA0ab4SkipH0Cvs",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5HyBid0aB15RenderingConfigC23nativeCloseButtonOffsetAA0ab4SkipH0CvM",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC23nativeCloseButtonOffsetAA0ab4SkipH0CvM",
                 "moduleName": "HyBid",
                 "deprecated": true,
                 "implicit": true,
@@ -14381,36 +14674,50 @@
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1362,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1406,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "BooleanLiteral",
-      "offset": 1447,
+      "offset": 1535,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1492,
+      "offset": 1580,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1737,
+      "offset": 1825,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1927,
+      "offset": 2015,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "StringLiteral",
-      "offset": 1341,
+      "offset": 1429,
       "length": 15,
       "value": "\"HyBid.HyBidSkipOffset\""
     },
@@ -14423,15 +14730,22 @@
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1339,
+      "length": 43,
+      "value": "\"com.verve.HyBid.serialQueueSessionManager\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidSessionManager.swift",
       "kind": "Dictionary",
-      "offset": 1344,
+      "offset": 1440,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidSessionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1395,
+      "offset": 1491,
       "length": 2,
       "value": "\"\""
     },
@@ -14461,7 +14775,7 @@
       "kind": "StringLiteral",
       "offset": 1322,
       "length": 8,
-      "value": "\"2.18.1\""
+      "value": "\"2.19.0\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
@@ -14753,364 +15067,371 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2290,
+      "offset": 2291,
+      "length": 14,
+      "value": "\"request_type\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 2348,
       "length": 13,
       "value": "\"render_time\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2346,
+      "offset": 2404,
       "length": 13,
       "value": "\"ad_position\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2401,
+      "offset": 2459,
       "length": 12,
       "value": "\"error_code\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2458,
+      "offset": 2516,
       "length": 15,
       "value": "\"error_message\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2513,
+      "offset": 2571,
       "length": 10,
       "value": "\"creative\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2567,
+      "offset": 2625,
       "length": 14,
       "value": "\"has_end_card\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2635,
+      "offset": 2693,
       "length": 24,
       "value": "\"last_session_timestamp\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2715,
+      "offset": 2773,
       "length": 18,
       "value": "\"impression_count\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2788,
+      "offset": 2846,
       "length": 25,
       "value": "\"start_session_timestamp\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2861,
+      "offset": 2919,
       "length": 18,
       "value": "\"session_duration\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 2921,
+      "offset": 2979,
       "length": 12,
       "value": "\"age_of_app\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3058,
+      "offset": 3116,
       "length": 9,
       "value": "\"request\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3109,
+      "offset": 3167,
       "length": 12,
       "value": "\"impression\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3168,
+      "offset": 3226,
       "length": 17,
       "value": "\"omid_impression\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3222,
+      "offset": 3280,
       "length": 7,
       "value": "\"click\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3266,
+      "offset": 3324,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3324,
+      "offset": 3382,
       "length": 21,
       "value": "\"interstitial_closed\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3390,
+      "offset": 3448,
       "length": 15,
       "value": "\"video_started\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3452,
+      "offset": 3510,
       "length": 17,
       "value": "\"video_dismissed\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3515,
+      "offset": 3573,
       "length": 16,
       "value": "\"video_finished\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3573,
+      "offset": 3631,
       "length": 12,
       "value": "\"video_mute\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3629,
+      "offset": 3687,
       "length": 14,
       "value": "\"video_unmute\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3697,
+      "offset": 3755,
       "length": 21,
       "value": "\"session_initialized\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3767,
+      "offset": 3825,
       "length": 16,
       "value": "\"session_loaded\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3833,
+      "offset": 3891,
       "length": 17,
       "value": "\"session_started\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3900,
+      "offset": 3958,
       "length": 17,
       "value": "\"session_stopped\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 3972,
+      "offset": 4030,
       "length": 16,
       "value": "\"first_quartile\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4037,
+      "offset": 4095,
       "length": 10,
       "value": "\"midpoint\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4102,
+      "offset": 4160,
       "length": 16,
       "value": "\"third_quartile\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4167,
+      "offset": 4225,
       "length": 13,
       "value": "\"ad_complete\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4226,
+      "offset": 4284,
       "length": 7,
       "value": "\"pause\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4280,
+      "offset": 4338,
       "length": 8,
       "value": "\"resume\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4341,
+      "offset": 4399,
       "length": 14,
       "value": "\"buffer_start\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4409,
+      "offset": 4467,
       "length": 15,
       "value": "\"buffer_finish\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4478,
+      "offset": 4536,
       "length": 15,
       "value": "\"volume_change\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4541,
+      "offset": 4599,
       "length": 9,
       "value": "\"skipped\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4598,
+      "offset": 4656,
       "length": 9,
       "value": "\"clicked\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4643,
+      "offset": 4701,
       "length": 6,
       "value": "\"load\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4690,
+      "offset": 4748,
       "length": 11,
       "value": "\"load_fail\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4738,
+      "offset": 4796,
       "length": 7,
       "value": "\"cache\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4785,
+      "offset": 4843,
       "length": 10,
       "value": "\"response\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4833,
+      "offset": 4891,
       "length": 8,
       "value": "\"render\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4885,
+      "offset": 4943,
       "length": 14,
       "value": "\"render_error\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4945,
+      "offset": 5003,
       "length": 16,
       "value": "\"companion_view\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 4999,
+      "offset": 5057,
       "length": 8,
       "value": "\"reward\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5058,
+      "offset": 5116,
       "length": 21,
       "value": "\"session_report_info\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5211,
+      "offset": 5269,
       "length": 10,
       "value": "\"standard\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5258,
+      "offset": 5316,
       "length": 7,
       "value": "\"video\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5387,
+      "offset": 5445,
       "length": 8,
       "value": "\"native\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5433,
+      "offset": 5491,
       "length": 8,
       "value": "\"banner\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5483,
+      "offset": 5541,
       "length": 12,
       "value": "\"fullscreen\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5535,
+      "offset": 5593,
       "length": 10,
       "value": "\"rewarded\""
     },
@@ -15138,56 +15459,70 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2772,
+      "offset": 2782,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3330,
+      "offset": 3147,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3054,
+      "offset": 3522,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3987,
+      "offset": 4080,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4278,
+      "offset": 3804,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4868,
+      "offset": 4737,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5028,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5618,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5158,
+      "offset": 5908,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5445,
+      "offset": 6195,
       "length": 5,
       "value": "false"
     }

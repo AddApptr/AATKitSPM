@@ -314,6 +314,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)AD_RESPONSE SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull RESPONSE_TIME;)
 + (NSString * _Nonnull)RESPONSE_TIME SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull REQUEST_TYPE;)
++ (NSString * _Nonnull)REQUEST_TYPE SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull RENDER_TIME;)
 + (NSString * _Nonnull)RENDER_TIME SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull AD_POSITION;)
@@ -463,6 +465,7 @@ SWIFT_CLASS("_TtC5HyBid19HyBidInterstitialAd")
 - (nonnull instancetype)initWithZoneID:(NSString * _Nullable)zoneID andWithDelegate:(id <HyBidInterstitialAdDelegate> _Nonnull)delegate;
 - (nonnull instancetype)initWithZoneID:(NSString * _Nullable)zoneID withAppToken:(NSString * _Nullable)appToken andWithDelegate:(id <HyBidInterstitialAdDelegate> _Nonnull)delegate;
 - (void)load;
+- (void)loadExchangeAd;
 - (void)setSkipOffset:(NSInteger)seconds;
 - (void)setVideoSkipOffset:(NSInteger)seconds;
 - (void)setHTMLSkipOffset:(NSInteger)seconds;
@@ -541,7 +544,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidRenderi
 @property (nonatomic, strong) HyBidSkipOffset * _Nonnull videoSkipOffset SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic, strong) HyBidSkipOffset * _Nonnull interstitialHtmlSkipOffset SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic, strong) HyBidSkipOffset * _Nonnull rewardedHtmlSkipOffset SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
+@property (nonatomic, strong) HyBidSkipOffset * _Nonnull rewardedVideoSkipOffset SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic, strong) HyBidSkipOffset * _Nonnull endCardCloseOffset SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
+@property (nonatomic, strong) HyBidSkipOffset * _Nonnull nativeCloseButtonOffset SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL showEndCard SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) HyBidInterstitialActionBehaviour interstitialActionBehaviour SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL interstitialCloseOnFinish SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
@@ -598,6 +603,7 @@ SWIFT_CLASS("_TtC5HyBid15HyBidRewardedAd")
 - (nonnull instancetype)initWithZoneID:(NSString * _Nullable)zoneID andWithDelegate:(id <HyBidRewardedAdDelegate> _Nonnull)delegate;
 - (nonnull instancetype)initWithZoneID:(NSString * _Nullable)zoneID withAppToken:(NSString * _Nullable)appToken andWithDelegate:(id <HyBidRewardedAdDelegate> _Nonnull)delegate;
 - (void)load;
+- (void)loadExchangeAd;
 - (void)setSkipOffset:(NSInteger)seconds;
 - (void)setHTMLSkipOffset:(NSInteger)seconds;
 - (void)setCloseOnFinish:(BOOL)closeOnFinish;
