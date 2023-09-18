@@ -110,84 +110,105 @@
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 529,
+      "offset": 578,
       "length": 14,
       "value": "\"gdpr.consent\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 584,
+      "offset": 633,
       "length": 17,
       "value": "\"privacy.consent\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1264,
+      "offset": 1313,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 1462,
+      "offset": 1511,
       "length": 68,
       "value": "\"Failed to initialize UnityAds SDK with different gameId: \""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 1529,
+      "offset": 1578,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1556,
+      "offset": 1605,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1603,
+      "offset": 1652,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 1894,
+      "offset": 1943,
       "length": 20,
       "value": "\"user.nonbehavioral\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2209,
+      "length": 42,
+      "value": "\"Unity already used the same placementId.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2101,
+      "offset": 2273,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2365,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2705,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 2273,
+      "offset": 2877,
       "length": 59,
       "value": "\"Failed to initialize UnityAds SDK with reason: \""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 2331,
+      "offset": 2935,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2369,
+      "offset": 2973,
       "length": 5,
       "value": "false"
     },
@@ -255,6 +276,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3694,
+      "length": 21,
+      "value": "\"BannerView did show\""
+    },
+    {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 704,
@@ -299,63 +327,98 @@
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 1193,
+      "length": 41,
+      "value": "\"Unity already used the same placementId\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1255,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 1738,
       "length": 35,
       "value": "\"Failed to initialize UnityAds SDK\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1536,
+      "offset": 1814,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 1899,
+      "offset": 2177,
       "length": 38,
       "value": "\"viewController or placementId is nil\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1959,
+      "offset": 2237,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 2133,
+      "offset": 2411,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3253,
+      "offset": 3379,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3437,
+      "offset": 3605,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3448,
+      "offset": 3788,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3839,
+      "offset": 3799,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 3883,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 4152,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 4275,
       "length": 2,
       "value": "\"\""
     },
@@ -404,49 +467,84 @@
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1462,
+      "offset": 1195,
+      "length": 41,
+      "value": "\"Unity already used the same placementId\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1257,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 1740,
       "length": 35,
       "value": "\"Failed to initialize UnityAds SDK\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1538,
+      "offset": 1816,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1900,
+      "offset": 2178,
       "length": 38,
       "value": "\"viewController or placementId is nil\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1960,
+      "offset": 2238,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2134,
+      "offset": 2412,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 3262,
+      "offset": 3385,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 3686,
+      "offset": 3613,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 3730,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 3999,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 4122,
       "length": 2,
       "value": "\"\""
     }
