@@ -1186,6 +1186,701 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "HyBid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyBidImpressionConstants",
+        "printedName": "HyBidImpressionConstants",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "PLACEMENT_POSITION_UNKNOWN",
+            "printedName": "PLACEMENT_POSITION_UNKNOWN",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)PLACEMENT_POSITION_UNKNOWN",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC26PLACEMENT_POSITION_UNKNOWNSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)PLACEMENT_POSITION_UNKNOWN",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC26PLACEMENT_POSITION_UNKNOWNSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "PLACEMENT_POSITION_FULLSCREEN",
+            "printedName": "PLACEMENT_POSITION_FULLSCREEN",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)PLACEMENT_POSITION_FULLSCREEN",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC29PLACEMENT_POSITION_FULLSCREENSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)PLACEMENT_POSITION_FULLSCREEN",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC29PLACEMENT_POSITION_FULLSCREENSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "EXPANDABLE_DIRECTION_FULLSCREEN",
+            "printedName": "EXPANDABLE_DIRECTION_FULLSCREEN",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)EXPANDABLE_DIRECTION_FULLSCREEN",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC31EXPANDABLE_DIRECTION_FULLSCREENSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)EXPANDABLE_DIRECTION_FULLSCREEN",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC31EXPANDABLE_DIRECTION_FULLSCREENSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "EXPANDABLE_DIRECTION_RESIZE_MINIMIZE",
+            "printedName": "EXPANDABLE_DIRECTION_RESIZE_MINIMIZE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)EXPANDABLE_DIRECTION_RESIZE_MINIMIZE",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC36EXPANDABLE_DIRECTION_RESIZE_MINIMIZESSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)EXPANDABLE_DIRECTION_RESIZE_MINIMIZE",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC36EXPANDABLE_DIRECTION_RESIZE_MINIMIZESSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "VIDEO_PLACEMENT_TYPE_INTERSTITIAL",
+            "printedName": "VIDEO_PLACEMENT_TYPE_INTERSTITIAL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)VIDEO_PLACEMENT_TYPE_INTERSTITIAL",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC33VIDEO_PLACEMENT_TYPE_INTERSTITIALSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)VIDEO_PLACEMENT_TYPE_INTERSTITIAL",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC33VIDEO_PLACEMENT_TYPE_INTERSTITIALSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "VIDEO_PLACEMENT_SUBTYPE_INTERSTITIAL",
+            "printedName": "VIDEO_PLACEMENT_SUBTYPE_INTERSTITIAL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)VIDEO_PLACEMENT_SUBTYPE_INTERSTITIAL",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC36VIDEO_PLACEMENT_SUBTYPE_INTERSTITIALSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)VIDEO_PLACEMENT_SUBTYPE_INTERSTITIAL",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC36VIDEO_PLACEMENT_SUBTYPE_INTERSTITIALSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "VIDEO_PLACEMENT_SUBTYPE_STANDALONE",
+            "printedName": "VIDEO_PLACEMENT_SUBTYPE_STANDALONE",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)VIDEO_PLACEMENT_SUBTYPE_STANDALONE",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC34VIDEO_PLACEMENT_SUBTYPE_STANDALONESSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)VIDEO_PLACEMENT_SUBTYPE_STANDALONE",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC34VIDEO_PLACEMENT_SUBTYPE_STANDALONESSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ON",
+            "printedName": "VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ON",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ON",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC40VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ONSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ON",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC40VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ONSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFF",
+            "printedName": "VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFF",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFF",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC41VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFFSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFF",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC41VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFFSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ON",
+            "printedName": "VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ON",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ON",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC45VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ONSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ON",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC45VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ONSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFF",
+            "printedName": "VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFF",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cpy)VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFF",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsC46VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFFSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(cm)VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFF",
+                "mangledName": "$s5HyBid0aB19ImpressionConstantsC46VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFFSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidImpressionConstants",
+                "printedName": "HyBid.HyBidImpressionConstants",
+                "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants(im)init",
+            "mangledName": "$s5HyBid0aB19ImpressionConstantsCACycfc",
+            "moduleName": "HyBid",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@HyBid@objc(cs)HyBidImpressionConstants",
+        "mangledName": "$s5HyBid0aB19ImpressionConstantsC",
+        "moduleName": "HyBid",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -1961,6 +2656,41 @@
         "moduleName": "HyBid"
       },
       {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "HyBid"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "HyBid"
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "HyBid"
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "HyBid"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "HyBid"
+      },
+      {
         "kind": "TypeDecl",
         "name": "HyBidSettings",
         "printedName": "HyBidSettings",
@@ -2263,8 +2993,8 @@
           },
           {
             "kind": "Var",
-            "name": "deviceName",
-            "printedName": "deviceName",
+            "name": "deviceModel",
+            "printedName": "deviceModel",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2274,8 +3004,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)deviceName",
-            "mangledName": "$s5HyBid0aB8SettingsC10deviceNameSSvp",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)deviceModel",
+            "mangledName": "$s5HyBid0aB8SettingsC11deviceModelSSvp",
             "moduleName": "HyBid",
             "declAttributes": [
               "AccessControl",
@@ -2295,8 +3025,658 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)deviceName",
-                "mangledName": "$s5HyBid0aB8SettingsC10deviceNameSSvg",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)deviceModel",
+                "mangledName": "$s5HyBid0aB8SettingsC11deviceModelSSvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceModelIdentifier",
+            "printedName": "deviceModelIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)deviceModelIdentifier",
+            "mangledName": "$s5HyBid0aB8SettingsC21deviceModelIdentifierSSvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)deviceModelIdentifier",
+                "mangledName": "$s5HyBid0aB8SettingsC21deviceModelIdentifierSSvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceMake",
+            "printedName": "deviceMake",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)deviceMake",
+            "mangledName": "$s5HyBid0aB8SettingsC10deviceMakeSSvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)deviceMake",
+                "mangledName": "$s5HyBid0aB8SettingsC10deviceMakeSSvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceType",
+            "printedName": "deviceType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)deviceType",
+            "mangledName": "$s5HyBid0aB8SettingsC10deviceTypeSSvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)deviceType",
+                "mangledName": "$s5HyBid0aB8SettingsC10deviceTypeSSvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenHeightInPixelss",
+            "printedName": "screenHeightInPixelss",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)screenHeightInPixelss",
+            "mangledName": "$s5HyBid0aB8SettingsC21screenHeightInPixelssSSvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)screenHeightInPixelss",
+                "mangledName": "$s5HyBid0aB8SettingsC21screenHeightInPixelssSSvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenWidthInPixels",
+            "printedName": "screenWidthInPixels",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)screenWidthInPixels",
+            "mangledName": "$s5HyBid0aB8SettingsC19screenWidthInPixelsSSvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)screenWidthInPixels",
+                "mangledName": "$s5HyBid0aB8SettingsC19screenWidthInPixelsSSvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pxRatio",
+            "printedName": "pxRatio",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)pxRatio",
+            "mangledName": "$s5HyBid0aB8SettingsC7pxRatioSSvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)pxRatio",
+                "mangledName": "$s5HyBid0aB8SettingsC7pxRatioSSvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "language",
+            "printedName": "language",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)language",
+            "mangledName": "$s5HyBid0aB8SettingsC8languageSSSgvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)language",
+                "mangledName": "$s5HyBid0aB8SettingsC8languageSSSgvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "jsValue",
+            "printedName": "jsValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)jsValue",
+            "mangledName": "$s5HyBid0aB8SettingsC7jsValueSSvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)jsValue",
+                "mangledName": "$s5HyBid0aB8SettingsC7jsValueSSvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "geoFetchSupport",
+            "printedName": "geoFetchSupport()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)geoFetchSupport",
+            "mangledName": "$s5HyBid0aB8SettingsC15geoFetchSupportSSyF",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationManager",
+            "printedName": "locationManager(_:didChangeAuthorization:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocationManager",
+                "printedName": "CoreLocation.CLLocationManager",
+                "usr": "c:objc(cs)CLLocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLAuthorizationStatus",
+                "printedName": "CoreLocation.CLAuthorizationStatus",
+                "usr": "c:@E@CLAuthorizationStatus"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)locationManager:didChangeAuthorizationStatus:",
+            "mangledName": "$s5HyBid0aB8SettingsC15locationManager_22didChangeAuthorizationySo010CLLocationE0C_So21CLAuthorizationStatusVtF",
+            "moduleName": "HyBid",
+            "objc_name": "locationManager:didChangeAuthorizationStatus:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "languageBCP47",
+            "printedName": "languageBCP47",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)languageBCP47",
+            "mangledName": "$s5HyBid0aB8SettingsC13languageBCP47SSSgvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)languageBCP47",
+                "mangledName": "$s5HyBid0aB8SettingsC13languageBCP47SSSgvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "carrierName",
+            "printedName": "carrierName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)carrierName",
+            "mangledName": "$s5HyBid0aB8SettingsC11carrierNameSSSgvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)carrierName",
+                "mangledName": "$s5HyBid0aB8SettingsC11carrierNameSSSgvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "carrierMCCMNC",
+            "printedName": "carrierMCCMNC",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)carrierMCCMNC",
+            "mangledName": "$s5HyBid0aB8SettingsC13carrierMCCMNCSSSgvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)carrierMCCMNC",
+                "mangledName": "$s5HyBid0aB8SettingsC13carrierMCCMNCSSSgvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connectionType",
+            "printedName": "connectionType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)connectionType",
+            "mangledName": "$s5HyBid0aB8SettingsC14connectionTypeSSvp",
+            "moduleName": "HyBid",
+            "intro_iOS": "14.1",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)connectionType",
+                "mangledName": "$s5HyBid0aB8SettingsC14connectionTypeSSvg",
                 "moduleName": "HyBid",
                 "declAttributes": [
                   "ObjC"
@@ -2824,6 +4204,154 @@
           },
           {
             "kind": "Var",
+            "name": "isDeviceCharging",
+            "printedName": "isDeviceCharging",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)isDeviceCharging",
+            "mangledName": "$s5HyBid0aB8SettingsC16isDeviceChargingSSvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)isDeviceCharging",
+                "mangledName": "$s5HyBid0aB8SettingsC16isDeviceChargingSSvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "batteryLevel",
+            "printedName": "batteryLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)batteryLevel",
+            "mangledName": "$s5HyBid0aB8SettingsC12batteryLevelSSSgvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)batteryLevel",
+                "mangledName": "$s5HyBid0aB8SettingsC12batteryLevelSSSgvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "batterySaver",
+            "printedName": "batterySaver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)batterySaver",
+            "mangledName": "$s5HyBid0aB8SettingsC12batterySaverSSvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)batterySaver",
+                "mangledName": "$s5HyBid0aB8SettingsC12batterySaverSSvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "location",
             "printedName": "location",
             "children": [
@@ -3063,30 +4591,124 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
+            "kind": "Var",
+            "name": "isDarkModeEnabled",
+            "printedName": "isDarkModeEnabled",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "HyBidSettings",
-                "printedName": "HyBid.HyBidSettings",
-                "usr": "c:@M@HyBid@objc(cs)HyBidSettings"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)init",
-            "mangledName": "$s5HyBid0aB8SettingsCACycfc",
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)isDarkModeEnabled",
+            "mangledName": "$s5HyBid0aB8SettingsC17isDarkModeEnabledSSSgvp",
             "moduleName": "HyBid",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
+              "AccessControl",
+              "ObjC"
             ],
-            "init_kind": "Designated"
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)isDarkModeEnabled",
+                "mangledName": "$s5HyBid0aB8SettingsC17isDarkModeEnabledSSSgvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isAirplaneModeEnabled",
+            "printedName": "isAirplaneModeEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSettings(py)isAirplaneModeEnabled",
+            "mangledName": "$s5HyBid0aB8SettingsC21isAirplaneModeEnabledSSSgvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSettings(im)isAirplaneModeEnabled",
+                "mangledName": "$s5HyBid0aB8SettingsC21isAirplaneModeEnabledSSSgvg",
+                "moduleName": "HyBid",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -3098,6 +4720,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -3176,40 +4799,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@HyBid@objc(cs)HyBidReportingEvent(py)properties",
-            "mangledName": "$s5HyBid0aB14ReportingEventC10propertiesSDySSypGvp",
-            "moduleName": "HyBid",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -3231,9 +4822,57 @@
                     "usr": "s:SD"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidReportingEvent(py)properties",
+            "mangledName": "$s5HyBid0aB14ReportingEventC10propertiesSDySSypGSgvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
                 "usr": "c:@M@HyBid@objc(cs)HyBidReportingEvent(im)properties",
-                "mangledName": "$s5HyBid0aB14ReportingEventC10propertiesSDySSypGvg",
+                "mangledName": "$s5HyBid0aB14ReportingEventC10propertiesSDySSypGSgvg",
                 "moduleName": "HyBid",
                 "implicit": true,
                 "declAttributes": [
@@ -3253,27 +4892,35 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Any]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Any]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:SD"
                       }
                     ],
-                    "usr": "s:SD"
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@HyBid@objc(cs)HyBidReportingEvent(im)setProperties:",
-                "mangledName": "$s5HyBid0aB14ReportingEventC10propertiesSDySSypGvs",
+                "mangledName": "$s5HyBid0aB14ReportingEventC10propertiesSDySSypGSgvs",
                 "moduleName": "HyBid",
                 "implicit": true,
                 "declAttributes": [
@@ -3293,8 +4940,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5HyBid0aB14ReportingEventC10propertiesSDySSypGvM",
-                "mangledName": "$s5HyBid0aB14ReportingEventC10propertiesSDySSypGvM",
+                "usr": "s:5HyBid0aB14ReportingEventC10propertiesSDySSypGSgvM",
+                "mangledName": "$s5HyBid0aB14ReportingEventC10propertiesSDySSypGSgvM",
                 "moduleName": "HyBid",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3665,6 +5312,377 @@
         "name": "HyBidSkipOffset",
         "printedName": "HyBidSkipOffset",
         "children": [
+          {
+            "kind": "Var",
+            "name": "DEFAULT_VIDEO_SKIP_OFFSET",
+            "printedName": "DEFAULT_VIDEO_SKIP_OFFSET",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cpy)DEFAULT_VIDEO_SKIP_OFFSET",
+            "mangledName": "$s5HyBid0aB10SkipOffsetC25DEFAULT_VIDEO_SKIP_OFFSETSivpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cm)DEFAULT_VIDEO_SKIP_OFFSET",
+                "mangledName": "$s5HyBid0aB10SkipOffsetC25DEFAULT_VIDEO_SKIP_OFFSETSivgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DEFAULT_HTML_SKIP_OFFSET",
+            "printedName": "DEFAULT_HTML_SKIP_OFFSET",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cpy)DEFAULT_HTML_SKIP_OFFSET",
+            "mangledName": "$s5HyBid0aB10SkipOffsetC24DEFAULT_HTML_SKIP_OFFSETSivpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cm)DEFAULT_HTML_SKIP_OFFSET",
+                "mangledName": "$s5HyBid0aB10SkipOffsetC24DEFAULT_HTML_SKIP_OFFSETSivgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD",
+            "printedName": "DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cpy)DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD",
+            "mangledName": "$s5HyBid0aB10SkipOffsetC35DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARDSivpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cm)DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD",
+                "mangledName": "$s5HyBid0aB10SkipOffsetC35DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARDSivgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DEFAULT_END_CARD_CLOSE_OFFSET",
+            "printedName": "DEFAULT_END_CARD_CLOSE_OFFSET",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cpy)DEFAULT_END_CARD_CLOSE_OFFSET",
+            "mangledName": "$s5HyBid0aB10SkipOffsetC29DEFAULT_END_CARD_CLOSE_OFFSETSivpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cm)DEFAULT_END_CARD_CLOSE_OFFSET",
+                "mangledName": "$s5HyBid0aB10SkipOffsetC29DEFAULT_END_CARD_CLOSE_OFFSETSivgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DEFAULT_REWARDED_VIDEO_SKIP_OFFSET",
+            "printedName": "DEFAULT_REWARDED_VIDEO_SKIP_OFFSET",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cpy)DEFAULT_REWARDED_VIDEO_SKIP_OFFSET",
+            "mangledName": "$s5HyBid0aB10SkipOffsetC34DEFAULT_REWARDED_VIDEO_SKIP_OFFSETSivpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cm)DEFAULT_REWARDED_VIDEO_SKIP_OFFSET",
+                "mangledName": "$s5HyBid0aB10SkipOffsetC34DEFAULT_REWARDED_VIDEO_SKIP_OFFSETSivgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSET",
+            "printedName": "DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSET",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cpy)DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSET",
+            "mangledName": "$s5HyBid0aB10SkipOffsetC39DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSETSivpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cm)DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSET",
+                "mangledName": "$s5HyBid0aB10SkipOffsetC39DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSETSivgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "DEFAULT_NATIVE_CLOSE_BUTTON_OFFSET",
+            "printedName": "DEFAULT_NATIVE_CLOSE_BUTTON_OFFSET",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cpy)DEFAULT_NATIVE_CLOSE_BUTTON_OFFSET",
+            "mangledName": "$s5HyBid0aB10SkipOffsetC34DEFAULT_NATIVE_CLOSE_BUTTON_OFFSETSivpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidSkipOffset(cm)DEFAULT_NATIVE_CLOSE_BUTTON_OFFSET",
+                "mangledName": "$s5HyBid0aB10SkipOffsetC34DEFAULT_NATIVE_CLOSE_BUTTON_OFFSETSivgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "offset",
@@ -12380,6 +14398,112 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "CUSTOM_ENDCARD_IMPRESSION",
+            "printedName": "CUSTOM_ENDCARD_IMPRESSION",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidReportingEventType(cpy)CUSTOM_ENDCARD_IMPRESSION",
+            "mangledName": "$s5HyBid9EventTypeC25CUSTOM_ENDCARD_IMPRESSIONSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidReportingEventType(cm)CUSTOM_ENDCARD_IMPRESSION",
+                "mangledName": "$s5HyBid9EventTypeC25CUSTOM_ENDCARD_IMPRESSIONSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "CUSTOM_ENDCARD_CLICK",
+            "printedName": "CUSTOM_ENDCARD_CLICK",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidReportingEventType(cpy)CUSTOM_ENDCARD_CLICK",
+            "mangledName": "$s5HyBid9EventTypeC20CUSTOM_ENDCARD_CLICKSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidReportingEventType(cm)CUSTOM_ENDCARD_CLICK",
+                "mangledName": "$s5HyBid9EventTypeC20CUSTOM_ENDCARD_CLICKSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -12935,6 +15059,691 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "HyBid.HyBidReportingProperties",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "HyBid",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyBidURLRedirectorDelegate",
+        "printedName": "HyBidURLRedirectorDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onURLRedirectorStart",
+            "printedName": "onURLRedirectorStart(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(pl)HyBidURLRedirectorDelegate(im)onURLRedirectorStartWithUrl:",
+            "mangledName": "$s5HyBid0aB21URLRedirectorDelegateP02onC5Start3urlySS_tF",
+            "moduleName": "HyBid",
+            "genericSig": "<τ_0_0 where τ_0_0 : HyBid.HyBidURLRedirectorDelegate>",
+            "sugared_genericSig": "<Self where Self : HyBid.HyBidURLRedirectorDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onURLRedirectorRedirect",
+            "printedName": "onURLRedirectorRedirect(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(pl)HyBidURLRedirectorDelegate(im)onURLRedirectorRedirectWithUrl:",
+            "mangledName": "$s5HyBid0aB21URLRedirectorDelegateP02onC8Redirect3urlySS_tF",
+            "moduleName": "HyBid",
+            "genericSig": "<τ_0_0 where τ_0_0 : HyBid.HyBidURLRedirectorDelegate>",
+            "sugared_genericSig": "<Self where Self : HyBid.HyBidURLRedirectorDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onURLRedirectorFinish",
+            "printedName": "onURLRedirectorFinish(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(pl)HyBidURLRedirectorDelegate(im)onURLRedirectorFinishWithUrl:",
+            "mangledName": "$s5HyBid0aB21URLRedirectorDelegateP02onC6Finish3urlySS_tF",
+            "moduleName": "HyBid",
+            "genericSig": "<τ_0_0 where τ_0_0 : HyBid.HyBidURLRedirectorDelegate>",
+            "sugared_genericSig": "<Self where Self : HyBid.HyBidURLRedirectorDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onURLRedirectorFail",
+            "printedName": "onURLRedirectorFail(url:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(pl)HyBidURLRedirectorDelegate(im)onURLRedirectorFailWithUrl:withError:",
+            "mangledName": "$s5HyBid0aB21URLRedirectorDelegateP02onC4Fail3url9withErrorySS_s0I0_ptF",
+            "moduleName": "HyBid",
+            "genericSig": "<τ_0_0 where τ_0_0 : HyBid.HyBidURLRedirectorDelegate>",
+            "sugared_genericSig": "<Self where Self : HyBid.HyBidURLRedirectorDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@HyBid@objc(pl)HyBidURLRedirectorDelegate",
+        "mangledName": "$s5HyBid0aB21URLRedirectorDelegateP",
+        "moduleName": "HyBid",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HyBidURLRedirector",
+        "printedName": "HyBidURLRedirector",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "HyBid.HyBidURLRedirectorDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(py)delegate",
+            "mangledName": "$s5HyBid0aB13URLRedirectorC8delegateAA0abC8Delegate_pSgvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "HyBid.HyBidURLRedirectorDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HyBidURLRedirectorDelegate",
+                        "printedName": "HyBid.HyBidURLRedirectorDelegate",
+                        "usr": "c:@M@HyBid@objc(pl)HyBidURLRedirectorDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(im)delegate",
+                "mangledName": "$s5HyBid0aB13URLRedirectorC8delegateAA0abC8Delegate_pSgvg",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "HyBid.HyBidURLRedirectorDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HyBidURLRedirectorDelegate",
+                        "printedName": "HyBid.HyBidURLRedirectorDelegate",
+                        "usr": "c:@M@HyBid@objc(pl)HyBidURLRedirectorDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(im)setDelegate:",
+                "mangledName": "$s5HyBid0aB13URLRedirectorC8delegateAA0abC8Delegate_pSgvs",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5HyBid0aB13URLRedirectorC8delegateAA0abC8Delegate_pSgvM",
+                "mangledName": "$s5HyBid0aB13URLRedirectorC8delegateAA0abC8Delegate_pSgvM",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userAgent",
+            "printedName": "userAgent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(py)userAgent",
+            "mangledName": "$s5HyBid0aB13URLRedirectorC9userAgentSSSgvp",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(im)userAgent",
+                "mangledName": "$s5HyBid0aB13URLRedirectorC9userAgentSSSgvg",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(im)setUserAgent:",
+                "mangledName": "$s5HyBid0aB13URLRedirectorC9userAgentSSSgvs",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5HyBid0aB13URLRedirectorC9userAgentSSSgvM",
+                "mangledName": "$s5HyBid0aB13URLRedirectorC9userAgentSSSgvM",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "drill",
+            "printedName": "drill(url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(im)drillWithUrl:",
+            "mangledName": "$s5HyBid0aB13URLRedirectorC5drill3urlySS_tF",
+            "moduleName": "HyBid",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:task:willPerformHTTPRedirection:newRequest:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionTask",
+                "printedName": "Foundation.URLSessionTask",
+                "usr": "c:objc(cs)NSURLSessionTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPURLResponse",
+                "printedName": "Foundation.HTTPURLResponse",
+                "usr": "c:objc(cs)NSHTTPURLResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URLRequest?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.URLRequest?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLRequest",
+                        "printedName": "Foundation.URLRequest",
+                        "usr": "s:10Foundation10URLRequestV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(im)URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:",
+            "mangledName": "$s5HyBid0aB13URLRedirectorC10urlSession_4task26willPerformHTTPRedirection10newRequest17completionHandlerySo12NSURLSessionC_So0N4TaskCSo17NSHTTPURLResponseC10Foundation10URLRequestVyAQSgctF",
+            "moduleName": "HyBid",
+            "objc_name": "URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:dataTask:didReceive:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionDataTask",
+                "printedName": "Foundation.URLSessionDataTask",
+                "usr": "c:objc(cs)NSURLSessionDataTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLResponse",
+                "printedName": "Foundation.URLResponse",
+                "usr": "c:objc(cs)NSURLResponse"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URLSession.ResponseDisposition) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ResponseDisposition",
+                    "printedName": "Foundation.URLSession.ResponseDisposition",
+                    "usr": "c:@E@NSURLSessionResponseDisposition"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(im)URLSession:dataTask:didReceiveResponse:completionHandler:",
+            "mangledName": "$s5HyBid0aB13URLRedirectorC10urlSession_8dataTask10didReceive17completionHandlerySo12NSURLSessionC_So0l4DataG0CSo13NSURLResponseCySo0L19ResponseDispositionVctF",
+            "moduleName": "HyBid",
+            "objc_name": "URLSession:dataTask:didReceiveResponse:completionHandler:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:task:didCompleteWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionTask",
+                "printedName": "Foundation.URLSessionTask",
+                "usr": "c:objc(cs)NSURLSessionTask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(im)URLSession:task:didCompleteWithError:",
+            "mangledName": "$s5HyBid0aB13URLRedirectorC10urlSession_4task20didCompleteWithErrorySo12NSURLSessionC_So0K4TaskCs0J0_pSgtF",
+            "moduleName": "HyBid",
+            "objc_name": "URLSession:task:didCompleteWithError:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidURLRedirector",
+                "printedName": "HyBid.HyBidURLRedirector",
+                "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector(im)init",
+            "mangledName": "$s5HyBid0aB13URLRedirectorCACycfc",
+            "moduleName": "HyBid",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@HyBid@objc(cs)HyBidURLRedirector",
+        "mangledName": "$s5HyBid0aB13URLRedirectorC",
+        "moduleName": "HyBid",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -13752,6 +16561,105 @@
           },
           {
             "kind": "Var",
+            "name": "customEndCard",
+            "printedName": "customEndCard",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(py)customEndCard",
+            "mangledName": "$s5HyBid0aB15RenderingConfigC13customEndCardSbvp",
+            "moduleName": "HyBid",
+            "deprecated": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)customEndCard",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC13customEndCardSbvg",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)setCustomEndCard:",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC13customEndCardSbvs",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5HyBid0aB15RenderingConfigC13customEndCardSbvM",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC13customEndCardSbvM",
+                "moduleName": "HyBid",
+                "deprecated": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "interstitialActionBehaviour",
             "printedName": "interstitialActionBehaviour",
             "children": [
@@ -14445,8 +17353,107 @@
           },
           {
             "kind": "Var",
-            "name": "bannerSKOverlay",
-            "printedName": "bannerSKOverlay",
+            "name": "customEndcardDisplay",
+            "printedName": "customEndcardDisplay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HyBidCustomEndcardDisplayBehaviour",
+                "printedName": "HyBid.HyBidCustomEndcardDisplayBehaviour",
+                "usr": "c:@EA@HyBidCustomEndcardDisplayBehaviour"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(py)customEndcardDisplay",
+            "mangledName": "$s5HyBid0aB15RenderingConfigC20customEndcardDisplaySo0ab6CustomfG9Behaviouravp",
+            "moduleName": "HyBid",
+            "deprecated": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "Available"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidCustomEndcardDisplayBehaviour",
+                    "printedName": "HyBid.HyBidCustomEndcardDisplayBehaviour",
+                    "usr": "c:@EA@HyBidCustomEndcardDisplayBehaviour"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)customEndcardDisplay",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC20customEndcardDisplaySo0ab6CustomfG9Behaviouravg",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HyBidCustomEndcardDisplayBehaviour",
+                    "printedName": "HyBid.HyBidCustomEndcardDisplayBehaviour",
+                    "usr": "c:@EA@HyBidCustomEndcardDisplayBehaviour"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)setCustomEndcardDisplay:",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC20customEndcardDisplaySo0ab6CustomfG9Behaviouravs",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5HyBid0aB15RenderingConfigC20customEndcardDisplaySo0ab6CustomfG9BehaviouravM",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC20customEndcardDisplaySo0ab6CustomfG9BehaviouravM",
+                "moduleName": "HyBid",
+                "deprecated": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "creativeAutoStorekitEnabled",
+            "printedName": "creativeAutoStorekitEnabled",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14456,15 +17463,18 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(py)bannerSKOverlay",
-            "mangledName": "$s5HyBid0aB15RenderingConfigC15bannerSKOverlaySbvp",
+            "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(py)creativeAutoStorekitEnabled",
+            "mangledName": "$s5HyBid0aB15RenderingConfigC27creativeAutoStorekitEnabledSbvp",
             "moduleName": "HyBid",
             "deprecated": true,
             "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
               "AccessControl",
               "ObjC",
               "Available"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -14479,13 +17489,63 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)bannerSKOverlay",
-                "mangledName": "$s5HyBid0aB15RenderingConfigC15bannerSKOverlaySbvg",
+                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)creativeAutoStorekitEnabled",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC27creativeAutoStorekitEnabledSbvg",
                 "moduleName": "HyBid",
+                "implicit": true,
                 "declAttributes": [
                   "ObjC"
                 ],
                 "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@HyBid@objc(cs)HyBidRenderingConfig(im)setCreativeAutoStorekitEnabled:",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC27creativeAutoStorekitEnabledSbvs",
+                "moduleName": "HyBid",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5HyBid0aB15RenderingConfigC27creativeAutoStorekitEnabledSbvM",
+                "mangledName": "$s5HyBid0aB15RenderingConfigC27creativeAutoStorekitEnabledSbvM",
+                "moduleName": "HyBid",
+                "deprecated": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
               }
             ]
           }
@@ -14500,6 +17560,136 @@
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIDevice",
+        "printedName": "UIDevice",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "modelName",
+            "printedName": "modelName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So8UIDeviceC5HyBidE9modelNameSSvpZ",
+            "mangledName": "$sSo8UIDeviceC5HyBidE9modelNameSSvpZ",
+            "moduleName": "HyBid",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIDeviceC5HyBidE9modelNameSSvgZ",
+                "mangledName": "$sSo8UIDeviceC5HyBidE9modelNameSSvgZ",
+                "moduleName": "HyBid",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIDevice",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIDevice",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -14589,6 +17779,83 @@
       "value": "\"https:\/\/dsp.pubnative.net\""
     },
     {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1314,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1378,
+      "length": 3,
+      "value": "\"7\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1477,
+      "length": 3,
+      "value": "\"5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1548,
+      "length": 3,
+      "value": "\"6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1649,
+      "length": 3,
+      "value": "\"5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1756,
+      "length": 3,
+      "value": "\"3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1825,
+      "length": 3,
+      "value": "\"4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1934,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2010,
+      "length": 3,
+      "value": "\"2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2090,
+      "length": 3,
+      "value": "\"5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidImpressionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2171,
+      "length": 3,
+      "value": "\"6\""
+    },
+    {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/MRAID\/HyBidMRAIDCloseCardView.swift",
       "kind": "FloatLiteral",
       "offset": 1804,
@@ -14626,14 +17893,910 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
       "kind": "BooleanLiteral",
-      "offset": 1495,
+      "offset": 1728,
       "length": 4,
       "value": "true"
     },
     {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13336,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13422,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13632,
+      "length": 9,
+      "value": "\"iPod5,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13682,
+      "length": 14,
+      "value": "\"iPod Touch 5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13708,
+      "length": 9,
+      "value": "\"iPod7,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13758,
+      "length": 14,
+      "value": "\"iPod Touch 6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13784,
+      "length": 11,
+      "value": "\"iPhone3,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13797,
+      "length": 11,
+      "value": "\"iPhone3,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13810,
+      "length": 11,
+      "value": "\"iPhone3,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13834,
+      "length": 10,
+      "value": "\"iPhone 4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13856,
+      "length": 11,
+      "value": "\"iPhone4,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13906,
+      "length": 11,
+      "value": "\"iPhone 4s\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13929,
+      "length": 11,
+      "value": "\"iPhone5,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13942,
+      "length": 11,
+      "value": "\"iPhone5,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 13979,
+      "length": 10,
+      "value": "\"iPhone 5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14001,
+      "length": 11,
+      "value": "\"iPhone5,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14014,
+      "length": 11,
+      "value": "\"iPhone5,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14051,
+      "length": 11,
+      "value": "\"iPhone 5c\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14074,
+      "length": 11,
+      "value": "\"iPhone6,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14087,
+      "length": 11,
+      "value": "\"iPhone6,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14124,
+      "length": 11,
+      "value": "\"iPhone 5s\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14147,
+      "length": 11,
+      "value": "\"iPhone7,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14197,
+      "length": 10,
+      "value": "\"iPhone 6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14219,
+      "length": 11,
+      "value": "\"iPhone7,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14269,
+      "length": 15,
+      "value": "\"iPhone 6 Plus\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14296,
+      "length": 11,
+      "value": "\"iPhone8,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14346,
+      "length": 11,
+      "value": "\"iPhone 6s\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14369,
+      "length": 11,
+      "value": "\"iPhone8,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14419,
+      "length": 16,
+      "value": "\"iPhone 6s Plus\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14447,
+      "length": 11,
+      "value": "\"iPhone9,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14460,
+      "length": 11,
+      "value": "\"iPhone9,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14497,
+      "length": 10,
+      "value": "\"iPhone 7\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14519,
+      "length": 11,
+      "value": "\"iPhone9,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14532,
+      "length": 11,
+      "value": "\"iPhone9,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14569,
+      "length": 15,
+      "value": "\"iPhone 7 Plus\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14596,
+      "length": 11,
+      "value": "\"iPhone8,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14646,
+      "length": 11,
+      "value": "\"iPhone SE\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14669,
+      "length": 12,
+      "value": "\"iPhone10,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14683,
+      "length": 12,
+      "value": "\"iPhone10,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14719,
+      "length": 10,
+      "value": "\"iPhone 8\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14741,
+      "length": 12,
+      "value": "\"iPhone10,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14755,
+      "length": 12,
+      "value": "\"iPhone10,5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14791,
+      "length": 15,
+      "value": "\"iPhone 8 Plus\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14818,
+      "length": 12,
+      "value": "\"iPhone10,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14832,
+      "length": 12,
+      "value": "\"iPhone10,6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14868,
+      "length": 10,
+      "value": "\"iPhone X\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14890,
+      "length": 12,
+      "value": "\"iPhone11,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14940,
+      "length": 11,
+      "value": "\"iPhone XS\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14963,
+      "length": 12,
+      "value": "\"iPhone11,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 14977,
+      "length": 12,
+      "value": "\"iPhone11,6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15013,
+      "length": 15,
+      "value": "\"iPhone XS Max\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15040,
+      "length": 12,
+      "value": "\"iPhone11,8\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15090,
+      "length": 11,
+      "value": "\"iPhone XR\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15113,
+      "length": 9,
+      "value": "\"iPad2,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15124,
+      "length": 9,
+      "value": "\"iPad2,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15135,
+      "length": 9,
+      "value": "\"iPad2,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15146,
+      "length": 9,
+      "value": "\"iPad2,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15163,
+      "length": 8,
+      "value": "\"iPad 2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15183,
+      "length": 9,
+      "value": "\"iPad3,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15194,
+      "length": 9,
+      "value": "\"iPad3,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15205,
+      "length": 9,
+      "value": "\"iPad3,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15233,
+      "length": 8,
+      "value": "\"iPad 3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15253,
+      "length": 9,
+      "value": "\"iPad3,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15264,
+      "length": 9,
+      "value": "\"iPad3,5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15275,
+      "length": 9,
+      "value": "\"iPad3,6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15303,
+      "length": 8,
+      "value": "\"iPad 4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15323,
+      "length": 9,
+      "value": "\"iPad4,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15334,
+      "length": 9,
+      "value": "\"iPad4,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15345,
+      "length": 9,
+      "value": "\"iPad4,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15373,
+      "length": 10,
+      "value": "\"iPad Air\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15395,
+      "length": 9,
+      "value": "\"iPad5,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15406,
+      "length": 9,
+      "value": "\"iPad5,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15445,
+      "length": 12,
+      "value": "\"iPad Air 2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15469,
+      "length": 10,
+      "value": "\"iPad6,11\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15481,
+      "length": 10,
+      "value": "\"iPad6,12\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15519,
+      "length": 8,
+      "value": "\"iPad 5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15539,
+      "length": 9,
+      "value": "\"iPad7,5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15550,
+      "length": 9,
+      "value": "\"iPad7,6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15589,
+      "length": 8,
+      "value": "\"iPad 6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15609,
+      "length": 9,
+      "value": "\"iPad2,5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15620,
+      "length": 9,
+      "value": "\"iPad2,6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15631,
+      "length": 9,
+      "value": "\"iPad2,7\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15659,
+      "length": 11,
+      "value": "\"iPad Mini\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15682,
+      "length": 9,
+      "value": "\"iPad4,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15693,
+      "length": 9,
+      "value": "\"iPad4,5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15704,
+      "length": 9,
+      "value": "\"iPad4,6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15732,
+      "length": 13,
+      "value": "\"iPad Mini 2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15757,
+      "length": 9,
+      "value": "\"iPad4,7\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15768,
+      "length": 9,
+      "value": "\"iPad4,8\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15779,
+      "length": 9,
+      "value": "\"iPad4,9\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15807,
+      "length": 13,
+      "value": "\"iPad Mini 3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15832,
+      "length": 9,
+      "value": "\"iPad5,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15843,
+      "length": 9,
+      "value": "\"iPad5,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15882,
+      "length": 13,
+      "value": "\"iPad Mini 4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15907,
+      "length": 9,
+      "value": "\"iPad6,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15918,
+      "length": 9,
+      "value": "\"iPad6,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15957,
+      "length": 21,
+      "value": "\"iPad Pro (9.7-inch)\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 15990,
+      "length": 9,
+      "value": "\"iPad6,7\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16001,
+      "length": 9,
+      "value": "\"iPad6,8\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16040,
+      "length": 22,
+      "value": "\"iPad Pro (12.9-inch)\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16074,
+      "length": 9,
+      "value": "\"iPad7,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16085,
+      "length": 9,
+      "value": "\"iPad7,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16124,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16175,
+      "length": 9,
+      "value": "\"iPad7,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16186,
+      "length": 9,
+      "value": "\"iPad7,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16225,
+      "length": 22,
+      "value": "\"iPad Pro (10.5-inch)\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16259,
+      "length": 9,
+      "value": "\"iPad8,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16270,
+      "length": 9,
+      "value": "\"iPad8,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16281,
+      "length": 9,
+      "value": "\"iPad8,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16292,
+      "length": 9,
+      "value": "\"iPad8,4\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16309,
+      "length": 20,
+      "value": "\"iPad Pro (11-inch)\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16341,
+      "length": 9,
+      "value": "\"iPad8,5\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16352,
+      "length": 9,
+      "value": "\"iPad8,6\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16363,
+      "length": 9,
+      "value": "\"iPad8,7\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16374,
+      "length": 9,
+      "value": "\"iPad8,8\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16391,
+      "length": 39,
+      "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16442,
+      "length": 12,
+      "value": "\"AppleTV5,3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16492,
+      "length": 10,
+      "value": "\"Apple TV\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16514,
+      "length": 12,
+      "value": "\"AppleTV6,2\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16564,
+      "length": 13,
+      "value": "\"Apple TV 4K\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16589,
+      "length": 19,
+      "value": "\"AudioAccessory1,1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16639,
+      "length": 9,
+      "value": "\"HomePod\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16660,
+      "length": 6,
+      "value": "\"i386\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16668,
+      "length": 8,
+      "value": "\"x86_64\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16710,
+      "length": 104,
+      "value": "\"Simulator \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16773,
+      "length": 28,
+      "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16806,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSettings.swift",
+      "kind": "StringLiteral",
+      "offset": 16813,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingEvent.swift",
       "kind": "Dictionary",
-      "offset": 1321,
+      "offset": 1322,
       "length": 3,
       "value": "[]"
     },
@@ -14647,77 +18810,84 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1202,
+      "offset": 1278,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1236,
+      "offset": 1336,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1280,
+      "offset": 1404,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1319,
+      "offset": 1467,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1362,
+      "offset": 1534,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1406,
+      "offset": 1607,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1675,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "BooleanLiteral",
-      "offset": 1535,
+      "offset": 1756,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1580,
+      "offset": 1801,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 1825,
+      "offset": 2046,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "IntegerLiteral",
-      "offset": 2015,
+      "offset": 2236,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidSkipOffset.swift",
       "kind": "StringLiteral",
-      "offset": 1429,
+      "offset": 1189,
       "length": 15,
       "value": "\"HyBid.HyBidSkipOffset\""
     },
@@ -14775,14 +18945,14 @@
       "kind": "StringLiteral",
       "offset": 1322,
       "length": 8,
-      "value": "\"2.19.0\""
+      "value": "\"2.20.0\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
       "kind": "StringLiteral",
       "offset": 1381,
       "length": 7,
-      "value": "\"1.4.3\""
+      "value": "\"1.4.8\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/HyBidConstants.swift",
@@ -15396,133 +19566,161 @@
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5269,
+      "offset": 5194,
+      "length": 27,
+      "value": "\"custom_endcard_impression\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 5273,
+      "length": 22,
+      "value": "\"custom_endcard_click\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
+      "kind": "StringLiteral",
+      "offset": 5427,
       "length": 10,
       "value": "\"standard\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5316,
+      "offset": 5474,
       "length": 7,
       "value": "\"video\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5445,
+      "offset": 5603,
       "length": 8,
       "value": "\"native\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5491,
+      "offset": 5649,
       "length": 8,
       "value": "\"banner\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5541,
+      "offset": 5699,
       "length": 12,
       "value": "\"fullscreen\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Analytics\/HyBidReportingProperties.swift",
       "kind": "StringLiteral",
-      "offset": 5593,
+      "offset": 5751,
       "length": 10,
       "value": "\"rewarded\""
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1675,
+      "offset": 1691,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2043,
+      "offset": 2075,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2407,
+      "offset": 2455,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2782,
+      "offset": 2846,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3147,
+      "offset": 3227,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3522,
+      "offset": 3618,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4080,
+      "offset": 4207,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3804,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4737,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5028,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5618,
+      "offset": 3900,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5908,
+      "offset": 4391,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 6195,
+      "offset": 5017,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5308,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5895,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6185,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6472,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/pubnative\/pubnative-hybid-ios-sdk\/PubnativeLite\/PubnativeLite\/Core\/Swift\/Config\/HyBidRenderingConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7117,
       "length": 5,
       "value": "false"
     }

@@ -231,6 +231,7 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -424,6 +425,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)REWARD SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SESSION_REPORT_INFO;)
 + (NSString * _Nonnull)SESSION_REPORT_INFO SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull CUSTOM_ENDCARD_IMPRESSION;)
++ (NSString * _Nonnull)CUSTOM_ENDCARD_IMPRESSION SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull CUSTOM_ENDCARD_CLICK;)
++ (NSString * _Nonnull)CUSTOM_ENDCARD_CLICK SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -448,6 +453,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)HYBID_OMSDK_VERSION SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_OMSDK_IDENTIFIER;)
 + (NSString * _Nonnull)HYBID_OMSDK_IDENTIFIER SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5HyBid24HyBidImpressionConstants")
+@interface HyBidImpressionConstants : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PLACEMENT_POSITION_UNKNOWN;)
++ (NSString * _Nonnull)PLACEMENT_POSITION_UNKNOWN SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PLACEMENT_POSITION_FULLSCREEN;)
++ (NSString * _Nonnull)PLACEMENT_POSITION_FULLSCREEN SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EXPANDABLE_DIRECTION_FULLSCREEN;)
++ (NSString * _Nonnull)EXPANDABLE_DIRECTION_FULLSCREEN SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EXPANDABLE_DIRECTION_RESIZE_MINIMIZE;)
++ (NSString * _Nonnull)EXPANDABLE_DIRECTION_RESIZE_MINIMIZE SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLACEMENT_TYPE_INTERSTITIAL;)
++ (NSString * _Nonnull)VIDEO_PLACEMENT_TYPE_INTERSTITIAL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLACEMENT_SUBTYPE_INTERSTITIAL;)
++ (NSString * _Nonnull)VIDEO_PLACEMENT_SUBTYPE_INTERSTITIAL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLACEMENT_SUBTYPE_STANDALONE;)
++ (NSString * _Nonnull)VIDEO_PLACEMENT_SUBTYPE_STANDALONE SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ON;)
++ (NSString * _Nonnull)VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ON SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFF;)
++ (NSString * _Nonnull)VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFF SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ON;)
++ (NSString * _Nonnull)VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ON SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFF;)
++ (NSString * _Nonnull)VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFF SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -548,6 +581,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidRenderi
 @property (nonatomic, strong) HyBidSkipOffset * _Nonnull endCardCloseOffset SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic, strong) HyBidSkipOffset * _Nonnull nativeCloseButtonOffset SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL showEndCard SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
+@property (nonatomic) BOOL customEndCard SWIFT_DEPRECATED_MSG("You can safely remove this method from your integration.");
 @property (nonatomic) HyBidInterstitialActionBehaviour interstitialActionBehaviour SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL interstitialCloseOnFinish SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL rewardedCloseOnFinish SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
@@ -555,7 +589,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidRenderi
 @property (nonatomic) BOOL mraidExpand SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL interstitialSKOverlay SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL rewardedSKOverlay SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
-@property (nonatomic, readonly) BOOL bannerSKOverlay SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
+@property (nonatomic) HyBidCustomEndcardDisplayBehaviour customEndcardDisplay SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
+@property (nonatomic) BOOL creativeAutoStorekitEnabled SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @end
 
 @class HyBidReportingEvent;
@@ -568,7 +603,7 @@ SWIFT_PROTOCOL("_TtP5HyBid22HyBidReportingDelegate_")
 
 SWIFT_CLASS("_TtC5HyBid19HyBidReportingEvent")
 @interface HyBidReportingEvent : NSObject
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull properties;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable properties;
 @property (nonatomic, copy) NSString * _Nonnull eventType;
 - (nonnull instancetype)initWith:(NSString * _Nonnull)eventType adFormat:(NSString * _Nullable)adFormat properties:(NSDictionary<NSString *, id> * _Nullable)properties OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWith:(NSString * _Nonnull)eventType errorMessage:(NSString * _Nullable)errorMessage properties:(NSDictionary<NSString *, id> * _Nullable)properties OBJC_DESIGNATED_INITIALIZER;
@@ -664,17 +699,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidSession
 - (NSString * _Nonnull)getAgeOfApp SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class CLLocationManager;
 @class CLLocation;
 
 SWIFT_CLASS("_TtC5HyBid13HyBidSettings")
-@interface HyBidSettings : NSObject
+@interface HyBidSettings : NSObject <CLLocationManagerDelegate>
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidSettings * _Nonnull sharedInstance;)
 + (HyBidSettings * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @property (nonatomic) BOOL supportMultipleFidelities;
 @property (nonatomic, readonly, copy) NSString * _Nullable advertisingId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull os;
 @property (nonatomic, readonly, copy) NSString * _Nonnull osVersion;
-@property (nonatomic, readonly, copy) NSString * _Nonnull deviceName;
+@property (nonatomic, readonly, copy) NSString * _Nonnull deviceModel;
+@property (nonatomic, readonly, copy) NSString * _Nonnull deviceModelIdentifier;
+@property (nonatomic, readonly, copy) NSString * _Nonnull deviceMake;
+@property (nonatomic, readonly, copy) NSString * _Nonnull deviceType;
+@property (nonatomic, readonly, copy) NSString * _Nonnull screenHeightInPixelss;
+@property (nonatomic, readonly, copy) NSString * _Nonnull screenWidthInPixels;
+@property (nonatomic, readonly, copy) NSString * _Nonnull pxRatio;
+@property (nonatomic, readonly, copy) NSString * _Nullable language;
+@property (nonatomic, readonly, copy) NSString * _Nonnull jsValue;
+- (NSString * _Nonnull)geoFetchSupport SWIFT_WARN_UNUSED_RESULT;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
+@property (nonatomic, readonly, copy) NSString * _Nullable languageBCP47;
+@property (nonatomic, readonly, copy) NSString * _Nullable carrierName;
+@property (nonatomic, readonly, copy) NSString * _Nullable carrierMCCMNC;
+@property (nonatomic, readonly, copy) NSString * _Nonnull connectionType SWIFT_AVAILABILITY(ios,introduced=14.1);
 @property (nonatomic, readonly, copy) NSString * _Nonnull deviceWidth;
 @property (nonatomic, readonly, copy) NSString * _Nonnull deviceHeight;
 @property (nonatomic, readonly, copy) NSString * _Nonnull orientation;
@@ -684,16 +736,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidSetting
 @property (nonatomic, copy) NSString * _Nullable sdkVersion;
 @property (nonatomic, readonly, copy) NSString * _Nullable appBundleID;
 @property (nonatomic, readonly, copy) NSString * _Nullable appVersion;
+@property (nonatomic, readonly, copy) NSString * _Nonnull isDeviceCharging;
+@property (nonatomic, readonly, copy) NSString * _Nullable batteryLevel;
+@property (nonatomic, readonly, copy) NSString * _Nonnull batterySaver;
 @property (nonatomic, readonly, strong) CLLocation * _Nullable location;
 @property (nonatomic, readonly, copy) NSString * _Nullable identifierForVendor;
 @property (nonatomic, readonly, copy) NSString * _Nullable ip;
 @property (nonatomic, readonly, strong) NSNumber * _Nullable appTrackingTransparency;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nullable isDarkModeEnabled;
+@property (nonatomic, readonly, copy) NSString * _Nullable isAirplaneModeEnabled;
 @end
 
 
 SWIFT_CLASS("_TtC5HyBid15HyBidSkipOffset")
 @interface HyBidSkipOffset : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_VIDEO_SKIP_OFFSET;)
++ (NSInteger)DEFAULT_VIDEO_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_HTML_SKIP_OFFSET;)
++ (NSInteger)DEFAULT_HTML_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD;)
++ (NSInteger)DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_END_CARD_CLOSE_OFFSET;)
++ (NSInteger)DEFAULT_END_CARD_CLOSE_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_REWARDED_VIDEO_SKIP_OFFSET;)
++ (NSInteger)DEFAULT_REWARDED_VIDEO_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSET;)
++ (NSInteger)DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_NATIVE_CLOSE_BUTTON_OFFSET;)
++ (NSInteger)DEFAULT_NATIVE_CLOSE_BUTTON_OFFSET SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) NSNumber * _Nullable offset;
 @property (nonatomic) BOOL isCustom;
 @property (nonatomic, strong) NSNumber * _Nonnull style;
@@ -713,6 +783,34 @@ SWIFT_CLASS("_TtC5HyBid19HyBidTargetingModel")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol HyBidURLRedirectorDelegate;
+@class NSURLSession;
+@class NSURLSessionTask;
+@class NSHTTPURLResponse;
+@class NSURLRequest;
+@class NSURLSessionDataTask;
+@class NSURLResponse;
+
+SWIFT_CLASS("_TtC5HyBid18HyBidURLRedirector")
+@interface HyBidURLRedirector : NSObject <NSURLSessionDataDelegate>
+@property (nonatomic, weak) id <HyBidURLRedirectorDelegate> _Nullable delegate;
+@property (nonatomic, copy) NSString * _Nullable userAgent;
+- (void)drillWithUrl:(NSString * _Nonnull)url;
+- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
+- (void)URLSession:(NSURLSession * _Nonnull)session dataTask:(NSURLSessionDataTask * _Nonnull)dataTask didReceiveResponse:(NSURLResponse * _Nonnull)response completionHandler:(void (^ _Nonnull)(NSURLSessionResponseDisposition))completionHandler;
+- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didCompleteWithError:(NSError * _Nullable)error;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP5HyBid26HyBidURLRedirectorDelegate_")
+@protocol HyBidURLRedirectorDelegate
+- (void)onURLRedirectorStartWithUrl:(NSString * _Nonnull)url;
+- (void)onURLRedirectorRedirectWithUrl:(NSString * _Nonnull)url;
+- (void)onURLRedirectorFinishWithUrl:(NSString * _Nonnull)url;
+- (void)onURLRedirectorFailWithUrl:(NSString * _Nonnull)url withError:(NSError * _Nonnull)error;
+@end
+
 
 SWIFT_CLASS("_TtC5HyBid21HyBidViewbilityConfig")
 @interface HyBidViewbilityConfig : NSObject
@@ -724,6 +822,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidViewbil
 @property (nonatomic) NSInteger minVisibleTime;
 @property (nonatomic) double minVisiblePercent;
 @end
+
 
 #endif
 #if defined(__cplusplus)
@@ -966,6 +1065,7 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -1159,6 +1259,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)REWARD SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SESSION_REPORT_INFO;)
 + (NSString * _Nonnull)SESSION_REPORT_INFO SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull CUSTOM_ENDCARD_IMPRESSION;)
++ (NSString * _Nonnull)CUSTOM_ENDCARD_IMPRESSION SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull CUSTOM_ENDCARD_CLICK;)
++ (NSString * _Nonnull)CUSTOM_ENDCARD_CLICK SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1183,6 +1287,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)HYBID_OMSDK_VERSION SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull HYBID_OMSDK_IDENTIFIER;)
 + (NSString * _Nonnull)HYBID_OMSDK_IDENTIFIER SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5HyBid24HyBidImpressionConstants")
+@interface HyBidImpressionConstants : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PLACEMENT_POSITION_UNKNOWN;)
++ (NSString * _Nonnull)PLACEMENT_POSITION_UNKNOWN SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PLACEMENT_POSITION_FULLSCREEN;)
++ (NSString * _Nonnull)PLACEMENT_POSITION_FULLSCREEN SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EXPANDABLE_DIRECTION_FULLSCREEN;)
++ (NSString * _Nonnull)EXPANDABLE_DIRECTION_FULLSCREEN SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EXPANDABLE_DIRECTION_RESIZE_MINIMIZE;)
++ (NSString * _Nonnull)EXPANDABLE_DIRECTION_RESIZE_MINIMIZE SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLACEMENT_TYPE_INTERSTITIAL;)
++ (NSString * _Nonnull)VIDEO_PLACEMENT_TYPE_INTERSTITIAL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLACEMENT_SUBTYPE_INTERSTITIAL;)
++ (NSString * _Nonnull)VIDEO_PLACEMENT_SUBTYPE_INTERSTITIAL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLACEMENT_SUBTYPE_STANDALONE;)
++ (NSString * _Nonnull)VIDEO_PLACEMENT_SUBTYPE_STANDALONE SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ON;)
++ (NSString * _Nonnull)VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_ON SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFF;)
++ (NSString * _Nonnull)VIDEO_PLAYBACK_METHOD_PAGE_LOAD_SOUND_OFF SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ON;)
++ (NSString * _Nonnull)VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_ON SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFF;)
++ (NSString * _Nonnull)VIDEO_PLAYBACK_METHOD_ENTER_VIEWPORT_SOUND_OFF SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1283,6 +1415,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidRenderi
 @property (nonatomic, strong) HyBidSkipOffset * _Nonnull endCardCloseOffset SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic, strong) HyBidSkipOffset * _Nonnull nativeCloseButtonOffset SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL showEndCard SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
+@property (nonatomic) BOOL customEndCard SWIFT_DEPRECATED_MSG("You can safely remove this method from your integration.");
 @property (nonatomic) HyBidInterstitialActionBehaviour interstitialActionBehaviour SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL interstitialCloseOnFinish SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL rewardedCloseOnFinish SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
@@ -1290,7 +1423,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidRenderi
 @property (nonatomic) BOOL mraidExpand SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL interstitialSKOverlay SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @property (nonatomic) BOOL rewardedSKOverlay SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
-@property (nonatomic, readonly) BOOL bannerSKOverlay SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
+@property (nonatomic) HyBidCustomEndcardDisplayBehaviour customEndcardDisplay SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
+@property (nonatomic) BOOL creativeAutoStorekitEnabled SWIFT_DEPRECATED_MSG("Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.");
 @end
 
 @class HyBidReportingEvent;
@@ -1303,7 +1437,7 @@ SWIFT_PROTOCOL("_TtP5HyBid22HyBidReportingDelegate_")
 
 SWIFT_CLASS("_TtC5HyBid19HyBidReportingEvent")
 @interface HyBidReportingEvent : NSObject
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull properties;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable properties;
 @property (nonatomic, copy) NSString * _Nonnull eventType;
 - (nonnull instancetype)initWith:(NSString * _Nonnull)eventType adFormat:(NSString * _Nullable)adFormat properties:(NSDictionary<NSString *, id> * _Nullable)properties OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWith:(NSString * _Nonnull)eventType errorMessage:(NSString * _Nullable)errorMessage properties:(NSDictionary<NSString *, id> * _Nullable)properties OBJC_DESIGNATED_INITIALIZER;
@@ -1399,17 +1533,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidSession
 - (NSString * _Nonnull)getAgeOfApp SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class CLLocationManager;
 @class CLLocation;
 
 SWIFT_CLASS("_TtC5HyBid13HyBidSettings")
-@interface HyBidSettings : NSObject
+@interface HyBidSettings : NSObject <CLLocationManagerDelegate>
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidSettings * _Nonnull sharedInstance;)
 + (HyBidSettings * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @property (nonatomic) BOOL supportMultipleFidelities;
 @property (nonatomic, readonly, copy) NSString * _Nullable advertisingId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull os;
 @property (nonatomic, readonly, copy) NSString * _Nonnull osVersion;
-@property (nonatomic, readonly, copy) NSString * _Nonnull deviceName;
+@property (nonatomic, readonly, copy) NSString * _Nonnull deviceModel;
+@property (nonatomic, readonly, copy) NSString * _Nonnull deviceModelIdentifier;
+@property (nonatomic, readonly, copy) NSString * _Nonnull deviceMake;
+@property (nonatomic, readonly, copy) NSString * _Nonnull deviceType;
+@property (nonatomic, readonly, copy) NSString * _Nonnull screenHeightInPixelss;
+@property (nonatomic, readonly, copy) NSString * _Nonnull screenWidthInPixels;
+@property (nonatomic, readonly, copy) NSString * _Nonnull pxRatio;
+@property (nonatomic, readonly, copy) NSString * _Nullable language;
+@property (nonatomic, readonly, copy) NSString * _Nonnull jsValue;
+- (NSString * _Nonnull)geoFetchSupport SWIFT_WARN_UNUSED_RESULT;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
+@property (nonatomic, readonly, copy) NSString * _Nullable languageBCP47;
+@property (nonatomic, readonly, copy) NSString * _Nullable carrierName;
+@property (nonatomic, readonly, copy) NSString * _Nullable carrierMCCMNC;
+@property (nonatomic, readonly, copy) NSString * _Nonnull connectionType SWIFT_AVAILABILITY(ios,introduced=14.1);
 @property (nonatomic, readonly, copy) NSString * _Nonnull deviceWidth;
 @property (nonatomic, readonly, copy) NSString * _Nonnull deviceHeight;
 @property (nonatomic, readonly, copy) NSString * _Nonnull orientation;
@@ -1419,16 +1570,34 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidSetting
 @property (nonatomic, copy) NSString * _Nullable sdkVersion;
 @property (nonatomic, readonly, copy) NSString * _Nullable appBundleID;
 @property (nonatomic, readonly, copy) NSString * _Nullable appVersion;
+@property (nonatomic, readonly, copy) NSString * _Nonnull isDeviceCharging;
+@property (nonatomic, readonly, copy) NSString * _Nullable batteryLevel;
+@property (nonatomic, readonly, copy) NSString * _Nonnull batterySaver;
 @property (nonatomic, readonly, strong) CLLocation * _Nullable location;
 @property (nonatomic, readonly, copy) NSString * _Nullable identifierForVendor;
 @property (nonatomic, readonly, copy) NSString * _Nullable ip;
 @property (nonatomic, readonly, strong) NSNumber * _Nullable appTrackingTransparency;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nullable isDarkModeEnabled;
+@property (nonatomic, readonly, copy) NSString * _Nullable isAirplaneModeEnabled;
 @end
 
 
 SWIFT_CLASS("_TtC5HyBid15HyBidSkipOffset")
 @interface HyBidSkipOffset : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_VIDEO_SKIP_OFFSET;)
++ (NSInteger)DEFAULT_VIDEO_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_HTML_SKIP_OFFSET;)
++ (NSInteger)DEFAULT_HTML_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD;)
++ (NSInteger)DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_END_CARD_CLOSE_OFFSET;)
++ (NSInteger)DEFAULT_END_CARD_CLOSE_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_REWARDED_VIDEO_SKIP_OFFSET;)
++ (NSInteger)DEFAULT_REWARDED_VIDEO_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSET;)
++ (NSInteger)DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSET SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger DEFAULT_NATIVE_CLOSE_BUTTON_OFFSET;)
++ (NSInteger)DEFAULT_NATIVE_CLOSE_BUTTON_OFFSET SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, strong) NSNumber * _Nullable offset;
 @property (nonatomic) BOOL isCustom;
 @property (nonatomic, strong) NSNumber * _Nonnull style;
@@ -1448,6 +1617,34 @@ SWIFT_CLASS("_TtC5HyBid19HyBidTargetingModel")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol HyBidURLRedirectorDelegate;
+@class NSURLSession;
+@class NSURLSessionTask;
+@class NSHTTPURLResponse;
+@class NSURLRequest;
+@class NSURLSessionDataTask;
+@class NSURLResponse;
+
+SWIFT_CLASS("_TtC5HyBid18HyBidURLRedirector")
+@interface HyBidURLRedirector : NSObject <NSURLSessionDataDelegate>
+@property (nonatomic, weak) id <HyBidURLRedirectorDelegate> _Nullable delegate;
+@property (nonatomic, copy) NSString * _Nullable userAgent;
+- (void)drillWithUrl:(NSString * _Nonnull)url;
+- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
+- (void)URLSession:(NSURLSession * _Nonnull)session dataTask:(NSURLSessionDataTask * _Nonnull)dataTask didReceiveResponse:(NSURLResponse * _Nonnull)response completionHandler:(void (^ _Nonnull)(NSURLSessionResponseDisposition))completionHandler;
+- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didCompleteWithError:(NSError * _Nullable)error;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP5HyBid26HyBidURLRedirectorDelegate_")
+@protocol HyBidURLRedirectorDelegate
+- (void)onURLRedirectorStartWithUrl:(NSString * _Nonnull)url;
+- (void)onURLRedirectorRedirectWithUrl:(NSString * _Nonnull)url;
+- (void)onURLRedirectorFinishWithUrl:(NSString * _Nonnull)url;
+- (void)onURLRedirectorFailWithUrl:(NSString * _Nonnull)url withError:(NSError * _Nonnull)error;
+@end
+
 
 SWIFT_CLASS("_TtC5HyBid21HyBidViewbilityConfig")
 @interface HyBidViewbilityConfig : NSObject
@@ -1459,6 +1656,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) HyBidViewbil
 @property (nonatomic) NSInteger minVisibleTime;
 @property (nonatomic) double minVisiblePercent;
 @end
+
 
 #endif
 #if defined(__cplusplus)
