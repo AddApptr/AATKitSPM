@@ -15,8 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *_Nonnull) amznSlots APS_DEPRECATED_MESSAGE("Use -[APSAd amznSlots] instead.");
 
-- (DTBAdSize *_Nonnull) adSize APS_DEPRECATED_MESSAGE();
-
 - (NSDictionary * _Nonnull)mediationHints:(BOOL) isSmartBanner APS_DEPRECATED_MESSAGE();
 
 - (NSDictionary *_Nonnull) mediationHints APS_DEPRECATED_MESSAGE("Use -[APSAd mediationHints] instead.");

@@ -12,22 +12,25 @@
 
 @class DTBSlotGroup;
 
-/* NOTE: these values have been decided based on the custom
- * encoding scheme. We have chosen the following values for the
- * consent status: Unknown = 1, Explicit Yes = 7, Explicit No = 0 */
+/* NOTE:
+    1. Deprecated since APS no longer supports the non-IAB consent.
+    2. These values have been decided ...
+*/
 typedef NS_ENUM(NSInteger, DTBConsentStatus) {
     CONSENT_NOT_DEFINED = -1,
     UNKNOWN             = 1,
     EXPLICIT_YES        = 7,
     EXPLICIT_NO         = 0
-};
+} APS_NON_IAB_DEPRECATED_MESSAGE("APS no longer supports this API. For GDPR, we support TCFv2 strings. Implementation instructions can be found on the APS Portal under Resources > Privacy");
 
-/* Same as above. These values have been decided based on the custom
- * encoding protocol. */
+/* NOTE:
+     1. Deprecated since APS no longer supports the non-IAB consent.
+     2. These values have been decided ...
+ */
 typedef NS_ENUM(NSInteger, DTBCMPFlavor) {
     CMP_NOT_DEFINED = -1,
     GOOGLE_CMP      = 1
-};
+} APS_NON_IAB_DEPRECATED_MESSAGE("APS no longer supports this API. For GDPR, we support TCFv2 strings. Implementation instructions can be found on the APS Portal under Resources > Privacy");
 
 typedef enum {
     // set as default to DFP
@@ -53,15 +56,19 @@ typedef enum {
 // Serverless Environment Markers
 @property (nonatomic, copy) NSArray *_Nonnull serverlessMarkers APS_DEPRECATED_MESSAGE();
 
-/**
- * Use these APIs if your app is using Non-IAB GDPR Compliance (ex: AdMob)
+/* NOTE:
+     1. Deprecated since APS no longer supports the non-IAB consent.
+     2. These values have been decided ...
  */
-- (void)setVendorList:(NSArray<NSNumber *> *_Nullable) vendorList APS_DEPRECATED_MESSAGE();
-- (void)setConsentStatus:(DTBConsentStatus) consentStatus APS_DEPRECATED_MESSAGE("Use +[APS setConsentStatus:] instead.");
-- (void)setCmpFlavor:(DTBCMPFlavor) cmpFlavor APS_DEPRECATED_MESSAGE("Use +[APS setCmpFlavor:] instead.");
+- (void)setVendorList:(NSArray<NSNumber *> *_Nullable) vendorList APS_NON_IAB_DEPRECATED_MESSAGE("APS no longer supports this API. For GDPR, we support TCFv2 strings. Implementation instructions can be found on the APS Portal under Resources > Privacy");
+- (void)setConsentStatus:(DTBConsentStatus) consentStatus APS_NON_IAB_DEPRECATED_MESSAGE("APS no longer supports this API. For GDPR, we support TCFv2 strings. Implementation instructions can be found on the APS Portal under Resources > Privacy");
+- (void)setCmpFlavor:(DTBCMPFlavor) cmpFlavor APS_NON_IAB_DEPRECATED_MESSAGE("APS no longer supports this API. For GDPR, we support TCFv2 strings. Implementation instructions can be found on the APS Portal under Resources > Privacy");
 
-// The client needs to call this API to determine if the consent status is unknown.
-- (BOOL) isConsentStatusUnknown APS_DEPRECATED_MESSAGE();
+/* NOTE:
+     1. Deprecated since APS no longer supports the non-IAB consent.
+     2. These values have been decided ...
+ */
+- (BOOL) isConsentStatusUnknown APS_NON_IAB_DEPRECATED_MESSAGE("APS no longer supports this API. For GDPR, we support TCFv2 strings. Implementation instructions can be found on the APS Portal under Resources > Privacy");
 
 + (DTBAds *_Nonnull) sharedInstance APS_DEPRECATED_MESSAGE("Use APS class instead.");
 
@@ -84,7 +91,11 @@ typedef enum {
 
 - (BOOL) hasAdapters APS_DEPRECATED_MESSAGE();
 
-- (void) removeNonIAB APS_DEPRECATED_MESSAGE();
+/* NOTE:
+     1. Deprecated since APS no longer supports the non-IAB consent.
+     2. These values have been decided ...
+ */
+- (void) removeNonIAB APS_NON_IAB_DEPRECATED_MESSAGE("APS no longer supports this API. For GDPR, we support TCFv2 strings. Implementation instructions can be found on the APS Portal under Resources > Privacy");
 
 - (void)setAPSPublisherExtendedIdFeatureEnabled:(BOOL) publisherExtendedIdFeatureEnabled APS_DEPRECATED_MESSAGE("Use +[APS setPublisherExtendedIdFeatureEnabled:] instead.");
 

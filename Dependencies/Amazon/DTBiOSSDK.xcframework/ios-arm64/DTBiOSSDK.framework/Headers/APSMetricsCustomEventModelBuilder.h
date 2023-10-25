@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (APSMetricsCustomEventModelBuilder *)withEventName:(NSString *)eventName;
 - (APSMetricsCustomEventModelBuilder *)withEventValue:(NSString *)eventValue;
 - (APSMetricsCustomEventModelBuilder *)withEventDetail:(NSDictionary *)extraAttributes;
+- (APSMetricsCustomEventModelBuilder *)withTahoeEventCategory:(NSString *)tahoeEventCategory;
 
 - (NSDictionary * _Nullable)build;
 @end
