@@ -6,39 +6,27 @@
 	<dict>
 		<key>ANBrowserViewController.nib/designtime.nib</key>
 		<data>
-		8Xcoe9mmmjrr6tfmr0ZqcCfO2ZM=
-		</data>
-		<key>ANBrowserViewController.nib/objects-11.0+.nib</key>
-		<data>
-		mbSvjBeh0djgAH8xDxM8f2/EiTg=
+		dPtENNL9LB3iaaGbSeLtvGQ/vLw=
 		</data>
 		<key>ANBrowserViewController.nib/runtime.nib</key>
 		<data>
-		jF8959ypGJNfCz/GDQuTlA9KLJs=
+		WRwcMKzu9OAOeFxntXtpU0IYgLE=
 		</data>
 		<key>ANBrowserViewController_SizeClasses.nib/designtime.nib</key>
 		<data>
-		IJtSSHYx1bIYcuWwKsYMvdFvE2s=
-		</data>
-		<key>ANBrowserViewController_SizeClasses.nib/objects-11.0+.nib</key>
-		<data>
-		SJAwL7oJBNvsLMwb9I/CLxNkZIs=
+		+sKRksMbzm6X0EPHMt7Ff7bIZ/4=
 		</data>
 		<key>ANBrowserViewController_SizeClasses.nib/runtime.nib</key>
 		<data>
-		Wkd3nvHvgbyXHmnhCKA08DO0nmA=
+		4a73T7D3b4jlcnWc3TOnjtZvUAI=
 		</data>
 		<key>ANInterstitialAdViewController.nib/designtime.nib</key>
 		<data>
-		s9qowoWTRSicYnvSTq0sdyUI1eY=
-		</data>
-		<key>ANInterstitialAdViewController.nib/objects-11.0+.nib</key>
-		<data>
-		Wn7cgdz5aBB8+j1WyCfQwG8Y09U=
+		03+pzWWPjMRONgGK7KnHAhMCRbM=
 		</data>
 		<key>ANInterstitialAdViewController.nib/runtime.nib</key>
 		<data>
-		bL7F3fq9S+Vq8cWUxfLVYOZ1UjA=
+		HAjqMFE0XXEMXy17vHkdxBLyBo0=
 		</data>
 		<key>ANMRAID.bundle/mraid.js</key>
 		<data>
@@ -54,7 +42,7 @@
 		</data>
 		<key>Headers/ANAdProtocol.h</key>
 		<data>
-		h3632uVOB3juzxuBB+T9uoLEm5E=
+		zZtZ3WH7G5Jn1V9HM4zAOnlKAfQ=
 		</data>
 		<key>Headers/ANAdResponseCode.h</key>
 		<data>
@@ -70,7 +58,7 @@
 		</data>
 		<key>Headers/ANBannerAdView.h</key>
 		<data>
-		0amETcAOAiSh7xMLIejOlqoSVjI=
+		VL1rHrIx6EcAI5G1tMxKur9c28k=
 		</data>
 		<key>Headers/ANCSRNativeAdResponse.h</key>
 		<data>
@@ -138,7 +126,7 @@
 		</data>
 		<key>Headers/ANSDKSettings.h</key>
 		<data>
-		5u29nImiIJ/xsK1FQMViawZRy+A=
+		3mcteiS9QtznRRljkhQoeIqsD+4=
 		</data>
 		<key>Headers/ANTargetingParameters.h</key>
 		<data>
@@ -166,15 +154,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4D573zRIn27HYxKyOhoaH5hGGqc=
+		4fcyQGd3iMPknr7dpWMq1pwHzSM=
 		</data>
 		<key>MobileVastPlayer.js</key>
 		<data>
-		dx45OD7gaE9PiJQrj6ttU66IP6g=
+		vaePbG8Lm5SZ4o47jVp+IPcIEpc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		o7zHhFObh0dj5TJ8WBWzfv6IthY=
+		sINWw774zQYJUa+q6L3YdMemHiI=
 		</data>
 		<key>PrivateHeaders/ANANJAMImplementation.h</key>
 		<data>
@@ -258,7 +246,7 @@
 		</data>
 		<key>PrivateHeaders/ANNativeAdResponse+PrivateMethods.h</key>
 		<data>
-		BFi9XzeMyA2B/ZrsgUNW07ZQKNU=
+		msFBxqTgwPixFrrxu8mSECU6ULs=
 		</data>
 		<key>PrivateHeaders/ANNativeMediatedAdController.h</key>
 		<data>
@@ -282,7 +270,7 @@
 		</data>
 		<key>PrivateHeaders/ANWebView.h</key>
 		<data>
-		bJqY9cdCJ38a4fEZlBsRCNWWpGs=
+		50UGo93Sfcb3BKo6QTMzofVqW/8=
 		</data>
 		<key>PrivateHeaders/NSString+ANCategory.h</key>
 		<data>
@@ -398,7 +386,7 @@
 		</data>
 		<key>omsdk.js</key>
 		<data>
-		UPsyQ4QhueEUHFjFPzJBwqY+ezo=
+		gVdBfgayhdIXNlrWMEVhGqZrauQ=
 		</data>
 		<key>optionsparser.js</key>
 		<data>
@@ -417,109 +405,48 @@
 	<dict>
 		<key>ANBrowserViewController.nib/designtime.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8Xcoe9mmmjrr6tfmr0ZqcCfO2ZM=
-			</data>
 			<key>hash2</key>
 			<data>
-			MyUQNgcLVclgcuPDNSu/QWMk5AuiXO2gQkFlj6f/31I=
-			</data>
-		</dict>
-		<key>ANBrowserViewController.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mbSvjBeh0djgAH8xDxM8f2/EiTg=
-			</data>
-			<key>hash2</key>
-			<data>
-			rCNJzGed8IQbPWYCfqTp70Hsf5DIZMUJ4RJkfP9c3s4=
+			3R3XN9Rw2H9mdh+l+X3Me2583xENkFPcjp5bX5JQJbQ=
 			</data>
 		</dict>
 		<key>ANBrowserViewController.nib/runtime.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jF8959ypGJNfCz/GDQuTlA9KLJs=
-			</data>
 			<key>hash2</key>
 			<data>
-			x1wVP8g/DwdGMVu4HH1DCO9JfrW0t+KfHVLwJvsIf2M=
+			gI/tm0NSIjsChmAsdo2BHfQ32ors73LEjIth8XU/1pE=
 			</data>
 		</dict>
 		<key>ANBrowserViewController_SizeClasses.nib/designtime.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IJtSSHYx1bIYcuWwKsYMvdFvE2s=
-			</data>
 			<key>hash2</key>
 			<data>
-			yoGEmMQRMERfP6ArbV4XIYvoMUlKGvwT4Wozspjn028=
-			</data>
-		</dict>
-		<key>ANBrowserViewController_SizeClasses.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SJAwL7oJBNvsLMwb9I/CLxNkZIs=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZK3WoSbyM+zNJQpAga4r2UHSxNCgs+hzYtzf/9y+qtA=
+			e1yHXaL4Fsk2X3eE+LI9+PhvyVVQnGbEyC7LdB5VNVE=
 			</data>
 		</dict>
 		<key>ANBrowserViewController_SizeClasses.nib/runtime.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Wkd3nvHvgbyXHmnhCKA08DO0nmA=
-			</data>
 			<key>hash2</key>
 			<data>
-			ULF9FYesWAM4J33qYkNrL7OVl+KwJSNV0g/WJ3ZRB/Q=
+			l3pV5Yk6dGSaWs6DvJ2Agd6BXSzbiN6dYPNvsJs47LM=
 			</data>
 		</dict>
 		<key>ANInterstitialAdViewController.nib/designtime.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			s9qowoWTRSicYnvSTq0sdyUI1eY=
-			</data>
 			<key>hash2</key>
 			<data>
-			9t/ugzuQpo5M74BVGM97TUrdFg5TsAinYAHvGol3tGg=
-			</data>
-		</dict>
-		<key>ANInterstitialAdViewController.nib/objects-11.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Wn7cgdz5aBB8+j1WyCfQwG8Y09U=
-			</data>
-			<key>hash2</key>
-			<data>
-			ngag2Hr6HaoA2aUF1H/6VaDHzr2qmaUCUL4XSQrHXCg=
+			AuN5+84PQv69JcZtW9N77zWYcRm3rouZIjQlaR883xA=
 			</data>
 		</dict>
 		<key>ANInterstitialAdViewController.nib/runtime.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bL7F3fq9S+Vq8cWUxfLVYOZ1UjA=
-			</data>
 			<key>hash2</key>
 			<data>
-			Ns+GrpeO2plBMbrGSOC8MV1fMcUeQeUPrCQ+WJVlBD0=
+			4ecqAoqEhwHgHXRI33iBVHQh14xVPXr6J37mAuIikN8=
 			</data>
 		</dict>
 		<key>ANMRAID.bundle/mraid.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			brGler9TV7tQtvaCqBHvzKjDwlg=
-			</data>
 			<key>hash2</key>
 			<data>
 			1EA5/h8oXqf+nUuPh7hjlZaaWHp/uRudEJJPX6hNbpE=
@@ -527,10 +454,6 @@
 		</dict>
 		<key>ASTMediationManager.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			b4OJusXTBBcqUxvnnf6Uo3KAJbA=
-			</data>
 			<key>hash2</key>
 			<data>
 			BftxM9k/nUuSL57Y9WyeSBW95t/n4EUoFaweTdv3QPQ=
@@ -538,10 +461,6 @@
 		</dict>
 		<key>Headers/ANAdConstants.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/5/ZgA/kP4xEhR4dcW/ZOhyVyQ4=
-			</data>
 			<key>hash2</key>
 			<data>
 			Y1TR1s7KpUTPzeL0HJUcwbGuY8FRTPgUPdLi/xBIWbA=
@@ -549,21 +468,13 @@
 		</dict>
 		<key>Headers/ANAdProtocol.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			h3632uVOB3juzxuBB+T9uoLEm5E=
-			</data>
 			<key>hash2</key>
 			<data>
-			uStUCqBldMI1P+yBfKD+yhRogwLs74KqMac52/fxW18=
+			u92ebVqzvk5JZC5MDLHwyRfEONFVQNcmT0qP16dNDy8=
 			</data>
 		</dict>
 		<key>Headers/ANAdResponseCode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OH3m1MhKH+YJ8vVPZFpi3NxUrko=
-			</data>
 			<key>hash2</key>
 			<data>
 			NN8or3c/47MBLuzvZsjDGwh1EJaidl8aGUKvH9gEVvE=
@@ -571,10 +482,6 @@
 		</dict>
 		<key>Headers/ANAdResponseInfo.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TSe+Rn1S+buT7QKRkaArioteKs0=
-			</data>
 			<key>hash2</key>
 			<data>
 			NUC7+dGQkj81xGghN6TP9FP5RCbxUvGipwY3i+2Q9fc=
@@ -582,10 +489,6 @@
 		</dict>
 		<key>Headers/ANAdView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ptb1e/6dLU8zO1xqWTkyxQmRXoM=
-			</data>
 			<key>hash2</key>
 			<data>
 			hfbmJBRVSj6KvmVT50txJnL0CJyi9zmnixw5jZACZmo=
@@ -593,21 +496,13 @@
 		</dict>
 		<key>Headers/ANBannerAdView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0amETcAOAiSh7xMLIejOlqoSVjI=
-			</data>
 			<key>hash2</key>
 			<data>
-			iNfuVqsr9SdiGo5bW4CaOF940i3XF6QdkQwvmZiah5I=
+			1qt8XP0iIRaFrnJT/JVQCdetCT8+KCZve29uBDH3XqM=
 			</data>
 		</dict>
 		<key>Headers/ANCSRNativeAdResponse.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4G3DNeCXKhaUVfPI1yxGbyEaI5w=
-			</data>
 			<key>hash2</key>
 			<data>
 			ISt+w6J5KxPRc6MFCYIRyOlPApvKQlcT2oWUV22ogac=
@@ -615,10 +510,6 @@
 		</dict>
 		<key>Headers/ANCustomAdapter.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YrrycosExtQJJm4mlotcelPkoz4=
-			</data>
 			<key>hash2</key>
 			<data>
 			UGgUAdRLfwwWdeu6r1mRXEA3DsN8z5zwN8SZL8nbF7U=
@@ -626,10 +517,6 @@
 		</dict>
 		<key>Headers/ANGDPRSettings.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			H/k8v7ak+vm7Ma+WKbL4kEkHETI=
-			</data>
 			<key>hash2</key>
 			<data>
 			9f2wXr/fq+SZBi96aMhHMn/mTDl+Uq5mTM1amKxIKkA=
@@ -637,10 +524,6 @@
 		</dict>
 		<key>Headers/ANInstreamVideoAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			vv8ef+EkeWl7sXfxrORT2CmZ05o=
-			</data>
 			<key>hash2</key>
 			<data>
 			Y7YZJti2UdKw28osEyThW5BcgrMqvH1voevUfQfZUjA=
@@ -648,10 +531,6 @@
 		</dict>
 		<key>Headers/ANInterstitialAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hCBgGnv10YIc6q+9uI4Wy/MIQPQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			eD4Q8P8yAPJC9Hogn4USJzqhATX5ob4vtjG0VeV4jyI=
@@ -659,10 +538,6 @@
 		</dict>
 		<key>Headers/ANLocation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GV7+YpTQHi/ynW593fhGeU3me/E=
-			</data>
 			<key>hash2</key>
 			<data>
 			66vFxHVH8ASjndCtbf/013xwYR8T9u5deXhTIBIzGdI=
@@ -670,10 +545,6 @@
 		</dict>
 		<key>Headers/ANLogManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eaAlhSCHf9gSS0gTmJH6jPnFW9c=
-			</data>
 			<key>hash2</key>
 			<data>
 			qBf7s9MxkLtZJBJOzlvoFdfGuGDg1iqnEjtvuhNOSMM=
@@ -681,10 +552,6 @@
 		</dict>
 		<key>Headers/ANLogging.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1NzpQPZI0Wp+lMEQmkKFZNLobmU=
-			</data>
 			<key>hash2</key>
 			<data>
 			ceFupi7FUi07y+OywLjJpc6JwKttcaMvun5Ijssxpzw=
@@ -692,10 +559,6 @@
 		</dict>
 		<key>Headers/ANMultiAdRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UNUvKRIyekEuk1uByFXpxH80lhk=
-			</data>
 			<key>hash2</key>
 			<data>
 			c/R9WnOPKk+TnGOE3Q2W7rlI+LnVYZsQY+h/y8j0EQ8=
@@ -703,10 +566,6 @@
 		</dict>
 		<key>Headers/ANNativeAdDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rX5EbIsoya5ns+RHUTowaS3gr9w=
-			</data>
 			<key>hash2</key>
 			<data>
 			US+hpuMIy6dlDhFpXjyKnywqNLLYXrpXKJgtggakZuM=
@@ -714,10 +573,6 @@
 		</dict>
 		<key>Headers/ANNativeAdRequest.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9Dg3NdY7Wyrf4B6FMo4eI4R/zP4=
-			</data>
 			<key>hash2</key>
 			<data>
 			wRU7p1Jis+eWtRsZ1mOgrsoCWS1rvmO2cjVm6IFp7lU=
@@ -725,10 +580,6 @@
 		</dict>
 		<key>Headers/ANNativeAdResponse.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VyyLjuUKmVdbnmjT1QarLdZVqgM=
-			</data>
 			<key>hash2</key>
 			<data>
 			9NtX6TeG5vyUMbs1IsIVLbtUsHbWwi6j6/0cFp/HktY=
@@ -736,10 +587,6 @@
 		</dict>
 		<key>Headers/ANNativeAdStarRating.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dKBJqtZnm+HBqzlgjRZoEyKn6nc=
-			</data>
 			<key>hash2</key>
 			<data>
 			knguH2JfT4EgjeKgBSYl+O/I1UM8j41D5YHzP6gELZk=
@@ -747,10 +594,6 @@
 		</dict>
 		<key>Headers/ANNativeCustomAdapter.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KqhUci+lcBaKD8Xo2kI9N7aqw40=
-			</data>
 			<key>hash2</key>
 			<data>
 			iem1/DX+/zXR14zr494YCZsWWB5jhgMkHd3Bd7klX9Q=
@@ -758,10 +601,6 @@
 		</dict>
 		<key>Headers/ANNativeMediatedAdResponse.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			x5PyfstpyhHH1WzodPulYcqRlKQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			wUNCNXBObit9Qu5/qEWgPRrCS8szlu29HqzcMiN06C8=
@@ -769,10 +608,6 @@
 		</dict>
 		<key>Headers/ANProxyViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			htJhQKNY5fvadKb/9Wz0ll0BGBE=
-			</data>
 			<key>hash2</key>
 			<data>
 			zQ4uOimLzcAwFh07Czea6tCgIU5IcG+87CJWvUW8LFc=
@@ -780,21 +615,13 @@
 		</dict>
 		<key>Headers/ANSDKSettings.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5u29nImiIJ/xsK1FQMViawZRy+A=
-			</data>
 			<key>hash2</key>
 			<data>
-			OQGelXSf6yT5nNox4nMGCr7KB552IBNXj4seGZoCD3A=
+			aAQY6pe9gp7mzCdT1kqfYKzpxv2tXKpQox9w3Tsv1RE=
 			</data>
 		</dict>
 		<key>Headers/ANTargetingParameters.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cIcMCxi6grQJqF3fNaT1STv160E=
-			</data>
 			<key>hash2</key>
 			<data>
 			VqIEhpEyk5Tq3UfxmjyvaTDlf+r2NA+aSssZdZIUPe0=
@@ -802,10 +629,6 @@
 		</dict>
 		<key>Headers/ANUSPrivacySettings.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OFzRGIsGo4Omku53GeM+tEOxBlU=
-			</data>
 			<key>hash2</key>
 			<data>
 			eQc43k7njKJfzrbIFBdHlAzKbjBy4ZnBNTnMQ1vKOKU=
@@ -813,10 +636,6 @@
 		</dict>
 		<key>Headers/ANUserId.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wzyQvzSZc8plQvSk1oMZOCn3CMk=
-			</data>
 			<key>hash2</key>
 			<data>
 			ytJzpsXFyhfPJb066Una8/nshxKmuyL/ebAwvoDDKhU=
@@ -824,10 +643,6 @@
 		</dict>
 		<key>Headers/ANVideoPlayerSettings.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			V95HH9YqIqQVfMmhSqutkrq1cwE=
-			</data>
 			<key>hash2</key>
 			<data>
 			7kaD4g5RJQwtZ9+JbT7nsw28gylP8O/Ui5kVLhqEO6g=
@@ -835,10 +650,6 @@
 		</dict>
 		<key>Headers/AppNexusSDK.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qRMqdOG0bCO92L+5HGa77To8CRs=
-			</data>
 			<key>hash2</key>
 			<data>
 			CY76YjuNTPHj6lVZeAgKDEKtaUdSS/QmiDRF8wvKcPY=
@@ -846,10 +657,6 @@
 		</dict>
 		<key>Headers/XandrAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LiLui1kA1fFD+9SZG64fImZUPYI=
-			</data>
 			<key>hash2</key>
 			<data>
 			lcLbF2DXfVd7XpuLSmTgZQM+dXlt7fiwgVjnRYUKIW8=
@@ -857,32 +664,20 @@
 		</dict>
 		<key>MobileVastPlayer.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dx45OD7gaE9PiJQrj6ttU66IP6g=
-			</data>
 			<key>hash2</key>
 			<data>
-			qYXzoOp3khZiBrlyVgsHO/ZareMoa+8uw5zM9VH53cY=
+			FQow7qpLhpZKH6yyCtSSJ7/c+FTe+72+5tF5j6YlIF0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			o7zHhFObh0dj5TJ8WBWzfv6IthY=
-			</data>
 			<key>hash2</key>
 			<data>
-			jDWVXqY+r55jbFjwnXx3WIgO9D4J6J0jC0GNBHHJzLs=
+			om4FMX9d8pF7fOGnxo3s2to+9eoCh83pxvMggtIY6X0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ANANJAMImplementation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nHoh0HqmpVWuwIRNbhpQpycVsnM=
-			</data>
 			<key>hash2</key>
 			<data>
 			4wb+JyBcZzxioj2NTfpkxIRLts+2UOreUpHWqM8giQ0=
@@ -890,10 +685,6 @@
 		</dict>
 		<key>PrivateHeaders/ANAdView+PrivateMethods.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			E6NnSsIwvvTrXrTTIvH1XkVCFTs=
-			</data>
 			<key>hash2</key>
 			<data>
 			fPxNV0y6MI9YB5wbC+rxIukBk+Z1ZKLYg8lm4D66vic=
@@ -901,10 +692,6 @@
 		</dict>
 		<key>PrivateHeaders/ANBannerAdView+ANContentViewTransitions.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iFtfy4lyGS25IGZ2rzVHLBYXyqI=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qt0uRyQbKbREUOlF9igFCljdNhpgD+8FZog7zkwSdXo=
@@ -912,10 +699,6 @@
 		</dict>
 		<key>PrivateHeaders/ANBrowserViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			eGCaWOofJAji9xuS6exdNpBLh3s=
-			</data>
 			<key>hash2</key>
 			<data>
 			FB4pmDcy4W0i0jpCva+r1q5Iwen4O4LUfPgdK9wRgEM=
@@ -923,10 +706,6 @@
 		</dict>
 		<key>PrivateHeaders/ANClickOverlayView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			djZAhisMi5iAoHYj7s47e45cmIQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			UI5NXXCdIqHDZCMP5daq3Lc3bwnWLPO55Uc/9khdsME=
@@ -934,10 +713,6 @@
 		</dict>
 		<key>PrivateHeaders/ANInterstitialAdViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NT+K9+n68ihU9VFpK4jKdtAy0CQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			elxJBU3nm2bRLBTraH4BYustJPrdaKx1pdpEH6wVBuk=
@@ -945,10 +720,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMRAIDCalendarManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aENc1tp8OsO77OxtGKZC4cOspjA=
-			</data>
 			<key>hash2</key>
 			<data>
 			u2anGbWMWFHfQ9Vst32scteh42ffILPkTEXpI02jsTA=
@@ -956,10 +727,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMRAIDContainerView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uMTKj4D2kWsgsFAbDLOp0WqlZAg=
-			</data>
 			<key>hash2</key>
 			<data>
 			i0zgWD39cd2sBlkHJ52o4z6W12mw5vRLUpJmQVv7MW8=
@@ -967,10 +734,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMRAIDExpandProperties.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BIFW/ONTKEiPgDQK7x1YRxbAWCI=
-			</data>
 			<key>hash2</key>
 			<data>
 			DhPTAa00j6Jw1C0XQDhvlzfMGS9Wgw5TCRu5k/gC38g=
@@ -978,10 +741,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMRAIDExpandViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lnJj8XVuYMVx4I7+Iha2D18PhPs=
-			</data>
 			<key>hash2</key>
 			<data>
 			5/uZemTaPbLe1bbmXYH6tYjHlVO0iGFJ/3j75HcNS40=
@@ -989,10 +748,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMRAIDJavascriptUtil.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wsD9N8cCVKY/T46SKcUSqOx1tOE=
-			</data>
 			<key>hash2</key>
 			<data>
 			jTFFvo4JDvjIm0y/Nn+GL/qGHoTW1qHM1DhUfzpmNHo=
@@ -1000,10 +755,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMRAIDOrientationProperties.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			KhA4WPIbESZltMXPyh780V16zgQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			jk1KXZ3/CVYsVaWvrIkmzKK9+5i8QeecjoJi5vk8qPo=
@@ -1011,10 +762,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMRAIDResizeProperties.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QA6OTT+FnFdqgyXg+YkxozWcvcs=
-			</data>
 			<key>hash2</key>
 			<data>
 			lrtbrWNguiJ0zxw0/oTGpHMbaf4r1sbSu48fyGyHL8E=
@@ -1022,10 +769,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMRAIDResizeView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Hsu2ILsYScn2Lgo8CjSen7FTn2o=
-			</data>
 			<key>hash2</key>
 			<data>
 			jdGjxsheYWJ3z1s/bNZmVdZBc2jrAaN+ao83JV9WJ+c=
@@ -1033,10 +776,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMRAIDResizeViewManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3enBUJQBRmWpXE0ckIfz763bSvQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			hOh3FNml8KnxCWyfyaxyUKl9purJx6vOg79DeRi9+E4=
@@ -1044,10 +783,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMRAIDUtil.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Epvrh4gHbSFCvEHE4F2qKL149z0=
-			</data>
 			<key>hash2</key>
 			<data>
 			BitjUCqKOLH8KfQTS0hbztopRR5d8EV198QfC93bkVw=
@@ -1055,10 +790,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMediatedAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xG/pfDEeTuw4hUWf4cfdRaTTRW4=
-			</data>
 			<key>hash2</key>
 			<data>
 			wZShES32lkhtQVw0+Y4fPrC/Ey6TDSqwS5NUeYiqbJ0=
@@ -1066,10 +797,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMediationAdViewController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JXjnqrgiafCVCX4JnjS+kZpZPzo=
-			</data>
 			<key>hash2</key>
 			<data>
 			yLKUmPZl2L1UT2GSiwIFClXsx6SsfMcfRQrsgAoYSOE=
@@ -1077,10 +804,6 @@
 		</dict>
 		<key>PrivateHeaders/ANMediationContainerView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			44vziODvq0ADbERAxPu+JtykGqM=
-			</data>
 			<key>hash2</key>
 			<data>
 			PEHMfTscggj5+AQQU7hd1ELGtXXQaLXrgX2G4CPY4uE=
@@ -1088,10 +811,6 @@
 		</dict>
 		<key>PrivateHeaders/ANNativeAdImageCache.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0SHlrTSJQEmnTN3HMgETyfUjbJo=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZBpallpeN1SyC2AbJmieO8POhNpIHdzBMX2e5lBs4mI=
@@ -1099,21 +818,13 @@
 		</dict>
 		<key>PrivateHeaders/ANNativeAdResponse+PrivateMethods.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BFi9XzeMyA2B/ZrsgUNW07ZQKNU=
-			</data>
 			<key>hash2</key>
 			<data>
-			aJmU6UXBUyd22nUvUdnywfNfmKqv8CNB8V5fa+hnMss=
+			AlET6+uC9nR+A60mriydyy0QUwcYph456yplEPAZyWU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/ANNativeMediatedAdController.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Uw40+2724i1NbZU/mkvYyo40U9E=
-			</data>
 			<key>hash2</key>
 			<data>
 			u1ZffmjBg7+VUYhMXRPFUcoNEciszinHyOL1klhiAdE=
@@ -1121,10 +832,6 @@
 		</dict>
 		<key>PrivateHeaders/ANNativeStandardAdResponse.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RjIqMb6FW/Dj2mawDj4mdCjrLJI=
-			</data>
 			<key>hash2</key>
 			<data>
 			LtDhY9G/tjioaMjobds+uQRvfadxeA1gL4i9fuq8IsE=
@@ -1132,10 +839,6 @@
 		</dict>
 		<key>PrivateHeaders/ANOpenInExternalBrowserActivity.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JsDoBB+knXpXYtc9PsfglV0u904=
-			</data>
 			<key>hash2</key>
 			<data>
 			Pr3imMAGLxk0y77qV3Hoc/KAV9J5YUW+1rG+pAAEfzk=
@@ -1143,10 +846,6 @@
 		</dict>
 		<key>PrivateHeaders/ANReachability.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+1ekA1RD+uZbUVAbPG46h4aBNHo=
-			</data>
 			<key>hash2</key>
 			<data>
 			3+XC27Z4Y09JWOVxQsyItBJ0UH8oG8xVN7VXpJs2iss=
@@ -1154,10 +853,6 @@
 		</dict>
 		<key>PrivateHeaders/ANVerificationScriptResource.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C8OFMeZQGXwItgbBhl+Vhbgagok=
-			</data>
 			<key>hash2</key>
 			<data>
 			kBX3pt9oPNt/ytI7Sr4qaCYLCS1g5NkmccIkdjP4J/c=
@@ -1165,21 +860,13 @@
 		</dict>
 		<key>PrivateHeaders/ANWebView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bJqY9cdCJ38a4fEZlBsRCNWWpGs=
-			</data>
 			<key>hash2</key>
 			<data>
-			lCIUwzefQ4JWar51cY7+MGEOrbjmkWDXb6EZYv8HeSA=
+			MPGUK6zLSuK4lBs96xlQN5htdDrgneRMHl7aNytRevE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NSString+ANCategory.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			v0gy/2TasWVeOf1Q77RztcS3T9M=
-			</data>
 			<key>hash2</key>
 			<data>
 			mjqczzCq7oxldQl5toz3+R/3nAJ4arFYdwaQsbe9rT0=
@@ -1187,10 +874,6 @@
 		</dict>
 		<key>PrivateHeaders/NSTimer+ANCategory.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SXmfdYO2QZEi1kKVHeE6jOG2N38=
-			</data>
 			<key>hash2</key>
 			<data>
 			gz6gYrM041rYb313cnV9zoS8blcR/0oq56tsjTXhrQk=
@@ -1198,10 +881,6 @@
 		</dict>
 		<key>PrivateHeaders/UIView+ANCategory.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MwUpZIuefibNEubxYZZSbDdjtLY=
-			</data>
 			<key>hash2</key>
 			<data>
 			bgzta423jF8PXAu2Be0qTg/pjSBd7OlK0JZYyPhNmus=
@@ -1209,10 +888,6 @@
 		</dict>
 		<key>PrivateHeaders/UIView+ANNativeAdCategory.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7grYtrBUFnvr5nACxNpeyU2gkfM=
-			</data>
 			<key>hash2</key>
 			<data>
 			dAlRvEfKVrS6N+NPAz32uabtRQRHnpu1v4soYDMy5zk=
@@ -1220,10 +895,6 @@
 		</dict>
 		<key>PrivateHeaders/WKWebView+ANCategory.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WR+qY0JRR1Uu6MxKmnkOgGt/XsQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			Wqa3RdgBMS6Z/NqGGt+//FsLbDrD1HMykO+UDsFcajI=
@@ -1231,10 +902,6 @@
 		</dict>
 		<key>UIButtonBarArrowLeft.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C59Md+V98urrLqUVso0iu5O3VKM=
-			</data>
 			<key>hash2</key>
 			<data>
 			qMuUr2sEGYTQDJRQVAmPepfXvZSOMQvPzhkGkgA2fDg=
@@ -1242,10 +909,6 @@
 		</dict>
 		<key>UIButtonBarArrowLeft@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			c8VW87pp6ORgXSzKR+GVEBgC/rY=
-			</data>
 			<key>hash2</key>
 			<data>
 			x1FOQrvD446VLKuRgtcyNuEFbMkr2H5yXCxNk7WLimE=
@@ -1253,10 +916,6 @@
 		</dict>
 		<key>UIButtonBarArrowRight.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rWYp0hro36HHcPd7FTZIC0ZW3rU=
-			</data>
 			<key>hash2</key>
 			<data>
 			/mzB7ke32YIBoH3RcaSHCnAc8Gq1VbYKCh758HUPyH0=
@@ -1264,10 +923,6 @@
 		</dict>
 		<key>UIButtonBarArrowRight@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			naeY89KHfTv+1iri+Ktnix730Po=
-			</data>
 			<key>hash2</key>
 			<data>
 			GQW8CBbkngql0+nUGH9Dxj/5mZfDgODEOiyD6nQ36r4=
@@ -1275,10 +930,6 @@
 		</dict>
 		<key>an_arrow_left.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			q+PJCfoISQCRAPBhfdJ5/Z9sMtQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			O7bBL2AUJQyDE5bpO12Q289wUMMs64y+kd9yWckfdZY=
@@ -1286,10 +937,6 @@
 		</dict>
 		<key>an_arrow_left@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UtVwp6pB68mzn5WnX5jA39LqfQg=
-			</data>
 			<key>hash2</key>
 			<data>
 			kmZVBMR5vIHIhcFoM7vBXWhGmp1Nkx/LeDGekaDgghg=
@@ -1297,10 +944,6 @@
 		</dict>
 		<key>an_arrow_left@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wk3T6bDSpepJwhHSxMydD/X/pMk=
-			</data>
 			<key>hash2</key>
 			<data>
 			vvnq2agLcTZ5xW4GX7uyLlzLxECJhFTdl2pmbhoOW+E=
@@ -1308,10 +951,6 @@
 		</dict>
 		<key>an_arrow_right.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sAbDI8Ef2/yn4DQT4ayeAz3bxRU=
-			</data>
 			<key>hash2</key>
 			<data>
 			izj8NAqwjEx6fW+snc54PuPEPq290Hzfxqv9rm6WWEM=
@@ -1319,10 +958,6 @@
 		</dict>
 		<key>an_arrow_right@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			U1klu+05rFdg/shwWSbYl7wFPmI=
-			</data>
 			<key>hash2</key>
 			<data>
 			Po+tjxsPZ4b3NjxAZdj1sXGGo07s9qnSolZXgGi1nQU=
@@ -1330,10 +965,6 @@
 		</dict>
 		<key>an_arrow_right@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rMB0TIV3b1Yw23vHnIFPEniltZ4=
-			</data>
 			<key>hash2</key>
 			<data>
 			AujVhPlCqF2lq8BN1HK3+iK2OPnnsf4R0X9Nh0QttVE=
@@ -1341,10 +972,6 @@
 		</dict>
 		<key>anjam.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HqmtH+GCkJnkUBa35wDPzLtrJds=
-			</data>
 			<key>hash2</key>
 			<data>
 			iM9avfLD/k5Q0BoKnlkY8+yri5Ma/nmFuH71IMtLb4w=
@@ -1352,10 +979,6 @@
 		</dict>
 		<key>appnexus_logo_icon.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8buWzgkgLgYKBZSzQBnJclSPzJw=
-			</data>
 			<key>hash2</key>
 			<data>
 			xuZHBByxuYc+E2gjabHX73lW3pLKBxq4OaEdTZV/uDE=
@@ -1363,10 +986,6 @@
 		</dict>
 		<key>appnexus_logo_icon@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XvQf+9iAFkbIIgDfPWIGFrd/HkE=
-			</data>
 			<key>hash2</key>
 			<data>
 			XgyURMzvzSMjzwLzryl/zt97Kn6h/JRsLTzQysUpjzI=
@@ -1374,10 +993,6 @@
 		</dict>
 		<key>compass.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			V2clhQZM7Obu8Zbwi2glTLEFzFw=
-			</data>
 			<key>hash2</key>
 			<data>
 			VnKCnSr9gQPUAIyQHg9+7CKuF0c0MgsdGH6WQlausTU=
@@ -1385,10 +1000,6 @@
 		</dict>
 		<key>compass@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			O9keCY3p+z0k4pj7oY3nWkRr8f4=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZZP/8ACcTSt779y+kn+phXK4GVLbrxjxM45MD8OlfHI=
@@ -1396,10 +1007,6 @@
 		</dict>
 		<key>compass@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			m0bw9gTRK9LaDpBrMKN0NU6v6xg=
-			</data>
 			<key>hash2</key>
 			<data>
 			LnJZLBlIL1DPa1/JyNy5hgnM+5O5dLKYxvSJXC4/zXc=
@@ -1407,10 +1014,6 @@
 		</dict>
 		<key>errors.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MIKn2WAJMR5NMTbhFmtv4CCb9KM=
-			</data>
 			<key>hash2</key>
 			<data>
 			ybuiuBgT1gekiI6/DosuQnv+OS/vGoY3nWjUQjfKY3I=
@@ -1418,10 +1021,6 @@
 		</dict>
 		<key>interstitial_closebox.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MeU2fd7yQ/M6jkQeWEfHMbXrLnU=
-			</data>
 			<key>hash2</key>
 			<data>
 			5+ZEamJedMXQuqtKdH51CJ7cA+LqENftzvjc7dIo78k=
@@ -1429,10 +1028,6 @@
 		</dict>
 		<key>interstitial_closebox@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MRqcGrQc31B4G49S7yWFDwrkd1g=
-			</data>
 			<key>hash2</key>
 			<data>
 			srPDTzu+Rqrgd0vo7U5zps3QcAebI2nRKYOJfgqKSlk=
@@ -1440,10 +1035,6 @@
 		</dict>
 		<key>interstitial_flat_closebox.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9aD9zHkc7bRFAX0KN1rHrfyPkPI=
-			</data>
 			<key>hash2</key>
 			<data>
 			bOicswCIaDvP20tx3KKq5YLcsfzMhnzMhi5crWe3WcY=
@@ -1451,10 +1042,6 @@
 		</dict>
 		<key>interstitial_flat_closebox@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			A66FwR+INVoleclBGbyaXbMDqDk=
-			</data>
 			<key>hash2</key>
 			<data>
 			JYCtMY7uWOF1iPbO38zHx90spnRj8rzWuc81VO1pwhc=
@@ -1462,10 +1049,6 @@
 		</dict>
 		<key>interstitial_flat_closebox@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JJ7du8qMzG3pw5v0/6+MfE6sNl8=
-			</data>
 			<key>hash2</key>
 			<data>
 			V5rQbGohbX/dK5+qP4+mdxSFZhdeBo9EC3QqXbsjw/4=
@@ -1473,10 +1056,6 @@
 		</dict>
 		<key>nativeRenderer.html</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FQD7wnoA4HQVLzL9RLKNdOwCAzs=
-			</data>
 			<key>hash2</key>
 			<data>
 			IdTmGrV7ZdJGi10CUEysDspbT1gSEJSVNjb23MyzWdI=
@@ -1484,21 +1063,13 @@
 		</dict>
 		<key>omsdk.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UPsyQ4QhueEUHFjFPzJBwqY+ezo=
-			</data>
 			<key>hash2</key>
 			<data>
-			ShR/8hidaXo8kuwWQMmddy/BUzb0V0wNJBtDy9CTvc4=
+			MEeINpCJilhc9VyJvgnTd/Hn1U36FkoaDJK9D/hiMI8=
 			</data>
 		</dict>
 		<key>optionsparser.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C+8y+mRPzXEax/4OXn9uFyjZdgc=
-			</data>
 			<key>hash2</key>
 			<data>
 			yL/vvrlKAcHNH0a7cHxH4DVGIcvFzbln6K/mknNbHr8=
@@ -1506,10 +1077,6 @@
 		</dict>
 		<key>sdkjs.js</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ugedCpfunsJw7/ew3ZDXlvTYzlU=
-			</data>
 			<key>hash2</key>
 			<data>
 			tTbzfsk/4K4Cm3+suaVZpQV9xH0YGkA1gxuOHf+gojE=
@@ -1517,10 +1084,6 @@
 		</dict>
 		<key>vastVideo.html</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pQax9YNw7MrmyZZTVK6iFDQaaak=
-			</data>
 			<key>hash2</key>
 			<data>
 			Xd/FFtT3YuI8C9VRf6oWPKHpN93OIMNqfxL9Udzn4t4=

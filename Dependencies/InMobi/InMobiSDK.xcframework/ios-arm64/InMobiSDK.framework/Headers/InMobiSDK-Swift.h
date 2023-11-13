@@ -276,13 +276,13 @@ SWIFT_CLASS("_TtC9InMobiSDK12IMAdMetaInfo")
 /// Implement the following in the view controller.
 /// Swift code snippet:
 /// \code
-/// let audio = IMAudio(frame: CGRect(x:0, y:50, width:320, height:50), placementId: 11203280001, delegate: self)
+/// let audio = IMAudio(frame: CGRect(x:0, y:0, width:70, height:70), placementId: 11203280001, delegate: self)
 /// audio.load()
 /// self.view.addSubview(audio)
 ///
 /// \endcodeObjective-C code snippet:
 /// \code
-/// self.audio = [[IMAudio alloc] initWithFrame:CGRectMake(0, 400, 320, 50) placementId:11203280001 delegate:self];
+/// self.audio = [[IMAudio alloc] initWithFrame:CGRectMake(0, 0, 70, 70) placementId:11203280001 delegate:self];
 /// [self.audio load];
 /// [self.view addSubview:self.audio];
 ///
@@ -407,6 +407,7 @@ typedef SWIFT_ENUM(NSInteger, IMAudioStatus, closed) {
 @protocol IMBannerAudioDelegate;
 @class IMBannerPreloadManager;
 @class NSData;
+@class IMWatermark;
 
 /// Class to integrate banner ads in your application
 /// Adding banner ads is demonstrated in the code fragment below.
@@ -480,6 +481,8 @@ SWIFT_CLASS("_TtC9InMobiSDK8IMBanner")
 - (void)shouldAutoRefresh:(BOOL)shouldAutoRefresh;
 /// Contains additional information of ad.
 - (NSDictionary<NSString *, id> * _Nullable)getAdMetaInfo SWIFT_WARN_UNUSED_RESULT;
+/// The watermark which is added as overlay in Ad
+- (void)setWatermarkWith:(IMWatermark * _Nonnull)watermark;
 /// Releases memory and remove ad from screen.
 - (void)cancel;
 /// overridden <code>UIView</code> method
@@ -702,6 +705,8 @@ SWIFT_CLASS("_TtC9InMobiSDK14IMInterstitial")
 - (void)showFrom:(UIViewController * _Nonnull)viewController with:(enum IMInterstitialAnimationType)animationType;
 /// Contains additional information of ad.
 - (NSDictionary<NSString *, id> * _Nullable)getAdMetaInfo SWIFT_WARN_UNUSED_RESULT;
+/// The watermark which is added as overlay in Ad
+- (void)setWatermarkWith:(IMWatermark * _Nonnull)watermark;
 /// Releases memory and remove ad from screen.
 - (void)cancel;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -893,6 +898,47 @@ SWIFT_CLASS("_TtC9InMobiSDK28IMInterstitialPreloadManager")
 - (void)load;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+enum IMRemoteLogLevel : NSInteger;
+
+SWIFT_PROTOCOL("_TtP9InMobiSDK9IMLogging_")
+@protocol IMLogging
+@optional
+- (void)logWithMessage:(NSString * _Nonnull)message tag:(NSString * _Nonnull)tag logLevel:(enum IMRemoteLogLevel)logLevel;
+- (void)saveAndSync;
+@end
+
+@class UITraitCollection;
+
+/// Use this class to move ad view around the screen. Add the <code>adView</code> as a subview to the instance of this class
+/// Swift code snippet
+/// \code
+/// let movableView = IMMovableView(frame: CGRect(x:0, y:0, width:70, height:70))
+/// let audio = IMAudio(frame: CGRect(x:0, y:0, width:70, height:70), placementId: 11203280001, delegate: self)
+/// movableView.addSubview(audio)
+/// self.view.addSubview(movableView)
+///
+/// \endcodeObjective -C snippet
+/// \code
+/// IMMovableView *movableView = [IMMovableView alloc] initWithFrame:CGRectMake(0, 0, 70, 70)];
+/// self.audio = [[IMAudio alloc] initWithFrame:CGRectMake(0, 0, 70, 70) placementId:11203280001 delegate:self];
+/// [movableView addSubview: self.audio];
+/// [self.view addSubview:movableView];
+///
+/// \endcode
+SWIFT_CLASS("_TtC9InMobiSDK13IMMovableView")
+@interface IMMovableView : UIView
+/// Defaults to <code>true</code>. Make it <code>false</code> to make the instance non-movable
+@property (nonatomic) BOOL isMovable;
+/// Initializes an <code>IMMovableView</code> instance with the specified frame
+/// \param frame CGRect for this view, according to the requested size
+///
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (void)didMoveToSuperview;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
 
 
@@ -1091,6 +1137,13 @@ SWIFT_CLASS("_TtC9InMobiSDK19IMPrivacyCompliance")
 + (void)setUSPrivacyString:(NSString * _Nonnull)privacyString;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+typedef SWIFT_ENUM(NSInteger, IMRemoteLogLevel, open) {
+  IMRemoteLogLevelError = 0,
+  IMRemoteLogLevelDebug = 1,
+  IMRemoteLogLevelInfo = 2,
+  IMRemoteLogLevelState = 3,
+};
 
 
 SWIFT_CLASS("_TtC9InMobiSDK15IMRequestStatus")
@@ -1453,6 +1506,18 @@ SWIFT_CLASS("_TtC9InMobiSDK15IMUserDataTypes")
 /// returns:
 /// true or false
 - (BOOL)isEqual:(id _Nullable)other SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Use this class to set watermark as an overlay on ads
+SWIFT_CLASS("_TtC9InMobiSDK11IMWatermark")
+@interface IMWatermark : NSObject
+@property (nonatomic, readonly, copy) NSData * _Nonnull imageData;
+/// \param imageData Data that is used for watermark
+///
+- (nonnull instancetype)initWithImageData:(NSData * _Nonnull)imageData OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

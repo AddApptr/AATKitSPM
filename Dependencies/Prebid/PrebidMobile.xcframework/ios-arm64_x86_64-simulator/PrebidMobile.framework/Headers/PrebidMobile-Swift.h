@@ -381,13 +381,15 @@ typedef SWIFT_ENUM_NAMED(NSInteger, PBMAdPosition, "AdPosition", open) {
 };
 
 enum ResultCode : NSInteger;
+@class PBMBidInfo;
 @class PBMORTBAppContent;
 @class PBMORTBContentData;
 
 SWIFT_CLASS("_TtC12PrebidMobile6AdUnit")
 @interface AdUnit : NSObject
 @property (nonatomic, copy) NSString * _Nullable pbAdSlot;
-- (void)fetchDemandWithCompletion:(void (^ _Nonnull)(enum ResultCode, NSDictionary<NSString *, NSString *> * _Nullable))completion;
+- (void)fetchDemandWithCompletion:(void (^ _Nonnull)(enum ResultCode, NSDictionary<NSString *, NSString *> * _Nullable))completion SWIFT_DEPRECATED_MSG("Deprecated. Use fetchDemand(completion: @escaping (_ bidInfo: BidInfo) -> Void) instead.");
+- (void)fetchDemandWithCompletionBidInfo:(void (^ _Nonnull)(PBMBidInfo * _Nonnull))completionBidInfo;
 - (void)fetchDemandWithAdObject:(id _Nonnull)adObject completion:(void (^ _Nonnull)(enum ResultCode))completion;
 /// This method obtains the context data keyword & value for adunit context targeting
 /// if the key already exists the value will be appended to the list. No duplicates will be added
@@ -439,6 +441,8 @@ SWIFT_CLASS("_TtC12PrebidMobile6AdUnit")
 - (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects;
 - (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject;
 - (void)clearUserData;
+- (void)setGPID:(NSString * _Nullable)gpid;
+- (NSString * _Nullable)getGPID SWIFT_WARN_UNUSED_RESULT;
 /// This method allows to set the auto refresh period for the demand
 /// \param time refresh time interval
 ///
@@ -465,6 +469,7 @@ SWIFT_CLASS("_TtC12PrebidMobile12AdUnitConfig")
 @property (nonatomic, strong) PBMNativeAdConfiguration * _Nullable nativeAdConfiguration;
 @property (nonatomic, copy) NSArray<NSValue *> * _Nullable additionalSizes;
 @property (nonatomic) NSTimeInterval refreshInterval;
+@property (nonatomic, copy) NSString * _Nullable gpid;
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId;
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId size:(CGSize)size OBJC_DESIGNATED_INITIALIZER;
 - (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
@@ -487,7 +492,7 @@ SWIFT_CLASS("_TtC12PrebidMobile12AdUnitConfig")
 - (void)removeExtKeyword:(NSString * _Nonnull)element;
 - (void)clearExtKeywords;
 - (NSSet<NSString *> * _Nonnull)getExtKeywords SWIFT_WARN_UNUSED_RESULT;
-- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContent;
+- (void)setAppContent:(PBMORTBAppContent * _Nullable)appContent;
 - (PBMORTBAppContent * _Nullable)getAppContent SWIFT_WARN_UNUSED_RESULT;
 - (void)clearAppContent;
 - (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects;
@@ -631,6 +636,7 @@ SWIFT_CLASS("_TtC12PrebidMobile16BannerParameters")
 @interface BannerParameters : NSObject
 /// List of supported API frameworks for this impression. If an API is not explicitly listed, it is assumed not to be supported.
 @property (nonatomic, copy) NSArray<PBApi *> * _Nullable api;
+@property (nonatomic, copy) NSArray<NSValue *> * _Nullable adSizes;
 @property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nullable rawAPI;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -654,6 +660,7 @@ SWIFT_CLASS("_TtC12PrebidMobile10BannerView")
 @property (nonatomic, readonly, strong) id <BannerEventHandler> _Nullable eventHandler;
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 @property (nonatomic, readonly, strong) VideoParameters * _Nonnull videoParameters;
+@property (nonatomic, readonly, strong) BidResponse * _Nullable lastBidResponse;
 @property (nonatomic, readonly, copy) NSString * _Nonnull configID;
 @property (nonatomic) NSTimeInterval refreshInterval;
 @property (nonatomic, copy) NSArray<NSValue *> * _Nullable additionalSizes;
@@ -767,6 +774,7 @@ SWIFT_CLASS("_TtC12PrebidMobile22BaseInterstitialAdUnit")
 @interface BaseInterstitialAdUnit : NSObject <AdLoadFlowControllerDelegate, BaseInterstitialAdUnitProtocol, InterstitialControllerInteractionDelegate, InterstitialEventInteractionDelegate, PBMInterstitialAdLoaderDelegate>
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 @property (nonatomic, readonly, strong) VideoParameters * _Nonnull videoParameters;
+@property (nonatomic, readonly, strong) BidResponse * _Nullable lastBidResponse;
 @property (nonatomic, readonly, copy) NSString * _Nonnull configID;
 @property (nonatomic, copy) NSSet<AdFormat *> * _Nonnull adFormats;
 @property (nonatomic, readonly) BOOL isReady;
@@ -877,6 +885,25 @@ SWIFT_CLASS("_TtC12PrebidMobile3Bid")
 @end
 
 
+SWIFT_CLASS_NAMED("BidInfo")
+@interface PBMBidInfo : NSObject
+/// Key to get Prebid win event from <code>events</code>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVENT_WIN;)
++ (NSString * _Nonnull)EVENT_WIN SWIFT_WARN_UNUSED_RESULT;
+/// Key to get Prebid imp event from <code>events</code>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVENT_IMP;)
++ (NSString * _Nonnull)EVENT_IMP SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly) enum ResultCode resultCode;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable targetingKeywords;
+@property (nonatomic, readonly, copy) NSString * _Nullable nativeAdCacheId;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull events;
+- (NSNumber * _Nullable)getExp SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class PBMORTBBidResponseExt;
+
 SWIFT_CLASS("_TtC12PrebidMobile11BidResponse")
 @interface BidResponse : NSObject
 @property (nonatomic, copy) NSString * _Nullable adUnitId;
@@ -884,9 +911,11 @@ SWIFT_CLASS("_TtC12PrebidMobile11BidResponse")
 @property (nonatomic, readonly, strong) Bid * _Nullable winningBid;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable targetingInfo;
 @property (nonatomic, readonly, strong) NSNumber * _Nullable tmaxrequest;
+@property (nonatomic, readonly, strong) PBMORTBBidResponseExt * _Nullable ext;
 - (nonnull instancetype)initWithAdUnitId:(NSString * _Nullable)adUnitId targetingInfo:(NSDictionary<NSString *, NSString *> * _Nullable)targetingInfo;
 - (nonnull instancetype)initWithJsonDictionary:(JsonDictionary * _Nonnull)jsonDictionary;
 - (void)setTargetingInfoWith:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
+- (void)addTargetingInfoValueWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -894,18 +923,31 @@ SWIFT_CLASS("_TtC12PrebidMobile11BidResponse")
 
 SWIFT_CLASS_NAMED("CacheManager")
 @interface PBMCacheManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval cacheManagerExpireInterval;)
++ (NSTimeInterval)cacheManagerExpireInterval SWIFT_WARN_UNUSED_RESULT;
 /// The class is created as a singleton object & used
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBMCacheManager * _Nonnull shared;)
 + (PBMCacheManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 /// The initializer that needs to be created only once
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (NSString * _Nullable)saveWithContent:(NSString * _Nonnull)content expireInterval:(NSTimeInterval)expireInterval SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isValidWithCacheId:(NSString * _Nonnull)cacheId SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getWithCacheId:(NSString * _Nonnull)cacheId SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, PBMClickbrowserType, "ClickbrowserType", open) {
   PBMClickbrowserTypeEmbedded = 0,
   PBMClickbrowserTypeNative = 1,
 };
+
+
+SWIFT_CLASS("_TtC12PrebidMobile9Constants")
+@interface Constants : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PREBID_VERSION;)
++ (NSString * _Nonnull)PREBID_VERSION SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC12PrebidMobile18SingleContainerInt")
@@ -1832,6 +1874,24 @@ SWIFT_CLASS_NAMED("NativeMarkupRequestObject")
 @end
 
 
+SWIFT_CLASS("_TtC12PrebidMobile16NativeParameters")
+@interface NativeParameters : NSObject
+@property (nonatomic, copy) NSArray<NativeAsset *> * _Nullable assets;
+@property (nonatomic, copy) NSArray<NativeEventTracker *> * _Nullable eventtrackers;
+@property (nonatomic, copy) NSString * _Nonnull version;
+@property (nonatomic, strong) ContextType * _Nullable context;
+@property (nonatomic, strong) ContextSubType * _Nullable contextSubType;
+@property (nonatomic, strong) PlacementType * _Nullable placementType;
+@property (nonatomic) NSInteger placementCount;
+@property (nonatomic) NSInteger sequence;
+@property (nonatomic) NSInteger asseturlsupport;
+@property (nonatomic) NSInteger durlsupport;
+@property (nonatomic) NSInteger privacy;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable ext;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC12PrebidMobile13NativeRequest")
 @interface NativeRequest : AdUnit
 @property (nonatomic, copy) NSString * _Nonnull version;
@@ -1953,6 +2013,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 @property (nonatomic) enum PBMClickbrowserType impClickbrowserType;
 @property (nonatomic) BOOL debugLogFileEnabled;
 @property (nonatomic) BOOL locationUpdatesEnabled;
+@property (nonatomic) BOOL includeWinners;
+@property (nonatomic) BOOL includeBidderKeys;
 - (BOOL)setCustomPrebidServerWithUrl:(NSString * _Nonnull)url error:(NSError * _Nullable * _Nullable)error;
 - (void)addStoredBidResponseWithBidder:(NSString * _Nonnull)bidder responseId:(NSString * _Nonnull)responseId;
 - (void)clearStoredBidResponses;
@@ -1974,10 +2036,40 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 /// Checks the status of Prebid Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
 /// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
 /// The <code>host</code> value is obtained from <code>Prebid.shared.prebidServerHost</code>.
+/// Checks the version of GMA SDK. If the version is not supported - logs warning.
+/// Use this SDK initializer if you’re using PrebidMobile with GMA SDK.
+/// \param gadMobileAdsVersion GADMobileAds version string, use <code>GADGetStringFromVersionNumber(GADMobileAds.sharedInstance().versionNumber)</code> to get it
+///
+/// \param completion returns initialization status and optional error
+///
++ (void)initializeSDKWithGadMobileAdsVersion:(NSString * _Nullable)gadMobileAdsVersion :(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
+/// Initializes PrebidMobile SDK.
+/// Checks the status of Prebid Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
+/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
+/// The <code>host</code> value is obtained from <code>Prebid.shared.prebidServerHost</code>.
 /// Use this SDK initializer if you’re using PrebidMobile without GMA SDK.
 /// \param completion returns initialization status and optional error
 ///
 + (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class PrebidRequest;
+
+SWIFT_CLASS("_TtC12PrebidMobile12PrebidAdUnit")
+@interface PrebidAdUnit : NSObject
+@property (nonatomic, copy) NSString * _Nullable pbAdSlot;
+- (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId OBJC_DESIGNATED_INITIALIZER;
+- (void)fetchDemandWithAdObject:(id _Nonnull)adObject request:(PrebidRequest * _Nonnull)request completion:(void (^ _Nonnull)(PBMBidInfo * _Nonnull))completion;
+- (void)fetchDemandWithRequest:(PrebidRequest * _Nonnull)request completion:(void (^ _Nonnull)(PBMBidInfo * _Nonnull))completion;
+/// This method allows to set the auto refresh period for the demand
+/// \param time refresh time interval
+///
+- (void)setAutoRefreshMillisWithTime:(double)time;
+/// This method stops the auto refresh of demand
+- (void)stopAutoRefresh;
+- (void)resumeAutoRefresh;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2058,6 +2150,43 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile23PrebidMediationDelegate_")
 /// Returns ad view that was passed into PrebidMediationDelegate earlier.
 /// Returns nil if there was no view passed.
 - (UIView * _Nullable)getAdView SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC12PrebidMobile13PrebidRequest")
+@interface PrebidRequest : NSObject
+- (nonnull instancetype)initWithBannerParameters:(BannerParameters * _Nullable)bannerParameters videoParameters:(VideoParameters * _Nullable)videoParameters nativeParameters:(NativeParameters * _Nullable)nativeParameters isInterstitial:(BOOL)isInterstitial isRewarded:(BOOL)isRewarded OBJC_DESIGNATED_INITIALIZER;
+- (void)setGPID:(NSString * _Nullable)gpid;
+/// This method obtains the ext data keyword & value for adunit targeting
+/// if the key already exists the value will be appended to the list. No duplicates will be added
+- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
+/// This method obtains the ext data keyword & values for adunit targeting
+/// the values if the key already exist will be replaced with the new set of values
+- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
+/// This method allows to remove specific ext data keyword & values set from adunit targeting
+- (void)removeExtDataForKey:(NSString * _Nonnull)forKey;
+/// This method allows to remove all ext data set from adunit targeting
+- (void)clearExtData;
+/// This method obtains the keyword for adunit targeting
+/// Inserts the given element in the set if it is not already present.
+- (void)addExtKeyword:(NSString * _Nonnull)newElement;
+/// This method obtains the keyword set for adunit targeting
+/// Adds the elements of the given set to the set.
+- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
+/// This method allows to remove specific keyword from adunit targeting
+- (void)removeExtKeyword:(NSString * _Nonnull)element;
+/// This method allows to remove all keywords from the set of adunit targeting
+- (void)clearExtKeywords;
+- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContentObject;
+- (void)clearAppContent;
+- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects;
+- (void)removeAppContentData:(PBMORTBContentData * _Nonnull)dataObject;
+- (void)clearAppContentData;
+- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects;
+- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject;
+- (void)clearUserData;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class PBMUserAgentService;
@@ -2168,6 +2297,7 @@ typedef SWIFT_ENUM(NSInteger, ResultCode, open) {
   ResultCodePrebidNoVastTagInMediaData = 7002,
   ResultCodePrebidSDKMisuse = 8000,
   ResultCodePrebidSDKMisusePreviousFetchNotCompletedYet = 8001,
+  ResultCodePrebidInvalidRequest = 8002,
 };
 
 
@@ -2711,6 +2841,7 @@ SWIFT_CLASS("_TtC12PrebidMobile15VideoParameters")
 /// \param mimes supported MIME types
 ///
 - (nonnull instancetype)initWithMimes:(NSArray<NSString *> * _Nonnull)mimes OBJC_DESIGNATED_INITIALIZER;
+- (void)setSize:(NSValue * _Nonnull)size;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3106,13 +3237,15 @@ typedef SWIFT_ENUM_NAMED(NSInteger, PBMAdPosition, "AdPosition", open) {
 };
 
 enum ResultCode : NSInteger;
+@class PBMBidInfo;
 @class PBMORTBAppContent;
 @class PBMORTBContentData;
 
 SWIFT_CLASS("_TtC12PrebidMobile6AdUnit")
 @interface AdUnit : NSObject
 @property (nonatomic, copy) NSString * _Nullable pbAdSlot;
-- (void)fetchDemandWithCompletion:(void (^ _Nonnull)(enum ResultCode, NSDictionary<NSString *, NSString *> * _Nullable))completion;
+- (void)fetchDemandWithCompletion:(void (^ _Nonnull)(enum ResultCode, NSDictionary<NSString *, NSString *> * _Nullable))completion SWIFT_DEPRECATED_MSG("Deprecated. Use fetchDemand(completion: @escaping (_ bidInfo: BidInfo) -> Void) instead.");
+- (void)fetchDemandWithCompletionBidInfo:(void (^ _Nonnull)(PBMBidInfo * _Nonnull))completionBidInfo;
 - (void)fetchDemandWithAdObject:(id _Nonnull)adObject completion:(void (^ _Nonnull)(enum ResultCode))completion;
 /// This method obtains the context data keyword & value for adunit context targeting
 /// if the key already exists the value will be appended to the list. No duplicates will be added
@@ -3164,6 +3297,8 @@ SWIFT_CLASS("_TtC12PrebidMobile6AdUnit")
 - (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects;
 - (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject;
 - (void)clearUserData;
+- (void)setGPID:(NSString * _Nullable)gpid;
+- (NSString * _Nullable)getGPID SWIFT_WARN_UNUSED_RESULT;
 /// This method allows to set the auto refresh period for the demand
 /// \param time refresh time interval
 ///
@@ -3190,6 +3325,7 @@ SWIFT_CLASS("_TtC12PrebidMobile12AdUnitConfig")
 @property (nonatomic, strong) PBMNativeAdConfiguration * _Nullable nativeAdConfiguration;
 @property (nonatomic, copy) NSArray<NSValue *> * _Nullable additionalSizes;
 @property (nonatomic) NSTimeInterval refreshInterval;
+@property (nonatomic, copy) NSString * _Nullable gpid;
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId;
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId size:(CGSize)size OBJC_DESIGNATED_INITIALIZER;
 - (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
@@ -3212,7 +3348,7 @@ SWIFT_CLASS("_TtC12PrebidMobile12AdUnitConfig")
 - (void)removeExtKeyword:(NSString * _Nonnull)element;
 - (void)clearExtKeywords;
 - (NSSet<NSString *> * _Nonnull)getExtKeywords SWIFT_WARN_UNUSED_RESULT;
-- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContent;
+- (void)setAppContent:(PBMORTBAppContent * _Nullable)appContent;
 - (PBMORTBAppContent * _Nullable)getAppContent SWIFT_WARN_UNUSED_RESULT;
 - (void)clearAppContent;
 - (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects;
@@ -3356,6 +3492,7 @@ SWIFT_CLASS("_TtC12PrebidMobile16BannerParameters")
 @interface BannerParameters : NSObject
 /// List of supported API frameworks for this impression. If an API is not explicitly listed, it is assumed not to be supported.
 @property (nonatomic, copy) NSArray<PBApi *> * _Nullable api;
+@property (nonatomic, copy) NSArray<NSValue *> * _Nullable adSizes;
 @property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nullable rawAPI;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -3379,6 +3516,7 @@ SWIFT_CLASS("_TtC12PrebidMobile10BannerView")
 @property (nonatomic, readonly, strong) id <BannerEventHandler> _Nullable eventHandler;
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 @property (nonatomic, readonly, strong) VideoParameters * _Nonnull videoParameters;
+@property (nonatomic, readonly, strong) BidResponse * _Nullable lastBidResponse;
 @property (nonatomic, readonly, copy) NSString * _Nonnull configID;
 @property (nonatomic) NSTimeInterval refreshInterval;
 @property (nonatomic, copy) NSArray<NSValue *> * _Nullable additionalSizes;
@@ -3492,6 +3630,7 @@ SWIFT_CLASS("_TtC12PrebidMobile22BaseInterstitialAdUnit")
 @interface BaseInterstitialAdUnit : NSObject <AdLoadFlowControllerDelegate, BaseInterstitialAdUnitProtocol, InterstitialControllerInteractionDelegate, InterstitialEventInteractionDelegate, PBMInterstitialAdLoaderDelegate>
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 @property (nonatomic, readonly, strong) VideoParameters * _Nonnull videoParameters;
+@property (nonatomic, readonly, strong) BidResponse * _Nullable lastBidResponse;
 @property (nonatomic, readonly, copy) NSString * _Nonnull configID;
 @property (nonatomic, copy) NSSet<AdFormat *> * _Nonnull adFormats;
 @property (nonatomic, readonly) BOOL isReady;
@@ -3602,6 +3741,25 @@ SWIFT_CLASS("_TtC12PrebidMobile3Bid")
 @end
 
 
+SWIFT_CLASS_NAMED("BidInfo")
+@interface PBMBidInfo : NSObject
+/// Key to get Prebid win event from <code>events</code>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVENT_WIN;)
++ (NSString * _Nonnull)EVENT_WIN SWIFT_WARN_UNUSED_RESULT;
+/// Key to get Prebid imp event from <code>events</code>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull EVENT_IMP;)
++ (NSString * _Nonnull)EVENT_IMP SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly) enum ResultCode resultCode;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable targetingKeywords;
+@property (nonatomic, readonly, copy) NSString * _Nullable nativeAdCacheId;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull events;
+- (NSNumber * _Nullable)getExp SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class PBMORTBBidResponseExt;
+
 SWIFT_CLASS("_TtC12PrebidMobile11BidResponse")
 @interface BidResponse : NSObject
 @property (nonatomic, copy) NSString * _Nullable adUnitId;
@@ -3609,9 +3767,11 @@ SWIFT_CLASS("_TtC12PrebidMobile11BidResponse")
 @property (nonatomic, readonly, strong) Bid * _Nullable winningBid;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable targetingInfo;
 @property (nonatomic, readonly, strong) NSNumber * _Nullable tmaxrequest;
+@property (nonatomic, readonly, strong) PBMORTBBidResponseExt * _Nullable ext;
 - (nonnull instancetype)initWithAdUnitId:(NSString * _Nullable)adUnitId targetingInfo:(NSDictionary<NSString *, NSString *> * _Nullable)targetingInfo;
 - (nonnull instancetype)initWithJsonDictionary:(JsonDictionary * _Nonnull)jsonDictionary;
 - (void)setTargetingInfoWith:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
+- (void)addTargetingInfoValueWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3619,18 +3779,31 @@ SWIFT_CLASS("_TtC12PrebidMobile11BidResponse")
 
 SWIFT_CLASS_NAMED("CacheManager")
 @interface PBMCacheManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval cacheManagerExpireInterval;)
++ (NSTimeInterval)cacheManagerExpireInterval SWIFT_WARN_UNUSED_RESULT;
 /// The class is created as a singleton object & used
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBMCacheManager * _Nonnull shared;)
 + (PBMCacheManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 /// The initializer that needs to be created only once
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (NSString * _Nullable)saveWithContent:(NSString * _Nonnull)content expireInterval:(NSTimeInterval)expireInterval SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isValidWithCacheId:(NSString * _Nonnull)cacheId SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getWithCacheId:(NSString * _Nonnull)cacheId SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, PBMClickbrowserType, "ClickbrowserType", open) {
   PBMClickbrowserTypeEmbedded = 0,
   PBMClickbrowserTypeNative = 1,
 };
+
+
+SWIFT_CLASS("_TtC12PrebidMobile9Constants")
+@interface Constants : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PREBID_VERSION;)
++ (NSString * _Nonnull)PREBID_VERSION SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC12PrebidMobile18SingleContainerInt")
@@ -4557,6 +4730,24 @@ SWIFT_CLASS_NAMED("NativeMarkupRequestObject")
 @end
 
 
+SWIFT_CLASS("_TtC12PrebidMobile16NativeParameters")
+@interface NativeParameters : NSObject
+@property (nonatomic, copy) NSArray<NativeAsset *> * _Nullable assets;
+@property (nonatomic, copy) NSArray<NativeEventTracker *> * _Nullable eventtrackers;
+@property (nonatomic, copy) NSString * _Nonnull version;
+@property (nonatomic, strong) ContextType * _Nullable context;
+@property (nonatomic, strong) ContextSubType * _Nullable contextSubType;
+@property (nonatomic, strong) PlacementType * _Nullable placementType;
+@property (nonatomic) NSInteger placementCount;
+@property (nonatomic) NSInteger sequence;
+@property (nonatomic) NSInteger asseturlsupport;
+@property (nonatomic) NSInteger durlsupport;
+@property (nonatomic) NSInteger privacy;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable ext;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC12PrebidMobile13NativeRequest")
 @interface NativeRequest : AdUnit
 @property (nonatomic, copy) NSString * _Nonnull version;
@@ -4678,6 +4869,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 @property (nonatomic) enum PBMClickbrowserType impClickbrowserType;
 @property (nonatomic) BOOL debugLogFileEnabled;
 @property (nonatomic) BOOL locationUpdatesEnabled;
+@property (nonatomic) BOOL includeWinners;
+@property (nonatomic) BOOL includeBidderKeys;
 - (BOOL)setCustomPrebidServerWithUrl:(NSString * _Nonnull)url error:(NSError * _Nullable * _Nullable)error;
 - (void)addStoredBidResponseWithBidder:(NSString * _Nonnull)bidder responseId:(NSString * _Nonnull)responseId;
 - (void)clearStoredBidResponses;
@@ -4699,10 +4892,40 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 /// Checks the status of Prebid Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
 /// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
 /// The <code>host</code> value is obtained from <code>Prebid.shared.prebidServerHost</code>.
+/// Checks the version of GMA SDK. If the version is not supported - logs warning.
+/// Use this SDK initializer if you’re using PrebidMobile with GMA SDK.
+/// \param gadMobileAdsVersion GADMobileAds version string, use <code>GADGetStringFromVersionNumber(GADMobileAds.sharedInstance().versionNumber)</code> to get it
+///
+/// \param completion returns initialization status and optional error
+///
++ (void)initializeSDKWithGadMobileAdsVersion:(NSString * _Nullable)gadMobileAdsVersion :(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
+/// Initializes PrebidMobile SDK.
+/// Checks the status of Prebid Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
+/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
+/// The <code>host</code> value is obtained from <code>Prebid.shared.prebidServerHost</code>.
 /// Use this SDK initializer if you’re using PrebidMobile without GMA SDK.
 /// \param completion returns initialization status and optional error
 ///
 + (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class PrebidRequest;
+
+SWIFT_CLASS("_TtC12PrebidMobile12PrebidAdUnit")
+@interface PrebidAdUnit : NSObject
+@property (nonatomic, copy) NSString * _Nullable pbAdSlot;
+- (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId OBJC_DESIGNATED_INITIALIZER;
+- (void)fetchDemandWithAdObject:(id _Nonnull)adObject request:(PrebidRequest * _Nonnull)request completion:(void (^ _Nonnull)(PBMBidInfo * _Nonnull))completion;
+- (void)fetchDemandWithRequest:(PrebidRequest * _Nonnull)request completion:(void (^ _Nonnull)(PBMBidInfo * _Nonnull))completion;
+/// This method allows to set the auto refresh period for the demand
+/// \param time refresh time interval
+///
+- (void)setAutoRefreshMillisWithTime:(double)time;
+/// This method stops the auto refresh of demand
+- (void)stopAutoRefresh;
+- (void)resumeAutoRefresh;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -4783,6 +5006,43 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile23PrebidMediationDelegate_")
 /// Returns ad view that was passed into PrebidMediationDelegate earlier.
 /// Returns nil if there was no view passed.
 - (UIView * _Nullable)getAdView SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC12PrebidMobile13PrebidRequest")
+@interface PrebidRequest : NSObject
+- (nonnull instancetype)initWithBannerParameters:(BannerParameters * _Nullable)bannerParameters videoParameters:(VideoParameters * _Nullable)videoParameters nativeParameters:(NativeParameters * _Nullable)nativeParameters isInterstitial:(BOOL)isInterstitial isRewarded:(BOOL)isRewarded OBJC_DESIGNATED_INITIALIZER;
+- (void)setGPID:(NSString * _Nullable)gpid;
+/// This method obtains the ext data keyword & value for adunit targeting
+/// if the key already exists the value will be appended to the list. No duplicates will be added
+- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
+/// This method obtains the ext data keyword & values for adunit targeting
+/// the values if the key already exist will be replaced with the new set of values
+- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
+/// This method allows to remove specific ext data keyword & values set from adunit targeting
+- (void)removeExtDataForKey:(NSString * _Nonnull)forKey;
+/// This method allows to remove all ext data set from adunit targeting
+- (void)clearExtData;
+/// This method obtains the keyword for adunit targeting
+/// Inserts the given element in the set if it is not already present.
+- (void)addExtKeyword:(NSString * _Nonnull)newElement;
+/// This method obtains the keyword set for adunit targeting
+/// Adds the elements of the given set to the set.
+- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
+/// This method allows to remove specific keyword from adunit targeting
+- (void)removeExtKeyword:(NSString * _Nonnull)element;
+/// This method allows to remove all keywords from the set of adunit targeting
+- (void)clearExtKeywords;
+- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContentObject;
+- (void)clearAppContent;
+- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects;
+- (void)removeAppContentData:(PBMORTBContentData * _Nonnull)dataObject;
+- (void)clearAppContentData;
+- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects;
+- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject;
+- (void)clearUserData;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class PBMUserAgentService;
@@ -4893,6 +5153,7 @@ typedef SWIFT_ENUM(NSInteger, ResultCode, open) {
   ResultCodePrebidNoVastTagInMediaData = 7002,
   ResultCodePrebidSDKMisuse = 8000,
   ResultCodePrebidSDKMisusePreviousFetchNotCompletedYet = 8001,
+  ResultCodePrebidInvalidRequest = 8002,
 };
 
 
@@ -5436,6 +5697,7 @@ SWIFT_CLASS("_TtC12PrebidMobile15VideoParameters")
 /// \param mimes supported MIME types
 ///
 - (nonnull instancetype)initWithMimes:(NSArray<NSString *> * _Nonnull)mimes OBJC_DESIGNATED_INITIALIZER;
+- (void)setSize:(NSValue * _Nonnull)size;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

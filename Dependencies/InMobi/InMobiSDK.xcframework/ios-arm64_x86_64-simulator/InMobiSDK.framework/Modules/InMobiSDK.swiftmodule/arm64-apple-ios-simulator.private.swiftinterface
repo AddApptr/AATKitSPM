@@ -52,6 +52,14 @@ import _StringProcessing
 @_hasMissingDesignatedInitializers @objc public class IMRequestStatus : Foundation.NSError {
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class IMMovableView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var isMovable: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @_Concurrency.MainActor(unsafe) public func resetPosition()
+  @objc deinit
+}
 @objc public protocol IMInterstitialDelegate {
   @objc optional func interstitial(_ interstitial: InMobiSDK.IMInterstitial, didReceiveWithMetaInfo metaInfo: InMobiSDK.IMAdMetaInfo)
   @objc optional func interstitial(_ interstitial: InMobiSDK.IMInterstitial, didFailToReceiveWithError error: Swift.Error)
@@ -185,6 +193,7 @@ extension InMobiSDK.IMSdk {
   @objc @_Concurrency.MainActor(unsafe) public func load(_ response: Foundation.Data)
   @objc @_Concurrency.MainActor(unsafe) public func shouldAutoRefresh(_ shouldAutoRefresh: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) public func getAdMetaInfo() -> [Swift.String : Any]?
+  @objc @_Concurrency.MainActor(unsafe) public func setWatermark(with watermark: InMobiSDK.IMWatermark)
   @objc @_Concurrency.MainActor(unsafe) public func cancel()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
   @objc deinit
@@ -347,6 +356,21 @@ extension InMobiSDK.IMAudio {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc public enum IMRemoteLogLevel : Swift.Int {
+  case error
+  case debug
+  case info
+  case state
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol IMLogging {
+  @objc optional func log(message: Swift.String, tag: Swift.String, logLevel: InMobiSDK.IMRemoteLogLevel)
+  @objc optional func saveAndSync()
+}
 #warning("Long Term: Need to Re Name to IMImpressionType")
 #warning("Long Term: Need relook as per old IMInMobiViewabilityModel model after renderview is converted")
 #warning("Convert to camel case")
@@ -393,7 +417,15 @@ extension InMobiSDK.IMAudio {
   @objc public func show(from viewController: UIKit.UIViewController)
   @objc public func show(from viewController: UIKit.UIViewController, with animationType: InMobiSDK.IMInterstitialAnimationType)
   @objc public func getAdMetaInfo() -> [Swift.String : Any]?
+  @objc public func setWatermark(with watermark: InMobiSDK.IMWatermark)
   @objc public func cancel()
+  @objc deinit
+}
+@objc public class IMWatermark : ObjectiveC.NSObject {
+  @objc public var imageData: Foundation.Data {
+    get
+  }
+  @objc public init(imageData: Foundation.Data)
   @objc deinit
 }
 #warning("Post Swift Migration: file not used yet")
@@ -488,6 +520,9 @@ extension InMobiSDK.IMBannerAudioStatus : Swift.Equatable {}
 extension InMobiSDK.IMBannerAudioStatus : Swift.Hashable {}
 extension InMobiSDK.IMBannerAudioStatus : Swift.RawRepresentable {}
 extension InMobiSDK.IMBannerAudioStatus : Swift.Sendable {}
+extension InMobiSDK.IMRemoteLogLevel : Swift.Equatable {}
+extension InMobiSDK.IMRemoteLogLevel : Swift.Hashable {}
+extension InMobiSDK.IMRemoteLogLevel : Swift.RawRepresentable {}
 extension InMobiSDK.IMSDKLogLevel : Swift.Equatable {}
 extension InMobiSDK.IMSDKLogLevel : Swift.Hashable {}
 extension InMobiSDK.IMSDKLogLevel : Swift.RawRepresentable {}
