@@ -10,18 +10,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OGAInternal : NSObject
 
+#pragma mark - Class methods
+
 + (instancetype)shared;
 
-- (void)startWithAssetKey:(NSString * _Nullable)assetKey eventBus:(OguryPersistentEventBus * _Nullable)eventBus;
+#pragma mark - methods
+
+- (void)startWithAssetKey:(NSString *)assetKey
+       persistentEventBus:(OguryPersistentEventBus * _Nullable)persistentEventBus
+        broadcastEventBus:(OguryEventBus * _Nullable)broadcastEventBus;
 
 - (void)setLogLevel:(OguryLogLevel)logLevel;
-
 - (NSString *)getVersion;
-
 - (NSString *)getBuildVersion;
-
 - (void)defineSDKType:(NSUInteger)sdkType;
-
 - (void)defineMediationName:(NSString *)mediationName;
 
 @end

@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setLogLevel:(OguryLogLevel)logLevel;
 - (NSString *)getVersion;
 - (NSString *)getAdIdentifier;
+- (NSString *)getVendorIdentifier;
 - (NSString *)getInstanceToken;
 - (NSString *)getConsentToken;
 - (OGCSDKType)getFrameworkType;

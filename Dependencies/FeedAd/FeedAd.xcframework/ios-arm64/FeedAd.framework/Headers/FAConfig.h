@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FAGender.h"
+#import <FeedAd/FAGender.h>
 
 
 NS_ASSUME_NONNULL_BEGIN

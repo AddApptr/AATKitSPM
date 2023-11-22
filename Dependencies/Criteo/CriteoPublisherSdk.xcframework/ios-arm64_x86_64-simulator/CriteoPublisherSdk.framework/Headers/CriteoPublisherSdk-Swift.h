@@ -291,6 +291,7 @@ SWIFT_CLASS("_TtC18CriteoPublisherSdk14CRMRAIDHandler")
 - (BOOL)isExpanded SWIFT_WARN_UNUSED_RESULT;
 - (void)onSuccessClose;
 - (NSString * _Nonnull)injectInto:(NSString * _Nonnull)html SWIFT_WARN_UNUSED_RESULT;
+- (void)injectMRAID;
 - (void)updateMraidWithBundle:(NSBundle * _Nullable)bundle;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -655,6 +656,7 @@ SWIFT_CLASS("_TtC18CriteoPublisherSdk14CRMRAIDHandler")
 - (BOOL)isExpanded SWIFT_WARN_UNUSED_RESULT;
 - (void)onSuccessClose;
 - (NSString * _Nonnull)injectInto:(NSString * _Nonnull)html SWIFT_WARN_UNUSED_RESULT;
+- (void)injectMRAID;
 - (void)updateMraidWithBundle:(NSBundle * _Nullable)bundle;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

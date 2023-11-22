@@ -106,7 +106,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AMOcOhvSK3wcGss0JEjfLRZV/dU=
+		TXHro1Z2kfLIClGHfqZU2T2S2mQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -174,11 +174,11 @@
 		</data>
 		<key>PrivateHeaders/SMAAPIAdRequest.h</key>
 		<data>
-		qeAEXAC5UzlOZARZaZA8K55jkqI=
+		ZlyU1Tpdqz6RRbk+9/tIN79+Xo4=
 		</data>
 		<key>PrivateHeaders/SMAAPIAdRequestDefines.h</key>
 		<data>
-		ctbXNTbdQXBRU2pLNVV+33SM/eo=
+		I0GoEF3TXluwMsk3tDMPfM73u6w=
 		</data>
 		<key>PrivateHeaders/SMAAPIConnector.h</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>PrivateHeaders/SMAAPIConstants.h</key>
 		<data>
-		zez6QqpUtzKo1HtofKlB7UWnwSk=
+		v9oqkErouOEj76TU2KDKNm6GOOo=
 		</data>
 		<key>PrivateHeaders/SMAAPIContext.h</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>PrivateHeaders/SMAAPIResponse.h</key>
 		<data>
-		+Yo7jgb6TKQwueq27GwxhxgUcCs=
+		jHwgwxjeUPVXJD1FNYTlUwDs2hU=
 		</data>
 		<key>PrivateHeaders/SMAAPIResponseMapper.h</key>
 		<data>
@@ -266,7 +266,7 @@
 		</data>
 		<key>PrivateHeaders/SMAAdObject.h</key>
 		<data>
-		WGvHlYCiSwhA7mEWINjZG3vBcms=
+		5d6m113Imxx1ilXRnRVKTMhlepE=
 		</data>
 		<key>PrivateHeaders/SMAAdPresenterBuilding.h</key>
 		<data>
@@ -282,7 +282,7 @@
 		</data>
 		<key>PrivateHeaders/SMAAdRequest.h</key>
 		<data>
-		CVKXjWKuB+dkVwJxnJ5n8d/8r+c=
+		021bELA/J0tTWSocqhfdvl8UWQs=
 		</data>
 		<key>PrivateHeaders/SMAAdRequestExtras.h</key>
 		<data>
@@ -402,7 +402,7 @@
 		</data>
 		<key>PrivateHeaders/SMAConfigurationViewModel.h</key>
 		<data>
-		0g3YnoS1avwGfcZ8geItd1CKpaM=
+		oY/pUEy4pxDt4JZF+N4qKiZmg10=
 		</data>
 		<key>PrivateHeaders/SMAConnectionTypeProvider+Private.h</key>
 		<data>
@@ -518,7 +518,7 @@
 		</data>
 		<key>PrivateHeaders/SMAHTTPRequestBuilderHelper.h</key>
 		<data>
-		NXGAcB1feZSI8Px0rfyJ4meqNy4=
+		ZCVUcUyL8PxQKhrxWyI12M9dg5E=
 		</data>
 		<key>PrivateHeaders/SMAIABDataStorageConstants.h</key>
 		<data>
@@ -550,7 +550,7 @@
 		</data>
 		<key>PrivateHeaders/SMAInterstitialViewController.h</key>
 		<data>
-		XvxwuFrlJb7n982m5ZJAmW3aNnY=
+		oejSTILFTPm6+fWkNIwk0mjHi1w=
 		</data>
 		<key>PrivateHeaders/SMAJSONMapper.h</key>
 		<data>
@@ -623,6 +623,38 @@
 		<key>PrivateHeaders/SMANativeAssetsAdPresenting.h</key>
 		<data>
 		Q9Hjomfxx4pRYFuFp5VSSLHiBEk=
+		</data>
+		<key>PrivateHeaders/SMANetworkEndCard.h</key>
+		<data>
+		OrwuupR8/SjbC/fcY2mi7K8UrQQ=
+		</data>
+		<key>PrivateHeaders/SMANetworkEndCardAPIError.h</key>
+		<data>
+		Dvy5fpXmuC3IQSogP0r4WA6yJ5M=
+		</data>
+		<key>PrivateHeaders/SMANetworkEndCardAppDetailsObject.h</key>
+		<data>
+		p8fVc6daEouU05JuCPq0MdR8kV4=
+		</data>
+		<key>PrivateHeaders/SMANetworkEndCardConnector.h</key>
+		<data>
+		jEFDx1AydbQD6Uj3LNchPOMa1Wk=
+		</data>
+		<key>PrivateHeaders/SMANetworkEndCardConstants.h</key>
+		<data>
+		FmL1cTAxFqUqkHOBMChmdb74WRU=
+		</data>
+		<key>PrivateHeaders/SMANetworkEndCardImageDownloader.h</key>
+		<data>
+		KBec3edIwrliuKJDN0TvpIDkQ8o=
+		</data>
+		<key>PrivateHeaders/SMANetworkEndCardInteractor.h</key>
+		<data>
+		Z6uXf9cuRQP5eqh9yhXl3n16LvU=
+		</data>
+		<key>PrivateHeaders/SMANetworkEndCardView.h</key>
+		<data>
+		nDCYAXh+2aAxehTYhsEofpJGgSI=
 		</data>
 		<key>PrivateHeaders/SMANetworkErrors.h</key>
 		<data>
@@ -714,7 +746,7 @@
 		</data>
 		<key>PrivateHeaders/SMAResourceConstants.h</key>
 		<data>
-		a/g/O4fyiCoNQ0N2Y3lZwMzP6iM=
+		7ZvKZdpfYGUFdY5Wjez5WdOe7sM=
 		</data>
 		<key>PrivateHeaders/SMAResponseBucketing.h</key>
 		<data>
@@ -726,7 +758,7 @@
 		</data>
 		<key>PrivateHeaders/SMAResponseCacheUnit.h</key>
 		<data>
-		7j7X3uk+kYIraQIERKMIWImANNQ=
+		qfE/gsBDe5gy6pcqtoopns2S+e0=
 		</data>
 		<key>PrivateHeaders/SMAResponseCaching.h</key>
 		<data>
@@ -748,9 +780,13 @@
 		<data>
 		Bym5pkjuUPV6TBjaeZ5yvuEmWoM=
 		</data>
+		<key>PrivateHeaders/SMASKOverlay.h</key>
+		<data>
+		LXSPdlPDHYW7zIUz6c5hlHWc5IQ=
+		</data>
 		<key>PrivateHeaders/SMASKOverlayPresenter.h</key>
 		<data>
-		I68ep11eL89FBcROSHwEpg+SCxM=
+		gru1uE23ODRL3mHkmUt+YOdgAAw=
 		</data>
 		<key>PrivateHeaders/SMAScheduler.h</key>
 		<data>
@@ -758,7 +794,11 @@
 		</data>
 		<key>PrivateHeaders/SMASettingsConstants.h</key>
 		<data>
-		QPrYjd1xDIO6CGPBFhvgoZjbFWU=
+		oOY6toTNDAWNbklfxsGsODpMx3o=
+		</data>
+		<key>PrivateHeaders/SMASlider.h</key>
+		<data>
+		ltJPXb5vGTXJXKJbgOLU8K/QiSM=
 		</data>
 		<key>PrivateHeaders/SMAStateMachine.h</key>
 		<data>
@@ -1358,22 +1398,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qeAEXAC5UzlOZARZaZA8K55jkqI=
+			ZlyU1Tpdqz6RRbk+9/tIN79+Xo4=
 			</data>
 			<key>hash2</key>
 			<data>
-			MsTzWwGQ8oC2DBcpGh5Tp4nKsZE3ndrm3FAr30VSg4s=
+			CtqLI+4HdKS0pm2dZKbGt/hOdJfR94Uos7ZvJuAb3Rk=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAPIAdRequestDefines.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ctbXNTbdQXBRU2pLNVV+33SM/eo=
+			I0GoEF3TXluwMsk3tDMPfM73u6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			7CucsSiaj/UzSFUaQYg6i0zFYrInrdsNqemfoAB3kPk=
+			uVVtk6b8wNmsuUCAMd58RrIEhLVGxOiZy0Or/VEIq/I=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAPIConnector.h</key>
@@ -1391,11 +1431,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zez6QqpUtzKo1HtofKlB7UWnwSk=
+			v9oqkErouOEj76TU2KDKNm6GOOo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ocCCjiZsbgyvu47Ljkj0oypCirHgEqkBvnZ95y/zRng=
+			FNb+BJCbyO5E9YP84gU3ulPsEDcXs2SRUb8hGUfZvro=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAPIContext.h</key>
@@ -1435,11 +1475,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+Yo7jgb6TKQwueq27GwxhxgUcCs=
+			jHwgwxjeUPVXJD1FNYTlUwDs2hU=
 			</data>
 			<key>hash2</key>
 			<data>
-			9PoMIcviEeofPPUQwrVQr5Tu3uN7ZRw6jUBZMEoVlM4=
+			CCxNAReIowwf1jAyk9FfL90ALrniMqqvyeDhz3j5nDE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAPIResponseMapper.h</key>
@@ -1611,11 +1651,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WGvHlYCiSwhA7mEWINjZG3vBcms=
+			5d6m113Imxx1ilXRnRVKTMhlepE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/8UNuLgg8I/vHKH7slIr6SuTtvCGH+EIaOzS8eUj1Aw=
+			jVe1z0iIZjMWuC4iT2/4TnqTyMhiLa7DIgZ6ZlMvO7M=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAdPresenterBuilding.h</key>
@@ -1655,11 +1695,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CVKXjWKuB+dkVwJxnJ5n8d/8r+c=
+			021bELA/J0tTWSocqhfdvl8UWQs=
 			</data>
 			<key>hash2</key>
 			<data>
-			984/LgCKQTtfSnR+Ge8O1Gj6H/bUaHIxBjsOBXvcuNs=
+			CywICJ6s/svFVmyV+vwDUGIsF9vQM8ib+MZQQfXOdYE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAdRequestExtras.h</key>
@@ -1985,11 +2025,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0g3YnoS1avwGfcZ8geItd1CKpaM=
+			oY/pUEy4pxDt4JZF+N4qKiZmg10=
 			</data>
 			<key>hash2</key>
 			<data>
-			8n1UTTM08vJs3OQvLSZmAYgqSKi1NMd7PUYU4Zu22DE=
+			U1xYm0FBSyEFfZbAp+GOj67GYznC5QA8EhfNvhBbm1E=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAConnectionTypeProvider+Private.h</key>
@@ -2304,11 +2344,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NXGAcB1feZSI8Px0rfyJ4meqNy4=
+			ZCVUcUyL8PxQKhrxWyI12M9dg5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			ImTOX8cHA6G4eNqwbkhKmp2SVGSGXR5MdH8+6dvJJfE=
+			TgOJWasAn1VsPuPLlGnLU38g9Z9bbFlrShGTX/0wgRI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAIABDataStorageConstants.h</key>
@@ -2392,11 +2432,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XvxwuFrlJb7n982m5ZJAmW3aNnY=
+			oejSTILFTPm6+fWkNIwk0mjHi1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			7/zzCdbF039CmdXFTGwL1VGnKFDD6sKHGE6tQzzsC0k=
+			EfHacmuUoPQav1Ac9hG/E5A8yhlE6UetAe6mvaAs9Kg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAJSONMapper.h</key>
@@ -2595,6 +2635,94 @@
 			<key>hash2</key>
 			<data>
 			IoCpFG8uySbXH1YX9rreRIurjk/37NNkiZweZouECcU=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMANetworkEndCard.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OrwuupR8/SjbC/fcY2mi7K8UrQQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			qB2qzUwy5U0+cfEVbwilklqQVeL+MmDStxSKIrro+TE=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMANetworkEndCardAPIError.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dvy5fpXmuC3IQSogP0r4WA6yJ5M=
+			</data>
+			<key>hash2</key>
+			<data>
+			6Q/ERAWqSOEfGBpfSUE545UAG6hOudOnkiDVJ+cKCWw=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMANetworkEndCardAppDetailsObject.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p8fVc6daEouU05JuCPq0MdR8kV4=
+			</data>
+			<key>hash2</key>
+			<data>
+			u1vnhjpFY/FjDsbgOQdRqyFueyloBPHIXpFV999agFU=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMANetworkEndCardConnector.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jEFDx1AydbQD6Uj3LNchPOMa1Wk=
+			</data>
+			<key>hash2</key>
+			<data>
+			90suafrwwjzFnGJr2+0Mz6cYGEAJ3cnZjAbbk9zOQbo=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMANetworkEndCardConstants.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FmL1cTAxFqUqkHOBMChmdb74WRU=
+			</data>
+			<key>hash2</key>
+			<data>
+			T5u81cxPmkA3LlHmkEvOYVii/PLb4VQO2vKWoXfb4ks=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMANetworkEndCardImageDownloader.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KBec3edIwrliuKJDN0TvpIDkQ8o=
+			</data>
+			<key>hash2</key>
+			<data>
+			oS+ttqa4dB3L4mgLTootRTaKtdC85msS02ktPor6F/k=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMANetworkEndCardInteractor.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z6uXf9cuRQP5eqh9yhXl3n16LvU=
+			</data>
+			<key>hash2</key>
+			<data>
+			reW2aHaEwjij5K+D8wx9mIXYcaU7PegQ0wTyPAzMdCM=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMANetworkEndCardView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nDCYAXh+2aAxehTYhsEofpJGgSI=
+			</data>
+			<key>hash2</key>
+			<data>
+			mE4xBVXGhqDlcsq5gj3dAcUMM2krI6omlNaG/Cgexw4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMANetworkErrors.h</key>
@@ -2843,11 +2971,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a/g/O4fyiCoNQ0N2Y3lZwMzP6iM=
+			7ZvKZdpfYGUFdY5Wjez5WdOe7sM=
 			</data>
 			<key>hash2</key>
 			<data>
-			vTthdzApH66OUb8cyxYtUtyX5H2TiWPPP/lgMiPlQPw=
+			V1lemwyajooGLd75M1jqe7AH2/hMvoV/86mze4zl3I8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAResponseBucketing.h</key>
@@ -2876,11 +3004,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7j7X3uk+kYIraQIERKMIWImANNQ=
+			qfE/gsBDe5gy6pcqtoopns2S+e0=
 			</data>
 			<key>hash2</key>
 			<data>
-			QWva+AiWYG25XKG9iqwCwzBs6DVI8DjUbpNB5VkpaV0=
+			OxAR8j+5HxKVDclYuCPpO4NAWZJESUyZz+IBkDRO0VQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAResponseCaching.h</key>
@@ -2938,15 +3066,26 @@
 			bCJRYfIHu+jLZS5crz+lx1bRbAjMIHq4Z6mQRZVDbJM=
 			</data>
 		</dict>
+		<key>PrivateHeaders/SMASKOverlay.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LXSPdlPDHYW7zIUz6c5hlHWc5IQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			zhcX2jkFi2Jxsj6XfrOb9C26PGUlUGJr0aZdlUQ9yxw=
+			</data>
+		</dict>
 		<key>PrivateHeaders/SMASKOverlayPresenter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			I68ep11eL89FBcROSHwEpg+SCxM=
+			gru1uE23ODRL3mHkmUt+YOdgAAw=
 			</data>
 			<key>hash2</key>
 			<data>
-			+A3oudjcxkpDdeAO24dLBqzqvs7dR75G+UcAXQ86PLs=
+			L8w/PIFeOQZynVpowdty+qyl3xC3INDSXLVKkSSVpoo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAScheduler.h</key>
@@ -2964,11 +3103,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QPrYjd1xDIO6CGPBFhvgoZjbFWU=
+			oOY6toTNDAWNbklfxsGsODpMx3o=
 			</data>
 			<key>hash2</key>
 			<data>
-			59mW5cHs0CMGfO+/p+jRw5EPX0m4HuHbBCPNaWDusNM=
+			63yqDSyoli/VuoSX63OPQhfEt7arFCPFDaXo3N6idno=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMASlider.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ltJPXb5vGTXJXKJbgOLU8K/QiSM=
+			</data>
+			<key>hash2</key>
+			<data>
+			KVE0v3a89ApGsqe5r9TChcFO6+/wuU5ALYTtY1jG7Ok=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAStateMachine.h</key>

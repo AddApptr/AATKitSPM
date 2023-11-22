@@ -1501,6 +1501,27 @@
           },
           {
             "kind": "Function",
+            "name": "injectMRAID",
+            "printedName": "injectMRAID()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)injectMRAID",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC11injectMRAIDyyF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "updateMraid",
             "printedName": "updateMraid(bundle:)",
             "children": [

@@ -8,7 +8,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OguryTokenService : NSObject
 
-+ (NSString *)getBidderToken;
++ (NSString * _Nullable)getBidderToken;
 
 @end
 

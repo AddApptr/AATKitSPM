@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FAPlacementType.h"
+#import <FeedAd/FAPlacementType.h>
 
 
 NS_ASSUME_NONNULL_BEGIN

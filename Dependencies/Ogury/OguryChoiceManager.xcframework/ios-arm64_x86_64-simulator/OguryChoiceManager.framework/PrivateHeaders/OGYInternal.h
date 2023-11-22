@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setLogLevel:(OguryLogLevel)logLevel;
 
-- (void)startWithAssetKey:(NSString *)assetKey eventBus:(OguryPersistentEventBus *)eventBus;
+- (void)startWithAssetKey:(NSString *)assetKey persistentEventBus:(OguryPersistentEventBus *)persistentEventBus broadcastEventBus:(OguryEventBus *)broadcastEventBus;
 
 - (NSString *)getVersion;
 

@@ -4,38 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>BuildDocumentationDeploy.sh</key>
-		<data>
-		gB+eqCWBSFpi+Uumf1oLy0XOiN8=
-		</data>
-		<key>BuildInternalDeploy.sh</key>
-		<data>
-		2uFDGYJzN94tXWGo/oVyKg7E0zw=
-		</data>
-		<key>BuildSonar.sh</key>
-		<data>
-		Wc/CQocZemb9EIMqnXu/In+EJz8=
-		</data>
-		<key>BuildUniversal.sh</key>
-		<data>
-		n3CTOcRUvrTBFCY2PVm+v45okbg=
-		</data>
-		<key>BuildUtils.sh</key>
-		<data>
-		ZzAcKB8VZMpPBFEb+YoCUn96ou8=
-		</data>
-		<key>DeployCocoapodsTrunk.sh</key>
-		<data>
-		YI4bFJge51qOFZTliGxayzLOqsI=
-		</data>
-		<key>DeployGitRepository.sh</key>
-		<data>
-		vvqFYl83j8mjSjA7d0w02EDKIt8=
-		</data>
-		<key>DeploySDKSnapshotInSamples.sh</key>
-		<data>
-		GRzwDHkEy+K5GAKWmcllknBdZo4=
-		</data>
 		<key>Headers/SASAd.h</key>
 		<data>
 		OS2zAVz1rEXkuPpRQJBji5396dg=
@@ -46,7 +14,7 @@
 		</data>
 		<key>Headers/SASAdPlacement.h</key>
 		<data>
-		wpXQGHRr/OpwG2LEFJiRVXeIhCY=
+		3ebdWxMwBHL/sQ5qRnPzAwFDrPM=
 		</data>
 		<key>Headers/SASAdStatus.h</key>
 		<data>
@@ -106,11 +74,11 @@
 		</data>
 		<key>Headers/SASConfiguration.h</key>
 		<data>
-		NUBeexldGSkIUyTj5B3/x2WM5wI=
+		AvofuIcAAHaCTEuO7woBORaw9ZI=
 		</data>
 		<key>Headers/SASDisplayKit.h</key>
 		<data>
-		BROhn5XUNHHSbW9KS7qvga2U+hQ=
+		0Pv3VFh9qiYwxg/xO3yJp4TB3Qc=
 		</data>
 		<key>Headers/SASFrameworkInfo.h</key>
 		<data>
@@ -212,25 +180,41 @@
 		<data>
 		NqcQyg34m5Vapdk+RShGlD7ZtXI=
 		</data>
+		<key>Headers/SASSellerDefinedAudience.h</key>
+		<data>
+		sG8/15x0FgxnHdf6Gx0h1NZr+OU=
+		</data>
+		<key>Headers/SASSellerDefinedContent.h</key>
+		<data>
+		2T5sql+P8p4GcIlWEe1cyoyheLY=
+		</data>
+		<key>Headers/SASSellerDefinedSegment.h</key>
+		<data>
+		bVjvrOVo4k2O6nltpmpxk5Lho98=
+		</data>
 		<key>Headers/SASVideoEvent.h</key>
 		<data>
 		e+aifkClepxp8zhVEZNo0q8ebE4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Crfs40lujs1Ong9qs5HZt8cZlA4=
+		bWRenibQxFZB6EJiIyw4l1tln8o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		/FmDeMyn7PN+eJOlUAqNmRssdd4=
+		70n/1by08NC0jeafuCcbgjO8zCA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		dH+MX4/rGSKwakoM8479q/udzNo=
 		</data>
 		<key>Smart-Display-SDK.podspec</key>
 		<data>
-		wNnrIkTKX66+UcDMnTA7Ra2YU2M=
+		tHc6hhfvBdHS3H/VsC1/DU7xUQI=
 		</data>
 		<key>Smart-Display-SDK.podspec-trunk</key>
 		<data>
-		rvBc7jG/XGL+vffNTg2xSrFiqU8=
+		+MCexAqR65HnHIuJyJpjOSCKiVI=
 		</data>
 		<key>adchoices.png</key>
 		<data>
@@ -364,6 +348,10 @@
 		<key>equalizer_9@3x.png</key>
 		<data>
 		2fRTqNsGVNAYB7VsZvYdlYNZRjY=
+		</data>
+		<key>extract_creative_info.js</key>
+		<data>
+		jlO9lkgM61sc9et4YclfnxKivvs=
 		</data>
 		<key>forward-icon.png</key>
 		<data>
@@ -577,62 +565,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>BuildDocumentationDeploy.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Oddv0K8I71Qr66zNEFikkpeRnmEPG2NGdCsPPGaDQ7E=
-			</data>
-		</dict>
-		<key>BuildInternalDeploy.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XNi/yXbiIxVqoTkM0jRsyPYOC72Q0p8KY0th6QNhAbQ=
-			</data>
-		</dict>
-		<key>BuildSonar.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BigOpKbZKwVSD0dTH4Titvqi4JArOBOblqXMG4jHu78=
-			</data>
-		</dict>
-		<key>BuildUniversal.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9/Iy2TGEKdm7LRWYtTkLkdc96qsGT/Ymlioj33TuiQM=
-			</data>
-		</dict>
-		<key>BuildUtils.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			m/uaYIYsQuMdD6l3FhArAKj3D0xOfEFBTUnUNTnUhhw=
-			</data>
-		</dict>
-		<key>DeployCocoapodsTrunk.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8+PTKMRemtrp73VyF2Hwna8mLVST+QatpnB/0kbtgaA=
-			</data>
-		</dict>
-		<key>DeployGitRepository.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qKMTa6bMdfS6BaAM/VDDWAzPgW46SqiVikB3jHEP5xQ=
-			</data>
-		</dict>
-		<key>DeploySDKSnapshotInSamples.sh</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9U0NXODIWGj3bQbj2YmYbrIqcoNwi/19r371h7IH0rg=
-			</data>
-		</dict>
 		<key>Headers/SASAd.h</key>
 		<dict>
 			<key>hash2</key>
@@ -651,7 +583,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o+fSHlF5ZHRHd0am3YU/nt73M5pn6dcDqwZrPowE4xA=
+			OE1eOcBF0Pn/mNtVcA7RPwmiu0Hm53921paFjBp4M/A=
 			</data>
 		</dict>
 		<key>Headers/SASAdStatus.h</key>
@@ -756,14 +688,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9HQPeESqzB7NGUPF4XCPWHi5TN/FsXw/0Fkxm8P9R5E=
+			Q2c3O8h8Lgi+zG44W1GBjRu1UcWS/cy/KtQdqbTFqNw=
 			</data>
 		</dict>
 		<key>Headers/SASDisplayKit.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pJ78im1oIZxrznwb3dTeznbY3QGIkgWRu9UCLTjeS10=
+			H/MtDsgWq6BIICdZhSF7CRKnzQc21LtuS7NJIYwyqM0=
 			</data>
 		</dict>
 		<key>Headers/SASFrameworkInfo.h</key>
@@ -941,6 +873,27 @@
 			ra4w3qVtf/UZW0pRH61nfO2NjOcbO13+g8GgkLyAZu8=
 			</data>
 		</dict>
+		<key>Headers/SASSellerDefinedAudience.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gYQPeha4sHgzOB1FnjH3sqd28zbvVThL4fVP4u8vHrs=
+			</data>
+		</dict>
+		<key>Headers/SASSellerDefinedContent.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yllJwmy63L40FJgktXEREyCQIeex0BW1pqbd7yuSCko=
+			</data>
+		</dict>
+		<key>Headers/SASSellerDefinedSegment.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iu86rKHE5cXkMrfP7nCs6zb3FUUJgt8vXv2t2jJIFWc=
+			</data>
+		</dict>
 		<key>Headers/SASVideoEvent.h</key>
 		<dict>
 			<key>hash2</key>
@@ -952,21 +905,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eYa8iN24KRV4ehWyHVTcqOfeBtZIuQM24x3FvkqizZA=
+			HjV2Mp+S8YxFPb4R4vT3t9HgMCsmmLI/d6vyHhWOb4k=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tUn6U0OtIHxkfwJR6DQVy6VCD1eFcpuT7BE08clITxo=
 			</data>
 		</dict>
 		<key>Smart-Display-SDK.podspec</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XVtsr+qgZ9UPJ8/+g/EwXCAmkrUM3+9TKdmMG5WxzjU=
+			tR3c/dyj6oiXiVkOvDCmIa9x/4YPy4qBhtwcJyq77mM=
 			</data>
 		</dict>
 		<key>Smart-Display-SDK.podspec-trunk</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CBswZRND3ZjaZhkfj8hAl2FFcnSeJq84tGX/6n05jgM=
+			FXyy+fhptuOioL7INapPShX4ch/X1XS8XUJMzHxrrms=
 			</data>
 		</dict>
 		<key>adchoices.png</key>
@@ -1193,6 +1153,13 @@
 			<key>hash2</key>
 			<data>
 			wRJToPgjVBA2aCc4gQvOpiGh4W6JVYDiMqXIQzvXWio=
+			</data>
+		</dict>
+		<key>extract_creative_info.js</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1vGTrYHrAKXNdxf6pnYExcQUpZY9bPRO6cUqdHV32KA=
 			</data>
 		</dict>
 		<key>forward-icon.png</key>

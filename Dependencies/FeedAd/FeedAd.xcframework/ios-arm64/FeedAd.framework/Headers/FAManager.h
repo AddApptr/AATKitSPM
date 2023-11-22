@@ -7,8 +7,8 @@
 
 #import <CoreLocation/CoreLocation.h>
 #import <Foundation/Foundation.h>
-#import "FACustomEvent.h"
-#import "FAConfig.h"
+#import <FeedAd/FACustomEvent.h>
+#import <FeedAd/FAConfig.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
