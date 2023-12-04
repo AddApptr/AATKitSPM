@@ -285,35 +285,35 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3345,
+      "offset": 3166,
       "length": 16,
-      "value": "\"unKnown reason\""
+      "value": "\"Unknown reason\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3415,
+      "offset": 3236,
       "length": 16,
-      "value": "\"unKnown reason\""
+      "value": "\"Unknown reason\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 4190,
+      "offset": 4192,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackRewarded.swift",
       "kind": "IntegerLiteral",
-      "offset": 4210,
+      "offset": 4212,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 4212,
+      "offset": 4214,
       "length": 2,
       "value": "\"\""
     },
@@ -407,6 +407,20 @@
       "offset": 2906,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackNativeAd.swift",
+      "kind": "StringLiteral",
+      "offset": 3900,
+      "length": 15,
+      "value": "\"Unknown Error\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackNativeAd.swift",
+      "kind": "StringLiteral",
+      "offset": 3969,
+      "length": 15,
+      "value": "\"Unknown Error\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackFullscreen.swift",
@@ -514,6 +528,20 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 3360,
+      "length": 15,
+      "value": "\"Unknown Error\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 3429,
+      "length": 15,
+      "value": "\"Unknown Error\""
+    },
+    {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackBanner.swift",
       "kind": "StringLiteral",
       "offset": 761,
@@ -586,7 +614,21 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3058,
+      "offset": 2842,
+      "length": 15,
+      "value": "\"Unknown Error\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2911,
+      "length": 15,
+      "value": "\"Unknown Error\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATBluestackAdapter\/AATBluestackBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3274,
       "length": 2,
       "value": "\"\""
     }

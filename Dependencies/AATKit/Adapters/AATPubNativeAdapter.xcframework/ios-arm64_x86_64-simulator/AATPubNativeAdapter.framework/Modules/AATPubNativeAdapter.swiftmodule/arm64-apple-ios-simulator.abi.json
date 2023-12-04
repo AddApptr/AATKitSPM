@@ -271,147 +271,105 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1434,
+      "offset": 1509,
       "length": 35,
       "value": "\"couldn't initialize PubNative SDK\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1511,
+      "offset": 1586,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1861,
+      "offset": 2002,
       "length": 20,
       "value": "\"controller is nil!\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1903,
+      "offset": 2044,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2081,
+      "offset": 2222,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
-      "kind": "StringLiteral",
-      "offset": 2185,
-      "length": 43,
-      "value": "\"AATKitPubnativeOffsetSecsHTMLInterstitial\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 2259,
+      "offset": 2409,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2327,
+      "offset": 2477,
       "length": 58,
       "value": "\"setting HTMLInterstitialSkipOffset with value: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2384,
+      "offset": 2534,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2525,
+      "offset": 2675,
       "length": 50,
       "value": "\"setting HTMLInterstitialSkipOffset with value: 5\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 2626,
+      "offset": 2776,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
-      "kind": "StringLiteral",
-      "offset": 2705,
-      "length": 44,
-      "value": "\"AATKitPubnativeOffsetSecsVideoInterstitial\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 2780,
+      "offset": 2894,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2848,
+      "offset": 2962,
       "length": 59,
       "value": "\"setting VideoInterstitialSkipOffset with value: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2906,
+      "offset": 3020,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 3039,
-      "length": 45,
-      "value": "\"AATKitPubnativeOffsetSecsVideoLInterstitial\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3122,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
-      "kind": "StringLiteral",
-      "offset": 3190,
-      "length": 59,
-      "value": "\"setting VideoInterstitialSkipOffset with value: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
-      "kind": "StringLiteral",
-      "offset": 3248,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
-      "kind": "StringLiteral",
-      "offset": 3390,
+      "offset": 3162,
       "length": 51,
       "value": "\"setting VideoInterstitialSkipOffset with value: 5\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 3493,
+      "offset": 3265,
       "length": 1,
       "value": "5"
     },
@@ -453,161 +411,105 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 1427,
+      "offset": 1502,
       "length": 35,
       "value": "\"couldn't initialize PubNative SDK\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1504,
+      "offset": 1579,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 1848,
+      "offset": 1989,
       "length": 20,
       "value": "\"controller is nil!\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1890,
+      "offset": 2031,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 2068,
+      "offset": 2209,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2172,
-      "length": 43,
-      "value": "\"AATKitPubnativeOffsetSecsHTMLInterstitial\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2246,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
-      "kind": "StringLiteral",
-      "offset": 2314,
+      "offset": 2433,
       "length": 58,
       "value": "\"setting HTMLInterstitialSkipOffset with value: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2371,
+      "offset": 2490,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2512,
+      "offset": 2631,
       "length": 50,
       "value": "\"setting HTMLInterstitialSkipOffset with value: 5\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "IntegerLiteral",
-      "offset": 2613,
+      "offset": 2732,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2692,
-      "length": 44,
-      "value": "\"AATKitPubnativeOffsetSecsVideoInterstitial\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2767,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
-      "kind": "StringLiteral",
-      "offset": 2835,
+      "offset": 2887,
       "length": 59,
       "value": "\"setting VideoInterstitialSkipOffset with value: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2893,
+      "offset": 2945,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3026,
-      "length": 45,
-      "value": "\"AATKitPubnativeOffsetSecsVideoLInterstitial\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3109,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
-      "kind": "StringLiteral",
-      "offset": 3177,
-      "length": 59,
-      "value": "\"setting VideoInterstitialSkipOffset with value: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
-      "kind": "StringLiteral",
-      "offset": 3235,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
-      "kind": "StringLiteral",
-      "offset": 3377,
+      "offset": 3087,
       "length": 51,
       "value": "\"setting VideoInterstitialSkipOffset with value: 5\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "IntegerLiteral",
-      "offset": 3480,
+      "offset": 3190,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 4780,
+      "offset": 4490,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATPubNativeAdapter\/AATPubNativeRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 4791,
+      "offset": 4501,
       "length": 2,
       "value": "\"\""
     }

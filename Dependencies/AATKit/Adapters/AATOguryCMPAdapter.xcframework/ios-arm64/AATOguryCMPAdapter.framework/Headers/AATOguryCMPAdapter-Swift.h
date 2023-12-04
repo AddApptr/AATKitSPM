@@ -284,10 +284,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSString;
 
-SWIFT_CLASS("_TtC18AATOguryCMPAdapter11AATCMPOgury")
+SWIFT_CLASS("_TtC18AATOguryCMPAdapter11AATCMPOgury") SWIFT_DEPRECATED_MSG("Ogury CMP is deprecated and will no longer be supported from AATKit SDK v3.5")
 @interface AATCMPOgury : NSObject <AATCMPProtocol>
 - (BOOL)isSuccessfullyInitialized:(NSString * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
-- (nullable instancetype)initWith:(NSString * _Nonnull)assetKey OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWith:(NSString * _Nonnull)assetKey OBJC_DESIGNATED_INITIALIZER SWIFT_DEPRECATED_MSG("Ogury CMP is deprecated and will no longer be supported from AATKit SDK v3.5");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

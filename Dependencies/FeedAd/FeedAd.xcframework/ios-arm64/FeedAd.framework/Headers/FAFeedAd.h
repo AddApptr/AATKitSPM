@@ -7,9 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "FAConfig.h"
-#import "FAFeedAdConfig.h"
-#import "FAFeedAdDelegate.h"
+#import <FeedAd/FAConfig.h>
+#import <FeedAd/FAFeedAdConfig.h>
+#import <FeedAd/FAFeedAdDelegate.h>
 
 
 NS_ASSUME_NONNULL_BEGIN

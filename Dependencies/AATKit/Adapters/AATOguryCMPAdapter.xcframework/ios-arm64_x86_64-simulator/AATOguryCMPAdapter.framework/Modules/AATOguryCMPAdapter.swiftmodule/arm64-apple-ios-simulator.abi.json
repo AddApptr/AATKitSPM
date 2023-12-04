@@ -123,10 +123,12 @@
             "usr": "c:@M@AATOguryCMPAdapter@objc(cs)AATCMPOgury(im)initWith:",
             "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC4withACSgSS_tcfc",
             "moduleName": "AATOguryCMPAdapter",
+            "deprecated": true,
             "objc_name": "initWith:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
             ],
             "init_kind": "Designated"
           },
@@ -425,9 +427,11 @@
         "usr": "c:@M@AATOguryCMPAdapter@objc(cs)AATCMPOgury",
         "mangledName": "$s18AATOguryCMPAdapter11AATCMPOguryC",
         "moduleName": "AATOguryCMPAdapter",
+        "deprecated": true,
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "Available"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "superclassNames": [
@@ -520,322 +524,322 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 645,
+      "offset": 760,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 671,
+      "offset": 786,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "BooleanLiteral",
-      "offset": 732,
+      "offset": 847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "BooleanLiteral",
-      "offset": 1077,
+      "offset": 1311,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 1176,
+      "offset": 1410,
       "length": 18,
       "value": "\"Ogury idle state\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 1290,
+      "offset": 1524,
       "length": 22,
       "value": "\"Ogury setup finished\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 1457,
+      "offset": 1691,
       "length": 52,
       "value": "\"Ogury CMP error: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 1486,
+      "offset": 1720,
       "length": 21,
       "value": "\"Unknown Ogury Error\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 1508,
+      "offset": 1742,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 1568,
+      "offset": 1802,
       "length": 21,
       "value": "\"Unknown Ogury Error\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 290,
+      "offset": 405,
       "length": 11,
       "value": "\"AATOguryCMPAdapter.AATCMPOgury\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 1962,
+      "offset": 2196,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 1988,
+      "offset": 2222,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 2293,
+      "offset": 2527,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 2319,
+      "offset": 2553,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 3599,
+      "offset": 3833,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 3625,
+      "offset": 3859,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 4247,
+      "offset": 4481,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 4273,
+      "offset": 4507,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 4567,
+      "offset": 4801,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 4593,
+      "offset": 4827,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 4875,
+      "offset": 5109,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 4901,
+      "offset": 5135,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 5221,
+      "offset": 5455,
       "length": 3,
       "value": "459"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 5305,
+      "offset": 5539,
       "length": 3,
       "value": "227"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 5403,
+      "offset": 5637,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 5486,
+      "offset": 5720,
       "length": 3,
       "value": "280"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 5570,
+      "offset": 5804,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 5650,
+      "offset": 5884,
       "length": 3,
       "value": "297"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 5735,
+      "offset": 5969,
       "length": 3,
       "value": "606"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 5816,
+      "offset": 6050,
       "length": 3,
       "value": "278"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 5898,
+      "offset": 6132,
       "length": 3,
       "value": "248"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6003,
+      "offset": 6237,
       "length": 2,
       "value": "34"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6083,
+      "offset": 6317,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6163,
+      "offset": 6397,
       "length": 3,
       "value": "308"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6248,
+      "offset": 6482,
       "length": 3,
       "value": "140"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6331,
+      "offset": 6565,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6412,
+      "offset": 6646,
       "length": 3,
       "value": "432"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6496,
+      "offset": 6730,
       "length": 3,
       "value": "524"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6580,
+      "offset": 6814,
       "length": 3,
       "value": "515"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6665,
+      "offset": 6899,
       "length": 2,
       "value": "69"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6743,
+      "offset": 6977,
       "length": 3,
       "value": "337"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "IntegerLiteral",
-      "offset": 6829,
+      "offset": 7063,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 6914,
+      "offset": 7148,
       "length": 85,
       "value": "\"No mapping for network: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 6958,
+      "offset": 7192,
       "length": 9,
       "value": "\" available, treating consent as wittheld\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATOguryCMPAdapter\/OguryCMP\/AATCMPOgury.swift",
       "kind": "StringLiteral",
-      "offset": 7326,
+      "offset": 7560,
       "length": 32,
       "value": "\"AATOguryCMPAdapter.AATCMPOgury\""
     }

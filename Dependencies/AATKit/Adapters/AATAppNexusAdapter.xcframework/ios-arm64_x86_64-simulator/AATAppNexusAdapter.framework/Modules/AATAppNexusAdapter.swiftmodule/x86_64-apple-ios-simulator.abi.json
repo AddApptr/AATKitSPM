@@ -207,7 +207,7 @@
       "kind": "StringLiteral",
       "offset": 1303,
       "length": 7,
-      "value": "\"8.6.0\""
+      "value": "\"8.9.0\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusManager.swift",
@@ -254,329 +254,357 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1276,
+      "offset": 1189,
+      "length": 33,
+      "value": "\"Ad sizes: \""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
+      "kind": "Array",
+      "offset": 1218,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 1221,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 1363,
       "length": 34,
       "value": "\"Trying to load Ad without Ad ID.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1331,
+      "offset": 1418,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1469,
+      "offset": 1556,
       "length": 11,
       "value": "\"memberId=\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1552,
+      "offset": 1639,
       "length": 3,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1814,
+      "offset": 1901,
       "length": 53,
       "value": "\"Failed to initialize SDK with out a valid memberId.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1888,
+      "offset": 1975,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2269,
+      "offset": 2376,
       "length": 62,
       "value": "\"Failed to initialize \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2329,
+      "offset": 2436,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 2373,
+      "offset": 2480,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2667,
+      "offset": 2824,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2673,
+      "offset": 2830,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2999,
+      "offset": 3156,
       "length": 52,
       "value": "\"Trying to load multi size Ad without a valid sizes\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3109,
+      "offset": 3266,
       "length": 52,
       "value": "\"Trying to load multi size Ad without a valid sizes\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3289,
+      "offset": 3446,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3295,
+      "offset": 3452,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 3514,
-      "length": 28,
-      "value": "\"AATKitAppNexusNativeBanner\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 3557,
+      "offset": 3706,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 3614,
+      "offset": 3763,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 3667,
+      "offset": 3816,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "FloatLiteral",
-      "offset": 3725,
+      "offset": 3874,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4465,
+      "offset": 4614,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 4499,
+      "offset": 4648,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 4538,
+      "offset": 4687,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 4580,
+      "offset": 4729,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4995,
+      "offset": 5144,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 5516,
+      "offset": 5665,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 5543,
+      "offset": 5692,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 7361,
+      "offset": 6120,
+      "length": 114,
+      "value": "\"Loaded banner size for multiple-size request: \""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 6199,
+      "length": 1,
+      "value": "\"x\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 6233,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 7812,
       "length": 20,
       "value": "\"Resume for \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusBanner.swift",
       "kind": "StringLiteral",
-      "offset": 7380,
+      "offset": 7831,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 823,
+      "offset": 851,
       "length": 11,
       "value": "\"memberId=\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 906,
+      "offset": 934,
       "length": 3,
       "value": "\"=\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1168,
+      "offset": 1196,
       "length": 53,
       "value": "\"Failed to initialize SDK with out a valid memberId.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1242,
+      "offset": 1270,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1600,
+      "offset": 1726,
       "length": 62,
       "value": "\"Failed to initialize \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1660,
+      "offset": 1786,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1703,
+      "offset": 1829,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 1882,
+      "offset": 2008,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2474,
+      "offset": 2600,
       "length": 61,
       "value": "\"Failed to show InterstitialAd due to invalid viewController\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2557,
+      "offset": 2683,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
-      "kind": "StringLiteral",
-      "offset": 2704,
-      "length": 35,
-      "value": "\"AppNexusInterstitialAutoCloseTime\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 2786,
+      "offset": 2836,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2854,
+      "offset": 2904,
       "length": 35,
       "value": "\"with auto close: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2888,
+      "offset": 2938,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 3000,
+      "offset": 3064,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 3082,
+      "offset": 3146,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 3597,
+      "offset": 3661,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppNexusAdapter\/AATAppNexusFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 3624,
+      "offset": 3688,
       "length": 1,
       "value": "0"
     }

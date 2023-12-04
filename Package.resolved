@@ -47,6 +47,15 @@
         }
       },
       {
+        "package": "SASDisplayKit",
+        "repositoryURL": "https://github.com/smartadserver/swift-package-manager-display-sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "2189ade6ae367d93068036f22235584349475d9e",
+          "version": "7.23.1"
+        }
+      },
+      {
         "package": "GoogleMobileAds",
         "repositoryURL": "https://github.com/googleads/swift-package-manager-google-mobile-ads",
         "state": {

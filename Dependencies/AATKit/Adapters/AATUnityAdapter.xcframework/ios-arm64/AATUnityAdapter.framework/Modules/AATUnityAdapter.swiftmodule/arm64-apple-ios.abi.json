@@ -123,92 +123,99 @@
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "kind": "StringLiteral",
+      "offset": 807,
+      "length": 17,
+      "value": "\"privacy.consent\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1313,
+      "offset": 1491,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 1511,
+      "offset": 1689,
       "length": 68,
       "value": "\"Failed to initialize UnityAds SDK with different gameId: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 1578,
+      "offset": 1756,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1605,
+      "offset": 1783,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1652,
+      "offset": 1830,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 1943,
+      "offset": 2121,
       "length": 20,
       "value": "\"user.nonbehavioral\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 2209,
+      "offset": 2387,
       "length": 42,
       "value": "\"Unity already used the same placementId.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2273,
+      "offset": 2451,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2365,
+      "offset": 2543,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2705,
+      "offset": 2883,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 2877,
+      "offset": 3055,
       "length": 59,
       "value": "\"Failed to initialize UnityAds SDK with reason: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
-      "offset": 2935,
+      "offset": 3113,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2973,
+      "offset": 3151,
       "length": 5,
       "value": "false"
     },

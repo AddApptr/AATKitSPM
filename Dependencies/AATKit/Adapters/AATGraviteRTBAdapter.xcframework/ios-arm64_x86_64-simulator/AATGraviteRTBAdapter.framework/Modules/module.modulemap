@@ -1,0 +1,11 @@
+framework module AATGraviteRTBAdapter {
+  umbrella header "AATGraviteRTBAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATGraviteRTBAdapter.Swift {
+  header "AATGraviteRTBAdapter-Swift.h"
+  requires objc
+}

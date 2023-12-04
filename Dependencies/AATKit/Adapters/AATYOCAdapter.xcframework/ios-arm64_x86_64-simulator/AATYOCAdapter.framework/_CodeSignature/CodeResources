@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/AATYOCAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		qDYYFglN6WgkPvI4HzwmcSOsjAU=
+		KKpMi8woasmVwsvRKEC/fjOEhU8=
 		</data>
 		<key>Modules/AATYOCAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/AATYOCAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JZQGSlFbAKwe/hdQhsWU8Pc7KLE=
+		HhXKhdQ0xJPXOxNEsBp41CD9W5Y=
 		</data>
 		<key>Modules/AATYOCAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		qDYYFglN6WgkPvI4HzwmcSOsjAU=
+		KKpMi8woasmVwsvRKEC/fjOEhU8=
 		</data>
 		<key>Modules/AATYOCAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,11 +54,19 @@
 		</data>
 		<key>Modules/AATYOCAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6uyr4WXSbJoFEpbnT/hchGNWy1Y=
+		QmjDbUiv5DvXDCejeIZp70xPMU0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		ROlrMEy3T8OZxxj5boE5TZyyoBo=
+		</data>
+		<key>README.md</key>
+		<data>
+		RSIumyfzgRMEZL8yc6Rfqov8IFM=
+		</data>
+		<key>VisxSDK.podspec</key>
+		<data>
+		eLLB3MGAnAiHM5QCvmZCsp9U8eg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -89,11 +97,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qDYYFglN6WgkPvI4HzwmcSOsjAU=
+			KKpMi8woasmVwsvRKEC/fjOEhU8=
 			</data>
 			<key>hash2</key>
 			<data>
-			12dc4VWsZwrsrdgt72U7J1P559iNtp2FXRTW2I25cEQ=
+			EHSJFzm6+299h+nMkxEml5sGCFKIFi6VF1nG5OyZDdc=
 			</data>
 		</dict>
 		<key>Modules/AATYOCAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,22 +141,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JZQGSlFbAKwe/hdQhsWU8Pc7KLE=
+			HhXKhdQ0xJPXOxNEsBp41CD9W5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			5AplgWgCxFZZ8gcBJb268EXlI/BYaEW0OV7oN2tb2dE=
+			kQPle57Y2+oWDqA7e9k4MZDixnyTZFnEFmpBYGQOuzc=
 			</data>
 		</dict>
 		<key>Modules/AATYOCAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qDYYFglN6WgkPvI4HzwmcSOsjAU=
+			KKpMi8woasmVwsvRKEC/fjOEhU8=
 			</data>
 			<key>hash2</key>
 			<data>
-			12dc4VWsZwrsrdgt72U7J1P559iNtp2FXRTW2I25cEQ=
+			EHSJFzm6+299h+nMkxEml5sGCFKIFi6VF1nG5OyZDdc=
 			</data>
 		</dict>
 		<key>Modules/AATYOCAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -188,11 +196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6uyr4WXSbJoFEpbnT/hchGNWy1Y=
+			QmjDbUiv5DvXDCejeIZp70xPMU0=
 			</data>
 			<key>hash2</key>
 			<data>
-			KPn2m8So72lP5YhKjq/EOxXAsw2yg+dfLpMoe22HszA=
+			sBjL66w67ZskKJx/5D8uTYO/fwTRyon5iUPtHGv/kKE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -204,6 +212,28 @@
 			<key>hash2</key>
 			<data>
 			tILM++v9YnYgezYqvREcd86bcPmI18a9rPXbOSQ20OU=
+			</data>
+		</dict>
+		<key>README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RSIumyfzgRMEZL8yc6Rfqov8IFM=
+			</data>
+			<key>hash2</key>
+			<data>
+			w3vmnnJ30BDwoqRhHk5FufockCkOL0BaxECWhxsPKng=
+			</data>
+		</dict>
+		<key>VisxSDK.podspec</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eLLB3MGAnAiHM5QCvmZCsp9U8eg=
+			</data>
+			<key>hash2</key>
+			<data>
+			zIkrs48eNjuRyPrXcnkGDsz9Mxz79wAS8w/hUIXTzWc=
 			</data>
 		</dict>
 	</dict>

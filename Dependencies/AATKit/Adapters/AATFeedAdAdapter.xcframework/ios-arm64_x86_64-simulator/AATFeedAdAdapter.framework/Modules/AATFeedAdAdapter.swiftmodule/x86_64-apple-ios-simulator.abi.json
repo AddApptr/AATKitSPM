@@ -100,128 +100,107 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "StringLiteral",
-      "offset": 703,
+      "offset": 975,
       "length": 3,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 737,
+      "offset": 1009,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "StringLiteral",
-      "offset": 868,
+      "offset": 1140,
       "length": 23,
       "value": "\"Invalid adID: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "StringLiteral",
-      "offset": 890,
+      "offset": 1162,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 912,
+      "offset": 1184,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1116,
+      "offset": 1388,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1385,
+      "offset": 1657,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1549,
+      "offset": 1821,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 1888,
-      "length": 27,
-      "value": "\"AATKitFeedAdShutterColour\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2019,
-      "length": 63,
-      "value": "\"AATKitFeedAdShutterColour doesn't exist in the app info.plist\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2201,
-      "length": 59,
-      "value": "\"found value \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2225,
-      "length": 3,
-      "value": "\" for key AATKitFeedAdShutterColour\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2403,
-      "length": 50,
-      "value": "\"Couldn't convert \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2432,
-      "length": 2,
-      "value": "\" to a proper UIColor\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2572,
-      "length": 44,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2584,
-      "length": 3,
-      "value": "\" has been converted to \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2615,
-      "length": 3,
-      "value": "\"\""
+      "kind": "IntegerLiteral",
+      "offset": 3045,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3648,
+      "offset": 3051,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3149,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3155,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3503,
+      "length": 104,
+      "value": "\"Resizing adView to width: \""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3550,
+      "length": 3,
+      "value": "\" and height: \""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3606,
+      "length": 3,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
@@ -233,112 +212,63 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3752,
+      "offset": 3660,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 3758,
+      "offset": 3764,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3770,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4106,
-      "length": 104,
-      "value": "\"Resizing adView to width: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 4153,
-      "length": 3,
-      "value": "\" and height: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 4209,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4257,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4263,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4367,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4373,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 4762,
+      "offset": 4167,
       "length": 24,
       "value": "\"feedAdDidFinishPlaying\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4959,
+      "offset": 4364,
       "length": 21,
       "value": "\"feedAdDidChangeSize\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "StringLiteral",
-      "offset": 5293,
+      "offset": 4698,
       "length": 37,
       "value": "\"feedAdShouldDisplayLoadingIndicator\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 5415,
-      "length": 28,
-      "value": "\"AATKitFeedAdDisableSpinner\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 5480,
+      "offset": 4831,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "StringLiteral",
-      "offset": 6368,
+      "offset": 5719,
       "length": 20,
       "value": "\"Resume for \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFeedAdAdapter\/AATFeedAdBanner.swift",
       "kind": "StringLiteral",
-      "offset": 6387,
+      "offset": 5738,
       "length": 3,
       "value": "\"\""
     },

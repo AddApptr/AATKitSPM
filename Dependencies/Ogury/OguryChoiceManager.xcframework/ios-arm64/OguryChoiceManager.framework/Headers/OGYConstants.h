@@ -1,12 +1,6 @@
 //
-//  Constants.h
-//  OguryChoiceManager
+//  Copyright © 2015 - 2022 Ogury Ltd. All rights reserved.
 //
-//  Copyright © 2018 Ogury Ltd. All rights reserved.
-//
-
-#ifndef OGYConstants_h
-#define OGYConstants_h
 
 typedef NS_ENUM(NSInteger, ConsentManagerPurpose) {
     ConsentManagerPurposeInformation        = 1,
@@ -28,7 +22,3 @@ typedef NS_OPTIONS(NSUInteger, ConsentManagerSpecialFeature) {
 };
 
 typedef void (^AskConsentCompletionBlock)(NSError * _Nullable error,ConsentManagerAnswer answer);
-
-
-
-#endif /* Constants_h */

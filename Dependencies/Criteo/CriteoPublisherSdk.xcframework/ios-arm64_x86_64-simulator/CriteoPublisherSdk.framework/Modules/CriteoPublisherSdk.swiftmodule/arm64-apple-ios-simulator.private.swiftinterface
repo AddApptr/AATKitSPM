@@ -72,6 +72,7 @@ public typealias VoidCompletion = () -> Swift.Void
   @objc public func isExpanded() -> Swift.Bool
   @objc public func onSuccessClose()
   @objc public func inject(into html: Swift.String) -> Swift.String
+  @objc public func injectMRAID()
   @objc public func updateMraid(bundle: Foundation.Bundle?)
 }
 extension CriteoPublisherSdk.CRMRAIDHandler : WebKit.WKScriptMessageHandler {

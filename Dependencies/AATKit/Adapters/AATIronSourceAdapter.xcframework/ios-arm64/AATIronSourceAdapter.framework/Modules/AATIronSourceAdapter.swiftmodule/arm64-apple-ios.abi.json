@@ -131,21 +131,42 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
-      "offset": 953,
+      "offset": 767,
+      "length": 5,
+      "value": "\"YES\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 775,
+      "length": 4,
+      "value": "\"NO\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 818,
+      "length": 13,
+      "value": "\"do_not_sell\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1171,
       "length": 19,
       "value": "\"is_child_directed\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
-      "offset": 981,
+      "offset": 1199,
       "length": 20,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
-      "offset": 1000,
+      "offset": 1218,
       "length": 2,
       "value": "\"\""
     },
@@ -257,21 +278,21 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1603,
+      "offset": 1608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1814,
+      "offset": 2057,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2180,
+      "offset": 2342,
       "length": 5,
       "value": "false"
     },
@@ -320,58 +341,37 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1977,
+      "offset": 1980,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
-      "offset": 2116,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 2223,
+      "offset": 2112,
       "length": 51,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
-      "offset": 2273,
+      "offset": 2162,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2650,
+      "offset": 2555,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2947,
+      "offset": 3059,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 3055,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 3160,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",

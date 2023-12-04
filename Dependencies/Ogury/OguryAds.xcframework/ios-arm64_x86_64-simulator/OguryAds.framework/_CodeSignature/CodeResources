@@ -51,7 +51,7 @@
 		</data>
 		<key>Headers/OguryAdsError.h</key>
 		<data>
-		NsKI7x7856r9qLwcSsDtQnf+tvY=
+		bgkxLTgXfTs1Piwjt3ZPToMfUOs=
 		</data>
 		<key>Headers/OguryAdsInterstitial.h</key>
 		<data>
@@ -107,19 +107,27 @@
 		</data>
 		<key>Headers/OguryTokenService.h</key>
 		<data>
-		ObKAoFaDRifZEjm3D5DNz4peYKw=
+		SDoLXEfXAFRQJrrbhxGq9s0A184=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		d5LRUHyASWZdsrECRppfC73YEm0=
+		KMoErYDS7dwWZ1lUi2MiQrcheIE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		r+CkFAIw1l0cY0xdUnv7LiNV0YE=
 		</data>
+		<key>PrivateHeaders/OGABroadcastEventBus.h</key>
+		<data>
+		Byg5CxKQiwVVKrGzo2xEdfO+XUw=
+		</data>
 		<key>PrivateHeaders/OGAInternal.h</key>
 		<data>
-		wDT9SetuKYgr2VS72teD1ojhbkY=
+		WHdqpqEgS9J/Bw5HZAQZKPQckoU=
+		</data>
+		<key>PrivateHeaders/OGAPersistentEventBus.h</key>
+		<data>
+		jzGLswZEKAESJ9/yWzD4+p4uLdg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -240,11 +248,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NsKI7x7856r9qLwcSsDtQnf+tvY=
+			bgkxLTgXfTs1Piwjt3ZPToMfUOs=
 			</data>
 			<key>hash2</key>
 			<data>
-			T9WiS2yd3lJqS7P3evFNQN0mMpnTxazuGNoFWwCGf+k=
+			o08UhwGG0GJoYic68Qhnp6CtlROVC5NHRiPTlNnM9Y0=
 			</data>
 		</dict>
 		<key>Headers/OguryAdsInterstitial.h</key>
@@ -394,11 +402,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ObKAoFaDRifZEjm3D5DNz4peYKw=
+			SDoLXEfXAFRQJrrbhxGq9s0A184=
 			</data>
 			<key>hash2</key>
 			<data>
-			CR1tnTyC2Sf0qP3Ozflb+xDDRoB2Ksc4sVagKuMVqE0=
+			QEnHGkerftXnjjawbnmJT75dlKhC78yUxPLbGKLjMuI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -412,15 +420,37 @@
 			R9g4FZeNg5FL9sE2zBNFCaSxMH0TH5J4Ri2BFa721kE=
 			</data>
 		</dict>
+		<key>PrivateHeaders/OGABroadcastEventBus.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Byg5CxKQiwVVKrGzo2xEdfO+XUw=
+			</data>
+			<key>hash2</key>
+			<data>
+			gaXZ6VUhxoBrruOHM3KxYzgXp2+O+pcnm+9voO/Hf6g=
+			</data>
+		</dict>
 		<key>PrivateHeaders/OGAInternal.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wDT9SetuKYgr2VS72teD1ojhbkY=
+			WHdqpqEgS9J/Bw5HZAQZKPQckoU=
 			</data>
 			<key>hash2</key>
 			<data>
-			xeFXE0jGYvpNJ1qQqkyQ69IN/ZR5uf9e4TiMUzqfHK4=
+			XXeQlhsGPmJBrQnUfz6pyCjKSe7hGlcJWPJbyYSJdNQ=
+			</data>
+		</dict>
+		<key>PrivateHeaders/OGAPersistentEventBus.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jzGLswZEKAESJ9/yWzD4+p4uLdg=
+			</data>
+			<key>hash2</key>
+			<data>
+			WR2JrfPD7zUVD2BfnAralZrR/BqDmNsJslP4FJD+/zE=
 			</data>
 		</dict>
 	</dict>

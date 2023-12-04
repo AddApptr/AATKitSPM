@@ -120,58 +120,65 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
-      "offset": 730,
+      "offset": 765,
       "length": 34,
       "value": "\"AmazonHB is already initialized.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "Array",
-      "offset": 890,
+      "offset": 925,
       "length": 14,
       "value": "[\"1.0\", \"2.0\"]"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
-      "offset": 1326,
+      "offset": 1361,
       "length": 46,
       "value": "\"Failed to find price mapping for key: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
-      "offset": 1371,
+      "offset": 1406,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1390,
+      "offset": 1425,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
-      "offset": 1714,
+      "offset": 1845,
       "length": 13,
       "value": "\"pricePoints\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
-      "offset": 1789,
+      "offset": 1920,
       "length": 20,
       "value": "\"encodedPricePoints\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1996,
+      "offset": 2127,
       "length": 2,
       "value": "20"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2394,
+      "length": 12,
+      "value": "\"us_privacy\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
@@ -309,42 +316,42 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2284,
+      "offset": 2361,
       "length": 36,
       "value": "\"Couldn't create AATAmazonHBRequest\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 2342,
+      "offset": 2419,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 2462,
+      "offset": 2539,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 3009,
+      "offset": 3086,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3660,
+      "offset": 3737,
       "length": 25,
       "value": "\"Error loading banner ad\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3735,
+      "offset": 3812,
       "length": 25,
       "value": "\"Error loading banner ad\""
     },
@@ -575,84 +582,84 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1819,
+      "offset": 1896,
       "length": 36,
       "value": "\"Couldn't create AATAmazonHBRequest\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1877,
+      "offset": 1954,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1998,
+      "offset": 2075,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2232,
+      "offset": 2309,
       "length": 32,
       "value": "\"Calling show with no ready ad!\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2286,
+      "offset": 2363,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2430,
+      "offset": 2507,
       "length": 44,
       "value": "\"Calling show with inValid view Controller.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2496,
+      "offset": 2573,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2685,
+      "offset": 2762,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2761,
+      "offset": 2838,
       "length": 15,
       "value": "\"Unknown error\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2794,
+      "offset": 2871,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 3565,
+      "offset": 3642,
       "length": 31,
       "value": "\"Error loading interstitial ad\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 3646,
+      "offset": 3723,
       "length": 31,
       "value": "\"Error loading interstitial ad\""
     },

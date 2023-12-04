@@ -7,8 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "FAInterstitialAdConfig.h"
-#import "FAInterstitialAdDelegate.h"
+#import <FeedAd/FAInterstitialAdConfig.h>
+#import <FeedAd/FAInterstitialAdDelegate.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
