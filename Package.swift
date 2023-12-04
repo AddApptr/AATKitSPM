@@ -156,7 +156,7 @@ let package = Package(
 
         .target(name:"AATKit-SmartAd",
                 dependencies: [
-                    "SmartAdDisplaySDK",
+                    .product(name: "SmartAdDisplaySDK", package: "SmartAdDisplaySDK"),
                     "AATSmartAdAdapter"
                 ],
                 path: "./Sources/SmartAdSources"),
