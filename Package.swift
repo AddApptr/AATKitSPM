@@ -74,7 +74,7 @@ let package = Package(
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
         .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.0.27")),
-        .package(name: "SmartAdDisplaySDK", url: "https://github.com/smartadserver/swift-package-manager-display-sdk.git", .exact("7.23.1"))
+        .package(name: "swift-package-manager-display-sdk", url: "https://github.com/smartadserver/swift-package-manager-display-sdk.git", .exact("7.23.1"))
     ],
     targets: [
         // AATKit target
@@ -91,119 +91,114 @@ let package = Package(
 
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
-                dependencies: [ "AATGoogleAdsAdapter",
-                                .product(name: "GoogleMobileAds", package: "GoogleMobileAds")
-                              ],
+                dependencies: [ "AATGoogleAdsAdapter", .product(name: "GoogleMobileAds", package: "GoogleMobileAds")],
                 path: "./Sources/GoogleMobileAdsSources"),
 
-        .target(name:"AATKit-AdColony",
-                dependencies: ["AATAdColonyAdapter","AdColony"],
-                path: "./Sources/AdColonySources"),
+            .target(name:"AATKit-AdColony",
+                    dependencies: ["AATAdColonyAdapter","AdColony"],
+                    path: "./Sources/AdColonySources"),
 
-        .target(name: "AATKit-AppLovin",
-                dependencies: ["AppLovinSDK", "AATAppLovinAdapter"],
-                path: "./Sources/AppLovinSources"),
+            .target(name: "AATKit-AppLovin",
+                    dependencies: ["AppLovinSDK", "AATAppLovinAdapter"],
+                    path: "./Sources/AppLovinSources"),
         
             .target(name: "AATKit-AppLovinMax",
                     dependencies: ["AppLovinSDK", "AATAppLovinMaxAdapter"],
                     path: "./Sources/AppLovinMaxSources"),
 
-        .target(name:"AATKit-AppNexus",
-                dependencies: ["AppNexusSDK", "AATAppNexusAdapter", "OMSDK_Appnexus"],
-                path: "./Sources/AppNexusSources"),
+            .target(name:"AATKit-AppNexus",
+                    dependencies: ["AppNexusSDK", "AATAppNexusAdapter", "OMSDK_Appnexus"],
+                    path: "./Sources/AppNexusSources"),
 
-        .target(name:"AATKit-Amazon",
-                dependencies: ["DTBiOSSDK", "AATAmazonAdapter"],
-                path: "./Sources/AmazonSources"),
+            .target(name:"AATKit-Amazon",
+                    dependencies: ["DTBiOSSDK", "AATAmazonAdapter"],
+                    path: "./Sources/AmazonSources"),
 
-        .target(name:"AATKit-Bluestack",
-                dependencies: ["BlueStackSDK", "OMSDK_Madvertise", "AATBluestackAdapter"],
-                path: "./Sources/BluestackSources"),
+            .target(name:"AATKit-Bluestack",
+                    dependencies: ["BlueStackSDK", "OMSDK_Madvertise", "AATBluestackAdapter"],
+                    path: "./Sources/BluestackSources"),
 
             .target(name:"AATKit-Criteo",
                     dependencies: ["CriteoPublisherSdk", "AATCriteoAdapter"],
                     path: "./Sources/CriteoSources"),
 
-        .target(name:"AATKit-FeedAd",
-                dependencies: ["FeedAd", "AATFeedAdAdapter"],
-                path: "./Sources/FeedAdSources"),
+            .target(name:"AATKit-FeedAd",
+                    dependencies: ["FeedAd", "AATFeedAdAdapter"],
+                    path: "./Sources/FeedAdSources"),
 
-        .target(name:"AATKit-OguryCMP",
-                dependencies: ["OguryChoiceManager", "OguryCore", "OgurySdk", "AATOguryCMPAdapter"],
-                path: "./Sources/OguryCMPSources"),
+            .target(name:"AATKit-OguryCMP",
+                    dependencies: ["OguryChoiceManager", "OguryCore", "OgurySdk", "AATOguryCMPAdapter"],
+                    path: "./Sources/OguryCMPSources"),
 
-        .target(name:"AATKit-OgurySdk",
-                dependencies: ["OgurySdk", "OguryAds", "OguryCore", "OMSDK_Ogury", "AATOguryAdapter"],
-                path: "./Sources/OguryAdsSources"),
+            .target(name:"AATKit-OgurySdk",
+                    dependencies: ["OgurySdk", "OguryAds", "OguryCore", "OMSDK_Ogury", "AATOguryAdapter"],
+                    path: "./Sources/OguryAdsSources"),
 
-        .target(name:"AATKit-GoogleCMP",
-                dependencies: [.product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform"), "AATGoogleCMPAdapter"],
-                path: "./Sources/GoogleCMPSources"),
+            .target(name:"AATKit-GoogleCMP",
+                    dependencies: [.product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform"), "AATGoogleCMPAdapter"],
+                    path: "./Sources/GoogleCMPSources"),
 
-        .target(name:"AATKit-Smaato",
-                dependencies: ["OMSDK_Smaato",
-                               "SmaatoSDKBanner",
-                               "SmaatoSDKCore",
-                               "SmaatoSDKInterstitial",
-                               "SmaatoSDKNative",
-                               "SmaatoSDKOpenMeasurement",
-                               "SmaatoSDKOutstream",
-                               "SmaatoSDKRewardedAds",
-                               "SmaatoSDKRichMedia",
-                               "SmaatoSDKVideo",
-                              "AATSmaatoAdapter"],
-                path: "./Sources/SmaatoSources"),
+            .target(name:"AATKit-Smaato",
+                    dependencies: ["OMSDK_Smaato",
+                                   "SmaatoSDKBanner",
+                                   "SmaatoSDKCore",
+                                   "SmaatoSDKInterstitial",
+                                   "SmaatoSDKNative",
+                                   "SmaatoSDKOpenMeasurement",
+                                   "SmaatoSDKOutstream",
+                                   "SmaatoSDKRewardedAds",
+                                   "SmaatoSDKRichMedia",
+                                   "SmaatoSDKVideo",
+                                   "AATSmaatoAdapter"],
+                    path: "./Sources/SmaatoSources"),
 
-        .target(name:"AATKit-SmartAd",
-                dependencies: [
-                    .product(name: "SmartAdDisplaySDK", package: "SmartAdDisplaySDK"),
-                    "AATSmartAdAdapter"
-                ],
-                path: "./Sources/SmartAdSources"),
+            .target(name:"AATKit-SmartAd",
+                    dependencies: ["swift-package-manager-display-sdk", "AATSmartAdAdapter"],
+                    path: "./Sources/SmartAdSources"),
 
-        .target(name:"AATKit-YOC",
-               dependencies: ["VisxSDK", "AATYOCAdapter"],
-               path: "./Sources/YOCSources"),
+            .target(name:"AATKit-YOC",
+                    dependencies: ["VisxSDK", "AATYOCAdapter"],
+                    path: "./Sources/YOCSources"),
 
-        .target(name:"AATKit-InMobi",
-                dependencies: ["InMobiSDK", "AATInMobiAdapter"],
-                path: "./Sources/InMobiSources"),
+            .target(name:"AATKit-InMobi",
+                    dependencies: ["InMobiSDK", "AATInMobiAdapter"],
+                    path: "./Sources/InMobiSources"),
 
-        .target(name:"AATKit-PubNative",
-                dependencies: ["HyBid", "OMSDK_Pubnativenet", "AATPubNativeAdapter"],
-                path: "./Sources/PubnativeSources"),
+            .target(name:"AATKit-PubNative",
+                    dependencies: ["HyBid", "OMSDK_Pubnativenet", "AATPubNativeAdapter"],
+                    path: "./Sources/PubnativeSources"),
 
-        .target(name:"AATKit-Prebid",
-                dependencies: ["PrebidMobile", "AATDFPPrebidAdapter"],
-                path: "./Sources/PrebidSources"),
+            .target(name:"AATKit-Prebid",
+                    dependencies: ["PrebidMobile", "AATDFPPrebidAdapter"],
+                    path: "./Sources/PrebidSources"),
 
             .target(name:"AATKit-Teads",
                     dependencies: ["TeadsSDK", "AATTeadsAdapter"],
                     path: "./Sources/TeadsSources"),
 
-        .target(name:"AATKit-Unity",
-                dependencies: ["UnityAds", "AATUnityAdapter"],
-                path: "./Sources/UnitySources"),
+            .target(name:"AATKit-Unity",
+                    dependencies: ["UnityAds", "AATUnityAdapter"],
+                    path: "./Sources/UnitySources"),
 
-        .target(name:"AATKit-Vungle",
-                dependencies: ["VungleSDK", "AATVungleAdapter"],
-                path: "./Sources/VungleSources"),
+            .target(name:"AATKit-Vungle",
+                    dependencies: ["VungleSDK", "AATVungleAdapter"],
+                    path: "./Sources/VungleSources"),
 
-        .target(name:"AATKit-Datonomy",
-                dependencies: ["DatonomyKit", "AATDatonomyAdapter"],
-                path: "./Sources/DatonomySources"),
+            .target(name:"AATKit-Datonomy",
+                    dependencies: ["DatonomyKit", "AATDatonomyAdapter"],
+                    path: "./Sources/DatonomySources"),
 
-        .target(name:"AATKit-Mintegral",
-                dependencies: ["MTGSDK", "MTGSDKNativeAdvanced", "MTGSDKBanner", "MTGSDKNewInterstitial", "MTGSDKBidding", "MTGSDKReward", "MTGSDKCNAddition", "MTGSDKSplash", "MTGSDKInterstitial", "MTGSDKInterstitialVideo", "AATMintegralAdapter"],
-                path: "./Sources/MintegralSources"),
+            .target(name:"AATKit-Mintegral",
+                    dependencies: ["MTGSDK", "MTGSDKNativeAdvanced", "MTGSDKBanner", "MTGSDKNewInterstitial", "MTGSDKBidding", "MTGSDKReward", "MTGSDKCNAddition", "MTGSDKSplash", "MTGSDKInterstitial", "MTGSDKInterstitialVideo", "AATMintegralAdapter"],
+                    path: "./Sources/MintegralSources"),
 
-        .target(name:"AATKit-SourcePointCMP",
+            .target(name:"AATKit-SourcePointCMP",
                     dependencies: ["ConsentViewController", "AATSourcePointCMPAdapter"],
                     path: "./Sources/SourcePointSources"),
 
         // Mark: Binary Targets
         // AATKit
-        .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
+            .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
 
         // AATAdMobMediationAdapter
         .binaryTarget(name: "AATAdMobMediationAdapter", path: "./Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"),
