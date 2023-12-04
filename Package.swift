@@ -74,7 +74,7 @@ let package = Package(
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
         .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.0.27")),
-        .package(name: "SmartAdDisplaySDK", url: "https://github.com/smartadserver/swift-package-manager-display-sdk.git", .exact("7.23.1")),
+        .package(name: "SmartAdDisplaySDK", url: "https://github.com/smartadserver/swift-package-manager-display-sdk.git", .exact("7.23.1"))
     ],
     targets: [
         // AATKit target
