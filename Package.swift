@@ -73,8 +73,7 @@ let package = Package(
         .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("10.11.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
-        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.0.27")),
-        .package(name: "SASDisplayKit", url: "https://github.com/smartadserver/swift-package-manager-display-sdk.git", .exact("7.23.1"))
+        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.0.27"))
     ],
     targets: [
         // AATKit target
@@ -234,6 +233,9 @@ let package = Package(
         .binaryTarget(name: "SmaatoSDKRewardedAds", path: "./Dependencies/Smaato/SmaatoSDKRewardedAds.xcframework"),
         .binaryTarget(name: "SmaatoSDKRichMedia", path: "./Dependencies/Smaato/SmaatoSDKRichMedia.xcframework"),
         .binaryTarget(name: "SmaatoSDKVideo", path: "./Dependencies/Smaato/SmaatoSDKVideo.xcframework"),
+
+        //SmartAd
+        .binaryTarget(name: "SASDisplayKit", path: "./Dependencies/SmartAd/SASDisplayKit.xcframework"),
 
         //AdColony
         .binaryTarget(name: "AdColony", path: "./Dependencies/AdColony/AdColony.xcframework"),
