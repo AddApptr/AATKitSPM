@@ -1,0 +1,111 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RTBSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AdSupport
+import AppTrackingTransparency
+import SystemConfiguration.CaptiveNetwork
+import CoreLocation
+import CoreTelephony
+import Foundation
+@_exported import RTBSDK
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@objc @_inheritsConvenienceInitializers public class RTBSDKManager : ObjectiveC.NSObject {
+  public static let shared: RTBSDK.RTBSDKManager
+  public var isPaid: Swift.Bool?
+  public var isChildDirected: Swift.Bool?
+  public var isGDPRApplies: Swift.Bool?
+  public var testModeEnabled: Swift.Bool?
+  public var logLevel: RTBSDK.RTBLogLevel? {
+    get
+    set
+  }
+  public var useGeoLocation: Swift.Bool
+  public var sdkVersion: Swift.String {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class RTBBannerSize : ObjectiveC.NSObject {
+  public init(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
+  @objc deinit
+}
+extension RTBSDK.RTBBannerSize {
+  public static let banner320x50: RTBSDK.RTBBannerSize
+  public static let banner300x250: RTBSDK.RTBBannerSize
+  public static let banner728x90: RTBSDK.RTBBannerSize
+}
+@objc public class RTBFullscreenRequestConfiguration : ObjectiveC.NSObject {
+  public var bidFloor: Swift.Float?
+  public init(placementId: Swift.Int, iTunesAppId: Swift.String)
+  @objc deinit
+}
+@objc public protocol RTBBannerViewDelegate {
+  @objc func bannerViewDidReceiveAd(_ bannerView: RTBSDK.RTBBannerView, priceCPM: Swift.Float)
+  @objc func bannerView(_ bannerView: RTBSDK.RTBBannerView, didFailToReceiveAd errorMessage: Swift.String)
+  @objc func bannerViewDidRecordClick(_ bannerView: RTBSDK.RTBBannerView)
+  @objc func bannerViewDidPauseForAd(_ bannerView: RTBSDK.RTBBannerView)
+  @objc func bannerViewDidResumeAfterAd(_ bannerView: RTBSDK.RTBBannerView)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class RTBBannerView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any RTBSDK.RTBBannerViewDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public init(size: RTBSDK.RTBBannerSize)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toSuperview newSuperview: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) public func load(configuration: RTBSDK.RTBBannerRequestConfiguration)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class RTBFullscreenAd : ObjectiveC.NSObject {
+  weak public var delegate: (any RTBSDK.RTBFullscreenDelegate)?
+  @discardableResult
+  @objc public func load(configuration: RTBSDK.RTBFullscreenRequestConfiguration) -> Swift.Bool
+  @discardableResult
+  @objc public func show(viewController: UIKit.UIViewController) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum RTBLogLevel : Swift.Int, Swift.CaseIterable {
+  case verbose = 1
+  case debug
+  case info
+  case warn
+  case error
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [RTBSDK.RTBLogLevel]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [RTBSDK.RTBLogLevel] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol RTBFullscreenDelegate {
+  @objc func fullscreenAdDidReceiveAd(_ fullscreenAd: RTBSDK.RTBFullscreenAd, priceCPM: Swift.Float)
+  @objc func fullscreenAd(_ fullscreenAd: RTBSDK.RTBFullscreenAd, didFailToReceiveAd errorMessage: Swift.String)
+  @objc func fullscreenAdDidRecordClick(_ fullscreenAd: RTBSDK.RTBFullscreenAd)
+  @objc func fullscreenAdDidPauseForAd(_ fullscreenAd: RTBSDK.RTBFullscreenAd)
+  @objc func fullscreenAdDidResumeAfterAd(_ fullscreenAd: RTBSDK.RTBFullscreenAd)
+}
+@objc @_inheritsConvenienceInitializers public class RTBLogger : ObjectiveC.NSObject {
+  public static func log(level: RTBSDK.RTBLogLevel, message: Swift.String, withoutAATFormatting: Swift.Bool = false, forceLog: Swift.Bool = false, callingMethod: Swift.String = #function, file: Swift.String = #file, tag: Swift.String = "AATKit")
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class RTBBannerRequestConfiguration : ObjectiveC.NSObject {
+  public var bidFloor: Swift.Float?
+  public init(placementId: Swift.Int, iTunesAppId: Swift.String)
+  @objc deinit
+}
+extension RTBSDK.RTBLogLevel : Swift.Equatable {}
+extension RTBSDK.RTBLogLevel : Swift.Hashable {}
+extension RTBSDK.RTBLogLevel : Swift.RawRepresentable {}

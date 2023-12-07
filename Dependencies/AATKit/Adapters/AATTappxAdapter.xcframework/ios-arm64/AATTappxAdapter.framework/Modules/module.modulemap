@@ -1,0 +1,11 @@
+framework module AATTappxAdapter {
+  umbrella header "AATTappxAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATTappxAdapter.Swift {
+  header "AATTappxAdapter-Swift.h"
+  requires objc
+}

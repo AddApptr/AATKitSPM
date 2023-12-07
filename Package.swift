@@ -20,6 +20,7 @@ let package = Package(
         .library(name: "AATKit-Bluestack", targets: ["AATKit-Bluestack"]),
         .library(name: "AATKit-Criteo", targets: ["AATKit-Criteo"]),
         .library(name: "AATKit-FeedAd", targets: ["AATKit-FeedAd"]),
+        .library(name: "AATKit-GraviteRTB", targets: ["AATKit-GraviteRTB"]),
         .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato"]),
         .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd"]),
         .library(name: "AATKit-AdColony", targets: ["AATKit-AdColony"]),
@@ -29,6 +30,7 @@ let package = Package(
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Prebid", targets: ["AATKit-Prebid"]),
         .library(name: "AATKit-Teads", targets: ["AATKit-Teads"]),
+        .library(name: "AATKit-Tappx", targets: ["AATKit-Tappx"]),
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
         .library(name: "AATKit-Vungle", targets: ["AATKit-Vungle"]),
         .library(name: "AATKit-OguryAds", targets: ["AATKit-OgurySdk"]),
@@ -49,6 +51,7 @@ let package = Package(
                                                    "AATKit-Bluestack",
                                                    "AATKit-Criteo",
                                                    "AATKit-FeedAd",
+                                                   "AATKit-GraviteRTB",
                                                    "AATKit-OguryCMP",
                                                    "AATKit-GoogleCMP",
                                                    "AATKit-SourcePointCMP",
@@ -61,6 +64,7 @@ let package = Package(
                                                    "AATKit-OgurySdk",
                                                    "AATKit-PubNative",
                                                    "AATKit-Prebid",
+                                                   "AATKit-Tappx",
                                                    "AATKit-Unity",
                                                    "AATKit-Vungle",
                                                    "AATKit-Mintegral",
@@ -125,6 +129,10 @@ let package = Package(
                     dependencies: ["FeedAd", "AATFeedAdAdapter"],
                     path: "./Sources/FeedAdSources"),
 
+            .target(name:"AATKit-GraviteRTB",
+                    dependencies: ["GraviteRTB", "AATGraviteRTBAdapter"],
+                    path: "./Sources/GraviteRTB"),
+
             .target(name:"AATKit-OguryCMP",
                     dependencies: ["OguryChoiceManager", "OguryCore", "OgurySdk", "AATOguryCMPAdapter"],
                     path: "./Sources/OguryCMPSources"),
@@ -154,6 +162,10 @@ let package = Package(
             .target(name:"AATKit-SmartAd",
                     dependencies: ["SASDisplayKit", "AATSmartAdAdapter"],
                     path: "./Sources/SmartAdSources"),
+
+            .target(name:"AATKit-Tappx",
+                    dependencies: ["Tappx", "OMSDK_Tappx", "AATTappxAdapter"],
+                    path: "./Sources/Tappx"),
 
             .target(name:"AATKit-YOC",
                     dependencies: ["VisxSDK", "AATYOCAdapter"],
@@ -215,6 +227,9 @@ let package = Package(
         // FeedAd
         .binaryTarget(name: "FeedAd", path: "./Dependencies/FeedAd/FeedAd.xcframework"),
 
+        // GraviteRTB
+        .binaryTarget(name: "GraviteRTB", path: "./Dependencies/GraviteRTB/RTBSDK.xcframework"),
+
         // Ogury
         .binaryTarget(name: "OguryChoiceManager", path: "./Dependencies/Ogury/OguryChoiceManager.xcframework"),
         .binaryTarget(name: "OguryCore", path: "./Dependencies/Ogury/OguryCore.xcframework"),
@@ -236,6 +251,9 @@ let package = Package(
 
         //SmartAd
         .binaryTarget(name: "SASDisplayKit", path: "./Dependencies/SmartAd/SASDisplayKit.xcframework"),
+
+        .binaryTarget(name: "Tappx", path: "./Dependencies/Tappx/TappxFramework.xcframework"),
+        .binaryTarget(name: "OMSDK_Tappx", path: "./Dependencies/Tappx/OMSDK_Tappx.xcframework"),
 
         //AdColony
         .binaryTarget(name: "AdColony", path: "./Dependencies/AdColony/AdColony.xcframework"),
@@ -292,6 +310,7 @@ let package = Package(
         .binaryTarget(name: "AATDFPPrebidAdapter", path: "./Dependencies/AATKit/Adapters/AATDFPPrebidAdapter.xcframework"),
         .binaryTarget(name: "AATFacebookAdapter", path: "./Dependencies/AATKit/Adapters/AATFacebookAdapter.xcframework"),
         .binaryTarget(name: "AATFeedAdAdapter", path: "./Dependencies/AATKit/Adapters/AATFeedAdAdapter.xcframework"),
+        .binaryTarget(name: "AATGraviteRTBAdapter", path: "./Dependencies/AATKit/Adapters/AATGraviteRTBAdapter.xcframework"),
         .binaryTarget(name: "AATGoogleAdsAdapter", path: "./Dependencies/AATKit/Adapters/AATGoogleAdsAdapter.xcframework"),
         .binaryTarget(name: "AATGoogleCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATGoogleCMPAdapter.xcframework"),
         .binaryTarget(name: "AATInMobiAdapter", path: "./Dependencies/AATKit/Adapters/AATInMobiAdapter.xcframework"),
@@ -300,6 +319,7 @@ let package = Package(
         .binaryTarget(name: "AATPubNativeAdapter", path: "./Dependencies/AATKit/Adapters/AATPubNativeAdapter.xcframework"),
         .binaryTarget(name: "AATSmaatoAdapter", path: "./Dependencies/AATKit/Adapters/AATSmaatoAdapter.xcframework"),
         .binaryTarget(name: "AATSmartAdAdapter", path: "./Dependencies/AATKit/Adapters/AATSmartAdAdapter.xcframework"),
+        .binaryTarget(name: "AATTappxAdapter", path: "./Dependencies/AATKit/Adapters/AATTappxAdapter.xcframework"),
         .binaryTarget(name: "AATTeadsAdapter", path: "./Dependencies/AATKit/Adapters/AATTeadsAdapter.xcframework"),
         .binaryTarget(name: "AATUnityAdapter", path: "./Dependencies/AATKit/Adapters/AATUnityAdapter.xcframework"),
         .binaryTarget(name: "AATVungleAdapter", path: "./Dependencies/AATKit/Adapters/AATVungleAdapter.xcframework"),
