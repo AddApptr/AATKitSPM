@@ -2843,12 +2843,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP8delegateAA09AATInfeeddE8Delegate_pSgvp",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(py)delegate",
             "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP8delegateAA09AATInfeeddE8Delegate_pSgvp",
             "moduleName": "AATKit",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "accessors": [
               {
@@ -2872,12 +2873,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP8delegateAA09AATInfeeddE8Delegate_pSgvg",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(im)delegate",
                 "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP8delegateAA09AATInfeeddE8Delegate_pSgvg",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -2907,36 +2911,17 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP8delegateAA09AATInfeeddE8Delegate_pSgvs",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(im)setDelegate:",
                 "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP8delegateAA09AATInfeeddE8Delegate_pSgvs",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP8delegateAA09AATInfeeddE8Delegate_pSgvM",
-                "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP8delegateAA09AATInfeeddE8Delegate_pSgvM",
-                "moduleName": "AATKit",
-                "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
-                "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -2961,12 +2946,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvp",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(py)statisticsDelegate",
             "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvp",
             "moduleName": "AATKit",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "accessors": [
               {
@@ -2990,12 +2976,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvg",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(im)statisticsDelegate",
                 "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvg",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -3025,36 +3014,17 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvs",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(im)setStatisticsDelegate:",
                 "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvs",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvM",
-                "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvM",
-                "moduleName": "AATKit",
-                "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
-                "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -3079,12 +3049,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP18impressionDelegateAA013AATImpressionG0_pSgvp",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(py)impressionDelegate",
             "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP18impressionDelegateAA013AATImpressionG0_pSgvp",
             "moduleName": "AATKit",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "accessors": [
               {
@@ -3108,12 +3079,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP18impressionDelegateAA013AATImpressionG0_pSgvg",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(im)impressionDelegate",
                 "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP18impressionDelegateAA013AATImpressionG0_pSgvg",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -3143,36 +3117,17 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP18impressionDelegateAA013AATImpressionG0_pSgvs",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(im)setImpressionDelegate:",
                 "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP18impressionDelegateAA013AATImpressionG0_pSgvs",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP18impressionDelegateAA013AATImpressionG0_pSgvM",
-                "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP18impressionDelegateAA013AATImpressionG0_pSgvM",
-                "moduleName": "AATKit",
-                "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
-                "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -3197,10 +3152,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP011collapsableD7OptionsAA014AATCollapsibledG0CSgvp",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(py)collapsableBannerOptions",
             "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP011collapsableD7OptionsAA014AATCollapsibledG0CSgvp",
             "moduleName": "AATKit",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3223,12 +3181,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP011collapsableD7OptionsAA014AATCollapsibledG0CSgvg",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(im)collapsableBannerOptions",
                 "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP011collapsableD7OptionsAA014AATCollapsibledG0CSgvg",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -3258,36 +3219,17 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP011collapsableD7OptionsAA014AATCollapsibledG0CSgvs",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(im)setCollapsableBannerOptions:",
                 "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP011collapsableD7OptionsAA014AATCollapsibledG0CSgvs",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP011collapsableD7OptionsAA014AATCollapsibledG0CSgvM",
-                "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP011collapsableD7OptionsAA014AATCollapsibledG0CSgvM",
-                "moduleName": "AATKit",
-                "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
-                "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -3318,14 +3260,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP9requestAd0F0AA09AATBannerE11WrapperViewCSgAA0H7RequestC_tYaF",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(im)requestAdWithRequest:completionHandler:",
             "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP9requestAd0F0AA09AATBannerE11WrapperViewCSgAA0H7RequestC_tYaF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
             "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -3342,21 +3285,22 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP12countAdSpaceyyF",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement(im)countAdSpace",
             "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP12countAdSpaceyyF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncInfeedBannerPlacement>",
             "sugared_genericSig": "<Self where Self : AATKit.AATAsyncInfeedBannerPlacement>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP",
+        "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement",
         "mangledName": "$s6AATKit29AATAsyncInfeedBannerPlacementP",
         "moduleName": "AATKit",
         "genericSig": "<τ_0_0 : AATKit.AATPlacement>",
@@ -3364,6 +3308,7 @@
         "intro_iOS": "13.0",
         "declAttributes": [
           "AccessControl",
+          "ObjC",
           "Available"
         ],
         "conformances": [
@@ -17356,11 +17301,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6AATKit27AATCollapsibleBannerOptionsC8position8minDelayAcA0bC8PositionO_Sitcfc",
+            "usr": "c:@M@AATKit@objc(cs)AATCollapsibleBannerOptions(im)initWithPosition:minDelay:",
             "mangledName": "$s6AATKit27AATCollapsibleBannerOptionsC8position8minDelayAcA0bC8PositionO_Sitcfc",
             "moduleName": "AATKit",
+            "objc_name": "initWithPosition:minDelay:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -22143,10 +22090,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit25AATAsyncNativeAdPlacementP8delegateAA0bcE8Delegate_pSgvp",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(py)delegate",
             "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP8delegateAA0bcE8Delegate_pSgvp",
             "moduleName": "AATKit",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -22169,12 +22119,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP8delegateAA0bcE8Delegate_pSgvg",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)delegate",
                 "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP8delegateAA0bcE8Delegate_pSgvg",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -22204,36 +22157,17 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP8delegateAA0bcE8Delegate_pSgvs",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)setDelegate:",
                 "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP8delegateAA0bcE8Delegate_pSgvs",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP8delegateAA0bcE8Delegate_pSgvM",
-                "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP8delegateAA0bcE8Delegate_pSgvM",
-                "moduleName": "AATKit",
-                "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
-                "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -22258,10 +22192,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit25AATAsyncNativeAdPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvp",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(py)statisticsDelegate",
             "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvp",
             "moduleName": "AATKit",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -22284,12 +22221,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvg",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)statisticsDelegate",
                 "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvg",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -22319,36 +22259,17 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvs",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)setStatisticsDelegate:",
                 "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvs",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvM",
-                "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP18statisticsDelegateAA013AATStatisticsG0_pSgvM",
-                "moduleName": "AATKit",
-                "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
-                "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -22373,10 +22294,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit25AATAsyncNativeAdPlacementP18impressionDelegateAA013AATImpressionG0_pSgvp",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(py)impressionDelegate",
             "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP18impressionDelegateAA013AATImpressionG0_pSgvp",
             "moduleName": "AATKit",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -22399,12 +22323,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP18impressionDelegateAA013AATImpressionG0_pSgvg",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)impressionDelegate",
                 "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP18impressionDelegateAA013AATImpressionG0_pSgvg",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -22434,36 +22361,17 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP18impressionDelegateAA013AATImpressionG0_pSgvs",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)setImpressionDelegate:",
                 "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP18impressionDelegateAA013AATImpressionG0_pSgvs",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP18impressionDelegateAA013AATImpressionG0_pSgvM",
-                "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP18impressionDelegateAA013AATImpressionG0_pSgvM",
-                "moduleName": "AATKit",
-                "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
-                "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -22510,10 +22418,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit25AATAsyncNativeAdPlacementP13targetingInfoSDySSSaySSGGSgvp",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(py)targetingInfo",
             "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP13targetingInfoSDySSSaySSGGSgvp",
             "moduleName": "AATKit",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -22558,12 +22469,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP13targetingInfoSDySSSaySSGGSgvg",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)targetingInfo",
                 "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP13targetingInfoSDySSSaySSGGSgvg",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -22615,36 +22529,17 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP13targetingInfoSDySSSaySSGGSgvs",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)setTargetingInfo:",
                 "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP13targetingInfoSDySSSaySSGGSgvs",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP13targetingInfoSDySSSaySSGGSgvM",
-                "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP13targetingInfoSDySSSaySSGGSgvM",
-                "moduleName": "AATKit",
-                "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
-                "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -22669,10 +22564,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit25AATAsyncNativeAdPlacementP19contentTargetingUrlSSSgvp",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(py)contentTargetingUrl",
             "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP19contentTargetingUrlSSSgvp",
             "moduleName": "AATKit",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -22695,12 +22593,15 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP19contentTargetingUrlSSSgvg",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)contentTargetingUrl",
                 "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP19contentTargetingUrlSSSgvg",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -22730,36 +22631,17 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP19contentTargetingUrlSSSgvs",
+                "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)setContentTargetingUrl:",
                 "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP19contentTargetingUrlSSSgvs",
                 "moduleName": "AATKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
                 "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAsyncNativeAdPlacementP19contentTargetingUrlSSSgvM",
-                "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP19contentTargetingUrlSSSgvM",
-                "moduleName": "AATKit",
-                "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
-                "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -22784,12 +22666,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit25AATAsyncNativeAdPlacementP6reloadAA09AATNativeD4Data_pSgyYaF",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)reloadWithCompletionHandler:",
             "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP6reloadAA09AATNativeD4Data_pSgyYaF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
             "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -22806,12 +22691,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit25AATAsyncNativeAdPlacementP027getNumberOfCurrentlyLoadingC3AdsSiyF",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)getNumberOfCurrentlyLoadingNativeAds",
             "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP027getNumberOfCurrentlyLoadingC3AdsSiyF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
             "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -22828,12 +22716,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit25AATAsyncNativeAdPlacementP03hasD0SbyF",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)hasAd",
             "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP03hasD0SbyF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
             "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -22850,12 +22741,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit25AATAsyncNativeAdPlacementP06reportD5SpaceSbyF",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)reportAdSpace",
             "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP06reportD5SpaceSbyF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
             "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -22872,18 +22766,21 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit25AATAsyncNativeAdPlacementP21isFrequencyCapReachedSbyF",
+            "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement(im)isFrequencyCapReached",
             "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP21isFrequencyCapReachedSbyF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAsyncNativeAdPlacement>",
             "sugared_genericSig": "<Self where Self : AATKit.AATAsyncNativeAdPlacement>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:6AATKit25AATAsyncNativeAdPlacementP",
+        "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement",
         "mangledName": "$s6AATKit25AATAsyncNativeAdPlacementP",
         "moduleName": "AATKit",
         "genericSig": "<τ_0_0 : AATKit.AATPlacement>",
@@ -22891,6 +22788,7 @@
         "intro_iOS": "13.0",
         "declAttributes": [
           "AccessControl",
+          "ObjC",
           "Available"
         ],
         "conformances": [
@@ -29939,7 +29837,7 @@
                     "kind": "TypeNominal",
                     "name": "AATAsyncInfeedBannerPlacement",
                     "printedName": "AATKit.AATAsyncInfeedBannerPlacement",
-                    "usr": "s:6AATKit29AATAsyncInfeedBannerPlacementP"
+                    "usr": "c:@M@AATKit@objc(pl)AATAsyncInfeedBannerPlacement"
                   }
                 ],
                 "usr": "s:Sq"
@@ -30151,7 +30049,7 @@
                     "kind": "TypeNominal",
                     "name": "AATAsyncNativeAdPlacement",
                     "printedName": "AATKit.AATAsyncNativeAdPlacement",
-                    "usr": "s:6AATKit25AATAsyncNativeAdPlacementP"
+                    "usr": "c:@M@AATKit@objc(pl)AATAsyncNativeAdPlacement"
                   }
                 ],
                 "usr": "s:Sq"
@@ -56633,7 +56531,7 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATCollapsibleBannerOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 389,
+      "offset": 399,
       "length": 1,
       "value": "0"
     },
@@ -56647,35 +56545,35 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATCollapsibleBannerOptions.swift",
       "kind": "IntegerLiteral",
-      "offset": 595,
+      "offset": 605,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATCollapsibleBannerOptions.swift",
       "kind": "StringLiteral",
-      "offset": 699,
+      "offset": 709,
       "length": 5,
       "value": "\"top\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATCollapsibleBannerOptions.swift",
       "kind": "StringLiteral",
-      "offset": 746,
+      "offset": 756,
       "length": 8,
       "value": "\"bottom\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATCollapsibleBannerOptions.swift",
       "kind": "StringLiteral",
-      "offset": 850,
+      "offset": 860,
       "length": 5,
       "value": "\"top\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATCollapsibleBannerOptions.swift",
       "kind": "StringLiteral",
-      "offset": 894,
+      "offset": 904,
       "length": 8,
       "value": "\"bottom\""
     },
@@ -57748,7 +57646,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 7,
-      "value": "\"3.4.0\""
+      "value": "\"3.4.1\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
@@ -66174,119 +66072,119 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1989,
+      "offset": 1976,
       "length": 73,
       "value": "\"Couldn't configure consent as it's nil, please pass the proper consent.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2462,
+      "offset": 2449,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2517,
-      "length": 64,
-      "value": "\"IAB consent string value has been changed in the UserDefaults.\""
+      "offset": 2504,
+      "length": 60,
+      "value": "\"Consent string value has been changed in the UserDefaults.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2782,
+      "offset": 2765,
       "length": 115,
       "value": "\"Reconfigured with consentRequired: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2840,
+      "offset": 2823,
       "length": 1,
       "value": "\", consent: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2896,
+      "offset": 2879,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6064,
+      "offset": 6047,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6164,
+      "offset": 6147,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6301,
+      "offset": 6284,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6505,
+      "offset": 6488,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 7577,
+      "offset": 7560,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 8740,
+      "offset": 8723,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9461,
+      "offset": 9444,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9512,
+      "offset": 9495,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9563,
+      "offset": 9546,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9615,
+      "offset": 9598,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9720,
+      "offset": 9703,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },

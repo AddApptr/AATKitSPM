@@ -70,15 +70,15 @@ extension AATKit.AATAdDriverProtocol {
   @objc func isReady() -> Swift.Bool
 }
 @available(iOS 13.0, *)
-public protocol AATAsyncInfeedBannerPlacement : AATKit.AATPlacement {
-  var delegate: (any AATKit.AATInfeedBannerPlacementDelegate)? { get set }
-  var statisticsDelegate: (any AATKit.AATStatisticsDelegate)? { get set }
-  var impressionDelegate: (any AATKit.AATImpressionDelegate)? { get set }
-  var collapsableBannerOptions: AATKit.AATCollapsibleBannerOptions? { get set }
+@objc public protocol AATAsyncInfeedBannerPlacement : AATKit.AATPlacement {
+  @objc var delegate: (any AATKit.AATInfeedBannerPlacementDelegate)? { get set }
+  @objc var statisticsDelegate: (any AATKit.AATStatisticsDelegate)? { get set }
+  @objc var impressionDelegate: (any AATKit.AATImpressionDelegate)? { get set }
+  @objc var collapsableBannerOptions: AATKit.AATCollapsibleBannerOptions? { get set }
   #if compiler(>=5.3) && $AsyncAwait
-  func requestAd(request: AATKit.AATBannerRequest) async -> AATKit.AATBannerPlacementWrapperView?
+  @objc func requestAd(request: AATKit.AATBannerRequest) async -> AATKit.AATBannerPlacementWrapperView?
   #endif
-  func countAdSpace()
+  @objc func countAdSpace()
 }
 public protocol AATIronSourceDriverProtocol {
   func setHasUserConsent(isObtained: Swift.Bool)
@@ -462,7 +462,7 @@ public enum AATDriverLog : Foundation.LocalizedError {
   case customMessage(message: Swift.String)
 }
 @objc public class AATCollapsibleBannerOptions : ObjectiveC.NSObject {
-  public init(position: AATKit.AATCollapsibleBannerPosition = .top, minDelay: Swift.Int = 0)
+  @objc public init(position: AATKit.AATCollapsibleBannerPosition = .top, minDelay: Swift.Int = 0)
   @objc deinit
 }
 @objc public enum AATCollapsibleBannerPosition : Swift.Int, Swift.RawRepresentable {
@@ -592,19 +592,19 @@ public protocol AATPubNativeDriverProtocol {
   func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 @available(iOS 13.0, *)
-public protocol AATAsyncNativeAdPlacement : AATKit.AATPlacement {
-  var delegate: (any AATKit.AATAsyncNativePlacementDelegate)? { get set }
-  var statisticsDelegate: (any AATKit.AATStatisticsDelegate)? { get set }
-  var impressionDelegate: (any AATKit.AATImpressionDelegate)? { get set }
-  var targetingInfo: [Swift.String : [Swift.String]]? { get set }
-  var contentTargetingUrl: Swift.String? { get set }
+@objc public protocol AATAsyncNativeAdPlacement : AATKit.AATPlacement {
+  @objc var delegate: (any AATKit.AATAsyncNativePlacementDelegate)? { get set }
+  @objc var statisticsDelegate: (any AATKit.AATStatisticsDelegate)? { get set }
+  @objc var impressionDelegate: (any AATKit.AATImpressionDelegate)? { get set }
+  @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
+  @objc var contentTargetingUrl: Swift.String? { get set }
   #if compiler(>=5.3) && $AsyncAwait
-  func reload() async -> (any AATKit.AATNativeAdData)?
+  @objc func reload() async -> (any AATKit.AATNativeAdData)?
   #endif
-  func getNumberOfCurrentlyLoadingNativeAds() -> Swift.Int
-  func hasAd() -> Swift.Bool
-  func reportAdSpace() -> Swift.Bool
-  func isFrequencyCapReached() -> Swift.Bool
+  @objc func getNumberOfCurrentlyLoadingNativeAds() -> Swift.Int
+  @objc func hasAd() -> Swift.Bool
+  @objc func reportAdSpace() -> Swift.Bool
+  @objc func isFrequencyCapReached() -> Swift.Bool
 }
 @objc public enum AATAdType : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
   public typealias RawValue = Swift.String

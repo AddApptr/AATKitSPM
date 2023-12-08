@@ -511,13 +511,54 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATAppOpenPlacementDelegate_")
 @protocol AATAppOpenPlacementDelegate <AATFullscreenPlacementDelegate>
 @end
 
+@protocol AATInfeedBannerPlacementDelegate;
+@class AATCollapsibleBannerOptions;
+@class AATBannerRequest;
+@class AATBannerPlacementWrapperView;
+
+SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@protocol AATAsyncInfeedBannerPlacement <AATPlacement>
+/// Set the placement delegate that will listen to ad loading and display events
+@property (nonatomic, strong) id <AATInfeedBannerPlacementDelegate> _Nullable delegate;
+/// Sets the placement statistics delegate
+@property (nonatomic, strong) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
+/// Sets the placement impression delegate
+@property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
+@property (nonatomic, strong) AATCollapsibleBannerOptions * _Nullable collapsableBannerOptions;
+/// Request banner ad from the placement
+/// \param request the <code>AATBannerRequest</code> to be used
+///
+///
+/// returns:
+/// <code>AATBannerPlacementWrapperView</code>
+- (void)requestAdWithRequest:(AATBannerRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(AATBannerPlacementWrapperView * _Nullable))completionHandler;
+/// Manually Count an Ad Space
+- (void)countAdSpace;
+@end
+
+@protocol AATAsyncNativePlacementDelegate;
+@protocol AATNativeAdData;
+
+SWIFT_PROTOCOL("_TtP6AATKit25AATAsyncNativeAdPlacement_") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@protocol AATAsyncNativeAdPlacement <AATPlacement>
+@property (nonatomic, strong) id <AATAsyncNativePlacementDelegate> _Nullable delegate;
+@property (nonatomic, strong) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
+@property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
+@property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable targetingInfo;
+@property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+- (void)reloadWithCompletionHandler:(void (^ _Nonnull)(id <AATNativeAdData> _Nullable))completionHandler;
+- (NSInteger)getNumberOfCurrentlyLoadingNativeAds SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)hasAd SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)reportAdSpace SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isFrequencyCapReached SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 SWIFT_PROTOCOL("_TtP6AATKit31AATAsyncNativePlacementDelegate_")
 @protocol AATAsyncNativePlacementDelegate <AATAdDisplayDelegate>
 @end
 
 @protocol AATAutoLoadBannerPlacementDelegate;
-@class AATCollapsibleBannerOptions;
 @class UIView;
 @class UIImage;
 @class AATBannerAlign;
@@ -590,7 +631,6 @@ SWIFT_PROTOCOL("_TtP6AATKit35AATAutoLoadMultiSizeBannerPlacement_")
 - (void)stopAutoReload;
 @end
 
-@class AATBannerPlacementWrapperView;
 
 /// Conform to this protocol to listen to the AATMultiSizeBannerPlacement events
 SWIFT_PROTOCOL("_TtP6AATKit43AATAutoLoadMultiSizeBannerPlacementDelegate_")
@@ -638,7 +678,6 @@ typedef SWIFT_ENUM(NSInteger, VerticalAlign, open) {
 };
 
 @protocol AATBannerCacheStatusDelegate;
-@class AATBannerRequest;
 
 /// A cache of automatically preloaded banner ads.
 /// The cache will always try to have a defined amount of banners available for immediate handout to the app whenever they are needed. <em>Note:</em> The BannerCache needs to be destroyed when no longer needed.
@@ -858,9 +897,11 @@ SWIFT_PROTOCOL("_TtP6AATKit14AATCMPProtocol_")
 - (void)editConsent:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
 @end
 
+enum AATCollapsibleBannerPosition : NSInteger;
 
 SWIFT_CLASS("_TtC6AATKit27AATCollapsibleBannerOptions")
 @interface AATCollapsibleBannerOptions : NSObject
+- (nonnull instancetype)initWithPosition:(enum AATCollapsibleBannerPosition)position minDelay:(NSInteger)minDelay OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1160,7 +1201,6 @@ typedef SWIFT_ENUM(NSInteger, AATImpressionPricePrecisionType, open) {
   AATImpressionPricePrecisionTypePrecise = 4,
 };
 
-@protocol AATInfeedBannerPlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit24AATInfeedBannerPlacement_")
 @protocol AATInfeedBannerPlacement <AATPlacement>
@@ -2566,13 +2606,54 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATAppOpenPlacementDelegate_")
 @protocol AATAppOpenPlacementDelegate <AATFullscreenPlacementDelegate>
 @end
 
+@protocol AATInfeedBannerPlacementDelegate;
+@class AATCollapsibleBannerOptions;
+@class AATBannerRequest;
+@class AATBannerPlacementWrapperView;
+
+SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@protocol AATAsyncInfeedBannerPlacement <AATPlacement>
+/// Set the placement delegate that will listen to ad loading and display events
+@property (nonatomic, strong) id <AATInfeedBannerPlacementDelegate> _Nullable delegate;
+/// Sets the placement statistics delegate
+@property (nonatomic, strong) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
+/// Sets the placement impression delegate
+@property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
+@property (nonatomic, strong) AATCollapsibleBannerOptions * _Nullable collapsableBannerOptions;
+/// Request banner ad from the placement
+/// \param request the <code>AATBannerRequest</code> to be used
+///
+///
+/// returns:
+/// <code>AATBannerPlacementWrapperView</code>
+- (void)requestAdWithRequest:(AATBannerRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(AATBannerPlacementWrapperView * _Nullable))completionHandler;
+/// Manually Count an Ad Space
+- (void)countAdSpace;
+@end
+
+@protocol AATAsyncNativePlacementDelegate;
+@protocol AATNativeAdData;
+
+SWIFT_PROTOCOL("_TtP6AATKit25AATAsyncNativeAdPlacement_") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@protocol AATAsyncNativeAdPlacement <AATPlacement>
+@property (nonatomic, strong) id <AATAsyncNativePlacementDelegate> _Nullable delegate;
+@property (nonatomic, strong) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
+@property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
+@property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable targetingInfo;
+@property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+- (void)reloadWithCompletionHandler:(void (^ _Nonnull)(id <AATNativeAdData> _Nullable))completionHandler;
+- (NSInteger)getNumberOfCurrentlyLoadingNativeAds SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)hasAd SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)reportAdSpace SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isFrequencyCapReached SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 SWIFT_PROTOCOL("_TtP6AATKit31AATAsyncNativePlacementDelegate_")
 @protocol AATAsyncNativePlacementDelegate <AATAdDisplayDelegate>
 @end
 
 @protocol AATAutoLoadBannerPlacementDelegate;
-@class AATCollapsibleBannerOptions;
 @class UIView;
 @class UIImage;
 @class AATBannerAlign;
@@ -2645,7 +2726,6 @@ SWIFT_PROTOCOL("_TtP6AATKit35AATAutoLoadMultiSizeBannerPlacement_")
 - (void)stopAutoReload;
 @end
 
-@class AATBannerPlacementWrapperView;
 
 /// Conform to this protocol to listen to the AATMultiSizeBannerPlacement events
 SWIFT_PROTOCOL("_TtP6AATKit43AATAutoLoadMultiSizeBannerPlacementDelegate_")
@@ -2693,7 +2773,6 @@ typedef SWIFT_ENUM(NSInteger, VerticalAlign, open) {
 };
 
 @protocol AATBannerCacheStatusDelegate;
-@class AATBannerRequest;
 
 /// A cache of automatically preloaded banner ads.
 /// The cache will always try to have a defined amount of banners available for immediate handout to the app whenever they are needed. <em>Note:</em> The BannerCache needs to be destroyed when no longer needed.
@@ -2913,9 +2992,11 @@ SWIFT_PROTOCOL("_TtP6AATKit14AATCMPProtocol_")
 - (void)editConsent:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
 @end
 
+enum AATCollapsibleBannerPosition : NSInteger;
 
 SWIFT_CLASS("_TtC6AATKit27AATCollapsibleBannerOptions")
 @interface AATCollapsibleBannerOptions : NSObject
+- (nonnull instancetype)initWithPosition:(enum AATCollapsibleBannerPosition)position minDelay:(NSInteger)minDelay OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3215,7 +3296,6 @@ typedef SWIFT_ENUM(NSInteger, AATImpressionPricePrecisionType, open) {
   AATImpressionPricePrecisionTypePrecise = 4,
 };
 
-@protocol AATInfeedBannerPlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit24AATInfeedBannerPlacement_")
 @protocol AATInfeedBannerPlacement <AATPlacement>
