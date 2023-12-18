@@ -50469,21 +50469,28 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9919,
+      "offset": 9730,
+      "length": 3,
+      "value": "867"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9955,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 10168,
+      "offset": 10204,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 10209,
+      "offset": 10245,
       "length": 5,
       "value": "false"
     },
@@ -57646,7 +57653,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 7,
-      "value": "\"3.4.1\""
+      "value": "\"3.4.2\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
@@ -66114,77 +66121,77 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6047,
+      "offset": 6075,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6147,
+      "offset": 6175,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6284,
+      "offset": 6312,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6488,
+      "offset": 6516,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 7560,
+      "offset": 7588,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 8723,
+      "offset": 8751,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9444,
+      "offset": 9472,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9495,
+      "offset": 9523,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9546,
+      "offset": 9574,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9598,
+      "offset": 9626,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9703,
+      "offset": 9731,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },
