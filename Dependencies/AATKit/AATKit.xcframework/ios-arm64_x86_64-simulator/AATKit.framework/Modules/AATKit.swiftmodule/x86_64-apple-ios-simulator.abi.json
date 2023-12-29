@@ -55563,6 +55563,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Network\/Endpoints\/AATRulesEndpoint.swift",
+      "kind": "BooleanLiteral",
+      "offset": 903,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATAppLovinDriver.swift",
       "kind": "StringLiteral",
       "offset": 507,
@@ -57653,7 +57660,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 7,
-      "value": "\"3.4.2\""
+      "value": "\"3.4.3\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
@@ -64062,330 +64069,351 @@
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2527,
+      "length": 39,
+      "value": "\"Couldn't get the top view controller!\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2751,
+      "length": 70,
+      "value": "\"Trying to present the shake debug screen which is already presented!\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 2614,
+      "offset": 2902,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 3531,
+      "offset": 3819,
       "length": 3,
       "value": "568"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 3626,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3755,
+      "offset": 3914,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3969,
+      "offset": 4060,
+      "length": 65,
+      "value": "\"Trying to show the shake debug screen that's already presented!\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4258,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 4472,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 3994,
+      "offset": 4497,
       "length": 31,
       "value": "\"(\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4021,
+      "offset": 4524,
       "length": 1,
       "value": "\")\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4144,
+      "offset": 4647,
       "length": 41,
       "value": "\"Using test bundle: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4180,
+      "offset": 4683,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4269,
+      "offset": 4772,
       "length": 29,
       "value": "\"Using test ID:\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4293,
+      "offset": 4796,
       "length": 1,
       "value": "\"\n\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4341,
+      "offset": 4844,
       "length": 15,
       "value": "\"Live Mode\n\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4389,
+      "offset": 4892,
       "length": 26,
       "value": "\"Currently loaded ads: \n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4508,
+      "offset": 5011,
       "length": 70,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4539,
+      "offset": 5042,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4577,
+      "offset": 5080,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4654,
+      "offset": 5157,
       "length": 19,
       "value": "\", Loading new ad.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4713,
+      "offset": 5216,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4821,
+      "offset": 5324,
       "length": 39,
       "value": "\"\t\t  Last shown: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4856,
+      "offset": 5359,
       "length": 1,
       "value": "\" \n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 4966,
+      "offset": 5469,
       "length": 28,
       "value": "\"\nAvailable Ad Networks:\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5089,
+      "offset": 5592,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5112,
+      "offset": 5615,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5163,
+      "offset": 5666,
       "length": 17,
       "value": "\"\nExtra SDKs:\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5285,
+      "offset": 5788,
       "length": 15,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5297,
+      "offset": 5800,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5513,
+      "offset": 6016,
       "length": 34,
       "value": "\"\nNetworks disabled from code:\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5641,
+      "offset": 6144,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5652,
+      "offset": 6155,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5759,
+      "offset": 6262,
       "length": 33,
       "value": "\"\nNetworks with removed SDKs:\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5885,
+      "offset": 6388,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5896,
+      "offset": 6399,
       "length": 1,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5946,
+      "offset": 6449,
       "length": 42,
       "value": "\"\nDevice type: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 5987,
+      "offset": 6490,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 6011,
+      "offset": 6514,
       "length": 44,
       "value": "\"\nIDFA: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 6048,
+      "offset": 6551,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 6054,
+      "offset": 6557,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 6105,
+      "offset": 6608,
       "length": 37,
       "value": "\"Returning debug info:\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 6141,
+      "offset": 6644,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 6684,
+      "offset": 7187,
       "length": 6,
       "value": "\"None\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6995,
+      "offset": 7498,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7214,
+      "offset": 7717,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7224,
+      "offset": 7727,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 7353,
+      "offset": 7856,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7389,
+      "offset": 7892,
       "length": 12,
       "value": "\"Prebid SDK\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "StringLiteral",
-      "offset": 7514,
+      "offset": 8017,
       "length": 10,
       "value": "\"Datonomy\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugScreenHelper.swift",
       "kind": "Array",
-      "offset": 8028,
+      "offset": 8531,
       "length": 2,
       "value": "[]"
     },
@@ -68473,126 +68501,126 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 1533,
+      "offset": 1586,
       "length": 67,
       "value": "\"loadCurrentEndpoint Will load endpoint: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 1599,
+      "offset": 1652,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 2118,
+      "offset": 2171,
       "length": 38,
       "value": "\"New config downloaded. \n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 2155,
+      "offset": 2208,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 2333,
+      "offset": 2386,
       "length": 25,
       "value": "\"Config download failed.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 2794,
+      "offset": 2847,
       "length": 76,
       "value": "\"handleSuccess logs handleSuccess, will reload after \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 2869,
+      "offset": 2922,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3859,
+      "offset": 3912,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3913,
+      "offset": 3966,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 4114,
+      "offset": 4167,
       "length": 38,
       "value": "\"resetEndpointsArray will reset array\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 4436,
+      "offset": 4489,
       "length": 42,
       "value": "\"resetEndpointsArray finished reset array\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 4854,
+      "offset": 4907,
       "length": 45,
       "value": "\"changeEndpointStatus will update array from\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 5094,
+      "offset": 5147,
       "length": 73,
       "value": "\"changeEndpointStatus could not find endpoint: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 5166,
+      "offset": 5219,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 5300,
+      "offset": 5353,
       "length": 44,
       "value": "\"changeEndpointStatus finished update array\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 5561,
+      "offset": 5614,
       "length": 70,
       "value": "\"rules endpoint: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 5603,
+      "offset": 5656,
       "length": 6,
       "value": "\" status: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATConfigDownloader\/AATConfigApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 5630,
+      "offset": 5683,
       "length": 3,
       "value": "\"\""
     },
