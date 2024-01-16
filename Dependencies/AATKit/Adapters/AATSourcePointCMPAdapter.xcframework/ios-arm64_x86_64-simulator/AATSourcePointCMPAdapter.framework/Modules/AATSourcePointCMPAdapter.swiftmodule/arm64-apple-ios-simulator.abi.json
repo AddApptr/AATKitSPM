@@ -707,448 +707,448 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 23,
       "value": "\"AATSafeManagedConsent\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 536,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 725,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 751,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "BooleanLiteral",
       "offset": 812,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "BooleanLiteral",
       "offset": 1124,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 1304,
       "length": 103,
       "value": "\"Invalid SourcePoint CMP parameters: accountId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 1364,
       "length": 1,
       "value": "\", propertyId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 1391,
       "length": 1,
       "value": "\", pmID: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 1406,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 1686,
       "length": 130,
       "value": "\"Initialize SourcePoint CMP with accountId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 1742,
       "length": 1,
       "value": "\", propertyId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 1769,
       "length": 1,
       "value": "\", propertyName: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 1800,
       "length": 1,
       "value": "\", pmId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 1815,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "BooleanLiteral",
       "offset": 2326,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "BooleanLiteral",
       "offset": 2431,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 2464,
       "length": 87,
       "value": "\"Couldn't get \"Property Name\" from: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 2517,
       "length": 1,
       "value": "\"  - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 2550,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 2634,
       "length": 13,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 2646,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 2879,
       "length": 24,
       "value": "\"SourcePoint idle state\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 3007,
       "length": 28,
       "value": "\"SourcePoint setup finished\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 3158,
       "length": 39,
       "value": "\"SourcePoint CMP setup error: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 3196,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 3346,
       "length": 17,
       "value": "\"loading consent\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 3500,
       "length": 14,
       "value": "\"Edit consent\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 3700,
       "length": 24,
       "value": "\"Form ready to be shown\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 3927,
       "length": 25,
       "value": "\"Form has been dismissed\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "BooleanLiteral",
       "offset": 3996,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "IntegerLiteral",
       "offset": 4136,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 4322,
       "length": 17,
       "value": "\"State: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 4338,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 265,
       "length": 17,
       "value": "\"AATSourcePointCMPAdapter.AATCMPSourcepoint\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 4637,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 4663,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 4990,
       "length": 52,
       "value": "\"SourcePoint didn't return a proper ViewController!\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "BooleanLiteral",
       "offset": 5129,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 5331,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 5357,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 5645,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 5671,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 5997,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 6023,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 6305,
       "length": 65,
       "value": "\"Invalid source: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 6331,
       "length": 1,
       "value": "\", this method is not for public usage.\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 6491,
       "length": 158,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 6648,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 7320,
       "length": 44,
       "value": "\"AATSourcePointCMPAdapter.AATCMPSourcepoint\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 7560,
       "length": 15,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 7574,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 7761,
       "length": 15,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 7775,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 8007,
       "length": 15,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 8021,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 8474,
       "length": 21,
       "value": "\"Not related action.\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 8589,
       "length": 21,
       "value": "\"Not related action.\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 8745,
       "length": 23,
       "value": "\"userData: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 8767,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 8891,
       "length": 23,
       "value": "\"userData: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 8913,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 9026,
       "length": 53,
       "value": "\"Something went wrong: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
       "offset": 9078,
       "length": 3,

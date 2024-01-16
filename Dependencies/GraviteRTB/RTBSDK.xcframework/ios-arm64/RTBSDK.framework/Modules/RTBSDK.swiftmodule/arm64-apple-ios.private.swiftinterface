@@ -42,8 +42,9 @@ extension RTBSDK.RTBBannerSize {
   public static let banner728x90: RTBSDK.RTBBannerSize
 }
 @objc public class RTBFullscreenRequestConfiguration : ObjectiveC.NSObject {
-  public var bidFloor: Swift.Float?
-  public init(placementId: Swift.Int, iTunesAppId: Swift.String)
+  @objc public var bidFloor: Foundation.NSNumber?
+  @objc public var sellerId: Swift.String?
+  @objc public init(placementId: Swift.Int, iTunesAppId: Swift.String)
   @objc deinit
 }
 @objc public protocol RTBBannerViewDelegate {
@@ -102,8 +103,9 @@ extension RTBSDK.RTBBannerSize {
   @objc deinit
 }
 @objc public class RTBBannerRequestConfiguration : ObjectiveC.NSObject {
-  public var bidFloor: Swift.Float?
-  public init(placementId: Swift.Int, iTunesAppId: Swift.String)
+  @objc public var bidFloor: Foundation.NSNumber?
+  @objc public var sellerId: Swift.String?
+  @objc public init(placementId: Swift.Int, iTunesAppId: Swift.String)
   @objc deinit
 }
 extension RTBSDK.RTBLogLevel : Swift.Equatable {}

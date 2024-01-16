@@ -1,0 +1,367 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATSuperAwesomeAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATSuperAwesomeAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATSuperAwesomeAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATSuperAwesomeAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATSuperAwesomeAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATSuperAwesomeAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 380,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 417,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 448,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 476,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 775,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 770,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1156,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2244,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 837,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2191,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2279,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2368,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2473,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2593,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 2820,
+      "length": 61,
+      "value": "\"Failed to show InterstitialAd due to invalid viewController\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2903,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2980,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3041,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 4007,
+      "length": 32,
+      "value": "\"Message: failed to load an Ad.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 4089,
+      "length": 32,
+      "value": "\"Message: failed to load an Ad.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4183,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 4286,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4351,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4857,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 741,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2214,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2300,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2387,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3105,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3126,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 3547,
+      "length": 64,
+      "value": "\"Failed to show rewarded video ad due to invalid viewController\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3633,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3706,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3765,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 4536,
+      "length": 32,
+      "value": "\"Message: failed to load an Ad.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 4623,
+      "length": 32,
+      "value": "\"Message: failed to load an Ad.\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4713,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 4814,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4875,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 5120,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 5199,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 5210,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATSuperAwesomeAdapter\/AATSuperAwesomeRewarded.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5658,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

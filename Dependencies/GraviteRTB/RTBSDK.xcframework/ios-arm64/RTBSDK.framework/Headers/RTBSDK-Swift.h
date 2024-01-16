@@ -283,9 +283,19 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSNumber;
+@class NSString;
 
 SWIFT_CLASS("_TtC6RTBSDK29RTBBannerRequestConfiguration")
 @interface RTBBannerRequestConfiguration : NSObject
+/// Represents the bid floor price.
+@property (nonatomic, strong) NSNumber * _Nullable bidFloor;
+@property (nonatomic, copy) NSString * _Nullable sellerId;
+/// \param placementId Represents the placement ID on SmartyAd dashboard.
+///
+/// \param iTunesAppId Represents the AppId on the publisher Apple developer account.
+///
+- (nonnull instancetype)initWithPlacementId:(NSInteger)placementId iTunesAppId:(NSString * _Nonnull)iTunesAppId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -311,7 +321,6 @@ SWIFT_CLASS("_TtC6RTBSDK13RTBBannerView")
 
 
 
-@class NSString;
 
 SWIFT_PROTOCOL("_TtP6RTBSDK21RTBBannerViewDelegate_")
 @protocol RTBBannerViewDelegate
@@ -381,6 +390,14 @@ SWIFT_PROTOCOL("_TtP6RTBSDK21RTBFullscreenDelegate_")
 
 SWIFT_CLASS("_TtC6RTBSDK33RTBFullscreenRequestConfiguration")
 @interface RTBFullscreenRequestConfiguration : NSObject
+/// Represents the bid floor price.
+@property (nonatomic, strong) NSNumber * _Nullable bidFloor;
+@property (nonatomic, copy) NSString * _Nullable sellerId;
+/// \param placementId Represents the placement ID on SmartyAd dashboard.
+///
+/// \param iTunesAppId Represents the AppId on the publisher Apple developer account.
+///
+- (nonnull instancetype)initWithPlacementId:(NSInteger)placementId iTunesAppId:(NSString * _Nonnull)iTunesAppId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

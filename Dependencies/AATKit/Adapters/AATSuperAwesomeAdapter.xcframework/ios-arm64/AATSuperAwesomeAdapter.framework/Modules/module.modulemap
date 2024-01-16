@@ -1,0 +1,11 @@
+framework module AATSuperAwesomeAdapter {
+  umbrella header "AATSuperAwesomeAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATSuperAwesomeAdapter.Swift {
+  header "AATSuperAwesomeAdapter-Swift.h"
+  requires objc
+}

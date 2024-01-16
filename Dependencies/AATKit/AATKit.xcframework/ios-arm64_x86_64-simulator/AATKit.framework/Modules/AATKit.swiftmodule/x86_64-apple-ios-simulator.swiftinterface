@@ -197,6 +197,7 @@ public protocol AATFacebookDriverProtocol {
   case DFPDIRECT
   case IRONSOURCE
   case GRAVITERTB
+  case SUPERAWESOME
   public typealias AllCases = [AATKit.AATAdNetwork]
   public static var allCases: [AATKit.AATAdNetwork] {
     get
@@ -216,15 +217,28 @@ extension AATKit.AATAdNetwork : Swift.CustomStringConvertible {
     get
   }
 }
-@objc public enum NonIABConsent : Swift.Int {
+@objc public enum NonIABConsent : Swift.Int, Swift.CustomStringConvertible {
   case unknown
   case obtained
   case withheld
+  public var description: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
+}
+@available(*, deprecated, message: "The AATPubNativeOptions is deprecated and will no longer be supported from AATKit SDK v3.5")
+@objc public class AATPubNativeOptions : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "The skipOffsetForHTMLInterstitial setting is deprecated and will no longer be supported from HyBid SDK v3.0")
+  final public let skipOffsetForHTMLInterstitial: Swift.Int?
+  @available(*, deprecated, message: "The skipOffsetForVideoInterstitial setting is deprecated and will no longer be supported from HyBid SDK v3.0")
+  final public let skipOffsetForVideoInterstitial: Swift.Int?
+  @available(*, deprecated, message: "The offsets settings are deprecated and will no longer be supported from HyBid SDK v3.0")
+  @objc public init(skipOffsetForHTMLInterstitial: Foundation.NSNumber? = nil, skipOffsetForVideoInterstitial: Foundation.NSNumber? = nil)
+  @objc deinit
 }
 @objc public protocol AATAutoLoadBannerPlacement : AATKit.AATPlacement {
   @objc var delegate: (any AATKit.AATAutoLoadBannerPlacementDelegate)? { get set }
@@ -341,6 +355,11 @@ public protocol AATAdNetworkDriverManager : AATKit.AATAdNetworkDriverVersionProt
   static var shared: Self { get }
   func setDebugEnabled(enabled: Swift.Bool)
 }
+@objc public class AATDatonomyOptions : ObjectiveC.NSObject {
+  final public let datonomyAPIKey: Swift.String?
+  @objc public init(datonomyAPIKey: Swift.String)
+  @objc deinit
+}
 @frozen @objc public enum AATAdChoicesIconPosition : Swift.Int {
   case topLeft
   case topRight
@@ -401,6 +420,16 @@ public protocol AATVungleDriverProtocol {
 }
 public let rewardedVideoTag: Swift.String
 public let thumbnailTag: Swift.String
+@objc public class AATAdMobOptions : ObjectiveC.NSObject {
+  final public let inlineBannerMaxHeight: Swift.Int?
+  @objc public init(inlineBannerMaxHeight: Swift.Int)
+  @objc deinit
+}
+@objc public class AATDFPOptions : ObjectiveC.NSObject {
+  final public let inlineBannerMaxHeight: Swift.Int?
+  @objc public init(inlineBannerMaxHeight: Swift.Int)
+  @objc deinit
+}
 extension UIKit.UIColor {
   convenience public init?(hex: Swift.String)
 }
@@ -524,6 +553,12 @@ extension AATKit.AATBannerCacheConfiguration : Foundation.NSCopying {
   @objc func hasAd() -> Swift.Bool
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
+}
+@objc public class AATAppNexusOptions : ObjectiveC.NSObject {
+  final public let autoCloseTime: Swift.Int?
+  final public let supportNativeBanner: Swift.Bool
+  @objc public init(autoCloseTime: Foundation.NSNumber? = nil, supportNativeBanner: Swift.Bool = false)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class AATLogger : ObjectiveC.NSObject {
   public static func log(level: AATKit.AATLogLevel, message: Swift.String, withoutAATFormatting: Swift.Bool = false, forceLog: Swift.Bool = false, callingMethod: Swift.String = #function, file: Swift.String = #file, tag: Swift.String = "AATKit")
@@ -821,6 +856,12 @@ extension AATKit.AATFullscreenAdDriverProtocol {
 public protocol AATBannerDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate {
   var state: AATKit.AATBannerAdState { get set }
 }
+@objc public class AATFeedAdOptions : ObjectiveC.NSObject {
+  final public let shutterColor: UIKit.UIColor?
+  final public let disableSpinner: Swift.Bool
+  @objc public init(shutterColor: UIKit.UIColor? = nil, disableSpinner: Swift.Bool = false)
+  @objc deinit
+}
 @frozen @objc public enum AATMediationType : Swift.Int {
   case WATERFALL = 1
   case AUCTION = 2
@@ -1108,44 +1149,8 @@ extension AATKit.AATLocationUtils : CoreLocation.CLLocationManagerDelegate {
   public var adMobOptions: AATKit.AATAdMobOptions?
   public var dfpOptions: AATKit.AATDFPOptions?
   public var datonomyOptions: AATKit.AATDatonomyOptions?
-  @objc public init(appNexusOptions: AATKit.AATAppNexusOptions? = nil, feedAdOptions: AATKit.AATFeedAdOptions? = nil, pubNativeOptions: AATKit.AATPubNativeOptions? = nil, adMobOptions: AATKit.AATAdMobOptions? = nil, dfpOptions: AATKit.AATDFPOptions? = nil, datonomyOptions: AATKit.AATDatonomyOptions? = nil)
-  @objc deinit
-}
-@objc public class AATAppNexusOptions : ObjectiveC.NSObject {
-  final public let autoCloseTime: Swift.Int?
-  final public let supportNativeBanner: Swift.Bool
-  @objc public init(autoCloseTime: Foundation.NSNumber? = nil, supportNativeBanner: Swift.Bool = false)
-  @objc deinit
-}
-@objc public class AATFeedAdOptions : ObjectiveC.NSObject {
-  final public let shutterColor: UIKit.UIColor?
-  final public let disableSpinner: Swift.Bool
-  @objc public init(shutterColor: UIKit.UIColor? = nil, disableSpinner: Swift.Bool = false)
-  @objc deinit
-}
-@available(*, deprecated, message: "The AATPubNativeOptions is deprecated and will no longer be supported from AATKit SDK v3.5")
-@objc public class AATPubNativeOptions : ObjectiveC.NSObject {
-  @available(*, deprecated, message: "The skipOffsetForHTMLInterstitial setting is deprecated and will no longer be supported from HyBid SDK v3.0")
-  final public let skipOffsetForHTMLInterstitial: Swift.Int?
-  @available(*, deprecated, message: "The skipOffsetForVideoInterstitial setting is deprecated and will no longer be supported from HyBid SDK v3.0")
-  final public let skipOffsetForVideoInterstitial: Swift.Int?
-  @available(*, deprecated, message: "The offsets settings are deprecated and will no longer be supported from HyBid SDK v3.0")
-  @objc public init(skipOffsetForHTMLInterstitial: Foundation.NSNumber? = nil, skipOffsetForVideoInterstitial: Foundation.NSNumber? = nil)
-  @objc deinit
-}
-@objc public class AATAdMobOptions : ObjectiveC.NSObject {
-  final public let inlineBannerMaxHeight: Swift.Int?
-  @objc public init(inlineBannerMaxHeight: Swift.Int)
-  @objc deinit
-}
-@objc public class AATDFPOptions : ObjectiveC.NSObject {
-  final public let inlineBannerMaxHeight: Swift.Int?
-  @objc public init(inlineBannerMaxHeight: Swift.Int)
-  @objc deinit
-}
-@objc public class AATDatonomyOptions : ObjectiveC.NSObject {
-  final public let datonomyAPIKey: Swift.String?
-  @objc public init(datonomyAPIKey: Swift.String)
+  public var superAwesomeOptions: AATKit.AATSuperAwesomeOptions?
+  @objc public init(appNexusOptions: AATKit.AATAppNexusOptions? = nil, feedAdOptions: AATKit.AATFeedAdOptions? = nil, pubNativeOptions: AATKit.AATPubNativeOptions? = nil, adMobOptions: AATKit.AATAdMobOptions? = nil, dfpOptions: AATKit.AATDFPOptions? = nil, datonomyOptions: AATKit.AATDatonomyOptions? = nil, superAwesomeOptions: AATKit.AATSuperAwesomeOptions? = nil)
   @objc deinit
 }
 public protocol AATNativeAdDriverProtocol : AATKit.AATAdDriverProtocol {
@@ -1231,6 +1236,68 @@ public protocol AATFullscreenDriverEventsDelegate : AATKit.AATAdDriverEventsDele
 extension AATKit.AATBannerConfiguration : Foundation.NSCopying {
   @objc dynamic public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
 }
+public protocol AATSuperAwesomeDriverProtocol {
+  static var shared: Self { get }
+  func muteVideoAd(_ isMuted: Swift.Bool)
+}
+@_inheritsConvenienceInitializers @objc public class AATSuperAwesomeOptions : ObjectiveC.NSObject {
+  public var bannerOptions: AATKit.AATSuperAwesomeOptions.BannerOptions?
+  public var interstitialAdOptions: AATKit.AATSuperAwesomeOptions.InterstitialAdOptions?
+  public var rewardedVideoOptionsOptions: AATKit.AATSuperAwesomeOptions.RewardedVideoOptions?
+  @objc @frozen public enum Orientation : Swift.Int {
+    case any = 0
+    case portrait = 1
+    case landscape = 2
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc @frozen public enum CloseButtonState : Swift.Int {
+    case enabled = 0
+    case enabledNoDelay = 1
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public class NetworkOptions : ObjectiveC.NSObject {
+    public var parentalGateEnabled: Swift.Bool?
+    public var bumperPageEnabled: Swift.Bool?
+    public var bumperPageCustomAppName: Swift.String?
+    public var bumperPageLogo: UIKit.UIImage?
+    @objc public init(parentalGateEnabled: Swift.Bool = false, bumperPageEnabled: Swift.Bool = false, bumperPageCustomAppName: Swift.String? = nil, bumperPageLogo: UIKit.UIImage? = nil)
+    @objc deinit
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc extension AATKit.AATSuperAwesomeOptions {
+  @objc public class BannerOptions : AATKit.AATSuperAwesomeOptions.NetworkOptions {
+    public var isBackgroundTransparent: Swift.Bool?
+    @objc public init(parentalGateEnabled: Swift.Bool = false, bumperPageEnabled: Swift.Bool = false, bumperPageCustomAppName: Swift.String? = nil, bumperPageLogo: UIKit.UIImage? = nil, isBackgroundTransparent: Swift.Bool = true)
+    @objc deinit
+  }
+}
+@objc extension AATKit.AATSuperAwesomeOptions {
+  @objc public class InterstitialAdOptions : AATKit.AATSuperAwesomeOptions.NetworkOptions {
+    public var orientation: AATKit.AATSuperAwesomeOptions.Orientation?
+    public var closeButtonState: AATKit.AATSuperAwesomeOptions.CloseButtonState?
+    @objc public init(orientation: AATKit.AATSuperAwesomeOptions.Orientation = .any, closeButtonState: AATKit.AATSuperAwesomeOptions.CloseButtonState = .enabled, parentalGateEnabled: Swift.Bool = false, bumperPageEnabled: Swift.Bool = false, bumperPageCustomAppName: Swift.String? = nil, bumperPageLogo: UIKit.UIImage? = nil)
+    @objc deinit
+  }
+}
+@objc extension AATKit.AATSuperAwesomeOptions {
+  @objc public class RewardedVideoOptions : AATKit.AATSuperAwesomeOptions.InterstitialAdOptions {
+    public var closeButtonAtEnd: Swift.Bool?
+    public var smallClickEnabled: Swift.Bool?
+    public var closeButtonWarningEnabled: Swift.Bool?
+    @objc public init(closeButtonAtEnd: Swift.Bool = false, smallClickEnabled: Swift.Bool = false, closeButtonWarningEnabled: Swift.Bool = false, orientation: AATKit.AATSuperAwesomeOptions.Orientation = .any, closeButtonState: AATKit.AATSuperAwesomeOptions.CloseButtonState = .enabled, parentalGateEnabled: Swift.Bool = false, bumperPageEnabled: Swift.Bool = false, bumperPageCustomAppName: Swift.String? = nil, bumperPageLogo: UIKit.UIImage? = nil)
+    @objc deinit
+  }
+}
 @objc public protocol AATStatisticsDelegate {
   @objc func AATKitCountedAdSpace(placement: (any AATKit.AATPlacement)?)
   @objc func AATKitCountedRequest(placement: (any AATKit.AATPlacement)?, for network: AATKit.AATAdNetwork)
@@ -1295,3 +1362,11 @@ extension AATKit.AATBannerAlign.HorizontalAlign : Swift.Hashable {}
 extension AATKit.AATBannerAlign.HorizontalAlign : Swift.RawRepresentable {}
 extension AATKit.AATBannerAlign.VerticalAlign : Swift.Hashable {}
 extension AATKit.AATBannerAlign.VerticalAlign : Swift.RawRepresentable {}
+extension AATKit.AATSuperAwesomeOptions.Orientation : Swift.Equatable {}
+extension AATKit.AATSuperAwesomeOptions.Orientation : Swift.Hashable {}
+extension AATKit.AATSuperAwesomeOptions.Orientation : Swift.RawRepresentable {}
+extension AATKit.AATSuperAwesomeOptions.Orientation : Swift.Sendable {}
+extension AATKit.AATSuperAwesomeOptions.CloseButtonState : Swift.Equatable {}
+extension AATKit.AATSuperAwesomeOptions.CloseButtonState : Swift.Hashable {}
+extension AATKit.AATSuperAwesomeOptions.CloseButtonState : Swift.RawRepresentable {}
+extension AATKit.AATSuperAwesomeOptions.CloseButtonState : Swift.Sendable {}

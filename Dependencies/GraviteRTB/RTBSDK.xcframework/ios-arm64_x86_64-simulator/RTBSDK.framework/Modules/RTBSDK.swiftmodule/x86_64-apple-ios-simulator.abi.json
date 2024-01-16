@@ -1307,26 +1307,27 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Float?",
+                "printedName": "Foundation.NSNumber?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSfSgvp",
-            "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSfSgvp",
+            "usr": "c:@M@RTBSDK@objc(cs)RTBFullscreenRequestConfiguration(py)bidFloor",
+            "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSo8NSNumberCSgvp",
             "moduleName": "RTBSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -1339,23 +1340,26 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Float?",
+                    "printedName": "Foundation.NSNumber?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSfSgvg",
-                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSfSgvg",
+                "usr": "c:@M@RTBSDK@objc(cs)RTBFullscreenRequestConfiguration(im)bidFloor",
+                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSo8NSNumberCSgvg",
                 "moduleName": "RTBSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -1371,23 +1375,26 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Float?",
+                    "printedName": "Foundation.NSNumber?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSfSgvs",
-                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSfSgvs",
+                "usr": "c:@M@RTBSDK@objc(cs)RTBFullscreenRequestConfiguration(im)setBidFloor:",
+                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSo8NSNumberCSgvs",
                 "moduleName": "RTBSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -1402,8 +1409,125 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSfSgvM",
-                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSfSgvM",
+                "usr": "s:6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSo8NSNumberCSgvM",
+                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8bidFloorSo8NSNumberCSgvM",
+                "moduleName": "RTBSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sellerId",
+            "printedName": "sellerId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RTBSDK@objc(cs)RTBFullscreenRequestConfiguration(py)sellerId",
+            "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8sellerIdSSSgvp",
+            "moduleName": "RTBSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RTBSDK@objc(cs)RTBFullscreenRequestConfiguration(im)sellerId",
+                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8sellerIdSSSgvg",
+                "moduleName": "RTBSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RTBSDK@objc(cs)RTBFullscreenRequestConfiguration(im)setSellerId:",
+                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8sellerIdSSSgvs",
+                "moduleName": "RTBSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6RTBSDK33RTBFullscreenRequestConfigurationC8sellerIdSSSgvM",
+                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC8sellerIdSSSgvM",
                 "moduleName": "RTBSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1435,11 +1559,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6RTBSDK33RTBFullscreenRequestConfigurationC11placementId09iTunesAppF0ACSi_SStcfc",
+            "usr": "c:@M@RTBSDK@objc(cs)RTBFullscreenRequestConfiguration(im)initWithPlacementId:iTunesAppId:",
             "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC11placementId09iTunesAppF0ACSi_SStcfc",
             "moduleName": "RTBSDK",
+            "objc_name": "initWithPlacementId:iTunesAppId:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "init_kind": "Designated"
@@ -3399,26 +3525,27 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Float?",
+                "printedName": "Foundation.NSNumber?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Float",
-                    "printedName": "Swift.Float",
-                    "usr": "s:Sf"
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSfSgvp",
-            "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSfSgvp",
+            "usr": "c:@M@RTBSDK@objc(cs)RTBBannerRequestConfiguration(py)bidFloor",
+            "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSo8NSNumberCSgvp",
             "moduleName": "RTBSDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "hasStorage": true,
@@ -3431,23 +3558,26 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Float?",
+                    "printedName": "Foundation.NSNumber?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSfSgvg",
-                "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSfSgvg",
+                "usr": "c:@M@RTBSDK@objc(cs)RTBBannerRequestConfiguration(im)bidFloor",
+                "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSo8NSNumberCSgvg",
                 "moduleName": "RTBSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -3463,23 +3593,26 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Float?",
+                    "printedName": "Foundation.NSNumber?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Float",
-                        "printedName": "Swift.Float",
-                        "usr": "s:Sf"
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSfSgvs",
-                "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSfSgvs",
+                "usr": "c:@M@RTBSDK@objc(cs)RTBBannerRequestConfiguration(im)setBidFloor:",
+                "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSo8NSNumberCSgvs",
                 "moduleName": "RTBSDK",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -3494,8 +3627,125 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSfSgvM",
-                "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSfSgvM",
+                "usr": "s:6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSo8NSNumberCSgvM",
+                "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8bidFloorSo8NSNumberCSgvM",
+                "moduleName": "RTBSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sellerId",
+            "printedName": "sellerId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RTBSDK@objc(cs)RTBBannerRequestConfiguration(py)sellerId",
+            "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8sellerIdSSSgvp",
+            "moduleName": "RTBSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RTBSDK@objc(cs)RTBBannerRequestConfiguration(im)sellerId",
+                "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8sellerIdSSSgvg",
+                "moduleName": "RTBSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RTBSDK@objc(cs)RTBBannerRequestConfiguration(im)setSellerId:",
+                "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8sellerIdSSSgvs",
+                "moduleName": "RTBSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6RTBSDK29RTBBannerRequestConfigurationC8sellerIdSSSgvM",
+                "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC8sellerIdSSSgvM",
                 "moduleName": "RTBSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3527,11 +3777,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:6RTBSDK29RTBBannerRequestConfigurationC11placementId09iTunesAppF0ACSi_SStcfc",
+            "usr": "c:@M@RTBSDK@objc(cs)RTBBannerRequestConfiguration(im)initWithPlacementId:iTunesAppId:",
             "mangledName": "$s6RTBSDK29RTBBannerRequestConfigurationC11placementId09iTunesAppF0ACSi_SStcfc",
             "moduleName": "RTBSDK",
+            "objc_name": "initWithPlacementId:iTunesAppId:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "init_kind": "Designated"
@@ -3736,7 +3988,7 @@
       "kind": "StringLiteral",
       "offset": 1217,
       "length": 13,
-      "value": "\"1.0.0-beta3\""
+      "value": "\"1.0.0-beta4\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/RTBSDKManager.swift",
@@ -3867,161 +4119,147 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 2059,
+      "offset": 1843,
       "length": 18,
       "value": "\"${AUCTION_PRICE}\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 2085,
+      "offset": 1869,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 2097,
+      "offset": 1881,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 2148,
+      "offset": 1932,
       "length": 22,
       "value": "\"Html:\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 2169,
+      "offset": 1953,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2498,
+      "offset": 2282,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2654,
+      "offset": 2438,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2726,
+      "offset": 2510,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 2869,
-      "length": 6,
-      "value": "\"html\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
-      "kind": "StringLiteral",
-      "offset": 3044,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
-      "kind": "StringLiteral",
-      "offset": 3248,
+      "offset": 2707,
       "length": 18,
       "value": "\"🔴\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 3265,
+      "offset": 2724,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 3367,
+      "offset": 2826,
       "length": 18,
       "value": "\"🔴\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 3384,
+      "offset": 2843,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3504,
+      "offset": 2963,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 3566,
+      "offset": 3025,
       "length": 57,
       "value": "\"document.documentElement.style.webkitUserSelect='none';\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 3780,
+      "offset": 3239,
       "length": 18,
       "value": "\"🔴\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 3797,
+      "offset": 3256,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 3979,
+      "offset": 3438,
       "length": 108,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 3992,
+      "offset": 3451,
       "length": 1,
       "value": "\", navigationType : \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 4045,
+      "offset": 3504,
       "length": 1,
       "value": "\", navRequest: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 4086,
+      "offset": 3545,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdFormats\/RTBAdWebViewView.swift",
       "kind": "StringLiteral",
-      "offset": 4253,
+      "offset": 3712,
       "length": 14,
       "value": "\"banner click\""
     },
@@ -4168,7 +4406,7 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdRequests\/RTBFullscreenAdRequestManager.swift",
       "kind": "Array",
-      "offset": 564,
+      "offset": 634,
       "length": 2,
       "value": "[]"
     },
@@ -4301,7 +4539,7 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/AdRequests\/RTBBannerAdRequestManager.swift",
       "kind": "Array",
-      "offset": 701,
+      "offset": 771,
       "length": 2,
       "value": "[]"
     },
@@ -4875,338 +5113,352 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2572,
+      "offset": 2604,
       "length": 3,
       "value": "\"c\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2604,
+      "offset": 2636,
       "length": 5,
       "value": "\"res\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2632,
+      "offset": 2664,
       "length": 3,
       "value": "\"m\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2686,
+      "offset": 2718,
       "length": 4,
       "value": "\"ua\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2721,
+      "offset": 2753,
       "length": 3,
       "value": "\"w\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2756,
+      "offset": 2788,
       "length": 3,
       "value": "\"h\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2809,
+      "offset": 2841,
       "length": 14,
       "value": "\"gdpr_consent\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2849,
+      "offset": 2881,
       "length": 4,
       "value": "\"ip\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2881,
+      "offset": 2913,
       "length": 5,
       "value": "\"app\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2910,
+      "offset": 2942,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2944,
+      "offset": 2976,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2973,
+      "offset": 3005,
       "length": 5,
       "value": "\"ifa\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3067,
+      "offset": 3099,
       "length": 5,
       "value": "\"lmt\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3104,
+      "offset": 3136,
       "length": 5,
       "value": "\"hwv\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3135,
+      "offset": 3167,
       "length": 5,
       "value": "\"osv\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3167,
+      "offset": 3199,
       "length": 9,
       "value": "\"macsha1\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3227,
+      "offset": 3259,
       "length": 6,
       "value": "\"paid\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3260,
+      "offset": 3292,
       "length": 5,
       "value": "\"ver\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3328,
+      "offset": 3360,
       "length": 10,
       "value": "\"geo_type\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3363,
+      "offset": 3395,
       "length": 5,
       "value": "\"lat\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3394,
+      "offset": 3426,
       "length": 5,
       "value": "\"lon\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3427,
+      "offset": 3459,
       "length": 4,
       "value": "\"dw\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3460,
+      "offset": 3492,
       "length": 4,
       "value": "\"dh\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3497,
+      "offset": 3529,
       "length": 7,
       "value": "\"coppa\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2572,
+      "offset": 3561,
+      "length": 13,
+      "value": "\"extsellerid\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 2604,
       "length": 3,
       "value": "\"c\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2604,
+      "offset": 2636,
       "length": 5,
       "value": "\"res\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2632,
+      "offset": 2664,
       "length": 3,
       "value": "\"m\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2686,
+      "offset": 2718,
       "length": 4,
       "value": "\"ua\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2721,
+      "offset": 2753,
       "length": 3,
       "value": "\"w\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2756,
+      "offset": 2788,
       "length": 3,
       "value": "\"h\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2809,
+      "offset": 2841,
       "length": 14,
       "value": "\"gdpr_consent\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2849,
+      "offset": 2881,
       "length": 4,
       "value": "\"ip\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2881,
+      "offset": 2913,
       "length": 5,
       "value": "\"app\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2910,
+      "offset": 2942,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2944,
+      "offset": 2976,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2973,
+      "offset": 3005,
       "length": 5,
       "value": "\"ifa\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3067,
+      "offset": 3099,
       "length": 5,
       "value": "\"lmt\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3104,
+      "offset": 3136,
       "length": 5,
       "value": "\"hwv\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3135,
+      "offset": 3167,
       "length": 5,
       "value": "\"osv\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3167,
+      "offset": 3199,
       "length": 9,
       "value": "\"macsha1\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3227,
+      "offset": 3259,
       "length": 6,
       "value": "\"paid\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3260,
+      "offset": 3292,
       "length": 5,
       "value": "\"ver\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3328,
+      "offset": 3360,
       "length": 10,
       "value": "\"geo_type\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3363,
+      "offset": 3395,
       "length": 5,
       "value": "\"lat\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3394,
+      "offset": 3426,
       "length": 5,
       "value": "\"lon\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3427,
+      "offset": 3459,
       "length": 4,
       "value": "\"dw\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3460,
+      "offset": 3492,
       "length": 4,
       "value": "\"dh\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
       "kind": "StringLiteral",
-      "offset": 3497,
+      "offset": 3529,
       "length": 7,
       "value": "\"coppa\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/RequestModels\/RTBRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3561,
+      "length": 13,
+      "value": "\"extsellerid\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/rtb-sdk-ios\/RTBSDK\/DataModel\/ResponseModels\/RTBResponse.swift",
