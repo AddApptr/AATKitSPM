@@ -34,7 +34,6 @@ supported ad network.
 Using the aforementioned line is equivalent to this:
 
     pod 'AATKit/Core'
-    pod 'AATKit/AdColony'
     pod 'AATKit/Admob'
     pod 'AATKit/AdX'
     pod 'AATKit/AppLovin'

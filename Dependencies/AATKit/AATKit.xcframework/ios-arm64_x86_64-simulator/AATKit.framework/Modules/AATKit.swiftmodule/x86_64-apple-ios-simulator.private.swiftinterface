@@ -182,7 +182,6 @@ public protocol AATFacebookDriverProtocol {
   case FACEBOOK
   case FEEDAD
   case UNITY
-  case ADCOLONY
   case APPNEXUS
   case OGURY
   case CRITEOSDK
@@ -614,12 +613,6 @@ public struct AATAdRequestConfiguration {
   public var isRTARule: Swift.Bool?
   public var collapsibleBannerPosition: Swift.String?
   public var networksOptions: AATKit.AATAdNetworksOptions?
-}
-public protocol AATAdColonyDriverProtocol {
-  static var shared: Self { get }
-  func configureGDPRConsent(gdprApplies: Swift.Bool, consentString: Swift.String?)
-  func configureCCPAConsent(ccpaApplies: Swift.Bool, consentString: Swift.String?)
-  func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 public protocol AATPubNativeDriverProtocol {
   static var shared: Self { get }

@@ -23,7 +23,6 @@ let package = Package(
         .library(name: "AATKit-GraviteRTB", targets: ["AATKit-GraviteRTB"]),
         .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato"]),
         .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd"]),
-        .library(name: "AATKit-AdColony", targets: ["AATKit-AdColony"]),
         .library(name: "AATKit-YOC", targets: ["AATKit-YOC"]),
         .library(name: "AATKit-InMobi", targets: ["AATKit-InMobi"]),
         .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
@@ -57,7 +56,6 @@ let package = Package(
                                                    "AATKit-SourcePointCMP",
                                                    "AATKit-Smaato",
                                                    "AATKit-SmartAd",
-                                                   "AATKit-AdColony",
                                                    "AATKit-YOC",
                                                    "AATKit-InMobi",
                                                    "AATKit-AppNexus",
@@ -96,10 +94,6 @@ let package = Package(
         .target(name: "AATKit-GoogleMobileAds",
                 dependencies: [ "AATGoogleAdsAdapter", .product(name: "GoogleMobileAds", package: "GoogleMobileAds")],
                 path: "./Sources/GoogleMobileAdsSources"),
-
-            .target(name:"AATKit-AdColony",
-                    dependencies: ["AATAdColonyAdapter","AdColony"],
-                    path: "./Sources/AdColonySources"),
 
             .target(name: "AATKit-AppLovin",
                     dependencies: ["AppLovinSDK", "AATAppLovinAdapter"],
@@ -255,9 +249,6 @@ let package = Package(
         .binaryTarget(name: "Tappx", path: "./Dependencies/Tappx/TappxFramework.xcframework"),
         .binaryTarget(name: "OMSDK_Tappx", path: "./Dependencies/Tappx/OMSDK_Tappx.xcframework"),
 
-        //AdColony
-        .binaryTarget(name: "AdColony", path: "./Dependencies/AdColony/AdColony.xcframework"),
-
         // YOC
         .binaryTarget(name: "VisxSDK", path: "./Dependencies/YOC/VisxSDK.xcframework"),
 
@@ -300,7 +291,6 @@ let package = Package(
         .binaryTarget(name: "ConsentViewController", path: "./Dependencies/SourcePoint/ConsentViewController.xcframework"),
 
         // AATKit Adapters
-        .binaryTarget(name: "AATAdColonyAdapter", path: "./Dependencies/AATKit/Adapters/AATAdColonyAdapter.xcframework"),
         .binaryTarget(name: "AATAmazonAdapter", path: "./Dependencies/AATKit/Adapters/AATAmazonAdapter.xcframework"),
         .binaryTarget(name: "AATAppLovinAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinAdapter.xcframework"),
         .binaryTarget(name: "AATAppLovinMaxAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinMaxAdapter.xcframework"),
