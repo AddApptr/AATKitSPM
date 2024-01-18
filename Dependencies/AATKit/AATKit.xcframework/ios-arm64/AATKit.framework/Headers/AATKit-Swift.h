@@ -2025,10 +2025,15 @@ SWIFT_PROTOCOL("_TtP6AATKit32AATStickyBannerPlacementDelegate_")
 @protocol AATStickyBannerPlacementDelegate <AATAdDisplayDelegate, AATHaveAdDelegate, AATNoAdDelegate>
 @end
 
+@class BannerOptions;
+@class InterstitialAdOptions;
+@class RewardedVideoOptions;
 
 SWIFT_CLASS("_TtC6AATKit22AATSuperAwesomeOptions")
 @interface AATSuperAwesomeOptions : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBannerOptions:(BannerOptions * _Nullable)bannerOptions interstitialAdOptions:(InterstitialAdOptions * _Nullable)interstitialAdOptions rewardedVideoOptionsOptions:(RewardedVideoOptions * _Nullable)rewardedVideoOptionsOptions OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, Orientation, closed) {
@@ -2057,6 +2062,19 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions14NetworkOptions")
 
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @interface InterstitialAdOptions : NetworkOptions
+/// init <code>AATSuperAwesomeOptions/InterstitialAdOptions-swift.class</code>
+/// \param orientation ad orientation
+///
+/// \param closeButtonState close button state of type <code>AATSuperAwesomeOptions/CloseButtonState</code>
+///
+/// \param parentalGateEnabled Enable/disable the Parental gate
+///
+/// \param bumperPageEnabled Enable/disable the bumper page
+///
+/// \param bumperPageCustomAppName bumper page app name
+///
+/// \param bumperPageLogo bumper page logo
+///
 - (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
 @end
@@ -2094,6 +2112,15 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
 @interface BannerOptions : NetworkOptions
+/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
+/// \param parentalGateEnabled Enable/disable the Parental gate
+///
+/// \param bumperPageEnabled Enable/disable the bumper page
+///
+/// \param bumperPageCustomAppName bumper page app name
+///
+/// \param bumperPageLogo bumper page logo
+///
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
 @end

@@ -47114,6 +47114,74 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(bannerOptions:interstitialAdOptions:rewardedVideoOptionsOptions:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATSuperAwesomeOptions",
+                "printedName": "AATKit.AATSuperAwesomeOptions",
+                "usr": "c:@M@AATKit@objc(cs)AATSuperAwesomeOptions"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AATKit.AATSuperAwesomeOptions.BannerOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BannerOptions",
+                    "printedName": "AATKit.AATSuperAwesomeOptions.BannerOptions",
+                    "usr": "s:6AATKit22AATSuperAwesomeOptionsC06BannerD0C"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AATKit.AATSuperAwesomeOptions.InterstitialAdOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InterstitialAdOptions",
+                    "printedName": "AATKit.AATSuperAwesomeOptions.InterstitialAdOptions",
+                    "usr": "s:6AATKit22AATSuperAwesomeOptionsC014InterstitialAdD0C"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AATKit.AATSuperAwesomeOptions.RewardedVideoOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RewardedVideoOptions",
+                    "printedName": "AATKit.AATSuperAwesomeOptions.RewardedVideoOptions",
+                    "usr": "s:6AATKit22AATSuperAwesomeOptionsC013RewardedVideoD0C"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATKit@objc(cs)AATSuperAwesomeOptions(im)initWithBannerOptions:interstitialAdOptions:rewardedVideoOptionsOptions:",
+            "mangledName": "$s6AATKit22AATSuperAwesomeOptionsC06bannerD0014interstitialAdD0013rewardedVideodD0A2C06BannerD0CSg_AC012InterstitialgD0CSgAC08RewardediD0CSgtcfc",
+            "moduleName": "AATKit",
+            "objc_name": "initWithBannerOptions:interstitialAdOptions:rewardedVideoOptionsOptions:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "TypeDecl",
             "name": "NetworkOptions",
             "printedName": "NetworkOptions",
@@ -47932,7 +48000,8 @@
                 "objc_name": "initWithParentalGateEnabled:bumperPageEnabled:bumperPageCustomAppName:bumperPageLogo:isBackgroundTransparent:",
                 "declAttributes": [
                   "AccessControl",
-                  "ObjC"
+                  "ObjC",
+                  "RawDocComment"
                 ],
                 "init_kind": "Designated"
               },
@@ -48375,7 +48444,8 @@
                 "objc_name": "initWithOrientation:closeButtonState:parentalGateEnabled:bumperPageEnabled:bumperPageCustomAppName:bumperPageLogo:",
                 "declAttributes": [
                   "AccessControl",
-                  "ObjC"
+                  "ObjC",
+                  "RawDocComment"
                 ],
                 "init_kind": "Designated"
               },
@@ -49115,7 +49185,6 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -60744,7 +60813,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 7,
-      "value": "\"3.5.1\""
+      "value": "\"3.5.2\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
@@ -75155,112 +75224,119 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 1906,
+      "offset": 2262,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 1959,
+      "offset": 2315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "StringLiteral",
-      "offset": 690,
+      "offset": 1046,
       "length": 14,
       "value": "\"AATKit.NetworkOptions\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 190,
+      "length": 22,
+      "value": "\"AATKit.AATSuperAwesomeOptions\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 2955,
+      "offset": 3311,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 3008,
+      "offset": 3364,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 3179,
+      "offset": 3535,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "StringLiteral",
-      "offset": 2397,
+      "offset": 2753,
       "length": 13,
       "value": "\"AATKit.BannerOptions\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 4764,
+      "offset": 5120,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 4817,
+      "offset": 5173,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "StringLiteral",
-      "offset": 3595,
+      "offset": 3951,
       "length": 21,
       "value": "\"AATKit.InterstitialAdOptions\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 6348,
+      "offset": 6696,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 6401,
+      "offset": 6749,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 6462,
+      "offset": 6810,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 6637,
+      "offset": 6985,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "BooleanLiteral",
-      "offset": 6690,
+      "offset": 7038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATSuperAwesomeOptions.swift",
       "kind": "StringLiteral",
-      "offset": 5375,
+      "offset": 5731,
       "length": 20,
       "value": "\"AATKit.RewardedVideoOptions\""
     },

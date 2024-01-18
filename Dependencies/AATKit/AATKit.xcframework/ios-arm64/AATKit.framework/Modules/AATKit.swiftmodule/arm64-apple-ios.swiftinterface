@@ -1233,7 +1233,7 @@ public protocol AATSuperAwesomeDriverProtocol {
   static var shared: Self { get }
   func muteVideoAd(_ isMuted: Swift.Bool)
 }
-@_inheritsConvenienceInitializers @objc public class AATSuperAwesomeOptions : ObjectiveC.NSObject {
+@objc public class AATSuperAwesomeOptions : ObjectiveC.NSObject {
   public var bannerOptions: AATKit.AATSuperAwesomeOptions.BannerOptions?
   public var interstitialAdOptions: AATKit.AATSuperAwesomeOptions.InterstitialAdOptions?
   public var rewardedVideoOptionsOptions: AATKit.AATSuperAwesomeOptions.RewardedVideoOptions?
@@ -1256,6 +1256,7 @@ public protocol AATSuperAwesomeDriverProtocol {
       get
     }
   }
+  @objc public init(bannerOptions: AATKit.AATSuperAwesomeOptions.BannerOptions? = nil, interstitialAdOptions: AATKit.AATSuperAwesomeOptions.InterstitialAdOptions? = nil, rewardedVideoOptionsOptions: AATKit.AATSuperAwesomeOptions.RewardedVideoOptions? = nil)
   @objc public class NetworkOptions : ObjectiveC.NSObject {
     public var parentalGateEnabled: Swift.Bool?
     public var bumperPageEnabled: Swift.Bool?
@@ -1264,7 +1265,6 @@ public protocol AATSuperAwesomeDriverProtocol {
     @objc public init(parentalGateEnabled: Swift.Bool = false, bumperPageEnabled: Swift.Bool = false, bumperPageCustomAppName: Swift.String? = nil, bumperPageLogo: UIKit.UIImage? = nil)
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc extension AATKit.AATSuperAwesomeOptions {
