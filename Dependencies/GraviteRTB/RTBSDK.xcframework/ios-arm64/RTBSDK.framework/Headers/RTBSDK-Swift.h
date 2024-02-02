@@ -261,6 +261,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -321,6 +322,31 @@ SWIFT_CLASS("_TtC6RTBSDK13RTBBannerView")
 
 
 
+@protocol RTBDSPBannerProtocol;
+
+SWIFT_PROTOCOL("_TtP6RTBSDK20RTBDSPBannerDelegate_")
+@protocol RTBDSPBannerDelegate
+/// Tells the delegate that an ad request successfully received an ad. The delegate may want to add
+- (void)dspAdViewDidReceiveAd:(id <RTBDSPBannerProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+/// Tells the delegate that an ad request failed.
+- (void)dspAdView:(id <RTBDSPBannerProtocol> _Nonnull)ad didFailToReceiveAd:(NSString * _Nonnull)errorMessage networkName:(NSString * _Nonnull)networkName;
+/// Tells the delegate that a click has been recorded for the ad.
+- (void)dspAdViewDidRecordClick:(id <RTBDSPBannerProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+/// Tells the delegate that ad has opened external browser.
+- (void)dspAdViewDidPauseForAd:(id <RTBDSPBannerProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+/// Tells the delegate that Ad has been dismissed.
+- (void)dspAdViewDidResumeAfterAd:(id <RTBDSPBannerProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+@end
+
+
+@interface RTBBannerView (SWIFT_EXTENSION(RTBSDK)) <RTBDSPBannerDelegate>
+- (void)dspAdViewDidReceiveAd:(id <RTBDSPBannerProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+- (void)dspAdView:(id <RTBDSPBannerProtocol> _Nonnull)ad didFailToReceiveAd:(NSString * _Nonnull)errorMessage networkName:(NSString * _Nonnull)networkName;
+- (void)dspAdViewDidRecordClick:(id <RTBDSPBannerProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+- (void)dspAdViewDidPauseForAd:(id <RTBDSPBannerProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+- (void)dspAdViewDidResumeAfterAd:(id <RTBDSPBannerProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+@end
+
 
 SWIFT_PROTOCOL("_TtP6RTBSDK21RTBBannerViewDelegate_")
 @protocol RTBBannerViewDelegate
@@ -329,19 +355,81 @@ SWIFT_PROTOCOL("_TtP6RTBSDK21RTBBannerViewDelegate_")
 ///
 /// \param priceCPM BidPrice of the Ad
 ///
-- (void)bannerViewDidReceiveAd:(RTBBannerView * _Nonnull)bannerView priceCPM:(float)priceCPM;
+- (void)bannerViewDidReceiveAd:(RTBBannerView * _Nonnull)bannerView priceCPM:(float)priceCPM networkName:(NSString * _Nonnull)networkName;
 /// Tells the delegate that an ad request failed.
-- (void)bannerView:(RTBBannerView * _Nonnull)bannerView didFailToReceiveAd:(NSString * _Nonnull)errorMessage;
+- (void)bannerView:(RTBBannerView * _Nonnull)bannerView didFailToReceiveAd:(NSString * _Nonnull)errorMessage networkName:(NSString * _Nonnull)networkName;
 /// Tells the delegate that a click has been recorded for the ad.
-- (void)bannerViewDidRecordClick:(RTBBannerView * _Nonnull)bannerView;
+- (void)bannerViewDidRecordClick:(RTBBannerView * _Nonnull)bannerView networkName:(NSString * _Nonnull)networkName;
 /// Tells the delegate that ad has opened external browser.
-- (void)bannerViewDidPauseForAd:(RTBBannerView * _Nonnull)bannerView;
+- (void)bannerViewDidPauseForAd:(RTBBannerView * _Nonnull)bannerView networkName:(NSString * _Nonnull)networkName;
 /// Tells the delegate that Ad has been dismissed.
-- (void)bannerViewDidResumeAfterAd:(RTBBannerView * _Nonnull)bannerView;
+- (void)bannerViewDidResumeAfterAd:(RTBBannerView * _Nonnull)bannerView networkName:(NSString * _Nonnull)networkName;
 @end
 
-@class RTBFullscreenRequestConfiguration;
+@protocol RTBDSPDelegate;
+
+SWIFT_PROTOCOL("_TtP6RTBSDK14RTBDSPProtocol_")
+@protocol RTBDSPProtocol
+@property (nonatomic, readonly, copy) NSString * _Nonnull bidderName;
+@property (nonatomic, strong) id <RTBDSPDelegate> _Nullable signalsDelegate;
+- (nonnull instancetype)init;
+- (void)loadSignals;
+- (void)renderCreative:(NSString * _Nonnull)creative;
+@end
+
 @class UIViewController;
+
+SWIFT_PROTOCOL("_TtP6RTBSDK16RTBDSAdPProtocol_")
+@protocol RTBDSAdPProtocol <RTBDSPProtocol>
+@property (nonatomic, copy) NSString * _Nullable requestId;
+@property (nonatomic, strong) UIViewController * _Nullable viewController;
+@property (nonatomic, copy) NSString * _Nullable adID;
+- (void)unload;
+- (void)pause;
+- (void)resumeWithController:(UIViewController * _Nonnull)controller;
+@end
+
+
+
+SWIFT_PROTOCOL("_TtP6RTBSDK20RTBDSPBannerProtocol_")
+@protocol RTBDSPBannerProtocol <RTBDSAdPProtocol>
+@property (nonatomic, strong) id <RTBDSPBannerDelegate> _Nullable bannerDelegate;
+- (void)setBannerSizeWithSize:(CGSize)size;
+- (UIView * _Nullable)getBannerView SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_PROTOCOL("_TtP6RTBSDK14RTBDSPDelegate_")
+@protocol RTBDSPDelegate
+- (void)didCollectSignals:(id <RTBDSPProtocol> _Nonnull)dsp signals:(NSDictionary<NSString *, id> * _Nonnull)signals;
+- (void)didFailToCollectSignals:(id <RTBDSPProtocol> _Nonnull)dsp error:(NSString * _Nonnull)error;
+@end
+
+@protocol RTBDSPInterstitialProtocol;
+
+SWIFT_PROTOCOL("_TtP6RTBSDK26RTBDSPInterstitialDelegate_")
+@protocol RTBDSPInterstitialDelegate
+/// Tells the delegate that an ad request successfully received an ad. The delegate may want to add
+- (void)dspAdViewDidReceiveAd:(id <RTBDSPInterstitialProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+/// Tells the delegate that an ad request failed.
+- (void)dspAdView:(id <RTBDSPInterstitialProtocol> _Nonnull)ad didFailToReceiveAd:(NSString * _Nonnull)errorMessage networkName:(NSString * _Nonnull)networkName;
+/// Tells the delegate that a click has been recorded for the ad.
+- (void)dspAdViewDidRecordClick:(id <RTBDSPInterstitialProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+/// Tells the delegate that ad has opened external browser.
+- (void)dspAdViewDidPauseForAd:(id <RTBDSPInterstitialProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+/// Tells the delegate that Ad has been dismissed.
+- (void)dspAdViewDidResumeAfterAd:(id <RTBDSPInterstitialProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+@end
+
+
+SWIFT_PROTOCOL("_TtP6RTBSDK26RTBDSPInterstitialProtocol_")
+@protocol RTBDSPInterstitialProtocol <RTBDSAdPProtocol>
+@property (nonatomic, strong) id <RTBDSPInterstitialDelegate> _Nullable adDelegate;
+- (BOOL)showWithViewController:(UIViewController * _Nonnull)viewController;
+@end
+
+
+@class RTBFullscreenRequestConfiguration;
 
 SWIFT_CLASS("_TtC6RTBSDK15RTBFullscreenAd")
 @interface RTBFullscreenAd : NSObject
@@ -359,6 +447,15 @@ SWIFT_CLASS("_TtC6RTBSDK15RTBFullscreenAd")
 
 
 
+@interface RTBFullscreenAd (SWIFT_EXTENSION(RTBSDK)) <RTBDSPInterstitialDelegate>
+- (void)dspAdViewDidReceiveAd:(id <RTBDSPInterstitialProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+- (void)dspAdView:(id <RTBDSPInterstitialProtocol> _Nonnull)ad didFailToReceiveAd:(NSString * _Nonnull)errorMessage networkName:(NSString * _Nonnull)networkName;
+- (void)dspAdViewDidRecordClick:(id <RTBDSPInterstitialProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+- (void)dspAdViewDidPauseForAd:(id <RTBDSPInterstitialProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+- (void)dspAdViewDidResumeAfterAd:(id <RTBDSPInterstitialProtocol> _Nonnull)ad networkName:(NSString * _Nonnull)networkName;
+@end
+
+
 SWIFT_PROTOCOL("_TtP6RTBSDK21RTBFullscreenDelegate_")
 @protocol RTBFullscreenDelegate
 /// Called when the fullscreen ad has been loaded and ready to be shown
@@ -366,25 +463,25 @@ SWIFT_PROTOCOL("_TtP6RTBSDK21RTBFullscreenDelegate_")
 ///
 /// \param priceCPM The ad price CPM
 ///
-- (void)fullscreenAdDidReceiveAd:(RTBFullscreenAd * _Nonnull)fullscreenAd priceCPM:(float)priceCPM;
+- (void)fullscreenAdDidReceiveAd:(RTBFullscreenAd * _Nonnull)fullscreenAd priceCPM:(float)priceCPM networkName:(NSString * _Nonnull)networkName;
 /// Called when the ad loading is failed
 /// \param fullscreenAd The <code>RTBFullscreenAd</code> that failed to load
 ///
 /// \param errorMessage A message describing the reason for the failure.
 ///
-- (void)fullscreenAd:(RTBFullscreenAd * _Nonnull)fullscreenAd didFailToReceiveAd:(NSString * _Nonnull)errorMessage;
+- (void)fullscreenAd:(RTBFullscreenAd * _Nonnull)fullscreenAd didFailToReceiveAd:(NSString * _Nonnull)errorMessage networkName:(NSString * _Nonnull)networkName;
 /// Called when the use clicks on the fullscreen ad
 /// \param fullscreenAd The <code>RTBFullscreenAd</code> that received the click
 ///
-- (void)fullscreenAdDidRecordClick:(RTBFullscreenAd * _Nonnull)fullscreenAd;
+- (void)fullscreenAdDidRecordClick:(RTBFullscreenAd * _Nonnull)fullscreenAd networkName:(NSString * _Nonnull)networkName;
 /// Called when the fullscreen ad has been displayed
 /// \param fullscreenAd The <code>RTBFullscreenAd</code> that has been shown
 ///
-- (void)fullscreenAdDidPauseForAd:(RTBFullscreenAd * _Nonnull)fullscreenAd;
+- (void)fullscreenAdDidPauseForAd:(RTBFullscreenAd * _Nonnull)fullscreenAd networkName:(NSString * _Nonnull)networkName;
 /// Called when the fullscreen ad has been dismisseed
 /// \param fullscreenAd The <code>RTBFullscreenAd</code> that has been dismissed
 ///
-- (void)fullscreenAdDidResumeAfterAd:(RTBFullscreenAd * _Nonnull)fullscreenAd;
+- (void)fullscreenAdDidResumeAfterAd:(RTBFullscreenAd * _Nonnull)fullscreenAd networkName:(NSString * _Nonnull)networkName;
 @end
 
 
@@ -393,6 +490,8 @@ SWIFT_CLASS("_TtC6RTBSDK33RTBFullscreenRequestConfiguration")
 /// Represents the bid floor price.
 @property (nonatomic, strong) NSNumber * _Nullable bidFloor;
 @property (nonatomic, copy) NSString * _Nullable sellerId;
+/// Represents delay before showing the close button.
+@property (nonatomic, strong) NSNumber * _Nonnull closeDelay;
 /// \param placementId Represents the placement ID on SmartyAd dashboard.
 ///
 /// \param iTunesAppId Represents the AppId on the publisher Apple developer account.
