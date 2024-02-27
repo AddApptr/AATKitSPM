@@ -6910,8 +6910,8 @@
           },
           {
             "kind": "Var",
-            "name": "IRONSOURCE",
-            "printedName": "IRONSOURCE",
+            "name": "IRONSOURCENEW",
+            "printedName": "IRONSOURCENEW",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -6941,8 +6941,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@AATKit@E@AATAdNetwork@AATAdNetworkIRONSOURCE",
-            "mangledName": "$s6AATKit12AATAdNetworkO10IRONSOURCEyA2CmF",
+            "usr": "c:@M@AATKit@E@AATAdNetwork@AATAdNetworkIRONSOURCENEW",
+            "mangledName": "$s6AATKit12AATAdNetworkO13IRONSOURCENEWyA2CmF",
             "moduleName": "AATKit",
             "declAttributes": [
               "ObjC"
@@ -7689,304 +7689,6 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AATKit"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AATKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AATPubNativeOptions",
-        "printedName": "AATPubNativeOptions",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "skipOffsetForHTMLInterstitial",
-            "printedName": "skipOffsetForHTMLInterstitial",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6AATKit19AATPubNativeOptionsC29skipOffsetForHTMLInterstitialSiSgvp",
-            "mangledName": "$s6AATKit19AATPubNativeOptionsC29skipOffsetForHTMLInterstitialSiSgvp",
-            "moduleName": "AATKit",
-            "deprecated": true,
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "Available",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit19AATPubNativeOptionsC29skipOffsetForHTMLInterstitialSiSgvg",
-                "mangledName": "$s6AATKit19AATPubNativeOptionsC29skipOffsetForHTMLInterstitialSiSgvg",
-                "moduleName": "AATKit",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "skipOffsetForVideoInterstitial",
-            "printedName": "skipOffsetForVideoInterstitial",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6AATKit19AATPubNativeOptionsC30skipOffsetForVideoInterstitialSiSgvp",
-            "mangledName": "$s6AATKit19AATPubNativeOptionsC30skipOffsetForVideoInterstitialSiSgvp",
-            "moduleName": "AATKit",
-            "deprecated": true,
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "Available",
-              "RawDocComment"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit19AATPubNativeOptionsC30skipOffsetForVideoInterstitialSiSgvg",
-                "mangledName": "$s6AATKit19AATPubNativeOptionsC30skipOffsetForVideoInterstitialSiSgvg",
-                "moduleName": "AATKit",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(skipOffsetForHTMLInterstitial:skipOffsetForVideoInterstitial:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AATPubNativeOptions",
-                "printedName": "AATKit.AATPubNativeOptions",
-                "usr": "c:@M@AATKit@objc(cs)AATPubNativeOptions"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AATKit@objc(cs)AATPubNativeOptions(im)initWithSkipOffsetForHTMLInterstitial:skipOffsetForVideoInterstitial:",
-            "mangledName": "$s6AATKit19AATPubNativeOptionsC29skipOffsetForHTMLInterstitial0efG17VideoInterstitialACSo8NSNumberCSg_AHtcfc",
-            "moduleName": "AATKit",
-            "deprecated": true,
-            "objc_name": "initWithSkipOffsetForHTMLInterstitial:skipOffsetForVideoInterstitial:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "Available",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AATPubNativeOptions",
-                "printedName": "AATKit.AATPubNativeOptions",
-                "usr": "c:@M@AATKit@objc(cs)AATPubNativeOptions"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AATKit@objc(cs)AATPubNativeOptions(im)init",
-            "mangledName": "$s6AATKit19AATPubNativeOptionsCACycfc",
-            "moduleName": "AATKit",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@AATKit@objc(cs)AATPubNativeOptions",
-        "mangledName": "$s6AATKit19AATPubNativeOptionsC",
-        "moduleName": "AATKit",
-        "deprecated": true,
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "Available"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -31959,18 +31661,24 @@
           {
             "kind": "Function",
             "name": "canLoad",
-            "printedName": "canLoad()",
+            "printedName": "canLoad(adId:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit29AATFullscreenAdDriverProtocolP7canLoadSbyF",
-            "mangledName": "$s6AATKit29AATFullscreenAdDriverProtocolP7canLoadSbyF",
+            "usr": "s:6AATKit29AATFullscreenAdDriverProtocolP7canLoad4adIdSbSS_tF",
+            "mangledName": "$s6AATKit29AATFullscreenAdDriverProtocolP7canLoad4adIdSbSS_tF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATFullscreenAdDriverProtocol>",
             "sugared_genericSig": "<Self where Self : AATKit.AATFullscreenAdDriverProtocol>",
@@ -31981,18 +31689,24 @@
           {
             "kind": "Function",
             "name": "canLoad",
-            "printedName": "canLoad()",
+            "printedName": "canLoad(adId:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit29AATFullscreenAdDriverProtocolPAAE7canLoadSbyF",
-            "mangledName": "$s6AATKit29AATFullscreenAdDriverProtocolPAAE7canLoadSbyF",
+            "usr": "s:6AATKit29AATFullscreenAdDriverProtocolPAAE7canLoad4adIdSbSS_tF",
+            "mangledName": "$s6AATKit29AATFullscreenAdDriverProtocolPAAE7canLoad4adIdSbSS_tF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATFullscreenAdDriverProtocol>",
             "sugared_genericSig": "<Self where Self : AATKit.AATFullscreenAdDriverProtocol>",
@@ -37907,6 +37621,47 @@
             "fixedbinaryorder": 7
           },
           {
+            "kind": "Var",
+            "name": "Flutter",
+            "printedName": "Flutter",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AATKit.AATPluginName.Type) -> AATKit.AATPluginName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATPluginName",
+                    "printedName": "AATKit.AATPluginName",
+                    "usr": "c:@M@AATKit@E@AATPluginName"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AATKit.AATPluginName.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATPluginName",
+                        "printedName": "AATKit.AATPluginName",
+                        "usr": "c:@M@AATKit@E@AATPluginName"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AATKit@E@AATPluginName@AATPluginNameFlutter",
+            "mangledName": "$s6AATKit13AATPluginNameO7FlutteryA2CmF",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -42601,116 +42356,6 @@
           },
           {
             "kind": "Var",
-            "name": "pubNativeOptions",
-            "printedName": "pubNativeOptions",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AATKit.AATPubNativeOptions?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AATPubNativeOptions",
-                    "printedName": "AATKit.AATPubNativeOptions",
-                    "usr": "c:@M@AATKit@objc(cs)AATPubNativeOptions"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6AATKit20AATAdNetworksOptionsC09pubNativeD0AA06AATPubfD0CSgvp",
-            "mangledName": "$s6AATKit20AATAdNetworksOptionsC09pubNativeD0AA06AATPubfD0CSgvp",
-            "moduleName": "AATKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "AATKit.AATPubNativeOptions?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AATPubNativeOptions",
-                        "printedName": "AATKit.AATPubNativeOptions",
-                        "usr": "c:@M@AATKit@objc(cs)AATPubNativeOptions"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit20AATAdNetworksOptionsC09pubNativeD0AA06AATPubfD0CSgvg",
-                "mangledName": "$s6AATKit20AATAdNetworksOptionsC09pubNativeD0AA06AATPubfD0CSgvg",
-                "moduleName": "AATKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "AATKit.AATPubNativeOptions?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AATPubNativeOptions",
-                        "printedName": "AATKit.AATPubNativeOptions",
-                        "usr": "c:@M@AATKit@objc(cs)AATPubNativeOptions"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit20AATAdNetworksOptionsC09pubNativeD0AA06AATPubfD0CSgvs",
-                "mangledName": "$s6AATKit20AATAdNetworksOptionsC09pubNativeD0AA06AATPubfD0CSgvs",
-                "moduleName": "AATKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit20AATAdNetworksOptionsC09pubNativeD0AA06AATPubfD0CSgvM",
-                "mangledName": "$s6AATKit20AATAdNetworksOptionsC09pubNativeD0AA06AATPubfD0CSgvM",
-                "moduleName": "AATKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "adMobOptions",
             "printedName": "adMobOptions",
             "children": [
@@ -43152,7 +42797,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(appNexusOptions:feedAdOptions:pubNativeOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:)",
+            "printedName": "init(appNexusOptions:feedAdOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -43185,21 +42830,6 @@
                     "name": "AATFeedAdOptions",
                     "printedName": "AATKit.AATFeedAdOptions",
                     "usr": "c:@M@AATKit@objc(cs)AATFeedAdOptions"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AATKit.AATPubNativeOptions?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AATPubNativeOptions",
-                    "printedName": "AATKit.AATPubNativeOptions",
-                    "usr": "c:@M@AATKit@objc(cs)AATPubNativeOptions"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -43267,10 +42897,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AATKit@objc(cs)AATAdNetworksOptions(im)initWithAppNexusOptions:feedAdOptions:pubNativeOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:",
-            "mangledName": "$s6AATKit20AATAdNetworksOptionsC08appNexusD006feedAdD009pubNativeD005adMobD003dfpD008datonomyD0012superAwesomeD0AcA06AATAppfD0CSg_AA07AATFeedhD0CSgAA06AATPubjD0CSgAA0blD0CSgAA13AATDFPOptionsCSgAA011AATDatonomyD0CSgAA08AATSuperpD0CSgtcfc",
+            "usr": "c:@M@AATKit@objc(cs)AATAdNetworksOptions(im)initWithAppNexusOptions:feedAdOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:",
+            "mangledName": "$s6AATKit20AATAdNetworksOptionsC08appNexusD006feedAdD005adMobD003dfpD008datonomyD0012superAwesomeD0AcA06AATAppfD0CSg_AA07AATFeedhD0CSgAA0bjD0CSgAA13AATDFPOptionsCSgAA011AATDatonomyD0CSgAA08AATSupernD0CSgtcfc",
             "moduleName": "AATKit",
-            "objc_name": "initWithAppNexusOptions:feedAdOptions:pubNativeOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:",
+            "objc_name": "initWithAppNexusOptions:feedAdOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -50906,14 +50536,21 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATIronSourceDriver.swift",
       "kind": "StringLiteral",
-      "offset": 663,
+      "offset": 589,
+      "length": 42,
+      "value": "\"AATIronSourceAdapter.AATIronSourceBanner\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATIronSourceDriver.swift",
+      "kind": "StringLiteral",
+      "offset": 708,
       "length": 46,
       "value": "\"AATIronSourceAdapter.AATIronSourceFullscreen\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATIronSourceDriver.swift",
       "kind": "StringLiteral",
-      "offset": 748,
+      "offset": 793,
       "length": 44,
       "value": "\"AATIronSourceAdapter.AATIronSourceRewarded\""
     },
@@ -52755,825 +52392,825 @@
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 772,
-      "length": 10,
+      "length": 13,
       "value": "26"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 792,
+      "offset": 795,
       "length": 10,
       "value": "27"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 812,
+      "offset": 815,
       "length": 12,
       "value": "28"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 926,
+      "offset": 929,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 968,
+      "offset": 971,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 1119,
+      "offset": 1122,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 1160,
+      "offset": 1163,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1370,
+      "offset": 1373,
       "length": 8,
       "value": "\"Inmobi\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1423,
+      "offset": 1426,
       "length": 11,
       "value": "\"Mintegral\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1475,
+      "offset": 1478,
       "length": 7,
       "value": "\"AdMob\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1523,
+      "offset": 1526,
       "length": 7,
       "value": "\"EMPTY\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1574,
+      "offset": 1577,
       "length": 10,
       "value": "\"Applovin\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1631,
+      "offset": 1634,
       "length": 14,
       "value": "\"Applovin MAX\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1691,
+      "offset": 1694,
       "length": 13,
       "value": "\"Gravite RTB\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1747,
+      "offset": 1750,
       "length": 9,
       "value": "\"Equativ\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1811,
+      "offset": 1814,
       "length": 18,
       "value": "\"Equativ (Direct)\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1869,
+      "offset": 1872,
       "length": 5,
       "value": "\"AdX\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1913,
+      "offset": 1916,
       "length": 18,
       "value": "\"Google AdManager\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 1973,
+      "offset": 1976,
       "length": 8,
       "value": "\"Smaato\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2025,
+      "offset": 2028,
       "length": 6,
       "value": "\"Meta\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2073,
+      "offset": 2076,
       "length": 8,
       "value": "\"FeedAd\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2122,
+      "offset": 2125,
       "length": 10,
       "value": "\"UnityAds\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2176,
+      "offset": 2179,
       "length": 7,
       "value": "\"Xandr\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2224,
+      "offset": 2227,
       "length": 7,
       "value": "\"Ogury\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2276,
+      "offset": 2279,
       "length": 12,
       "value": "\"Criteo SDK\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2331,
+      "offset": 2334,
       "length": 9,
       "value": "\"Magnite\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2384,
+      "offset": 2387,
       "length": 11,
       "value": "\"Amazon HB\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2440,
+      "offset": 2443,
       "length": 7,
       "value": "\"Verve\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2488,
+      "offset": 2491,
       "length": 7,
       "value": "\"Teads\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2536,
+      "offset": 2539,
       "length": 7,
       "value": "\"Tappx\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2588,
+      "offset": 2591,
       "length": 24,
       "value": "\"Bluestack (Madvertise)\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2651,
+      "offset": 2654,
       "length": 5,
       "value": "\"YOC\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2699,
+      "offset": 2702,
       "length": 8,
       "value": "\"Vungle\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2752,
+      "offset": 2755,
       "length": 27,
       "value": "\"Google AdManager (Direct)\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2825,
-      "length": 12,
-      "value": "\"ironSource\""
+      "offset": 2831,
+      "length": 18,
+      "value": "\"IronSource (New)\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 2885,
+      "offset": 2897,
       "length": 14,
       "value": "\"SuperAwesome\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3095,
+      "offset": 3107,
       "length": 8,
       "value": "\"INMOBI\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3148,
+      "offset": 3160,
       "length": 11,
       "value": "\"MINTEGRAL\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3200,
+      "offset": 3212,
       "length": 7,
       "value": "\"ADMOB\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3248,
+      "offset": 3260,
       "length": 7,
       "value": "\"EMPTY\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3299,
+      "offset": 3311,
       "length": 10,
       "value": "\"APPLOVIN\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3356,
+      "offset": 3368,
       "length": 13,
       "value": "\"APPLOVINMAX\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3412,
+      "offset": 3424,
       "length": 9,
       "value": "\"SMARTAD\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3476,
+      "offset": 3488,
       "length": 21,
       "value": "\"SMARTADSERVERDIRECT\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3537,
+      "offset": 3549,
       "length": 6,
       "value": "\"RTB2\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3582,
+      "offset": 3594,
       "length": 5,
       "value": "\"DFP\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3629,
+      "offset": 3641,
       "length": 8,
       "value": "\"SMAATO\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3681,
+      "offset": 3693,
       "length": 10,
       "value": "\"FACEBOOK\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3733,
+      "offset": 3745,
       "length": 8,
       "value": "\"FEEDAD\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3782,
+      "offset": 3794,
       "length": 7,
       "value": "\"UNITY\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3833,
+      "offset": 3845,
       "length": 10,
       "value": "\"APPNEXUS\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3884,
+      "offset": 3896,
       "length": 7,
       "value": "\"OGURY\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3936,
+      "offset": 3948,
       "length": 11,
       "value": "\"CRITEOSDK\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 3990,
+      "offset": 4002,
       "length": 9,
       "value": "\"RUBICON\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4043,
+      "offset": 4055,
       "length": 10,
       "value": "\"AMAZONHB\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4098,
+      "offset": 4110,
       "length": 11,
       "value": "\"PUBNATIVE\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4150,
+      "offset": 4162,
       "length": 7,
       "value": "\"TEADS\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4198,
+      "offset": 4210,
       "length": 7,
       "value": "\"TAPPX\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4250,
+      "offset": 4262,
       "length": 11,
       "value": "\"BLUESTACK\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4300,
+      "offset": 4312,
       "length": 5,
       "value": "\"YOC\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4348,
+      "offset": 4360,
       "length": 9,
       "value": "\"VUNGLE2\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4402,
+      "offset": 4414,
       "length": 11,
       "value": "\"DFPDIRECT\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4459,
-      "length": 12,
-      "value": "\"IRONSOURCE\""
+      "offset": 4474,
+      "length": 15,
+      "value": "\"IRONSOURCENEW\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4517,
+      "offset": 4535,
       "length": 12,
       "value": "\"GRAVITERTB\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4577,
+      "offset": 4595,
       "length": 14,
       "value": "\"SUPERAWESOME\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4687,
+      "offset": 4705,
       "length": 8,
       "value": "\"INMOBI\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4737,
+      "offset": 4755,
       "length": 11,
       "value": "\"MINTEGRAL\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4793,
+      "offset": 4811,
       "length": 7,
       "value": "\"ADMOB\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4841,
+      "offset": 4859,
       "length": 7,
       "value": "\"EMPTY\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4889,
+      "offset": 4907,
       "length": 10,
       "value": "\"APPLOVIN\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4943,
+      "offset": 4961,
       "length": 13,
       "value": "\"APPLOVINMAX\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5003,
+      "offset": 5021,
       "length": 9,
       "value": "\"SMARTAD\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5055,
+      "offset": 5073,
       "length": 21,
       "value": "\"SMARTADSERVERDIRECT\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5131,
+      "offset": 5149,
       "length": 6,
       "value": "\"RTB2\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5177,
+      "offset": 5195,
       "length": 5,
       "value": "\"DFP\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5221,
+      "offset": 5239,
       "length": 8,
       "value": "\"SMAATO\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5271,
+      "offset": 5289,
       "length": 10,
       "value": "\"FACEBOOK\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5325,
+      "offset": 5343,
       "length": 8,
       "value": "\"FEEDAD\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5375,
+      "offset": 5393,
       "length": 7,
       "value": "\"UNITY\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5423,
+      "offset": 5441,
       "length": 10,
       "value": "\"APPNEXUS\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5477,
+      "offset": 5495,
       "length": 7,
       "value": "\"OGURY\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5525,
+      "offset": 5543,
       "length": 11,
       "value": "\"CRITEOSDK\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5581,
+      "offset": 5599,
       "length": 9,
       "value": "\"RUBICON\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5633,
+      "offset": 5651,
       "length": 10,
       "value": "\"AMAZONHB\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5687,
+      "offset": 5705,
       "length": 11,
       "value": "\"PUBNATIVE\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5743,
+      "offset": 5761,
       "length": 7,
       "value": "\"TEADS\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5791,
+      "offset": 5809,
       "length": 7,
       "value": "\"TAPPX\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5839,
+      "offset": 5857,
       "length": 11,
       "value": "\"BLUESTACK\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5895,
+      "offset": 5913,
       "length": 5,
       "value": "\"YOC\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5939,
+      "offset": 5957,
       "length": 9,
       "value": "\"VUNGLE2\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5991,
+      "offset": 6009,
       "length": 11,
       "value": "\"DFPDIRECT\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 6047,
-      "length": 12,
-      "value": "\"IRONSOURCE\""
+      "offset": 6065,
+      "length": 15,
+      "value": "\"IRONSOURCENEW\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 6105,
+      "offset": 6129,
       "length": 12,
       "value": "\"GRAVITERTB\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 6163,
+      "offset": 6187,
       "length": 14,
       "value": "\"SUPERAWESOME\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 6606,
+      "offset": 6630,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 6621,
+      "offset": 6645,
       "length": 1,
       "value": "\" (\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 6634,
+      "offset": 6658,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 8803,
+      "offset": 8830,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 8844,
+      "offset": 8871,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 8984,
+      "offset": 9011,
       "length": 3,
       "value": "333"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9053,
+      "offset": 9080,
       "length": 3,
       "value": "755"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9121,
+      "offset": 9148,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9165,
+      "offset": 9192,
       "length": 2,
       "value": "82"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9209,
+      "offset": 9236,
       "length": 3,
       "value": "781"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9256,
+      "offset": 9283,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9299,
+      "offset": 9326,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9346,
+      "offset": 9373,
       "length": 2,
       "value": "91"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9391,
+      "offset": 9418,
       "length": 2,
       "value": "52"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9437,
+      "offset": 9464,
       "length": 3,
       "value": "793"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9485,
+      "offset": 9512,
       "length": 3,
       "value": "512"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9529,
+      "offset": 9556,
       "length": 3,
       "value": "132"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9573,
+      "offset": 9600,
       "length": 3,
       "value": "628"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9615,
+      "offset": 9642,
       "length": 3,
       "value": "154"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9664,
+      "offset": 9691,
       "length": 3,
       "value": "377"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9712,
+      "offset": 9739,
       "length": 3,
       "value": "867"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 9952,
+      "offset": 9982,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 10190,
+      "offset": 10220,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "BooleanLiteral",
-      "offset": 10231,
+      "offset": 10261,
       "length": 5,
       "value": "false"
     },
@@ -54990,13 +54627,6 @@
       "offset": 12681,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATPubNativeOptions.swift",
-      "kind": "StringLiteral",
-      "offset": 321,
-      "length": 19,
-      "value": "\"AATKit.AATPubNativeOptions\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/PlacementsConfigsMatching\/AATPlacementGeneralConfigsHandler.swift",
@@ -59731,13 +59361,6 @@
       "value": "\"bottom\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork+SupportedBannerSizes.swift",
-      "kind": "Array",
-      "offset": 2822,
-      "length": 2,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentImplementation.swift",
       "kind": "StringLiteral",
       "offset": 390,
@@ -60813,7 +60436,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 7,
-      "value": "\"3.5.3\""
+      "value": "\"3.6.0\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
@@ -63233,35 +62856,49 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATAdBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 1783,
+      "offset": 841,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATAdBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1222,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATAdBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1829,
       "length": 52,
       "value": "\"Failed to find mapping for given network-type pair\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATAdBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 1980,
+      "offset": 2026,
       "length": 34,
       "value": "\"AATKitTests.FullscreenDriverMock\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATAdBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 2248,
+      "offset": 2294,
       "length": 30,
       "value": "\"AATKitTests.BannerDriverMock\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATAdBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 2504,
+      "offset": 2550,
       "length": 32,
       "value": "\"AATKitTests.NativeAdDriverMock\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AdLoaders\/AATAdBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 2764,
+      "offset": 2810,
       "length": 34,
       "value": "\"AATKitTests.FullscreenDriverMock\""
     },
@@ -66810,7 +66447,7 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/DriversProtocols\/Drivers\/AATFullscreenAdDriverProtocol.swift",
       "kind": "BooleanLiteral",
-      "offset": 582,
+      "offset": 606,
       "length": 4,
       "value": "true"
     },
@@ -68560,28 +68197,28 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork+SupportedFormats.swift",
       "kind": "BooleanLiteral",
-      "offset": 1194,
+      "offset": 1206,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork+SupportedFormats.swift",
       "kind": "BooleanLiteral",
-      "offset": 1302,
+      "offset": 1314,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork+SupportedFormats.swift",
       "kind": "BooleanLiteral",
-      "offset": 1352,
+      "offset": 1364,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork+SupportedFormats.swift",
       "kind": "BooleanLiteral",
-      "offset": 1407,
+      "offset": 1419,
       "length": 5,
       "value": "false"
     },
@@ -69267,77 +68904,77 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 5794,
+      "offset": 5797,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 5894,
+      "offset": 5897,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6031,
+      "offset": 6034,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6235,
+      "offset": 6238,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 7307,
+      "offset": 7310,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 8470,
+      "offset": 8473,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9191,
+      "offset": 9194,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9242,
+      "offset": 9245,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9293,
+      "offset": 9296,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9345,
+      "offset": 9348,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
       "kind": "StringLiteral",
-      "offset": 9450,
+      "offset": 9453,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },
@@ -70058,6 +69695,13 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATPluginVersioningTool.swift",
       "kind": "IntegerLiteral",
+      "offset": 901,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATPluginVersioningTool.swift",
+      "kind": "IntegerLiteral",
       "offset": 728,
       "length": 1,
       "value": "1"
@@ -70110,6 +69754,13 @@
       "offset": 880,
       "length": 1,
       "value": "8"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATPluginVersioningTool.swift",
+      "kind": "IntegerLiteral",
+      "offset": 901,
+      "length": 1,
+      "value": "9"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Banner\/StickyPlacements\/AATClassicBannerReloadTimer.swift",
@@ -74895,21 +74546,21 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATGoogleNonIABVendorsHandler.swift",
       "kind": "StringLiteral",
-      "offset": 2744,
+      "offset": 2747,
       "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATGoogleNonIABVendorsHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 2747,
+      "offset": 2750,
       "length": 4,
       "value": "2878"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATGoogleNonIABVendorsHandler.swift",
       "kind": "StringLiteral",
-      "offset": 2752,
+      "offset": 2755,
       "length": 26,
       "value": "\"\""
     },

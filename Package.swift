@@ -25,6 +25,7 @@ let package = Package(
         .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd"]),
         .library(name: "AATKit-YOC", targets: ["AATKit-YOC"]),
         .library(name: "AATKit-InMobi", targets: ["AATKit-InMobi"]),
+        .library(name: "AATKit-IronSource", targets: ["AATKit-IronSource"]),
         .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Prebid", targets: ["AATKit-Prebid"]),
@@ -37,7 +38,6 @@ let package = Package(
         .library(name: "AATKit-Mintegral", targets: ["AATKit-Mintegral"]),
 
         // CMPs
-        .library(name: "AATKit-OguryCMP", targets: ["AATKit-OguryCMP"]),
         .library(name: "AATKit-GoogleCMP", targets: ["AATKit-GoogleCMP"]),
         .library(name: "AATKit-SourcePointCMP", targets: ["AATKit-SourcePointCMP"]),
 
@@ -51,13 +51,13 @@ let package = Package(
                                                    "AATKit-Criteo",
                                                    "AATKit-FeedAd",
                                                    "AATKit-GraviteRTB",
-                                                   "AATKit-OguryCMP",
                                                    "AATKit-GoogleCMP",
                                                    "AATKit-SourcePointCMP",
                                                    "AATKit-Smaato",
                                                    "AATKit-SmartAd",
                                                    "AATKit-YOC",
                                                    "AATKit-InMobi",
+                                                   "AATKit-IronSource",
                                                    "AATKit-AppNexus",
                                                    "AATKit-OgurySdk",
                                                    "AATKit-PubNative",
@@ -104,7 +104,7 @@ let package = Package(
                     path: "./Sources/AppLovinMaxSources"),
 
             .target(name:"AATKit-AppNexus",
-                    dependencies: ["AppNexusSDK", "AATAppNexusAdapter", "OMSDK_Appnexus"],
+                    dependencies: ["AppNexusSDK", "AATAppNexusAdapter", "OMSDK_Microsoft"],
                     path: "./Sources/AppNexusSources"),
 
             .target(name:"AATKit-Amazon",
@@ -126,10 +126,6 @@ let package = Package(
             .target(name:"AATKit-GraviteRTB",
                     dependencies: ["GraviteRTB", "AATGraviteRTBAdapter"],
                     path: "./Sources/GraviteRTB"),
-
-            .target(name:"AATKit-OguryCMP",
-                    dependencies: ["OguryChoiceManager", "OguryCore", "OgurySdk", "AATOguryCMPAdapter"],
-                    path: "./Sources/OguryCMPSources"),
 
             .target(name:"AATKit-OgurySdk",
                     dependencies: ["OgurySdk", "OguryAds", "OguryCore", "OMSDK_Ogury", "AATOguryAdapter"],
@@ -168,6 +164,10 @@ let package = Package(
             .target(name:"AATKit-InMobi",
                     dependencies: ["InMobiSDK", "AATInMobiAdapter"],
                     path: "./Sources/InMobiSources"),
+
+            .target(name:"AATKit-IronSource",
+                    dependencies: ["IronSource", "AATIronSourceAdapter"],
+                    path: "./Sources/IronSourceSources"),
 
             .target(name:"AATKit-PubNative",
                     dependencies: ["HyBid", "OMSDK_Pubnativenet", "AATPubNativeAdapter"],
@@ -225,7 +225,6 @@ let package = Package(
         .binaryTarget(name: "GraviteRTB", path: "./Dependencies/GraviteRTB/RTBSDK.xcframework"),
 
         // Ogury
-        .binaryTarget(name: "OguryChoiceManager", path: "./Dependencies/Ogury/OguryChoiceManager.xcframework"),
         .binaryTarget(name: "OguryCore", path: "./Dependencies/Ogury/OguryCore.xcframework"),
         .binaryTarget(name: "OguryAds", path: "./Dependencies/Ogury/OguryAds.xcframework"),
         .binaryTarget(name: "OMSDK_Ogury", path: "./Dependencies/Ogury/OMSDK_Ogury.xcframework"),
@@ -255,6 +254,9 @@ let package = Package(
         // InMobi
         .binaryTarget(name: "InMobiSDK", path: "./Dependencies/InMobi/InMobiSDK.xcframework"),
 
+        // IronSource
+        .binaryTarget(name: "IronSource", path: "./Dependencies/IronSource/IronSource.xcframework"),
+
         // PubNative
         .binaryTarget(name: "HyBid", path: "./Dependencies/Pubnative/HyBid.xcframework"),
         .binaryTarget(name: "OMSDK_Pubnativenet", path: "./Dependencies/Pubnative/OMSDK_Pubnativenet.xcframework"),
@@ -273,7 +275,7 @@ let package = Package(
 
         // AppNexusSDK
         .binaryTarget(name: "AppNexusSDK", path: "./Dependencies/AppNexusSDK/AppNexusSDK.xcframework"),
-        .binaryTarget(name: "OMSDK_Appnexus", path: "./Dependencies/AppNexusSDK/OMSDK_Appnexus.xcframework"),
+        .binaryTarget(name: "OMSDK_Microsoft", path: "./Dependencies/AppNexusSDK/OMSDK_Microsoft.xcframework"),
 
         // Mintegral
         .binaryTarget(name: "MTGSDK", path:"./Dependencies/Mintegral/MTGSDK.xcframework"),
@@ -304,8 +306,8 @@ let package = Package(
         .binaryTarget(name: "AATGoogleAdsAdapter", path: "./Dependencies/AATKit/Adapters/AATGoogleAdsAdapter.xcframework"),
         .binaryTarget(name: "AATGoogleCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATGoogleCMPAdapter.xcframework"),
         .binaryTarget(name: "AATInMobiAdapter", path: "./Dependencies/AATKit/Adapters/AATInMobiAdapter.xcframework"),
+        .binaryTarget(name: "AATIronSourceAdapter", path: "./Dependencies/AATKit/Adapters/AATIronSourceAdapter.xcframework"),
         .binaryTarget(name: "AATOguryAdapter", path: "./Dependencies/AATKit/Adapters/AATOguryAdapter.xcframework"),
-        .binaryTarget(name: "AATOguryCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATOguryCMPAdapter.xcframework"),
         .binaryTarget(name: "AATPubNativeAdapter", path: "./Dependencies/AATKit/Adapters/AATPubNativeAdapter.xcframework"),
         .binaryTarget(name: "AATSmaatoAdapter", path: "./Dependencies/AATKit/Adapters/AATSmaatoAdapter.xcframework"),
         .binaryTarget(name: "AATSmartAdAdapter", path: "./Dependencies/AATKit/Adapters/AATSmartAdAdapter.xcframework"),

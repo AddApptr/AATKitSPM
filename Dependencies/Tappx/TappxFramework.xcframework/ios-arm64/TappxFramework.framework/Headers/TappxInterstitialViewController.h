@@ -20,5 +20,6 @@
 - (BOOL)isReady;
 - (void)show;
 - (void)setAnimation:(TappxAnimation)animation;
+- (void)setExtraTappxKey:(nonnull NSString *)tappxExtraKey;
 
 @end

@@ -431,112 +431,112 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2188,
+      "offset": 2186,
       "length": 32,
       "value": "\"Calling show with no ready ad!\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 2242,
+      "offset": 2240,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2386,
+      "offset": 2384,
       "length": 44,
       "value": "\"Calling show with inValid view Controller.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 2452,
+      "offset": 2450,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 3182,
+      "offset": 3180,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3269,
+      "offset": 3267,
       "length": 31,
       "value": "\"Calling show with invalid ad!\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 3322,
+      "offset": 3320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "FloatLiteral",
-      "offset": 3779,
+      "offset": 3777,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 3793,
+      "offset": 3791,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 4759,
+      "offset": 4757,
       "length": 41,
       "value": "\"AATDFPPrebidAdapter.AATDFPPrebidManager\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 5330,
+      "offset": 5328,
       "length": 69,
       "value": "\"Failed to load rewardedAd with error: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 5398,
+      "offset": 5396,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 5463,
+      "offset": 5461,
       "length": 72,
       "value": "\"Failed to load rewardedAd ad with error: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 5534,
+      "offset": 5532,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 5821,
+      "offset": 5819,
       "length": 46,
       "value": "\"Network impression detected with: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 5866,
+      "offset": 5864,
       "length": 3,
       "value": "\"\""
     },
@@ -676,196 +676,203 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 3017,
       "length": 32,
       "value": "\"Calling show with no ready ad!\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 3073,
+      "offset": 3071,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 3217,
+      "offset": 3215,
       "length": 44,
       "value": "\"Calling show with inValid view Controller.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 3283,
+      "offset": 3281,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 3550,
+      "offset": 3548,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 3797,
+      "offset": 3795,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 3884,
+      "offset": 3882,
       "length": 31,
       "value": "\"Calling show with invalid ad!\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 3937,
+      "offset": 3935,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "FloatLiteral",
-      "offset": 4428,
+      "offset": 4426,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 4442,
+      "offset": 4440,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 5634,
+      "offset": 5632,
       "length": 41,
       "value": "\"AATDFPPrebidAdapter.AATDFPPrebidManager\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 6003,
+      "offset": 6001,
       "length": 84,
       "value": "\"Wrong ad format provided for DFP fullscreen. Check your network key configuration.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 6146,
+      "offset": 6144,
       "length": 46,
       "value": "\"Wrong ad format provided for DFP fullscreen.\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 6521,
+      "offset": 6519,
       "length": 69,
       "value": "\"Failed to load appOpen ad with error: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 6589,
+      "offset": 6587,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 6654,
+      "offset": 6652,
       "length": 69,
       "value": "\"Failed to load appOpen ad with error: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 6722,
+      "offset": 6720,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 7400,
+      "offset": 7398,
       "length": 74,
       "value": "\"Failed to load interstitial ad with error: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 7473,
+      "offset": 7471,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 7538,
+      "offset": 7536,
       "length": 74,
       "value": "\"Failed to load interstitial ad with error: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 7611,
+      "offset": 7609,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 7906,
+      "offset": 7904,
       "length": 46,
       "value": "\"Network impression detected with: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 7951,
+      "offset": 7949,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AdMob\/AATAdMobManager.swift",
       "kind": "StringLiteral",
-      "offset": 872,
+      "offset": 358,
+      "length": 9,
+      "value": "\"gravite\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AdMob\/AATAdMobManager.swift",
+      "kind": "StringLiteral",
+      "offset": 917,
       "length": 108,
       "value": "\"Adapter Name: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AdMob\/AATAdMobManager.swift",
       "kind": "StringLiteral",
-      "offset": 901,
+      "offset": 946,
       "length": 1,
       "value": "\", Description: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AdMob\/AATAdMobManager.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 989,
       "length": 1,
       "value": "\", Latency: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AdMob\/AATAdMobManager.swift",
       "kind": "StringLiteral",
-      "offset": 979,
+      "offset": 1024,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AdMob\/AATAdMobManager.swift",
       "kind": "StringLiteral",
-      "offset": 1136,
+      "offset": 1325,
       "length": 64,
       "value": "\"GoogleMobileAds doesn't provide an API for enabling debug mode\""
     },
@@ -1151,113 +1158,120 @@
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
+      "kind": "StringLiteral",
+      "offset": 419,
+      "length": 10,
+      "value": "\"AddApptr\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 479,
+      "offset": 524,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 604,
+      "offset": 649,
       "length": 64,
       "value": "\"GoogleMobileAds doesn't provide an API for enabling debug mode\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 1006,
+      "offset": 1196,
       "length": 39,
       "value": "\"AATDatonomyAdapter.AATDatonomyManager\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 1126,
+      "offset": 1316,
       "length": 27,
       "value": "\"Datonomy SDK is available\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "FloatLiteral",
-      "offset": 1383,
+      "offset": 1573,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1397,
+      "offset": 1587,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 1533,
+      "offset": 1723,
       "length": 27,
       "value": "\"Datonomy request time out\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 1952,
+      "offset": 2142,
       "length": 88,
       "value": "\"Datonomy request already exceeded the timeout: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 2039,
+      "offset": 2229,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 2171,
+      "offset": 2361,
       "length": 83,
       "value": "\"Datonomy score: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 2216,
+      "offset": 2406,
       "length": 1,
       "value": "\", error: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 2253,
+      "offset": 2443,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "Dictionary",
-      "offset": 2813,
+      "offset": 3003,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 2868,
+      "offset": 3058,
       "length": 18,
       "value": "\"DatonomyLTVScore\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 2890,
+      "offset": 3080,
       "length": 10,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/DFP\/AATDFPManager.swift",
       "kind": "StringLiteral",
-      "offset": 2899,
+      "offset": 3089,
       "length": 1,
       "value": "\"\""
     },
@@ -1277,92 +1291,85 @@
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
-      "kind": "StringLiteral",
-      "offset": 232,
-      "length": 10,
-      "value": "\"AddApptr\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 291,
+      "offset": 249,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 366,
+      "offset": 324,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 409,
+      "offset": 367,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "StringLiteral",
-      "offset": 1082,
+      "offset": 1040,
       "length": 181,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "StringLiteral",
-      "offset": 1142,
+      "offset": 1100,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "StringLiteral",
-      "offset": 1202,
+      "offset": 1160,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "StringLiteral",
-      "offset": 1262,
+      "offset": 1220,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "StringLiteral",
-      "offset": 1644,
+      "offset": 1457,
       "length": 5,
       "value": "\"npa\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1651,
+      "offset": 1464,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "StringLiteral",
-      "offset": 1654,
+      "offset": 1467,
       "length": 5,
       "value": "\"rdp\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1661,
+      "offset": 1474,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AATGoogleManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1955,
+      "offset": 1768,
       "length": 4,
       "value": "1000"
     },

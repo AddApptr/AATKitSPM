@@ -35,5 +35,6 @@
 - (void)setRefreshTimeSeconds:(NSInteger)seconds;
 - (void)setEnableAutoRefresh:(BOOL)autoRefresh;
 - (void)setAnimation:(TappxAnimation)animation;
+- (void)setExtraTappxKey:(nonnull NSString *)tappxExtraKey;
 
 @end

@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Sent when an interstitial ad has loaded.
 - (void)interstitialDidLoad:(DTBAdInterstitialDispatcher *_Nullable ) interstitial APS_DEPRECATED_MESSAGE("Use -[APSAdDelegate adDidLoad:] instead.");
 
-/// Sent when banner ad has failed to load.
+/// Sent when interstitial ad has failed to load.
 - (void)            interstitial:(DTBAdInterstitialDispatcher * _Nullable )interstitial
     didFailToLoadAdWithErrorCode:(DTBAdErrorCode) errorCode APS_DEPRECATED_MESSAGE("Use -[APSAdDelegate adFailedToLoad:] instead.");
 
@@ -43,8 +43,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 - (void)videoPlaybackCompleted:(DTBAdInterstitialDispatcher *) interstitial APS_DEPRECATED_MESSAGE("Use -[APSAdDelegate adVideoPlaybackCompleted:] instead.");
-- (void) adClicked APS_DEPRECATED_MESSAGE("Use -[APSAdDelegate adClicked:] instead.");
-
+- (void)adClicked APS_DEPRECATED_MESSAGE("Use -[APSAdDelegate adClicked:] instead.");
+- (void)adDidThrowError APS_DEPRECATED_MESSAGE("Use -[APSAdDelegate adDidThrowError:] instead.");
 @end
 
 

@@ -1930,100 +1930,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "closeDelay",
-            "printedName": "closeDelay",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NSNumber",
-                "printedName": "Foundation.NSNumber",
-                "usr": "c:objc(cs)NSNumber"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RTBSDK@objc(cs)RTBFullscreenRequestConfiguration(py)closeDelay",
-            "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC10closeDelaySo8NSNumberCvp",
-            "moduleName": "RTBSDK",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RTBSDK@objc(cs)RTBFullscreenRequestConfiguration(im)closeDelay",
-                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC10closeDelaySo8NSNumberCvg",
-                "moduleName": "RTBSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RTBSDK@objc(cs)RTBFullscreenRequestConfiguration(im)setCloseDelay:",
-                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC10closeDelaySo8NSNumberCvs",
-                "moduleName": "RTBSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6RTBSDK33RTBFullscreenRequestConfigurationC10closeDelaySo8NSNumberCvM",
-                "mangledName": "$s6RTBSDK33RTBFullscreenRequestConfigurationC10closeDelaySo8NSNumberCvM",
-                "moduleName": "RTBSDK",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(placementId:iTunesAppId:)",
@@ -6206,20 +6112,20 @@
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/RTBSDKManager.swift",
       "kind": "StringLiteral",
       "offset": 1217,
-      "length": 13,
-      "value": "\"1.0.0-beta7\""
+      "length": 14,
+      "value": "\"1.0.0-beta11\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/RTBSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 1392,
+      "offset": 1393,
       "length": 95,
       "value": "\"An internal error occurred where \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/RTBSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 1442,
+      "offset": 1443,
       "length": 3,
       "value": "\" has been called from the background thread.\""
     },
@@ -6943,13 +6849,6 @@
       "offset": 2675,
       "length": 38,
       "value": "\"Unable to determine current country.\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenRequestConfiguration.swift",
-      "kind": "IntegerLiteral",
-      "offset": 624,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenRequestConfiguration.swift",
@@ -7794,30 +7693,44 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/DataModel\/ResponseModels\/RTBResponse.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 421,
       "length": 5,
       "value": "\"adm\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/DataModel\/ResponseModels\/RTBResponse.swift",
       "kind": "StringLiteral",
-      "offset": 479,
+      "offset": 510,
       "length": 13,
       "value": "\"pricing-cpm\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/DataModel\/ResponseModels\/RTBResponse.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 576,
+      "length": 16,
+      "value": "\"x-button-delay\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/DataModel\/ResponseModels\/RTBResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 421,
       "length": 5,
       "value": "\"adm\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/DataModel\/ResponseModels\/RTBResponse.swift",
       "kind": "StringLiteral",
-      "offset": 479,
+      "offset": 510,
       "length": 13,
       "value": "\"pricing-cpm\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/DataModel\/ResponseModels\/RTBResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 576,
+      "length": 16,
+      "value": "\"x-button-delay\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/DataModel\/Helpers\/RTBAppHelper.swift",
@@ -7969,84 +7882,84 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "Array",
-      "offset": 384,
+      "offset": 385,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 547,
+      "offset": 548,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 553,
+      "offset": 554,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 855,
+      "offset": 724,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1385,
+      "offset": 1325,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1458,
+      "offset": 1398,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1538,
+      "offset": 1478,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1620,
+      "offset": 1560,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1698,
+      "offset": 1638,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2220,
+      "offset": 2160,
       "length": 99,
       "value": "\"Will load with placementId: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2277,
+      "offset": 2217,
       "length": 1,
       "value": "\", for appId: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2318,
+      "offset": 2258,
       "length": 2,
       "value": "\"\""
     },
@@ -8060,161 +7973,161 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2950,
+      "offset": 2890,
       "length": 22,
       "value": "\"Success: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2971,
+      "offset": 2911,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 3188,
+      "offset": 3128,
       "length": 35,
       "value": "\"Will pass the ad to \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 3222,
+      "offset": 3162,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 3790,
+      "offset": 3965,
       "length": 26,
       "value": "\"Failure: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 3815,
+      "offset": 3990,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4643,
+      "offset": 4818,
       "length": 20,
       "value": "\"Resume for \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 4662,
+      "offset": 4837,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5048,
+      "offset": 5223,
       "length": 81,
       "value": "\"Failed to get the banner ad view from the DSP adapter with name: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5128,
+      "offset": 5303,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5190,
+      "offset": 5365,
       "length": 28,
       "value": "\"Failed to get the ad view!\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5321,
+      "offset": 5496,
       "length": 43,
       "value": "\"for DSP adapter with name: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5363,
+      "offset": 5538,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5479,
+      "offset": 5654,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5679,
+      "offset": 5854,
       "length": 68,
       "value": "\"error: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5702,
+      "offset": 5877,
       "length": 1,
       "value": "\" - for DSP adapter with name: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5746,
+      "offset": 5921,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5988,
+      "offset": 6163,
       "length": 43,
       "value": "\"for DSP adapter with name: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6030,
+      "offset": 6205,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6251,
+      "offset": 6426,
       "length": 43,
       "value": "\"for DSP adapter with name: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6293,
+      "offset": 6468,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6516,
+      "offset": 6691,
       "length": 43,
       "value": "\"for DSP adapter with name: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Banners\/RTBBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6558,
+      "offset": 6733,
       "length": 2,
       "value": "\"\""
     },
@@ -8739,154 +8652,161 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 581,
+      "offset": 359,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 630,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 587,
+      "offset": 636,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1501,
+      "offset": 1527,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1852,
+      "offset": 1878,
       "length": 22,
       "value": "\"RTBAdWebView is nil!\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2004,
+      "offset": 2030,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2215,
+      "offset": 2241,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2347,
+      "offset": 2373,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2469,
+      "offset": 2495,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2568,
+      "offset": 2594,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2666,
+      "offset": 2692,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2939,
+      "offset": 2965,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2945,
+      "offset": 2971,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3032,
+      "offset": 3058,
       "length": 3,
       "value": "\"X\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3310,
+      "offset": 3336,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3347,
+      "offset": 3373,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3611,
+      "offset": 3637,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3708,
+      "offset": 3734,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3805,
+      "offset": 3831,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3901,
+      "offset": 3927,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3997,
+      "offset": 4023,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4066,
+      "offset": 4092,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/RTBSDK\/RTBSDK\/AdFormats\/Fullscreen\/RTBFullscreenViewController.swift",
       "kind": "StringLiteral",
-      "offset": 319,
+      "offset": 368,
       "length": 27,
       "value": "\"RTBSDK.RTBFullscreenViewController\""
     },

@@ -88,7 +88,7 @@ Eg: @[@(TappxVASTVersionV2), @(TappxVASTVersionV3)]
 
 #pragma mark - Build URL
 
-- (nullable NSURL *)URL;
+- (void)URL:(void (^_Nonnull)(NSURL* _Nullable url))completion;
 - (nullable NSString *)stringURL;
 
 @end

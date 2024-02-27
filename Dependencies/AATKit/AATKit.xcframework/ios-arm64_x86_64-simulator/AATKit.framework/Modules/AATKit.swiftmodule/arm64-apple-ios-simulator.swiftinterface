@@ -194,7 +194,7 @@ public protocol AATFacebookDriverProtocol {
   case YOC
   case VUNGLE2
   case DFPDIRECT
-  case IRONSOURCE
+  case IRONSOURCENEW
   case GRAVITERTB
   case SUPERAWESOME
   public typealias AllCases = [AATKit.AATAdNetwork]
@@ -228,16 +228,6 @@ extension AATKit.AATAdNetwork : Swift.CustomStringConvertible {
   public var rawValue: Swift.Int {
     get
   }
-}
-@available(*, deprecated, message: "The AATPubNativeOptions is deprecated and will no longer be supported from AATKit SDK v3.5")
-@objc public class AATPubNativeOptions : ObjectiveC.NSObject {
-  @available(*, deprecated, message: "The skipOffsetForHTMLInterstitial setting is deprecated and will no longer be supported from HyBid SDK v3.0")
-  final public let skipOffsetForHTMLInterstitial: Swift.Int?
-  @available(*, deprecated, message: "The skipOffsetForVideoInterstitial setting is deprecated and will no longer be supported from HyBid SDK v3.0")
-  final public let skipOffsetForVideoInterstitial: Swift.Int?
-  @available(*, deprecated, message: "The offsets settings are deprecated and will no longer be supported from HyBid SDK v3.0")
-  @objc public init(skipOffsetForHTMLInterstitial: Foundation.NSNumber? = nil, skipOffsetForVideoInterstitial: Foundation.NSNumber? = nil)
-  @objc deinit
 }
 @objc public protocol AATAutoLoadBannerPlacement : AATKit.AATPlacement {
   @objc var delegate: (any AATKit.AATAutoLoadBannerPlacementDelegate)? { get set }
@@ -841,10 +831,10 @@ public protocol AATFullscreenAdDriverProtocol : AATKit.AATAdDriverProtocol {
   var delegate: (any AATKit.AATFullscreenDriverEventsDelegate)? { get set }
   func load(viewController: UIKit.UIViewController, adID: Swift.String, extraConfiguration: AATKit.AATAdRequestConfiguration?) -> Swift.Bool
   func showInternal() -> Swift.Bool
-  func canLoad() -> Swift.Bool
+  func canLoad(adId: Swift.String) -> Swift.Bool
 }
 extension AATKit.AATFullscreenAdDriverProtocol {
-  public func canLoad() -> Swift.Bool
+  public func canLoad(adId: Swift.String) -> Swift.Bool
 }
 public protocol AATBannerDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate {
   var state: AATKit.AATBannerAdState { get set }
@@ -1016,6 +1006,7 @@ public protocol AATTappxDriverProtocol {
   case ReactNative = 6
   case Cordova = 7
   case Capacitor = 8
+  case Flutter = 9
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1138,12 +1129,11 @@ extension AATKit.AATLocationUtils : CoreLocation.CLLocationManagerDelegate {
 @objc public class AATAdNetworksOptions : ObjectiveC.NSObject {
   public var appNexusOptions: AATKit.AATAppNexusOptions?
   public var feedAdOptions: AATKit.AATFeedAdOptions?
-  public var pubNativeOptions: AATKit.AATPubNativeOptions?
   public var adMobOptions: AATKit.AATAdMobOptions?
   public var dfpOptions: AATKit.AATDFPOptions?
   public var datonomyOptions: AATKit.AATDatonomyOptions?
   public var superAwesomeOptions: AATKit.AATSuperAwesomeOptions?
-  @objc public init(appNexusOptions: AATKit.AATAppNexusOptions? = nil, feedAdOptions: AATKit.AATFeedAdOptions? = nil, pubNativeOptions: AATKit.AATPubNativeOptions? = nil, adMobOptions: AATKit.AATAdMobOptions? = nil, dfpOptions: AATKit.AATDFPOptions? = nil, datonomyOptions: AATKit.AATDatonomyOptions? = nil, superAwesomeOptions: AATKit.AATSuperAwesomeOptions? = nil)
+  @objc public init(appNexusOptions: AATKit.AATAppNexusOptions? = nil, feedAdOptions: AATKit.AATFeedAdOptions? = nil, adMobOptions: AATKit.AATAdMobOptions? = nil, dfpOptions: AATKit.AATDFPOptions? = nil, datonomyOptions: AATKit.AATDatonomyOptions? = nil, superAwesomeOptions: AATKit.AATSuperAwesomeOptions? = nil)
   @objc deinit
 }
 public protocol AATNativeAdDriverProtocol : AATKit.AATAdDriverProtocol {

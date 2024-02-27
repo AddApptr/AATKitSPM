@@ -490,8 +490,6 @@ SWIFT_CLASS("_TtC6RTBSDK33RTBFullscreenRequestConfiguration")
 /// Represents the bid floor price.
 @property (nonatomic, strong) NSNumber * _Nullable bidFloor;
 @property (nonatomic, copy) NSString * _Nullable sellerId;
-/// Represents delay before showing the close button.
-@property (nonatomic, strong) NSNumber * _Nonnull closeDelay;
 /// \param placementId Represents the placement ID on SmartyAd dashboard.
 ///
 /// \param iTunesAppId Represents the AppId on the publisher Apple developer account.

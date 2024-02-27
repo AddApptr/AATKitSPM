@@ -56,7 +56,6 @@ extension RTBSDK.RTBBannerSize {
 @objc public class RTBFullscreenRequestConfiguration : ObjectiveC.NSObject {
   @objc public var bidFloor: Foundation.NSNumber?
   @objc public var sellerId: Swift.String?
-  @objc public var closeDelay: Foundation.NSNumber
   @objc public init(placementId: Swift.Int, iTunesAppId: Swift.String)
   @objc deinit
 }

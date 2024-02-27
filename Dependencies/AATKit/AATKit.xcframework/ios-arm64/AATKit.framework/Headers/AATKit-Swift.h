@@ -364,7 +364,7 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkYOC = 23,
   AATAdNetworkVUNGLE2 = 24,
   AATAdNetworkDFPDIRECT = 25,
-  AATAdNetworkIRONSOURCE = 26,
+  AATAdNetworkIRONSOURCENEW = 26,
   AATAdNetworkGRAVITERTB = 27,
   AATAdNetworkSUPERAWESOME = 28,
 };
@@ -384,7 +384,6 @@ SWIFT_PROTOCOL("_TtP6AATKit33AATAdNetworkDriverVersionProtocol_")
 
 @class AATAppNexusOptions;
 @class AATFeedAdOptions;
-@class AATPubNativeOptions;
 @class AATDFPOptions;
 @class AATDatonomyOptions;
 @class AATSuperAwesomeOptions;
@@ -396,8 +395,6 @@ SWIFT_CLASS("_TtC6AATKit20AATAdNetworksOptions")
 ///
 /// \param feedAdOptions FeedAd options. default is nil
 ///
-/// \param pubNativeOptions Pubnative options. default is nil
-///
 /// \param adMobOptions AdMob options. default is nil
 ///
 /// \param dfpOptions DFP options. default is nil
@@ -406,7 +403,7 @@ SWIFT_CLASS("_TtC6AATKit20AATAdNetworksOptions")
 ///
 /// \param superAwesomeOptions SuperAwesome options. default is nil
 ///
-- (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions pubNativeOptions:(AATPubNativeOptions * _Nullable)pubNativeOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions datonomyOptions:(AATDatonomyOptions * _Nullable)datonomyOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions datonomyOptions:(AATDatonomyOptions * _Nullable)datonomyOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1543,6 +1540,7 @@ typedef SWIFT_ENUM(NSInteger, AATPluginName, open) {
   AATPluginNameReactNative = 6,
   AATPluginNameCordova = 7,
   AATPluginNameCapacitor = 8,
+  AATPluginNameFlutter = 9,
 };
 
 
@@ -1550,19 +1548,6 @@ SWIFT_CLASS("_TtC6AATKit23AATPluginVersioningTool")
 @interface AATPluginVersioningTool : NSObject
 + (void)appendPluginInformation:(enum AATPluginName)pluginName patchLevel:(NSString * _Nonnull)patchLevel;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC6AATKit19AATPubNativeOptions") SWIFT_DEPRECATED_MSG("The AATPubNativeOptions is deprecated and will no longer be supported from AATKit SDK v3.5")
-@interface AATPubNativeOptions : NSObject
-/// Init AATPubNativeOptions
-/// \param skipOffsetForHTMLInterstitial minimum offset in seconds required before skipping an HTML Interstitial ad.
-///
-/// \param skipOffsetForVideoInterstitial minimum offset in seconds required before skipping an Video Interstitial ad.
-///
-- (nonnull instancetype)initWithSkipOffsetForHTMLInterstitial:(NSNumber * _Nullable)skipOffsetForHTMLInterstitial skipOffsetForVideoInterstitial:(NSNumber * _Nullable)skipOffsetForVideoInterstitial OBJC_DESIGNATED_INITIALIZER SWIFT_DEPRECATED_MSG("The offsets settings are deprecated and will no longer be supported from HyBid SDK v3.0");
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -2084,6 +2069,26 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @end
 
 
+SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
+@interface BannerOptions : NetworkOptions
+/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
+/// \param parentalGateEnabled Enable/disable the Parental gate
+///
+/// \param bumperPageEnabled Enable/disable the bumper page
+///
+/// \param bumperPageCustomAppName bumper page app name
+///
+/// \param bumperPageLogo bumper page logo
+///
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
+@end
+
+
+@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
+@end
+
+
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 @interface RewardedVideoOptions : InterstitialAdOptions
 /// init <code>AATSuperAwesomeOptions/RewardedVideoOptions</code>
@@ -2103,26 +2108,6 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 ///
 - (nonnull instancetype)initWithCloseButtonAtEnd:(BOOL)closeButtonAtEnd smallClickEnabled:(BOOL)smallClickEnabled closeButtonWarningEnabled:(BOOL)closeButtonWarningEnabled orientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
-@end
-
-
-@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
-@end
-
-
-SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
-@interface BannerOptions : NetworkOptions
-/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
-/// \param parentalGateEnabled Enable/disable the Parental gate
-///
-/// \param bumperPageEnabled Enable/disable the bumper page
-///
-/// \param bumperPageCustomAppName bumper page app name
-///
-/// \param bumperPageLogo bumper page logo
-///
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
 @end
 
 

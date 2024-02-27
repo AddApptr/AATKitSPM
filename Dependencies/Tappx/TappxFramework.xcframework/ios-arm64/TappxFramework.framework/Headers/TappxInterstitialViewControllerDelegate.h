@@ -12,7 +12,7 @@
 
 @protocol TappxInterstitialViewControllerDelegate <NSObject>
 @required
-- (void)present:(nonnull UIViewController*)viewController withCompletions:(void (^ __nonnull)(void))completion;
+- (void)present:(nonnull UIViewController*)viewController;
 - (nonnull UIViewController *)presentViewController;
 @optional
 - (void)onTappxInterstitialDismissed:(nonnull TappxInterstitialViewController *)interstitial;
