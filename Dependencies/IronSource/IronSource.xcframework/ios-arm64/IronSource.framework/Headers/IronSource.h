@@ -59,7 +59,6 @@
 #import "ISBaseNetworkAdapter.h"
 #import "ISBaseRewardedVideo.h"
 #import "ISDataKeys.h"
-#import "ISSetAPSDataProtocol.h"
 
 // imports used for the new delegates with ad info
 #import "ISAdInfo.h"
@@ -70,7 +69,6 @@
 #import "LevelPlayRewardedVideoManualDelegate.h"
 
 // Native Ads
-#import "ISNativeAdProtocol.h"
 #import "ISNativeAdView.h"
 #import "LevelPlayMediaView.h"
 #import "LevelPlayNativeAd.h"
@@ -86,8 +84,8 @@ NS_ASSUME_NONNULL_BEGIN
 #define IS_BANNER @"banner"
 #define IS_NATIVE_AD @"nativead"
 
-static NSString *const MEDIATION_SDK_VERSION = @"7.8.0";
-static NSString *GitHash = @"961c5c6";
+static NSString *const MEDIATION_SDK_VERSION = @"7.7.0";
+static NSString *GitHash = @"aa7b497";
 
 /*
     This constant is for sending an external impression data from mopub

@@ -26,7 +26,11 @@
 		</data>
 		<key>Headers/OMIDImports.h</key>
 		<data>
-		kklBQQiiHyi6ArUe1OOfy92xxX4=
+		/ghw/vX0KUlF9SSq4LZhhZDpZb4=
+		</data>
+		<key>Headers/OMIDJavaScriptSessionService.h</key>
+		<data>
+		yuO75BSL51GVsbH1qB6RPgJhf9s=
 		</data>
 		<key>Headers/OMIDMediaEvents.h</key>
 		<data>
@@ -58,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LkmVXAeNFSz60eg2q15eNpYISLY=
+		78VfWbBqYvOmh8eZ3oMR/m9ewxY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +110,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WWfw+Z3RNrtOfWYdio9jyxKjmeVbPXzWNH7Pa7ErD0U=
+			XQBgb62m3DEN2XBtnlS+hqca4MEIuBJjq6po9fIbZco=
+			</data>
+		</dict>
+		<key>Headers/OMIDJavaScriptSessionService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q6IWUOT3MeD6DlxEa6xk0muKnmAUyR7++f6W/kX/5/I=
 			</data>
 		</dict>
 		<key>Headers/OMIDMediaEvents.h</key>

@@ -285,12 +285,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC6AATKit19AATAbstractAdConfig")
+@interface AATAbstractAdConfig : NSObject <NSCopying>
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, AATAdChoicesIconPosition, closed) {
   AATAdChoicesIconPositionTopLeft = 0,
   AATAdChoicesIconPositionTopRight = 1,
   AATAdChoicesIconPositionBottomLeft = 2,
   AATAdChoicesIconPositionBottomRight = 3,
 };
+
+
+SWIFT_CLASS("_TtC6AATKit11AATAdConfig")
+@interface AATAdConfig : AATAbstractAdConfig
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface AATAdConfig (SWIFT_EXTENSION(AATKit))
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@class NSString;
+
+@interface AATAdConfig (SWIFT_EXTENSION(AATKit))
+@property (nonatomic, readonly) NSUInteger hash;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
 
 @protocol AATPlacement;
 
@@ -367,6 +395,7 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkIRONSOURCENEW = 26,
   AATAdNetworkGRAVITERTB = 27,
   AATAdNetworkSUPERAWESOME = 28,
+  AATAdNetworkADMOBBIDDING = 29,
 };
 
 
@@ -375,7 +404,6 @@ SWIFT_PROTOCOL("_TtP6AATKit16AATInitializable_")
 - (nonnull instancetype)init;
 @end
 
-@class NSString;
 
 SWIFT_PROTOCOL("_TtP6AATKit33AATAdNetworkDriverVersionProtocol_")
 @protocol AATAdNetworkDriverVersionProtocol <AATInitializable>
@@ -2065,6 +2093,28 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @end
 
 
+SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
+@interface RewardedVideoOptions : InterstitialAdOptions
+/// init <code>AATSuperAwesomeOptions/RewardedVideoOptions</code>
+/// \param closeButtonAtEnd enable or disable auto-closing at the end
+///
+/// \param orientation ad orientation
+///
+/// \param closeButtonState close button state of type <code>AATSuperAwesomeOptions/CloseButtonState</code>
+///
+/// \param parentalGateEnabled Enable/disable the Parental gate
+///
+/// \param bumperPageEnabled Enable/disable the bumper page
+///
+/// \param bumperPageCustomAppName bumper page app name
+///
+/// \param bumperPageLogo bumper page logo
+///
+- (nonnull instancetype)initWithCloseButtonAtEnd:(BOOL)closeButtonAtEnd smallClickEnabled:(BOOL)smallClickEnabled closeButtonWarningEnabled:(BOOL)closeButtonWarningEnabled orientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
+@end
+
+
 @interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
 @end
 
@@ -2088,27 +2138,6 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
 @interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
 @end
 
-
-SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
-@interface RewardedVideoOptions : InterstitialAdOptions
-/// init <code>AATSuperAwesomeOptions/RewardedVideoOptions</code>
-/// \param closeButtonAtEnd enable or disable auto-closing at the end
-///
-/// \param orientation ad orientation
-///
-/// \param closeButtonState close button state of type <code>AATSuperAwesomeOptions/CloseButtonState</code>
-///
-/// \param parentalGateEnabled Enable/disable the Parental gate
-///
-/// \param bumperPageEnabled Enable/disable the bumper page
-///
-/// \param bumperPageCustomAppName bumper page app name
-///
-/// \param bumperPageLogo bumper page logo
-///
-- (nonnull instancetype)initWithCloseButtonAtEnd:(BOOL)closeButtonAtEnd smallClickEnabled:(BOOL)smallClickEnabled closeButtonWarningEnabled:(BOOL)closeButtonWarningEnabled orientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
-@end
 
 
 SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
@@ -2473,12 +2502,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC6AATKit19AATAbstractAdConfig")
+@interface AATAbstractAdConfig : NSObject <NSCopying>
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, AATAdChoicesIconPosition, closed) {
   AATAdChoicesIconPositionTopLeft = 0,
   AATAdChoicesIconPositionTopRight = 1,
   AATAdChoicesIconPositionBottomLeft = 2,
   AATAdChoicesIconPositionBottomRight = 3,
 };
+
+
+SWIFT_CLASS("_TtC6AATKit11AATAdConfig")
+@interface AATAdConfig : AATAbstractAdConfig
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface AATAdConfig (SWIFT_EXTENSION(AATKit))
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@class NSString;
+
+@interface AATAdConfig (SWIFT_EXTENSION(AATKit))
+@property (nonatomic, readonly) NSUInteger hash;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
 
 @protocol AATPlacement;
 
@@ -2555,6 +2612,7 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkIRONSOURCENEW = 26,
   AATAdNetworkGRAVITERTB = 27,
   AATAdNetworkSUPERAWESOME = 28,
+  AATAdNetworkADMOBBIDDING = 29,
 };
 
 
@@ -2563,7 +2621,6 @@ SWIFT_PROTOCOL("_TtP6AATKit16AATInitializable_")
 - (nonnull instancetype)init;
 @end
 
-@class NSString;
 
 SWIFT_PROTOCOL("_TtP6AATKit33AATAdNetworkDriverVersionProtocol_")
 @protocol AATAdNetworkDriverVersionProtocol <AATInitializable>
@@ -4253,6 +4310,28 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @end
 
 
+SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
+@interface RewardedVideoOptions : InterstitialAdOptions
+/// init <code>AATSuperAwesomeOptions/RewardedVideoOptions</code>
+/// \param closeButtonAtEnd enable or disable auto-closing at the end
+///
+/// \param orientation ad orientation
+///
+/// \param closeButtonState close button state of type <code>AATSuperAwesomeOptions/CloseButtonState</code>
+///
+/// \param parentalGateEnabled Enable/disable the Parental gate
+///
+/// \param bumperPageEnabled Enable/disable the bumper page
+///
+/// \param bumperPageCustomAppName bumper page app name
+///
+/// \param bumperPageLogo bumper page logo
+///
+- (nonnull instancetype)initWithCloseButtonAtEnd:(BOOL)closeButtonAtEnd smallClickEnabled:(BOOL)smallClickEnabled closeButtonWarningEnabled:(BOOL)closeButtonWarningEnabled orientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
+@end
+
+
 @interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
 @end
 
@@ -4276,27 +4355,6 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
 @interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
 @end
 
-
-SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
-@interface RewardedVideoOptions : InterstitialAdOptions
-/// init <code>AATSuperAwesomeOptions/RewardedVideoOptions</code>
-/// \param closeButtonAtEnd enable or disable auto-closing at the end
-///
-/// \param orientation ad orientation
-///
-/// \param closeButtonState close button state of type <code>AATSuperAwesomeOptions/CloseButtonState</code>
-///
-/// \param parentalGateEnabled Enable/disable the Parental gate
-///
-/// \param bumperPageEnabled Enable/disable the bumper page
-///
-/// \param bumperPageCustomAppName bumper page app name
-///
-/// \param bumperPageLogo bumper page logo
-///
-- (nonnull instancetype)initWithCloseButtonAtEnd:(BOOL)closeButtonAtEnd smallClickEnabled:(BOOL)smallClickEnabled closeButtonWarningEnabled:(BOOL)closeButtonWarningEnabled orientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
-@end
 
 
 SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")

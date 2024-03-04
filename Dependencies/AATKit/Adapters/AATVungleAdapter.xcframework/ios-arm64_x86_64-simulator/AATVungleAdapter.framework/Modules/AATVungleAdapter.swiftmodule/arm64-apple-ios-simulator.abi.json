@@ -98,401 +98,401 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleManager.swift",
       "kind": "StringLiteral",
       "offset": 684,
       "length": 55,
       "value": "\"Vungle doesn't provide an API for enabling debug mode\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleManager.swift",
       "kind": "StringLiteral",
       "offset": 1121,
       "length": 31,
       "value": "\"Vungle is already initialized\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 758,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 762,
+      "offset": 793,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 792,
+      "offset": 823,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 884,
+      "offset": 915,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 983,
+      "offset": 1014,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1030,
+      "offset": 1061,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1069,
+      "offset": 1100,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1754,
+      "offset": 1785,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1932,
+      "offset": 1963,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1938,
+      "offset": 1969,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1948,
+      "offset": 1979,
       "length": 3,
       "value": "320"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1961,
+      "offset": 1992,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2035,
+      "offset": 2066,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2041,
+      "offset": 2072,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2051,
+      "offset": 2082,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2064,
+      "offset": 2095,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2137,
+      "offset": 2168,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2143,
+      "offset": 2174,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2153,
+      "offset": 2184,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2166,
+      "offset": 2197,
       "length": 3,
       "value": "250"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2238,
+      "offset": 2269,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2244,
+      "offset": 2275,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2254,
+      "offset": 2285,
       "length": 3,
       "value": "728"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2267,
+      "offset": 2298,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3609,
+      "offset": 3640,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3735,
+      "offset": 3766,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3887,
+      "offset": 3918,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3939,
+      "offset": 3970,
       "length": 29,
       "value": "\"Failed to present banner ad\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4099,
+      "offset": 4130,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4845,
+      "offset": 4876,
       "length": 20,
       "value": "\"Resume for \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4864,
+      "offset": 4895,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "StringLiteral",
-      "offset": 5094,
+      "offset": 5125,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleBanner.swift",
       "kind": "StringLiteral",
-      "offset": 5218,
+      "offset": 5249,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 749,
+      "offset": 780,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
       "kind": "IntegerLiteral",
-      "offset": 787,
+      "offset": 818,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 869,
+      "offset": 900,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
       "kind": "IntegerLiteral",
-      "offset": 915,
+      "offset": 946,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
       "kind": "IntegerLiteral",
-      "offset": 954,
+      "offset": 985,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1499,
+      "offset": 1530,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 1728,
+      "offset": 1759,
       "length": 42,
       "value": "\"Failed to show Ad with no viewController\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1792,
+      "offset": 1823,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1873,
+      "offset": 1904,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3125,
+      "offset": 3156,
       "length": 19,
       "value": "\"Failed to display\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 752,
+      "offset": 782,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 790,
+      "offset": 820,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 889,
+      "offset": 919,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 935,
+      "offset": 965,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 974,
+      "offset": 1004,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1535,
+      "offset": 1565,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1703,
+      "offset": 1733,
       "length": 42,
       "value": "\"Failed to show Ad with no viewController\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1767,
+      "offset": 1797,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1852,
+      "offset": 1882,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2358,
+      "offset": 2388,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2538,
+      "offset": 2568,
       "length": 23,
       "value": "\"interstitialAdDidLoad\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATVungleAdapter\/AATVungleFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 3440,
+      "offset": 3470,
       "length": 19,
       "value": "\"Failed to display\""
     }

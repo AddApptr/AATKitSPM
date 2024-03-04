@@ -54,6 +54,7 @@
 - (id<ISBannerAdapterProtocol>)getBannerAdapter;
 - (id<ISNativeAdAdapterProtocol>)getNativeAdAdapter;
 
-- (CGFloat)getAdaptiveHeightWithWidth:(CGFloat)width;
+// check if the network supports adaptive banners
+- (BOOL)getAdaptiveBannerSupport;
 
 @end

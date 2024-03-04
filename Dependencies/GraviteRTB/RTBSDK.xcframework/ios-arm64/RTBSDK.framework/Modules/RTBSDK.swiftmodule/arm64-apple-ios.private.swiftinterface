@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RTBSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport
@@ -15,6 +15,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public protocol RTBDSPInterstitialProtocol : RTBSDK.RTBDSAdPProtocol {
   @objc var adDelegate: (any RTBSDK.RTBDSPInterstitialDelegate)? { get set }
   @objc @discardableResult
@@ -53,6 +54,11 @@ extension RTBSDK.RTBBannerSize {
   public static let banner300x250: RTBSDK.RTBBannerSize
   public static let banner728x90: RTBSDK.RTBBannerSize
 }
+@_hasMissingDesignatedInitializers @objc public class RTBBidderExtraInfo : ObjectiveC.NSObject {
+  @objc public var clickURL: Swift.String?
+  @objc public var impressionURL: Swift.String?
+  @objc deinit
+}
 @objc public class RTBFullscreenRequestConfiguration : ObjectiveC.NSObject {
   @objc public var bidFloor: Foundation.NSNumber?
   @objc public var sellerId: Swift.String?
@@ -79,7 +85,7 @@ extension RTBSDK.RTBBannerSize {
   @objc var signalsDelegate: (any RTBSDK.RTBDSPDelegate)? { get set }
   @objc init()
   @objc func loadSignals()
-  @objc func renderCreative(_ creative: Swift.String)
+  @objc func renderCreative(_ creative: Swift.String, extraInfo: RTBSDK.RTBBidderExtraInfo)
 }
 @objc public protocol RTBDSPDelegate {
   @objc func didCollectSignals(_ dsp: any RTBSDK.RTBDSPProtocol, signals: [Swift.String : Any])

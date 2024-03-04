@@ -41,19 +41,6 @@ extension AATKit.AATTargetingInformationProtocol {
   public func hasKeywordTargeting() -> Swift.Bool
   public func getValuesAsString(delimiter: Swift.String) -> Swift.String?
 }
-public protocol AATAdDriverProtocol : AATKit.AATAdDriverLoggerProtocol, AATKit.AATInitializable {
-  var adNetwork: AATKit.AATAdNetwork { get set }
-  var adID: Swift.String? { get set }
-  func unload()
-  func pause()
-  func resume(controller: UIKit.UIViewController)
-  func getPrice() -> Swift.Double
-  func cancelLoading()
-}
-extension AATKit.AATAdDriverProtocol {
-  public func getPrice() -> Swift.Double
-  public func cancelLoading()
-}
 @objc public protocol AATNativeAdData : ObjectiveC.NSObjectProtocol {
   @objc var title: Swift.String? { get }
   @objc var adDescription: Swift.String? { get }
@@ -150,6 +137,22 @@ public protocol AATFacebookDriverProtocol {
   @objc func showIfNeeded(_ source: Swift.String, _ viewController: UIKit.UIViewController)
   @objc func editConsent(_ source: Swift.String, _ viewController: UIKit.UIViewController)
 }
+public protocol AATAdDriverProtocol : AATKit.AATAdDriverLoggerProtocol, AATKit.AATInitializable {
+  var adNetwork: AATKit.AATAdNetwork { get set }
+  var adID: Swift.String? { get set }
+  var adConfig: AATKit.AATAdConfig? { get set }
+  func unload()
+  func pause()
+  func resume(controller: UIKit.UIViewController)
+  func getPrice() -> Swift.Double
+  func cancelLoading()
+  func getConfigForReporting() -> AATKit.AATAdConfig?
+}
+extension AATKit.AATAdDriverProtocol {
+  public func getPrice() -> Swift.Double
+  public func cancelLoading()
+  public func getConfigForReporting() -> AATKit.AATAdConfig?
+}
 @objc public enum AATShowIfNeededSetting : Swift.Int {
   case always
   case never
@@ -197,6 +200,7 @@ public protocol AATFacebookDriverProtocol {
   case IRONSOURCENEW
   case GRAVITERTB
   case SUPERAWESOME
+  case ADMOBBIDDING
   public typealias AllCases = [AATKit.AATAdNetwork]
   public static var allCases: [AATKit.AATAdNetwork] {
     get
@@ -242,6 +246,24 @@ extension AATKit.AATAdNetwork : Swift.CustomStringConvertible {
   @objc func getPlacementView() -> UIKit.UIView?
   @objc func setDefaultImage(image: UIKit.UIImage)
   @objc func setBannerAlign(alignment: AATKit.AATBannerAlign)
+}
+@objc @_hasMissingDesignatedInitializers public class AATAdConfig : AATKit.AATAbstractAdConfig {
+  public var network: AATKit.AATAdNetwork
+  public var adId: Swift.String?
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+extension AATKit.AATAdConfig {
+  public func getSupportedPlacementSizes() -> Swift.Set<AATKit.AATBannerSize>
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}
+extension AATKit.AATAdConfig {
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
 }
 @objc public protocol AATDelegate {
   @objc optional func AATKitObtainedAdRules(fromTheServer: Swift.Bool)
@@ -601,6 +623,7 @@ public struct AATAdRequestConfiguration {
   public var extraInfo: Swift.String?
   public var publisherProvidedID: Swift.String?
   public var isRTARule: Swift.Bool?
+  public var waterfallId: Swift.String
   public var collapsibleBannerPosition: Swift.String?
   public var networksOptions: AATKit.AATAdNetworksOptions?
 }
@@ -608,6 +631,11 @@ public protocol AATPubNativeDriverProtocol {
   static var shared: Self { get }
   func updateConsent(isEnabled: Swift.Bool)
   func setIsChildDirected(_ isChildDirected: Swift.Bool)
+}
+@objc @_hasMissingDesignatedInitializers public class AATAbstractAdConfig : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
 }
 @available(iOS 13.0, *)
 @objc public protocol AATAsyncNativeAdPlacement : AATKit.AATPlacement {
@@ -1161,6 +1189,7 @@ public protocol AATDFPPreBidDriverProtocol {
   static func loadFullscreenAd(extraInfo: Swift.String, request: Any, completion: @escaping ((Any) -> Swift.Void))
   static func loadRewardedAd(extraInfo: Swift.String, request: Any, completion: @escaping ((Any) -> Swift.Void))
   static func setIsChildDirected(_ isChildDirected: Swift.Bool)
+  static func findPrebidCreativeSize(bannerView: UIKit.UIView)
 }
 public protocol AATFullscreenDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate {
   var state: AATKit.AATFullscreenAdState { get set }

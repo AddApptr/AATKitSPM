@@ -1,0 +1,11 @@
+framework module AATAdMobDSPAdapter {
+  umbrella header "AATAdMobDSPAdapter.h"
+
+  export *
+  module * { export * }
+}
+
+module AATAdMobDSPAdapter.Swift {
+  header "AATAdMobDSPAdapter-Swift.h"
+  requires objc
+}

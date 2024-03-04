@@ -22,8 +22,6 @@
 
 - (void)destroyBannerWithAdapterConfig:(ISAdapterConfig *)adapterConfig;
 
-- (CGFloat)getAdaptiveHeightWithWidth:(CGFloat)width;
-
 #pragma mark - for non bidders
 
 - (void)initBannerWithUserId:(NSString *)userId

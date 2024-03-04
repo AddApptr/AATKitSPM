@@ -94,464 +94,464 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 682,
+      "offset": 714,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "IntegerLiteral",
-      "offset": 720,
+      "offset": 752,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 819,
+      "offset": 851,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "IntegerLiteral",
-      "offset": 870,
+      "offset": 902,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "IntegerLiteral",
-      "offset": 904,
+      "offset": 936,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1099,
+      "offset": 1131,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1276,
+      "offset": 1308,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1464,
+      "offset": 1496,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 1540,
+      "offset": 1572,
       "length": 12,
       "value": "\"show error\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1570,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2019,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
-      "kind": "StringLiteral",
-      "offset": 3114,
-      "length": 23,
-      "value": "\"didStartRewardedVideo\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
-      "kind": "StringLiteral",
-      "offset": 3257,
-      "length": 26,
-      "value": "\"didCompleteRewardedVideo\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
-      "kind": "StringLiteral",
-      "offset": 3413,
-      "length": 18,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
-      "kind": "StringLiteral",
-      "offset": 3430,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 688,
-      "length": 3,
-      "value": "\":\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 726,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 825,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 900,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 934,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1129,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1254,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1260,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1270,
-      "length": 3,
-      "value": "320"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1283,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1351,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1357,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1367,
-      "length": 3,
-      "value": "300"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1380,
-      "length": 3,
-      "value": "250"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1448,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1454,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1464,
-      "length": 3,
-      "value": "768"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1477,
-      "length": 2,
-      "value": "90"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "BooleanLiteral",
       "offset": 1602,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1869,
-      "length": 4,
-      "value": "true"
+      "offset": 2051,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2545,
+      "offset": 3146,
+      "length": 23,
+      "value": "\"didStartRewardedVideo\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
+      "kind": "StringLiteral",
+      "offset": 3289,
       "length": 26,
-      "value": "\"did expand for ad: \""
+      "value": "\"didCompleteRewardedVideo\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2570,
-      "length": 3,
+      "offset": 3445,
+      "length": 18,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2720,
-      "length": 28,
-      "value": "\"did collapse for ad: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 2747,
-      "length": 3,
+      "offset": 3462,
+      "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3140,
-      "length": 40,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 3160,
-      "length": 1,
-      "value": "\" - \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
-      "kind": "StringLiteral",
-      "offset": 3179,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
-      "kind": "StringLiteral",
-      "offset": 693,
+      "offset": 719,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 732,
+      "offset": 757,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 831,
+      "offset": 856,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 882,
+      "offset": 931,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 916,
+      "offset": 965,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1111,
+      "offset": 1160,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1293,
-      "length": 4,
-      "value": "true"
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1285,
+      "length": 1,
+      "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
-      "kind": "BooleanLiteral",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1291,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1301,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1314,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1382,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1388,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1398,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1411,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1479,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
       "offset": 1485,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1495,
+      "length": 3,
+      "value": "768"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1508,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1633,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1900,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1561,
+      "offset": 2576,
+      "length": 26,
+      "value": "\"did expand for ad: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2601,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2751,
+      "length": 28,
+      "value": "\"did collapse for ad: \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 2778,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3171,
+      "length": 40,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3191,
+      "length": 1,
+      "value": "\" - \""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3210,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 725,
+      "length": 3,
+      "value": "\":\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 764,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 863,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 914,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 948,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1143,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1325,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1517,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 1593,
       "length": 12,
       "value": "\"show error\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1591,
+      "offset": 1623,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2042,
+      "offset": 2074,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxManager.swift",
       "kind": "StringLiteral",
       "offset": 780,
       "length": 66,
       "value": "\"AppLovin SDK init completed with configuration: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinMaxManager.swift",
       "kind": "StringLiteral",
       "offset": 845,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 676,
+      "offset": 707,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 714,
+      "offset": 745,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 813,
+      "offset": 844,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 888,
+      "offset": 919,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 922,
+      "offset": 953,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1117,
+      "offset": 1148,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 1379,
+      "offset": 1410,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 1614,
+      "offset": 1645,
       "length": 121,
       "value": "\"Failed to render Ad because ApplovinMax require view of type `MANativeAdView` instead view passed is \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 1733,
+      "offset": 1764,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 2061,
+      "offset": 2092,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppLovinMaxAdapter\/AATAppLovinNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 3323,
+      "offset": 3354,
       "length": 2,
       "value": "\"\""
     }

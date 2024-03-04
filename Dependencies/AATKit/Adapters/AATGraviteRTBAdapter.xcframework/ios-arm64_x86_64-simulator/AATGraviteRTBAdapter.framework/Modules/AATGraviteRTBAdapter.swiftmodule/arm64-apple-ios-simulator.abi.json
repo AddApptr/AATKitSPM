@@ -64,6 +64,40 @@
       },
       {
         "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATGraviteRTBAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATGraviteRTBAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATGraviteRTBAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATGraviteRTBAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -81,203 +115,308 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 832,
+      "offset": 2097,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1060,
+      "offset": 2325,
       "length": 18,
       "value": "\"unsupported size\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1099,
+      "offset": 2364,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1469,
+      "offset": 3051,
       "length": 39,
       "value": "\"Supply-chain data: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1507,
+      "offset": 3089,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1651,
+      "offset": 3233,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3490,
+      "length": 3,
+      "value": "\"|\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3635,
+      "length": 3,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3678,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3860,
+      "length": 17,
+      "value": "\"admobBiddingKey\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 3940,
+      "length": 38,
+      "value": "\"AATAdMobDSPAdapter.AATAdMobDSPBanner\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 4351,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 2608,
+      "offset": 5690,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2860,
+      "offset": 5888,
+      "length": 26,
+      "value": "\"will retrieve dsp adView\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 6245,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2896,
+      "offset": 6281,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3385,
+      "offset": 6821,
       "length": 25,
       "value": "\"Message \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3409,
+      "offset": 6845,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3465,
+      "offset": 6956,
       "length": 25,
       "value": "\"Message \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3489,
+      "offset": 6980,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4025,
+      "offset": 7516,
       "length": 20,
       "value": "\"Resume for \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBBanner.swift",
       "kind": "StringLiteral",
-      "offset": 4044,
+      "offset": 7535,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "kind": "Array",
+      "offset": 555,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 932,
+      "offset": 1067,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1312,
+      "offset": 1756,
       "length": 39,
       "value": "\"Supply-chain data: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1350,
+      "offset": 1794,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1502,
+      "offset": 1946,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1675,
+      "offset": 2147,
+      "length": 3,
+      "value": "\"|\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 2298,
+      "length": 3,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2341,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 2523,
+      "length": 17,
+      "value": "\"admobBiddingKey\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 2603,
+      "length": 44,
+      "value": "\"AATAdMobDSPAdapter.AATAdMobDSPInterstitial\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 3277,
       "length": 61,
       "value": "\"Failed to show InterstitialAd due to invalid viewController\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1758,
+      "offset": 3360,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1909,
-      "length": 4,
-      "value": "true"
+      "offset": 3507,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2013,
+      "offset": 3612,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 2049,
+      "offset": 3648,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2579,
+      "offset": 4278,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/BidderConfigManager\/AATRTBRequestConfigManager.swift",
+      "kind": "StringLiteral",
+      "offset": 264,
+      "length": 9,
+      "value": "\"Gravite\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/BidderConfigManager\/AATRTBBidderConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 879,
+      "length": 7,
+      "value": "\"Admob\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBManager.swift",
       "kind": "StringLiteral",
       "offset": 1660,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1698,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1781,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1828,
       "length": 1,

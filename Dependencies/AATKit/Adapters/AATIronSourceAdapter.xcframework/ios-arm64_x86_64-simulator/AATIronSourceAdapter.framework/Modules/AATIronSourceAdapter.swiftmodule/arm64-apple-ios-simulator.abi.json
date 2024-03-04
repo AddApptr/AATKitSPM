@@ -170,835 +170,835 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
       "offset": 223,
       "length": 12,
       "value": "\"Fullscreen\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
       "offset": 642,
       "length": 5,
       "value": "\"YES\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
       "offset": 650,
       "length": 4,
       "value": "\"NO\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
       "offset": 693,
       "length": 13,
       "value": "\"do_not_sell\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
       "offset": 851,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "IntegerLiteral",
       "offset": 890,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "IntegerLiteral",
       "offset": 958,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "IntegerLiteral",
       "offset": 972,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
       "offset": 1295,
       "length": 19,
       "value": "\"is_child_directed\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
       "offset": 1323,
       "length": 20,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceManager.swift",
       "kind": "StringLiteral",
       "offset": 1342,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 869,
+      "offset": 900,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1022,
+      "offset": 1053,
       "length": 66,
       "value": "\"Cannot load in parallel using the same instanceId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1087,
+      "offset": 1118,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1110,
+      "offset": 1141,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1502,
+      "offset": 1533,
       "length": 56,
       "value": "\"Calling show with inValid ViewController or instanceId\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1580,
+      "offset": 1611,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1882,
+      "offset": 1913,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2301,
+      "offset": 2332,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2534,
+      "offset": 2565,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "Dictionary",
       "offset": 427,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "BooleanLiteral",
       "offset": 749,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 1020,
       "length": 39,
       "value": "\"New instanceIds array: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 1058,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "BooleanLiteral",
       "offset": 1077,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 1240,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "BooleanLiteral",
       "offset": 1348,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 1814,
       "length": 39,
       "value": "\"New instanceIds array: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 1852,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 2436,
       "length": 67,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 2466,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 2502,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 2577,
       "length": 67,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 2607,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 2643,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 3415,
       "length": 67,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 3445,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 3481,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 3556,
       "length": 67,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 3586,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceFullscreenLoader.swift",
       "kind": "StringLiteral",
       "offset": 3622,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "Dictionary",
       "offset": 423,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 712,
       "length": 47,
       "value": "\"Already have ad for instanceId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 758,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "BooleanLiteral",
       "offset": 850,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 1123,
       "length": 39,
       "value": "\"New instanceIds array: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 1161,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "BooleanLiteral",
       "offset": 1180,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 1343,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "BooleanLiteral",
       "offset": 1452,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 1916,
       "length": 39,
       "value": "\"New instanceIds array: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 1954,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 2539,
       "length": 67,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 2569,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 2605,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 2680,
       "length": 67,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 2710,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 2746,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 3236,
       "length": 67,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 3266,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 3302,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 3377,
       "length": 67,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 3407,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 3443,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 3864,
       "length": 60,
       "value": "\"Did earn for instanceId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 3923,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 3975,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewardedLoader.swift",
       "kind": "StringLiteral",
       "offset": 3986,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "Dictionary",
       "offset": 510,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "Dictionary",
       "offset": 570,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
       "offset": 1199,
       "length": 39,
       "value": "\"New instanceIds array: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
       "offset": 1237,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "BooleanLiteral",
       "offset": 1256,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
       "offset": 1386,
       "length": 41,
       "value": "\"Unloading for instanceId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
       "offset": 1426,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
       "offset": 1751,
       "length": 40,
       "value": "\"Will destroy banner for: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
       "offset": 1790,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
       "offset": 1999,
       "length": 39,
       "value": "\"New instanceIds array: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
       "offset": 2037,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
       "offset": 2631,
       "length": 55,
       "value": "\"Got bannerView for: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
       "offset": 2685,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 2890,
+      "offset": 2886,
       "length": 67,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 2920,
+      "offset": 2916,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 2956,
+      "offset": 2952,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3031,
+      "offset": 3027,
       "length": 67,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3061,
+      "offset": 3057,
       "length": 1,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3097,
+      "offset": 3093,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3246,
+      "offset": 3242,
       "length": 89,
       "value": "\"Failed for \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3291,
+      "offset": 3287,
       "length": 4,
       "value": "\" with reason: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBannerLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3334,
+      "offset": 3330,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 487,
+      "offset": 525,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "StringLiteral",
-      "offset": 783,
+      "offset": 821,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 822,
+      "offset": 860,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 921,
+      "offset": 959,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 973,
+      "offset": 1011,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1094,
+      "offset": 1132,
       "length": 66,
       "value": "\"Cannot load in parallel using the same instanceId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1159,
+      "offset": 1197,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1182,
+      "offset": 1220,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1282,
+      "offset": 1320,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1372,
+      "offset": 1410,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1482,
+      "offset": 1520,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1508,
+      "offset": 1546,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1793,
+      "offset": 1831,
       "length": 3,
       "value": "320"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1806,
+      "offset": 1844,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1907,
+      "offset": 1945,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1920,
+      "offset": 1958,
       "length": 3,
       "value": "250"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2023,
+      "offset": 2061,
       "length": 3,
       "value": "728"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2036,
+      "offset": 2074,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2216,
+      "offset": 2254,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceBanner.swift",
       "kind": "StringLiteral",
-      "offset": 2943,
+      "offset": 2981,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 865,
+      "offset": 897,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 1018,
+      "offset": 1050,
       "length": 66,
       "value": "\"Cannot load in parallel using the same instanceId: \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 1083,
+      "offset": 1115,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1106,
+      "offset": 1138,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 1486,
+      "offset": 1518,
       "length": 56,
       "value": "\"Calling show with inValid ViewController or instanceId\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1564,
+      "offset": 1596,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 1862,
+      "offset": 1894,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 2281,
+      "offset": 2313,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
+      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATIronSourceAdapter\/AATIronSourceRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 2508,
+      "offset": 2540,
       "length": 2,
       "value": "\"\""
     }
