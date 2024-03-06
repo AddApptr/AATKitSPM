@@ -118,728 +118,728 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
       "offset": 765,
       "length": 34,
       "value": "\"AmazonHB is already initialized.\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "Array",
       "offset": 925,
       "length": 14,
       "value": "[\"1.0\", \"2.0\"]"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
       "offset": 1361,
       "length": 46,
       "value": "\"Failed to find price mapping for key: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
       "offset": 1406,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1425,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
       "offset": 1845,
       "length": 13,
       "value": "\"pricePoints\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
       "offset": 1920,
       "length": 20,
       "value": "\"encodedPricePoints\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2127,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonManager.swift",
       "kind": "StringLiteral",
       "offset": 2394,
       "length": 12,
       "value": "\"us_privacy\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "FloatLiteral",
       "offset": 454,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "StringLiteral",
       "offset": 853,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 949,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 987,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1019,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1060,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1067,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1102,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1140,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1172,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "BooleanLiteral",
       "offset": 1282,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1467,
       "length": 3,
       "value": "320"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1480,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1551,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1564,
       "length": 3,
       "value": "250"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1635,
       "length": 3,
       "value": "728"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 1648,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "BooleanLiteral",
       "offset": 1773,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "BooleanLiteral",
       "offset": 2037,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "StringLiteral",
       "offset": 2392,
       "length": 36,
       "value": "\"Couldn't create AATAmazonHBRequest\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "BooleanLiteral",
       "offset": 2450,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "BooleanLiteral",
       "offset": 2570,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "BooleanLiteral",
       "offset": 3117,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "StringLiteral",
       "offset": 3768,
       "length": 25,
       "value": "\"Error loading banner ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonBanner.swift",
       "kind": "StringLiteral",
       "offset": 3843,
       "length": 25,
       "value": "\"Error loading banner ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 1231,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 1585,
       "length": 10,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 1594,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 1802,
       "length": 8,
       "value": "\"amzn_b\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 1846,
       "length": 8,
       "value": "\"amzn_h\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 2199,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 2267,
       "length": 25,
       "value": "\"Floor price not reached\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 2513,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 2519,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 2544,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 2571,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 3305,
       "length": 45,
       "value": "\"failed to load with errorCode: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 3349,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 4049,
       "length": 20,
       "value": "\"Resume for \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 4068,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 4709,
       "length": 14,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 4722,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBRequest.swift",
       "kind": "StringLiteral",
       "offset": 980,
       "length": 18,
       "value": "\"AATAmazonAdapter.AATAmazonHBRequest\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "FloatLiteral",
       "offset": 454,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 832,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 928,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 966,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 998,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 1039,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 1046,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 1081,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 1119,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 1151,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 1261,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 1428,
       "length": 54,
       "value": "\"Failed to init DTBAdSize with slot UUID: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 1481,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 1504,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 1927,
       "length": 36,
       "value": "\"Couldn't create AATAmazonHBRequest\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 1985,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 2106,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 2340,
       "length": 32,
       "value": "\"Calling show with no ready ad!\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 2394,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 2538,
       "length": 44,
       "value": "\"Calling show with inValid view Controller.\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 2604,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 2793,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 2869,
       "length": 15,
       "value": "\"Unknown error\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 2902,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 3673,
       "length": 31,
       "value": "\"Error loading interstitial ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 3754,
       "length": 31,
       "value": "\"Error loading interstitial ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 411,
       "length": 17,
       "value": "\"AATKit_AmazonHB\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 516,
       "length": 5,
       "value": "\"csv\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 594,
       "length": 37,
       "value": "\"Amazon price mapping file not found\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 829,
       "length": 37,
       "value": "\"Amazon price mapping file not found\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 959,
       "length": 4,
       "value": "\"\n\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "IntegerLiteral",
       "offset": 1001,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 1066,
       "length": 3,
       "value": "\",\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "IntegerLiteral",
       "offset": 1110,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "IntegerLiteral",
       "offset": 1149,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "IntegerLiteral",
       "offset": 1175,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "Dictionary",
       "offset": 1228,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "Dictionary",
       "offset": 1288,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "IntegerLiteral",
       "offset": 1497,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 1553,
       "length": 22,
       "value": "\"Encoded Price Points\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 1671,
       "length": 14,
       "value": "\"Price Points\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 1779,
       "length": 5,
       "value": "\"cpm\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "IntegerLiteral",
       "offset": 1869,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "IntegerLiteral",
       "offset": 1951,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 2036,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 2131,
       "length": 3,
       "value": "\",\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 2330,
       "length": 21,
       "value": "\"Invalid row: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 2350,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "IntegerLiteral",
       "offset": 2467,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "IntegerLiteral",
       "offset": 2481,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 2956,
       "length": 20,
       "value": "\"encodedPricePoints\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAmazonAdapter\/AATAmazonHBPriceMapping.swift",
       "kind": "StringLiteral",
       "offset": 3003,
       "length": 13,

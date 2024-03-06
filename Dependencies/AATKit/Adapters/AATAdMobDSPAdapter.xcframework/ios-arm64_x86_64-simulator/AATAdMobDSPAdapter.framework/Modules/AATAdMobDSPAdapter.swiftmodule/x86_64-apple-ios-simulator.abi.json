@@ -108,644 +108,644 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 437,
       "length": 55,
       "value": "\"Failed to call Api with invalid request: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 491,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 596,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 822,
       "length": 15,
       "value": "\"unknown error\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 1029,
       "length": 26,
       "value": "\"couldn't parse response.\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 1144,
       "length": 26,
       "value": "\"received \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPNetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 1169,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 309,
       "length": 7,
       "value": "\"Admob\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 777,
       "length": 14,
       "value": "\"Missing adID\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 888,
       "length": 9,
       "value": "\"gravite\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 971,
       "length": 18,
       "value": "\"placement_req_id\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 1041,
       "length": 17,
       "value": "\"query_info_type\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 1060,
       "length": 18,
       "value": "\"requester_type_2\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 1119,
       "length": 17,
       "value": "\"is_hybrid_setup\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "BooleanLiteral",
       "offset": 1138,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 1445,
       "length": 64,
       "value": "\"Failed to get signal with error: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 1508,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 1721,
       "length": 20,
       "value": "\"Did receive signal\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "IntegerLiteral",
       "offset": 2072,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 2493,
       "length": 14,
       "value": "\"Invalid adID\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 2620,
       "length": 44,
       "value": "\"Will request ad with adString: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 2663,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 2975,
       "length": 74,
       "value": "\"Failed to load interstitial ad with error: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 3048,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 3266,
       "length": 37,
       "value": "\"ad loaded \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 3302,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "BooleanLiteral",
       "offset": 3707,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "BooleanLiteral",
       "offset": 3809,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 3895,
       "length": 12,
       "value": "\"Pausing ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 4019,
       "length": 33,
       "value": "\"Resuming ad with: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 4051,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 4177,
       "length": 14,
       "value": "\"Unloading ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 4517,
       "length": 20,
       "value": "\"Did log impression\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 4795,
       "length": 16,
       "value": "\"Click on an ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 5182,
       "length": 64,
       "value": "\"failed to display ad with error: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 5245,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 5376,
       "length": 16,
       "value": "\"Did display ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 5596,
       "length": 15,
       "value": "\"Will close ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
       "offset": 5740,
       "length": 14,
       "value": "\"Did close ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 7,
       "value": "\"Admob\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 761,
       "length": 14,
       "value": "\"Missing adID\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 872,
       "length": 9,
       "value": "\"gravite\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 955,
       "length": 18,
       "value": "\"placement_req_id\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 1025,
       "length": 17,
       "value": "\"query_info_type\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 1044,
       "length": 18,
       "value": "\"requester_type_2\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 1103,
       "length": 17,
       "value": "\"is_hybrid_setup\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "BooleanLiteral",
       "offset": 1122,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 1423,
       "length": 64,
       "value": "\"Failed to get signal with error: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 1486,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 1699,
       "length": 20,
       "value": "\"Did receive signal\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 2050,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 2502,
       "length": 14,
       "value": "\"Invalid adID\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 2628,
       "length": 44,
       "value": "\"Will request ad with adString: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 2671,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 3113,
       "length": 3,
       "value": "320"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 3126,
       "length": 2,
       "value": "53"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 3192,
       "length": 3,
       "value": "768"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 3205,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 3276,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 3289,
       "length": 3,
       "value": "250"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 3365,
       "length": 3,
       "value": "468"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 3378,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 3737,
       "length": 12,
       "value": "\"Pausing ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 3861,
       "length": 33,
       "value": "\"Resuming ad with: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 3893,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 4026,
       "length": 14,
       "value": "\"Unloading ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 4237,
       "length": 61,
       "value": "\"Retrieving an ad for ad view: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 4297,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 4546,
       "length": 46,
       "value": "\"ad loaded: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 4591,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 4845,
       "length": 61,
       "value": "\"failed to load ad with error: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 4905,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 5144,
       "length": 20,
       "value": "\"Did log impression\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 5429,
       "length": 14,
       "value": "\"Will open ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 5644,
       "length": 15,
       "value": "\"Will close ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 5777,
       "length": 14,
       "value": "\"Did close ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 5994,
       "length": 14,
       "value": "\"Did close ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
       "offset": 6128,
       "length": 16,
       "value": "\"Click on an ad\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPAdapterManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPAdapterManager.swift",
       "kind": "StringLiteral",
       "offset": 254,
       "length": 10,
       "value": "\"AddApptr\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPAdapterManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPAdapterManager.swift",
       "kind": "StringLiteral",
       "offset": 650,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPAdapterManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPAdapterManager.swift",
       "kind": "StringLiteral",
       "offset": 751,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPAdapterManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPAdapterManager.swift",
       "kind": "IntegerLiteral",
       "offset": 777,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
       "kind": "StringLiteral",
       "offset": 226,
       "length": 17,
       "value": "\"extadmobsignals\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
       "kind": "StringLiteral",
       "offset": 260,
       "length": 15,
       "value": "\"extadmobtagid\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
       "kind": "StringLiteral",
       "offset": 296,
       "length": 16,
       "value": "\"extadmobhybrid\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 18,
       "value": "\"extadmobadptvers\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
       "kind": "StringLiteral",
       "offset": 372,
       "length": 21,
       "value": "\"extadmobplcmntreqid\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
       "kind": "StringLiteral",
       "offset": 226,
       "length": 17,
       "value": "\"extadmobsignals\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
       "kind": "StringLiteral",
       "offset": 260,
       "length": 15,
       "value": "\"extadmobtagid\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
       "kind": "StringLiteral",
       "offset": 296,
       "length": 16,
       "value": "\"extadmobhybrid\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
       "kind": "StringLiteral",
       "offset": 332,
       "length": 18,
       "value": "\"extadmobadptvers\""
     },
     {
-      "filePath": "\/Users\/matloub\/Downloads\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AdMobDSPConstants.swift",
       "kind": "StringLiteral",
       "offset": 372,
       "length": 21,

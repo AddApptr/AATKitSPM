@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/HyBid-Swift.h</key>
 		<data>
-		2FlkXtyG+D0CvqinPcaiTThpGMA=
+		JCVkdoj7ISqMq3b+ojd3YwZQTeY=
 		</data>
 		<key>Headers/HyBid.h</key>
 		<data>
-		uT4XmMQYarxtW9B0VFNrCGSmdFQ=
+		yQ9bhPuWOpUF8hNU/tgKhpUg4AE=
 		</data>
 		<key>Headers/HyBidAd.h</key>
 		<data>
-		kUi973Sfz14hmBBjL+Mx+GxmHuw=
+		RqPprF251JT1zDkBb5xshiGB6f4=
 		</data>
 		<key>Headers/HyBidAdCache.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/HyBidAdRequest.h</key>
 		<data>
-		V06o9t/Xon+82F2oiE9hmaybSqg=
+		NIsIG8fMF6w9tLJDx0mHwNhtKPQ=
 		</data>
 		<key>Headers/HyBidAdSize.h</key>
 		<data>
@@ -56,6 +56,10 @@
 		<data>
 		JVlRHoDzQNEYaQDjxU0cxZ84J+c=
 		</data>
+		<key>Headers/HyBidBannerAdView.h</key>
+		<data>
+		wheEVBu0S09LkYslaZUTFNU4qpc=
+		</data>
 		<key>Headers/HyBidBannerPresenterFactory.h</key>
 		<data>
 		5h2cNklPZ4GJqkzmQ2H9Qa5sep4=
@@ -66,11 +70,7 @@
 		</data>
 		<key>Headers/HyBidContentInfoView.h</key>
 		<data>
-		x8bAJDFb4aDD6VFgeYJ4Tys1cXw=
-		</data>
-		<key>Headers/HyBidCustomCTAViewDelegate.h</key>
-		<data>
-		881hedd9PEXIgr8ThmPHMdIuHB4=
+		tpXnJvwO0xnIyQzgYOHWNOZb6wg=
 		</data>
 		<key>Headers/HyBidDataModel.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/HyBidError.h</key>
 		<data>
-		g9BpA4+CxrV048eMETieVtebHQk=
+		qd3guuCj8KxNVvN8feVXWyM453Q=
 		</data>
 		<key>Headers/HyBidHeaderBiddingUtils.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/HyBidInterstitialPresenter.h</key>
 		<data>
-		j5lSbc2raeHrX7PKfiww+KajJaA=
+		Kh72eE+2VaKJgYb92YLHBwh6n28=
 		</data>
 		<key>Headers/HyBidInterstitialPresenterFactory.h</key>
 		<data>
@@ -107,6 +107,14 @@
 		<key>Headers/HyBidLeaderboardAdRequest.h</key>
 		<data>
 		A6UrPaNKaPNBkCPERRGPRwk4rUA=
+		</data>
+		<key>Headers/HyBidLeaderboardAdView.h</key>
+		<data>
+		61mNe4CGcYoyonVzOD2HVYLFnXs=
+		</data>
+		<key>Headers/HyBidLeaderboardPresenterFactory.h</key>
+		<data>
+		J84WawZyzAC+9XgmklcZA7hPrCA=
 		</data>
 		<key>Headers/HyBidMRAIDServiceDelegate.h</key>
 		<data>
@@ -123,6 +131,14 @@
 		<key>Headers/HyBidMRectAdRequest.h</key>
 		<data>
 		gT+N2EFtcSgIQFgfm9QBMvgjB8Y=
+		</data>
+		<key>Headers/HyBidMRectAdView.h</key>
+		<data>
+		2wFI2J1i6ipjrbdwWo13dSOK6og=
+		</data>
+		<key>Headers/HyBidMRectPresenterFactory.h</key>
+		<data>
+		uEKUe38EZPP5MHuCZGbHQqxjgos=
 		</data>
 		<key>Headers/HyBidNativeAd.h</key>
 		<data>
@@ -144,9 +160,13 @@
 		<data>
 		1JXmZkeZJo2Jw512gOLi/C66kbo=
 		</data>
+		<key>Headers/HyBidPrebidUtils.h</key>
+		<data>
+		bi4ihYorXqGZ2fGvfixObpqo+h4=
+		</data>
 		<key>Headers/HyBidRequestParameter.h</key>
 		<data>
-		zc0UYjo68/PTy2xiO3wIs8KH9kU=
+		2HDAh/cypEeo17oPHP1qb9TcxHE=
 		</data>
 		<key>Headers/HyBidRewardedAdRequest.h</key>
 		<data>
@@ -154,23 +174,11 @@
 		</data>
 		<key>Headers/HyBidRewardedPresenter.h</key>
 		<data>
-		lDV9O0K2X0RQGUBENA53YY6jV7k=
+		b+8sTl96eNdlziAqrdKzvLDjLYU=
 		</data>
 		<key>Headers/HyBidRewardedPresenterFactory.h</key>
 		<data>
 		RCHrHcXwyDo+trbQQy+R+KQTPro=
-		</data>
-		<key>Headers/HyBidSKAdNetworkParameter.h</key>
-		<data>
-		2z8KP2qa16cw8K4oxOnipi2S5OU=
-		</data>
-		<key>Headers/HyBidSKOverlay.h</key>
-		<data>
-		zosfmZE3qkwziQzbeNF/DGAv0TA=
-		</data>
-		<key>Headers/HyBidSKOverlayTimerType.h</key>
-		<data>
-		Rmli6hQKI0MogKZo0FugU4jOYis=
 		</data>
 		<key>Headers/HyBidSignalDataProcessor.h</key>
 		<data>
@@ -180,21 +188,13 @@
 		<data>
 		02JHzvz+b4bXHMZkjbEcl5I5oCQ=
 		</data>
-		<key>Headers/HyBidSkAdNetworkRequestModel.h</key>
-		<data>
-		PVYvVrNxB3DHrgPDEeB0cZ7hDRY=
-		</data>
 		<key>Headers/HyBidStarRatingView.h</key>
 		<data>
 		k9fWoJFj6GmLlOcIYlkHZXp9eZs=
 		</data>
-		<key>Headers/HyBidTimerState.h</key>
-		<data>
-		prE+oeCistzstZtMZ/OKkkdPUYA=
-		</data>
 		<key>Headers/HyBidUserDataManager.h</key>
 		<data>
-		jqTLRxt+2gTvlNlsuxQx12N/Oos=
+		brKOyL6TClyke7Gj0AdrL8vmodY=
 		</data>
 		<key>Headers/HyBidVASTIconViewTracking.h</key>
 		<data>
@@ -204,10 +204,6 @@
 		<data>
 		z/eJgV2tosIlMVarjqiFmUcNtJs=
 		</data>
-		<key>Headers/HyBidWebBrowserUserAgentInfo.h</key>
-		<data>
-		DSCY6Wrev/Qx+FMdaPgbcbAWVvE=
-		</data>
 		<key>Headers/HyBidXML.h</key>
 		<data>
 		f5RyQHDgqHIkbQglZstvKCkdY3I=
@@ -216,81 +212,73 @@
 		<data>
 		IMKQnG5H/vZc1tZkzhH6EfjRa20=
 		</data>
-		<key>Headers/PNLiteAdRequestModel.h</key>
-		<data>
-		yb2G3lkRArH93BiERyNfx+lO2hU=
-		</data>
 		<key>Headers/PNLiteLocationManager.h</key>
 		<data>
 		1Gjpok5rXBonmnruvwN7TZv4TOM=
 		</data>
-		<key>HyBidCustomCTAView.nib</key>
-		<data>
-		QKMw2CSqbdhQ0xlHDdiJnnJY88c=
-		</data>
 		<key>HyBidMRAIDCloseCardView.nib/objects-11.0+.nib</key>
 		<data>
-		iuaOvD8klrx40e7br8N4C7CTb6g=
+		HGZg4bAMcxibn15v1EfblbkBj28=
 		</data>
 		<key>HyBidMRAIDCloseCardView.nib/runtime.nib</key>
 		<data>
-		1T8YY8Jsu270fZWG8oorUUHiSiM=
+		pVg/2w7LGzcfPTnrYmjiR6CV13U=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2WVh7EF4ZzIZ1Iqlo8/HKZpha9c=
+		AfIZv3TZLEdswCLWaV2MX/qPLFc=
 		</data>
 		<key>Modules/HyBid.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		ojpHBovovoXYXktLPmiCObjMmdQ=
+		dHbmFukGciKgY9Ia7n6KMDJHou4=
 		</data>
 		<key>Modules/HyBid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		qy2gh4iytCayD67gVoZIA0ASyrY=
+		BrHRLGP27oG8ZszhxCFbqASI4ew=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Uy2dB69EjK28x6DfsAcL6F4l7G8=
+		kcU0Bl5UjHcwoRpQvzoKwQzO7bs=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		BoS6LuUYxgaHIXLu+ziwXRgb5pc=
+		t30+MOSGhNBKVCaAyKp/Dwbg3zk=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pDOajifAf6U+d/av0wkeHg5O9mQ=
+		f8297/Ma97eqJlj3vo+8Xd8wgoQ=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BoS6LuUYxgaHIXLu+ziwXRgb5pc=
+		t30+MOSGhNBKVCaAyKp/Dwbg3zk=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6IBQSt+/4CDrq7EkipTxoaZVQm4=
+		dQnPDErvRXQ15+gJAyo1ngRx5ag=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Uy2dB69EjK28x6DfsAcL6F4l7G8=
+		kcU0Bl5UjHcwoRpQvzoKwQzO7bs=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XAXNGJuSUSwPDdWSByRL4enYyAc=
+		RC7iRuDt1buO0tTWt121EaHVQDs=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Dh2KBGH3v6qnAAaGscBWinFEVBI=
+		O/WU3XC1gSLG42HG5tdi3Ujlr2c=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XAXNGJuSUSwPDdWSByRL4enYyAc=
+		RC7iRuDt1buO0tTWt121EaHVQDs=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ic7hrMIkiyL1tWOfdy7eJLHi4Dw=
+		w8X39mv07lWXGdgr4zr18CHDdKM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		M5T8L7cjulYLRmpiXG36tak9w/c=
+		IVMLAZBnw6nj8qw41gGvHBQb+KU=
 		</data>
 		<key>PNLiteExternalLink.png</key>
 		<data>
@@ -334,58 +322,36 @@
 		</data>
 		<key>PNLiteVASTPlayerFullScreenViewController.nib/objects-11.0+.nib</key>
 		<data>
-		NDnD4PBAX/RmbCYSkxsjEDTWhbI=
+		SGatak1p4g6oxmkSdrNbS9k0vbY=
 		</data>
 		<key>PNLiteVASTPlayerFullScreenViewController.nib/runtime.nib</key>
 		<data>
-		uLwV47Y4l15qJXMvJMFGXB6MfkE=
+		3awETMvO3vGG3XWdXNzOBPZs190=
 		</data>
 		<key>PNLiteVASTPlayerInterstitialViewController.nib</key>
 		<data>
-		MSTsWLDHJZQ4R+iI16FaodEwhzY=
+		iDguDwvN0Efof7+NUuR4n7i4Veg=
 		</data>
 		<key>PNLiteVASTPlayerRewardedViewController.nib/objects-11.0+.nib</key>
 		<data>
-		+WKlbBm2xOraMmN7PKiOZJBMIqQ=
+		Irk5uXGlfiRyR+I8pXVsnpdXBZ8=
 		</data>
 		<key>PNLiteVASTPlayerRewardedViewController.nib/runtime.nib</key>
 		<data>
-		dnW8W2A1h4NSIECK6KMwIVh8eqA=
+		o8k512VueRQZ2mfTiFcxbF1gUJY=
 		</data>
 		<key>PNLiteVASTPlayerViewController.nib/objects-11.0+.nib</key>
 		<data>
-		odtWtqMt4t17K5hc6LnpU5mor9Y=
+		rOEY0UIlkdYO3le1clR9ej005V8=
 		</data>
 		<key>PNLiteVASTPlayerViewController.nib/runtime.nib</key>
 		<data>
-		Jtg+fzqWOuBLVNwuoj3PwHhGV3g=
-		</data>
-		<key>PrivacyInfo.xcprivacy</key>
-		<data>
-		xrL34LC08CMOSs8ztQXkhzNBEeo=
+		cVzFJyMeup7vUZOX8P9luig4zXs=
 		</data>
 		<key>VerveContentInfo.png</key>
 		<data>
 		bxjn7APhBBnsh3pKDjgfdyd193M=
 		</data>
-		<key>ar.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y52cksH0y+vnUOzQHjWOnXi8Cl4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>az.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+c+i+X52CyWQbYYxL4b18ZrDLLY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>close.png</key>
 		<data>
 		pNN2nhYenhLnluyvseTiUlFcQGo=
@@ -398,87 +364,6 @@
 		<data>
 		E9quLY4i1kux0DdonxJQOuSuS1g=
 		</data>
-		<key>cs.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VcLKFyczkmOMqsfIb+b2Ccy+Vb8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>de-AT.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			U0ysA6f+tCuwuOCIsgK4Zdv92l8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>de.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pfLexiFZRTtHpQcGBNx1+gWiYqk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>en.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			h8ASHeTs7svz0nEbOBD6Ncl23RI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oFWvT00+JW/vUVsIo0l4EoyjFA0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fi.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			59LEwhghyC1V3KYqsx0WNtgzsW8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			X1OOMPzq/9ABAgp+t1HDuCGQK3Q=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hi.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6IPuWJUBKCPyVeUVkhVatGQ3Zfc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hy.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ijG2ycrOy8j8X4rTVoDhyUV3E68=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>hybidmraidscaling.js</key>
 		<data>
 		lX9jRRR4iGncI1nH6RENPYDax7s=
@@ -487,113 +372,14 @@
 		<data>
 		MVafbJY+TJZkEBKKOX5piMlwHkM=
 		</data>
-		<key>id.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9IoMeZG7xgsapOh13JEuD2Q3AUY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>it.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MzCc0Ssef0y4d4fh+/2VMCH66tk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ja.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TrxS8FjMWdabrVUVyOjlH/JwXKQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>kk.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xNWjkEOcHEpmdrgcX6NfYLdOJgo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ko.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			J1350ioJVRuC6mR7sybZoZJTx4M=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ky.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TU1rNzCOJm+rWtnkXv76vKEqGU4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>lv.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fMGi7rjoTuKXMZHZKB5KCZAkqT8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ms.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9IoMeZG7xgsapOh13JEuD2Q3AUY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>navigation_geolocation.js</key>
 		<data>
 		g2ohUOJnGP51qHkOzx7IkjF9RpY=
 		</data>
 		<key>omsdk.js</key>
 		<data>
-		cfi/1IWzRuMbQD4YiCcTrHbF3cg=
+		gVdBfgayhdIXNlrWMEVhGqZrauQ=
 		</data>
-		<key>pl.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IoyNrSNvc7/7BPixvyoH6qzUR+M=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			t5jLtXQg0r1/jbNUiBwQj6M/gHo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ro.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AmholTqt5dFskcUjhjLTN37SUQ4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>skip.png</key>
 		<data>
 		N09N23wV6HEORYenJTRfQNDCiK8=
@@ -630,73 +416,10 @@
 		<data>
 		bezItuH/GzxZrP0kSca0EFA1/+U=
 		</data>
-		<key>sr.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OxeNsJibT8QaHNLFWOoM94xGyTw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>th.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bv1AxPSRKCjpoWeEI8r9WA2/wEc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			14DLgs+wx71cSquBi7vOkByHMDc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ur.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oAvcfMs8yoxDosaFF4xZ4EbLWJQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ur.txt</key>
 		<data>
 		YQphja0U4y7bNJpTfJTJQVe/Qjc=
 		</data>
-		<key>uz.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rKcOt/qBGwxrK1q9Qi1zXLGG4xo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>vi.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NvIK0u1ix9kcy1AHisZ9k0Mt94s=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2ofQVwsuQzXzJYF+ExzHz70bZvM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -704,33 +427,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2FlkXtyG+D0CvqinPcaiTThpGMA=
+			JCVkdoj7ISqMq3b+ojd3YwZQTeY=
 			</data>
 			<key>hash2</key>
 			<data>
-			dh0OjfTqbcIW98kE3ab9NXhMn5sV4lHmuVRBOehnRhE=
+			8n39L9NuvuIjv3jejTcR3M0XINxtPvZL0+Sz8kz/8wM=
 			</data>
 		</dict>
 		<key>Headers/HyBid.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uT4XmMQYarxtW9B0VFNrCGSmdFQ=
+			yQ9bhPuWOpUF8hNU/tgKhpUg4AE=
 			</data>
 			<key>hash2</key>
 			<data>
-			MS6pqRmcQZOxzfYmgpwo/hk5uNFumjZUrhqdveGwDSk=
+			6pep3Mgt/uLVhNKBzjSgwdGSYr74zj/C+ib8T/K9Ww8=
 			</data>
 		</dict>
 		<key>Headers/HyBidAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kUi973Sfz14hmBBjL+Mx+GxmHuw=
+			RqPprF251JT1zDkBb5xshiGB6f4=
 			</data>
 			<key>hash2</key>
 			<data>
-			wzoAZumPOQypAHoEeHhSDPqAOHikcSYQfIpmNpVktxA=
+			CnI/yFy6NPVW6rjjRjhb+KF2LKY43kJ8VipiHJIa4Y8=
 			</data>
 		</dict>
 		<key>Headers/HyBidAdCache.h</key>
@@ -792,11 +515,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V06o9t/Xon+82F2oiE9hmaybSqg=
+			NIsIG8fMF6w9tLJDx0mHwNhtKPQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vfVY+WXZzKhwAQFbWzbxqEEbsfQAcpW+iWl/XRH11yg=
+			RaT7ZlEAjsGTXAj35RkMhHKgTlN0AJ39eIB3/uQ6+DM=
 			</data>
 		</dict>
 		<key>Headers/HyBidAdSize.h</key>
@@ -843,6 +566,17 @@
 			gvh6LixsvWxDHzGK9hPt7yZTOmLARUAyq46cnnDzWMQ=
 			</data>
 		</dict>
+		<key>Headers/HyBidBannerAdView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wheEVBu0S09LkYslaZUTFNU4qpc=
+			</data>
+			<key>hash2</key>
+			<data>
+			LW4/hg0t5Eu3FsI7ncsfNfE9utZgoxL95Wm/qKoBnBw=
+			</data>
+		</dict>
 		<key>Headers/HyBidBannerPresenterFactory.h</key>
 		<dict>
 			<key>hash</key>
@@ -869,22 +603,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x8bAJDFb4aDD6VFgeYJ4Tys1cXw=
+			tpXnJvwO0xnIyQzgYOHWNOZb6wg=
 			</data>
 			<key>hash2</key>
 			<data>
-			LhsATmqUTcPWORkEikgjLuuLPopewhW3sSXEjaOLeaM=
-			</data>
-		</dict>
-		<key>Headers/HyBidCustomCTAViewDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			881hedd9PEXIgr8ThmPHMdIuHB4=
-			</data>
-			<key>hash2</key>
-			<data>
-			UezW0RH0G2cO30UQrLhJP3r0E0SH40dnIBn32mopCHU=
+			u9DL+Lt/fl3QKwXdZVe66J1Xw3i/FPHkg6587pLYRes=
 			</data>
 		</dict>
 		<key>Headers/HyBidDataModel.h</key>
@@ -913,11 +636,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g9BpA4+CxrV048eMETieVtebHQk=
+			qd3guuCj8KxNVvN8feVXWyM453Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			GzhLhoITSNQtAsfqV2/HRvA/r/qj4etVHTpxg5JDSYY=
+			lG2uJ4AsS68+Uxbgn/sSsR5myGkZU/FafDDgPoht93E=
 			</data>
 		</dict>
 		<key>Headers/HyBidHeaderBiddingUtils.h</key>
@@ -957,11 +680,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j5lSbc2raeHrX7PKfiww+KajJaA=
+			Kh72eE+2VaKJgYb92YLHBwh6n28=
 			</data>
 			<key>hash2</key>
 			<data>
-			5WcqwbHpnGOt4gUR3aMX1IPFmEbpaBrkMK8zdvJ/toU=
+			az7EROGwskvqSS96gQ0xF3N2YLzYTCo/L3xpirSGGG4=
 			</data>
 		</dict>
 		<key>Headers/HyBidInterstitialPresenterFactory.h</key>
@@ -984,6 +707,28 @@
 			<key>hash2</key>
 			<data>
 			iqzDOU53N+51Sh3LT289/5+In9GdvJ9Sobn5ds0p91Y=
+			</data>
+		</dict>
+		<key>Headers/HyBidLeaderboardAdView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			61mNe4CGcYoyonVzOD2HVYLFnXs=
+			</data>
+			<key>hash2</key>
+			<data>
+			MvQwrMoVLqa1k5sfTyBwuw4H1tBrByoUSx8W3FF43zo=
+			</data>
+		</dict>
+		<key>Headers/HyBidLeaderboardPresenterFactory.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			J84WawZyzAC+9XgmklcZA7hPrCA=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zgu7gWp+it0Aj9jXLcp94aDlfZXHgJ46wrDAgjC1PyU=
 			</data>
 		</dict>
 		<key>Headers/HyBidMRAIDServiceDelegate.h</key>
@@ -1028,6 +773,28 @@
 			<key>hash2</key>
 			<data>
 			62M48qUSk7VUtu0djJdVjbWPIhTzEpXbZ1g6UaLKvv0=
+			</data>
+		</dict>
+		<key>Headers/HyBidMRectAdView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2wFI2J1i6ipjrbdwWo13dSOK6og=
+			</data>
+			<key>hash2</key>
+			<data>
+			26GbKrioArkxspC4zcfxjxOTaSTIJr6eOuR0eA5zOis=
+			</data>
+		</dict>
+		<key>Headers/HyBidMRectPresenterFactory.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uEKUe38EZPP5MHuCZGbHQqxjgos=
+			</data>
+			<key>hash2</key>
+			<data>
+			dkVN6f4JazYwn7lNnRviYJnc6stJuSQx900xJjLdsXE=
 			</data>
 		</dict>
 		<key>Headers/HyBidNativeAd.h</key>
@@ -1085,15 +852,26 @@
 			LIju2ICOIhu2DoxlNlpiAnbF34dUyVEMfZ4kR5KfwUQ=
 			</data>
 		</dict>
+		<key>Headers/HyBidPrebidUtils.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bi4ihYorXqGZ2fGvfixObpqo+h4=
+			</data>
+			<key>hash2</key>
+			<data>
+			F1EkoJj9bYtCYBBd0Cv7kuA120KHyNsH8qm1WTVrpBs=
+			</data>
+		</dict>
 		<key>Headers/HyBidRequestParameter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zc0UYjo68/PTy2xiO3wIs8KH9kU=
+			2HDAh/cypEeo17oPHP1qb9TcxHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			fF43ErJFZkOwHwgEsKP71Gvixd1jukCvWVNX32N/0qA=
+			Z91k386cu/+oZ/frgCEc2DtJGYIDcHJE5AYe69Df+aU=
 			</data>
 		</dict>
 		<key>Headers/HyBidRewardedAdRequest.h</key>
@@ -1111,11 +889,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lDV9O0K2X0RQGUBENA53YY6jV7k=
+			b+8sTl96eNdlziAqrdKzvLDjLYU=
 			</data>
 			<key>hash2</key>
 			<data>
-			p1DmkB3v3fqJ0FimHIuf+mFmxPKY89rVjGO4Yqz/piY=
+			EshhXb3KrVpkEwYA+2PwZepGxbcA+JaW3Ty9QnJ2AsI=
 			</data>
 		</dict>
 		<key>Headers/HyBidRewardedPresenterFactory.h</key>
@@ -1127,39 +905,6 @@
 			<key>hash2</key>
 			<data>
 			rhxc/+iKJvbRF2K1RF2f4uoiPWEub8RFjHI7BR8YibI=
-			</data>
-		</dict>
-		<key>Headers/HyBidSKAdNetworkParameter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2z8KP2qa16cw8K4oxOnipi2S5OU=
-			</data>
-			<key>hash2</key>
-			<data>
-			9opytaBt5JxKCAVN7e1L6+1/yBniGqovYsOl5l/9rp4=
-			</data>
-		</dict>
-		<key>Headers/HyBidSKOverlay.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zosfmZE3qkwziQzbeNF/DGAv0TA=
-			</data>
-			<key>hash2</key>
-			<data>
-			Zm28nJNQCQNLg5M/HF8/HzJH0xBkp2+dwi/uiCtXEn8=
-			</data>
-		</dict>
-		<key>Headers/HyBidSKOverlayTimerType.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Rmli6hQKI0MogKZo0FugU4jOYis=
-			</data>
-			<key>hash2</key>
-			<data>
-			cW86PIgydpA+tYFKvH5NPQ9dWZQiNDXxp9cLJvBHjEE=
 			</data>
 		</dict>
 		<key>Headers/HyBidSignalDataProcessor.h</key>
@@ -1184,17 +929,6 @@
 			cmH13av6zIVgndzV7bI7opVjgM8FLFWkp74PlkYzZH4=
 			</data>
 		</dict>
-		<key>Headers/HyBidSkAdNetworkRequestModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PVYvVrNxB3DHrgPDEeB0cZ7hDRY=
-			</data>
-			<key>hash2</key>
-			<data>
-			NjKRkz+BZwfvpzXDSPdzRc4J2PceENE2X3zWAyAd/d8=
-			</data>
-		</dict>
 		<key>Headers/HyBidStarRatingView.h</key>
 		<dict>
 			<key>hash</key>
@@ -1206,26 +940,15 @@
 			ewU4ABO08bVKLuiKHOB7FLUp9K2TcI6UdnaMQwteH5w=
 			</data>
 		</dict>
-		<key>Headers/HyBidTimerState.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			prE+oeCistzstZtMZ/OKkkdPUYA=
-			</data>
-			<key>hash2</key>
-			<data>
-			R1iSw2O0TDsuFAPnAQck3kpcGxuk3wuCGMwtaeVLxKE=
-			</data>
-		</dict>
 		<key>Headers/HyBidUserDataManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jqTLRxt+2gTvlNlsuxQx12N/Oos=
+			brKOyL6TClyke7Gj0AdrL8vmodY=
 			</data>
 			<key>hash2</key>
 			<data>
-			O3NV6WH48NyvbE3DODBj5CVw25I3Dj8UlOLz3aMq15M=
+			6KGvMNgKS9DHD1N6+eifkGeMA4n14fnsO+4L2VoGmLk=
 			</data>
 		</dict>
 		<key>Headers/HyBidVASTIconViewTracking.h</key>
@@ -1250,17 +973,6 @@
 			tjZF9t42xboU4Tnzgdt2syRPj5aqUlAaFnZMS8Ju9U0=
 			</data>
 		</dict>
-		<key>Headers/HyBidWebBrowserUserAgentInfo.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DSCY6Wrev/Qx+FMdaPgbcbAWVvE=
-			</data>
-			<key>hash2</key>
-			<data>
-			Wn/py4XGm4DZxT/r/2aivlEkKTxyRFM3OoqCUVy8Ikg=
-			</data>
-		</dict>
 		<key>Headers/HyBidXML.h</key>
 		<dict>
 			<key>hash</key>
@@ -1283,17 +995,6 @@
 			4EyC/vr1OUZTaLYtR3Gk9umBeIB31/rQY2V3MrhzbI4=
 			</data>
 		</dict>
-		<key>Headers/PNLiteAdRequestModel.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yb2G3lkRArH93BiERyNfx+lO2hU=
-			</data>
-			<key>hash2</key>
-			<data>
-			mYp1HxQZqbo/hR1FFWMTQViUfEh81CjMVQhH6vwbjFU=
-			</data>
-		</dict>
 		<key>Headers/PNLiteLocationManager.h</key>
 		<dict>
 			<key>hash</key>
@@ -1305,180 +1006,169 @@
 			/epEgOuiOdPxgPoSMCdsX1etLeHP1Qe9mLZYlf6S9UE=
 			</data>
 		</dict>
-		<key>HyBidCustomCTAView.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QKMw2CSqbdhQ0xlHDdiJnnJY88c=
-			</data>
-			<key>hash2</key>
-			<data>
-			JVPCC6TOnS86CffzoqWQOptCA+c0btcOI4YG/0u9N1Q=
-			</data>
-		</dict>
 		<key>HyBidMRAIDCloseCardView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iuaOvD8klrx40e7br8N4C7CTb6g=
+			HGZg4bAMcxibn15v1EfblbkBj28=
 			</data>
 			<key>hash2</key>
 			<data>
-			vY4MH8JCLJTyv8BKYVa1iUcG0mhBfBlit2lRFb9uScA=
+			yjRDUUf86F+IgwwZr8nAY1gAzaxuViB5KeEUA+qj34g=
 			</data>
 		</dict>
 		<key>HyBidMRAIDCloseCardView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1T8YY8Jsu270fZWG8oorUUHiSiM=
+			pVg/2w7LGzcfPTnrYmjiR6CV13U=
 			</data>
 			<key>hash2</key>
 			<data>
-			kE6Jq2WndXw/CUq6r54l+NvRwbd0s1p24n0+5owFTps=
+			qVuiozrU4kfxRftypKMDc3WDqkHN8X5C8SE+RQ9F2Lc=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ojpHBovovoXYXktLPmiCObjMmdQ=
+			dHbmFukGciKgY9Ia7n6KMDJHou4=
 			</data>
 			<key>hash2</key>
 			<data>
-			awtkyxFezLbSOb89MOw2LPJKk8mstBPy3oeVDlEfVnM=
+			4m1L5yNtr2g95cLzObiZjfwsFr5NOxoMPSOK9WhRrFc=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qy2gh4iytCayD67gVoZIA0ASyrY=
+			BrHRLGP27oG8ZszhxCFbqASI4ew=
 			</data>
 			<key>hash2</key>
 			<data>
-			ab2AIX+dLX9pUajStgLm8OdOHYGWA4o0cTVFJ2Nf51k=
+			e9I5oAw++is5oyPhwJ93t91oiC0qUb+SBm0w8dLmVcI=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Uy2dB69EjK28x6DfsAcL6F4l7G8=
+			kcU0Bl5UjHcwoRpQvzoKwQzO7bs=
 			</data>
 			<key>hash2</key>
 			<data>
-			bUtO6wWvIiHN3YWXsrBnXc3zZShBSFVphlkvoUchqro=
+			IPboKH8SRjJoCgF4Exld0YvTsLKAuh+h1eJ9TXuGtAU=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BoS6LuUYxgaHIXLu+ziwXRgb5pc=
+			t30+MOSGhNBKVCaAyKp/Dwbg3zk=
 			</data>
 			<key>hash2</key>
 			<data>
-			s+xFrBhwyAoGnVxYq8Bo7R1NIAUw3yHrHLxVTWqdLog=
+			6Tq8F/DQ6v7YIruUFZD06zEmtdyD7KFHW4H3+duOcW8=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pDOajifAf6U+d/av0wkeHg5O9mQ=
+			f8297/Ma97eqJlj3vo+8Xd8wgoQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			wmyCXvWhzOptu9RUC8v7c/ciIWZGDPdn4b0lwkbDEoU=
+			Y3QUQfmPA6WfXnxCIPbtzGLuA1zlY0uLrcdBhXxig8M=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BoS6LuUYxgaHIXLu+ziwXRgb5pc=
+			t30+MOSGhNBKVCaAyKp/Dwbg3zk=
 			</data>
 			<key>hash2</key>
 			<data>
-			s+xFrBhwyAoGnVxYq8Bo7R1NIAUw3yHrHLxVTWqdLog=
+			6Tq8F/DQ6v7YIruUFZD06zEmtdyD7KFHW4H3+duOcW8=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6IBQSt+/4CDrq7EkipTxoaZVQm4=
+			dQnPDErvRXQ15+gJAyo1ngRx5ag=
 			</data>
 			<key>hash2</key>
 			<data>
-			YMVExRgzmfFiwu9P3lxZeWuhelbKb+Fy9CqlkzcntOU=
+			42XjpFkYLq05l+zyMQDhElaOSR1JNaclA/9kQMrfA9Y=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Uy2dB69EjK28x6DfsAcL6F4l7G8=
+			kcU0Bl5UjHcwoRpQvzoKwQzO7bs=
 			</data>
 			<key>hash2</key>
 			<data>
-			bUtO6wWvIiHN3YWXsrBnXc3zZShBSFVphlkvoUchqro=
+			IPboKH8SRjJoCgF4Exld0YvTsLKAuh+h1eJ9TXuGtAU=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XAXNGJuSUSwPDdWSByRL4enYyAc=
+			RC7iRuDt1buO0tTWt121EaHVQDs=
 			</data>
 			<key>hash2</key>
 			<data>
-			kAO/OTLIT1tl0NF8X/z6zXmEAAwqT+VGh7kATZQdwaA=
+			8aOCHnrGjXFCzOGB0180kO+RpGpkktD+/EU0My0lm7k=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Dh2KBGH3v6qnAAaGscBWinFEVBI=
+			O/WU3XC1gSLG42HG5tdi3Ujlr2c=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hn7cayULrq2gmqAes7My/OKM89ASEeZc/GYjVVtA9FA=
+			qX3OE23tegmKr2V8i8r5ubZgdmmCrE+XtlxBhx3Hrnw=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XAXNGJuSUSwPDdWSByRL4enYyAc=
+			RC7iRuDt1buO0tTWt121EaHVQDs=
 			</data>
 			<key>hash2</key>
 			<data>
-			kAO/OTLIT1tl0NF8X/z6zXmEAAwqT+VGh7kATZQdwaA=
+			8aOCHnrGjXFCzOGB0180kO+RpGpkktD+/EU0My0lm7k=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ic7hrMIkiyL1tWOfdy7eJLHi4Dw=
+			w8X39mv07lWXGdgr4zr18CHDdKM=
 			</data>
 			<key>hash2</key>
 			<data>
-			HNvPbF1bGx5YB/947f/g23eVzJ2jp606sZR799ZZZ3Q=
+			blgVnqVvKLAECRWTvBOo+ly3dva5HNOlLG5jE2UqTvE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M5T8L7cjulYLRmpiXG36tak9w/c=
+			IVMLAZBnw6nj8qw41gGvHBQb+KU=
 			</data>
 			<key>hash2</key>
 			<data>
-			LKyVwv5DB6BJkZ4+IfpHzzZY/BMcAUMc8fWEEfdy4Ns=
+			BdIxqL+aoVXOl7fT6L1j2O/oCjI+ptYVwaXtcSF4Q1o=
 			</data>
 		</dict>
 		<key>PNLiteExternalLink.png</key>
@@ -1595,88 +1285,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NDnD4PBAX/RmbCYSkxsjEDTWhbI=
+			SGatak1p4g6oxmkSdrNbS9k0vbY=
 			</data>
 			<key>hash2</key>
 			<data>
-			seiAWHoXwSeJxea6xTAJbACe88/T6bOxixEyylawKps=
+			EqmRTmLP5jQcVfazs2Rm07Y73LQx0dOLOsZqMDoFEhg=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerFullScreenViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uLwV47Y4l15qJXMvJMFGXB6MfkE=
+			3awETMvO3vGG3XWdXNzOBPZs190=
 			</data>
 			<key>hash2</key>
 			<data>
-			CQT6KBsN/1KC6nGPLRFc5rTNBT+XNmMMmVaJwPlPVwY=
+			58zlR/LLDGh2Cy+agxA32Y424ylyGfEUr9Kaeq5ZiDo=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerInterstitialViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MSTsWLDHJZQ4R+iI16FaodEwhzY=
+			iDguDwvN0Efof7+NUuR4n7i4Veg=
 			</data>
 			<key>hash2</key>
 			<data>
-			56IElohqbo7RKgTJUvWG6XPGl/gMMhVPx3SUbaB174Q=
+			KbO29kZPWL7WnGU22iHYmNpOIPgEguaP6kILMtjxYCg=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerRewardedViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+WKlbBm2xOraMmN7PKiOZJBMIqQ=
+			Irk5uXGlfiRyR+I8pXVsnpdXBZ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZFK+/vSDA1ySSzBjAOPsSFxxQAwemx6/6Un5mq/pU8Q=
+			1DY8e3pcSIcwcYASJLxBpaXsmLZBZ50i4Y6u28hNpY8=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerRewardedViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dnW8W2A1h4NSIECK6KMwIVh8eqA=
+			o8k512VueRQZ2mfTiFcxbF1gUJY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3U3oVYeMsX3R1VKb5HUmXjby7WyBF2Yd719K0A6xtbg=
+			VGMcuF7zqnP7jwXGm8NI78yuXm6v+3AK5FaMhNHGPrI=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			odtWtqMt4t17K5hc6LnpU5mor9Y=
+			rOEY0UIlkdYO3le1clR9ej005V8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fz6aEL0PzHA/TAnTCLLgLDa4x9KueWil1pPSzUyiCEI=
+			w3r5Eqek69DAhCKM/QcHIWopKGEw3T8zRJ0fS3EOLOI=
 			</data>
 		</dict>
 		<key>PNLiteVASTPlayerViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jtg+fzqWOuBLVNwuoj3PwHhGV3g=
+			cVzFJyMeup7vUZOX8P9luig4zXs=
 			</data>
 			<key>hash2</key>
 			<data>
-			+vKpP6WcMCNneiiVtpj7VdyL/8CN8y2CvEpVjIweahI=
-			</data>
-		</dict>
-		<key>PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xrL34LC08CMOSs8ztQXkhzNBEeo=
-			</data>
-			<key>hash2</key>
-			<data>
-			LdtF9B0HsMylg0dME0GmT2qCA2+8j8chg1hRQYeRQSg=
+			Aki6MGlbXTYElLCDj7/eWo28aoYZuh/Cy0Fj5kNjWv4=
 			</data>
 		</dict>
 		<key>VerveContentInfo.png</key>
@@ -1689,32 +1368,6 @@
 			<data>
 			mIM87JwxqEbMIIVpKS0JL2mLb20V71RycuDpsoflZPU=
 			</data>
-		</dict>
-		<key>ar.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y52cksH0y+vnUOzQHjWOnXi8Cl4=
-			</data>
-			<key>hash2</key>
-			<data>
-			N4xOKZQyZ+VLOSMLlvrNwrjc3HeEN7rsQtCCTalrxiU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>az.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+c+i+X52CyWQbYYxL4b18ZrDLLY=
-			</data>
-			<key>hash2</key>
-			<data>
-			hMpMnfSBT0ulsPDkZnx0IasQVWWi/nH8zJxWoQBkebM=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>close.png</key>
 		<dict>
@@ -1749,123 +1402,6 @@
 			atomimWDpXwGCQuHzzfL0foIiORxT4GVRHrNVda4pK0=
 			</data>
 		</dict>
-		<key>cs.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VcLKFyczkmOMqsfIb+b2Ccy+Vb8=
-			</data>
-			<key>hash2</key>
-			<data>
-			p8hUgZ1KLlOyGFqAAQUPXkmRbJr4PTAkODgnOgPhv8E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>de-AT.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			U0ysA6f+tCuwuOCIsgK4Zdv92l8=
-			</data>
-			<key>hash2</key>
-			<data>
-			h1vAj3nXflu2RVg8DnOtSjvhMH0n5PF91mKuuJ21NwM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>de.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pfLexiFZRTtHpQcGBNx1+gWiYqk=
-			</data>
-			<key>hash2</key>
-			<data>
-			AvZJg+ftEEUSXBh8rXUxwqVRRjA6Rxvwm4wRMGMK9/k=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>en.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			h8ASHeTs7svz0nEbOBD6Ncl23RI=
-			</data>
-			<key>hash2</key>
-			<data>
-			y4bJcArznylx3l7oyZTnIiNNdEsMc6Gufg4VHNZKrS8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>es.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oFWvT00+JW/vUVsIo0l4EoyjFA0=
-			</data>
-			<key>hash2</key>
-			<data>
-			O2T5QQsgfZFU4v7vMfkml5YWay+R+iEVFjVG0Bm8Lfk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fi.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			59LEwhghyC1V3KYqsx0WNtgzsW8=
-			</data>
-			<key>hash2</key>
-			<data>
-			5Un5NzAHHa8nugoKfJyvvRaXQhqrAC7WviSflAZKRYk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			X1OOMPzq/9ABAgp+t1HDuCGQK3Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			7Vqkh7zEB/74sylXnjS9wzQiJ0Wi9Ibl/00fXGaIAPg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hi.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6IPuWJUBKCPyVeUVkhVatGQ3Zfc=
-			</data>
-			<key>hash2</key>
-			<data>
-			SVYxnDCtN0WrijhPaMPX81TNXQdOauz8R7szGPGvbks=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>hy.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ijG2ycrOy8j8X4rTVoDhyUV3E68=
-			</data>
-			<key>hash2</key>
-			<data>
-			GTJfZZYkIdepqftEJ0CxXF7UM9nFystQ/3qOy6PbG3k=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>hybidmraidscaling.js</key>
 		<dict>
 			<key>hash</key>
@@ -1888,110 +1424,6 @@
 			+VGdBegK72Grw9nX6ohGG4hJVSDqwP241t/dJ+sXKxY=
 			</data>
 		</dict>
-		<key>id.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9IoMeZG7xgsapOh13JEuD2Q3AUY=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZkpvH3wYyOiXFhE3kcZGaINnoralsFRrsP1zvdU5MGw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>it.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MzCc0Ssef0y4d4fh+/2VMCH66tk=
-			</data>
-			<key>hash2</key>
-			<data>
-			iRKF8DjN3WGQe8Od8liFFjclYSer8ainev+DRop5Nl4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ja.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TrxS8FjMWdabrVUVyOjlH/JwXKQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			qTigSdWkbyXToT0+V3lvnolsaFZAOoJYyVGYMexiD+c=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>kk.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xNWjkEOcHEpmdrgcX6NfYLdOJgo=
-			</data>
-			<key>hash2</key>
-			<data>
-			24P7SzBFImzDO9moJunXLtTNM4mJca77ADT29vCyB/s=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ko.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			J1350ioJVRuC6mR7sybZoZJTx4M=
-			</data>
-			<key>hash2</key>
-			<data>
-			NeYzxV4FbBEjfLs4Hj/OCi+tLeJYzgyNmf2BBUQzuk4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ky.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TU1rNzCOJm+rWtnkXv76vKEqGU4=
-			</data>
-			<key>hash2</key>
-			<data>
-			xJBSbu2Vw3RZKWjlQRZb+FF8ZXxlRCdZHeaFQ+NOwkA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>lv.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fMGi7rjoTuKXMZHZKB5KCZAkqT8=
-			</data>
-			<key>hash2</key>
-			<data>
-			w4/YXMonN1qLJznAHKYFckO2lu9mau/mc2kp6kvwIJo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ms.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9IoMeZG7xgsapOh13JEuD2Q3AUY=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZkpvH3wYyOiXFhE3kcZGaINnoralsFRrsP1zvdU5MGw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>navigation_geolocation.js</key>
 		<dict>
 			<key>hash</key>
@@ -2007,51 +1439,12 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cfi/1IWzRuMbQD4YiCcTrHbF3cg=
+			gVdBfgayhdIXNlrWMEVhGqZrauQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			/Thgrp6/+EbXYy3MzV1bQBNsOWK3HLe9zw1aHdt5YlY=
+			MEeINpCJilhc9VyJvgnTd/Hn1U36FkoaDJK9D/hiMI8=
 			</data>
-		</dict>
-		<key>pl.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IoyNrSNvc7/7BPixvyoH6qzUR+M=
-			</data>
-			<key>hash2</key>
-			<data>
-			2INNBk06tKSleFvvKE4+AfWE4CBdTdLTAceZMrAv4S4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			t5jLtXQg0r1/jbNUiBwQj6M/gHo=
-			</data>
-			<key>hash2</key>
-			<data>
-			FLVv9DmIKUslcOkVinTEt7lgsgkdbDYYHFiM/M8xP40=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ro.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			AmholTqt5dFskcUjhjLTN37SUQ4=
-			</data>
-			<key>hash2</key>
-			<data>
-			Zt3nh+ZCgWto2h6NxJCGujYA53OdwI6vjB5RI69xsH0=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>skip.png</key>
 		<dict>
@@ -2152,58 +1545,6 @@
 			cBcf95Dqtk0zTqv0Ok7///PLC9znNyaG+v3wm+gv85w=
 			</data>
 		</dict>
-		<key>sr.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OxeNsJibT8QaHNLFWOoM94xGyTw=
-			</data>
-			<key>hash2</key>
-			<data>
-			I0C2mJ1buLK3mT+/TsTFdIKNgK/9N0EES5Uw2+fJ5vU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>th.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bv1AxPSRKCjpoWeEI8r9WA2/wEc=
-			</data>
-			<key>hash2</key>
-			<data>
-			Z+ixRakT3+GSY4mvYSqmkCnPsyGMMtg0WU0pm9Kj5SQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>tr.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			14DLgs+wx71cSquBi7vOkByHMDc=
-			</data>
-			<key>hash2</key>
-			<data>
-			gvIxWzLra+sc1KUDIrMUSheL4yPpMymLIRLVdg4MgF8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>ur.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			oAvcfMs8yoxDosaFF4xZ4EbLWJQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			3jD/2faqaNfvXAvOhFYwIX454kmIXz8AQx4pB4qgu5Y=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>ur.txt</key>
 		<dict>
 			<key>hash</key>
@@ -2214,45 +1555,6 @@
 			<data>
 			ERG7zoKfX7gD/74HhpY9O5JjBDuEdQmY+8832xmKCMI=
 			</data>
-		</dict>
-		<key>uz.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rKcOt/qBGwxrK1q9Qi1zXLGG4xo=
-			</data>
-			<key>hash2</key>
-			<data>
-			A6VALcy6YncKIvfgEU1oawWxt5P49zl5ISs891PiSnQ=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>vi.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NvIK0u1ix9kcy1AHisZ9k0Mt94s=
-			</data>
-			<key>hash2</key>
-			<data>
-			WEksShrXfbIw6W1iEu/fxtYvDiYr8w94BpjO7BPWICI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh.lproj/HyBidLocalizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2ofQVwsuQzXzJYF+ExzHz70bZvM=
-			</data>
-			<key>hash2</key>
-			<data>
-			Bfdhhk0v4HhDn13+QB8MC6Wh6jF8ecp0n1EUXTsPOv4=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
