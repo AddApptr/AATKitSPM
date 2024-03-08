@@ -36,6 +36,7 @@ public protocol AATTargetingInformationProtocol : AnyObject {
   func getValuesAsString(delimiter: Swift.String) -> Swift.String?
   func getKeywordTargetingMap() -> [Swift.String : [Swift.String]]?
   func getContentUrl() -> Swift.String?
+  func getMultiContentUrls() -> [Swift.String]?
 }
 extension AATKit.AATTargetingInformationProtocol {
   public func hasKeywordTargeting() -> Swift.Bool
@@ -240,6 +241,7 @@ extension AATKit.AATAdNetwork : Swift.CustomStringConvertible {
   @objc var collapsableBannerOptions: AATKit.AATCollapsibleBannerOptions? { get set }
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   @objc func startAutoReload()
   @objc func stopAutoReload()
   @objc func hasAd() -> Swift.Bool
@@ -319,6 +321,7 @@ public protocol AATDatonomyDriver {
   func show() -> Swift.Bool
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   @objc func isFrequencyCapReached() -> Swift.Bool
 }
 @objc public enum AATBannerSize : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
@@ -564,6 +567,7 @@ extension AATKit.AATBannerCacheConfiguration : Foundation.NSCopying {
   @objc func hasAd() -> Swift.Bool
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc var multiContentTargetingUrls: [Swift.String]? { get set }
 }
 @objc public class AATAppNexusOptions : ObjectiveC.NSObject {
   final public let autoCloseTime: Swift.Int?
@@ -644,6 +648,7 @@ public protocol AATPubNativeDriverProtocol {
   @objc var impressionDelegate: (any AATKit.AATImpressionDelegate)? { get set }
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   #if compiler(>=5.3) && $AsyncAwait
   @objc func reload() async -> (any AATKit.AATNativeAdData)?
   #endif
@@ -683,6 +688,7 @@ extension AATKit.AATAdType : Swift.Hashable {
   @objc func getNativeAd() -> (any AATKit.AATNativeAdData)?
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   @objc func isFrequencyCapReached() -> Swift.Bool
 }
 @objc public protocol AATBannerCacheDelegate {
@@ -731,6 +737,7 @@ extension AATKit.AATAdType : Swift.Hashable {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AATBannerRequest : ObjectiveC.NSObject {
   @objc public var targetingInformation: [Swift.String : [Swift.String]]?
   @objc public var contentTargetingUrl: Swift.String?
+  @objc public var multiContentTargetingUrls: [Swift.String]?
   @objc weak public var delegate: (any AATKit.AATBannerRequestDelegate)?
   @objc public init(delegate: (any AATKit.AATBannerRequestDelegate)?)
   public func setRequestBannerSizes(sizes: Swift.Set<AATKit.AATBannerSize>)
@@ -757,6 +764,7 @@ extension AATKit.AATAdType : Swift.Hashable {
   @objc func setBannerAlign(alignment: AATKit.AATBannerAlign)
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc var multiContentTargetingUrls: [Swift.String]? { get set }
 }
 public protocol AATAdDriverLoggerProtocol {
 }
@@ -772,6 +780,7 @@ extension AATKit.AATAdDriverLoggerProtocol {
   @objc func CMPFailedToShow(with error: Swift.String)
   @objc func CMPFailedToLoad(with error: Swift.String)
   @objc func CMPNeedsUI()
+  @objc func didShowCMP()
 }
 @objc public protocol AATBannerCache {
   @objc var statisticsDelegate: (any AATKit.AATStatisticsDelegate)? { get set }
@@ -890,6 +899,7 @@ public protocol AATBannerDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate
   @objc var collapsableBannerOptions: AATKit.AATCollapsibleBannerOptions? { get set }
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   @objc func startAutoReload()
   @objc func stopAutoReload()
 }
@@ -955,11 +965,13 @@ public protocol AATApplovinMaxDriverProtocol {
 @_hasMissingDesignatedInitializers @objc public class AATManagedConsent : AATKit.AATConsentImplementation {
   @objc public init?(cmp: (any AATKit.AATCMPProtocol)?, delegate: any AATKit.AATManagedConsentDelegate, showIfNeededSetting: AATKit.AATShowIfNeededSetting = .serverSideControl)
   @objc public func showIfNeeded(_ viewController: UIKit.UIViewController)
+  @objc public func showIfNeededOrRejected(daysAgo: Swift.Int, viewController: UIKit.UIViewController)
   @objc public func editConsent(_ viewController: UIKit.UIViewController)
   @objc public func reload(_ viewController: UIKit.UIViewController)
   @objc deinit
 }
 extension AATKit.AATManagedConsent : AATKit.AATCMPDelegate {
+  @objc dynamic public func didShowCMP()
   @objc dynamic public func consentDidUpdate(_ state: AATKit.AATManagedConsentState)
   @objc dynamic public func CMPFailedToShow(with error: Swift.String)
   @objc dynamic public func CMPFailedToLoad(with error: Swift.String)
@@ -991,6 +1003,7 @@ public protocol AATGraviteRTBDriverProtocol {
   func show() -> Swift.Bool
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   @objc func isFrequencyCapReached() -> Swift.Bool
 }
 public protocol AATTappxDriverProtocol {
@@ -1140,6 +1153,7 @@ public protocol AATInMobiDriverProtocol {
   func show() -> Swift.Bool
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
+  @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   @objc func isFrequencyCapReached() -> Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers public class AATLocationUtils : ObjectiveC.NSObject {

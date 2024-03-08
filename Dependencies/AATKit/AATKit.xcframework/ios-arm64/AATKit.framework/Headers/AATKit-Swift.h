@@ -504,6 +504,8 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATAppOpenAdPlacement_")
 /// Sets the content targeting url for the placement.
 /// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// note: not all ad-networks supports multiple urls
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
 /// Checks if the frequency cap has been reached.
 ///
 /// returns:
@@ -574,6 +576,8 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATAsyncNativeAdPlacement_") SWIFT_AVAILABILITY(ios
 @property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
 @property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable targetingInfo;
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// note: not all ad-networks supports multiple urls
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
 - (void)reloadWithCompletionHandler:(void (^ _Nonnull)(id <AATNativeAdData> _Nullable))completionHandler;
 - (NSInteger)getNumberOfCurrentlyLoadingNativeAds SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)hasAd SWIFT_WARN_UNUSED_RESULT;
@@ -606,6 +610,9 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATAutoLoadBannerPlacement_")
 /// Sets the content targeting url for the placement.
 /// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
+/// note: not all ad-networks supports multiple urls
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
 /// Start the automatic reloading of the placement
 - (void)startAutoReload;
 /// Stop the automatic reloading of the placement
@@ -653,6 +660,8 @@ SWIFT_PROTOCOL("_TtP6AATKit35AATAutoLoadMultiSizeBannerPlacement_")
 /// Sets the content targeting url for the placement.
 /// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// note: not all ad-networks supports multiple urls
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
 /// Start the automatic reloading of the placement
 - (void)startAutoReload;
 /// Stop the automatic reloading of the placement
@@ -850,6 +859,7 @@ SWIFT_CLASS("_TtC6AATKit16AATBannerRequest")
 @interface AATBannerRequest : NSObject
 @property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable targetingInformation;
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
 @property (nonatomic, weak) id <AATBannerRequestDelegate> _Nullable delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -909,6 +919,7 @@ SWIFT_PROTOCOL("_TtP6AATKit14AATCMPDelegate_")
 - (void)CMPFailedToShowWith:(NSString * _Nonnull)error;
 - (void)CMPFailedToLoadWith:(NSString * _Nonnull)error;
 - (void)CMPNeedsUI;
+- (void)didShowCMP;
 @end
 
 @class UIViewController;
@@ -1158,6 +1169,8 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 /// Sets the content targeting url for the placement.
 /// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// note: not all ad-networks supports multiple urls
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
 /// Checks if the frequency cap has been reached.
 ///
 /// returns:
@@ -1314,6 +1327,12 @@ SWIFT_CLASS("_TtC6AATKit17AATManagedConsent")
 /// \param viewController a view controller instance that will be used to present the CMP
 ///
 - (void)showIfNeeded:(UIViewController * _Nonnull)viewController;
+/// Re-show the CMP if it is needed to be shown OR the user has rejected the consent
+/// \param viewController a view controller instance that will be used to present the CMP
+///
+/// \param daysAgo Minimum number of days that should be passed before re-showing the CMP
+///
+- (void)showIfNeededOrRejectedWithDaysAgo:(NSInteger)daysAgo viewController:(UIViewController * _Nonnull)viewController;
 /// Presents the consent screen, allowing the user to change consent settings
 /// \param viewController a view controller instance that will be used to present the CMP
 ///
@@ -1331,6 +1350,7 @@ SWIFT_CLASS("_TtC6AATKit17AATManagedConsent")
 
 
 @interface AATManagedConsent (SWIFT_EXTENSION(AATKit)) <AATCMPDelegate>
+- (void)didShowCMP;
 - (void)consentDidUpdate:(enum AATManagedConsentState)state;
 - (void)CMPFailedToShowWith:(NSString * _Nonnull)error;
 - (void)CMPFailedToLoadWith:(NSString * _Nonnull)error;
@@ -1430,6 +1450,8 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_")
 /// Sets the content targeting url for the placement.
 /// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// note: not all ad-networks supports multiple urls
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
 @end
 
 
@@ -1517,6 +1539,8 @@ SWIFT_PROTOCOL("_TtP6AATKit20AATNativeAdPlacement_")
 /// Sets the content targeting url for the placement.
 /// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// note: not all ad-networks supports multiple urls
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
 /// Checks if the frequency cap has been reached.
 ///
 /// returns:
@@ -1641,6 +1665,8 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
 /// Sets the content targeting url for the placement.
 /// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// note: not all ad-networks supports multiple urls
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
 /// Checks if the frequency cap has been reached.
 ///
 /// returns:
@@ -1887,6 +1913,10 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// \param publisherProvidedId Publisher Provided Id
 ///
 + (void)setPublisherProvidedId:(NSString * _Nonnull)publisherProvidedId;
+/// Checks if consent is opt-in or not
+///
+/// returns:
+/// True if consent is opt-in
 + (BOOL)isConsentOptIn SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -2030,6 +2060,8 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_")
 /// Sets the content targeting url for the placement.
 /// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// note: not all ad-networks supports multiple urls
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
 @end
 
 
