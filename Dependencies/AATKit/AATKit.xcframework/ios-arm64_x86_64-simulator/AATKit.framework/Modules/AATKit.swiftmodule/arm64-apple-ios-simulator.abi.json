@@ -53661,35 +53661,49 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/PlacementsConfigsMatching\/AATPlacementConfigPicker.swift",
       "kind": "IntegerLiteral",
-      "offset": 861,
+      "offset": 853,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/PlacementsConfigsMatching\/AATPlacementConfigPicker.swift",
+      "kind": "StringLiteral",
+      "offset": 907,
+      "length": 75,
+      "value": "\"total share is zero, will ignore share values and select a random config.\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/PlacementsConfigsMatching\/AATPlacementConfigPicker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1080,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/PlacementsConfigsMatching\/AATPlacementConfigPicker.swift",
       "kind": "IntegerLiteral",
-      "offset": 903,
+      "offset": 1122,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/PlacementsConfigsMatching\/AATPlacementConfigPicker.swift",
       "kind": "StringLiteral",
-      "offset": 1187,
+      "offset": 1406,
       "length": 88,
       "value": "\"Failed to select config from list: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/PlacementsConfigsMatching\/AATPlacementConfigPicker.swift",
       "kind": "StringLiteral",
-      "offset": 1242,
+      "offset": 1461,
       "length": 3,
       "value": "\" for placement: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/PlacementsConfigsMatching\/AATPlacementConfigPicker.swift",
       "kind": "StringLiteral",
-      "offset": 1274,
+      "offset": 1493,
       "length": 2,
       "value": "\"\""
     },
@@ -63064,7 +63078,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 7,
-      "value": "\"3.7.2\""
+      "value": "\"3.7.3\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
@@ -63581,321 +63595,482 @@
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
       "offset": 1785,
-      "length": 46,
-      "value": "\"networkStatisticsMap \""
+      "length": 42,
+      "value": "\"Placement: \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 1830,
+      "offset": 1823,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 1881,
-      "length": 18,
-      "value": "\"config \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
-      "kind": "StringLiteral",
-      "offset": 1898,
+      "offset": 1826,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 1949,
-      "length": 31,
-      "value": "\"networkStats: \""
+      "offset": 1877,
+      "length": 52,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 1979,
+      "offset": 1928,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2085,
+      "length": 24,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2108,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2272,
+      "length": 411,
+      "value": "\"AATAdNetworkStatistics: \n\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2377,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2381,
+      "length": 1,
+      "value": "\" - \""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2435,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2438,
+      "length": 1,
+      "value": "\":\n numClicks:\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2477,
+      "length": 1,
+      "value": "\", numRequests:\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2518,
+      "length": 1,
+      "value": "\", numResponses:\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2561,
+      "length": 1,
+      "value": "\", numImpressions:\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2608,
+      "length": 1,
+      "value": "\", numViewableImpressions:\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2671,
+      "length": 329,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2862,
+      "length": 5,
+      "value": "\"[:]\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 2902,
+      "length": 25,
+      "value": "\"NetworkStatisticsMap:\n\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 3006,
+      "length": 322,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 3070,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 3073,
+      "length": 1,
+      "value": "\" - \""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 3109,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 3112,
+      "length": 1,
+      "value": "\":\n numClicks:\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 3144,
+      "length": 1,
+      "value": "\", numRequests:\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 3178,
+      "length": 1,
+      "value": "\", numResponses:\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 3214,
+      "length": 1,
+      "value": "\", numImpressions:\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 3254,
+      "length": 1,
+      "value": "\", numViewableImpressions:\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
+      "kind": "StringLiteral",
+      "offset": 3310,
+      "length": 1,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 2310,
+      "offset": 3640,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 2448,
+      "offset": 3778,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 2854,
+      "offset": 4184,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 3009,
+      "offset": 4339,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 3142,
+      "offset": 4472,
       "length": 120,
       "value": "\"Calling AATStatisticsDelegate: AATKitCountedImpression(\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 3241,
+      "offset": 4571,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 3260,
+      "offset": 4590,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 3476,
+      "offset": 4806,
       "length": 130,
       "value": "\"Calling AATStatisticsDelegate: AATKitCountedDirectDealImpression(\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 3585,
+      "offset": 4915,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 3604,
+      "offset": 4934,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 4169,
+      "offset": 5499,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 4551,
+      "offset": 5881,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 4662,
+      "offset": 5992,
       "length": 127,
       "value": "\"Calling AATStatisticsDelegate: AATKitCountedNetworkImpression(\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 4768,
+      "offset": 6098,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 4787,
+      "offset": 6117,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 5351,
+      "offset": 6681,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 5734,
+      "offset": 7064,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 5846,
+      "offset": 7176,
       "length": 121,
       "value": "\"Calling AATStatisticsDelegate: AATKitCountedVImpression(\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 5946,
+      "offset": 7276,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 5965,
+      "offset": 7295,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 6534,
+      "offset": 7864,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 6698,
+      "offset": 8028,
       "length": 119,
       "value": "\"Calling AATStatisticsDelegate: AATKitCountedRequest(\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 6794,
+      "offset": 8124,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 6815,
+      "offset": 8145,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 7378,
+      "offset": 8708,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 7543,
+      "offset": 8873,
       "length": 120,
       "value": "\"Calling AATStatisticsDelegate: AATKitCountedResponse(\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 7640,
+      "offset": 8970,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 7661,
+      "offset": 8991,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 8214,
+      "offset": 9544,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 8605,
+      "offset": 9935,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 8704,
+      "offset": 10034,
       "length": 115,
       "value": "\"Calling AATStatisticsDelegate: AATKitCountedClick(\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 8798,
+      "offset": 10128,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "StringLiteral",
-      "offset": 8817,
+      "offset": 10147,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 9327,
+      "offset": 10657,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 9360,
+      "offset": 10690,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 9471,
+      "offset": 10801,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 9772,
+      "offset": 11102,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 10184,
+      "offset": 11514,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 10488,
+      "offset": 11818,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementStats.swift",
       "kind": "IntegerLiteral",
-      "offset": 10700,
+      "offset": 12030,
       "length": 1,
       "value": "0"
     },
