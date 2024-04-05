@@ -1,7 +1,7 @@
 framework module RTBSDK {
   umbrella header "RTBSDK.h"
-  export *
 
+  export *
   module * { export * }
 }
 
