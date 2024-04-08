@@ -16,6 +16,7 @@ let package = Package(
         .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
         .library(name: "AATKit-AppLovinMax", targets: ["AATKit-AppLovinMax"]),
+        .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
         .library(name: "AATKit-Bluestack", targets: ["AATKit-Bluestack"]),
         .library(name: "AATKit-Criteo", targets: ["AATKit-Criteo"]),
@@ -26,7 +27,6 @@ let package = Package(
         .library(name: "AATKit-YOC", targets: ["AATKit-YOC"]),
         .library(name: "AATKit-InMobi", targets: ["AATKit-InMobi"]),
         .library(name: "AATKit-IronSource", targets: ["AATKit-IronSource"]),
-        .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Prebid", targets: ["AATKit-Prebid"]),
         .library(name: "AATKit-Teads", targets: ["AATKit-Teads"]),
@@ -46,6 +46,7 @@ let package = Package(
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
                                                    "AATKit-AppLovin",
                                                    "AATKit-AppLovinMax",
+                                                   "AATKit-AppNexus",
                                                    "AATKit-Amazon",
                                                    "AATKit-Bluestack",
                                                    "AATKit-Criteo",
@@ -58,7 +59,6 @@ let package = Package(
                                                    "AATKit-YOC",
                                                    "AATKit-InMobi",
                                                    "AATKit-IronSource",
-                                                   "AATKit-AppNexus",
                                                    "AATKit-OgurySdk",
                                                    "AATKit-PubNative",
                                                    "AATKit-Prebid",
@@ -72,7 +72,8 @@ let package = Package(
     dependencies: [
         // AdNetworks supporting SPM
         .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("11.11.4")),
-        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("10.12.0")),
+        .package(name: "AppNexusSDK", url: "https://github.com/appnexus/mobile-sdk-ios", .exact("8.10.2")),
+        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("10.10.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
         .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.0.27"))
@@ -104,7 +105,7 @@ let package = Package(
                     path: "./Sources/AppLovinMaxSources"),
 
             .target(name:"AATKit-AppNexus",
-                    dependencies: ["AppNexusSDK", "AATAppNexusAdapter", "OMSDK_Microsoft"],
+                    dependencies: ["AppNexusSDK", "AATAppNexusAdapter"],
                     path: "./Sources/AppNexusSources"),
 
             .target(name:"AATKit-Amazon",
@@ -272,10 +273,6 @@ let package = Package(
 
         // Datonomy
         .binaryTarget(name: "DatonomyKit", path: "./Dependencies/Datonomy/DatonomyKit.xcframework"),
-
-        // AppNexusSDK
-        .binaryTarget(name: "AppNexusSDK", path: "./Dependencies/AppNexusSDK/AppNexusSDK.xcframework"),
-        .binaryTarget(name: "OMSDK_Microsoft", path: "./Dependencies/AppNexusSDK/OMSDK_Microsoft.xcframework"),
 
         // Mintegral
         .binaryTarget(name: "MTGSDK", path:"./Dependencies/Mintegral/MTGSDK.xcframework"),

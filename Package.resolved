@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "AppNexusSDK",
+        "repositoryURL": "https://github.com/appnexus/mobile-sdk-ios",
+        "state": {
+          "branch": null,
+          "revision": "efb4463ea786d5e0d580fab7bef4467596e63d41",
+          "version": "8.10.2"
+        }
+      },
+      {
         "package": "nanopb",
         "repositoryURL": "https://github.com/firebase/nanopb.git",
         "state": {
@@ -51,8 +60,8 @@
         "repositoryURL": "https://github.com/googleads/swift-package-manager-google-mobile-ads",
         "state": {
           "branch": null,
-          "revision": "2f5f0ad9aa6e7c2084f95b29ab882330569c5cdc",
-          "version": "10.12.0"
+          "revision": "ead08bff32a4ee6599070d656770cedc310f434a",
+          "version": "10.10.0"
         }
       },
       {
