@@ -62922,77 +62922,84 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1491,
+      "offset": 1504,
       "length": 15,
       "value": "\"Unknown class\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2253,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2238,
+      "offset": 2352,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 2533,
+      "offset": 2647,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2652,
+      "offset": 2766,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 2746,
+      "offset": 2860,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2841,
+      "offset": 2955,
       "length": 3,
       "value": "\"&\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 2926,
+      "offset": 3040,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3080,
+      "offset": 3194,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 3249,
+      "offset": 3363,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "StringLiteral",
-      "offset": 3293,
+      "offset": 3407,
       "length": 4,
       "value": "\"%@\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATLogger.swift",
       "kind": "StringLiteral",
-      "offset": 3510,
+      "offset": 3624,
       "length": 4,
       "value": "\"%@\""
     },
@@ -63078,7 +63085,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 7,
-      "value": "\"3.7.5\""
+      "value": "\"3.7.6\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
