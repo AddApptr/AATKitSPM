@@ -2,7 +2,7 @@
 
 A swift package manager that wraps AATKit and ad networks (Only ad networks with xcframework binaries are considered)
 
-* For more information about integration steps, please refer to the [integration documentation](https://bitbucket.org/addapptr/aatkit-ios/wiki/AATKit/Swift%20Package%20Manager) 
+* For more information about integration steps, please refer to the [integration documentation](https://aatkit.gitbook.io/ios-integration/start/setup/swift-package-manager) 
 
 ## Important Note
 You have to add -ObjC in your build settings by following these steps:
