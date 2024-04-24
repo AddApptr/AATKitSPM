@@ -11,6 +11,7 @@ let package = Package(
 
         .library(name: "AATKit-Core", targets: ["AATKit-Core"]),
         .library(name: "AATKit-AATAdMobMediationAdapter", targets: ["AATKit-AATAdMobMediationAdapter"]),
+        .library(name: "AATKit-AATAdMobDSPAdapter", targets: ["AATKit-AATAdMobDSPAdapter"]),
 
         // Dependencies
         .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
@@ -89,6 +90,11 @@ let package = Package(
                                 "AATKit"
                               ],
                 path: "./Sources/AATAdMobMediationAdapter"),
+
+        // AATAdMobDSPAdapter
+        .target(name:"AATKit-AATAdMobDSPAdapter",
+                dependencies: [ "AATKit-GoogleMobileAds", "AATKit", "AATKit-GraviteRTB"],
+                path: "./Sources/AATAdMobDSPAdapter"),
 
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
@@ -207,6 +213,9 @@ let package = Package(
 
         // AATAdMobMediationAdapter
         .binaryTarget(name: "AATAdMobMediationAdapter", path: "./Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"),
+
+        // AATAdMobDSPAdapter
+        .binaryTarget(name: "AATAdMobDSPAdapter", path: "./Dependencies/AATKit/Adapters/AATAdMobDSPAdapter.xcframework"),
 
         // Amazon
         .binaryTarget(name: "DTBiOSSDK", path: "./Dependencies/Amazon/DTBiOSSDK.xcframework"),
