@@ -67,6 +67,7 @@ let package = Package(
                                                    "AATKit-Unity",
                                                    "AATKit-Vungle",
                                                    "AATKit-Mintegral",
+                                                   "AATKit-AATAdMobDSPAdapter"
                                                   ]),
 
     ],
