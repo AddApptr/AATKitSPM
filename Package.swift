@@ -49,7 +49,6 @@ let package = Package(
                                                    "AATKit-AppLovinMax",
                                                    "AATKit-Amazon",
                                                    "AATKit-Bluestack",
-                                                   "AATKit-Criteo",
                                                    "AATKit-FeedAd",
                                                    "AATKit-GraviteRTB",
                                                    "AATKit-GoogleCMP",
@@ -62,12 +61,14 @@ let package = Package(
                                                    "AATKit-AppNexus",
                                                    "AATKit-OgurySdk",
                                                    "AATKit-PubNative",
-                                                   "AATKit-Prebid",
-                                                   "AATKit-Tappx",
                                                    "AATKit-Unity",
                                                    "AATKit-Vungle",
                                                    "AATKit-Mintegral",
                                                    "AATKit-AATAdMobDSPAdapter"
+                                                   // Missing privacyInfo file
+                                                   // "AATKit-Criteo",
+                                                   // "AATKit-Prebid",
+                                                   // "AATKit-Tappx",
                                                   ]),
 
     ],
