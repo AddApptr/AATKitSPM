@@ -16,6 +16,159 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CRMRAIDHandlerDelegate",
+        "printedName": "CRMRAIDHandlerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "expand",
+            "printedName": "expand(width:height:url:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CriteoPublisherSdk@objc(pl)CRMRAIDHandlerDelegate(im)expandWithWidth:height:url:completion:",
+            "mangledName": "$s18CriteoPublisherSdk22CRMRAIDHandlerDelegateP6expand5width6height3url10completionySi_Si10Foundation3URLVSgyycSgtF",
+            "moduleName": "CriteoPublisherSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : CriteoPublisherSdk.CRMRAIDHandlerDelegate>",
+            "sugared_genericSig": "<Self where Self : CriteoPublisherSdk.CRMRAIDHandlerDelegate>",
+            "protocolReq": true,
+            "objc_name": "expandWithWidth:height:url:completion:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CriteoPublisherSdk@objc(pl)CRMRAIDHandlerDelegate(im)closeWithCompletion:",
+            "mangledName": "$s18CriteoPublisherSdk22CRMRAIDHandlerDelegateP5close10completionyyycSg_tF",
+            "moduleName": "CriteoPublisherSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : CriteoPublisherSdk.CRMRAIDHandlerDelegate>",
+            "sugared_genericSig": "<Self where Self : CriteoPublisherSdk.CRMRAIDHandlerDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@CriteoPublisherSdk@objc(pl)CRMRAIDHandlerDelegate",
+        "mangledName": "$s18CriteoPublisherSdk22CRMRAIDHandlerDelegateP",
+        "moduleName": "CriteoPublisherSdk",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -82,7 +235,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(with:size:dismissCompletion:)",
+            "printedName": "init(with:size:mraidHandler:dismissCompletion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -101,6 +254,12 @@
                 "name": "CGSize",
                 "printedName": "CoreFoundation.CGSize",
                 "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CRMRAIDHandler",
+                "printedName": "CriteoPublisherSdk.CRMRAIDHandler",
+                "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler"
               },
               {
                 "kind": "TypeNominal",
@@ -129,10 +288,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRFulllScreenContainer(im)initWith:size:dismissCompletion:",
-            "mangledName": "$s18CriteoPublisherSdk22CRFulllScreenContainerC4with4size17dismissCompletionACSo9WKWebViewC_So6CGSizeVyycSgtcfc",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRFulllScreenContainer(im)initWith:size:mraidHandler:dismissCompletion:",
+            "mangledName": "$s18CriteoPublisherSdk22CRFulllScreenContainerC4with4size12mraidHandler17dismissCompletionACSo9WKWebViewC_So6CGSizeVAA14CRMRAIDHandlerCyycSgtcfc",
             "moduleName": "CriteoPublisherSdk",
-            "objc_name": "initWith:size:dismissCompletion:",
+            "objc_name": "initWith:size:mraidHandler:dismissCompletion:",
             "declAttributes": [
               "Custom",
               "AccessControl",
@@ -187,6 +346,110 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "supportedInterfaceOrientations",
+            "printedName": "supportedInterfaceOrientations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRFulllScreenContainer(py)supportedInterfaceOrientations",
+            "mangledName": "$s18CriteoPublisherSdk22CRFulllScreenContainerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvp",
+            "moduleName": "CriteoPublisherSdk",
+            "overriding": true,
+            "objc_name": "supportedInterfaceOrientations",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIInterfaceOrientationMask",
+                    "printedName": "UIKit.UIInterfaceOrientationMask",
+                    "usr": "c:@E@UIInterfaceOrientationMask"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRFulllScreenContainer(im)supportedInterfaceOrientations",
+                "mangledName": "$s18CriteoPublisherSdk22CRFulllScreenContainerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVvg",
+                "moduleName": "CriteoPublisherSdk",
+                "overriding": true,
+                "objc_name": "supportedInterfaceOrientations",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shouldAutorotate",
+            "printedName": "shouldAutorotate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRFulllScreenContainer(py)shouldAutorotate",
+            "mangledName": "$s18CriteoPublisherSdk22CRFulllScreenContainerC16shouldAutorotateSbvp",
+            "moduleName": "CriteoPublisherSdk",
+            "overriding": true,
+            "objc_name": "shouldAutorotate",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRFulllScreenContainer(im)shouldAutorotate",
+                "mangledName": "$s18CriteoPublisherSdk22CRFulllScreenContainerC16shouldAutorotateSbvg",
+                "moduleName": "CriteoPublisherSdk",
+                "overriding": true,
+                "objc_name": "shouldAutorotate",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Constructor",
@@ -476,6 +739,43 @@
             "moduleName": "CriteoPublisherSdk"
           },
           {
+            "kind": "Var",
+            "name": "resized",
+            "printedName": "resized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDState.Type) -> CriteoPublisherSdk.MRAIDState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDState",
+                    "printedName": "CriteoPublisherSdk.MRAIDState",
+                    "usr": "s:18CriteoPublisherSdk10MRAIDStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDState",
+                        "printedName": "CriteoPublisherSdk.MRAIDState",
+                        "usr": "s:18CriteoPublisherSdk10MRAIDStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk10MRAIDStateO7resizedyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk10MRAIDStateO7resizedyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -613,6 +913,343 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "MessageUI",
+        "printedName": "MessageUI",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRAIDFeatures",
+        "printedName": "MRAIDFeatures",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDFeatures",
+                "printedName": "CriteoPublisherSdk.MRAIDFeatures",
+                "usr": "s:18CriteoPublisherSdk13MRAIDFeaturesV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18CriteoPublisherSdk13MRAIDFeaturesVACycfc",
+            "mangledName": "$s18CriteoPublisherSdk13MRAIDFeaturesVACycfc",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDFeatures",
+                "printedName": "CriteoPublisherSdk.MRAIDFeatures",
+                "usr": "s:18CriteoPublisherSdk13MRAIDFeaturesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18CriteoPublisherSdk13MRAIDFeaturesV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18CriteoPublisherSdk13MRAIDFeaturesV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CriteoPublisherSdk",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk13MRAIDFeaturesV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18CriteoPublisherSdk13MRAIDFeaturesV6encode2toys7Encoder_p_tKF",
+            "moduleName": "CriteoPublisherSdk",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18CriteoPublisherSdk13MRAIDFeaturesV",
+        "mangledName": "$s18CriteoPublisherSdk13MRAIDFeaturesV",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CRPlacementType",
+        "printedName": "CRPlacementType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "banner",
+            "printedName": "banner",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.CRPlacementType.Type) -> CriteoPublisherSdk.CRPlacementType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CRPlacementType",
+                    "printedName": "CriteoPublisherSdk.CRPlacementType",
+                    "usr": "c:@M@CriteoPublisherSdk@E@CRPlacementType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.CRPlacementType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CRPlacementType",
+                        "printedName": "CriteoPublisherSdk.CRPlacementType",
+                        "usr": "c:@M@CriteoPublisherSdk@E@CRPlacementType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CriteoPublisherSdk@E@CRPlacementType@CRPlacementTypeBanner",
+            "mangledName": "$s18CriteoPublisherSdk15CRPlacementTypeO6banneryA2CmF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "interstitial",
+            "printedName": "interstitial",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.CRPlacementType.Type) -> CriteoPublisherSdk.CRPlacementType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CRPlacementType",
+                    "printedName": "CriteoPublisherSdk.CRPlacementType",
+                    "usr": "c:@M@CriteoPublisherSdk@E@CRPlacementType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.CRPlacementType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CRPlacementType",
+                        "printedName": "CriteoPublisherSdk.CRPlacementType",
+                        "usr": "c:@M@CriteoPublisherSdk@E@CRPlacementType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CriteoPublisherSdk@E@CRPlacementType@CRPlacementTypeInterstitial",
+            "mangledName": "$s18CriteoPublisherSdk15CRPlacementTypeO12interstitialyA2CmF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CriteoPublisherSdk.CRPlacementType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CRPlacementType",
+                    "printedName": "CriteoPublisherSdk.CRPlacementType",
+                    "usr": "c:@M@CriteoPublisherSdk@E@CRPlacementType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18CriteoPublisherSdk15CRPlacementTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s18CriteoPublisherSdk15CRPlacementTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "CriteoPublisherSdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18CriteoPublisherSdk15CRPlacementTypeO8rawValueSivp",
+            "mangledName": "$s18CriteoPublisherSdk15CRPlacementTypeO8rawValueSivp",
+            "moduleName": "CriteoPublisherSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18CriteoPublisherSdk15CRPlacementTypeO8rawValueSivg",
+                "mangledName": "$s18CriteoPublisherSdk15CRPlacementTypeO8rawValueSivg",
+                "moduleName": "CriteoPublisherSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@CriteoPublisherSdk@E@CRPlacementType",
+        "mangledName": "$s18CriteoPublisherSdk15CRPlacementTypeO",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "MRAIDMessageHandlerDelegate",
         "printedName": "MRAIDMessageHandlerDelegate",
@@ -658,6 +1295,87 @@
             "declKind": "Func",
             "usr": "s:18CriteoPublisherSdk27MRAIDMessageHandlerDelegateP21didReceiveCloseActionyyF",
             "mangledName": "$s18CriteoPublisherSdk27MRAIDMessageHandlerDelegateP21didReceiveCloseActionyyF",
+            "moduleName": "CriteoPublisherSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : CriteoPublisherSdk.MRAIDMessageHandlerDelegate>",
+            "sugared_genericSig": "<Self where Self : CriteoPublisherSdk.MRAIDMessageHandlerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceivePlayVideoAction",
+            "printedName": "didReceivePlayVideoAction(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk27MRAIDMessageHandlerDelegateP25didReceivePlayVideoAction4withySS_tF",
+            "mangledName": "$s18CriteoPublisherSdk27MRAIDMessageHandlerDelegateP25didReceivePlayVideoAction4withySS_tF",
+            "moduleName": "CriteoPublisherSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : CriteoPublisherSdk.MRAIDMessageHandlerDelegate>",
+            "sugared_genericSig": "<Self where Self : CriteoPublisherSdk.MRAIDMessageHandlerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceive",
+            "printedName": "didReceive(resize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDResizeMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDResizeMessage",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk27MRAIDMessageHandlerDelegateP10didReceive6resizeyAA18MRAIDResizeMessageV_tF",
+            "mangledName": "$s18CriteoPublisherSdk27MRAIDMessageHandlerDelegateP10didReceive6resizeyAA18MRAIDResizeMessageV_tF",
+            "moduleName": "CriteoPublisherSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : CriteoPublisherSdk.MRAIDMessageHandlerDelegate>",
+            "sugared_genericSig": "<Self where Self : CriteoPublisherSdk.MRAIDMessageHandlerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceive",
+            "printedName": "didReceive(orientation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDOrientationPropertiesMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDOrientationPropertiesMessage",
+                "usr": "s:18CriteoPublisherSdk33MRAIDOrientationPropertiesMessageV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk27MRAIDMessageHandlerDelegateP10didReceive11orientationyAA33MRAIDOrientationPropertiesMessageV_tF",
+            "mangledName": "$s18CriteoPublisherSdk27MRAIDMessageHandlerDelegateP10didReceive11orientationyAA33MRAIDOrientationPropertiesMessageV_tF",
             "moduleName": "CriteoPublisherSdk",
             "genericSig": "<τ_0_0 where τ_0_0 : CriteoPublisherSdk.MRAIDMessageHandlerDelegate>",
             "sugared_genericSig": "<Self where Self : CriteoPublisherSdk.MRAIDMessageHandlerDelegate>",
@@ -1120,147 +1838,11 @@
         "moduleName": "CriteoPublisherSdk"
       },
       {
-        "kind": "TypeDecl",
-        "name": "CRMRAIDHandlerDelegate",
-        "printedName": "CRMRAIDHandlerDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "expand",
-            "printedName": "expand(width:height:url:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URL",
-                    "printedName": "Foundation.URL",
-                    "usr": "s:10Foundation3URLV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@CriteoPublisherSdk@objc(pl)CRMRAIDHandlerDelegate(im)expandWithWidth:height:url:completion:",
-            "mangledName": "$s18CriteoPublisherSdk22CRMRAIDHandlerDelegateP6expand5width6height3url10completionySi_Si10Foundation3URLVSgyycSgtF",
-            "moduleName": "CriteoPublisherSdk",
-            "genericSig": "<τ_0_0 where τ_0_0 : CriteoPublisherSdk.CRMRAIDHandlerDelegate>",
-            "sugared_genericSig": "<Self where Self : CriteoPublisherSdk.CRMRAIDHandlerDelegate>",
-            "protocolReq": true,
-            "objc_name": "expandWithWidth:height:url:completion:",
-            "declAttributes": [
-              "Optional",
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "close",
-            "printedName": "close(completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@CriteoPublisherSdk@objc(pl)CRMRAIDHandlerDelegate(im)closeWithCompletion:",
-            "mangledName": "$s18CriteoPublisherSdk22CRMRAIDHandlerDelegateP5close10completionyyycSg_tF",
-            "moduleName": "CriteoPublisherSdk",
-            "genericSig": "<τ_0_0 where τ_0_0 : CriteoPublisherSdk.CRMRAIDHandlerDelegate>",
-            "sugared_genericSig": "<Self where Self : CriteoPublisherSdk.CRMRAIDHandlerDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@CriteoPublisherSdk@objc(pl)CRMRAIDHandlerDelegate",
-        "mangledName": "$s18CriteoPublisherSdk22CRMRAIDHandlerDelegateP",
-        "moduleName": "CriteoPublisherSdk",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ]
+        "kind": "Import",
+        "name": "AVKit",
+        "printedName": "AVKit",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk"
       },
       {
         "kind": "TypeDecl",
@@ -1270,13 +1852,19 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(with:criteoLogger:urlOpener:delegate:)",
+            "printedName": "init(placementType:webView:criteoLogger:urlOpener:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "CRMRAIDHandler",
                 "printedName": "CriteoPublisherSdk.CRMRAIDHandler",
                 "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CRPlacementType",
+                "printedName": "CriteoPublisherSdk.CRPlacementType",
+                "usr": "c:@M@CriteoPublisherSdk@E@CRPlacementType"
               },
               {
                 "kind": "TypeNominal",
@@ -1312,43 +1900,15 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)initWith:criteoLogger:urlOpener:delegate:",
-            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC4with12criteoLogger9urlOpener8delegateACSo9WKWebViewC_AA13CRMRAIDLogger_pAA19CRExternalURLOpener_pAA0D8Delegate_pSgtcfc",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)initWithPlacementType:webView:criteoLogger:urlOpener:delegate:",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC13placementType7webView12criteoLogger9urlOpener8delegateAcA011CRPlacementF0O_So05WKWebH0CAA13CRMRAIDLogger_pAA19CRExternalURLOpener_pAA0D8Delegate_pSgtcfc",
             "moduleName": "CriteoPublisherSdk",
-            "objc_name": "initWith:criteoLogger:urlOpener:delegate:",
+            "objc_name": "initWithPlacementType:webView:criteoLogger:urlOpener:delegate:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "onAdLoad",
-            "printedName": "onAdLoad(with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)onAdLoadWith:",
-            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC8onAdLoad4withySS_tF",
-            "moduleName": "CriteoPublisherSdk",
-            "objc_name": "onAdLoadWith:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -1451,27 +2011,6 @@
           },
           {
             "kind": "Function",
-            "name": "onSuccessClose",
-            "printedName": "onSuccessClose()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)onSuccessClose",
-            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC14onSuccessCloseyyF",
-            "moduleName": "CriteoPublisherSdk",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "inject",
             "printedName": "inject(into:)",
             "children": [
@@ -1493,6 +2032,48 @@
             "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC6inject4intoS2S_tF",
             "moduleName": "CriteoPublisherSdk",
             "objc_name": "injectInto:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdLoad",
+            "printedName": "onAdLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)onAdLoad",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC8onAdLoadyyF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSuccessClose",
+            "printedName": "onSuccessClose()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)onSuccessClose",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC14onSuccessCloseyyF",
+            "moduleName": "CriteoPublisherSdk",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1550,6 +2131,120 @@
             "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC11updateMraid6bundleySo8NSBundleCSg_tF",
             "moduleName": "CriteoPublisherSdk",
             "objc_name": "updateMraidWithBundle:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCurrentPosition",
+            "printedName": "setCurrentPosition()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)setCurrentPosition",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC18setCurrentPositionyyF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setScreen",
+            "printedName": "setScreen(size:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)setScreenWithSize:",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC9setScreen4sizeySo6CGSizeV_tF",
+            "moduleName": "CriteoPublisherSdk",
+            "objc_name": "setScreenWithSize:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "shouldAdAutoRotate",
+            "printedName": "shouldAdAutoRotate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)shouldAdAutoRotate",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC18shouldAdAutoRotateSbyF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "supportedInterfaceOrientations",
+            "printedName": "supportedInterfaceOrientations()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)supportedInterfaceOrientations",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC30supportedInterfaceOrientationsSo26UIInterfaceOrientationMaskVyF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDealloc",
+            "printedName": "onDealloc()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CriteoPublisherSdk@objc(cs)CRMRAIDHandler(im)onDealloc",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC9onDeallocyyF",
+            "moduleName": "CriteoPublisherSdk",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1665,6 +2360,108 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceivePlayVideoAction",
+            "printedName": "didReceivePlayVideoAction(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk14CRMRAIDHandlerC25didReceivePlayVideoAction4withySS_tF",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC25didReceivePlayVideoAction4withySS_tF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceive",
+            "printedName": "didReceive(resize:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDResizeMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDResizeMessage",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk14CRMRAIDHandlerC10didReceive6resizeyAA18MRAIDResizeMessageV_tF",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC10didReceive6resizeyAA18MRAIDResizeMessageV_tF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceive",
+            "printedName": "didReceive(orientation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDOrientationPropertiesMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDOrientationPropertiesMessage",
+                "usr": "s:18CriteoPublisherSdk33MRAIDOrientationPropertiesMessageV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk14CRMRAIDHandlerC10didReceive11orientationyAA33MRAIDOrientationPropertiesMessageV_tF",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC10didReceive11orientationyAA33MRAIDOrientationPropertiesMessageV_tF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didCloseResizedAdView",
+            "printedName": "didCloseResizedAdView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk14CRMRAIDHandlerC21didCloseResizedAdViewyyF",
+            "mangledName": "$s18CriteoPublisherSdk14CRMRAIDHandlerC21didCloseResizedAdViewyyF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1686,6 +2483,13 @@
             "printedName": "MRAIDMessageHandlerDelegate",
             "usr": "s:18CriteoPublisherSdk27MRAIDMessageHandlerDelegateP",
             "mangledName": "$s18CriteoPublisherSdk27MRAIDMessageHandlerDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MRAIDResizeHandlerDelegate",
+            "printedName": "MRAIDResizeHandlerDelegate",
+            "usr": "s:18CriteoPublisherSdk26MRAIDResizeHandlerDelegateP",
+            "mangledName": "$s18CriteoPublisherSdk26MRAIDResizeHandlerDelegateP"
           },
           {
             "kind": "Conformance",
@@ -1736,6 +2540,293 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRAIDPlayVideoMessage",
+        "printedName": "MRAIDPlayVideoMessage",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDPlayVideoMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDPlayVideoMessage",
+                "usr": "s:18CriteoPublisherSdk21MRAIDPlayVideoMessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18CriteoPublisherSdk21MRAIDPlayVideoMessageV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18CriteoPublisherSdk21MRAIDPlayVideoMessageV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CriteoPublisherSdk",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18CriteoPublisherSdk21MRAIDPlayVideoMessageV",
+        "mangledName": "$s18CriteoPublisherSdk21MRAIDPlayVideoMessageV",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRAIDResizeMessage",
+        "printedName": "MRAIDResizeMessage",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDResizeMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDResizeMessage",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeMessageV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV",
+        "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeMessageV",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRAIDOrientationPropertiesMessage",
+        "printedName": "MRAIDOrientationPropertiesMessage",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDOrientationPropertiesMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDOrientationPropertiesMessage",
+                "usr": "s:18CriteoPublisherSdk33MRAIDOrientationPropertiesMessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18CriteoPublisherSdk33MRAIDOrientationPropertiesMessageV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18CriteoPublisherSdk33MRAIDOrientationPropertiesMessageV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "CriteoPublisherSdk",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18CriteoPublisherSdk33MRAIDOrientationPropertiesMessageV",
+        "mangledName": "$s18CriteoPublisherSdk33MRAIDOrientationPropertiesMessageV",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRAIDOrientationProperties",
+        "printedName": "MRAIDOrientationProperties",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(allowOrientationChange:forceOrientation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDOrientationProperties",
+                "printedName": "CriteoPublisherSdk.MRAIDOrientationProperties",
+                "usr": "s:18CriteoPublisherSdk26MRAIDOrientationPropertiesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDDeviceOrientation",
+                "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation",
+                "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18CriteoPublisherSdk26MRAIDOrientationPropertiesV22allowOrientationChange05forceG0ACSb_AA011MRAIDDeviceG0Otcfc",
+            "mangledName": "$s18CriteoPublisherSdk26MRAIDOrientationPropertiesV22allowOrientationChange05forceG0ACSb_AA011MRAIDDeviceG0Otcfc",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(allowOrientationChange:orientationMask:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDOrientationProperties",
+                "printedName": "CriteoPublisherSdk.MRAIDOrientationProperties",
+                "usr": "s:18CriteoPublisherSdk26MRAIDOrientationPropertiesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18CriteoPublisherSdk26MRAIDOrientationPropertiesV22allowOrientationChange15orientationMaskACSb_So011UIInterfacegJ0Vtcfc",
+            "mangledName": "$s18CriteoPublisherSdk26MRAIDOrientationPropertiesV22allowOrientationChange15orientationMaskACSb_So011UIInterfacegJ0Vtcfc",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "orientationMask",
+            "printedName": "orientationMask(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIInterfaceOrientationMask",
+                "printedName": "UIKit.UIInterfaceOrientationMask",
+                "usr": "c:@E@UIInterfaceOrientationMask"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDDeviceOrientation",
+                "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation",
+                "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk26MRAIDOrientationPropertiesV15orientationMask3forSo022UIInterfaceOrientationG0VAA011MRAIDDeviceJ0O_tFZ",
+            "mangledName": "$s18CriteoPublisherSdk26MRAIDOrientationPropertiesV15orientationMask3forSo022UIInterfaceOrientationG0VAA011MRAIDDeviceJ0O_tFZ",
+            "moduleName": "CriteoPublisherSdk",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18CriteoPublisherSdk26MRAIDOrientationPropertiesV",
+        "mangledName": "$s18CriteoPublisherSdk26MRAIDOrientationPropertiesV",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -2307,6 +3398,424 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRAIDCustomClosePosition",
+        "printedName": "MRAIDCustomClosePosition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "topLeft",
+            "printedName": "topLeft",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDCustomClosePosition.Type) -> CriteoPublisherSdk.MRAIDCustomClosePosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDCustomClosePosition",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                    "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDCustomClosePosition",
+                        "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                        "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO7topLeftyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO7topLeftyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "topRight",
+            "printedName": "topRight",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDCustomClosePosition.Type) -> CriteoPublisherSdk.MRAIDCustomClosePosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDCustomClosePosition",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                    "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDCustomClosePosition",
+                        "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                        "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO8topRightyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO8topRightyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "center",
+            "printedName": "center",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDCustomClosePosition.Type) -> CriteoPublisherSdk.MRAIDCustomClosePosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDCustomClosePosition",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                    "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDCustomClosePosition",
+                        "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                        "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO6centeryA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO6centeryA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "bottomLeft",
+            "printedName": "bottomLeft",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDCustomClosePosition.Type) -> CriteoPublisherSdk.MRAIDCustomClosePosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDCustomClosePosition",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                    "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDCustomClosePosition",
+                        "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                        "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO10bottomLeftyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO10bottomLeftyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "bottomRight",
+            "printedName": "bottomRight",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDCustomClosePosition.Type) -> CriteoPublisherSdk.MRAIDCustomClosePosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDCustomClosePosition",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                    "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDCustomClosePosition",
+                        "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                        "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO11bottomRightyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO11bottomRightyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "topCenter",
+            "printedName": "topCenter",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDCustomClosePosition.Type) -> CriteoPublisherSdk.MRAIDCustomClosePosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDCustomClosePosition",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                    "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDCustomClosePosition",
+                        "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                        "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO9topCenteryA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO9topCenteryA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "bottomCenter",
+            "printedName": "bottomCenter",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDCustomClosePosition.Type) -> CriteoPublisherSdk.MRAIDCustomClosePosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDCustomClosePosition",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                    "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDCustomClosePosition",
+                        "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                        "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO12bottomCenteryA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO12bottomCenteryA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDCustomClosePosition",
+                    "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                    "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO8rawValueACSgSS_tcfc",
+            "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO8rawValueACSgSS_tcfc",
+            "moduleName": "CriteoPublisherSdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO8rawValueSSvp",
+            "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO8rawValueSSvp",
+            "moduleName": "CriteoPublisherSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO8rawValueSSvg",
+                "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO8rawValueSSvg",
+                "moduleName": "CriteoPublisherSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO",
+        "mangledName": "$s18CriteoPublisherSdk24MRAIDCustomClosePositionO",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk"
       },
       {
         "kind": "Import",
@@ -3030,6 +4539,8 @@
         "usr": "s:18CriteoPublisherSdk15MRAIDURLHandlerP",
         "mangledName": "$s18CriteoPublisherSdk15MRAIDURLHandlerP",
         "moduleName": "CriteoPublisherSdk",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
         ]
@@ -3115,6 +4626,668 @@
             "printedName": "MRAIDURLHandler",
             "usr": "s:18CriteoPublisherSdk15MRAIDURLHandlerP",
             "mangledName": "$s18CriteoPublisherSdk15MRAIDURLHandlerP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRAIDResizeHandlerDelegate",
+        "printedName": "MRAIDResizeHandlerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didCloseResizedAdView",
+            "printedName": "didCloseResizedAdView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk26MRAIDResizeHandlerDelegateP21didCloseResizedAdViewyyF",
+            "mangledName": "$s18CriteoPublisherSdk26MRAIDResizeHandlerDelegateP21didCloseResizedAdViewyyF",
+            "moduleName": "CriteoPublisherSdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : CriteoPublisherSdk.MRAIDResizeHandlerDelegate>",
+            "sugared_genericSig": "<Self where Self : CriteoPublisherSdk.MRAIDResizeHandlerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18CriteoPublisherSdk26MRAIDResizeHandlerDelegateP",
+        "mangledName": "$s18CriteoPublisherSdk26MRAIDResizeHandlerDelegateP",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRAIDResizeHandler",
+        "printedName": "MRAIDResizeHandler",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Constants",
+            "printedName": "Constants",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "minHeight",
+                "printedName": "minHeight",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC9ConstantsO9minHeight14CoreFoundation7CGFloatVvpZ",
+                "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC9ConstantsO9minHeight12CoreGraphics7CGFloatVvpZ",
+                "moduleName": "CriteoPublisherSdk",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC9ConstantsO9minHeight14CoreFoundation7CGFloatVvgZ",
+                    "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC9ConstantsO9minHeight12CoreGraphics7CGFloatVvgZ",
+                    "moduleName": "CriteoPublisherSdk",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "minWidth",
+                "printedName": "minWidth",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC9ConstantsO8minWidth14CoreFoundation7CGFloatVvpZ",
+                "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC9ConstantsO8minWidth12CoreGraphics7CGFloatVvpZ",
+                "moduleName": "CriteoPublisherSdk",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC9ConstantsO8minWidth14CoreFoundation7CGFloatVvgZ",
+                    "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC9ConstantsO8minWidth12CoreGraphics7CGFloatVvgZ",
+                    "moduleName": "CriteoPublisherSdk",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC9ConstantsO",
+            "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC9ConstantsO",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "canResize",
+            "printedName": "canResize(mraidState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDState",
+                "printedName": "CriteoPublisherSdk.MRAIDState",
+                "usr": "s:18CriteoPublisherSdk10MRAIDStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC9canResize10mraidStateSbAA10MRAIDStateO_tF",
+            "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC9canResize10mraidStateSbAA10MRAIDStateO_tF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resize",
+            "printedName": "resize(with:webViewContainer:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDResizeMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDResizeMessage",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC6resize4with16webViewContaineryAA0D7MessageV_So6UIViewCSgtKF",
+            "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC6resize4with16webViewContaineryAA0D7MessageV_So6UIViewCSgtKF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateResizeMessageToFit",
+            "printedName": "updateResizeMessageToFit(containerSize:positionInContainer:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDResizeMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDResizeMessage",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDResizeMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDResizeMessage",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC24updateResizeMessageToFit13containerSize19positionInContainer4withAA0dH0VSo6CGSizeV_So7CGPointVAItKF",
+            "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC24updateResizeMessageToFit13containerSize19positionInContainer4withAA0dH0VSo6CGSizeV_So7CGPointVAItKF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verifyCloseAreaOutOfBounds",
+            "printedName": "verifyCloseAreaOutOfBounds(containerSize:positionInContainer:message:autoRotate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDResizeMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDResizeMessage",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDResizeMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDResizeMessage",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC26verifyCloseAreaOutOfBounds13containerSize19positionInContainer7message10autoRotateAA0D7MessageVSo6CGSizeV_So7CGPointVAJSbtKF",
+            "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC26verifyCloseAreaOutOfBounds13containerSize19positionInContainer7message10autoRotateAA0D7MessageVSo6CGSizeV_So7CGPointVAJSbtKF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verifyMinSize",
+            "printedName": "verifyMinSize(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDResizeMessage",
+                "printedName": "CriteoPublisherSdk.MRAIDResizeMessage",
+                "usr": "s:18CriteoPublisherSdk18MRAIDResizeMessageV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC13verifyMinSize7messageyAA0D7MessageV_tKF",
+            "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC13verifyMinSize7messageyAA0D7MessageV_tKF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closeAreaPositionInAdContainer",
+            "printedName": "closeAreaPositionInAdContainer(with:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MRAIDCustomClosePosition",
+                "printedName": "CriteoPublisherSdk.MRAIDCustomClosePosition",
+                "usr": "s:18CriteoPublisherSdk24MRAIDCustomClosePositionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC30closeAreaPositionInAdContainer4with3forSo7CGPointVSo6CGSizeV_AA016MRAIDCustomCloseH0OtF",
+            "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC30closeAreaPositionInAdContainer4with3forSo7CGPointVSo6CGSizeV_AA016MRAIDCustomCloseH0OtF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC5closeyyF",
+            "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC5closeyyF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18CriteoPublisherSdk18MRAIDResizeHandlerC",
+        "mangledName": "$s18CriteoPublisherSdk18MRAIDResizeHandlerC",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MRAIDDeviceOrientation",
+        "printedName": "MRAIDDeviceOrientation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "portrait",
+            "printedName": "portrait",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDDeviceOrientation.Type) -> CriteoPublisherSdk.MRAIDDeviceOrientation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDDeviceOrientation",
+                    "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation",
+                    "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDDeviceOrientation",
+                        "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation",
+                        "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO8portraityA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk22MRAIDDeviceOrientationO8portraityA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "landscape",
+            "printedName": "landscape",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDDeviceOrientation.Type) -> CriteoPublisherSdk.MRAIDDeviceOrientation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDDeviceOrientation",
+                    "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation",
+                    "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDDeviceOrientation",
+                        "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation",
+                        "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO9landscapeyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk22MRAIDDeviceOrientationO9landscapeyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.MRAIDDeviceOrientation.Type) -> CriteoPublisherSdk.MRAIDDeviceOrientation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDDeviceOrientation",
+                    "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation",
+                    "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MRAIDDeviceOrientation",
+                        "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation",
+                        "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO4noneyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk22MRAIDDeviceOrientationO4noneyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MRAIDDeviceOrientation",
+                    "printedName": "CriteoPublisherSdk.MRAIDDeviceOrientation",
+                    "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO8rawValueACSgSS_tcfc",
+            "mangledName": "$s18CriteoPublisherSdk22MRAIDDeviceOrientationO8rawValueACSgSS_tcfc",
+            "moduleName": "CriteoPublisherSdk",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO8rawValueSSvp",
+            "mangledName": "$s18CriteoPublisherSdk22MRAIDDeviceOrientationO8rawValueSSvp",
+            "moduleName": "CriteoPublisherSdk",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO8rawValueSSvg",
+                "mangledName": "$s18CriteoPublisherSdk22MRAIDDeviceOrientationO8rawValueSSvg",
+                "moduleName": "CriteoPublisherSdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18CriteoPublisherSdk22MRAIDDeviceOrientationO",
+        "mangledName": "$s18CriteoPublisherSdk22MRAIDDeviceOrientationO",
+        "moduleName": "CriteoPublisherSdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           }
         ]
       },
@@ -3372,6 +5545,154 @@
             "declKind": "EnumElement",
             "usr": "s:18CriteoPublisherSdk6ActionO4noneyA2CmF",
             "mangledName": "$s18CriteoPublisherSdk6ActionO4noneyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "playVideo",
+            "printedName": "playVideo",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.Action.Type) -> CriteoPublisherSdk.Action",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Action",
+                    "printedName": "CriteoPublisherSdk.Action",
+                    "usr": "s:18CriteoPublisherSdk6ActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.Action.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "CriteoPublisherSdk.Action",
+                        "usr": "s:18CriteoPublisherSdk6ActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk6ActionO9playVideoyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk6ActionO9playVideoyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "resize",
+            "printedName": "resize",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.Action.Type) -> CriteoPublisherSdk.Action",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Action",
+                    "printedName": "CriteoPublisherSdk.Action",
+                    "usr": "s:18CriteoPublisherSdk6ActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.Action.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "CriteoPublisherSdk.Action",
+                        "usr": "s:18CriteoPublisherSdk6ActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk6ActionO6resizeyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk6ActionO6resizeyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "orientationPropertiesUpdate",
+            "printedName": "orientationPropertiesUpdate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.Action.Type) -> CriteoPublisherSdk.Action",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Action",
+                    "printedName": "CriteoPublisherSdk.Action",
+                    "usr": "s:18CriteoPublisherSdk6ActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.Action.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "CriteoPublisherSdk.Action",
+                        "usr": "s:18CriteoPublisherSdk6ActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk6ActionO27orientationPropertiesUpdateyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk6ActionO27orientationPropertiesUpdateyA2CmF",
+            "moduleName": "CriteoPublisherSdk"
+          },
+          {
+            "kind": "Var",
+            "name": "orientationPropertiesSet",
+            "printedName": "orientationPropertiesSet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CriteoPublisherSdk.Action.Type) -> CriteoPublisherSdk.Action",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Action",
+                    "printedName": "CriteoPublisherSdk.Action",
+                    "usr": "s:18CriteoPublisherSdk6ActionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CriteoPublisherSdk.Action.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Action",
+                        "printedName": "CriteoPublisherSdk.Action",
+                        "usr": "s:18CriteoPublisherSdk6ActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18CriteoPublisherSdk6ActionO24orientationPropertiesSetyA2CmF",
+            "mangledName": "$s18CriteoPublisherSdk6ActionO24orientationPropertiesSetyA2CmF",
             "moduleName": "CriteoPublisherSdk"
           },
           {
@@ -3877,6 +6198,119 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CGRect",
+        "printedName": "CGRect",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "contains",
+            "printedName": "contains(points:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreFoundation.CGPoint]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPoint",
+                    "printedName": "CoreFoundation.CGPoint",
+                    "usr": "c:@S@CGPoint"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6CGRectV18CriteoPublisherSdkE8contains6pointsSbSaySo7CGPointVG_tF",
+            "mangledName": "$sSo6CGRectV18CriteoPublisherSdkE8contains6pointsSbSaySo7CGPointVG_tF",
+            "moduleName": "CriteoPublisherSdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "c:@S@CGRect",
+        "moduleName": "CoreFoundation",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSValue",
+                    "printedName": "Foundation.NSValue",
+                    "usr": "c:objc(cs)NSValue"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_CustomPlaygroundQuickLookable",
+            "printedName": "_CustomPlaygroundQuickLookable",
+            "usr": "s:s30_CustomPlaygroundQuickLookableP",
+            "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "CRSKAdNetworkInfo",
         "printedName": "CRSKAdNetworkInfo",
         "children": [
@@ -4073,30 +6507,79 @@
       "value": "\"CriteoPublisherSdk.CRFulllScreenContainer\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MRAIDFeature.swift",
+      "kind": "BooleanLiteral",
+      "offset": 761,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MRAIDFeature.swift",
+      "kind": "BooleanLiteral",
+      "offset": 787,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRPlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 754,
+      "length": 12,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRPlacementType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 754,
+      "length": 12,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
       "kind": "FloatLiteral",
-      "offset": 834,
+      "offset": 849,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1187,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
       "kind": "FloatLiteral",
-      "offset": 1419,
+      "offset": 978,
       "length": 4,
       "value": "0.05"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1063,
+      "offset": 1022,
+      "length": 19,
+      "value": "\"criteoMraidBridge\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "FloatLiteral",
+      "offset": 1084,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1198,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "FloatLiteral",
+      "offset": 1440,
+      "length": 4,
+      "value": "0.05"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 875,
       "length": 14,
       "value": "\"CriteoPublisherSdk.CRMRAIDHandler\""
     },
@@ -4164,6 +6647,90 @@
       "value": "\"Error\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 774,
+      "length": 10,
+      "value": "\"top-left\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 805,
+      "length": 11,
+      "value": "\"top-right\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 855,
+      "length": 13,
+      "value": "\"bottom-left\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 892,
+      "length": 14,
+      "value": "\"bottom-right\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 928,
+      "length": 12,
+      "value": "\"top-center\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 965,
+      "length": 15,
+      "value": "\"bottom-center\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 774,
+      "length": 10,
+      "value": "\"top-left\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 805,
+      "length": 11,
+      "value": "\"top-right\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 855,
+      "length": 13,
+      "value": "\"bottom-left\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 892,
+      "length": 14,
+      "value": "\"bottom-right\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 928,
+      "length": 12,
+      "value": "\"top-center\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDCustomClosePosition.swift",
+      "kind": "StringLiteral",
+      "offset": 965,
+      "length": 15,
+      "value": "\"bottom-center\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/SKAdNetwork\/SKAdNetworkInfo.swift",
       "kind": "StringLiteral",
       "offset": 1013,
@@ -4183,6 +6750,27 @@
       "offset": 1398,
       "length": 24,
       "value": "\"hs6bdukanm.skadnetwork\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeContainerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 900,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeContainerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 948,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeContainerView.swift",
+      "kind": "StringLiteral",
+      "offset": 771,
+      "length": 24,
+      "value": "\"CriteoPublisherSdk.MRAIDResizeContainerView\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRMRAIDUtils.swift",
@@ -4239,6 +6827,62 @@
       "offset": 1128,
       "length": 8,
       "value": "\"xctest\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1067,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1116,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Logging\/ActionRepresentable.swift",
+      "kind": "StringLiteral",
+      "offset": 885,
+      "length": 12,
+      "value": "\"play_video\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Logging\/ActionRepresentable.swift",
+      "kind": "StringLiteral",
+      "offset": 949,
+      "length": 31,
+      "value": "\"orientation_properties_update\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Logging\/ActionRepresentable.swift",
+      "kind": "StringLiteral",
+      "offset": 1015,
+      "length": 28,
+      "value": "\"set_orientation_properties\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Logging\/ActionRepresentable.swift",
+      "kind": "StringLiteral",
+      "offset": 885,
+      "length": 12,
+      "value": "\"play_video\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Logging\/ActionRepresentable.swift",
+      "kind": "StringLiteral",
+      "offset": 949,
+      "length": 31,
+      "value": "\"orientation_properties_update\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Logging\/ActionRepresentable.swift",
+      "kind": "StringLiteral",
+      "offset": 1015,
+      "length": 28,
+      "value": "\"set_orientation_properties\""
     }
   ]
 }

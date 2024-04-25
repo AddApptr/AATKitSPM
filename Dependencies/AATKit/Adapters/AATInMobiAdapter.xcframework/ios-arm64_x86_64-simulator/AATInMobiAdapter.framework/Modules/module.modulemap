@@ -1,7 +1,7 @@
 framework module AATInMobiAdapter {
   umbrella header "AATInMobiAdapter.h"
-
   export *
+
   module * { export * }
 }
 

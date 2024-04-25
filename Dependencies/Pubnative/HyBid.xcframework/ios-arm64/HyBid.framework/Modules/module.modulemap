@@ -1,7 +1,7 @@
 framework module HyBid {
   umbrella header "HyBid.h"
-
   export *
+
   module * { export * }
 }
 

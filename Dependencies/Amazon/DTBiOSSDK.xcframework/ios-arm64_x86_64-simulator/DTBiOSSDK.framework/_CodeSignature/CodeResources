@@ -6,11 +6,11 @@
 	<dict>
 		<key>DTBAdInterstitialViewController.nib</key>
 		<data>
-		EsLQrNVX6UUisyXHyV905USkIRc=
+		qBNBzNUOTsMqhkNz7Y47kqC6rzQ=
 		</data>
 		<key>DTBTwoPartExpandedViewController.nib</key>
 		<data>
-		TGumV4xV76dxx3i569LKga+jsUU=
+		JiNg/m4TFEstbDFJlRLZsm+tFnM=
 		</data>
 		<key>Headers/APS.h</key>
 		<data>
@@ -354,11 +354,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gxfIXuy61V4XyJ+BxXZ8Dw/tbT0=
+		7OJXZPwEKzplLFN+jccqiW5yPGM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		AOCZ8KVzqLQ8c77w91pqPE/j4Mo=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		hAohnATGEYcvDc2Ywc64dqK2HfE=
 		</data>
 		<key>aps-mraid.js</key>
 		<data>
@@ -370,7 +374,7 @@
 		</data>
 		<key>dtb-m.js</key>
 		<data>
-		M9e3QwLyMVs1rn0hrArW/ymctL8=
+		j/Y4QwG6VNPXZlKEiqXv+kiA85M=
 		</data>
 		<key>mraid_close.png</key>
 		<data>
@@ -399,14 +403,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BbYCXOj90DWZGjimurmCb1p+wlkJ1GU9ud+39zfmsIU=
+			OVy4dkD/g79t8Cyba9RVGNeF0y9Iaps2XmKQj6qDM1c=
 			</data>
 		</dict>
 		<key>DTBTwoPartExpandedViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zW+4N0Ua7TKFYcnLr8Ud+CySJ1VI3p+kSQtLjYWmQLc=
+			5J5Tv5Mrm0MhAtXSlhHFYWRSCmEpq/G/s0JP1D8K1jk=
 			</data>
 		</dict>
 		<key>Headers/APS.h</key>
@@ -1011,6 +1015,13 @@
 			a3azeyd738NIyKXfAr2sqpWS9m/P0t0wcnFrVfZ+c+E=
 			</data>
 		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lvwpxrmOGzv5rK+YTb1/iACQu0RBuMX3eP4HczbARLI=
+			</data>
+		</dict>
 		<key>aps-mraid.js</key>
 		<dict>
 			<key>hash2</key>
@@ -1029,7 +1040,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8wGpbQtE+XRhkZHUggT3Mxj0/Kp/RWvgyue74Si3R0g=
+			U5IL0renARoLGOmoDTraL+5oYmDsYWVASzgNysxDrx0=
 			</data>
 		</dict>
 		<key>mraid_close.png</key>

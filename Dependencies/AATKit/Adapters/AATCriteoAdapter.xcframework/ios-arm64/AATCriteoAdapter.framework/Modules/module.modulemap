@@ -1,7 +1,7 @@
 framework module AATCriteoAdapter {
   umbrella header "AATCriteoAdapter.h"
-
   export *
+
   module * { export * }
 }
 

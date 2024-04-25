@@ -1,7 +1,7 @@
 framework module AATAppLovinAdapter {
   umbrella header "AATAppLovinAdapter.h"
-
   export *
+
   module * { export * }
 }
 

@@ -619,7 +619,7 @@ SWIFT_CLASS("_TtC21ConsentViewController10SPCampaign")
 @interface SPCampaign : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)initWithTargetingParams:(NSDictionary<NSString *, NSString *> * _Nonnull)targetingParams groupPmId:(NSString * _Nullable)groupPmId OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTargetingParams:(NSDictionary<NSString *, NSString *> * _Nonnull)targetingParams groupPmId:(NSString * _Nullable)groupPmId gppConfig:(SPGPPConfig * _Nullable)gppConfig transitionCCPAAuth:(enum SPOptinalBool)transitionCCPAAuth OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTargetingParams:(NSDictionary<NSString *, NSString *> * _Nonnull)targetingParams groupPmId:(NSString * _Nullable)groupPmId gppConfig:(SPGPPConfig * _Nullable)gppConfig transitionCCPAAuth:(enum SPOptinalBool)transitionCCPAAuth supportLegacyUSPString:(enum SPOptinalBool)supportLegacyUSPString OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -827,6 +827,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)deleteCustomConsentGDPRWithVendors:(NSArray<NSString *> * _Nonnull)vendors categories:(NSArray<NSString *> * _Nonnull)categories legIntCategories:(NSArray<NSString *> * _Nonnull)legIntCategories handler:(void (^ _Nonnull)(SPGDPRConsent * _Nonnull))handler;
 @end
 
+
+
+SWIFT_CLASS("_TtC21ConsentViewController13SPConsentable")
+@interface SPConsentable : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+@property (nonatomic, readonly) BOOL consented;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 
@@ -1100,17 +1111,44 @@ SWIFT_CLASS("_TtC21ConsentViewController14SPPropertyName")
 
 
 
+@class ConsentString;
+@class Statuses;
 
 SWIFT_CLASS("_TtC21ConsentViewController14SPUSNatConsent")
 @interface SPUSNatConsent : NSObject <NSCopying>
+/// A collection of accepted/rejected vendors and their ids
+@property (nonatomic, readonly, copy) NSArray<SPConsentable *> * _Nonnull vendors;
+/// A collection of accepted/rejected categories (aka. purposes) and their ids
+@property (nonatomic, readonly, copy) NSArray<SPConsentable *> * _Nonnull categories;
+/// Identifies this usnat consent profile
 @property (nonatomic, copy) NSString * _Nullable uuid;
+/// Whether USNat applies according to user’s location (inferred from IP lookup) and your Vendor List applies scope setting
 @property (nonatomic) BOOL applies;
+/// The consent strings related to this user profile
+@property (nonatomic, readonly, copy) NSArray<ConsentString *> * _Nonnull consentStrings;
+/// A series of statuses (<code>Bool?</code>) regarding GPP and user consent
+/// seealso:
+/// <code>SPUSNatConsent.Statuses</code>
+@property (nonatomic, readonly, strong) Statuses * _Nonnull statuses;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+@interface SPUSNatConsent (SWIFT_EXTENSION(ConsentViewController))
+@end
+
+
+@interface SPUSNatConsent (SWIFT_EXTENSION(ConsentViewController))
+@end
+
+
+@interface SPUSNatConsent (SWIFT_EXTENSION(ConsentViewController))
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 + (SPUSNatConsent * _Nonnull)empty SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -1829,7 +1867,7 @@ SWIFT_CLASS("_TtC21ConsentViewController10SPCampaign")
 @interface SPCampaign : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)initWithTargetingParams:(NSDictionary<NSString *, NSString *> * _Nonnull)targetingParams groupPmId:(NSString * _Nullable)groupPmId OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTargetingParams:(NSDictionary<NSString *, NSString *> * _Nonnull)targetingParams groupPmId:(NSString * _Nullable)groupPmId gppConfig:(SPGPPConfig * _Nullable)gppConfig transitionCCPAAuth:(enum SPOptinalBool)transitionCCPAAuth OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTargetingParams:(NSDictionary<NSString *, NSString *> * _Nonnull)targetingParams groupPmId:(NSString * _Nullable)groupPmId gppConfig:(SPGPPConfig * _Nullable)gppConfig transitionCCPAAuth:(enum SPOptinalBool)transitionCCPAAuth supportLegacyUSPString:(enum SPOptinalBool)supportLegacyUSPString OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2037,6 +2075,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)deleteCustomConsentGDPRWithVendors:(NSArray<NSString *> * _Nonnull)vendors categories:(NSArray<NSString *> * _Nonnull)categories legIntCategories:(NSArray<NSString *> * _Nonnull)legIntCategories handler:(void (^ _Nonnull)(SPGDPRConsent * _Nonnull))handler;
 @end
 
+
+
+SWIFT_CLASS("_TtC21ConsentViewController13SPConsentable")
+@interface SPConsentable : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
+@property (nonatomic, readonly) BOOL consented;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 
@@ -2310,17 +2359,44 @@ SWIFT_CLASS("_TtC21ConsentViewController14SPPropertyName")
 
 
 
+@class ConsentString;
+@class Statuses;
 
 SWIFT_CLASS("_TtC21ConsentViewController14SPUSNatConsent")
 @interface SPUSNatConsent : NSObject <NSCopying>
+/// A collection of accepted/rejected vendors and their ids
+@property (nonatomic, readonly, copy) NSArray<SPConsentable *> * _Nonnull vendors;
+/// A collection of accepted/rejected categories (aka. purposes) and their ids
+@property (nonatomic, readonly, copy) NSArray<SPConsentable *> * _Nonnull categories;
+/// Identifies this usnat consent profile
 @property (nonatomic, copy) NSString * _Nullable uuid;
+/// Whether USNat applies according to user’s location (inferred from IP lookup) and your Vendor List applies scope setting
 @property (nonatomic) BOOL applies;
+/// The consent strings related to this user profile
+@property (nonatomic, readonly, copy) NSArray<ConsentString *> * _Nonnull consentStrings;
+/// A series of statuses (<code>Bool?</code>) regarding GPP and user consent
+/// seealso:
+/// <code>SPUSNatConsent.Statuses</code>
+@property (nonatomic, readonly, strong) Statuses * _Nonnull statuses;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+
+@interface SPUSNatConsent (SWIFT_EXTENSION(ConsentViewController))
+@end
+
+
+@interface SPUSNatConsent (SWIFT_EXTENSION(ConsentViewController))
+@end
+
+
+@interface SPUSNatConsent (SWIFT_EXTENSION(ConsentViewController))
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 + (SPUSNatConsent * _Nonnull)empty SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

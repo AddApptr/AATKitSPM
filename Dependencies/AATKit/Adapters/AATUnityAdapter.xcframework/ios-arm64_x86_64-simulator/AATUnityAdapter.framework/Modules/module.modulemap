@@ -1,7 +1,7 @@
 framework module AATUnityAdapter {
   umbrella header "AATUnityAdapter.h"
-
   export *
+
   module * { export * }
 }
 

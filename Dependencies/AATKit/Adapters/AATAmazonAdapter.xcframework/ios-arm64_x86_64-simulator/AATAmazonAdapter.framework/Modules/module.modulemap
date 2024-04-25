@@ -1,7 +1,7 @@
 framework module AATAmazonAdapter {
   umbrella header "AATAmazonAdapter.h"
-
   export *
+
   module * { export * }
 }
 

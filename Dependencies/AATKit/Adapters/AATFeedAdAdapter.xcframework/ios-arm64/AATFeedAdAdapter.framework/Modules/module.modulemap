@@ -1,7 +1,7 @@
 framework module AATFeedAdAdapter {
   umbrella header "AATFeedAdAdapter.h"
-
   export *
+
   module * { export * }
 }
 

@@ -1,7 +1,7 @@
 framework module AATTeadsAdapter {
   umbrella header "AATTeadsAdapter.h"
-
   export *
+
   module * { export * }
 }
 

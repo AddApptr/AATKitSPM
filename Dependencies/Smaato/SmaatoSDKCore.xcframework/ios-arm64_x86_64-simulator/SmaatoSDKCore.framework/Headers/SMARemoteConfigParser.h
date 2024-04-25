@@ -16,6 +16,7 @@
 
 @interface SMARemoteConfigUrl: NSObject
 @property (nonatomic, copy) NSString *somaURL;
+@property (nonatomic, copy) NSString *somaDntURL;
 @property (nonatomic, copy) NSString *adviolationURL;
 @property (nonatomic, copy) NSString *somaUBURL;
 @property (nonatomic, copy) NSString *configurationURL;
@@ -43,9 +44,38 @@
 @property (nonatomic, retain) NSDictionary *high;
 @end
 
+@interface SMASupportedFeature: NSObject
+@property (nonatomic, retain) NSString *featureName;
+@property (nonatomic) BOOL featureIsEnabled;
+@property (nonatomic, retain) NSString *minSupportedSDKVersion;
+@end
+
+@interface SMAButtonSize: NSObject
+@property (nonatomic) NSInteger small;
+@property (nonatomic) NSInteger mid;
+@end
+
+@interface SMAVideoSkip: NSObject
+@property (nonatomic) NSInteger mid;
+@property (nonatomic) NSInteger large;
+@end
+
+@interface SMADisplayClose: NSObject
+@property (nonatomic) NSInteger mid;
+@property (nonatomic) NSInteger large;
+@end
+
+@interface SMAButtonDelay: NSObject
+@property (nonatomic, retain) SMAVideoSkip *videoSkip;
+@property (nonatomic, retain) SMADisplayClose *displayClose;
+@end
+
 @interface SMARemoteConfigParser: NSObject
 @property (nonatomic, retain) SMARemoteConfigUrl *urls;
 @property (nonatomic, retain) SMARemoteConfigAttributes *properties;
 @property (nonatomic, retain) SMARemoteConfigVideoQuality *videoQuality;
+@property (nonatomic, retain) SMAButtonSize *buttonSize;
+@property (nonatomic, retain) SMAButtonDelay *buttonDelay;
+@property (nonatomic) NSMutableArray<SMASupportedFeature *> *supportedFeatures;
 
 @end

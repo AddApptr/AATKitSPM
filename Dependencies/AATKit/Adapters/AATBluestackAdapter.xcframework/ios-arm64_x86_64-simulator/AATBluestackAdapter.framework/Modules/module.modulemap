@@ -1,7 +1,7 @@
 framework module AATBluestackAdapter {
   umbrella header "AATBluestackAdapter.h"
-
   export *
+
   module * { export * }
 }
 

@@ -54,11 +54,7 @@
 		</data>
 		<key>Headers/SMAIABDataStorageVTwoUserDefaults.h</key>
 		<data>
-		04tyK01qBZkwiKc6gn8tR+3ZHlw=
-		</data>
-		<key>Headers/SMAImageAdEvent.h</key>
-		<data>
-		bUGQAuAFFlZq49rUs96Xs6hk938=
+		tzT/rMoqQ3i0CJOQzIHOo1N6Bns=
 		</data>
 		<key>Headers/SMAInterstitialNetworkEvent.h</key>
 		<data>
@@ -82,11 +78,11 @@
 		</data>
 		<key>Headers/SMARemoteConfig.h</key>
 		<data>
-		FD3Z5+mqXYle21CoCMOGxMASDow=
+		6LM7gb83F1oxEk16twKlVPJGfwg=
 		</data>
 		<key>Headers/SMARemoteConfigParser.h</key>
 		<data>
-		QRuC43WZm9aiKlooMV9SOGIMxRA=
+		iZqHxVR99pmLWs89idnLBXJvKP4=
 		</data>
 		<key>Headers/SMARewardedNetworkEvent.h</key>
 		<data>
@@ -98,19 +94,19 @@
 		</data>
 		<key>Headers/SmaatoSDK.h</key>
 		<data>
-		71W5ptbM6FnWC5Ux8h+/ndTLyps=
+		WC5UmGNOlrCMCYd373mIGO7750M=
 		</data>
 		<key>Headers/SmaatoSDKCore.h</key>
 		<data>
-		5c2z/HkzfGBhINaHPhnyxQFFWqM=
+		OZrND8XHiv+hYBIdowx8vYSkwtE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rHXJ+J+0d1VTtiVQIN3xEnXLATA=
+		BFSYENHEUmI05z2TsHpIMnYvEIU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		dDvlpSxsu9uYEdu+v0hdVRtK7Jo=
+		07L9w41HgBgD6aZ6r+UmtCTbIVQ=
 		</data>
 		<key>PrivateHeaders/NSArray+Functions.h</key>
 		<data>
@@ -202,7 +198,7 @@
 		</data>
 		<key>PrivateHeaders/SMAAPIResponse.h</key>
 		<data>
-		jHwgwxjeUPVXJD1FNYTlUwDs2hU=
+		Dk880SK1en/u8NPL5vBWst9d3Zw=
 		</data>
 		<key>PrivateHeaders/SMAAPIResponseMapper.h</key>
 		<data>
@@ -376,6 +372,10 @@
 		<data>
 		GVsHAm95yw8nSeBV+6MzzYMlu3I=
 		</data>
+		<key>PrivateHeaders/SMACloseAndSkipButton.h</key>
+		<data>
+		1Ibr07NMQjl6kjlf8dUxVOdZ6jE=
+		</data>
 		<key>PrivateHeaders/SMACloseButton.h</key>
 		<data>
 		3re297Andez2ZccWO6HTLT7IUkI=
@@ -402,7 +402,7 @@
 		</data>
 		<key>PrivateHeaders/SMAConfigurationViewModel.h</key>
 		<data>
-		f5p9lHYEb7dv/Y519J4gK3ZcDZQ=
+		gkHpR5bHf6rJnoe1pKuG54u04dY=
 		</data>
 		<key>PrivateHeaders/SMAConnectionTypeProvider+Private.h</key>
 		<data>
@@ -610,7 +610,7 @@
 		</data>
 		<key>PrivateHeaders/SMAModelObject.h</key>
 		<data>
-		HcbOU3KzQlCPFXA3UJWY7sFrwVE=
+		Do5pNwN++QiVm1o6dd9i0wsMyw4=
 		</data>
 		<key>PrivateHeaders/SMAMultipleResponseStoreBucket.h</key>
 		<data>
@@ -720,6 +720,14 @@
 		<data>
 		6bp3S4s/kjyOUnrRZz98KJn9FyY=
 		</data>
+		<key>PrivateHeaders/SMAPublisherConfigButtonDelays.h</key>
+		<data>
+		7/j1HB6iq431hKtnshCbJIpDYl4=
+		</data>
+		<key>PrivateHeaders/SMAPublisherConfigButtonSize.h</key>
+		<data>
+		OQdEGU4A5f16B2/QnWoMrPVlI4E=
+		</data>
 		<key>PrivateHeaders/SMARawDataProvider.h</key>
 		<data>
 		9MayHSGlSCjytfAX3bosIHGF+TI=
@@ -794,7 +802,7 @@
 		</data>
 		<key>PrivateHeaders/SMASettingsConstants.h</key>
 		<data>
-		ANG+83p3i55V3dVZhVj/soHTaO0=
+		zSFfkWknicsgizc2d6WYWV68RTM=
 		</data>
 		<key>PrivateHeaders/SMASilentModeManager.h</key>
 		<data>
@@ -948,6 +956,34 @@
 		<data>
 		64l/zZrCoI29t0xP8F/GtP5OjoY=
 		</data>
+		<key>SmaatoSDKCoreResource.bundle/Info.plist</key>
+		<data>
+		MLgBHK10evukn3p+Anw7qeMu29w=
+		</data>
+		<key>SmaatoSDKCoreResource.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		gj91DSqr7BKvZrrC2t6P1gg0tG0=
+		</data>
+		<key>SmaatoSDKCoreResource.bundle/_CodeSignature/CodeDirectory</key>
+		<data>
+		Dbwz1dEfwsAx1G6d8CC/MSQdN9M=
+		</data>
+		<key>SmaatoSDKCoreResource.bundle/_CodeSignature/CodeRequirements</key>
+		<data>
+		OnX22wWFKRSOFN1+obRynMCeyXM=
+		</data>
+		<key>SmaatoSDKCoreResource.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		SWQds4Btc8KmdAyxePXRQEHOJo0=
+		</data>
+		<key>SmaatoSDKCoreResource.bundle/_CodeSignature/CodeResources</key>
+		<data>
+		mdGuvSjLbIRZ4G+Iap7b/nGKFCw=
+		</data>
+		<key>SmaatoSDKCoreResource.bundle/_CodeSignature/CodeSignature</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -1087,22 +1123,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			04tyK01qBZkwiKc6gn8tR+3ZHlw=
+			tzT/rMoqQ3i0CJOQzIHOo1N6Bns=
 			</data>
 			<key>hash2</key>
 			<data>
-			w3mKjRJqi4QJWWuwxu0CVpANXgnOgQmSfoqN5upLfrg=
-			</data>
-		</dict>
-		<key>Headers/SMAImageAdEvent.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bUGQAuAFFlZq49rUs96Xs6hk938=
-			</data>
-			<key>hash2</key>
-			<data>
-			i2wRyNjFZByY/VN8JMKhLoMqWIW5Q6VdNRpAjgTk93w=
+			VhsnVZuGv6R1lR/joDM6ueygLJ5h6OpHKeO2bjDZnGo=
 			</data>
 		</dict>
 		<key>Headers/SMAInterstitialNetworkEvent.h</key>
@@ -1164,22 +1189,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FD3Z5+mqXYle21CoCMOGxMASDow=
+			6LM7gb83F1oxEk16twKlVPJGfwg=
 			</data>
 			<key>hash2</key>
 			<data>
-			hH4TEWyziQc26eJJSJcoC/kss8EbXbNQ8HJnPWJzXMI=
+			zGdoUm7Pe0QaBtjb6GTlum1o1DIbyjAW8CiSLazOJIs=
 			</data>
 		</dict>
 		<key>Headers/SMARemoteConfigParser.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QRuC43WZm9aiKlooMV9SOGIMxRA=
+			iZqHxVR99pmLWs89idnLBXJvKP4=
 			</data>
 			<key>hash2</key>
 			<data>
-			fIdOrAtdPkEb4T+onZvhGzosnwwgrLUwAfmKt0GGkVI=
+			gDZMiM9kfsIAtFoOYc1wC4m9hEFuYQ8iw8lcuIM0Fok=
 			</data>
 		</dict>
 		<key>Headers/SMARewardedNetworkEvent.h</key>
@@ -1208,33 +1233,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			71W5ptbM6FnWC5Ux8h+/ndTLyps=
+			WC5UmGNOlrCMCYd373mIGO7750M=
 			</data>
 			<key>hash2</key>
 			<data>
-			fFiF26/bCDMXzPgP4H92I1UWjW8+/CeqA7QaTUQ3kU4=
+			jAi7vMjCl4XDNGSk/XC3xPzzKlHJLVDHimPmlD0ORh4=
 			</data>
 		</dict>
 		<key>Headers/SmaatoSDKCore.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5c2z/HkzfGBhINaHPhnyxQFFWqM=
+			OZrND8XHiv+hYBIdowx8vYSkwtE=
 			</data>
 			<key>hash2</key>
 			<data>
-			9Kuats29GDBtSuUqa6yAmmcXcg6Sk9XY2EhBCCqD2pk=
+			aZYqoQnCXy/suGYLQFERTjFUfSqWxfqUvRqrdNw0RLo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dDvlpSxsu9uYEdu+v0hdVRtK7Jo=
+			07L9w41HgBgD6aZ6r+UmtCTbIVQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			s0MyNu73RYvFWA6jlPLnPrqlxmtfzwT3BVfwWzUYFhY=
+			YAn1SkFe74N+c/kW0XOWKBseR9Sv1r9U3inpX0cVV/8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NSArray+Functions.h</key>
@@ -1483,11 +1508,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jHwgwxjeUPVXJD1FNYTlUwDs2hU=
+			Dk880SK1en/u8NPL5vBWst9d3Zw=
 			</data>
 			<key>hash2</key>
 			<data>
-			CCxNAReIowwf1jAyk9FfL90ALrniMqqvyeDhz3j5nDE=
+			llsnxZDqL8U/ExhZqz2iskF6ky9+0TODesN1KuiF7wc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAPIResponseMapper.h</key>
@@ -1963,6 +1988,17 @@
 			/b2QYlCAErns4bDaKkkgGDjwZHD4GTzYDTPXbwV4jIU=
 			</data>
 		</dict>
+		<key>PrivateHeaders/SMACloseAndSkipButton.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1Ibr07NMQjl6kjlf8dUxVOdZ6jE=
+			</data>
+			<key>hash2</key>
+			<data>
+			JhYa0pvV9GEjnp8kme9k/h+ergGDMS2L9QIfSLn7Pmo=
+			</data>
+		</dict>
 		<key>PrivateHeaders/SMACloseButton.h</key>
 		<dict>
 			<key>hash</key>
@@ -2033,11 +2069,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f5p9lHYEb7dv/Y519J4gK3ZcDZQ=
+			gkHpR5bHf6rJnoe1pKuG54u04dY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qig08e6W3/DQrfiaL3KRW0pKIJUEQh4vpAGw6wrCwMg=
+			KkoCvx1O6RS6DNIK8LIsSS0dhueVNpiBTf6vvAtAixI=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAConnectionTypeProvider+Private.h</key>
@@ -2605,11 +2641,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HcbOU3KzQlCPFXA3UJWY7sFrwVE=
+			Do5pNwN++QiVm1o6dd9i0wsMyw4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z61UNtNAXicUiIcbvqWBMGMJ0+UTsBiCSAhtFcy9PMM=
+			3QmzESycnKKpg7w2IgTPgsJioPzrT0GEAB6g3lR+iKY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAMultipleResponseStoreBucket.h</key>
@@ -2909,6 +2945,28 @@
 			s3qsC5/Bx96789rgw/yKI9K+cdt8OiyYWRg+lKbKmQc=
 			</data>
 		</dict>
+		<key>PrivateHeaders/SMAPublisherConfigButtonDelays.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			7/j1HB6iq431hKtnshCbJIpDYl4=
+			</data>
+			<key>hash2</key>
+			<data>
+			8ufwVpNejWDfT8SUSzQLbeFhfuh/BpqtUlLvWIAIfck=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMAPublisherConfigButtonSize.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OQdEGU4A5f16B2/QnWoMrPVlI4E=
+			</data>
+			<key>hash2</key>
+			<data>
+			k+QscfYyMpIMIhtRqjr5C/nEQsrpgp4tBPBder1cvc8=
+			</data>
+		</dict>
 		<key>PrivateHeaders/SMARawDataProvider.h</key>
 		<dict>
 			<key>hash</key>
@@ -3111,11 +3169,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ANG+83p3i55V3dVZhVj/soHTaO0=
+			zSFfkWknicsgizc2d6WYWV68RTM=
 			</data>
 			<key>hash2</key>
 			<data>
-			kY/syAnnpRvTYmC0bUCjHv8Rh4E8DMec+b3IX/+rEVU=
+			hUAQd0q935wwUIbJm1xNw7KaYnzCXJrlOKlGbdIJd80=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMASilentModeManager.h</key>
@@ -3534,6 +3592,83 @@
 			<key>hash2</key>
 			<data>
 			qKngcVy/8yi1LPwAS4HStq1hAUSFuPbP4nRZV9F5qtA=
+			</data>
+		</dict>
+		<key>SmaatoSDKCoreResource.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MLgBHK10evukn3p+Anw7qeMu29w=
+			</data>
+			<key>hash2</key>
+			<data>
+			z9IvZXQLRkXodOk8wT12F/RzvJJOlg5SnJXoVjkTHb8=
+			</data>
+		</dict>
+		<key>SmaatoSDKCoreResource.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gj91DSqr7BKvZrrC2t6P1gg0tG0=
+			</data>
+			<key>hash2</key>
+			<data>
+			gIUNmjwkRfdwkyn9AmeHSFgEoEv9QH+QytONN72/sTg=
+			</data>
+		</dict>
+		<key>SmaatoSDKCoreResource.bundle/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dbwz1dEfwsAx1G6d8CC/MSQdN9M=
+			</data>
+			<key>hash2</key>
+			<data>
+			W9IqTgx8QY6Xz+nMOcwBTu/dRuNV9OZMRrw3nTSSKR8=
+			</data>
+		</dict>
+		<key>SmaatoSDKCoreResource.bundle/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OnX22wWFKRSOFN1+obRynMCeyXM=
+			</data>
+			<key>hash2</key>
+			<data>
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			</data>
+		</dict>
+		<key>SmaatoSDKCoreResource.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SWQds4Btc8KmdAyxePXRQEHOJo0=
+			</data>
+			<key>hash2</key>
+			<data>
+			bV65hTpS5MNvTdN4ZXqUbJOzpn3pdULS6c1bAJyl0hY=
+			</data>
+		</dict>
+		<key>SmaatoSDKCoreResource.bundle/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mdGuvSjLbIRZ4G+Iap7b/nGKFCw=
+			</data>
+			<key>hash2</key>
+			<data>
+			ChkVuSiZBlJr7heJicFtzqoda74z7NFLn8MP/pEpuNg=
+			</data>
+		</dict>
+		<key>SmaatoSDKCoreResource.bundle/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 	</dict>

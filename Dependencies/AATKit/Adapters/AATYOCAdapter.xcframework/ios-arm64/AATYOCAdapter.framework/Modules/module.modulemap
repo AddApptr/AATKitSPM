@@ -1,7 +1,7 @@
 framework module AATYOCAdapter {
   umbrella header "AATYOCAdapter.h"
-
   export *
+
   module * { export * }
 }
 

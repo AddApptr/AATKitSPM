@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name HyBid
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name HyBid
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AdSupport
@@ -16,6 +16,7 @@ import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class HyBidLogger : ObjectiveC.NSObject {
   public static var logLevel: HyBidLogLevel
   @objc(setLogLevel:) public static func setLogLevel(_ logLevel: HyBidLogLevel)
@@ -26,12 +27,24 @@ import _StringProcessing
   @objc override dynamic public init()
   @objc deinit
 }
+@objc public class HyBidOpenRTBRequestModel : ObjectiveC.NSObject {
+  @objc public init(adRequestModel: PNLiteAdRequestModel, openRTBAdType: HyBidOpenRTBAdType)
+  @objc public func getOpenRTBRequestBody() -> Swift.Dictionary<Swift.String, Any>
+  @objc deinit
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func showCustomAlert(title: Swift.String, message: Swift.String? = nil, style: UIKit.UIAlertController.Style = .alert, firstAction: UIKit.UIAlertAction? = nil, secondAction: UIKit.UIAlertAction? = nil, completionHandler: (() -> Swift.Void)? = nil)
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidSDKConfig : ObjectiveC.NSObject {
   @objc public static let sharedConfig: HyBidSDKConfig
   @objc public var test: Swift.Bool
+  @objc public var reporting: Swift.Bool
   @objc public var targeting: HyBidTargetingModel?
   @objc public var appToken: Swift.String?
-  @objc public var apiURL: Swift.String
+  @objc public var apiURL: Swift.String {
+    @objc get
+    @objc set
+  }
   @objc public var openRtbApiURL: Swift.String
   @objc public var appID: Swift.String?
   @objc deinit
@@ -65,10 +78,12 @@ extension HyBidMRAIDCloseCardView : HyBidContentInfoViewDelegate {
 @_inheritsConvenienceInitializers @objc public class HyBidReportingManager : ObjectiveC.NSObject {
   @objc public static let sharedInstance: HyBidReportingManager
   @objc public var events: [HyBidReportingEvent]
-  @objc weak public var delegate: HyBidReportingDelegate?
+  @objc weak public var delegate: (any HyBidReportingDelegate)?
+  @objc public var isAtomStarted: Swift.Bool
   @objc public func reportEvent(for event: HyBidReportingEvent)
   @objc public func reportEvents(for events: [HyBidReportingEvent])
   @objc public func clearEvents()
+  @objc public func addCommonProperties(forAd ad: HyBidAd?, withRequest request: HyBidAdRequest?) -> [Swift.String : Swift.String]
   @objc override dynamic public init()
   @objc deinit
 }
@@ -111,7 +126,6 @@ extension HyBidMRAIDCloseCardView : HyBidContentInfoViewDelegate {
   @objc public var jsValue: Swift.String {
     @objc get
   }
-  @objc public func geoFetchSupport() -> Swift.String
   @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
   @objc public var languageBCP47: Swift.String? {
     @objc get
@@ -178,6 +192,9 @@ extension HyBidMRAIDCloseCardView : HyBidContentInfoViewDelegate {
   @objc public var isAirplaneModeEnabled: Swift.String? {
     @objc get
   }
+  @objc public var hasSIM: Swift.Bool {
+    @objc get
+  }
   @objc deinit
 }
 extension UIKit.UIDevice {
@@ -197,8 +214,10 @@ public typealias ReportingKey = Swift.String
   @objc public static let DEFAULT_HTML_SKIP_OFFSET: Swift.Int
   @objc public static let DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD: Swift.Int
   @objc public static let DEFAULT_END_CARD_CLOSE_OFFSET: Swift.Int
-  @objc public static let DEFAULT_REWARDED_VIDEO_SKIP_OFFSET: Swift.Int
-  @objc public static let DEFAULT_INSTERSTITIAL_VIDEO_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_INTERSTITIAL_VIDEO_MAX_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_REWARDED_HTML_MAX_SKIP_OFFSET: Swift.Int
+  @objc public static let DEFAULT_INTERSTITIAL_HTML_MAX_SKIP_OFFSET: Swift.Int
   @objc public static let DEFAULT_NATIVE_CLOSE_BUTTON_OFFSET: Swift.Int
   @objc public var offset: Foundation.NSNumber?
   @objc public var isCustom: Swift.Bool
@@ -237,12 +256,42 @@ public typealias ReportingKey = Swift.String
   @objc public static let HYBID_SDK_VERSION: Swift.String
   @objc public static let HYBID_OMSDK_VERSION: Swift.String
   @objc public static let HYBID_OMSDK_IDENTIFIER: Swift.String
+  @objc public static var mraidExpand: Swift.Bool
+  @objc public static var showEndCard: Swift.Bool
+  @objc public static var showCustomEndCard: Swift.Bool
+  @objc public static var customEndCardInputValue: Swift.String
+  @objc public static var customEndcardDisplay: HyBidCustomEndcardDisplayBehaviour
+  @objc public static var interstitialCloseOnFinish: Swift.Bool
+  @objc public static var rewardedCloseOnFinish: Swift.Bool
+  @objc public static var rewardedHtmlSkipOffset: HyBidSkipOffset
+  @objc public static var rewardedVideoSkipOffset: HyBidSkipOffset
+  @objc public static var interstitialHtmlSkipOffset: HyBidSkipOffset
+  @objc public static var videoSkipOffset: HyBidSkipOffset
+  @objc public static var interstitialActionBehaviour: HyBidInterstitialActionBehaviour
+  @objc public static var endCardCloseOffset: HyBidSkipOffset
+  @objc public static var nativeCloseButtonOffset: HyBidSkipOffset
+  @objc public static var audioStatus: HyBidAudioStatus
+  @objc public static var creativeAutoStorekitEnabled: Swift.Bool
+  @objc public static var atomEnabled: Swift.Bool
+  @objc public static var sdkAutoStorekitEnabled: Swift.Bool
+  @objc public static var skAdNetworkModelInputValue: Foundation.NSDictionary
+  @objc public static var itunesIdValue: Swift.String
+  @objc public static var customCTAInputValue: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class HyBidCustomCTAView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public init(ad: HyBidAd, viewController: UIKit.UIViewController, delegate: any HyBidCustomCTAViewDelegate, adFormat: Swift.String)
+  @objc deinit
+}
+extension HyBidCustomCTAView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func presentCustomCTAWithDelay()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func removeCustomCTA()
+  @objc @_Concurrency.MainActor(unsafe) public static func isCustomCTAValid(ad: HyBidAd) -> Swift.Bool
+}
 @objc public protocol HyBidInterstitialAdDelegate {
   @objc func interstitialDidLoad()
-  @objc func interstitialDidFailWithError(_ error: Swift.Error!)
+  @objc func interstitialDidFailWithError(_ error: (any Swift.Error)!)
   @objc func interstitialDidTrackImpression()
   @objc func interstitialDidTrackClick()
   @objc func interstitialDidDismiss()
@@ -255,19 +304,16 @@ public typealias ReportingKey = Swift.String
     @objc get
     @objc set
   }
-  @objc(initWithDelegate:) convenience public init(delegate: HyBidInterstitialAdDelegate)
-  @objc(initWithZoneID:andWithDelegate:) convenience public init(zoneID: Swift.String?, andWith delegate: HyBidInterstitialAdDelegate)
-  @objc(initWithZoneID:withAppToken:andWithDelegate:) convenience public init(zoneID: Swift.String?, withAppToken appToken: Swift.String?, andWith delegate: HyBidInterstitialAdDelegate)
+  @objc(initWithDelegate:) convenience public init(delegate: any HyBidInterstitialAdDelegate)
+  @objc(initWithZoneID:andWithDelegate:) convenience public init(zoneID: Swift.String?, andWith delegate: any HyBidInterstitialAdDelegate)
+  @objc(initWithZoneID:withAppToken:andWithDelegate:) convenience public init(zoneID: Swift.String?, withAppToken appToken: Swift.String?, andWith delegate: any HyBidInterstitialAdDelegate)
   @objc public func load()
   @objc public func loadExchangeAd()
-  @objc(setSkipOffset:) public func setSkipOffset(_ seconds: Swift.Int)
-  @objc(setVideoSkipOffset:) public func setVideoSkipOffset(_ seconds: Swift.Int)
-  @objc(setHTMLSkipOffset:) public func setHTMLSkipOffset(_ seconds: Swift.Int)
-  @objc(setCloseOnFinish:) public func setCloseOnFinish(_ closeOnFinish: Swift.Bool)
   @objc public func prepare()
   @objc(setMediationVendor:) public func setMediationVendor(with mediationVendor: Swift.String)
   @objc(prepareAdWithContent:) public func prepareAdWithContent(adContent: Swift.String)
   @objc(prepareAdWithAdReponse:) public func prepareAdWithAdReponse(adReponse: Swift.String)
+  @objc(prepareExchangeAdWithAdReponse:) public func prepareExchangeAdWithAdReponse(adReponse: Swift.String)
   @objc(prepareVideoTagFrom:) public func prepareVideoTag(from url: Swift.String)
   @objc(prepareCustomMarkupFrom:) public func prepareCustomMarkupFrom(_ markup: Swift.String)
   @objc public func show()
@@ -277,7 +323,7 @@ public typealias ReportingKey = Swift.String
 }
 @objc public protocol HyBidRewardedAdDelegate {
   @objc func rewardedDidLoad()
-  @objc func rewardedDidFailWithError(_ error: Swift.Error!)
+  @objc func rewardedDidFailWithError(_ error: (any Swift.Error)!)
   @objc func rewardedDidTrackImpression()
   @objc func rewardedDidTrackClick()
   @objc func rewardedDidDismiss()
@@ -291,18 +337,16 @@ public typealias ReportingKey = Swift.String
     @objc get
     @objc set
   }
-  @objc(initWithDelegate:) convenience public init(delegate: HyBidRewardedAdDelegate)
-  @objc(initWithZoneID:andWithDelegate:) convenience public init(zoneID: Swift.String?, andWith delegate: HyBidRewardedAdDelegate)
-  @objc(initWithZoneID:withAppToken:andWithDelegate:) convenience public init(zoneID: Swift.String?, withAppToken appToken: Swift.String?, andWith delegate: HyBidRewardedAdDelegate)
+  @objc(initWithDelegate:) convenience public init(delegate: any HyBidRewardedAdDelegate)
+  @objc(initWithZoneID:andWithDelegate:) convenience public init(zoneID: Swift.String?, andWith delegate: any HyBidRewardedAdDelegate)
+  @objc(initWithZoneID:withAppToken:andWithDelegate:) convenience public init(zoneID: Swift.String?, withAppToken appToken: Swift.String?, andWith delegate: any HyBidRewardedAdDelegate)
   @objc public func load()
   @objc public func loadExchangeAd()
-  @objc(setSkipOffset:) public func setSkipOffset(_ seconds: Swift.Int)
-  @objc(setHTMLSkipOffset:) public func setHTMLSkipOffset(_ seconds: Swift.Int)
-  @objc(setCloseOnFinish:) public func setCloseOnFinish(_ closeOnFinish: Swift.Bool)
   @objc public func prepare()
   @objc(setMediationVendor:) public func setMediationVendor(with mediationVendor: Swift.String)
   @objc(prepareCustomMarkupFrom:) public func prepareCustomMarkupFrom(_ markup: Swift.String)
   @objc(prepareAdWithContent:) public func prepareAdWithContent(adContent: Swift.String)
+  @objc(prepareExchangeAdWithAdReponse:) public func prepareExchangeAdWithAdReponse(adReponse: Swift.String)
   @objc(prepareAdWithAdReponse:) public func prepareAdWithAdReponse(adReponse: Swift.String)
   @objc public func show()
   @objc(showFromViewController:) public func show(from viewController: UIKit.UIViewController)
@@ -320,6 +364,9 @@ public typealias ReportingKey = Swift.String
     @objc set(enabled)
   }
   @objc deinit
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func changeTextFont(text: Swift.String, font: UIKit.UIFont)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidViewbilityConfig : ObjectiveC.NSObject {
   @objc public static let sharedConfig: HyBidViewbilityConfig
@@ -372,6 +419,7 @@ public typealias ReportingKey = Swift.String
   @objc public static let CLICK: Swift.String
   @objc public static let ERROR: Swift.String
   @objc public static let INTERSTITIAL_CLOSED: Swift.String
+  @objc public static let REWARDED_CLOSED: Swift.String
   @objc public static let VIDEO_STARTED: Swift.String
   @objc public static let VIDEO_DISMISSED: Swift.String
   @objc public static let VIDEO_FINISHED: Swift.String
@@ -402,7 +450,20 @@ public typealias ReportingKey = Swift.String
   @objc public static let REWARD: Swift.String
   @objc public static let SESSION_REPORT_INFO: Swift.String
   @objc public static let CUSTOM_ENDCARD_IMPRESSION: Swift.String
+  @objc public static let DEFAULT_ENDCARD_SKIP: Swift.String
+  @objc public static let DEFAULT_ENDCARD_CLOSE: Swift.String
+  @objc public static let DEFAULT_ENDCARD_IMPRESSION: Swift.String
+  @objc public static let DEFAULT_ENDCARD_CLICK: Swift.String
+  @objc public static let CUSTOM_ENDCARD_CLOSE: Swift.String
   @objc public static let CUSTOM_ENDCARD_CLICK: Swift.String
+  @objc public static let ATOM_ACTIVATED: Swift.String
+  @objc public static let ATOM_DEACTIVATED: Swift.String
+  @objc public static let ATOM_ACTIVATED_RECEIVED: Swift.String
+  @objc public static let ATOM_DEACTIVATED_RECEIVED: Swift.String
+  @objc public static let CUSTOM_CTA_IMPRESSION: Swift.String
+  @objc public static let CUSTOM_CTA_CLICK: Swift.String
+  @objc public static let CUSTOM_CTA_ENDCARD_CLICK: Swift.String
+  @objc public static let SKOVERLAY_IMPRESSION: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -424,56 +485,15 @@ public typealias ReportingKey = Swift.String
   @objc func onURLRedirectorStart(url: Swift.String)
   @objc func onURLRedirectorRedirect(url: Swift.String)
   @objc func onURLRedirectorFinish(url: Swift.String)
-  @objc func onURLRedirectorFail(url: Swift.String, withError error: Swift.Error)
+  @objc func onURLRedirectorFail(url: Swift.String, withError error: any Swift.Error)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class HyBidURLRedirector : ObjectiveC.NSObject, Foundation.URLSessionTaskDelegate, Foundation.URLSessionDataDelegate {
-  @objc weak public var delegate: HyBidURLRedirectorDelegate?
+  @objc weak public var delegate: (any HyBidURLRedirectorDelegate)?
   @objc public var userAgent: Swift.String?
-  @objc public func drill(url: Swift.String)
+  @objc public func drill(url: Swift.String, skanModel: HyBidSkAdNetworkModel?)
   @objc public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
   @objc public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
-  @objc public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: Swift.Error?)
+  @objc public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
   @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidRenderingConfig : ObjectiveC.NSObject {
-  @objc public static let sharedConfig: HyBidRenderingConfig
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var videoSkipOffset: HyBidSkipOffset
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var interstitialHtmlSkipOffset: HyBidSkipOffset
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var rewardedHtmlSkipOffset: HyBidSkipOffset
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var rewardedVideoSkipOffset: HyBidSkipOffset
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var endCardCloseOffset: HyBidSkipOffset
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var nativeCloseButtonOffset: HyBidSkipOffset
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var showEndCard: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @available(*, deprecated, message: "You can safely remove this method from your integration.")
-  @objc public var customEndCard: Swift.Bool
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var interstitialActionBehaviour: HyBidInterstitialActionBehaviour
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var interstitialCloseOnFinish: Swift.Bool
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var rewardedCloseOnFinish: Swift.Bool
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var audioStatus: HyBidAudioStatus
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var mraidExpand: Swift.Bool
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var interstitialSKOverlay: Swift.Bool
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var rewardedSKOverlay: Swift.Bool
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var customEndcardDisplay: HyBidCustomEndcardDisplayBehaviour
-  @available(*, deprecated, message: "Please note this method will no longer be supported from HyBid SDK v3.0. While we do not recommend changes to this setting, you can reach out to your account managers for customisations.")
-  @objc public var creativeAutoStorekitEnabled: Swift.Bool
   @objc deinit
 }

@@ -6,23 +6,23 @@
 	<dict>
 		<key>Headers/SKAdTestPostback.h</key>
 		<data>
-		cC6cJGZF6eobKYikOa7ZLVSZwfU=
+		Clp6K7MmMwX2je4EIiZIj6NWsww=
 		</data>
 		<key>Headers/SKAdTestSession.h</key>
 		<data>
-		eBCrfBEwWpGbSxjgX2ulYZUqsEo=
+		mkZ8rhqj9ivqkHFaO5eAvHWiq2E=
 		</data>
 		<key>Headers/SKTestError.h</key>
 		<data>
-		MPwi9PUD0UDscevPHE9+ARsjXmM=
+		fJP07tl8TJLR8ojoApEh6sfj1+Q=
 		</data>
 		<key>Headers/SKTestSession.h</key>
 		<data>
-		LCZO5TE4FvdyYwdrh7hN56dTJjA=
+		KuuW85ukrJpSoiUfxspxyyf8wQ8=
 		</data>
 		<key>Headers/SKTestTransaction.h</key>
 		<data>
-		BWL1IIjSw+cEM2O47+JTbWRCJeQ=
+		Qq02a8a0jTYhyIok2Ilrr9kEEC0=
 		</data>
 		<key>Headers/StoreKitTest.h</key>
 		<data>
@@ -30,11 +30,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QfQfR1Ox8j+r9H+P9wmMEY+FORQ=
+		4nnvz9t7S4fuM+JDxkFrs87ZZG0=
+		</data>
+		<key>Modules/StoreKitTest.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		B5E44JKnHZQqqx30rGkj67T6WAA=
+		</data>
+		<key>Modules/StoreKitTest.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<data>
+		1aKgXkLrC/EZF69q1H6dqheVsVQ=
+		</data>
+		<key>Modules/StoreKitTest.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		7RzVixqgTBkWKHGwPfWwku8FM7E=
+		</data>
+		<key>Modules/StoreKitTest.swiftmodule/arm64e-apple-ios.private.swiftinterface</key>
+		<data>
+		jir6KGBlA2mDQfp3Zc3Xe0rOw9Q=
+		</data>
+		<key>Modules/StoreKitTest.swiftmodule/arm64e-apple-ios.swiftdoc</key>
+		<data>
+		TBry3zCLUb6jLoPK6DyP9T0Hwlg=
+		</data>
+		<key>Modules/StoreKitTest.swiftmodule/arm64e-apple-ios.swiftinterface</key>
+		<data>
+		fZVloNDUvl/IZQF1xPdYobnOJzQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		zjLDnq/lVeHmhrQcl+fPEmM1Ic4=
+		samV+FMloXmN7KLlZD+k4Ucf8I0=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -47,7 +71,7 @@
 		</dict>
 		<key>version.plist</key>
 		<data>
-		QVSC/5p/oJHp0+H7Ttd/dluWvZM=
+		Ie9jAcv6tgnkMmuhJTuz0Ja/tF0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -56,35 +80,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JwsvHssXFk/htZTFcHQiXjxKPs12t2D2CArGu7ddLfA=
+			0rE7wgCLhGsiHM8/sxEY3XMpSpwF4Pr6aWaYxvrCdpY=
 			</data>
 		</dict>
 		<key>Headers/SKAdTestSession.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TAPlsBEmBO87AOUQejxZDVo+BOQkfUEAGbmCc8woTi8=
+			6kbmpgvFwOOUQOPIYXuulQKU9F0/MwKvjDxW39vRnM0=
 			</data>
 		</dict>
 		<key>Headers/SKTestError.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/H7SqB5R6hWj42Iu5zErYRdkxuK2C2PkCuPsO690qi8=
+			hFhAUoABIAHkVBBnZyDkmd39FdQzPrVoDzQWflLATXA=
 			</data>
 		</dict>
 		<key>Headers/SKTestSession.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RSRPYeIBWoZ4GwKdqqu+1UIVpc5rwzayjHzlLjIsuRk=
+			WUdvMm/diJfWH6XB8S+3WfBmuIdxUW1zGSvaRx4HYTQ=
 			</data>
 		</dict>
 		<key>Headers/SKTestTransaction.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AfxpdH/o41IxRKUOiNA3jzL1/Vz6gGRpjlqdqqpoOS8=
+			VQ6h9AFWpYIbQXk4lOM3o/O37sT1XgPxPFC61XaAQ0M=
 			</data>
 		</dict>
 		<key>Headers/StoreKitTest.h</key>
@@ -94,11 +118,53 @@
 			p2/5fwgS1p/z32opedJYLWGfW0NDWOXM9D5/PxPpnq4=
 			</data>
 		</dict>
+		<key>Modules/StoreKitTest.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kYNHeddpwQaxVWkAoll+ZV1PYp1ISqif5qu7cbTebqM=
+			</data>
+		</dict>
+		<key>Modules/StoreKitTest.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9ncVv5a2lE+7pfy+iRPCQAq66rupRqVVU4gTqqPZDbY=
+			</data>
+		</dict>
+		<key>Modules/StoreKitTest.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5OMmf1zWX7dCzn/FXZEO5ofe2tUOmdSa2JuvyZsRSqg=
+			</data>
+		</dict>
+		<key>Modules/StoreKitTest.swiftmodule/arm64e-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8QTyp9+Etmcl95lDH6pZaW3iYkuVHmcwyXzpo+Fcx0M=
+			</data>
+		</dict>
+		<key>Modules/StoreKitTest.swiftmodule/arm64e-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GyeoihtQ3RNNZDN61WqYRPuCNJiE88apDTJ45yPfxL0=
+			</data>
+		</dict>
+		<key>Modules/StoreKitTest.swiftmodule/arm64e-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VRing4yIcz9EJiVjlzB4jN620Z53utAvEtkOaw4iMtI=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qI6xDNAFFhCGg617/+vPALL/+ief/6DKmb8r+Wsaahw=
+			uH9htkBUEDWtY7g1Xw9p026H3aQtt8vARkeeKBicR1o=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
@@ -114,7 +180,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N4ep+IaZqZCmXe91s2DWpEuLi9atts/IXz7FK7mrQ7Q=
+			QSQivMJDdb7XSOcReULula7Y0qITiUhKwZ02N3SoR/o=
 			</data>
 		</dict>
 	</dict>

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AATKit
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AATKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import AATKit
 import AdSupport
@@ -13,6 +13,7 @@ import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public protocol AATPlacement {
   @objc func getName() -> Swift.String
 }
@@ -1196,6 +1197,7 @@ public protocol AATGoogleDriverProtocol {
   func muteVideoAd(_ isMuted: Swift.Bool)
   func configureConsent(gdprApplies: Swift.Bool, consentStatus: AATKit.NonIABConsent, isVersion2: Swift.Bool, isAdPersonalizationAllowed: Swift.Bool)
   func setIsChildDirected(_ isChildDirected: Swift.Bool)
+  func initialiseSDK()
 }
 public protocol AATDFPPreBidDriverProtocol {
   static var timeOutInSeconds: Foundation.TimeInterval { get }
@@ -1208,6 +1210,10 @@ public protocol AATDFPPreBidDriverProtocol {
 public protocol AATFullscreenDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate {
   var state: AATKit.AATFullscreenAdState { get set }
   func notifyListenerThatUserEarnedIncentive(with reward: AATKit.AATReward)
+}
+public protocol AATAdMobDSPDriverProtocol {
+  static var shared: Self { get }
+  func initialiseSDK()
 }
 @_hasMissingDesignatedInitializers @objc public class AATBannerRequestError : ObjectiveC.NSObject, Foundation.LocalizedError {
   @objc public var errorDescription: Swift.String? {

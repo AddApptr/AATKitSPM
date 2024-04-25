@@ -4,9 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
+		<data>
+		F0NEH/lRpL1zwCq+Megumzg8O9E=
+		</data>
+		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		VWCA3MeaiPMoOAS1uOteTSLX8js=
+		</data>
 		<key>Headers/AATGoogleAdsAdapter-Swift.h</key>
 		<data>
-		spmNt/fNZTi67SLqeOgPLANP+fA=
+		g0P/GeFrwNef7kNf8lBRy7DnI+Y=
 		</data>
 		<key>Headers/AATGoogleAdsAdapter.h</key>
 		<data>
@@ -14,64 +22,94 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		o+vYH4EWIWrefL2ntC2pxT0jUpA=
+		0lptMRdaQiqx5MrmYevtp2w+vU8=
 		</data>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		eO3cbkmNq8qJSW9Be1c17Z8OUAU=
+		3E3szpJYSbrUi5A244gAnJ6WIdU=
 		</data>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qPqfb4TpFjAU6UieykZAmAgKJPc=
+		Hf1oaCE73DXKCaKs3OeZUsDwK7w=
 		</data>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QGNlIe/Y9umaeK5NiXYjNLFJKDw=
+		TisK3DYYW3mzkf8sei9LzCKU36s=
 		</data>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qPqfb4TpFjAU6UieykZAmAgKJPc=
+		Hf1oaCE73DXKCaKs3OeZUsDwK7w=
 		</data>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Lv20rv96yLUE7B5Lni92JQOGb88=
+		WZBSkZ+4KJ2rOIUhAuPqEf9whzo=
 		</data>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		eO3cbkmNq8qJSW9Be1c17Z8OUAU=
+		3E3szpJYSbrUi5A244gAnJ6WIdU=
 		</data>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8TeJvYBaNsv3uBQt1FEXq4/uWh8=
+		Y7c5JkCuAl2uIdiDlENbl1Su57U=
 		</data>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0qLS1AFWcTLHAZYvaHKSz+yV1yA=
+		7wuDS1N853JRiiI2SfljBS3Z9Sw=
 		</data>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8TeJvYBaNsv3uBQt1FEXq4/uWh8=
+		Y7c5JkCuAl2uIdiDlENbl1Su57U=
 		</data>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SeyvrlAjkaI3YdW/jA6Iiyc8pYE=
+		LJ9zf8Ky2HhbniixeYI0zLqSFAI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		GQDUb6n3gM0pgBMwL3/AoGFrvRY=
+		zMYz3io1N69EMd1Ft9GYZCe5v5Y=
+		</data>
+		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
+		<data>
+		V7n6dTwUQLIqxb5DDtAGse3uyIQ=
+		</data>
+		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		k9OFlDPBRWfteJ+bfG12WAoBuls=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F0NEH/lRpL1zwCq+Megumzg8O9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			++Yj9ngLQVrU4i4pjrCKw0+uakL6QI6tiXkoieNvZaI=
+			</data>
+		</dict>
+		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VWCA3MeaiPMoOAS1uOteTSLX8js=
+			</data>
+			<key>hash2</key>
+			<data>
+			afsRJYL8I/wGxjXJYdJio/e0tWVNKEeHSR3jAA2t+dI=
+			</data>
+		</dict>
 		<key>Headers/AATGoogleAdsAdapter-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			spmNt/fNZTi67SLqeOgPLANP+fA=
+			g0P/GeFrwNef7kNf8lBRy7DnI+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			Dhy8t70Kp3y4M2/F+TlzGHJMsateKk4t6FQdKOZ6Tek=
+			xoACQR0KqK6VXUlhCYOPJgVrJs5C4Etw4BopaEeMJBc=
 			</data>
 		</dict>
 		<key>Headers/AATGoogleAdsAdapter.h</key>
@@ -89,121 +127,143 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eO3cbkmNq8qJSW9Be1c17Z8OUAU=
+			3E3szpJYSbrUi5A244gAnJ6WIdU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xg4yW0FC/hTPzQhMbz7DX1lkYbzNr89ad2LiFSNyeKk=
+			DtXVQksHMSiKf+7GfIqCXiHBgLpEavUYIRwyOGjZlr8=
 			</data>
 		</dict>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qPqfb4TpFjAU6UieykZAmAgKJPc=
+			Hf1oaCE73DXKCaKs3OeZUsDwK7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			CmNuCZ88o1NRb3YUM/O3EDpDIhBEb09Ka/o17LHVsBQ=
+			tHy9mkcNur1/1QrxCDlEXfDG/uvAU9HzQ9sDyTX80ac=
 			</data>
 		</dict>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QGNlIe/Y9umaeK5NiXYjNLFJKDw=
+			TisK3DYYW3mzkf8sei9LzCKU36s=
 			</data>
 			<key>hash2</key>
 			<data>
-			CQTpNTkKryihljI4vQNs4AmlZAYX0++XpL32gxV1fec=
+			LP9PAtV2iifKLC/JArWKmXEzQwyte0/EAHVA43vWaeg=
 			</data>
 		</dict>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qPqfb4TpFjAU6UieykZAmAgKJPc=
+			Hf1oaCE73DXKCaKs3OeZUsDwK7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			CmNuCZ88o1NRb3YUM/O3EDpDIhBEb09Ka/o17LHVsBQ=
+			tHy9mkcNur1/1QrxCDlEXfDG/uvAU9HzQ9sDyTX80ac=
 			</data>
 		</dict>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Lv20rv96yLUE7B5Lni92JQOGb88=
+			WZBSkZ+4KJ2rOIUhAuPqEf9whzo=
 			</data>
 			<key>hash2</key>
 			<data>
-			5ea69gZgBIrVRKviaNBcEf2ixjsRkGiVUDHgItzhR3Y=
+			5UYaxTBkeZhyxdosfSQaWFVDLXie2BUM7mhAehjWaPw=
 			</data>
 		</dict>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eO3cbkmNq8qJSW9Be1c17Z8OUAU=
+			3E3szpJYSbrUi5A244gAnJ6WIdU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xg4yW0FC/hTPzQhMbz7DX1lkYbzNr89ad2LiFSNyeKk=
+			DtXVQksHMSiKf+7GfIqCXiHBgLpEavUYIRwyOGjZlr8=
 			</data>
 		</dict>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8TeJvYBaNsv3uBQt1FEXq4/uWh8=
+			Y7c5JkCuAl2uIdiDlENbl1Su57U=
 			</data>
 			<key>hash2</key>
 			<data>
-			LgZNlly6OG7Me8WxcCc43z01qgqBVKVNyZfra0neIqU=
+			OvBjjDb9e7sCKeUlz6wzcKEtm2FdkLV0/rZ8JVV9wF8=
 			</data>
 		</dict>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0qLS1AFWcTLHAZYvaHKSz+yV1yA=
+			7wuDS1N853JRiiI2SfljBS3Z9Sw=
 			</data>
 			<key>hash2</key>
 			<data>
-			rXsJF9oypCkgG8XCT9Y8nHnyPJo0xFvsOU/dTF5QqnU=
+			4iNlf8NV83oAQ8SQAYVAH5/2HqXyeiaVOvExl005EiI=
 			</data>
 		</dict>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8TeJvYBaNsv3uBQt1FEXq4/uWh8=
+			Y7c5JkCuAl2uIdiDlENbl1Su57U=
 			</data>
 			<key>hash2</key>
 			<data>
-			LgZNlly6OG7Me8WxcCc43z01qgqBVKVNyZfra0neIqU=
+			OvBjjDb9e7sCKeUlz6wzcKEtm2FdkLV0/rZ8JVV9wF8=
 			</data>
 		</dict>
 		<key>Modules/AATGoogleAdsAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SeyvrlAjkaI3YdW/jA6Iiyc8pYE=
+			LJ9zf8Ky2HhbniixeYI0zLqSFAI=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Du3vGFsDAB8otvwlmdABxo9whZzI69SL+u5v7Ys0HY=
+			+gpAaT5cJAIH+voP/SAXCMt7A94sE22m4nTRCxREK4A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GQDUb6n3gM0pgBMwL3/AoGFrvRY=
+			zMYz3io1N69EMd1Ft9GYZCe5v5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			MdFWicNteiIJNUAxHnKMYXWsXSunW2z2hTPAXx+KoGM=
+			bTY7AEplrTU8dGjEZNPumMRWk4XjP8w127AocKf7rLQ=
+			</data>
+		</dict>
+		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V7n6dTwUQLIqxb5DDtAGse3uyIQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			88y8yl7aacZ5rn8Q7bi5xMB/Z8msPU2k8Bg/c0XrWpE=
+			</data>
+		</dict>
+		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k9OFlDPBRWfteJ+bfG12WAoBuls=
+			</data>
+			<key>hash2</key>
+			<data>
+			RbetuZ/NLZYqHIAPv8wTJbV6f6QWX0FhgjI7tf/pyQA=
 			</data>
 		</dict>
 	</dict>

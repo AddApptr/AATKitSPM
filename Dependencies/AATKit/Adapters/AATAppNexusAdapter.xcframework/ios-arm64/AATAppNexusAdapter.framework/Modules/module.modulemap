@@ -1,7 +1,7 @@
 framework module AATAppNexusAdapter {
   umbrella header "AATAppNexusAdapter.h"
-
   export *
+
   module * { export * }
 }
 

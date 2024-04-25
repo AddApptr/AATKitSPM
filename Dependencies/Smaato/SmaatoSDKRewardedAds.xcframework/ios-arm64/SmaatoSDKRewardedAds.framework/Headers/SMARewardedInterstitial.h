@@ -8,7 +8,7 @@
 //  https://www.smaato.com/sdk-license-agreement/
 //
 
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @class SMARewardedInterstitial;
 

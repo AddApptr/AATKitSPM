@@ -1,7 +1,7 @@
 framework module AATMintegralAdapter {
   umbrella header "AATMintegralAdapter.h"
-
   export *
+
   module * { export * }
 }
 

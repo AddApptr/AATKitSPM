@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AATSourcePointCMPAdapter
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AATSourcePointCMPAdapter
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AATKit
 import ConsentViewController
@@ -8,6 +8,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public class AATCMPSourcepoint : ObjectiveC.NSObject, AATKit.AATAdDriverLoggerProtocol {
   @objc public func isSuccessfullyInitialized(_ source: Swift.String) -> Swift.Bool
   @objc public init(accountId: Swift.String, propertyId: Swift.String, propertyName: Swift.String, pmId: Swift.String)

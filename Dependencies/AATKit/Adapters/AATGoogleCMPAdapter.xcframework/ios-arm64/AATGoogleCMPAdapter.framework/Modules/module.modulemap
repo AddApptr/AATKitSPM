@@ -1,7 +1,7 @@
 framework module AATGoogleCMPAdapter {
   umbrella header "AATGoogleCMPAdapter.h"
-
   export *
+
   module * { export * }
 }
 

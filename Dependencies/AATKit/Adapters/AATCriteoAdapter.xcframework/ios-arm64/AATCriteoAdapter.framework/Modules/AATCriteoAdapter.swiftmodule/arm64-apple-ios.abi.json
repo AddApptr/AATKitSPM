@@ -74,303 +74,366 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 442,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "kind": "StringLiteral",
+      "offset": 977,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 960,
+      "offset": 1086,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1265,
+      "offset": 1415,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1587,
+      "offset": 1737,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1740,
+      "offset": 1890,
       "length": 18,
       "value": "\"No bid available\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1812,
+      "offset": 1962,
       "length": 18,
       "value": "\"No bid available\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 1960,
+      "offset": 2110,
       "length": 25,
       "value": "\"Floor price not reached\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2039,
+      "offset": 2189,
       "length": 25,
       "value": "\"Floor price not reached\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2493,
+      "offset": 2643,
       "length": 62,
       "value": "\"Failed to show Interstitial Ad due to missing ViewController\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2577,
+      "offset": 2727,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "StringLiteral",
-      "offset": 2703,
+      "offset": 2853,
       "length": 53,
       "value": "\"Failed to show Interstitial Ad due to ad not loaded\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2778,
+      "offset": 2928,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2937,
+      "offset": 3087,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "IntegerLiteral",
       "offset": 307,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "StringLiteral",
-      "offset": 644,
+      "offset": 664,
       "length": 35,
       "value": "\"CriteoSDK is already initialized.\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 701,
+      "offset": 721,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "StringLiteral",
-      "offset": 854,
+      "offset": 874,
       "length": 62,
       "value": "\"CriteoSDK is already initialized with different publisherID.\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 938,
+      "offset": 958,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1120,
+      "offset": 1165,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "StringLiteral",
-      "offset": 1243,
+      "offset": 1288,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1342,
+      "offset": 1387,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1370,
+      "offset": 1415,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1406,
+      "offset": 1451,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1438,
+      "offset": 1483,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1479,
+      "offset": 1524,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1486,
+      "offset": 1531,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1521,
+      "offset": 1566,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1557,
+      "offset": 1602,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1589,
+      "offset": 1634,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "StringLiteral",
-      "offset": 1944,
+      "offset": 1961,
+      "length": 3,
+      "value": "\"|\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2036,
+      "length": 12,
+      "value": "\"appStoreId\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2143,
+      "length": 26,
+      "value": "\"Couldn't find appStoreId\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2272,
+      "length": 3,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2314,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2405,
+      "length": 23,
+      "value": "\"appStoreId is invalid\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2494,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2641,
       "length": 7,
       "value": "\"5.0.4\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoManager.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 2651,
       "length": 3,
       "value": "\"~\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 486,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 886,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 869,
+      "offset": 987,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1174,
+      "offset": 1316,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1500,
+      "offset": 1642,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1655,
+      "offset": 1797,
       "length": 18,
       "value": "\"No bid available\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1727,
+      "offset": 1869,
       "length": 18,
       "value": "\"No bid available\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1875,
+      "offset": 2017,
       "length": 25,
       "value": "\"Floor price not reached\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 2096,
       "length": 25,
       "value": "\"Floor price not reached\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 2403,
+      "offset": 2545,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2823,
+      "offset": 2965,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3902,
+      "offset": 4044,
       "length": 20,
       "value": "\"Resume for \""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATCriteoAdapter\/AATCriteoBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3921,
+      "offset": 4063,
       "length": 3,
       "value": "\"\""
     }

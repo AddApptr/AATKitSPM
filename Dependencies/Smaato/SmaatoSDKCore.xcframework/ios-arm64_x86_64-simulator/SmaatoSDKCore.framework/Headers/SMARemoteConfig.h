@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SMARemoteConfigParser.h"
+#import <SmaatoSDKCore/SMARemoteConfigParser.h>
 
 @interface SMARemoteConfig: NSObject
 

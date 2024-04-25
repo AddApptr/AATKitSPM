@@ -41,6 +41,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)presentFromRootViewController:(UIViewController *)rootViewController;
 
+- (BOOL)shouldAutorotate;
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations;
+
+- (void)startSKAdImpression API_AVAILABLE(ios(14.5));
+- (void)endSKAdImpression API_AVAILABLE(ios(14.5));
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -18,11 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bakm9JnDlpBlUNRs1V1hnD7USBU=
+		73M/MWiwzDu8EcXgmqE/OOdIdfo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		GCl/9uXIoMokXjBqnEp2YodFA6A=
+		GnkmFcfP+WCqBkKk3O//FWsCWhY=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		QClB6u9VM0MR9y0HadRGkHf9BPk=
 		</data>
 		<key>PrivateHeaders/OGCInternal.h</key>
 		<data>
@@ -144,11 +148,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GCl/9uXIoMokXjBqnEp2YodFA6A=
+			GnkmFcfP+WCqBkKk3O//FWsCWhY=
 			</data>
 			<key>hash2</key>
 			<data>
-			aM/TWsPAMJsmfmYVrwtL6gWHe4YQodrH22WIPMpp2hE=
+			znjAUVGtAP2F+gfodbK05tyqdFi/7lAAvxGwELkHyFw=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QClB6u9VM0MR9y0HadRGkHf9BPk=
+			</data>
+			<key>hash2</key>
+			<data>
+			sgGEqH5jkvKT0kHIiIsLqxd018ziWGFl6H+OBwlIoyo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/OGCInternal.h</key>

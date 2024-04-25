@@ -1,7 +1,7 @@
 framework module AATSuperAwesomeAdapter {
   umbrella header "AATSuperAwesomeAdapter.h"
-
   export *
+
   module * { export * }
 }
 

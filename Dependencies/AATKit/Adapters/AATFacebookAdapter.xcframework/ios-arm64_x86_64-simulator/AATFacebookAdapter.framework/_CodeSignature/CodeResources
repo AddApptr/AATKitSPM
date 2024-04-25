@@ -4,9 +4,25 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>FBAudienceNetwork.bundle/Info.plist</key>
+		<data>
+		9yH8KaBVaR604k2B5zkAJ0GU1wQ=
+		</data>
+		<key>FBAudienceNetwork.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		iJf6SpfSfy71MDcGI+K9k1a78DU=
+		</data>
+		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
+		<data>
+		F0NEH/lRpL1zwCq+Megumzg8O9E=
+		</data>
+		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		VWCA3MeaiPMoOAS1uOteTSLX8js=
+		</data>
 		<key>Headers/AATFacebookAdapter-Swift.h</key>
 		<data>
-		Vj+N/n9kc9pMjLGhCj09SIckADY=
+		kmcMqxsTlNoS7q3YZun+beRUk40=
 		</data>
 		<key>Headers/AATFacebookAdapter.h</key>
 		<data>
@@ -14,64 +30,116 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RickKailCEwZW+l71Qb6eQt/vsg=
+		IfyY70Ujwo/+kNktyCr62qFjzjA=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Z0Pq2qopd5GIB5b6magiO0DoHb4=
+		H6KBt1Fkym662l3fdZ5Xo/otIB4=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rj5isCvYGZJVtkSW5b2V/1VONec=
+		kRaMynttRTTUxCVMcSPDNRkgBrY=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dbI188MpHE/0nGTVDgfQRmSi22Q=
+		GkO+NXRT3cC37dE/NXIhlZ88Log=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rj5isCvYGZJVtkSW5b2V/1VONec=
+		kRaMynttRTTUxCVMcSPDNRkgBrY=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pgKoRyJt4OdKcNP4VBMKtnhN7Zs=
+		SryoAVgF4Ath/yOYBgDSZjxk8kQ=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Z0Pq2qopd5GIB5b6magiO0DoHb4=
+		H6KBt1Fkym662l3fdZ5Xo/otIB4=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WXUxsnY9FHxNwxjsg127j+JuwJ0=
+		Z46Mbi6hmTvwgvBrIl0N+/teEoI=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		IhMf6cpZX2UqGsG1y4ybRaOGNEg=
+		xQHQJNRRknxTwXBIZoypisAq084=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WXUxsnY9FHxNwxjsg127j+JuwJ0=
+		Z46Mbi6hmTvwgvBrIl0N+/teEoI=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iWEBifvPvCAIpZf72tgCsl9nmy4=
+		xRviK6v7u8avNEQM0M69qaFsbhM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		/BdjfTforOZnf4l8xSadyquEAH8=
+		5rKZCq6WGaugnEsSIDtb+Ygv130=
+		</data>
+		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
+		<data>
+		V7n6dTwUQLIqxb5DDtAGse3uyIQ=
+		</data>
+		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		k9OFlDPBRWfteJ+bfG12WAoBuls=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>FBAudienceNetwork.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9yH8KaBVaR604k2B5zkAJ0GU1wQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			zHMRfdvUM+z++o1RPH68xDWB+BdmSqxP/meW9jl9VAY=
+			</data>
+		</dict>
+		<key>FBAudienceNetwork.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iJf6SpfSfy71MDcGI+K9k1a78DU=
+			</data>
+			<key>hash2</key>
+			<data>
+			cSw93xWtIPxdaMlNpIyJu23eaMe/V5QkksYayESwhlc=
+			</data>
+		</dict>
+		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F0NEH/lRpL1zwCq+Megumzg8O9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			++Yj9ngLQVrU4i4pjrCKw0+uakL6QI6tiXkoieNvZaI=
+			</data>
+		</dict>
+		<key>GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VWCA3MeaiPMoOAS1uOteTSLX8js=
+			</data>
+			<key>hash2</key>
+			<data>
+			afsRJYL8I/wGxjXJYdJio/e0tWVNKEeHSR3jAA2t+dI=
+			</data>
+		</dict>
 		<key>Headers/AATFacebookAdapter-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vj+N/n9kc9pMjLGhCj09SIckADY=
+			kmcMqxsTlNoS7q3YZun+beRUk40=
 			</data>
 			<key>hash2</key>
 			<data>
-			WUbGNdEkJ9RD6tY3pyQKui2KHNHmeMN8VDVPfC5NM1Q=
+			pxNGFMURLFh21aP1n34oW2Sn5gH6OOtlxb0EXTkfC7Y=
 			</data>
 		</dict>
 		<key>Headers/AATFacebookAdapter.h</key>
@@ -89,121 +157,143 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z0Pq2qopd5GIB5b6magiO0DoHb4=
+			H6KBt1Fkym662l3fdZ5Xo/otIB4=
 			</data>
 			<key>hash2</key>
 			<data>
-			eAk8PGJzEuH+khIjM9xMJy/zlZLDjCVHgqKSTaQnkfk=
+			AGze5sVLcpPXoXDGMX56efHTyEu1qK10DI+TBhCVzyk=
 			</data>
 		</dict>
 		<key>Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rj5isCvYGZJVtkSW5b2V/1VONec=
+			kRaMynttRTTUxCVMcSPDNRkgBrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			sk6Kr6SlBbEWgYubcjlC4fcEMal1PgYvC5xVm/nbMag=
+			xCKyUD3C/jus3QxgX7NIezgCloi+2xt/ARaVEo2qTXs=
 			</data>
 		</dict>
 		<key>Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dbI188MpHE/0nGTVDgfQRmSi22Q=
+			GkO+NXRT3cC37dE/NXIhlZ88Log=
 			</data>
 			<key>hash2</key>
 			<data>
-			HsZkF5wA8NJXgogNGGL9AP1ZXv0+fD1OjA3i0G2JAOQ=
+			GA9GsKJf3DSTu09PYzn/2Jih6maq0s2WmGOhfKwkeuY=
 			</data>
 		</dict>
 		<key>Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rj5isCvYGZJVtkSW5b2V/1VONec=
+			kRaMynttRTTUxCVMcSPDNRkgBrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			sk6Kr6SlBbEWgYubcjlC4fcEMal1PgYvC5xVm/nbMag=
+			xCKyUD3C/jus3QxgX7NIezgCloi+2xt/ARaVEo2qTXs=
 			</data>
 		</dict>
 		<key>Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pgKoRyJt4OdKcNP4VBMKtnhN7Zs=
+			SryoAVgF4Ath/yOYBgDSZjxk8kQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kgcj3jlLt7dGv3MMZ5MJxJj5vz1+0gKvc+QL29dznxc=
+			8wMWEzUq4URbYnZCl0f/eGELIOMGoRoxYxhxausjgvc=
 			</data>
 		</dict>
 		<key>Modules/AATFacebookAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z0Pq2qopd5GIB5b6magiO0DoHb4=
+			H6KBt1Fkym662l3fdZ5Xo/otIB4=
 			</data>
 			<key>hash2</key>
 			<data>
-			eAk8PGJzEuH+khIjM9xMJy/zlZLDjCVHgqKSTaQnkfk=
+			AGze5sVLcpPXoXDGMX56efHTyEu1qK10DI+TBhCVzyk=
 			</data>
 		</dict>
 		<key>Modules/AATFacebookAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WXUxsnY9FHxNwxjsg127j+JuwJ0=
+			Z46Mbi6hmTvwgvBrIl0N+/teEoI=
 			</data>
 			<key>hash2</key>
 			<data>
-			L/wOCDBkgknIu1wrC3RRxMP1fqjmWBHkelgIyXMY41c=
+			eb9pnZn7y0oJUC2Ca9hmw1Qs8SwmBDz0N0y+INpCNJQ=
 			</data>
 		</dict>
 		<key>Modules/AATFacebookAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IhMf6cpZX2UqGsG1y4ybRaOGNEg=
+			xQHQJNRRknxTwXBIZoypisAq084=
 			</data>
 			<key>hash2</key>
 			<data>
-			eVdiva9MQldTeXvO8YBflaHkiWXPPdE+ffCOZu152Nc=
+			zYQEEX7j8VwaK5TbmRi4YU8xaaGPh7MCznYWHAAiBnY=
 			</data>
 		</dict>
 		<key>Modules/AATFacebookAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WXUxsnY9FHxNwxjsg127j+JuwJ0=
+			Z46Mbi6hmTvwgvBrIl0N+/teEoI=
 			</data>
 			<key>hash2</key>
 			<data>
-			L/wOCDBkgknIu1wrC3RRxMP1fqjmWBHkelgIyXMY41c=
+			eb9pnZn7y0oJUC2Ca9hmw1Qs8SwmBDz0N0y+INpCNJQ=
 			</data>
 		</dict>
 		<key>Modules/AATFacebookAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iWEBifvPvCAIpZf72tgCsl9nmy4=
+			xRviK6v7u8avNEQM0M69qaFsbhM=
 			</data>
 			<key>hash2</key>
 			<data>
-			N0im/0blJ67zRtkka5nqett88GufJjm9TDnGPNqgyDM=
+			Oxn4D4yHgbcjHhw4MPBNCf2Inyvz5hsSFY8dxkvAYmM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/BdjfTforOZnf4l8xSadyquEAH8=
+			5rKZCq6WGaugnEsSIDtb+Ygv130=
 			</data>
 			<key>hash2</key>
 			<data>
-			VstNOhJh67HaYOiA1gH9VRKpoPZ886JAoSLox4Uyuxo=
+			D+j17M1VBDMlnIZAG0Vh58H87zcL695datqMUM5IhVY=
+			</data>
+		</dict>
+		<key>UserMessagingPlatformResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V7n6dTwUQLIqxb5DDtAGse3uyIQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			88y8yl7aacZ5rn8Q7bi5xMB/Z8msPU2k8Bg/c0XrWpE=
+			</data>
+		</dict>
+		<key>UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			k9OFlDPBRWfteJ+bfG12WAoBuls=
+			</data>
+			<key>hash2</key>
+			<data>
+			RbetuZ/NLZYqHIAPv8wTJbV6f6QWX0FhgjI7tf/pyQA=
 			</data>
 		</dict>
 	</dict>

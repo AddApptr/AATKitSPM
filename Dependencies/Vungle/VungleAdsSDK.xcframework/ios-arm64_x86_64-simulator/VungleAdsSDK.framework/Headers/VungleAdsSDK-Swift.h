@@ -571,65 +571,67 @@ typedef SWIFT_ENUM(NSInteger, VungleError, open) {
   VungleErrorAdLoadFailRetryAfter = 61,
 /// Failed to load ad due to invalid Waterfall placement id.
   VungleErrorInvalidWaterfallPlacementID = 62,
+/// Cached data is stale, i.e. content-length of cached response is not the same as remote
+  VungleErrorStaleCachedResponse = 63,
 /// Server returned “No fill”.
-  VungleErrorAdNoFill = 63,
+  VungleErrorAdNoFill = 64,
 /// Server returned “Ad load is too frequently”.
-  VungleErrorAdLoadTooFrequently = 64,
+  VungleErrorAdLoadTooFrequently = 65,
 /// Load shedding error is occurring on the server side.
-  VungleErrorAdServerError = 65,
+  VungleErrorAdServerError = 66,
 /// App or placement is not correct.
-  VungleErrorAdPublisherMismatch = 66,
+  VungleErrorAdPublisherMismatch = 67,
 /// Integration error occurring on the server side.
-  VungleErrorAdInternalIntegrationError = 67,
+  VungleErrorAdInternalIntegrationError = 68,
 /// For logging errors provided from the template
-  VungleErrorMraidError = 68,
+  VungleErrorMraidError = 69,
 /// The IFA changed values between loading and playing the ad object.
-  VungleErrorInvalidIfaStatus = 69,
+  VungleErrorInvalidIfaStatus = 70,
 /// The ad response expired. This is fired immediately when the timer detects that it has expired.
-  VungleErrorAdExpired = 70,
+  VungleErrorAdExpired = 71,
 /// Failed to load the index html
-  VungleErrorMraidBridgeError = 71,
+  VungleErrorMraidBridgeError = 72,
 /// The ad response expired. This is fired when the pub calls play on an expired ad object.
-  VungleErrorAdExpiredOnPlay = 72,
+  VungleErrorAdExpiredOnPlay = 73,
 /// Failed to send the win notification url. Message contains the URL
-  VungleErrorAdWinNotificationError = 73,
+  VungleErrorAdWinNotificationError = 74,
 /// Logged if asset fails to be removed on cleanup
-  VungleErrorAssetFailedToDelete = 74,
+  VungleErrorAssetFailedToDelete = 75,
 /// Logged if load fails just before ad play
-  VungleErrorAdHtmlFailedToLoad = 75,
+  VungleErrorAdHtmlFailedToLoad = 76,
 /// MRAID JS event does not include expected value
-  VungleErrorMraidJsCallEmpty = 76,
+  VungleErrorMraidJsCallEmpty = 77,
 /// Unable to open deep link URL
-  VungleErrorDeeplinkOpenFailed = 77,
+  VungleErrorDeeplinkOpenFailed = 78,
 /// Failed to evaluate javascript
-  VungleErrorEvaluateJavascriptFailed = 78,
+  VungleErrorEvaluateJavascriptFailed = 79,
 /// Failed to open the mraid link command
-  VungleErrorLinkCommandOpenFailed = 79,
+  VungleErrorLinkCommandOpenFailed = 80,
 /// Failed to get the json string from json data
-  VungleErrorJsonParamsEncodeError = 80,
+  VungleErrorJsonParamsEncodeError = 81,
 /// Failed to generate json data from params dictionary
-  VungleErrorGenerateJsonDataError = 81,
+  VungleErrorGenerateJsonDataError = 82,
 /// Template close due to Fatal error reported by template
-  VungleErrorAdClosedTemplateError = 82,
+  VungleErrorAdClosedTemplateError = 83,
 /// Missing HeartBeat error
-  VungleErrorAdClosedMissingHeartbeat = 83,
+  VungleErrorAdClosedMissingHeartbeat = 84,
 /// Pub attempted to call play on a fullscreen ad object with another already playing
-  VungleErrorConcurrentPlaybackUnsupported = 84,
+  VungleErrorConcurrentPlaybackUnsupported = 85,
 /// Pub provided a different size mount for the banner
-  VungleErrorBannerViewInvalidSize = 85,
+  VungleErrorBannerViewInvalidSize = 86,
 /// missing critical native ad assets
-  VungleErrorNativeAssetError = 86,
-  VungleErrorWebViewWebContentProcessDidTerminate = 87,
-  VungleErrorWebViewFailedNavigation = 88,
-  VungleErrorStoreKitLoadError = 89,
-  VungleErrorOmsdkCopyError = 90,
-  VungleErrorStoreOverlayLoadError = 91,
-  VungleErrorReachabilityInitializationFailed = 92,
-  VungleErrorUnknownRadioAccessTechnology = 93,
-  VungleErrorStoreKitPresentationError = 94,
-  VungleErrorStoreOverlayPresentationError = 95,
+  VungleErrorNativeAssetError = 87,
+  VungleErrorWebViewWebContentProcessDidTerminate = 88,
+  VungleErrorWebViewFailedNavigation = 89,
+  VungleErrorStoreKitLoadError = 90,
+  VungleErrorOmsdkCopyError = 91,
+  VungleErrorStoreOverlayLoadError = 92,
+  VungleErrorReachabilityInitializationFailed = 93,
+  VungleErrorUnknownRadioAccessTechnology = 94,
+  VungleErrorStoreKitPresentationError = 95,
+  VungleErrorStoreOverlayPresentationError = 96,
 /// Memory Checks
-  VungleErrorOutOfMemory = 96,
+  VungleErrorOutOfMemory = 97,
 };
 
 @protocol VungleInterstitialDelegate;
@@ -1360,65 +1362,67 @@ typedef SWIFT_ENUM(NSInteger, VungleError, open) {
   VungleErrorAdLoadFailRetryAfter = 61,
 /// Failed to load ad due to invalid Waterfall placement id.
   VungleErrorInvalidWaterfallPlacementID = 62,
+/// Cached data is stale, i.e. content-length of cached response is not the same as remote
+  VungleErrorStaleCachedResponse = 63,
 /// Server returned “No fill”.
-  VungleErrorAdNoFill = 63,
+  VungleErrorAdNoFill = 64,
 /// Server returned “Ad load is too frequently”.
-  VungleErrorAdLoadTooFrequently = 64,
+  VungleErrorAdLoadTooFrequently = 65,
 /// Load shedding error is occurring on the server side.
-  VungleErrorAdServerError = 65,
+  VungleErrorAdServerError = 66,
 /// App or placement is not correct.
-  VungleErrorAdPublisherMismatch = 66,
+  VungleErrorAdPublisherMismatch = 67,
 /// Integration error occurring on the server side.
-  VungleErrorAdInternalIntegrationError = 67,
+  VungleErrorAdInternalIntegrationError = 68,
 /// For logging errors provided from the template
-  VungleErrorMraidError = 68,
+  VungleErrorMraidError = 69,
 /// The IFA changed values between loading and playing the ad object.
-  VungleErrorInvalidIfaStatus = 69,
+  VungleErrorInvalidIfaStatus = 70,
 /// The ad response expired. This is fired immediately when the timer detects that it has expired.
-  VungleErrorAdExpired = 70,
+  VungleErrorAdExpired = 71,
 /// Failed to load the index html
-  VungleErrorMraidBridgeError = 71,
+  VungleErrorMraidBridgeError = 72,
 /// The ad response expired. This is fired when the pub calls play on an expired ad object.
-  VungleErrorAdExpiredOnPlay = 72,
+  VungleErrorAdExpiredOnPlay = 73,
 /// Failed to send the win notification url. Message contains the URL
-  VungleErrorAdWinNotificationError = 73,
+  VungleErrorAdWinNotificationError = 74,
 /// Logged if asset fails to be removed on cleanup
-  VungleErrorAssetFailedToDelete = 74,
+  VungleErrorAssetFailedToDelete = 75,
 /// Logged if load fails just before ad play
-  VungleErrorAdHtmlFailedToLoad = 75,
+  VungleErrorAdHtmlFailedToLoad = 76,
 /// MRAID JS event does not include expected value
-  VungleErrorMraidJsCallEmpty = 76,
+  VungleErrorMraidJsCallEmpty = 77,
 /// Unable to open deep link URL
-  VungleErrorDeeplinkOpenFailed = 77,
+  VungleErrorDeeplinkOpenFailed = 78,
 /// Failed to evaluate javascript
-  VungleErrorEvaluateJavascriptFailed = 78,
+  VungleErrorEvaluateJavascriptFailed = 79,
 /// Failed to open the mraid link command
-  VungleErrorLinkCommandOpenFailed = 79,
+  VungleErrorLinkCommandOpenFailed = 80,
 /// Failed to get the json string from json data
-  VungleErrorJsonParamsEncodeError = 80,
+  VungleErrorJsonParamsEncodeError = 81,
 /// Failed to generate json data from params dictionary
-  VungleErrorGenerateJsonDataError = 81,
+  VungleErrorGenerateJsonDataError = 82,
 /// Template close due to Fatal error reported by template
-  VungleErrorAdClosedTemplateError = 82,
+  VungleErrorAdClosedTemplateError = 83,
 /// Missing HeartBeat error
-  VungleErrorAdClosedMissingHeartbeat = 83,
+  VungleErrorAdClosedMissingHeartbeat = 84,
 /// Pub attempted to call play on a fullscreen ad object with another already playing
-  VungleErrorConcurrentPlaybackUnsupported = 84,
+  VungleErrorConcurrentPlaybackUnsupported = 85,
 /// Pub provided a different size mount for the banner
-  VungleErrorBannerViewInvalidSize = 85,
+  VungleErrorBannerViewInvalidSize = 86,
 /// missing critical native ad assets
-  VungleErrorNativeAssetError = 86,
-  VungleErrorWebViewWebContentProcessDidTerminate = 87,
-  VungleErrorWebViewFailedNavigation = 88,
-  VungleErrorStoreKitLoadError = 89,
-  VungleErrorOmsdkCopyError = 90,
-  VungleErrorStoreOverlayLoadError = 91,
-  VungleErrorReachabilityInitializationFailed = 92,
-  VungleErrorUnknownRadioAccessTechnology = 93,
-  VungleErrorStoreKitPresentationError = 94,
-  VungleErrorStoreOverlayPresentationError = 95,
+  VungleErrorNativeAssetError = 87,
+  VungleErrorWebViewWebContentProcessDidTerminate = 88,
+  VungleErrorWebViewFailedNavigation = 89,
+  VungleErrorStoreKitLoadError = 90,
+  VungleErrorOmsdkCopyError = 91,
+  VungleErrorStoreOverlayLoadError = 92,
+  VungleErrorReachabilityInitializationFailed = 93,
+  VungleErrorUnknownRadioAccessTechnology = 94,
+  VungleErrorStoreKitPresentationError = 95,
+  VungleErrorStoreOverlayPresentationError = 96,
 /// Memory Checks
-  VungleErrorOutOfMemory = 96,
+  VungleErrorOutOfMemory = 97,
 };
 
 @protocol VungleInterstitialDelegate;

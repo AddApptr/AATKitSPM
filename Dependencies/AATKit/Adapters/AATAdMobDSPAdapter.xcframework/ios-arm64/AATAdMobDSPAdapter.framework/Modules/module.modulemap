@@ -1,7 +1,7 @@
 framework module AATAdMobDSPAdapter {
   umbrella header "AATAdMobDSPAdapter.h"
-
   export *
+
   module * { export * }
 }
 

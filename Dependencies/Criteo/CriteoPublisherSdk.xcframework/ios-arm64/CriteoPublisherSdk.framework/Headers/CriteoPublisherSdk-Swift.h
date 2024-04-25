@@ -265,34 +265,43 @@ SWIFT_PROTOCOL("_TtP18CriteoPublisherSdk19CRExternalURLOpener_")
 @end
 
 @class WKWebView;
+@class CRMRAIDHandler;
 @class NSCoder;
 @class NSString;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC18CriteoPublisherSdk22CRFulllScreenContainer")
 @interface CRFulllScreenContainer : UIViewController
-- (nonnull instancetype)initWith:(WKWebView * _Nonnull)webView size:(CGSize)size dismissCompletion:(void (^ _Nullable)(void))dismissCompletion OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWith:(WKWebView * _Nonnull)webView size:(CGSize)size mraidHandler:(CRMRAIDHandler * _Nonnull)mraidHandler dismissCompletion:(void (^ _Nullable)(void))dismissCompletion OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)closeWith:(void (^ _Nullable)(void))completion;
+@property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
+@property (nonatomic, readonly) BOOL shouldAutorotate;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
 
+enum CRPlacementType : NSInteger;
 @protocol CRMRAIDLogger;
 @protocol CRMRAIDHandlerDelegate;
 
 SWIFT_CLASS("_TtC18CriteoPublisherSdk14CRMRAIDHandler")
 @interface CRMRAIDHandler : NSObject
-- (nonnull instancetype)initWith:(WKWebView * _Nonnull)webView criteoLogger:(id <CRMRAIDLogger> _Nonnull)criteoLogger urlOpener:(id <CRExternalURLOpener> _Nonnull)urlOpener delegate:(id <CRMRAIDHandlerDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
-- (void)onAdLoadWith:(NSString * _Nonnull)placementType;
+- (nonnull instancetype)initWithPlacementType:(enum CRPlacementType)placementType webView:(WKWebView * _Nonnull)webView criteoLogger:(id <CRMRAIDLogger> _Nonnull)criteoLogger urlOpener:(id <CRExternalURLOpener> _Nonnull)urlOpener delegate:(id <CRMRAIDHandlerDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 - (void)sendWithError:(NSString * _Nonnull)error action:(NSString * _Nonnull)action;
 - (void)startViabilityNotifier;
 - (BOOL)canLoadAd SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isExpanded SWIFT_WARN_UNUSED_RESULT;
-- (void)onSuccessClose;
 - (NSString * _Nonnull)injectInto:(NSString * _Nonnull)html SWIFT_WARN_UNUSED_RESULT;
+- (void)onAdLoad;
+- (void)onSuccessClose;
 - (void)injectMRAID;
 - (void)updateMraidWithBundle:(NSBundle * _Nullable)bundle;
+- (void)setCurrentPosition;
+- (void)setScreenWithSize:(CGSize)size;
+- (BOOL)shouldAdAutoRotate SWIFT_WARN_UNUSED_RESULT;
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations SWIFT_WARN_UNUSED_RESULT;
+- (void)onDealloc;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -303,6 +312,7 @@ SWIFT_CLASS("_TtC18CriteoPublisherSdk14CRMRAIDHandler")
 @interface CRMRAIDHandler (SWIFT_EXTENSION(CriteoPublisherSdk)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
+
 
 
 
@@ -333,6 +343,11 @@ SWIFT_CLASS("_TtC18CriteoPublisherSdk12CRMRAIDUtils")
 + (NSBundle * _Nullable)mraidTestResourceBundle SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+typedef SWIFT_ENUM(NSInteger, CRPlacementType, open) {
+  CRPlacementTypeBanner = 0,
+  CRPlacementTypeInterstitial = 1,
+};
 
 
 @interface CRSKAdNetworkInfo (SWIFT_EXTENSION(CriteoPublisherSdk))

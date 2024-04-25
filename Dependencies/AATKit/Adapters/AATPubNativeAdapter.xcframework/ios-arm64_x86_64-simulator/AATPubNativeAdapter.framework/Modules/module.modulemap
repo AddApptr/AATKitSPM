@@ -1,7 +1,7 @@
 framework module AATPubNativeAdapter {
   umbrella header "AATPubNativeAdapter.h"
-
   export *
+
   module * { export * }
 }
 

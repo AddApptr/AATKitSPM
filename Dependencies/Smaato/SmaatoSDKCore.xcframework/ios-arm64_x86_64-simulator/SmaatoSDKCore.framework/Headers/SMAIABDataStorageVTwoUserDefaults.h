@@ -6,7 +6,7 @@
 //  Copyright © 2020 Smaato Inc. All rights reserved.
 //
 
-#import "SMAIABDataStorageProtocol.h"
+#import <SmaatoSDKCore/SMAIABDataStorageProtocol.h>
 
 @interface SMAIABDataStorageVTwoUserDefaults: NSObject <SMAGDPRDataStorageProtocol,SMACCPAStorageProtocol, SMAGPPStorageProtocol>
 

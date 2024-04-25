@@ -13,6 +13,15 @@
 #import <SmaatoSDKCore/SMARemoteConfig.h>
 
 /**
+ Initializes the SDK with the given configuration and with SmaatoSdkInitialisationDelegate  methods
+ */
+@protocol SmaatoSdkInitialisationDelegate <NSObject>
+
+-(void)onInitialisationSuccess;
+-(void)onInitialisationFailure: (NSString* _Nullable)errorMessage;
+
+@end
+/**
  The root class which provides the SDK configuration options.
 
  @warning   You must initialize the SDK by calling the \c initSDK: before using any SDK's API.
@@ -25,6 +34,7 @@
 /// Publisher Id assigned by Smaato.
 @property (class, nonatomic, readonly, nonnull) NSString *publisherId;
 
+@property (nonatomic, weak) id<SmaatoSdkInitialisationDelegate> _Nullable delegate;
 /**
  Initializes the SDK with the given configuration.
 
@@ -34,6 +44,17 @@
  @param config      The SDK's configuration. Must not be \c nil.
  */
 + (void)initSDKWithConfig:(SMAConfiguration *_Nonnull)config;
+/**
+ Initializes the SDK with the given configuration.
+
+ If \c config is \c nil, an NSInvalidArgumentException is raised. If called more than once \c NSGenericException is raised.
+
+ @warning This method must be called prior to using any other APIs of the SDK.
+ @param config      The SDK's configuration. Must not be \c nil.
+ @param delegate The SDK's SmaatoSdkInitialisationDelegate
+ */
+
++ (void)initSDKWithConfig:(SMAConfiguration *_Nonnull)config andDelegate:(id<SmaatoSdkInitialisationDelegate>_Nullable)delegate;
 
 /**
  Unavailable. Please use class properties/methods instead.

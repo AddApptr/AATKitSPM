@@ -18,6 +18,7 @@
 - (void)bannerViewDidRecordClick:(NSObject *)bannerView;
 - (void)bannerViewDidPauseForAd:(NSObject *)bannerView;
 - (void)bannerViewDidResumeAfterAd:(NSObject *)bannerView;
+- (void)bannerViewEmpty:(NSObject *)bannerView;
 @end
 
 @protocol AATSuperAwesomeBannerProtocol <NSObject>

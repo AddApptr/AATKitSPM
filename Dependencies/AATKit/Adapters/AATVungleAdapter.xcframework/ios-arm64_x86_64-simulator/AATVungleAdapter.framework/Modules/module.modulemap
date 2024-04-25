@@ -1,7 +1,7 @@
 framework module AATVungleAdapter {
   umbrella header "AATVungleAdapter.h"
-
   export *
+
   module * { export * }
 }
 
