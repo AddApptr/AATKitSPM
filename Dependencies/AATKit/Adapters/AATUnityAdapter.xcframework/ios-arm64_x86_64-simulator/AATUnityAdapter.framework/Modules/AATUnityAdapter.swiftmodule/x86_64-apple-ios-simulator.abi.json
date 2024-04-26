@@ -108,448 +108,448 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
       "offset": 578,
       "length": 14,
       "value": "\"gdpr.consent\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
       "offset": 633,
       "length": 17,
       "value": "\"privacy.consent\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
       "offset": 807,
       "length": 17,
       "value": "\"privacy.consent\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1491,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
       "offset": 1689,
       "length": 68,
       "value": "\"Failed to initialize UnityAds SDK with different gameId: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
       "offset": 1756,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1783,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1830,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
       "offset": 2121,
       "length": 20,
       "value": "\"user.nonbehavioral\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
       "offset": 2387,
       "length": 42,
       "value": "\"Unity already used the same placementId.\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2451,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2543,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2883,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
       "offset": 3055,
       "length": 59,
       "value": "\"Failed to initialize UnityAds SDK with reason: \""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "StringLiteral",
       "offset": 3113,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3151,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
       "kind": "StringLiteral",
       "offset": 756,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 794,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
       "kind": "BooleanLiteral",
       "offset": 893,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 942,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
       "kind": "IntegerLiteral",
       "offset": 982,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
       "kind": "StringLiteral",
       "offset": 1295,
       "length": 35,
       "value": "\"Failed to initialize UnityAds SDK\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
       "kind": "BooleanLiteral",
       "offset": 1372,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
       "kind": "StringLiteral",
       "offset": 3215,
       "length": 20,
       "value": "\"Resume for \""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
       "kind": "StringLiteral",
       "offset": 3234,
       "length": 3,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityBanner.swift",
       "kind": "StringLiteral",
       "offset": 3726,
       "length": 21,
       "value": "\"BannerView did show\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 735,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 794,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "IntegerLiteral",
       "offset": 845,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "IntegerLiteral",
       "offset": 884,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "IntegerLiteral",
       "offset": 928,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "BooleanLiteral",
       "offset": 1038,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 1224,
       "length": 41,
       "value": "\"Unity already used the same placementId\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "BooleanLiteral",
       "offset": 1286,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 1769,
       "length": 35,
       "value": "\"Failed to initialize UnityAds SDK\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "BooleanLiteral",
       "offset": 1845,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 2208,
       "length": 38,
       "value": "\"viewController or placementId is nil\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "BooleanLiteral",
       "offset": 2268,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "BooleanLiteral",
       "offset": 2442,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 3410,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 3636,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 3819,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 3830,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 3914,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 4183,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityRewarded.swift",
       "kind": "StringLiteral",
       "offset": 4306,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 738,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 797,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 848,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 887,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "IntegerLiteral",
       "offset": 931,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 1041,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 1227,
       "length": 41,
       "value": "\"Unity already used the same placementId\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 1289,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 1772,
       "length": 35,
       "value": "\"Failed to initialize UnityAds SDK\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 1848,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 2210,
       "length": 38,
       "value": "\"viewController or placementId is nil\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 2270,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "BooleanLiteral",
       "offset": 2444,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 3417,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 3645,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 3762,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 4031,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUnityAdapter\/AATUnityFullscreen.swift",
       "kind": "StringLiteral",
       "offset": 4154,
       "length": 2,
