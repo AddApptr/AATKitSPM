@@ -107,37 +107,37 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 922,
+      "offset": 930,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 979,
+      "offset": 987,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1138,
+      "offset": 1146,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxFullscreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1807,
+      "offset": 1928,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxFullscreen.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2006,
-      "length": 5,
-      "value": "false"
+      "kind": "StringLiteral",
+      "offset": 3236,
+      "length": 14,
+      "value": "\"Did dismiss!\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxBanner.swift",
@@ -163,91 +163,84 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1330,
+      "offset": 1326,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3592,
+      "offset": 3581,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxBanner.swift",
       "kind": "StringLiteral",
-      "offset": 3860,
+      "offset": 3850,
       "length": 11,
       "value": "\"did close\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 889,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxRewarded.swift",
-      "kind": "BooleanLiteral",
-      "offset": 939,
+      "offset": 897,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1088,
+      "offset": 946,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1659,
-      "length": 5,
-      "value": "false"
+      "offset": 1095,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxRewarded.swift",
       "kind": "BooleanLiteral",
-      "offset": 1858,
+      "offset": 1779,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3255,
+      "offset": 3040,
       "length": 14,
       "value": "\"video closed\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3439,
+      "offset": 3222,
       "length": 17,
       "value": "\"Playback failed\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3626,
+      "offset": 3407,
       "length": 17,
       "value": "\"video completed\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3895,
+      "offset": 3674,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxRewarded.swift",
       "kind": "StringLiteral",
-      "offset": 3906,
+      "offset": 3685,
       "length": 2,
       "value": "\"\""
     },
@@ -261,7 +254,7 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATTappxAdapter\/AATTappxManager.swift",
       "kind": "StringLiteral",
-      "offset": 1083,
+      "offset": 1123,
       "length": 54,
       "value": "\"Tappx doesn't provide an API for enabling debug mode\""
     }

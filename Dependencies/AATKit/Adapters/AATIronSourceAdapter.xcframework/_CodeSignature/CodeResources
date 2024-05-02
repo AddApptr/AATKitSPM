@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATIronSourceAdapter.framework/AATIronSourceAdapter</key>
 		<data>
-		mLvioCDhAUxBkRNg4Cpv/g5ZZv0=
+		XYA9eATYlFHSn6odbPwlYv8sJ3c=
 		</data>
 		<key>ios-arm64/AATIronSourceAdapter.framework/Headers/AATIronSourceAdapter-Swift.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/AATIronSourceAdapter</key>
 		<data>
-		bD7mVKqkx1UBLWDnxwydmUrjhjg=
+		tzKGIL7lpui4duJuIoKZCSa/a5E=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/Headers/AATIronSourceAdapter-Swift.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		t/NrzeNXSmKeGwzSgn32n6JbLWc=
+		tTjpghrMJy+E4QlXBqvIdSeXs18=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		oRx3Hls1fW4z0QODeqG/hXVyaQc=
+		20J7no+pbNGCyd1wPTtlx/KXDaA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -135,11 +135,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mLvioCDhAUxBkRNg4Cpv/g5ZZv0=
+			XYA9eATYlFHSn6odbPwlYv8sJ3c=
 			</data>
 			<key>hash2</key>
 			<data>
-			P3r/a+eEqaKO3BQ8bNI5ocBGJ4Hf5NAD9+BK69rsQ/w=
+			ch6TM4ltlFcJBNvf9ZqkjFLPfXe7tk+ZdkgpDJuY3qA=
 			</data>
 		</dict>
 		<key>ios-arm64/AATIronSourceAdapter.framework/Headers/AATIronSourceAdapter-Swift.h</key>
@@ -256,11 +256,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bD7mVKqkx1UBLWDnxwydmUrjhjg=
+			tzKGIL7lpui4duJuIoKZCSa/a5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			0ifBzIQhdZKD+2pHIQGlu7tjEY2VnXmKS37M9MDRJuk=
+			nuc/0g4gXqIMlhb2qrfKvMuWdb5xfExpoxANxCPUWIA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/Headers/AATIronSourceAdapter-Swift.h</key>
@@ -421,11 +421,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t/NrzeNXSmKeGwzSgn32n6JbLWc=
+			tTjpghrMJy+E4QlXBqvIdSeXs18=
 			</data>
 			<key>hash2</key>
 			<data>
-			wEpP+QR0yQGNzATwb2uzClHeNMJBrUEG4Rf4C4/Hjwo=
+			puKGueuesYRgvX99ffk2azaNNoMveQCjaF/7yaB5lT0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -443,11 +443,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oRx3Hls1fW4z0QODeqG/hXVyaQc=
+			20J7no+pbNGCyd1wPTtlx/KXDaA=
 			</data>
 			<key>hash2</key>
 			<data>
-			4bNqPKQhZ/K8kjGq4HFq9nOAP8Hl4qVn0w0VKYug2Ec=
+			WgvGXyPBbJmageb6SCILAS0BM2uoO6sPxEWegntWSYQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeResources</key>

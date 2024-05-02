@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATMintegralAdapter.framework/AATMintegralAdapter</key>
 		<data>
-		Rf0kEI2Q8PtUD99WuD/1lDn66fE=
+		XmC+fI9QJxT7hteDoyr5VRO4nfc=
 		</data>
 		<key>ios-arm64/AATMintegralAdapter.framework/Headers/AATMintegralAdapter-Swift.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMintegralAdapter.framework/AATMintegralAdapter</key>
 		<data>
-		4QHz3hhDYSXVTxiS1+kv2JEmBZw=
+		c2Y+t9a9+5bMHFiYWpov7e7/aKE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMintegralAdapter.framework/Headers/AATMintegralAdapter-Swift.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMintegralAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		Qo4NfTY7ggOYyEv1AWJ2jWr7vUo=
+		3iEgYlRluNj09tU+4JkuICgrcJs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMintegralAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMintegralAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		ovPSGYzQSdEoNARxJjqhnWk6U+Q=
+		F/pES3oxGrtRr7Art9zEnG3M56Q=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMintegralAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -135,11 +135,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Rf0kEI2Q8PtUD99WuD/1lDn66fE=
+			XmC+fI9QJxT7hteDoyr5VRO4nfc=
 			</data>
 			<key>hash2</key>
 			<data>
-			e9BYnHGao4XfWfFFBZ7s5+PynOECiseXgsfNMbeAZlQ=
+			KRv4zbGq2jsgWa8LOIubNjo/pcRHlvJs33CvCaC/p+k=
 			</data>
 		</dict>
 		<key>ios-arm64/AATMintegralAdapter.framework/Headers/AATMintegralAdapter-Swift.h</key>
@@ -256,11 +256,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4QHz3hhDYSXVTxiS1+kv2JEmBZw=
+			c2Y+t9a9+5bMHFiYWpov7e7/aKE=
 			</data>
 			<key>hash2</key>
 			<data>
-			l0WZEV3p0o5M2FnjyqO0XgyR4LDiqc1lsMuJILoxsmM=
+			7YwlmLCS4/gsVG1dK5UXOJ0MfHl0blXc0ncY+NuaOUE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMintegralAdapter.framework/Headers/AATMintegralAdapter-Swift.h</key>
@@ -421,11 +421,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qo4NfTY7ggOYyEv1AWJ2jWr7vUo=
+			3iEgYlRluNj09tU+4JkuICgrcJs=
 			</data>
 			<key>hash2</key>
 			<data>
-			nNTJB7jhOTUSl9vrWcrjnDuP0Tstr96cnwbhfFt4qNs=
+			jnbFGZvI2BOqn82zOH0AW1sW9bG8P0rngrdydLAF9Xg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMintegralAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -443,11 +443,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ovPSGYzQSdEoNARxJjqhnWk6U+Q=
+			F/pES3oxGrtRr7Art9zEnG3M56Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			tdX8W7MMZuC0FXwi5tQRJgq55WCefic0ZIpPKstXG6g=
+			+MDLze//XGMBWl11r/fyoJzxVTCUaku0Uvv+x5DJtNk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMintegralAdapter.framework/_CodeSignature/CodeResources</key>

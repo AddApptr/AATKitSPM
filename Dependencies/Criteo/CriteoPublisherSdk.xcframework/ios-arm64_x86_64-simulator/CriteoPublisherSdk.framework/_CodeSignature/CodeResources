@@ -6,27 +6,7 @@
 	<dict>
 		<key>CriteoMRAIDResource.bundle/Info.plist</key>
 		<data>
-		wm5r5kIcx766CiFt3scwOq266c0=
-		</data>
-		<key>CriteoMRAIDResource.bundle/_CodeSignature/CodeDirectory</key>
-		<data>
-		/bf+XtFOlEe27L/oM4VwwHEJzOo=
-		</data>
-		<key>CriteoMRAIDResource.bundle/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>CriteoMRAIDResource.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		V9NXmCi7+2IIybHrbYIYbJQ0Yr8=
-		</data>
-		<key>CriteoMRAIDResource.bundle/_CodeSignature/CodeResources</key>
-		<data>
-		sdYbWMNO9m2Gz1fhY/lt8Rj00qs=
-		</data>
-		<key>CriteoMRAIDResource.bundle/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		TSf0Uib6sCYr14Kn4NVR9rgEmwQ=
 		</data>
 		<key>CriteoMRAIDResource.bundle/criteo-mraid.js</key>
 		<data>
@@ -54,7 +34,7 @@
 		</data>
 		<key>Headers/CRConstants.h</key>
 		<data>
-		akNk0JI69kR9UNOFdxaLl7fcHtI=
+		9LfKXptv5KXIx1kLrEguUqdGSj0=
 		</data>
 		<key>Headers/CRContextData.h</key>
 		<data>
@@ -126,15 +106,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SJe2psecbE6kumk4gwZDTkoIvYw=
+		KORqf9bgkmNyeDTAJfWWl5+xo7A=
 		</data>
 		<key>Modules/CriteoPublisherSdk.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		BL5cUgDlOM13joC1c81uQCk70kM=
+		9FEQ0PlQDVZDB130nq9HtNXEOsE=
 		</data>
 		<key>Modules/CriteoPublisherSdk.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		J1bazMZPNe8Kdm4glwttV10eOu4=
+		gif7nVJHZjuUf9YLh+TbzktWF28=
 		</data>
 		<key>Modules/CriteoPublisherSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -187,66 +167,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wm5r5kIcx766CiFt3scwOq266c0=
+			TSf0Uib6sCYr14Kn4NVR9rgEmwQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			V7ZcxTuNZRdOlY2KAEIDvU3vrJjmkYRiPURCcRdyjoU=
-			</data>
-		</dict>
-		<key>CriteoMRAIDResource.bundle/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/bf+XtFOlEe27L/oM4VwwHEJzOo=
-			</data>
-			<key>hash2</key>
-			<data>
-			c6yCwsoTsoYzy7/26Jn5offgEKM9lrnmgUe8VI49FIk=
-			</data>
-		</dict>
-		<key>CriteoMRAIDResource.bundle/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OnX22wWFKRSOFN1+obRynMCeyXM=
-			</data>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>CriteoMRAIDResource.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			V9NXmCi7+2IIybHrbYIYbJQ0Yr8=
-			</data>
-			<key>hash2</key>
-			<data>
-			F7ykNJ61FEpAzyCQEjico4Lf0dexexav9rbnMP7H/XM=
-			</data>
-		</dict>
-		<key>CriteoMRAIDResource.bundle/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sdYbWMNO9m2Gz1fhY/lt8Rj00qs=
-			</data>
-			<key>hash2</key>
-			<data>
-			LFhjkw2O7nfa1nJzpVjkKdv2yEIuxnvDa5EeLGMYa+Q=
-			</data>
-		</dict>
-		<key>CriteoMRAIDResource.bundle/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			R/cn062fZCpydYtMwXMmOAvc/UX2Zby/N/6lc0TJs6U=
 			</data>
 		</dict>
 		<key>CriteoMRAIDResource.bundle/criteo-mraid.js</key>
@@ -319,11 +244,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			akNk0JI69kR9UNOFdxaLl7fcHtI=
+			9LfKXptv5KXIx1kLrEguUqdGSj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			JUCMu6RRv6ny3P9FYfPkl2SzS2Egd+vcmvs1G1HhXqg=
+			7XRxwx/27seYlIpIRUvTa7xwvA1Jgnr5NYXXnP7VKik=
 			</data>
 		</dict>
 		<key>Headers/CRContextData.h</key>
@@ -517,22 +442,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BL5cUgDlOM13joC1c81uQCk70kM=
+			9FEQ0PlQDVZDB130nq9HtNXEOsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			E/+JKWWUSKkZf79Vlc68yhJQPz0qPam/nSu9kNe8fjA=
+			f+rn+qFZX9zQJUvo1N/IJfHN6EWgD9SOBSKUWESEK/g=
 			</data>
 		</dict>
 		<key>Modules/CriteoPublisherSdk.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			J1bazMZPNe8Kdm4glwttV10eOu4=
+			gif7nVJHZjuUf9YLh+TbzktWF28=
 			</data>
 			<key>hash2</key>
 			<data>
-			GAboSwDOe6uwmqjSI129ddHSoOEuDG4Zj4eb4Ob91FU=
+			OvpdIsG07FOORRE94SSN28s/vaq7/XxsDo5bQbcUS/s=
 			</data>
 		</dict>
 		<key>Modules/CriteoPublisherSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>

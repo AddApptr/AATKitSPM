@@ -16,3 +16,5 @@
 #import <TappxFramework/TappxSettings.h>
 #import <TappxFramework/TappxErrorAd.h>
 #import <TappxFramework/TappxVASTURL.h>
+#import <TappxFramework/ITPXCrossPromotionAdapterDelegate.h>
+#import <TappxFramework/ITPXCrossPromotionAdapter.h>

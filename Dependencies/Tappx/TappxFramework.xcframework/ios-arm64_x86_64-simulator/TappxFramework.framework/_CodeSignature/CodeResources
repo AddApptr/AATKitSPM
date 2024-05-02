@@ -6,59 +6,71 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		qUZK3kVuIUU62rIci/tXItvzgBM=
+		voa7mQWvNtjKR0rP112ubj1dhaA=
+		</data>
+		<key>Headers/ITPXCrossPromotionAdapter.h</key>
+		<data>
+		xV15gTIPhz92INCxZIiLgTa40cU=
+		</data>
+		<key>Headers/ITPXCrossPromotionAdapterDelegate.h</key>
+		<data>
+		0oes71JrLhYt8A2wSXakFJiItOE=
 		</data>
 		<key>Headers/TappxAds.h</key>
 		<data>
-		9xYIlY75zcnUqLq4TV012S84IAs=
+		N5FdKisERUmHV07WaMhgEnCInoQ=
 		</data>
 		<key>Headers/TappxBannerViewController.h</key>
 		<data>
-		VsOKLZksdhj47bVi2NnEIbJl6As=
+		H/MSlpH00acjUbFlRReLhxQY8rg=
 		</data>
 		<key>Headers/TappxBannerViewControllerDelegate.h</key>
 		<data>
-		9bVkqUo8hpfAd324Q0nwdum4M9s=
+		gprtAc5w96eR5adJfDTZmvOCpVA=
 		</data>
 		<key>Headers/TappxErrorAd.h</key>
 		<data>
-		4BCo0oXWQbgSVzxMzSYGRKaWoWo=
+		z/jQ6EbCkBI6vd59r/Z6GVqizyM=
 		</data>
 		<key>Headers/TappxFramework.h</key>
 		<data>
-		KX8uPSFE4RURbVtqHrv7AobJ7RQ=
+		qSuq3I5a7E+OXomyc684aWUp8c4=
 		</data>
 		<key>Headers/TappxInterstitialViewController.h</key>
 		<data>
-		TkMnokCzH6nUdeseB/brFMFjOy4=
+		zIE4vTOVzRWRUrcd+FbPq4TWNXo=
 		</data>
 		<key>Headers/TappxInterstitialViewControllerDelegate.h</key>
 		<data>
-		4ficUXXdX/lD7c/ZEyBm4JoIS+E=
+		qIz+x8mxPWvlosoBOtgBhkdldSw=
 		</data>
 		<key>Headers/TappxRewardedViewController.h</key>
 		<data>
-		8hPOOjsOJHY3S2JIY0ONLUfTRzg=
+		kHGP2yRF7Esx5Do4ue3ZMdpiaJM=
 		</data>
 		<key>Headers/TappxRewardedViewControllerDelegate.h</key>
 		<data>
-		34fUjKY4gS7gfmlIEMgvJcRLRE0=
+		rpbiQ6s+0+apOEuFTC4OXWrZz+w=
 		</data>
 		<key>Headers/TappxSettings.h</key>
 		<data>
-		Nq0bqJ2AwVxrGPJrrcuk9gUPlwI=
+		gEvhRbYMy3lUK6n7qVOaCNQq0l8=
 		</data>
 		<key>Headers/TappxVASTURL.h</key>
 		<data>
-		drUTzw+rug5H7wP9Du95toDTceY=
+		qO9fiJtCQvSZb/KD6IihLmZ0530=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WOrolZwa3LLOxQPV7fVnbznXbpc=
+		Vm5YqoHTo7gtdmSNLx7CYhloitg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		JxjKQ4g+dAnxRNWb4+TUXLXCSjA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		j9VGKRe8w1NLTOQggvpdbSnU648=
 		</data>
 		<key>mraid.js</key>
 		<data>
@@ -79,84 +91,98 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NX26pulVpEOzddPhKGdDb500NNnL3Bw5DSVk2MiscCg=
+			w9vjYwZt6t+3s8XzDXsNNUh3GC46cUZEocdPv0HYpQM=
+			</data>
+		</dict>
+		<key>Headers/ITPXCrossPromotionAdapter.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FeOopCW/Czta+8u6A9jqDrg1e6ckmDHQ/ereqwSBqzY=
+			</data>
+		</dict>
+		<key>Headers/ITPXCrossPromotionAdapterDelegate.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FQe9Ak8GsO7GsWmEZ9Fs+qPXd74BT7WrFWIZCjPljCI=
 			</data>
 		</dict>
 		<key>Headers/TappxAds.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DvRRv1GrzAbV+gL3lIgqfWqSHmdm1oh6np9ysZ8/SEc=
+			YMdnXOZZvRD8FgtPndxK3Lm9SKacLsSdesuqoYIYYxc=
 			</data>
 		</dict>
 		<key>Headers/TappxBannerViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iQIIUp3wwFGXa7puhJ4xV9v+2aIPfRsWw+cFNBc7evE=
+			qTW1m1kKPeh3zRNH4bKcCtSZZQpbsQlDTsCuXtbgL1c=
 			</data>
 		</dict>
 		<key>Headers/TappxBannerViewControllerDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x3GL9ecTt4u0v10HX2aUy9eQ3VneBg7iJreoPJwpUZw=
+			f0e/SYfQvpQ5cK48dvKC3kGiPE4CqjobCxwxqPyxrxI=
 			</data>
 		</dict>
 		<key>Headers/TappxErrorAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/vfXS5CAQFH2GdYU1Pm3YW/Zdk3Md5m17COGwmoX78=
+			vgRq5NKGw8nz4Kke3d57/Ldl2p/WNXP5CJWE+/ov15Q=
 			</data>
 		</dict>
 		<key>Headers/TappxFramework.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0VUDd/F+6Kqj3Hvcv6J8A9AjRAmvUbxfYnIX2i9Pg40=
+			fV3WfVVIR/mgrTv1/LC1LX3h2+O9+YnypTZ2u/vL1PM=
 			</data>
 		</dict>
 		<key>Headers/TappxInterstitialViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TW8pArv71/uXcYRu7BIzz6sq7lVn5foEsut8QHi8lLY=
+			5HFb7mKyaeGjA1x7+4QN5GvMZchK9VKjzpemgf+6SvM=
 			</data>
 		</dict>
 		<key>Headers/TappxInterstitialViewControllerDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+XzOQhEj/tyvRIYzMbNH87Bb9Y4b26lrZeEuQveh9L8=
+			7KypYOPnXrSYe1XcVe3fVt62RaiktrzBSo9VbB1rrDE=
 			</data>
 		</dict>
 		<key>Headers/TappxRewardedViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FYXDML7vrkLPWUX+cF4I7BtNGySt3yeN4wwnGFRUrMQ=
+			Icr/xhSS+MyXj44oeD14IiCNxOhdOT9O+lFGO9lvE2c=
 			</data>
 		</dict>
 		<key>Headers/TappxRewardedViewControllerDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dx9z+yINqF45kK48g5PR29QEa2hOhKitRG71vFfKgcU=
+			HkySCNIThU7PyjYjcunwQT8Z8mjFxPEXhXsWF5W5aWE=
 			</data>
 		</dict>
 		<key>Headers/TappxSettings.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hmHT+EFKFxy5a7lwrPfuKAhK9iSTXvRuaKLMEPisCU4=
+			30o8A/huPTcKQ8RCcdexcNV3rV3vTBC95y/DKCI9RD0=
 			</data>
 		</dict>
 		<key>Headers/TappxVASTURL.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+92YfXY+pGQfKJC0eAgLlTdc5Nxm6Wj52l93mNd8se8=
+			lLNDlUCOFgHI9opg+Hn3ZzEv3vrmFh8Gb6zjdMmGCZ8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -164,6 +190,13 @@
 			<key>hash2</key>
 			<data>
 			bf6pw53kbkyPrnhxPZacIis3UEZ6Df0A9rcPksAdkNs=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			odc5Ri7xhJB1sFyrkDPqMJxmcSfwx4hYQntbzDb3pBM=
 			</data>
 		</dict>
 		<key>mraid.js</key>
