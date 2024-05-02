@@ -64,11 +64,11 @@ let package = Package(
                                                    "AATKit-Unity",
                                                    "AATKit-Vungle",
                                                    "AATKit-Mintegral",
-                                                   "AATKit-AATAdMobDSPAdapter"
+                                                   "AATKit-AATAdMobDSPAdapter",
+                                                   "AATKit-Criteo",
+                                                   "AATKit-Tappx"
                                                    // Missing privacyInfo file
-                                                   // "AATKit-Criteo",
                                                    // "AATKit-Prebid",
-                                                   // "AATKit-Tappx",
                                                   ]),
 
     ],
