@@ -302,7 +302,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @protocol AATCMPDelegate;
 @class NSString;
 
-/// The AATCMPGoogle is the Google CMP adapter
+/// A <code>AATCMPProtocol</code> that should be passed to <code>AATManagedConsent</code>
 SWIFT_CLASS("_TtC19AATGoogleCMPAdapter12AATCMPGoogle")
 @interface AATCMPGoogle : NSObject <AATCMPProtocol>
 @property (nonatomic, weak) id <AATCMPDelegate> _Nullable cmpDelegate;

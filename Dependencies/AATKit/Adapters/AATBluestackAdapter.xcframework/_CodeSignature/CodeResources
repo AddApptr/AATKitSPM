@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATBluestackAdapter.framework/AATBluestackAdapter</key>
 		<data>
-		dL1+OY2U/SOX3Eg2XZ0lQiLlzjM=
+		pCADj5vt9mIDdzAPBdj1SkeNLF4=
 		</data>
 		<key>ios-arm64/AATBluestackAdapter.framework/Headers/AATBluestackAdapter-Swift.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATBluestackAdapter.framework/AATBluestackAdapter</key>
 		<data>
-		Vqm8KFQaTnFGOMsI0oLgrg9+6tA=
+		woMh0R/vaYB9XzwGutocJMQwS2Y=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATBluestackAdapter.framework/Headers/AATBluestackAdapter-Swift.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATBluestackAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		USeHL0VtxkytX/OxMYQYCCZZKac=
+		GXckE6ODqLk7mkK8E5flQyFssRY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATBluestackAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATBluestackAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		mAoeAGZM88XVCwUcWEUTH9CoXRY=
+		Ux/cRDq7sAR9PdnZ9xBKJZRA7Ys=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATBluestackAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -119,11 +119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dL1+OY2U/SOX3Eg2XZ0lQiLlzjM=
+			pCADj5vt9mIDdzAPBdj1SkeNLF4=
 			</data>
 			<key>hash2</key>
 			<data>
-			V4uiRL/98rkqfTEoIau6HgjT6MsQTIl/A+Q5gpC3+00=
+			hfqw5or/29m40yRparBlgh33cVY7EYiLNYzX1ifenks=
 			</data>
 		</dict>
 		<key>ios-arm64/AATBluestackAdapter.framework/Headers/AATBluestackAdapter-Swift.h</key>
@@ -218,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Vqm8KFQaTnFGOMsI0oLgrg9+6tA=
+			woMh0R/vaYB9XzwGutocJMQwS2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			pRzPKgtFPCoL1NOdxSG5nKoHDWWVpXNlIDUuEaFHSRo=
+			o4yiJlDdJgI/8xIYVLoaBUofsYPTZ7JthbgAhPZsAmY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATBluestackAdapter.framework/Headers/AATBluestackAdapter-Swift.h</key>
@@ -361,11 +361,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			USeHL0VtxkytX/OxMYQYCCZZKac=
+			GXckE6ODqLk7mkK8E5flQyFssRY=
 			</data>
 			<key>hash2</key>
 			<data>
-			YQcUqog/syD6o6wjqKLBAT7B1It9CZPtFWLYsdPFkZ8=
+			+FRd8nVFoUffQpyVwtiXnVMYJ9BqTn7kDo6tuu+35CE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATBluestackAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -383,11 +383,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mAoeAGZM88XVCwUcWEUTH9CoXRY=
+			Ux/cRDq7sAR9PdnZ9xBKJZRA7Ys=
 			</data>
 			<key>hash2</key>
 			<data>
-			iBcLc5Wzp/4Izn9mcrQ5P3lfbnkAhzgK1TGGqOhRnoU=
+			UNdiOes2XED74YWdQF53ZlfZCqXg1tczbYkvy5j4Naw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATBluestackAdapter.framework/_CodeSignature/CodeResources</key>

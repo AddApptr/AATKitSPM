@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATFacebookAdapter.framework/AATFacebookAdapter</key>
 		<data>
-		aFAIu3+6cVbYEsQAfJzRCrShn6g=
+		xR5yC6dvsmXEgPBFhwHsOVaZ2Nk=
 		</data>
 		<key>ios-arm64/AATFacebookAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/AATFacebookAdapter</key>
 		<data>
-		eM4nPUbfAVp3zaa4utCF73DeSJE=
+		A3C65cEnZmMFhyDKrEd9n93eERM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		4jiiFSBd9GLorECv+wu7Yl56R4c=
+		7hSAQ+Lk551f3S+x9wZ7WXraTHs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		wBfR5cgR7m1/OZs0+OWT051iLUc=
+		e67qtpxPNe79ZbSPXyH2+NqeV9Q=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -151,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aFAIu3+6cVbYEsQAfJzRCrShn6g=
+			xR5yC6dvsmXEgPBFhwHsOVaZ2Nk=
 			</data>
 			<key>hash2</key>
 			<data>
-			JvWQbkARZOpm9kyOP6He9tB/2TB/efz4co9+nzQYQBY=
+			NnUSFH1MXsz+ECvjCxQLZ9nRwJqiBlkdx78lKGBT4G8=
 			</data>
 		</dict>
 		<key>ios-arm64/AATFacebookAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
@@ -294,11 +294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eM4nPUbfAVp3zaa4utCF73DeSJE=
+			A3C65cEnZmMFhyDKrEd9n93eERM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ncs4YdO4E293SS3x7thjFgnmK0G+dOnPJhP6+FlyNtI=
+			A7WyJPI/nyt8BNpP8jO4dWmWUxQsIjLlacYfERcLlH8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
@@ -481,11 +481,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4jiiFSBd9GLorECv+wu7Yl56R4c=
+			7hSAQ+Lk551f3S+x9wZ7WXraTHs=
 			</data>
 			<key>hash2</key>
 			<data>
-			mDAvZrMz7y2nC/NHH5phTo/xxl1rTF6E4GmZUujwXZc=
+			ENKEyKzkJ+myoktwap67Qdvb1Q8O9+23cR/ZVT6Jo/Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -503,11 +503,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wBfR5cgR7m1/OZs0+OWT051iLUc=
+			e67qtpxPNe79ZbSPXyH2+NqeV9Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			gALA0F/fy+loXBou5iz/g3z5LXRxf2032xEbAkZP/ZU=
+			iwqGs+xAYUtQ2ZRubR/SLnaYPfIWQzxmqM7pQSm19+Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeResources</key>

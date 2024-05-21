@@ -302,9 +302,20 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSString;
 
+/// A <code>AATCMPProtocol</code> that should be passed to <code>AATManagedConsent</code>
+/// See <code>AATCMPSourcepoint/init(accountId:propertyId:propertyName:pmId:)</code>
 SWIFT_CLASS("_TtC24AATSourcePointCMPAdapter17AATCMPSourcepoint")
 @interface AATCMPSourcepoint : NSObject
 - (BOOL)isSuccessfullyInitialized:(NSString * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
+/// Create <code>AATCMPSourcepoint</code> instance
+/// \param accountId SourcePoint account ID
+///
+/// \param propertyId SourcePoint property ID
+///
+/// \param propertyName SourcePoint property name
+///
+/// \param pmId SourcePoint privacy manager ID
+///
 - (nonnull instancetype)initWithAccountId:(NSString * _Nonnull)accountId propertyId:(NSString * _Nonnull)propertyId propertyName:(NSString * _Nonnull)propertyName pmId:(NSString * _Nonnull)pmId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -648,9 +659,20 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSString;
 
+/// A <code>AATCMPProtocol</code> that should be passed to <code>AATManagedConsent</code>
+/// See <code>AATCMPSourcepoint/init(accountId:propertyId:propertyName:pmId:)</code>
 SWIFT_CLASS("_TtC24AATSourcePointCMPAdapter17AATCMPSourcepoint")
 @interface AATCMPSourcepoint : NSObject
 - (BOOL)isSuccessfullyInitialized:(NSString * _Nonnull)source SWIFT_WARN_UNUSED_RESULT;
+/// Create <code>AATCMPSourcepoint</code> instance
+/// \param accountId SourcePoint account ID
+///
+/// \param propertyId SourcePoint property ID
+///
+/// \param propertyName SourcePoint property name
+///
+/// \param pmId SourcePoint privacy manager ID
+///
 - (nonnull instancetype)initWithAccountId:(NSString * _Nonnull)accountId propertyId:(NSString * _Nonnull)propertyId propertyName:(NSString * _Nonnull)propertyName pmId:(NSString * _Nonnull)pmId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
