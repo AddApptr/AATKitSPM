@@ -95,7 +95,7 @@ let package = Package(
 
         // AATAdMobDSPAdapter
         .target(name:"AATKit-AATAdMobDSPAdapter",
-                dependencies: [ "AATKit-GoogleMobileAds", "AATKit", "AATKit-GraviteRTB"],
+                dependencies: [ "AATKit-GoogleMobileAds", "AATKit", "AATKit-GraviteRTB", "AATAdMobDSPAdapter"],
                 path: "./Sources/AATAdMobDSPAdapter"),
 
         // MARK - Dependencies Targets
