@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATCriteoAdapter.framework/AATCriteoAdapter</key>
 		<data>
-		0kJE1xez733LeI1RBtA3YOLUeYY=
+		TSwtA5an5092F3Bq55F9QqKEzOU=
 		</data>
 		<key>ios-arm64/AATCriteoAdapter.framework/CriteoMRAIDResource.bundle/Info.plist</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>ios-arm64/AATCriteoAdapter.framework/Info.plist</key>
 		<data>
-		3ZgzX0tI/67Vzly+F3wPNBtW5YU=
+		lXspDjC79Pv8pDDxx36HoXZOT8M=
 		</data>
 		<key>ios-arm64/AATCriteoAdapter.framework/Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/AATCriteoAdapter</key>
 		<data>
-		VM7QLMO99AJHUTZkX+VoDNsgFkE=
+		FfPNegjGCdtY5r8GC91r+lmt34M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/CriteoMRAIDResource.bundle/Info.plist</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/Info.plist</key>
 		<data>
-		zqWHANFtXMw3QZOoPnX8hhpjmvw=
+		6wGwQMmAeePgrEQqx6Snyj1QL+U=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		d6wEXtcqYpI9FZFjy1o/Gz+ajic=
+		Xqm/eVjkeVrxIYr3e+hLIZuA/lI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -134,11 +134,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		47hzOZsVuOY3gw/gT1CX8XLOcEo=
+		q2cUXI1DKbZGfG4oCD+VXinfdqk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		jdiRguDBzJH0RWDkb3l1bUbf6nk=
+		qsqyl9gfOEH2jzS3U83IvzEXiYc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -151,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0kJE1xez733LeI1RBtA3YOLUeYY=
+			TSwtA5an5092F3Bq55F9QqKEzOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			T+nEV0Wa++LqHaT2Dn6+9W0cKntJxmh9AnfPiTm2tfk=
+			5BcH32l8oW80WOZkrjDPw25+c+LVtSv5qnWsY535ww8=
 			</data>
 		</dict>
 		<key>ios-arm64/AATCriteoAdapter.framework/CriteoMRAIDResource.bundle/Info.plist</key>
@@ -228,11 +228,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3ZgzX0tI/67Vzly+F3wPNBtW5YU=
+			lXspDjC79Pv8pDDxx36HoXZOT8M=
 			</data>
 			<key>hash2</key>
 			<data>
-			u2pLsvUoMjOCuU4OAHMw2snvtoXdV++67S2bJV8eMJo=
+			wcBB1pTzjDvlDK3t9QFaLFAci4vBpmOoPg6Lbs3j3sg=
 			</data>
 		</dict>
 		<key>ios-arm64/AATCriteoAdapter.framework/Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -294,11 +294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VM7QLMO99AJHUTZkX+VoDNsgFkE=
+			FfPNegjGCdtY5r8GC91r+lmt34M=
 			</data>
 			<key>hash2</key>
 			<data>
-			+6/eg1hd93R8qFp86btXui6Sh5q+KrBoIUQK5fmJydQ=
+			QmVP9I/3uz6BVC5ePsyIx+AAWI1O7rfmv4I2uI9+R/s=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/CriteoMRAIDResource.bundle/Info.plist</key>
@@ -371,11 +371,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zqWHANFtXMw3QZOoPnX8hhpjmvw=
+			6wGwQMmAeePgrEQqx6Snyj1QL+U=
 			</data>
 			<key>hash2</key>
 			<data>
-			9AFeoS/wPZ/PU2zqEfM5H5dJnLBgeBvXaVxaQyozOBI=
+			8n08PKfsql4QJ89KQEcMozgsrtrwOuCNZThosBqrBV8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/Modules/AATCriteoAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -481,11 +481,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d6wEXtcqYpI9FZFjy1o/Gz+ajic=
+			Xqm/eVjkeVrxIYr3e+hLIZuA/lI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3A4f1pT8EABFX0/dh4vD8uLXMYVSL2ARMd6lbWKtpm0=
+			WkpG37uuVSBNbMOR0dkDbyA4LnsKfSmm0TtIqaM/Kkc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -503,22 +503,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			47hzOZsVuOY3gw/gT1CX8XLOcEo=
+			q2cUXI1DKbZGfG4oCD+VXinfdqk=
 			</data>
 			<key>hash2</key>
 			<data>
-			s2+VljAyGjHFaho+fdLzLHeXnnwsBmkLMJ9vQXCIlpg=
+			Hsz9bdhAObSWn8O/PK1IiOMwe42AK/jvotXGc3VmJP0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jdiRguDBzJH0RWDkb3l1bUbf6nk=
+			qsqyl9gfOEH2jzS3U83IvzEXiYc=
 			</data>
 			<key>hash2</key>
 			<data>
-			MpM0WiHmKmZSUKNTQV2OPeEDspOQITSJwX+oHv0guyU=
+			urf0agtq5dLhrZXMunJxLaDyY0xQx77dxYolweiIc4U=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATCriteoAdapter.framework/_CodeSignature/CodeSignature</key>

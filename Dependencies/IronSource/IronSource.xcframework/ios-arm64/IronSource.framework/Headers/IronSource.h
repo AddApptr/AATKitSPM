@@ -28,6 +28,13 @@
 #import <libxml2/libxml/tree.h>
 #import <zlib.h>
 
+#import "ISABannerAdLoader.h"
+#import "ISABannerAdRequestBuilder.h"
+#import "ISAInitRequestBuilder.h"
+#import "ISAInterstitialAdLoader.h"
+#import "ISAInterstitialAdRequestBuilder.h"
+#import "ISARewardedAdLoader.h"
+#import "ISARewardedAdRequestBuilder.h"
 #import "ISBannerSize.h"
 #import "ISConfigurations.h"
 #import "ISConsentViewDelegate.h"
@@ -46,6 +53,7 @@
 #import "ISSegmentDelegate.h"
 #import "ISSupersonicAdsConfiguration.h"
 #import "ISWaterfallConfiguration.h"
+#import "IronSourceAds.h"
 
 // imports used for custom adapters infra
 #import "ISAdapterErrors.h"
@@ -71,6 +79,13 @@
 #import "LevelPlayNativeAd.h"
 #import "LevelPlayNativeAdDelegate.h"
 
+// LevelPlay imports
+#import "LPMAdInfo.h"
+#import "LPMAdSize.h"
+#import "LPMBannerAdView.h"
+#import "LPMInitRequestBuilder.h"
+#import "LevelPlay.h"
+
 #import "IronSourceNetworkSwiftBridge.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -80,8 +95,8 @@ NS_ASSUME_NONNULL_BEGIN
 #define IS_BANNER @"banner"
 #define IS_NATIVE_AD @"nativead"
 
-static NSString *const MEDIATION_SDK_VERSION = @"8.0.0";
-static NSString *GitHash = @"12c1076";
+static NSString *const MEDIATION_SDK_VERSION = @"8.1.0";
+static NSString *GitHash = @"e577533";
 
 /*
     This constant is for sending an external impression data from mopub
