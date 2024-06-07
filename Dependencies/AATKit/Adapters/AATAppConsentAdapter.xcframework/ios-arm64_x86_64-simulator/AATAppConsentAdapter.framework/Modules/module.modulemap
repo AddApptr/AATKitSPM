@@ -1,0 +1,11 @@
+framework module AATAppConsentAdapter {
+  umbrella header "AATAppConsentAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module AATAppConsentAdapter.Swift {
+  header "AATAppConsentAdapter-Swift.h"
+  requires objc
+}

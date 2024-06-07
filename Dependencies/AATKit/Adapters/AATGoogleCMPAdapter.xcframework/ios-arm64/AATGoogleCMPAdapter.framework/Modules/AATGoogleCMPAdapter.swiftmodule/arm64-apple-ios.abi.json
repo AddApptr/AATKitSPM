@@ -51,7 +51,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "AATKit.AATCMPDelegate?"
+                "printedName": "(any AATKit.AATCMPDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -76,12 +76,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "AATKit.AATCMPDelegate?",
+                    "printedName": "(any AATKit.AATCMPDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "AATCMPDelegate",
-                        "printedName": "AATKit.AATCMPDelegate",
+                        "printedName": "any AATKit.AATCMPDelegate",
                         "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
                       }
                     ],
@@ -111,12 +111,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "AATKit.AATCMPDelegate?",
+                    "printedName": "(any AATKit.AATCMPDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "AATCMPDelegate",
-                        "printedName": "AATKit.AATCMPDelegate",
+                        "printedName": "any AATKit.AATCMPDelegate",
                         "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
                       }
                     ],
@@ -420,7 +420,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "AATCMPDelegate",
-                "printedName": "AATKit.AATCMPDelegate",
+                "printedName": "any AATKit.AATCMPDelegate",
                 "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
               }
             ],
@@ -576,312 +576,18 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATGoogleCMPState.swift",
-      "kind": "BooleanLiteral",
-      "offset": 556,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATGoogleCMPState.swift",
-      "kind": "BooleanLiteral",
-      "offset": 597,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Data\/Repositories\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
       "kind": "StringLiteral",
       "offset": 220,
       "length": 23,
       "value": "\"AATSafeManagedConsent\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Data\/Repositories\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
       "kind": "StringLiteral",
-      "offset": 620,
+      "offset": 621,
       "length": 21,
       "value": "\"IABTCF_AddtlConsent\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 669,
-      "length": 23,
-      "value": "\"IABTCF_VendorConsents\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 721,
-      "length": 24,
-      "value": "\"IABTCF_PurposeConsents\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "BooleanLiteral",
-      "offset": 959,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 1194,
-      "length": 65,
-      "value": "\"Invalid source: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 1220,
-      "length": 1,
-      "value": "\", this method is not for public usage.\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1281,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 1492,
-      "length": 65,
-      "value": "\"Invalid source: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 1518,
-      "length": 1,
-      "value": "\", this method is not for public usage.\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 1769,
-      "length": 10,
-      "value": "\"idle cmp\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 1877,
-      "length": 17,
-      "value": "\"loading consent\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 2235,
-      "length": 21,
-      "value": "\"consent info loaded\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 2393,
-      "length": 14,
-      "value": "\"loading form\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 2812,
-      "length": 39,
-      "value": "\"form loaded and ready to be presented\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 3240,
-      "length": 47,
-      "value": "\"consent has been updated with state: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 3286,
-      "length": 3,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 3826,
-      "length": 62,
-      "value": "\"Failed to update consent info: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 3887,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 4266,
-      "length": 57,
-      "value": "\"error loading google form \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 4322,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 4461,
-      "length": 52,
-      "value": "\"error loading google form (error and form are nil)\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 5039,
-      "length": 31,
-      "value": "\"consent has been given before\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 5273,
-      "length": 24,
-      "value": "\"consent form not ready\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 5594,
-      "length": 68,
-      "value": "\"cannot show consent form with error: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 5661,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 6425,
-      "length": 3,
-      "value": "\"1\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6433,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 6501,
-      "length": 3,
-      "value": "\"1\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6509,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 6949,
-      "length": 65,
-      "value": "\"Invalid source: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 6975,
-      "length": 1,
-      "value": "\", this method is not for public usage.\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 7366,
-      "length": 65,
-      "value": "\"consent already obtained and edit should be called to change it\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 7640,
-      "length": 65,
-      "value": "\"Invalid source: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 7666,
-      "length": 1,
-      "value": "\", this method is not for public usage.\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 8004,
-      "length": 65,
-      "value": "\"Invalid source: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 8030,
-      "length": 1,
-      "value": "\", this method is not for public usage.\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 8686,
-      "length": 65,
-      "value": "\"Invalid source: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 8712,
-      "length": 1,
-      "value": "\", this method is not for public usage.\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 9145,
-      "length": 65,
-      "value": "\"Invalid source: \""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 9171,
-      "length": 1,
-      "value": "\", this method is not for public usage.\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
-      "kind": "StringLiteral",
-      "offset": 9374,
-      "length": 34,
-      "value": "\"AATGoogleCMPAdapter.AATCMPGoogle\""
     }
   ]
 }

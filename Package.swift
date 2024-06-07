@@ -27,6 +27,7 @@ let package = Package(
         .library(name: "AATKit-YOC", targets: ["AATKit-YOC"]),
         .library(name: "AATKit-InMobi", targets: ["AATKit-InMobi"]),
         .library(name: "AATKit-IronSource", targets: ["AATKit-IronSource"]),
+        .library(name: "AATKit-Kidoz", targets: ["AATKit-Kidoz"]),
         .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Prebid", targets: ["AATKit-Prebid"]),
@@ -58,6 +59,7 @@ let package = Package(
                                                    "AATKit-YOC",
                                                    "AATKit-InMobi",
                                                    "AATKit-IronSource",
+                                                   "AATKit-Kidoz",
                                                    "AATKit-AppNexus",
                                                    "AATKit-OgurySdk",
                                                    "AATKit-PubNative",
@@ -177,6 +179,10 @@ let package = Package(
                     dependencies: ["IronSource", "AATIronSourceAdapter"],
                     path: "./Sources/IronSourceSources"),
 
+            .target(name:"AATKit-Kidoz",
+                    dependencies: ["Kidoz", "AATKidozAdapter"],
+                    path: "./Sources/KidozSources"),
+
             .target(name:"AATKit-PubNative",
                     dependencies: ["HyBid", "OMSDK_Pubnativenet", "AATPubNativeAdapter"],
                     path: "./Sources/PubnativeSources"),
@@ -268,6 +274,9 @@ let package = Package(
         // IronSource
         .binaryTarget(name: "IronSource", path: "./Dependencies/IronSource/IronSource.xcframework"),
 
+        // Kidoz
+        .binaryTarget(name: "Kidoz", path: "./Dependencies/Kidoz/KidozSDK.xcframework"),
+
         // PubNative
         .binaryTarget(name: "HyBid", path: "./Dependencies/Pubnative/HyBid.xcframework"),
         .binaryTarget(name: "OMSDK_Pubnativenet", path: "./Dependencies/Pubnative/OMSDK_Pubnativenet.xcframework"),
@@ -318,6 +327,7 @@ let package = Package(
         .binaryTarget(name: "AATGoogleCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATGoogleCMPAdapter.xcframework"),
         .binaryTarget(name: "AATInMobiAdapter", path: "./Dependencies/AATKit/Adapters/AATInMobiAdapter.xcframework"),
         .binaryTarget(name: "AATIronSourceAdapter", path: "./Dependencies/AATKit/Adapters/AATIronSourceAdapter.xcframework"),
+        .binaryTarget(name: "AATKidozAdapter", path: "./Dependencies/AATKit/Adapters/AATKidozAdapter.xcframework"),
         .binaryTarget(name: "AATOguryAdapter", path: "./Dependencies/AATKit/Adapters/AATOguryAdapter.xcframework"),
         .binaryTarget(name: "AATPubNativeAdapter", path: "./Dependencies/AATKit/Adapters/AATPubNativeAdapter.xcframework"),
         .binaryTarget(name: "AATSmaatoAdapter", path: "./Dependencies/AATKit/Adapters/AATSmaatoAdapter.xcframework"),
