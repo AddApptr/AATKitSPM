@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>FBAudienceNetwork.bundle/Info.plist</key>
+		<data>
+		q+B+xw95H5teNM5JwTqfQeoflzs=
+		</data>
+		<key>FBAudienceNetwork.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		iJf6SpfSfy71MDcGI+K9k1a78DU=
+		</data>
 		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
 		<data>
 		OujqXKPoJYAETlgzvFfhaTGlpEY=
@@ -22,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6468XPfXZdUURCIGkDj86FsQYmA=
+		FEiVNKNc2Qoo+J/PXVoEpWFXymY=
 		</data>
 		<key>Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -79,6 +87,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>FBAudienceNetwork.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q+B+xw95H5teNM5JwTqfQeoflzs=
+			</data>
+			<key>hash2</key>
+			<data>
+			nRqBqNir8DDAnQruFQSJVWVJnAMDrjXyO0K0h+wNFsk=
+			</data>
+		</dict>
+		<key>FBAudienceNetwork.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iJf6SpfSfy71MDcGI+K9k1a78DU=
+			</data>
+			<key>hash2</key>
+			<data>
+			cSw93xWtIPxdaMlNpIyJu23eaMe/V5QkksYayESwhlc=
+			</data>
+		</dict>
 		<key>GoogleMobileAdsResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>

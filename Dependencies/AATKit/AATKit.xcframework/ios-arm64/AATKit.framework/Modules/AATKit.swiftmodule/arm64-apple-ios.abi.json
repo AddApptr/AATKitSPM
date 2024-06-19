@@ -63246,7 +63246,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 7,
-      "value": "\"3.8.6\""
+      "value": "\"3.8.7\""
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
@@ -70397,8 +70397,15 @@
     },
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdController+ControllerLifeCycle.swift",
+      "kind": "StringLiteral",
+      "offset": 708,
+      "length": 55,
+      "value": "\"called while viewController reference is already nil!\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdController+ControllerLifeCycle.swift",
       "kind": "BooleanLiteral",
-      "offset": 837,
+      "offset": 1016,
       "length": 5,
       "value": "false"
     },
