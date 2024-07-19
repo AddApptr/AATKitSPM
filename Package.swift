@@ -82,7 +82,8 @@ let package = Package(
         .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", .exact("11.3.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
-        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.1.3"))
+        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.1.3")),
+        .package(name: "RTBSPM", url: "https://github.com/AddApptr/RTBSPM", .exact("1.3.3"))
     ],
     targets: [
         // AATKit target
@@ -141,7 +142,7 @@ let package = Package(
                     path: "./Sources/FeedAdSources"),
 
             .target(name:"AATKit-GraviteRTB",
-                    dependencies: ["GraviteRTB", "AATGraviteRTBAdapter"],
+                    dependencies: ["RTBSPM", "AATGraviteRTBAdapter"],
                     path: "./Sources/GraviteRTB"),
 
             .target(name:"AATKit-OgurySdk",
@@ -244,9 +245,6 @@ let package = Package(
 
         // FeedAd
         .binaryTarget(name: "FeedAd", path: "./Dependencies/FeedAd/FeedAd.xcframework"),
-
-        // GraviteRTB
-        .binaryTarget(name: "GraviteRTB", path: "./Dependencies/GraviteRTB/RTBSDK.xcframework"),
 
         // Ogury
         .binaryTarget(name: "OguryCore", path: "./Dependencies/Ogury/OguryCore.xcframework"),
