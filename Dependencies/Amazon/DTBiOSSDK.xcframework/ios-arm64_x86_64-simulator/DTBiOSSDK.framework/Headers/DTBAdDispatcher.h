@@ -122,6 +122,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)adFailedToLoad;
 
+- (void)startOMSDKSession;
+
+- (void)stopActiveOMSDKSession;
+
 @end
 
 NS_ASSUME_NONNULL_END

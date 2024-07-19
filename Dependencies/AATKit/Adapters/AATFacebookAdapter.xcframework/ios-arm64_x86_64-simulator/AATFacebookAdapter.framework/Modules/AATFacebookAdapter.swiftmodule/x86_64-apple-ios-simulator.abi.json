@@ -24,20 +24,5 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": [
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFacebookAdapter\/AATFacebookManager.swift",
-      "kind": "StringLiteral",
-      "offset": 645,
-      "length": 10,
-      "value": "\"6.15.0.0\""
-    },
-    {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATFacebookAdapter\/AATFacebookManager.swift",
-      "kind": "StringLiteral",
-      "offset": 658,
-      "length": 3,
-      "value": "\"~\""
-    }
-  ]
+  "ConstValues": []
 }

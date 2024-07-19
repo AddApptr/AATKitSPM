@@ -1562,9 +1562,9 @@ SWIFT_CLASS("_TtC9InMobiSDK15IMUserDataTypes")
 SWIFT_CLASS("_TtC9InMobiSDK11IMWatermark")
 @interface IMWatermark : NSObject
 @property (nonatomic, readonly, copy) NSData * _Nonnull imageData;
-/// \param imageData Data that is used for watermark
+/// \param waterMarkImageData Data that is used for watermark
 ///
-- (nonnull instancetype)initWithImageData:(NSData * _Nonnull)imageData OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithWaterMarkImageData:(NSData * _Nonnull)waterMarkImageData OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

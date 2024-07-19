@@ -6,11 +6,11 @@
 	<dict>
 		<key>ios-arm64/AATUnityAdapter.framework/AATUnityAdapter</key>
 		<data>
-		mzRq+zPmalTY4fFXc0eaZpr2Bsk=
+		VNh0YR7N9vOi1pFyE/eJH6Gx3Yk=
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Headers/AATUnityAdapter-Swift.h</key>
 		<data>
-		BcoHykyMR7X5CRiVEpTvDUriXiY=
+		9EUPWaBElWdTsd/kNAZxvveInKs=
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Headers/AATUnityAdapter.h</key>
 		<data>
@@ -18,43 +18,51 @@
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Info.plist</key>
 		<data>
-		JEgxLTD9WeX9C/5eO94U/tGpqog=
+		KnP/8uCmeSmnDPJXlg9bAS3tGXU=
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		tXezl3RoNj5jUHOhNQoEg6xzWvE=
+		q2ey2qqItDJ/uZOMEiH7UjRcrrY=
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		U1WgVlANftac5hGkxFBnaJh4g/k=
+		wzfcygS7P02UDgHojZTM7/pGgAE=
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ekygmiBBDHcqc4eLJ9kLhx3Opzs=
+		uCF07JeerH62HGcY+h5ZRLNqAmc=
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		U1WgVlANftac5hGkxFBnaJh4g/k=
+		wzfcygS7P02UDgHojZTM7/pGgAE=
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/module.modulemap</key>
 		<data>
 		m39/qiSHI7FYWe862Vh6mGNb3HU=
 		</data>
-		<key>ios-arm64/AATUnityAdapter.framework/UnityAds.bundle/Info.plist</key>
+		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/Info.plist</key>
 		<data>
-		JvU3dpQqoKfnK25hd179SNRuvBo=
+		AJ4Gwhb1Z7RvQNTqgdr+gO8MUzg=
 		</data>
-		<key>ios-arm64/AATUnityAdapter.framework/UnityAds.bundle/PrivacyInfo.xcprivacy</key>
+		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
 		Vmr7Tv9rcKyDvK3D48LDE7Da57Y=
 		</data>
+		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/omid-session-client-v1.js</key>
+		<data>
+		CYrPj5o14ZkSV5tSn5grkOsAghM=
+		</data>
+		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/omsdk-v1.js</key>
+		<data>
+		xFoo41tIvFKNNRq9NwW500wQtM8=
+		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/AATUnityAdapter</key>
 		<data>
-		eSJ3B6/kueI2xKvhiTBqdF14nI4=
+		Tjr0owFWKVbtzYjVGWaEPh4t4sM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Headers/AATUnityAdapter-Swift.h</key>
 		<data>
-		Q8n+06ftWyKrRHAQOKfhwMk/QnU=
+		+Net0Mp3pdmBcJJ7XpJM5c4pmZM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Headers/AATUnityAdapter.h</key>
 		<data>
@@ -62,55 +70,63 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Info.plist</key>
 		<data>
-		PXvYBGyhtAZMJIiQ3i0zk6PPULI=
+		9B8xk+4/7UJxe3gs8gbJkxXDbl0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		tXezl3RoNj5jUHOhNQoEg6xzWvE=
+		q2ey2qqItDJ/uZOMEiH7UjRcrrY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		RUwuPgPwH8AUHFiPxO7csd+hmJ0=
+		A9bGASQ7jI3DB++3lPox/nNVlUs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GuIG5kNf1Nq5mjv/ejNfsI+0oKE=
+		QRKOLGXapal4oDviNYDXQrjr8NA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RUwuPgPwH8AUHFiPxO7csd+hmJ0=
+		A9bGASQ7jI3DB++3lPox/nNVlUs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		tXezl3RoNj5jUHOhNQoEg6xzWvE=
+		q2ey2qqItDJ/uZOMEiH7UjRcrrY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NmeNtLdpXWANZTtaFiZhb+eE6DI=
+		ZYU2x36XeiOOLwpbQxZbG5n8AXQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		meQU9jYK81/n4nbmozAjRG38yGU=
+		ZlBl0tvxpPqBftnWhfqEeto5BUM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NmeNtLdpXWANZTtaFiZhb+eE6DI=
+		ZYU2x36XeiOOLwpbQxZbG5n8AXQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/module.modulemap</key>
 		<data>
 		m39/qiSHI7FYWe862Vh6mGNb3HU=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAds.bundle/Info.plist</key>
+		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/Info.plist</key>
 		<data>
-		Cq9RqQX8YbDiCL774lH2rIwBGXw=
+		aoc5/oLUiR5nfFxWOY/CHIktvlo=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAds.bundle/PrivacyInfo.xcprivacy</key>
+		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
 		Vmr7Tv9rcKyDvK3D48LDE7Da57Y=
 		</data>
+		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/omid-session-client-v1.js</key>
+		<data>
+		CYrPj5o14ZkSV5tSn5grkOsAghM=
+		</data>
+		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/omsdk-v1.js</key>
+		<data>
+		xFoo41tIvFKNNRq9NwW500wQtM8=
+		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		RLI7EOJ7Qs5sXG4nrROgBLyORqw=
+		Pc05I+uHKcsX/6QbL2QawQwZHrw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -118,11 +134,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		b+IaoBTrVEv9aBY6lnWdi5UoAFM=
+		Z4NcFs8xPoVo/KlV9HD4+7SAVSs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		ZCoBd6QsLefbWzaD2waYMe6aux4=
+		tm7kcy9cDmRHiCXhM88LkdkqZ1w=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -135,22 +151,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mzRq+zPmalTY4fFXc0eaZpr2Bsk=
+			VNh0YR7N9vOi1pFyE/eJH6Gx3Yk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1nY6NPPjXvpSPLPcUc6W9vVKNQVYhW/dTe9AYGniM+w=
+			+lFQmFb8Hvwey39yUYIrg4Ko4dQ1MOF7ikoTmKXk0gQ=
 			</data>
 		</dict>
 		<key>ios-arm64/AATUnityAdapter.framework/Headers/AATUnityAdapter-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BcoHykyMR7X5CRiVEpTvDUriXiY=
+			9EUPWaBElWdTsd/kNAZxvveInKs=
 			</data>
 			<key>hash2</key>
 			<data>
-			/oKHCJxOtKl1phQ2MtZijzLTomyxzYjossoHyiwXBug=
+			jdiRMiWESaOofRg/aWzo6hqZO7DuCeHvhBTX3sZqzvU=
 			</data>
 		</dict>
 		<key>ios-arm64/AATUnityAdapter.framework/Headers/AATUnityAdapter.h</key>
@@ -168,55 +184,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JEgxLTD9WeX9C/5eO94U/tGpqog=
+			KnP/8uCmeSmnDPJXlg9bAS3tGXU=
 			</data>
 			<key>hash2</key>
 			<data>
-			S7C6YQh0DjXSn8JSfGqRL0UjJB0hVdVFq4+gh87GZ4U=
+			Dlds8tJsP5Kp0d56ukWeSbeMMOTxu/N+eRgrR3iVyik=
 			</data>
 		</dict>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tXezl3RoNj5jUHOhNQoEg6xzWvE=
+			q2ey2qqItDJ/uZOMEiH7UjRcrrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mGPSDSlwckIt3HcNefitdKUVpAD9sMf0anFEooMUIC0=
+			kPfvoAUFZIPfTB0RJ/cIfQBcVNVe6q2RVwPm/rU9HSo=
 			</data>
 		</dict>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U1WgVlANftac5hGkxFBnaJh4g/k=
+			wzfcygS7P02UDgHojZTM7/pGgAE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jFh8r/LMXwhYFLVfHO+Oh+mNG5gthbfSv9deq3frWz8=
+			92pmT+v0lcm3Qwd53U4bR6svxFEZe63XloVUjUrKUMI=
 			</data>
 		</dict>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ekygmiBBDHcqc4eLJ9kLhx3Opzs=
+			uCF07JeerH62HGcY+h5ZRLNqAmc=
 			</data>
 			<key>hash2</key>
 			<data>
-			DQYwcYgY4lXi3ChNotsAHz9wToeYpv5gSYI7eplj3qo=
+			oGA7GgFZgHdflqDt3MDDS9L/ABmAN8w6OjiJfQO/BUU=
 			</data>
 		</dict>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U1WgVlANftac5hGkxFBnaJh4g/k=
+			wzfcygS7P02UDgHojZTM7/pGgAE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jFh8r/LMXwhYFLVfHO+Oh+mNG5gthbfSv9deq3frWz8=
+			92pmT+v0lcm3Qwd53U4bR6svxFEZe63XloVUjUrKUMI=
 			</data>
 		</dict>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/module.modulemap</key>
@@ -230,18 +246,18 @@
 			Qu4BmxMDZno3n/LghWvkHU7ywdIgucmOa2QGoWEttuk=
 			</data>
 		</dict>
-		<key>ios-arm64/AATUnityAdapter.framework/UnityAds.bundle/Info.plist</key>
+		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JvU3dpQqoKfnK25hd179SNRuvBo=
+			AJ4Gwhb1Z7RvQNTqgdr+gO8MUzg=
 			</data>
 			<key>hash2</key>
 			<data>
-			BAvcWyrbmjYH7cghTutKdf361cQRcJSwiCtejp7poWU=
+			mBK7kH1X7Nl2WsNzEL/YkSkCTZCNU+N/bxtCouJp794=
 			</data>
 		</dict>
-		<key>ios-arm64/AATUnityAdapter.framework/UnityAds.bundle/PrivacyInfo.xcprivacy</key>
+		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -252,26 +268,48 @@
 			f3FIPJmP/SZx3Vlg4pLmKnlyAbkHD2JKFo75koJnVG4=
 			</data>
 		</dict>
+		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/omid-session-client-v1.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CYrPj5o14ZkSV5tSn5grkOsAghM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8V5c4BLIe9MsFdcdL9C5VLmy/Z1YGNgXs4IK89k9WjU=
+			</data>
+		</dict>
+		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/omsdk-v1.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xFoo41tIvFKNNRq9NwW500wQtM8=
+			</data>
+			<key>hash2</key>
+			<data>
+			iWz5BbK1YoGNpY4Z4ltSUIPxhjj2ubDXxq6kEamQdYU=
+			</data>
+		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/AATUnityAdapter</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eSJ3B6/kueI2xKvhiTBqdF14nI4=
+			Tjr0owFWKVbtzYjVGWaEPh4t4sM=
 			</data>
 			<key>hash2</key>
 			<data>
-			W/gJVb+sALopgZRTQuSPSo5trVb039IoIRPTtSNwlzE=
+			jlbs5dnx2ugL/APNZanwjndZV24aM8AyAH8nPD4VGAo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Headers/AATUnityAdapter-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q8n+06ftWyKrRHAQOKfhwMk/QnU=
+			+Net0Mp3pdmBcJJ7XpJM5c4pmZM=
 			</data>
 			<key>hash2</key>
 			<data>
-			q4RgBOzT2zfGfHWS/vGAsiCp9LProkNIWR76zMxg4yg=
+			2p7v231n5H58YyxRKIlqeUjp4WBYPxETQvrFZuni5rc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Headers/AATUnityAdapter.h</key>
@@ -289,99 +327,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PXvYBGyhtAZMJIiQ3i0zk6PPULI=
+			9B8xk+4/7UJxe3gs8gbJkxXDbl0=
 			</data>
 			<key>hash2</key>
 			<data>
-			GBkMTxU7TcIOK9nBtgMUoD4OJAl65gCFgnC0NX2oP50=
+			vBbyKW7nlRLBIbX5bTHNUr0hVwRDY4YCVkJQYk8IwjU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tXezl3RoNj5jUHOhNQoEg6xzWvE=
+			q2ey2qqItDJ/uZOMEiH7UjRcrrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mGPSDSlwckIt3HcNefitdKUVpAD9sMf0anFEooMUIC0=
+			kPfvoAUFZIPfTB0RJ/cIfQBcVNVe6q2RVwPm/rU9HSo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RUwuPgPwH8AUHFiPxO7csd+hmJ0=
+			A9bGASQ7jI3DB++3lPox/nNVlUs=
 			</data>
 			<key>hash2</key>
 			<data>
-			cSn9FwnVbbud3jCiHUWN2Ht8cIC6S4d3CzV3nqffzBA=
+			M5Jmpi5IrzVjYGk2HddtIMdnB0rEiOasNZRXJcsBh6U=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GuIG5kNf1Nq5mjv/ejNfsI+0oKE=
+			QRKOLGXapal4oDviNYDXQrjr8NA=
 			</data>
 			<key>hash2</key>
 			<data>
-			IKMkAMb/Z4d5cCYkKhkv+8a15DjoPehqVksR+laHUJw=
+			WDlbHY5Qy/RYnS7Rx4pMMsdYUiUSGvbWoEywvL6HdU8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RUwuPgPwH8AUHFiPxO7csd+hmJ0=
+			A9bGASQ7jI3DB++3lPox/nNVlUs=
 			</data>
 			<key>hash2</key>
 			<data>
-			cSn9FwnVbbud3jCiHUWN2Ht8cIC6S4d3CzV3nqffzBA=
+			M5Jmpi5IrzVjYGk2HddtIMdnB0rEiOasNZRXJcsBh6U=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tXezl3RoNj5jUHOhNQoEg6xzWvE=
+			q2ey2qqItDJ/uZOMEiH7UjRcrrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			mGPSDSlwckIt3HcNefitdKUVpAD9sMf0anFEooMUIC0=
+			kPfvoAUFZIPfTB0RJ/cIfQBcVNVe6q2RVwPm/rU9HSo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NmeNtLdpXWANZTtaFiZhb+eE6DI=
+			ZYU2x36XeiOOLwpbQxZbG5n8AXQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			NgBAJrXFEk8vX1PGZmAl2ZkUzMn8NC5cSF50cr6iY0M=
+			kOgs6ofREvB3JkFdq7UFi+659v3A7sKvxx+X3lG8g9c=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			meQU9jYK81/n4nbmozAjRG38yGU=
+			ZlBl0tvxpPqBftnWhfqEeto5BUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Nhf7lQ6UldnTki7UL+uTdSLTquLOEcj0HdNqGsQasFQ=
+			FNOJQ5xaobFG3kG63m69IIxF3OZ7J77vFjeJIPb1PH0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NmeNtLdpXWANZTtaFiZhb+eE6DI=
+			ZYU2x36XeiOOLwpbQxZbG5n8AXQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			NgBAJrXFEk8vX1PGZmAl2ZkUzMn8NC5cSF50cr6iY0M=
+			kOgs6ofREvB3JkFdq7UFi+659v3A7sKvxx+X3lG8g9c=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/module.modulemap</key>
@@ -395,18 +433,18 @@
 			Qu4BmxMDZno3n/LghWvkHU7ywdIgucmOa2QGoWEttuk=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAds.bundle/Info.plist</key>
+		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cq9RqQX8YbDiCL774lH2rIwBGXw=
+			aoc5/oLUiR5nfFxWOY/CHIktvlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			2baYgCn5e2TyKqdDPReWXJys1dgacFyqVrC2F4NPf7k=
+			edFYyD/vy/u2bNAVKWvUhpMgT4dSbiOYR69Cdl5Fa+I=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAds.bundle/PrivacyInfo.xcprivacy</key>
+		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -417,15 +455,37 @@
 			f3FIPJmP/SZx3Vlg4pLmKnlyAbkHD2JKFo75koJnVG4=
 			</data>
 		</dict>
+		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/omid-session-client-v1.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CYrPj5o14ZkSV5tSn5grkOsAghM=
+			</data>
+			<key>hash2</key>
+			<data>
+			8V5c4BLIe9MsFdcdL9C5VLmy/Z1YGNgXs4IK89k9WjU=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/omsdk-v1.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xFoo41tIvFKNNRq9NwW500wQtM8=
+			</data>
+			<key>hash2</key>
+			<data>
+			iWz5BbK1YoGNpY4Z4ltSUIPxhjj2ubDXxq6kEamQdYU=
+			</data>
+		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RLI7EOJ7Qs5sXG4nrROgBLyORqw=
+			Pc05I+uHKcsX/6QbL2QawQwZHrw=
 			</data>
 			<key>hash2</key>
 			<data>
-			l9onHhFQ6t0UfQVA1PbP9OVOKmLdX/tw5Yz5dklzlpI=
+			a2SahEPVlTE7O2G7dNyU1uVgy7rjC8Xl6LyTVCrwZk0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -443,22 +503,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b+IaoBTrVEv9aBY6lnWdi5UoAFM=
+			Z4NcFs8xPoVo/KlV9HD4+7SAVSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			FbsW/JX1g0RkMFE8HkzxF8zuY+09ex1t+cj8ORnKN6A=
+			1Dj11lMTpNUr0rKuzXfiInPkkz7eY8XX30ktJlnFCmU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZCoBd6QsLefbWzaD2waYMe6aux4=
+			tm7kcy9cDmRHiCXhM88LkdkqZ1w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lx5a0RloXE504ETpntny3Ko1X2r1E+xg5ATFLty1jX8=
+			jFJVe+q6yIw48Q4l4Wp8UuL9ul96l1ycN9pYod8FJao=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeSignature</key>

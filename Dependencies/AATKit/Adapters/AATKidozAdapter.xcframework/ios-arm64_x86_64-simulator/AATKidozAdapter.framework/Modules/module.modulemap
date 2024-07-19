@@ -1,0 +1,4 @@
+framework module AATKidozAdapter {
+  header "AATKidozAdapter-Swift.h"
+  requires objc
+}

@@ -12,6 +12,5 @@
 
 + (instancetype)sharedInstance;
 
-- (void)parseConsentString:(NSString *)consentString;
 
 @end

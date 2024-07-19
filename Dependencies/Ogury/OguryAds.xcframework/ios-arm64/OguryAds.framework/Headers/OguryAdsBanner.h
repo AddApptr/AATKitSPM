@@ -13,14 +13,14 @@ __deprecated __attribute__((deprecated("Use OguryBannerAd instead.")))
 
 #pragma mark - Properties
 
-@property (nonatomic, weak) id<OguryAdsBannerDelegate> bannerDelegate;
-@property (nonatomic, strong) NSString * _Nullable adUnitID;
-@property (nonatomic, assign) BOOL isLoaded;
-@property (nonatomic, assign, readonly) BOOL isExpanded;
+@property(nonatomic, weak) id<OguryAdsBannerDelegate> bannerDelegate;
+@property(nonatomic, strong) NSString *_Nullable adUnitID;
+@property(nonatomic, assign) BOOL isLoaded;
+@property(nonatomic, assign, readonly) BOOL isExpanded;
 
 #pragma mark - Initialization
 
-- (instancetype _Nullable)initWithAdUnitID:(NSString * _Nullable)adUnitID;
+- (instancetype _Nullable)initWithAdUnitID:(NSString *_Nullable)adUnitID;
 
 #pragma mark - Methods
 

@@ -10,7 +10,9 @@ typedef struct OguryOffset {
 } OguryOffset;
 
 CG_INLINE OguryOffset
-OguryOffsetMake(CGFloat x, CGFloat y)
-{
-    OguryOffset offset; offset.x = x; offset.y = y; return offset;
+OguryOffsetMake(CGFloat x, CGFloat y) {
+    OguryOffset offset;
+    offset.x = x;
+    offset.y = y;
+    return offset;
 }

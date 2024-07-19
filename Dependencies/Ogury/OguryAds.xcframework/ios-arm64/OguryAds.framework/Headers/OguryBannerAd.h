@@ -5,6 +5,7 @@
 #import <UIKit/UIKit.h>
 #import "OguryBannerAdDelegate.h"
 #import "OguryAdsBannerSize.h"
+#import "OguryMediation.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -12,13 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Properties
 
-@property (nonatomic, strong, readonly) NSString *adUnitId;
-@property (nonatomic, weak, nullable) id<OguryBannerAdDelegate> delegate;
-@property (nonatomic, assign, readonly) BOOL isExpanded;
+@property(nonatomic, strong, readonly) NSString *adUnitId;
+@property(nonatomic, weak, nullable) id<OguryBannerAdDelegate> delegate;
+@property(nonatomic, assign, readonly) BOOL isExpanded;
 
 #pragma mark - Initialization
 
 - (instancetype)initWithAdUnitId:(NSString *)adUnitId;
+- (instancetype)initWithAdUnitId:(NSString *)adUnitId mediation:(OguryMediation *_Nonnull)mediation;
 
 #pragma mark - Methods
 

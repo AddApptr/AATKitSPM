@@ -202,7 +202,7 @@
 		</data>
 		<key>Headers/DTBAdDispatcher.h</key>
 		<data>
-		xQMd0SXEXXH1VcA/tsXQi7iqXps=
+		QkFS34HO+6kAX+ugRTsQFf574jY=
 		</data>
 		<key>Headers/DTBAdErrorInfo.h</key>
 		<data>
@@ -314,7 +314,7 @@
 		</data>
 		<key>Headers/OMIDAdSessionContext.h</key>
 		<data>
-		A0rvhcdRNqWKeSO0pFcbSuqQWD4=
+		hZWTA+t1Z17vDdqf1b+Nm3qnhhQ=
 		</data>
 		<key>Headers/OMIDFriendlyObstructionType.h</key>
 		<data>
@@ -322,7 +322,11 @@
 		</data>
 		<key>Headers/OMIDImports.h</key>
 		<data>
-		kklBQQiiHyi6ArUe1OOfy92xxX4=
+		/ghw/vX0KUlF9SSq4LZhhZDpZb4=
+		</data>
+		<key>Headers/OMIDJavaScriptSessionService.h</key>
+		<data>
+		2cSypl8xLPnM+2eAKTsYo/wyHFs=
 		</data>
 		<key>Headers/OMIDMediaEvents.h</key>
 		<data>
@@ -334,7 +338,7 @@
 		</data>
 		<key>Headers/OMIDSDK.h</key>
 		<data>
-		aCks6ELuCqw5CM6IkVMerTJDk8E=
+		5SGp0lAGIavod7eTKyQaJ2Hk22o=
 		</data>
 		<key>Headers/OMIDScriptInjector.h</key>
 		<data>
@@ -354,7 +358,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7OJXZPwEKzplLFN+jccqiW5yPGM=
+		K1L7uXYCbEBM0id4GAj+sQ2uq1g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -362,7 +366,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		hAohnATGEYcvDc2Ywc64dqK2HfE=
+		LwxBEJCka6H6qNCfBIyabJR6R6M=
 		</data>
 		<key>aps-mraid.js</key>
 		<data>
@@ -374,7 +378,7 @@
 		</data>
 		<key>dtb-m.js</key>
 		<data>
-		j/Y4QwG6VNPXZlKEiqXv+kiA85M=
+		BFA3I0SCb2qUyN7jJXodvX14uBU=
 		</data>
 		<key>mraid_close.png</key>
 		<data>
@@ -390,11 +394,11 @@
 		</data>
 		<key>omid-session-client-v1.js</key>
 		<data>
-		uuaExpwkNaVVvDzN/oy4DYOnFMo=
+		tMb68pwnuescbtjuHW2D2qMZ8tw=
 		</data>
 		<key>omsdk-v1.js</key>
 		<data>
-		p7clIhtXzGzdvV7wKaZlXHgmy7U=
+		Smzqju6dfQAXDhx+sptAite6mEE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -746,7 +750,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EYZHzeTfEGM4QqqiJRyzXNlcgIww/7MFbXutoHJR2No=
+			4YpGfQonVmuggD+NlxB/kjPvMr4nvPxD6Jd7u5OCiS8=
 			</data>
 		</dict>
 		<key>Headers/DTBAdErrorInfo.h</key>
@@ -942,7 +946,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RqxuoOkvVt1ttSp9AnQkEfSz1YHOYYukNnApIz7O3E0=
+			Tzg9xsKo7keMFR4BmfcZJZ02HMi/9b1g0sDFQ965Wm4=
 			</data>
 		</dict>
 		<key>Headers/OMIDFriendlyObstructionType.h</key>
@@ -956,7 +960,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WWfw+Z3RNrtOfWYdio9jyxKjmeVbPXzWNH7Pa7ErD0U=
+			XQBgb62m3DEN2XBtnlS+hqca4MEIuBJjq6po9fIbZco=
+			</data>
+		</dict>
+		<key>Headers/OMIDJavaScriptSessionService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NDrMJlvipzxli9lUJ4PdyjYopQuRakQEhW6kVh6yrjU=
 			</data>
 		</dict>
 		<key>Headers/OMIDMediaEvents.h</key>
@@ -977,7 +988,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/BBYCC43+et/YIgTvXDQreu+uP+1VhL/uuu4FTbGB+s=
+			2SVL9rbe1pkwoQO+YpZWs+PZDKnMPqa+d/qcp059AZs=
 			</data>
 		</dict>
 		<key>Headers/OMIDScriptInjector.h</key>
@@ -1019,7 +1030,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lvwpxrmOGzv5rK+YTb1/iACQu0RBuMX3eP4HczbARLI=
+			BZT1vYixcfHA2BI5nCoSJpQ6aRHziaWs12utAVZ+c0I=
 			</data>
 		</dict>
 		<key>aps-mraid.js</key>
@@ -1040,7 +1051,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U5IL0renARoLGOmoDTraL+5oYmDsYWVASzgNysxDrx0=
+			gOH/SAD9xQKLFJs3HHeazSZ5UqyhcdE4/nmiw1TLhFo=
 			</data>
 		</dict>
 		<key>mraid_close.png</key>
@@ -1068,14 +1079,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7E82ud++o6OvgP+FGvrdeICs9UkHUkGrdBjiy3+ogzw=
+			IHjxbVC8ghOpezS2t6LP2tTcUgIPd5sx1oykLP1fKS4=
 			</data>
 		</dict>
 		<key>omsdk-v1.js</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EWF3ymz2MQiC98n6DCqi6QKJDg4Ssuy0putBMMdpq4E=
+			hSkkvTVynHf+4YmRvFaiGf7xI2bZSz39K8GoUF90klw=
 			</data>
 		</dict>
 	</dict>

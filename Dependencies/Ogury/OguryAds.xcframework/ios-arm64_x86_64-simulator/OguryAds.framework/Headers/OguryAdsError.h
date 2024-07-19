@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, OguryAdsError) {
 
     /// Unknown error type.
     OguryAdsUnknownError = 2011,
-    
+
     /// WebView has been killed by the OS.
     OguryAdsWebViewKilledError = 2012
 };

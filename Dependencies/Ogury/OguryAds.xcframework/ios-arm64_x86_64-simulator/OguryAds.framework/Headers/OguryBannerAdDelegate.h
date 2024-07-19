@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)didCloseOguryBannerAd:(OguryBannerAd *)banner;
 - (void)didFailOguryBannerAdWithError:(OguryError *)error forAd:(OguryBannerAd *)banner;
 - (void)didTriggerImpressionOguryBannerAd:(OguryBannerAd *)banner;
-- (UIViewController *)presentingViewControllerForOguryAdsBannerAd:(OguryBannerAd*)banner;
+- (UIViewController *_Nullable)presentingViewControllerForOguryAdsBannerAd:(OguryBannerAd *)banner;
 @end
 
 NS_ASSUME_NONNULL_END

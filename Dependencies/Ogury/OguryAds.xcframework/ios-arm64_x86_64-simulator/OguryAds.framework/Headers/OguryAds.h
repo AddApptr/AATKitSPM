@@ -16,10 +16,9 @@
 typedef void (^SetupCompletionBlock)(NSError *error);
 typedef void (^LoadCompletionBlock)(void);
 
-
 @interface OguryAds : NSObject
 
-@property (nonatomic, strong) NSString *sdkVersion __deprecated_msg("Use 'Ogury.getSdkVersion' method instead");
+@property(nonatomic, strong) NSString *sdkVersion __deprecated_msg("Use 'Ogury.getSdkVersion' method instead");
 
 + (instancetype)shared;
 

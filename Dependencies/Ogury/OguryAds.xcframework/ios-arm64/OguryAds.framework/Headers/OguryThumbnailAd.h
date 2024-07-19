@@ -6,16 +6,18 @@
 #import <UIKit/UIKit.h>
 #import "OguryRectCorner.h"
 #import "OguryOffset.h"
+#import "OguryMediation.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OguryThumbnailAd : NSObject
 
-@property (nonatomic, strong, readonly) NSString *adUnitId;
-@property (nonatomic, weak, nullable) id<OguryThumbnailAdDelegate> delegate;
-@property (nonatomic, assign, readonly) BOOL isExpanded;
+@property(nonatomic, strong, readonly) NSString *adUnitId;
+@property(nonatomic, weak, nullable) id<OguryThumbnailAdDelegate> delegate;
+@property(nonatomic, assign, readonly) BOOL isExpanded;
 
-- (instancetype)initWithAdUnitId:(NSString* _Nonnull)adUnitId;
+- (instancetype)initWithAdUnitId:(NSString *_Nonnull)adUnitId;
+- (instancetype)initWithAdUnitId:(NSString *)adUnitId mediation:(OguryMediation *_Nonnull)mediation;
 
 #pragma mark - Methods
 
@@ -39,9 +41,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)showInScene:(UIWindowScene *)scene withOguryRectCorner:(OguryRectCorner)rectCorner margin:(OguryOffset)offset API_AVAILABLE(ios(13.0));
 
-- (void)setBlacklistViewControllers:(NSArray<NSString *> * _Nullable)viewControllers;
+- (void)setBlacklistViewControllers:(NSArray<NSString *> *_Nullable)viewControllers;
 
-- (void)setWhitelistBundleIdentifiers:(NSArray<NSString *> * _Nullable)bundleIdentifiers;
+- (void)setWhitelistBundleIdentifiers:(NSArray<NSString *> *_Nullable)bundleIdentifiers;
 
 @end
 

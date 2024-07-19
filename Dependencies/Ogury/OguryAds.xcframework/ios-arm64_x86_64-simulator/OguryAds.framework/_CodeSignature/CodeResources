@@ -6,15 +6,15 @@
 	<dict>
 		<key>Frameworks/StoreKitTest.framework/Info.plist</key>
 		<data>
-		4nnvz9t7S4fuM+JDxkFrs87ZZG0=
+		CKWLBzeMWit9H1bg/3U0NnvkXDE=
 		</data>
 		<key>Frameworks/StoreKitTest.framework/StoreKitTest</key>
 		<data>
-		AEFlf6mVqpL1Hh+Ux13hJgkNxsE=
+		1t3vxyVyXtorlJOXoRHjUA41ZAY=
 		</data>
 		<key>Frameworks/StoreKitTest.framework/_CodeSignature/CodeResources</key>
 		<data>
-		cxCjqmZnt/FIwNHXdwo0cJ6lhp4=
+		N5ecerS7Z3Bo11DSA5StchQ2kqM=
 		</data>
 		<key>Frameworks/StoreKitTest.framework/en.lproj/Localizable.strings</key>
 		<dict>
@@ -27,7 +27,7 @@
 		</dict>
 		<key>Frameworks/StoreKitTest.framework/version.plist</key>
 		<data>
-		Ie9jAcv6tgnkMmuhJTuz0Ja/tF0=
+		9Cc4Cq+sjO9XYI7qAkqLZddDTP0=
 		</data>
 		<key>Frameworks/libswiftAccelerate.dylib</key>
 		<data>
@@ -91,15 +91,15 @@
 		</data>
 		<key>Headers/OGARewardItem.h</key>
 		<data>
-		idV78jJYOFUvcoDh0sWCcQ/MJGk=
+		y66ZYGrTkrefTBgq//tT6HoD2nc=
 		</data>
 		<key>Headers/OguryAds.h</key>
 		<data>
-		Vi71C2g22QDAaMVbKTajU867OVI=
+		yaY1YeLQCW8Fo/EuhtZgfpS/bZI=
 		</data>
 		<key>Headers/OguryAdsBanner.h</key>
 		<data>
-		+ujV4qI2rzGPsSStZgZoaUHg3DU=
+		6w1TT1dJRcV9RdgZXC41vt5b7zM=
 		</data>
 		<key>Headers/OguryAdsBannerSize.h</key>
 		<data>
@@ -107,47 +107,51 @@
 		</data>
 		<key>Headers/OguryAdsDelegate.h</key>
 		<data>
-		l1Z3c/lxw5TsZuln3nZpi1ZeElA=
+		72suy7PKFSP/yyDpdHB7De3DU3Y=
 		</data>
 		<key>Headers/OguryAdsError.h</key>
 		<data>
-		bgkxLTgXfTs1Piwjt3ZPToMfUOs=
+		wXf9/M5mHnYx2csyURplp3BDvnQ=
 		</data>
 		<key>Headers/OguryAdsInterstitial.h</key>
 		<data>
-		z2wYfVaaT3IagwbfSLo8MVjmI5U=
+		z5o8HuXJ73Tm6r8NaOOkPEKmxHg=
 		</data>
 		<key>Headers/OguryAdsOptinVideo.h</key>
 		<data>
-		d3D6z3YKafRbBdSuV8m3a4Bt05c=
+		92bk4ZBsH6TaGO7vwEWKktas2pc=
 		</data>
 		<key>Headers/OguryAdsThumbnailAd.h</key>
 		<data>
-		lmPx+cNXFcgpk6PzmTx7o7qsF1g=
+		LWPYjWjm84/2KRl/FixBbBUYg74=
 		</data>
 		<key>Headers/OguryBannerAd.h</key>
 		<data>
-		ek5wkjUFsyUPyWd+9i/X87ngTRo=
+		Pnyptw1kilXORORD0RBey9iFy0A=
 		</data>
 		<key>Headers/OguryBannerAdDelegate.h</key>
 		<data>
-		un/odZ5aEIGfc8yZzYw65BRZwMg=
+		s2Q4GWSf84vH7xd1Pw9QJHl2fTM=
 		</data>
 		<key>Headers/OguryInterstitialAd.h</key>
 		<data>
-		AE39vHPcvVHBvrPLmbdvL05iEgk=
+		D7kw9p+T6/nlwQ+qhT/ZpDQ7AZg=
 		</data>
 		<key>Headers/OguryInterstitialAdDelegate.h</key>
 		<data>
 		bnJQjFGlJZlPpRDOyjbK3NdHlY4=
 		</data>
+		<key>Headers/OguryMediation.h</key>
+		<data>
+		tJqm6CyjxNBfM3ECtttwYPt/FwY=
+		</data>
 		<key>Headers/OguryOffset.h</key>
 		<data>
-		rOgE4CR6oB7j+QC2c+s8l3Xthrs=
+		pfBHszF8b5KEqOnij53uzQUNhJ0=
 		</data>
 		<key>Headers/OguryOptinVideoAd.h</key>
 		<data>
-		fPtYumFXLFroM3mC0J5og3jfLlg=
+		7Zw2zFXw9v+LxGhs5ffqgqAajtY=
 		</data>
 		<key>Headers/OguryOptinVideoAdDelegate.h</key>
 		<data>
@@ -159,7 +163,7 @@
 		</data>
 		<key>Headers/OguryThumbnailAd.h</key>
 		<data>
-		opbLN3ur5T6rXVIzAnL+YrqoIhs=
+		p778Cb1pRXSA5hQjiA9sk3ApHEY=
 		</data>
 		<key>Headers/OguryThumbnailAdDelegate.h</key>
 		<data>
@@ -167,15 +171,19 @@
 		</data>
 		<key>Headers/OguryTokenService.h</key>
 		<data>
-		SDoLXEfXAFRQJrrbhxGq9s0A184=
+		kfToebrzlPctsUVethkEHCj3hLI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jAMA/7yamjkN4OkjDtwe/PpeZjQ=
+		keNmnscBQi8oHbKV8i7dYxWni2Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		l4jfV95e8aN1Yw7JqgnaDn4DUag=
+		</data>
+		<key>Modules/module.private.modulemap</key>
+		<data>
+		ZYIp5kZTwlBGzPDwUoCHItlIyRk=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -183,15 +191,15 @@
 		</data>
 		<key>PrivateHeaders/OGABroadcastEventBus.h</key>
 		<data>
-		Byg5CxKQiwVVKrGzo2xEdfO+XUw=
+		kppLuU0Q75YFH57Gy8dKk+JAovs=
 		</data>
 		<key>PrivateHeaders/OGAInternal.h</key>
 		<data>
-		WHdqpqEgS9J/Bw5HZAQZKPQckoU=
+		DRv++pUDZFbzty6FoBT/MLKcG9Q=
 		</data>
 		<key>PrivateHeaders/OGAPersistentEventBus.h</key>
 		<data>
-		jzGLswZEKAESJ9/yWzD4+p4uLdg=
+		54nxGde2Cv6nUTOt2MzuWtX+7qk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -200,33 +208,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4nnvz9t7S4fuM+JDxkFrs87ZZG0=
+			CKWLBzeMWit9H1bg/3U0NnvkXDE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Axouno0SjvS5JVTPL0B9eEGjSUDJtLBtRV1CPuv3cBQ=
+			gbBA37fQsEL+7dwjNrLcCgSAY97X9Hj9RQ0uOeZBYLE=
 			</data>
 		</dict>
 		<key>Frameworks/StoreKitTest.framework/StoreKitTest</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AEFlf6mVqpL1Hh+Ux13hJgkNxsE=
+			1t3vxyVyXtorlJOXoRHjUA41ZAY=
 			</data>
 			<key>hash2</key>
 			<data>
-			OFFpFg8BVoVQDQjqn83mQmFjwMh2Teasg3p4Us4tiLU=
+			eB+b25OBm4yUlM+Yr+H0qYJ5eCe/RRtPjERvOhk0a4o=
 			</data>
 		</dict>
 		<key>Frameworks/StoreKitTest.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cxCjqmZnt/FIwNHXdwo0cJ6lhp4=
+			N5ecerS7Z3Bo11DSA5StchQ2kqM=
 			</data>
 			<key>hash2</key>
 			<data>
-			9NFVyKzsbhM0Ef8pAj0p75fF6nWCQre+IYlnCIpAkAw=
+			NzqsqBUPL5RnfYqeH6eJZVYnbVQnoWKHPsENHSh77Uo=
 			</data>
 		</dict>
 		<key>Frameworks/StoreKitTest.framework/en.lproj/Localizable.strings</key>
@@ -246,11 +254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ie9jAcv6tgnkMmuhJTuz0Ja/tF0=
+			9Cc4Cq+sjO9XYI7qAkqLZddDTP0=
 			</data>
 			<key>hash2</key>
 			<data>
-			QSQivMJDdb7XSOcReULula7Y0qITiUhKwZ02N3SoR/o=
+			MYr3M6f1cBGMZr58ehnkyYo+uxSHdBV6ku4x2yNd16s=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftAccelerate.dylib</key>
@@ -422,33 +430,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			idV78jJYOFUvcoDh0sWCcQ/MJGk=
+			y66ZYGrTkrefTBgq//tT6HoD2nc=
 			</data>
 			<key>hash2</key>
 			<data>
-			sR7UQZ7vYAShmAecmHcNn1RSB/Y6v1M1FsTYmqa2vq0=
+			sjreJKvMxs9D+sCEy9UXIWmflPJQQ3LT4E1SKxn2eO0=
 			</data>
 		</dict>
 		<key>Headers/OguryAds.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vi71C2g22QDAaMVbKTajU867OVI=
+			yaY1YeLQCW8Fo/EuhtZgfpS/bZI=
 			</data>
 			<key>hash2</key>
 			<data>
-			LluGIW86dZvqPYh5EGmRNIPwqAtJZ1a43S+TmQjo5ak=
+			J++L4teqDe7sLecBkTkyO4KzkjLo9PxquH9wE8kfwDI=
 			</data>
 		</dict>
 		<key>Headers/OguryAdsBanner.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+ujV4qI2rzGPsSStZgZoaUHg3DU=
+			6w1TT1dJRcV9RdgZXC41vt5b7zM=
 			</data>
 			<key>hash2</key>
 			<data>
-			gQAfIO9WMLQFnigmNcD79syDwhQWggvQovRxFL8RPAU=
+			5nrv5xzhr8jgSlmcZXeJYjIK+spjlpYM8RGs+cqg7t4=
 			</data>
 		</dict>
 		<key>Headers/OguryAdsBannerSize.h</key>
@@ -466,88 +474,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l1Z3c/lxw5TsZuln3nZpi1ZeElA=
+			72suy7PKFSP/yyDpdHB7De3DU3Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			GoTrDXKomZDigWwgTuAJohAwGTrz4/s1CXOqOR4QJIw=
+			UIsw+0R+KePuz7LeaP/YvS2UPVDddKxoA1toVvlylSI=
 			</data>
 		</dict>
 		<key>Headers/OguryAdsError.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bgkxLTgXfTs1Piwjt3ZPToMfUOs=
+			wXf9/M5mHnYx2csyURplp3BDvnQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			o08UhwGG0GJoYic68Qhnp6CtlROVC5NHRiPTlNnM9Y0=
+			y6EygxGZv8MH5KCMhmKjKMplZCEJzkBbBnkc8iK+x8M=
 			</data>
 		</dict>
 		<key>Headers/OguryAdsInterstitial.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z2wYfVaaT3IagwbfSLo8MVjmI5U=
+			z5o8HuXJ73Tm6r8NaOOkPEKmxHg=
 			</data>
 			<key>hash2</key>
 			<data>
-			D4PsJIKDgbadlgI/1LQ3Xhshq0N2b9endNfQ+1Lg97I=
+			PKOskI7Evor8Hn5PqBvOSh9AlsNB955GTmXcgDR652g=
 			</data>
 		</dict>
 		<key>Headers/OguryAdsOptinVideo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			d3D6z3YKafRbBdSuV8m3a4Bt05c=
+			92bk4ZBsH6TaGO7vwEWKktas2pc=
 			</data>
 			<key>hash2</key>
 			<data>
-			AzQS/KdJrE4preBeLgbT5ha549pKXcbk21cvbs90gRM=
+			yulXXFAuf96oGvaA+iR9vI892adBz7pYjJ6L1FOCea8=
 			</data>
 		</dict>
 		<key>Headers/OguryAdsThumbnailAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lmPx+cNXFcgpk6PzmTx7o7qsF1g=
+			LWPYjWjm84/2KRl/FixBbBUYg74=
 			</data>
 			<key>hash2</key>
 			<data>
-			z5iNBK5hMlLXV4trpUKllekqVJfiRLSj5T6QMxSmKwk=
+			+C+AQspH+vw6jRT09buEUXzJKhJkDIX8aMXX5Gf9IbM=
 			</data>
 		</dict>
 		<key>Headers/OguryBannerAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ek5wkjUFsyUPyWd+9i/X87ngTRo=
+			Pnyptw1kilXORORD0RBey9iFy0A=
 			</data>
 			<key>hash2</key>
 			<data>
-			cAYWPRYASO+1QFqy4jGKrMyxaUEerm/baGs1+nLLKHA=
+			a8rhtLIVwyTi63lSGUjj4IAd+//9xirZKMaDznkjijs=
 			</data>
 		</dict>
 		<key>Headers/OguryBannerAdDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			un/odZ5aEIGfc8yZzYw65BRZwMg=
+			s2Q4GWSf84vH7xd1Pw9QJHl2fTM=
 			</data>
 			<key>hash2</key>
 			<data>
-			2GqFRDav1mfN/B3mLnh8MlgyamjN1r1cqqeY1U0w55I=
+			PbeoePhOM9K/s78NhmzcP9VF58UXaD1ho4FC+Nd7CkQ=
 			</data>
 		</dict>
 		<key>Headers/OguryInterstitialAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AE39vHPcvVHBvrPLmbdvL05iEgk=
+			D7kw9p+T6/nlwQ+qhT/ZpDQ7AZg=
 			</data>
 			<key>hash2</key>
 			<data>
-			zr0mmaPxrRqQ1x2ISNq62XRUo2iOrZvB0cfSEnEUCvw=
+			37RnMMQ3R1STo2O5xb3GqwXK7QCHac5J+wxL52M5ea4=
 			</data>
 		</dict>
 		<key>Headers/OguryInterstitialAdDelegate.h</key>
@@ -561,26 +569,37 @@
 			FRbFJwnHJH9aqxy1QZ24gJguF9ZOdpjTgCIrjHbr8CA=
 			</data>
 		</dict>
+		<key>Headers/OguryMediation.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tJqm6CyjxNBfM3ECtttwYPt/FwY=
+			</data>
+			<key>hash2</key>
+			<data>
+			qjK8yD+3CeFxmy5/Hx8cTxdqsMZrrae7Q8OOwsCFjbU=
+			</data>
+		</dict>
 		<key>Headers/OguryOffset.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rOgE4CR6oB7j+QC2c+s8l3Xthrs=
+			pfBHszF8b5KEqOnij53uzQUNhJ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			J3bw9/m2lzg9O6VJRVROzmfDidiIngKVX5ME2bYEcpU=
+			tQblicnv5lBMkgKu3sPI8tUFFsIihrh8XqGeo0pfoH4=
 			</data>
 		</dict>
 		<key>Headers/OguryOptinVideoAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fPtYumFXLFroM3mC0J5og3jfLlg=
+			7Zw2zFXw9v+LxGhs5ffqgqAajtY=
 			</data>
 			<key>hash2</key>
 			<data>
-			QS5IkG2aX3VtgX4cbt/WZkkB5J2duVFexUTH7GYcd6k=
+			dDkZzyli7dbRHTuYoc+M2mO7DolDQzMwPi0tORHMBzQ=
 			</data>
 		</dict>
 		<key>Headers/OguryOptinVideoAdDelegate.h</key>
@@ -609,11 +628,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			opbLN3ur5T6rXVIzAnL+YrqoIhs=
+			p778Cb1pRXSA5hQjiA9sk3ApHEY=
 			</data>
 			<key>hash2</key>
 			<data>
-			NfUFj1hJShzcFsK6P79dA+c1CGKjd0L0y4roGaK3e90=
+			bW1+txb9Mlv1lNm9BZ118mHTQoeKpIhYCvxJqRzUvlU=
 			</data>
 		</dict>
 		<key>Headers/OguryThumbnailAdDelegate.h</key>
@@ -631,11 +650,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SDoLXEfXAFRQJrrbhxGq9s0A184=
+			kfToebrzlPctsUVethkEHCj3hLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			QEnHGkerftXnjjawbnmJT75dlKhC78yUxPLbGKLjMuI=
+			K74Lo2/GQabFuUeGVAZk7eHcD3zK0JvAzFYjo8VREVM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -647,6 +666,17 @@
 			<key>hash2</key>
 			<data>
 			0yI2jq+/IVJV/P6Ia/fgzmq8Xg3VAPTjPgnPSEaJ9Bk=
+			</data>
+		</dict>
+		<key>Modules/module.private.modulemap</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZYIp5kZTwlBGzPDwUoCHItlIyRk=
+			</data>
+			<key>hash2</key>
+			<data>
+			WaXTbc3POcDZC3ujTqcvcVeK0gVp1i2Qe+sWH7GFlJI=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -664,33 +694,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Byg5CxKQiwVVKrGzo2xEdfO+XUw=
+			kppLuU0Q75YFH57Gy8dKk+JAovs=
 			</data>
 			<key>hash2</key>
 			<data>
-			gaXZ6VUhxoBrruOHM3KxYzgXp2+O+pcnm+9voO/Hf6g=
+			OxTSUiZ7Fq64RKoVel8rcmEyA9C630cp59huOQWXLJc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/OGAInternal.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WHdqpqEgS9J/Bw5HZAQZKPQckoU=
+			DRv++pUDZFbzty6FoBT/MLKcG9Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			XXeQlhsGPmJBrQnUfz6pyCjKSe7hGlcJWPJbyYSJdNQ=
+			dWiEwREfUJsOahgnbsuOXnjZZ2dcM3mwb1gp05VYTwo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/OGAPersistentEventBus.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jzGLswZEKAESJ9/yWzD4+p4uLdg=
+			54nxGde2Cv6nUTOt2MzuWtX+7qk=
 			</data>
 			<key>hash2</key>
 			<data>
-			WR2JrfPD7zUVD2BfnAralZrR/BqDmNsJslP4FJD+/zE=
+			qujl6bU8dkrI7OgFxgrNGP+EPLgxK/oRa/NEA/ub1Xc=
 			</data>
 		</dict>
 	</dict>

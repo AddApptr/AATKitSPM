@@ -13,11 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Constants
 
-extern NSString * const OGAChoiceManagerEventBusCMChange;
+extern NSString *const OGAChoiceManagerEventBusCMChange;
 
 #pragma mark - Properties
 
-@property (nonatomic, strong) OguryEventBus *coreBroadcastEventBus;
+@property(nonatomic, strong) OguryEventBus *coreBroadcastEventBus;
 
 #pragma mark - Methods
 

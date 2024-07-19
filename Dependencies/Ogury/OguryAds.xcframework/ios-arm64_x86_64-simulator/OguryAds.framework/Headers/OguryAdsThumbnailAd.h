@@ -15,14 +15,14 @@ __deprecated __attribute__((deprecated("Use new api OguryThumbnailAd instead")))
 
 #pragma mark - Properties
 
-@property (nonatomic, weak) id<OguryAdsThumbnailAdDelegate> thumbnailAdDelegate;
-@property (nonatomic, assign) BOOL isLoaded;
-@property (nonatomic, assign, readonly) BOOL isExpanded;
-@property (nonatomic, strong) NSString  * _Nullable adUnitID;
+@property(nonatomic, weak) id<OguryAdsThumbnailAdDelegate> thumbnailAdDelegate;
+@property(nonatomic, assign) BOOL isLoaded;
+@property(nonatomic, assign, readonly) BOOL isExpanded;
+@property(nonatomic, strong) NSString *_Nullable adUnitID;
 
 #pragma mark - Initialization
 
-- (instancetype _Nullable)initWithAdUnitID:(NSString * _Nullable)adUnitID;
+- (instancetype _Nullable)initWithAdUnitID:(NSString *_Nullable)adUnitID;
 
 #pragma mark - Methods
 
@@ -40,9 +40,9 @@ __deprecated __attribute__((deprecated("Use new api OguryThumbnailAd instead")))
 
 - (void)showInScene:(UIWindowScene *)scene withOguryRectCorner:(OguryRectCorner)rectCorner margin:(OguryOffset)offset API_AVAILABLE(ios(13.0));
 
-- (void)setBlacklistViewControllers:(NSArray<NSString *> * _Nullable)viewControllers;
+- (void)setBlacklistViewControllers:(NSArray<NSString *> *_Nullable)viewControllers;
 
-- (void)setWhitelistBundleIdentifiers:(NSArray<NSString *> * _Nullable)bundleIdentifiers;
+- (void)setWhitelistBundleIdentifiers:(NSArray<NSString *> *_Nullable)bundleIdentifiers;
 
 - (void)showWithOguryRectCorner:(OguryRectCorner)rectCorner margin:(OguryOffset)offset;
 

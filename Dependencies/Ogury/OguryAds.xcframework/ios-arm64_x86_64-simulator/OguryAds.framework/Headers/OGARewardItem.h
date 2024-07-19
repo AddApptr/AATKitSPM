@@ -8,10 +8,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OGARewardItem : NSObject
 
-@property (nonatomic, strong) NSString *rewardName;
-@property (nonatomic, strong) NSString *rewardValue;
+@property(nonatomic, strong) NSString *rewardName;
+@property(nonatomic, strong) NSString *rewardValue;
 
-- (instancetype)initWithRewardName:(NSString*)rewardName  rewardValue:(NSString*)rewardValue;
+- (instancetype)initWithRewardName:(NSString *)rewardName rewardValue:(NSString *)rewardValue;
 
 @end
 

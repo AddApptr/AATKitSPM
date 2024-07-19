@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AATKit
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AATKit
 @_exported import AATKit
 import AdSupport
 import AppTrackingTransparency
@@ -69,6 +68,16 @@ extension AATKit.AATTargetingInformationProtocol {
   #endif
   @objc func countAdSpace()
 }
+@objc public enum AATCurrency : Swift.Int, Swift.RawRepresentable {
+  public typealias RawValue = Swift.String
+  case USD
+  case EUR
+  case unknown
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public protocol AATIronSourceDriverProtocol {
   func setHasUserConsent(isObtained: Swift.Bool)
   func updateCCPAConsentStatus(_ ccpaConsentStatus: Swift.Bool)
@@ -124,6 +133,9 @@ public protocol AATFacebookDriverProtocol {
   case withheld
   case custom
   case obtained
+  public var description: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -146,14 +158,16 @@ public protocol AATAdDriverProtocol : AATKit.AATAdDriverLoggerProtocol, AATKit.A
   func unload()
   func pause()
   func resume(controller: UIKit.UIViewController)
-  func getPrice() -> Swift.Double
+  func getPrice() -> AATKit.AATPriceInfo?
   func cancelLoading()
   func getConfigForReporting() -> AATKit.AATAdConfig?
+  func getLoadedAdBidderName() -> Swift.String?
 }
 extension AATKit.AATAdDriverProtocol {
-  public func getPrice() -> Swift.Double
+  public func getPrice() -> AATKit.AATPriceInfo?
   public func cancelLoading()
   public func getConfigForReporting() -> AATKit.AATAdConfig?
+  public func getLoadedAdBidderName() -> Swift.String?
 }
 @objc public enum AATShowIfNeededSetting : Swift.Int {
   case always
@@ -202,6 +216,7 @@ extension AATKit.AATAdDriverProtocol {
   case IRONSOURCENEW
   case GRAVITERTB
   case SUPERAWESOME
+  case KIDOZ
   case ADMOBBIDDING
   public typealias AllCases = [AATKit.AATAdNetwork]
   public static var allCases: [AATKit.AATAdNetwork] {
@@ -305,7 +320,7 @@ public enum AATNativeAdState : Swift.Equatable {
 public protocol AATDatonomyDriver {
   static var shared: Self { get }
   func initializeDatonomySDK(apiKey: Swift.String)
-  func reportImpression(impression: AATKit.AATImpression, adType: AATKit.AATAdType, currencyCode: Swift.String?)
+  func reportImpression(impression: AATKit.AATImpression, adType: AATKit.AATAdType)
   func reportSessionDuration(duration: Swift.Double)
   func getLTVScore(completion: @escaping (Swift.Double?, Swift.String?) -> Swift.Void)
 }
@@ -468,15 +483,11 @@ public protocol AATApplovinDriverProtocol {
   @objc final public let adNetwork: AATKit.AATAdNetwork
   @objc final public let networkKey: Swift.String
   @objc final public let isDirectDeal: Swift.Bool
-  @objc final public let mediationType: AATKit.AATMediationType
-  @objc final public let price: Swift.Double
-  @objc final public let currencyCode: Swift.String?
-  @objc final public let precision: AATKit.AATImpressionPricePrecisionType
+  @objc final public let priceInfo: AATKit.AATPriceInfo?
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
   @objc public func getAdNetworkName() -> Swift.String
-  @objc public func getMediationTypeName() -> Swift.String
   @objc deinit
 }
 public enum AATDriverLog : Foundation.LocalizedError {
@@ -596,8 +607,8 @@ public protocol AATBannerAdDriverProtocol : AATKit.AATAdDriverProtocol {
 public class AATNetworkImpression {
   final public let price: Swift.Double
   final public let currencyCode: Swift.String
-  final public let precision: AATKit.AATImpressionPricePrecisionType
-  public init(price: Swift.Double, currencyCode: Swift.String, precision: AATKit.AATImpressionPricePrecisionType)
+  final public let precision: AATKit.AATPricePrecisionType
+  public init(price: Swift.Double, currencyCode: Swift.String, precision: AATKit.AATPricePrecisionType)
   @objc deinit
 }
 extension AATKit.AATNetworkImpression : Swift.CustomStringConvertible {
@@ -954,6 +965,11 @@ public protocol AATAmazonHBDriverProtocol {
 extension AATKit.NetworkReachabilityManager.NetworkReachabilityStatus : Swift.Equatable {
 }
 public func == (lhs: AATKit.NetworkReachabilityManager.NetworkReachabilityStatus, rhs: AATKit.NetworkReachabilityManager.NetworkReachabilityStatus) -> Swift.Bool
+@objc public class AATGraviteRTBOptions : ObjectiveC.NSObject {
+  final public let forceCloseButtonForMraid: Swift.Bool
+  @objc public init(forceCloseButtonForMraid: Swift.Bool)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class AATBannerPlacementWrapperView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
   @objc deinit
@@ -1022,15 +1038,15 @@ public protocol AATTappxDriverProtocol {
   }
   @objc deinit
 }
-@objc public enum AATImpressionPricePrecisionType : Swift.Int {
-  case unknown = 0
-  case estimated = 1
-  case floorPrice = 2
-  case publisherProvided = 3
-  case precise = 4
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+@objc public enum AATPricePrecisionType : Swift.Int, Swift.RawRepresentable {
+  public typealias RawValue = Swift.String
+  case unknown
+  case estimated
+  case floor
+  case publisherProvided
+  case exact
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -1084,9 +1100,25 @@ public protocol AATBannerRequestCompletionListener : AnyObject {
 extension AATKit.AATDebugInfo {
   @_hasMissingDesignatedInitializers @objc public class PlacementDebugInfo : ObjectiveC.NSObject {
     @objc public var placementName: Swift.String
+    @objc public var placementType: Swift.String
+    @objc public var activeFrequencyCapping: AATKit.AATDebugInfo.PlacementDebugInfo.FrequencyCappingDebugInfo?
+    @objc public var bannerAutoReloadInterval: Swift.Int
+    @objc public var initialDelay: Swift.Int
+    @objc public var remainingTime: Swift.Int
     @objc public var loadedAdNetworkName: Swift.String
     @objc public var isLoadingNewAd: Swift.Bool
     @objc public var lastShownAdNetworkName: Swift.String?
+    @objc deinit
+  }
+}
+extension AATKit.AATDebugInfo.PlacementDebugInfo {
+  @_hasMissingDesignatedInitializers @objc public class FrequencyCappingDebugInfo : ObjectiveC.NSObject {
+    @objc public var maxImpressionsPerSession: Swift.Int
+    @objc public var maxImpressionsPerHour: Swift.Int
+    @objc public var maxImpressionsPerDay: Swift.Int
+    @objc public var maxImpressionsPerWeek: Swift.Int
+    @objc public var maxImpressionsPerMonth: Swift.Int
+    @objc public var minTimeBetweenImpressions: Foundation.TimeInterval
     @objc deinit
   }
 }
@@ -1157,6 +1189,16 @@ public protocol AATInMobiDriverProtocol {
   @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   @objc func isFrequencyCapReached() -> Swift.Bool
 }
+@objc public class AATPriceInfo : ObjectiveC.NSObject {
+  @objc public var price: Swift.Double
+  @objc public var precision: AATKit.AATPricePrecisionType
+  @objc public var currency: AATKit.AATCurrency
+  public init(price: Swift.Double, precision: AATKit.AATPricePrecisionType, currency: AATKit.AATCurrency)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class AATLocationUtils : ObjectiveC.NSObject {
   public static let shared: AATKit.AATLocationUtils
   public var location: CoreLocation.CLLocation? {
@@ -1176,7 +1218,8 @@ extension AATKit.AATLocationUtils : CoreLocation.CLLocationManagerDelegate {
   public var dfpOptions: AATKit.AATDFPOptions?
   public var datonomyOptions: AATKit.AATDatonomyOptions?
   public var superAwesomeOptions: AATKit.AATSuperAwesomeOptions?
-  @objc public init(appNexusOptions: AATKit.AATAppNexusOptions? = nil, feedAdOptions: AATKit.AATFeedAdOptions? = nil, adMobOptions: AATKit.AATAdMobOptions? = nil, dfpOptions: AATKit.AATDFPOptions? = nil, datonomyOptions: AATKit.AATDatonomyOptions? = nil, superAwesomeOptions: AATKit.AATSuperAwesomeOptions? = nil)
+  public var graviteRTBOptions: AATKit.AATGraviteRTBOptions?
+  @objc public init(appNexusOptions: AATKit.AATAppNexusOptions? = nil, feedAdOptions: AATKit.AATFeedAdOptions? = nil, adMobOptions: AATKit.AATAdMobOptions? = nil, dfpOptions: AATKit.AATDFPOptions? = nil, datonomyOptions: AATKit.AATDatonomyOptions? = nil, superAwesomeOptions: AATKit.AATSuperAwesomeOptions? = nil, graviteRTBOptions: AATKit.AATGraviteRTBOptions? = nil)
   @objc deinit
 }
 public protocol AATNativeAdDriverProtocol : AATKit.AATAdDriverProtocol {
@@ -1224,6 +1267,7 @@ public protocol AATAdMobDSPDriverProtocol {
 @_hasMissingDesignatedInitializers public class AATGoogleNonIABVendorsHandler {
   public static func getEnabledNonIABVendorsList() -> [Swift.String]?
   public static func getConsentForNonIABNetwork(_ source: Swift.String, cmpSource: Swift.String, network: AATKit.AATAdNetwork, enabledNonIABVendors: [Swift.String]?) -> AATKit.NonIABConsent
+  public static func readConsentStateFromUserDefaults() -> AATKit.AATManagedConsentState
   @objc deinit
 }
 @objc public class AATBannerAlign : ObjectiveC.NSObject {
@@ -1349,6 +1393,8 @@ public protocol AATSuperAwesomeDriverProtocol {
   }
   @objc deinit
 }
+extension AATKit.AATCurrency : Swift.Equatable {}
+extension AATKit.AATCurrency : Swift.Hashable {}
 extension AATKit.AATNativeAdType : Swift.Equatable {}
 extension AATKit.AATNativeAdType : Swift.Hashable {}
 extension AATKit.AATNativeAdType : Swift.RawRepresentable {}
@@ -1384,9 +1430,8 @@ extension AATKit.AATMediationType : Swift.RawRepresentable {}
 extension AATKit.AATMediationType : Swift.Sendable {}
 extension AATKit.NetworkReachabilityManager.ConnectionType : Swift.Equatable {}
 extension AATKit.NetworkReachabilityManager.ConnectionType : Swift.Hashable {}
-extension AATKit.AATImpressionPricePrecisionType : Swift.Equatable {}
-extension AATKit.AATImpressionPricePrecisionType : Swift.Hashable {}
-extension AATKit.AATImpressionPricePrecisionType : Swift.RawRepresentable {}
+extension AATKit.AATPricePrecisionType : Swift.Equatable {}
+extension AATKit.AATPricePrecisionType : Swift.Hashable {}
 extension AATKit.AATPluginName : Swift.Equatable {}
 extension AATKit.AATPluginName : Swift.Hashable {}
 extension AATKit.AATPluginName : Swift.RawRepresentable {}

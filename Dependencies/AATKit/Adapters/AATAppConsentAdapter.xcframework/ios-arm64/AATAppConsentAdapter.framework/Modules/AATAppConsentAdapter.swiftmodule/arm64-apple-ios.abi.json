@@ -1,0 +1,627 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AppConsent",
+        "printedName": "AppConsent",
+        "declKind": "Import",
+        "moduleName": "AATAppConsentAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATAppConsentAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATAppConsentAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppConsent",
+        "printedName": "AppConsent",
+        "declKind": "Import",
+        "moduleName": "AATAppConsentAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATAppConsentAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AATCMPAppConsent",
+        "printedName": "AATCMPAppConsent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cmpDelegate",
+            "printedName": "cmpDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any AATKit.AATCMPDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(py)cmpDelegate",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C11cmpDelegate6AATKit14AATCMPDelegate_pSgvp",
+            "moduleName": "AATAppConsentAdapter",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AATKit.AATCMPDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATCMPDelegate",
+                        "printedName": "any AATKit.AATCMPDelegate",
+                        "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)cmpDelegate",
+                "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C11cmpDelegate6AATKit14AATCMPDelegate_pSgvg",
+                "moduleName": "AATAppConsentAdapter",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AATKit.AATCMPDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATCMPDelegate",
+                        "printedName": "any AATKit.AATCMPDelegate",
+                        "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)setCmpDelegate:",
+                "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C11cmpDelegate6AATKit14AATCMPDelegate_pSgvs",
+                "moduleName": "AATAppConsentAdapter",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20AATAppConsentAdapter09AATCMPAppB0C11cmpDelegate6AATKit14AATCMPDelegate_pSgvM",
+                "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C11cmpDelegate6AATKit14AATCMPDelegate_pSgvM",
+                "moduleName": "AATAppConsentAdapter",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(appKey:forceGDPR:fullscreen:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATCMPAppConsent",
+                "printedName": "AATAppConsentAdapter.AATCMPAppConsent",
+                "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)initWithAppKey:forceGDPR:fullscreen:",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C6appKey9forceGDPR10fullscreenACSS_S2btcfc",
+            "moduleName": "AATAppConsentAdapter",
+            "objc_name": "initWithAppKey:forceGDPR:fullscreen:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "isSuccessfullyInitialized",
+            "printedName": "isSuccessfullyInitialized(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)isSuccessfullyInitialized:",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C25isSuccessfullyInitializedySbSSF",
+            "moduleName": "AATAppConsentAdapter",
+            "objc_name": "isSuccessfullyInitialized:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)start:",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C5startyySSF",
+            "moduleName": "AATAppConsentAdapter",
+            "objc_name": "start:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATCMPDelegate",
+                "printedName": "any AATKit.AATCMPDelegate",
+                "usr": "c:@M@AATKit@objc(pl)AATCMPDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)setDelegate::",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C11setDelegateyySS_6AATKit14AATCMPDelegate_ptF",
+            "moduleName": "AATAppConsentAdapter",
+            "objc_name": "setDelegate::",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reload",
+            "printedName": "reload(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)reload::",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C6reloadyySS_So16UIViewControllerCtF",
+            "moduleName": "AATAppConsentAdapter",
+            "objc_name": "reload::",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getConsentForNetwork",
+            "printedName": "getConsentForNetwork(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NonIABConsent",
+                "printedName": "AATKit.NonIABConsent",
+                "usr": "c:@M@AATKit@E@NonIABConsent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATAdNetwork",
+                "printedName": "AATKit.AATAdNetwork",
+                "usr": "c:@M@AATKit@E@AATAdNetwork"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)getConsentForNetwork::",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C03getB10ForNetworky6AATKit13NonIABConsentOSS_AE05AATAdG0OtF",
+            "moduleName": "AATAppConsentAdapter",
+            "objc_name": "getConsentForNetwork::",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showIfNeeded",
+            "printedName": "showIfNeeded(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)showIfNeeded::",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C12showIfNeededyySS_So16UIViewControllerCtF",
+            "moduleName": "AATAppConsentAdapter",
+            "objc_name": "showIfNeeded::",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "editConsent",
+            "printedName": "editConsent(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)editConsent::",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C04editB0yySS_So16UIViewControllerCtF",
+            "moduleName": "AATAppConsentAdapter",
+            "objc_name": "editConsent::",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(py)description",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C11descriptionSSvp",
+            "moduleName": "AATAppConsentAdapter",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)description",
+                "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C11descriptionSSvg",
+                "moduleName": "AATAppConsentAdapter",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATCMPAppConsent",
+                "printedName": "AATAppConsentAdapter.AATCMPAppConsent",
+                "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)init",
+            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0CACycfc",
+            "moduleName": "AATAppConsentAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent",
+        "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C",
+        "moduleName": "AATAppConsentAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AATCMPProtocol",
+            "printedName": "AATCMPProtocol",
+            "usr": "c:@M@AATKit@objc(pl)AATCMPProtocol",
+            "mangledName": "$s6AATKit14AATCMPProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AATAdDriverLoggerProtocol",
+            "printedName": "AATAdDriverLoggerProtocol",
+            "usr": "s:6AATKit25AATAdDriverLoggerProtocolP",
+            "mangledName": "$s6AATKit25AATAdDriverLoggerProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATAppConsentAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATAppConsentAdapter\/AATCMPAppConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
+      "length": 23,
+      "value": "\"AATSafeManagedConsent\""
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATAppConsentAdapter\/AATCMPAppConsent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1059,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATAppConsentAdapter\/AATCMPAppConsent.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 16,
+      "value": "\"AATAppConsentAdapter.AATCMPAppConsent\""
+    }
+  ]
+}

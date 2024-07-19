@@ -1,0 +1,27 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AATAppConsentAdapter
+@_exported import AATAppConsentAdapter
+import AATKit
+import AppConsent
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public class AATCMPAppConsent : ObjectiveC.NSObject, AATKit.AATCMPProtocol, AATKit.AATAdDriverLoggerProtocol {
+  @objc weak public var cmpDelegate: (any AATKit.AATCMPDelegate)?
+  @objc public init(appKey: Swift.String, forceGDPR: Swift.Bool, fullscreen: Swift.Bool = false)
+  @objc public func isSuccessfullyInitialized(_ source: Swift.String) -> Swift.Bool
+  @objc public func start(_ source: Swift.String)
+  @objc public func setDelegate(_ source: Swift.String, _ delegate: any AATKit.AATCMPDelegate)
+  @objc public func reload(_ source: Swift.String, _ viewController: UIKit.UIViewController)
+  @objc public func getConsentForNetwork(_ source: Swift.String, _ network: AATKit.AATAdNetwork) -> AATKit.NonIABConsent
+  @objc public func showIfNeeded(_ source: Swift.String, _ viewController: UIKit.UIViewController)
+  @objc public func editConsent(_ source: Swift.String, _ viewController: UIKit.UIViewController)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}

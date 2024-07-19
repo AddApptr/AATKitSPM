@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vXuvhXp/19ZM73CRdh7a00BSnFQ=
+		QHSTgwo4Q5lQX78CYpnWh991Kwg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -25,10 +25,6 @@
 	<dict>
 		<key>Headers/SmaatoSDKOpenMeasurement.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GcBfbKNX5IvwPzTFOSjMVWeyOzk=
-			</data>
 			<key>hash2</key>
 			<data>
 			GGC5Z7qMvhIMcfnmePvrZQydrVZEx7utKBeVcFy+P/A=
@@ -36,10 +32,6 @@
 		</dict>
 		<key>Headers/SmaatoSDKOpenMeasurementFramework.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uuAGfkZfNqDnvXgCAVOJ9+yuEco=
-			</data>
 			<key>hash2</key>
 			<data>
 			AlAl+klLuqsMV4qAH7ECguOTpL+U5UgS2iiZIj1ipcA=
@@ -47,10 +39,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Ry6CFTiOIQRjjfu6afj78P65OXc=
-			</data>
 			<key>hash2</key>
 			<data>
 			bvxv9Fk3kN05VCpOUHapYcGRTl5ocmtG5ZqJJlnkBHU=

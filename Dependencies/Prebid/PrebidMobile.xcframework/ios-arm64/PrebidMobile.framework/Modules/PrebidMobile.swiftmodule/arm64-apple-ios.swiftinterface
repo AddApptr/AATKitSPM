@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PrebidMobile
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PrebidMobile
 import CoreLocation
 import Foundation
 import MapKit
@@ -282,6 +281,10 @@ public class VideoAdUnit : PrebidMobile.AdUnit {
     @objc set
   }
   @objc public var closeButtonPosition: PrebidMobile.Position {
+    @objc get
+    @objc set
+  }
+  @objc public var ortbConfig: Swift.String? {
     @objc get
     @objc set
   }
@@ -822,7 +825,7 @@ extension UIKit.UIView {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PrebidServerConnection : ObjectiveC.NSObject, PrebidMobile.PrebidServerConnectionProtocol, Foundation.URLSessionDelegate {
-  @objc public var userAgentService: PrebidMobile.PBMUserAgentService {
+  @objc public var userAgentService: PrebidMobile.UserAgentService {
     get
   }
   @objc public var protocolClasses: [Foundation.URLProtocol.Type]
@@ -842,7 +845,7 @@ extension UIKit.UIView {
   @objc public static var isPBMRequestKey: Swift.String {
     @objc get
   }
-  @objc convenience public init(userAgentService: PrebidMobile.PBMUserAgentService)
+  @objc convenience public init(userAgentService: PrebidMobile.UserAgentService)
   @objc public func fireAndForget(_ resourceURL: Swift.String?)
   @objc public func head(_ resourceURL: Swift.String?, timeout: Foundation.TimeInterval, callback: @escaping (PrebidMobile.PrebidServerResponse) -> Swift.Void)
   @objc public func get(_ resourceURL: Swift.String?, timeout: Foundation.TimeInterval = 0, callback: @escaping (PrebidMobile.PrebidServerResponse) -> Swift.Void)
@@ -918,6 +921,10 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
     @objc get
   }
   @objc public var adFormats: Swift.Set<PrebidMobile.AdFormat> {
+    @objc get
+    @objc set
+  }
+  @objc public var ortbConfig: Swift.String? {
     @objc get
     @objc set
   }
@@ -1027,6 +1034,14 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(PBMUserAgentService) @objcMembers public class UserAgentService : ObjectiveC.NSObject {
+  @objc public static let shared: PrebidMobile.UserAgentService
+  @objc public var userAgent: Swift.String {
+    get
+  }
+  @objc public func fetchUserAgent(completion: ((Swift.String) -> Swift.Void)? = nil)
+  @objc deinit
+}
 @objc public class RewardedVideoAdUnit : PrebidMobile.AdUnit, PrebidMobile.VideoBasedAdUnitProtocol {
   @objc @available(*, deprecated, message: "This property is deprecated. Please, use videoParameters instead.")
   public var parameters: PrebidMobile.VideoParameters {
@@ -1082,6 +1097,10 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
     @objc set
   }
   @objc @_Concurrency.MainActor(unsafe) public var adPosition: PrebidMobile.AdPosition {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) public var ortbConfig: Swift.String? {
     @objc get
     @objc set
   }
@@ -1265,6 +1284,8 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public func setDURLSupport(_ dURLSupport: Swift.Int)
   @objc public func setPrivacy(_ privacy: Swift.Int)
   @objc public func setExt(_ ext: [Swift.String : Any])
+  @objc public func getOrtbConfig() -> Swift.String?
+  @objc public func setOrtbConfig(_ ortbConfig: Swift.String?)
   @objc public func setAppContent(_ appContent: PrebidMobile.PBMORTBAppContent)
   @objc public func clearAppContent()
   @objc public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
@@ -1391,6 +1412,10 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
     @objc set
   }
   @objc public var additionalSizes: [CoreFoundation.CGSize]? {
+    @objc get
+    @objc set
+  }
+  @objc public var ortbConfig: Swift.String? {
     @objc get
     @objc set
   }
@@ -1575,6 +1600,8 @@ extension Foundation.NSString {
   @objc public func clearUserData()
   @objc public func setGPID(_ gpid: Swift.String?)
   @objc public func getGPID() -> Swift.String?
+  @objc public func setOrtbConfig(_ ortbObject: Swift.String?)
+  @objc public func getOrtbConfig() -> Swift.String?
   @objc public func setAutoRefreshMillis(time: Swift.Double)
   @objc public func stopAutoRefresh()
   @objc public func resumeAutoRefresh()
@@ -1755,6 +1782,10 @@ public let refreshIntervalDefault: Swift.Double
     @objc set
   }
   @objc public var gpid: Swift.String?
+  @objc public var ortbConfig: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc convenience public init(configId: Swift.String)
   @objc public init(configId: Swift.String, size: CoreFoundation.CGSize)
   @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
@@ -2133,6 +2164,8 @@ public let refreshIntervalDefault: Swift.Double
     set
   }
   @objc public var clickHandlerOverride: ((() -> Swift.Void) -> Swift.Void)?
+  @objc public var ortbConfig: Swift.String?
+  @objc public func getCheckedOrtbConfig() -> [Swift.String : Any]?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -2175,7 +2208,7 @@ public let refreshIntervalDefault: Swift.Double
 }
 public typealias PrebidServerResponseCallback = (PrebidMobile.PrebidServerResponse) -> Swift.Void
 @objc public protocol PrebidServerConnectionProtocol {
-  @objc var userAgentService: PrebidMobile.PBMUserAgentService { get }
+  @objc var userAgentService: PrebidMobile.UserAgentService { get }
   @objc func fireAndForget(_ resourceURL: Swift.String?)
   @objc func head(_ resourceURL: Swift.String?, timeout: Foundation.TimeInterval, callback: @escaping PrebidMobile.PrebidServerResponseCallback)
   @objc func get(_ resourceURL: Swift.String?, timeout: Foundation.TimeInterval, callback: @escaping PrebidMobile.PrebidServerResponseCallback)

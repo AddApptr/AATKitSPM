@@ -6,6 +6,7 @@ import AdSupport
 import AppTrackingTransparency
 import SystemConfiguration.CaptiveNetwork
 import CommonCrypto
+import Compression
 import CoreLocation
 import CoreTelephony
 import Foundation
@@ -426,7 +427,7 @@ extension InMobiSDK.IMAudio {
   @objc public var imageData: Foundation.Data {
     get
   }
-  @objc public init(imageData: Foundation.Data)
+  @objc public init(waterMarkImageData: Foundation.Data)
   @objc deinit
 }
 #warning("Post Swift Migration: file not used yet")

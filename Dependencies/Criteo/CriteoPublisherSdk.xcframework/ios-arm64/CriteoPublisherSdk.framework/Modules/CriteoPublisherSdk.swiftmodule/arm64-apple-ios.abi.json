@@ -572,6 +572,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -6009,6 +6016,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -6306,6 +6320,70 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Animatable",
+            "printedName": "Animatable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AnimatableData",
+                "printedName": "AnimatableData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnimatablePair",
+                    "printedName": "SwiftUI.AnimatablePair<SwiftUI.AnimatablePair<CoreGraphics.CGFloat, CoreGraphics.CGFloat>, SwiftUI.AnimatablePair<CoreGraphics.CGFloat, CoreGraphics.CGFloat>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnimatablePair",
+                        "printedName": "SwiftUI.AnimatablePair<CoreGraphics.CGFloat, CoreGraphics.CGFloat>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI14AnimatablePairV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnimatablePair",
+                        "printedName": "SwiftUI.AnimatablePair<CoreGraphics.CGFloat, CoreGraphics.CGFloat>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI14AnimatablePairV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI14AnimatablePairV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI10AnimatableP",
+            "mangledName": "$s7SwiftUI10AnimatableP"
           }
         ]
       },
@@ -6500,11 +6578,179 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/SwiftExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1220,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/SwiftExtensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1280,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/SwiftExtensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1413,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/SwiftExtensions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2342,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/SwiftExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2349,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/SwiftExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 2358,
+      "length": 7,
+      "value": "\"false\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "StringLiteral",
+      "offset": 1617,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1859,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2125,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 22,
       "value": "\"CriteoPublisherSdk.CRFulllScreenContainer\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2734,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2741,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2752,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2764,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "FloatLiteral",
+      "offset": 3183,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "FloatLiteral",
+      "offset": 3364,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "FloatLiteral",
+      "offset": 3991,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4149,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4247,
+      "length": 2,
+      "value": "45"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4340,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5051,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5251,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5510,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6732,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRFulllScreenContainer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6752,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MRAIDFeature.swift",
@@ -6521,6 +6767,27 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MRAIDFeature.swift",
+      "kind": "StringLiteral",
+      "offset": 862,
+      "length": 8,
+      "value": "\"tel:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MRAIDFeature.swift",
+      "kind": "BooleanLiteral",
+      "offset": 950,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MRAIDFeature.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1047,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRPlacementType.swift",
       "kind": "IntegerLiteral",
       "offset": 754,
@@ -6529,10 +6796,38 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRPlacementType.swift",
+      "kind": "StringLiteral",
+      "offset": 857,
+      "length": 8,
+      "value": "\"inline\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRPlacementType.swift",
+      "kind": "StringLiteral",
+      "offset": 901,
+      "length": 14,
+      "value": "\"interstitial\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRPlacementType.swift",
       "kind": "IntegerLiteral",
       "offset": 754,
       "length": 12,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MessageHandlers\/MRAIDMessaheHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2587,
+      "length": 58,
+      "value": "\"Could not deserialise the action message from \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MessageHandlers\/MRAIDMessaheHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2644,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
@@ -6579,9 +6874,331 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
       "kind": "StringLiteral",
+      "offset": 2556,
+      "length": 19,
+      "value": "\"criteoMraidBridge\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2683,
+      "length": 55,
+      "value": "\"window.mraid.notifyError(\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2719,
+      "length": 1,
+      "value": "\"\",\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2733,
+      "length": 1,
+      "value": "\"\");\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2997,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4417,
+      "length": 22,
+      "value": "\"could not load mraid\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4587,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5005,
+      "length": 41,
+      "value": "\"Could not get the parent view reference\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5380,
+      "length": 59,
+      "value": "\"window.mraid.setScreenSize(\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5421,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 5436,
+      "length": 1,
+      "value": "\");\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5588,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
       "offset": 875,
       "length": 14,
       "value": "\"CriteoPublisherSdk.CRMRAIDHandler\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 7843,
+      "length": 81,
+      "value": "\"window.mraid.setMaxSize(\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 7881,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 7897,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 7921,
+      "length": 1,
+      "value": "\");\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 8008,
+      "length": 57,
+      "value": "\"window.mraid.setIsViewable(\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 8060,
+      "length": 1,
+      "value": "\"\");\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 8406,
+      "length": 45,
+      "value": "\"window.mraid.notifyReady(\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 8446,
+      "length": 1,
+      "value": "\"\");\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 8558,
+      "length": 106,
+      "value": "\"window.mraid.setCurrentPosition(\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 8607,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 8624,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 8642,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 8661,
+      "length": 1,
+      "value": "\");\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 8917,
+      "length": 34,
+      "value": "\"Could not set supported features\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 9011,
+      "length": 55,
+      "value": "\"window.mraid.setSupports(\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 9063,
+      "length": 1,
+      "value": "\");\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 9134,
+      "length": 19,
+      "value": "\"js: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 9152,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 9360,
+      "length": 28,
+      "value": "\"error on js call: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 9387,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 9430,
+      "length": 25,
+      "value": "\"no error on js callback\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 9531,
+      "length": 32,
+      "value": "\"window.mraid.notifyExpanded();\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 9627,
+      "length": 30,
+      "value": "\"window.mraid.notifyClosed();\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 9722,
+      "length": 31,
+      "value": "\"window.mraid.notifyResized();\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 11777,
+      "length": 13,
+      "value": "\"orientation\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 12013,
+      "length": 54,
+      "value": "\"Close action is not valid in current state: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 12066,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 12434,
+      "length": 39,
+      "value": "\"Could not play video with url: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 12472,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12697,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 12915,
+      "length": 54,
+      "value": "\"Resize action can be execute only for banner ad type\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 13101,
+      "length": 64,
+      "value": "\"Resize action can be execute only on default or resized states\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/CRMRAIDHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 13498,
+      "length": 22,
+      "value": "\"Could not resize ad.\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MessageHandlers\/Data\/Message\/MRAIDResizeMessage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1840,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MessageHandlers\/MRAIDLogHandler.swift",
@@ -6746,6 +7363,13 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/SKAdNetwork\/SKAdNetworkInfo.swift",
+      "kind": "Array",
+      "offset": 1287,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/SKAdNetwork\/SKAdNetworkInfo.swift",
       "kind": "StringLiteral",
       "offset": 1398,
       "length": 24,
@@ -6768,9 +7392,37 @@
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeContainerView.swift",
       "kind": "StringLiteral",
+      "offset": 1667,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeContainerView.swift",
+      "kind": "StringLiteral",
       "offset": 771,
       "length": 24,
       "value": "\"CriteoPublisherSdk.MRAIDResizeContainerView\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeContainerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3636,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeContainerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3744,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeContainerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4773,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Utils\/CRMRAIDUtils.swift",
@@ -6829,6 +7481,20 @@
       "value": "\"xctest\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MessageHandlers\/MRAIDURLHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1552,
+      "length": 77,
+      "value": "\"Could not create an URL with given string representation: \""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/MessageHandlers\/MRAIDURLHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1628,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
       "kind": "IntegerLiteral",
       "offset": 1067,
@@ -6841,6 +7507,139 @@
       "offset": 1116,
       "length": 2,
       "value": "50"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1534,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1557,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4234,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4238,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4286,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4290,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7752,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7794,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7913,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7970,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7995,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8053,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8079,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8124,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8424,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8449,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8493,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8556,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Resize\/MRAIDResizeHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8581,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/ios-publisher-sdk\/ios-publisher-sdk\/CriteoPublisherSdk\/Sources\/MRAID\/Logging\/ActionRepresentable.swift",

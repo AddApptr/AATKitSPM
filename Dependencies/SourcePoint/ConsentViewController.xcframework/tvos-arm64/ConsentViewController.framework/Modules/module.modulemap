@@ -1,7 +1,7 @@
 framework module ConsentViewController {
-  umbrella header "ConsentViewController-tvOS-umbrella.h"
-
+  umbrella header "ConsentViewController.h"
   export *
+
   module * { export * }
 }
 

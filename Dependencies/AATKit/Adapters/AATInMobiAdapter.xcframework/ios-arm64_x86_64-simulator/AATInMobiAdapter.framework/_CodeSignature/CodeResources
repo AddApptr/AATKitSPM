@@ -6,83 +6,55 @@
 	<dict>
 		<key>Headers/AATInMobiAdapter-Swift.h</key>
 		<data>
-		flfA0IquYp+jbxQkvSyar2xSzZg=
+		uY47+ZWtue+vyHnfKyMiaWcpwug=
 		</data>
 		<key>Headers/AATInMobiAdapter.h</key>
 		<data>
 		Pi2t4SgRaFxvyTxUWv041pfiDmE=
 		</data>
-		<key>InMobiSDK_Privacy.bundle/Info.plist</key>
-		<data>
-		JPbYbMlc63RIKYogoCZd+qfP270=
-		</data>
-		<key>InMobiSDK_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		BLNjR6VVI/K82v3iQCE5o0YXgGI=
-		</data>
-		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeDirectory</key>
-		<data>
-		/VEUlKi3Gf26hSpypjRNPmkFq4M=
-		</data>
-		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeRequirements</key>
-		<data>
-		xWTiQ0jzqMSRSHs490p5qXfjp6o=
-		</data>
-		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		6GriyQd76WXsySFOvU9YN5PbZS8=
-		</data>
-		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeResources</key>
-		<data>
-		F4ggJzPIUIvlBuWtAyZzwZ3DOPA=
-		</data>
-		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeSignature</key>
-		<data>
-		GkSO/H6qgatutUcrAYw+DWRC6Hk=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		aXZ9NdsAZsNyAM/wVSWEh4K3pmg=
+		7yxO3+ztvPFENORsL+iB0C5iXpE=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		w6LgwYAQky5I4pWrmWvvGxIPV28=
+		lZp4MYnlJRjQgm75C9UZpvkwPMI=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8wua3O+2IBcfX57uYwr7/UnbITI=
+		zsI16UK/Bn4P/T30Bh6tv4lSfoM=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0aFwdRm5aj1ETgBJNcEx1F7Npq4=
+		HHqNFwp3t4MdrN5LoLKLpAgH7cg=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8wua3O+2IBcfX57uYwr7/UnbITI=
+		zsI16UK/Bn4P/T30Bh6tv4lSfoM=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4ertis1ft6N3Xir//nyjy7cnMbg=
+		mJQIXc/GYyA1rlAKMWo6GpzK1Nw=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		w6LgwYAQky5I4pWrmWvvGxIPV28=
+		lZp4MYnlJRjQgm75C9UZpvkwPMI=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		OrFV9oqLEBoscGKzi9gJOdERV/k=
+		VaoEPy9CrXVoqH7DfWhtpPzZDcU=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5iFGK0fWbKW6YMCpSX8jSXsnQ4g=
+		6qr94cQVp+cJNLcriVtCPVGqSeA=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OrFV9oqLEBoscGKzi9gJOdERV/k=
+		VaoEPy9CrXVoqH7DfWhtpPzZDcU=
 		</data>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LGbF8tXfqVzc85Hro1dMVKH5MuQ=
+		AJIuq/rZqOtzki/tsJYaB+Cqbt8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -95,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			flfA0IquYp+jbxQkvSyar2xSzZg=
+			uY47+ZWtue+vyHnfKyMiaWcpwug=
 			</data>
 			<key>hash2</key>
 			<data>
-			s9RaVK1PoLYJx243BCY/btn6nTEVqodOo5ZFdO+B6nc=
+			NORRiNLSBjCQanwdnYHYxjzLAuHIXF6UeleCkaCmjI0=
 			</data>
 		</dict>
 		<key>Headers/AATInMobiAdapter.h</key>
@@ -113,191 +85,114 @@
 			KDKOSf9leR4X439/8vSKaBKXsddA9YESQ8fTRf7Zl6w=
 			</data>
 		</dict>
-		<key>InMobiSDK_Privacy.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JPbYbMlc63RIKYogoCZd+qfP270=
-			</data>
-			<key>hash2</key>
-			<data>
-			qel2cFsd4X3NtiIkJpgwUPznu9XZRrWC9zPrT5FGx3Y=
-			</data>
-		</dict>
-		<key>InMobiSDK_Privacy.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			BLNjR6VVI/K82v3iQCE5o0YXgGI=
-			</data>
-			<key>hash2</key>
-			<data>
-			ES/wHPURrhqoWqlouH6JyVI5Y7FKY1pgaWMpkbPGo0E=
-			</data>
-		</dict>
-		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/VEUlKi3Gf26hSpypjRNPmkFq4M=
-			</data>
-			<key>hash2</key>
-			<data>
-			jxA0daVxlc1PdALnxK0kLAnury5Q5MbPsGQSanr/T9Q=
-			</data>
-		</dict>
-		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xWTiQ0jzqMSRSHs490p5qXfjp6o=
-			</data>
-			<key>hash2</key>
-			<data>
-			i4f8tsw4pDyOqMukPfnWLE1SeKAwn/pm400x0Q1bK6o=
-			</data>
-		</dict>
-		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6GriyQd76WXsySFOvU9YN5PbZS8=
-			</data>
-			<key>hash2</key>
-			<data>
-			HGnDPUYFXoulQGgFoFMLAhvhX+QUEAwRjRtceOUkqU4=
-			</data>
-		</dict>
-		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			F4ggJzPIUIvlBuWtAyZzwZ3DOPA=
-			</data>
-			<key>hash2</key>
-			<data>
-			RHnzWDvvpqNg6zRX8x3W0Dcha86nD0LFax4EHL9eaVE=
-			</data>
-		</dict>
-		<key>InMobiSDK_Privacy.bundle/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			GkSO/H6qgatutUcrAYw+DWRC6Hk=
-			</data>
-			<key>hash2</key>
-			<data>
-			WnhUOvZSpDdaepCWHmxwETr7ggtZYtqskrCEjwxD0sg=
-			</data>
-		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w6LgwYAQky5I4pWrmWvvGxIPV28=
+			lZp4MYnlJRjQgm75C9UZpvkwPMI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jjy3lwNiU24wFcdjZhbh/veskqJVsBVCJSR71XxoxT8=
+			8nHNLRbE240oS0C/4PqkNLY4flWSC9JYiFFPSd28LPk=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8wua3O+2IBcfX57uYwr7/UnbITI=
+			zsI16UK/Bn4P/T30Bh6tv4lSfoM=
 			</data>
 			<key>hash2</key>
 			<data>
-			RoAFqC0op8UzR8HtqHG+Qaae2h1LCWpt5EY77t74yOA=
+			NoBzSaMXp9edxi30DOP4Zm6BAWuXNy5SLaTNbfwGiP8=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0aFwdRm5aj1ETgBJNcEx1F7Npq4=
+			HHqNFwp3t4MdrN5LoLKLpAgH7cg=
 			</data>
 			<key>hash2</key>
 			<data>
-			/YVyg+HhHtro+jaQGaZ0f5rYIErh4hFa49z26ESPRFs=
+			lr06IRzBrvEYKelA1xzzSrm/fb3EGnUf3mD+PWgAH/s=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8wua3O+2IBcfX57uYwr7/UnbITI=
+			zsI16UK/Bn4P/T30Bh6tv4lSfoM=
 			</data>
 			<key>hash2</key>
 			<data>
-			RoAFqC0op8UzR8HtqHG+Qaae2h1LCWpt5EY77t74yOA=
+			NoBzSaMXp9edxi30DOP4Zm6BAWuXNy5SLaTNbfwGiP8=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4ertis1ft6N3Xir//nyjy7cnMbg=
+			mJQIXc/GYyA1rlAKMWo6GpzK1Nw=
 			</data>
 			<key>hash2</key>
 			<data>
-			yuZBcL06YX0cUQSgoOKTKp8YGeZKp80CTE8D/IU0qE0=
+			7qFKjqFFfFvfdl4k9YcGnGtOgPRBK/0X55M0p3gXTEA=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			w6LgwYAQky5I4pWrmWvvGxIPV28=
+			lZp4MYnlJRjQgm75C9UZpvkwPMI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jjy3lwNiU24wFcdjZhbh/veskqJVsBVCJSR71XxoxT8=
+			8nHNLRbE240oS0C/4PqkNLY4flWSC9JYiFFPSd28LPk=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OrFV9oqLEBoscGKzi9gJOdERV/k=
+			VaoEPy9CrXVoqH7DfWhtpPzZDcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Mkx7W+MUPdL4ysu6o0Ln8wAmzUVqc1SYN+DiK1wtLmo=
+			Q7zfJobeius1XK7syS79B+Cf2Rf2OmgA+cwZ176qt8A=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5iFGK0fWbKW6YMCpSX8jSXsnQ4g=
+			6qr94cQVp+cJNLcriVtCPVGqSeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			3u38FjEY0YaYQnSExO+dRV7dStfV9HThPRr6/RaBWPU=
+			O05pYcmhZaDH1RUUQguBmmbzsO+akRBBzVvKW9G7CHw=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OrFV9oqLEBoscGKzi9gJOdERV/k=
+			VaoEPy9CrXVoqH7DfWhtpPzZDcU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Mkx7W+MUPdL4ysu6o0Ln8wAmzUVqc1SYN+DiK1wtLmo=
+			Q7zfJobeius1XK7syS79B+Cf2Rf2OmgA+cwZ176qt8A=
 			</data>
 		</dict>
 		<key>Modules/AATInMobiAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LGbF8tXfqVzc85Hro1dMVKH5MuQ=
+			AJIuq/rZqOtzki/tsJYaB+Cqbt8=
 			</data>
 			<key>hash2</key>
 			<data>
-			9GHULmdxPw+Q9AUQ5WyaOl8pThPOcWH/kFwZMxp0lOY=
+			5Jkw89mWVlq3ft2Z33ozOKlqC9hLS5/7oX9C9M86XGI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

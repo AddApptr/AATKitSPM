@@ -28,5 +28,4 @@
 #import <SmaatoSDKCore/SmaatoSDK.h>
 #import <SmaatoSDKCore/SMAGDPRTypes.h>
 #import <SmaatoSDKCore/SMAIABDataStorageVTwoUserDefaults.h>
-#import <SmaatoSDKCore/SMAConsentParser.h>
 #import <SmaatoSDKCore/SMAAdMarkup.h>

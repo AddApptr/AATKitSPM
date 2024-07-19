@@ -17,14 +17,15 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - methods
 
 - (void)startWithAssetKey:(NSString *)assetKey
-       persistentEventBus:(OguryPersistentEventBus * _Nullable)persistentEventBus
-        broadcastEventBus:(OguryEventBus * _Nullable)broadcastEventBus;
+       persistentEventBus:(OguryPersistentEventBus *_Nullable)persistentEventBus
+        broadcastEventBus:(OguryEventBus *_Nullable)broadcastEventBus;
 
 - (void)setLogLevel:(OguryLogLevel)logLevel;
 - (NSString *)getVersion;
 - (NSString *)getBuildVersion;
 - (void)defineSDKType:(NSUInteger)sdkType;
 - (void)defineMediationName:(NSString *)mediationName;
+- (BOOL)sdkInitialized;
 
 @end
 

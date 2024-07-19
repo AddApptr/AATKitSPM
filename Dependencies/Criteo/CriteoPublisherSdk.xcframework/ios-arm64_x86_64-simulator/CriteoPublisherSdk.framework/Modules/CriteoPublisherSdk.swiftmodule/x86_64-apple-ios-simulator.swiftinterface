@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CriteoPublisherSdk
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
@@ -12,6 +12,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 extension UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var isVisibleToUser: Swift.Bool {
     get
@@ -59,8 +60,8 @@ public enum MRAIDState : Swift.String, Swift.Decodable {
 }
 public struct MRAIDFeatures : Swift.Codable {
   public init()
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public enum CRPlacementType : Swift.Int {
   case banner
@@ -79,8 +80,8 @@ public protocol MRAIDMessageHandlerDelegate : AnyObject {
   func didReceive(orientation properties: CriteoPublisherSdk.MRAIDOrientationPropertiesMessage)
 }
 public struct MRAIDMessageHandler {
-  weak public var delegate: CriteoPublisherSdk.MRAIDMessageHandlerDelegate?
-  public init(logHandler: CriteoPublisherSdk.MRAIDLogHandler, urlHandler: CriteoPublisherSdk.MRAIDURLHandler)
+  weak public var delegate: (any CriteoPublisherSdk.MRAIDMessageHandlerDelegate)?
+  public init(logHandler: CriteoPublisherSdk.MRAIDLogHandler, urlHandler: any CriteoPublisherSdk.MRAIDURLHandler)
   public func handle(message: Any)
 }
 public struct MRAIDExpandMessage : Swift.Decodable {
@@ -88,11 +89,11 @@ public struct MRAIDExpandMessage : Swift.Decodable {
   public let width: Swift.Int
   public let height: Swift.Int
   public let url: Foundation.URL?
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public typealias VoidCompletion = () -> Swift.Void
 @objc public class CRMRAIDHandler : ObjectiveC.NSObject {
-  @objc public init(placementType: CriteoPublisherSdk.CRPlacementType, webView: WebKit.WKWebView, criteoLogger: CriteoPublisherSdk.CRMRAIDLogger, urlOpener: CriteoPublisherSdk.CRExternalURLOpener, delegate: CriteoPublisherSdk.CRMRAIDHandlerDelegate?)
+  @objc public init(placementType: CriteoPublisherSdk.CRPlacementType, webView: WebKit.WKWebView, criteoLogger: any CriteoPublisherSdk.CRMRAIDLogger, urlOpener: any CriteoPublisherSdk.CRExternalURLOpener, delegate: (any CriteoPublisherSdk.CRMRAIDHandlerDelegate)?)
   @objc public func send(error: Swift.String, action: Swift.String)
   @objc public func startViabilityNotifier()
   @objc deinit
@@ -123,13 +124,13 @@ extension CriteoPublisherSdk.CRMRAIDHandler : CriteoPublisherSdk.MRAIDResizeHand
   public func didCloseResizedAdView()
 }
 public struct MRAIDPlayVideoMessage : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct MRAIDResizeMessage : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct MRAIDOrientationPropertiesMessage : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct MRAIDOrientationProperties {
   public init(allowOrientationChange: Swift.Bool, forceOrientation: CriteoPublisherSdk.MRAIDDeviceOrientation)
@@ -143,7 +144,7 @@ public struct MRAIDOrientationProperties {
   @objc func mraidLog(info: Swift.String)
 }
 @objc public class MRAIDLogHandler : ObjectiveC.NSObject {
-  public init(criteoLogger: CriteoPublisherSdk.CRMRAIDLogger)
+  public init(criteoLogger: any CriteoPublisherSdk.CRMRAIDLogger)
   @objc deinit
 }
 public enum LogLevel : Swift.String, Swift.Decodable {
@@ -186,14 +187,14 @@ public enum MRAIDCustomClosePosition : Swift.String, Swift.Decodable {
 }
 public struct MRAIDActionMessage : CriteoPublisherSdk.ActionRepresentable, Swift.Decodable {
   public let action: CriteoPublisherSdk.Action
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct MRAIDLog : CriteoPublisherSdk.ActionRepresentable, Swift.Decodable {
   public let logId: Swift.String?
   public let message: Swift.String
   public let logLevel: CriteoPublisherSdk.LogLevel
   public let action: CriteoPublisherSdk.Action
-  public init(from decoder: Swift.Decoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol CRExternalURLOpener {
   @objc func open(url: Foundation.URL)
@@ -202,7 +203,7 @@ public protocol MRAIDURLHandler : AnyObject {
   func handle(data: Foundation.Data)
 }
 final public class CRMRAIDURLHandler : CriteoPublisherSdk.MRAIDURLHandler {
-  public init(with logger: CriteoPublisherSdk.CRMRAIDLogger, urlOpener: CriteoPublisherSdk.CRExternalURLOpener)
+  public init(with logger: any CriteoPublisherSdk.CRMRAIDLogger, urlOpener: any CriteoPublisherSdk.CRExternalURLOpener)
   final public func handle(data: Foundation.Data)
   @objc deinit
 }

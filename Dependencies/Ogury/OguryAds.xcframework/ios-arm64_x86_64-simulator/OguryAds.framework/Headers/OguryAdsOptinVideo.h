@@ -11,11 +11,11 @@ __deprecated __attribute__((deprecated("Use OguryOptinVideoAd instead.")))
 
 #pragma mark - Properties
 
-@property (nonatomic, weak) id<OguryAdsOptinVideoDelegate> optInVideoDelegate;
+@property(nonatomic, weak) id<OguryAdsOptinVideoDelegate> optInVideoDelegate;
 
 - (instancetype)init;
 
-- (instancetype)initWithAdUnitID:(NSString * _Nullable)adUnitID;
+- (instancetype)initWithAdUnitID:(NSString *_Nullable)adUnitID;
 
 @end
 
