@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATAppConsentAdapter.framework/AATAppConsentAdapter</key>
 		<data>
-		cJQbj39h186qwmtcRFlf9/NcEiI=
+		2FFnj44Bm4HNxAdGc14RPjRtT3Y=
 		</data>
 		<key>ios-arm64/AATAppConsentAdapter.framework/Headers/AATAppConsentAdapter-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/AATAppConsentAdapter.framework/Info.plist</key>
 		<data>
-		GDhwi96ytj74joX6T/Q7bsqGQAM=
+		eIIHHk8xV/bqdQpWOPNq0IVXuTE=
 		</data>
 		<key>ios-arm64/AATAppConsentAdapter.framework/Modules/AATAppConsentAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -40,29 +40,9 @@
 		<data>
 		jbpWZGyY4sEdhfisREopf9/xJck=
 		</data>
-		<key>ios-arm64/AATAppConsentAdapter.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		ThMhigwlr1A/yRZSwR4F+hKk+Ms=
-		</data>
-		<key>ios-arm64/AATAppConsentAdapter.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		E6lyVipXjmf1dHiF6GAGWnQkGV4=
-		</data>
-		<key>ios-arm64/AATAppConsentAdapter.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		FJYXrq71PwHiStKRoB0320LKCEM=
-		</data>
-		<key>ios-arm64/AATAppConsentAdapter.framework/_CodeSignature/CodeResources</key>
-		<data>
-		RcZbwsTX7WKuh5qshtHIpJPfcXk=
-		</data>
-		<key>ios-arm64/AATAppConsentAdapter.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		QwyGB0TfcLL9iuLL2ohmwNQElzs=
-		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/AATAppConsentAdapter</key>
 		<data>
-		jzB1+SzwyiRiuvqBoOAPwkU0XJQ=
+		k2rSqr3LU0xzvR0Om8Na/0wi4uI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/Headers/AATAppConsentAdapter-Swift.h</key>
 		<data>
@@ -74,7 +54,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/Info.plist</key>
 		<data>
-		AVeI+TD7Wx4kh8CrPV/gOw2ESIc=
+		jRHxBl02QqRgJkok0lhq8ifRddM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/Modules/AATAppConsentAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -114,7 +94,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		xqVyIQd/lY6EzVa+hFq3OkYebNo=
+		Ol07YQ8AkIFytWtu2sh/r5DKYwY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -122,11 +102,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		v5o4kWXKG5EOHUdAotPOi1ar0mk=
+		boHYPvXONpzUSuwNHD3ovRa25fs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		CUkJyVmMn2IPSNLx0LHZYy36cUw=
+		NHTxOIVsguQ018KAW6X2sj5YkXY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -139,11 +119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cJQbj39h186qwmtcRFlf9/NcEiI=
+			2FFnj44Bm4HNxAdGc14RPjRtT3Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			GFnrDXKBNeYVgZ9yJe66xjG4kjmLChgXUn5CQ6YRJ5g=
+			PIfcz9xjhzXsCmt/6tb+sKvDkVLtNSYyBdPycKmxtA8=
 			</data>
 		</dict>
 		<key>ios-arm64/AATAppConsentAdapter.framework/Headers/AATAppConsentAdapter-Swift.h</key>
@@ -172,11 +152,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GDhwi96ytj74joX6T/Q7bsqGQAM=
+			eIIHHk8xV/bqdQpWOPNq0IVXuTE=
 			</data>
 			<key>hash2</key>
 			<data>
-			3lGEVuG4NM5pGT2rb4kvbvGCH0vWdVz3ESyoUP74YjQ=
+			VDHLl531VRHwbqBbwTHoaxo3A0RD+i7k9JS2fhyE8x0=
 			</data>
 		</dict>
 		<key>ios-arm64/AATAppConsentAdapter.framework/Modules/AATAppConsentAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -234,70 +214,15 @@
 			5Wkx1yjLoB/VelqziKvasSBixgjuHnElD5UrLVughic=
 			</data>
 		</dict>
-		<key>ios-arm64/AATAppConsentAdapter.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ThMhigwlr1A/yRZSwR4F+hKk+Ms=
-			</data>
-			<key>hash2</key>
-			<data>
-			v61O+0UCfIe9kQAFQW2Jr7RbgvCUqNE7fPB3e2KM6rE=
-			</data>
-		</dict>
-		<key>ios-arm64/AATAppConsentAdapter.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			E6lyVipXjmf1dHiF6GAGWnQkGV4=
-			</data>
-			<key>hash2</key>
-			<data>
-			XurdxXOJBi1hgnq+ErRTKJP9sFxNZsrdU6QfvMlEpo8=
-			</data>
-		</dict>
-		<key>ios-arm64/AATAppConsentAdapter.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FJYXrq71PwHiStKRoB0320LKCEM=
-			</data>
-			<key>hash2</key>
-			<data>
-			JqGsNzeofuowYiOISe78uWoDf+DwDQUVHEQhSJOXDO4=
-			</data>
-		</dict>
-		<key>ios-arm64/AATAppConsentAdapter.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RcZbwsTX7WKuh5qshtHIpJPfcXk=
-			</data>
-			<key>hash2</key>
-			<data>
-			lUUQ9xt5wD7Jn+sreinwqoPIxHNyjK/5r7MUptDcnBY=
-			</data>
-		</dict>
-		<key>ios-arm64/AATAppConsentAdapter.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QwyGB0TfcLL9iuLL2ohmwNQElzs=
-			</data>
-			<key>hash2</key>
-			<data>
-			dkrqCqSM15uZ4rFTHcv2ei1z9cC2AtBXsoHuVOd1N0Y=
-			</data>
-		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/AATAppConsentAdapter</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jzB1+SzwyiRiuvqBoOAPwkU0XJQ=
+			k2rSqr3LU0xzvR0Om8Na/0wi4uI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3vPLAl+gwSyX/UoGmFPUQ0HSo7UDah1dyTQhpzkzZ34=
+			JVdbIQp+h5aWEz3JrT7r7cNcV4k9KAaxtBWsdoDRkBY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/Headers/AATAppConsentAdapter-Swift.h</key>
@@ -326,11 +251,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AVeI+TD7Wx4kh8CrPV/gOw2ESIc=
+			jRHxBl02QqRgJkok0lhq8ifRddM=
 			</data>
 			<key>hash2</key>
 			<data>
-			CQ6kKLektO+aIP+lAsUePhF02x3DTAMIzIAknFpC+b8=
+			9HdZFOJo71yH800ccS3bcYsLlB0xSGznFckSc6lvt9s=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/Modules/AATAppConsentAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -436,11 +361,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xqVyIQd/lY6EzVa+hFq3OkYebNo=
+			Ol07YQ8AkIFytWtu2sh/r5DKYwY=
 			</data>
 			<key>hash2</key>
 			<data>
-			BEzg9btw1ZnQpqAA5mPXlmNmDuZqIC4JjX2ktFv6Uzs=
+			5jUbf/vm3nJwYKc7bSY6daTD4630BMAipGZodMTVWdc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -458,22 +383,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v5o4kWXKG5EOHUdAotPOi1ar0mk=
+			boHYPvXONpzUSuwNHD3ovRa25fs=
 			</data>
 			<key>hash2</key>
 			<data>
-			L1AjYy3BN57T5935nKaZAk2TN3qe+N/uUiLO81RKy9Q=
+			w20DTfFzHOnHXR3JPQe5uvmsgP88uvloELm4KxuFS7k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CUkJyVmMn2IPSNLx0LHZYy36cUw=
+			NHTxOIVsguQ018KAW6X2sj5YkXY=
 			</data>
 			<key>hash2</key>
 			<data>
-			jlcJ930Vfq5bVcu4Pf5cqTBGpqs/F9i1OubzG6OscU0=
+			tkXRWvI7Llv1OE7rISRnJKIxjmkTNJ+0wVLbMPPLdpg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppConsentAdapter.framework/_CodeSignature/CodeSignature</key>

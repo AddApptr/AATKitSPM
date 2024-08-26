@@ -6,8 +6,12 @@ import AdSupport
 import AppTrackingTransparency
 import CoreLocation
 import CoreMotion
+import CoreTelephony
 import Foundation
+import MessageUI
+import Network
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import _Concurrency
@@ -28,6 +32,7 @@ import _SwiftConcurrencyShims
   @objc public var showConsent: Swift.Bool
   @objc public var showIDFA: Swift.Bool
   @objc public var showDeviceType: Swift.Bool
+  @objc public var shareEmail: Swift.String?
   @objc public init(appLogo: UIKit.UIImage?, title: Swift.String?, showBundleId: Swift.Bool = true, showTestMode: Swift.Bool = true, showLoadedAndLoadingAds: Swift.Bool = true, showDisabledNetworks: Swift.Bool = true, showRemovedNetworkSDKs: Swift.Bool = true, showDeviceType: Swift.Bool = true, showExtraSDKs: Swift.Bool = true, showConsent: Swift.Bool = true, showIDFA: Swift.Bool = true)
   @objc deinit
 }
@@ -52,6 +57,7 @@ extension AATKit.AATTargetingInformationProtocol {
   @objc var brandingLogo: UIKit.UIView? { get }
   @objc var advertiser: Swift.String? { get }
   @objc var network: AATKit.AATAdNetwork { get }
+  @objc var adInfo: AATKit.AATAdInfo? { get }
   @objc func attachToView(_ view: UIKit.UIView, mainImageView: UIKit.UIView?, iconView: UIKit.UIView?, ctaView: UIKit.UIView?)
   @objc func detachFromLayout()
   @objc func isExpired() -> Swift.Bool
@@ -67,6 +73,8 @@ extension AATKit.AATTargetingInformationProtocol {
   @objc func requestAd(request: AATKit.AATBannerRequest) async -> AATKit.AATBannerPlacementWrapperView?
   #endif
   @objc func countAdSpace()
+  @objc func enableCreativeHistory(size: Swift.Int)
+  @objc func getCreativeHistory(completion: @escaping ([AATKit.AATPlacementHistoryInfo]) -> Swift.Void)
 }
 @objc public enum AATCurrency : Swift.Int, Swift.RawRepresentable {
   public typealias RawValue = Swift.String
@@ -182,6 +190,14 @@ extension AATKit.AATAdDriverProtocol {
 @objc public protocol AATInitializable {
   @objc init()
 }
+@_hasMissingDesignatedInitializers @objc public class AATPlacementHistoryInfo : ObjectiveC.NSObject {
+  public var networkName: Swift.String
+  public var networkKey: Swift.String
+  public var timestamp: Foundation.TimeInterval
+  public var snapshot: UIKit.UIImage?
+  public var creativeID: Swift.String?
+  @objc deinit
+}
 @objc public protocol AATAdMobCustomEvents {
   @objc func setCustomEventDelegate(_ delegate: any AATKit.AATAdMobCustomEventsDelegate)
 }
@@ -209,7 +225,6 @@ extension AATKit.AATAdDriverProtocol {
   case PUBNATIVE
   case TEADS
   case TAPPX
-  case BLUESTACK
   case YOC
   case VUNGLE2
   case DFPDIRECT
@@ -264,6 +279,8 @@ extension AATKit.AATAdNetwork : Swift.CustomStringConvertible {
   @objc func getPlacementView() -> UIKit.UIView?
   @objc func setDefaultImage(image: UIKit.UIImage)
   @objc func setBannerAlign(alignment: AATKit.AATBannerAlign)
+  @objc func enableCreativeHistory(size: Swift.Int)
+  @objc func getCreativeHistory(completion: @escaping ([AATKit.AATPlacementHistoryInfo]) -> Swift.Void)
 }
 @objc @_hasMissingDesignatedInitializers public class AATAdConfig : AATKit.AATAbstractAdConfig {
   public var network: AATKit.AATAdNetwork
@@ -328,6 +345,7 @@ public protocol AATDatonomyDriver {
   @objc var delegate: (any AATKit.AATRewardedVideoPlacementDelegate)? { get set }
   @objc var statisticsDelegate: (any AATKit.AATStatisticsDelegate)? { get set }
   @objc var impressionDelegate: (any AATKit.AATImpressionDelegate)? { get set }
+  @objc var adQualityDelegate: (any AATKit.AATAdQualityDelegate)? { get set }
   @objc func startAutoReload()
   @objc func stopAutoReload()
   @objc @discardableResult
@@ -384,10 +402,21 @@ public protocol AATRewardedAdDriverProtocol : AATKit.AATFullscreenAdDriverProtoc
 public protocol AATAdNetworkDriverManager : AATKit.AATAdNetworkDriverVersionProtocol {
   static var shared: Self { get }
   func setDebugEnabled(enabled: Swift.Bool)
+  func setRewardedAdSSVInfo(_ info: AATKit.AATRewardedAdSSVInfo)
+}
+extension AATKit.AATAdNetworkDriverManager {
+  public func setRewardedAdSSVInfo(_ info: AATKit.AATRewardedAdSSVInfo)
 }
 @objc public class AATDatonomyOptions : ObjectiveC.NSObject {
   final public let datonomyAPIKey: Swift.String?
   @objc public init(datonomyAPIKey: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class AATAdInfo : ObjectiveC.NSObject {
+  @objc final public let priceInfo: AATKit.AATPriceInfo?
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
   @objc deinit
 }
 @frozen @objc public enum AATAdChoicesIconPosition : Swift.Int {
@@ -407,6 +436,7 @@ public protocol AATAdNetworkDriverManager : AATKit.AATAdNetworkDriverVersionProt
 @_inheritsConvenienceInitializers @objc public class AATRuntimeConfiguration : ObjectiveC.NSObject {
   @objc public var consentRequired: Swift.Bool
   @objc public var consent: AATKit.AATConsentImplementation?
+  @objc public var adQualityManager: (any AATKit.AATAdQualityManagerProtocol)?
   @objc public var isUseGeoLocation: Swift.Bool
   @objc override dynamic public init()
   @objc override dynamic public var description: Swift.String {
@@ -472,6 +502,8 @@ extension UIKit.UIColor {
   @objc func requestAd(request: AATKit.AATBannerRequest, completion: @escaping Self.AATRequestCompletion)
   @objc func cancel(request: AATKit.AATBannerRequest)
   @objc func countAdSpace()
+  @objc func enableCreativeHistory(size: Swift.Int)
+  @objc func getCreativeHistory(completion: @escaping ([AATKit.AATPlacementHistoryInfo]) -> Swift.Void)
 }
 public protocol AATApplovinDriverProtocol {
   static func setHasUserConsent(isObtained: Swift.Bool)
@@ -489,6 +521,12 @@ public protocol AATApplovinDriverProtocol {
   }
   @objc public func getAdNetworkName() -> Swift.String
   @objc deinit
+}
+@objc public protocol AATAdQualityDelegate {
+  @objc func didAdIncident(placement: any AATKit.AATPlacement, blockReasons: [Swift.String], reportReasons: [Swift.String], adNetworkSdk: AATKit.AATAdNetwork)
+  @objc func didAdIncidentOnDisplay(placement: any AATKit.AATPlacement, blockReasons: [Swift.String], reportReasons: [Swift.String], adNetworkSdk: AATKit.AATAdNetwork)
+  @objc func didAdVerified(placement: any AATKit.AATPlacement, adNetworkSdk: AATKit.AATAdNetwork)
+  @objc func didAdNotVerified(placement: any AATKit.AATPlacement, error: any Swift.Error, adNetworkSdk: AATKit.AATAdNetwork)
 }
 public enum AATDriverLog : Foundation.LocalizedError {
   case startingLoadingAd
@@ -580,6 +618,8 @@ extension AATKit.AATBannerCacheConfiguration : Foundation.NSCopying {
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
   @objc var multiContentTargetingUrls: [Swift.String]? { get set }
+  @objc func enableCreativeHistory(size: Swift.Int)
+  @objc func getCreativeHistory(completion: @escaping ([AATKit.AATPlacementHistoryInfo]) -> Swift.Void)
 }
 @objc public class AATAppNexusOptions : ObjectiveC.NSObject {
   final public let autoCloseTime: Swift.Int?
@@ -777,6 +817,8 @@ extension AATKit.AATAdType : Swift.Hashable {
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
   @objc var multiContentTargetingUrls: [Swift.String]? { get set }
+  @objc func enableCreativeHistory(size: Swift.Int)
+  @objc func getCreativeHistory(completion: @escaping ([AATKit.AATPlacementHistoryInfo]) -> Swift.Void)
 }
 public protocol AATAdDriverLoggerProtocol {
 }
@@ -803,6 +845,8 @@ extension AATKit.AATAdDriverLoggerProtocol {
   @objc func consume(force: Swift.Bool) -> AATKit.AATBannerPlacementWrapperView?
   @objc func consume() -> AATKit.AATBannerPlacementWrapperView?
   @objc func destroy()
+  @objc func enableCreativeHistory(size: Swift.Int)
+  @objc func getCreativeHistory(completion: @escaping ([AATKit.AATPlacementHistoryInfo]) -> Swift.Void)
 }
 public protocol AATNativeAdDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate {
   var state: AATKit.AATNativeAdState { get set }
@@ -874,10 +918,12 @@ public protocol AATSmaatoDriverProtocol {
   @objc public static func setReportsDelegate(_ delegate: any AATKit.AATReportsDelegate)
   @objc public static func setPublisherProvidedId(_ publisherProvidedId: Swift.String)
   @objc public static func isConsentOptIn() -> Swift.Bool
+  @objc public static func setRewardedAdSSVInfo(info: AATKit.AATRewardedAdSSVInfo)
   @objc deinit
 }
 public protocol AATFullscreenAdDriverProtocol : AATKit.AATAdDriverProtocol {
   var delegate: (any AATKit.AATFullscreenDriverEventsDelegate)? { get set }
+  var adQualityAdUnitId: Swift.String? { get set }
   func load(viewController: UIKit.UIViewController, adID: Swift.String, extraConfiguration: AATKit.AATAdRequestConfiguration?) -> Swift.Bool
   func showInternal() -> Swift.Bool
   func canLoad(adId: Swift.String) -> Swift.Bool
@@ -914,6 +960,8 @@ public protocol AATBannerDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate
   @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   @objc func startAutoReload()
   @objc func stopAutoReload()
+  @objc func enableCreativeHistory(size: Swift.Int)
+  @objc func getCreativeHistory(completion: @escaping ([AATKit.AATPlacementHistoryInfo]) -> Swift.Void)
 }
 public protocol AATAmazonHBDriverProtocol {
   static var shared: Self { get }
@@ -965,13 +1013,33 @@ public protocol AATAmazonHBDriverProtocol {
 extension AATKit.NetworkReachabilityManager.NetworkReachabilityStatus : Swift.Equatable {
 }
 public func == (lhs: AATKit.NetworkReachabilityManager.NetworkReachabilityStatus, rhs: AATKit.NetworkReachabilityManager.NetworkReachabilityStatus) -> Swift.Bool
+@objc public protocol AATAdQualityDriverDelegate {
+  @objc func didAdVerified(ad: ObjectiveC.NSObject, adFormat: AATKit.AATAdType, adNetworkSdk: AATKit.AATAdNetwork)
+  @objc func didAdNotVerified(ad: ObjectiveC.NSObject, adFormat: AATKit.AATAdType, error: any Swift.Error, adNetworkSdk: AATKit.AATAdNetwork)
+  @objc func didAdIncident(ad: ObjectiveC.NSObject, adFormat: AATKit.AATAdType, blockReasons: [Swift.String], reportReasons: [Swift.String], adNetworkSdk: AATKit.AATAdNetwork)
+  @objc func didAdIncidentOnDisplay(ad: ObjectiveC.NSObject, adFormat: AATKit.AATAdType, blockReasons: [Swift.String], reportReasons: [Swift.String], adNetworkSdk: AATKit.AATAdNetwork)
+}
+@objc public protocol AATAdQualityManagerProtocol {
+  @objc func initDriver() -> any AATKit.AATAdQualityDriverProtocol
+}
+@objc public protocol AATAdQualityDriverProtocol {
+  @objc var delegate: (any AATKit.AATAdQualityDriverDelegate)? { get set }
+  @objc func verifyAd(ad: ObjectiveC.NSObject, adNetwork: AATKit.AATAdNetwork, format: AATKit.AATAdType, adUnitId: Swift.String?)
+  @objc func willDisplayAd(ad: ObjectiveC.NSObject, adNetwork: AATKit.AATAdNetwork, format: AATKit.AATAdType, adUnitId: Swift.String?)
+  @objc func didClickAd(ad: ObjectiveC.NSObject)
+  @objc func removeAd(ad: ObjectiveC.NSObject)
+}
 @objc public class AATGraviteRTBOptions : ObjectiveC.NSObject {
   final public let forceCloseButtonForMraid: Swift.Bool
   @objc public init(forceCloseButtonForMraid: Swift.Bool)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class AATBannerPlacementWrapperView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var adInfo: AATKit.AATAdInfo?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AATDeviceManager {
   @objc deinit
 }
 public protocol AATApplovinMaxDriverProtocol {
@@ -1108,6 +1176,7 @@ extension AATKit.AATDebugInfo {
     @objc public var loadedAdNetworkName: Swift.String
     @objc public var isLoadingNewAd: Swift.Bool
     @objc public var lastShownAdNetworkName: Swift.String?
+    @objc public var isAdQualityActive: Swift.Bool
     @objc deinit
   }
 }
@@ -1121,6 +1190,10 @@ extension AATKit.AATDebugInfo.PlacementDebugInfo {
     @objc public var minTimeBetweenImpressions: Foundation.TimeInterval
     @objc deinit
   }
+}
+@available(iOS 15.0, *)
+extension AATKit.AATDebugInfo.PlacementDebugInfo : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 @objc public protocol AATReportsDelegate {
   @objc func onReportSent(_ report: Swift.String)
@@ -1177,6 +1250,7 @@ public protocol AATInMobiDriverProtocol {
   @objc var delegate: (any AATKit.AATFullscreenPlacementDelegate)? { get set }
   @objc var statisticsDelegate: (any AATKit.AATStatisticsDelegate)? { get set }
   @objc var impressionDelegate: (any AATKit.AATImpressionDelegate)? { get set }
+  @objc var adQualityDelegate: (any AATKit.AATAdQualityDelegate)? { get set }
   @objc func startAutoReload()
   @objc func stopAutoReload()
   @objc @discardableResult
@@ -1187,6 +1261,7 @@ public protocol AATInMobiDriverProtocol {
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
   @objc var multiContentTargetingUrls: [Swift.String]? { get set }
+  @objc var adInfo: AATKit.AATAdInfo? { get }
   @objc func isFrequencyCapReached() -> Swift.Bool
 }
 @objc public class AATPriceInfo : ObjectiveC.NSObject {
@@ -1253,6 +1328,15 @@ public protocol AATDFPPreBidDriverProtocol {
 public protocol AATFullscreenDriverEventsDelegate : AATKit.AATAdDriverEventsDelegate {
   var state: AATKit.AATFullscreenAdState { get set }
   func notifyListenerThatUserEarnedIncentive(with reward: AATKit.AATReward)
+}
+@objc public class AATRewardedAdSSVInfo : ObjectiveC.NSObject {
+  @objc public var userId: Swift.String
+  @objc public var customString: Swift.String?
+  @objc public init(userId: Swift.String, customString: Swift.String? = nil)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
 }
 public protocol AATAdMobDSPDriverProtocol {
   static var shared: Self { get }

@@ -1,0 +1,11 @@
+framework module AATAppHarbrAdapter {
+  umbrella header "AATAppHarbrAdapter.h"
+  export *
+
+  module * { export * }
+}
+
+module AATAppHarbrAdapter.Swift {
+  header "AATAppHarbrAdapter-Swift.h"
+  requires objc
+}

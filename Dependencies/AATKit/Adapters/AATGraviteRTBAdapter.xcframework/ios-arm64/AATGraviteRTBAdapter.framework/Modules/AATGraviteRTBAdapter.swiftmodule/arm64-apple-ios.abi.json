@@ -88,6 +88,30 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATGraviteRTBAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATGraviteRTBAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATGraviteRTBAdapter"
+      },
+      {
+        "kind": "Import",
         "name": "AATKit",
         "printedName": "AATKit",
         "declKind": "Import",
@@ -117,7 +141,7 @@
     {
       "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBFullscreen.swift",
       "kind": "Array",
-      "offset": 555,
+      "offset": 590,
       "length": 2,
       "value": "[]"
     },

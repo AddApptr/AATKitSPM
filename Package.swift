@@ -39,6 +39,7 @@ let package = Package(
         .library(name: "AATKit-OguryAds", targets: ["AATKit-OgurySdk"]),
         .library(name: "AATKit-Datonomy", targets: ["AATKit-Datonomy"]),
         .library(name: "AATKit-Mintegral", targets: ["AATKit-Mintegral"]),
+        .library(name: "AATKit-AppHarbr", targets: ["AATKit-AppHarbr"]),
 
         // CMPs
         .library(name: "AATKit-GoogleCMP", targets: ["AATKit-GoogleCMP"]),
@@ -223,6 +224,10 @@ let package = Package(
                     dependencies: ["ConsentViewController", "AATSourcePointCMPAdapter"],
                     path: "./Sources/SourcePointSources"),
 
+            .target(name:"AATKit-AppHarbr",
+                    dependencies: ["AppHarbr", "AATAppHarbrAdapter"],
+                    path: "./Sources/SourcePointSources"),
+
         // Mark: Binary Targets
         // AATKit
             .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
@@ -317,6 +322,9 @@ let package = Package(
         // SourcePoint
         .binaryTarget(name: "ConsentViewController", path: "./Dependencies/SourcePoint/ConsentViewController.xcframework"),
 
+        // AppHarbr
+        .binaryTarget(name: "AppHarbr", path: "./Dependencies/AppHarbr/AppHarbrSDK.xcframework"),
+
         // AATKit Adapters
         .binaryTarget(name: "AATAmazonAdapter", path: "./Dependencies/AATKit/Adapters/AATAmazonAdapter.xcframework"),
         .binaryTarget(name: "AATAppLovinAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinAdapter.xcframework"),
@@ -345,5 +353,6 @@ let package = Package(
         .binaryTarget(name: "AATDatonomyAdapter", path: "./Dependencies/AATKit/Adapters/AATDatonomyAdapter.xcframework"),
         .binaryTarget(name: "AATMintegralAdapter", path: "./Dependencies/AATKit/Adapters/AATMintegralAdapter.xcframework"),
         .binaryTarget(name: "AATSourcePointCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATSourcePointCMPAdapter.xcframework"),
+        .binaryTarget(name: "AATAppHarbrAdapter", path: "./Dependencies/AATKit/Adapters/AATAppHarbrAdapter.xcframework"),
     ]
 )

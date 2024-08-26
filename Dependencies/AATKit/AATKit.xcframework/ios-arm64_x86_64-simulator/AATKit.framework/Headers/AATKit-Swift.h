@@ -325,10 +325,10 @@ SWIFT_CLASS("_TtC6AATKit11AATAdConfig")
 @end
 
 
-
 @interface AATAdConfig (SWIFT_EXTENSION(AATKit))
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 @class NSString;
 
@@ -348,6 +348,16 @@ SWIFT_PROTOCOL("_TtP6AATKit20AATAdDisplayDelegate_")
 /// This method will be called when the app resumes after displaying an ad
 /// <em>NOTE:</em> This callback is unreliable due to inconsistent use of callbacks in different ad network SDKs.
 - (void)aatResumeAfterAdWithPlacement:(id <AATPlacement> _Nonnull)placement;
+@end
+
+@class AATPriceInfo;
+
+SWIFT_CLASS("_TtC6AATKit9AATAdInfo")
+@interface AATAdInfo : NSObject
+@property (nonatomic, readonly, strong) AATPriceInfo * _Nullable priceInfo;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol AATAdMobCustomEventsDelegate;
@@ -405,15 +415,14 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkPUBNATIVE = 19,
   AATAdNetworkTEADS = 20,
   AATAdNetworkTAPPX = 21,
-  AATAdNetworkBLUESTACK = 22,
-  AATAdNetworkYOC = 23,
-  AATAdNetworkVUNGLE2 = 24,
-  AATAdNetworkDFPDIRECT = 25,
-  AATAdNetworkIRONSOURCENEW = 26,
-  AATAdNetworkGRAVITERTB = 27,
-  AATAdNetworkSUPERAWESOME = 28,
-  AATAdNetworkKIDOZ = 29,
-  AATAdNetworkADMOBBIDDING = 30,
+  AATAdNetworkYOC = 22,
+  AATAdNetworkVUNGLE2 = 23,
+  AATAdNetworkDFPDIRECT = 24,
+  AATAdNetworkIRONSOURCENEW = 25,
+  AATAdNetworkGRAVITERTB = 26,
+  AATAdNetworkSUPERAWESOME = 27,
+  AATAdNetworkKIDOZ = 28,
+  AATAdNetworkADMOBBIDDING = 29,
 };
 
 
@@ -453,6 +462,77 @@ SWIFT_CLASS("_TtC6AATKit20AATAdNetworksOptions")
 - (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions datonomyOptions:(AATDatonomyOptions * _Nullable)datonomyOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions graviteRTBOptions:(AATGraviteRTBOptions * _Nullable)graviteRTBOptions OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP6AATKit20AATAdQualityDelegate_")
+@protocol AATAdQualityDelegate
+/// /// Called when the ad should be blocked or reported
+/// \param placement placement instance
+///
+/// \param blockReasons Blocked reason string array
+///
+/// \param reportReasons Reported reason string array
+///
+/// \param adNetworkSdk The mediated ad network sdk
+///
+///
+/// returns:
+/// true if the placement should discard this ad
+- (void)didAdIncidentWithPlacement:(id <AATPlacement> _Nonnull)placement blockReasons:(NSArray<NSString *> * _Nonnull)blockReasons reportReasons:(NSArray<NSString *> * _Nonnull)reportReasons adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+/// Called when the ad should be blocked or reported after display
+/// \param placement placement instance
+///
+/// \param blockReasons Blocked reason string array
+///
+/// \param reportReasons Reported reason string array
+///
+/// \param adNetworkSdk The mediated ad network sdk
+///
+///
+/// returns:
+/// true if the placement should discard this ad if not shown yet
+- (void)didAdIncidentOnDisplayWithPlacement:(id <AATPlacement> _Nonnull)placement blockReasons:(NSArray<NSString *> * _Nonnull)blockReasons reportReasons:(NSArray<NSString *> * _Nonnull)reportReasons adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+/// Called when an ad is successfully verified
+/// \param placement placement instance
+///
+/// \param adNetworkSdk The mediated ad network sdk
+///
+- (void)didAdVerifiedWithPlacement:(id <AATPlacement> _Nonnull)placement adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+/// Called when the ad is not verified within the specified time or for unsupported adNetworkSdk
+/// \param placement placement instance
+///
+/// \param error The error describing the ad not verified state
+///
+/// \param adNetworkSdk The mediated ad network sdk
+///
+- (void)didAdNotVerifiedWithPlacement:(id <AATPlacement> _Nonnull)placement error:(NSError * _Nonnull)error adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+@end
+
+enum AATAdType : NSInteger;
+
+SWIFT_PROTOCOL("_TtP6AATKit26AATAdQualityDriverDelegate_")
+@protocol AATAdQualityDriverDelegate
+- (void)didAdVerifiedWithAd:(NSObject * _Nonnull)ad adFormat:(enum AATAdType)adFormat adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+- (void)didAdNotVerifiedWithAd:(NSObject * _Nonnull)ad adFormat:(enum AATAdType)adFormat error:(NSError * _Nonnull)error adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+- (void)didAdIncidentWithAd:(NSObject * _Nonnull)ad adFormat:(enum AATAdType)adFormat blockReasons:(NSArray<NSString *> * _Nonnull)blockReasons reportReasons:(NSArray<NSString *> * _Nonnull)reportReasons adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+- (void)didAdIncidentOnDisplayWithAd:(NSObject * _Nonnull)ad adFormat:(enum AATAdType)adFormat blockReasons:(NSArray<NSString *> * _Nonnull)blockReasons reportReasons:(NSArray<NSString *> * _Nonnull)reportReasons adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+@end
+
+
+SWIFT_PROTOCOL("_TtP6AATKit26AATAdQualityDriverProtocol_")
+@protocol AATAdQualityDriverProtocol
+@property (nonatomic, strong) id <AATAdQualityDriverDelegate> _Nullable delegate;
+- (void)verifyAdWithAd:(NSObject * _Nonnull)ad adNetwork:(enum AATAdNetwork)adNetwork format:(enum AATAdType)format adUnitId:(NSString * _Nullable)adUnitId;
+- (void)willDisplayAdWithAd:(NSObject * _Nonnull)ad adNetwork:(enum AATAdNetwork)adNetwork format:(enum AATAdType)format adUnitId:(NSString * _Nullable)adUnitId;
+- (void)didClickAdWithAd:(NSObject * _Nonnull)ad;
+- (void)removeAdWithAd:(NSObject * _Nonnull)ad;
+@end
+
+
+SWIFT_PROTOCOL("_TtP6AATKit27AATAdQualityManagerProtocol_")
+@protocol AATAdQualityManagerProtocol
+- (id <AATAdQualityDriverProtocol> _Nonnull)initDriver SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, AATAdType, open) {
@@ -564,6 +644,7 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATAppOpenPlacementDelegate_")
 @class AATCollapsibleBannerOptions;
 @class AATBannerRequest;
 @class AATBannerPlacementWrapperView;
+@class AATPlacementHistoryInfo;
 
 SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @protocol AATAsyncInfeedBannerPlacement <AATPlacement>
@@ -583,6 +664,8 @@ SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY
 - (void)requestAdWithRequest:(AATBannerRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(AATBannerPlacementWrapperView * _Nullable))completionHandler;
 /// Manually Count an Ad Space
 - (void)countAdSpace;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 @protocol AATAsyncNativePlacementDelegate;
@@ -654,6 +737,8 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATAutoLoadBannerPlacement_")
 /// \param alignment The alignment to set.
 ///
 - (void)setBannerAlignWithAlignment:(AATBannerAlign * _Nonnull)alignment;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 
@@ -685,6 +770,8 @@ SWIFT_PROTOCOL("_TtP6AATKit35AATAutoLoadMultiSizeBannerPlacement_")
 - (void)startAutoReload;
 /// Stop the automatic reloading of the placement
 - (void)stopAutoReload;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 
@@ -776,6 +863,8 @@ SWIFT_PROTOCOL("_TtP6AATKit14AATBannerCache_")
 ///   </li>
 /// </ul>
 - (void)destroy;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 @protocol AATBannerCacheDelegate;
@@ -867,6 +956,7 @@ typedef SWIFT_ENUM(NSInteger, AATBannerPlacementSize, open) {
 
 SWIFT_CLASS("_TtC6AATKit29AATBannerPlacementWrapperView")
 @interface AATBannerPlacementWrapperView : UIView
+@property (nonatomic, strong) AATAdInfo * _Nullable adInfo;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -978,6 +1068,8 @@ SWIFT_CLASS("_TtC6AATKit23AATRuntimeConfiguration")
 @property (nonatomic) BOOL consentRequired;
 /// The consent implementation that the SDK will use. Could be an instance of: <code>AATManagedConsent</code>, <code>AATSimpleConsent</code> or <code>AATVendorConsent</code>. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling.</a>.
 @property (nonatomic, strong) AATConsentImplementation * _Nullable consent;
+/// The AdQuality implementation that the SDK will use to verify ads.
+@property (nonatomic, strong) id <AATAdQualityManagerProtocol> _Nullable adQualityManager;
 /// A Bool that indicates whether the location usage is enabled or not. False by default.
 @property (nonatomic) BOOL isUseGeoLocation;
 /// Creates the AATRuntimeConfiguration object to be used when reconfiguring AATKit.
@@ -1074,6 +1166,7 @@ SWIFT_CLASS("_TtC6AATKit12AATDebugInfo")
 @end
 
 
+
 @interface AATDebugInfo (SWIFT_EXTENSION(AATKit))
 @end
 
@@ -1090,6 +1183,7 @@ SWIFT_CLASS("_TtCC6AATKit12AATDebugInfo18PlacementDebugInfo")
 @property (nonatomic, copy) NSString * _Nonnull loadedAdNetworkName;
 @property (nonatomic) BOOL isLoadingNewAd;
 @property (nonatomic, copy) NSString * _Nullable lastShownAdNetworkName;
+@property (nonatomic) BOOL isAdQualityActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1120,6 +1214,7 @@ SWIFT_CLASS("_TtC6AATKit27AATDebugScreenConfiguration")
 @property (nonatomic) BOOL showIDFA;
 /// Show device type
 @property (nonatomic) BOOL showDeviceType;
+@property (nonatomic, copy) NSString * _Nullable shareEmail;
 /// Create an <code>AATDebugScreenConfiguration</code> instance
 /// \param appLogo application logo
 ///
@@ -1176,6 +1271,8 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 @property (nonatomic, strong) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
 /// Sets the placement impression delegate
 @property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
+/// Sets the Ad Quality delegate that will be notified with ad verifications events.
+@property (nonatomic, strong) id <AATAdQualityDelegate> _Nullable adQualityDelegate;
 /// Start the automatic reloading of the placement.
 /// When using this method, the placement will automatically once the current loaded ad has been shown.
 - (void)startAutoReload;
@@ -1202,6 +1299,7 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+@property (nonatomic, readonly, strong) AATAdInfo * _Nullable adInfo;
 /// Checks if the frequency cap has been reached.
 ///
 /// returns:
@@ -1222,7 +1320,6 @@ SWIFT_CLASS("_TtC6AATKit20AATGraviteRTBOptions")
 @end
 
 
-@class AATPriceInfo;
 
 /// An object contains impression level information.
 SWIFT_CLASS("_TtC6AATKit13AATImpression")
@@ -1235,7 +1332,7 @@ SWIFT_CLASS("_TtC6AATKit13AATImpression")
 @property (nonatomic, readonly, copy) NSString * _Nonnull networkKey;
 /// Is a direct deal impression
 @property (nonatomic, readonly) BOOL isDirectDeal;
-/// Impression  price
+/// Impression price information
 @property (nonatomic, readonly, strong) AATPriceInfo * _Nullable priceInfo;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 /// Gets the name of the impression ad network
@@ -1281,6 +1378,8 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATInfeedBannerPlacement_")
 - (void)cancelWithRequest:(AATBannerRequest * _Nonnull)request;
 /// Manually Count an Ad Space
 - (void)countAdSpace;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 
@@ -1469,6 +1568,8 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 
@@ -1502,6 +1603,7 @@ SWIFT_PROTOCOL("_TtP6AATKit15AATNativeAdData_")
 @property (nonatomic, readonly, copy) NSString * _Nullable advertiser;
 /// An AATAdNetwork represents the ad network providing the given native ad
 @property (nonatomic, readonly) enum AATAdNetwork network;
+@property (nonatomic, readonly, strong) AATAdInfo * _Nullable adInfo;
 /// Binds this native ad instance with given ViewGroup. Needed for click handling and tracking.
 /// \param view View used to render the native ad.
 ///
@@ -1600,6 +1702,13 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATNativePlacementDelegate_")
 
 
 
+
+SWIFT_CLASS("_TtC6AATKit23AATPlacementHistoryInfo")
+@interface AATPlacementHistoryInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, AATPluginName, open) {
   AATPluginNameAdobe = 1,
   AATPluginNameCorona = 2,
@@ -1623,8 +1732,11 @@ enum AATPricePrecisionType : NSInteger;
 
 SWIFT_CLASS("_TtC6AATKit12AATPriceInfo")
 @interface AATPriceInfo : NSObject
+/// Impression CPM price
 @property (nonatomic) double price;
+/// Impression precision type
 @property (nonatomic) enum AATPricePrecisionType precision;
+/// Impression currency
 @property (nonatomic) enum AATCurrency currency;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1673,6 +1785,25 @@ SWIFT_CLASS("_TtC6AATKit9AATReward")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+/// An object contains rewarded videos server-side verification data
+SWIFT_CLASS("_TtC6AATKit20AATRewardedAdSSVInfo")
+@interface AATRewardedAdSSVInfo : NSObject
+/// Impression user id
+@property (nonatomic, copy) NSString * _Nonnull userId;
+/// Custom string
+@property (nonatomic, copy) NSString * _Nullable customString;
+/// Create <code>AATSSVInfo</code> instance
+/// \param userId user id
+///
+/// \param customString custom string
+///
+- (nonnull instancetype)initWithUserId:(NSString * _Nonnull)userId customString:(NSString * _Nullable)customString OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol AATRewardedVideoPlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
@@ -1683,6 +1814,8 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
 @property (nonatomic, strong) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
 /// Sets the placement impression delegate
 @property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
+/// Sets the Ad Quality delegate that will be notified with ad verifications events.
+@property (nonatomic, strong) id <AATAdQualityDelegate> _Nullable adQualityDelegate;
 /// Start the automatic reloading of the placement.
 /// When using this method, the placement will automatically once the current loaded ad has been shown.
 - (void)startAutoReload;
@@ -1960,6 +2093,7 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// returns:
 /// True if consent is opt-in
 + (BOOL)isConsentOptIn SWIFT_WARN_UNUSED_RESULT;
++ (void)setRewardedAdSSVInfoWithInfo:(AATRewardedAdSSVInfo * _Nonnull)info;
 @end
 
 
@@ -2104,6 +2238,8 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 
@@ -2167,10 +2303,6 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @end
 
 
-@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
-@end
-
-
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 @interface RewardedVideoOptions : InterstitialAdOptions
 /// init <code>AATSuperAwesomeOptions/RewardedVideoOptions</code>
@@ -2211,6 +2343,11 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
 @end
+
+
+@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
+@end
+
 
 
 SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
@@ -2293,6 +2430,8 @@ SWIFT_CLASS("_TtCCC6AATKit12AATDebugInfo18PlacementDebugInfo25FrequencyCappingDe
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 
@@ -2632,10 +2771,10 @@ SWIFT_CLASS("_TtC6AATKit11AATAdConfig")
 @end
 
 
-
 @interface AATAdConfig (SWIFT_EXTENSION(AATKit))
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 @class NSString;
 
@@ -2655,6 +2794,16 @@ SWIFT_PROTOCOL("_TtP6AATKit20AATAdDisplayDelegate_")
 /// This method will be called when the app resumes after displaying an ad
 /// <em>NOTE:</em> This callback is unreliable due to inconsistent use of callbacks in different ad network SDKs.
 - (void)aatResumeAfterAdWithPlacement:(id <AATPlacement> _Nonnull)placement;
+@end
+
+@class AATPriceInfo;
+
+SWIFT_CLASS("_TtC6AATKit9AATAdInfo")
+@interface AATAdInfo : NSObject
+@property (nonatomic, readonly, strong) AATPriceInfo * _Nullable priceInfo;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol AATAdMobCustomEventsDelegate;
@@ -2712,15 +2861,14 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkPUBNATIVE = 19,
   AATAdNetworkTEADS = 20,
   AATAdNetworkTAPPX = 21,
-  AATAdNetworkBLUESTACK = 22,
-  AATAdNetworkYOC = 23,
-  AATAdNetworkVUNGLE2 = 24,
-  AATAdNetworkDFPDIRECT = 25,
-  AATAdNetworkIRONSOURCENEW = 26,
-  AATAdNetworkGRAVITERTB = 27,
-  AATAdNetworkSUPERAWESOME = 28,
-  AATAdNetworkKIDOZ = 29,
-  AATAdNetworkADMOBBIDDING = 30,
+  AATAdNetworkYOC = 22,
+  AATAdNetworkVUNGLE2 = 23,
+  AATAdNetworkDFPDIRECT = 24,
+  AATAdNetworkIRONSOURCENEW = 25,
+  AATAdNetworkGRAVITERTB = 26,
+  AATAdNetworkSUPERAWESOME = 27,
+  AATAdNetworkKIDOZ = 28,
+  AATAdNetworkADMOBBIDDING = 29,
 };
 
 
@@ -2760,6 +2908,77 @@ SWIFT_CLASS("_TtC6AATKit20AATAdNetworksOptions")
 - (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions datonomyOptions:(AATDatonomyOptions * _Nullable)datonomyOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions graviteRTBOptions:(AATGraviteRTBOptions * _Nullable)graviteRTBOptions OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP6AATKit20AATAdQualityDelegate_")
+@protocol AATAdQualityDelegate
+/// /// Called when the ad should be blocked or reported
+/// \param placement placement instance
+///
+/// \param blockReasons Blocked reason string array
+///
+/// \param reportReasons Reported reason string array
+///
+/// \param adNetworkSdk The mediated ad network sdk
+///
+///
+/// returns:
+/// true if the placement should discard this ad
+- (void)didAdIncidentWithPlacement:(id <AATPlacement> _Nonnull)placement blockReasons:(NSArray<NSString *> * _Nonnull)blockReasons reportReasons:(NSArray<NSString *> * _Nonnull)reportReasons adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+/// Called when the ad should be blocked or reported after display
+/// \param placement placement instance
+///
+/// \param blockReasons Blocked reason string array
+///
+/// \param reportReasons Reported reason string array
+///
+/// \param adNetworkSdk The mediated ad network sdk
+///
+///
+/// returns:
+/// true if the placement should discard this ad if not shown yet
+- (void)didAdIncidentOnDisplayWithPlacement:(id <AATPlacement> _Nonnull)placement blockReasons:(NSArray<NSString *> * _Nonnull)blockReasons reportReasons:(NSArray<NSString *> * _Nonnull)reportReasons adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+/// Called when an ad is successfully verified
+/// \param placement placement instance
+///
+/// \param adNetworkSdk The mediated ad network sdk
+///
+- (void)didAdVerifiedWithPlacement:(id <AATPlacement> _Nonnull)placement adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+/// Called when the ad is not verified within the specified time or for unsupported adNetworkSdk
+/// \param placement placement instance
+///
+/// \param error The error describing the ad not verified state
+///
+/// \param adNetworkSdk The mediated ad network sdk
+///
+- (void)didAdNotVerifiedWithPlacement:(id <AATPlacement> _Nonnull)placement error:(NSError * _Nonnull)error adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+@end
+
+enum AATAdType : NSInteger;
+
+SWIFT_PROTOCOL("_TtP6AATKit26AATAdQualityDriverDelegate_")
+@protocol AATAdQualityDriverDelegate
+- (void)didAdVerifiedWithAd:(NSObject * _Nonnull)ad adFormat:(enum AATAdType)adFormat adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+- (void)didAdNotVerifiedWithAd:(NSObject * _Nonnull)ad adFormat:(enum AATAdType)adFormat error:(NSError * _Nonnull)error adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+- (void)didAdIncidentWithAd:(NSObject * _Nonnull)ad adFormat:(enum AATAdType)adFormat blockReasons:(NSArray<NSString *> * _Nonnull)blockReasons reportReasons:(NSArray<NSString *> * _Nonnull)reportReasons adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+- (void)didAdIncidentOnDisplayWithAd:(NSObject * _Nonnull)ad adFormat:(enum AATAdType)adFormat blockReasons:(NSArray<NSString *> * _Nonnull)blockReasons reportReasons:(NSArray<NSString *> * _Nonnull)reportReasons adNetworkSdk:(enum AATAdNetwork)adNetworkSdk;
+@end
+
+
+SWIFT_PROTOCOL("_TtP6AATKit26AATAdQualityDriverProtocol_")
+@protocol AATAdQualityDriverProtocol
+@property (nonatomic, strong) id <AATAdQualityDriverDelegate> _Nullable delegate;
+- (void)verifyAdWithAd:(NSObject * _Nonnull)ad adNetwork:(enum AATAdNetwork)adNetwork format:(enum AATAdType)format adUnitId:(NSString * _Nullable)adUnitId;
+- (void)willDisplayAdWithAd:(NSObject * _Nonnull)ad adNetwork:(enum AATAdNetwork)adNetwork format:(enum AATAdType)format adUnitId:(NSString * _Nullable)adUnitId;
+- (void)didClickAdWithAd:(NSObject * _Nonnull)ad;
+- (void)removeAdWithAd:(NSObject * _Nonnull)ad;
+@end
+
+
+SWIFT_PROTOCOL("_TtP6AATKit27AATAdQualityManagerProtocol_")
+@protocol AATAdQualityManagerProtocol
+- (id <AATAdQualityDriverProtocol> _Nonnull)initDriver SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, AATAdType, open) {
@@ -2871,6 +3090,7 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATAppOpenPlacementDelegate_")
 @class AATCollapsibleBannerOptions;
 @class AATBannerRequest;
 @class AATBannerPlacementWrapperView;
+@class AATPlacementHistoryInfo;
 
 SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @protocol AATAsyncInfeedBannerPlacement <AATPlacement>
@@ -2890,6 +3110,8 @@ SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY
 - (void)requestAdWithRequest:(AATBannerRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(AATBannerPlacementWrapperView * _Nullable))completionHandler;
 /// Manually Count an Ad Space
 - (void)countAdSpace;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 @protocol AATAsyncNativePlacementDelegate;
@@ -2961,6 +3183,8 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATAutoLoadBannerPlacement_")
 /// \param alignment The alignment to set.
 ///
 - (void)setBannerAlignWithAlignment:(AATBannerAlign * _Nonnull)alignment;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 
@@ -2992,6 +3216,8 @@ SWIFT_PROTOCOL("_TtP6AATKit35AATAutoLoadMultiSizeBannerPlacement_")
 - (void)startAutoReload;
 /// Stop the automatic reloading of the placement
 - (void)stopAutoReload;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 
@@ -3083,6 +3309,8 @@ SWIFT_PROTOCOL("_TtP6AATKit14AATBannerCache_")
 ///   </li>
 /// </ul>
 - (void)destroy;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 @protocol AATBannerCacheDelegate;
@@ -3174,6 +3402,7 @@ typedef SWIFT_ENUM(NSInteger, AATBannerPlacementSize, open) {
 
 SWIFT_CLASS("_TtC6AATKit29AATBannerPlacementWrapperView")
 @interface AATBannerPlacementWrapperView : UIView
+@property (nonatomic, strong) AATAdInfo * _Nullable adInfo;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -3285,6 +3514,8 @@ SWIFT_CLASS("_TtC6AATKit23AATRuntimeConfiguration")
 @property (nonatomic) BOOL consentRequired;
 /// The consent implementation that the SDK will use. Could be an instance of: <code>AATManagedConsent</code>, <code>AATSimpleConsent</code> or <code>AATVendorConsent</code>. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling.</a>.
 @property (nonatomic, strong) AATConsentImplementation * _Nullable consent;
+/// The AdQuality implementation that the SDK will use to verify ads.
+@property (nonatomic, strong) id <AATAdQualityManagerProtocol> _Nullable adQualityManager;
 /// A Bool that indicates whether the location usage is enabled or not. False by default.
 @property (nonatomic) BOOL isUseGeoLocation;
 /// Creates the AATRuntimeConfiguration object to be used when reconfiguring AATKit.
@@ -3381,6 +3612,7 @@ SWIFT_CLASS("_TtC6AATKit12AATDebugInfo")
 @end
 
 
+
 @interface AATDebugInfo (SWIFT_EXTENSION(AATKit))
 @end
 
@@ -3397,6 +3629,7 @@ SWIFT_CLASS("_TtCC6AATKit12AATDebugInfo18PlacementDebugInfo")
 @property (nonatomic, copy) NSString * _Nonnull loadedAdNetworkName;
 @property (nonatomic) BOOL isLoadingNewAd;
 @property (nonatomic, copy) NSString * _Nullable lastShownAdNetworkName;
+@property (nonatomic) BOOL isAdQualityActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3427,6 +3660,7 @@ SWIFT_CLASS("_TtC6AATKit27AATDebugScreenConfiguration")
 @property (nonatomic) BOOL showIDFA;
 /// Show device type
 @property (nonatomic) BOOL showDeviceType;
+@property (nonatomic, copy) NSString * _Nullable shareEmail;
 /// Create an <code>AATDebugScreenConfiguration</code> instance
 /// \param appLogo application logo
 ///
@@ -3483,6 +3717,8 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 @property (nonatomic, strong) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
 /// Sets the placement impression delegate
 @property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
+/// Sets the Ad Quality delegate that will be notified with ad verifications events.
+@property (nonatomic, strong) id <AATAdQualityDelegate> _Nullable adQualityDelegate;
 /// Start the automatic reloading of the placement.
 /// When using this method, the placement will automatically once the current loaded ad has been shown.
 - (void)startAutoReload;
@@ -3509,6 +3745,7 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+@property (nonatomic, readonly, strong) AATAdInfo * _Nullable adInfo;
 /// Checks if the frequency cap has been reached.
 ///
 /// returns:
@@ -3529,7 +3766,6 @@ SWIFT_CLASS("_TtC6AATKit20AATGraviteRTBOptions")
 @end
 
 
-@class AATPriceInfo;
 
 /// An object contains impression level information.
 SWIFT_CLASS("_TtC6AATKit13AATImpression")
@@ -3542,7 +3778,7 @@ SWIFT_CLASS("_TtC6AATKit13AATImpression")
 @property (nonatomic, readonly, copy) NSString * _Nonnull networkKey;
 /// Is a direct deal impression
 @property (nonatomic, readonly) BOOL isDirectDeal;
-/// Impression  price
+/// Impression price information
 @property (nonatomic, readonly, strong) AATPriceInfo * _Nullable priceInfo;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 /// Gets the name of the impression ad network
@@ -3588,6 +3824,8 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATInfeedBannerPlacement_")
 - (void)cancelWithRequest:(AATBannerRequest * _Nonnull)request;
 /// Manually Count an Ad Space
 - (void)countAdSpace;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 
@@ -3776,6 +4014,8 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 
@@ -3809,6 +4049,7 @@ SWIFT_PROTOCOL("_TtP6AATKit15AATNativeAdData_")
 @property (nonatomic, readonly, copy) NSString * _Nullable advertiser;
 /// An AATAdNetwork represents the ad network providing the given native ad
 @property (nonatomic, readonly) enum AATAdNetwork network;
+@property (nonatomic, readonly, strong) AATAdInfo * _Nullable adInfo;
 /// Binds this native ad instance with given ViewGroup. Needed for click handling and tracking.
 /// \param view View used to render the native ad.
 ///
@@ -3907,6 +4148,13 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATNativePlacementDelegate_")
 
 
 
+
+SWIFT_CLASS("_TtC6AATKit23AATPlacementHistoryInfo")
+@interface AATPlacementHistoryInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, AATPluginName, open) {
   AATPluginNameAdobe = 1,
   AATPluginNameCorona = 2,
@@ -3930,8 +4178,11 @@ enum AATPricePrecisionType : NSInteger;
 
 SWIFT_CLASS("_TtC6AATKit12AATPriceInfo")
 @interface AATPriceInfo : NSObject
+/// Impression CPM price
 @property (nonatomic) double price;
+/// Impression precision type
 @property (nonatomic) enum AATPricePrecisionType precision;
+/// Impression currency
 @property (nonatomic) enum AATCurrency currency;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -3980,6 +4231,25 @@ SWIFT_CLASS("_TtC6AATKit9AATReward")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+/// An object contains rewarded videos server-side verification data
+SWIFT_CLASS("_TtC6AATKit20AATRewardedAdSSVInfo")
+@interface AATRewardedAdSSVInfo : NSObject
+/// Impression user id
+@property (nonatomic, copy) NSString * _Nonnull userId;
+/// Custom string
+@property (nonatomic, copy) NSString * _Nullable customString;
+/// Create <code>AATSSVInfo</code> instance
+/// \param userId user id
+///
+/// \param customString custom string
+///
+- (nonnull instancetype)initWithUserId:(NSString * _Nonnull)userId customString:(NSString * _Nullable)customString OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol AATRewardedVideoPlacementDelegate;
 
 SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
@@ -3990,6 +4260,8 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
 @property (nonatomic, strong) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
 /// Sets the placement impression delegate
 @property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
+/// Sets the Ad Quality delegate that will be notified with ad verifications events.
+@property (nonatomic, strong) id <AATAdQualityDelegate> _Nullable adQualityDelegate;
 /// Start the automatic reloading of the placement.
 /// When using this method, the placement will automatically once the current loaded ad has been shown.
 - (void)startAutoReload;
@@ -4267,6 +4539,7 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// returns:
 /// True if consent is opt-in
 + (BOOL)isConsentOptIn SWIFT_WARN_UNUSED_RESULT;
++ (void)setRewardedAdSSVInfoWithInfo:(AATRewardedAdSSVInfo * _Nonnull)info;
 @end
 
 
@@ -4411,6 +4684,8 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+- (void)enableCreativeHistoryWithSize:(NSInteger)size;
+- (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
 
@@ -4474,10 +4749,6 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @end
 
 
-@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
-@end
-
-
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 @interface RewardedVideoOptions : InterstitialAdOptions
 /// init <code>AATSuperAwesomeOptions/RewardedVideoOptions</code>
@@ -4518,6 +4789,11 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
 @end
+
+
+@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
+@end
+
 
 
 SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
@@ -4600,6 +4876,8 @@ SWIFT_CLASS("_TtCCC6AATKit12AATDebugInfo18PlacementDebugInfo25FrequencyCappingDe
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 

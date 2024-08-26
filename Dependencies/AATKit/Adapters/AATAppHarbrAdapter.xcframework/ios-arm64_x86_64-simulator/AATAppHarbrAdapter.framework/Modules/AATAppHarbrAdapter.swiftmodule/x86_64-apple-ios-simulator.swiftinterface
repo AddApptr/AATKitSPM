@@ -1,0 +1,29 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AATAppHarbrAdapter
+@_exported import AATAppHarbrAdapter
+import AATKit
+import AppHarbrSDK
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class AATAppHarbrDriver : AATKit.AATAdQualityDriverProtocol {
+  @objc weak public var delegate: (any AATKit.AATAdQualityDriverDelegate)?
+  @objc public func verifyAd(ad: ObjectiveC.NSObject, adNetwork: AATKit.AATAdNetwork, format: AATKit.AATAdType, adUnitId: Swift.String?)
+  @objc public func willDisplayAd(ad: ObjectiveC.NSObject, adNetwork: AATKit.AATAdNetwork, format: AATKit.AATAdType, adUnitId: Swift.String?)
+  @objc public func didClickAd(ad: ObjectiveC.NSObject)
+  @objc public func removeAd(ad: ObjectiveC.NSObject)
+  @objc deinit
+}
+extension AATAppHarbrAdapter.AATAppHarbrDriver : AppHarbrSDK.AppHarbrAdQualityDelegate {
+  @objc dynamic public func didAdIncident(ad: ObjectiveC.NSObject, adFormat: AppHarbrSDK.AdFormat, blockReasons: [Swift.String], reportReasons: [Swift.String], creativeId: Swift.String, adNetworkSdk: AppHarbrSDK.AdSdk, unitId: Swift.String, timestamp: Foundation.TimeInterval)
+  @objc dynamic public func didAdIncidentOnDisplay(ad: ObjectiveC.NSObject, adFormat: AppHarbrSDK.AdFormat, blockReasons: [Swift.String], reportReasons: [Swift.String], creativeId: Swift.String, adNetworkSdk: AppHarbrSDK.AdSdk, unitId: Swift.String, timestamp: Foundation.TimeInterval)
+  @objc dynamic public func didAdVerified(ad: ObjectiveC.NSObject, adFormat: AppHarbrSDK.AdFormat, adNetworkSdk: AppHarbrSDK.AdSdk, timestamp: Foundation.TimeInterval)
+  @objc dynamic public func didAdNotVerified(ad: ObjectiveC.NSObject, adFormat: AppHarbrSDK.AdFormat, error: any Swift.Error, adNetworkSdk: AppHarbrSDK.AdSdk, timestamp: Foundation.TimeInterval)
+}
+@objc public class AATAppHarbrManager : ObjectiveC.NSObject, AATKit.AATAdQualityManagerProtocol {
+  @objc public init(key: Swift.String)
+  @objc public func initDriver() -> any AATKit.AATAdQualityDriverProtocol
+  @objc deinit
+}

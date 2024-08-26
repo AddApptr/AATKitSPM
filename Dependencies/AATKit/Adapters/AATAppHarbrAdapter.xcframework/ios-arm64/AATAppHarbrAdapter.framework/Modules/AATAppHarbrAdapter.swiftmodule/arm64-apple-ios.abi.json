@@ -1,0 +1,812 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATAppHarbrAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppHarbrSDK",
+        "printedName": "AppHarbrSDK",
+        "declKind": "Import",
+        "moduleName": "AATAppHarbrAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AATAppHarbrDriver",
+        "printedName": "AATAppHarbrDriver",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any AATKit.AATAdQualityDriverDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18AATAppHarbrAdapter0aB6DriverC8delegate6AATKit012AATAdQualityD8Delegate_pSgvp",
+            "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC8delegate6AATKit012AATAdQualityD8Delegate_pSgvp",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "delegate",
+            "declAttributes": [
+              "HasInitialValue",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "ReferenceOwnership"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AATKit.AATAdQualityDriverDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATAdQualityDriverDelegate",
+                        "printedName": "any AATKit.AATAdQualityDriverDelegate",
+                        "usr": "c:@M@AATKit@objc(pl)AATAdQualityDriverDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AATAppHarbrAdapter0aB6DriverC8delegate6AATKit012AATAdQualityD8Delegate_pSgvg",
+                "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC8delegate6AATKit012AATAdQualityD8Delegate_pSgvg",
+                "moduleName": "AATAppHarbrAdapter",
+                "implicit": true,
+                "objc_name": "delegate",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AATKit.AATAdQualityDriverDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATAdQualityDriverDelegate",
+                        "printedName": "any AATKit.AATAdQualityDriverDelegate",
+                        "usr": "c:@M@AATKit@objc(pl)AATAdQualityDriverDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AATAppHarbrAdapter0aB6DriverC8delegate6AATKit012AATAdQualityD8Delegate_pSgvs",
+                "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC8delegate6AATKit012AATAdQualityD8Delegate_pSgvs",
+                "moduleName": "AATAppHarbrAdapter",
+                "implicit": true,
+                "objc_name": "setDelegate:",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18AATAppHarbrAdapter0aB6DriverC8delegate6AATKit012AATAdQualityD8Delegate_pSgvM",
+                "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC8delegate6AATKit012AATAdQualityD8Delegate_pSgvM",
+                "moduleName": "AATAppHarbrAdapter",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "verifyAd",
+            "printedName": "verifyAd(ad:adNetwork:format:adUnitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATAdNetwork",
+                "printedName": "AATKit.AATAdNetwork",
+                "usr": "c:@M@AATKit@E@AATAdNetwork"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATAdType",
+                "printedName": "AATKit.AATAdType",
+                "usr": "c:@M@AATKit@E@AATAdType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18AATAppHarbrAdapter0aB6DriverC8verifyAd2ad0G7Network6format0G6UnitIdySo8NSObjectC_6AATKit05AATAdH0OAK0N4TypeOSSSgtF",
+            "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC8verifyAd2ad0G7Network6format0G6UnitIdySo8NSObjectC_6AATKit05AATAdH0OAK0N4TypeOSSSgtF",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "verifyAdWithAd:adNetwork:format:adUnitId:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "willDisplayAd",
+            "printedName": "willDisplayAd(ad:adNetwork:format:adUnitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATAdNetwork",
+                "printedName": "AATKit.AATAdNetwork",
+                "usr": "c:@M@AATKit@E@AATAdNetwork"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATAdType",
+                "printedName": "AATKit.AATAdType",
+                "usr": "c:@M@AATKit@E@AATAdType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18AATAppHarbrAdapter0aB6DriverC13willDisplayAd2ad0H7Network6format0H6UnitIdySo8NSObjectC_6AATKit05AATAdI0OAK0O4TypeOSSSgtF",
+            "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC13willDisplayAd2ad0H7Network6format0H6UnitIdySo8NSObjectC_6AATKit05AATAdI0OAK0O4TypeOSSSgtF",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "willDisplayAdWithAd:adNetwork:format:adUnitId:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didClickAd",
+            "printedName": "didClickAd(ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18AATAppHarbrAdapter0aB6DriverC10didClickAd2adySo8NSObjectC_tF",
+            "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC10didClickAd2adySo8NSObjectC_tF",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "didClickAdWithAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAd",
+            "printedName": "removeAd(ad:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18AATAppHarbrAdapter0aB6DriverC8removeAd2adySo8NSObjectC_tF",
+            "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC8removeAd2adySo8NSObjectC_tF",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "removeAdWithAd:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didAdIncident",
+            "printedName": "didAdIncident(ad:adFormat:blockReasons:reportReasons:creativeId:adNetworkSdk:unitId:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFormat",
+                "printedName": "AppHarbrSDK.AdFormat",
+                "usr": "c:@M@AppHarbrSDK@E@AHAdFormat"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdSdk",
+                "printedName": "AppHarbrSDK.AdSdk",
+                "usr": "c:@M@AppHarbrSDK@E@AdSdk"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18AATAppHarbrAdapter0aB6DriverC13didAdIncident2ad0H6Format12blockReasons06reportK010creativeId0H10NetworkSdk04unitN09timestampySo8NSObjectC_03AppB3SDK0fI0OSaySSGARSSAO0fP0OSSSdtF",
+            "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC13didAdIncident2ad0H6Format12blockReasons06reportK010creativeId0H10NetworkSdk04unitN09timestampySo8NSObjectC_03AppB3SDK0fI0OSaySSGARSSAO0fP0OSSSdtF",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "didAdIncidentWithAd:adFormat:blockReasons:reportReasons:creativeId:adNetworkSdk:unitId:timestamp:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didAdIncidentOnDisplay",
+            "printedName": "didAdIncidentOnDisplay(ad:adFormat:blockReasons:reportReasons:creativeId:adNetworkSdk:unitId:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFormat",
+                "printedName": "AppHarbrSDK.AdFormat",
+                "usr": "c:@M@AppHarbrSDK@E@AHAdFormat"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdSdk",
+                "printedName": "AppHarbrSDK.AdSdk",
+                "usr": "c:@M@AppHarbrSDK@E@AdSdk"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18AATAppHarbrAdapter0aB6DriverC22didAdIncidentOnDisplay2ad0J6Format12blockReasons06reportM010creativeId0J10NetworkSdk04unitP09timestampySo8NSObjectC_03AppB3SDK0fK0OSaySSGARSSAO0fR0OSSSdtF",
+            "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC22didAdIncidentOnDisplay2ad0J6Format12blockReasons06reportM010creativeId0J10NetworkSdk04unitP09timestampySo8NSObjectC_03AppB3SDK0fK0OSaySSGARSSAO0fR0OSSSdtF",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "didAdIncidentOnDisplayWithAd:adFormat:blockReasons:reportReasons:creativeId:adNetworkSdk:unitId:timestamp:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didAdVerified",
+            "printedName": "didAdVerified(ad:adFormat:adNetworkSdk:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFormat",
+                "printedName": "AppHarbrSDK.AdFormat",
+                "usr": "c:@M@AppHarbrSDK@E@AHAdFormat"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdSdk",
+                "printedName": "AppHarbrSDK.AdSdk",
+                "usr": "c:@M@AppHarbrSDK@E@AdSdk"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18AATAppHarbrAdapter0aB6DriverC13didAdVerified2ad0H6Format0H10NetworkSdk9timestampySo8NSObjectC_03AppB3SDK0fI0OAK0fK0OSdtF",
+            "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC13didAdVerified2ad0H6Format0H10NetworkSdk9timestampySo8NSObjectC_03AppB3SDK0fI0OAK0fK0OSdtF",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "didAdVerifiedWithAd:adFormat:adNetworkSdk:timestamp:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didAdNotVerified",
+            "printedName": "didAdNotVerified(ad:adFormat:error:adNetworkSdk:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFormat",
+                "printedName": "AppHarbrSDK.AdFormat",
+                "usr": "c:@M@AppHarbrSDK@E@AHAdFormat"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdSdk",
+                "printedName": "AppHarbrSDK.AdSdk",
+                "usr": "c:@M@AppHarbrSDK@E@AdSdk"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18AATAppHarbrAdapter0aB6DriverC16didAdNotVerified2ad0I6Format5error0I10NetworkSdk9timestampySo8NSObjectC_03AppB3SDK0fJ0Os5Error_pAL0fM0OSdtF",
+            "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC16didAdNotVerified2ad0I6Format5error0I10NetworkSdk9timestampySo8NSObjectC_03AppB3SDK0fJ0Os5Error_pAL0fM0OSdtF",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "didAdNotVerifiedWithAd:adFormat:error:adNetworkSdk:timestamp:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18AATAppHarbrAdapter0aB6DriverC",
+        "mangledName": "$s18AATAppHarbrAdapter0aB6DriverC",
+        "moduleName": "AATAppHarbrAdapter",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AATAdQualityDriverProtocol",
+            "printedName": "AATAdQualityDriverProtocol",
+            "usr": "c:@M@AATKit@objc(pl)AATAdQualityDriverProtocol",
+            "mangledName": "$s6AATKit26AATAdQualityDriverProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AppHarbrAdQualityDelegate",
+            "printedName": "AppHarbrAdQualityDelegate",
+            "usr": "c:@M@AppHarbrSDK@objc(pl)AppHarbrAdQualityDelegate",
+            "mangledName": "$s11AppHarbrSDK0aB17AdQualityDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATAppHarbrAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppHarbrSDK",
+        "printedName": "AppHarbrSDK",
+        "declKind": "Import",
+        "moduleName": "AATAppHarbrAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATAppHarbrAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppHarbrSDK",
+        "printedName": "AppHarbrSDK",
+        "declKind": "Import",
+        "moduleName": "AATAppHarbrAdapter"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AATAppHarbrManager",
+        "printedName": "AATAppHarbrManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATAppHarbrManager",
+                "printedName": "AATAppHarbrAdapter.AATAppHarbrManager",
+                "usr": "c:@M@AATAppHarbrAdapter@objc(cs)AATAppHarbrManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATAppHarbrAdapter@objc(cs)AATAppHarbrManager(im)initWithKey:",
+            "mangledName": "$s18AATAppHarbrAdapter0aB7ManagerC3keyACSS_tcfc",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "initWithKey:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "initDriver",
+            "printedName": "initDriver()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATAdQualityDriverProtocol",
+                "printedName": "any AATKit.AATAdQualityDriverProtocol",
+                "usr": "c:@M@AATKit@objc(pl)AATAdQualityDriverProtocol"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATAppHarbrAdapter@objc(cs)AATAppHarbrManager(im)initDriver",
+            "mangledName": "$s18AATAppHarbrAdapter0aB7ManagerC10initDriver6AATKit012AATAdQualityF8Protocol_pyF",
+            "moduleName": "AATAppHarbrAdapter",
+            "objc_name": "initDriver",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATAppHarbrManager",
+                "printedName": "AATAppHarbrAdapter.AATAppHarbrManager",
+                "usr": "c:@M@AATAppHarbrAdapter@objc(cs)AATAppHarbrManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATAppHarbrAdapter@objc(cs)AATAppHarbrManager(im)init",
+            "mangledName": "$s18AATAppHarbrAdapter0aB7ManagerCACycfc",
+            "moduleName": "AATAppHarbrAdapter",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AATAppHarbrAdapter@objc(cs)AATAppHarbrManager",
+        "mangledName": "$s18AATAppHarbrAdapter0aB7ManagerC",
+        "moduleName": "AATAppHarbrAdapter",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AATAdQualityManagerProtocol",
+            "printedName": "AATAdQualityManagerProtocol",
+            "usr": "c:@M@AATKit@objc(pl)AATAdQualityManagerProtocol",
+            "mangledName": "$s6AATKit27AATAdQualityManagerProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppHarbrAdapter\/AATAppHarbrManager.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 18,
+      "value": "\"AATAppHarbrAdapter.AATAppHarbrManager\""
+    }
+  ]
+}
