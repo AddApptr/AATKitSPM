@@ -19,7 +19,6 @@ let package = Package(
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
         .library(name: "AATKit-AppLovinMax", targets: ["AATKit-AppLovinMax"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
-        .library(name: "AATKit-Bluestack", targets: ["AATKit-Bluestack"]),
         .library(name: "AATKit-Criteo", targets: ["AATKit-Criteo"]),
         .library(name: "AATKit-FeedAd", targets: ["AATKit-FeedAd"]),
         .library(name: "AATKit-GraviteRTB", targets: ["AATKit-GraviteRTB"]),
@@ -51,7 +50,6 @@ let package = Package(
                                                    "AATKit-AppLovin",
                                                    "AATKit-AppLovinMax",
                                                    "AATKit-Amazon",
-                                                   "AATKit-Bluestack",
                                                    "AATKit-FeedAd",
                                                    "AATKit-GraviteRTB",
                                                    "AATKit-GoogleCMP",
@@ -129,10 +127,6 @@ let package = Package(
             .target(name:"AATKit-Amazon",
                     dependencies: ["DTBiOSSDK", "AATAmazonAdapter"],
                     path: "./Sources/AmazonSources"),
-
-            .target(name:"AATKit-Bluestack",
-                    dependencies: ["BlueStackSDK", "OMSDK_Madvertise", "AATBluestackAdapter"],
-                    path: "./Sources/BluestackSources"),
 
             .target(name:"AATKit-Criteo",
                     dependencies: ["CriteoPublisherSdk", "AATCriteoAdapter"],
@@ -226,7 +220,7 @@ let package = Package(
 
             .target(name:"AATKit-AppHarbr",
                     dependencies: ["AppHarbr", "AATAppHarbrAdapter"],
-                    path: "./Sources/SourcePointSources"),
+                    path: "./Sources/AppHarbr"),
 
         // Mark: Binary Targets
         // AATKit
@@ -240,10 +234,6 @@ let package = Package(
 
         // Amazon
         .binaryTarget(name: "DTBiOSSDK", path: "./Dependencies/Amazon/DTBiOSSDK.xcframework"),
-
-        // Bluestack
-        .binaryTarget(name: "BlueStackSDK", path: "./Dependencies/Bluestack/BlueStackSDK.xcframework"),
-        .binaryTarget(name: "OMSDK_Madvertise", path: "./Dependencies/Bluestack/OMSDK_Madvertise.xcframework"),
 
         // Criteo
         .binaryTarget(name: "CriteoPublisherSdk", path: "./Dependencies/Criteo/CriteoPublisherSdk.xcframework"),
@@ -330,7 +320,6 @@ let package = Package(
         .binaryTarget(name: "AATAppLovinAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinAdapter.xcframework"),
         .binaryTarget(name: "AATAppLovinMaxAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinMaxAdapter.xcframework"),
         .binaryTarget(name: "AATAppNexusAdapter", path: "./Dependencies/AATKit/Adapters/AATAppNexusAdapter.xcframework"),
-        .binaryTarget(name: "AATBluestackAdapter", path: "./Dependencies/AATKit/Adapters/AATBluestackAdapter.xcframework"),
         .binaryTarget(name: "AATCriteoAdapter", path: "./Dependencies/AATKit/Adapters/AATCriteoAdapter.xcframework"),
         .binaryTarget(name: "AATDFPPrebidAdapter", path: "./Dependencies/AATKit/Adapters/AATDFPPrebidAdapter.xcframework"),
         .binaryTarget(name: "AATFacebookAdapter", path: "./Dependencies/AATKit/Adapters/AATFacebookAdapter.xcframework"),
