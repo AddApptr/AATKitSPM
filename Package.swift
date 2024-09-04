@@ -83,7 +83,7 @@ let package = Package(
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
         .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.1.3")),
-        .package(name: "RTBSPM", url: "https://github.com/AddApptr/RTBSPM", .exact("1.3.3"))
+        .package(name: "RTBSPM", url: "https://github.com/AddApptr/RTBSPM", .exact("1.3.5"))
     ],
     targets: [
         // AATKit target
