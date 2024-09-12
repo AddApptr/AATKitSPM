@@ -4,25 +4,181 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>ANBrowserViewController.nib</key>
+		<key>ANSDKResources.bundle/ANBrowserViewController.nib/designtime.nib</key>
+		<data>
+		YTe608Y15wingLSALbsQBQvGhXM=
+		</data>
+		<key>ANSDKResources.bundle/ANBrowserViewController.nib/runtime.nib</key>
 		<data>
 		WRwcMKzu9OAOeFxntXtpU0IYgLE=
 		</data>
-		<key>ANBrowserViewController_SizeClasses.nib</key>
+		<key>ANSDKResources.bundle/ANBrowserViewController_SizeClasses.nib/designtime.nib</key>
+		<data>
+		8G0FhlTXLBe3pHOsX/itJAvN/Ug=
+		</data>
+		<key>ANSDKResources.bundle/ANBrowserViewController_SizeClasses.nib/runtime.nib</key>
 		<data>
 		4a73T7D3b4jlcnWc3TOnjtZvUAI=
 		</data>
-		<key>ANInterstitialAdViewController.nib</key>
+		<key>ANSDKResources.bundle/ANInterstitialAdViewController.nib/designtime.nib</key>
+		<data>
+		96PQ49G7JWE4XDan1PAQiXpwEpY=
+		</data>
+		<key>ANSDKResources.bundle/ANInterstitialAdViewController.nib/runtime.nib</key>
 		<data>
 		HAjqMFE0XXEMXy17vHkdxBLyBo0=
 		</data>
-		<key>ANMRAID.bundle/mraid.js</key>
+		<key>ANSDKResources.bundle/ANMRAID.bundle/mraid.js</key>
 		<data>
 		brGler9TV7tQtvaCqBHvzKjDwlg=
 		</data>
-		<key>ASTMediationManager.js</key>
+		<key>ANSDKResources.bundle/ASTMediationManager.js</key>
 		<data>
 		b4OJusXTBBcqUxvnnf6Uo3KAJbA=
+		</data>
+		<key>ANSDKResources.bundle/Info.plist</key>
+		<data>
+		PZUQtwQNVhdMbDUOO6WYCEW20bY=
+		</data>
+		<key>ANSDKResources.bundle/MobileVastPlayer.js</key>
+		<data>
+		SfltkukezsoxfWz7kfl23yO+cLs=
+		</data>
+		<key>ANSDKResources.bundle/UIButtonBarArrowLeft.png</key>
+		<data>
+		C59Md+V98urrLqUVso0iu5O3VKM=
+		</data>
+		<key>ANSDKResources.bundle/UIButtonBarArrowLeft@2x.png</key>
+		<data>
+		c8VW87pp6ORgXSzKR+GVEBgC/rY=
+		</data>
+		<key>ANSDKResources.bundle/UIButtonBarArrowRight.png</key>
+		<data>
+		rWYp0hro36HHcPd7FTZIC0ZW3rU=
+		</data>
+		<key>ANSDKResources.bundle/UIButtonBarArrowRight@2x.png</key>
+		<data>
+		naeY89KHfTv+1iri+Ktnix730Po=
+		</data>
+		<key>ANSDKResources.bundle/_CodeSignature/CodeDirectory</key>
+		<data>
+		DQPJDS8UZ9R45apNHrHXrycbGxI=
+		</data>
+		<key>ANSDKResources.bundle/_CodeSignature/CodeRequirements</key>
+		<data>
+		HOl1a0s2mR4mAhpi3Q/aPBAb0Ak=
+		</data>
+		<key>ANSDKResources.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		hOZK/kq/6e576wIm0hLimuE6q7w=
+		</data>
+		<key>ANSDKResources.bundle/_CodeSignature/CodeResources</key>
+		<data>
+		aZMgVQ0sICLWo/QoLiln3uqN64M=
+		</data>
+		<key>ANSDKResources.bundle/_CodeSignature/CodeSignature</key>
+		<data>
+		w7TWWD3W+n+Qqnb42fRv8YeFF5k=
+		</data>
+		<key>ANSDKResources.bundle/an_arrow_left.png</key>
+		<data>
+		q+PJCfoISQCRAPBhfdJ5/Z9sMtQ=
+		</data>
+		<key>ANSDKResources.bundle/an_arrow_left@2x.png</key>
+		<data>
+		UtVwp6pB68mzn5WnX5jA39LqfQg=
+		</data>
+		<key>ANSDKResources.bundle/an_arrow_left@3x.png</key>
+		<data>
+		wk3T6bDSpepJwhHSxMydD/X/pMk=
+		</data>
+		<key>ANSDKResources.bundle/an_arrow_right.png</key>
+		<data>
+		sAbDI8Ef2/yn4DQT4ayeAz3bxRU=
+		</data>
+		<key>ANSDKResources.bundle/an_arrow_right@2x.png</key>
+		<data>
+		U1klu+05rFdg/shwWSbYl7wFPmI=
+		</data>
+		<key>ANSDKResources.bundle/an_arrow_right@3x.png</key>
+		<data>
+		rMB0TIV3b1Yw23vHnIFPEniltZ4=
+		</data>
+		<key>ANSDKResources.bundle/anjam.js</key>
+		<data>
+		HqmtH+GCkJnkUBa35wDPzLtrJds=
+		</data>
+		<key>ANSDKResources.bundle/appnexus_logo_icon.png</key>
+		<data>
+		8buWzgkgLgYKBZSzQBnJclSPzJw=
+		</data>
+		<key>ANSDKResources.bundle/appnexus_logo_icon@2x.png</key>
+		<data>
+		XvQf+9iAFkbIIgDfPWIGFrd/HkE=
+		</data>
+		<key>ANSDKResources.bundle/compass.png</key>
+		<data>
+		V2clhQZM7Obu8Zbwi2glTLEFzFw=
+		</data>
+		<key>ANSDKResources.bundle/compass@2x.png</key>
+		<data>
+		O9keCY3p+z0k4pj7oY3nWkRr8f4=
+		</data>
+		<key>ANSDKResources.bundle/compass@3x.png</key>
+		<data>
+		m0bw9gTRK9LaDpBrMKN0NU6v6xg=
+		</data>
+		<key>ANSDKResources.bundle/errors.strings</key>
+		<data>
+		MIKn2WAJMR5NMTbhFmtv4CCb9KM=
+		</data>
+		<key>ANSDKResources.bundle/interstitial_closebox.png</key>
+		<data>
+		MeU2fd7yQ/M6jkQeWEfHMbXrLnU=
+		</data>
+		<key>ANSDKResources.bundle/interstitial_closebox@2x.png</key>
+		<data>
+		MRqcGrQc31B4G49S7yWFDwrkd1g=
+		</data>
+		<key>ANSDKResources.bundle/interstitial_flat_closebox.png</key>
+		<data>
+		9aD9zHkc7bRFAX0KN1rHrfyPkPI=
+		</data>
+		<key>ANSDKResources.bundle/interstitial_flat_closebox@2x.png</key>
+		<data>
+		A66FwR+INVoleclBGbyaXbMDqDk=
+		</data>
+		<key>ANSDKResources.bundle/interstitial_flat_closebox@3x.png</key>
+		<data>
+		JJ7du8qMzG3pw5v0/6+MfE6sNl8=
+		</data>
+		<key>ANSDKResources.bundle/nativeRenderer.html</key>
+		<data>
+		FQD7wnoA4HQVLzL9RLKNdOwCAzs=
+		</data>
+		<key>ANSDKResources.bundle/omsdk.js</key>
+		<data>
+		gCOe+7IYuq62gR/dP6Or3iTxJDc=
+		</data>
+		<key>ANSDKResources.bundle/optionsparser.js</key>
+		<data>
+		OMRJxRduhcs3+33vFZ1vNNxXvts=
+		</data>
+		<key>ANSDKResources.bundle/sdkjs.js</key>
+		<data>
+		rqRB0HIDex/61iiJZEI42D5XqZI=
+		</data>
+		<key>ANSDKResources.bundle/vastVideo.html</key>
+		<data>
+		UkwOEZUeTYP3JrcvgXO54A+V/Qg=
+		</data>
+		<key>AppNexusSDK.bundle/Info.plist</key>
+		<data>
+		gpxsxX4F2MSdE3ibJX2Z/mFrnAQ=
+		</data>
+		<key>AppNexusSDK.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		zmEBpmeTAQVVRSr/V84UrA7Tt9E=
 		</data>
 		<key>Headers/AATAppNexusAdapter-Swift.h</key>
 		<data>
@@ -34,11 +190,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HHLaw3HsFbATDPYELJ0NENgvdbo=
-		</data>
-		<key>MobileVastPlayer.js</key>
-		<data>
-		SfltkukezsoxfWz7kfl23yO+cLs=
+		RuAdwG91ymeg9tD2vJTa6R8Mjhc=
 		</data>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,7 +210,7 @@
 		</data>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JAugDRyuopaF8Kazp4cbAMbfjWc=
+		ueoDkl917XfTAkznMzW2V7IntJ8=
 		</data>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -78,128 +230,27 @@
 		</data>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		csCdBVrhit904h8Ohgg8zpwxpgE=
+		Q3sh8YtpL+0VVa3711+T9Ys6e04=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		k7ktl8DPINB/0WdQFjKa0gmBF90=
 		</data>
-		<key>SDK-Info.plist</key>
-		<data>
-		g33iNjpjNQafFZinpFetJXhCNJ4=
-		</data>
-		<key>UIButtonBarArrowLeft.png</key>
-		<data>
-		MSKrm9BpFBiw6MV+uEFxpwGX+0s=
-		</data>
-		<key>UIButtonBarArrowLeft@2x.png</key>
-		<data>
-		KbtuBU+uR1Ymxb8F5qI+C5HpMSM=
-		</data>
-		<key>UIButtonBarArrowRight.png</key>
-		<data>
-		nbEXiOr4XkNSw1agQbVF6vShwGw=
-		</data>
-		<key>UIButtonBarArrowRight@2x.png</key>
-		<data>
-		4HOQ/Pov1aEB/ZJm6+uYcYTf/Qs=
-		</data>
-		<key>an_arrow_left.png</key>
-		<data>
-		SlEpFavf3QoUdWPh5UKD1gbvVqg=
-		</data>
-		<key>an_arrow_left@2x.png</key>
-		<data>
-		m+dUUOh9PN9udR+Vf0qy9oDPqZI=
-		</data>
-		<key>an_arrow_left@3x.png</key>
-		<data>
-		iNjLXC2eOna5UdEGsf4oefV4jSI=
-		</data>
-		<key>an_arrow_right.png</key>
-		<data>
-		Do+0j/7pZFX5yi7BOj6OZOLYn3o=
-		</data>
-		<key>an_arrow_right@2x.png</key>
-		<data>
-		/7a4FouKorMlzYPL4qt7PnH4dRE=
-		</data>
-		<key>an_arrow_right@3x.png</key>
-		<data>
-		C3fjYZZQE9uEfP1ZUwTFVw6kekY=
-		</data>
-		<key>anjam.js</key>
-		<data>
-		HqmtH+GCkJnkUBa35wDPzLtrJds=
-		</data>
-		<key>appnexus_logo_icon.png</key>
-		<data>
-		gSjpjyD/BirwjeyXYgv9LoaRpH8=
-		</data>
-		<key>appnexus_logo_icon@2x.png</key>
-		<data>
-		IYX//FL7L19wOoAfiEgoLbuklio=
-		</data>
-		<key>compass.png</key>
-		<data>
-		vuEYoR5NZ6SUOIa/q9X9kwfJXDc=
-		</data>
-		<key>compass@2x.png</key>
-		<data>
-		Gn+lZc+uX2UvzL45GXlCHivZjMs=
-		</data>
-		<key>compass@3x.png</key>
-		<data>
-		DHWHZvznZuyimjY7Mz1grO+Ek+I=
-		</data>
-		<key>errors.strings</key>
-		<data>
-		UHhi6Dy1+j1ZLIPB7cDyQ5ejeVo=
-		</data>
-		<key>interstitial_closebox.png</key>
-		<data>
-		Ufk6oCJ3mwJWTZMz6neStC06cCg=
-		</data>
-		<key>interstitial_closebox@2x.png</key>
-		<data>
-		F4JgQ+XrNx9FCAj2vEWOOawFijE=
-		</data>
-		<key>interstitial_flat_closebox.png</key>
-		<data>
-		i14tIa6D6RmLvjDcoyksIRhqC9Q=
-		</data>
-		<key>interstitial_flat_closebox@2x.png</key>
-		<data>
-		SM6SNqKwcmFnQTSOiFtZ6SdbOvc=
-		</data>
-		<key>interstitial_flat_closebox@3x.png</key>
-		<data>
-		JiPk3iHbIPXMcefQu9LWO/cmCeE=
-		</data>
-		<key>nativeRenderer.html</key>
-		<data>
-		FQD7wnoA4HQVLzL9RLKNdOwCAzs=
-		</data>
-		<key>omsdk.js</key>
-		<data>
-		gCOe+7IYuq62gR/dP6Or3iTxJDc=
-		</data>
-		<key>optionsparser.js</key>
-		<data>
-		OMRJxRduhcs3+33vFZ1vNNxXvts=
-		</data>
-		<key>sdkjs.js</key>
-		<data>
-		ugedCpfunsJw7/ew3ZDXlvTYzlU=
-		</data>
-		<key>vastVideo.html</key>
-		<data>
-		UkwOEZUeTYP3JrcvgXO54A+V/Qg=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>ANBrowserViewController.nib</key>
+		<key>ANSDKResources.bundle/ANBrowserViewController.nib/designtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YTe608Y15wingLSALbsQBQvGhXM=
+			</data>
+			<key>hash2</key>
+			<data>
+			HBLuRpQPwj4GQKu3mI0UVUhLj1xQPEq1CpQhRF23AQ0=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/ANBrowserViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -210,7 +261,18 @@
 			gI/tm0NSIjsChmAsdo2BHfQ32ors73LEjIth8XU/1pE=
 			</data>
 		</dict>
-		<key>ANBrowserViewController_SizeClasses.nib</key>
+		<key>ANSDKResources.bundle/ANBrowserViewController_SizeClasses.nib/designtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8G0FhlTXLBe3pHOsX/itJAvN/Ug=
+			</data>
+			<key>hash2</key>
+			<data>
+			xt+hWdIhsYBgmAMMuELkLSGvb443aivzHNuCRHWoNK0=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/ANBrowserViewController_SizeClasses.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -221,7 +283,18 @@
 			l3pV5Yk6dGSaWs6DvJ2Agd6BXSzbiN6dYPNvsJs47LM=
 			</data>
 		</dict>
-		<key>ANInterstitialAdViewController.nib</key>
+		<key>ANSDKResources.bundle/ANInterstitialAdViewController.nib/designtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			96PQ49G7JWE4XDan1PAQiXpwEpY=
+			</data>
+			<key>hash2</key>
+			<data>
+			S2YEqOKH0WWvfiD/Up31IDvYXoVYFPqTHE4Au9ALptI=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/ANInterstitialAdViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -232,7 +305,7 @@
 			4ecqAoqEhwHgHXRI33iBVHQh14xVPXr6J37mAuIikN8=
 			</data>
 		</dict>
-		<key>ANMRAID.bundle/mraid.js</key>
+		<key>ANSDKResources.bundle/ANMRAID.bundle/mraid.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -243,7 +316,7 @@
 			1EA5/h8oXqf+nUuPh7hjlZaaWHp/uRudEJJPX6hNbpE=
 			</data>
 		</dict>
-		<key>ASTMediationManager.js</key>
+		<key>ANSDKResources.bundle/ASTMediationManager.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -252,6 +325,402 @@
 			<key>hash2</key>
 			<data>
 			BftxM9k/nUuSL57Y9WyeSBW95t/n4EUoFaweTdv3QPQ=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PZUQtwQNVhdMbDUOO6WYCEW20bY=
+			</data>
+			<key>hash2</key>
+			<data>
+			aATSna67ghsDRu3KQ1srgAz5wCNuH7XA4obGE+kOBlU=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/MobileVastPlayer.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SfltkukezsoxfWz7kfl23yO+cLs=
+			</data>
+			<key>hash2</key>
+			<data>
+			3K6/tv2U9nEKwrwmMRR15dFTtmI+nita8hO3PmNFv6U=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/UIButtonBarArrowLeft.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			C59Md+V98urrLqUVso0iu5O3VKM=
+			</data>
+			<key>hash2</key>
+			<data>
+			qMuUr2sEGYTQDJRQVAmPepfXvZSOMQvPzhkGkgA2fDg=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/UIButtonBarArrowLeft@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c8VW87pp6ORgXSzKR+GVEBgC/rY=
+			</data>
+			<key>hash2</key>
+			<data>
+			x1FOQrvD446VLKuRgtcyNuEFbMkr2H5yXCxNk7WLimE=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/UIButtonBarArrowRight.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rWYp0hro36HHcPd7FTZIC0ZW3rU=
+			</data>
+			<key>hash2</key>
+			<data>
+			/mzB7ke32YIBoH3RcaSHCnAc8Gq1VbYKCh758HUPyH0=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/UIButtonBarArrowRight@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			naeY89KHfTv+1iri+Ktnix730Po=
+			</data>
+			<key>hash2</key>
+			<data>
+			GQW8CBbkngql0+nUGH9Dxj/5mZfDgODEOiyD6nQ36r4=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DQPJDS8UZ9R45apNHrHXrycbGxI=
+			</data>
+			<key>hash2</key>
+			<data>
+			JpT9N9AANi8Sc3qoh7+1q03DzSKjKveb5CjrkUdtrPA=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOl1a0s2mR4mAhpi3Q/aPBAb0Ak=
+			</data>
+			<key>hash2</key>
+			<data>
+			3HJg0wIVUptrAxp3WEcLIqWQSqq1eNigZEvB20upKpI=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hOZK/kq/6e576wIm0hLimuE6q7w=
+			</data>
+			<key>hash2</key>
+			<data>
+			nI1cBDUEuXxv1Ptm9OfSFIbXX5lYg/sPptJZEuPV4iY=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aZMgVQ0sICLWo/QoLiln3uqN64M=
+			</data>
+			<key>hash2</key>
+			<data>
+			ET3zAC9ivL/KhvdtZkpD9ScPYPm8073KXiJ8Qvln57Y=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w7TWWD3W+n+Qqnb42fRv8YeFF5k=
+			</data>
+			<key>hash2</key>
+			<data>
+			FpeFzG6+GNK8Lq0QtqzmlADuN7JW3OteXIFYqZcwxS0=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/an_arrow_left.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q+PJCfoISQCRAPBhfdJ5/Z9sMtQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			O7bBL2AUJQyDE5bpO12Q289wUMMs64y+kd9yWckfdZY=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/an_arrow_left@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UtVwp6pB68mzn5WnX5jA39LqfQg=
+			</data>
+			<key>hash2</key>
+			<data>
+			kmZVBMR5vIHIhcFoM7vBXWhGmp1Nkx/LeDGekaDgghg=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/an_arrow_left@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wk3T6bDSpepJwhHSxMydD/X/pMk=
+			</data>
+			<key>hash2</key>
+			<data>
+			vvnq2agLcTZ5xW4GX7uyLlzLxECJhFTdl2pmbhoOW+E=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/an_arrow_right.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sAbDI8Ef2/yn4DQT4ayeAz3bxRU=
+			</data>
+			<key>hash2</key>
+			<data>
+			izj8NAqwjEx6fW+snc54PuPEPq290Hzfxqv9rm6WWEM=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/an_arrow_right@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			U1klu+05rFdg/shwWSbYl7wFPmI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Po+tjxsPZ4b3NjxAZdj1sXGGo07s9qnSolZXgGi1nQU=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/an_arrow_right@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rMB0TIV3b1Yw23vHnIFPEniltZ4=
+			</data>
+			<key>hash2</key>
+			<data>
+			AujVhPlCqF2lq8BN1HK3+iK2OPnnsf4R0X9Nh0QttVE=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/anjam.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HqmtH+GCkJnkUBa35wDPzLtrJds=
+			</data>
+			<key>hash2</key>
+			<data>
+			iM9avfLD/k5Q0BoKnlkY8+yri5Ma/nmFuH71IMtLb4w=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/appnexus_logo_icon.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8buWzgkgLgYKBZSzQBnJclSPzJw=
+			</data>
+			<key>hash2</key>
+			<data>
+			xuZHBByxuYc+E2gjabHX73lW3pLKBxq4OaEdTZV/uDE=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/appnexus_logo_icon@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XvQf+9iAFkbIIgDfPWIGFrd/HkE=
+			</data>
+			<key>hash2</key>
+			<data>
+			XgyURMzvzSMjzwLzryl/zt97Kn6h/JRsLTzQysUpjzI=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/compass.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			V2clhQZM7Obu8Zbwi2glTLEFzFw=
+			</data>
+			<key>hash2</key>
+			<data>
+			VnKCnSr9gQPUAIyQHg9+7CKuF0c0MgsdGH6WQlausTU=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/compass@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			O9keCY3p+z0k4pj7oY3nWkRr8f4=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZZP/8ACcTSt779y+kn+phXK4GVLbrxjxM45MD8OlfHI=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/compass@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m0bw9gTRK9LaDpBrMKN0NU6v6xg=
+			</data>
+			<key>hash2</key>
+			<data>
+			LnJZLBlIL1DPa1/JyNy5hgnM+5O5dLKYxvSJXC4/zXc=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/errors.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MIKn2WAJMR5NMTbhFmtv4CCb9KM=
+			</data>
+			<key>hash2</key>
+			<data>
+			ybuiuBgT1gekiI6/DosuQnv+OS/vGoY3nWjUQjfKY3I=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/interstitial_closebox.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MeU2fd7yQ/M6jkQeWEfHMbXrLnU=
+			</data>
+			<key>hash2</key>
+			<data>
+			5+ZEamJedMXQuqtKdH51CJ7cA+LqENftzvjc7dIo78k=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/interstitial_closebox@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MRqcGrQc31B4G49S7yWFDwrkd1g=
+			</data>
+			<key>hash2</key>
+			<data>
+			srPDTzu+Rqrgd0vo7U5zps3QcAebI2nRKYOJfgqKSlk=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/interstitial_flat_closebox.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9aD9zHkc7bRFAX0KN1rHrfyPkPI=
+			</data>
+			<key>hash2</key>
+			<data>
+			bOicswCIaDvP20tx3KKq5YLcsfzMhnzMhi5crWe3WcY=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/interstitial_flat_closebox@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A66FwR+INVoleclBGbyaXbMDqDk=
+			</data>
+			<key>hash2</key>
+			<data>
+			JYCtMY7uWOF1iPbO38zHx90spnRj8rzWuc81VO1pwhc=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/interstitial_flat_closebox@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JJ7du8qMzG3pw5v0/6+MfE6sNl8=
+			</data>
+			<key>hash2</key>
+			<data>
+			V5rQbGohbX/dK5+qP4+mdxSFZhdeBo9EC3QqXbsjw/4=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/nativeRenderer.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FQD7wnoA4HQVLzL9RLKNdOwCAzs=
+			</data>
+			<key>hash2</key>
+			<data>
+			IdTmGrV7ZdJGi10CUEysDspbT1gSEJSVNjb23MyzWdI=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/omsdk.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gCOe+7IYuq62gR/dP6Or3iTxJDc=
+			</data>
+			<key>hash2</key>
+			<data>
+			qe9tOj9+dLAgR9XKuo5hcPkP7Mxl82DMnm99C/ls/l8=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/optionsparser.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OMRJxRduhcs3+33vFZ1vNNxXvts=
+			</data>
+			<key>hash2</key>
+			<data>
+			8p6najgnnWehNom09E6vWz5lejhtD90UxXRZcAOJFEQ=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/sdkjs.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rqRB0HIDex/61iiJZEI42D5XqZI=
+			</data>
+			<key>hash2</key>
+			<data>
+			RRxgrMdJf65AV28pUhfIyTYNLVYYiVpoMpS03sctypU=
+			</data>
+		</dict>
+		<key>ANSDKResources.bundle/vastVideo.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UkwOEZUeTYP3JrcvgXO54A+V/Qg=
+			</data>
+			<key>hash2</key>
+			<data>
+			2loTRJyvCwu6SzG8TTFUJfdyDg11i+yy3JJD6JVUVlA=
+			</data>
+		</dict>
+		<key>AppNexusSDK.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gpxsxX4F2MSdE3ibJX2Z/mFrnAQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			9FCDgOiFOhm+6G/Hxlq0ELD1X/mjoYOcj0QckvU+Em0=
+			</data>
+		</dict>
+		<key>AppNexusSDK.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmEBpmeTAQVVRSr/V84UrA7Tt9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			3E5rr83zLxtKk0p0U/GHOWh6DHLpygMvG8qCYfKRgCg=
 			</data>
 		</dict>
 		<key>Headers/AATAppNexusAdapter-Swift.h</key>
@@ -274,17 +743,6 @@
 			<key>hash2</key>
 			<data>
 			+JgrPMPl6TqBSenDcGFJCY4YclAKN6kOMiQh8q4A3KA=
-			</data>
-		</dict>
-		<key>MobileVastPlayer.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SfltkukezsoxfWz7kfl23yO+cLs=
-			</data>
-			<key>hash2</key>
-			<data>
-			3K6/tv2U9nEKwrwmMRR15dFTtmI+nita8hO3PmNFv6U=
 			</data>
 		</dict>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -335,11 +793,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JAugDRyuopaF8Kazp4cbAMbfjWc=
+			ueoDkl917XfTAkznMzW2V7IntJ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			fd0UheGgrVzA7zI3hw9MW+CUJCsvYUKAFd9eBRx01zk=
+			MB+ZRmxQytIBuxjePUTyIzpsfmlL1MEaT4oh4jzQo7I=
 			</data>
 		</dict>
 		<key>Modules/AATAppNexusAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -390,11 +848,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			csCdBVrhit904h8Ohgg8zpwxpgE=
+			Q3sh8YtpL+0VVa3711+T9Ys6e04=
 			</data>
 			<key>hash2</key>
 			<data>
-			CfLnhSjm0QEYXhOh6GHQDiV8LRz8c7+ztThC12y8mCw=
+			dmwnop7aFH8MU+NqQU2RMOqYV32nMqfDMcqkSICObO0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -406,314 +864,6 @@
 			<key>hash2</key>
 			<data>
 			1f8LPwu2oCYUEFefm+QIQ6ESr8y3Gjry7+oQVwleI1Y=
-			</data>
-		</dict>
-		<key>SDK-Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			g33iNjpjNQafFZinpFetJXhCNJ4=
-			</data>
-			<key>hash2</key>
-			<data>
-			7OiSORu2ZTbVIhblClkqCBWI4KFjj5B/G9Cu0K1u5HI=
-			</data>
-		</dict>
-		<key>UIButtonBarArrowLeft.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MSKrm9BpFBiw6MV+uEFxpwGX+0s=
-			</data>
-			<key>hash2</key>
-			<data>
-			D1OmaYg4abMsDU6oCSM1gGltjWwVRQ68ENya0PbBmnI=
-			</data>
-		</dict>
-		<key>UIButtonBarArrowLeft@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KbtuBU+uR1Ymxb8F5qI+C5HpMSM=
-			</data>
-			<key>hash2</key>
-			<data>
-			jUdczofuPnhIlnmJRXVftEQxz9hpHsNRfXc4k+181Ho=
-			</data>
-		</dict>
-		<key>UIButtonBarArrowRight.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			nbEXiOr4XkNSw1agQbVF6vShwGw=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ty+D0b23reYxeQtJzMwKmBOzk7i0XPWgjJCGYLqPQx4=
-			</data>
-		</dict>
-		<key>UIButtonBarArrowRight@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4HOQ/Pov1aEB/ZJm6+uYcYTf/Qs=
-			</data>
-			<key>hash2</key>
-			<data>
-			BCJAx5VnxSz5090Zit3WiJCNCDwjqEnmBA/gD7tg9/4=
-			</data>
-		</dict>
-		<key>an_arrow_left.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SlEpFavf3QoUdWPh5UKD1gbvVqg=
-			</data>
-			<key>hash2</key>
-			<data>
-			OxkVODZCGwLvMttkHuWM2oQVh2TlKIKoinnOfEgsmc8=
-			</data>
-		</dict>
-		<key>an_arrow_left@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			m+dUUOh9PN9udR+Vf0qy9oDPqZI=
-			</data>
-			<key>hash2</key>
-			<data>
-			v1X8yqtZMbvfRq5u3t5C7VXW7KGprx9VT8GEkgVL2FQ=
-			</data>
-		</dict>
-		<key>an_arrow_left@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iNjLXC2eOna5UdEGsf4oefV4jSI=
-			</data>
-			<key>hash2</key>
-			<data>
-			Akler1dVhHUe2yVXkkTEm4wCLV+DPj2BP/LRvqxgP0M=
-			</data>
-		</dict>
-		<key>an_arrow_right.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Do+0j/7pZFX5yi7BOj6OZOLYn3o=
-			</data>
-			<key>hash2</key>
-			<data>
-			mvxpOzgjcX/gWSfGuIRqZ6hegdQWOh+5S28ATG62EUA=
-			</data>
-		</dict>
-		<key>an_arrow_right@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/7a4FouKorMlzYPL4qt7PnH4dRE=
-			</data>
-			<key>hash2</key>
-			<data>
-			+AL8tMnzvjQZwFGDjntis6aVvZ78npD54ShkOC6teDM=
-			</data>
-		</dict>
-		<key>an_arrow_right@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			C3fjYZZQE9uEfP1ZUwTFVw6kekY=
-			</data>
-			<key>hash2</key>
-			<data>
-			GiGEeb56/RGXMCo6v2jWlPaId4dAKnJUG+hsiBy5bCM=
-			</data>
-		</dict>
-		<key>anjam.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HqmtH+GCkJnkUBa35wDPzLtrJds=
-			</data>
-			<key>hash2</key>
-			<data>
-			iM9avfLD/k5Q0BoKnlkY8+yri5Ma/nmFuH71IMtLb4w=
-			</data>
-		</dict>
-		<key>appnexus_logo_icon.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gSjpjyD/BirwjeyXYgv9LoaRpH8=
-			</data>
-			<key>hash2</key>
-			<data>
-			LqBMmFE4rKpPbDVLrMmK5Nz320ZP30PbA2xks9dw4V4=
-			</data>
-		</dict>
-		<key>appnexus_logo_icon@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IYX//FL7L19wOoAfiEgoLbuklio=
-			</data>
-			<key>hash2</key>
-			<data>
-			4lY/XPkasTb/KZhipGaDJ/GlSlQb0IKAcbcBP/+abQU=
-			</data>
-		</dict>
-		<key>compass.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vuEYoR5NZ6SUOIa/q9X9kwfJXDc=
-			</data>
-			<key>hash2</key>
-			<data>
-			CNrsFCXfLyoL+sdL6IplNTJXUCxzmJc+sY1Jlw6QBrw=
-			</data>
-		</dict>
-		<key>compass@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Gn+lZc+uX2UvzL45GXlCHivZjMs=
-			</data>
-			<key>hash2</key>
-			<data>
-			waNbGXKQa+YVLqybEO6itiHxGmeIaZ0e76aRCE49mtI=
-			</data>
-		</dict>
-		<key>compass@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			DHWHZvznZuyimjY7Mz1grO+Ek+I=
-			</data>
-			<key>hash2</key>
-			<data>
-			gD3DaKH4KZDWo6aozEu7FUPZBzeugqbOPb0rAjrQUVE=
-			</data>
-		</dict>
-		<key>errors.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UHhi6Dy1+j1ZLIPB7cDyQ5ejeVo=
-			</data>
-			<key>hash2</key>
-			<data>
-			LDzfOvnW5QcIGM+4qnpq8g4JYPK09orplgy1qOYIAus=
-			</data>
-		</dict>
-		<key>interstitial_closebox.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Ufk6oCJ3mwJWTZMz6neStC06cCg=
-			</data>
-			<key>hash2</key>
-			<data>
-			ourr7Ybfuds+j39VeYYumLWZZ+bOq9OEpcyhkQ509xE=
-			</data>
-		</dict>
-		<key>interstitial_closebox@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			F4JgQ+XrNx9FCAj2vEWOOawFijE=
-			</data>
-			<key>hash2</key>
-			<data>
-			SD4wvrlm9Tys2wuAITn7hT1vYMTEU7xE/wXUKPZyyU8=
-			</data>
-		</dict>
-		<key>interstitial_flat_closebox.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			i14tIa6D6RmLvjDcoyksIRhqC9Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			OnqbSfTb3EukslA38k/VRW9Yk3lwJ4eUJvpRqsMdPU0=
-			</data>
-		</dict>
-		<key>interstitial_flat_closebox@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SM6SNqKwcmFnQTSOiFtZ6SdbOvc=
-			</data>
-			<key>hash2</key>
-			<data>
-			qDt9tertOSGF1jAgI7NQGHyZWOGAy2wnApVWoGCDjS8=
-			</data>
-		</dict>
-		<key>interstitial_flat_closebox@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JiPk3iHbIPXMcefQu9LWO/cmCeE=
-			</data>
-			<key>hash2</key>
-			<data>
-			lchXCvMhAct19BaDmD6BRFRDGPOAlONs0RvsFvQj/ko=
-			</data>
-		</dict>
-		<key>nativeRenderer.html</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FQD7wnoA4HQVLzL9RLKNdOwCAzs=
-			</data>
-			<key>hash2</key>
-			<data>
-			IdTmGrV7ZdJGi10CUEysDspbT1gSEJSVNjb23MyzWdI=
-			</data>
-		</dict>
-		<key>omsdk.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gCOe+7IYuq62gR/dP6Or3iTxJDc=
-			</data>
-			<key>hash2</key>
-			<data>
-			qe9tOj9+dLAgR9XKuo5hcPkP7Mxl82DMnm99C/ls/l8=
-			</data>
-		</dict>
-		<key>optionsparser.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OMRJxRduhcs3+33vFZ1vNNxXvts=
-			</data>
-			<key>hash2</key>
-			<data>
-			8p6najgnnWehNom09E6vWz5lejhtD90UxXRZcAOJFEQ=
-			</data>
-		</dict>
-		<key>sdkjs.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ugedCpfunsJw7/ew3ZDXlvTYzlU=
-			</data>
-			<key>hash2</key>
-			<data>
-			tTbzfsk/4K4Cm3+suaVZpQV9xH0YGkA1gxuOHf+gojE=
-			</data>
-		</dict>
-		<key>vastVideo.html</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UkwOEZUeTYP3JrcvgXO54A+V/Qg=
-			</data>
-			<key>hash2</key>
-			<data>
-			2loTRJyvCwu6SzG8TTFUJfdyDg11i+yy3JJD6JVUVlA=
 			</data>
 		</dict>
 	</dict>

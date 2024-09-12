@@ -14,7 +14,7 @@
  */
 #import <Foundation/Foundation.h>
 #import "ANAdConstants.h"
-
+#import "PlacementTelemetryObject.h"
 #import "ANNativeAdResponse.h"
 #if !APPNEXUS_NATIVE_MACOS_SDK
         #if __has_include(<OMSDK_Microsoft/OMIDImports.h>)
@@ -32,6 +32,9 @@
 
 
 @interface ANNativeAdResponse (PrivateMethods)
+
+@property (nonatomic, readwrite, strong) PlacementTelemetryObject *placementTelemetryObject;
+
 #if !APPNEXUS_NATIVE_MACOS_SDK
 
 @property (nonatomic, readonly, weak) UIViewController *rootViewController;
@@ -83,7 +86,7 @@
 - (void)willLeaveApplication;
 - (void)adDidLogImpression;
 - (void)registerAdWillExpire;
-
+-(void)didPresentAdFailedWithError:(NSError *)error;
 // ANNativeAdRequest to ANNativeStandardAdResponse/ANNativeMediatedAdResponse/ANCSRNativeAdResponse
 - (void)registerAdAboutToExpire;
 

@@ -37,8 +37,6 @@
 			<string>NSPrivacyCollectedDataTypeCoarseLocation</string>
 			<key>NSPrivacyCollectedDataTypeLinked</key>
 			<true/>
-			<key>New item</key>
-			<string>NSPrivacyCollectedDataTypePurposeAnalytics</string>
 			<key>NSPrivacyCollectedDataTypeTracking</key>
 			<true/>
 			<key>NSPrivacyCollectedDataTypePurposes</key>

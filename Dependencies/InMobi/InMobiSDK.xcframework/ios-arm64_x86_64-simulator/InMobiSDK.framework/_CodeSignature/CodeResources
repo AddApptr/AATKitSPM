@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xp36yWexiklsK4AoFE0HoXGjDnQ=
+		6MwqRUcBUSfWNMFCSD8MYApw1pk=
 		</data>
 		<key>Modules/InMobiSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xmYWfCl9CWge5i1yzS/nVn9lWkg=
+		hW9AKKxtgHVAUr+tL0BSQgNgeko=
 		</data>
 		<key>Modules/InMobiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/InMobiSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dLoKj4vhJPWHANWcp1LB3EK6gao=
+		H+2St5nvRzR8tGvxooJKsjmg3EU=
 		</data>
 		<key>Modules/InMobiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xmYWfCl9CWge5i1yzS/nVn9lWkg=
+		hW9AKKxtgHVAUr+tL0BSQgNgeko=
 		</data>
 		<key>Modules/InMobiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/InMobiSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		x6CVgWRcgQq/lOmnlPGV0AmTlA4=
+		++IjSEgcsDwnw6KY+kODGIkJ5/w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		L5/WkxFuF4De87Yb/A8c42oVpSU=
+		tIiTMDm68yf/Qb9kRjnRcE3HhkQ=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>PrivateHeaders/IMAdsConfigRenderingModel.h</key>
 		<data>
-		SUd9LOHB6ZMeyayTNH7Re1VQiJE=
+		sk2o05b0LxWO3iKkBkONb5+CanM=
 		</data>
 		<key>PrivateHeaders/IMAdsConfigRendering_SaveContentModel.h</key>
 		<data>
@@ -362,7 +362,7 @@
 		</data>
 		<key>PrivateHeaders/IMCustomLandingPageProcessor.h</key>
 		<data>
-		SPtd1NX9gUkQMdLdF8FUGKX00xo=
+		GGAb4DNQqL+i/8EnCkOTlQMpd/o=
 		</data>
 		<key>PrivateHeaders/IMDeviceData.h</key>
 		<data>
@@ -378,7 +378,7 @@
 		</data>
 		<key>PrivateHeaders/IMEmbeddedBrowser.h</key>
 		<data>
-		eDnMrINHMC22Hvd9WwaSvy1jdro=
+		MM0kvi+e2AqhwODsPiqTRp3ZIUg=
 		</data>
 		<key>PrivateHeaders/IMErrorLogger.h</key>
 		<data>
@@ -438,7 +438,7 @@
 		</data>
 		<key>PrivateHeaders/IMLandingPageParser.h</key>
 		<data>
-		I1Zpxm/o2ywDdcIYm9INzbe01s0=
+		e7PvT+gYVqtJSDhaAbA4nb74M1M=
 		</data>
 		<key>PrivateHeaders/IMLandingPageProcessor.h</key>
 		<data>
@@ -470,7 +470,7 @@
 		</data>
 		<key>PrivateHeaders/IMNativeLandingPageProcessor.h</key>
 		<data>
-		542RwTo4FUIgTStI95On3MM/VGs=
+		7oojIwbIUdLPDSsCbu+qYWAHyIs=
 		</data>
 		<key>PrivateHeaders/IMNativeRenderController.h</key>
 		<data>
@@ -586,11 +586,11 @@
 		</data>
 		<key>PrivateHeaders/IMRenderView.h</key>
 		<data>
-		z5YHnwHOpg6M8fKK/0i+AGv/YAQ=
+		7I9coh61KFL97zqyscaou/CWTFw=
 		</data>
 		<key>PrivateHeaders/IMRenderViewController.h</key>
 		<data>
-		QG/mOOepblDzDBkbunVxeYtNKEg=
+		Vp+OI+fOFJEbc2sudMvlx5k+CeE=
 		</data>
 		<key>PrivateHeaders/IMRenderViewGestureRecognizer.h</key>
 		<data>
@@ -646,7 +646,7 @@
 		</data>
 		<key>PrivateHeaders/IMSDKCommonUtil.h</key>
 		<data>
-		gxvB9nIh74l++7viyw2kMbQ/ctc=
+		cY1z/p9stBDtgKeZM48IPI3yCqE=
 		</data>
 		<key>PrivateHeaders/IMSDKCommonsNetworkReachabilityObjc.h</key>
 		<data>
@@ -654,7 +654,7 @@
 		</data>
 		<key>PrivateHeaders/IMSDKConstant.h</key>
 		<data>
-		4mKtTijXD4Pdeg9FYsL9/hFiIuE=
+		KaSjvK3dFTE27wwz4mxgM12v/IE=
 		</data>
 		<key>PrivateHeaders/IMSDKSKANUtil.h</key>
 		<data>
@@ -682,7 +682,7 @@
 		</data>
 		<key>PrivateHeaders/IMSKStoreManager.h</key>
 		<data>
-		reYLQXcwqbzaP0eV+4SLTuWJnQM=
+		UZup0mP9MzlqyL+wrM9DsM9mbi4=
 		</data>
 		<key>PrivateHeaders/IMSKStoreProcessor.h</key>
 		<data>
@@ -708,13 +708,17 @@
 		<data>
 		DyPKpZG731xPnHbLm7ykcHsf5gM=
 		</data>
+		<key>PrivateHeaders/IMSessionDataConfig.h</key>
+		<data>
+		E8LOMDAg7XhLNYgry/BkZP92f4c=
+		</data>
 		<key>PrivateHeaders/IMSignalIceConfig.h</key>
 		<data>
 		Ylv0YRs6OuT5QH2JRYJz9khybNg=
 		</data>
 		<key>PrivateHeaders/IMSignalsConfig.h</key>
 		<data>
-		O3wUK7kB1dW4Js5tv/5OGg6o4MA=
+		5cljYhoC55fFa0kb6td3i3v2aMk=
 		</data>
 		<key>PrivateHeaders/IMSilentSwitch.h</key>
 		<data>
@@ -732,9 +736,13 @@
 		<data>
 		lWwTNKfBuZLWuFUVcHYfcM7Rf/U=
 		</data>
+		<key>PrivateHeaders/IMTelemetryConfigLandingPageInterval.h</key>
+		<data>
+		g8EWuw2HE9umg5PzzfybDhoYZYA=
+		</data>
 		<key>PrivateHeaders/IMTelemetryConfigs.h</key>
 		<data>
-		vFDbZhbg5adlLF8xo/MJ0KIgEJ0=
+		idYmtIJKSRO1yMK+mikiT0bf+rM=
 		</data>
 		<key>PrivateHeaders/IMTelemetryDAO.h</key>
 		<data>
@@ -742,7 +750,7 @@
 		</data>
 		<key>PrivateHeaders/IMTelemetryEvent.h</key>
 		<data>
-		nCDctSWtp+STvqmj1EU/bOrZCxY=
+		x5DD9mG+xIpqGlWBLUnMwgGl22w=
 		</data>
 		<key>PrivateHeaders/IMTelemetryRequest.h</key>
 		<data>
@@ -894,7 +902,7 @@
 		</data>
 		<key>PrivateHeaders/IMViewProcessor.h</key>
 		<data>
-		xclneuo6EGvvNFq/248wTrkZSL0=
+		nBso0CgBXhza2ODG5kWn7eYEADo=
 		</data>
 		<key>PrivateHeaders/IMViewability.h</key>
 		<data>
@@ -910,7 +918,7 @@
 		</data>
 		<key>PrivateHeaders/IMWKWebViewController.h</key>
 		<data>
-		ekTsjqdNSxtGfsDe1aPyi9d3p4o=
+		vtcy2lpa7wKvVGCw9HslB1qT7kI=
 		</data>
 		<key>PrivateHeaders/IMWebToNativeCall.h</key>
 		<data>
@@ -1048,7 +1056,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cd8FqOIpmBnsrBNuNqiSGywPn4Gyw3D3sdDaki5+M48=
+			1On+Du+8gbs1GF6q9A3w8YRHRDqNz+kyOqHaqmLG1uU=
 			</data>
 		</dict>
 		<key>Modules/InMobiSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1076,14 +1084,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x6AcMQRoQrNCYjgOOZo94HUGo8Qc5eW6Nm1uKEziHPE=
+			I8m3jxQfhjzz8Ya6x9MStfvzrUO4k8qoZ0cxGuEk/Xg=
 			</data>
 		</dict>
 		<key>Modules/InMobiSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cd8FqOIpmBnsrBNuNqiSGywPn4Gyw3D3sdDaki5+M48=
+			1On+Du+8gbs1GF6q9A3w8YRHRDqNz+kyOqHaqmLG1uU=
 			</data>
 		</dict>
 		<key>Modules/InMobiSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1111,14 +1119,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9xXlCC9qwov0MLS76bkWFBrXXnk5/NoxZHfe1H14vRw=
+			ErsrKr3ozkKjfCiFXEVo3NoNLBArCG0XURo2Vv8hWfM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ljXDeySm5QncPlojibVtSz6r/6n7YnxgVyeLcFTLMEY=
+			+UjDRE4F3BaDdIE3Kb9HNFta2HafksFtPzWNBFTZb34=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -1279,7 +1287,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d6/DsrX09mkr2TKLDywGdnSHHkGs9cgFpfKl/t0ToSI=
+			fzi3NtKPeEDU2b1otVJxZTSJfkpSsw406MwtMN3tEqo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMAdsConfigRendering_SaveContentModel.h</key>
@@ -1643,7 +1651,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uzjOmHi38wybMTnPdOEJ/4+SeAbIkaH4aBG3zmnqNW0=
+			h6fE25o1An2XFj1B/blalaFM78JBT+QzEKJytiO4luk=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMDeviceData.h</key>
@@ -1671,7 +1679,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M4pRMWc3Ibo2p0N+pY7U9XPRTfME3z46p2Yl3W26Vtw=
+			qTre3ArU50Yba0ti7qmxnX9l3BnKkqfg6+JRIwTwnL8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMErrorLogger.h</key>
@@ -1776,7 +1784,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FBJC87xPEDHxrbc0k00/W0XOF6mT1z9ZJ8GLqlQKASA=
+			PKa8k5kz+u1NHz6fCQkv1b52mLHNY4pCTayuaNZHN+A=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMLandingPageProcessor.h</key>
@@ -1832,7 +1840,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nly9x7I8gerqax/D6Wf50IAK2FpBme2c10Mixmo8yQQ=
+			2LqavGhdPjPD/AlR3VQH3xXI0f5uVcDCkYU/IS6d/aY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMNativeRenderController.h</key>
@@ -2035,14 +2043,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TyqWqTNvsPGvFvmNLkkcdzlL8eNa1OUD/25XwIAb6tc=
+			so7jQwu4GHHLK8o2uHZXfNimFmtUprBwYuFkOAsTcrk=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMRenderViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VyQM7VZoo5Pe/I1ZNdTlvqUF5fm47rMqBcf5eK7Ph/E=
+			tGHgbu/uj4KBofhI4CAun6egKeiVjFzFhW0I6sDcBok=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMRenderViewGestureRecognizer.h</key>
@@ -2140,7 +2148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pr/YRLNIpTAJV6vzJLf//u1rDlNvcCzyOLnTi82fa44=
+			DIh6wxwOuzyMWIz0ya6xD7nvO3BMavRNtV0B+lYbD9M=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMSDKCommonsNetworkReachabilityObjc.h</key>
@@ -2154,7 +2162,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gL+pXwEdjIIXYexAPBrhvExoCx3D+tRi+ZvjSesf0q4=
+			uhBemE3zwqRQf69Ya9LmWWXXiEFy5CnaimBqPGJvMSY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMSDKSKANUtil.h</key>
@@ -2203,7 +2211,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tm9V+l4kBjv8tlSnvGWl6RTfK+CSUHou3MEU3r15XyE=
+			4BpBwEqUJjJ3aTswA/HiimJRrBsgaNzWOL3NZ+0Yf9g=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMSKStoreProcessor.h</key>
@@ -2248,6 +2256,13 @@
 			SbQBzSW28VmjaFXLDCGC2PsMK2ShEk+A0v1EyXkGDYA=
 			</data>
 		</dict>
+		<key>PrivateHeaders/IMSessionDataConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			v3bH/8Quacyr+HVAHAfQs1pm2xaZUMdC7SLE2WpzoKY=
+			</data>
+		</dict>
 		<key>PrivateHeaders/IMSignalIceConfig.h</key>
 		<dict>
 			<key>hash2</key>
@@ -2259,7 +2274,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5JD0yJhgzXSWyrL/GBaMkX1DTHFGeDjL3YpTvLGlOQc=
+			9wVxwQam39gNnI6tP9oA5Ya95lJ1y8nyy+9nzMC3mU8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMSilentSwitch.h</key>
@@ -2290,11 +2305,18 @@
 			yKXEgaDP0z9oXW8nZvl8NgqqMIyJAiIcV2To0jWlBQ0=
 			</data>
 		</dict>
+		<key>PrivateHeaders/IMTelemetryConfigLandingPageInterval.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uCsbIxpQZuYRzlirbkVPlb6EcL6DrSaZQ/fngO1+3hI=
+			</data>
+		</dict>
 		<key>PrivateHeaders/IMTelemetryConfigs.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6pbGmyiGR91gIKndo1qzYTS34H/YwqklgSfI3LoRl/w=
+			NV9x0N6t02FBTl3VMzlfpt/WFlEiE+mGX7KJ5u7TCEE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMTelemetryDAO.h</key>
@@ -2308,7 +2330,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RdgKXcDO3RkUDeBJfS7brYZTY4aeW3Rpw4B8sGNUTck=
+			CIzeG6COrLxkcESpkBSo4v9m5tO1PWcg0hXAN5hx3XY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMTelemetryRequest.h</key>
@@ -2574,7 +2596,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KFKW5JvE20Sx3kfeoaWGuNMoQGP42OQepJNyvwQd0ps=
+			NWOkxEKZ+/h6mqyBTgyCJYw/a1hRETVEY8g3AEo7AH8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMViewability.h</key>
@@ -2602,7 +2624,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RHNb8y0MC444Q7RmcosRqIqFvkei60aN2S4OCEf40Z4=
+			6nGHxqTaQcDEPgmMRTqATF0aF6amBAVQUBec8yG3M8s=
 			</data>
 		</dict>
 		<key>PrivateHeaders/IMWebToNativeCall.h</key>

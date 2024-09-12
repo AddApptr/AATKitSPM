@@ -305,6 +305,12 @@ Set the trafficSourceCode,  Specifies the third-party source of the impression.
 
 @optional
 /**
+ An adTypeadType display the requested Ad Type
+ */
+@property (nonatomic, readwrite, strong) NSString *adType;
+
+
+/**
  Sent when the ad content has been successfully retrieved from the server.
    adDidReceiveAd:          used with Banner, Interstitial and Instream Video.
    ad:didReceivNativeAd:    used to receive ANNativeAdReponse when that is returned from an ANBannerAdView request.

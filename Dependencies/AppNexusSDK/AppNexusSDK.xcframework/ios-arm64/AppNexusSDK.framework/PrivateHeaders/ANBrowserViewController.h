@@ -14,7 +14,7 @@
  */
 
 #import <UIKit/UIKit.h>
-
+#import "PlacementTelemetryObject.h"
 @protocol ANBrowserViewControllerDelegate;
 
 @interface ANBrowserViewController : UIViewController <UIActionSheetDelegate>
@@ -62,5 +62,10 @@
 - (void)willDismissBrowserViewController:(ANBrowserViewController *)controller;
 - (void)didDismissBrowserViewController:(ANBrowserViewController *)controller;
 - (void)willLeaveApplicationFromBrowserViewController:(ANBrowserViewController *)controller;
+
+- (void)didPresentFailedBrowserViewController:(ANBrowserViewController *)controller withError:(NSError *)error;
+
+
+- (PlacementTelemetryObject *)getPlacementTelemetryObject;
 
 @end

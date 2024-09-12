@@ -32,6 +32,7 @@
 @property (nonatomic, readwrite, assign) BOOL hasSucceeded;
 @property (nonatomic, readwrite, assign) BOOL hasFailed;
 @property (nonatomic, readwrite, assign) BOOL timeoutCanceled;
+@property (nonatomic, readwrite, strong)  NSDictionary    *telemetryData;
 
 
 @property (nonatomic, readwrite, weak)  ANNativeAdFetcher  *adFetcher;
@@ -67,6 +68,17 @@
 // Adapter Timeout handler
 - (void)startTimeout;
 - (void)cancelTimeout;
-
+/**
+ * Records a telemetry event with the specified event type and data.
+ *
+ * This method is used to log or record a telemetry event, identified by a specified event type,
+ * and optionally accompanied by additional data.
+ *
+ * @param event A nonnull NSString representing the type of the telemetry event to be recorded.
+ *              This string should correspond to a predefined set of event types TelemetryEventsConstant.
+ * @param data  A nullable NSDictionary containing additional data associated with the event.
+ *
+ */
+-(void) recordTelemetryEvent:(NSString *)event andData:(NSDictionary *)data;
 @end
 

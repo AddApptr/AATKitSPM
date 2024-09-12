@@ -58368,6 +58368,13 @@
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/AATDebugScreenConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 500,
+      "length": 20,
+      "value": "\"AATKit Information\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/AATDebugScreenConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2047,
       "length": 4,
@@ -58892,6 +58899,13 @@
       "value": "\"AATKit.AATAdProvider\""
     },
     {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATPlacementHistoryInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 23,
+      "value": "\"AATKit.AATPlacementHistoryInfo\""
+    },
+    {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Network\/Endpoints\/AATSessionReportEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 280,
@@ -59077,13 +59091,6 @@
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 753,
-      "length": 9,
-      "value": "25"
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
-      "kind": "IntegerLiteral",
-      "offset": 772,
       "length": 13,
       "value": "25"
     },
@@ -59858,21 +59865,28 @@
       "value": "\"AATKit.AATAdConfig\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/Cells\/AATDebugActionCell.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/CommonViews\/AATTextView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 290,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/UIKitShakeDebug\/Cells\/AATDebugActionCell.swift",
       "kind": "IntegerLiteral",
       "offset": 288,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/Cells\/AATDebugActionCell.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/UIKitShakeDebug\/Cells\/AATDebugActionCell.swift",
       "kind": "IntegerLiteral",
       "offset": 333,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/Cells\/AATDebugActionCell.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/UIKitShakeDebug\/Cells\/AATDebugActionCell.swift",
       "kind": "IntegerLiteral",
       "offset": 382,
       "length": 1,
@@ -59900,14 +59914,14 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/Cells\/AATCellWithSelectableText.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/UIKitShakeDebug\/Cells\/AATCellWithSelectableText.swift",
       "kind": "IntegerLiteral",
       "offset": 301,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/Cells\/AATCellWithSelectableText.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/UIKitShakeDebug\/Cells\/AATCellWithSelectableText.swift",
       "kind": "IntegerLiteral",
       "offset": 347,
       "length": 2,
@@ -60075,21 +60089,35 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/Cells\/AATCellWithImage.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/CommonViews\/AATInfoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 308,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/Placements\/AATFrequencyCappingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 385,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/UIKitShakeDebug\/Cells\/AATCellWithImage.swift",
       "kind": "IntegerLiteral",
       "offset": 281,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/Cells\/AATCellWithImage.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/UIKitShakeDebug\/Cells\/AATCellWithImage.swift",
       "kind": "IntegerLiteral",
       "offset": 326,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/Cells\/AATCellWithImage.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/UIKitShakeDebug\/Cells\/AATCellWithImage.swift",
       "kind": "IntegerLiteral",
       "offset": 372,
       "length": 2,
@@ -60101,6 +60129,13 @@
       "offset": 191,
       "length": 18,
       "value": "\"AATKit.AATDatonomyOptions\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Ad\/AATAdInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 181,
+      "length": 9,
+      "value": "\"AATKit.AATAdInfo\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdChoicesIconPosition.swift",
@@ -60185,6 +60220,13 @@
       "offset": 627,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Ad\/AATAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 879,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Ad\/AATAd.swift",
@@ -60453,7 +60495,7 @@
       "value": "377"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/Tool\/AATVendorConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATVendorConsent.swift",
       "kind": "StringLiteral",
       "offset": 842,
       "length": 16,
@@ -60666,34 +60708,34 @@
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
       "kind": "StringLiteral",
       "offset": 212,
-      "length": 7,
-      "value": "\"3.9.2\""
+      "length": 8,
+      "value": "\"3.10.0\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
       "kind": "StringLiteral",
-      "offset": 284,
+      "offset": 278,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
       "kind": "StringLiteral",
-      "offset": 329,
+      "offset": 323,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
       "kind": "StringLiteral",
-      "offset": 393,
+      "offset": 387,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
       "kind": "StringLiteral",
-      "offset": 427,
+      "offset": 421,
       "length": 2,
       "value": "\"\""
     },
@@ -61426,6 +61468,48 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/CommonViews\/AATSwiftUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 192,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/CommonViews\/AATSwiftUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 215,
+      "length": 3,
+      "value": "0.8"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/CommonViews\/AATSwiftUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 247,
+      "length": 4,
+      "value": "14.0"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/CommonViews\/AATSwiftUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 285,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/CommonViews\/AATSwiftUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 307,
+      "length": 5,
+      "value": "250.0"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/CommonViews\/AATSwiftUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 331,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATConstants.swift",
       "kind": "StringLiteral",
       "offset": 227,
@@ -61454,7 +61538,7 @@
       "value": "\"AAT.UseDeviceFilteredRules\""
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATConstants.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATConstants.swift",
       "kind": "StringLiteral",
       "offset": 442,
       "length": 3,
@@ -61543,6 +61627,34 @@
       "offset": 886,
       "length": 52,
       "value": "\"AATKit must be initialized before calling this API\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/Home\/AATHomeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 381,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/Home\/AATHomeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 427,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/Home\/AATHomeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 695,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/Home\/AATMailView.swift",
+      "kind": "StringLiteral",
+      "offset": 511,
+      "length": 11,
+      "value": "\"AATKit.Coordinator\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Fullscreen\/AATRewardedVideoPlacementImplementation.swift",
@@ -61718,6 +61830,13 @@
       "offset": 129,
       "length": 23,
       "value": "\"AATKit.AATDecodedConsentString\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/SwiftUIShakeDebug\/Placements\/AATPlacementView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 390,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATIPAddressConfig.swift",
@@ -62169,6 +62288,13 @@
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 743,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 766,
       "length": 1,
@@ -62301,7 +62427,7 @@
       "value": "15"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 886,
       "length": 1,
@@ -62413,7 +62539,7 @@
       "value": "15"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 886,
       "length": 1,
@@ -62519,6 +62645,13 @@
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1411,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
       "kind": "StringLiteral",
       "offset": 2955,
       "length": 2,
@@ -62609,11 +62742,25 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoud\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 3613,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AAT+Device.swift",
+      "kind": "StringLiteral",
+      "offset": 851,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AAT+Device.swift",
+      "kind": "IntegerLiteral",
+      "offset": 943,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATAppLovinMaxDriver.swift",
@@ -62735,14 +62882,21 @@
       "value": "\"AATGraviteRTBAdapter.AATGraviteRTBFullscreen\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/Cells\/AATCellWithLabel.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATGraviteRTBDriver.swift",
+      "kind": "StringLiteral",
+      "offset": 908,
+      "length": 44,
+      "value": "\"AATGraviteRTBAdapter.AATGraviteRTBNativeAd\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/UIKitShakeDebug\/Cells\/AATCellWithLabel.swift",
       "kind": "IntegerLiteral",
       "offset": 273,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/Cells\/AATCellWithLabel.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/CustomisedShakeDebug\/UIKitShakeDebug\/Cells\/AATCellWithLabel.swift",
       "kind": "IntegerLiteral",
       "offset": 319,
       "length": 2,
@@ -63204,6 +63358,13 @@
       "value": "9"
     },
     {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATNetworkMonitor.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 9,
+      "value": "\"Unknown\""
+    },
+    {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Banner\/StickyPlacements\/AATClassicBannerReloadTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 400,
@@ -63302,41 +63463,6 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATBlueStackDriver.swift",
-      "kind": "StringLiteral",
-      "offset": 299,
-      "length": 41,
-      "value": "\"AATBluestackAdapter.AATBluestackManager\""
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATBlueStackDriver.swift",
-      "kind": "StringLiteral",
-      "offset": 377,
-      "length": 40,
-      "value": "\"AATBluestackAdapter.AATBluestackBanner\""
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATBlueStackDriver.swift",
-      "kind": "StringLiteral",
-      "offset": 456,
-      "length": 42,
-      "value": "\"AATBluestackAdapter.AATBluestackNativeAd\""
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATBlueStackDriver.swift",
-      "kind": "StringLiteral",
-      "offset": 539,
-      "length": 44,
-      "value": "\"AATBluestackAdapter.AATBluestackFullscreen\""
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATBlueStackDriver.swift",
-      "kind": "StringLiteral",
-      "offset": 622,
-      "length": 42,
-      "value": "\"AATBluestackAdapter.AATBluestackRewarded\""
-    },
-    {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugInfo.swift",
       "kind": "StringLiteral",
       "offset": 185,
@@ -63384,6 +63510,13 @@
       "offset": 468,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementImplementation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 313,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementImplementation.swift",
@@ -63468,6 +63601,13 @@
       "offset": 1470,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementImplementation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1666,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Base\/AATPlacementImplementation.swift",
@@ -64063,6 +64203,13 @@
       "offset": 165,
       "length": 11,
       "value": "\"AATKit.AATAdLoader\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATRewardedAdSSVInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 20,
+      "value": "\"AATKit.AATRewardedAdSSVInfo\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATAdMobDSPDriver.swift",

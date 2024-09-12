@@ -42,6 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) BOOL skAdNetworkTestMode;
 
+@property (nonatomic, assign) BOOL gdprRegionTestMode;
+
 /**
  * @abstract Allows frequency tracking of an ad being served.
  * @description If set, the sdk will generate an id to track the frequency of an ad being served. The id is unique per
