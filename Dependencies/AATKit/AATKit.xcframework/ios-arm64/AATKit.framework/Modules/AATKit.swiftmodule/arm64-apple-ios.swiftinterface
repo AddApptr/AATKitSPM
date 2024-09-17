@@ -191,11 +191,11 @@ extension AATKit.AATAdDriverProtocol {
   @objc init()
 }
 @_hasMissingDesignatedInitializers @objc public class AATPlacementHistoryInfo : ObjectiveC.NSObject {
-  public var networkName: Swift.String
-  public var networkKey: Swift.String
-  public var timestamp: Foundation.TimeInterval
-  public var snapshot: UIKit.UIImage?
-  public var creativeID: Swift.String?
+  @objc public var networkName: Swift.String
+  @objc public var networkKey: Swift.String
+  @objc public var timestamp: Foundation.TimeInterval
+  @objc public var snapshot: UIKit.UIImage?
+  @objc public var creativeID: Swift.String?
   @objc deinit
 }
 @objc public protocol AATAdMobCustomEvents {

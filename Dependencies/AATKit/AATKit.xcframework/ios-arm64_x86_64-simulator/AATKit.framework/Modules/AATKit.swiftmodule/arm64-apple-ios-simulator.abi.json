@@ -6646,12 +6646,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit23AATPlacementHistoryInfoC11networkNameSSvp",
+            "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(py)networkName",
             "mangledName": "$s6AATKit23AATPlacementHistoryInfoC11networkNameSSvp",
             "moduleName": "AATKit",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -6668,10 +6669,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATPlacementHistoryInfoC11networkNameSSvg",
+                "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(im)networkName",
                 "mangledName": "$s6AATKit23AATPlacementHistoryInfoC11networkNameSSvg",
                 "moduleName": "AATKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -6692,10 +6696,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATPlacementHistoryInfoC11networkNameSSvs",
+                "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(im)setNetworkName:",
                 "mangledName": "$s6AATKit23AATPlacementHistoryInfoC11networkNameSSvs",
                 "moduleName": "AATKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -6731,12 +6738,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit23AATPlacementHistoryInfoC10networkKeySSvp",
+            "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(py)networkKey",
             "mangledName": "$s6AATKit23AATPlacementHistoryInfoC10networkKeySSvp",
             "moduleName": "AATKit",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -6753,10 +6761,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATPlacementHistoryInfoC10networkKeySSvg",
+                "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(im)networkKey",
                 "mangledName": "$s6AATKit23AATPlacementHistoryInfoC10networkKeySSvg",
                 "moduleName": "AATKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -6777,10 +6788,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATPlacementHistoryInfoC10networkKeySSvs",
+                "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(im)setNetworkKey:",
                 "mangledName": "$s6AATKit23AATPlacementHistoryInfoC10networkKeySSvs",
                 "moduleName": "AATKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -6816,12 +6830,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit23AATPlacementHistoryInfoC9timestampSdvp",
+            "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(py)timestamp",
             "mangledName": "$s6AATKit23AATPlacementHistoryInfoC9timestampSdvp",
             "moduleName": "AATKit",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -6838,10 +6853,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATPlacementHistoryInfoC9timestampSdvg",
+                "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(im)timestamp",
                 "mangledName": "$s6AATKit23AATPlacementHistoryInfoC9timestampSdvg",
                 "moduleName": "AATKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -6862,10 +6880,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATPlacementHistoryInfoC9timestampSdvs",
+                "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(im)setTimestamp:",
                 "mangledName": "$s6AATKit23AATPlacementHistoryInfoC9timestampSdvs",
                 "moduleName": "AATKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -6909,13 +6930,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit23AATPlacementHistoryInfoC8snapshotSo7UIImageCSgvp",
+            "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(py)snapshot",
             "mangledName": "$s6AATKit23AATPlacementHistoryInfoC8snapshotSo7UIImageCSgvp",
             "moduleName": "AATKit",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -6940,10 +6962,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATPlacementHistoryInfoC8snapshotSo7UIImageCSgvg",
+                "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(im)snapshot",
                 "mangledName": "$s6AATKit23AATPlacementHistoryInfoC8snapshotSo7UIImageCSgvg",
                 "moduleName": "AATKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -6972,10 +6997,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATPlacementHistoryInfoC8snapshotSo7UIImageCSgvs",
+                "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(im)setSnapshot:",
                 "mangledName": "$s6AATKit23AATPlacementHistoryInfoC8snapshotSo7UIImageCSgvs",
                 "moduleName": "AATKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -7019,13 +7047,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:6AATKit23AATPlacementHistoryInfoC10creativeIDSSSgvp",
+            "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(py)creativeID",
             "mangledName": "$s6AATKit23AATPlacementHistoryInfoC10creativeIDSSSgvp",
             "moduleName": "AATKit",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -7050,10 +7079,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATPlacementHistoryInfoC10creativeIDSSSgvg",
+                "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(im)creativeID",
                 "mangledName": "$s6AATKit23AATPlacementHistoryInfoC10creativeIDSSSgvg",
                 "moduleName": "AATKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -7082,10 +7114,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATPlacementHistoryInfoC10creativeIDSSSgvs",
+                "usr": "c:@M@AATKit@objc(cs)AATPlacementHistoryInfo(im)setCreativeID:",
                 "mangledName": "$s6AATKit23AATPlacementHistoryInfoC10creativeIDSSSgvs",
                 "moduleName": "AATKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -60709,7 +60744,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 8,
-      "value": "\"3.10.0\""
+      "value": "\"3.10.1\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",

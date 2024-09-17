@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATPubNativeAdapter.framework/AATPubNativeAdapter</key>
 		<data>
-		N5CvsT/8q43W7r9HVecLogah+2g=
+		2T0W6wVEOZq9tkRGueM2KTC3tY0=
 		</data>
 		<key>ios-arm64/AATPubNativeAdapter.framework/Headers/AATPubNativeAdapter-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/AATPubNativeAdapter.framework/Info.plist</key>
 		<data>
-		bjdnjeaMfdweX4x4dB636iqbMXA=
+		+ZJ+vOrmBvX3s9dMHGWD2Rap3KM=
 		</data>
 		<key>ios-arm64/AATPubNativeAdapter.framework/LICENSE</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/AATPubNativeAdapter</key>
 		<data>
-		jcGufZFBbeN68VnoqOlDg6M2lR0=
+		03H5Npv622Zb9KtJGqPv8LRBszg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/Headers/AATPubNativeAdapter-Swift.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/Info.plist</key>
 		<data>
-		wVtqhuGtIwFiqKMM8sXZhF/ub2c=
+		vJfxB3tErmO75gY9guyqZ6LdgDs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/LICENSE</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		+5M4PQUFTKVUVG3EPFIgxFRqRRQ=
+		wTniRopusgWXxFtO+zblyrRd5A0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		GwJc7/rvwRXGGTR5rIFYwbVG4yQ=
+		nGQjyLvqpIXsQkVC7zBWDe05jRg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		aS1oAY0nHB1ilA3B1AshNYWZLlQ=
+		Q67CkevTFI+E+4g2qe1onVn5eNc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -127,11 +127,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N5CvsT/8q43W7r9HVecLogah+2g=
+			2T0W6wVEOZq9tkRGueM2KTC3tY0=
 			</data>
 			<key>hash2</key>
 			<data>
-			nSNEhXB0ymSr6iY5HZzEbnGPApEdNole8YHBeYmBITY=
+			45cy/BFY7Rd5UoZPWMTNlbOd5EKq8UjtLgoSBkhgXds=
 			</data>
 		</dict>
 		<key>ios-arm64/AATPubNativeAdapter.framework/Headers/AATPubNativeAdapter-Swift.h</key>
@@ -160,11 +160,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bjdnjeaMfdweX4x4dB636iqbMXA=
+			+ZJ+vOrmBvX3s9dMHGWD2Rap3KM=
 			</data>
 			<key>hash2</key>
 			<data>
-			+OWEWtC58JaBcX9S30mD9o3rHI0qlrJzhpXeSBLbMBQ=
+			DKPaawmjhh3coUWghiW8QrlpZKk3h3uK/RjRU+wm3Xk=
 			</data>
 		</dict>
 		<key>ios-arm64/AATPubNativeAdapter.framework/LICENSE</key>
@@ -237,11 +237,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jcGufZFBbeN68VnoqOlDg6M2lR0=
+			03H5Npv622Zb9KtJGqPv8LRBszg=
 			</data>
 			<key>hash2</key>
 			<data>
-			m0Dl8Aui6wvMwbLuAdcJCpfPzr0oxBMrxVClggNOBxg=
+			TmATzI7fHVVG/8kmyi6AsAiFBo/PTwd99gvY6vivMvs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/Headers/AATPubNativeAdapter-Swift.h</key>
@@ -270,11 +270,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wVtqhuGtIwFiqKMM8sXZhF/ub2c=
+			vJfxB3tErmO75gY9guyqZ6LdgDs=
 			</data>
 			<key>hash2</key>
 			<data>
-			xFSA6spIewN7kLs4dWLGkZSVruFu4Cqvb/CW4a/b55Q=
+			BxPJHpuozwaNguACTXtXpc9C8C96jCSJpns/2NKxqY8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/LICENSE</key>
@@ -391,11 +391,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+5M4PQUFTKVUVG3EPFIgxFRqRRQ=
+			wTniRopusgWXxFtO+zblyrRd5A0=
 			</data>
 			<key>hash2</key>
 			<data>
-			h8MSaJzpXCVmPB0ycvKomkh5HFwOgBazSE5DE4ltQKY=
+			ZmGIaitZ+5WKB0mSxNKJxouv/oMbDmK9o6ix2VASCE8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -413,22 +413,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GwJc7/rvwRXGGTR5rIFYwbVG4yQ=
+			nGQjyLvqpIXsQkVC7zBWDe05jRg=
 			</data>
 			<key>hash2</key>
 			<data>
-			0ZEZVLanTrIYnBza8tNVs62fMNITpez8ZvCFxIn31dA=
+			hlRslxZhb5XQBtJ6cCt5/qCFb3MdjuauFEu0d0UewL0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aS1oAY0nHB1ilA3B1AshNYWZLlQ=
+			Q67CkevTFI+E+4g2qe1onVn5eNc=
 			</data>
 			<key>hash2</key>
 			<data>
-			RLQ+pN9Ahh1+4U8t1+1JqzCnQhMnQqga5PiAt4w9/do=
+			O29lBeILNEG539Bt29XBQCRxymDpb5hTUutD6sDUi64=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATPubNativeAdapter.framework/_CodeSignature/CodeSignature</key>

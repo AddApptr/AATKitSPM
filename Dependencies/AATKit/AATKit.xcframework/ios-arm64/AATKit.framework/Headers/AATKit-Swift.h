@@ -1705,6 +1705,11 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATNativePlacementDelegate_")
 
 SWIFT_CLASS("_TtC6AATKit23AATPlacementHistoryInfo")
 @interface AATPlacementHistoryInfo : NSObject
+@property (nonatomic, copy) NSString * _Nonnull networkName;
+@property (nonatomic, copy) NSString * _Nonnull networkKey;
+@property (nonatomic) NSTimeInterval timestamp;
+@property (nonatomic, strong) UIImage * _Nullable snapshot;
+@property (nonatomic, copy) NSString * _Nullable creativeID;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1793,7 +1798,7 @@ SWIFT_CLASS("_TtC6AATKit20AATRewardedAdSSVInfo")
 @property (nonatomic, copy) NSString * _Nonnull userId;
 /// Custom string
 @property (nonatomic, copy) NSString * _Nullable customString;
-/// Create <code>AATSSVInfo</code> instance
+/// Create <code>AATRewardedAdSSVInfo</code> instance
 /// \param userId user id
 ///
 /// \param customString custom string
