@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATAppLovinAdapter.framework/AATAppLovinAdapter</key>
 		<data>
-		9D5ndDezd2f/O9cFQPmO+gUDOO8=
+		KyH3oo7CgEaNblYILJ4sIdBJWGM=
 		</data>
 		<key>ios-arm64/AATAppLovinAdapter.framework/Headers/AATAppLovinAdapter-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/AATAppLovinAdapter.framework/Info.plist</key>
 		<data>
-		fkPr7dEUwVKujtUYmyYLmsKWuoA=
+		/xVA3WqRGZr2Es+e/ktEsJ2nqu4=
 		</data>
 		<key>ios-arm64/AATAppLovinAdapter.framework/Modules/AATAppLovinAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/AATAppLovinAdapter</key>
 		<data>
-		9BhnXKhz7sfSY7KTx2WdiAS1Mv0=
+		3WMF4p689n+n46JlfvT4fPLIRio=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/Headers/AATAppLovinAdapter-Swift.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/Info.plist</key>
 		<data>
-		8qHP9+7u8v3hXXs/ZnBQ9Fi1HqA=
+		84CoeVXuGr+Ql3k4RP/+YvfIY0Q=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/Modules/AATAppLovinAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		sj7kTEQ6tcub+qMcYXt4f2ilSMU=
+		cZrm5lp04WgKcwXFjonl/ALIzhI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -102,11 +102,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		czHSTMKySMkFv6H+dAXwS9IdOKI=
+		bUlr9AJ0A7S3TioksdFCg8XEPzk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		FmP57Tl5096gP++hJsAqWQ5fEE4=
+		qg6t4cFonph9DpWvA8qKVyhSavE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -119,11 +119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9D5ndDezd2f/O9cFQPmO+gUDOO8=
+			KyH3oo7CgEaNblYILJ4sIdBJWGM=
 			</data>
 			<key>hash2</key>
 			<data>
-			99CLBD8vvADNTzh3UobqjCAQveGrKr0BcYh4uqmRsYs=
+			HnqUGVNWv57QqgGTtvj4RKwsmKX75fBB9mBGrPGWUQw=
 			</data>
 		</dict>
 		<key>ios-arm64/AATAppLovinAdapter.framework/Headers/AATAppLovinAdapter-Swift.h</key>
@@ -152,11 +152,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fkPr7dEUwVKujtUYmyYLmsKWuoA=
+			/xVA3WqRGZr2Es+e/ktEsJ2nqu4=
 			</data>
 			<key>hash2</key>
 			<data>
-			1ChaO+poH6B1kICOf0h8rcXOlLJy9mTCZsk1VVGb914=
+			pVRLpdRpydrUbGyM3tv1X17TUqVCEasdmLmSqTy/xmg=
 			</data>
 		</dict>
 		<key>ios-arm64/AATAppLovinAdapter.framework/Modules/AATAppLovinAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -218,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9BhnXKhz7sfSY7KTx2WdiAS1Mv0=
+			3WMF4p689n+n46JlfvT4fPLIRio=
 			</data>
 			<key>hash2</key>
 			<data>
-			+JzsNSbTrcjT7vNxHP15Rte+EtmzK7rZNIsJaNFVFAg=
+			judsnA547eCh/kiglQli43qu/MZz5H8/DANak7PLNUQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/Headers/AATAppLovinAdapter-Swift.h</key>
@@ -251,11 +251,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8qHP9+7u8v3hXXs/ZnBQ9Fi1HqA=
+			84CoeVXuGr+Ql3k4RP/+YvfIY0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			VR/RY/USG4EeZfxnC7iF2TJ8MLyDGIB7aed/2NYMUQ8=
+			i5YirTiJLAu9E0EV5LHZOw5b7Qfr9je3d6sbTontYlY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/Modules/AATAppLovinAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -361,11 +361,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sj7kTEQ6tcub+qMcYXt4f2ilSMU=
+			cZrm5lp04WgKcwXFjonl/ALIzhI=
 			</data>
 			<key>hash2</key>
 			<data>
-			eBCDvtW7jzHHS3QTWzTiaVQjVlJyD3/J/UAJ4O2Hu9k=
+			peYRLktQFN7ETOcGP0eiGoavBhNSN/PRTvXILh8V174=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -383,22 +383,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			czHSTMKySMkFv6H+dAXwS9IdOKI=
+			bUlr9AJ0A7S3TioksdFCg8XEPzk=
 			</data>
 			<key>hash2</key>
 			<data>
-			f+/Nq3imqSU2SCbb8/XSP1s47z74XG1QVJ4aQ/6RjXE=
+			zCH2MubpohmI0ULAk2ZLO2lDMGYv0EJieV6p54hqi4I=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FmP57Tl5096gP++hJsAqWQ5fEE4=
+			qg6t4cFonph9DpWvA8qKVyhSavE=
 			</data>
 			<key>hash2</key>
 			<data>
-			twZw5n4BOeAKWe+uhv0CNDr/qQz1kQWmPkUkgi77UaY=
+			3JL88FB4ZTcz3CMW7VFWOt4lNpnyMEhxgZUpLWCdC38=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppLovinAdapter.framework/_CodeSignature/CodeSignature</key>
