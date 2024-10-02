@@ -1,7 +1,7 @@
 framework module KidozSDK {
   umbrella header "KidozSDK.h"
-  export *
 
+  export *
   module * { export * }
 }
 

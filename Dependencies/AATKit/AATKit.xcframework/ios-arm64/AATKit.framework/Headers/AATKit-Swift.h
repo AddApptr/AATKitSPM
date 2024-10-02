@@ -1847,6 +1847,7 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+@property (nonatomic, readonly, strong) AATAdInfo * _Nullable adInfo;
 /// Checks if the frequency cap has been reached.
 ///
 /// returns:

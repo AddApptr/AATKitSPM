@@ -356,6 +356,7 @@ public protocol AATDatonomyDriver {
   @objc var targetingInfo: [Swift.String : [Swift.String]]? { get set }
   @objc var contentTargetingUrl: Swift.String? { get set }
   @objc var multiContentTargetingUrls: [Swift.String]? { get set }
+  @objc var adInfo: AATKit.AATAdInfo? { get }
   @objc func isFrequencyCapReached() -> Swift.Bool
 }
 @objc public enum AATBannerSize : Swift.Int, Swift.RawRepresentable, Swift.CaseIterable {
