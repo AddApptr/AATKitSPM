@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATGraviteRTBAdapter.framework/AATGraviteRTBAdapter</key>
 		<data>
-		QMXj3piIp9D2J3BpjZ6EQESvviw=
+		N6SqaE5yniwE0k37Z3N9AaFwcN4=
 		</data>
 		<key>ios-arm64/AATGraviteRTBAdapter.framework/Headers/AATGraviteRTBAdapter-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/AATGraviteRTBAdapter.framework/Info.plist</key>
 		<data>
-		et5stKVXyRvFwaepzmA2YfjwmiI=
+		2wPSnKcYNrbRv4cSJCy0gcuQ8WA=
 		</data>
 		<key>ios-arm64/AATGraviteRTBAdapter.framework/Modules/AATGraviteRTBAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/AATGraviteRTBAdapter</key>
 		<data>
-		nK4z6O3v2eQxXM+LJgtkNYWq6VQ=
+		9Pk/4HN4ZY7gxtEc3z9JboUdVeA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/Headers/AATGraviteRTBAdapter-Swift.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/Info.plist</key>
 		<data>
-		mLIYSZuJ3YcFpfhECB9KgZydYYg=
+		TAPbofXOj+Y1awcIbxn34AUqtCI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/Modules/AATGraviteRTBAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		jOmW5jiXtfkITbhHMDxlpprVo8M=
+		3gsaAUToVNEDeJQE7NVaJm9O2P8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -102,11 +102,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		BAG8Mvd4fjhFfTohTRWL1sMo3qM=
+		3+QPtmYQ2ZbxsOqwcjps5jGfCIg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		SjDbB+MyCeh38VD4W3QO6uujuR8=
+		Qualb7SIFeTPfqX3ImCVKShTsQo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -119,11 +119,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QMXj3piIp9D2J3BpjZ6EQESvviw=
+			N6SqaE5yniwE0k37Z3N9AaFwcN4=
 			</data>
 			<key>hash2</key>
 			<data>
-			LLcUxJTvS5rVuBR50KJFMP8I3rykPeoHzxMlowgFcWc=
+			ZibPKtNt2YRkc4yscB4cr/ekaM37pyMqJcN0SLmthCg=
 			</data>
 		</dict>
 		<key>ios-arm64/AATGraviteRTBAdapter.framework/Headers/AATGraviteRTBAdapter-Swift.h</key>
@@ -152,11 +152,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			et5stKVXyRvFwaepzmA2YfjwmiI=
+			2wPSnKcYNrbRv4cSJCy0gcuQ8WA=
 			</data>
 			<key>hash2</key>
 			<data>
-			7dHIZ23iWKj3Ur/JeAjsltu6+ia4nPhRHkqSXkIzHRg=
+			Fu6U1sWQCA2P/qCWlpMQOuR78Homl+7l+8+yaovPYRU=
 			</data>
 		</dict>
 		<key>ios-arm64/AATGraviteRTBAdapter.framework/Modules/AATGraviteRTBAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -218,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nK4z6O3v2eQxXM+LJgtkNYWq6VQ=
+			9Pk/4HN4ZY7gxtEc3z9JboUdVeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			nWYwWYhV8VupImH2cIBOnXO2nImJ3LJvL/J1XlgPujk=
+			9p55ez506eMSv0ZCkLmjjD5g6tQEKZqjqYVYMhueulM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/Headers/AATGraviteRTBAdapter-Swift.h</key>
@@ -251,11 +251,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mLIYSZuJ3YcFpfhECB9KgZydYYg=
+			TAPbofXOj+Y1awcIbxn34AUqtCI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kfgeu7Pf0C4fWyafOb+6w1SK+KMk+FMdh5e/cOWShCI=
+			lo17d5Mq8xKvh6lEegslo/jbtK5QcijOXR0u5EkdYVY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/Modules/AATGraviteRTBAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -361,11 +361,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jOmW5jiXtfkITbhHMDxlpprVo8M=
+			3gsaAUToVNEDeJQE7NVaJm9O2P8=
 			</data>
 			<key>hash2</key>
 			<data>
-			O376kmhMmCKcjwz2ZKhN9Z4J4aGDUdOpw7lN33XqYac=
+			K6SP1HaPm9gpGXivx9RQp24RAK8OrdFHcT0Qj2Wjg0E=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -383,22 +383,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BAG8Mvd4fjhFfTohTRWL1sMo3qM=
+			3+QPtmYQ2ZbxsOqwcjps5jGfCIg=
 			</data>
 			<key>hash2</key>
 			<data>
-			uIC495RBab2cJIRZbYfl9k04pBAk6wWX/IMsX6xrGN4=
+			MbWeNnfxhmkBWpe/cIuELeNXI+cCCrlzrA5Sd0l7Fe8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SjDbB+MyCeh38VD4W3QO6uujuR8=
+			Qualb7SIFeTPfqX3ImCVKShTsQo=
 			</data>
 			<key>hash2</key>
 			<data>
-			9qrItIkMc9GTDjpegW/AtxPzvL5/IaL7qJ/tzTOmWI8=
+			6WkOZc1vdFtHSfv7AUgFy0oHzHgLIIYlhFex364m8bs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATGraviteRTBAdapter.framework/_CodeSignature/CodeSignature</key>
