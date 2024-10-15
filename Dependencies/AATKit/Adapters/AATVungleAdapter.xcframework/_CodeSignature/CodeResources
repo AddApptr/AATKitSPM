@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATVungleAdapter.framework/AATVungleAdapter</key>
 		<data>
-		zOTtBx6V2tDlF3jXIgB7eP1YEyE=
+		mQ4v6PSch6z/3YlzkAyUyNRwcRA=
 		</data>
 		<key>ios-arm64/AATVungleAdapter.framework/Headers/AATVungleAdapter-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/AATVungleAdapter.framework/Info.plist</key>
 		<data>
-		RFaLysv5M+ubuLWGUM1p+XimGII=
+		W+dY48EDeFM9LimryPliB8gCV40=
 		</data>
 		<key>ios-arm64/AATVungleAdapter.framework/Modules/AATVungleAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/AATVungleAdapter</key>
 		<data>
-		nxFGSp8kTjqUj32j1VXK+jEvvkQ=
+		pTgB533LBAZXoD7Uk8MnWpZqXic=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/Headers/AATVungleAdapter-Swift.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/Info.plist</key>
 		<data>
-		cUjpFlyYRnD0ZUJQnIEvhWpii6U=
+		POUftkwMggPIj0AKQHwBi/w1mG0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/Modules/AATVungleAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		1LP/itr7TfqSvvHnNjThps5I/c8=
+		xNfvxWNOwlJiEVkq1YOJumsrH9U=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		jk6Cfwa7DuwN3Mslyh5kqWIe3Zg=
+		m4qdHt8ZJGiUFnl/JB14KtJDeEU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		gI9ycM2uZn+wOi8QqFcW9IQVPy8=
+		bK75FqjrHsN5DoaZaMFv2X1UIgw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -135,11 +135,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zOTtBx6V2tDlF3jXIgB7eP1YEyE=
+			mQ4v6PSch6z/3YlzkAyUyNRwcRA=
 			</data>
 			<key>hash2</key>
 			<data>
-			iIwWH8Uf535ocHTk5i0mzG+x5PGbwAFjD2bpALA+sG4=
+			VDzYBA0DMYvF6LszPl6cYWRmJoqpCGiBmUOrfmjKHuQ=
 			</data>
 		</dict>
 		<key>ios-arm64/AATVungleAdapter.framework/Headers/AATVungleAdapter-Swift.h</key>
@@ -168,11 +168,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RFaLysv5M+ubuLWGUM1p+XimGII=
+			W+dY48EDeFM9LimryPliB8gCV40=
 			</data>
 			<key>hash2</key>
 			<data>
-			ir3SYmfYDq0JWbI8uDfyGMwJOffqEVdpiseGTmDF2sA=
+			tWKOzXWrRwxH2tF8R7llLV7gewLRBlXMLIyijkxkv1M=
 			</data>
 		</dict>
 		<key>ios-arm64/AATVungleAdapter.framework/Modules/AATVungleAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -256,11 +256,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nxFGSp8kTjqUj32j1VXK+jEvvkQ=
+			pTgB533LBAZXoD7Uk8MnWpZqXic=
 			</data>
 			<key>hash2</key>
 			<data>
-			TDNJzKJqJcWjO4BRIJdE9TAMij+CtQtxY/7z+JBNcyg=
+			agyWVtkrmbtK1bMN3Tndi29MfZeFjWYVERbMMnL9LCQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/Headers/AATVungleAdapter-Swift.h</key>
@@ -289,11 +289,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cUjpFlyYRnD0ZUJQnIEvhWpii6U=
+			POUftkwMggPIj0AKQHwBi/w1mG0=
 			</data>
 			<key>hash2</key>
 			<data>
-			kKyaB/Ez9Gfcs4LpLdW8yfHiiRWeY4Lzj46YXeJ+/gE=
+			MQ9p8sURCJ6o83ORGMBdbo/RFc3BddwgtOOg+0n3qB8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/Modules/AATVungleAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -421,11 +421,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1LP/itr7TfqSvvHnNjThps5I/c8=
+			xNfvxWNOwlJiEVkq1YOJumsrH9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			gCxgCY8TKRaYP8k613eO/X031t6XBZI81LwwAwa5+gM=
+			FlknI4Zuhx1KVmKdAqqCbGZZUuMUk7lPGASM8sAR/z8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -443,22 +443,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jk6Cfwa7DuwN3Mslyh5kqWIe3Zg=
+			m4qdHt8ZJGiUFnl/JB14KtJDeEU=
 			</data>
 			<key>hash2</key>
 			<data>
-			UJQ3q0NMMAxgqWua39mk1vpO4nt0c5E/JRMT7G0JncA=
+			o776aKD1DJHbxssIsDKjlZ0+DS5LpDbX1eu+sBZJMUU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gI9ycM2uZn+wOi8QqFcW9IQVPy8=
+			bK75FqjrHsN5DoaZaMFv2X1UIgw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hp2rywJxdKZ6N1ugh2K5BxpR3WBj02PtGl41cPp+NGQ=
+			21QE9i1x0CKTouho28MQzvGlFf88vusS59fYaS9I2lQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATVungleAdapter.framework/_CodeSignature/CodeSignature</key>

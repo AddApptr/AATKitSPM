@@ -88,17 +88,21 @@
 		<data>
 		2zN+SPefUC3b2U4gFxs/78X89NU=
 		</data>
+		<key>Headers/SMAUtils.h</key>
+		<data>
+		s91gfkvDwMB/98C6OawwDk+q8oc=
+		</data>
 		<key>Headers/SmaatoSDK.h</key>
 		<data>
 		WC5UmGNOlrCMCYd373mIGO7750M=
 		</data>
 		<key>Headers/SmaatoSDKCore.h</key>
 		<data>
-		4dQdI3VzKkJF/RGajKh3oLQMVcU=
+		32IEARvu+zz2CeJqXQnMBiTwI3g=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3Z2m4k3ND6ExeO9HYEoVNuL9ooQ=
+		Dkpj3nBeMjidTInfgRffsW55A3I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -198,7 +202,7 @@
 		</data>
 		<key>PrivateHeaders/SMAAPIResponse.h</key>
 		<data>
-		Dk880SK1en/u8NPL5vBWst9d3Zw=
+		kssGgVLIZBLBL8rq4Zrn2PKoysk=
 		</data>
 		<key>PrivateHeaders/SMAAPIResponseMapper.h</key>
 		<data>
@@ -270,7 +274,7 @@
 		</data>
 		<key>PrivateHeaders/SMAAdPresenting.h</key>
 		<data>
-		B/bBVpvqU++TR+7xQLNR8x3XNaY=
+		9ZWEcdi4mFirg3s2dzSoN1Z4WBI=
 		</data>
 		<key>PrivateHeaders/SMAAdPrivacyPolicy.h</key>
 		<data>
@@ -372,10 +376,6 @@
 		<data>
 		GVsHAm95yw8nSeBV+6MzzYMlu3I=
 		</data>
-		<key>PrivateHeaders/SMACloseAndSkipButton.h</key>
-		<data>
-		1Ibr07NMQjl6kjlf8dUxVOdZ6jE=
-		</data>
 		<key>PrivateHeaders/SMACloseButton.h</key>
 		<data>
 		3re297Andez2ZccWO6HTLT7IUkI=
@@ -402,7 +402,7 @@
 		</data>
 		<key>PrivateHeaders/SMAConfigurationViewModel.h</key>
 		<data>
-		gkHpR5bHf6rJnoe1pKuG54u04dY=
+		Dj0+C9xbJNrOMC41J7ooyjnMFBM=
 		</data>
 		<key>PrivateHeaders/SMAConnectionTypeProvider+Private.h</key>
 		<data>
@@ -431,6 +431,10 @@
 		<key>PrivateHeaders/SMADebugLogger.h</key>
 		<data>
 		2+VVpDaxjdN8RseFktfo6Ya/wFE=
+		</data>
+		<key>PrivateHeaders/SMADelayCountdownLabel.h</key>
+		<data>
+		t13NolJi3mNWsllyG8y+E8mRJDs=
 		</data>
 		<key>PrivateHeaders/SMADisplayAdRequest.h</key>
 		<data>
@@ -526,7 +530,7 @@
 		</data>
 		<key>PrivateHeaders/SMAIABDataStorageUserDefaults.h</key>
 		<data>
-		PwoYtdKCcZmV1/PObxnOcdq097c=
+		lTz45rn6Iun+fMZlmMf8L9nUn14=
 		</data>
 		<key>PrivateHeaders/SMAIcons.h</key>
 		<data>
@@ -550,7 +554,7 @@
 		</data>
 		<key>PrivateHeaders/SMAInterstitialViewController.h</key>
 		<data>
-		oejSTILFTPm6+fWkNIwk0mjHi1w=
+		quEB5JcuCRLWS37GpiYdO6tFoWQ=
 		</data>
 		<key>PrivateHeaders/SMAJSONMapper.h</key>
 		<data>
@@ -694,7 +698,7 @@
 		</data>
 		<key>PrivateHeaders/SMAObjectMapper.h</key>
 		<data>
-		/m2BpdyLAVrOFsVSM+9wmMUMbSI=
+		sL6v914qKh3paY6XjiOWXMdyub4=
 		</data>
 		<key>PrivateHeaders/SMAObservable.h</key>
 		<data>
@@ -780,6 +784,10 @@
 		<data>
 		MQf0KHR7VM/zA1GXTp1qv6gW3HM=
 		</data>
+		<key>PrivateHeaders/SMASDKConfigFeatures.h</key>
+		<data>
+		RkwiVV266OhmC26kjfhlJTTGTcQ=
+		</data>
 		<key>PrivateHeaders/SMASKAdImpressionTracker.h</key>
 		<data>
 		gg7uh3pCja+DCCqcNU/HfngnLD4=
@@ -802,7 +810,7 @@
 		</data>
 		<key>PrivateHeaders/SMASettingsConstants.h</key>
 		<data>
-		zSFfkWknicsgizc2d6WYWV68RTM=
+		ZrmgIDb2W1fK//0YqDc7/Vy1YhM=
 		</data>
 		<key>PrivateHeaders/SMASilentModeManager.h</key>
 		<data>
@@ -823,6 +831,14 @@
 		<key>PrivateHeaders/SMAStoreKitAutoOpening.h</key>
 		<data>
 		C4ilaYXdDV36F51gelLu7ux2UgI=
+		</data>
+		<key>PrivateHeaders/SMAStoreProductViewControllerPresenter+Private.h</key>
+		<data>
+		WHoYq6q42x1fgLwakYktm5Y5OXw=
+		</data>
+		<key>PrivateHeaders/SMAStoreProductViewControllerPresenter.h</key>
+		<data>
+		6nMIiw3Ik05WB0MQyn6+1jf5vak=
 		</data>
 		<key>PrivateHeaders/SMASystemInfo.h</key>
 		<data>
@@ -890,7 +906,7 @@
 		</data>
 		<key>PrivateHeaders/SMAViewabilityVideoProperties.h</key>
 		<data>
-		XMUkVZ9mD5wdNvcV7ZW9eRXD2yQ=
+		LjsECEKnf8dWcX1MUVZF8x2salA=
 		</data>
 		<key>PrivateHeaders/SMAViewabilityVideoTracking.h</key>
 		<data>
@@ -918,7 +934,7 @@
 		</data>
 		<key>PrivateHeaders/SMAWebView.h</key>
 		<data>
-		jeem1wVda1OhzCPTxhxamtgAwGA=
+		gd5AUXoeMqutWleHDVE/kdT1Krw=
 		</data>
 		<key>PrivateHeaders/SmaatoSDK+Private.h</key>
 		<data>
@@ -934,7 +950,7 @@
 		</data>
 		<key>PrivateHeaders/UIColor+SMASDKColors.h</key>
 		<data>
-		1bIxu6W/6XEbu5PteFMTerZB5nw=
+		j8CecZXfbgahq+DDyf45Rt9Cgj4=
 		</data>
 		<key>PrivateHeaders/UIImage+SMADrawing.h</key>
 		<data>
@@ -1106,6 +1122,13 @@
 			1oH5uWnOuopqS2+ptHb2TbuPqE+ZlerOj7Vl9De7c4g=
 			</data>
 		</dict>
+		<key>Headers/SMAUtils.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eelddpKpJpAnuv0BV4xnZCsJ+nIwa9V0zVTco0C1OUE=
+			</data>
+		</dict>
 		<key>Headers/SmaatoSDK.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1117,7 +1140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zisy57ME85t+sR2tIxEIGoyf4Ln/E+EjboD5qANIXOk=
+			H4rsbA4cs7EPoXFW3E/j25WeuVUhaPhdd8pBAXEWbXg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1292,7 +1315,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			llsnxZDqL8U/ExhZqz2iskF6ky9+0TODesN1KuiF7wc=
+			VWhG1KNFMWJJ6Jf0UKwRmj0i5gArzoJJf0cb8oMOPsA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAPIResponseMapper.h</key>
@@ -1418,7 +1441,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f87kHdDXZYeXdfkMUBTH0+GJgwYETmM2Lfw6GqSDHoQ=
+			HIRmGPR/wIxbmbGGdQkjxqSTtK6wsku0u+yHG4ZfOTA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAAdPrivacyPolicy.h</key>
@@ -1596,13 +1619,6 @@
 			/b2QYlCAErns4bDaKkkgGDjwZHD4GTzYDTPXbwV4jIU=
 			</data>
 		</dict>
-		<key>PrivateHeaders/SMACloseAndSkipButton.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JhYa0pvV9GEjnp8kme9k/h+ergGDMS2L9QIfSLn7Pmo=
-			</data>
-		</dict>
 		<key>PrivateHeaders/SMACloseButton.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1649,7 +1665,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KkoCvx1O6RS6DNIK8LIsSS0dhueVNpiBTf6vvAtAixI=
+			P8Sb4dvpsuNSvjcG5j4Cn1Xny+2pzWH0/w70D8OcN/A=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAConnectionTypeProvider+Private.h</key>
@@ -1699,6 +1715,13 @@
 			<key>hash2</key>
 			<data>
 			b7AZlFAOP45YVUyvrvSAzTgmWdJZqQQypJfku/dUgJs=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMADelayCountdownLabel.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gC5C8PAOWDAZD/RqR4/IsNVZSFo0KmkuYf2Bgz4YOYw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMADisplayAdRequest.h</key>
@@ -1866,7 +1889,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Teprjo02FEo62Qa0yk9wiJfVlN+ONKrXvYKVXFHT94=
+			bepX/jkVjRvIqmdWmxOI/o8dSm7irjbs8W+brD5lRkg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAIcons.h</key>
@@ -1908,7 +1931,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EfHacmuUoPQav1Ac9hG/E5A8yhlE6UetAe6mvaAs9Kg=
+			W44VnPLBrU7IuUI0/fAFKTfU2FtQvvzjqEBjjLPToo8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAJSONMapper.h</key>
@@ -2160,7 +2183,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			myONhfVmu7ZyNLLKAYVxdpC36RT99pU02rYT9llpygg=
+			IwMGUQ5JTKOYdPtg0wSL+8jagOuKVGc6rXHQeWgfFzM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAObservable.h</key>
@@ -2310,6 +2333,13 @@
 			mNQO96Ykskq8fNgDwutpumrOVMcSA94EVMV7/TGMYQA=
 			</data>
 		</dict>
+		<key>PrivateHeaders/SMASDKConfigFeatures.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RKdB7i3xvGAVWiMKfXcIbTxqSXPReFfHUYxWgPsOYYg=
+			</data>
+		</dict>
 		<key>PrivateHeaders/SMASKAdImpressionTracker.h</key>
 		<dict>
 			<key>hash2</key>
@@ -2349,7 +2379,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hUAQd0q935wwUIbJm1xNw7KaYnzCXJrlOKlGbdIJd80=
+			0zvPjZR0Iyy1B+Tm3rcxx2ugu78GTnMdWADwdk9fXaU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMASilentModeManager.h</key>
@@ -2385,6 +2415,20 @@
 			<key>hash2</key>
 			<data>
 			LQqA+6GVMKNtMKZ7kwTYiF2oQUNlhOvIYJuC0mwByN4=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMAStoreProductViewControllerPresenter+Private.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P270HxfSf84pMJoY8GnEQZuJ/W0E99hU8ynWWLdSfxc=
+			</data>
+		</dict>
+		<key>PrivateHeaders/SMAStoreProductViewControllerPresenter.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yx02slnP28E0XizzpTWeDyduV6WeTxMYK2EET6Md7O8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMASystemInfo.h</key>
@@ -2503,7 +2547,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			foz/pO6Y1PLPUIhMrg5AAd/sSGs6wX2gxW0+A7V+9vQ=
+			sa8D5bFrU+8goYblS47YaJuV5zeg2NoZIxibl7H7G+A=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SMAViewabilityVideoTracking.h</key>
@@ -2552,7 +2596,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K14Sb0xALJMkII4z7qz1K//mTrmbiITITitIUfhfWu4=
+			FS5xZfJxYnZ4ccJdcWFn7pFRz2wnzY+qGT0QUPjIMYw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SmaatoSDK+Private.h</key>
@@ -2580,7 +2624,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SfKZbvtGa0FwNEZyVX/Wnwjfvu285ZqoNhEmYyivOIA=
+			JW6AtezCq7jOJf8EpHSbCqsewj4baM9TXl4q6ptcPn4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/UIImage+SMADrawing.h</key>

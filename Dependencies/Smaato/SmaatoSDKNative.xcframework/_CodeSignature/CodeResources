@@ -38,7 +38,7 @@
 		</data>
 		<key>ios-arm64/SmaatoSDKNative.framework/Info.plist</key>
 		<data>
-		8qQqMPzmMoRxVWhaR3f9CmnWK3Q=
+		UWNNBQTgOSKjWeRQFwlMwBcTk0s=
 		</data>
 		<key>ios-arm64/SmaatoSDKNative.framework/Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64/SmaatoSDKNative.framework/SmaatoSDKNative</key>
 		<data>
-		shP1oXJDsOvbGhXFj6mdXkJ0TSg=
+		j9l73frGUv/h2zyXWDzqQ+kT98s=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKNative.framework/Headers/SMANativeAd.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKNative.framework/Info.plist</key>
 		<data>
-		/EayusmqwBHye29HZ/V0qdNI1as=
+		2bjvygD/FPjckGpI3pVDnU4Qeh0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKNative.framework/Modules/module.modulemap</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKNative.framework/SmaatoSDKNative</key>
 		<data>
-		hYlhdgWnCZyyGCO1bfilbUGCAro=
+		w9db4BhYC1+Lw2SpBoGj8igTloE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKNative.framework/_CodeSignature/CodeResources</key>
 		<data>
-		jr/KMYOlOndy5E1WsFltd2GzRO0=
+		ZOrqETeETzdqo72YGxdKPdCn4FE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -191,11 +191,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8qQqMPzmMoRxVWhaR3f9CmnWK3Q=
+			UWNNBQTgOSKjWeRQFwlMwBcTk0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			1msWKARDYnBhHeJ1PYBnutyg1LqketWIdVW76SqhvpM=
+			3XQ631nxiNum4Ljh0cBfn+G/gmzRK2IjFcfkiVoG2+o=
 			</data>
 		</dict>
 		<key>ios-arm64/SmaatoSDKNative.framework/Modules/module.modulemap</key>
@@ -213,11 +213,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			shP1oXJDsOvbGhXFj6mdXkJ0TSg=
+			j9l73frGUv/h2zyXWDzqQ+kT98s=
 			</data>
 			<key>hash2</key>
 			<data>
-			Cz4pSLbsHzaSUyB9NBzempcR9bVmUtGJ6zGkWz0Obv0=
+			mPA2ibWXsrSGSiQGiuuqzdzt013ciNmXjzOPiy8UhfQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKNative.framework/Headers/SMANativeAd.h</key>
@@ -312,11 +312,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/EayusmqwBHye29HZ/V0qdNI1as=
+			2bjvygD/FPjckGpI3pVDnU4Qeh0=
 			</data>
 			<key>hash2</key>
 			<data>
-			xDWYk7gdFtFh2/KYoVGBboZoMRnzT7oBU8RWQrFfrgE=
+			xERJGgDmYWn+WjdEv6JqnNMnwj6uHudMHD4Gj0JU11o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKNative.framework/Modules/module.modulemap</key>
@@ -334,22 +334,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hYlhdgWnCZyyGCO1bfilbUGCAro=
+			w9db4BhYC1+Lw2SpBoGj8igTloE=
 			</data>
 			<key>hash2</key>
 			<data>
-			FIll53fFCcghDhvu5+ON6dE2KZyMFMss8IlsrQa+xWA=
+			8rRHDXMQ1gI8ECGU12mL1fEKMjp6FBxeWrciIbdOzfE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKNative.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jr/KMYOlOndy5E1WsFltd2GzRO0=
+			ZOrqETeETzdqo72YGxdKPdCn4FE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jgxZk03YFMaDsq+3yAMW+XUCQbY+4ocXCcDM+eshw2c=
+			RN2dmXlycNSCf34xD48WVklo7Zb5iOsSPDsd4zReV5E=
 			</data>
 		</dict>
 	</dict>

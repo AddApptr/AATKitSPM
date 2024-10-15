@@ -88,17 +88,21 @@
 		<data>
 		2zN+SPefUC3b2U4gFxs/78X89NU=
 		</data>
+		<key>ios-arm64/SmaatoSDKCore.framework/Headers/SMAUtils.h</key>
+		<data>
+		s91gfkvDwMB/98C6OawwDk+q8oc=
+		</data>
 		<key>ios-arm64/SmaatoSDKCore.framework/Headers/SmaatoSDK.h</key>
 		<data>
 		WC5UmGNOlrCMCYd373mIGO7750M=
 		</data>
 		<key>ios-arm64/SmaatoSDKCore.framework/Headers/SmaatoSDKCore.h</key>
 		<data>
-		4dQdI3VzKkJF/RGajKh3oLQMVcU=
+		32IEARvu+zz2CeJqXQnMBiTwI3g=
 		</data>
 		<key>ios-arm64/SmaatoSDKCore.framework/Info.plist</key>
 		<data>
-		gckBoZ2uc2OH32RIq3am2zjTIHQ=
+		3splopm2eqSdyBzP1CmkBd2pBug=
 		</data>
 		<key>ios-arm64/SmaatoSDKCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -110,7 +114,7 @@
 		</data>
 		<key>ios-arm64/SmaatoSDKCore.framework/SmaatoSDKCore</key>
 		<data>
-		3pNQp2gO98fRAc1I8xXfv373WW4=
+		Cg9O/wcB5zKpD/uevgmUgU9Rvk4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Headers/SMAAdMarkup.h</key>
 		<data>
@@ -196,17 +200,21 @@
 		<data>
 		2zN+SPefUC3b2U4gFxs/78X89NU=
 		</data>
+		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Headers/SMAUtils.h</key>
+		<data>
+		s91gfkvDwMB/98C6OawwDk+q8oc=
+		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Headers/SmaatoSDK.h</key>
 		<data>
 		WC5UmGNOlrCMCYd373mIGO7750M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Headers/SmaatoSDKCore.h</key>
 		<data>
-		4dQdI3VzKkJF/RGajKh3oLQMVcU=
+		32IEARvu+zz2CeJqXQnMBiTwI3g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Info.plist</key>
 		<data>
-		3Z2m4k3ND6ExeO9HYEoVNuL9ooQ=
+		Dkpj3nBeMjidTInfgRffsW55A3I=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -218,11 +226,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/SmaatoSDKCore</key>
 		<data>
-		rStphxPaTBuEGnyphy0cEcVxp4E=
+		jDFtl0lYrrdZSado2jlu7luXVes=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		qTVn7SJWfXDDvFyybc++YiMPfUY=
+		46cE4bOsILM7L+Cr08jvIxVaOfU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -458,6 +466,17 @@
 			1oH5uWnOuopqS2+ptHb2TbuPqE+ZlerOj7Vl9De7c4g=
 			</data>
 		</dict>
+		<key>ios-arm64/SmaatoSDKCore.framework/Headers/SMAUtils.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s91gfkvDwMB/98C6OawwDk+q8oc=
+			</data>
+			<key>hash2</key>
+			<data>
+			eelddpKpJpAnuv0BV4xnZCsJ+nIwa9V0zVTco0C1OUE=
+			</data>
+		</dict>
 		<key>ios-arm64/SmaatoSDKCore.framework/Headers/SmaatoSDK.h</key>
 		<dict>
 			<key>hash</key>
@@ -473,22 +492,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4dQdI3VzKkJF/RGajKh3oLQMVcU=
+			32IEARvu+zz2CeJqXQnMBiTwI3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			zisy57ME85t+sR2tIxEIGoyf4Ln/E+EjboD5qANIXOk=
+			H4rsbA4cs7EPoXFW3E/j25WeuVUhaPhdd8pBAXEWbXg=
 			</data>
 		</dict>
 		<key>ios-arm64/SmaatoSDKCore.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gckBoZ2uc2OH32RIq3am2zjTIHQ=
+			3splopm2eqSdyBzP1CmkBd2pBug=
 			</data>
 			<key>hash2</key>
 			<data>
-			Au9e2tg8SWtHUa5Ju3V+qcbHUG2qEHjeQj+3+C7sPA0=
+			Eg/GzHlUhXH4Z7YpCX5iV7rhtVoL5Zr2fDR6TjO2VC8=
 			</data>
 		</dict>
 		<key>ios-arm64/SmaatoSDKCore.framework/Modules/module.modulemap</key>
@@ -517,11 +536,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3pNQp2gO98fRAc1I8xXfv373WW4=
+			Cg9O/wcB5zKpD/uevgmUgU9Rvk4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rrz72B8I2MAQrl98JVN/Io4bobVzF1Rvx5t3FkXGf2M=
+			WpVCqpkg7ey0Rz+T+RH3QuoLqocqTZwY5Uj5Kogf4gM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Headers/SMAAdMarkup.h</key>
@@ -755,6 +774,17 @@
 			1oH5uWnOuopqS2+ptHb2TbuPqE+ZlerOj7Vl9De7c4g=
 			</data>
 		</dict>
+		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Headers/SMAUtils.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			s91gfkvDwMB/98C6OawwDk+q8oc=
+			</data>
+			<key>hash2</key>
+			<data>
+			eelddpKpJpAnuv0BV4xnZCsJ+nIwa9V0zVTco0C1OUE=
+			</data>
+		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Headers/SmaatoSDK.h</key>
 		<dict>
 			<key>hash</key>
@@ -770,22 +800,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4dQdI3VzKkJF/RGajKh3oLQMVcU=
+			32IEARvu+zz2CeJqXQnMBiTwI3g=
 			</data>
 			<key>hash2</key>
 			<data>
-			zisy57ME85t+sR2tIxEIGoyf4Ln/E+EjboD5qANIXOk=
+			H4rsbA4cs7EPoXFW3E/j25WeuVUhaPhdd8pBAXEWbXg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3Z2m4k3ND6ExeO9HYEoVNuL9ooQ=
+			Dkpj3nBeMjidTInfgRffsW55A3I=
 			</data>
 			<key>hash2</key>
 			<data>
-			DQlC/Op7T3QPXuTdwtbihAuZzGvPBKCijUZNCg4aK4k=
+			UCA8IhI7mJ8zSIfRT4erOtLth9THYyM38+GktWIkfZc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/Modules/module.modulemap</key>
@@ -814,22 +844,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rStphxPaTBuEGnyphy0cEcVxp4E=
+			jDFtl0lYrrdZSado2jlu7luXVes=
 			</data>
 			<key>hash2</key>
 			<data>
-			REKg6yfgIqKA7jj97Uu6vTkI9RyOYqcjjcMtfkmzZg8=
+			LWEOSgTbgRYTMm5p/o8MpUP5Zn9TUgZqKxoieXVFurE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qTVn7SJWfXDDvFyybc++YiMPfUY=
+			46cE4bOsILM7L+Cr08jvIxVaOfU=
 			</data>
 			<key>hash2</key>
 			<data>
-			elTo1YGlyQtLgaKrhnfLzbTpt1Xo9335HgxDvBqrLi8=
+			KErK/XVpuAXKNXoNr/pBe4csW4aV9U+fO5cAxBGrzEg=
 			</data>
 		</dict>
 	</dict>

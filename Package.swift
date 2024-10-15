@@ -18,6 +18,7 @@ let package = Package(
         .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
         .library(name: "AATKit-AppLovinMax", targets: ["AATKit-AppLovinMax"]),
+        .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
         .library(name: "AATKit-Criteo", targets: ["AATKit-Criteo"]),
         .library(name: "AATKit-FeedAd", targets: ["AATKit-FeedAd"]),
@@ -28,11 +29,10 @@ let package = Package(
         .library(name: "AATKit-InMobi", targets: ["AATKit-InMobi"]),
         .library(name: "AATKit-IronSource", targets: ["AATKit-IronSource"]),
         .library(name: "AATKit-Kidoz", targets: ["AATKit-Kidoz"]),
-        .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-PubNative", targets: ["AATKit-PubNative"]),
         .library(name: "AATKit-Prebid", targets: ["AATKit-Prebid"]),
-        .library(name: "AATKit-Teads", targets: ["AATKit-Teads"]),
         .library(name: "AATKit-Tappx", targets: ["AATKit-Tappx"]),
+        .library(name: "AATKit-Teads", targets: ["AATKit-Teads"]),
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
         .library(name: "AATKit-Vungle", targets: ["AATKit-Vungle"]),
         .library(name: "AATKit-OguryAds", targets: ["AATKit-OgurySdk"]),
@@ -77,12 +77,12 @@ let package = Package(
     ],
     dependencies: [
         // AdNetworks supporting SPM
-        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("12.6.1")),
+        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("13.0.0")),
         .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", .exact("11.8.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
-        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.1.3")),
-        .package(name: "RTBSPM", url: "https://github.com/AddApptr/RTBSPM", .exact("1.4.2"))
+        .package(name: "RTBSPM", url: "https://github.com/AddApptr/RTBSPM", .exact("1.4.3"))
+//        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.1.3")), Conflict with AppLovin dependency
     ],
     targets: [
         // AATKit target
@@ -121,7 +121,7 @@ let package = Package(
                     path: "./Sources/AppLovinMaxSources"),
 
             .target(name:"AATKit-AppNexus",
-                    dependencies: ["AppNexusSDK", "AATAppNexusAdapter", "OMSDK_Microsoft"],
+                    dependencies: ["AppNexusSDK", "AATAppNexusAdapter"],
                     path: "./Sources/AppNexusSources"),
 
             .target(name:"AATKit-Amazon",
@@ -170,6 +170,10 @@ let package = Package(
                     dependencies: ["Tappx", "OMSDK_Tappx", "AATTappxAdapter"],
                     path: "./Sources/Tappx"),
 
+            .target(name:"AATKit-Teads",
+                    dependencies: ["TeadsSDK", "OMSDK_Teadstv", "AATTeadsAdapter"],
+                    path: "./Sources/TeadsSources"),
+
             .target(name:"AATKit-YOC",
                     dependencies: ["VisxSDK", "AATYOCAdapter"],
                     path: "./Sources/YOCSources"),
@@ -193,10 +197,6 @@ let package = Package(
             .target(name:"AATKit-Prebid",
                     dependencies: ["PrebidMobile", "AATDFPPrebidAdapter"],
                     path: "./Sources/PrebidSources"),
-
-            .target(name:"AATKit-Teads",
-                    dependencies: ["TeadsSDK", "AATTeadsAdapter"],
-                    path: "./Sources/TeadsSources"),
 
             .target(name:"AATKit-Unity",
                     dependencies: ["UnityAds", "AATUnityAdapter"],
@@ -224,7 +224,7 @@ let package = Package(
 
         // Mark: Binary Targets
         // AATKit
-            .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
+        .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
 
         // AATAdMobMediationAdapter
         .binaryTarget(name: "AATAdMobMediationAdapter", path: "./Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"),
@@ -262,8 +262,13 @@ let package = Package(
         //SmartAd
         .binaryTarget(name: "SASDisplayKit", path: "./Dependencies/SmartAd/SASDisplayKit.xcframework"),
 
+        // Tappx
         .binaryTarget(name: "Tappx", path: "./Dependencies/Tappx/TappxFramework.xcframework"),
         .binaryTarget(name: "OMSDK_Tappx", path: "./Dependencies/Tappx/OMSDK_Tappx.xcframework"),
+
+        // Teads
+        .binaryTarget(name: "TeadsSDK", path: "./Dependencies/TeadsSDK/TeadsSDK.xcframework"),
+        .binaryTarget(name: "OMSDK_Teadstv", path: "./Dependencies/TeadsSDK/OMSDK_Teadstv.xcframework"),
 
         // YOC
         .binaryTarget(name: "VisxSDK", path: "./Dependencies/YOC/VisxSDK.xcframework"),
@@ -294,8 +299,8 @@ let package = Package(
         .binaryTarget(name: "DatonomyKit", path: "./Dependencies/Datonomy/DatonomyKit.xcframework"),
 
         // AppNexusSDK
-        .binaryTarget(name: "AppNexusSDK", path: "./Dependencies/AppNexusSDK/AppNexusSDK.xcframework"),
-        .binaryTarget(name: "OMSDK_Microsoft", path: "./Dependencies/AppNexusSDK/OMSDK_Microsoft.xcframework"),
+        .binaryTarget(name: "AppNexusSDK", path: "./Dependencies/AppNexus/AppNexusSDK.xcframework"),
+        .binaryTarget(name: "OMSDK_Microsoft", path: "./Dependencies/AppNexus/OMSDK_Microsoft.xcframework"),
 
         // Mintegral
         .binaryTarget(name: "MTGSDK", path:"./Dependencies/Mintegral/MTGSDK.xcframework"),

@@ -1378,8 +1378,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -1432,8 +1432,8 @@
             "declAttributes": [
               "HasInitialValue",
               "Final",
-              "Custom",
               "HasStorage",
+              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -1474,12 +1474,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KidozSDK.KidozBannerDelegate?",
+                "printedName": "(any KidozSDK.KidozBannerDelegate)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "KidozBannerDelegate",
-                    "printedName": "KidozSDK.KidozBannerDelegate",
+                    "printedName": "any KidozSDK.KidozBannerDelegate",
                     "usr": "c:@M@KidozSDK@objc(pl)KidozBannerDelegate"
                   }
                 ],
@@ -1507,12 +1507,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KidozSDK.KidozBannerDelegate?",
+                    "printedName": "(any KidozSDK.KidozBannerDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "KidozBannerDelegate",
-                        "printedName": "KidozSDK.KidozBannerDelegate",
+                        "printedName": "any KidozSDK.KidozBannerDelegate",
                         "usr": "c:@M@KidozSDK@objc(pl)KidozBannerDelegate"
                       }
                     ],
@@ -1542,12 +1542,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KidozSDK.KidozBannerDelegate?",
+                    "printedName": "(any KidozSDK.KidozBannerDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "KidozBannerDelegate",
-                        "printedName": "KidozSDK.KidozBannerDelegate",
+                        "printedName": "any KidozSDK.KidozBannerDelegate",
                         "usr": "c:@M@KidozSDK@objc(pl)KidozBannerDelegate"
                       }
                     ],
@@ -1840,6 +1840,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -4361,7 +4368,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "KidozRewardedDelegate",
-                "printedName": "KidozSDK.KidozRewardedDelegate",
+                "printedName": "any KidozSDK.KidozRewardedDelegate",
                 "usr": "c:@M@KidozSDK@objc(pl)KidozRewardedDelegate"
               }
             ],
@@ -4549,7 +4556,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "KidozInterstitialDelegate",
-                "printedName": "KidozSDK.KidozInterstitialDelegate",
+                "printedName": "any KidozSDK.KidozInterstitialDelegate",
                 "usr": "c:@M@KidozSDK@objc(pl)KidozInterstitialDelegate"
               }
             ],

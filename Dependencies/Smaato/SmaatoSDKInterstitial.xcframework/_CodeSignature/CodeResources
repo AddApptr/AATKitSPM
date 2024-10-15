@@ -26,7 +26,7 @@
 		</data>
 		<key>ios-arm64/SmaatoSDKInterstitial.framework/Info.plist</key>
 		<data>
-		t7Jhwy6+yOr1fRAF5DcRJdH6+sg=
+		1ehIyjcSzerS6xFAXU3nfW8ZWkI=
 		</data>
 		<key>ios-arm64/SmaatoSDKInterstitial.framework/Modules/module.modulemap</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>ios-arm64/SmaatoSDKInterstitial.framework/SmaatoSDKInterstitial</key>
 		<data>
-		L5afB1Mry8SsWxfPPPajRQ2cP+U=
+		GG5Hh0MNO3cK81r0anbciGRJXU4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKInterstitial.framework/Headers/SMAAdRequestParams+Interstitial.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKInterstitial.framework/Info.plist</key>
 		<data>
-		9lJf1OGyU8rMYo6T7uSPxLmHms4=
+		Oz0m+Fq/PLd/gZhk6K7+d+L95sk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKInterstitial.framework/Modules/module.modulemap</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKInterstitial.framework/SmaatoSDKInterstitial</key>
 		<data>
-		DPqgg765ecHCfsrMPsKcQ6+uD7U=
+		+eusMv3SudD1ZcZ0w9LEg1c599Y=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKInterstitial.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Z/WptKmvUQRWNOO6ixqihbVn2l8=
+		FBsNbKMUaHaQpqPMOLmqinrgZlE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -134,11 +134,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t7Jhwy6+yOr1fRAF5DcRJdH6+sg=
+			1ehIyjcSzerS6xFAXU3nfW8ZWkI=
 			</data>
 			<key>hash2</key>
 			<data>
-			EB2/jP82/Erm1FEjZXX50ae1q1kTpZlm8g2BpN9iJbY=
+			91gB81wJFrxK9h2WqjL7tdf9lQmsgqJyMmu1IZ95Ic0=
 			</data>
 		</dict>
 		<key>ios-arm64/SmaatoSDKInterstitial.framework/Modules/module.modulemap</key>
@@ -156,11 +156,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L5afB1Mry8SsWxfPPPajRQ2cP+U=
+			GG5Hh0MNO3cK81r0anbciGRJXU4=
 			</data>
 			<key>hash2</key>
 			<data>
-			SGmbSldvWZjJKC0fRzDpDbD4eBppa+56RP/KNhRrvbo=
+			hT0EEyFLQsS6B8wTRI/qCXCMwUTFaC8zzG55VlG8MVM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKInterstitial.framework/Headers/SMAAdRequestParams+Interstitial.h</key>
@@ -222,11 +222,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9lJf1OGyU8rMYo6T7uSPxLmHms4=
+			Oz0m+Fq/PLd/gZhk6K7+d+L95sk=
 			</data>
 			<key>hash2</key>
 			<data>
-			dxmXV9QxIfX4s7oKn7NhkwaaBF7L8ThYI+wvJI4odgU=
+			DY4NECO2smLsRnElkChR5Je9lua6wwD8uLiTacqkg+Q=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKInterstitial.framework/Modules/module.modulemap</key>
@@ -244,22 +244,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DPqgg765ecHCfsrMPsKcQ6+uD7U=
+			+eusMv3SudD1ZcZ0w9LEg1c599Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			WqDSxaqLjUm+Trq+dVZu15h2IleRCkjJCcKA2tt9gxA=
+			Tfv6nYXSJix/67tAbxKJNGBQwyg9mzEeOoT80/Y/n6Q=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKInterstitial.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Z/WptKmvUQRWNOO6ixqihbVn2l8=
+			FBsNbKMUaHaQpqPMOLmqinrgZlE=
 			</data>
 			<key>hash2</key>
 			<data>
-			3ehIZ/apbyAFXkLrX3+uiaZvOMyc3Me4c/LjNGQUaZY=
+			ODTqAT7o5s5HlYCUtSu2uKsNVpTo9+Zp05vHjpZ3eQ4=
 			</data>
 		</dict>
 	</dict>

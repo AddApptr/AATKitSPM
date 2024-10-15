@@ -29,3 +29,4 @@
 #import <SmaatoSDKCore/SMAGDPRTypes.h>
 #import <SmaatoSDKCore/SMAIABDataStorageVTwoUserDefaults.h>
 #import <SmaatoSDKCore/SMAAdMarkup.h>
+#import <SmaatoSDKCore/SMAUtils.h>
