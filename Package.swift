@@ -39,36 +39,33 @@ let package = Package(
         .library(name: "AATKit-Datonomy", targets: ["AATKit-Datonomy"]),
         .library(name: "AATKit-Mintegral", targets: ["AATKit-Mintegral"]),
         .library(name: "AATKit-AppHarbr", targets: ["AATKit-AppHarbr"]),
+        .library(name: "AATKit-Facebook", targets: ["AATKit-Facebook"]),
+
 
         // CMPs
         .library(name: "AATKit-GoogleCMP", targets: ["AATKit-GoogleCMP"]),
         .library(name: "AATKit-SourcePointCMP", targets: ["AATKit-SourcePointCMP"]),
-
+        .library(name: "AATKit-AppConsentCMP", targets: ["AATKit-AppConsentCMP"]),
 
         // Default Dependencies
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
                                                    "AATKit-AppLovin",
                                                    "AATKit-AppLovinMax",
-                                                   "AATKit-Amazon",
-                                                   "AATKit-FeedAd",
                                                    "AATKit-GraviteRTB",
-                                                   "AATKit-GoogleCMP",
-                                                   "AATKit-SourcePointCMP",
                                                    "AATKit-Smaato",
                                                    "AATKit-SmartAd",
                                                    "AATKit-YOC",
                                                    "AATKit-InMobi",
                                                    "AATKit-IronSource",
-                                                   "AATKit-Kidoz",
                                                    "AATKit-OgurySdk",
                                                    "AATKit-PubNative",
                                                    "AATKit-Unity",
                                                    "AATKit-Vungle",
                                                    "AATKit-Mintegral",
-                                                   "AATKit-AATAdMobDSPAdapter",
                                                    "AATKit-GooglePartnerBidding",
                                                    "AATKit-Criteo",
-                                                   "AATKit-Tappx"
+                                                   "AATKit-Tappx",
+                                                   "AATKit-Facebook"
                                                    // "AATKit-AppNexus", Issues in the privacy file
                                                    // Missing privacyInfo file
                                                    // "AATKit-Prebid",
@@ -148,6 +145,11 @@ let package = Package(
                     dependencies: [.product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform"), "AATGoogleCMPAdapter"],
                     path: "./Sources/GoogleCMPSources"),
 
+
+            .target(name:"AATKit-Facebook",
+                    dependencies: ["AATKit-GoogleMobileAds", "AATFacebookAdapter", "FBAudienceNetwork", "MetaAdapter"],
+                    path: "./Sources/FacebookSources"),
+
             .target(name:"AATKit-Smaato",
                     dependencies: ["OMSDK_Smaato",
                                    "SmaatoSDKBanner",
@@ -222,6 +224,9 @@ let package = Package(
                     dependencies: ["AppHarbr", "AATAppHarbrAdapter"],
                     path: "./Sources/AppHarbr"),
 
+            .target(name:"AATKit-AppConsentCMP",
+                    dependencies: ["AppConsent", "AATAppConsentAdapter"],
+                    path: "./Sources/AppConsentCMP"),
         // Mark: Binary Targets
         // AATKit
         .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
@@ -314,6 +319,13 @@ let package = Package(
         .binaryTarget(name: "MTGSDKInterstitial", path:"./Dependencies/Mintegral/MTGSDKInterstitial.xcframework"),
         .binaryTarget(name: "MTGSDKInterstitialVideo", path:"./Dependencies/Mintegral/MTGSDKInterstitialVideo.xcframework"),
 
+        // Meta
+        .binaryTarget(name: "FBAudienceNetwork", path:"./Dependencies/Facebook/FBAudienceNetwork.xcframework"),
+        .binaryTarget(name: "MetaAdapter", path:"./Dependencies/Facebook/MetaAdapter.xcframework"),
+
+        // AppConsent
+        .binaryTarget(name: "AppConsent", path:"./Dependencies/AppConsentCMP/AppConsent.xcframework"),
+
         // SourcePoint
         .binaryTarget(name: "ConsentViewController", path: "./Dependencies/SourcePoint/ConsentViewController.xcframework"),
 
@@ -348,5 +360,7 @@ let package = Package(
         .binaryTarget(name: "AATMintegralAdapter", path: "./Dependencies/AATKit/Adapters/AATMintegralAdapter.xcframework"),
         .binaryTarget(name: "AATSourcePointCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATSourcePointCMPAdapter.xcframework"),
         .binaryTarget(name: "AATAppHarbrAdapter", path: "./Dependencies/AATKit/Adapters/AATAppHarbrAdapter.xcframework"),
+        .binaryTarget(name: "AATAppConsentAdapter", path: "./Dependencies/AATKit/Adapters/AATAppConsentAdapter.xcframework"),
+
     ]
 )

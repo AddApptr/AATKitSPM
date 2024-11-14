@@ -1,0 +1,4 @@
+framework module AppConsent {
+  header "AppConsent-Swift.h"
+  requires objc
+}

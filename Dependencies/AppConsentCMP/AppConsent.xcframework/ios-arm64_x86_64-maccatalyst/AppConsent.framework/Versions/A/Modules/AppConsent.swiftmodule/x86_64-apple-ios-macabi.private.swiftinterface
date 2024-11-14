@@ -1,0 +1,890 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AppConsent
+import AdSupport
+import AppKit
+import AppTrackingTransparency
+import SystemConfiguration.CaptiveNetwork
+import CommonCrypto
+import CoreImage
+import CoreTelephony
+import DeveloperToolsSupport
+import Foundation
+import JavaScriptCore
+import OSLog
+import SafariServices
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+public struct ACStack : Swift.Equatable {
+  public var objectId: Swift.UInt32?
+  public var iabObjectId: Swift.UInt32?
+  public let name: Swift.String?
+  public let description: Swift.String?
+  public let consentables: [Swift.UInt32]?
+  public var status: AppConsent.ACConsentStatus
+  public var legintStatus: AppConsent.ACConsentStatus
+  public var vendorsNumber: Swift.UInt32
+  public static func == (a: AppConsent.ACStack, b: AppConsent.ACStack) -> Swift.Bool
+}
+extension AppConsent.ACStack : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ACVendorDataCategory : Swift.Equatable {
+  public var id: Swift.UInt32
+  public var name: Swift.String?
+  public static func == (a: AppConsent.ACVendorDataCategory, b: AppConsent.ACVendorDataCategory) -> Swift.Bool
+}
+extension AppConsent.ACVendorDataCategory : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ACColor : Swift.Equatable {
+  public var actionBarColor: UIKit.UIColor? {
+    get
+  }
+  public var actionBarTextColor: UIKit.UIColor? {
+    get
+  }
+  public var bannerBackgroundColor: UIKit.UIColor? {
+    get
+  }
+  public var bannerTitleColor: UIKit.UIColor? {
+    get
+  }
+  public var vendorSeparatorColor: UIKit.UIColor? {
+    get
+  }
+  public var vendorBackgroundColorDark: UIKit.UIColor? {
+    get
+  }
+  public var buttonBackgroundColor: UIKit.UIColor? {
+    get
+  }
+  public var buttonTextColor: UIKit.UIColor? {
+    get
+  }
+  public var buttonSelectedColor: UIKit.UIColor? {
+    get
+  }
+  public var buttonBorderColor: UIKit.UIColor? {
+    get
+  }
+  public var acceptAllButtonBackgroundColor: UIKit.UIColor? {
+    get
+  }
+  public var acceptAllButtonBorderColor: UIKit.UIColor? {
+    get
+  }
+  public var acceptAllButtonTextColor: UIKit.UIColor? {
+    get
+  }
+  public var refuseAllButtonBackgroundColor: UIKit.UIColor? {
+    get
+  }
+  public var refuseAllButtonBorderColor: UIKit.UIColor? {
+    get
+  }
+  public var refuseAllButtonTextColor: UIKit.UIColor? {
+    get
+  }
+  public var setupButtonBackgroundColor: UIKit.UIColor? {
+    get
+  }
+  public var setupButtonBorderColor: UIKit.UIColor? {
+    get
+  }
+  public var setupButtonTextColor: UIKit.UIColor? {
+    get
+  }
+  public var copyrightColor: UIKit.UIColor? {
+    get
+  }
+  public var geoNoticeBannerBackgroundColor: UIKit.UIColor? {
+    get
+  }
+  public var separatorColor: UIKit.UIColor? {
+    get
+  }
+  public var statusBarColor: UIKit.UIColor? {
+    get
+  }
+  public var switchOffButtonColor: UIKit.UIColor? {
+    get
+  }
+  public var switchOffColor: UIKit.UIColor? {
+    get
+  }
+  public var switchOnButtonColor: UIKit.UIColor? {
+    get
+  }
+  public var switchOnColor: UIKit.UIColor? {
+    get
+  }
+  public var switchUnsetButtonColor: UIKit.UIColor? {
+    get
+  }
+  public var switchUnsetColor: UIKit.UIColor? {
+    get
+  }
+  public var textColor: UIKit.UIColor? {
+    get
+  }
+  public var textColorDark: UIKit.UIColor? {
+    get
+  }
+  public static func == (a: AppConsent.ACColor, b: AppConsent.ACColor) -> Swift.Bool
+}
+public enum ACIdentifierType : Swift.String {
+  case idfa
+  case idfv
+  case custom
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct ACVendor : Swift.Equatable {
+  public var objectId: Swift.UInt32?
+  public var iabObjectId: Swift.UInt32?
+  public var extraId: Swift.String?
+  public var googleAtpID: Swift.UInt32?
+  public let name: Swift.String?
+  public let policyUrl: Foundation.URL?
+  public let urls: [Swift.String : AppConsent.ACVendorURL]?
+  public let dataRetention: AppConsent.ACVendorDataRetention?
+  public let consentables: [Swift.UInt32]?
+  public let legintables: [Swift.UInt32]?
+  public let flexibles: [Swift.UInt32]?
+  public var status: AppConsent.ACConsentStatus
+  public var legintStatus: AppConsent.ACConsentStatus
+  public let useNonCookieAccess: Swift.Bool?
+  public let cookieMaxAgeSeconds: Swift.Int64?
+  public var dataDeclaration: [Swift.UInt32]
+  public static func == (a: AppConsent.ACVendor, b: AppConsent.ACVendor) -> Swift.Bool
+}
+extension AppConsent.ACVendor : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ACVendorDataRetention : Swift.Equatable {
+  public var stdRetention: Swift.UInt32
+  public var purposes: [Swift.String : Swift.UInt32]
+  public var specialPurposes: [Swift.String : Swift.UInt32]
+  public static func == (a: AppConsent.ACVendorDataRetention, b: AppConsent.ACVendorDataRetention) -> Swift.Bool
+}
+extension AppConsent.ACVendorDataRetention : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ACConsentType : ObjectiveC.NSInteger, Swift.Codable {
+  case acceptAll
+  case denyAll
+  case mixed
+  case continueWithoutAccepting
+  case unknow
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
+}
+public struct IABConstants {
+  public static var CMP_SDK_ID: Swift.String
+  public static var CMP_SDK_VERSION: Swift.String
+  public static var POLICY_VERSION: Swift.String
+  public static var GDPR_APPLIES: Swift.String
+  public static var PUBLISHER_CC: Swift.String
+  public static var PURPOSE_ONE_TREATMENT: Swift.String
+  public static var USE_NON_STANDARD_STACKS: Swift.String
+  public static var TC_STRING: Swift.String
+  public static var VENDOR_CONSENTS: Swift.String
+  public static var VENDOR_LEGITIMATE_INTERESTS: Swift.String
+  public static var PURPOSE_CONSENTS: Swift.String
+  public static var PURPOSE_LEGITIMATE_INTERESTS: Swift.String
+  public static var SPECIAL_FEATURE_OPT_INS: Swift.String
+  public static var PUBLISHER_CONSENT: Swift.String
+  public static var PUBLISHER_LEGITIMATE_INTERESTS: Swift.String
+  public static var PUBLISHER_CUSTOM_PURPOSES_CONSENTS: Swift.String
+  public static var PUBLISHER_CUSTOM_PURPOSES_LEGITIMATE_INTERESTS: Swift.String
+  public static var IABTCF_ADDTLCONSENT: Swift.String
+}
+public typealias ACResultVoidHandler = (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void
+public struct ACHelloConsent : Swift.Equatable {
+  public var iabCs: Swift.String
+  public var specialFeatures: [Swift.UInt32]
+  public var purposes: [Swift.UInt32]
+  public var purposesLegint: [Swift.UInt32]
+  public var vendors: [Swift.UInt32]
+  public var vendorsLegint: [Swift.UInt32]
+  public var cmpVersion: Swift.UInt32
+  public var uuid: Swift.String
+  public var givenAt: Foundation.Date?
+  public var type: AppConsent.ACConsentType
+  public var cmpHash: Swift.String
+  public var cmpHashVersion: Swift.UInt32
+  public var externalIds: [Swift.String : Swift.String]
+  public static func == (a: AppConsent.ACHelloConsent, b: AppConsent.ACHelloConsent) -> Swift.Bool
+}
+extension AppConsent.ACHelloConsent : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ACImage : Swift.Equatable {
+  public var geoAdvertisingIcon: Foundation.URL? {
+    get
+  }
+  public var icon: Foundation.URL? {
+    get
+  }
+  public var noticeSuccessImage: Foundation.URL? {
+    get
+  }
+  public var onboardingImage: Foundation.URL? {
+    get
+  }
+  public static func == (a: AppConsent.ACImage, b: AppConsent.ACImage) -> Swift.Bool
+}
+@objc @_hasMissingDesignatedInitializers public class ACCurrentIdentifier : ObjectiveC.NSObject {
+  final public let type: Swift.String
+  final public let value: Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class ACConsent : ObjectiveC.NSObject, Swift.Codable {
+  public var consentables: [AppConsent.ACConsentable]
+  public var stacks: [AppConsent.ACStack]
+  public var vendors: [AppConsent.ACVendor]
+  public var removeLegintables: Swift.Bool?
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public protocol AppConsentDelegate {
+  @objc func appConsentDidFinish()
+  @objc func appConsentDidFail(_ error: (any Swift.Error)?)
+  @objc optional func appConsentGeolocationDidFinish()
+  @objc optional func appConsentGeolocationDidFail(_ error: (any Swift.Error)?)
+  @available(*, deprecated, message: "This is now obsolete.")
+  @objc optional func appConsentWillAppear()
+  @available(*, deprecated, message: "This is now obsolete.")
+  @objc optional func appConsentDidAppear()
+  @available(*, deprecated, message: "This is now obsolete.")
+  @objc optional func appConsentWillDisappear()
+  @available(*, deprecated, message: "This is now obsolete.")
+  @objc optional func appConsentDidDisappear()
+}
+public struct ACStateVendorList : Swift.Equatable {
+  public var iabGvl: Swift.String?
+  public var tcfPolicyVersion: Swift.String?
+  public var publisherCc: Swift.String?
+  public var publisherRestrictions: Swift.String?
+  public var isServiceSpecific: Swift.Bool?
+  public var geolocAd: [Swift.UInt32]?
+  public var geolocMarket: [Swift.UInt32]?
+  public var googleProviders: Swift.String?
+  public var removeLegintables: Swift.Bool?
+  public static func == (a: AppConsent.ACStateVendorList, b: AppConsent.ACStateVendorList) -> Swift.Bool
+}
+extension AppConsent.ACStateVendorList : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SFBXUserDefaultKeys {
+  public static let cmpHash: Swift.String
+  public static let externalIds: Swift.String
+  public static let gvlVersion: Swift.String
+  public static let helloReplyKey: Swift.String
+  public static let identifierKey: Swift.String
+  public static let noticeExpiration: Swift.String
+  public static let noticeGeolocationExpiration: Swift.String
+  public static let stateKey: Swift.String
+}
+@_hasMissingDesignatedInitializers @objc public class ACConfiguration : ObjectiveC.NSObject {
+  final public let language: Swift.String
+  final public let texts: AppConsent.ACText
+  final public let colors: AppConsent.ACColor?
+  final public let images: AppConsent.ACImage?
+  final public let useSuccessScreen: Swift.Bool
+  final public let ctaLayout: AppConsent.ACCtaLayout?
+  final public let useIosATT: Swift.Bool
+  final public let continueWithoutAccepting: Swift.Bool?
+  final public let enableLegintOnRefuseAll: Swift.Bool?
+  final public let highlightAcceptAllButton: Swift.Bool?
+  public var illustratedMode: Swift.Bool
+  public var notBannerDisplayPurposesList: Swift.Bool
+  public struct Images {
+    public static let illustratedHeader: Swift.String
+    public static let illustratedFooter: Swift.String
+    public static let illustratedSuccess: Swift.String
+  }
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+}
+extension AppConsent.ACConfiguration : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum ACCtaLayout : ObjectiveC.NSInteger {
+  case accept_configure
+  case configure_accept
+  case deny_accept_configure
+  case accept_deny_configure
+  case configure_deny_accept
+  case configure_accept_deny
+  case accept_understand
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
+}
+public enum ACConsentableType : ObjectiveC.NSInteger, Swift.Codable {
+  case purpose
+  case feature
+  case specialFeature
+  case specialPurpose
+  case unknow
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
+}
+public struct ACText : Swift.Equatable {
+  public var introductionTitle: AppConsent.ACTranslate? {
+    get
+  }
+  public var introductionText: AppConsent.ACTranslate? {
+    get
+  }
+  public var introductionDetailsText: AppConsent.ACTranslate? {
+    get
+  }
+  public var introductionConclusionText: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonConfigure: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonAcceptAll: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonDenyAll: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonKnowMore: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonSeeMore: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonSeeMoreLegal: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonSeeMandatoryPurpose: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonSeeMandatoryFeature: AppConsent.ACTranslate? {
+    get
+  }
+  public var mandatoriesFeatureTitle: AppConsent.ACTranslate? {
+    get
+  }
+  public var mandatoriesPurposeTitle: AppConsent.ACTranslate? {
+    get
+  }
+  public var mandatoriesFeatureDesc: AppConsent.ACTranslate? {
+    get
+  }
+  public var mandatoriesPurposeDesc: AppConsent.ACTranslate? {
+    get
+  }
+  public var mandatoriesPurposeSection: AppConsent.ACTranslate? {
+    get
+  }
+  public var mandatoriesFeatureSection: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonSave: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonOpposer: AppConsent.ACTranslate? {
+    get
+  }
+  public var alertDescOpposer: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonRefineByPartner: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonClose: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonPolicy: AppConsent.ACTranslate? {
+    get
+  }
+  public var vendorUnderConsent: AppConsent.ACTranslate? {
+    get
+  }
+  public var vendorCompulsary: AppConsent.ACTranslate? {
+    get
+  }
+  public var vendorUnderLegitimateInterest: AppConsent.ACTranslate? {
+    get
+  }
+  public var consentablePrivacyPolicy: AppConsent.ACTranslate? {
+    get
+  }
+  public var noticeTitle: AppConsent.ACTranslate? {
+    get
+  }
+  public var noticeSubtitle: AppConsent.ACTranslate? {
+    get
+  }
+  public var noticeFeatureTitle: AppConsent.ACTranslate? {
+    get
+  }
+  public var noticeSectionPurpose: AppConsent.ACTranslate? {
+    get
+  }
+  public var noticeSectionStack: AppConsent.ACTranslate? {
+    get
+  }
+  public var noticeSectionFeature: AppConsent.ACTranslate? {
+    get
+  }
+  public var mandatorySectionVendors: AppConsent.ACTranslate? {
+    get
+  }
+  public var vendorSubjectToConsent: AppConsent.ACTranslate? {
+    get
+  }
+  public var vendorLegInt: AppConsent.ACTranslate? {
+    get
+  }
+  public var vendorPurpose: AppConsent.ACTranslate? {
+    get
+  }
+  public var vendorFeature: AppConsent.ACTranslate? {
+    get
+  }
+  public var successTitle: AppConsent.ACTranslate? {
+    get
+  }
+  public var successSubTitle: AppConsent.ACTranslate? {
+    get
+  }
+  public var successText: AppConsent.ACTranslate? {
+    get
+  }
+  public var continueWithoutAccepting: AppConsent.ACTranslate? {
+    get
+  }
+  public var vendorsHeader: AppConsent.ACTranslate? {
+    get
+  }
+  public var vendorsTabIAB: AppConsent.ACTranslate? {
+    get
+  }
+  public var vendorsTabOther: AppConsent.ACTranslate? {
+    get
+  }
+  public static func == (a: AppConsent.ACText, b: AppConsent.ACText) -> Swift.Bool
+}
+@objc public class ACShipData : ObjectiveC.NSObject {
+  @objc public var age: Swift.String?
+  @objc public var appNameBundle: Swift.String?
+  @objc public var consentString: Swift.String?
+  @objc public var csp: Swift.String?
+  @objc public var dateOfBirth: Swift.String?
+  @objc public var deviceCountryCode: Swift.String?
+  @objc public var deviceManufacturer: Swift.String?
+  @objc public var deviceOS: Swift.String?
+  @objc public var country: Swift.String?
+  @objc public var floor: Swift.String?
+  @objc public var postCode: Swift.String?
+  @objc public var deviceCarrier: Swift.String?
+  @objc public var deviceModel: Swift.String?
+  @objc public var deviceOSVersion: Swift.String?
+  @objc public var email: Swift.String?
+  @objc public var externalId: Swift.String?
+  @objc public var firstName: Swift.String?
+  @objc public var gender: Swift.String?
+  @objc public var household: Swift.String?
+  @objc public var ipv4Address: Swift.String?
+  @objc public var ipv6Address: Swift.String?
+  @objc public var lastName: Swift.String?
+  @objc public var macAddress: Swift.String?
+  @objc public var maid: Swift.String?
+  @objc public var maidType: Swift.String?
+  @objc public var networkType: Swift.String?
+  @objc public var phone: Swift.String?
+  @objc public var region: Swift.String?
+  @objc public var revenues: Swift.String?
+  @objc public var signalStrength: Swift.String?
+  @objc public var streetName: Swift.String?
+  @objc public var streetNo: Swift.String?
+  @objc public var streetType: Swift.String?
+  @objc public var timestampCollect: Swift.String?
+  @objc public var town: Swift.String?
+  @objc public var unstructuredData: Swift.String?
+  @objc public var wifiSSID: Swift.String?
+  @objc public init(age: Swift.String? = nil, appNameBundle: Swift.String? = nil, consentString: Swift.String? = nil, csp: Swift.String? = nil, dateOfBirth: Swift.String? = nil, deviceCountryCode: Swift.String? = nil, deviceManufacturer: Swift.String? = nil, deviceOS: Swift.String? = nil, country: Swift.String? = nil, floor: Swift.String? = nil, postCode: Swift.String? = nil, deviceCarrier: Swift.String? = nil, deviceModel: Swift.String? = nil, deviceOSVersion: Swift.String? = nil, email: Swift.String? = nil, externalId: Swift.String? = nil, firstName: Swift.String? = nil, gender: Swift.String? = nil, household: Swift.String? = nil, ipv4Address: Swift.String? = nil, ipv6Address: Swift.String? = nil, lastName: Swift.String? = nil, macAddress: Swift.String? = nil, maid: Swift.String? = nil, maidType: Swift.String? = nil, networkType: Swift.String? = nil, phone: Swift.String? = nil, region: Swift.String? = nil, revenues: Swift.String? = nil, signalStrength: Swift.String? = nil, streetName: Swift.String? = nil, streetNo: Swift.String? = nil, streetType: Swift.String? = nil, timestampCollect: Swift.String? = nil, town: Swift.String? = nil, unstructuredData: Swift.String? = nil, wifiSSID: Swift.String? = nil)
+  public func toDictionnary() -> [Swift.String : Swift.String]
+  @objc deinit
+}
+@objc public enum ACATTAuthorizationGiven : ObjectiveC.NSInteger {
+  case notGiven = 0
+  case given = 1
+  case notSupported = 2
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
+}
+@objc public enum ACATTAuthorizationStatus : ObjectiveC.NSInteger {
+  case failure = 0
+  case success = 1
+  case notSupported = 2
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
+}
+public struct ACVendorURL : Swift.Equatable {
+  public var privacy: Swift.String?
+  public var legintClaim: Swift.String?
+  public static func == (a: AppConsent.ACVendorURL, b: AppConsent.ACVendorURL) -> Swift.Bool
+}
+extension AppConsent.ACVendorURL : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class ACState : ObjectiveC.NSObject, Swift.Codable {
+  public var consents: AppConsent.ACConsent
+  public var consentstring: Swift.String?
+  public var vendorlist: AppConsent.ACStateVendorList?
+  @objc override dynamic public init()
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+extension AppConsent.ACState {
+  public func getStack(objectId: Swift.UInt32?) -> AppConsent.ACStack?
+  public func getConsentable(objectId: Swift.UInt32) -> AppConsent.ACConsentable?
+  public func getConsentable(extraId: Swift.String?) -> AppConsent.ACConsentable?
+  public func getVendor(objectId: Swift.UInt32?) -> AppConsent.ACVendor?
+  public func getVendor(iabId: Swift.UInt32?) -> AppConsent.ACVendor?
+  public func getVendor(extraId: Swift.String?) -> AppConsent.ACVendor?
+  public func getConsentable(iabId: Swift.UInt32, _ type: AppConsent.ACConsentableType) -> AppConsent.ACConsentable?
+  public func getConsentable(iabId: Swift.UInt32) -> AppConsent.ACConsentable?
+  public func getStack(iabId: Swift.UInt32) -> AppConsent.ACStack?
+  public func consentableAllowed(iabId: Swift.UInt32, type: AppConsent.ACConsentableType) -> Swift.Bool
+  public func consentableAllowed(iabId: Swift.UInt32) -> Swift.Bool
+  public func consentableAllowed(objectId: Swift.UInt32) -> Swift.Bool
+  public func consentableAllowed(extraId: Swift.String) -> Swift.Bool
+  public func stackAllowed(iabId: Swift.UInt32) -> Swift.Bool
+  public func vendorAllowed(iabId: Swift.UInt32) -> Swift.Bool
+  public func vendorAllowed(extraId: Swift.String) -> Swift.Bool
+  public func allConsentablesAllowed() -> Swift.Bool
+  public func allConsentablesDisallowed() -> Swift.Bool
+  public func allStacksAllowed() -> Swift.Bool
+  public func allVendorsAllowed() -> Swift.Bool
+  public func userAcceptAll() -> Swift.Bool
+  public func getAllConsentables() -> [AppConsent.ACConsentable]?
+  public func getAllConsentables(by status: AppConsent.ACConsentStatus) -> [AppConsent.ACConsentable]?
+  public func getAllExtraVendors() -> [AppConsent.ACVendor]?
+  public func getAllExtraVendors(by status: AppConsent.ACConsentStatus) -> [AppConsent.ACVendor]?
+}
+@available(*, deprecated, message: "This is now obsolete, prefer using ``AppConsentDelegate`` ")
+@objc public protocol AppConsentGeolocationConsentDelegate : AppConsent.AppConsentDelegate {
+  @available(*, deprecated, message: "This is now obsolete, prefer using ``AppConsentDelegate.appConsentGeolocationDidFinish()`` ")
+  @objc func appConsentGeolocationConsentReceived()
+  @available(*, deprecated, message: "This is now obsolete, prefer using ``AppConsentDelegate.appConsentGeolocationDidFail(_ error: Error)`` ")
+  @objc func appConsentGeolocationConsentFailed(_ error: any Swift.Error)
+  @available(*, deprecated, message: "This is now obsolete.")
+  @objc optional func displayBigGeolocationImage() -> Swift.Bool
+  @available(*, deprecated, message: "This is now obsolete.")
+  @objc optional func geolocationCtaScrolling() -> Swift.Bool
+}
+public struct ACConsentable : Swift.Equatable {
+  public var objectId: Swift.UInt32?
+  public var iabObjectId: Swift.UInt32?
+  public var extraId: Swift.String?
+  public let name: Swift.String?
+  public let description: Swift.String?
+  public let descriptionLegal: Swift.String?
+  public let type: AppConsent.ACConsentableType?
+  public let illustrations: Swift.String?
+  public var status: AppConsent.ACConsentStatus
+  public var legintStatus: AppConsent.ACConsentStatus
+  public var vendorsNumber: Swift.UInt32
+  public var isExtraPurpose: Swift.Bool {
+    get
+  }
+  public static func == (a: AppConsent.ACConsentable, b: AppConsent.ACConsentable) -> Swift.Bool
+}
+extension AppConsent.ACConsentable : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AppConsentError : Swift.Error, Foundation.LocalizedError {
+  public enum Kind {
+    case unknownError
+    case invalidVersionId
+    case invalidUrl(Foundation.URL?)
+    case invalidWebView
+    case invalidJavascript
+    case invalidConsent
+    case invalidConsentString(Swift.String?)
+    case invalidUserIdentifier(Foundation.UUID?)
+    case timeout
+    case invalidDate(Swift.String?)
+    case invalidData
+    case invalidConfiguration
+    case invalidUiState
+    case noHashForbidden
+    case fileNotFound
+    case missingState
+    case floatingExtraIdIsEmpty
+    case generic(Swift.String)
+  }
+  public init(kind: AppConsent.AppConsentError.Kind)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension AppConsent.ACNotice {
+  @objc public static var SFBXCopyright: Swift.String {
+    @objc get
+  }
+}
+@_hasMissingDesignatedInitializers public class ACTranslate {
+  public var `default`: Swift.String? {
+    get
+  }
+  public var values: Swift.Dictionary<Swift.String, Swift.String> {
+    get
+  }
+  @objc deinit
+}
+public struct ACTheme {
+}
+public struct NoticeTheme {
+  public let bodyTextColor: UIKit.UIColor?
+  public let bannerTitleColor: UIKit.UIColor?
+  public let copyrightColor: UIKit.UIColor?
+  public let navigationBarBackgroundColor: UIKit.UIColor?
+  public let navigationBarTextColor: UIKit.UIColor?
+  public let separatorColor: UIKit.UIColor?
+  public let buttonTintColor: UIKit.UIColor?
+  public let buttonBackgroundColor: UIKit.UIColor?
+  public let switchUnsetColor: UIKit.UIColor?
+  public let switchUnsetButtonColor: UIKit.UIColor?
+  public let switchOnColor: UIKit.UIColor?
+  public let switchOffColor: UIKit.UIColor?
+  public let switchOnButtonColor: UIKit.UIColor?
+  public let switchOffButtonColor: UIKit.UIColor?
+  public init()
+}
+public struct ACCountry : Swift.Equatable {
+  public var code: Swift.String
+  public var gdpr: Swift.Bool
+  public static func == (a: AppConsent.ACCountry, b: AppConsent.ACCountry) -> Swift.Bool
+}
+extension AppConsent.ACCountry : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ACPresentation : ObjectiveC.NSInteger {
+  case displayCMPWithoutIntroduction
+  case displayCMPWithIntroduction
+  case displaySuccessScreen
+  case displayNothing
+  case consentIsNotExpired
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
+}
+public struct ACHelloReply : Swift.Equatable {
+  public static func == (a: AppConsent.ACHelloReply, b: AppConsent.ACHelloReply) -> Swift.Bool
+}
+extension AppConsent.ACHelloReply : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum ACConsentStatus : ObjectiveC.NSInteger, Swift.CustomStringConvertible, Swift.Codable {
+  case pending
+  case allowed
+  case mixed
+  case denied
+  case undefined
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: ObjectiveC.NSInteger)
+  public typealias RawValue = ObjectiveC.NSInteger
+  public var rawValue: ObjectiveC.NSInteger {
+    get
+  }
+}
+@objc public class ACNotice : ObjectiveC.NSObject {
+  @objc public var appKey: Swift.String {
+    get
+  }
+  @objc public var forceApplyGDPR: Swift.Bool {
+    get
+  }
+  @objc public var forceATT: Swift.Bool {
+    get
+  }
+  @objc public var verticalButtons: Swift.Bool {
+    get
+  }
+  @objc public var fullscreen: Swift.Bool {
+    get
+  }
+  @objc public var dedicatedEndpointURL: Swift.String? {
+    get
+  }
+  @objc public var dedicatedAssetsURL: Swift.String? {
+    get
+  }
+  @objc public var delegate: (any AppConsent.AppConsentDelegate)?
+  @objc public init(withAppKey appKey: Swift.String, forceApplyGDPR: Swift.Bool, forceATT: Swift.Bool = false, verticalButtons: Swift.Bool = false, fullscreen: Swift.Bool = false, dedicatedEndpointURL: Swift.String? = nil, dedicatedAssetsURL: Swift.String? = nil)
+  @objc deinit
+}
+@objc extension AppConsent.ACNotice {
+  @objc dynamic public func presentNotice(viewController: UIKit.UIViewController) -> Swift.Bool
+  @objc dynamic public func presentSettings(viewController: UIKit.UIViewController) -> Swift.Bool
+  @objc dynamic public func presentGeolocation(_ viewController: UIKit.UIViewController)
+  @objc dynamic public func clearConsent()
+  @objc dynamic public func consentGiven() -> Swift.Bool
+  @objc dynamic public func checkForUpdate(_ success: ((Swift.Bool) -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  @objc dynamic public func openAppSettings()
+}
+@objc extension AppConsent.ACNotice {
+  @nonobjc public func consentableAllowed(iabId: Swift.UInt32, type: AppConsent.ACConsentableType) -> Swift.Bool
+  @objc dynamic public func consentableAllowed(iabId: Swift.UInt32, type: ObjectiveC.NSInteger) -> Swift.Bool
+  @objc dynamic public func consentableAllowed(objectId: Swift.UInt32) -> Swift.Bool
+  @objc dynamic public func extraConsentableAllowed(extraId: Swift.String) -> Swift.Bool
+  @objc dynamic public func vendorAllowed(iabId: Swift.UInt32) -> Swift.Bool
+  @objc dynamic public func extraVendorAllowed(extraId: Swift.String) -> Swift.Bool
+  @objc dynamic public func stackAllowed(iabId: Swift.UInt32) -> Swift.Bool
+  @objc dynamic public func allConsentablesAllowed() -> Swift.Bool
+  @objc dynamic public func allConsentablesDisallowed() -> Swift.Bool
+  @objc dynamic public func allStacksAllowed() -> Swift.Bool
+  @objc dynamic public func allVendorsAllowed() -> Swift.Bool
+  @objc dynamic public func userAcceptAll() -> Swift.Bool
+  @nonobjc public func getAllConsentables() -> [AppConsent.ACConsentable]?
+  @nonobjc public func getAllConsentables(by status: AppConsent.ACConsentStatus) -> [AppConsent.ACConsentable]?
+  @nonobjc public func getAllExtraVendors() -> [AppConsent.ACVendor]?
+  @nonobjc public func getAllExtraVendors(by status: AppConsent.ACConsentStatus) -> [AppConsent.ACVendor]?
+}
+@objc extension AppConsent.ACNotice {
+  @nonobjc public func setConsentableConsents(values: [Swift.String : AppConsent.ACConsentStatus], completion: AppConsent.ACResultVoidHandler?)
+  @objc dynamic public func setConsentableConsents(values: [Swift.String : ObjectiveC.NSInteger], success: (() -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  @nonobjc public func setExtraConsentableConsents(values: [Swift.String : AppConsent.ACConsentStatus], completion: AppConsent.ACResultVoidHandler?)
+  @objc dynamic public func setExtraConsentableConsents(values: [Swift.String : ObjectiveC.NSInteger], success: (() -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  @objc dynamic public func appTrackingIsAvailable() -> Swift.Bool
+  @objc dynamic public func appTrackingAuthorizationGiven() -> AppConsent.ACATTAuthorizationGiven
+  @objc dynamic public func appTrackingAuthorizationStatus() -> AppConsent.ACATTAuthorizationStatus
+  @objc dynamic public func appTrackingRequestAuthorization(_ completion: ((AppConsent.ACATTAuthorizationStatus) -> Swift.Void)?)
+  @objc dynamic public func displayATTIfNeeded(_ completion: ((AppConsent.ACATTAuthorizationStatus) -> Swift.Void)?)
+  @objc dynamic public func floatingPurposeAllowed(extraId: Swift.String) -> Swift.Bool
+  @nonobjc public func saveATTFloatingPurpose(with value: Swift.Bool, _ completion: AppConsent.ACResultVoidHandler?)
+  @objc dynamic public func saveATTFloatingPurpose(with value: Swift.Bool, success: (() -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+}
+@objc extension AppConsent.ACNotice {
+  @objc dynamic public func getExternalIds() -> Swift.Dictionary<Swift.String, Swift.String>
+  @objc @discardableResult
+  dynamic public func setExternalIds(externalIds: [Swift.String : Swift.String]) -> Self
+  @objc dynamic public func saveExternalIds(success: ((_ state: AppConsent.ACState?, _ configuration: AppConsent.ACConfiguration?) -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+}
+@objc extension AppConsent.ACNotice {
+  @nonobjc public func setExternalData(shipData: AppConsent.ACShipData, _ completion: AppConsent.ACResultVoidHandler?)
+  @objc dynamic public func setExternalData(shipData: AppConsent.ACShipData, success: (() -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+}
+@objc extension AppConsent.ACNotice {
+  @available(*, deprecated, renamed: "setConsentableConsents(value:completion:)", message: "return type has been changed to ACResultVoidHandler.")
+  @nonobjc public func setConsentableConsents(values: [Swift.String : AppConsent.ACConsentStatus], success: (() -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  @objc @available(*, deprecated, message: "This is now obsolete, prefer using presentNotice(viewController:) or presentSettings(viewController:) ")
+  dynamic public func presentNotice(force: Swift.Bool, viewController: UIKit.UIViewController) -> Swift.Bool
+  @objc @available(*, deprecated, message: "This is now obsolete, prefer using an ``AppConsentDelegate`` ")
+  dynamic public func consentGiven(success: (() -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  @objc @available(*, deprecated, message: "This is now obsolete, prefer using an ``AppConsentDelegate`` ")
+  dynamic public func geolocationConsentGiven(success: (() -> Swift.Void)?, failure: ((any Swift.Error) -> Swift.Void)?)
+  @available(*, deprecated, renamed: "consentableAllowed(iabId:type:)", message: "iabId has been changed to an UInt32.")
+  @nonobjc public func consentableAllowed(iabId: Swift.String, type: AppConsent.ACConsentableType) -> Swift.Bool
+  @available(*, deprecated, renamed: "consentableAllowed(iabId:type:)", message: "iabId has been changed to an UInt32.")
+  @nonobjc public func consentableAllowed(iabId: Swift.String, type: ObjectiveC.NSInteger) -> Swift.Bool
+  @objc @available(*, deprecated, renamed: "consentableAllowed(iabId:type:)", message: "iabId has been changed to an UInt32. Prefer using this function passing also a type.")
+  dynamic public func consentableAllowed(iabId: Swift.String) -> Swift.Bool
+  @available(*, deprecated, renamed: "consentableAllowed(objectId:)", message: "objectId has been changed to an UInt32.")
+  @nonobjc public func consentableAllowed(objectId: Swift.String) -> Swift.Bool
+  @objc @available(*, deprecated, renamed: "extraConsentableAllowed")
+  dynamic public func consentableAllowed(extraId: Swift.String) -> Swift.Bool
+  @available(*, deprecated, renamed: "vendorAllowed(iabId:)", message: "iabId has been changed to an UInt32.")
+  @nonobjc public func vendorAllowed(iabId: Swift.String) -> Swift.Bool
+  @objc @available(*, deprecated, renamed: "extraVendorAllowed")
+  dynamic public func vendorAllowed(extraId: Swift.String) -> Swift.Bool
+  @available(*, deprecated, renamed: "stackAllowed(iabId:)", message: "iabId has been changed to an UInt32.")
+  @nonobjc public func stackAllowed(iabId: Swift.String) -> Swift.Bool
+  @objc @available(*, deprecated, message: "This is now obsolete, and will be removed in a future version")
+  dynamic public func isGDPRCountry() -> Swift.Bool
+}
+public struct ACVendorList : Swift.Equatable {
+  public let iabGvl: Swift.String
+  public let tcfPolicyVersion: Swift.String
+  public let publisherCc: Swift.String
+  public let publisherRestrictions: Swift.String
+  public let consentables: [AppConsent.ACConsentable]?
+  public let vendors: [AppConsent.ACVendor]?
+  public let stacks: [AppConsent.ACStack]?
+  public var geolocAd: [ObjectiveC.NSInteger]?
+  public var geolocMarket: [ObjectiveC.NSInteger]?
+  public var googleProviders: Swift.String?
+  public var consentLifetime: Swift.UInt32?
+  public var removeLegintables: Swift.Bool?
+  public var dataCategories: [Swift.UInt32 : AppConsent.ACVendorDataCategory]
+  public static func == (a: AppConsent.ACVendorList, b: AppConsent.ACVendorList) -> Swift.Bool
+}
+extension AppConsent.ACVendorList : Swift.Encodable {
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+extension AppConsent.ACIdentifierType : Swift.Equatable {}
+extension AppConsent.ACIdentifierType : Swift.Hashable {}
+extension AppConsent.ACIdentifierType : Swift.RawRepresentable {}
+extension AppConsent.ACConsentType : Swift.Equatable {}
+extension AppConsent.ACConsentType : Swift.Hashable {}
+extension AppConsent.ACConsentType : Swift.RawRepresentable {}
+extension AppConsent.ACConsentStatus : Swift.Equatable {}
+extension AppConsent.ACConsentStatus : Swift.Hashable {}
+extension AppConsent.ACConsentStatus : Swift.RawRepresentable {}
+extension AppConsent.ACConsentableType : Swift.Equatable {}
+extension AppConsent.ACConsentableType : Swift.Hashable {}
+extension AppConsent.ACConsentableType : Swift.RawRepresentable {}
+extension AppConsent.ACCtaLayout : Swift.Equatable {}
+extension AppConsent.ACCtaLayout : Swift.Hashable {}
+extension AppConsent.ACCtaLayout : Swift.RawRepresentable {}
+extension AppConsent.ACATTAuthorizationGiven : Swift.Equatable {}
+extension AppConsent.ACATTAuthorizationGiven : Swift.Hashable {}
+extension AppConsent.ACATTAuthorizationGiven : Swift.RawRepresentable {}
+extension AppConsent.ACATTAuthorizationStatus : Swift.Equatable {}
+extension AppConsent.ACATTAuthorizationStatus : Swift.Hashable {}
+extension AppConsent.ACATTAuthorizationStatus : Swift.RawRepresentable {}
+extension AppConsent.ACPresentation : Swift.Equatable {}
+extension AppConsent.ACPresentation : Swift.Hashable {}
+extension AppConsent.ACPresentation : Swift.RawRepresentable {}
