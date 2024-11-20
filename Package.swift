@@ -19,6 +19,7 @@ let package = Package(
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
         .library(name: "AATKit-AppLovinMax", targets: ["AATKit-AppLovinMax"]),
         .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
+        .library(name: "AATKit-AppHarbr", targets: ["AATKit-AppHarbr"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
         .library(name: "AATKit-Criteo", targets: ["AATKit-Criteo"]),
         .library(name: "AATKit-FeedAd", targets: ["AATKit-FeedAd"]),
@@ -38,7 +39,6 @@ let package = Package(
         .library(name: "AATKit-OguryAds", targets: ["AATKit-OgurySdk"]),
         .library(name: "AATKit-Datonomy", targets: ["AATKit-Datonomy"]),
         .library(name: "AATKit-Mintegral", targets: ["AATKit-Mintegral"]),
-        .library(name: "AATKit-AppHarbr", targets: ["AATKit-AppHarbr"]),
         .library(name: "AATKit-Facebook", targets: ["AATKit-Facebook"]),
 
 
@@ -75,6 +75,7 @@ let package = Package(
     dependencies: [
         // AdNetworks supporting SPM
         .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("13.0.0")),
+        .package(name: "AppHarbrSDK", url: "https://github.com/GeoEdgeSDK/AppHarbrSDK.git", .exact("1.16.0")),
         .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", .exact("11.8.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
@@ -116,6 +117,10 @@ let package = Package(
             .target(name: "AATKit-AppLovinMax",
                     dependencies: ["AppLovinSDK", "AATAppLovinMaxAdapter"],
                     path: "./Sources/AppLovinMaxSources"),
+
+            .target(name:"AATKit-AppHarbr",
+                    dependencies: ["AppHarbrSDK", "AATAppHarbrAdapter"],
+                    path: "./Sources/AppHarbr"),
 
             .target(name:"AATKit-AppNexus",
                     dependencies: ["AppNexusSDK", "AATAppNexusAdapter"],
@@ -219,10 +224,6 @@ let package = Package(
             .target(name:"AATKit-SourcePointCMP",
                     dependencies: ["ConsentViewController", "AATSourcePointCMPAdapter"],
                     path: "./Sources/SourcePointSources"),
-
-            .target(name:"AATKit-AppHarbr",
-                    dependencies: ["AppHarbr", "AATAppHarbrAdapter"],
-                    path: "./Sources/AppHarbr"),
 
             .target(name:"AATKit-AppConsentCMP",
                     dependencies: ["AppConsent", "AATAppConsentAdapter"],
@@ -329,13 +330,11 @@ let package = Package(
         // SourcePoint
         .binaryTarget(name: "ConsentViewController", path: "./Dependencies/SourcePoint/ConsentViewController.xcframework"),
 
-        // AppHarbr
-        .binaryTarget(name: "AppHarbr", path: "./Dependencies/AppHarbr/AppHarbrSDK.xcframework"),
-
         // AATKit Adapters
         .binaryTarget(name: "AATAmazonAdapter", path: "./Dependencies/AATKit/Adapters/AATAmazonAdapter.xcframework"),
         .binaryTarget(name: "AATAppLovinAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinAdapter.xcframework"),
         .binaryTarget(name: "AATAppLovinMaxAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinMaxAdapter.xcframework"),
+        .binaryTarget(name: "AATAppHarbrAdapter", path: "./Dependencies/AATKit/Adapters/AATAppHarbrAdapter.xcframework"),
         .binaryTarget(name: "AATAppNexusAdapter", path: "./Dependencies/AATKit/Adapters/AATAppNexusAdapter.xcframework"),
         .binaryTarget(name: "AATCriteoAdapter", path: "./Dependencies/AATKit/Adapters/AATCriteoAdapter.xcframework"),
         .binaryTarget(name: "AATDFPPrebidAdapter", path: "./Dependencies/AATKit/Adapters/AATDFPPrebidAdapter.xcframework"),
@@ -359,7 +358,6 @@ let package = Package(
         .binaryTarget(name: "AATDatonomyAdapter", path: "./Dependencies/AATKit/Adapters/AATDatonomyAdapter.xcframework"),
         .binaryTarget(name: "AATMintegralAdapter", path: "./Dependencies/AATKit/Adapters/AATMintegralAdapter.xcframework"),
         .binaryTarget(name: "AATSourcePointCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATSourcePointCMPAdapter.xcframework"),
-        .binaryTarget(name: "AATAppHarbrAdapter", path: "./Dependencies/AATKit/Adapters/AATAppHarbrAdapter.xcframework"),
         .binaryTarget(name: "AATAppConsentAdapter", path: "./Dependencies/AATKit/Adapters/AATAppConsentAdapter.xcframework"),
 
     ]
