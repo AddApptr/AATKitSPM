@@ -6,19 +6,15 @@
 	<dict>
 		<key>Headers/Ogury.h</key>
 		<data>
-		9uCsAhCfB4bVD8cKeGumARps5Fw=
+		iu6HQohGdEOo5VeSw/x6cBKcFLo=
 		</data>
-		<key>Headers/OguryConfiguration.h</key>
+		<key>Headers/OguryStartErrorCode.h</key>
 		<data>
-		Jpu61NdKpFl81dQ7F76C/xnnVGY=
-		</data>
-		<key>Headers/OguryConfigurationBuilder.h</key>
-		<data>
-		ED/7HB6D6V0eOyHOzkspWPiy27o=
+		EjixCAQ1jn27be4EyHs+LSRM6EU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Z/WC6tgrTJRch7K61PB5R8HpfxE=
+		0ZyAUvAM8heyHa1Si/Lt5ZCPFlQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,33 +31,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9uCsAhCfB4bVD8cKeGumARps5Fw=
+			iu6HQohGdEOo5VeSw/x6cBKcFLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			g+Nrtp6vRUZPwISrVv421gHpi/GT840iehxESbo22zA=
+			oo0lzw+DEwhBFZBxY/iHCKVW26qzhm2vjf29GMrc4yI=
 			</data>
 		</dict>
-		<key>Headers/OguryConfiguration.h</key>
+		<key>Headers/OguryStartErrorCode.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Jpu61NdKpFl81dQ7F76C/xnnVGY=
+			EjixCAQ1jn27be4EyHs+LSRM6EU=
 			</data>
 			<key>hash2</key>
 			<data>
-			DSzk52EuHp0lYJT79bHd4eR5T3U42pS6pVhfEcNzINM=
-			</data>
-		</dict>
-		<key>Headers/OguryConfigurationBuilder.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ED/7HB6D6V0eOyHOzkspWPiy27o=
-			</data>
-			<key>hash2</key>
-			<data>
-			0jAgou47DgUbmLsTciGamxu7h7BsNVbQsWTpUXstmiA=
+			ixStaLmHkg9/acr905N0S4s163pp7MDZrBMB+rlTELc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

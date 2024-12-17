@@ -654,8 +654,6 @@ SWIFT_CLASS("_TtC12VungleAdsSDK16VungleBannerView")
 
 
 
-
-
 SWIFT_PROTOCOL("_TtP12VungleAdsSDK24VungleBannerViewDelegate_")
 @protocol VungleBannerViewDelegate <NSObject>
 @optional

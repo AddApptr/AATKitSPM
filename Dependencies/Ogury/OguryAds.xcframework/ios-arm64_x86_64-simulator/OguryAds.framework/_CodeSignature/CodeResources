@@ -89,57 +89,45 @@
 		<data>
 		d/gO0Lef+BmXtgMmYbAHn1KjB74=
 		</data>
-		<key>Headers/OGARewardItem.h</key>
+		<key>Headers/OguryAdError.h</key>
 		<data>
-		y66ZYGrTkrefTBgq//tT6HoD2nc=
+		HO3AmsyTuo4Z0TVQ1bQ3uB8yMek=
 		</data>
 		<key>Headers/OguryAds.h</key>
 		<data>
-		yaY1YeLQCW8Fo/EuhtZgfpS/bZI=
+		rKqASok/CRZoYTFv0ETmOrAIcjs=
 		</data>
-		<key>Headers/OguryAdsBanner.h</key>
+		<key>Headers/OguryBannerAdSize.h</key>
 		<data>
-		6w1TT1dJRcV9RdgZXC41vt5b7zM=
+		WvKLhzodKVNHE9IhS64knEuyLFY=
 		</data>
-		<key>Headers/OguryAdsBannerSize.h</key>
+		<key>Headers/OguryBannerAdView.h</key>
 		<data>
-		u5thu+okZE0FIbGwwESa4q4Ikr4=
+		ma54HGfJlQUjsfwW5OdSilMF9Cg=
 		</data>
-		<key>Headers/OguryAdsDelegate.h</key>
+		<key>Headers/OguryBannerAdViewDelegate.h</key>
 		<data>
-		72suy7PKFSP/yyDpdHB7De3DU3Y=
+		xb5qgldUdjJ3wamDo9wEYbea86s=
 		</data>
-		<key>Headers/OguryAdsError.h</key>
+		<key>Headers/OguryBidTokenErrorCode.h</key>
 		<data>
-		wXf9/M5mHnYx2csyURplp3BDvnQ=
+		0Fb0cWBqPzJiniuvaEC1YAkT1hY=
 		</data>
-		<key>Headers/OguryAdsInterstitial.h</key>
+		<key>Headers/OguryBidTokenService.h</key>
 		<data>
-		z5o8HuXJ73Tm6r8NaOOkPEKmxHg=
-		</data>
-		<key>Headers/OguryAdsOptinVideo.h</key>
-		<data>
-		92bk4ZBsH6TaGO7vwEWKktas2pc=
-		</data>
-		<key>Headers/OguryAdsThumbnailAd.h</key>
-		<data>
-		LWPYjWjm84/2KRl/FixBbBUYg74=
-		</data>
-		<key>Headers/OguryBannerAd.h</key>
-		<data>
-		Pnyptw1kilXORORD0RBey9iFy0A=
-		</data>
-		<key>Headers/OguryBannerAdDelegate.h</key>
-		<data>
-		s2Q4GWSf84vH7xd1Pw9QJHl2fTM=
+		9lCD0fdPYRKE3V0gyDTQs1sK8LY=
 		</data>
 		<key>Headers/OguryInterstitialAd.h</key>
 		<data>
-		D7kw9p+T6/nlwQ+qhT/ZpDQ7AZg=
+		3LNNz8q6h0OEGcapEoiEc/jI15M=
 		</data>
 		<key>Headers/OguryInterstitialAdDelegate.h</key>
 		<data>
-		bnJQjFGlJZlPpRDOyjbK3NdHlY4=
+		Tf6FT45flXgnCKyPCZXBSU626aQ=
+		</data>
+		<key>Headers/OguryLoadErrorCode.h</key>
+		<data>
+		xEBt22UGIePZ4VfBkVYI1V3kwds=
 		</data>
 		<key>Headers/OguryMediation.h</key>
 		<data>
@@ -149,33 +137,37 @@
 		<data>
 		pfBHszF8b5KEqOnij53uzQUNhJ0=
 		</data>
-		<key>Headers/OguryOptinVideoAd.h</key>
-		<data>
-		7Zw2zFXw9v+LxGhs5ffqgqAajtY=
-		</data>
-		<key>Headers/OguryOptinVideoAdDelegate.h</key>
-		<data>
-		1AZpMi8HEo7Nu8F6Kn937dOMLmU=
-		</data>
 		<key>Headers/OguryRectCorner.h</key>
 		<data>
-		EOJrIFiX8CFMFFaB9kJj05D6cgQ=
+		fzRft5TDoLjyG4ODyoOEuJOcgFo=
+		</data>
+		<key>Headers/OguryReward.h</key>
+		<data>
+		lQHptadNuYejUuPs9++oy95g9E0=
+		</data>
+		<key>Headers/OguryRewardedAd.h</key>
+		<data>
+		5ZJNH3uN48k0bCWQl/9XSBht3kQ=
+		</data>
+		<key>Headers/OguryRewardedAdDelegate.h</key>
+		<data>
+		sGJlskGq4VVBWH2Af3kQeIfgIh0=
+		</data>
+		<key>Headers/OguryShowErrorCode.h</key>
+		<data>
+		q2styp0F3oa5WOwxtFh71N5vIcw=
 		</data>
 		<key>Headers/OguryThumbnailAd.h</key>
 		<data>
-		p778Cb1pRXSA5hQjiA9sk3ApHEY=
+		Vsh1q2Ax3T5M3W17bs+uqWX4f+c=
 		</data>
 		<key>Headers/OguryThumbnailAdDelegate.h</key>
 		<data>
-		SyUVDzElvO4EWfeXTkbNgPRDUK8=
-		</data>
-		<key>Headers/OguryTokenService.h</key>
-		<data>
-		kfToebrzlPctsUVethkEHCj3hLI=
+		8p4AIgflmOKC05keGgEx6O3xgfo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kJNwOZoGZRD11+oi80umfoAMJe8=
+		vx7eadpK87GiWtrZmdxdWPqFkqU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -183,23 +175,15 @@
 		</data>
 		<key>Modules/module.private.modulemap</key>
 		<data>
-		ZYIp5kZTwlBGzPDwUoCHItlIyRk=
+		5VlW+d5jjWakSfeaRtPu3G1ihVk=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		uChE/Okb8gLs7gMXEUzx7q2w9Pc=
 		</data>
-		<key>PrivateHeaders/OGABroadcastEventBus.h</key>
-		<data>
-		kppLuU0Q75YFH57Gy8dKk+JAovs=
-		</data>
 		<key>PrivateHeaders/OGAInternal.h</key>
 		<data>
-		DRv++pUDZFbzty6FoBT/MLKcG9Q=
-		</data>
-		<key>PrivateHeaders/OGAPersistentEventBus.h</key>
-		<data>
-		54nxGde2Cv6nUTOt2MzuWtX+7qk=
+		AID5ppJoTROdjkib3++Tc1LvTk0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -426,147 +410,114 @@
 			Nl+HQWS+q9PTEeMRK/QaTGvHNTxslalf1rZDR6+WqpY=
 			</data>
 		</dict>
-		<key>Headers/OGARewardItem.h</key>
+		<key>Headers/OguryAdError.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y66ZYGrTkrefTBgq//tT6HoD2nc=
+			HO3AmsyTuo4Z0TVQ1bQ3uB8yMek=
 			</data>
 			<key>hash2</key>
 			<data>
-			sjreJKvMxs9D+sCEy9UXIWmflPJQQ3LT4E1SKxn2eO0=
+			paZuc0bjZscG+iW8tFD4WAoBkYa+eceI9edAB4v6qvo=
 			</data>
 		</dict>
 		<key>Headers/OguryAds.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yaY1YeLQCW8Fo/EuhtZgfpS/bZI=
+			rKqASok/CRZoYTFv0ETmOrAIcjs=
 			</data>
 			<key>hash2</key>
 			<data>
-			J++L4teqDe7sLecBkTkyO4KzkjLo9PxquH9wE8kfwDI=
+			38RC0bROtU+KwIpxPNwu7beEgnV4Hhn5xTVew0CCj/0=
 			</data>
 		</dict>
-		<key>Headers/OguryAdsBanner.h</key>
+		<key>Headers/OguryBannerAdSize.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6w1TT1dJRcV9RdgZXC41vt5b7zM=
+			WvKLhzodKVNHE9IhS64knEuyLFY=
 			</data>
 			<key>hash2</key>
 			<data>
-			5nrv5xzhr8jgSlmcZXeJYjIK+spjlpYM8RGs+cqg7t4=
+			AoH2Vhl01S2fo4AY8qeVJJcAEGVK+E9G2RXOF/KTQa8=
 			</data>
 		</dict>
-		<key>Headers/OguryAdsBannerSize.h</key>
+		<key>Headers/OguryBannerAdView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			u5thu+okZE0FIbGwwESa4q4Ikr4=
+			ma54HGfJlQUjsfwW5OdSilMF9Cg=
 			</data>
 			<key>hash2</key>
 			<data>
-			hu+i5WSQU/gmYdsOR+QMnLojHXTGdPAt/RJOee6hLHM=
+			jBkxVVpep7JxfWih2t2Tf5X+B7E3Yhazf8Bz6d0WlFI=
 			</data>
 		</dict>
-		<key>Headers/OguryAdsDelegate.h</key>
+		<key>Headers/OguryBannerAdViewDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			72suy7PKFSP/yyDpdHB7De3DU3Y=
+			xb5qgldUdjJ3wamDo9wEYbea86s=
 			</data>
 			<key>hash2</key>
 			<data>
-			UIsw+0R+KePuz7LeaP/YvS2UPVDddKxoA1toVvlylSI=
+			L47g4zkzVZd4loFAloQ8iwx3O3WpnIxcHFJnQRECUE8=
 			</data>
 		</dict>
-		<key>Headers/OguryAdsError.h</key>
+		<key>Headers/OguryBidTokenErrorCode.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wXf9/M5mHnYx2csyURplp3BDvnQ=
+			0Fb0cWBqPzJiniuvaEC1YAkT1hY=
 			</data>
 			<key>hash2</key>
 			<data>
-			y6EygxGZv8MH5KCMhmKjKMplZCEJzkBbBnkc8iK+x8M=
+			nVQmA75GGZd/zGuYCOUSavDcxWiMOnlRWUQomv9b/Os=
 			</data>
 		</dict>
-		<key>Headers/OguryAdsInterstitial.h</key>
+		<key>Headers/OguryBidTokenService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z5o8HuXJ73Tm6r8NaOOkPEKmxHg=
+			9lCD0fdPYRKE3V0gyDTQs1sK8LY=
 			</data>
 			<key>hash2</key>
 			<data>
-			PKOskI7Evor8Hn5PqBvOSh9AlsNB955GTmXcgDR652g=
-			</data>
-		</dict>
-		<key>Headers/OguryAdsOptinVideo.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			92bk4ZBsH6TaGO7vwEWKktas2pc=
-			</data>
-			<key>hash2</key>
-			<data>
-			yulXXFAuf96oGvaA+iR9vI892adBz7pYjJ6L1FOCea8=
-			</data>
-		</dict>
-		<key>Headers/OguryAdsThumbnailAd.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LWPYjWjm84/2KRl/FixBbBUYg74=
-			</data>
-			<key>hash2</key>
-			<data>
-			+C+AQspH+vw6jRT09buEUXzJKhJkDIX8aMXX5Gf9IbM=
-			</data>
-		</dict>
-		<key>Headers/OguryBannerAd.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Pnyptw1kilXORORD0RBey9iFy0A=
-			</data>
-			<key>hash2</key>
-			<data>
-			a8rhtLIVwyTi63lSGUjj4IAd+//9xirZKMaDznkjijs=
-			</data>
-		</dict>
-		<key>Headers/OguryBannerAdDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			s2Q4GWSf84vH7xd1Pw9QJHl2fTM=
-			</data>
-			<key>hash2</key>
-			<data>
-			PbeoePhOM9K/s78NhmzcP9VF58UXaD1ho4FC+Nd7CkQ=
+			NsSyQ+0YSCz8+zDHd0pmS7kzxYtOgGS8/XtDIwXAX/s=
 			</data>
 		</dict>
 		<key>Headers/OguryInterstitialAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D7kw9p+T6/nlwQ+qhT/ZpDQ7AZg=
+			3LNNz8q6h0OEGcapEoiEc/jI15M=
 			</data>
 			<key>hash2</key>
 			<data>
-			37RnMMQ3R1STo2O5xb3GqwXK7QCHac5J+wxL52M5ea4=
+			2BhrCgck+KFVWEyqVICbbim9vJiwcJqgZDhDfHA9PAo=
 			</data>
 		</dict>
 		<key>Headers/OguryInterstitialAdDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bnJQjFGlJZlPpRDOyjbK3NdHlY4=
+			Tf6FT45flXgnCKyPCZXBSU626aQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			FRbFJwnHJH9aqxy1QZ24gJguF9ZOdpjTgCIrjHbr8CA=
+			44IUsQoJK8J6eB5dE/2cfO3sg4kUjW+jDZDcZtF1S/w=
+			</data>
+		</dict>
+		<key>Headers/OguryLoadErrorCode.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xEBt22UGIePZ4VfBkVYI1V3kwds=
+			</data>
+			<key>hash2</key>
+			<data>
+			zv9E2c1/0PtBESI+0glCbNrd13fn+6IJe4JqoWN2J6M=
 			</data>
 		</dict>
 		<key>Headers/OguryMediation.h</key>
@@ -591,70 +542,81 @@
 			tQblicnv5lBMkgKu3sPI8tUFFsIihrh8XqGeo0pfoH4=
 			</data>
 		</dict>
-		<key>Headers/OguryOptinVideoAd.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7Zw2zFXw9v+LxGhs5ffqgqAajtY=
-			</data>
-			<key>hash2</key>
-			<data>
-			dDkZzyli7dbRHTuYoc+M2mO7DolDQzMwPi0tORHMBzQ=
-			</data>
-		</dict>
-		<key>Headers/OguryOptinVideoAdDelegate.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1AZpMi8HEo7Nu8F6Kn937dOMLmU=
-			</data>
-			<key>hash2</key>
-			<data>
-			i/PMhlqTbBn1ipMSEOpmrQjrSk2WcJKs/wAuPb4D+R0=
-			</data>
-		</dict>
 		<key>Headers/OguryRectCorner.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EOJrIFiX8CFMFFaB9kJj05D6cgQ=
+			fzRft5TDoLjyG4ODyoOEuJOcgFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			DHbFm0skf1sC8/G52GKTc6jcUJRylDERCIScrphzZLo=
+			E3wN571BNfud/CX1FXmVcGrbD0fE5PGx2HhIfErXrgk=
+			</data>
+		</dict>
+		<key>Headers/OguryReward.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lQHptadNuYejUuPs9++oy95g9E0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Cm3NDJ/K3HmwyeFjltZPYYpufGjMxqFeFxGAE5WTsos=
+			</data>
+		</dict>
+		<key>Headers/OguryRewardedAd.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5ZJNH3uN48k0bCWQl/9XSBht3kQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			ep8hBt5BBW1xpfV5+t3CKhufuNQ8hXq4tEXmGDMQm/4=
+			</data>
+		</dict>
+		<key>Headers/OguryRewardedAdDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sGJlskGq4VVBWH2Af3kQeIfgIh0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Q1lk6zO/IDzhLriEcTZxGeHCmqhND9pFdmqMUW0wrr8=
+			</data>
+		</dict>
+		<key>Headers/OguryShowErrorCode.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q2styp0F3oa5WOwxtFh71N5vIcw=
+			</data>
+			<key>hash2</key>
+			<data>
+			Pu8+jgt6q1K/I7ONi6Rvl4mKMjlE9DUV4s33QllK56A=
 			</data>
 		</dict>
 		<key>Headers/OguryThumbnailAd.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p778Cb1pRXSA5hQjiA9sk3ApHEY=
+			Vsh1q2Ax3T5M3W17bs+uqWX4f+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			bW1+txb9Mlv1lNm9BZ118mHTQoeKpIhYCvxJqRzUvlU=
+			Yox6MIrjZ27AQbVffyDxXIywN92yE53CvxmUE6fsqKg=
 			</data>
 		</dict>
 		<key>Headers/OguryThumbnailAdDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SyUVDzElvO4EWfeXTkbNgPRDUK8=
+			8p4AIgflmOKC05keGgEx6O3xgfo=
 			</data>
 			<key>hash2</key>
 			<data>
-			A5eO3crG8dayKAoxT8BM607KGqnm2ra6S12PQQXpZsM=
-			</data>
-		</dict>
-		<key>Headers/OguryTokenService.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kfToebrzlPctsUVethkEHCj3hLI=
-			</data>
-			<key>hash2</key>
-			<data>
-			K74Lo2/GQabFuUeGVAZk7eHcD3zK0JvAzFYjo8VREVM=
+			NYz5K9kHBLzHuF2ZxOSXTnrbUV4O3Ns1sySmah46gtI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -672,11 +634,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZYIp5kZTwlBGzPDwUoCHItlIyRk=
+			5VlW+d5jjWakSfeaRtPu3G1ihVk=
 			</data>
 			<key>hash2</key>
 			<data>
-			WaXTbc3POcDZC3ujTqcvcVeK0gVp1i2Qe+sWH7GFlJI=
+			xTH1+Mf/UIZBhBuypzvxipK+KUNCv0l8J65k3d4u/Io=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -690,37 +652,15 @@
 			XYJTrt2yogm/CRrfKDcirTkNSiwUHeqsh28qqqYRkJU=
 			</data>
 		</dict>
-		<key>PrivateHeaders/OGABroadcastEventBus.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kppLuU0Q75YFH57Gy8dKk+JAovs=
-			</data>
-			<key>hash2</key>
-			<data>
-			OxTSUiZ7Fq64RKoVel8rcmEyA9C630cp59huOQWXLJc=
-			</data>
-		</dict>
 		<key>PrivateHeaders/OGAInternal.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DRv++pUDZFbzty6FoBT/MLKcG9Q=
+			AID5ppJoTROdjkib3++Tc1LvTk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			dWiEwREfUJsOahgnbsuOXnjZZ2dcM3mwb1gp05VYTwo=
-			</data>
-		</dict>
-		<key>PrivateHeaders/OGAPersistentEventBus.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			54nxGde2Cv6nUTOt2MzuWtX+7qk=
-			</data>
-			<key>hash2</key>
-			<data>
-			qujl6bU8dkrI7OgFxgrNGP+EPLgxK/oRa/NEA/ub1Xc=
+			ToWodea70cJjntyoZOswTuzb6WDHjlmyuMM+pmq4K3g=
 			</data>
 		</dict>
 	</dict>

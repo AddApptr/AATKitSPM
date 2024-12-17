@@ -325,16 +325,23 @@ SWIFT_CLASS("_TtC6AATKit11AATAdConfig")
 @end
 
 
+
 @interface AATAdConfig (SWIFT_EXTENSION(AATKit))
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
-
 
 @class NSString;
 
 @interface AATAdConfig (SWIFT_EXTENSION(AATKit))
 @property (nonatomic, readonly) NSUInteger hash;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+SWIFT_CLASS("_TtC6AATKit14AATAdDebugInfo")
+@interface AATAdDebugInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @protocol AATPlacement;
@@ -1180,9 +1187,9 @@ SWIFT_CLASS("_TtCC6AATKit12AATDebugInfo18PlacementDebugInfo")
 @property (nonatomic) NSInteger bannerAutoReloadInterval;
 @property (nonatomic) NSInteger initialDelay;
 @property (nonatomic) NSInteger remainingTime;
-@property (nonatomic, copy) NSString * _Nonnull loadedAdNetworkName;
+@property (nonatomic, copy) NSArray<AATAdDebugInfo *> * _Nonnull loadedAds;
 @property (nonatomic) BOOL isLoadingNewAd;
-@property (nonatomic, copy) NSString * _Nullable lastShownAdNetworkName;
+@property (nonatomic, strong) AATAdDebugInfo * _Nullable lastShownAd;
 @property (nonatomic) BOOL isAdQualityActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1568,7 +1575,13 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+/// Enables keeping creatives history
+/// \param size Maximum number of creatives to keep
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Get saved creatives history
+/// \param completion An array of <code>AATPlacementHistoryInfo</code> representing creatives history
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -1713,6 +1726,7 @@ SWIFT_CLASS("_TtC6AATKit23AATPlacementHistoryInfo")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 typedef SWIFT_ENUM(NSInteger, AATPluginName, open) {
   AATPluginNameAdobe = 1,
@@ -2309,6 +2323,10 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @end
 
 
+@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
+@end
+
+
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 @interface RewardedVideoOptions : InterstitialAdOptions
 /// init <code>AATSuperAwesomeOptions/RewardedVideoOptions</code>
@@ -2349,11 +2367,6 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
 @end
-
-
-@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
-@end
-
 
 
 SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")

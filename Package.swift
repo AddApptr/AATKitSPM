@@ -74,12 +74,12 @@ let package = Package(
     ],
     dependencies: [
         // AdNetworks supporting SPM
-        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("13.0.0")),
-        .package(name: "AppHarbrSDK", url: "https://github.com/GeoEdgeSDK/AppHarbrSDK.git", .exact("1.16.0")),
-        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", .exact("11.8.0")),
+        .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("13.0.1")),
+        .package(name: "AppHarbrSDK", url: "https://github.com/GeoEdgeSDK/AppHarbrSDK.git", .exact("1.19.0")),
+        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", .exact("11.12.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform",url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"3.0.0"),
-        .package(name: "RTBSPM", url: "https://github.com/AddApptr/RTBSPM", .exact("1.4.6"))
+        .package(name: "RTBSPM", url: "https://github.com/AddApptr/RTBSPM", .exact("1.5.0"))
 //        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.1.3")), Conflict with AppLovin dependency
     ],
     targets: [
@@ -123,7 +123,7 @@ let package = Package(
                     path: "./Sources/AppHarbr"),
 
             .target(name:"AATKit-AppNexus",
-                    dependencies: ["AppNexusSDK", "AATAppNexusAdapter"],
+                    dependencies: ["AppNexusSDK", "OMSDK_Microsoft", "AATAppNexusAdapter"],
                     path: "./Sources/AppNexusSources"),
 
             .target(name:"AATKit-Amazon",

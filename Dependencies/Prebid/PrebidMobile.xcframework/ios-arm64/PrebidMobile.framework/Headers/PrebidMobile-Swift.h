@@ -674,6 +674,7 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile30DisplayViewInteractionDelegate_")
 @end
 
 @protocol BannerViewDelegate;
+@protocol PluginEventDelegate;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC12PrebidMobile10BannerView")
@@ -690,6 +691,8 @@ SWIFT_CLASS("_TtC12PrebidMobile10BannerView")
 @property (nonatomic) enum PBMAdPosition adPosition;
 @property (nonatomic, copy) NSString * _Nullable ortbConfig;
 @property (nonatomic, weak) id <BannerViewDelegate> _Nullable delegate;
+/// Subscribe to plugin renderer events
+- (void)setPluginEventDelegate:(id <PluginEventDelegate> _Nonnull)pluginEventDelegate;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithConfigID:(NSString * _Nonnull)configID eventHandler:(id <BannerEventHandler> _Nonnull)eventHandler;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configID:(NSString * _Nonnull)configID adSize:(CGSize)adSize;
@@ -893,6 +896,8 @@ SWIFT_CLASS("_TtC12PrebidMobile3Bid")
 @property (nonatomic, readonly) CGSize size;
 /// Targeting information that needs to be passed to the ad server SDK.
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable targetingInfo;
+/// Targeting information that needs to be passed to the ad server SDK.
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nullable meta;
 /// SKAdNetwork parameters about an App Store product.
 /// Used in the StoreKit
 @property (nonatomic, readonly, strong) PBMORTBBidExtSkadn * _Nullable skadn;
@@ -941,6 +946,8 @@ SWIFT_CLASS("_TtC12PrebidMobile11BidResponse")
 - (nonnull instancetype)initWithJsonDictionary:(JsonDictionary * _Nonnull)jsonDictionary;
 - (void)setTargetingInfoWith:(NSDictionary<NSString *, NSString *> * _Nonnull)newValue;
 - (void)addTargetingInfoValueWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
+- (NSString * _Nullable)getPreferredPluginRendererName SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getPreferredPluginRendererVersion SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1056,6 +1063,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBMDateForma
 - (NSDate * _Nullable)formatISO8601For:(NSString * _Nullable)strDate SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP12PrebidMobile19PluginEventDelegate_")
+@protocol PluginEventDelegate <NSObject>
+- (NSString * _Nonnull)getPluginName SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC12PrebidMobile26DefaultPluginEventDelegate")
+@interface DefaultPluginEventDelegate : NSObject <PluginEventDelegate>
+- (NSString * _Nonnull)getPluginName SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -1967,6 +1987,11 @@ typedef SWIFT_ENUM_NAMED(NSInteger, PBMNetworkType, "NetworkType", open) {
 + (enum ResultCode)demandResultFrom:(NSError * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+SWIFT_PROTOCOL("_TtP12PrebidMobile25PBMThirdPartyAdViewLoader_")
+@protocol PBMThirdPartyAdViewLoader <NSObject>
+@end
+
 @class NSURLQueryItem;
 
 SWIFT_CLASS_NAMED("PathBuilder")
@@ -1991,6 +2016,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PlacementTyp
 - (nonnull instancetype)initWithIntegerLiteral:(NSInteger)value OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 typedef SWIFT_ENUM_NAMED(NSInteger, PBMPosition, "Position", open) {
   PBMPositionUndefined = -1,
   PBMPositionTopLeft = 0,
@@ -2004,6 +2030,7 @@ typedef SWIFT_ENUM_NAMED(NSInteger, PBMPosition, "Position", open) {
 };
 
 enum PrebidInitializationStatus : NSInteger;
+@protocol PrebidMobilePluginRenderer;
 
 SWIFT_CLASS("_TtC12PrebidMobile6Prebid")
 @interface Prebid : NSObject
@@ -2082,6 +2109,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 + (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (void)registerPluginRenderer:(id <PrebidMobilePluginRenderer> _Nonnull)prebidMobilePluginRenderer;
++ (void)unregisterPluginRenderer:(id <PrebidMobilePluginRenderer> _Nonnull)prebidMobilePluginRenderer;
++ (void)containsPluginRenderer:(id <PrebidMobilePluginRenderer> _Nonnull)prebidMobilePluginRenderer;
 @end
 
 @class PrebidRequest;
@@ -2179,6 +2209,73 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile23PrebidMediationDelegate_")
 /// Returns ad view that was passed into PrebidMediationDelegate earlier.
 /// Returns nil if there was no view passed.
 - (UIView * _Nullable)getAdView SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+/// Global singleton responsible to store plugin renderer instances
+SWIFT_CLASS("_TtC12PrebidMobile26PrebidMobilePluginRegister")
+@interface PrebidMobilePluginRegister : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PrebidMobilePluginRegister * _Nonnull shared;)
++ (PrebidMobilePluginRegister * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Register plugin as renderer
+- (void)registerPlugin:(id <PrebidMobilePluginRenderer> _Nonnull)renderer;
+- (void)unregisterPlugin:(id <PrebidMobilePluginRenderer> _Nonnull)renderer;
+/// Contains plugin
+- (BOOL)containsPlugin:(id <PrebidMobilePluginRenderer> _Nonnull)renderer SWIFT_WARN_UNUSED_RESULT;
+/// Register event delegate
+- (void)registerEventDelegate:(id <PluginEventDelegate> _Nonnull)pluginEventDelegate adUnitConfigFingerprint:(NSString * _Nonnull)adUnitConfigFingerprint;
+/// Unregister event delegate
+- (void)unregisterEventDelegate:(id <PluginEventDelegate> _Nonnull)pluginEventDelegate adUnitConfigFingerprint:(NSString * _Nonnull)adUnitConfigFingerprint;
+/// Returns the list of available renderers for the given ad unit for RTB request
+- (NSArray<id <PrebidMobilePluginRenderer>> * _Nonnull)getRTBListOfRenderersForFor:(AdUnitConfig * _Nonnull)adUnit SWIFT_WARN_UNUSED_RESULT;
+/// Returns the registered renderer according to the preferred renderer name in the bid response
+/// If no preferred renderer is found, it returns PrebidRenderer to perform default behavior
+/// Once bid is win we want to resolve the best PluginRenderer candidate to render the ad
+- (id <PrebidMobilePluginRenderer> _Nonnull)getPluginForPreferredRendererWithBid:(Bid * _Nonnull)bid SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<id <PrebidMobilePluginRenderer>> * _Nonnull)getAllPlugins SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@protocol PrebidServerConnectionProtocol;
+@protocol PBMModalManagerDelegate;
+
+SWIFT_PROTOCOL("_TtP12PrebidMobile26PrebidMobilePluginRenderer_")
+@protocol PrebidMobilePluginRenderer
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull version;
+@property (nonatomic, readonly, copy) NSDictionary * _Nullable data;
+/// Creates and returns Banner View for a given Bid Response
+/// Returns nil in the case of an internal error
+- (void)createBannerAdViewWith:(CGRect)frame bid:(Bid * _Nonnull)bid adConfiguration:(AdUnitConfig * _Nonnull)adConfiguration connection:(id <PrebidServerConnectionProtocol> _Nonnull)connection adViewDelegate:(id <PBMAdViewManagerDelegate, PBMModalManagerDelegate, PBMThirdPartyAdViewLoader> _Nullable)adViewDelegate;
+@optional
+/// Creates and returns an implementation of PrebidMobileInterstitialControllerInterface for a given bid response
+/// Returns nil in the case of an internal error
+- (void)createInterstitialControllerWithBid:(Bid * _Nonnull)bid adConfiguration:(AdUnitConfig * _Nonnull)adConfiguration connection:(id <PrebidServerConnectionProtocol> _Nonnull)connection adViewManagerDelegate:(InterstitialController * _Nullable)adViewManagerDelegate videoControlsConfig:(PBMVideoControlsConfiguration * _Nullable)videoControlsConfig;
+@required
+/// Returns true only if the given ad unit could be renderer by the plugin
+- (BOOL)isSupportRenderingFor:(AdFormat * _Nullable)format SWIFT_WARN_UNUSED_RESULT;
+@optional
+/// Register a listener related to a specific ad unit config fingerprint in order to dispatch specific ad events
+- (void)registerEventDelegateWithPluginEventDelegate:(id <PluginEventDelegate> _Nonnull)pluginEventDelegate adUnitConfigFingerprint:(NSString * _Nonnull)adUnitConfigFingerprint;
+/// Unregister a listener related to a specific ad unit config fingerprint in order to dispatch specific ad events
+- (void)unregisterEventDelegateWithPluginEventDelegate:(id <PluginEventDelegate> _Nonnull)pluginEventDelegate adUnitConfigFingerprint:(NSString * _Nonnull)adUnitConfigFingerprint;
+@required
+/// Setup a bid for a given ad unit configuration
+- (void)setupBid:(Bid * _Nonnull)bid adConfiguration:(AdUnitConfig * _Nonnull)adConfiguration connection:(id <PrebidServerConnectionProtocol> _Nonnull)connection;
+@end
+
+
+SWIFT_CLASS("_TtC12PrebidMobile14PrebidRenderer")
+@interface PrebidRenderer : NSObject <PrebidMobilePluginRenderer>
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull version;
+@property (nonatomic, copy) NSDictionary * _Nullable data;
+- (BOOL)isSupportRenderingFor:(AdFormat * _Nullable)format SWIFT_WARN_UNUSED_RESULT;
+- (void)setupBid:(Bid * _Nonnull)bid adConfiguration:(AdUnitConfig * _Nonnull)adConfiguration connection:(id <PrebidServerConnectionProtocol> _Nonnull)connection;
+- (void)createBannerAdViewWith:(CGRect)frame bid:(Bid * _Nonnull)bid adConfiguration:(AdUnitConfig * _Nonnull)adConfiguration connection:(id <PrebidServerConnectionProtocol> _Nonnull)connection adViewDelegate:(id <PBMAdViewManagerDelegate, PBMModalManagerDelegate, PBMThirdPartyAdViewLoader> _Nullable)adViewDelegate;
+- (void)createInterstitialControllerWithBid:(Bid * _Nonnull)bid adConfiguration:(AdUnitConfig * _Nonnull)adConfiguration connection:(id <PrebidServerConnectionProtocol> _Nonnull)connection adViewManagerDelegate:(InterstitialController * _Nullable)adViewDelegate videoControlsConfig:(PBMVideoControlsConfiguration * _Nullable)videoControlsConfig;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

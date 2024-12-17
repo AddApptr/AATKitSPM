@@ -355,6 +355,7 @@ SWIFT_CLASS("_TtC8UnityAds33SDKConfigurationStorageObjcBridge")
 
 
 
+
 @protocol UnityAdsInitializationDelegate;
 @protocol UnityAdsLoadDelegate;
 @class UADSLoadOptions;

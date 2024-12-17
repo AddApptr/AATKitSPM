@@ -355,6 +355,7 @@ SWIFT_CLASS("_TtC8UnityAds33SDKConfigurationStorageObjcBridge")
 
 
 
+
 @protocol UnityAdsInitializationDelegate;
 @protocol UnityAdsLoadDelegate;
 @class UADSLoadOptions;
@@ -809,6 +810,7 @@ SWIFT_CLASS("_TtC8UnityAds33SDKConfigurationStorageObjcBridge")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 

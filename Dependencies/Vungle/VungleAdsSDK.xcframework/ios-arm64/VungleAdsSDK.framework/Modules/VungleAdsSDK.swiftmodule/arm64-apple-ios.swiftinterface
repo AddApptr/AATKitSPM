@@ -253,6 +253,7 @@ import zlib
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class VungleBannerView : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any VungleAdsSDK.VungleBannerViewDelegate)?
   @objc @_Concurrency.MainActor(unsafe) public init(placementId: Swift.String, vungleAdSize: VungleAdsSDK.VungleAdSize)
+  @objc deinit
   @objc @_Concurrency.MainActor(unsafe) public func load(_ bidPayload: Swift.String? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func set(extras: VungleAdsSDK.VungleAdsExtras)
   @objc @_Concurrency.MainActor(unsafe) public var appId: Swift.String {
@@ -269,7 +270,6 @@ import zlib
   }
   @objc @_Concurrency.MainActor(unsafe) public func getBannerSize() -> CoreFoundation.CGSize
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
-  @objc deinit
 }
 @objc public enum VungleError : Swift.Int {
   case unknownError = 0

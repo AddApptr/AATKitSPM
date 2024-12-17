@@ -169,13 +169,13 @@ public protocol AATAdDriverProtocol : AATKit.AATAdDriverLoggerProtocol, AATKit.A
   func getPrice() -> AATKit.AATPriceInfo?
   func cancelLoading()
   func getConfigForReporting() -> AATKit.AATAdConfig?
-  func getLoadedAdBidderName() -> Swift.String?
+  func getAdDebugInfo() -> AATKit.AATAdDebugInfo?
 }
 extension AATKit.AATAdDriverProtocol {
   public func getPrice() -> AATKit.AATPriceInfo?
   public func cancelLoading()
   public func getConfigForReporting() -> AATKit.AATAdConfig?
-  public func getLoadedAdBidderName() -> Swift.String?
+  public func getAdDebugInfo() -> AATKit.AATAdDebugInfo?
 }
 @objc public enum AATShowIfNeededSetting : Swift.Int {
   case always
@@ -197,6 +197,10 @@ extension AATKit.AATAdDriverProtocol {
   @objc public var snapshot: UIKit.UIImage?
   @objc public var creativeID: Swift.String?
   @objc deinit
+}
+@available(iOS 15.0, *)
+extension AATKit.AATPlacementHistoryInfo : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
 @objc public protocol AATAdMobCustomEvents {
   @objc func setCustomEventDelegate(_ delegate: any AATKit.AATAdMobCustomEventsDelegate)
@@ -235,6 +239,11 @@ extension AATKit.AATAdDriverProtocol {
   case ADMOBBIDDING
   public typealias AllCases = [AATKit.AATAdNetwork]
   public static var allCases: [AATKit.AATAdNetwork] {
+    get
+  }
+}
+extension AATKit.AATAdNetwork {
+  public var displayName: Swift.String {
     get
   }
 }
@@ -787,6 +796,10 @@ extension AATKit.AATAdType : Swift.Hashable {
   @objc func customEventWasClicked()
   @objc func didRewardUserWithReward(_ reward: AATKit.AATReward)
 }
+public protocol AATOguryDriverProtocol {
+  static var shared: Self { get }
+  func updateCCPAConsent(isOptOut: Swift.Bool)
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AATBannerRequest : ObjectiveC.NSObject {
   @objc public var targetingInformation: [Swift.String : [Swift.String]]?
   @objc public var contentTargetingUrl: Swift.String?
@@ -1174,9 +1187,9 @@ extension AATKit.AATDebugInfo {
     @objc public var bannerAutoReloadInterval: Swift.Int
     @objc public var initialDelay: Swift.Int
     @objc public var remainingTime: Swift.Int
-    @objc public var loadedAdNetworkName: Swift.String
+    @objc public var loadedAds: [AATKit.AATAdDebugInfo]
     @objc public var isLoadingNewAd: Swift.Bool
-    @objc public var lastShownAdNetworkName: Swift.String?
+    @objc public var lastShownAd: AATKit.AATAdDebugInfo?
     @objc public var isAdQualityActive: Swift.Bool
     @objc deinit
   }
@@ -1191,6 +1204,15 @@ extension AATKit.AATDebugInfo.PlacementDebugInfo {
     @objc public var minTimeBetweenImpressions: Foundation.TimeInterval
     @objc deinit
   }
+}
+@objc public class AATAdDebugInfo : ObjectiveC.NSObject, Swift.Identifiable {
+  public var network: Swift.String
+  public var timestamp: Foundation.TimeInterval
+  public var creativeId: Swift.String?
+  public var bidder: Swift.String?
+  public init(network: Swift.String, timestamp: Foundation.TimeInterval, creativeId: Swift.String?, bidder: Swift.String?)
+  public typealias ID = Swift.ObjectIdentifier
+  @objc deinit
 }
 @available(iOS 15.0, *)
 extension AATKit.AATDebugInfo.PlacementDebugInfo : Swift.Identifiable {

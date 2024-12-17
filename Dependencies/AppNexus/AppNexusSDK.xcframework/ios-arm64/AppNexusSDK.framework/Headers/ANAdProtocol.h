@@ -149,6 +149,11 @@
 @property (nonatomic, readwrite, assign) CGFloat reserve;
 
 /**
+ Provide TTD's GPID
+ */
+@property (nonatomic, readwrite, strong, nullable) NSString *gpid;
+
+/**
  Set the inventory code and member id for the place that ads will be shown.
  */
 - (void)setInventoryCode:(nullable NSString *)inventoryCode memberId:(NSInteger)memberID;

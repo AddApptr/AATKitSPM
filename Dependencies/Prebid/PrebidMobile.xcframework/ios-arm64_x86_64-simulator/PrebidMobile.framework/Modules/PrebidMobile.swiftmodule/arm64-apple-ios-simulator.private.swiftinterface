@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PrebidMobile
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PrebidMobile
 import CoreLocation
 import Foundation
 import MapKit
@@ -102,6 +102,9 @@ import ObjectiveC.runtime
   @objc override dynamic public init()
   @objc deinit
 }
+@objc public protocol PBMThirdPartyAdViewLoader : ObjectiveC.NSObjectProtocol {
+}
+public typealias PBMAdViewDelegate = PrebidMobile.PBMAdViewManagerDelegate & PrebidMobile.PBMModalManagerDelegate & PrebidMobile.PBMThirdPartyAdViewLoader
 @objc public protocol RewardedEventHandlerProtocol : PrebidMobile.PBMInterstitialAd {
   @objc weak var loadingDelegate: (any PrebidMobile.RewardedEventLoadingDelegate)? { get set }
   @objc weak var interactionDelegate: (any PrebidMobile.RewardedEventInteractionDelegate)? { get set }
@@ -240,6 +243,14 @@ public class VideoAdUnit : PrebidMobile.AdUnit {
   }
   @objc public init(configId: Swift.String, size: CoreFoundation.CGSize)
   @objc public func addAdditionalSize(sizes: [CoreFoundation.CGSize])
+  @objc deinit
+}
+@objc public protocol PluginEventDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func getPluginName() -> Swift.String
+}
+@_inheritsConvenienceInitializers @objc open class DefaultPluginEventDelegate : ObjectiveC.NSObject, PrebidMobile.PluginEventDelegate {
+  @objc open func getPluginName() -> Swift.String
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class IMAAdSlotSize : PrebidMobile.SingleContainerInt {
@@ -647,6 +658,18 @@ public typealias PBMNetworkReachableBlock = (PrebidMobile.Reachability?) -> Swif
   @objc func cleanUpAdObject()
   @objc func getAdView() -> UIKit.UIView?
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PrebidMobilePluginRegister : ObjectiveC.NSObject {
+  @objc public static let shared: PrebidMobile.PrebidMobilePluginRegister
+  @objc public func registerPlugin(_ renderer: any PrebidMobile.PrebidMobilePluginRenderer)
+  @objc public func unregisterPlugin(_ renderer: any PrebidMobile.PrebidMobilePluginRenderer)
+  @objc public func containsPlugin(_ renderer: any PrebidMobile.PrebidMobilePluginRenderer) -> Swift.Bool
+  @objc public func registerEventDelegate(_ pluginEventDelegate: any PrebidMobile.PluginEventDelegate, adUnitConfigFingerprint: Swift.String)
+  @objc public func unregisterEventDelegate(_ pluginEventDelegate: any PrebidMobile.PluginEventDelegate, adUnitConfigFingerprint: Swift.String)
+  @objc public func getRTBListOfRenderersFor(for adUnit: PrebidMobile.AdUnitConfig) -> [any PrebidMobile.PrebidMobilePluginRenderer]
+  @objc public func getPluginForPreferredRenderer(bid: PrebidMobile.Bid) -> any PrebidMobile.PrebidMobilePluginRenderer
+  @objc public func getAllPlugins() -> [any PrebidMobile.PrebidMobilePluginRenderer]
+  @objc deinit
+}
 @objc public class BannerAdUnit : PrebidMobile.AdUnit, PrebidMobile.BannerBasedAdUnitProtocol, PrebidMobile.VideoBasedAdUnitProtocol {
   @objc @available(*, deprecated, message: "This property is deprecated. Please, use bannerParameters instead.")
   public var parameters: PrebidMobile.BannerParameters {
@@ -785,6 +808,8 @@ extension UIKit.UIView {
   @objc convenience public init(jsonDictionary: PrebidMobile.JsonDictionary)
   @objc public func setTargetingInfo(with newValue: [Swift.String : Swift.String])
   @objc public func addTargetingInfoValue(key: Swift.String, value: Swift.String)
+  @objc public func getPreferredPluginRendererName() -> Swift.String?
+  @objc public func getPreferredPluginRendererVersion() -> Swift.String?
   @objc deinit
 }
 @objc(PBMClickbrowserType) public enum ClickbrowserType : Swift.Int {
@@ -823,6 +848,17 @@ extension UIKit.UIView {
     @objc get
   }
   @objc deinit
+}
+@objc public protocol PrebidMobilePluginRenderer {
+  @objc var name: Swift.String { get }
+  @objc var version: Swift.String { get }
+  @objc var data: [Swift.AnyHashable : Any]? { get }
+  @objc func createBannerAdView(with frame: CoreFoundation.CGRect, bid: PrebidMobile.Bid, adConfiguration: PrebidMobile.AdUnitConfig, connection: any PrebidMobile.PrebidServerConnectionProtocol, adViewDelegate: (any PrebidMobile.PBMAdViewManagerDelegate & PrebidMobile.PBMModalManagerDelegate & PrebidMobile.PBMThirdPartyAdViewLoader)?)
+  @objc optional func createInterstitialController(bid: PrebidMobile.Bid, adConfiguration: PrebidMobile.AdUnitConfig, connection: any PrebidMobile.PrebidServerConnectionProtocol, adViewManagerDelegate: PrebidMobile.InterstitialController?, videoControlsConfig: PrebidMobile.VideoControlsConfiguration?)
+  @objc func isSupportRendering(for format: PrebidMobile.AdFormat?) -> Swift.Bool
+  @objc optional func registerEventDelegate(pluginEventDelegate: any PrebidMobile.PluginEventDelegate, adUnitConfigFingerprint: Swift.String)
+  @objc optional func unregisterEventDelegate(pluginEventDelegate: any PrebidMobile.PluginEventDelegate, adUnitConfigFingerprint: Swift.String)
+  @objc func setupBid(_ bid: PrebidMobile.Bid, adConfiguration: PrebidMobile.AdUnitConfig, connection: any PrebidMobile.PrebidServerConnectionProtocol)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PrebidServerConnection : ObjectiveC.NSObject, PrebidMobile.PrebidServerConnectionProtocol, Foundation.URLSessionDelegate {
   @objc public var userAgentService: PrebidMobile.UserAgentService {
@@ -1105,6 +1141,7 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
     @objc set
   }
   @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any PrebidMobile.BannerViewDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public func setPluginEventDelegate(_ pluginEventDelegate: any PrebidMobile.PluginEventDelegate)
   @objc @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc @_Concurrency.MainActor(unsafe) convenience public init(configID: Swift.String, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize)
@@ -1268,6 +1305,9 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: PrebidMobile.PrebidInitializationCallback? = nil)
   @objc public static func initializeSDK(gadMobileAdsVersion: Swift.String? = nil, _ completion: PrebidMobile.PrebidInitializationCallback? = nil)
   @objc public static func initializeSDK(_ completion: PrebidMobile.PrebidInitializationCallback? = nil)
+  @objc public static func registerPluginRenderer(_ prebidMobilePluginRenderer: any PrebidMobile.PrebidMobilePluginRenderer)
+  @objc public static func unregisterPluginRenderer(_ prebidMobilePluginRenderer: any PrebidMobile.PrebidMobilePluginRenderer)
+  @objc public static func containsPluginRenderer(_ prebidMobilePluginRenderer: any PrebidMobile.PrebidMobilePluginRenderer)
   @objc deinit
 }
 @objc @objcMembers public class MediationNativeAdUnit : ObjectiveC.NSObject {
@@ -1356,6 +1396,8 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public func adClickthroughDidClose()
   @objc public func adDidClose()
   @objc public func interstitialDisplayProperties() -> PrebidMobile.PBMInterstitialDisplayProperties
+  public func reportFailureWithError(_ error: (any Swift.Error)?)
+  public func display(transaction: PrebidMobile.PBMTransaction)
   @objc deinit
 }
 @objc public enum PrebidInitializationStatus : Swift.Int {
@@ -1833,6 +1875,18 @@ public let refreshIntervalDefault: Swift.Double
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class PrebidRenderer : ObjectiveC.NSObject, PrebidMobile.PrebidMobilePluginRenderer {
+  @objc final public let name: Swift.String
+  @objc final public let version: Swift.String
+  @objc public var data: [Swift.AnyHashable : Any]?
+  public var transactionFactory: PrebidMobile.PBMTransactionFactory?
+  @objc public func isSupportRendering(for format: PrebidMobile.AdFormat?) -> Swift.Bool
+  @objc public func setupBid(_ bid: PrebidMobile.Bid, adConfiguration: PrebidMobile.AdUnitConfig, connection: any PrebidMobile.PrebidServerConnectionProtocol)
+  @objc public func createBannerAdView(with frame: CoreFoundation.CGRect, bid: PrebidMobile.Bid, adConfiguration: PrebidMobile.AdUnitConfig, connection: any PrebidMobile.PrebidServerConnectionProtocol, adViewDelegate: (any PrebidMobile.PBMAdViewManagerDelegate & PrebidMobile.PBMModalManagerDelegate & PrebidMobile.PBMThirdPartyAdViewLoader)?)
+  @objc public func createInterstitialController(bid: PrebidMobile.Bid, adConfiguration: PrebidMobile.AdUnitConfig, connection: any PrebidMobile.PrebidServerConnectionProtocol, adViewManagerDelegate adViewDelegate: PrebidMobile.InterstitialController?, videoControlsConfig: PrebidMobile.VideoControlsConfiguration?)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public protocol InterstitialAdUnitDelegate : ObjectiveC.NSObjectProtocol {
   @objc optional func interstitialDidReceiveAd(_ interstitial: PrebidMobile.InterstitialRenderingAdUnit)
   @objc optional func interstitial(_ interstitial: PrebidMobile.InterstitialRenderingAdUnit, didFailToReceiveAdWithError error: (any Swift.Error)?)
@@ -2095,6 +2149,8 @@ public let refreshIntervalDefault: Swift.Double
   @objc func didClickAd()
 }
 @objc public class Bid : ObjectiveC.NSObject {
+  public static let KEY_RENDERER_NAME: Swift.String
+  public static let KEY_RENDERER_VERSION: Swift.String
   @objc public var price: Swift.Float {
     @objc get
   }
@@ -2108,6 +2164,9 @@ public let refreshIntervalDefault: Swift.Double
     @objc get
   }
   @objc public var targetingInfo: [Swift.String : Swift.String]? {
+    @objc get
+  }
+  @objc public var meta: [Swift.String : Swift.String]? {
     @objc get
   }
   @objc public var skadn: PrebidMobile.PBMORTBBidExtSkadn? {
@@ -2129,6 +2188,8 @@ public let refreshIntervalDefault: Swift.Double
     get
   }
   @objc public init(bid: PrebidMobile.PBMORTBBid<PrebidMobile.PBMORTBBidExt>)
+  public func getPreferredPluginRendererName() -> Swift.String?
+  public func getPreferredPluginRendererVersion() -> Swift.String?
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(PBMAdConfiguration) @objcMembers public class AdConfiguration : PrebidMobile.AutoRefreshCountConfig {
