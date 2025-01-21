@@ -1210,7 +1210,7 @@ extension AATKit.AATDebugInfo.PlacementDebugInfo {
   public var timestamp: Foundation.TimeInterval
   public var creativeId: Swift.String?
   public var bidder: Swift.String?
-  public init(network: Swift.String, timestamp: Foundation.TimeInterval, creativeId: Swift.String?, bidder: Swift.String?)
+  public init(network: AATKit.AATAdNetwork, timestamp: Foundation.TimeInterval = Date().timeIntervalSince1970, creativeId: Swift.String?, bidder: Swift.String? = nil)
   public typealias ID = Swift.ObjectIdentifier
   @objc deinit
 }
