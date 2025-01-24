@@ -304,9 +304,17 @@ let package = Package(
         // Datonomy
         .binaryTarget(name: "DatonomyKit", path: "./Dependencies/Datonomy/DatonomyKit.xcframework"),
 
-        // AppNexusSDK
-        .binaryTarget(name: "AppNexusSDK", path: "./Dependencies/AppNexus/AppNexusSDK.xcframework"),
-        .binaryTarget(name: "OMSDK_Microsoft", path: "./Dependencies/AppNexus/OMSDK_Microsoft.xcframework"),
+        // AppNexusSDK - for future updates, check https://github.com/appnexus/mobile-sdk-ios-spm/blob/main/Package.swift
+        .binaryTarget(
+            name: "OMSDK_Microsoft",
+            url: "https://adsdkprod.azureedge.net/mobile/ios/releases/9.2.1/dynamic/OMSDK_Microsoft.zip",
+            checksum: "f0b7cc1c45095a99bcd16e21250610a7614bbdf3d3c99e5f3ee8d762d9fe7dde"
+        ),
+        .binaryTarget(
+            name: "AppNexusSDK",
+            url: "https://adsdkprod.azureedge.net/mobile/ios/releases/9.2.1/dynamic/AppNexusSDKDynamic.zip",
+            checksum: "a122b9d51dd6c58aec384e1c65bd82d1da2fcdebcedf0cfb3e2b328bd9ced38b"
+        ),
 
         // Mintegral
         .binaryTarget(name: "MTGSDK", path:"./Dependencies/Mintegral/MTGSDK.xcframework"),

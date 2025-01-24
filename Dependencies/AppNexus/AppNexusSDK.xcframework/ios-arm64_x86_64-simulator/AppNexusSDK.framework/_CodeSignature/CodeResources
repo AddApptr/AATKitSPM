@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/libAppVerificationLibrary.a</key>
-		<data>
-		bbRceUEX2etOTCs3DDPEjOQvIjg=
-		</data>
 		<key>Headers/ANAdConstants.h</key>
 		<data>
 		/5/ZgA/kP4xEhR4dcW/ZOhyVyQ4=
@@ -138,7 +134,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		E7FitsJnl29yxaTKQdD6XPh2t5E=
+		JtEkSNyr02f1nF0J5FKyhpkmeT0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -283,17 +279,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/libAppVerificationLibrary.a</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bbRceUEX2etOTCs3DDPEjOQvIjg=
-			</data>
-			<key>hash2</key>
-			<data>
-			yQ31EX2dKy1atlRD/2U6TmghH4U1NBig+cYmoNBK8bQ=
-			</data>
-		</dict>
 		<key>Headers/ANAdConstants.h</key>
 		<dict>
 			<key>hash</key>
