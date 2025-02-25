@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/HyBid-Swift.h</key>
 		<data>
-		R3pt9r132pdVudL8Og1Nx0L8UrI=
+		nNSe4ZHIoZBd7GbGaJ65fNMtpBI=
 		</data>
 		<key>Headers/HyBid.h</key>
 		<data>
-		ks2V08uFPm8+qpKzLbX++udQvJ0=
+		6sOIdVLlj0xEy2CizvOqMMsoeWs=
 		</data>
 		<key>Headers/HyBidAd.h</key>
 		<data>
-		/imhPtSbFMUAmEnTTQU78K52ZsE=
+		ZP9qypRGfjV5abmP4RNoeYZM+Wg=
 		</data>
 		<key>Headers/HyBidAdCache.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/HyBidAdPresenter.h</key>
 		<data>
-		GSFugHzLTrt+mM/b2APbuCZHUGM=
+		qSAcKsnTTtVKzvr7eGrsFnebs8w=
 		</data>
 		<key>Headers/HyBidAdPresenterFactory.h</key>
 		<data>
@@ -64,17 +64,29 @@
 		<data>
 		UW7EYQbMJZJZYoDe7ZsfrHr7tIQ=
 		</data>
+		<key>Headers/HyBidConfig.h</key>
+		<data>
+		UAwgJp4B0vHApTZZn5IxkGCJAZg=
+		</data>
+		<key>Headers/HyBidConfigManager.h</key>
+		<data>
+		NBtpq80nZU7MC3B0S5nBqkTIiQ0=
+		</data>
+		<key>Headers/HyBidConfigModel.h</key>
+		<data>
+		3MtJgPlnYc/DcP9rK1wNIWMt3dw=
+		</data>
 		<key>Headers/HyBidContentInfoView.h</key>
 		<data>
 		x8bAJDFb4aDD6VFgeYJ4Tys1cXw=
 		</data>
 		<key>Headers/HyBidCustomCTAViewDelegate.h</key>
 		<data>
-		881hedd9PEXIgr8ThmPHMdIuHB4=
+		QqT+YiLqp/zJarjf5BBohNL5c9E=
 		</data>
 		<key>Headers/HyBidDataModel.h</key>
 		<data>
-		QZ+IyOKwjUOFVWVZEzPnpAIG+DM=
+		6hr2rK/haMi6xepvR+trcR86OSw=
 		</data>
 		<key>Headers/HyBidDiagnosticsManager.h</key>
 		<data>
@@ -82,7 +94,7 @@
 		</data>
 		<key>Headers/HyBidError.h</key>
 		<data>
-		g9BpA4+CxrV048eMETieVtebHQk=
+		FyCTVYTqpRr8dKIE+ukJCV6I3jk=
 		</data>
 		<key>Headers/HyBidHeaderBiddingUtils.h</key>
 		<data>
@@ -92,13 +104,17 @@
 		<data>
 		kP1In7yb+FnFf/qxbh7XdsPwm2w=
 		</data>
+		<key>Headers/HyBidInternalWebBrowserDelegate.h</key>
+		<data>
+		44L75hMlrPFacb82XSUl1Uai5aI=
+		</data>
 		<key>Headers/HyBidInterstitialAdRequest.h</key>
 		<data>
 		MhA8x3IBMMV+56abZgNRkwLYJM4=
 		</data>
 		<key>Headers/HyBidInterstitialPresenter.h</key>
 		<data>
-		DuQ0f7iMO3e0mIF4St5N7Fwwy5w=
+		F7v/nyX2Up2ZgVGHROJVpeG4HCw=
 		</data>
 		<key>Headers/HyBidInterstitialPresenterFactory.h</key>
 		<data>
@@ -118,7 +134,7 @@
 		</data>
 		<key>Headers/HyBidMRAIDView.h</key>
 		<data>
-		74yq/4dRiJEvNUZPnTF6ZFbKg6M=
+		GFVfuanQA2PvUDhGkD2kwQWD4k8=
 		</data>
 		<key>Headers/HyBidMRectAdRequest.h</key>
 		<data>
@@ -154,7 +170,7 @@
 		</data>
 		<key>Headers/HyBidRewardedPresenter.h</key>
 		<data>
-		uNTgWJb0e1zV506BdOv3GjdYZi4=
+		cqYM2IFjjjyAzbUnKN6LeB/Jf3g=
 		</data>
 		<key>Headers/HyBidRewardedPresenterFactory.h</key>
 		<data>
@@ -170,7 +186,7 @@
 		</data>
 		<key>Headers/HyBidSKOverlayDelegate.h</key>
 		<data>
-		gRDOQtikTNqq4i6BHOPR/ZfR0KU=
+		Mj4wIzqCh1drpDPVXaesU1+tLYg=
 		</data>
 		<key>Headers/HyBidSKOverlayTimerType.h</key>
 		<data>
@@ -206,11 +222,19 @@
 		</data>
 		<key>Headers/HyBidVASTEndCard.h</key>
 		<data>
-		U9ixkHF1YqD2F4X3UZwX1s7hSj0=
+		916KdP8mwLfUC1qEXrbNLDqSAh8=
+		</data>
+		<key>Headers/HyBidVASTEventProcessor.h</key>
+		<data>
+		MGT5uhQVd4xXvtlvWWsmJV37MCU=
 		</data>
 		<key>Headers/HyBidVASTIconViewTracking.h</key>
 		<data>
 		3qt2xArL0cqhdtqI6saSYqjYyMA=
+		</data>
+		<key>Headers/HyBidVASTImpression.h</key>
+		<data>
+		ChDCjb6jSv5wzRuSrxyrRQ3gD4c=
 		</data>
 		<key>Headers/HyBidVASTTracking.h</key>
 		<data>
@@ -248,6 +272,10 @@
 		<data>
 		1Gjpok5rXBonmnruvwN7TZv4TOM=
 		</data>
+		<key>Headers/UIApplication+PNLiteTopViewController.h</key>
+		<data>
+		lZMR5uKA0qdHJxm64s0SWEA2PZU=
+		</data>
 		<key>HyBidCustomCTAView.nib</key>
 		<data>
 		q/Jw3/r3narxjFCBS61IqkI0kJc=
@@ -258,23 +286,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UZEWjqOicQb0TgbDiUzIcRru3nY=
+		99xt6queyrqqCbck9NxrmALnydg=
+		</data>
+		<key>InternalWebBrowser.storyboardc/HyBidInternalWebBrowserViewController.nib/objects-14.0+.nib</key>
+		<data>
+		F6zieaDF4vBNFCPsyBnHWGxExW8=
+		</data>
+		<key>InternalWebBrowser.storyboardc/HyBidInternalWebBrowserViewController.nib/runtime.nib</key>
+		<data>
+		V6nb0W73uGmVb/NMf6A68BHm76c=
+		</data>
+		<key>InternalWebBrowser.storyboardc/Info.plist</key>
+		<data>
+		ZteNhcpxozgcFOPToWyHFwQH6zQ=
+		</data>
+		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/objects-14.0+.nib</key>
+		<data>
+		qtoDuQEmplZBgkA6gnXWrzA5Hcc=
+		</data>
+		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/runtime.nib</key>
+		<data>
+		nOind1YvAcYzZ8AmqsKqJ3v53hk=
+		</data>
+		<key>InternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
+		<data>
+		9pBLRTcRgVoZj3jIA6ILeOa8noA=
+		</data>
+		<key>InternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
+		<data>
+		9pBLRTcRgVoZj3jIA6ILeOa8noA=
 		</data>
 		<key>Modules/HyBid.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		qrZuq4y7oLKWXEbyNjeVjRwEckk=
+		BuddvBKFg1hMnG0ag78ano4Ku1c=
 		</data>
 		<key>Modules/HyBid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		j64XcpNuT2ETdPsLodqIYw/qJ+c=
+		8Kvjr5M0p8RabksIQux1df6SG2s=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		dR7r2NT78uLH0c7uUJzAUnzpUh4=
+		CKnSZ3kFS6WhJYRlqoXcW80qcoM=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dhH7JKF0JY0gf0D5wWIogQdNzzw=
+		RVWulpAAArTBJ8Ct5JnBnIonObY=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -282,19 +338,19 @@
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dhH7JKF0JY0gf0D5wWIogQdNzzw=
+		RVWulpAAArTBJ8Ct5JnBnIonObY=
 		</data>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aXDwGfu2seD3Rd+65OVMxTOrVZI=
+		rpniccviBsNNJmO/MSq6KKv9dDU=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		dR7r2NT78uLH0c7uUJzAUnzpUh4=
+		CKnSZ3kFS6WhJYRlqoXcW80qcoM=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ojR4br29na2Wb9BYN0t24HJsgYw=
+		uXcd0U9qCdh1XsWqcdEp3jAfprI=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -302,11 +358,11 @@
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ojR4br29na2Wb9BYN0t24HJsgYw=
+		uXcd0U9qCdh1XsWqcdEp3jAfprI=
 		</data>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pY1uv7nHXT08kz8CJQ91OnpRmu4=
+		4DCTkD1LwVMupYdGh8/PChRqCh0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -712,21 +768,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DJCaGFaVn8s4h76qqtM4ut8wHU2YpU73+/khUfyBlYo=
+			IhYUDmpQAolJ/slJyfupB4VTNJnu7NFYHtFUhaoUxxQ=
 			</data>
 		</dict>
 		<key>Headers/HyBid.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Q5HDnC+q6MXPrkviQUctj+19K3d8cdjwarcn83Vj+Q=
+			W/VPZNIrHYTte+uihFl7ttSo4xG2OXxRqBLI6K2a40Q=
 			</data>
 		</dict>
 		<key>Headers/HyBidAd.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			shFqj4pvtOfkXQ/ezcCNKZfCMhTtEVC9ThdBg80LFGg=
+			SCRXTEqtw3bQYm2WedsbxRs7dBRUztr4uRqwfzvA9zs=
 			</data>
 		</dict>
 		<key>Headers/HyBidAdCache.h</key>
@@ -754,7 +810,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mYz88MPRzAxtfngcIlfOTnVhvgsqVvCrGeb3QoEltes=
+			aHLmsqAgVu0T3NmFuTGR2k3JWxKrSL3iyCEGviFQwtg=
 			</data>
 		</dict>
 		<key>Headers/HyBidAdPresenterFactory.h</key>
@@ -813,6 +869,27 @@
 			LaxLCtwY1Oyj36uJNGu9tCpVqULcPBdOLwQvGI2B8EI=
 			</data>
 		</dict>
+		<key>Headers/HyBidConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			E/LQFHAftS1jpbRAz5lDJ4TuLupqNbOaEZypJsejLH4=
+			</data>
+		</dict>
+		<key>Headers/HyBidConfigManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Gz9BMqe0gfWwQdpQajJXuOoITweLE1dLs1Qz7TD/8f4=
+			</data>
+		</dict>
+		<key>Headers/HyBidConfigModel.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z7qO7ThR7wIqOEuJFLy4dThvRMQvmQEEzSybNC+r3Uk=
+			</data>
+		</dict>
 		<key>Headers/HyBidContentInfoView.h</key>
 		<dict>
 			<key>hash2</key>
@@ -824,14 +901,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UezW0RH0G2cO30UQrLhJP3r0E0SH40dnIBn32mopCHU=
+			5Nzb32iQ+Rx9GQjzVkam4uZ237tfH7BM4TdJS2fsLRw=
 			</data>
 		</dict>
 		<key>Headers/HyBidDataModel.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PffGr56ShKUoLxqwOEJpJUvLnjWdW7RKcrxZoDLYA/w=
+			xSzGq247++UjMzgchodXy+DCyCKkL78aNbNp5CwQTV0=
 			</data>
 		</dict>
 		<key>Headers/HyBidDiagnosticsManager.h</key>
@@ -845,7 +922,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GzhLhoITSNQtAsfqV2/HRvA/r/qj4etVHTpxg5JDSYY=
+			cn3OkYA7t2gIEsjjXXmX0Zga0EauxOOTS9sHAUz0czU=
 			</data>
 		</dict>
 		<key>Headers/HyBidHeaderBiddingUtils.h</key>
@@ -862,6 +939,13 @@
 			/vGMg6aNRtdH9XiuImQMa8h2dlLH34K6YNUd+wnioiM=
 			</data>
 		</dict>
+		<key>Headers/HyBidInternalWebBrowserDelegate.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+v47PApI0hIr7hD2t7nEOR2X7Q95LiEepGC0jhB6YJk=
+			</data>
+		</dict>
 		<key>Headers/HyBidInterstitialAdRequest.h</key>
 		<dict>
 			<key>hash2</key>
@@ -873,7 +957,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JfxD36oXk7li8on+otHjTJeWw3GHXVkPHGvEE6CTbZM=
+			RwWjFa3Bzyjd2BRKxvA3cUruo5X/q2ZSflJ1L+UPEuA=
 			</data>
 		</dict>
 		<key>Headers/HyBidInterstitialPresenterFactory.h</key>
@@ -908,7 +992,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Ab4zAXb1tzKy091ygo3mIMo91kCt4uTfnPvd82V+TQ=
+			k+OKi9icEOZlENcWqL3KD1C8zY/MMbaM6ZEX6P1NZ6w=
 			</data>
 		</dict>
 		<key>Headers/HyBidMRectAdRequest.h</key>
@@ -971,7 +1055,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V/s2AXYOV+Uz782HkR/g49HnswylRzA1t+C2cA8F/hc=
+			184inoaQHs85lvrT7uXR+8+P0ps93eRsy7GxOYTSrTE=
 			</data>
 		</dict>
 		<key>Headers/HyBidRewardedPresenterFactory.h</key>
@@ -999,7 +1083,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+gUse09nvFjd/hTEA/4NOJ+bC7zZkjhrVyNjojxQjOk=
+			toYy8RhBCsK68uT+3gajktYPE4QBGMR8rAH1wFk6XwY=
 			</data>
 		</dict>
 		<key>Headers/HyBidSKOverlayTimerType.h</key>
@@ -1062,7 +1146,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7PQGM6ZlGQOnD3AU820J88YsvVnp/YPC8VjcAvDnoC0=
+			IWHVyDqRe5FQcPrrEPoTQb9Ta8Mh9ViU+ZcDFKgDL5w=
+			</data>
+		</dict>
+		<key>Headers/HyBidVASTEventProcessor.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7qkUz2vns6+MUzaICLpnViulWmqJKtOEdv2N7CyK9ms=
 			</data>
 		</dict>
 		<key>Headers/HyBidVASTIconViewTracking.h</key>
@@ -1070,6 +1161,13 @@
 			<key>hash2</key>
 			<data>
 			OktJCsvlmucZqVnuk2yaHKxUvUZZNVNuajLhSKiX0VE=
+			</data>
+		</dict>
+		<key>Headers/HyBidVASTImpression.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/ybu7jqy287sOfK+130GQGbALIPMROp/nFTksljvCRY=
 			</data>
 		</dict>
 		<key>Headers/HyBidVASTTracking.h</key>
@@ -1135,6 +1233,13 @@
 			/epEgOuiOdPxgPoSMCdsX1etLeHP1Qe9mLZYlf6S9UE=
 			</data>
 		</dict>
+		<key>Headers/UIApplication+PNLiteTopViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cMCeWnbALSjm58E/aIaALPbTpgb0VLSoafEDcUExgVM=
+			</data>
+		</dict>
 		<key>HyBidCustomCTAView.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -1149,32 +1254,81 @@
 			g9FxBMYF+IQhLEUQUpmxc5hiJjqTLx8hhLjiAcYB3Qs=
 			</data>
 		</dict>
+		<key>InternalWebBrowser.storyboardc/HyBidInternalWebBrowserViewController.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a56fX/tyachcSssHQBYXmFRyvy6BOFEwmdlrQb34298=
+			</data>
+		</dict>
+		<key>InternalWebBrowser.storyboardc/HyBidInternalWebBrowserViewController.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7qzFkNy/O2hQth67MJKxJl+WHVocFEBoy23gXKEa8G4=
+			</data>
+		</dict>
+		<key>InternalWebBrowser.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HdxolMsy0tc5jK3gOI3uM6y5KyuoTNcpB4AKpagA5Lo=
+			</data>
+		</dict>
+		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GZvFrnGbQkqrNu3+dRnDKQmZ44FHdUmFetBt8S2NqSI=
+			</data>
+		</dict>
+		<key>InternalWebBrowser.storyboardc/UINavigationController-C8j-qv-XiW.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gHVjht+PwccxrZludtg7eGhcT0fh3shpUKXw8t7ejm8=
+			</data>
+		</dict>
+		<key>InternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/objects-14.0+.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2Zh/Bs+JOzBmYImYsBaNDPTV2uZlwrmB80vnKNhjbGU=
+			</data>
+		</dict>
+		<key>InternalWebBrowser.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib/runtime.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2Zh/Bs+JOzBmYImYsBaNDPTV2uZlwrmB80vnKNhjbGU=
+			</data>
+		</dict>
 		<key>Modules/HyBid.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3q5hg2x8QIKbDp6cD1K9FVJwFNClb3mgxXUgESiK3yE=
+			5k8V6YCTJdQoVxEg/IRiZVXJT2HtjvTHkpQHzLr/byU=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0CwaQcA0ej5L2KuAIN6gsebP4YyDh1ssmCxKNuDaeE=
+			vvHqgb656bxoE5K5l2F4UBR41JP7MxzPeXkY/jb8vt8=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5gmO6orZFcwv68rI1PvOmizPpsA7Tv08PdM03ha24kM=
+			CBhw8/L1Xl0DEphXrg01KcPJg2BphmSbrOVDtM1kkt4=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J+WZq9hwEI3gQjyy/Q9APK4ztkIj2eoUzgah62GlCKw=
+			381DytkdyW1RYz9e4IAJ5raGj5Wg1wQ8GlP5VC1EWu0=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -1188,28 +1342,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J+WZq9hwEI3gQjyy/Q9APK4ztkIj2eoUzgah62GlCKw=
+			381DytkdyW1RYz9e4IAJ5raGj5Wg1wQ8GlP5VC1EWu0=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/gQGy1qKF+VXa2Nfscjft6wBWmIUw8l2p0aC01Ht2UA=
+			YYBZCwffL3b3QZInaGW0fuZH/XnYs12O+7PjO+zbqoo=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5gmO6orZFcwv68rI1PvOmizPpsA7Tv08PdM03ha24kM=
+			CBhw8/L1Xl0DEphXrg01KcPJg2BphmSbrOVDtM1kkt4=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XCDaOvvpn7gcqRBFYNXyDI6HkN4ndGHjDHv+VHTCwRo=
+			y/Ehh2V/NikMtuUIOJ2fyYP4XlLZRiAwmM0KGiJvLUk=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -1223,14 +1377,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XCDaOvvpn7gcqRBFYNXyDI6HkN4ndGHjDHv+VHTCwRo=
+			y/Ehh2V/NikMtuUIOJ2fyYP4XlLZRiAwmM0KGiJvLUk=
 			</data>
 		</dict>
 		<key>Modules/HyBid.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K+pcOIyy9USBXNExmJdgO2UBwS/h0yoXRp5Eo61c6t0=
+			UZOa7cGxm87MxPcG8ZHGHTAEUWDOTPk3cSCMhnpyelI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

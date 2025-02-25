@@ -198,7 +198,7 @@ let package = Package(
                     path: "./Sources/KidozSources"),
 
             .target(name:"AATKit-PubNative",
-                    dependencies: ["HyBid", "OMSDK_Pubnativenet", "AATPubNativeAdapter"],
+                    dependencies: ["HyBid", "OMSDK_Pubnativenet", "ATOM", "AATPubNativeAdapter"],
                     path: "./Sources/PubnativeSources"),
 
             .target(name:"AATKit-Prebid",
@@ -291,6 +291,7 @@ let package = Package(
         // PubNative
         .binaryTarget(name: "HyBid", path: "./Dependencies/Pubnative/HyBid.xcframework"),
         .binaryTarget(name: "OMSDK_Pubnativenet", path: "./Dependencies/Pubnative/OMSDK_Pubnativenet.xcframework"),
+        .binaryTarget(name: "ATOM", path: "./Dependencies/Pubnative/ATOM.xcframework"),
 
         // Prebid
         .binaryTarget(name: "PrebidMobile", path: "./Dependencies/Prebid/PrebidMobile.xcframework"),

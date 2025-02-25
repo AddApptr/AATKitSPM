@@ -14,11 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zbfj+UKQEAD+tk5ey66UPArDoQM=
-		</data>
-		<key>LICENSE</key>
-		<data>
-		/rCBeNI35oIKcjV1Ywp0BsbTQ+M=
+		i0I9YNwfOUKO3Ty8DcxRafZEnT0=
 		</data>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -38,7 +34,7 @@
 		</data>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GGOZUmW1lUadDLIH1YJiJgLT3z0=
+		RHlE4mAyrcQ+4Awe4xjxZmBKuqQ=
 		</data>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,15 +54,11 @@
 		</data>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Sj+7dY/IW7LU5JCmrGx4CKXb/YI=
+		1co/kPufZ0jnRNLk1M4g3dGJczI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		QpobC+LejaIRLZIC8ZIH7WW9BYU=
-		</data>
-		<key>omsdk.js</key>
-		<data>
-		6+hfCdXnixKm+657WUiXeprAN1c=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -91,17 +83,6 @@
 			<key>hash2</key>
 			<data>
 			F2WBAR4t/eNtUn02Hl0JDLJwVeoTbISBWmOjarsuCSI=
-			</data>
-		</dict>
-		<key>LICENSE</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/rCBeNI35oIKcjV1Ywp0BsbTQ+M=
-			</data>
-			<key>hash2</key>
-			<data>
-			2Q6aF3FcfgBDrPp0c4RFQj5Vj8d7ykrbp/JFWrW8Mb8=
 			</data>
 		</dict>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -152,11 +133,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GGOZUmW1lUadDLIH1YJiJgLT3z0=
+			RHlE4mAyrcQ+4Awe4xjxZmBKuqQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			0LfVgPf3mlWcrVXokdNGwcZ3T/s0osem9W92HYIC76U=
+			EctqTA9FJSEkBDbGpbaGvnO/3v/Umlp38yf/rep28k8=
 			</data>
 		</dict>
 		<key>Modules/AATPubNativeAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -207,11 +188,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Sj+7dY/IW7LU5JCmrGx4CKXb/YI=
+			1co/kPufZ0jnRNLk1M4g3dGJczI=
 			</data>
 			<key>hash2</key>
 			<data>
-			xSclLUp7dMK8bZN6UIM40R5sY9Ga+R32xbbd8I8sGYA=
+			MLva5SOononpSmgK4t0YXPFu1pjCM5c/RWlUslkhuWE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -223,17 +204,6 @@
 			<key>hash2</key>
 			<data>
 			GmZoZYHa3/sdk6KX5YCu7mSTlvzUfeAX0YiMZ31wLOc=
-			</data>
-		</dict>
-		<key>omsdk.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6+hfCdXnixKm+657WUiXeprAN1c=
-			</data>
-			<key>hash2</key>
-			<data>
-			wdHo+ZxIr5eFSs8kgj8Q2jorPZzSti3/PJO59hk3RRw=
 			</data>
 		</dict>
 	</dict>
