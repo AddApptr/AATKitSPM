@@ -40,6 +40,7 @@ let package = Package(
         .library(name: "AATKit-Datonomy", targets: ["AATKit-Datonomy"]),
         .library(name: "AATKit-Mintegral", targets: ["AATKit-Mintegral"]),
         .library(name: "AATKit-Facebook", targets: ["AATKit-Facebook"]),
+        .library(name: "AATKit-DisplayIO", targets: ["AATKit-DisplayIO"]),
 
 
         // CMPs
@@ -228,6 +229,10 @@ let package = Package(
             .target(name:"AATKit-AppConsentCMP",
                     dependencies: ["AppConsent", "AATAppConsentAdapter"],
                     path: "./Sources/AppConsentCMP"),
+
+            .target(name:"AATKit-DisplayIO",
+                    dependencies: ["DisplayIO", "AATDisplayIOAdapter"],
+                    path: "./Sources/DisplayIOSources"),
         // Mark: Binary Targets
         // AATKit
         .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
@@ -339,6 +344,9 @@ let package = Package(
         // SourcePoint
         .binaryTarget(name: "ConsentViewController", path: "./Dependencies/SourcePoint/ConsentViewController.xcframework"),
 
+        // DisplayIO
+        .binaryTarget(name: "DisplayIO", path:"./Dependencies/DisplayIO/DIOSDK.xcframework"),
+
         // AATKit Adapters
         .binaryTarget(name: "AATAmazonAdapter", path: "./Dependencies/AATKit/Adapters/AATAmazonAdapter.xcframework"),
         .binaryTarget(name: "AATAppLovinAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinAdapter.xcframework"),
@@ -368,6 +376,7 @@ let package = Package(
         .binaryTarget(name: "AATMintegralAdapter", path: "./Dependencies/AATKit/Adapters/AATMintegralAdapter.xcframework"),
         .binaryTarget(name: "AATSourcePointCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATSourcePointCMPAdapter.xcframework"),
         .binaryTarget(name: "AATAppConsentAdapter", path: "./Dependencies/AATKit/Adapters/AATAppConsentAdapter.xcframework"),
+        .binaryTarget(name: "AATDisplayIOAdapter", path: "./Dependencies/AATKit/Adapters/AATDisplayIOAdapter.xcframework"),
 
     ]
 )

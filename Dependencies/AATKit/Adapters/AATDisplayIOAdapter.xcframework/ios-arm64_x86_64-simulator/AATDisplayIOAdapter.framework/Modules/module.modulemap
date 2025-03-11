@@ -1,0 +1,6 @@
+framework module AATDisplayIOAdapter {
+  umbrella header "AATDisplayIOAdapter.h"
+  export *
+
+  module * { export * }
+}
