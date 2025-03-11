@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AATSuperAwesomeBannerHandler : NSObject <AATSuperAwesomeBannerProtocol>
 @property (weak) NSObject<AATSuperAwesomeBannerDelegate>* delegate;
 
-- (void)load:(NSNumber *)placementId viewController:(UIViewController *)controller bannerSize:(CGSize)bannerSize;
+- (void)load:(NSNumber *)placementId viewController:(UIViewController *)controller bannerSize:(CGSize)bannerSize
+      userId: (NSString * _Nullable) userId
+    keywords: (NSDictionary<NSString *,id> * _Nullable) keywords;
 
 - (void)enableParentalGate:(BOOL)enabled;
 - (void)enableBumperPage:(BOOL)enabled;

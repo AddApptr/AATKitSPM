@@ -1695,6 +1695,66 @@
           },
           {
             "kind": "Function",
+            "name": "getUserTargeting",
+            "printedName": "getUserTargeting()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AATKit.AATUserTargeting?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATUserTargeting",
+                    "printedName": "AATKit.AATUserTargeting",
+                    "usr": "c:@M@AATKit@objc(cs)AATUserTargeting"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6AATKit31AATTargetingInformationProtocolP16getUserTargetingAA07AATUserG0CSgyF",
+            "mangledName": "$s6AATKit31AATTargetingInformationProtocolP16getUserTargetingAA07AATUserG0CSgyF",
+            "moduleName": "AATKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATTargetingInformationProtocol>",
+            "sugared_genericSig": "<Self where Self : AATKit.AATTargetingInformationProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getJoinedUserKeywords",
+            "printedName": "getJoinedUserKeywords()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6AATKit31AATTargetingInformationProtocolP21getJoinedUserKeywordsSSSgyF",
+            "mangledName": "$s6AATKit31AATTargetingInformationProtocolP21getJoinedUserKeywordsSSSgyF",
+            "moduleName": "AATKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATTargetingInformationProtocol>",
+            "sugared_genericSig": "<Self where Self : AATKit.AATTargetingInformationProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "hasKeywordTargeting",
             "printedName": "hasKeywordTargeting()",
             "children": [
@@ -1746,6 +1806,38 @@
             "declKind": "Func",
             "usr": "s:6AATKit31AATTargetingInformationProtocolPAAE17getValuesAsString9delimiterSSSgSS_tF",
             "mangledName": "$s6AATKit31AATTargetingInformationProtocolPAAE17getValuesAsString9delimiterSSSgSS_tF",
+            "moduleName": "AATKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATTargetingInformationProtocol>",
+            "sugared_genericSig": "<Self where Self : AATKit.AATTargetingInformationProtocol>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getJoinedUserKeywords",
+            "printedName": "getJoinedUserKeywords()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6AATKit31AATTargetingInformationProtocolPAAE21getJoinedUserKeywordsSSSgyF",
+            "mangledName": "$s6AATKit31AATTargetingInformationProtocolPAAE21getJoinedUserKeywordsSSSgyF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATTargetingInformationProtocol>",
             "sugared_genericSig": "<Self where Self : AATKit.AATTargetingInformationProtocol>",
@@ -6135,6 +6227,30 @@
           },
           {
             "kind": "Function",
+            "name": "didWin",
+            "printedName": "didWin()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6AATKit19AATAdDriverProtocolP6didWinyyF",
+            "mangledName": "$s6AATKit19AATAdDriverProtocolP6didWinyyF",
+            "moduleName": "AATKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAdDriverProtocol>",
+            "sugared_genericSig": "<Self where Self : AATKit.AATAdDriverProtocol>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getPrice",
             "printedName": "getPrice()",
             "children": [
@@ -6234,6 +6350,26 @@
             "declKind": "Func",
             "usr": "s:6AATKit19AATAdDriverProtocolPAAE14getAdDebugInfoAA0bgH0CSgyF",
             "mangledName": "$s6AATKit19AATAdDriverProtocolPAAE14getAdDebugInfoAA0bgH0CSgyF",
+            "moduleName": "AATKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAdDriverProtocol>",
+            "sugared_genericSig": "<Self where Self : AATKit.AATAdDriverProtocol>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didWin",
+            "printedName": "didWin()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6AATKit19AATAdDriverProtocolPAAE6didWinyyF",
+            "mangledName": "$s6AATKit19AATAdDriverProtocolPAAE6didWinyyF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATAdDriverProtocol>",
             "sugared_genericSig": "<Self where Self : AATKit.AATAdDriverProtocol>",
@@ -8058,47 +8194,6 @@
           },
           {
             "kind": "Var",
-            "name": "RUBICON",
-            "printedName": "RUBICON",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AATKit.AATAdNetwork.Type) -> AATKit.AATAdNetwork",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AATAdNetwork",
-                    "printedName": "AATKit.AATAdNetwork",
-                    "usr": "c:@M@AATKit@E@AATAdNetwork"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AATKit.AATAdNetwork.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AATAdNetwork",
-                        "printedName": "AATKit.AATAdNetwork",
-                        "usr": "c:@M@AATKit@E@AATAdNetwork"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@AATKit@E@AATAdNetwork@AATAdNetworkRUBICON",
-            "mangledName": "$s6AATKit12AATAdNetworkO7RUBICONyA2CmF",
-            "moduleName": "AATKit",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 17
-          },
-          {
-            "kind": "Var",
             "name": "AMAZONHB",
             "printedName": "AMAZONHB",
             "children": [
@@ -8136,7 +8231,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -8177,7 +8272,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 19
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -8218,7 +8313,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 20
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -8259,7 +8354,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 21
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Var",
@@ -8300,7 +8395,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 22
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -8341,7 +8436,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 23
+            "fixedbinaryorder": 22
           },
           {
             "kind": "Var",
@@ -8382,7 +8477,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 24
+            "fixedbinaryorder": 23
           },
           {
             "kind": "Var",
@@ -8423,7 +8518,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 25
+            "fixedbinaryorder": 24
           },
           {
             "kind": "Var",
@@ -8464,7 +8559,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 26
+            "fixedbinaryorder": 25
           },
           {
             "kind": "Var",
@@ -8505,7 +8600,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 27
+            "fixedbinaryorder": 26
           },
           {
             "kind": "Var",
@@ -8542,6 +8637,47 @@
             "declKind": "EnumElement",
             "usr": "c:@M@AATKit@E@AATAdNetwork@AATAdNetworkKIDOZ",
             "mangledName": "$s6AATKit12AATAdNetworkO5KIDOZyA2CmF",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 27
+          },
+          {
+            "kind": "Var",
+            "name": "DISPLAYIO",
+            "printedName": "DISPLAYIO",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AATKit.AATAdNetwork.Type) -> AATKit.AATAdNetwork",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATAdNetwork",
+                    "printedName": "AATKit.AATAdNetwork",
+                    "usr": "c:@M@AATKit@E@AATAdNetwork"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AATKit.AATAdNetwork.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATAdNetwork",
+                        "printedName": "AATKit.AATAdNetwork",
+                        "usr": "c:@M@AATKit@E@AATAdNetwork"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AATKit@E@AATAdNetwork@AATAdNetworkDISPLAYIO",
+            "mangledName": "$s6AATKit12AATAdNetworkO9DISPLAYIOyA2CmF",
             "moduleName": "AATKit",
             "declAttributes": [
               "ObjC"
@@ -12221,6 +12357,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "AATDatonomyDriver",
         "printedName": "AATDatonomyDriver",
@@ -14871,6 +15017,309 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "AATGender",
+        "printedName": "AATGender",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "male",
+            "printedName": "male",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AATKit.AATGender.Type) -> AATKit.AATGender",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATGender",
+                    "printedName": "AATKit.AATGender",
+                    "usr": "c:@M@AATKit@E@AATGender"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AATKit.AATGender.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATGender",
+                        "printedName": "AATKit.AATGender",
+                        "usr": "c:@M@AATKit@E@AATGender"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AATKit@E@AATGender@AATGenderMale",
+            "mangledName": "$s6AATKit9AATGenderO4maleyA2CmF",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "female",
+            "printedName": "female",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AATKit.AATGender.Type) -> AATKit.AATGender",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATGender",
+                    "printedName": "AATKit.AATGender",
+                    "usr": "c:@M@AATKit@E@AATGender"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AATKit.AATGender.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATGender",
+                        "printedName": "AATKit.AATGender",
+                        "usr": "c:@M@AATKit@E@AATGender"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AATKit@E@AATGender@AATGenderFemale",
+            "mangledName": "$s6AATKit9AATGenderO6femaleyA2CmF",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "other",
+            "printedName": "other",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AATKit.AATGender.Type) -> AATKit.AATGender",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATGender",
+                    "printedName": "AATKit.AATGender",
+                    "usr": "c:@M@AATKit@E@AATGender"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AATKit.AATGender.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATGender",
+                        "printedName": "AATKit.AATGender",
+                        "usr": "c:@M@AATKit@E@AATGender"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AATKit@E@AATGender@AATGenderOther",
+            "mangledName": "$s6AATKit9AATGenderO5otheryA2CmF",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AATKit.AATGender.Type) -> AATKit.AATGender",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATGender",
+                    "printedName": "AATKit.AATGender",
+                    "usr": "c:@M@AATKit@E@AATGender"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AATKit.AATGender.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATGender",
+                        "printedName": "AATKit.AATGender",
+                        "usr": "c:@M@AATKit@E@AATGender"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AATKit@E@AATGender@AATGenderUnknown",
+            "mangledName": "$s6AATKit9AATGenderO7unknownyA2CmF",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AATKit9AATGenderO8rawValueSSvp",
+            "mangledName": "$s6AATKit9AATGenderO8rawValueSSvp",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit9AATGenderO8rawValueSSvg",
+                "mangledName": "$s6AATKit9AATGenderO8rawValueSSvg",
+                "moduleName": "AATKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AATKit.AATGender?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATGender",
+                    "printedName": "AATKit.AATGender",
+                    "usr": "c:@M@AATKit@E@AATGender"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6AATKit9AATGenderO8rawValueACSgSS_tcfc",
+            "mangledName": "$s6AATKit9AATGenderO8rawValueACSgSS_tcfc",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AATKit@E@AATGender",
+        "mangledName": "$s6AATKit9AATGenderO",
+        "moduleName": "AATKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -15832,22 +16281,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AATKit.AATConsentImplementation?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AATConsentImplementation",
-                    "printedName": "AATKit.AATConsentImplementation",
-                    "usr": "c:@M@AATKit@objc(cs)AATConsentImplementation"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "AATConsentImplementation",
+                "printedName": "AATKit.AATConsentImplementation",
+                "usr": "c:@M@AATKit@objc(cs)AATConsentImplementation"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@AATKit@objc(cs)AATRuntimeConfiguration(py)consent",
-            "mangledName": "$s6AATKit23AATRuntimeConfigurationC7consentAA24AATConsentImplementationCSgvp",
+            "mangledName": "$s6AATKit23AATRuntimeConfigurationC7consentAA24AATConsentImplementationCvp",
             "moduleName": "AATKit",
             "declAttributes": [
               "HasInitialValue",
@@ -15865,22 +16306,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "AATKit.AATConsentImplementation?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AATConsentImplementation",
-                        "printedName": "AATKit.AATConsentImplementation",
-                        "usr": "c:@M@AATKit@objc(cs)AATConsentImplementation"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "AATConsentImplementation",
+                    "printedName": "AATKit.AATConsentImplementation",
+                    "usr": "c:@M@AATKit@objc(cs)AATConsentImplementation"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@AATKit@objc(cs)AATRuntimeConfiguration(im)consent",
-                "mangledName": "$s6AATKit23AATRuntimeConfigurationC7consentAA24AATConsentImplementationCSgvg",
+                "mangledName": "$s6AATKit23AATRuntimeConfigurationC7consentAA24AATConsentImplementationCvg",
                 "moduleName": "AATKit",
                 "implicit": true,
                 "declAttributes": [
@@ -15900,22 +16333,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "AATKit.AATConsentImplementation?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AATConsentImplementation",
-                        "printedName": "AATKit.AATConsentImplementation",
-                        "usr": "c:@M@AATKit@objc(cs)AATConsentImplementation"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "AATConsentImplementation",
+                    "printedName": "AATKit.AATConsentImplementation",
+                    "usr": "c:@M@AATKit@objc(cs)AATConsentImplementation"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@AATKit@objc(cs)AATRuntimeConfiguration(im)setConsent:",
-                "mangledName": "$s6AATKit23AATRuntimeConfigurationC7consentAA24AATConsentImplementationCSgvs",
+                "mangledName": "$s6AATKit23AATRuntimeConfigurationC7consentAA24AATConsentImplementationCvs",
                 "moduleName": "AATKit",
                 "implicit": true,
                 "declAttributes": [
@@ -15935,8 +16360,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:6AATKit23AATRuntimeConfigurationC7consentAA24AATConsentImplementationCSgvM",
-                "mangledName": "$s6AATKit23AATRuntimeConfigurationC7consentAA24AATConsentImplementationCSgvM",
+                "usr": "s:6AATKit23AATRuntimeConfigurationC7consentAA24AATConsentImplementationCvM",
+                "mangledName": "$s6AATKit23AATRuntimeConfigurationC7consentAA24AATConsentImplementationCvM",
                 "moduleName": "AATKit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -25638,117 +26063,6 @@
           },
           {
             "kind": "Var",
-            "name": "publisherProvidedID",
-            "printedName": "publisherProvidedID",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:6AATKit25AATAdRequestConfigurationV19publisherProvidedIDSSSgvp",
-            "mangledName": "$s6AATKit25AATAdRequestConfigurationV19publisherProvidedIDSSSgvp",
-            "moduleName": "AATKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAdRequestConfigurationV19publisherProvidedIDSSSgvg",
-                "mangledName": "$s6AATKit25AATAdRequestConfigurationV19publisherProvidedIDSSSgvg",
-                "moduleName": "AATKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAdRequestConfigurationV19publisherProvidedIDSSSgvs",
-                "mangledName": "$s6AATKit25AATAdRequestConfigurationV19publisherProvidedIDSSSgvs",
-                "moduleName": "AATKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:6AATKit25AATAdRequestConfigurationV19publisherProvidedIDSSSgvM",
-                "mangledName": "$s6AATKit25AATAdRequestConfigurationV19publisherProvidedIDSSSgvM",
-                "moduleName": "AATKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "isRTARule",
             "printedName": "isRTARule",
             "children": [
@@ -28907,6 +29221,126 @@
         "moduleName": "AATKit",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AATDisplayIODriverProtocol",
+        "printedName": "AATDisplayIODriverProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AATKit26AATDisplayIODriverProtocolP6sharedxvpZ",
+            "mangledName": "$s6AATKit26AATDisplayIODriverProtocolP6sharedxvpZ",
+            "moduleName": "AATKit",
+            "static": true,
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit26AATDisplayIODriverProtocolP6sharedxvgZ",
+                "mangledName": "$s6AATKit26AATDisplayIODriverProtocolP6sharedxvgZ",
+                "moduleName": "AATKit",
+                "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATDisplayIODriverProtocol>",
+                "sugared_genericSig": "<Self where Self : AATKit.AATDisplayIODriverProtocol>",
+                "static": true,
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initSDK",
+            "printedName": "initSDK(networkKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6AATKit26AATDisplayIODriverProtocolP7initSDK10networkKeyySS_tF",
+            "mangledName": "$s6AATKit26AATDisplayIODriverProtocolP7initSDK10networkKeyySS_tF",
+            "moduleName": "AATKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATDisplayIODriverProtocol>",
+            "sugared_genericSig": "<Self where Self : AATKit.AATDisplayIODriverProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUseGeoLocation",
+            "printedName": "setUseGeoLocation(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6AATKit26AATDisplayIODriverProtocolP17setUseGeoLocationyySbF",
+            "mangledName": "$s6AATKit26AATDisplayIODriverProtocolP17setUseGeoLocationyySbF",
+            "moduleName": "AATKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATDisplayIODriverProtocol>",
+            "sugared_genericSig": "<Self where Self : AATKit.AATDisplayIODriverProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6AATKit26AATDisplayIODriverProtocolP",
+        "mangledName": "$s6AATKit26AATDisplayIODriverProtocolP",
+        "moduleName": "AATKit",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -32266,6 +32700,752 @@
         "moduleName": "AATKit",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AATUserTargeting",
+        "printedName": "AATUserTargeting",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "userId",
+            "printedName": "userId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AATKit16AATUserTargetingC6userIdSSSgvp",
+            "mangledName": "$s6AATKit16AATUserTargetingC6userIdSSSgvp",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC6userIdSSSgvg",
+                "mangledName": "$s6AATKit16AATUserTargetingC6userIdSSSgvg",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC6userIdSSSgvs",
+                "mangledName": "$s6AATKit16AATUserTargetingC6userIdSSSgvs",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC6userIdSSSgvM",
+                "mangledName": "$s6AATKit16AATUserTargetingC6userIdSSSgvM",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gender",
+            "printedName": "gender",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AATKit.AATGender?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATGender",
+                    "printedName": "AATKit.AATGender",
+                    "usr": "c:@M@AATKit@E@AATGender"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AATKit16AATUserTargetingC6genderAA9AATGenderOSgvp",
+            "mangledName": "$s6AATKit16AATUserTargetingC6genderAA9AATGenderOSgvp",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AATKit.AATGender?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATGender",
+                        "printedName": "AATKit.AATGender",
+                        "usr": "c:@M@AATKit@E@AATGender"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC6genderAA9AATGenderOSgvg",
+                "mangledName": "$s6AATKit16AATUserTargetingC6genderAA9AATGenderOSgvg",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AATKit.AATGender?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATGender",
+                        "printedName": "AATKit.AATGender",
+                        "usr": "c:@M@AATKit@E@AATGender"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC6genderAA9AATGenderOSgvs",
+                "mangledName": "$s6AATKit16AATUserTargetingC6genderAA9AATGenderOSgvs",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC6genderAA9AATGenderOSgvM",
+                "mangledName": "$s6AATKit16AATUserTargetingC6genderAA9AATGenderOSgvM",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "yearOfBirth",
+            "printedName": "yearOfBirth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AATKit16AATUserTargetingC11yearOfBirthSo8NSNumberCSgvp",
+            "mangledName": "$s6AATKit16AATUserTargetingC11yearOfBirthSo8NSNumberCSgvp",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC11yearOfBirthSo8NSNumberCSgvg",
+                "mangledName": "$s6AATKit16AATUserTargetingC11yearOfBirthSo8NSNumberCSgvg",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSNumber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC11yearOfBirthSo8NSNumberCSgvs",
+                "mangledName": "$s6AATKit16AATUserTargetingC11yearOfBirthSo8NSNumberCSgvs",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC11yearOfBirthSo8NSNumberCSgvM",
+                "mangledName": "$s6AATKit16AATUserTargetingC11yearOfBirthSo8NSNumberCSgvM",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keywords",
+            "printedName": "keywords",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AATKit16AATUserTargetingC8keywordsSaySSGSgvp",
+            "mangledName": "$s6AATKit16AATUserTargetingC8keywordsSaySSGSgvp",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC8keywordsSaySSGSgvg",
+                "mangledName": "$s6AATKit16AATUserTargetingC8keywordsSaySSGSgvg",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC8keywordsSaySSGSgvs",
+                "mangledName": "$s6AATKit16AATUserTargetingC8keywordsSaySSGSgvs",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATUserTargetingC8keywordsSaySSGSgvM",
+                "mangledName": "$s6AATKit16AATUserTargetingC8keywordsSaySSGSgvM",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(userId:gender:yearOfBirth:keywords:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATUserTargeting",
+                "printedName": "AATKit.AATUserTargeting",
+                "usr": "c:@M@AATKit@objc(cs)AATUserTargeting"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATGender",
+                "printedName": "AATKit.AATGender",
+                "hasDefaultArg": true,
+                "usr": "c:@M@AATKit@E@AATGender"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATKit@objc(cs)AATUserTargeting(im)initWithUserId:gender:yearOfBirth:keywords:",
+            "mangledName": "$s6AATKit16AATUserTargetingC6userId6gender11yearOfBirth8keywordsACSSSg_AA9AATGenderOSo8NSNumberCSgSaySSGSgtcfc",
+            "moduleName": "AATKit",
+            "objc_name": "initWithUserId:gender:yearOfBirth:keywords:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AATKit@objc(cs)AATUserTargeting(py)description",
+            "mangledName": "$s6AATKit16AATUserTargetingC11descriptionSSvp",
+            "moduleName": "AATKit",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AATKit@objc(cs)AATUserTargeting(im)description",
+                "mangledName": "$s6AATKit16AATUserTargetingC11descriptionSSvg",
+                "moduleName": "AATKit",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATUserTargeting",
+                "printedName": "AATKit.AATUserTargeting",
+                "usr": "c:@M@AATKit@objc(cs)AATUserTargeting"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATKit@objc(cs)AATUserTargeting(im)init",
+            "mangledName": "$s6AATKit16AATUserTargetingCACycfc",
+            "moduleName": "AATKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AATKit@objc(cs)AATUserTargeting",
+        "mangledName": "$s6AATKit16AATUserTargetingC",
+        "moduleName": "AATKit",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -35701,6 +36881,37 @@
           },
           {
             "kind": "Function",
+            "name": "setUserTargeting",
+            "printedName": "setUserTargeting(userTargeting:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AATUserTargeting",
+                "printedName": "AATKit.AATUserTargeting",
+                "usr": "c:@M@AATKit@objc(cs)AATUserTargeting"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AATKit@objc(cs)AATSDK(cm)setUserTargetingWithUserTargeting:",
+            "mangledName": "$s6AATKit6AATSDKC16setUserTargeting04userE0yAA07AATUserE0C_tFZ",
+            "moduleName": "AATKit",
+            "static": true,
+            "objc_name": "setUserTargetingWithUserTargeting:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setContentTargetingUrl",
             "printedName": "setContentTargetingUrl(targetingUrl:)",
             "children": [
@@ -35902,36 +37113,6 @@
             "declKind": "Func",
             "usr": "c:@M@AATKit@objc(cs)AATSDK(cm)setReportsDelegate:",
             "mangledName": "$s6AATKit6AATSDKC18setReportsDelegateyyAA010AATReportsE0_pFZ",
-            "moduleName": "AATKit",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setPublisherProvidedId",
-            "printedName": "setPublisherProvidedId(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AATKit@objc(cs)AATSDK(cm)setPublisherProvidedId:",
-            "mangledName": "$s6AATKit6AATSDKC22setPublisherProvidedIdyySSFZ",
             "moduleName": "AATKit",
             "static": true,
             "declAttributes": [
@@ -40517,16 +41698,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AATKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -42453,6 +43624,399 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "AATDisplayIOOptions",
+        "printedName": "AATDisplayIOOptions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "showSoundControl",
+            "printedName": "showSoundControl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AATKit19AATDisplayIOOptionsC16showSoundControlSbvp",
+            "mangledName": "$s6AATKit19AATDisplayIOOptionsC16showSoundControlSbvp",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit19AATDisplayIOOptionsC16showSoundControlSbvg",
+                "mangledName": "$s6AATKit19AATDisplayIOOptionsC16showSoundControlSbvg",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit19AATDisplayIOOptionsC16showSoundControlSbvs",
+                "mangledName": "$s6AATKit19AATDisplayIOOptionsC16showSoundControlSbvs",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit19AATDisplayIOOptionsC16showSoundControlSbvM",
+                "mangledName": "$s6AATKit19AATDisplayIOOptionsC16showSoundControlSbvM",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "interscrollerHeight",
+            "printedName": "interscrollerHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AATKit19AATDisplayIOOptionsC19interscrollerHeightSivp",
+            "mangledName": "$s6AATKit19AATDisplayIOOptionsC19interscrollerHeightSivp",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit19AATDisplayIOOptionsC19interscrollerHeightSivg",
+                "mangledName": "$s6AATKit19AATDisplayIOOptionsC19interscrollerHeightSivg",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit19AATDisplayIOOptionsC19interscrollerHeightSivs",
+                "mangledName": "$s6AATKit19AATDisplayIOOptionsC19interscrollerHeightSivs",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit19AATDisplayIOOptionsC19interscrollerHeightSivM",
+                "mangledName": "$s6AATKit19AATDisplayIOOptionsC19interscrollerHeightSivM",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "interscrollerTopOffset",
+            "printedName": "interscrollerTopOffset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AATKit19AATDisplayIOOptionsC22interscrollerTopOffsetSivp",
+            "mangledName": "$s6AATKit19AATDisplayIOOptionsC22interscrollerTopOffsetSivp",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit19AATDisplayIOOptionsC22interscrollerTopOffsetSivg",
+                "mangledName": "$s6AATKit19AATDisplayIOOptionsC22interscrollerTopOffsetSivg",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit19AATDisplayIOOptionsC22interscrollerTopOffsetSivs",
+                "mangledName": "$s6AATKit19AATDisplayIOOptionsC22interscrollerTopOffsetSivs",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit19AATDisplayIOOptionsC22interscrollerTopOffsetSivM",
+                "mangledName": "$s6AATKit19AATDisplayIOOptionsC22interscrollerTopOffsetSivM",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(showSoundControl:interscrollerHeight:interscrollerTopOffset:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATDisplayIOOptions",
+                "printedName": "AATKit.AATDisplayIOOptions",
+                "usr": "c:@M@AATKit@objc(cs)AATDisplayIOOptions"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATKit@objc(cs)AATDisplayIOOptions(im)initWithShowSoundControl:interscrollerHeight:interscrollerTopOffset:",
+            "mangledName": "$s6AATKit19AATDisplayIOOptionsC16showSoundControl19interscrollerHeight0G9TopOffsetACSb_S2itcfc",
+            "moduleName": "AATKit",
+            "objc_name": "initWithShowSoundControl:interscrollerHeight:interscrollerTopOffset:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AATDisplayIOOptions",
+                "printedName": "AATKit.AATDisplayIOOptions",
+                "usr": "c:@M@AATKit@objc(cs)AATDisplayIOOptions"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AATKit@objc(cs)AATDisplayIOOptions(im)init",
+            "mangledName": "$s6AATKit19AATDisplayIOOptionsCACycfc",
+            "moduleName": "AATKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AATKit@objc(cs)AATDisplayIOOptions",
+        "mangledName": "$s6AATKit19AATDisplayIOOptionsC",
+        "moduleName": "AATKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -43871,16 +45435,6 @@
             "usr": "s:SY",
             "mangledName": "$sSY"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AATKit",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -51629,9 +53183,119 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "displayIOOptions",
+            "printedName": "displayIOOptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AATKit.AATDisplayIOOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATDisplayIOOptions",
+                    "printedName": "AATKit.AATDisplayIOOptions",
+                    "usr": "c:@M@AATKit@objc(cs)AATDisplayIOOptions"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6AATKit20AATAdNetworksOptionsC16displayIOOptionsAA010AATDisplayF0CSgvp",
+            "mangledName": "$s6AATKit20AATAdNetworksOptionsC16displayIOOptionsAA010AATDisplayF0CSgvp",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AATKit.AATDisplayIOOptions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATDisplayIOOptions",
+                        "printedName": "AATKit.AATDisplayIOOptions",
+                        "usr": "c:@M@AATKit@objc(cs)AATDisplayIOOptions"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit20AATAdNetworksOptionsC16displayIOOptionsAA010AATDisplayF0CSgvg",
+                "mangledName": "$s6AATKit20AATAdNetworksOptionsC16displayIOOptionsAA010AATDisplayF0CSgvg",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AATKit.AATDisplayIOOptions?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AATDisplayIOOptions",
+                        "printedName": "AATKit.AATDisplayIOOptions",
+                        "usr": "c:@M@AATKit@objc(cs)AATDisplayIOOptions"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit20AATAdNetworksOptionsC16displayIOOptionsAA010AATDisplayF0CSgvs",
+                "mangledName": "$s6AATKit20AATAdNetworksOptionsC16displayIOOptionsAA010AATDisplayF0CSgvs",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit20AATAdNetworksOptionsC16displayIOOptionsAA010AATDisplayF0CSgvM",
+                "mangledName": "$s6AATKit20AATAdNetworksOptionsC16displayIOOptionsAA010AATDisplayF0CSgvM",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(appNexusOptions:feedAdOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:graviteRTBOptions:)",
+            "printedName": "init(appNexusOptions:feedAdOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:graviteRTBOptions:displayIOOptions:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -51743,13 +53407,28 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AATKit.AATDisplayIOOptions?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AATDisplayIOOptions",
+                    "printedName": "AATKit.AATDisplayIOOptions",
+                    "usr": "c:@M@AATKit@objc(cs)AATDisplayIOOptions"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AATKit@objc(cs)AATAdNetworksOptions(im)initWithAppNexusOptions:feedAdOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:graviteRTBOptions:",
-            "mangledName": "$s6AATKit20AATAdNetworksOptionsC08appNexusD006feedAdD005adMobD003dfpD008datonomyD0012superAwesomeD017graviteRTBOptionsAcA06AATAppfD0CSg_AA07AATFeedhD0CSgAA0bjD0CSgAA13AATDFPOptionsCSgAA011AATDatonomyD0CSgAA08AATSupernD0CSgAA010AATGraviteP0CSgtcfc",
+            "usr": "c:@M@AATKit@objc(cs)AATAdNetworksOptions(im)initWithAppNexusOptions:feedAdOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:graviteRTBOptions:displayIOOptions:",
+            "mangledName": "$s6AATKit20AATAdNetworksOptionsC08appNexusD006feedAdD005adMobD003dfpD008datonomyD0012superAwesomeD017graviteRTBOptions16displayIOOptionsAcA06AATAppfD0CSg_AA07AATFeedhD0CSgAA0bjD0CSgAA13AATDFPOptionsCSgAA011AATDatonomyD0CSgAA08AATSupernD0CSgAA010AATGraviteP0CSgAA010AATDisplayR0CSgtcfc",
             "moduleName": "AATKit",
-            "objc_name": "initWithAppNexusOptions:feedAdOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:graviteRTBOptions:",
+            "objc_name": "initWithAppNexusOptions:feedAdOptions:adMobOptions:dfpOptions:datonomyOptions:superAwesomeOptions:graviteRTBOptions:displayIOOptions:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -59590,44 +61269,16 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
       "kind": "IntegerLiteral",
-      "offset": 241,
+      "offset": 411,
       "length": 1,
-      "value": "0"
+      "value": "6"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
       "kind": "IntegerLiteral",
-      "offset": 268,
+      "offset": 442,
       "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
-      "kind": "IntegerLiteral",
-      "offset": 298,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
-      "kind": "IntegerLiteral",
-      "offset": 325,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
-      "kind": "IntegerLiteral",
-      "offset": 355,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
-      "kind": "IntegerLiteral",
-      "offset": 383,
-      "length": 1,
-      "value": "5"
+      "value": "7"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
@@ -59672,9 +61323,79 @@
       "value": "5"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATSimpleConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
+      "kind": "IntegerLiteral",
+      "offset": 411,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
+      "kind": "IntegerLiteral",
+      "offset": 442,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
+      "kind": "IntegerLiteral",
+      "offset": 241,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
+      "kind": "IntegerLiteral",
+      "offset": 268,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
+      "kind": "IntegerLiteral",
+      "offset": 298,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
+      "kind": "IntegerLiteral",
+      "offset": 325,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
+      "kind": "IntegerLiteral",
+      "offset": 355,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
+      "kind": "IntegerLiteral",
+      "offset": 383,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
+      "kind": "IntegerLiteral",
+      "offset": 411,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentTypeForReporting.swift",
+      "kind": "IntegerLiteral",
+      "offset": 442,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATSimpleConsent.swift",
       "kind": "StringLiteral",
-      "offset": 288,
+      "offset": 357,
       "length": 16,
       "value": "\"AATKit.AATSimpleConsent\""
     },
@@ -59700,42 +61421,42 @@
       "value": "\"AATFacebookAdapter.AATFacebookManager\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsentState.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsentState.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsentState.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsentState.swift",
       "kind": "IntegerLiteral",
       "offset": 471,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsentState.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsentState.swift",
       "kind": "IntegerLiteral",
       "offset": 539,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsentState.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsentState.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsentState.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsentState.swift",
       "kind": "IntegerLiteral",
       "offset": 471,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsentState.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsentState.swift",
       "kind": "IntegerLiteral",
       "offset": 539,
       "length": 8,
@@ -59927,90 +61648,90 @@
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 620,
-      "length": 7,
+      "length": 8,
       "value": "17"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 637,
-      "length": 8,
+      "offset": 638,
+      "length": 9,
       "value": "18"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 655,
-      "length": 9,
+      "offset": 657,
+      "length": 5,
       "value": "19"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 674,
+      "offset": 672,
       "length": 5,
       "value": "20"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 689,
-      "length": 5,
+      "offset": 687,
+      "length": 3,
       "value": "21"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 704,
-      "length": 3,
+      "offset": 700,
+      "length": 7,
       "value": "22"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
       "offset": 717,
-      "length": 7,
+      "length": 9,
       "value": "23"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 734,
-      "length": 9,
+      "offset": 736,
+      "length": 13,
       "value": "24"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 753,
-      "length": 13,
+      "offset": 759,
+      "length": 10,
       "value": "25"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 776,
-      "length": 10,
+      "offset": 779,
+      "length": 12,
       "value": "26"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 796,
-      "length": 12,
+      "offset": 801,
+      "length": 5,
       "value": "27"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 818,
-      "length": 5,
+      "offset": 816,
+      "length": 9,
       "value": "28"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATAdNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 885,
+      "offset": 887,
       "length": 12,
       "value": "29"
     },
@@ -61002,6 +62723,27 @@
       "value": "1"
     },
     {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATGender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 275,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATGender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 291,
+      "length": 5,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATGender.swift",
+      "kind": "IntegerLiteral",
+      "offset": 306,
+      "length": 7,
+      "value": "3"
+    },
+    {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATExchangeConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 318,
@@ -61158,7 +62900,7 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATRuntimeConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1207,
+      "offset": 1228,
       "length": 5,
       "value": "false"
     },
@@ -61207,28 +62949,28 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 703,
+      "offset": 665,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 970,
+      "offset": 932,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1308,
+      "offset": 1270,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1872,
+      "offset": 1834,
       "length": 4,
       "value": "true"
     },
@@ -61443,28 +63185,28 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentImplementation.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATConsentImplementation.swift",
       "kind": "StringLiteral",
       "offset": 390,
       "length": 17,
       "value": "\"IABTCF_TCString\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentImplementation.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATConsentImplementation.swift",
       "kind": "StringLiteral",
       "offset": 439,
       "length": 21,
       "value": "\"IABUSPrivacy_String\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentImplementation.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATConsentImplementation.swift",
       "kind": "IntegerLiteral",
       "offset": 492,
       "length": 3,
       "value": "377"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATVendorConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATVendorConsent.swift",
       "kind": "StringLiteral",
       "offset": 842,
       "length": 16,
@@ -61685,7 +63427,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 8,
-      "value": "\"3.11.4\""
+      "value": "\"3.12.0\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
@@ -62157,6 +63899,20 @@
       "value": "\"AATSmartAdAdapter.AATSmartAdRewarded\""
     },
     {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATDisplayIODriver.swift",
+      "kind": "StringLiteral",
+      "offset": 472,
+      "length": 41,
+      "value": "\"AATDisplayIOAdapter.AATDisplayIOManager\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATDisplayIODriver.swift",
+      "kind": "StringLiteral",
+      "offset": 550,
+      "length": 40,
+      "value": "\"AATDisplayIOAdapter.AATDisplayIOBanner\""
+    },
+    {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Enums\/AATBannerPlacementSize.swift",
       "kind": "IntegerLiteral",
       "offset": 261,
@@ -62435,6 +64191,13 @@
       "offset": 213,
       "length": 34,
       "value": "\"AATKit.AATNativeAdPlacementImplementation\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATUserTargeting.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 16,
+      "value": "\"AATKit.AATUserTargeting\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Reporting\/AATReporter.swift",
@@ -63228,13 +64991,6 @@
       "value": "\"AATKit.AATBannerPlacementWrapperView\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATRubiconDriver.swift",
-      "kind": "StringLiteral",
-      "offset": 320,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Config\/AATPlacementConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 242,
@@ -63816,63 +65572,63 @@
       "value": "\"AATAppLovinMaxAdapter.AATAppLovinMaxRewarded\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
       "offset": 231,
       "length": 34,
       "value": "\"AATGoogleCMPAdapter.AATCMPGoogle\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
       "offset": 296,
       "length": 44,
       "value": "\"AATSourcePointCMPAdapter.AATCMPSourcepoint\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
       "offset": 370,
       "length": 39,
       "value": "\"AATAppConsentAdapter.AATCMPAppConsent\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
       "offset": 231,
       "length": 34,
       "value": "\"AATGoogleCMPAdapter.AATCMPGoogle\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
       "offset": 296,
       "length": 44,
       "value": "\"AATSourcePointCMPAdapter.AATCMPSourcepoint\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
       "offset": 370,
       "length": 39,
       "value": "\"AATAppConsentAdapter.AATCMPAppConsent\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
       "offset": 716,
       "length": 23,
       "value": "\"AATSafeManagedConsent\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
       "offset": 766,
       "length": 32,
       "value": "\"AATKitTests.AATInternalCMPMock\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATManagedConsent.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
       "offset": 1115,
       "length": 17,
@@ -63998,6 +65754,13 @@
       "value": "\"AATTappxAdapter.AATTappxRewarded\""
     },
     {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/AATAdNetworkOptions\/AATDisplayIOOptions.swift",
+      "kind": "StringLiteral",
+      "offset": 169,
+      "length": 19,
+      "value": "\"AATKit.AATDisplayIOOptions\""
+    },
+    {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Ad\/AATRewardedAd.swift",
       "kind": "StringLiteral",
       "offset": 169,
@@ -64033,14 +65796,14 @@
       "value": "\"AATKit.AATReward\""
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 861,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ConsnetWork\/AATConsentHelper.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATConsentHelper.swift",
       "kind": "BooleanLiteral",
       "offset": 911,
       "length": 5,
@@ -64490,21 +66253,21 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2154,
+      "offset": 2153,
       "length": 18,
       "value": "\"AATKit.PlacementDebugInfo\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3899,
+      "offset": 3898,
       "length": 25,
       "value": "\"AATKit.FrequencyCappingDebugInfo\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATDebugInfo.swift",
       "kind": "StringLiteral",
-      "offset": 4955,
+      "offset": 4954,
       "length": 14,
       "value": "\"AATKit.AATAdDebugInfo\""
     },

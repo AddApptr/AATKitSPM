@@ -325,10 +325,10 @@ SWIFT_CLASS("_TtC6AATKit11AATAdConfig")
 @end
 
 
-
 @interface AATAdConfig (SWIFT_EXTENSION(AATKit))
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 @class NSString;
 
@@ -417,18 +417,18 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkAPPNEXUS = 14,
   AATAdNetworkOGURY = 15,
   AATAdNetworkCRITEOSDK = 16,
-  AATAdNetworkRUBICON = 17,
-  AATAdNetworkAMAZONHB = 18,
-  AATAdNetworkPUBNATIVE = 19,
-  AATAdNetworkTEADS = 20,
-  AATAdNetworkTAPPX = 21,
-  AATAdNetworkYOC = 22,
-  AATAdNetworkVUNGLE2 = 23,
-  AATAdNetworkDFPDIRECT = 24,
-  AATAdNetworkIRONSOURCENEW = 25,
-  AATAdNetworkGRAVITERTB = 26,
-  AATAdNetworkSUPERAWESOME = 27,
-  AATAdNetworkKIDOZ = 28,
+  AATAdNetworkAMAZONHB = 17,
+  AATAdNetworkPUBNATIVE = 18,
+  AATAdNetworkTEADS = 19,
+  AATAdNetworkTAPPX = 20,
+  AATAdNetworkYOC = 21,
+  AATAdNetworkVUNGLE2 = 22,
+  AATAdNetworkDFPDIRECT = 23,
+  AATAdNetworkIRONSOURCENEW = 24,
+  AATAdNetworkGRAVITERTB = 25,
+  AATAdNetworkSUPERAWESOME = 26,
+  AATAdNetworkKIDOZ = 27,
+  AATAdNetworkDISPLAYIO = 28,
   AATAdNetworkADMOBBIDDING = 29,
 };
 
@@ -450,6 +450,7 @@ SWIFT_PROTOCOL("_TtP6AATKit33AATAdNetworkDriverVersionProtocol_")
 @class AATDatonomyOptions;
 @class AATSuperAwesomeOptions;
 @class AATGraviteRTBOptions;
+@class AATDisplayIOOptions;
 
 SWIFT_CLASS("_TtC6AATKit20AATAdNetworksOptions")
 @interface AATAdNetworksOptions : NSObject
@@ -466,7 +467,7 @@ SWIFT_CLASS("_TtC6AATKit20AATAdNetworksOptions")
 ///
 /// \param superAwesomeOptions SuperAwesome options. default is nil
 ///
-- (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions datonomyOptions:(AATDatonomyOptions * _Nullable)datonomyOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions graviteRTBOptions:(AATGraviteRTBOptions * _Nullable)graviteRTBOptions OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions datonomyOptions:(AATDatonomyOptions * _Nullable)datonomyOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions graviteRTBOptions:(AATGraviteRTBOptions * _Nullable)graviteRTBOptions displayIOOptions:(AATDisplayIOOptions * _Nullable)displayIOOptions OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1074,7 +1075,7 @@ SWIFT_CLASS("_TtC6AATKit23AATRuntimeConfiguration")
 /// A Bool that indicates whether the consent is required or not. True by default. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling.</a>.
 @property (nonatomic) BOOL consentRequired;
 /// The consent implementation that the SDK will use. Could be an instance of: <code>AATManagedConsent</code>, <code>AATSimpleConsent</code> or <code>AATVendorConsent</code>. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling.</a>.
-@property (nonatomic, strong) AATConsentImplementation * _Nullable consent;
+@property (nonatomic, strong) AATConsentImplementation * _Nonnull consent;
 /// The AdQuality implementation that the SDK will use to verify ads.
 @property (nonatomic, strong) id <AATAdQualityManagerProtocol> _Nullable adQualityManager;
 /// A Bool that indicates whether the location usage is enabled or not. False by default.
@@ -1173,7 +1174,6 @@ SWIFT_CLASS("_TtC6AATKit12AATDebugInfo")
 @end
 
 
-
 @interface AATDebugInfo (SWIFT_EXTENSION(AATKit))
 @end
 
@@ -1194,6 +1194,7 @@ SWIFT_CLASS("_TtCC6AATKit12AATDebugInfo18PlacementDebugInfo")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 /// Configure the shake debug screen
@@ -1255,6 +1256,14 @@ SWIFT_PROTOCOL("_TtP6AATKit11AATDelegate_")
 - (void)AATKitUnknownBundleId;
 @end
 
+
+SWIFT_CLASS("_TtC6AATKit19AATDisplayIOOptions")
+@interface AATDisplayIOOptions : NSObject
+- (nonnull instancetype)initWithShowSoundControl:(BOOL)showSoundControl interscrollerHeight:(NSInteger)interscrollerHeight interscrollerTopOffset:(NSInteger)interscrollerTopOffset OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UIColor;
 
 SWIFT_CLASS("_TtC6AATKit16AATFeedAdOptions")
@@ -1314,6 +1323,13 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 - (BOOL)isFrequencyCapReached SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+typedef SWIFT_ENUM(NSInteger, AATGender, open) {
+  AATGenderMale = 0,
+  AATGenderFemale = 1,
+  AATGenderOther = 2,
+  AATGenderUnknown = 3,
+};
 
 
 SWIFT_CLASS("_TtC6AATKit20AATGraviteRTBOptions")
@@ -1884,6 +1900,7 @@ SWIFT_PROTOCOL("_TtP6AATKit33AATRewardedVideoPlacementDelegate_")
 @end
 
 @protocol AATStickyBannerPlacement;
+@class AATUserTargeting;
 
 /// AATKit main class that has the main public static methods
 SWIFT_CLASS("_TtC6AATKit6AATSDK")
@@ -2076,6 +2093,11 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// \param info Map with targeting information.
 ///
 + (void)setTargetingInfoWithInfo:(NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)info;
+/// Sets the user targeting information for the application.
+/// see
+/// \param userTargeting an instance of <code>AATUserTargeting</code>.
+///
++ (void)setUserTargetingWithUserTargeting:(AATUserTargeting * _Nonnull)userTargeting;
 /// Sets the content targeting url for the application. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/targeting#set-global-targeting-keywords">Set Global Content Targeting URL</a>.
 /// This information will be used only if no placement-specific targeting is available.
 /// \param targetingUrl The targeting url
@@ -2104,10 +2126,6 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// \param delegate the object that will receive reporting event callbacks
 ///
 + (void)setReportsDelegate:(id <AATReportsDelegate> _Nonnull)delegate;
-/// Allow passing PublisherProvidedId to AdNetworks that support it. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/publisher-provided-id">Publisher Provided ID</a>.
-/// \param publisherProvidedId Publisher Provided Id
-///
-+ (void)setPublisherProvidedId:(NSString * _Nonnull)publisherProvidedId;
 /// Checks if consent is opt-in or not
 ///
 /// returns:
@@ -2129,7 +2147,7 @@ typedef SWIFT_ENUM(NSInteger, AATShowIfNeededSetting, open) {
 };
 
 
-/// AATKit simple consent. Should be initialised with <code>NonIABConsent</code>
+/// Allows to set the status of Non-IAB consent. Will also read the IAB consent string and CCPA string from SharedPreferences if available.
 /// see <code>init(nonIABConsent:)</code>
 SWIFT_CLASS("_TtC6AATKit16AATSimpleConsent")
 @interface AATSimpleConsent : AATConsentImplementation
@@ -2303,6 +2321,26 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions14NetworkOptions")
 @end
 
 
+SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
+@interface BannerOptions : NetworkOptions
+/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
+/// \param parentalGateEnabled Enable/disable the Parental gate
+///
+/// \param bumperPageEnabled Enable/disable the bumper page
+///
+/// \param bumperPageCustomAppName bumper page app name
+///
+/// \param bumperPageLogo bumper page logo
+///
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
+@end
+
+
+@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
+@end
+
+
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @interface InterstitialAdOptions : NetworkOptions
 /// init <code>AATSuperAwesomeOptions/InterstitialAdOptions-swift.class</code>
@@ -2349,28 +2387,36 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 @end
 
 
-@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
-@end
-
-
-SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
-@interface BannerOptions : NetworkOptions
-/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
-/// \param parentalGateEnabled Enable/disable the Parental gate
-///
-/// \param bumperPageEnabled Enable/disable the bumper page
-///
-/// \param bumperPageCustomAppName bumper page app name
-///
-/// \param bumperPageLogo bumper page logo
-///
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
-@end
-
-
 SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
 @interface AATSupplyChainData : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC6AATKit16AATUserTargeting")
+@interface AATUserTargeting : NSObject
+/// initialize <code>AATUserTargeting</code>
+/// \param userId user id
+///
+/// \param gender user gender.
+/// <ul>
+///   <li>
+///     <em>Important</em>: The default value is <code>AATGender.unknown</code> and will be ignored while performing the request.
+///   </li>
+/// </ul>
+///
+/// \param yearOfBirth user year of birth.
+/// <ul>
+///   <li>
+///     <em>Important</em>: it has to be a 4-digit number
+///   </li>
+/// </ul>
+///
+/// \param keywords targeting keywords
+///
+- (nonnull instancetype)initWithUserId:(NSString * _Nullable)userId gender:(enum AATGender)gender yearOfBirth:(NSNumber * _Nullable)yearOfBirth keywords:(NSArray<NSString *> * _Nullable)keywords OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2383,6 +2429,7 @@ SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
 SWIFT_CLASS("_TtC6AATKit16AATVendorConsent")
 @interface AATVendorConsent : AATConsentImplementation
 /// Initialize a vendor consent instance. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/vendor-consent">Vendor Consent</a>.
+/// Will read the IAB consent string and CCPA string from UserDefaults if available.
 /// \param delegate an instance of <code>AATVendorConsentDelegate</code>
 ///
 - (nonnull instancetype)initWithDelegate:(id <AATVendorConsentDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
@@ -2790,10 +2837,10 @@ SWIFT_CLASS("_TtC6AATKit11AATAdConfig")
 @end
 
 
-
 @interface AATAdConfig (SWIFT_EXTENSION(AATKit))
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 @class NSString;
 
@@ -2882,18 +2929,18 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkAPPNEXUS = 14,
   AATAdNetworkOGURY = 15,
   AATAdNetworkCRITEOSDK = 16,
-  AATAdNetworkRUBICON = 17,
-  AATAdNetworkAMAZONHB = 18,
-  AATAdNetworkPUBNATIVE = 19,
-  AATAdNetworkTEADS = 20,
-  AATAdNetworkTAPPX = 21,
-  AATAdNetworkYOC = 22,
-  AATAdNetworkVUNGLE2 = 23,
-  AATAdNetworkDFPDIRECT = 24,
-  AATAdNetworkIRONSOURCENEW = 25,
-  AATAdNetworkGRAVITERTB = 26,
-  AATAdNetworkSUPERAWESOME = 27,
-  AATAdNetworkKIDOZ = 28,
+  AATAdNetworkAMAZONHB = 17,
+  AATAdNetworkPUBNATIVE = 18,
+  AATAdNetworkTEADS = 19,
+  AATAdNetworkTAPPX = 20,
+  AATAdNetworkYOC = 21,
+  AATAdNetworkVUNGLE2 = 22,
+  AATAdNetworkDFPDIRECT = 23,
+  AATAdNetworkIRONSOURCENEW = 24,
+  AATAdNetworkGRAVITERTB = 25,
+  AATAdNetworkSUPERAWESOME = 26,
+  AATAdNetworkKIDOZ = 27,
+  AATAdNetworkDISPLAYIO = 28,
   AATAdNetworkADMOBBIDDING = 29,
 };
 
@@ -2915,6 +2962,7 @@ SWIFT_PROTOCOL("_TtP6AATKit33AATAdNetworkDriverVersionProtocol_")
 @class AATDatonomyOptions;
 @class AATSuperAwesomeOptions;
 @class AATGraviteRTBOptions;
+@class AATDisplayIOOptions;
 
 SWIFT_CLASS("_TtC6AATKit20AATAdNetworksOptions")
 @interface AATAdNetworksOptions : NSObject
@@ -2931,7 +2979,7 @@ SWIFT_CLASS("_TtC6AATKit20AATAdNetworksOptions")
 ///
 /// \param superAwesomeOptions SuperAwesome options. default is nil
 ///
-- (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions datonomyOptions:(AATDatonomyOptions * _Nullable)datonomyOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions graviteRTBOptions:(AATGraviteRTBOptions * _Nullable)graviteRTBOptions OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions datonomyOptions:(AATDatonomyOptions * _Nullable)datonomyOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions graviteRTBOptions:(AATGraviteRTBOptions * _Nullable)graviteRTBOptions displayIOOptions:(AATDisplayIOOptions * _Nullable)displayIOOptions OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3539,7 +3587,7 @@ SWIFT_CLASS("_TtC6AATKit23AATRuntimeConfiguration")
 /// A Bool that indicates whether the consent is required or not. True by default. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling.</a>.
 @property (nonatomic) BOOL consentRequired;
 /// The consent implementation that the SDK will use. Could be an instance of: <code>AATManagedConsent</code>, <code>AATSimpleConsent</code> or <code>AATVendorConsent</code>. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling.</a>.
-@property (nonatomic, strong) AATConsentImplementation * _Nullable consent;
+@property (nonatomic, strong) AATConsentImplementation * _Nonnull consent;
 /// The AdQuality implementation that the SDK will use to verify ads.
 @property (nonatomic, strong) id <AATAdQualityManagerProtocol> _Nullable adQualityManager;
 /// A Bool that indicates whether the location usage is enabled or not. False by default.
@@ -3638,7 +3686,6 @@ SWIFT_CLASS("_TtC6AATKit12AATDebugInfo")
 @end
 
 
-
 @interface AATDebugInfo (SWIFT_EXTENSION(AATKit))
 @end
 
@@ -3659,6 +3706,7 @@ SWIFT_CLASS("_TtCC6AATKit12AATDebugInfo18PlacementDebugInfo")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 /// Configure the shake debug screen
@@ -3720,6 +3768,14 @@ SWIFT_PROTOCOL("_TtP6AATKit11AATDelegate_")
 - (void)AATKitUnknownBundleId;
 @end
 
+
+SWIFT_CLASS("_TtC6AATKit19AATDisplayIOOptions")
+@interface AATDisplayIOOptions : NSObject
+- (nonnull instancetype)initWithShowSoundControl:(BOOL)showSoundControl interscrollerHeight:(NSInteger)interscrollerHeight interscrollerTopOffset:(NSInteger)interscrollerTopOffset OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UIColor;
 
 SWIFT_CLASS("_TtC6AATKit16AATFeedAdOptions")
@@ -3779,6 +3835,13 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 - (BOOL)isFrequencyCapReached SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+typedef SWIFT_ENUM(NSInteger, AATGender, open) {
+  AATGenderMale = 0,
+  AATGenderFemale = 1,
+  AATGenderOther = 2,
+  AATGenderUnknown = 3,
+};
 
 
 SWIFT_CLASS("_TtC6AATKit20AATGraviteRTBOptions")
@@ -4349,6 +4412,7 @@ SWIFT_PROTOCOL("_TtP6AATKit33AATRewardedVideoPlacementDelegate_")
 @end
 
 @protocol AATStickyBannerPlacement;
+@class AATUserTargeting;
 
 /// AATKit main class that has the main public static methods
 SWIFT_CLASS("_TtC6AATKit6AATSDK")
@@ -4541,6 +4605,11 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// \param info Map with targeting information.
 ///
 + (void)setTargetingInfoWithInfo:(NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)info;
+/// Sets the user targeting information for the application.
+/// see
+/// \param userTargeting an instance of <code>AATUserTargeting</code>.
+///
++ (void)setUserTargetingWithUserTargeting:(AATUserTargeting * _Nonnull)userTargeting;
 /// Sets the content targeting url for the application. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/targeting#set-global-targeting-keywords">Set Global Content Targeting URL</a>.
 /// This information will be used only if no placement-specific targeting is available.
 /// \param targetingUrl The targeting url
@@ -4569,10 +4638,6 @@ SWIFT_CLASS("_TtC6AATKit6AATSDK")
 /// \param delegate the object that will receive reporting event callbacks
 ///
 + (void)setReportsDelegate:(id <AATReportsDelegate> _Nonnull)delegate;
-/// Allow passing PublisherProvidedId to AdNetworks that support it. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/publisher-provided-id">Publisher Provided ID</a>.
-/// \param publisherProvidedId Publisher Provided Id
-///
-+ (void)setPublisherProvidedId:(NSString * _Nonnull)publisherProvidedId;
 /// Checks if consent is opt-in or not
 ///
 /// returns:
@@ -4594,7 +4659,7 @@ typedef SWIFT_ENUM(NSInteger, AATShowIfNeededSetting, open) {
 };
 
 
-/// AATKit simple consent. Should be initialised with <code>NonIABConsent</code>
+/// Allows to set the status of Non-IAB consent. Will also read the IAB consent string and CCPA string from SharedPreferences if available.
 /// see <code>init(nonIABConsent:)</code>
 SWIFT_CLASS("_TtC6AATKit16AATSimpleConsent")
 @interface AATSimpleConsent : AATConsentImplementation
@@ -4768,6 +4833,26 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions14NetworkOptions")
 @end
 
 
+SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
+@interface BannerOptions : NetworkOptions
+/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
+/// \param parentalGateEnabled Enable/disable the Parental gate
+///
+/// \param bumperPageEnabled Enable/disable the bumper page
+///
+/// \param bumperPageCustomAppName bumper page app name
+///
+/// \param bumperPageLogo bumper page logo
+///
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
+@end
+
+
+@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
+@end
+
+
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @interface InterstitialAdOptions : NetworkOptions
 /// init <code>AATSuperAwesomeOptions/InterstitialAdOptions-swift.class</code>
@@ -4814,28 +4899,36 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 @end
 
 
-@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
-@end
-
-
-SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
-@interface BannerOptions : NetworkOptions
-/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
-/// \param parentalGateEnabled Enable/disable the Parental gate
-///
-/// \param bumperPageEnabled Enable/disable the bumper page
-///
-/// \param bumperPageCustomAppName bumper page app name
-///
-/// \param bumperPageLogo bumper page logo
-///
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
-@end
-
-
 SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
 @interface AATSupplyChainData : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC6AATKit16AATUserTargeting")
+@interface AATUserTargeting : NSObject
+/// initialize <code>AATUserTargeting</code>
+/// \param userId user id
+///
+/// \param gender user gender.
+/// <ul>
+///   <li>
+///     <em>Important</em>: The default value is <code>AATGender.unknown</code> and will be ignored while performing the request.
+///   </li>
+/// </ul>
+///
+/// \param yearOfBirth user year of birth.
+/// <ul>
+///   <li>
+///     <em>Important</em>: it has to be a 4-digit number
+///   </li>
+/// </ul>
+///
+/// \param keywords targeting keywords
+///
+- (nonnull instancetype)initWithUserId:(NSString * _Nullable)userId gender:(enum AATGender)gender yearOfBirth:(NSNumber * _Nullable)yearOfBirth keywords:(NSArray<NSString *> * _Nullable)keywords OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -4848,6 +4941,7 @@ SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
 SWIFT_CLASS("_TtC6AATKit16AATVendorConsent")
 @interface AATVendorConsent : AATConsentImplementation
 /// Initialize a vendor consent instance. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/vendor-consent">Vendor Consent</a>.
+/// Will read the IAB consent string and CCPA string from UserDefaults if available.
 /// \param delegate an instance of <code>AATVendorConsentDelegate</code>
 ///
 - (nonnull instancetype)initWithDelegate:(id <AATVendorConsentDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;

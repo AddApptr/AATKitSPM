@@ -20,9 +20,51 @@
         "printedName": "DIOSDK",
         "declKind": "Import",
         "moduleName": "AATDisplayIOAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATDisplayIOAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIOSDK",
+        "printedName": "DIOSDK",
+        "declKind": "Import",
+        "moduleName": "AATDisplayIOAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATDisplayIOAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DIOSDK",
+        "printedName": "DIOSDK",
+        "declKind": "Import",
+        "moduleName": "AATDisplayIOAdapter"
       }
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATDisplayIOAdapter\/AATDisplayIOBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 417,
+      "length": 5,
+      "value": "false"
+    }
+  ]
 }

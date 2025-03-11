@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATIronSourceAdapter.framework/AATIronSourceAdapter</key>
 		<data>
-		6FEVgR8ac2ltiswyl34FfV1fvgw=
+		WsbRJSl8l2KIUGEYIpK7IfyH9jw=
 		</data>
 		<key>ios-arm64/AATIronSourceAdapter.framework/Headers/AATIronSourceAdapter-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/AATIronSourceAdapter.framework/Info.plist</key>
 		<data>
-		cW5uYpmUymlEMY0xkDOXkCYJXgM=
+		DEoWrWGQxsQCGIRICJsDswWg2Oc=
 		</data>
 		<key>ios-arm64/AATIronSourceAdapter.framework/IronSourcePrivacyInfo.bundle/Info.plist</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/AATIronSourceAdapter</key>
 		<data>
-		w566LU4zJdNHz/c9EAa15s0UqcA=
+		+NUxEDdGdGUKGyvYJH03Z3KllhU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/Headers/AATIronSourceAdapter-Swift.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/Info.plist</key>
 		<data>
-		S9kPvaKdZKhgwIOQncTMUzHnSjw=
+		/Iu7AtqKLWXez6lNJMcF7of+DSM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/IronSourcePrivacyInfo.bundle/Info.plist</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		EaXlJJPLOZZrI3aAk2bRGnMcKjU=
+		fOGjCK7N9R9nwK4ukpLk9Z+US8o=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		78FWwn5wVfSvvVxcLktodXbFcoc=
+		0CwbrfiyrnFEnbenQCkKGGbocoA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		YnUFZWidYUBKbuXsl+QjUl+OeJ0=
+		qdnMchBD4I/YR4IOEHgiaR4CunI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -135,11 +135,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6FEVgR8ac2ltiswyl34FfV1fvgw=
+			WsbRJSl8l2KIUGEYIpK7IfyH9jw=
 			</data>
 			<key>hash2</key>
 			<data>
-			uQCVXOTzco+QDO+dgKa+gyh9pUh9QuAgjjoX8m7uciU=
+			e9bmVIml+dE9URHCz5NTbS8IVxyjkwXmf2WsCrUp538=
 			</data>
 		</dict>
 		<key>ios-arm64/AATIronSourceAdapter.framework/Headers/AATIronSourceAdapter-Swift.h</key>
@@ -168,11 +168,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cW5uYpmUymlEMY0xkDOXkCYJXgM=
+			DEoWrWGQxsQCGIRICJsDswWg2Oc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ckJbX2HX56P2ppSyWmQI0cmkUpqmN3oYcu0+uTS9jng=
+			lr1foN1KNREkClPIIRNFzUZBNX5eL2lNrXXoOs9Gt60=
 			</data>
 		</dict>
 		<key>ios-arm64/AATIronSourceAdapter.framework/IronSourcePrivacyInfo.bundle/Info.plist</key>
@@ -256,11 +256,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			w566LU4zJdNHz/c9EAa15s0UqcA=
+			+NUxEDdGdGUKGyvYJH03Z3KllhU=
 			</data>
 			<key>hash2</key>
 			<data>
-			qQh36DhMyE7D26AqoKEKDMCJRYs+bVN9sKaVbDVlMzo=
+			zVhWaKRC4i7ey/99K9D6+Fjj9yh3vwrg/tsH2pqrE7Q=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/Headers/AATIronSourceAdapter-Swift.h</key>
@@ -289,11 +289,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S9kPvaKdZKhgwIOQncTMUzHnSjw=
+			/Iu7AtqKLWXez6lNJMcF7of+DSM=
 			</data>
 			<key>hash2</key>
 			<data>
-			+t9KxjPr88ES7S408SuaGKAlq+8ZXXjJVduh7uSZOdI=
+			w66d3iq+jL3HUCsKevirSXASgPktvQBqedGzk4jhbeY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/IronSourcePrivacyInfo.bundle/Info.plist</key>
@@ -421,11 +421,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EaXlJJPLOZZrI3aAk2bRGnMcKjU=
+			fOGjCK7N9R9nwK4ukpLk9Z+US8o=
 			</data>
 			<key>hash2</key>
 			<data>
-			XcWojrhTgM2q5qIYRXhKPNmuHHfnkAMCbOz/d6jHaZw=
+			EfcbqPtFqY7OArvPszzxm5o1VV5+DQAh0V5+rKH2sDI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -443,22 +443,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			78FWwn5wVfSvvVxcLktodXbFcoc=
+			0CwbrfiyrnFEnbenQCkKGGbocoA=
 			</data>
 			<key>hash2</key>
 			<data>
-			UUP4QAvpM9gwTUSXDKaFLZZdF5ozvDsiu3I9ZNuaPnM=
+			lNJHfm0j8yW0o6TYK/0Ttz/mGNULYIf9JeWj161N6ts=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YnUFZWidYUBKbuXsl+QjUl+OeJ0=
+			qdnMchBD4I/YR4IOEHgiaR4CunI=
 			</data>
 			<key>hash2</key>
 			<data>
-			iaYk9J81JDRt1JUQIYayAaBt/Magpe0JwQ9tm4yCcG0=
+			yUGbTb1MzAQXAjmg7tq7u2LtvQkFm5xteC+D3Edoe6I=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATIronSourceAdapter.framework/_CodeSignature/CodeSignature</key>

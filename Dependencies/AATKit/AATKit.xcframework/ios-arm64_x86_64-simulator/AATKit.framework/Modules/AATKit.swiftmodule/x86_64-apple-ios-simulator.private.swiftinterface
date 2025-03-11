@@ -42,10 +42,13 @@ public protocol AATTargetingInformationProtocol : AnyObject {
   func getKeywordTargetingMap() -> [Swift.String : [Swift.String]]?
   func getContentUrl() -> Swift.String?
   func getMultiContentUrls() -> [Swift.String]?
+  func getUserTargeting() -> AATKit.AATUserTargeting?
+  func getJoinedUserKeywords() -> Swift.String?
 }
 extension AATKit.AATTargetingInformationProtocol {
   public func hasKeywordTargeting() -> Swift.Bool
   public func getValuesAsString(delimiter: Swift.String) -> Swift.String?
+  public func getJoinedUserKeywords() -> Swift.String?
 }
 @objc public protocol AATNativeAdData : ObjectiveC.NSObjectProtocol {
   @objc var title: Swift.String? { get }
@@ -170,12 +173,14 @@ public protocol AATAdDriverProtocol : AATKit.AATAdDriverLoggerProtocol, AATKit.A
   func cancelLoading()
   func getConfigForReporting() -> AATKit.AATAdConfig?
   func getAdDebugInfo() -> AATKit.AATAdDebugInfo?
+  func didWin()
 }
 extension AATKit.AATAdDriverProtocol {
   public func getPrice() -> AATKit.AATPriceInfo?
   public func cancelLoading()
   public func getConfigForReporting() -> AATKit.AATAdConfig?
   public func getAdDebugInfo() -> AATKit.AATAdDebugInfo?
+  public func didWin()
 }
 @objc public enum AATShowIfNeededSetting : Swift.Int {
   case always
@@ -224,7 +229,6 @@ extension AATKit.AATPlacementHistoryInfo : Swift.Identifiable {
   case APPNEXUS
   case OGURY
   case CRITEOSDK
-  case RUBICON
   case AMAZONHB
   case PUBNATIVE
   case TEADS
@@ -236,6 +240,7 @@ extension AATKit.AATPlacementHistoryInfo : Swift.Identifiable {
   case GRAVITERTB
   case SUPERAWESOME
   case KIDOZ
+  case DISPLAYIO
   case ADMOBBIDDING
   public typealias AllCases = [AATKit.AATAdNetwork]
   public static var allCases: [AATKit.AATAdNetwork] {
@@ -417,6 +422,17 @@ public protocol AATAdNetworkDriverManager : AATKit.AATAdNetworkDriverVersionProt
 extension AATKit.AATAdNetworkDriverManager {
   public func setRewardedAdSSVInfo(_ info: AATKit.AATRewardedAdSSVInfo)
 }
+@objc public enum AATGender : Swift.Int, Swift.RawRepresentable {
+  public typealias RawValue = Swift.String
+  case male
+  case female
+  case other
+  case unknown
+  public var rawValue: AATKit.AATGender.RawValue {
+    get
+  }
+  public init?(rawValue: AATKit.AATGender.RawValue)
+}
 @objc public class AATDatonomyOptions : ObjectiveC.NSObject {
   final public let datonomyAPIKey: Swift.String?
   @objc public init(datonomyAPIKey: Swift.String)
@@ -445,7 +461,7 @@ extension AATKit.AATAdNetworkDriverManager {
 }
 @_inheritsConvenienceInitializers @objc public class AATRuntimeConfiguration : ObjectiveC.NSObject {
   @objc public var consentRequired: Swift.Bool
-  @objc public var consent: AATKit.AATConsentImplementation?
+  @objc public var consent: AATKit.AATConsentImplementation
   @objc public var adQualityManager: (any AATKit.AATAdQualityManagerProtocol)?
   @objc public var isUseGeoLocation: Swift.Bool
   @objc override dynamic public init()
@@ -687,7 +703,6 @@ extension AATKit.AATNetworkImpression : Swift.CustomStringConvertible {
 }
 public struct AATAdRequestConfiguration {
   public var extraInfo: Swift.String?
-  public var publisherProvidedID: Swift.String?
   public var isRTARule: Swift.Bool?
   public var waterfallId: Swift.String
   public var collapsibleBannerPosition: Swift.String?
@@ -752,6 +767,11 @@ extension AATKit.AATAdType : Swift.Hashable {
   @objc var contentTargetingUrl: Swift.String? { get set }
   @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   @objc func isFrequencyCapReached() -> Swift.Bool
+}
+public protocol AATDisplayIODriverProtocol {
+  static var shared: Self { get }
+  func initSDK(networkKey: Swift.String)
+  func setUseGeoLocation(_ useGeoLocation: Swift.Bool)
 }
 @objc public protocol AATBannerCacheDelegate {
   @objc func firstBannerLoaded()
@@ -833,6 +853,17 @@ public protocol AATOguryDriverProtocol {
   @objc var multiContentTargetingUrls: [Swift.String]? { get set }
   @objc func enableCreativeHistory(size: Swift.Int)
   @objc func getCreativeHistory(completion: @escaping ([AATKit.AATPlacementHistoryInfo]) -> Swift.Void)
+}
+@objc final public class AATUserTargeting : ObjectiveC.NSObject {
+  final public var userId: Swift.String?
+  final public var gender: AATKit.AATGender?
+  final public var yearOfBirth: Foundation.NSNumber?
+  final public var keywords: [Swift.String]?
+  @objc public init(userId: Swift.String? = nil, gender: AATKit.AATGender = .unknown, yearOfBirth: Foundation.NSNumber? = nil, keywords: [Swift.String]? = nil)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
 }
 public protocol AATAdDriverLoggerProtocol {
 }
@@ -923,6 +954,7 @@ public protocol AATSmaatoDriverProtocol {
   @objc public static func isOptionEnabled(optionName: Swift.String) -> Swift.Bool
   @objc public static func setOption(optionName: Swift.String, optionValue: Swift.String)
   @objc public static func setTargetingInfo(info: [Swift.String : [Swift.String]])
+  @objc public static func setUserTargeting(userTargeting: AATKit.AATUserTargeting)
   @objc public static func setContentTargetingUrl(targetingUrl: Swift.String)
   @objc public static func addAdNetworkForKeywordTargeting(network: AATKit.AATAdNetwork)
   @objc public static func removeAdNetworkForKeywordTargeting(network: AATKit.AATAdNetwork)
@@ -930,7 +962,6 @@ public protocol AATSmaatoDriverProtocol {
   @objc public static func setVideoAdsMuted(_ isMuted: Swift.Bool)
   @objc public static func setIsChildDirected(_ isChildDirected: Swift.Bool)
   @objc public static func setReportsDelegate(_ delegate: any AATKit.AATReportsDelegate)
-  @objc public static func setPublisherProvidedId(_ publisherProvidedId: Swift.String)
   @objc public static func isConsentOptIn() -> Swift.Bool
   @objc public static func setRewardedAdSSVInfo(info: AATKit.AATRewardedAdSSVInfo)
   @objc deinit
@@ -1110,6 +1141,13 @@ public protocol AATTappxDriverProtocol {
   func setupConsent(isObtained: Swift.Bool, consentString: Swift.String?)
   func setIsChildDirected(_ isChildDirected: Swift.Bool)
   func setCCPAConsentString(_ ccpaConsentString: Swift.String)
+}
+@objc public class AATDisplayIOOptions : ObjectiveC.NSObject {
+  public var showSoundControl: Swift.Bool
+  public var interscrollerHeight: Swift.Int
+  public var interscrollerTopOffset: Swift.Int
+  @objc public init(showSoundControl: Swift.Bool, interscrollerHeight: Swift.Int, interscrollerTopOffset: Swift.Int)
+  @objc deinit
 }
 @objc public class AATReward : ObjectiveC.NSObject {
   @objc final public let name: Swift.String
@@ -1317,7 +1355,8 @@ extension AATKit.AATLocationUtils : CoreLocation.CLLocationManagerDelegate {
   public var datonomyOptions: AATKit.AATDatonomyOptions?
   public var superAwesomeOptions: AATKit.AATSuperAwesomeOptions?
   public var graviteRTBOptions: AATKit.AATGraviteRTBOptions?
-  @objc public init(appNexusOptions: AATKit.AATAppNexusOptions? = nil, feedAdOptions: AATKit.AATFeedAdOptions? = nil, adMobOptions: AATKit.AATAdMobOptions? = nil, dfpOptions: AATKit.AATDFPOptions? = nil, datonomyOptions: AATKit.AATDatonomyOptions? = nil, superAwesomeOptions: AATKit.AATSuperAwesomeOptions? = nil, graviteRTBOptions: AATKit.AATGraviteRTBOptions? = nil)
+  public var displayIOOptions: AATKit.AATDisplayIOOptions?
+  @objc public init(appNexusOptions: AATKit.AATAppNexusOptions? = nil, feedAdOptions: AATKit.AATFeedAdOptions? = nil, adMobOptions: AATKit.AATAdMobOptions? = nil, dfpOptions: AATKit.AATDFPOptions? = nil, datonomyOptions: AATKit.AATDatonomyOptions? = nil, superAwesomeOptions: AATKit.AATSuperAwesomeOptions? = nil, graviteRTBOptions: AATKit.AATGraviteRTBOptions? = nil, displayIOOptions: AATKit.AATDisplayIOOptions? = nil)
   @objc deinit
 }
 public protocol AATNativeAdDriverProtocol : AATKit.AATAdDriverProtocol {
@@ -1519,6 +1558,8 @@ extension AATKit.NonIABConsent : Swift.Hashable {}
 extension AATKit.NonIABConsent : Swift.RawRepresentable {}
 extension AATKit.AATBannerSize : Swift.Equatable {}
 extension AATKit.AATBannerSize : Swift.Hashable {}
+extension AATKit.AATGender : Swift.Equatable {}
+extension AATKit.AATGender : Swift.Hashable {}
 extension AATKit.AATAdChoicesIconPosition : Swift.Equatable {}
 extension AATKit.AATAdChoicesIconPosition : Swift.Hashable {}
 extension AATKit.AATAdChoicesIconPosition : Swift.RawRepresentable {}

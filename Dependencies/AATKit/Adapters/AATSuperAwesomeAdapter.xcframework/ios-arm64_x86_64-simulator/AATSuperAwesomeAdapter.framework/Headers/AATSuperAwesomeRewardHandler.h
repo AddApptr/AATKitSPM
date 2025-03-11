@@ -15,7 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AATSuperAwesomeRewardHandler : NSObject <AATSuperAwesomeRewardedProtocol>
 @property (weak) NSObject<AATSuperAwesomeRewardedDelegate>* delegate;
 
-- (void)load:(NSNumber *)placementId viewController:(UIViewController *)controller;
+- (void)load:(NSNumber *)placementId
+viewController:(UIViewController *)controller
+      userId: (NSString * _Nullable) userId
+    keywords: (NSDictionary<NSString *,id> * _Nullable) keywords;
 - (void)enableParentalGate:(BOOL)enabled;
 - (void)enableBumperPage:(BOOL)enabled;
 - (void)setBumperPageCustomAppName:(NSString *)name;
