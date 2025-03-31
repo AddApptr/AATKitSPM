@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATFacebookAdapter.framework/AATFacebookAdapter</key>
 		<data>
-		irw2MsG+VCmUjE7LE0VvPG4h1cw=
+		0ldP5+BMQ7jgUYdlTQuxVPZP/Ww=
 		</data>
 		<key>ios-arm64/AATFacebookAdapter.framework/FBAudienceNetwork.bundle/Info.plist</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>ios-arm64/AATFacebookAdapter.framework/Info.plist</key>
 		<data>
-		ZqkyHoyxzI8j81tteWCt3s6DNmk=
+		ntmW0tddAN7TdV8mz5pL8UavP2U=
 		</data>
 		<key>ios-arm64/AATFacebookAdapter.framework/Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/AATFacebookAdapter</key>
 		<data>
-		a1fE7ObgPVHB7jnxClmWSL4odQw=
+		BY04xz9RoRa55WgynxoxplDHFtM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/FBAudienceNetwork.bundle/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/Info.plist</key>
 		<data>
-		4FnoN0b2RtJ/oWMKlUIeqKGhygs=
+		xhDwLLNGI6eigacK6i+WpjpJ/Y4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		d/xnmmlazUNkYoirAK2ZSSmF9y0=
+		+hZ9LLfy/uVDxYUlzukt9ZZw2zM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -150,11 +150,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		gR0/9aidGqlkVlAeE54212H9BpA=
+		LPo+bF72Cjr02EqiObE9h7hmJLI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		upQwn0NOaFTo6EFNy5AZP4QoTZs=
+		AZNSNCB5nJYvyiQ8Y8J87d6WJGU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -167,11 +167,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			irw2MsG+VCmUjE7LE0VvPG4h1cw=
+			0ldP5+BMQ7jgUYdlTQuxVPZP/Ww=
 			</data>
 			<key>hash2</key>
 			<data>
-			sBkxjBXsRkfn3VK3XXxJHPRnqAW2B7FCbZyjBokQcWQ=
+			PLoQiW3VJ9DeCSn7BOfAVBODM9Edeg1tB3iQstYucpU=
 			</data>
 		</dict>
 		<key>ios-arm64/AATFacebookAdapter.framework/FBAudienceNetwork.bundle/Info.plist</key>
@@ -244,11 +244,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZqkyHoyxzI8j81tteWCt3s6DNmk=
+			ntmW0tddAN7TdV8mz5pL8UavP2U=
 			</data>
 			<key>hash2</key>
 			<data>
-			MkBxWE8C4tjUxio6bl0X9FAGlIwNs7Lsv8m31yRDBkY=
+			FA4wX47UqZVK3WjTKd1cR4rfegpYzY1BRFQzgOqgHdo=
 			</data>
 		</dict>
 		<key>ios-arm64/AATFacebookAdapter.framework/Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -332,11 +332,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a1fE7ObgPVHB7jnxClmWSL4odQw=
+			BY04xz9RoRa55WgynxoxplDHFtM=
 			</data>
 			<key>hash2</key>
 			<data>
-			oiQonltJuVd9G2wuc0uucP2C80j15wQJDSgVRinBg+4=
+			dp8Is8M9U8PFNDNzW1HM5WxmqGLzVbhB2B8lyLckc/Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/FBAudienceNetwork.bundle/Info.plist</key>
@@ -409,11 +409,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4FnoN0b2RtJ/oWMKlUIeqKGhygs=
+			xhDwLLNGI6eigacK6i+WpjpJ/Y4=
 			</data>
 			<key>hash2</key>
 			<data>
-			sN9LIUoRAwdkXYpCjBmxOMWcZCaBzO9s1GXja9OLdvY=
+			ALrJ668LeShFaR94+RFm2iEYqleP5sboU/6ObtWHq98=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/Modules/AATFacebookAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -541,11 +541,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d/xnmmlazUNkYoirAK2ZSSmF9y0=
+			+hZ9LLfy/uVDxYUlzukt9ZZw2zM=
 			</data>
 			<key>hash2</key>
 			<data>
-			M8Q7ph/60FfyZgu5Ft0SjhqlGmw7LQzOC4sKufNhIGQ=
+			Oq5VapYlRwIA0n664kK2frHvpJPGwyIp0jSIVP+7B0o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -563,22 +563,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gR0/9aidGqlkVlAeE54212H9BpA=
+			LPo+bF72Cjr02EqiObE9h7hmJLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			hrXHmXjB78lY6JeCLywajn+RtutxehtqvxsiHDA/6jY=
+			9X+tzoNy9e24/nJX5ZJlrmukhMElfrZ11jwN0QEkMmo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			upQwn0NOaFTo6EFNy5AZP4QoTZs=
+			AZNSNCB5nJYvyiQ8Y8J87d6WJGU=
 			</data>
 			<key>hash2</key>
 			<data>
-			zAbf6w3OGbaHZmJNfrkmFy181YmuVM7aANKie1oZULQ=
+			ten+lFW10N6UszyXktuEuoZd87W2rSidIA997GBIyCw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATFacebookAdapter.framework/_CodeSignature/CodeSignature</key>
