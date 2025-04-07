@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name KidozSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name KidozSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFAudio
 import Foundation
 import JavaScriptCore
@@ -13,6 +13,7 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public protocol KidozInterstitialDelegate {
   @objc func onInterstitialAdLoaded(ad: KidozSDK.KidozInterstitialAd)
   @objc func onInterstitialAdFailedToLoad(error: KidozSDK.KidozError)
@@ -50,16 +51,16 @@ import _StringProcessing
   public static func e(_ tag: Swift.String, _ message: Swift.String)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc(KidozBannerView) @_Concurrency.MainActor(unsafe) public class KidozBannerView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public static let BANNER_WIDTH: CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) public static let BANNER_HEIGHT: CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) public var delegate: KidozSDK.KidozBannerDelegate?
-  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
-  @objc @_Concurrency.MainActor(unsafe) public func setAutoShow(to autoShow: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public func load()
-  @objc @_Concurrency.MainActor(unsafe) public func show()
-  @objc @_Concurrency.MainActor(unsafe) public func setBannerPosition(_ bannerPosition: KidozSDK.BANNER_POSITION)
-  @objc @_Concurrency.MainActor(unsafe) public func close()
+@_hasMissingDesignatedInitializers @objc(KidozBannerView) @_Concurrency.MainActor @preconcurrency public class KidozBannerView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public static let BANNER_WIDTH: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency public static let BANNER_HEIGHT: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency public var delegate: (any KidozSDK.KidozBannerDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
+  @objc @_Concurrency.MainActor @preconcurrency public func setAutoShow(to autoShow: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public func load()
+  @objc @_Concurrency.MainActor @preconcurrency public func show()
+  @objc @_Concurrency.MainActor @preconcurrency public func setBannerPosition(_ bannerPosition: KidozSDK.BANNER_POSITION)
+  @objc @_Concurrency.MainActor @preconcurrency public func close()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class AssetsManager : ObjectiveC.NSObject {
@@ -110,7 +111,7 @@ import _StringProcessing
     public static func == (a: KidozSDK.TestUtils.Environment, b: KidozSDK.TestUtils.Environment) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public typealias AllCases = [KidozSDK.TestUtils.Environment]
-    public static var allCases: [KidozSDK.TestUtils.Environment] {
+    nonisolated public static var allCases: [KidozSDK.TestUtils.Environment] {
       get
     }
     public var hashValue: Swift.Int {
@@ -131,13 +132,13 @@ import _StringProcessing
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(KidozRewardedAd) public class KidozRewardedAd : ObjectiveC.NSObject {
-  @objc public static func load(delegate: KidozSDK.KidozRewardedDelegate)
+  @objc public static func load(delegate: any KidozSDK.KidozRewardedDelegate)
   @objc public func isLoaded() -> Swift.Bool
   @objc public func show(viewController: UIKit.UIViewController)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(KidozInterstitialAd) public class KidozInterstitialAd : ObjectiveC.NSObject {
-  @objc public static func load(delegate: KidozSDK.KidozInterstitialDelegate)
+  @objc public static func load(delegate: any KidozSDK.KidozInterstitialDelegate)
   @objc public func isLoaded() -> Swift.Bool
   @objc public func show(viewController: UIKit.UIViewController)
   @objc deinit

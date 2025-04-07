@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AATAppHarbrAdapter",
+    "printedName": "AATAppHarbrAdapter",
     "children": [
       {
         "kind": "Import",
@@ -593,6 +593,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "AATAdQualityDriverProtocol",
             "printedName": "AATAdQualityDriverProtocol",
             "usr": "c:@M@AATKit@objc(pl)AATAdQualityDriverProtocol",
@@ -748,6 +762,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -800,13 +828,5 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": [
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAppHarbrAdapter\/AATAppHarbrManager.swift",
-      "kind": "StringLiteral",
-      "offset": 303,
-      "length": 18,
-      "value": "\"AATAppHarbrAdapter.AATAppHarbrManager\""
-    }
-  ]
+  "ConstValues": []
 }

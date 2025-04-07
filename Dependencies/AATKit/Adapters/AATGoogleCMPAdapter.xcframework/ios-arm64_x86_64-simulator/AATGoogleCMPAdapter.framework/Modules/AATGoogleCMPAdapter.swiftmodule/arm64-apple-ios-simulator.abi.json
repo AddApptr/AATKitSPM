@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AATGoogleCMPAdapter",
+    "printedName": "AATGoogleCMPAdapter",
     "children": [
       {
         "kind": "Import",
@@ -522,6 +522,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -588,6 +602,13 @@
       "offset": 621,
       "length": 21,
       "value": "\"IABTCF_AddtlConsent\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
+      "kind": "StringLiteral",
+      "offset": 8589,
+      "length": 34,
+      "value": "\"AATGoogleCMPAdapter.AATCMPGoogle\""
     }
   ]
 }

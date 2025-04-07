@@ -22,7 +22,7 @@
 		</data>
 		<key>ios-arm64/SmaatoSDKBanner.framework/Info.plist</key>
 		<data>
-		f3hjV0grzOejaxvXTKpaG8Q4gR0=
+		lGexRcF5zQ0k4MtveC7tI0LG9LA=
 		</data>
 		<key>ios-arm64/SmaatoSDKBanner.framework/Modules/module.modulemap</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64/SmaatoSDKBanner.framework/SmaatoSDKBanner</key>
 		<data>
-		9uHBRMNKStGogZUlmwXF6PIqsUQ=
+		jdf4nx3IXXQGrB+EpuMuPUu2jQ4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKBanner.framework/Headers/SMABannerTypes.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKBanner.framework/Info.plist</key>
 		<data>
-		NlgiZ1j93MIYDu/UHD8QqsP5Q3k=
+		pGQ6LbNmcweiWDBVfeP6Mx2QCNE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKBanner.framework/Modules/module.modulemap</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKBanner.framework/SmaatoSDKBanner</key>
 		<data>
-		MYhUj3koVFhMHIIogz9hjkhnvrk=
+		kcN/LNWwcp//4sqQKMA8Y3f4/TM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKBanner.framework/_CodeSignature/CodeResources</key>
 		<data>
-		t+XUlaclnKI30IzMJfrQRAjgXk8=
+		vlWAjSYjPopPz06WMH5Nhf5XexQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -115,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f3hjV0grzOejaxvXTKpaG8Q4gR0=
+			lGexRcF5zQ0k4MtveC7tI0LG9LA=
 			</data>
 			<key>hash2</key>
 			<data>
-			k9nbDLx0+NeKZZat7lBoMB98VjYUxDu5CGzRv3P8V18=
+			M9IUFhK8frDvH65edJ/IflI3Rz5kOQK6S1z6qcxpDcs=
 			</data>
 		</dict>
 		<key>ios-arm64/SmaatoSDKBanner.framework/Modules/module.modulemap</key>
@@ -137,11 +137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9uHBRMNKStGogZUlmwXF6PIqsUQ=
+			jdf4nx3IXXQGrB+EpuMuPUu2jQ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			D/DahjuYJqNpIQgIRcWQYWggSk4NcNHLiDT+9SNzWw8=
+			KSDbiE8TO0kMu25c7yGzSxzI+BJ3RiYkOLd5Bm73bSU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKBanner.framework/Headers/SMABannerTypes.h</key>
@@ -192,11 +192,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NlgiZ1j93MIYDu/UHD8QqsP5Q3k=
+			pGQ6LbNmcweiWDBVfeP6Mx2QCNE=
 			</data>
 			<key>hash2</key>
 			<data>
-			mvLEgs/x2lEHDn+WyMiQl3mxljhLZoTzehKgH4yiw0c=
+			egMRgEyEDalRIHgEUL0p9zffFPBvmB+Vl4+imWkChv8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKBanner.framework/Modules/module.modulemap</key>
@@ -214,22 +214,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MYhUj3koVFhMHIIogz9hjkhnvrk=
+			kcN/LNWwcp//4sqQKMA8Y3f4/TM=
 			</data>
 			<key>hash2</key>
 			<data>
-			JNMTqZnjs9n41iQ1LlHGL3waYa8l/Rc/yq6K9r0EYL8=
+			RBrHr6YNJgPJuSRyNNKslxxWKY1wkAX99PWixNzVxOM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKBanner.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			t+XUlaclnKI30IzMJfrQRAjgXk8=
+			vlWAjSYjPopPz06WMH5Nhf5XexQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			D61eo96Pkq3kN5wrQIpjdr5hsFcdVsuIU5dkUF5S2as=
+			3OXXge9oCoQ5ntg6kOD/19LPzg7uURGe7Pq8DrtLy2w=
 			</data>
 		</dict>
 	</dict>

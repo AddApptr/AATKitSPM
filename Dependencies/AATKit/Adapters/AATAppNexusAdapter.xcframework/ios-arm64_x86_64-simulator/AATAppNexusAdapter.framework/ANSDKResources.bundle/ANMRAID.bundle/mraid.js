@@ -13,20 +13,22 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-(function() {
-    var isIOS = (/iphone|ipad|ipod/i).test(window.navigator.userAgent.toLowerCase());
-    if (isIOS) {
-        console = {};
-        console.log = function(log) {
-            var iframe = document.createElement('iframe');
-            iframe.setAttribute('src', 'anwebconsole: ' + log);
-            document.documentElement.appendChild(iframe);
-            iframe.parentNode.removeChild(iframe);
-            iframe = null;
-        };
-        console.debug = console.info = console.warn = console.error = console.log;
-    }
-}());
+
+// The function below is used to print debug messages in iOS Console logs. This is only for testing/dev time. This will always be commented out in production.
+//(function() {
+//    var isIOS = (/iphone|ipad|ipod/i).test(window.navigator.userAgent.toLowerCase());
+//    if (isIOS) {
+//        console = {};
+//        console.log = function(log) {
+//            var iframe = document.createElement('iframe');
+//            iframe.setAttribute('src', 'anwebconsole: ' + log);
+//            document.documentElement.appendChild(iframe);
+//            iframe.parentNode.removeChild(iframe);
+//            iframe = null;
+//        };
+//        console.debug = console.info = console.warn = console.error = console.log;
+//    }
+//}());
 
 (function() {
 

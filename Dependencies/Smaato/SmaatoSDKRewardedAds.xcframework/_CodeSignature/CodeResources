@@ -22,7 +22,7 @@
 		</data>
 		<key>ios-arm64/SmaatoSDKRewardedAds.framework/Info.plist</key>
 		<data>
-		YXqeJqtGIgKN04K4ZQmqpIqNdGk=
+		rJ8D3HO0uajsS9d5C9NJIvQuc8g=
 		</data>
 		<key>ios-arm64/SmaatoSDKRewardedAds.framework/Modules/module.modulemap</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64/SmaatoSDKRewardedAds.framework/SmaatoSDKRewardedAds</key>
 		<data>
-		28XRZlZRViVCVFkspsAf0kGnUmE=
+		W1Rw8zCfIwyxE7dyhPQULtwMoT0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKRewardedAds.framework/Headers/SMARewardedInterstitial+KeyValueTargeting.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKRewardedAds.framework/Info.plist</key>
 		<data>
-		PE+EfHo+MJ3ytFACVzXcEO6FZbc=
+		GVWmWDk6My4TKzA36cH/hMGWXMY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKRewardedAds.framework/Modules/module.modulemap</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKRewardedAds.framework/SmaatoSDKRewardedAds</key>
 		<data>
-		vvUFqlc8GVkieV0xuola1EBcw9M=
+		3yplB6QcIbbVR9qzYGPSvlN5sBg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKRewardedAds.framework/_CodeSignature/CodeResources</key>
 		<data>
-		EZBU7VmDOBnvLT6Mg9VLig3GQOU=
+		Hk/QSIsKsTF2k9yRnMPGkk1ujWI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -115,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YXqeJqtGIgKN04K4ZQmqpIqNdGk=
+			rJ8D3HO0uajsS9d5C9NJIvQuc8g=
 			</data>
 			<key>hash2</key>
 			<data>
-			Eh0pqydX8D6UGiZmT1TBOSL2W9iWwqRjsHYUkb4F4yI=
+			5jFf2i9FCikz0XuQ45RZVd+JEdkEKy2b1Q7NsxxJBdQ=
 			</data>
 		</dict>
 		<key>ios-arm64/SmaatoSDKRewardedAds.framework/Modules/module.modulemap</key>
@@ -137,11 +137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			28XRZlZRViVCVFkspsAf0kGnUmE=
+			W1Rw8zCfIwyxE7dyhPQULtwMoT0=
 			</data>
 			<key>hash2</key>
 			<data>
-			4ytfosnimmsbqlxh5XlVmXdK7gAZhaE/WkKuWdz15Po=
+			EUnzqCd/K9dmBy+XItQn1L+hOYnJq4x/OqYNGEljhpg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKRewardedAds.framework/Headers/SMARewardedInterstitial+KeyValueTargeting.h</key>
@@ -192,11 +192,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PE+EfHo+MJ3ytFACVzXcEO6FZbc=
+			GVWmWDk6My4TKzA36cH/hMGWXMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			qdc4fqM4SiRxcxxZNxGFrK0zgHJFnxcyORBpnzpL8RM=
+			sAyWD3z0RC+vjrY3vqB+dZMat4Rmz0iwFFzHfK1drng=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKRewardedAds.framework/Modules/module.modulemap</key>
@@ -214,22 +214,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vvUFqlc8GVkieV0xuola1EBcw9M=
+			3yplB6QcIbbVR9qzYGPSvlN5sBg=
 			</data>
 			<key>hash2</key>
 			<data>
-			TlNNagYcsc8KxOaa3Twt9TOVG2XIoZSLhSLYBjUaU60=
+			Gmv4rHl653g2F3X+M6SDC2JUfu4FoBdXai2tExIHvpk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/SmaatoSDKRewardedAds.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EZBU7VmDOBnvLT6Mg9VLig3GQOU=
+			Hk/QSIsKsTF2k9yRnMPGkk1ujWI=
 			</data>
 			<key>hash2</key>
 			<data>
-			JiTYKIvzP/phQBnQmyBlkCubQAsRv/3lDDg+ueoBJ6g=
+			v7OFNdDyd4L/pON+F144r3FXMitN8/MbtIfzTyJcnfo=
 			</data>
 		</dict>
 	</dict>

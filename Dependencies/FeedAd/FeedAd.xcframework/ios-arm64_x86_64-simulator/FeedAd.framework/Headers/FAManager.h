@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Sends a custom event
 ///
 /// If `FAConfig.waitForConsent` is enabled, calling `sendCustomEvent:`
-/// with missing or insufficient TCF 2.0 consent will cause events to be
+/// with missing or insufficient GPP or TCF 2 consent will cause events to be
 /// dropped.
 ///
 /// Adapt your integration to send custom events at a point in time,

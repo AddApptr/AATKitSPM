@@ -39,7 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Loads a new ad
 ///
 /// If `FAConfig.waitForConsent` is enabled, calling `load` with missing or
-/// insufficient TCF 2.0 consent will delay SDK init and running ads infinitely,
+/// insufficient GPP or TCF 2 consent will delay SDK init and running ads infinitely,
 /// until it is available.
 ///
 /// As a result, you should expect `FAFeedAdDelegate` not to receive any

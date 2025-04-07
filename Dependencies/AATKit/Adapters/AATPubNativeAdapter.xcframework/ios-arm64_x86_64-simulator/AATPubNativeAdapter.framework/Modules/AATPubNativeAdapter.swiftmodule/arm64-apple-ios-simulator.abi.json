@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AATPubNativeAdapter",
+    "printedName": "AATPubNativeAdapter",
     "children": [
       {
         "kind": "Import",

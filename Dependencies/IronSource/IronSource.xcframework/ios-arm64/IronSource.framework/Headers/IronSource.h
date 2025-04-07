@@ -5,6 +5,7 @@
 #ifndef IRONSOURCE_H
 #define IRONSOURCE_H
 
+
 // import core classes
 #import <AVFoundation/AVFoundation.h>
 #import <AdSupport/AdSupport.h>
@@ -35,6 +36,7 @@
 #import "ISAInterstitialAdRequestBuilder.h"
 #import "ISARewardedAdLoader.h"
 #import "ISARewardedAdRequestBuilder.h"
+#import "ISAdapterAdaptiveProtocol.h"
 #import "ISBannerSize.h"
 #import "ISConfigurations.h"
 #import "ISConsentViewDelegate.h"
@@ -55,6 +57,7 @@
 #import "ISWaterfallConfiguration.h"
 #import "IronSourceAds.h"
 #import "LPMConfigServiceEventSender.h"
+#import "LPMDispatcherProtocol.h"
 
 // imports used for custom adapters infra
 #import "ISAdapterErrors.h"
@@ -87,6 +90,8 @@
 #import "LPMInitRequestBuilder.h"
 #import "LPMInterstitialAd.h"
 #import "LPMInterstitialAdDelegate.h"
+#import "LPMRewardedAd.h"
+#import "LPMRewardedAdDelegate.h"
 #import "LevelPlay.h"
 
 #import "IronSourceNetworkSwiftBridge.h"
@@ -98,8 +103,8 @@ NS_ASSUME_NONNULL_BEGIN
 #define IS_BANNER @"banner"
 #define IS_NATIVE_AD @"nativead"
 
-static NSString *const MEDIATION_SDK_VERSION = @"8.3.0";
-static NSString *GitHash = @"6a68001";
+static NSString *const MEDIATION_SDK_VERSION = @"8.7.0";
+static NSString *GitHash = @"ffe83e8";
 
 /*
     This constant is for sending an external impression data from mopub
@@ -289,8 +294,7 @@ static NSString *const DataSource_MOPUB = @"MoPub";
  */
 + (void)initISDemandOnly:(NSString *)appKey
                  adUnits:(NSArray<NSString *> *)adUnits
-    DEPRECATED_MSG_ATTRIBUTE("This API has been deprecated. Please use [IronSourceAds "
-                             "initWithRequest:completion:] instead.");
+    DEPRECATED_MSG_ATTRIBUTE("Use [IronSourceAds initWithRequest:completion:] instead.");
 
 #pragma mark - Rewarded Video
 
@@ -378,8 +382,7 @@ static NSString *const DataSource_MOPUB = @"MoPub";
  */
 + (void)loadISDemandOnlyRewardedVideoWithAdm:(NSString *)instanceId
                                          adm:(NSString *)adm
-    DEPRECATED_MSG_ATTRIBUTE("This API has been deprecated. Please use [ISARewardedAdLoader "
-                             "loadAdWithAdRequest:delegate:] instead.");
+    DEPRECATED_MSG_ATTRIBUTE("Use [ISARewardedAdLoader loadAdWithAdRequest:delegate:] instead.");
 
 /**
  @abstract Shows a demand only rewarded video using the default placement.
@@ -431,24 +434,28 @@ static NSString *const DataSource_MOPUB = @"MoPub";
  @discussion This method will load interstitial ads from the underlying ad networks according to
  their priority.
  */
-+ (void)loadInterstitial;
++ (void)loadInterstitial DEPRECATED_MSG_ATTRIBUTE("Use [LPMInterstitialAd loadAd] instead.");
 
 /**
- @abstract Show a rewarded video using the default placement.
+ @abstract Show an interstitial ad using the default placement.
 
  @param viewController The UIViewController to display the interstitial within.
  */
-+ (void)showInterstitialWithViewController:(UIViewController *)viewController;
++ (void)showInterstitialWithViewController:(UIViewController *)viewController
+    DEPRECATED_MSG_ATTRIBUTE(
+        "Use [LPMInterstitialAd showAdWithViewController:placementName:] instead.");
 
 /**
- @abstract Show a rewarded video using the provided placement name.
+ @abstract Show an interstitial ad using the provided placement name.
 
  @param viewController The UIViewController to display the interstitial within.
  @param placementName The placement name as was defined in the platform. If nil is passed, a default
  placement will be used.
  */
 + (void)showInterstitialWithViewController:(UIViewController *)viewController
-                                 placement:(nullable NSString *)placementName;
+                                 placement:(nullable NSString *)placementName
+    DEPRECATED_MSG_ATTRIBUTE(
+        "Use [LPMInterstitialAd showAdWithViewController:placementName:] instead.");
 
 /**
  @abstract Determine if a locally cached interstitial exists on the mediation level.
@@ -457,7 +464,7 @@ static NSString *const DataSource_MOPUB = @"MoPub";
 
  @return YES if there is a locally cached interstitial, NO otherwise.
  */
-+ (BOOL)hasInterstitial;
++ (BOOL)hasInterstitial DEPRECATED_MSG_ATTRIBUTE("Use [LPMInterstitialAd isAdReady] instead.");
 
 /**
  @abstract Verify if a certain placement has reached its ad limit.
@@ -467,7 +474,8 @@ static NSString *const DataSource_MOPUB = @"MoPub";
  @param placementName The placement name as was defined in the platform.
  @return YES if capped or paced, NO otherwise.
  */
-+ (BOOL)isInterstitialCappedForPlacement:(NSString *)placementName;
++ (BOOL)isInterstitialCappedForPlacement:(NSString *)placementName
+    DEPRECATED_MSG_ATTRIBUTE("Use [LPMInterstitialAd isPlacementCapped:] instead.");
 
 #pragma mark - Demand Only Interstitial
 
@@ -491,8 +499,8 @@ static NSString *const DataSource_MOPUB = @"MoPub";
  */
 + (void)loadISDemandOnlyInterstitialWithAdm:(NSString *)instanceId
                                         adm:(NSString *)adm
-    DEPRECATED_MSG_ATTRIBUTE("This API has been deprecated. Please use [ISAInterstitialAdLoader "
-                             "loadAdWithAdRequest:delegate:] instead.");
+    DEPRECATED_MSG_ATTRIBUTE(
+        "Use [ISAInterstitialAdLoader loadAdWithAdRequest:delegate:] instead.");
 
 /**
  @abstract Show a demand only interstitial using the default placement.
@@ -518,7 +526,8 @@ static NSString *const DataSource_MOPUB = @"MoPub";
 
  @param delegate The 'LevelPlayBannerDelegate' for IronSource to send callbacks to.
  */
-+ (void)setLevelPlayBannerDelegate:(nullable id<LevelPlayBannerDelegate>)delegate;
++ (void)setLevelPlayBannerDelegate:(nullable id<LevelPlayBannerDelegate>)delegate
+    DEPRECATED_MSG_ATTRIBUTE("Use [LPMBannerAdView setDelegate:] instead.");
 
 /**
  @abstract Loads a banner using the default placement.
@@ -535,7 +544,9 @@ static NSString *const DataSource_MOPUB = @"MoPub";
  @param viewController The UIViewController to display the banner within.
  @param size The required banner ad size
  */
-+ (void)loadBannerWithViewController:(UIViewController *)viewController size:(ISBannerSize *)size;
++ (void)loadBannerWithViewController:(UIViewController *)viewController
+                                size:(ISBannerSize *)size
+    DEPRECATED_MSG_ATTRIBUTE("Use [LPMBannerAdView loadAdWithViewController:] instead.");
 
 /**
  @abstract Loads a banner using the provided placement name.
@@ -557,13 +568,17 @@ static NSString *const DataSource_MOPUB = @"MoPub";
  */
 + (void)loadBannerWithViewController:(UIViewController *)viewController
                                 size:(ISBannerSize *)size
-                           placement:(nullable NSString *)placementName;
+                           placement:(nullable NSString *)placementName
+    DEPRECATED_MSG_ATTRIBUTE("Use [LPMBannerAdView setPlacementName:] with "
+                             "[LPMBannerAdView loadAdWithViewController:] instead.");
 
 /**
  @abstract Removes the banner from memory.
  @param banner The ISBannerView to remove.
  */
-+ (void)destroyBanner:(ISBannerView *)banner;
++ (void)destroyBanner:(ISBannerView *)banner
+    DEPRECATED_MSG_ATTRIBUTE("Use [LPMBannerAdView destroy] instead.");
+;
 
 /**
  @abstract Verify if a certain placement has reached its ad limit.
@@ -573,7 +588,8 @@ static NSString *const DataSource_MOPUB = @"MoPub";
  @param placementName The placement name as was defined in the platform.
  @return YES if capped or paced, NO otherwise.
  */
-+ (BOOL)isBannerCappedForPlacement:(NSString *)placementName;
++ (BOOL)isBannerCappedForPlacement:(NSString *)placementName
+    DEPRECATED_MSG_ATTRIBUTE("Capping is no longer supported for banners.");
 
 #pragma mark Demand Only Banner
 /**

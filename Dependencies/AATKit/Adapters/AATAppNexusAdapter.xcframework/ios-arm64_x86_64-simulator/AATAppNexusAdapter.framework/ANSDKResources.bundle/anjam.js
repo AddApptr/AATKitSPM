@@ -120,16 +120,16 @@
     anjam.listener = function (event) {
         // accept all event.origin values, filter based on protocol
 
-        // use anchor element for convenient parsing
-        var a = document.createElement("a");
-        a.href = event.data;
+        // accept all event.origin values, filter based on protocol
+        const url = new URL(event.data);
+        
 
-        if (a.protocol === SDKJS_PROTOCOL) {
+        if (url.protocol === SDKJS_PROTOCOL) {
             anjam.anlog("ANJAM received: " + event.data);
 
             // use pathname because host doesn't work
-            var path = a.pathname;
-            var search = a.search.substr(1); // drop the '?' at the front
+            var path = url.pathname;
+            var search = url.search.substr(1); // drop the '?' at the front
             var query = search.split("&");
             var queryParameters = {};
             var length = query.length;

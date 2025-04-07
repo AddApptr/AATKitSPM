@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AATAppConsentAdapter",
+    "printedName": "AATAppConsentAdapter",
     "children": [
       {
         "kind": "Import",
@@ -539,6 +539,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -619,8 +633,8 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATAppConsentAdapter\/AATCMPAppConsent.swift",
       "kind": "StringLiteral",
-      "offset": 404,
-      "length": 16,
+      "offset": 3530,
+      "length": 39,
       "value": "\"AATAppConsentAdapter.AATCMPAppConsent\""
     }
   ]

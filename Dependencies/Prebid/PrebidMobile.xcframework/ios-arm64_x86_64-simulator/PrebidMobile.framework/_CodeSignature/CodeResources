@@ -20,6 +20,10 @@
 		<data>
 		fnT22Mp7li1pljFzhFkh1sBgk50=
 		</data>
+		<key>Headers/NSObject+PBMExtensions.h</key>
+		<data>
+		YB/OvZVFXqnciA7v9iNoRuBuSGs=
+		</data>
 		<key>Headers/NSTimer+PBMScheduledTimerFactory.h</key>
 		<data>
 		k2hsvdTDemAW8fuDkUZpGN3qcFg=
@@ -30,7 +34,7 @@
 		</data>
 		<key>Headers/PBMAbstractCreative.h</key>
 		<data>
-		wzJufg1T5Mp/z71T8W3Rn2lCWRY=
+		9RqL0vaTUO6nEAY9TWCwui7d/4k=
 		</data>
 		<key>Headers/PBMAdDetails.h</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>Headers/PBMAdLoadFlowController.h</key>
 		<data>
-		nOEnd39A9yIWYhDUaLlIR/0c5B4=
+		J0BlDyLIvkmBKWOYpoZ4AB3mvTU=
 		</data>
 		<key>Headers/PBMAdLoadManagerDelegate.h</key>
 		<data>
@@ -58,7 +62,7 @@
 		</data>
 		<key>Headers/PBMAdViewManagerDelegate.h</key>
 		<data>
-		PxEPpl5eq9YQT/cYrFXSGG4Hncs=
+		xF5mZnJ8LZ2uOcedQdQUss5p5aQ=
 		</data>
 		<key>Headers/PBMAutoRefreshManager.h</key>
 		<data>
@@ -90,7 +94,11 @@
 		</data>
 		<key>Headers/PBMCreativeViewDelegate.h</key>
 		<data>
-		o4lySKIKi4F3fFdnwvv0kTwnpEE=
+		BhYisBdlhPLN9PPby+fQf/7bZcs=
+		</data>
+		<key>Headers/PBMCreativeViewabilityTracker.h</key>
+		<data>
+		yEhC/7polgSxOtqLyVN9/IoBJ7g=
 		</data>
 		<key>Headers/PBMDeepLinkPlusHelper+PBMExternalLinkHandler.h</key>
 		<data>
@@ -100,9 +108,13 @@
 		<data>
 		5Q4YiQyjpxr17qH95I2hBFvqkko=
 		</data>
+		<key>Headers/PBMDeviceAccessManager.h</key>
+		<data>
+		E/dcgww6XVCIaZ52Jr2I2cX5CWo=
+		</data>
 		<key>Headers/PBMDisplayView.h</key>
 		<data>
-		JpfFb7GUvhNknBzuCQo5GpyjL6U=
+		MqFTV2ur8YbO5QbXupEmTlHfWU8=
 		</data>
 		<key>Headers/PBMError.h</key>
 		<data>
@@ -150,15 +162,15 @@
 		</data>
 		<key>Headers/PBMFunctions.h</key>
 		<data>
-		GyaNQV8pZTUFiium3GR2V25NQSQ=
+		THm7RJ8Nf2v5YcbE5LlH0IQF3IQ=
 		</data>
 		<key>Headers/PBMInterstitialAdLoader.h</key>
 		<data>
-		G25DXJAYFFw1ZTXbsftKw+Xlu+c=
+		/T+ZnkZ7uZFNNJgHFI9CXp2ddkM=
 		</data>
 		<key>Headers/PBMInterstitialAdLoaderDelegate.h</key>
 		<data>
-		z7WeVabIWtB/JwLeGzLzZFH6uyM=
+		RGb/H6S3O/vJaUjswf7ukJ8mVbw=
 		</data>
 		<key>Headers/PBMInterstitialDisplayProperties.h</key>
 		<data>
@@ -202,7 +214,7 @@
 		</data>
 		<key>Headers/PBMORTBAbstract+Protected.h</key>
 		<data>
-		Qvw6majxFBpZtK9TF4czIo1JNUg=
+		dn53V/S3/IIxoXU0kuOLcE0RwWo=
 		</data>
 		<key>Headers/PBMORTBAbstract.h</key>
 		<data>
@@ -234,11 +246,15 @@
 		</data>
 		<key>Headers/PBMORTBBidExtPrebid.h</key>
 		<data>
-		Fjpn26WnJ+VNabQSR0LD6BaLlR0=
+		9VPShbd/hCHwtaoCdfDJt1og6yg=
 		</data>
 		<key>Headers/PBMORTBBidExtSkadn.h</key>
 		<data>
-		Z64TKk1ONrPkPsG2UL3fWxXIo6U=
+		ItJwCf3ARgF88bep+sy11PASu0I=
+		</data>
+		<key>Headers/PBMORTBBidExtSkadnSKOverlay.h</key>
+		<data>
+		UMuPoR1DkVx68zQnhuj2oTGbDbg=
 		</data>
 		<key>Headers/PBMORTBBidResponse+Internal.h</key>
 		<data>
@@ -274,7 +290,7 @@
 		</data>
 		<key>Headers/PBMORTBExtPrebidPassthrough.h</key>
 		<data>
-		F9yJUy5N9z+Kd9uwG0mm32W87EA=
+		1vF43rgiTGRZipto7LPSGitxyIA=
 		</data>
 		<key>Headers/PBMORTBMacrosHelper.h</key>
 		<data>
@@ -283,6 +299,34 @@
 		<key>Headers/PBMORTBNative.h</key>
 		<data>
 		hYX30sdJ2yanpovjEHZ23qYncGU=
+		</data>
+		<key>Headers/PBMORTBRewardedClose.h</key>
+		<data>
+		uNoSxK/nCDMkTgByCR9x0mt/Nxw=
+		</data>
+		<key>Headers/PBMORTBRewardedCompletion.h</key>
+		<data>
+		2hVBtUUuLxydZRh/k4aL7FTYiwQ=
+		</data>
+		<key>Headers/PBMORTBRewardedCompletionBanner.h</key>
+		<data>
+		D9tLSKi9bw3hE6WN3CsFyL9OB0A=
+		</data>
+		<key>Headers/PBMORTBRewardedCompletionVideo.h</key>
+		<data>
+		YKpmPpraNCsT3Kbsm215MOgTu5M=
+		</data>
+		<key>Headers/PBMORTBRewardedCompletionVideoEndcard.h</key>
+		<data>
+		6C0hY5QxJcQZVrmIdvpyBhWWvbc=
+		</data>
+		<key>Headers/PBMORTBRewardedConfiguration.h</key>
+		<data>
+		KdmHm6u7BpmzN5BDmmQ0DBxFehU=
+		</data>
+		<key>Headers/PBMORTBRewardedReward.h</key>
+		<data>
+		rORdqg0BQO7MikctI1S8I0sIuv8=
 		</data>
 		<key>Headers/PBMORTBSDKConfiguration.h</key>
 		<data>
@@ -330,7 +374,7 @@
 		</data>
 		<key>Headers/PBMTrackingEvent.h</key>
 		<data>
-		sT2mqCMMG6hfCku5pPXokhqNXtU=
+		+x7xJmTV+lsb77Pn7NRkafMEZss=
 		</data>
 		<key>Headers/PBMTrackingURLVisitorBlock.h</key>
 		<data>
@@ -342,7 +386,7 @@
 		</data>
 		<key>Headers/PBMTransaction.h</key>
 		<data>
-		pDn5Fs3MStJo/WUiIqDPkmGsSwI=
+		kUag+Cs3a7WmgXGPHvRlXPjUEZM=
 		</data>
 		<key>Headers/PBMTransactionFactory.h</key>
 		<data>
@@ -402,11 +446,15 @@
 		</data>
 		<key>Headers/PrebidMobile-Swift.h</key>
 		<data>
-		FcsjiugL3Gqu9oV1+ILFX4EKcJs=
+		ple9SffmxmeRBHFxO1Yk55it8/w=
 		</data>
 		<key>Headers/PrebidMobile.h</key>
 		<data>
 		aKw2l5J5tFQJkuerX8i/GAh+uZ8=
+		</data>
+		<key>Headers/PrebidMobileDisplayViewProtocol.h</key>
+		<data>
+		tTXU77s5gcqVuGQUaJ/wvaiQ+J0=
 		</data>
 		<key>Headers/UIView+PBMExtensions.h</key>
 		<data>
@@ -414,51 +462,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HGp8ZivQr/Oy9273Ifcmi5nMzu8=
+		4Fx4/JMLbD14Cw7x8bQfknPzKG4=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GwDIASDiWnkJWZHi0O+2Ibh40BU=
+		r9PI3ycweKkqeDv7eXpoov+/xrg=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		huLcdLsP91hougFpoE92NjRfYU4=
+		QDTVqsVd7HSyu12T+srBd7LFr5s=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		CE9ARkwSsqFYSliClezdVWeokUg=
+		NUWwvIYdee5841rrfqMgNPB80is=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		huLcdLsP91hougFpoE92NjRfYU4=
+		QDTVqsVd7HSyu12T+srBd7LFr5s=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IrGwmVvovbfCrluqM80KEPXgaUs=
+		KcOMdYtMn1Uw+L3mioleH2U7L3U=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GwDIASDiWnkJWZHi0O+2Ibh40BU=
+		r9PI3ycweKkqeDv7eXpoov+/xrg=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		jgnHmMNX/yekvBcDwo/3bqX6NGU=
+		WGITx4iXFzBgPudJE0gy5UxiduU=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		RaIt4yEm2ScqZrjDJPoAFAHAFkA=
+		t6M0LiUu07f31UEhrO08nJJQO1Q=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jgnHmMNX/yekvBcDwo/3bqX6NGU=
+		WGITx4iXFzBgPudJE0gy5UxiduU=
 		</data>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YxA40DFgKxBf4EVoYTRsxLQT8e0=
+		2HQBMwD2l7agVEal/YBCkJRg4Mk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		6AZ1Vl9hQb6yDd1oHKEyTSnJHWo=
+		tMkUBGup76WRBefPMP1AWQ7673k=
 		</data>
 		<key>PrivateHeaders/OMSDKVersionProvider.h</key>
 		<data>
@@ -495,6 +543,13 @@
 			uuCqF8xJhUrict2NtI3M4eYarBNkSosqjeGKbKhPGik=
 			</data>
 		</dict>
+		<key>Headers/NSObject+PBMExtensions.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lojoZSgqg0IOWqnXo666Nssovv8/LkPvAq5GW+lRzd8=
+			</data>
+		</dict>
 		<key>Headers/NSTimer+PBMScheduledTimerFactory.h</key>
 		<dict>
 			<key>hash2</key>
@@ -513,7 +568,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gktk8xuB8EmpYKpcRw/VN5ZyOKyFwO/bhGuRaamwZ1k=
+			viAmLjZcc1WW6HUNNA9OT2WUlPDWzdQw9pzS51w+26I=
 			</data>
 		</dict>
 		<key>Headers/PBMAdDetails.h</key>
@@ -527,7 +582,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xHSxv4uszsIKg+iAwet2MUhbV8El0nosxtrZGXMmd8s=
+			HHkTgXHqi/W076JfRlxvPoJKlRvBAipfMGQFYP8ABWA=
 			</data>
 		</dict>
 		<key>Headers/PBMAdLoadManagerDelegate.h</key>
@@ -562,7 +617,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lZuVUuFcpYdra6By3MMYI07192HrtiJbHvbRD9YhYn8=
+			ysC2z44YlUOD+MX0wJNZCBGbPMPLWajDhdLbWzq6/yE=
 			</data>
 		</dict>
 		<key>Headers/PBMAutoRefreshManager.h</key>
@@ -618,7 +673,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xbuB5qIltVfxyuco4gBymz2Ia1VOh7+SxVu2JbT7LUI=
+			VQy8YPZk8cnhMFHO1+6Jq8HQ7KSLR9PdeQs9636Gacs=
+			</data>
+		</dict>
+		<key>Headers/PBMCreativeViewabilityTracker.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			B5B48t8/gOOgi/uHsGZehfMC1F5UcGA3tobw3gpj1tk=
 			</data>
 		</dict>
 		<key>Headers/PBMDeepLinkPlusHelper+PBMExternalLinkHandler.h</key>
@@ -635,11 +697,18 @@
 			Ca6onTRcZmp8jsCwIdxUmcksZZLGAMkEMYlIVsFMZPQ=
 			</data>
 		</dict>
+		<key>Headers/PBMDeviceAccessManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uBBCUx3kBNBEtjtX1OIGudNznCZWHXYGhy+jVYtrkbY=
+			</data>
+		</dict>
 		<key>Headers/PBMDisplayView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cO2TPiLep7xrdRHrDNmGymnkn1Vke6f7AjcmFpqcPOU=
+			mhDU/O5PNkGJJCqLIbzdVPZexmPcH7j8ukHpXB8mZO4=
 			</data>
 		</dict>
 		<key>Headers/PBMError.h</key>
@@ -723,21 +792,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dCkG/zSE2UNKAl8NcuceX36hSsbnfuVJXPGliBr4oHc=
+			XSBxmEV3oOfwNbANO853nNN7uKqDkL4duDb+JXeD2pE=
 			</data>
 		</dict>
 		<key>Headers/PBMInterstitialAdLoader.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FjNRO75OAUO8GzW9z9zC/BOXSuAL2CqxgMfRgqcCByE=
+			nis0CuaBm1+AeqLH9ssnP4ipQg9CQWcAuRnDNMsUPoU=
 			</data>
 		</dict>
 		<key>Headers/PBMInterstitialAdLoaderDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			indhwKU/LciU/Ehas1CDF1JFReAT6dWCrOYMczkNUHs=
+			dpxycEZq6XBZSWV8AJ/Rb+jO90qR7C90iLJ70zMCqfo=
 			</data>
 		</dict>
 		<key>Headers/PBMInterstitialDisplayProperties.h</key>
@@ -814,7 +883,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7nLUjdpSCn+TOc0hYXm4/CDSxO3oY0EcpwazNMXRBvM=
+			b1qqdsIguN9cNBpeIerILe8Ia8bZ3qDku0DZliZst2Q=
 			</data>
 		</dict>
 		<key>Headers/PBMORTBAbstract.h</key>
@@ -870,14 +939,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jyllCql0MvEoHTGFMBNCoVxSIQ8xVnydlMXRZiSnBzQ=
+			mhoXAQSK8P8jiAqqpBQn3VXb7xc4jYBLR30htneEQzI=
 			</data>
 		</dict>
 		<key>Headers/PBMORTBBidExtSkadn.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3c/cyIWTAg1kst6f7I9FxrHebZrOuc9wVxfVA9Wms38=
+			P1FmisKvLqAc5LqNBNyA7bhoefPc5h66GubwQaB2pmI=
+			</data>
+		</dict>
+		<key>Headers/PBMORTBBidExtSkadnSKOverlay.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s+HnGcDCH4YnkNwKbsmnPokfg8y4bi+BhQQkpiBgWJw=
 			</data>
 		</dict>
 		<key>Headers/PBMORTBBidResponse+Internal.h</key>
@@ -940,7 +1016,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kEizU/XEjhCVScKdnNOnVh0MLpnrd3nLXs8TSC6mKRk=
+			IVLcLIbkfDcCGTqlmnauxRaHH7piQ0uzm00p+5eEBMQ=
 			</data>
 		</dict>
 		<key>Headers/PBMORTBMacrosHelper.h</key>
@@ -955,6 +1031,55 @@
 			<key>hash2</key>
 			<data>
 			mLePmcWtiB2bspLmCs3BHfXq12hneCNEu6vHi0wBSQo=
+			</data>
+		</dict>
+		<key>Headers/PBMORTBRewardedClose.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MG8ZR5O3acTVtzJXmhLZnfbVWFXwv6NZUs9kLYn1JEg=
+			</data>
+		</dict>
+		<key>Headers/PBMORTBRewardedCompletion.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			khFX/OXAXOOeHCgxucFCh5xUg5+uhm+FqwC6i39twhg=
+			</data>
+		</dict>
+		<key>Headers/PBMORTBRewardedCompletionBanner.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DeElV/UXmv30fjs5yCdWRD93yWVn3f/yamfM3Mefkks=
+			</data>
+		</dict>
+		<key>Headers/PBMORTBRewardedCompletionVideo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P9PAvUOKgm6KQ0KLAhxqoyufhYgfDLMUf3/JiuHSWoA=
+			</data>
+		</dict>
+		<key>Headers/PBMORTBRewardedCompletionVideoEndcard.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KrLypvOkMhLvnU3WQlPM+atL0P6XRb7GLgJnuMxen+c=
+			</data>
+		</dict>
+		<key>Headers/PBMORTBRewardedConfiguration.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cvbXG93zuLj7rtDvfquCto0FgjvTIh5NJuO+57IZ7js=
+			</data>
+		</dict>
+		<key>Headers/PBMORTBRewardedReward.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S2wpbJC/E28sssPnk5C2RT0eVlxIzTuIxMA5NP00s6k=
 			</data>
 		</dict>
 		<key>Headers/PBMORTBSDKConfiguration.h</key>
@@ -1038,7 +1163,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S1XtrOi7OK281XXHLX49dYzFqonZeI/N8/MkrTKt5PI=
+			f9bQ0UyIGoFQPUv3lROzs0AcAF7/IsEleeJ5vPe8lnU=
 			</data>
 		</dict>
 		<key>Headers/PBMTrackingURLVisitorBlock.h</key>
@@ -1059,7 +1184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MbJRa3dE97SKcYrtL3g2wvqfGwDwgFWvhdpUqlWrhY0=
+			QLixPmnWnecM1jrvs94JLjaXs1b4zJ0TcO/Ig2CHJbY=
 			</data>
 		</dict>
 		<key>Headers/PBMTransactionFactory.h</key>
@@ -1164,7 +1289,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R3dBtLeroNKp+EXiUZbl0lGBwEDg3hWplNdOB2Jahb4=
+			ZmHG9rU2Ma/fR/MhdRCWMaXKB/WqIxKassbIVZJCxBw=
 			</data>
 		</dict>
 		<key>Headers/PrebidMobile.h</key>
@@ -1172,6 +1297,13 @@
 			<key>hash2</key>
 			<data>
 			sKvhUb0/Je17eWN6tcNLDadBa6pz2OKhU8dNFI+mmVA=
+			</data>
+		</dict>
+		<key>Headers/PrebidMobileDisplayViewProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SMYy0+a4mPBMUzT84NOhC6M9YtAdzryBCPMXhzLBvtw=
 			</data>
 		</dict>
 		<key>Headers/UIView+PBMExtensions.h</key>
@@ -1185,77 +1317,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VNnHCO6L8lcJIWn4tudfr9zXZT5yXTu8u7FN2bczkXM=
+			5lsneJd4xH0V7dsw01Xb2bCGllfvQJnxivj5QZWh4TI=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q7yUGZ91eCdHmGL6vT8mLicY/272a2GgYfI3Q0HNNMQ=
+			kFCWS0b+1gODyuMh2zKa5mgV0fx/tjFFUONwbWQ3HbE=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vfCDzZXPlLdr9y2n8HlmcixEUiZ97LNM/29Hr5AGbT8=
+			8EnbIcO2RkBNN9zW2MzaWUgzXP6z2vMyhfYbXDulQmU=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q7yUGZ91eCdHmGL6vT8mLicY/272a2GgYfI3Q0HNNMQ=
+			kFCWS0b+1gODyuMh2zKa5mgV0fx/tjFFUONwbWQ3HbE=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NGegu9aXHxGMTk6bAUjOReKxEVc3mZUZYusMvxRJcB8=
+			PhKhjWpml5+3JFj345Tvly3FebDbJ2don7Mx5XLkl9E=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VNnHCO6L8lcJIWn4tudfr9zXZT5yXTu8u7FN2bczkXM=
+			5lsneJd4xH0V7dsw01Xb2bCGllfvQJnxivj5QZWh4TI=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fCW84DUgLT4DjADjKE/X6/IG0JVUFOFdV2oxUPF2ILc=
+			iFzLJfokwCZKdfHeRUcuNq4MOX+t8RjcY8kh3tjmPL4=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			olimfi6eYmYus3WpaxgZ6DWPohXnItlc+zP6i2SvLck=
+			heu8BrAbQZ9NHRvr5MEkGcQSD0xRBmOP9R+35xgTQhg=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fCW84DUgLT4DjADjKE/X6/IG0JVUFOFdV2oxUPF2ILc=
+			iFzLJfokwCZKdfHeRUcuNq4MOX+t8RjcY8kh3tjmPL4=
 			</data>
 		</dict>
 		<key>Modules/PrebidMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ODpO8QYhJFQK+v9QP7skB/yL3xFLfEpYycmZ2Nnpn9Y=
+			5/tGQhpU0Er3Nqsp1bbwG8TB+8/oRfY9DPsqLjF53Gc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UOcsZcJoaX1uM+5MYdakeJE19oiEB6LdY2A3AuZbRS4=
+			T0OdkxPwkBIVD49S07G1I9UfI9i5Y/eoRPtxBfGugFE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/OMSDKVersionProvider.h</key>

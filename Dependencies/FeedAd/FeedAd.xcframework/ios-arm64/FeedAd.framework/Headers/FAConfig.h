@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// An user's ID (optional)
 @property (nonatomic, copy, nullable) NSString *userId;
 
-/// Delays the SDK init until consent from a TCF 2.0 CMP is available (defaults to NO)
+/// Delays the SDK init until consent from a GPP or TCF 2 CMP is available (defaults to NO)
 @property (nonatomic, assign) BOOL waitForConsent;
 
 
