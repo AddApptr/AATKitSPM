@@ -124,7 +124,7 @@ let package = Package(
                     path: "./Sources/AppHarbr"),
 
             .target(name:"AATKit-AppNexus",
-                    dependencies: ["AppNexusSDK", "OMSDK_Microsoft", "AATAppNexusAdapter"],
+                    dependencies: ["AATAppNexusSDK", "OMSDK_Microsoft", "AATAppNexusAdapter"],
                     path: "./Sources/AppNexusSources"),
 
             .target(name:"AATKit-Amazon",
@@ -317,7 +317,7 @@ let package = Package(
             checksum: "f0b7cc1c45095a99bcd16e21250610a7614bbdf3d3c99e5f3ee8d762d9fe7dde"
         ),
         .binaryTarget(
-            name: "AppNexusSDK",
+            name: "AATAppNexusSDK",
             url: "https://adsdkprod.azureedge.net/mobile/ios/releases/9.2.1/dynamic/AppNexusSDKDynamic.zip",
             checksum: "a122b9d51dd6c58aec384e1c65bd82d1da2fcdebcedf0cfb3e2b328bd9ced38b"
         ),
