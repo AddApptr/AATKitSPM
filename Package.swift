@@ -223,7 +223,7 @@ let package = Package(
                     path: "./Sources/MintegralSources"),
 
             .target(name:"AATKit-SourcePointCMP",
-                    dependencies: ["ConsentViewController", "AATSourcePointCMPAdapter"],
+                    dependencies: ["AATConsentViewController", "AATSourcePointCMPAdapter"],
                     path: "./Sources/SourcePointSources"),
 
             .target(name:"AATKit-AppConsentCMP",
@@ -342,7 +342,7 @@ let package = Package(
         .binaryTarget(name: "AppConsent", path:"./Dependencies/AppConsentCMP/AppConsent.xcframework"),
 
         // SourcePoint
-        .binaryTarget(name: "ConsentViewController", path: "./Dependencies/SourcePoint/ConsentViewController.xcframework"),
+        .binaryTarget(name: "AATConsentViewController", path: "./Dependencies/SourcePoint/ConsentViewController.xcframework"),
 
         // DisplayIO
         .binaryTarget(name: "DisplayIO", path:"./Dependencies/DisplayIO/DIOSDK.xcframework"),
