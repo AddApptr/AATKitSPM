@@ -77,7 +77,7 @@ let package = Package(
         // AdNetworks supporting SPM
         .package(name: "AppLovinSDK", url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("13.2.0")),
         .package(name: "AppHarbrSDK", url: "https://github.com/GeoEdgeSDK/AppHarbrSDK.git", .exact("1.19.0")),
-        .package(name: "GoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", .exact("12.2.0")),
+        .package(name: "AATGoogleMobileAds", url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", .exact("12.2.0")),
         // same as in https://github.com/googleads/swift-package-manager-google-mobile-ads package file
         .package(name: "GoogleUserMessagingPlatform", url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"4.0.0"),
         .package(name: "RTBSPM", url: "https://github.com/AddApptr/RTBSPM", .exact("1.6.2"))
@@ -108,7 +108,7 @@ let package = Package(
 
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
-                dependencies: [ "AATGoogleAdsAdapter", .product(name: "GoogleMobileAds", package: "GoogleMobileAds")],
+                dependencies: [ "AATGoogleAdsAdapter", .product(name: "GoogleMobileAds", package: "AATGoogleMobileAds")],
                 path: "./Sources/GoogleMobileAdsSources"),
 
             .target(name: "AATKit-AppLovin",
