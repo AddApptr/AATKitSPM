@@ -41,6 +41,7 @@ let package = Package(
         .library(name: "AATKit-Mintegral", targets: ["AATKit-Mintegral"]),
         .library(name: "AATKit-Facebook", targets: ["AATKit-Facebook"]),
         .library(name: "AATKit-DisplayIO", targets: ["AATKit-DisplayIO"]),
+        .library(name: "AATAppNexusAdapter", targets: ["AATAppNexusAdapter"]),
 
 
         // CMPs
