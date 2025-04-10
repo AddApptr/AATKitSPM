@@ -108,7 +108,10 @@ let package = Package(
 
         // MARK - Dependencies Targets
         .target(name: "AATKit-GoogleMobileAds",
-                dependencies: [ "AATGoogleAdsAdapter", .product(name: "GoogleMobileAds", package: "AATGoogleMobileAds")],
+                dependencies: [
+                    "AATGoogleAdsAdapter",
+                    .product(name: "GoogleMobileAds", package: "AATGoogleMobileAds")
+                ],
                 path: "./Sources/GoogleMobileAdsSources"),
 
             .target(name: "AATKit-AppLovin",
@@ -124,7 +127,7 @@ let package = Package(
                     path: "./Sources/AppHarbr"),
 
             .target(name:"AATKit-AppNexus",
-                    dependencies: ["AATAppNexusSDK", "OMSDK_Microsoft", "AATAppNexusAdapter"],
+                    dependencies: ["AATAppNexusSDK", "AATOMSDK_Microsoft", "AATAppNexusAdapter"],
                     path: "./Sources/AppNexusSources"),
 
             .target(name:"AATKit-Amazon",
@@ -312,7 +315,7 @@ let package = Package(
 
         // AppNexusSDK - for future updates, check https://github.com/appnexus/mobile-sdk-ios-spm/blob/main/Package.swift
         .binaryTarget(
-            name: "OMSDK_Microsoft",
+            name: "AATOMSDK_Microsoft",
             url: "https://adsdkprod.azureedge.net/mobile/ios/releases/9.2.1/dynamic/OMSDK_Microsoft.zip",
             checksum: "f0b7cc1c45095a99bcd16e21250610a7614bbdf3d3c99e5f3ee8d762d9fe7dde"
         ),
