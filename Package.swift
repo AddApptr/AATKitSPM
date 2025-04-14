@@ -1,4 +1,4 @@
-// swift-tools-version:5.4
+// swift-tools-version:5.8
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -73,12 +73,12 @@ let package = Package(
 
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("13.2.0")),
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", .exact("12.2.0")),
-        .package(url: "https://github.com/GeoEdgeSDK/AppHarbrSDK.git", .exact("1.19.0")),
-        .package(name: "GoogleUserMessagingPlatform", url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"4.0.0"),
-        .package(url: "https://github.com/AddApptr/RTBSPM.git", .exact("1.6.2")),
-        //        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.1.3")), Conflict in AppLovin dependency
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: Version(13, 2, 0)),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: Version(12, 2, 0)),
+        .package(url: "https://github.com/GeoEdgeSDK/AppHarbrSDK.git", exact: Version(1, 21, 0)),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"4.0.0"),
+        .package(url: "https://github.com/AddApptr/RTBSPM.git", exact: Version(1, 6, 2)),
+//        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.1.3")), Conflict in AppLovin dependency
     ],
     targets: [
         // AATKit target
@@ -98,7 +98,11 @@ let package = Package(
 
         // GooglePartnerBidding
         .target(name:"AATKit-GooglePartnerBidding",
-                dependencies: [ "AATKit-GoogleMobileAds", "AATKit", "AATKit-GraviteRTB", "AATAdMobDSPAdapter"],
+                dependencies: [
+                    .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
+                    "AATKit", "AATKit-GraviteRTB",
+                    "AATAdMobDSPAdapter"
+                ],
                 path: "./Sources/GooglePartnerBiddingSources"),
 
         // MARK - Dependencies Targets
@@ -158,12 +162,21 @@ let package = Package(
                 path: "./Sources/OguryAdsSources"),
 
         .target(name:"AATKit-GoogleCMP",
-                dependencies: [.product(name: "GoogleUserMessagingPlatform", package: "GoogleUserMessagingPlatform"), "AATGoogleCMPAdapter"],
+                dependencies: [
+                    .product(name: "GoogleUserMessagingPlatform", package: "swift-package-manager-google-user-messaging-platform"),
+                    .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
+                    "AATGoogleCMPAdapter"
+                ],
                 path: "./Sources/GoogleCMPSources"),
 
 
         .target(name:"AATKit-Facebook",
-                dependencies: ["AATKit-GoogleMobileAds", "AATFacebookAdapter", "AATFBAudienceNetwork", "AATMetaAdapter"],
+                dependencies: [
+                    .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
+                    "AATFacebookAdapter",
+                    "AATFBAudienceNetwork",
+                    "AATMetaAdapter"
+                ],
                 path: "./Sources/FacebookSources"),
 
         .target(name:"AATKit-Smaato",
