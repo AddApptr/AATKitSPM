@@ -251,9 +251,7 @@ let package = Package(
                     "AATMTGSDKNewInterstitial",
                     "AATMTGSDKBidding",
                     "AATMTGSDKReward",
-                    "AATMTGSDKCNAddition",
                     "AATMTGSDKSplash",
-                    "AATMTGSDKInterstitial",
                     "AATMTGSDKInterstitialVideo",
                     "AATMintegralAdapter"
                 ],
@@ -366,9 +364,7 @@ let package = Package(
         .binaryTarget(name: "AATMTGSDKNewInterstitial", path:"./Dependencies/Mintegral/MTGSDKNewInterstitial.xcframework"),
         .binaryTarget(name: "AATMTGSDKBidding", path:"./Dependencies/Mintegral/MTGSDKBidding.xcframework"),
         .binaryTarget(name: "AATMTGSDKReward", path:"./Dependencies/Mintegral/MTGSDKReward.xcframework"),
-        .binaryTarget(name: "AATMTGSDKCNAddition", path:"./Dependencies/Mintegral/MTGSDKCNAddition.xcframework"),
         .binaryTarget(name: "AATMTGSDKSplash", path:"./Dependencies/Mintegral/MTGSDKSplash.xcframework"),
-        .binaryTarget(name: "AATMTGSDKInterstitial", path:"./Dependencies/Mintegral/MTGSDKInterstitial.xcframework"),
         .binaryTarget(name: "AATMTGSDKInterstitialVideo", path:"./Dependencies/Mintegral/MTGSDKInterstitialVideo.xcframework"),
 
         // Meta
