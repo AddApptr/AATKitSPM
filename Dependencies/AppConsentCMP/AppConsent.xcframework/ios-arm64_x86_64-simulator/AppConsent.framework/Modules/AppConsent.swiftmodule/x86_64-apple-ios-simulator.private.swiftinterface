@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AppConsent
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AdSupport
 import AppTrackingTransparency
 import SystemConfiguration.CaptiveNetwork
@@ -67,6 +68,24 @@ public struct ACColor : Swift.Equatable {
     get
   }
   public var buttonTextColor: UIKit.UIColor? {
+    get
+  }
+  public var partnersListButtonTextColor: UIKit.UIColor? {
+    get
+  }
+  public var partnersListButtonBackgroundColor: UIKit.UIColor? {
+    get
+  }
+  public var partnersListButtonBorderColor: UIKit.UIColor? {
+    get
+  }
+  public var buttonFocusBorderColor: UIKit.UIColor? {
+    get
+  }
+  public var buttonFocusBackgroundColor: UIKit.UIColor? {
+    get
+  }
+  public var buttonFocusTextColor: UIKit.UIColor? {
     get
   }
   public var buttonSelectedColor: UIKit.UIColor? {
@@ -377,6 +396,9 @@ public struct ACText : Swift.Equatable {
     get
   }
   public var buttonDenyAll: AppConsent.ACTranslate? {
+    get
+  }
+  public var buttonListPartners: AppConsent.ACTranslate? {
     get
   }
   public var buttonKnowMore: AppConsent.ACTranslate? {

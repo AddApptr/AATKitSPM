@@ -102,6 +102,10 @@
 			</array>
 		</dict>
 	</array>
+	<key>NSPrivacyTrackingDomains</key>
+	<array>
+		<string>usertracking.appsrv.display.io</string>
+	</array>
 	<key>NSPrivacyTracking</key>
 	<true/>
 </dict>
