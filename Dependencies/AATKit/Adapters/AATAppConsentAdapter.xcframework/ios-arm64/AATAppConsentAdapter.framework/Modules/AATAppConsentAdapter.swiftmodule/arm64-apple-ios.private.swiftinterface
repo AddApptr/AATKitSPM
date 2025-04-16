@@ -18,7 +18,6 @@ import _SwiftConcurrencyShims
   @objc public func start(_ source: Swift.String)
   @objc public func setDelegate(_ source: Swift.String, _ delegate: any AATKit.AATCMPDelegate)
   @objc public func reload(_ source: Swift.String, _ viewController: UIKit.UIViewController)
-  @objc public func getConsentForNetwork(_ source: Swift.String, _ network: AATKit.AATAdNetwork) -> AATKit.NonIABConsent
   @objc public func showIfNeeded(_ source: Swift.String, _ viewController: UIKit.UIViewController)
   @objc public func editConsent(_ source: Swift.String, _ viewController: UIKit.UIViewController)
   @objc override dynamic public var description: Swift.String {

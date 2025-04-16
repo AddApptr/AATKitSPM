@@ -311,43 +311,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "getConsentForNetwork",
-            "printedName": "getConsentForNetwork(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NonIABConsent",
-                "printedName": "AATKit.NonIABConsent",
-                "usr": "c:@M@AATKit@E@NonIABConsent"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AATAdNetwork",
-                "printedName": "AATKit.AATAdNetwork",
-                "usr": "c:@M@AATKit@E@AATAdNetwork"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@AATSourcePointCMPAdapter@objc(cs)AATCMPSourcepoint(im)getConsentForNetwork::",
-            "mangledName": "$s24AATSourcePointCMPAdapter17AATCMPSourcepointC20getConsentForNetworky6AATKit13NonIABConsentOSS_AE05AATAdH0OtF",
-            "moduleName": "AATSourcePointCMPAdapter",
-            "objc_name": "getConsentForNetwork::",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Var",
             "name": "description",
             "printedName": "description",
@@ -732,14 +695,14 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
-      "offset": 686,
+      "offset": 641,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATSourcePointCMPAdapter\/SourcePointCMP\/AATCMPSourcepoint.swift",
       "kind": "StringLiteral",
-      "offset": 7964,
+      "offset": 6519,
       "length": 44,
       "value": "\"AATSourcePointCMPAdapter.AATCMPSourcepoint\""
     }

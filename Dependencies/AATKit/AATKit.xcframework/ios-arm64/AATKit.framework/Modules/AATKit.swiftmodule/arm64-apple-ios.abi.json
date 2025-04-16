@@ -5798,43 +5798,6 @@
           },
           {
             "kind": "Function",
-            "name": "getConsentForNetwork",
-            "printedName": "getConsentForNetwork(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NonIABConsent",
-                "printedName": "AATKit.NonIABConsent",
-                "usr": "c:@M@AATKit@E@NonIABConsent"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AATAdNetwork",
-                "printedName": "AATKit.AATAdNetwork",
-                "usr": "c:@M@AATKit@E@AATAdNetwork"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AATKit@objc(pl)AATCMPProtocol(im)getConsentForNetwork::",
-            "mangledName": "$s6AATKit14AATCMPProtocolP20getConsentForNetworkyAA13NonIABConsentOSS_AA05AATAdF0OtF",
-            "moduleName": "AATKit",
-            "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATCMPProtocol>",
-            "sugared_genericSig": "<Self where Self : AATKit.AATCMPProtocol>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "showIfNeeded",
             "printedName": "showIfNeeded(_:_:)",
             "children": [
@@ -27503,33 +27466,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Function",
-            "name": "updateConsent",
-            "printedName": "updateConsent(isEnabled:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6AATKit26AATPubNativeDriverProtocolP13updateConsent9isEnabledySb_tF",
-            "mangledName": "$s6AATKit26AATPubNativeDriverProtocolP13updateConsent9isEnabledySb_tF",
-            "moduleName": "AATKit",
-            "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATPubNativeDriverProtocol>",
-            "sugared_genericSig": "<Self where Self : AATKit.AATPubNativeDriverProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -57638,111 +57574,9 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AATGoogleNonIABVendorsHandler",
-        "printedName": "AATGoogleNonIABVendorsHandler",
+        "name": "AATConsentVendorsHandler",
+        "printedName": "AATConsentVendorsHandler",
         "children": [
-          {
-            "kind": "Function",
-            "name": "getEnabledNonIABVendorsList",
-            "printedName": "getEnabledNonIABVendorsList()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6AATKit29AATGoogleNonIABVendorsHandlerC010getEnabledcD4ListSaySSGSgyFZ",
-            "mangledName": "$s6AATKit29AATGoogleNonIABVendorsHandlerC010getEnabledcD4ListSaySSGSgyFZ",
-            "moduleName": "AATKit",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getConsentForNonIABNetwork",
-            "printedName": "getConsentForNonIABNetwork(_:cmpSource:network:enabledNonIABVendors:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NonIABConsent",
-                "printedName": "AATKit.NonIABConsent",
-                "usr": "c:@M@AATKit@E@NonIABConsent"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AATAdNetwork",
-                "printedName": "AATKit.AATAdNetwork",
-                "usr": "c:@M@AATKit@E@AATAdNetwork"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6AATKit29AATGoogleNonIABVendorsHandlerC013getConsentForC10IABNetwork_9cmpSource7network07enabledcD0AA0C10IABConsentOSS_SSAA12AATAdNetworkOSaySSGSgtFZ",
-            "mangledName": "$s6AATKit29AATGoogleNonIABVendorsHandlerC013getConsentForC10IABNetwork_9cmpSource7network07enabledcD0AA0C10IABConsentOSS_SSAA12AATAdNetworkOSaySSGSgtFZ",
-            "moduleName": "AATKit",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
           {
             "kind": "Function",
             "name": "readConsentStateFromUserDefaults",
@@ -57756,8 +57590,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6AATKit29AATGoogleNonIABVendorsHandlerC32readConsentStateFromUserDefaultsAA010AATManagedgH0OyFZ",
-            "mangledName": "$s6AATKit29AATGoogleNonIABVendorsHandlerC32readConsentStateFromUserDefaultsAA010AATManagedgH0OyFZ",
+            "usr": "s:6AATKit24AATConsentVendorsHandlerC32readConsentStateFromUserDefaultsAA010AATManagedfG0OyFZ",
+            "mangledName": "$s6AATKit24AATConsentVendorsHandlerC32readConsentStateFromUserDefaultsAA010AATManagedfG0OyFZ",
             "moduleName": "AATKit",
             "static": true,
             "declAttributes": [
@@ -57768,12 +57602,11 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:6AATKit29AATGoogleNonIABVendorsHandlerC",
-        "mangledName": "$s6AATKit29AATGoogleNonIABVendorsHandlerC",
+        "usr": "s:6AATKit24AATConsentVendorsHandlerC",
+        "mangledName": "$s6AATKit24AATConsentVendorsHandlerC",
         "moduleName": "AATKit",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -64644,28 +64477,28 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATDefaultConsent.swift",
       "kind": "StringLiteral",
-      "offset": 871,
+      "offset": 765,
       "length": 146,
       "value": "\"AATDefaultConsent {\n    \""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATDefaultConsent.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 838,
       "length": 22,
       "value": "\"Consent string found\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATDefaultConsent.swift",
       "kind": "StringLiteral",
-      "offset": 969,
+      "offset": 863,
       "length": 25,
       "value": "\"No consent string found\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/AATDefaultConsent.swift",
       "kind": "StringLiteral",
-      "offset": 995,
+      "offset": 889,
       "length": 1,
       "value": "\"\n}\""
     },
@@ -65612,7 +65445,7 @@
       "kind": "StringLiteral",
       "offset": 212,
       "length": 8,
-      "value": "\"3.12.3\""
+      "value": "\"3.12.4\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
@@ -65708,35 +65541,35 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATPubnativeDriver.swift",
       "kind": "StringLiteral",
-      "offset": 476,
+      "offset": 436,
       "length": 41,
       "value": "\"AATPubNativeAdapter.AATPubNativeManager\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATPubnativeDriver.swift",
       "kind": "StringLiteral",
-      "offset": 554,
+      "offset": 514,
       "length": 40,
       "value": "\"AATPubNativeAdapter.AATPubNativeBanner\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATPubnativeDriver.swift",
       "kind": "StringLiteral",
-      "offset": 633,
+      "offset": 593,
       "length": 42,
       "value": "\"AATPubNativeAdapter.AATPubNativeNativeAd\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATPubnativeDriver.swift",
       "kind": "StringLiteral",
-      "offset": 716,
+      "offset": 676,
       "length": 44,
       "value": "\"AATPubNativeAdapter.AATPubNativeFullscreen\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATPubnativeDriver.swift",
       "kind": "StringLiteral",
-      "offset": 799,
+      "offset": 759,
       "length": 42,
       "value": "\"AATPubNativeAdapter.AATPubNativeRewarded\""
     },
@@ -67388,42 +67221,42 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
-      "offset": 8932,
+      "offset": 8618,
       "length": 17,
       "value": "\"ManagedConsent{\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
-      "offset": 9004,
+      "offset": 8690,
       "length": 15,
       "value": "\"\ncmp= \""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
-      "offset": 9018,
+      "offset": 8704,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
-      "offset": 9094,
+      "offset": 8780,
       "length": 25,
       "value": "\"\ndelegate= \""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
-      "offset": 9118,
+      "offset": 8804,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Consent\/ManagedConsent\/AATManagedConsent.swift",
       "kind": "StringLiteral",
-      "offset": 9153,
+      "offset": 8839,
       "length": 5,
       "value": "\"\n}\""
     },

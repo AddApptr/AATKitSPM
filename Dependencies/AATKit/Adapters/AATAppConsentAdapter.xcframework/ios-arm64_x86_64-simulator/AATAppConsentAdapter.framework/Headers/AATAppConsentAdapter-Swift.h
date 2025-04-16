@@ -324,7 +324,6 @@ SWIFT_CLASS("_TtC20AATAppConsentAdapter16AATCMPAppConsent")
 - (void)start:(NSString * _Nonnull)source;
 - (void)setDelegate:(NSString * _Nonnull)source :(id <AATCMPDelegate> _Nonnull)delegate;
 - (void)reload:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
-- (enum NonIABConsent)getConsentForNetwork:(NSString * _Nonnull)source :(enum AATAdNetwork)network SWIFT_WARN_UNUSED_RESULT;
 - (void)showIfNeeded:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
 - (void)editConsent:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -667,7 +666,6 @@ SWIFT_CLASS("_TtC20AATAppConsentAdapter16AATCMPAppConsent")
 - (void)start:(NSString * _Nonnull)source;
 - (void)setDelegate:(NSString * _Nonnull)source :(id <AATCMPDelegate> _Nonnull)delegate;
 - (void)reload:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
-- (enum NonIABConsent)getConsentForNetwork:(NSString * _Nonnull)source :(enum AATAdNetwork)network SWIFT_WARN_UNUSED_RESULT;
 - (void)showIfNeeded:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
 - (void)editConsent:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;

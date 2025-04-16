@@ -20,7 +20,6 @@ extension AATSourcePointCMPAdapter.AATCMPSourcepoint : AATKit.AATCMPProtocol {
   @objc dynamic public func editConsent(_ source: Swift.String, _ viewController: UIKit.UIViewController)
   @objc dynamic public func setDelegate(_ source: Swift.String, _ delegate: any AATKit.AATCMPDelegate)
   @objc dynamic public func reload(_ source: Swift.String, _ viewController: UIKit.UIViewController)
-  @objc dynamic public func getConsentForNetwork(_ source: Swift.String, _ network: AATKit.AATAdNetwork) -> AATKit.NonIABConsent
   @objc override dynamic public var description: Swift.String {
     @objc get
   }

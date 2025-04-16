@@ -330,43 +330,6 @@
           },
           {
             "kind": "Function",
-            "name": "getConsentForNetwork",
-            "printedName": "getConsentForNetwork(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NonIABConsent",
-                "printedName": "AATKit.NonIABConsent",
-                "usr": "c:@M@AATKit@E@NonIABConsent"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AATAdNetwork",
-                "printedName": "AATKit.AATAdNetwork",
-                "usr": "c:@M@AATKit@E@AATAdNetwork"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@AATGoogleCMPAdapter@objc(cs)AATCMPGoogle(im)getConsentForNetwork::",
-            "mangledName": "$s19AATGoogleCMPAdapter12AATCMPGoogleC20getConsentForNetworky6AATKit13NonIABConsentOSS_AE05AATAdG0OtF",
-            "moduleName": "AATGoogleCMPAdapter",
-            "objc_name": "getConsentForNetwork::",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "reload",
             "printedName": "reload(_:_:)",
             "children": [
@@ -606,7 +569,7 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATGoogleCMPAdapter\/GoogleCMP\/AATCMPGoogle.swift",
       "kind": "StringLiteral",
-      "offset": 8589,
+      "offset": 7554,
       "length": 34,
       "value": "\"AATGoogleCMPAdapter.AATCMPGoogle\""
     }

@@ -320,7 +320,6 @@ SWIFT_CLASS("_TtC19AATGoogleCMPAdapter12AATCMPGoogle")
 @interface AATCMPGoogle (SWIFT_EXTENSION(AATGoogleCMPAdapter))
 - (void)showIfNeeded:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
 - (void)editConsent:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
-- (enum NonIABConsent)getConsentForNetwork:(NSString * _Nonnull)source :(enum AATAdNetwork)network SWIFT_WARN_UNUSED_RESULT;
 - (void)reload:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
 - (void)setDelegate:(NSString * _Nonnull)source :(id <AATCMPDelegate> _Nonnull)delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -656,7 +655,6 @@ SWIFT_CLASS("_TtC19AATGoogleCMPAdapter12AATCMPGoogle")
 @interface AATCMPGoogle (SWIFT_EXTENSION(AATGoogleCMPAdapter))
 - (void)showIfNeeded:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
 - (void)editConsent:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
-- (enum NonIABConsent)getConsentForNetwork:(NSString * _Nonnull)source :(enum AATAdNetwork)network SWIFT_WARN_UNUSED_RESULT;
 - (void)reload:(NSString * _Nonnull)source :(UIViewController * _Nonnull)viewController;
 - (void)setDelegate:(NSString * _Nonnull)source :(id <AATCMPDelegate> _Nonnull)delegate;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;

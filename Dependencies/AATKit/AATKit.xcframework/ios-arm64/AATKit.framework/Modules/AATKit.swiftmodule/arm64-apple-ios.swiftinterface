@@ -157,7 +157,6 @@ public protocol AATFacebookDriverProtocol {
   @objc func start(_ source: Swift.String)
   @objc func setDelegate(_ source: Swift.String, _ delegate: any AATKit.AATCMPDelegate)
   @objc func reload(_ source: Swift.String, _ viewController: UIKit.UIViewController)
-  @objc func getConsentForNetwork(_ source: Swift.String, _ network: AATKit.AATAdNetwork) -> AATKit.NonIABConsent
   @objc func showIfNeeded(_ source: Swift.String, _ viewController: UIKit.UIViewController)
   @objc func editConsent(_ source: Swift.String, _ viewController: UIKit.UIViewController)
 }
@@ -710,7 +709,6 @@ public struct AATAdRequestConfiguration {
 }
 public protocol AATPubNativeDriverProtocol {
   static var shared: Self { get }
-  func updateConsent(isEnabled: Swift.Bool)
   func setIsChildDirected(_ isChildDirected: Swift.Bool)
 }
 @objc @_hasMissingDesignatedInitializers public class AATAbstractAdConfig : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -1410,9 +1408,7 @@ public protocol AATAdMobDSPDriverProtocol {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class AATGoogleNonIABVendorsHandler {
-  public static func getEnabledNonIABVendorsList() -> [Swift.String]?
-  public static func getConsentForNonIABNetwork(_ source: Swift.String, cmpSource: Swift.String, network: AATKit.AATAdNetwork, enabledNonIABVendors: [Swift.String]?) -> AATKit.NonIABConsent
+@_hasMissingDesignatedInitializers public class AATConsentVendorsHandler {
   public static func readConsentStateFromUserDefaults() -> AATKit.AATManagedConsentState
   @objc deinit
 }

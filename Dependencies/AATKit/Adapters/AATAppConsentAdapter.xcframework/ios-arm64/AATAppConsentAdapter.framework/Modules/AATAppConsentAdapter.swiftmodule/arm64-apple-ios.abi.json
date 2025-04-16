@@ -330,41 +330,6 @@
           },
           {
             "kind": "Function",
-            "name": "getConsentForNetwork",
-            "printedName": "getConsentForNetwork(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NonIABConsent",
-                "printedName": "AATKit.NonIABConsent",
-                "usr": "c:@M@AATKit@E@NonIABConsent"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AATAdNetwork",
-                "printedName": "AATKit.AATAdNetwork",
-                "usr": "c:@M@AATKit@E@AATAdNetwork"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AATAppConsentAdapter@objc(cs)AATCMPAppConsent(im)getConsentForNetwork::",
-            "mangledName": "$s20AATAppConsentAdapter09AATCMPAppB0C03getB10ForNetworky6AATKit13NonIABConsentOSS_AE05AATAdG0OtF",
-            "moduleName": "AATAppConsentAdapter",
-            "objc_name": "getConsentForNetwork::",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "showIfNeeded",
             "printedName": "showIfNeeded(_:_:)",
             "children": [
@@ -633,7 +598,7 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/CMPAdapters\/AATAppConsentAdapter\/AATCMPAppConsent.swift",
       "kind": "StringLiteral",
-      "offset": 3530,
+      "offset": 2566,
       "length": 39,
       "value": "\"AATAppConsentAdapter.AATCMPAppConsent\""
     }
