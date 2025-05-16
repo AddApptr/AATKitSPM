@@ -37,7 +37,6 @@ let package = Package(
         .library(name: "AATKit-Unity", targets: ["AATKit-Unity"]),
         .library(name: "AATKit-Vungle", targets: ["AATKit-Vungle"]),
         .library(name: "AATKit-OguryAds", targets: ["AATKit-OgurySdk"]),
-        .library(name: "AATKit-Datonomy", targets: ["AATKit-Datonomy"]),
         .library(name: "AATKit-Mintegral", targets: ["AATKit-Mintegral"]),
         .library(name: "AATKit-Facebook", targets: ["AATKit-Facebook"]),
         .library(name: "AATKit-DisplayIO", targets: ["AATKit-DisplayIO"]),
