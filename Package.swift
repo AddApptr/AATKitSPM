@@ -239,10 +239,6 @@ let package = Package(
                 dependencies: ["AATVungleSDK", "AATVungleAdapter"],
                 path: "./Sources/VungleSources"),
 
-        .target(name:"AATKit-Datonomy",
-                dependencies: ["AATDatonomyKit", "AATDatonomyAdapter"],
-                path: "./Sources/DatonomySources"),
-
         .target(name:"AATKit-Mintegral",
                 dependencies: [
                     "AATMTGSDK",
@@ -342,9 +338,6 @@ let package = Package(
         // Vungle
         .binaryTarget(name: "AATVungleSDK", path: "./Dependencies/Vungle/VungleAdsSDK.xcframework"),
 
-        // Datonomy
-        .binaryTarget(name: "AATDatonomyKit", path: "./Dependencies/Datonomy/DatonomyKit.xcframework"),
-
         // AppNexusSDK - for future updates, check https://github.com/appnexus/mobile-sdk-ios-spm/blob/main/Package.swift
         .binaryTarget(
             name: "AATOMSDK_Microsoft",
@@ -405,7 +398,6 @@ let package = Package(
         .binaryTarget(name: "AATUnityAdapter", path: "./Dependencies/AATKit/Adapters/AATUnityAdapter.xcframework"),
         .binaryTarget(name: "AATVungleAdapter", path: "./Dependencies/AATKit/Adapters/AATVungleAdapter.xcframework"),
         .binaryTarget(name: "AATYOCAdapter", path: "./Dependencies/AATKit/Adapters/AATYOCAdapter.xcframework"),
-        .binaryTarget(name: "AATDatonomyAdapter", path: "./Dependencies/AATKit/Adapters/AATDatonomyAdapter.xcframework"),
         .binaryTarget(name: "AATMintegralAdapter", path: "./Dependencies/AATKit/Adapters/AATMintegralAdapter.xcframework"),
         .binaryTarget(name: "AATSourcePointCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATSourcePointCMPAdapter.xcframework"),
         .binaryTarget(name: "AATAppConsentAdapter", path: "./Dependencies/AATKit/Adapters/AATAppConsentAdapter.xcframework"),
