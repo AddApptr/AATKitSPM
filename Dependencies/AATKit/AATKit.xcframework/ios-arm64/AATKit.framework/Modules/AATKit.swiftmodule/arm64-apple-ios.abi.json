@@ -31792,7 +31792,8 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -31953,7 +31954,8 @@
               "HasInitialValue",
               "HasStorage",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -32185,6 +32187,166 @@
           },
           {
             "kind": "Var",
+            "name": "networkKeyReplacements",
+            "printedName": "networkKeyReplacements",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AATKit@objc(cs)AATBannerRequest(py)networkKeyReplacements",
+            "mangledName": "$s6AATKit16AATBannerRequestC22networkKeyReplacementsSDyS2SGSgvp",
+            "moduleName": "AATKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AATKit@objc(cs)AATBannerRequest(im)networkKeyReplacements",
+                "mangledName": "$s6AATKit16AATBannerRequestC22networkKeyReplacementsSDyS2SGSgvg",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AATKit@objc(cs)AATBannerRequest(im)setNetworkKeyReplacements:",
+                "mangledName": "$s6AATKit16AATBannerRequestC22networkKeyReplacementsSDyS2SGSgvs",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6AATKit16AATBannerRequestC22networkKeyReplacementsSDyS2SGSgvM",
+                "mangledName": "$s6AATKit16AATBannerRequestC22networkKeyReplacementsSDyS2SGSgvM",
+                "moduleName": "AATKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
             "children": [
@@ -32203,7 +32365,8 @@
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "ownership": 1,
             "hasStorage": true,
@@ -32326,7 +32489,8 @@
             "objc_name": "initWithDelegate:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -43980,6 +44144,33 @@
             "declKind": "Func",
             "usr": "s:6AATKit27AATGraviteRTBDriverProtocolP17setUseGeoLocationyySbF",
             "mangledName": "$s6AATKit27AATGraviteRTBDriverProtocolP17setUseGeoLocationyySbF",
+            "moduleName": "AATKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATGraviteRTBDriverProtocol>",
+            "sugared_genericSig": "<Self where Self : AATKit.AATGraviteRTBDriverProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "muteVideoAd",
+            "printedName": "muteVideoAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6AATKit27AATGraviteRTBDriverProtocolP11muteVideoAdyySbF",
+            "mangledName": "$s6AATKit27AATGraviteRTBDriverProtocolP11muteVideoAdyySbF",
             "moduleName": "AATKit",
             "genericSig": "<τ_0_0 where τ_0_0 : AATKit.AATGraviteRTBDriverProtocol>",
             "sugared_genericSig": "<Self where Self : AATKit.AATGraviteRTBDriverProtocol>",
@@ -65331,21 +65522,21 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Ad\/AATNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 9192,
+      "offset": 9228,
       "length": 36,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Ad\/AATNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 9210,
+      "offset": 9246,
       "length": 1,
       "value": "\", type: \""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Ad\/AATNativeAd.swift",
       "kind": "StringLiteral",
-      "offset": 9227,
+      "offset": 9263,
       "length": 1,
       "value": "\"\""
     },
@@ -65444,34 +65635,34 @@
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
       "kind": "StringLiteral",
       "offset": 212,
-      "length": 8,
-      "value": "\"3.12.6\""
+      "length": 14,
+      "value": "\"3.13.0-beta2\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
       "kind": "StringLiteral",
-      "offset": 278,
+      "offset": 284,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
       "kind": "StringLiteral",
-      "offset": 323,
+      "offset": 329,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
       "kind": "StringLiteral",
-      "offset": 387,
+      "offset": 393,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/HelpersAndExtensions\/AATVersion.swift",
       "kind": "StringLiteral",
-      "offset": 421,
+      "offset": 427,
       "length": 2,
       "value": "\"\""
     },
@@ -65975,56 +66166,56 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Banner\/AATBannerRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 474,
+      "offset": 973,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Banner\/AATBannerRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 499,
+      "offset": 998,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Banner\/AATBannerRequest.swift",
       "kind": "StringLiteral",
-      "offset": 975,
+      "offset": 1534,
       "length": 82,
       "value": "\"Passed empty set of allowed banner sizes. No ad will be loaded for this request!\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Banner\/AATBannerRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1972,
+      "offset": 2531,
       "length": 331,
       "value": "\"BannerRequest{\nbannerSizes = \""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Banner\/AATBannerRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2063,
+      "offset": 2622,
       "length": 8,
       "value": "\"\ndelegate= \""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Banner\/AATBannerRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2117,
+      "offset": 2676,
       "length": 20,
       "value": "\"\ntargetingInformation = \""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Banner\/AATBannerRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2196,
+      "offset": 2755,
       "length": 19,
       "value": "\"\ncontentTargetingUrl = \""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Banner\/AATBannerRequest.swift",
       "kind": "StringLiteral",
-      "offset": 2273,
+      "offset": 2832,
       "length": 1,
       "value": "\"\n}\""
     },
@@ -67263,28 +67454,35 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATGraviteRTBDriver.swift",
       "kind": "StringLiteral",
-      "offset": 624,
+      "offset": 662,
       "length": 43,
       "value": "\"AATGraviteRTBAdapter.AATGraviteRTBManager\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATGraviteRTBDriver.swift",
       "kind": "StringLiteral",
-      "offset": 704,
+      "offset": 742,
       "length": 42,
       "value": "\"AATGraviteRTBAdapter.AATGraviteRTBBanner\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATGraviteRTBDriver.swift",
       "kind": "StringLiteral",
-      "offset": 787,
+      "offset": 825,
       "length": 46,
       "value": "\"AATGraviteRTBAdapter.AATGraviteRTBFullscreen\""
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATGraviteRTBDriver.swift",
       "kind": "StringLiteral",
-      "offset": 908,
+      "offset": 910,
+      "length": 44,
+      "value": "\"AATGraviteRTBAdapter.AATGraviteRTBRewarded\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Drivers\/AATGraviteRTBDriver.swift",
+      "kind": "StringLiteral",
+      "offset": 993,
       "length": 44,
       "value": "\"AATGraviteRTBAdapter.AATGraviteRTBNativeAd\""
     },
@@ -67991,42 +68189,49 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATViewableImpressionTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 380,
+      "offset": 412,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATViewableImpressionTracker.swift",
       "kind": "FloatLiteral",
-      "offset": 428,
+      "offset": 460,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATViewableImpressionTracker.swift",
       "kind": "IntegerLiteral",
-      "offset": 476,
+      "offset": 508,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATViewableImpressionTracker.swift",
       "kind": "IntegerLiteral",
-      "offset": 714,
+      "offset": 746,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATViewableImpressionTracker.swift",
       "kind": "BooleanLiteral",
-      "offset": 745,
+      "offset": 785,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATViewableImpressionTracker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 820,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Module\/AATViewableImpressionTracker.swift",
       "kind": "IntegerLiteral",
-      "offset": 784,
+      "offset": 859,
       "length": 1,
       "value": "0"
     },
@@ -68145,7 +68350,7 @@
     {
       "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AATKit\/Placements\/Banner\/Infeed\/AATBannerPlacementImplementation.swift",
       "kind": "BooleanLiteral",
-      "offset": 11058,
+      "offset": 11242,
       "length": 5,
       "value": "false"
     },

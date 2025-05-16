@@ -78,6 +78,23 @@
         "printedName": "AppNexusSDK",
         "declKind": "Import",
         "moduleName": "AATAppNexusAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATAppNexusAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppNexusSDK",
+        "printedName": "AppNexusSDK",
+        "declKind": "Import",
+        "moduleName": "AATAppNexusAdapter"
       }
     ],
     "json_format_version": 8

@@ -978,12 +978,21 @@ SWIFT_CLASS("_TtC6AATKit29AATBannerPlacementWrapperView")
 /// The banner request that will be used by the infeed banner placement
 SWIFT_CLASS("_TtC6AATKit16AATBannerRequest")
 @interface AATBannerRequest : NSObject
+/// The targeting information for this request.
 @property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable targetingInformation;
+/// The content targeting url for this request
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+/// The dictionary of network key replacements for this request, allowing to replace macros defined in ad keys with actual values.
+/// Please contact your Account Manager before using this feature.
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable networkKeyReplacements;
+/// Banner request delegate <code>AATBannerRequestDelegate</code>
 @property (nonatomic, weak) id <AATBannerRequestDelegate> _Nullable delegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Constructs a new banner request
+/// \param delegate an instance conforming to <code>AATBannerRequestDelegate</code>
+///
 - (nonnull instancetype)initWithDelegate:(id <AATBannerRequestDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 /// Update request sizes
 /// \param sizes a set of <code>AATBannerSize</code>
