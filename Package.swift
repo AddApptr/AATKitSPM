@@ -41,6 +41,7 @@ let package = Package(
         .library(name: "AATKit-Facebook", targets: ["AATKit-Facebook"]),
         .library(name: "AATKit-DisplayIO", targets: ["AATKit-DisplayIO"]),
         .library(name: "AATAppNexusAdapter", targets: ["AATAppNexusAdapter"]),
+        .library(name: "AATAmazonAdapter", targets: ["AATAmazonAdapter"]),
 
         // CMPs
         .library(name: "AATKit-GoogleCMP", targets: ["AATKit-GoogleCMP"]),
@@ -378,6 +379,7 @@ let package = Package(
         .binaryTarget(name: "AATAppLovinMaxAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinMaxAdapter.xcframework"),
         .binaryTarget(name: "AATAppHarbrAdapter", path: "./Dependencies/AATKit/Adapters/AATAppHarbrAdapter.xcframework"),
         .binaryTarget(name: "AATAppNexusAdapter", path: "./Dependencies/AATKit/Adapters/AATAppNexusAdapter.xcframework"),
+        .binaryTarget(name: "AATAmazonAdapter", path: "./Dependencies/AATKit/Adapters/AATAmazonAdapter.xcframework"),
         .binaryTarget(name: "AATCriteoAdapter", path: "./Dependencies/AATKit/Adapters/AATCriteoAdapter.xcframework"),
         .binaryTarget(name: "AATDFPPrebidAdapter", path: "./Dependencies/AATKit/Adapters/AATDFPPrebidAdapter.xcframework"),
         .binaryTarget(name: "AATFacebookAdapter", path: "./Dependencies/AATKit/Adapters/AATFacebookAdapter.xcframework"),
