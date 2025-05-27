@@ -17,7 +17,6 @@ let package = Package(
         // Dependencies
         .library(name: "AATKit-GoogleMobileAds", targets: ["AATKit-GoogleMobileAds"]),
         .library(name: "AATKit-AppLovin", targets: ["AATKit-AppLovin"]),
-        .library(name: "AATKit-AppLovinMax", targets: ["AATKit-AppLovinMax"]),
         .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-AppHarbr", targets: ["AATKit-AppHarbr"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
@@ -51,7 +50,6 @@ let package = Package(
         // Default Dependencies
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
                                                    "AATKit-AppLovin",
-                                                   "AATKit-AppLovinMax",
                                                    "AATKit-GraviteRTB",
                                                    "AATKit-Smaato",
                                                    "AATKit-SmartAd",
@@ -119,13 +117,6 @@ let package = Package(
                     "AATAppLovinAdapter"
                 ],
                 path: "./Sources/AppLovinSources"),
-
-        .target(name: "AATKit-AppLovinMax",
-                dependencies: [
-                    .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
-                    "AATAppLovinMaxAdapter"
-                ],
-                path: "./Sources/AppLovinMaxSources"),
 
         .target(name:"AATKit-AppHarbr",
                 dependencies: [
@@ -376,7 +367,6 @@ let package = Package(
         // AATKit Adapters
         .binaryTarget(name: "AATAmazonAdapter", path: "./Dependencies/AATKit/Adapters/AATAmazonAdapter.xcframework"),
         .binaryTarget(name: "AATAppLovinAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinAdapter.xcframework"),
-        .binaryTarget(name: "AATAppLovinMaxAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinMaxAdapter.xcframework"),
         .binaryTarget(name: "AATAppHarbrAdapter", path: "./Dependencies/AATKit/Adapters/AATAppHarbrAdapter.xcframework"),
         .binaryTarget(name: "AATAppNexusAdapter", path: "./Dependencies/AATKit/Adapters/AATAppNexusAdapter.xcframework"),
         .binaryTarget(name: "AATCriteoAdapter", path: "./Dependencies/AATKit/Adapters/AATCriteoAdapter.xcframework"),
