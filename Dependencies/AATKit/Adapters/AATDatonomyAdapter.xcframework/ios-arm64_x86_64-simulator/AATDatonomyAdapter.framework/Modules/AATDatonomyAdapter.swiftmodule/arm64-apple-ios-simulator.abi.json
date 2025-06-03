@@ -16,17 +16,13 @@
       },
       {
         "kind": "Import",
-        "name": "DatonomyKit",
-        "printedName": "DatonomyKit",
-        "declKind": "Import",
-        "moduleName": "AATDatonomyAdapter"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "AATDatonomyAdapter"
+        "moduleName": "AATDatonomyAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8

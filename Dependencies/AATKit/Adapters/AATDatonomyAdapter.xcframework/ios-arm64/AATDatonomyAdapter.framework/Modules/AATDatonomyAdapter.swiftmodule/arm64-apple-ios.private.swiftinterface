@@ -4,7 +4,6 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import AATDatonomyAdapter
 import AATKit
-import DatonomyKit
 import Foundation
 import Swift
 import _Concurrency
