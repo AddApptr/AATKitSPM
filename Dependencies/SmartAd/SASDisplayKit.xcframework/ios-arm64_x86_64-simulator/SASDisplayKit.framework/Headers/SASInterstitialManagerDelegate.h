@@ -1,149 +1,93 @@
 //
 //  SASInterstitialManagerDelegate.h
-//  SmartAdServer
+//  SASDisplayKit
 //
-//  Created by Loïc GIRON DIT METAZ on 26/07/2018.
-//  Copyright © 2018 Smart AdServer. All rights reserved.
+//  Created by Loïc GIRON DIT METAZ on 20/07/2022.
+//  Copyright © 2022 Smart AdServer. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <AVFoundation/AVFoundation.h>
-#import <UIKit/UIKit.h>
-#import <SASDisplayKit/SASVideoEvent.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SASInterstitialManager, SASAd;
+@class SASInterstitialManager;
+@class SASAdInfo;
 
 /**
- Protocol that must be implemented by SASInterstitialManager delegate.
+ SASInterstitialManager delegate.
  */
 @protocol SASInterstitialManagerDelegate <NSObject>
+
+@required
+
+/**
+ Called when the interstitial manager has loaded an ad successfully.
+ 
+ The ad can be shown using the 'showFromViewController:' method.
+ 
+ @param interstitialManager The instance of SASInterstitialManager calling the delegate.
+ @param adInfo The instance of SASAdInfo related to the loaded ad.
+ */
+- (void)interstitialManager:(SASInterstitialManager *)interstitialManager didLoadWithInfo:(SASAdInfo *)adInfo;
+
+/**
+ Called when the interstitial manager fails to load the ad.
+ 
+ @param interstitialManager The instance of SASInterstitialManager calling the delegate.
+ @param error The error preventing the interstitial from being loaded.
+ */
+- (void)interstitialManager:(SASInterstitialManager *)interstitialManager didFailToLoadWithError:(NSError *)error NS_SWIFT_NAME( interstitialManager(_:didFailToLoad:) );
 
 @optional
 
 /**
- Notifies the delegate that an ad has been loaded and is ready to be displayed.
+ Called when the interstitial manager has displayed the interstitial (as a fullscreen modal view controller).
  
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @param ad The ad that has been loaded.
+ @param interstitialManager The instance of SASInterstitialManager calling the delegate.
  */
-- (void)interstitialManager:(SASInterstitialManager *)manager didLoadAd:(SASAd *)ad;
+- (void)interstitialManagerDidShow:(SASInterstitialManager *)interstitialManager;
 
 /**
- Notifies the delegate that the last ad call has failed. Check the error for more information.
+ Called when the interstitial manager did fail to show the interstitial.
  
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @param error The error that occurred during the ad loading.
+ @param interstitialManager The instance of SASInterstitialManager calling the delegate.
+ @param error The error preventing the interstitial from being loaded.
  */
-- (void)interstitialManager:(SASInterstitialManager *)manager didFailToLoadWithError:(NSError *)error;
+- (void)interstitialManager:(SASInterstitialManager *)interstitialManager didFailToShowWithError:(NSError *)error NS_SWIFT_NAME( interstitialManager(_:didFailToShow:) );
 
 /**
- Notifies the delegate that the ad cannot be displayed. Check the error for more information.
+ Called when the fullscreen modal view controller is closed.
  
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @param error The error that occurred when showing the ad.
+ @param interstitialManager The instance of SASInterstitialManager calling the delegate.
  */
-- (void)interstitialManager:(SASInterstitialManager *)manager didFailToShowWithError:(NSError *)error;
+- (void)interstitialManagerDidClose:(SASInterstitialManager *)interstitialManager;
 
 /**
- Notifies the delegate that the ad has been displayed.
+ Called when a valid click is registered on the interstitial ad.
  
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @param viewController The view controller used to display the ad.
+ @param interstitialManager The instance of SASInterstitialManager calling the delegate.
  */
-- (void)interstitialManager:(SASInterstitialManager *)manager didAppearFromViewController:(UIViewController *)viewController;
+- (void)interstitialManagerClicked:(SASInterstitialManager *)interstitialManager;
 
 /**
- Notifies the delegate that the ad has been closed.
+ Called when the interstitial starts audio playback.
  
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @param viewController The view controller used to display the ad.
+ @note Implement this method if your app also plays audio: pause your player while the ad is playing its own
+ audio and start it back when the ad is finished.
+ 
+ @param interstitialManager The instance of SASInterstitialManager playing the audio.
  */
-- (void)interstitialManager:(SASInterstitialManager *)manager didDisappearFromViewController:(UIViewController *)viewController;
+- (void)interstitialManagerWillStartAudioPlayback:(SASInterstitialManager *)interstitialManager;
 
 /**
- Notifies the delegate that a video event has been sent by the video player.
+ Called when the interstitial stops audio playback.
  
- @note This method will only be called in case of video ad.
+ @note Implement this method if your app also plays audio: pause your player while the ad is playing its own
+ audio and start it back when the ad is finished.
  
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @param videoEvent The video event sent by the video player.
+ @param interstitialManager The instance of SASInterstitialManager stoping audio playback.
  */
-- (void)interstitialManager:(SASInterstitialManager *)manager didSendVideoEvent:(SASVideoEvent)videoEvent;
-
-/**
- Returns whether the SDK should handle the opening of a given click URL.
- 
- @note Click counting will happen no matter if the URL is handled by the SDK or by your application.
- 
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @param URL The URL that must be handled.
- @return YES if the URL must be handled by the SDK, NO if your application will handle the URL itself.
- 
- @note This method is deprecated and will be removed in future releases. Publishers should not interfere client-side with clicks to avoid counting issues. However, if you still want to be warned is case of click, please implement interstitialManager:didClickWithURL: delegate method.
- */
-- (BOOL)interstitialManager:(SASInterstitialManager *)manager shouldHandleURL:(NSURL *)URL __deprecated;
-
-/**
- Notifies the delegate when a click is performed on the interstitial ad.
- 
- @param manager The instance of SASInterstitialManager
- @param URL The URL that is called.
- */
-- (void)interstitialManager:(SASInterstitialManager *)manager didClickWithURL:(NSURL *)URL;
-
-/**
- Notifies the delegate that a message has been sent by the MRAID creative.
- 
- MRAID creatives can send messages using mraid.sasSendMessage("message"). These messages are sent to the interstitial manager delegate by the SDK.
- Please note that this method IS NOT PART of MRAID 2.0 specification.
- 
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @param message The message sent by the creative.
- */
-- (void)interstitialManager:(SASInterstitialManager *)manager didReceiveMessage:(NSString *)message;
-
-/**
- Notifies the delegate that a click modal view controller will be open.
- 
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @param viewController The view controller used to display the ad.
- */
-- (void)interstitialManager:(SASInterstitialManager *)manager willPresentModalViewFromViewController:(UIViewController *)viewController;
-
-/**
- Notifies the delegate that a click modal view controller will be closed.
- 
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @param viewController The view controller used to display the ad.
- */
-- (void)interstitialManager:(SASInterstitialManager *)manager willDismissModalViewFromViewController:(UIViewController *)viewController;
-
-/**
- Returns whether the SDK should handle the audio session.
- 
- The SDK might want to handle the audio session when playing some video ads to control how the ad sound will
- interact with other apps or to completely mute the ad.
- 
- @param manager The instance of SASInterstitialManager that called this delegate method.
- @return YES if the SDK can handle the audio session, NO if your application can handle the session itself.
- */
-- (BOOL)interstitialManagerShouldHandleAudioSession:(SASInterstitialManager *)manager;
-
-/**
- Notifies the delegate that the ad will start playing audio.
- 
- @param manager The instance of SASInterstitialManager that called this delegate method.
- */
-- (void)interstitialManagerWillPlayAudio:(SASInterstitialManager *)manager;
-
-/**
- Notifies the delegate that the ad will stop playing audio.
- 
- @param manager The instance of SASInterstitialManager that called this delegate method.
- */
-- (void)interstitialManagerDidFinishPlayingAudio:(SASInterstitialManager *)manager;
+- (void)interstitialManagerDidStopAudioPlayback:(SASInterstitialManager *)interstitialManager;
 
 @end
 

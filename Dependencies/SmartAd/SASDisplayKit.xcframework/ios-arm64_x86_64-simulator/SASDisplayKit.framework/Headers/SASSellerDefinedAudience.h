@@ -2,7 +2,7 @@
 //  SASSellerDefinedAudience.h
 //  SASDisplayKit
 //
-//  Created by Guillaume Laubier on 30/05/2023.
+//  Created by Julien GOMEZ on 10/08/2023.
 //  Copyright © 2023 Smart AdServer. All rights reserved.
 //
 
@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @class SASSellerDefinedSegment;
 
 /**
- Object representing a Seller Defined Audience. More info here: http://documentation.smartadserver.com/displaySDK/sellerdefinedaudience.html
+ Object representing a Seller Defined Audience. More info here: https://documentation.smartadserver.com/displaySDK/sellerdefinedaudience.html
  */
-@interface SASSellerDefinedAudience : NSObject <NSCoding, NSCopying>
+@interface SASSellerDefinedAudience : NSObject <NSCoding>
 
 /// The ID of the Seller Defined Audience if any, nil otherwise.
 @property (nonatomic, readonly, nullable) NSString *ID;

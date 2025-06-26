@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATAppNexusAdapter.framework/AATAppNexusAdapter</key>
 		<data>
-		bvAMjhXMuqXT8WCQpZGxL+Cvyx0=
+		jsfRYQogZLuHvR3LTtGGZnZm8q0=
 		</data>
 		<key>ios-arm64/AATAppNexusAdapter.framework/ANSDKResources.bundle/ANBrowserViewController.nib/designtime.nib</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>ios-arm64/AATAppNexusAdapter.framework/Info.plist</key>
 		<data>
-		kU/aMrI1j9IHuh0U9A20nOtmgzY=
+		n4UiMm5SrFO1e8kLmCLZJGu1Luo=
 		</data>
 		<key>ios-arm64/AATAppNexusAdapter.framework/Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/AATAppNexusAdapter</key>
 		<data>
-		J2DVLtmMiWffAvbhmp395s2duDA=
+		rMU0nzmGykn8T73UZNpHGXRXsXg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/ANSDKResources.bundle/ANBrowserViewController.nib/designtime.nib</key>
 		<data>
@@ -398,7 +398,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/Info.plist</key>
 		<data>
-		tLl1phiRyUv8+OoGrxM7ggq998o=
+		0+h1B6ueyAyznrqpz+3XcXBe2oA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -438,7 +438,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/_CodeSignature/CodeDirectory</key>
 		<data>
-		oR+AXRmvXyO7tAt88pQtFHfnpl4=
+		pPwfDXefdSnbV5bWxnLqjtU5B9I=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -446,11 +446,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		jkTRSBVjh06c0A7WFaK81bZRDJI=
+		Mmxrj2Z+QadH9cRkl4rIRS/yT7w=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		EaIqR++R+Gs+QTk7hW4zEiMnwbk=
+		varKvbaxCN71MTRLG+GaW65eOx8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/_CodeSignature/CodeSignature</key>
 		<data>
@@ -463,11 +463,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bvAMjhXMuqXT8WCQpZGxL+Cvyx0=
+			jsfRYQogZLuHvR3LTtGGZnZm8q0=
 			</data>
 			<key>hash2</key>
 			<data>
-			Epp2veySWdW5sxH6sONHUNgJLMfubm5WIEu6kJ0QM6E=
+			kM1+VvmQtn2EUXiuqUaeLHQ+iWtxQX2ShlEbY51zD7I=
 			</data>
 		</dict>
 		<key>ios-arm64/AATAppNexusAdapter.framework/ANSDKResources.bundle/ANBrowserViewController.nib/designtime.nib</key>
@@ -969,11 +969,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kU/aMrI1j9IHuh0U9A20nOtmgzY=
+			n4UiMm5SrFO1e8kLmCLZJGu1Luo=
 			</data>
 			<key>hash2</key>
 			<data>
-			qoAC8kpUVRa+6hmXEVGKLa1VN52XgpcHFYXrIjIWfnk=
+			GKZRlojp8pH+YpZ/geIKTCWglpUa2vSZDVD6+/cstMY=
 			</data>
 		</dict>
 		<key>ios-arm64/AATAppNexusAdapter.framework/Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -1035,11 +1035,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J2DVLtmMiWffAvbhmp395s2duDA=
+			rMU0nzmGykn8T73UZNpHGXRXsXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			xpiPfycLryk/VdAAcz8lZUk5H55vwW0mLoywh128iyo=
+			Eh3AtLdtFX0p+vGt5D+InootMG6uyIOIckG22if3AFI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/ANSDKResources.bundle/ANBrowserViewController.nib/designtime.nib</key>
@@ -1541,11 +1541,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tLl1phiRyUv8+OoGrxM7ggq998o=
+			0+h1B6ueyAyznrqpz+3XcXBe2oA=
 			</data>
 			<key>hash2</key>
 			<data>
-			u/rPMZYjzMAl3HT+OMMgdK2BIsyqUZrb767w/rnikWY=
+			OUjBZDYAkMm98lMySSX3zuJt8X1SU3BUsSpWQy5/yCQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/Modules/AATAppNexusAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -1651,11 +1651,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oR+AXRmvXyO7tAt88pQtFHfnpl4=
+			pPwfDXefdSnbV5bWxnLqjtU5B9I=
 			</data>
 			<key>hash2</key>
 			<data>
-			sYwXTem6EAIqpGEZHXtiC46DNYP4xyQ6hwYopVQ26gk=
+			1MdeAyPNeGB+NljqvNpADFMHNuFXIGiKlxbJBRgBHyA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/_CodeSignature/CodeRequirements</key>
@@ -1673,22 +1673,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jkTRSBVjh06c0A7WFaK81bZRDJI=
+			Mmxrj2Z+QadH9cRkl4rIRS/yT7w=
 			</data>
 			<key>hash2</key>
 			<data>
-			Cgxs7L+/+K3ErJDzQm0p2i+3zWfkklA/8fxHQfZVgds=
+			GAM95Sui07tJln8fQkNNSSLg3NbCsSHyhfyeQzCtwjY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EaIqR++R+Gs+QTk7hW4zEiMnwbk=
+			varKvbaxCN71MTRLG+GaW65eOx8=
 			</data>
 			<key>hash2</key>
 			<data>
-			pJISu5gsQ7a+EAc+baYDHajJHgUPcNx3Z5tl3SK+pRg=
+			zzq3auuZZeDWI+od5figlQtPLKpxHaUaO58gnlPMqM8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAppNexusAdapter.framework/_CodeSignature/CodeSignature</key>

@@ -409,31 +409,30 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkADMOB = 2,
   AATAdNetworkEMPTY = 3,
   AATAdNetworkAPPLOVIN = 4,
-  AATAdNetworkAPPLOVINMAX = 5,
-  AATAdNetworkSMARTAD = 6,
-  AATAdNetworkSMARTADSERVERDIRECT = 7,
-  AATAdNetworkRTB2 = 8,
-  AATAdNetworkDFP = 9,
-  AATAdNetworkSMAATO = 10,
-  AATAdNetworkFACEBOOK = 11,
-  AATAdNetworkFEEDAD = 12,
-  AATAdNetworkUNITY = 13,
-  AATAdNetworkAPPNEXUS = 14,
-  AATAdNetworkOGURY = 15,
-  AATAdNetworkCRITEOSDK = 16,
-  AATAdNetworkAMAZONHB = 17,
-  AATAdNetworkPUBNATIVE = 18,
-  AATAdNetworkTEADS = 19,
-  AATAdNetworkTAPPX = 20,
-  AATAdNetworkYOC = 21,
-  AATAdNetworkVUNGLE2 = 22,
-  AATAdNetworkDFPDIRECT = 23,
-  AATAdNetworkIRONSOURCENEW = 24,
-  AATAdNetworkGRAVITERTB = 25,
-  AATAdNetworkSUPERAWESOME = 26,
-  AATAdNetworkKIDOZ = 27,
-  AATAdNetworkDISPLAYIO = 28,
-  AATAdNetworkADMOBBIDDING = 29,
+  AATAdNetworkSMARTAD = 5,
+  AATAdNetworkSMARTADSERVERDIRECT = 6,
+  AATAdNetworkRTB2 = 7,
+  AATAdNetworkDFP = 8,
+  AATAdNetworkSMAATO = 9,
+  AATAdNetworkFACEBOOK = 10,
+  AATAdNetworkFEEDAD = 11,
+  AATAdNetworkUNITY = 12,
+  AATAdNetworkAPPNEXUS = 13,
+  AATAdNetworkOGURY = 14,
+  AATAdNetworkCRITEOSDK = 15,
+  AATAdNetworkAMAZONHB = 16,
+  AATAdNetworkPUBNATIVE = 17,
+  AATAdNetworkTEADS = 18,
+  AATAdNetworkTAPPX = 19,
+  AATAdNetworkYOC = 20,
+  AATAdNetworkVUNGLE2 = 21,
+  AATAdNetworkDFPDIRECT = 22,
+  AATAdNetworkIRONSOURCENEW = 23,
+  AATAdNetworkGRAVITERTB = 24,
+  AATAdNetworkSUPERAWESOME = 25,
+  AATAdNetworkKIDOZ = 26,
+  AATAdNetworkDISPLAYIO = 27,
+  AATAdNetworkADMOBBIDDING = 28,
 };
 
 
@@ -1185,6 +1184,7 @@ SWIFT_CLASS("_TtC6AATKit12AATDebugInfo")
 @end
 
 
+
 @interface AATDebugInfo (SWIFT_EXTENSION(AATKit))
 @end
 
@@ -1234,6 +1234,12 @@ SWIFT_CLASS("_TtC6AATKit27AATDebugScreenConfiguration")
 /// Show device type
 @property (nonatomic) BOOL showDeviceType;
 @property (nonatomic, copy) NSString * _Nullable shareEmail;
+/// Show debug logs toggle, default value is true.
+@property (nonatomic) BOOL showDebugLogsToggle;
+/// Show device filtered rules toggle, default value is true.
+@property (nonatomic) BOOL showDeviceFilteredRulesToggle;
+/// Show close button , default value is false.
+@property (nonatomic) BOOL showCloseButton;
 /// Create an <code>AATDebugScreenConfiguration</code> instance
 /// \param appLogo application logo
 ///
@@ -1257,7 +1263,13 @@ SWIFT_CLASS("_TtC6AATKit27AATDebugScreenConfiguration")
 ///
 /// \param showIDFA true to show IDFA
 ///
-- (nonnull instancetype)initWithAppLogo:(UIImage * _Nullable)appLogo title:(NSString * _Nullable)title showBundleId:(BOOL)showBundleId showTestMode:(BOOL)showTestMode showLoadedAndLoadingAds:(BOOL)showLoadedAndLoadingAds showDisabledNetworks:(BOOL)showDisabledNetworks showRemovedNetworkSDKs:(BOOL)showRemovedNetworkSDKs showDeviceType:(BOOL)showDeviceType showExtraSDKs:(BOOL)showExtraSDKs showConsent:(BOOL)showConsent showIDFA:(BOOL)showIDFA OBJC_DESIGNATED_INITIALIZER;
+/// \param showDebugLogsToggle true to show debug logs toggle
+///
+/// \param showDeviceFilteredRulesToggle true to show device filtered rules toggle
+///
+/// \param showCloseButton true to show close button
+///
+- (nonnull instancetype)initWithAppLogo:(UIImage * _Nullable)appLogo title:(NSString * _Nullable)title showBundleId:(BOOL)showBundleId showTestMode:(BOOL)showTestMode showLoadedAndLoadingAds:(BOOL)showLoadedAndLoadingAds showDisabledNetworks:(BOOL)showDisabledNetworks showRemovedNetworkSDKs:(BOOL)showRemovedNetworkSDKs showDeviceType:(BOOL)showDeviceType showExtraSDKs:(BOOL)showExtraSDKs showConsent:(BOOL)showConsent showIDFA:(BOOL)showIDFA showDebugLogsToggle:(BOOL)showDebugLogsToggle showDeviceFilteredRulesToggle:(BOOL)showDeviceFilteredRulesToggle showCloseButton:(BOOL)showCloseButton OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2343,28 +2355,6 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions14NetworkOptions")
 @end
 
 
-SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
-@interface BannerOptions : NetworkOptions
-/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
-/// \param parentalGateEnabled Enable/disable the Parental gate
-///
-/// \param bumperPageEnabled Enable/disable the bumper page
-///
-/// \param bumperPageCustomAppName bumper page app name
-///
-/// \param bumperPageLogo bumper page logo
-///
-/// \param isBackgroundTransparent Enable/disable transparent background
-///
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
-@end
-
-
-@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
-@end
-
-
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @interface InterstitialAdOptions : NetworkOptions
 /// init <code>AATSuperAwesomeOptions/InterstitialAdOptions-swift.class</code>
@@ -2412,6 +2402,28 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 ///
 - (nonnull instancetype)initWithCloseButtonAtEnd:(BOOL)closeButtonAtEnd smallClickEnabled:(BOOL)smallClickEnabled closeButtonWarningEnabled:(BOOL)closeButtonWarningEnabled orientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
+@end
+
+
+@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
+@end
+
+
+SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
+@interface BannerOptions : NetworkOptions
+/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
+/// \param parentalGateEnabled Enable/disable the Parental gate
+///
+/// \param bumperPageEnabled Enable/disable the bumper page
+///
+/// \param bumperPageCustomAppName bumper page app name
+///
+/// \param bumperPageLogo bumper page logo
+///
+/// \param isBackgroundTransparent Enable/disable transparent background
+///
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
 @end
 
 
@@ -2949,31 +2961,30 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkADMOB = 2,
   AATAdNetworkEMPTY = 3,
   AATAdNetworkAPPLOVIN = 4,
-  AATAdNetworkAPPLOVINMAX = 5,
-  AATAdNetworkSMARTAD = 6,
-  AATAdNetworkSMARTADSERVERDIRECT = 7,
-  AATAdNetworkRTB2 = 8,
-  AATAdNetworkDFP = 9,
-  AATAdNetworkSMAATO = 10,
-  AATAdNetworkFACEBOOK = 11,
-  AATAdNetworkFEEDAD = 12,
-  AATAdNetworkUNITY = 13,
-  AATAdNetworkAPPNEXUS = 14,
-  AATAdNetworkOGURY = 15,
-  AATAdNetworkCRITEOSDK = 16,
-  AATAdNetworkAMAZONHB = 17,
-  AATAdNetworkPUBNATIVE = 18,
-  AATAdNetworkTEADS = 19,
-  AATAdNetworkTAPPX = 20,
-  AATAdNetworkYOC = 21,
-  AATAdNetworkVUNGLE2 = 22,
-  AATAdNetworkDFPDIRECT = 23,
-  AATAdNetworkIRONSOURCENEW = 24,
-  AATAdNetworkGRAVITERTB = 25,
-  AATAdNetworkSUPERAWESOME = 26,
-  AATAdNetworkKIDOZ = 27,
-  AATAdNetworkDISPLAYIO = 28,
-  AATAdNetworkADMOBBIDDING = 29,
+  AATAdNetworkSMARTAD = 5,
+  AATAdNetworkSMARTADSERVERDIRECT = 6,
+  AATAdNetworkRTB2 = 7,
+  AATAdNetworkDFP = 8,
+  AATAdNetworkSMAATO = 9,
+  AATAdNetworkFACEBOOK = 10,
+  AATAdNetworkFEEDAD = 11,
+  AATAdNetworkUNITY = 12,
+  AATAdNetworkAPPNEXUS = 13,
+  AATAdNetworkOGURY = 14,
+  AATAdNetworkCRITEOSDK = 15,
+  AATAdNetworkAMAZONHB = 16,
+  AATAdNetworkPUBNATIVE = 17,
+  AATAdNetworkTEADS = 18,
+  AATAdNetworkTAPPX = 19,
+  AATAdNetworkYOC = 20,
+  AATAdNetworkVUNGLE2 = 21,
+  AATAdNetworkDFPDIRECT = 22,
+  AATAdNetworkIRONSOURCENEW = 23,
+  AATAdNetworkGRAVITERTB = 24,
+  AATAdNetworkSUPERAWESOME = 25,
+  AATAdNetworkKIDOZ = 26,
+  AATAdNetworkDISPLAYIO = 27,
+  AATAdNetworkADMOBBIDDING = 28,
 };
 
 
@@ -3725,6 +3736,7 @@ SWIFT_CLASS("_TtC6AATKit12AATDebugInfo")
 @end
 
 
+
 @interface AATDebugInfo (SWIFT_EXTENSION(AATKit))
 @end
 
@@ -3774,6 +3786,12 @@ SWIFT_CLASS("_TtC6AATKit27AATDebugScreenConfiguration")
 /// Show device type
 @property (nonatomic) BOOL showDeviceType;
 @property (nonatomic, copy) NSString * _Nullable shareEmail;
+/// Show debug logs toggle, default value is true.
+@property (nonatomic) BOOL showDebugLogsToggle;
+/// Show device filtered rules toggle, default value is true.
+@property (nonatomic) BOOL showDeviceFilteredRulesToggle;
+/// Show close button , default value is false.
+@property (nonatomic) BOOL showCloseButton;
 /// Create an <code>AATDebugScreenConfiguration</code> instance
 /// \param appLogo application logo
 ///
@@ -3797,7 +3815,13 @@ SWIFT_CLASS("_TtC6AATKit27AATDebugScreenConfiguration")
 ///
 /// \param showIDFA true to show IDFA
 ///
-- (nonnull instancetype)initWithAppLogo:(UIImage * _Nullable)appLogo title:(NSString * _Nullable)title showBundleId:(BOOL)showBundleId showTestMode:(BOOL)showTestMode showLoadedAndLoadingAds:(BOOL)showLoadedAndLoadingAds showDisabledNetworks:(BOOL)showDisabledNetworks showRemovedNetworkSDKs:(BOOL)showRemovedNetworkSDKs showDeviceType:(BOOL)showDeviceType showExtraSDKs:(BOOL)showExtraSDKs showConsent:(BOOL)showConsent showIDFA:(BOOL)showIDFA OBJC_DESIGNATED_INITIALIZER;
+/// \param showDebugLogsToggle true to show debug logs toggle
+///
+/// \param showDeviceFilteredRulesToggle true to show device filtered rules toggle
+///
+/// \param showCloseButton true to show close button
+///
+- (nonnull instancetype)initWithAppLogo:(UIImage * _Nullable)appLogo title:(NSString * _Nullable)title showBundleId:(BOOL)showBundleId showTestMode:(BOOL)showTestMode showLoadedAndLoadingAds:(BOOL)showLoadedAndLoadingAds showDisabledNetworks:(BOOL)showDisabledNetworks showRemovedNetworkSDKs:(BOOL)showRemovedNetworkSDKs showDeviceType:(BOOL)showDeviceType showExtraSDKs:(BOOL)showExtraSDKs showConsent:(BOOL)showConsent showIDFA:(BOOL)showIDFA showDebugLogsToggle:(BOOL)showDebugLogsToggle showDeviceFilteredRulesToggle:(BOOL)showDeviceFilteredRulesToggle showCloseButton:(BOOL)showCloseButton OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -4883,28 +4907,6 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions14NetworkOptions")
 @end
 
 
-SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
-@interface BannerOptions : NetworkOptions
-/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
-/// \param parentalGateEnabled Enable/disable the Parental gate
-///
-/// \param bumperPageEnabled Enable/disable the bumper page
-///
-/// \param bumperPageCustomAppName bumper page app name
-///
-/// \param bumperPageLogo bumper page logo
-///
-/// \param isBackgroundTransparent Enable/disable transparent background
-///
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
-@end
-
-
-@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
-@end
-
-
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @interface InterstitialAdOptions : NetworkOptions
 /// init <code>AATSuperAwesomeOptions/InterstitialAdOptions-swift.class</code>
@@ -4952,6 +4954,28 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 ///
 - (nonnull instancetype)initWithCloseButtonAtEnd:(BOOL)closeButtonAtEnd smallClickEnabled:(BOOL)smallClickEnabled closeButtonWarningEnabled:(BOOL)closeButtonWarningEnabled orientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
+@end
+
+
+@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
+@end
+
+
+SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
+@interface BannerOptions : NetworkOptions
+/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
+/// \param parentalGateEnabled Enable/disable the Parental gate
+///
+/// \param bumperPageEnabled Enable/disable the bumper page
+///
+/// \param bumperPageCustomAppName bumper page app name
+///
+/// \param bumperPageLogo bumper page logo
+///
+/// \param isBackgroundTransparent Enable/disable transparent background
+///
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
 @end
 
 

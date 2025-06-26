@@ -1,59 +1,65 @@
 //
 //  SASInterstitialManager.h
-//  SmartAdServer
+//  SASDisplayKit
 //
-//  Created by Loïc GIRON DIT METAZ on 26/07/2018.
-//  Copyright © 2018 Smart AdServer. All rights reserved.
+//  Created by Loïc GIRON DIT METAZ on 20/07/2022.
+//  Copyright © 2022 Smart AdServer. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <SASDisplayKit/SASBaseInterstitialManager.h>
 #import <SASDisplayKit/SASInterstitialManagerDelegate.h>
+#import <SASDisplayKit/SASAdPlacement.h>
 #import <SASDisplayKit/SASBiddingAdResponse.h>
+#import <SASDisplayKit/SASAdStatus.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SASAdPlacement;
-
 /**
- Class used to load and display interstitial ads.
+ A class that loads and shows an interstitial ad.
  */
-@interface SASInterstitialManager : SASBaseInterstitialManager
+@interface SASInterstitialManager : NSObject
 
-/// An object implementing the SASInterstitialManagerDelegate protocol.
-@property (nonatomic, weak, nullable) id<SASInterstitialManagerDelegate> delegate;
+/// The interstitial manager delegate if any, nil otherwise.
+@property (weak, nullable) id<SASInterstitialManagerDelegate> delegate;
+
+/// The current status of the ad.
+@property (readonly) SASAdStatus adStatus;
+
+/// The ad placement used to load the ad.
+@property (readonly) SASAdPlacement *adPlacement;
 
 /**
- Initialize a new SASInterstitialManager instance.
+ Initialize a new instance of SASInterstitialManager.
  
- @param placement The placement that will be used to load interstitial ads.
- @param delegate An object implementing the SASInterstitialManagerDelegate protocol.
- 
+ @param adPlacement The ad placement used to load the ad.
  @return An initialized instance of SASInterstitialManager.
  */
-- (instancetype)initWithPlacement:(SASAdPlacement *)placement delegate:(nullable id <SASInterstitialManagerDelegate>)delegate;
+- (instancetype)initWithAdPlacement:(SASAdPlacement *)adPlacement NS_DESIGNATED_INITIALIZER;
 
 /**
- Initialize a new SASInterstitialManager instance with a bidding ad response.
+ Initialize a new instance of SASInterstitialManager using a bidding ad response.
  
- A bidding ad response can be retrieved using an instance of SASBiddingManager.
+ You can create a bidding ad response using the SASBiddingManager class.
  
- @param biddingAdResponse The bidding ad reponse that will be used to load the interstitial ad.
- @param delegate An object implementing the SASInterstitialManagerDelegate protocol.
- 
+ @note A bidding ad response can only be used once: you must recreate a new instance of the interstitial manager
+ with a new bidding ad response after each 'loadAd' call.
+
+ @param biddingAdResponse The bidding ad response that must be rendered.
  @return An initialized instance of SASInterstitialManager.
  */
-- (instancetype)initWithBiddingAdResponse:(SASBiddingAdResponse *)biddingAdResponse delegate:(nullable id <SASInterstitialManagerDelegate>)delegate;
+- (instancetype)initWithBiddingAdResponse:(SASBiddingAdResponse *)biddingAdResponse NS_DESIGNATED_INITIALIZER;
 
 /**
- Sends a message to the webview hosting the creative.
- 
- The message can be retrieved in the creative by adding an MRAID event listener on the 'sasMessage' event. It will not
- be sent if the creative is not fully loaded.
- 
- @param message A non empty message that will be sent to the creative.
+ Attempt to load an ad using the provided ad placement.
  */
-- (void)sendMessageToWebView:(NSString *)message NS_SWIFT_NAME(sendMessageToWebView(_:));
+- (void)loadAd;
+
+/**
+ Show the interstitial if the ad status is 'SASAdStatusReady'.
+ 
+ @param viewController The view controller in which the interstitial view controller should be pushed.
+ */
+- (void)showFromViewController:(UIViewController *)viewController;
 
 - (instancetype)init NS_UNAVAILABLE;
 

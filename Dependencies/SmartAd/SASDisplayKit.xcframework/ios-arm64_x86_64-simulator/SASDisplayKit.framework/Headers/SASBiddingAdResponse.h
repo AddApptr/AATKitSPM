@@ -2,35 +2,36 @@
 //  SASBiddingAdResponse.h
 //  SASDisplayKit
 //
-//  Created by Loïc GIRON DIT METAZ on 13/06/2019.
-//  Copyright © 2019 Smart AdServer. All rights reserved.
+//  Created by Loic GIRON DIT METAZ on 30/10/2024.
+//  Copyright © 2024 Smart AdServer. All rights reserved.
 //
 
-#import <SASDisplayKit/SASAdPlacement.h>
-#import <SASDisplayKit/SASBiddingAdPrice.h>
+#import <Foundation/Foundation.h>
 #import <SASDisplayKit/SASBiddingAdFormatType.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class SASAdPlacement;
+@class SASBiddingAdPrice;
+
 /**
- Class representing the response of a bidding call.
+ Model class representing a bidding ad response.
  */
-@interface SASBiddingAdResponse : NSObject <NSCopying, NSCoding>
+@interface SASBiddingAdResponse : NSObject
 
-/// The ad placement of the bidding ad.
-@property (nonatomic, readonly) SASAdPlacement *adPlacement;
-
-/// The format type of the bidding ad.
-@property (nonatomic, readonly) SASBiddingAdFormatType biddingAdFormatType;
-
-/// The price of the bidding ad.
-@property (nonatomic, readonly) SASBiddingAdPrice *biddingAdPrice;
-
-/// NO if the bidding ad response has not be used before, YES otherwise.
+/// YES if this bidding ad response has already been consumed, NO otherwise.
 ///
-/// @note A bidding ad response can only be used once. Trying to load an ad using
-/// a consumed response will trigger an error immediately.
-@property (nonatomic, readonly) BOOL isConsumed;
+/// @note A bidding ad can only be consumed once.
+@property (readonly, getter=isConsumed) BOOL consumed;
+
+/// The ad placement used to get this bidding ad response.
+@property (readonly) SASAdPlacement *adPlacement;
+
+/// The price of the ad related to this bidding ad response.
+@property (readonly) SASBiddingAdPrice *price;
+
+/// The bidding ad format related to this bidding ad response.
+@property (readonly) SASBiddingAdFormatType formatType;
 
 - (instancetype)init NS_UNAVAILABLE;
 

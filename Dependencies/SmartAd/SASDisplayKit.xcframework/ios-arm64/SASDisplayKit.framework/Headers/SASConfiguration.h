@@ -1,100 +1,70 @@
 //
 //  SASConfiguration.h
-//  SmartAdServer
+//  SASDisplayKit
 //
-//  Created by Clémence Laurent on 28/01/13.
-//  Copyright © 2018 Smart AdServer. All rights reserved.
+//  Created by Loïc GIRON DIT METAZ on 30/03/2022.
+//  Copyright © 2022 Smart AdServer. All rights reserved.
 //
 
-#import <CoreLocation/CoreLocation.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class SASSecondaryImplementationInfo;
+@class SASDigitalServiceActConfig;
 
 /**
- Hold the configuration of the Smart Display SDK.
+ Hold the configuration of the Display SDK.
  
  @note This singleton class is used for the initial SDK configuration. This configuration is MANDATORY
  and should be done before performing any ad call. Check the complete documentation for more information.
  */
 @interface SASConfiguration : NSObject
 
-#pragma mark - Shared instance
-
 /// The shared instance of the SASConfiguration object.
 @property (class, nonatomic, readonly) SASConfiguration *sharedInstance NS_SWIFT_NAME(shared);
 
-#pragma mark - Read only SDK properties
-
-/// The site id used by your application.
-@property (nonatomic, readonly) unsigned long siteId;
-
-/// The base URL used for ad calls.
-@property (nonatomic, readonly, nullable) NSString *baseURL;
-
-/// The manual base URL used for ad calls if defined, nil otherwise.
-///
-/// Setting this URL will override the base URL set for your network.
-@property (nonatomic, assign, nullable) NSString *manualBaseURL;
-
-
-#pragma mark - Configurable SDK properties
-
-/// YES if the SDK needs to display debug informations in the Xcode console, NO otherwise.
-@property (nonatomic, assign, getter=isLoggingEnabled) BOOL loggingEnabled NS_SWIFT_NAME(loggingEnabled);
-
-/// YES if location information can be used automatically by the SDK (if available), NO otherwise.
-@property (nonatomic, assign) BOOL allowAutomaticLocationDetection;
-
-/// Coordinate that will be used instead of the actual device location (for testing purpose for instance), kCLLocationCoordinate2DInvalid otherwise (default value).
-@property (nonatomic, assign) CLLocationCoordinate2D manualLocation;
-
-/// The custom identifier for this device. This property will be sent along with the IDFA of this device, if available, when requesting an ad.
-///
-/// @note Providing an empty string will be considered as providing nil.
-@property (nullable, nonatomic, copy) NSString *customIdentifier;
+/// YES if the SDK has been configured (using the `SASConfiguration.configure()` method), NO otherwise.
+@property (readonly, getter=isConfigured) BOOL configured NS_SWIFT_NAME(configured);
 
 /// Ad call timeout in seconds.
+@property (assign) NSTimeInterval adCallTimeout;
+
+/// Optional Digital Service Act configuration that will sent in every ad calls.
+@property (strong, nullable) SASDigitalServiceActConfig *digitalServiceActConfig;
+
+/// Either the creative feedback button is displayed by the Equativ Display SDK or not.
 ///
-/// The value set must be equal to or greater than 1, otherwise the default timeout of 10s will be used.
-@property (nonatomic, assign) NSTimeInterval adCallTimeout;
-
-/// YES if the configureWithSiteID method has been called, NO otherwise.
-@property (nonatomic, readonly, getter=isConfigured) BOOL configured;
-
-/// YES if the SDK is used as a Primary SDK, NO otherwise.
-@property (nonatomic, assign, getter=isPrimarySDK) BOOL primarySDK NS_SWIFT_NAME(primarySDK) DEPRECATED_MSG_ATTRIBUTE("Use the `secondaryImplementationInfo` property instead");
+/// TRUE by default. If FALSE, the Equativ Display SDK will not display the creative feedback button while rendering the ad.
+/// In such case, Equativ transfers responsability to the publisher to let users provide feedbacks about the ad.
+/// Equativ also transfers EU legal obligation to display Digital Service Act information (available in SASAdInfo object) to end users.
+@property (assign, getter=isCreativeFeedbackButtonDisplayed) BOOL creativeFeedbackButtonDisplayed NS_SWIFT_NAME(creativeFeedbackButtonDisplayed);
 
 /// Additional implementation information that can be provided to the SDK when integrated as secondary SDK.
-@property (nonatomic, strong, nullable) SASSecondaryImplementationInfo *secondaryImplementationInfo;
+@property (strong, nullable) SASSecondaryImplementationInfo *secondaryImplementationInfo;
 
-/// The bundle for localized strings - See documentation for keys. By default the strings of the framework bundle will be used.
-@property (nonatomic, strong) NSBundle *stringsBundle;
+/// YES if the SDK needs to display debug informations in the Xcode console, NO otherwise.
+@property (assign, getter=isLoggingEnabled) BOOL loggingEnabled NS_SWIFT_NAME(loggingEnabled);
 
-#pragma mark - Configuration method
+/// The bundle for localized strings, nil to use the default localized strings.
+///
+/// The Display SDK embeds some localized string in English and French. You can add support for other
+/// languages by providing localized strings from your own app's bundle.
+///
+/// Check the documentation for the full list of string's keys.
+@property (strong, strong) NSBundle *stringsBundle;
 
-/**
- Configures the SDK for a given siteId. This will customize the SDK behavior for your site id.
- 
- @note This method MUST be called before performing any ad request and only once per application's lifecycle.
- Make sure you call this method in the application:didFinishLaunchingWithOptions: method of your application's delegate.
- 
- If you don't know your siteId, please contact your sales house which can retrieve them from its Smart account (sites &amp; pages).
- 
- @param siteId The site id used by your application.
- */
-- (void)configureWithSiteId:(NSInteger)siteId NS_SWIFT_NAME(configure(siteId:));
+/// YES if the SDK is allowed to retrieve the user's location available in the app, NO otherwise.
+@property (assign, getter=isAutomaticLocationDetectionAllowed) BOOL automaticLocationDetectionAllowed NS_SWIFT_NAME(automaticLocationDetectionAllowed);
 
 /**
- Configures the SDK for a given siteId. This will customize the SDK behavior for your site id.
+ Configure the SDK.
  
- @param siteId The site id used by your application.
- @param baseURL The base URL , but this will have no effect anymore, use manualBaseURL property instead.
- 
- @deprecated This method is deprecated, use configureWithSiteId: instead. If you need to manually override the base URL, please use the manualBaseURL property.
+ @warning You must call this method before performing any ad call, otherwise the SDK will crash!
  */
-- (void)configureWithSiteId:(NSInteger)siteId baseURL:(NSString *)baseURL NS_SWIFT_NAME(configure(siteId:baseURL:)) __attribute((deprecated("use configureWithSiteId: instead")));
+- (void)configure;
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

@@ -6,28 +6,19 @@
 	<dict>
 		<key>Frameworks/StoreKitTest.framework/Info.plist</key>
 		<data>
-		CKWLBzeMWit9H1bg/3U0NnvkXDE=
+		HABOf/z7GTCR4rlUbmEsPmlp9s0=
 		</data>
 		<key>Frameworks/StoreKitTest.framework/StoreKitTest</key>
 		<data>
-		1t3vxyVyXtorlJOXoRHjUA41ZAY=
+		jLD+38+b3r96UK3TK0vXyPN6S7g=
 		</data>
 		<key>Frameworks/StoreKitTest.framework/_CodeSignature/CodeResources</key>
 		<data>
-		N5ecerS7Z3Bo11DSA5StchQ2kqM=
+		PYM23SlMGa+2YjA7tM+8F1JDEdk=
 		</data>
-		<key>Frameworks/StoreKitTest.framework/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			b8In97NdpYYRCX56i+mKOFaX4Ng=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>Frameworks/StoreKitTest.framework/version.plist</key>
 		<data>
-		9Cc4Cq+sjO9XYI7qAkqLZddDTP0=
+		w8UiePacZpMRVrBr13KBpt9GNo8=
 		</data>
 		<key>Frameworks/libswiftAccelerate.dylib</key>
 		<data>
@@ -167,7 +158,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vx7eadpK87GiWtrZmdxdWPqFkqU=
+		rViobiykWDJWQnLjpv1NRhdbHQI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -192,57 +183,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CKWLBzeMWit9H1bg/3U0NnvkXDE=
+			HABOf/z7GTCR4rlUbmEsPmlp9s0=
 			</data>
 			<key>hash2</key>
 			<data>
-			gbBA37fQsEL+7dwjNrLcCgSAY97X9Hj9RQ0uOeZBYLE=
+			bb8PXCsJKcyMbdrB8LaOy1DE6ABRheeEdRJWoZEMFrU=
 			</data>
 		</dict>
 		<key>Frameworks/StoreKitTest.framework/StoreKitTest</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1t3vxyVyXtorlJOXoRHjUA41ZAY=
+			jLD+38+b3r96UK3TK0vXyPN6S7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			eB+b25OBm4yUlM+Yr+H0qYJ5eCe/RRtPjERvOhk0a4o=
+			/v0HmPwuELaZnukf1wtYWA2A8VLV1rRC1v/9UOt/hfc=
 			</data>
 		</dict>
 		<key>Frameworks/StoreKitTest.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			N5ecerS7Z3Bo11DSA5StchQ2kqM=
+			PYM23SlMGa+2YjA7tM+8F1JDEdk=
 			</data>
 			<key>hash2</key>
 			<data>
-			NzqsqBUPL5RnfYqeH6eJZVYnbVQnoWKHPsENHSh77Uo=
+			wxHkGL5S20vxfVFGUVMwTiOeoITATHcYJ8nK47ZD6is=
 			</data>
-		</dict>
-		<key>Frameworks/StoreKitTest.framework/en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			b8In97NdpYYRCX56i+mKOFaX4Ng=
-			</data>
-			<key>hash2</key>
-			<data>
-			+04p9YFYplL820dCwnSm0fDlxjam7CVYXeurYq5SOIM=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 		<key>Frameworks/StoreKitTest.framework/version.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9Cc4Cq+sjO9XYI7qAkqLZddDTP0=
+			w8UiePacZpMRVrBr13KBpt9GNo8=
 			</data>
 			<key>hash2</key>
 			<data>
-			MYr3M6f1cBGMZr58ehnkyYo+uxSHdBV6ku4x2yNd16s=
+			h+N8oKoyewuFOozKQWwDDdEU7JbTyrg92VZvaW/oORY=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftAccelerate.dylib</key>

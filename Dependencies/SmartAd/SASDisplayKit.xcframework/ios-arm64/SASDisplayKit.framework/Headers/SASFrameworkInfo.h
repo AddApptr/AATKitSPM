@@ -2,8 +2,8 @@
 //  SASFrameworkInfo.h
 //  SASDisplayKit
 //
-//  Created by Loïc GIRON DIT METAZ on 11/10/2018.
-//  Copyright © 2018 Smart AdServer. All rights reserved.
+//  Created by Loïc GIRON DIT METAZ on 30/03/2022.
+//  Copyright © 2022 Smart AdServer. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- Retrieve some informations about the SASDisplayKit framework.
+ Retrieve some informations about the DisplayKit framework.
  */
 @interface SASFrameworkInfo : NSObject
 

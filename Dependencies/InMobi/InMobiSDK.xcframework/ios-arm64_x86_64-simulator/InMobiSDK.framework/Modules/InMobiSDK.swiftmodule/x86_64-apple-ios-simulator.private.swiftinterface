@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InMobiSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name InMobiSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AdSupport
 import AppTrackingTransparency
 import SystemConfiguration.CaptiveNetwork
@@ -9,6 +9,7 @@ import CommonCrypto
 import Compression
 import CoreLocation
 import CoreTelephony
+import CryptoKit
 import Foundation
 @_exported import InMobiSDK
 import MetricKit
@@ -55,6 +56,13 @@ import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers @objc public class IMRequestStatus : Foundation.NSError {
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class JSDownloader : ObjectiveC.NSObject {
+  @objc public static let shared: InMobiSDK.JSDownloader
+  public func fetchData(for urlString: Swift.String, completion: @escaping (Swift.Result<Swift.String, any Swift.Error>) -> Swift.Void)
+  @objc public func fetchDataSync(for urlString: Swift.String?) -> Swift.String?
+  @objc public func getContent(for fileName: Swift.String) -> Swift.String?
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class AdsConfig : InMobiSDK.IMConfigBase {
   @objc override public func getType() -> Swift.String
   @objc override public func toDictionary() -> [Swift.String : Any]?
@@ -78,6 +86,8 @@ import _SwiftConcurrencyShims
   @objc public var rendering: InMobiSDK.RenderingConfig
   @objc public var silenceDetection: InMobiSDK.SilenceDetectionConfig
   @objc public var mraid: InMobiSDK.MraidConfig
+  @objc public var jsDownloader: InMobiSDK.JSDownloaderConfig
+  @objc public var mraid3: InMobiSDK.Mraid3Config
   @objc dynamic public func getAdServerUrl() -> Swift.String
   @objc public func getWebviewConfig(for type: Swift.String) -> InMobiSDK.WebViewModeConfig
   @objc override dynamic public init()
@@ -288,6 +298,19 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc public class SkanConfig : ObjectiveC.NSObject {
   @objc public var requestMode: Swift.Int
+  @objc public var skanBitSet: InMobiSDK.SkanBitSetConfig
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class SkanBitSetConfig : ObjectiveC.NSObject {
+  @objc public var isEnabled: Swift.Bool
+  @objc public var expiryInSec: Swift.Double
+  @objc public var retryInterval: Swift.Double
+  @objc public var url: Swift.String
+  @objc public var maxRetries: Swift.Int
+  @objc public var timeout: Swift.Double
   @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -307,6 +330,20 @@ import _SwiftConcurrencyShims
   @objc public var enableSDKAVAudioSession: Swift.Bool
   @objc public var webviewModeDictionary: InMobiSDK.WebViewModeDictionaryConfig
   @objc public func enablePubMuteControl_() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class JSDownloaderConfig : ObjectiveC.NSObject {
+  @objc public var cdnBaseUrl: Swift.String
+  @objc public var isEnabled: Swift.Bool
+  @objc public var fetchExpiresSeconds: Swift.Double
+  @objc public var deleteExpiryIntervalSeconds: Swift.Double
+  @objc public var memoryCacheLimit: Swift.Int
+  @objc public var retryCount: Swift.Int
+  @objc public var retryInterval: Swift.Double
+  @objc public var timeout: Swift.Double
   @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -358,12 +395,21 @@ import _SwiftConcurrencyShims
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class IMMovableView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public var isMovable: Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
-  @_Concurrency.MainActor(unsafe) public func resetPosition()
+@_inheritsConvenienceInitializers @objc public class Mraid3Config : ObjectiveC.NSObject {
+  @objc public var bannerEnabled: Swift.Bool
+  @objc public var interstitialEnabled: Swift.Bool
+  @objc public var exposureChangeInterval: Swift.Double
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class IMMovableView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public var isMovable: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @_Concurrency.MainActor @preconcurrency public func resetPosition()
   @objc deinit
 }
 @objc public protocol IMInterstitialDelegate {
@@ -389,6 +435,11 @@ import _SwiftConcurrencyShims
   @objc required public init(phoneNumber: InMobiSDK.IMUserDataTypes?, emailId: InMobiSDK.IMUserDataTypes?, extras: [Swift.String : Any]?)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public func isEqual(_ other: Any?) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class IMPublisherProvidedInfo : ObjectiveC.NSObject {
+  @objc public static func getIsAgeRestricted() -> Swift.Bool
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class IMSdk : ObjectiveC.NSObject {
@@ -458,62 +509,75 @@ extension InMobiSDK.IMSdk {
   @objc optional func audioAd(_ audioAd: InMobiSDK.IMAudio, rewardActionCompletedWithRewards rewards: [Swift.String : Any])
   @objc optional func audioAd(_ audioAd: InMobiSDK.IMAudio, audioStatusChanged status: InMobiSDK.IMAudioStatus)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class IMBanner : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public var placementId: Swift.Int64 {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class IMBanner : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public var placementId: Swift.Int64 {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any InMobiSDK.IMBannerDelegate)?
-  @objc @_Concurrency.MainActor(unsafe) weak public var audioDelegate: (any InMobiSDK.IMBannerAudioDelegate)? {
+  @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any InMobiSDK.IMBannerDelegate)?
+  @objc @_Concurrency.MainActor @preconcurrency weak public var audioDelegate: (any InMobiSDK.IMBannerAudioDelegate)? {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var refreshInterval: Swift.Int {
+  @objc @_Concurrency.MainActor @preconcurrency public var refreshInterval: Swift.Int {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var keywords: Swift.String? {
+  @objc @_Concurrency.MainActor @preconcurrency public var keywords: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var extras: [Swift.String : Any]? {
+  @objc @_Concurrency.MainActor @preconcurrency public var extras: [Swift.String : Any]? {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var transitionAnimation: UIKit.UIView.AnimationTransition {
+  @objc @_Concurrency.MainActor @preconcurrency public var transitionAnimation: UIKit.UIView.AnimationTransition {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var contentUrl: Swift.String? {
+  @objc @_Concurrency.MainActor @preconcurrency public var contentUrl: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var creativeId: Swift.String? {
+  @objc @_Concurrency.MainActor @preconcurrency public var creativeId: Swift.String? {
     @objc get
   }
-  @objc @_Concurrency.MainActor(unsafe) public var preloadManager: InMobiSDK.IMBannerPreloadManager {
+  @objc @_Concurrency.MainActor @preconcurrency public var preloadManager: InMobiSDK.IMBannerPreloadManager {
     @objc get
   }
-  @objc @_Concurrency.MainActor(unsafe) public var isAudioAd: Swift.Bool {
+  @objc @_Concurrency.MainActor @preconcurrency public var isAudioAd: Swift.Bool {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override convenience dynamic public init(frame: CoreFoundation.CGRect)
-  @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, placementId: Swift.Int64)
-  @objc @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, placementId: Swift.Int64, delegate: (any InMobiSDK.IMBannerDelegate)?)
-  @objc @_Concurrency.MainActor(unsafe) public func load()
-  @objc @_Concurrency.MainActor(unsafe) public func load(_ response: Foundation.Data)
-  @objc @_Concurrency.MainActor(unsafe) public func shouldAutoRefresh(_ shouldAutoRefresh: Swift.Bool)
-  @objc @_Concurrency.MainActor(unsafe) public func getAdMetaInfo() -> [Swift.String : Any]?
-  @objc @_Concurrency.MainActor(unsafe) public func setWatermark(with watermark: InMobiSDK.IMWatermark)
+  @_Concurrency.MainActor @preconcurrency @objc override convenience dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, placementId: Swift.Int64)
+  @objc @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, placementId: Swift.Int64, delegate: (any InMobiSDK.IMBannerDelegate)?)
+  @objc @_Concurrency.MainActor @preconcurrency public func load()
+  @objc @_Concurrency.MainActor @preconcurrency public func load(_ response: Foundation.Data)
+  @objc @_Concurrency.MainActor @preconcurrency public func shouldAutoRefresh(_ shouldAutoRefresh: Swift.Bool)
+  @objc @_Concurrency.MainActor @preconcurrency public func getAdMetaInfo() -> [Swift.String : Any]?
+  @objc @_Concurrency.MainActor @preconcurrency public func setWatermark(with watermark: InMobiSDK.IMWatermark)
   @available(*, deprecated, message: "Deprecated with no replacement")
-  @objc @_Concurrency.MainActor(unsafe) public func cancel()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @objc @_Concurrency.MainActor @preconcurrency public func cancel()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class IMInterstitialPreloadManager : ObjectiveC.NSObject {
   @objc public func preload()
   @objc public func load()
   @objc deinit
+}
+@objc public protocol IMExposureTrackerDelegate : ObjectiveC.NSObjectProtocol {
+  @objc func exposureDidChange(_ tracker: InMobiSDK.IMExposureTracker, jsonString: Swift.String?)
+  @objc func exposureTrackerDidDetachAdView(_ tracker: InMobiSDK.IMExposureTracker)
+}
+@objc @objcMembers public class IMExposureTracker : ObjectiveC.NSObject {
+  @objc weak public var delegate: (any InMobiSDK.IMExposureTrackerDelegate)?
+  @objc public var exposureChangeCallback: ((Swift.String?) -> Swift.Void)?
+  @objc public var friendlyViews: [UIKit.UIView]
+  @objc public init(adView: UIKit.UIView)
+  @objc deinit
+  @objc public func startTracking()
+  @objc public func stopTracking()
 }
 @objc public enum IMLandingPageFlowType : Swift.Int {
   case commandOpen = 1
@@ -796,42 +860,42 @@ extension InMobiSDK.IMSdk {
 @objc public protocol IMBannerAudioDelegate {
   @objc optional func banner(_ banner: InMobiSDK.IMBanner, audioStatusChanged status: InMobiSDK.IMBannerAudioStatus)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class IMAudio : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any InMobiSDK.IMAudioDelegate)?
-  @objc @_Concurrency.MainActor(unsafe) public var placementId: Swift.Int64 {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class IMAudio : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any InMobiSDK.IMAudioDelegate)?
+  @objc @_Concurrency.MainActor @preconcurrency public var placementId: Swift.Int64 {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var keywords: Swift.String? {
+  @objc @_Concurrency.MainActor @preconcurrency public var keywords: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var extras: [Swift.String : Any]? {
+  @objc @_Concurrency.MainActor @preconcurrency public var extras: [Swift.String : Any]? {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var transitionAnimation: UIKit.UIView.AnimationTransition {
+  @objc @_Concurrency.MainActor @preconcurrency public var transitionAnimation: UIKit.UIView.AnimationTransition {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var contentUrl: Swift.String? {
+  @objc @_Concurrency.MainActor @preconcurrency public var contentUrl: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) public var creativeId: Swift.String? {
+  @objc @_Concurrency.MainActor @preconcurrency public var creativeId: Swift.String? {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override convenience dynamic public init(frame: CoreFoundation.CGRect)
-  @objc @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, placementId: Swift.Int64)
-  @objc @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, placementId: Swift.Int64, delegate: (any InMobiSDK.IMAudioDelegate)?)
-  @objc @_Concurrency.MainActor(unsafe) public func getAdMetaInfo() -> [Swift.String : Any]?
+  @_Concurrency.MainActor @preconcurrency @objc override convenience dynamic public init(frame: CoreFoundation.CGRect)
+  @objc @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, placementId: Swift.Int64)
+  @objc @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, placementId: Swift.Int64, delegate: (any InMobiSDK.IMAudioDelegate)?)
+  @objc @_Concurrency.MainActor @preconcurrency public func getAdMetaInfo() -> [Swift.String : Any]?
   @objc deinit
 }
 extension InMobiSDK.IMAudio {
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func load()
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func show()
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func cancel()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func load()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func show()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func cancel()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
 }
 @_inheritsConvenienceInitializers @objc public class SignalConfig : InMobiSDK.IMConfigBase {
   @objc override public func getType() -> Swift.String
@@ -847,6 +911,7 @@ extension InMobiSDK.IMAudio {
   @objc public var ice: InMobiSDK.IceConfig
   @objc public var purchases: InMobiSDK.PurchasesConfig
   @objc public var publisher: InMobiSDK.PublisherConfig
+  @objc public var experiments: InMobiSDK.ExperimentsConfig
   @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -953,6 +1018,13 @@ extension InMobiSDK.IMAudio {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@_inheritsConvenienceInitializers @objc public class ExperimentsConfig : ObjectiveC.NSObject {
+  @objc public var networkRevamp: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 @_inheritsConvenienceInitializers @objc public class IMBannerAudioHandler : ObjectiveC.NSObject {
   @objc public static func setAudioEnabled(_ isEnabled: Swift.Bool)
   @objc public func onView(_ view: UIKit.UIView, addBannerAudioDelegate delegate: any InMobiSDK.IMBannerAudioDelegate)
@@ -983,6 +1055,17 @@ extension InMobiSDK.IMAudio {
 @objc public protocol IMLogging {
   @objc optional func log(message: Swift.String, tag: Swift.String, logLevel: InMobiSDK.IMRemoteLogLevel)
   @objc optional func saveAndSync()
+}
+public enum JSDownloaderError : Foundation.LocalizedError {
+  case invalidURL(Swift.String)
+  case disabledDownloader
+  case emptyResponse
+  case invalidDownloadRequest
+  case networkError(any Swift.Error)
+  case repositoryError(any Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers @objc public class AnyDictionary : ObjectiveC.NSObject, Swift.Decodable {
   required public init(from decoder: any Swift.Decoder) throws
@@ -1141,6 +1224,7 @@ extension InMobiSDK.AnyDictionary : Swift.Encodable {
   @objc public var latestSdkInfo: InMobiSDK.IMLatestSdkInfo
   @objc public var components: [InMobiSDK.IMComponent]
   @objc public var gdpr: InMobiSDK.IMGDPR
+  @objc public var ipAddrTPSupport: [Swift.String]
   @objc public func urlForProductType(_ type: Swift.String) -> Swift.String
   @objc public func expiryForProductType(_ type: Swift.String) -> Swift.Int64
   @objc override dynamic public init()
@@ -1273,6 +1357,7 @@ extension InMobiSDK.IMStatusCode : Swift.Equatable {}
 extension InMobiSDK.IMStatusCode : Swift.Hashable {}
 extension InMobiSDK.IMStatusCode : Swift.RawRepresentable {}
 extension InMobiSDK.IMStatusCode : Swift.Sendable {}
+extension InMobiSDK.IMStatusCode : Swift.BitwiseCopyable {}
 extension InMobiSDK.AdsConfig : Swift.Encodable {}
 extension InMobiSDK.AdsConfig : Swift.Decodable {}
 extension InMobiSDK.ContextualDataConfig : Swift.Encodable {}
@@ -1318,8 +1403,12 @@ extension InMobiSDK.IMSKANConfigRequestModeType : Swift.Hashable {}
 extension InMobiSDK.IMSKANConfigRequestModeType : Swift.RawRepresentable {}
 extension InMobiSDK.SkanConfig : Swift.Encodable {}
 extension InMobiSDK.SkanConfig : Swift.Decodable {}
+extension InMobiSDK.SkanBitSetConfig : Swift.Encodable {}
+extension InMobiSDK.SkanBitSetConfig : Swift.Decodable {}
 extension InMobiSDK.RenderingConfig : Swift.Encodable {}
 extension InMobiSDK.RenderingConfig : Swift.Decodable {}
+extension InMobiSDK.JSDownloaderConfig : Swift.Encodable {}
+extension InMobiSDK.JSDownloaderConfig : Swift.Decodable {}
 extension InMobiSDK.SaveContentConfig : Swift.Encodable {}
 extension InMobiSDK.SaveContentConfig : Swift.Decodable {}
 extension InMobiSDK.WebViewModeDictionaryConfig : Swift.Encodable {}
@@ -1330,10 +1419,13 @@ extension InMobiSDK.SilenceDetectionConfig : Swift.Encodable {}
 extension InMobiSDK.SilenceDetectionConfig : Swift.Decodable {}
 extension InMobiSDK.MraidConfig : Swift.Encodable {}
 extension InMobiSDK.MraidConfig : Swift.Decodable {}
+extension InMobiSDK.Mraid3Config : Swift.Encodable {}
+extension InMobiSDK.Mraid3Config : Swift.Decodable {}
 extension InMobiSDK.IMAudioStatus : Swift.Equatable {}
 extension InMobiSDK.IMAudioStatus : Swift.Hashable {}
 extension InMobiSDK.IMAudioStatus : Swift.RawRepresentable {}
 extension InMobiSDK.IMAudioStatus : Swift.Sendable {}
+extension InMobiSDK.IMAudioStatus : Swift.BitwiseCopyable {}
 extension InMobiSDK.IMLandingPageFlowType : Swift.Equatable {}
 extension InMobiSDK.IMLandingPageFlowType : Swift.Hashable {}
 extension InMobiSDK.IMLandingPageFlowType : Swift.RawRepresentable {}
@@ -1366,6 +1458,7 @@ extension InMobiSDK.IMBannerAudioStatus : Swift.Equatable {}
 extension InMobiSDK.IMBannerAudioStatus : Swift.Hashable {}
 extension InMobiSDK.IMBannerAudioStatus : Swift.RawRepresentable {}
 extension InMobiSDK.IMBannerAudioStatus : Swift.Sendable {}
+extension InMobiSDK.IMBannerAudioStatus : Swift.BitwiseCopyable {}
 extension InMobiSDK.SignalConfig : Swift.Encodable {}
 extension InMobiSDK.SignalConfig : Swift.Decodable {}
 extension InMobiSDK.BloomFilterServiceConfig : Swift.Encodable {}
@@ -1389,6 +1482,8 @@ extension InMobiSDK.PurchasesConfig : Swift.Encodable {}
 extension InMobiSDK.PurchasesConfig : Swift.Decodable {}
 extension InMobiSDK.PublisherConfig : Swift.Encodable {}
 extension InMobiSDK.PublisherConfig : Swift.Decodable {}
+extension InMobiSDK.ExperimentsConfig : Swift.Encodable {}
+extension InMobiSDK.ExperimentsConfig : Swift.Decodable {}
 extension InMobiSDK.IMRemoteLogLevel : Swift.Equatable {}
 extension InMobiSDK.IMRemoteLogLevel : Swift.Hashable {}
 extension InMobiSDK.IMRemoteLogLevel : Swift.RawRepresentable {}
@@ -1417,19 +1512,24 @@ extension InMobiSDK.IMSDKLogLevel : Swift.Equatable {}
 extension InMobiSDK.IMSDKLogLevel : Swift.Hashable {}
 extension InMobiSDK.IMSDKLogLevel : Swift.RawRepresentable {}
 extension InMobiSDK.IMSDKLogLevel : Swift.Sendable {}
+extension InMobiSDK.IMSDKLogLevel : Swift.BitwiseCopyable {}
 extension InMobiSDK.IMSDKGender : Swift.Equatable {}
 extension InMobiSDK.IMSDKGender : Swift.Hashable {}
 extension InMobiSDK.IMSDKGender : Swift.RawRepresentable {}
 extension InMobiSDK.IMSDKGender : Swift.Sendable {}
+extension InMobiSDK.IMSDKGender : Swift.BitwiseCopyable {}
 extension InMobiSDK.IMSDKEducation : Swift.Equatable {}
 extension InMobiSDK.IMSDKEducation : Swift.Hashable {}
 extension InMobiSDK.IMSDKEducation : Swift.RawRepresentable {}
 extension InMobiSDK.IMSDKEducation : Swift.Sendable {}
+extension InMobiSDK.IMSDKEducation : Swift.BitwiseCopyable {}
 extension InMobiSDK.IMSDKAgeGroup : Swift.Equatable {}
 extension InMobiSDK.IMSDKAgeGroup : Swift.Hashable {}
 extension InMobiSDK.IMSDKAgeGroup : Swift.RawRepresentable {}
 extension InMobiSDK.IMSDKAgeGroup : Swift.Sendable {}
+extension InMobiSDK.IMSDKAgeGroup : Swift.BitwiseCopyable {}
 extension InMobiSDK.IMInterstitialAnimationType : Swift.Equatable {}
 extension InMobiSDK.IMInterstitialAnimationType : Swift.Hashable {}
 extension InMobiSDK.IMInterstitialAnimationType : Swift.RawRepresentable {}
 extension InMobiSDK.IMInterstitialAnimationType : Swift.Sendable {}
+extension InMobiSDK.IMInterstitialAnimationType : Swift.BitwiseCopyable {}

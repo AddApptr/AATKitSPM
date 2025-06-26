@@ -37,7 +37,6 @@ Using the aforementioned line is equivalent to this:
     pod 'AATKit/Admob'
     pod 'AATKit/AdX'
     pod 'AATKit/AppLovin'
-    pod 'AATKit/AppLovinMax'
     pod 'AATKit/AppNexus'
     pod 'AATKit/CriteoSDK'
     pod 'AATKit/DFP'

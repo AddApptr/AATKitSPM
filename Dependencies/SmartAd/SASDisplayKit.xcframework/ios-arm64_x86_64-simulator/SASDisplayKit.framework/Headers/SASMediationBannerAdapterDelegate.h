@@ -1,72 +1,71 @@
 //
 //  SASMediationBannerAdapterDelegate.h
-//  SmartAdServer
+//  SASDisplayKit
 //
-//  Created by Loïc GIRON DIT METAZ on 05/09/2018.
-//  Copyright © 2018 Smart AdServer. All rights reserved.
+//  Created by Loic GIRON DIT METAZ on 23/05/2024.
+//  Copyright © 2024 Smart AdServer. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol SASMediationBannerAdapter;
 
 /**
- Protocol implemented by SASMediationBannerAdapter delegate.
- 
- Use this protocol to provide information about the ad loading status or events to the Smart Display SDK.
+ SASMediationBannerAdapter delegate.
  */
 @protocol SASMediationBannerAdapterDelegate <NSObject>
 
-@required
+/// The modal parent view controller of the current banner if any, nil otherwise.
+///
+/// @warning Do not cache this value as its value could change during the adapter lifetime.
+@property (readonly, nullable) UIViewController *modalParentViewController;
 
 /**
- Notify the Smart Display SDK that a banner ad has been loaded successfully.
+ Called when the underlying mediation ad has loaded successfully.
  
- @param adapter The mediation adapter.
- @param bannerView The banner view that has been loaded.
+ @param mediationBannerAdapter The instance of SASMediationBannerAdapter calling the delegate.
+ @param mediatedView The third party view displaying the ad.
+ @param width The width of the loaded ad if available, nil otherwise.
+ @param height The height of the loaded ad if available, nil otherwise.
  */
-- (void)mediationBannerAdapter:(id<SASMediationBannerAdapter>)adapter didLoadBanner:(UIView *)bannerView;
+- (void)mediationBannerAdapter:(id<SASMediationBannerAdapter>)mediationBannerAdapter
+     didLoadAdWithMediatedView:(UIView *)mediatedView
+                         width:(nullable NSNumber *)width
+                        height:(nullable NSNumber *)height;
 
 /**
- Notify the Smart Display SDK that a banner ad has been loaded successfully.
+ Called when the underlying mediation ad has failed to load.
  
- @param adapter The mediation adapter.
- @param bannerView The banner view that has been loaded.
- @param bannerSize The size of the banner view that has been loaded. This size will be provided to the publisher app through the 'optimalAdHeightForContainer:' method but note that it does not guaranted that the app will takes any action to resize the banner view container.
+ @param mediationBannerAdapter The instance of SASMediationBannerAdapter calling the delegate.
+ @param error The error preventing the underlying mediation ad from being loaded.
+ @param noFill YES if the ad could not be loaded because of 'no ad / no fill', NO for any other loading error.
  */
-- (void)mediationBannerAdapter:(id<SASMediationBannerAdapter>)adapter didLoadBanner:(UIView *)bannerView bannerSize:(CGSize)bannerSize;
+- (void)mediationBannerAdapter:(id<SASMediationBannerAdapter>)mediationBannerAdapter
+        didFailToLoadWithError:(NSError *)error
+                        noFill:(BOOL)noFill;
 
 /**
- Notify the Smart Display SDK that a banner ad has failed to load.
+ Called when the underlying mediation ad has been clicked.
  
- @param adapter The mediation adapter.
- @param error The error returned by the mediation SDK.
- @param noFill YES if the error is a 'no fill', NO in all other cases (network error, wrong placement, …). If you are unsure, send YES.
+ @param mediationBannerAdapter The instance of SASMediationBannerAdapter calling the delegate.
  */
-- (void)mediationBannerAdapter:(id<SASMediationBannerAdapter>)adapter didFailToLoadWithError:(NSError *)error noFill:(BOOL)noFill;
+- (void)mediationBannerAdapterDidReceiveAdClickEvent:(id<SASMediationBannerAdapter>)mediationBannerAdapter;
 
 /**
- Notify the Smart Display SDK that a banner ad will present a modal view, for instance after a click.
+ Called when the underlying mediation ad has expanded.
  
- @param adapter The mediation adapter.
+ @param mediationBannerAdapter The instance of SASMediationBannerAdapter calling the delegate.
  */
-- (void)mediationBannerAdapterWillPresentModalView:(id<SASMediationBannerAdapter>)adapter;
+- (void)mediationBannerAdapterDidReceiveAdExpandEvent:(id<SASMediationBannerAdapter>)mediationBannerAdapter;
 
 /**
- Notify the Smart Display SDK that a banner ad will dismiss a modal view, for instance a post click modal view that was open before.
+ Called when the underlying mediation ad has collapsed.
  
- @param adapter The mediation adapter.
+ @param mediationBannerAdapter The instance of SASMediationBannerAdapter calling the delegate.
  */
-- (void)mediationBannerAdapterWillDismissModalView:(id<SASMediationBannerAdapter>)adapter;
-
-/**
- Notify the Smart Display SDK that a banner has sent a click event.
- 
- @param adapter The mediation adapter.
- */
-- (void)mediationBannerAdapterDidReceiveAdClickedEvent:(id<SASMediationBannerAdapter>)adapter;
+- (void)mediationBannerAdapterDidReceiveAdCollapseEvent:(id<SASMediationBannerAdapter>)mediationBannerAdapter;
 
 @end
 

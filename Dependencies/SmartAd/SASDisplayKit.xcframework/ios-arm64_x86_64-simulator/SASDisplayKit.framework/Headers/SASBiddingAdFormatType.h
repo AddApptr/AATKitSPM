@@ -2,25 +2,25 @@
 //  SASBiddingAdFormatType.h
 //  SASDisplayKit
 //
-//  Created by Loïc GIRON DIT METAZ on 28/06/2019.
-//  Copyright © 2019 Smart AdServer. All rights reserved.
+//  Created by Loic GIRON DIT METAZ on 29/10/2024.
+//  Copyright © 2024 Smart AdServer. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// Valid ad format type for bidding ads.
-typedef NS_ENUM(NSInteger, SASBiddingAdFormatType) {
+/// Enumeration of the ad format compatible with in-app bidding.
+typedef NS_ENUM(NSUInteger, SASBiddingAdFormatType) {
     
-    /// Banner type.
-    SASBiddingAdFormatTypeBanner           = 0,
+    /// Banner format.
+    SASBiddingAdFormatTypeBanner,
     
-    /// Interstitial type.
-    SASBiddingAdFormatTypeInterstitial     = 1,
+    /// Interstitial format.
+    SASBiddingAdFormatTypeInterstitial,
     
-    /// Rewarded video type.
-    SASBiddingAdFormatTypeRewardedVideo    = 2
+    /// Unknown format.
+    SASBiddingAdFormatTypeUnknown,
     
 };
 

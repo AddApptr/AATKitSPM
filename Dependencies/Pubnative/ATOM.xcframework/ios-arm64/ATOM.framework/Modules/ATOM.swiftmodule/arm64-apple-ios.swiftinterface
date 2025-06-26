@@ -153,7 +153,8 @@ extension CoreFoundation.CGFloat : ATOM.DatabaseValueConvertible {
   }
   public static func fromDatabaseValue(_ dbValue: ATOM.DatabaseValue) -> CoreFoundation.CGFloat?
 }
-public struct ATOMSwipeTick {
+public struct ATOMSwipeTick : Swift.Equatable {
+  public static func == (lhs: ATOM.ATOMSwipeTick, rhs: ATOM.ATOMSwipeTick) -> Swift.Bool
 }
 public protocol DatabaseWriter : ATOM.DatabaseReader {
   func write<T>(_ updates: (ATOM.Database) throws -> T) throws -> T
@@ -209,7 +210,8 @@ extension UIKit.UIWindow {
 extension UIKit.UIWindow {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func swizzledSendEvent(_ event: UIKit.UIEvent)
 }
-public struct ATOMPinchTick {
+public struct ATOMPinchTick : Swift.Equatable {
+  public static func == (lhs: ATOM.ATOMPinchTick, rhs: ATOM.ATOMPinchTick) -> Swift.Bool
 }
 public struct FTS4 : ATOM.VirtualTableModule {
   public init()
@@ -728,8 +730,8 @@ public protocol AtomGesturesDelegate : AnyObject {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Atom : ObjectiveC.NSObject {
   weak public static var delegate: (any ATOM.AtomDelegate)?
   weak public static var gestureDelegate: (any ATOM.AtomGesturesDelegate)?
-  public static var refreshRateUpdateCallback: ((Swift.String) -> Swift.Void)?
-  public static var signalRateUpdateCallback: ((Swift.String) -> Swift.Void)?
+  public static var cohortsUpdatedCallback: ((Foundation.Date) -> Swift.Void)?
+  public static var signalsSavedInLocalDatabaseCallback: ((Foundation.Date) -> Swift.Void)?
   @objc public static func start(withApiKey apiKey: Swift.String, isTest: Swift.Bool) throws
   public static func getCurrentNetworkConnection() -> ATOM.ATOMReachability.Connection
   @objc public static func start(withApiKey apiKey: Swift.String, isTest: Swift.Bool, withCallback callback: ((Swift.Bool) -> ())?) throws
@@ -785,8 +787,6 @@ extension ATOM.Atom {
   public static var reachabilityLevel: Swift.String {
     get
   }
-  public static func updateRefreshRateTimestamp(_ timestamp: Swift.String)
-  public static func updateSignalsRefreshRateTimestamp(_ timestamp: Swift.String)
 }
 public struct SQLAssociation {
 }
@@ -839,16 +839,6 @@ public struct AnyDatabaseRegionConvertible : ATOM.DatabaseRegionConvertible {
   public init(_ region: @escaping (ATOM.Database) throws -> ATOM.DatabaseRegion)
   public init(_ region: any ATOM.DatabaseRegionConvertible)
   public func databaseRegion(_ db: ATOM.Database) throws -> ATOM.DatabaseRegion
-}
-@_hasMissingDesignatedInitializers public class ATOMDebugConfiguration {
-  final public let id: Swift.Int
-  final public let threshold: Swift.Int?
-  public var name: Swift.String!
-  final public let description: Swift.String!
-  public var model: Swift.String!
-  public var timezone: Swift.String!
-  public var locale: Swift.String!
-  @objc deinit
 }
 public enum ValueScheduling {
   case mainQueue
@@ -1197,6 +1187,10 @@ public class ATOMSynchronizedDictionary<Key, Value> where Key : Swift.Hashable {
   public init()
   public func set(value: Value, forKey key: Key)
   public func removeValue(forKey key: Key)
+  public func removeAll()
+  public func setSync(value: Value, forKey key: Key)
+  public func removeValueSync(forKey key: Key) -> Value?
+  public func removeAllSync()
   public func value(forKey key: Key) -> Value?
   public var count: Swift.Int {
     get
@@ -1212,6 +1206,7 @@ public class ATOMSynchronizedDictionary<Key, Value> where Key : Swift.Hashable {
     set
   }
   public func findKey(where predicate: (Key, Value) throws -> Swift.Bool) rethrows -> Key?
+  public func snapshot() -> [Key : Value]
   @objc deinit
 }
 extension ATOM.ATOMSynchronizedDictionary : Swift.Sequence {
@@ -1365,18 +1360,6 @@ extension ATOM.DatabaseValueConvertible where Self : Swift.Encodable, Self : Swi
   public var databaseValue: ATOM.DatabaseValue {
     get
   }
-}
-@_hasMissingDesignatedInitializers public class ATOMRefreshData {
-  public static let shared: ATOM.ATOMRefreshData
-  public var refreshRateTimestamp: Swift.String? {
-    get
-  }
-  public var signalsRefreshRateTimestamp: Swift.String? {
-    get
-  }
-  public func updateRefreshRateTimestamp(_ timestamp: Swift.String)
-  public func updateSignalsRefreshRateTimestamp(_ timestamp: Swift.String)
-  @objc deinit
 }
 public struct ATOMTouchConfiguration {
   public var color: UIKit.UIColor?
@@ -1902,6 +1885,18 @@ public protocol DatabaseAggregate {
   init()
   mutating func step(_ dbValues: [ATOM.DatabaseValue]) throws
   func finalize() throws -> (any ATOM.DatabaseValueConvertible)?
+}
+@_hasMissingDesignatedInitializers public class ATOMRefreshData {
+  public static let shared: ATOM.ATOMRefreshData
+  public var cohortsUpdatedAt: Swift.String {
+    get
+    set
+  }
+  public var signalsSavedInLocalDatabaseAt: Swift.String {
+    get
+    set
+  }
+  @objc deinit
 }
 extension Foundation.Data : ATOM.DatabaseValueConvertible, ATOM.StatementColumnConvertible {
   @inlinable public init(sqliteStatement: ATOM.SQLiteStatement, index: Swift.Int32) {
@@ -3467,6 +3462,11 @@ public class ATOMZip {
   public class func isValidFileExtension(_ fileExtension: Swift.String) -> Swift.Bool
   @objc deinit
 }
+extension Foundation.Date {
+  public var reportableString: Swift.String {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class ATOMSynchronizedArray<T> {
   public func append(newElement: T)
   public func appendIfNotExists(_ newElement: T) where T : Swift.Equatable
@@ -3482,6 +3482,7 @@ public class ATOMZip {
   }
   public func safeElement(at index: Swift.Int) -> T?
   public func firstIndex(of element: T) -> Swift.Int? where T : Swift.Equatable
+  public func takeSnapshotAndRemoveAll() -> [T]
   @objc deinit
 }
 extension ATOM.ATOMSynchronizedArray : Swift.Sequence {

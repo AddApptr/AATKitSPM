@@ -4,181 +4,161 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/SASAd.h</key>
+		<key>Assets.car</key>
 		<data>
-		OS2zAVz1rEXkuPpRQJBji5396dg=
+		Dvqtf/jNuT7W+xK1pF+VZ9JVDSQ=
 		</data>
-		<key>Headers/SASAdChoicesView.h</key>
+		<key>Equativ-Display-SDK.podspec</key>
 		<data>
-		EqkuRdh+tTUgGNiMSroaFB7DcNY=
+		DscO23VGmESIuImIg/ShD31ZAT8=
+		</data>
+		<key>Equativ-Display-SDK.podspec-trunk</key>
+		<data>
+		7m+nLGcrzUGY6MEEPqoDJ5RVL1k=
+		</data>
+		<key>Headers/SASAdDigitalServiceActInfo.h</key>
+		<data>
+		Xs5V3hOA20m2BQU9UOzd63fBkIk=
+		</data>
+		<key>Headers/SASAdError.h</key>
+		<data>
+		GSRvhqZQM2VgfCIKof/jSAWtNl4=
+		</data>
+		<key>Headers/SASAdInfo.h</key>
+		<data>
+		lo54v22KfsQxwrZ0AuoruAvU81A=
 		</data>
 		<key>Headers/SASAdPlacement.h</key>
 		<data>
-		3ebdWxMwBHL/sQ5qRnPzAwFDrPM=
+		x6KEd4KtoGEORF7eysgzyVSyNZY=
+		</data>
+		<key>Headers/SASAdProgrammaticInfo.h</key>
+		<data>
+		qFZJ6DVBzB6p5Y2Ae+TKlX8Bo/o=
 		</data>
 		<key>Headers/SASAdStatus.h</key>
 		<data>
-		i7BhWwhxOCFdk9vMFXpmh0aK/j8=
-		</data>
-		<key>Headers/SASAdView.h</key>
-		<data>
-		9GZS04LdYv0jieC4EgF26fHXKsw=
-		</data>
-		<key>Headers/SASAdViewContainerCell.h</key>
-		<data>
-		od6DMSR+DBNWe64rjI9Tkz1VZ+M=
-		</data>
-		<key>Headers/SASBannerBidderAdapterDelegate.h</key>
-		<data>
-		Y7D0ZO34H5LlLaB/WHBpcVRqag4=
+		0uFCfNNGMecU8g3h6/Vnr1PoelY=
 		</data>
 		<key>Headers/SASBannerView.h</key>
 		<data>
-		siwt9Jap3HgkAXqwQd5Oge5REGE=
+		6+WwW3FXztgyHJ+09r46r3ee8Mc=
 		</data>
 		<key>Headers/SASBannerViewDelegate.h</key>
 		<data>
-		T+D+zKRKK9ItjfWD7nvcX51Wbdo=
-		</data>
-		<key>Headers/SASBaseInterstitialManager.h</key>
-		<data>
-		ELM1xEDy2eo4sNJEfNVZclMkSOE=
-		</data>
-		<key>Headers/SASBidderAdapter.h</key>
-		<data>
-		BQ0a/1GiZCAkoUePmxL5B+WhhAo=
-		</data>
-		<key>Headers/SASBidderAdapterProtocol.h</key>
-		<data>
-		RIveLeZtG+l+G3q5INoTogGP8cM=
+		LO5F0Q+DvVBZZXBww6CBSIYmgRA=
 		</data>
 		<key>Headers/SASBiddingAdFormatType.h</key>
 		<data>
-		04Ka4SZrbd2OXi5C70CBDrp4Hqw=
+		C600XcHEY2Sy5TBRSMxpQfe2hck=
 		</data>
 		<key>Headers/SASBiddingAdPrice.h</key>
 		<data>
-		GsWSnV25zVqUIde+yiex/OeyZfM=
+		Qj6xsNGcIJsPdmaVF4SMG5Cn3C0=
 		</data>
 		<key>Headers/SASBiddingAdResponse.h</key>
 		<data>
-		tI5H/espb+0NPoDNrlRoV+y5wqk=
+		vXdy2g/PRzgk7jdtlw583ka6dPU=
+		</data>
+		<key>Headers/SASBiddingCurrency.h</key>
+		<data>
+		NfhxxlYMcEpldzuAHCZvHrvCVCk=
 		</data>
 		<key>Headers/SASBiddingManager.h</key>
 		<data>
-		5rKMuoUS/HJd2jxW4yIElM8EbPc=
+		b2sDwxjI3Xv9gfTQ7oTqRAkvdTk=
 		</data>
 		<key>Headers/SASBiddingManagerDelegate.h</key>
 		<data>
-		O3ZVpkRnAOI4RvlInM8GXY38jQg=
+		uq4Z/DDAlPkaKKTi3tB5YTrEDU8=
 		</data>
 		<key>Headers/SASConfiguration.h</key>
 		<data>
-		6tIiFdjakul7NcjIsHtzADSFIsM=
+		76L5l3rfWU9sUqYtztmrsnWAaqk=
+		</data>
+		<key>Headers/SASDigitalServiceActConfig.h</key>
+		<data>
+		BwLREBBzgXTVRSoYyyqbOGaYwSI=
+		</data>
+		<key>Headers/SASDigitalServiceActConfigAdRender.h</key>
+		<data>
+		qRAtaJW+3zZSDDl6Pzz4v99qTKc=
+		</data>
+		<key>Headers/SASDigitalServiceActConfigPubRender.h</key>
+		<data>
+		1ZOf1YpYTehFcbHYzgIyV3Eu3DA=
+		</data>
+		<key>Headers/SASDigitalServiceActConfigTransparency.h</key>
+		<data>
+		mfVCELEkEtlK4tEGDt32ObF9jpI=
+		</data>
+		<key>Headers/SASDisplayKit-Swift.h</key>
+		<data>
+		I6cTBfKQujtmWlQwFtPvxiXmf0A=
 		</data>
 		<key>Headers/SASDisplayKit.h</key>
 		<data>
-		EebTpV+ZEzURtt7H6JvoSs/iYJs=
+		S/dXpbSt7kNpEzYlV0yb/cbMTsY=
 		</data>
 		<key>Headers/SASFrameworkInfo.h</key>
 		<data>
-		Pg//kFrLDv4jEDOG9kGq/n9KEhw=
-		</data>
-		<key>Headers/SASInterstitialBidderAdapterDelegate.h</key>
-		<data>
-		OIZHkh8kvBIc/gE6z0yQqw6IiXg=
+		8WiV0SQxS5SAQ7flZUEO3fZjTT4=
 		</data>
 		<key>Headers/SASInterstitialManager.h</key>
 		<data>
-		XsdWDcgkaJZhuf+AcJOHnn+MJyM=
+		n2g4vcn/pCrIFslTvTQ95ZETRDs=
 		</data>
 		<key>Headers/SASInterstitialManagerDelegate.h</key>
 		<data>
-		khrQOXGsIjYscoY5x9pJlI/MaAQ=
-		</data>
-		<key>Headers/SASLoader.h</key>
-		<data>
-		49Q8/TQEKW0DHt/+13R1CKZZywk=
-		</data>
-		<key>Headers/SASMediationAdapterConstants.h</key>
-		<data>
-		vdgelA3nS271v9QI9LlrZGVU6l4=
+		XJMSPt1oKSxiIhkPJX0kmf/8gig=
 		</data>
 		<key>Headers/SASMediationBannerAdapter.h</key>
 		<data>
-		9frAiV6ya93Bmu8cfW7rLq+zjGQ=
+		zwRM2wncVw5sG31y84rf6vVpaFI=
 		</data>
 		<key>Headers/SASMediationBannerAdapterDelegate.h</key>
 		<data>
-		Ntw57eAocto8FLj7loYjSQMAlKk=
+		dmH7YGraAi8St5pJaghDznv24iA=
 		</data>
 		<key>Headers/SASMediationInterstitialAdapter.h</key>
 		<data>
-		ToQl6GPdyCZN3pG3mzXlLxvurfQ=
+		MYkvzyAnPnZbOR0JouV+sq/Zdnw=
 		</data>
 		<key>Headers/SASMediationInterstitialAdapterDelegate.h</key>
 		<data>
-		b4h9NhKHFA4ANNiTL3AX7W8Ucck=
+		5e3DfT8YPNbklcbtl6S7ZZ6aXQo=
 		</data>
-		<key>Headers/SASMediationNativeAdAdapter.h</key>
+		<key>Headers/SASNativeAdAssets.h</key>
 		<data>
-		67bpz3az9tNMUfyCCOWqex9yi+g=
+		s9ZO/+kfAxV8FKgG3PhIZ7kfILE=
 		</data>
-		<key>Headers/SASMediationNativeAdAdapterDelegate.h</key>
+		<key>Headers/SASNativeAdView.h</key>
 		<data>
-		HDrlgkzslY7IBihpCbuHp4p0gRc=
+		F9JUEnSY0AYin8ttlEjjqzpz6yQ=
 		</data>
-		<key>Headers/SASMediationNativeAdInfo.h</key>
+		<key>Headers/SASNativeAdViewBinder.h</key>
 		<data>
-		gSX5Y9v03fkERtuZ8K6Rodm4Z4U=
+		waEF72cGm5s4AgvP6D+nc988OdA=
 		</data>
-		<key>Headers/SASMediationRewardedVideoAdapter.h</key>
+		<key>Headers/SASNativeAdViewBinderBuilder.h</key>
 		<data>
-		grjSi7E2yq3byx4mNbkAmnUCXg4=
+		3gUMXvbiNs6ICbd0/H6bZMbqpJY=
 		</data>
-		<key>Headers/SASMediationRewardedVideoAdapterDelegate.h</key>
+		<key>Headers/SASNativeAdViewDelegate.h</key>
 		<data>
-		86BY9PBLm0rfyGX3Od3t6vtY178=
+		NFPxjpL0lRsnNqzdzOKW+yxPqx4=
 		</data>
-		<key>Headers/SASNativeAd.h</key>
+		<key>Headers/SASParallaxMargins.h</key>
 		<data>
-		CNVloAFzefZ86T3NNKsoZ0x2cyA=
+		iFU2yHVAe24GsutLk3JgYbjI9jM=
 		</data>
-		<key>Headers/SASNativeAdDelegate.h</key>
+		<key>Headers/SASRatingBar.h</key>
 		<data>
-		QY1XsS7kTkNY9SLJ9/XQfNll00g=
+		ai8RE3T2xqzpvGW/IlLxhDx8IrI=
 		</data>
-		<key>Headers/SASNativeAdImage.h</key>
+		<key>Headers/SASRatingBarView.h</key>
 		<data>
-		WFW5Ap5DsIvv+JiH9F9hol7mzAc=
-		</data>
-		<key>Headers/SASNativeAdManager.h</key>
-		<data>
-		Yo0RbcyT/0hd7RFvRD+XZOZswZo=
-		</data>
-		<key>Headers/SASNativeAdMediaView.h</key>
-		<data>
-		3EqNd4vYggcQ2jTWoDLWcBLrGPw=
-		</data>
-		<key>Headers/SASNativeAdMediaViewDelegate.h</key>
-		<data>
-		YcW6NHmsH/pX6PETHVKAmcQdgSY=
-		</data>
-		<key>Headers/SASNativeVideoAd.h</key>
-		<data>
-		DThAYD4tSv3lUsDse6BDwi+X01Q=
-		</data>
-		<key>Headers/SASReward.h</key>
-		<data>
-		QVwgvat6DehkKcwEqyJifFRuH4A=
-		</data>
-		<key>Headers/SASRewardedVideoManager.h</key>
-		<data>
-		eRo62FbBiafB7hb18Uzb8+3H/tc=
-		</data>
-		<key>Headers/SASRewardedVideoManagerDelegate.h</key>
-		<data>
-		NqcQyg34m5Vapdk+RShGlD7ZtXI=
+		P/+i0KBjc943Bbw19qun8g3Uyfw=
 		</data>
 		<key>Headers/SASSecondaryImplementationInfo.h</key>
 		<data>
@@ -186,695 +166,488 @@
 		</data>
 		<key>Headers/SASSellerDefinedAudience.h</key>
 		<data>
-		sG8/15x0FgxnHdf6Gx0h1NZr+OU=
+		kco+Ct9Hz2owhE/2LQbenrzEzNM=
 		</data>
 		<key>Headers/SASSellerDefinedContent.h</key>
 		<data>
-		2T5sql+P8p4GcIlWEe1cyoyheLY=
+		lZroLZBG+Ifs2F550F7sw+diDpA=
 		</data>
 		<key>Headers/SASSellerDefinedSegment.h</key>
 		<data>
-		bVjvrOVo4k2O6nltpmpxk5Lho98=
+		BAVXPWBPVUq09OmKst0pmxDxnXw=
 		</data>
-		<key>Headers/SASVideoEvent.h</key>
+		<key>Headers/SASViewAsset.h</key>
 		<data>
-		e+aifkClepxp8zhVEZNo0q8ebE4=
+		Z3ClotDVyOa910HoFzNLclC4pNw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DpWmBGQgXsVQx0wcW2clnXyeP0I=
+		J609YANMjv6XUdJUTmjvyV25fMU=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		CcpF2Wp+uYvcLf81u6lDXNVdvT4=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<data>
+		OwHt3lMjwsp2juLBahIXy5xvFIA=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		VKqgqOxpGsP54PxSPv6K+vxG11g=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		On7uVg4V8XezG6lJZCxQXJy5Zoc=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		fMZ2dAE7JtGAzKqM27V6rONKIeg=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		On7uVg4V8XezG6lJZCxQXJy5Zoc=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		z2ozQCIguii1OYc4aQTyQgcq67A=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		VKqgqOxpGsP54PxSPv6K+vxG11g=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		s2LKMWPmL5bBd512ol8QNc3FnVI=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		GIaG8EA99FHNnSe3ykvRFkd1hIc=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		s2LKMWPmL5bBd512ol8QNc3FnVI=
+		</data>
+		<key>Modules/SASDisplayKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		34a5M2MS8I3UMXSgyQ8P066gSjk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		70n/1by08NC0jeafuCcbgjO8zCA=
+		fjmvroz/E8UDoL5yJzTkbfBRD2s=
+		</data>
+		<key>Modules/module.private.modulemap</key>
+		<data>
+		i8Zg7RybiubdqOLbbjd/cWX+RrE=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		08SriqUMwtS0C7N5iM4utJlOzgA=
+		LQ6qA68ajl6tZtXQWgUx7Ox4kb8=
 		</data>
-		<key>Smart-Display-SDK.podspec</key>
+		<key>PrivateHeaders/SASLog.h</key>
 		<data>
-		tHc6hhfvBdHS3H/VsC1/DU7xUQI=
-		</data>
-		<key>Smart-Display-SDK.podspec-trunk</key>
-		<data>
-		+MCexAqR65HnHIuJyJpjOSCKiVI=
-		</data>
-		<key>adchoices.png</key>
-		<data>
-		JxpvmGOHt17k2jekTkT0VMcPZsM=
-		</data>
-		<key>adchoices@2x.png</key>
-		<data>
-		kngXroD9XyDF6QTsvSBfFINSpFE=
-		</data>
-		<key>back-icon.png</key>
-		<data>
-		TAywVDFq3CbEQQw71NE77feO+QI=
-		</data>
-		<key>back-icon@2x.png</key>
-		<data>
-		4mV5WA9L0g0JPQfpbC+nk7syOig=
+		8pueYfTeQyelpe5OTkyAuhomPkI=
 		</data>
 		<key>en.lproj/SASDisplayKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cFtJLv6PBsRa/xAFopSMIrmjL/E=
+			WNT9Qu7ElsRgHVmtgh5CKgUA9H4=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>equalizer_1.png</key>
-		<data>
-		nFM0zxBXqc484lfjfWGrGas3TX0=
-		</data>
-		<key>equalizer_1@2x.png</key>
-		<data>
-		c5aniOyYNCdWqnahP6iXiTwfr8s=
-		</data>
-		<key>equalizer_1@3x.png</key>
-		<data>
-		065c3+iCya/iAJ6KnyuBEDBri/Q=
-		</data>
-		<key>equalizer_2.png</key>
-		<data>
-		VTtCceOe1cdjeSe5sYNzwkyVTCk=
-		</data>
-		<key>equalizer_2@2x.png</key>
-		<data>
-		klnBE36+grjRmU4q2KZQuK3/Zv8=
-		</data>
-		<key>equalizer_2@3x.png</key>
-		<data>
-		8VlnFjTO3FZeiU3sSNUnuUhnEJE=
-		</data>
-		<key>equalizer_3.png</key>
-		<data>
-		2GMazBMox2o85bXZ6JL+Md/nrzA=
-		</data>
-		<key>equalizer_3@2x.png</key>
-		<data>
-		dOZtk4uWEIGSenRSm/w9UE2K/NY=
-		</data>
-		<key>equalizer_3@3x.png</key>
-		<data>
-		iWkxJFAShanuM/Dll2IKmsizz38=
-		</data>
-		<key>equalizer_4.png</key>
-		<data>
-		4dRvt4AcKS0ztu+ay5zYRTTbpm4=
-		</data>
-		<key>equalizer_4@2x.png</key>
-		<data>
-		3LHwAXc+QtCC/sCO9G9nXA24Etc=
-		</data>
-		<key>equalizer_4@3x.png</key>
-		<data>
-		K2Wj/oZKEQRUFUrmSpBqcH1QIvI=
-		</data>
-		<key>equalizer_5.png</key>
-		<data>
-		p4VW7TrQ2bi3/dE/+Vczn2jyTQU=
-		</data>
-		<key>equalizer_5@2x.png</key>
-		<data>
-		wlrXSpHK/IeoWbmeBUKgyi3H5xk=
-		</data>
-		<key>equalizer_5@3x.png</key>
-		<data>
-		P/9SlPtCgUJiH6193iY7FPQCJA0=
-		</data>
-		<key>equalizer_6.png</key>
-		<data>
-		g+MBK0oUbuWx9XQDXnQNHK7kRSA=
-		</data>
-		<key>equalizer_6@2x.png</key>
-		<data>
-		88ACYa+ILWzSyNdxM4QK2htkwlY=
-		</data>
-		<key>equalizer_6@3x.png</key>
-		<data>
-		EC6FNMiOGJ7lrjLWK/pbMk7jJTU=
-		</data>
-		<key>equalizer_7.png</key>
-		<data>
-		xMJimE3UbaossCzzZx0kbGq5klk=
-		</data>
-		<key>equalizer_7@2x.png</key>
-		<data>
-		4BOrOJWO4phfrkOfUv18zO3L2sQ=
-		</data>
-		<key>equalizer_7@3x.png</key>
-		<data>
-		otkW19F0Y4HZLoSvkRfkZC8Xc3Y=
-		</data>
-		<key>equalizer_8.png</key>
-		<data>
-		xMJimE3UbaossCzzZx0kbGq5klk=
-		</data>
-		<key>equalizer_8@2x.png</key>
-		<data>
-		4BOrOJWO4phfrkOfUv18zO3L2sQ=
-		</data>
-		<key>equalizer_8@3x.png</key>
-		<data>
-		otkW19F0Y4HZLoSvkRfkZC8Xc3Y=
-		</data>
-		<key>equalizer_9.png</key>
-		<data>
-		Zg0kZ6iiO97QgdYkSByjITXREGc=
-		</data>
-		<key>equalizer_9@2x.png</key>
-		<data>
-		OqI6RPyro7j8iHuZ6VO/OoAnoX8=
-		</data>
-		<key>equalizer_9@3x.png</key>
-		<data>
-		2fRTqNsGVNAYB7VsZvYdlYNZRjY=
-		</data>
-		<key>extract_creative_info.js</key>
-		<data>
-		jlO9lkgM61sc9et4YclfnxKivvs=
-		</data>
-		<key>forward-icon.png</key>
-		<data>
-		s9gyDEQSKoXKCWgfezSsYnp515g=
-		</data>
-		<key>forward-icon@2x.png</key>
-		<data>
-		O85frKQx42N8Qts+o+5hR9Sy0Tk=
-		</data>
 		<key>fr.lproj/SASDisplayKit.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			393Jy6zyOFMJc17yc0J50n08pwM=
+			cha2WzhOYWrvet5F1Edk3aZ1jpo=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>loader.png</key>
+		<key>sound-indicator_1.png</key>
 		<data>
-		ZQwf+mjgFIjLY0d/ih+qpbSRVqI=
+		nFM0zxBXqc484lfjfWGrGas3TX0=
 		</data>
-		<key>loader@2x.png</key>
+		<key>sound-indicator_1@2x.png</key>
 		<data>
-		snL2nWVAlaGTuCasuHEXrrTikk0=
+		c5aniOyYNCdWqnahP6iXiTwfr8s=
 		</data>
-		<key>loader@3x.png</key>
+		<key>sound-indicator_1@3x.png</key>
 		<data>
-		jj6aWw67b0PKoa0o6BLpeEuTPQU=
+		065c3+iCya/iAJ6KnyuBEDBri/Q=
 		</data>
-		<key>mraid-close-button.png</key>
+		<key>sound-indicator_2.png</key>
 		<data>
-		IL9D7SCRAZBGu8o0G/vg4mOW3aA=
+		VTtCceOe1cdjeSe5sYNzwkyVTCk=
 		</data>
-		<key>mraid-close-button@2x.png</key>
+		<key>sound-indicator_2@2x.png</key>
 		<data>
-		Pzsw1/1LWPFM9zdP7yguwZpWVXA=
+		klnBE36+grjRmU4q2KZQuK3/Zv8=
 		</data>
-		<key>mute-button.png</key>
+		<key>sound-indicator_2@3x.png</key>
 		<data>
-		zZSKYR+0BmAvwU5h5eMo1ZsIJ+8=
+		8VlnFjTO3FZeiU3sSNUnuUhnEJE=
 		</data>
-		<key>mute-button@2x.png</key>
+		<key>sound-indicator_3.png</key>
 		<data>
-		R0bCc/kici1FSRP3a3GfTVvgiik=
+		2GMazBMox2o85bXZ6JL+Md/nrzA=
 		</data>
-		<key>native-360-arrow.png</key>
+		<key>sound-indicator_3@2x.png</key>
 		<data>
-		X5GKHuPIXyZOOhgeZ+lPREWzHmU=
+		dOZtk4uWEIGSenRSm/w9UE2K/NY=
 		</data>
-		<key>native-360-arrow@2x.png</key>
+		<key>sound-indicator_3@3x.png</key>
 		<data>
-		rp08PsKQERWVMKV0V5TntbYpETY=
+		iWkxJFAShanuM/Dll2IKmsizz38=
 		</data>
-		<key>native-360-arrow@3x.png</key>
+		<key>sound-indicator_4.png</key>
 		<data>
-		1Kj2IVOWml3oF+xxGI5M5b7O/TQ=
+		4dRvt4AcKS0ztu+ay5zYRTTbpm4=
 		</data>
-		<key>native-360.png</key>
+		<key>sound-indicator_4@2x.png</key>
 		<data>
-		ZK12INemG6wlyzKDcRliYals+ls=
+		3LHwAXc+QtCC/sCO9G9nXA24Etc=
 		</data>
-		<key>native-360@2x.png</key>
+		<key>sound-indicator_4@3x.png</key>
 		<data>
-		OrtNBdbH6u4zw2McwWp5Tc4Rrzo=
+		K2Wj/oZKEQRUFUrmSpBqcH1QIvI=
 		</data>
-		<key>native-360@3x.png</key>
+		<key>sound-indicator_5.png</key>
 		<data>
-		0xyRPBuI94W6vDm5skRtzsx1v0w=
+		p4VW7TrQ2bi3/dE/+Vczn2jyTQU=
 		</data>
-		<key>native-action-info-icon.png</key>
+		<key>sound-indicator_5@2x.png</key>
 		<data>
-		phRj/jBVOUFTaC2+t31+zgZImMw=
+		wlrXSpHK/IeoWbmeBUKgyi3H5xk=
 		</data>
-		<key>native-action-info-icon@2x.png</key>
+		<key>sound-indicator_5@3x.png</key>
 		<data>
-		qAH4+bQdw5ZpG10DHkdg9jG8Bb0=
+		P/9SlPtCgUJiH6193iY7FPQCJA0=
 		</data>
-		<key>native-action-play-icon.png</key>
+		<key>sound-indicator_6.png</key>
 		<data>
-		r4t18tw3s0SGqIUAeJXYkKx0IJ0=
+		g+MBK0oUbuWx9XQDXnQNHK7kRSA=
 		</data>
-		<key>native-action-play-icon@2x.png</key>
+		<key>sound-indicator_6@2x.png</key>
 		<data>
-		6JMn04jOaz783VBlFZT0dDP2fP8=
+		88ACYa+ILWzSyNdxM4QK2htkwlY=
 		</data>
-		<key>native-action-store-icon.png</key>
+		<key>sound-indicator_6@3x.png</key>
 		<data>
-		9pFn59374Ot9Zimb5bjlqCFITFg=
+		EC6FNMiOGJ7lrjLWK/pbMk7jJTU=
 		</data>
-		<key>native-action-store-icon@2x.png</key>
+		<key>sound-indicator_7.png</key>
 		<data>
-		cUvicu61YoMo5zf6A7N546fXMIg=
+		xMJimE3UbaossCzzZx0kbGq5klk=
 		</data>
-		<key>native-action-video-icon.png</key>
+		<key>sound-indicator_7@2x.png</key>
 		<data>
-		dXtRlK8crvyZ8WeV0cyXuK9dwFU=
+		4BOrOJWO4phfrkOfUv18zO3L2sQ=
 		</data>
-		<key>native-action-video-icon@2x.png</key>
+		<key>sound-indicator_7@3x.png</key>
 		<data>
-		KFP7AiK8vvTUgTY2orQC8dQ8wlg=
+		otkW19F0Y4HZLoSvkRfkZC8Xc3Y=
 		</data>
-		<key>native-close-icon.png</key>
+		<key>sound-indicator_8.png</key>
 		<data>
-		4AH5PasjU+8NQtgSslTzNk4fhBk=
+		xMJimE3UbaossCzzZx0kbGq5klk=
 		</data>
-		<key>native-close-icon@2x.png</key>
+		<key>sound-indicator_8@2x.png</key>
 		<data>
-		cnGt1Q7o4p1cMsodkSlSyqU7tu0=
+		4BOrOJWO4phfrkOfUv18zO3L2sQ=
 		</data>
-		<key>native-enter-fullscreen.png</key>
+		<key>sound-indicator_8@3x.png</key>
 		<data>
-		CSmOfJbBs+whhB9mM+9VhrluZe4=
+		otkW19F0Y4HZLoSvkRfkZC8Xc3Y=
 		</data>
-		<key>native-enter-fullscreen@2x.png</key>
+		<key>sound-indicator_9.png</key>
 		<data>
-		K3je3BJFwjGxj32S6l+2IPjeLvs=
+		Zg0kZ6iiO97QgdYkSByjITXREGc=
 		</data>
-		<key>native-enter-fullscreen@3x.png</key>
+		<key>sound-indicator_9@2x.png</key>
 		<data>
-		+/6WSiGpBBRy+P2mYB1liV/2E1A=
+		OqI6RPyro7j8iHuZ6VO/OoAnoX8=
 		</data>
-		<key>native-exit-fullscreen.png</key>
+		<key>sound-indicator_9@3x.png</key>
 		<data>
-		3zDvAjahI86ZlU8c8DtPm58iefw=
-		</data>
-		<key>native-exit-fullscreen@2x.png</key>
-		<data>
-		KIolA+71psyAW7USmdfCNAdV5yU=
-		</data>
-		<key>native-exit-fullscreen@3x.png</key>
-		<data>
-		pU7cSV89WFsWg4MNBD7gSAzMaAU=
-		</data>
-		<key>native-info-icon.png</key>
-		<data>
-		hC2Lzhrqoq3f8+8Pnh/0ML/1Btc=
-		</data>
-		<key>native-info-icon@2x.png</key>
-		<data>
-		VwdOKWLdACsi1ZUJTFr0je5vVxQ=
-		</data>
-		<key>native-mute-icon@2x.png</key>
-		<data>
-		cYRdiBbPdbuc477bJGyvj6206Wo=
-		</data>
-		<key>native-pause-icon.png</key>
-		<data>
-		iAaJQwWVFGJNq9rb03uUgrD1PMs=
-		</data>
-		<key>native-pause-icon@2x.png</key>
-		<data>
-		nAl7FADM6XqjkGmW7SiGW8Tf/O8=
-		</data>
-		<key>native-play-icon.png</key>
-		<data>
-		cytQ6LHJTLzCRQIoi2VtDVOt0Xc=
-		</data>
-		<key>native-play-icon@2x.png</key>
-		<data>
-		jJ6fk+gFOTuXWJH0kBgr/oRrw30=
-		</data>
-		<key>native-play-large-icon.png</key>
-		<data>
-		ftHPi6hLx3IydiqFQ05JQkNscLk=
-		</data>
-		<key>native-play-large-icon@2x.png</key>
-		<data>
-		Q258GNqdi35D4B//Lj1DTI5QZWo=
-		</data>
-		<key>native-slider-thumb.png</key>
-		<data>
-		3PYOKIPEpQXh8thRKXRRZRzr3n8=
-		</data>
-		<key>native-slider-thumb@2x.png</key>
-		<data>
-		MnmH9OafqtLmbmhDsvZrlOKnjhs=
-		</data>
-		<key>native-unmute-icon@2x.png</key>
-		<data>
-		JtY8L7rQGjkEEIl0YydxpYHnERM=
-		</data>
-		<key>skip-button.png</key>
-		<data>
-		IL9D7SCRAZBGu8o0G/vg4mOW3aA=
-		</data>
-		<key>skip-button@2x.png</key>
-		<data>
-		Pzsw1/1LWPFM9zdP7yguwZpWVXA=
-		</data>
-		<key>skip-wait.png</key>
-		<data>
-		oIyME93earww42bRJjsZlHhkFD4=
-		</data>
-		<key>skip-wait@2x.png</key>
-		<data>
-		Y2R9XEGvEQI1SLYHv/Bs1DywFCc=
-		</data>
-		<key>unmute-button.png</key>
-		<data>
-		WS2dGgqIDw8jQrU7WQ8oec/OWK0=
-		</data>
-		<key>unmute-button@2x.png</key>
-		<data>
-		d2YMrjBZHSBS8xPleIj6cewuNdg=
-		</data>
-		<key>video-close-button@2x.png</key>
-		<data>
-		lzhwc9yvG24LAS7jxv3eUlkEcCQ=
+		2fRTqNsGVNAYB7VsZvYdlYNZRjY=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/SASAd.h</key>
+		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TULu6H6M9eKcHTe5P+2C/SUsdlqXJ3aukZtSDX2tyQY=
+			9gQcZb39MkV7sQijbANRQBrdhJL/4jKfa07nKSIwLlM=
 			</data>
 		</dict>
-		<key>Headers/SASAdChoicesView.h</key>
+		<key>Equativ-Display-SDK.podspec</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jPTzPHRH6vSRH+T62RQeEEApNGSk+HjDni4L4+1wHXo=
+			brUk7hgtcRIKPm6G4Xp/KG+kCbshUnf5M/6eqv8cWxo=
+			</data>
+		</dict>
+		<key>Equativ-Display-SDK.podspec-trunk</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x7v81dxLYH1QQPzGcrcDC+IieJKLiVeb+Bb44tXX/a4=
+			</data>
+		</dict>
+		<key>Headers/SASAdDigitalServiceActInfo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pWxxG9dRXSfyRfk0oxnv+XzN1u/jgHGzYpzHu2mp7Jc=
+			</data>
+		</dict>
+		<key>Headers/SASAdError.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SsDb9cbcKLNtvXds7U3qMtZpA6EuO6WBOrV3ubK9x5E=
+			</data>
+		</dict>
+		<key>Headers/SASAdInfo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gxTBXbspOjCu6aN1/vouwBbFcbGJX/gwmlCxNxz/bn4=
 			</data>
 		</dict>
 		<key>Headers/SASAdPlacement.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OE1eOcBF0Pn/mNtVcA7RPwmiu0Hm53921paFjBp4M/A=
+			QhRwcU8P3hNkDbLoWAyt5STDqjA8JSubiOHZIZOxX+M=
+			</data>
+		</dict>
+		<key>Headers/SASAdProgrammaticInfo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QWU+Pi2sWKSm9U4oep1zNwyfFKxdLOrNM1ItMD5uISA=
 			</data>
 		</dict>
 		<key>Headers/SASAdStatus.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DD27yRsG1/j6Avk6LJDWlxcstIEsq7HWywJMt9jcOHk=
-			</data>
-		</dict>
-		<key>Headers/SASAdView.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0gE5Fg9DsLJo7ZyHIwqmHZ4fwdSuLPJ2rW08YodCXK0=
-			</data>
-		</dict>
-		<key>Headers/SASAdViewContainerCell.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			51KUX/fJW3dbeqZIvcBDCC+Menfjb7XDKYzgXPJ1xG4=
-			</data>
-		</dict>
-		<key>Headers/SASBannerBidderAdapterDelegate.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rYiljwP+f1EIZ3Xf5T7HaRMUzBQj9/P0DfeipXJ1CXA=
+			WyBU5BAsVmQlhRpaY5zhNgEj1yFRuq/ZrgLxR7gZtCI=
 			</data>
 		</dict>
 		<key>Headers/SASBannerView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kOSdJHxBsaqqiCthiqLtMT4gXdtJYbTuTjpTfahDhFQ=
+			YOgbeTHDsOtt/Fw/56W3EJmd7gAKYkxGpjC6IE7qITI=
 			</data>
 		</dict>
 		<key>Headers/SASBannerViewDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sQL/TpV9+QtY0EtlKBIQBTr19FKgQ887rgJ14Fucecw=
-			</data>
-		</dict>
-		<key>Headers/SASBaseInterstitialManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XeY1c7qE/2A7veCEqW7+5N0lUx64yQ7QiHAPxxKce/A=
-			</data>
-		</dict>
-		<key>Headers/SASBidderAdapter.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			r0E6SEaMCVVtTf+uYdlKXLZhJs8yL7cSo+j2dwVvtKQ=
-			</data>
-		</dict>
-		<key>Headers/SASBidderAdapterProtocol.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YZR/9VqihctxMC4H2vLCQcgaljuRI0N5MFV50de6zsU=
+			FQj7OtE0zpWzGIt061pae4xq5f2N4GmWwvfz7ZX6tis=
 			</data>
 		</dict>
 		<key>Headers/SASBiddingAdFormatType.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b9khtpGqJrqP8F3dxeYxIU9lGX7e1mWFhGif15vM/vA=
+			juHyX4flR3Fk7AxpRjNjq9fktzNLYXz8ZjiITS32TUk=
 			</data>
 		</dict>
 		<key>Headers/SASBiddingAdPrice.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ioFJF97CaJWFTXika91v3mXlMN9B+umsNjjwL5bYgk=
+			OxA0uaj9q2erQ5HgGzVSKj8c7V0wCyIhl08fzNr4EX8=
 			</data>
 		</dict>
 		<key>Headers/SASBiddingAdResponse.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y9MgWbZmu5t0SzUpT8LcaT8lneMGLyPxRMxhzBd+l54=
+			o0mOYSqdC3OTfy636Xl4jTMPeGVz6OEPzAXcN+hTgGI=
+			</data>
+		</dict>
+		<key>Headers/SASBiddingCurrency.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Lt/vv8JIIMUwumlBjM6k12c4Mszh17shyVvDJBEc3ms=
 			</data>
 		</dict>
 		<key>Headers/SASBiddingManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K0MID4dvVF1z0URYbMy1eh/WfiS2vjjWqZYGUu27Pts=
+			I3s+qn7fwhKv/CPF2g9VOvSxOEJrbJ0UcUIAOBDrDMQ=
 			</data>
 		</dict>
 		<key>Headers/SASBiddingManagerDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rIncEEJ+78pITOW2DofqPRMEcNvO4o9pUtvnwrSVLrs=
+			BiSa5aVpuQp0TxBlf03xJqJrFtbSuu8HVDmuCI5biQ0=
 			</data>
 		</dict>
 		<key>Headers/SASConfiguration.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7g7IQv1X0FUXwGORx6cwt4FFBpG07sfCVzh5A7R4cdQ=
+			D/Lq0AnjfzyA/Ed4PWWsr4ZYrl1qw2o8s9IdKhF0l/0=
+			</data>
+		</dict>
+		<key>Headers/SASDigitalServiceActConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			b9RrHQon7zTY8CdRTIjSdWVKl9D3X2uE20uYfkodXes=
+			</data>
+		</dict>
+		<key>Headers/SASDigitalServiceActConfigAdRender.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UvZJLqLvMC98dxOQ3hf5aGgoaJf68+dF2TD6cvJrFC8=
+			</data>
+		</dict>
+		<key>Headers/SASDigitalServiceActConfigPubRender.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O4+CC3Fs276dGNdLmLYibS0oEjw4MAAnfGuN6cTixdY=
+			</data>
+		</dict>
+		<key>Headers/SASDigitalServiceActConfigTransparency.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wUkt+xO8D8R4kp2PaGk+hC/2sSfVo9oyfLVrmFd9/9g=
+			</data>
+		</dict>
+		<key>Headers/SASDisplayKit-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KFpAL9+xDSnv/n+tS1LwCiY/7yZLwne6nZZyWJJvHwc=
 			</data>
 		</dict>
 		<key>Headers/SASDisplayKit.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sKyOGwuOLvwC853OCD44r2Bp1gPOM/GWvKR4JgVhK3E=
+			X5dfIIWHBwfMkXl5y/PJpzHln25ZH0cIvvj+q7XiAIc=
 			</data>
 		</dict>
 		<key>Headers/SASFrameworkInfo.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			44gB9mZZWw2u4WnSUcScBFbHbzkHGsWGRaGCqY9WBZM=
-			</data>
-		</dict>
-		<key>Headers/SASInterstitialBidderAdapterDelegate.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OJ5tpIj8HStFst6om6sfjyrJZ3ah+qimhOyxy9k/qz8=
+			Zd9vHbQgGL3syIb+hUOTFa2tyLUukayTVvzVhdUhrH8=
 			</data>
 		</dict>
 		<key>Headers/SASInterstitialManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iYOrUncMH7ApvRX6pTFjWsJ3F4SICIE81TZ0scHTHlw=
+			wJZHJ6BG7lew9pa2USBsghFqf7rOR6L79ODjvnaQ9Pk=
 			</data>
 		</dict>
 		<key>Headers/SASInterstitialManagerDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mQimcjip7OTeplkcdX8NbXH6hjgtbwMAWcdeJlXDgNg=
-			</data>
-		</dict>
-		<key>Headers/SASLoader.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6wAsicul+zLDEZCm2xMcsouNYrzKa7JuPhjKrhtNyJE=
-			</data>
-		</dict>
-		<key>Headers/SASMediationAdapterConstants.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gWNFkbuwpZwg7CIbcvhHdvMR/ElZdo9BGGmsX8VOC5I=
+			49zzbp/kAboqJev1ob/Fv6k3P640EeCeBBAM8zKBtkI=
 			</data>
 		</dict>
 		<key>Headers/SASMediationBannerAdapter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jG4+3cu2Mz7hKRci0RiVvQgza04JTOO3Gr1i/Zyovc4=
+			GwVvWBTn4efrA4jb83YfhKaRHFuly+cDOX4dJ5NF22g=
 			</data>
 		</dict>
 		<key>Headers/SASMediationBannerAdapterDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7C3uIUGqBJrWsln224W8kIx/cdXuIHUhKZ0atI/IXGc=
+			Q81zz/y+yTs79e9ednBelFB1htCsm1rtwkBq7obR2n8=
 			</data>
 		</dict>
 		<key>Headers/SASMediationInterstitialAdapter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uVGHuYQX3itdIWh/kSoLIkRdajg+vY+IM/LYN7+AV+A=
+			l3bAzS+6fCNz+1axozdx40zqIFumzL0rLJQ23gjRaeU=
 			</data>
 		</dict>
 		<key>Headers/SASMediationInterstitialAdapterDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R8L3n2p/Dz5ReJwl+JhsRKqaT6ooc/DixOftGSVR2WI=
+			/c7zH7ccve3gJdf6Zkuo7fwsnrlPhEgOv5iiHyH17NI=
 			</data>
 		</dict>
-		<key>Headers/SASMediationNativeAdAdapter.h</key>
+		<key>Headers/SASNativeAdAssets.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ke7RzP7yguH4H7UZ16TAYj+GUk7vdfNFthcxjFkysvM=
+			Vmnb8EsXtoslhGUNE3BnjVHQuJqJk6HfNTtODwOUBio=
 			</data>
 		</dict>
-		<key>Headers/SASMediationNativeAdAdapterDelegate.h</key>
+		<key>Headers/SASNativeAdView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mqBMKtGrD/FbbS2RvLZPQw0w1KT8f82exqf/t7miB1g=
+			xbCyXMIiEKvQQaCdwh9Bjz49RI2QH6EYRWgP/GtYN3g=
 			</data>
 		</dict>
-		<key>Headers/SASMediationNativeAdInfo.h</key>
+		<key>Headers/SASNativeAdViewBinder.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7fOPYJibGYZu7+BT7H5Olt/nMFzr4Ajs9ecKT4PwOS8=
+			EBSFlUXPJwaz+mKzMvATaREaO+1Fkn6M1AahzwJwXBc=
 			</data>
 		</dict>
-		<key>Headers/SASMediationRewardedVideoAdapter.h</key>
+		<key>Headers/SASNativeAdViewBinderBuilder.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aSyJraOukkVyCTKcQo8dEvCleQOXjYbXA0w4rmgMcY4=
+			pTlbd1D0aiYvaEUksFxmLI/6FU83lahR9KrrkTiZ9Og=
 			</data>
 		</dict>
-		<key>Headers/SASMediationRewardedVideoAdapterDelegate.h</key>
+		<key>Headers/SASNativeAdViewDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zqUTQg9uaW6q3fsr96vKpZTnVovzzS5fwyL/HAQE1nM=
+			F2ejYcZb6YvMviN5U1IDq+aR/LbnNBIbohGdvyHPSOs=
 			</data>
 		</dict>
-		<key>Headers/SASNativeAd.h</key>
+		<key>Headers/SASParallaxMargins.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MeKFNjOo63Qi93c+iUqNUCeLhnfGVBRJSDS+XaTYr6E=
+			Oj341Ot1QjedZ+jtznsqbe2W/JV7w3ftikHZTpuMEmY=
 			</data>
 		</dict>
-		<key>Headers/SASNativeAdDelegate.h</key>
+		<key>Headers/SASRatingBar.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I1gfjIQYg+qbANgS/SP+1V3w94Kf4Lxdg2hsnGo0DUQ=
+			l4dR9br2vZKNg9ya2obMu4Spo+4RxY+6SCejjnHuMKk=
 			</data>
 		</dict>
-		<key>Headers/SASNativeAdImage.h</key>
+		<key>Headers/SASRatingBarView.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rrkWqfcccWWCPbHF2H2ZaUGm5lZkzdBxSXtQRQ62uDE=
-			</data>
-		</dict>
-		<key>Headers/SASNativeAdManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Sp6XzmyRKLGbbGzskRC6C7YyKZ2J8RWRPT4cf+UBsvw=
-			</data>
-		</dict>
-		<key>Headers/SASNativeAdMediaView.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/3pAtZGOwbBWJ4RjAdoICLKTM7eLaA5J8ANhh02HGtU=
-			</data>
-		</dict>
-		<key>Headers/SASNativeAdMediaViewDelegate.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mZMVESEMuQAA4Y/5p1qLKSieumf0BLTvLDnerMHP2nA=
-			</data>
-		</dict>
-		<key>Headers/SASNativeVideoAd.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6MGzku5hVzWG8irTapkcKSv/4UvMgm2PZBAt8YzZui4=
-			</data>
-		</dict>
-		<key>Headers/SASReward.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GvfXvMzOycH43V+Cbcy/tkHhUiHfB8kY/HmaBI/bBPk=
-			</data>
-		</dict>
-		<key>Headers/SASRewardedVideoManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QC6TvRsdvRLyLzMJk8EtSvQ+McwwgCduAtta+PTXyqM=
-			</data>
-		</dict>
-		<key>Headers/SASRewardedVideoManagerDelegate.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ra4w3qVtf/UZW0pRH61nfO2NjOcbO13+g8GgkLyAZu8=
+			EoOnOKnTC9I3H/hG4V+XFitAw6cnqEJ6W5zirdKyzqY=
 			</data>
 		</dict>
 		<key>Headers/SASSecondaryImplementationInfo.h</key>
@@ -888,648 +661,347 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gYQPeha4sHgzOB1FnjH3sqd28zbvVThL4fVP4u8vHrs=
+			F0Tjt+Y9aJkySNWD1/YTZxr8X99gHtsNfMsWU3hxYkg=
 			</data>
 		</dict>
 		<key>Headers/SASSellerDefinedContent.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yllJwmy63L40FJgktXEREyCQIeex0BW1pqbd7yuSCko=
+			Kab40CSDHArVFg0REQ7kEQGN92AvPjLNRRm3hFQyBZA=
 			</data>
 		</dict>
 		<key>Headers/SASSellerDefinedSegment.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iu86rKHE5cXkMrfP7nCs6zb3FUUJgt8vXv2t2jJIFWc=
+			e/QJtuv5jAGfq3SiCOOE3GJLza3EA3PEy6Dgb5KQZBk=
 			</data>
 		</dict>
-		<key>Headers/SASVideoEvent.h</key>
+		<key>Headers/SASViewAsset.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZKa4imnztM7wlqT4Bz0CGFle1IP2i7WTv/d8LVDqJyg=
+			7v28cheehj5gJu0Zl17eg+1cMWcJHXaTrmsAx9FpRoQ=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/YmOcd1qmYgwAN3dLq+PQRDH/VJbKYnqb/SEkjQIuMk=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gv4t5eoswLGaQ9SgA5W5/bTY8dnjBYbZ+PX3zKTk8lo=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mpkqY8roGlOoNDiI21TKW1J2B6CHAZKySmNjFUJi7+s=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			32SyXaOa4NE1V/TzMVqkTWsKz8BIN6Mu6LaM4rhzyzg=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M+7EkwUUPg742bsGYxOpP2ikEGZNZik4027rhP9mFIY=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			32SyXaOa4NE1V/TzMVqkTWsKz8BIN6Mu6LaM4rhzyzg=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vH2vL7sok5OSBQ7IgyujaKio0R+hVXiLURej4S9d1hI=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mpkqY8roGlOoNDiI21TKW1J2B6CHAZKySmNjFUJi7+s=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wd6RE5zQHmqsuz8UAEMrtz6O2mlCRgM16U1iQUeh2w8=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yp4dCVlcMp/7Hj2D9jC7Dj4VHKVPE7HQ9dCFZZnSIrA=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wd6RE5zQHmqsuz8UAEMrtz6O2mlCRgM16U1iQUeh2w8=
+			</data>
+		</dict>
+		<key>Modules/SASDisplayKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eYKPPoEATLMo9xyLSsX1KSHLxfpVehZQUxF6uOBPCxc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HjV2Mp+S8YxFPb4R4vT3t9HgMCsmmLI/d6vyHhWOb4k=
+			ucQtp9mXOxiOWuoma26MUsNh1AC+6tsomfRbC6v/FvM=
+			</data>
+		</dict>
+		<key>Modules/module.private.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ukSZpIO4RlY2pVCOBhkpMZ784Nsr6K/X4axAFAIlU54=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1HyCRUmxd9xxuc651vcqTYTqTOiSswzD/RJu99ze7g8=
+			LDaajnV33e3s2yxWIWMe/HpbjiVU4dqy1BoxQCzsEpw=
 			</data>
 		</dict>
-		<key>Smart-Display-SDK.podspec</key>
+		<key>PrivateHeaders/SASLog.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tR3c/dyj6oiXiVkOvDCmIa9x/4YPy4qBhtwcJyq77mM=
-			</data>
-		</dict>
-		<key>Smart-Display-SDK.podspec-trunk</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FXyy+fhptuOioL7INapPShX4ch/X1XS8XUJMzHxrrms=
-			</data>
-		</dict>
-		<key>adchoices.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+dUOO84Qwmy8AUsQZLlISBPJo7Crz783PxU3ys7p3oA=
-			</data>
-		</dict>
-		<key>adchoices@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DiXUAlVB5Hc72tP8ZvH7Lx3nsuOfui6DD/YSc+vIj94=
-			</data>
-		</dict>
-		<key>back-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xBtpTr7gEQxiIOxe08kRwK7Iw/OJVj9m/w+/ku4tUVc=
-			</data>
-		</dict>
-		<key>back-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zEZqkfvnhGMK+jA07A9DMkqu30Xb3583ilU3oOBLBmI=
+			1MSsI4NWDJ+lQcTtMal3d03a/rkGmetAsD75f/dE/HU=
 			</data>
 		</dict>
 		<key>en.lproj/SASDisplayKit.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vyIt6GiCE14iMMqNrh87p6egC8yT7vesbN17V4zu9pQ=
+			L02G6yZf5wZtkWElKXMscV3KHXGTIzfcs+7y7xNF3LI=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>equalizer_1.png</key>
+		<key>fr.lproj/SASDisplayKit.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FObC43W0nZEHZ5uZP5GtRUT+YpUqVh5jwcT3QReu8pM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sound-indicator_1.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			XP8DTVhWL4ExI4M+ygWBtPvi5BrzDPLLWbjuJpU4QGo=
 			</data>
 		</dict>
-		<key>equalizer_1@2x.png</key>
+		<key>sound-indicator_1@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			qcFtmFLyLN7zPzXlgGuzB9tGYpXhw69KBvUN9Th+NyM=
 			</data>
 		</dict>
-		<key>equalizer_1@3x.png</key>
+		<key>sound-indicator_1@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			hN2V3YxfU+G6YwSyPr+soVcgQmhB0c78EBZ8CNtSVgA=
 			</data>
 		</dict>
-		<key>equalizer_2.png</key>
+		<key>sound-indicator_2.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			sfAGjAfSSkHHfdvTxpj9quM6+cerkWINyGem2L3gTJI=
 			</data>
 		</dict>
-		<key>equalizer_2@2x.png</key>
+		<key>sound-indicator_2@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			87+tO5BlPoKiPYfDAjooNWHrKXDj7hwh6jUfPr3Mmfo=
 			</data>
 		</dict>
-		<key>equalizer_2@3x.png</key>
+		<key>sound-indicator_2@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			LHzWmEXX4NRz6XHO7AzEFD1/K359j8Gc+TaBD6PWbD8=
 			</data>
 		</dict>
-		<key>equalizer_3.png</key>
+		<key>sound-indicator_3.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			1XAeBcdhQzOEcrqsR5GuAuzYm7IhG1UBm8yrTDZ+drU=
 			</data>
 		</dict>
-		<key>equalizer_3@2x.png</key>
+		<key>sound-indicator_3@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			rcy7RXIQivPj8N+Qp8Iqr26Ai7u3GbSu5jBqlqKUDww=
 			</data>
 		</dict>
-		<key>equalizer_3@3x.png</key>
+		<key>sound-indicator_3@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			SKLMIEpu/ulB8B327/q+opC5XQtI/E7hOZhRwTCNtNM=
 			</data>
 		</dict>
-		<key>equalizer_4.png</key>
+		<key>sound-indicator_4.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			+5lHrehGvbRl6lqcADkm0IlDcLQQUm3PMgOf2hXvXbE=
 			</data>
 		</dict>
-		<key>equalizer_4@2x.png</key>
+		<key>sound-indicator_4@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			IkHUk0Y2StbuzAVV2BKucMSbSnFIHF/4yrvqO4O+JJo=
 			</data>
 		</dict>
-		<key>equalizer_4@3x.png</key>
+		<key>sound-indicator_4@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			cLo5gXIQaCmft0GbQUBb1z2vkzNJt/0kSgauV7xqsfY=
 			</data>
 		</dict>
-		<key>equalizer_5.png</key>
+		<key>sound-indicator_5.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			lPo6NdVUWYKVByN41KxQRrveT6BeFmhu0tFCcIiAMgU=
 			</data>
 		</dict>
-		<key>equalizer_5@2x.png</key>
+		<key>sound-indicator_5@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			u0Ky+veZCXhGeqgzBZvPBYm8Pd3SLWBde9glFF6NCWg=
 			</data>
 		</dict>
-		<key>equalizer_5@3x.png</key>
+		<key>sound-indicator_5@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			8lR8FTDcjuc55jyOQPTPjhfY4Razs57Rptuue6yj0hg=
 			</data>
 		</dict>
-		<key>equalizer_6.png</key>
+		<key>sound-indicator_6.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			AIrXTkPOIRhnF5zp2GODz1TE414+xAnNQg7+rdRsmMU=
 			</data>
 		</dict>
-		<key>equalizer_6@2x.png</key>
+		<key>sound-indicator_6@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			/C4kxonewGMufabUZdIrPQHU2CXp3KM5svJSNfvJYhY=
 			</data>
 		</dict>
-		<key>equalizer_6@3x.png</key>
+		<key>sound-indicator_6@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			BaCkyHptcDElNI/XydcQjyw4+n51PTNdlpZdH3eLcCA=
 			</data>
 		</dict>
-		<key>equalizer_7.png</key>
+		<key>sound-indicator_7.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			eL4cI9/T3a5dcMtjEKnZtU9U2ClnB2IpGD0ZxX8pl5w=
 			</data>
 		</dict>
-		<key>equalizer_7@2x.png</key>
+		<key>sound-indicator_7@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			E+rCCTD8rBB7/pTqNn8ccaTzMzvmgsewNyBCNui+3Zg=
 			</data>
 		</dict>
-		<key>equalizer_7@3x.png</key>
+		<key>sound-indicator_7@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			ysjXJJC+r3QBiPWTUGTIaU9MmM4IkuJmJglaYbV+ccQ=
 			</data>
 		</dict>
-		<key>equalizer_8.png</key>
+		<key>sound-indicator_8.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			eL4cI9/T3a5dcMtjEKnZtU9U2ClnB2IpGD0ZxX8pl5w=
 			</data>
 		</dict>
-		<key>equalizer_8@2x.png</key>
+		<key>sound-indicator_8@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			E+rCCTD8rBB7/pTqNn8ccaTzMzvmgsewNyBCNui+3Zg=
 			</data>
 		</dict>
-		<key>equalizer_8@3x.png</key>
+		<key>sound-indicator_8@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			ysjXJJC+r3QBiPWTUGTIaU9MmM4IkuJmJglaYbV+ccQ=
 			</data>
 		</dict>
-		<key>equalizer_9.png</key>
+		<key>sound-indicator_9.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			++LGNrVm77BH59VKlm2A2KIdN4AwnMGBpla6onk3KU4=
 			</data>
 		</dict>
-		<key>equalizer_9@2x.png</key>
+		<key>sound-indicator_9@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			cwmXdhTsdtquuxvGG1h2sqqHmD0lOcrPqLwiMUnfoG4=
 			</data>
 		</dict>
-		<key>equalizer_9@3x.png</key>
+		<key>sound-indicator_9@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			wRJToPgjVBA2aCc4gQvOpiGh4W6JVYDiMqXIQzvXWio=
-			</data>
-		</dict>
-		<key>extract_creative_info.js</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1vGTrYHrAKXNdxf6pnYExcQUpZY9bPRO6cUqdHV32KA=
-			</data>
-		</dict>
-		<key>forward-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZXn9fUnUnAD8krq5rZFmtCTYnnVZuM4e81o/uDoB2yo=
-			</data>
-		</dict>
-		<key>forward-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			l4EWvNXY+5ajOnWnpf7enbW3FOMY2UbG7X/U2mK0SUg=
-			</data>
-		</dict>
-		<key>fr.lproj/SASDisplayKit.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RBd/KmNk/GA2mCFAcjKUSe/Df3kp3WY5nshRdxlc19A=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>loader.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LJl+zkXXikZjTgsTUMK0Oe7L5vpX1kyH5I4eB/Inupk=
-			</data>
-		</dict>
-		<key>loader@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MK6UxuGr7VcSo888zYvTe/tz1wyHaDjh8PelU/453Mg=
-			</data>
-		</dict>
-		<key>loader@3x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YCYRQ0NjPJzOZcPvM9C/PmwXNj1CX4156haoa3t6nD0=
-			</data>
-		</dict>
-		<key>mraid-close-button.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			duKGoaPicGJqAMxQ+4SIDnhI8jnHlkeRXP0mV3YWTUA=
-			</data>
-		</dict>
-		<key>mraid-close-button@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Dcx19+506XreSFsM5ZcUW4FUSPAVRm0+CdjGzAnBrEA=
-			</data>
-		</dict>
-		<key>mute-button.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZJ2kXEv5n99jubrTm6lAyhiLvye5bEzsBrOUJV2noq8=
-			</data>
-		</dict>
-		<key>mute-button@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IFuf8MuqU3LpXG9ZdLSR/UjT3w3FJbv0HYeiL3/bcS4=
-			</data>
-		</dict>
-		<key>native-360-arrow.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			y/61Kbk0dkqO6m4udQvCKvjf4lO/iVAIaiE+VwebOw8=
-			</data>
-		</dict>
-		<key>native-360-arrow@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CYdDWC2/HqR6z6Ijdiol5l13iJSkxUoRwUjQFNBkYmg=
-			</data>
-		</dict>
-		<key>native-360-arrow@3x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6SkbaobsnP6pjSIlifnH1KrJVgweVP8o+JUFuO4OD9M=
-			</data>
-		</dict>
-		<key>native-360.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			B6ojd89ZvUE1sVdj4lQtOGuFBgUpCRqAESGvg0zp1FU=
-			</data>
-		</dict>
-		<key>native-360@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O4DevXFJuxlkVz6XkH8tsIXQn+n0wPbCXLsEn+Kj1p4=
-			</data>
-		</dict>
-		<key>native-360@3x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			waS9o8Lpg7AKjtnsx2glR2XNXBlZofJDz+NScHmxcQM=
-			</data>
-		</dict>
-		<key>native-action-info-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HbM4jGHD+aHNEe5xAENeOH7DG+828PRkwbFkbwUkQLo=
-			</data>
-		</dict>
-		<key>native-action-info-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			khok0kRc1eB4T5yR6xk1wLDefFI8zXn6QHnLBa1kSuc=
-			</data>
-		</dict>
-		<key>native-action-play-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nqKRQoallklNs6e28DXbUv1xCM7weEso3KdNTgtEKug=
-			</data>
-		</dict>
-		<key>native-action-play-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/YFGVNVPLBuKRyQUYSO5OxVxBwu244pI1KWVRjeD/pw=
-			</data>
-		</dict>
-		<key>native-action-store-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HsRf2O+PvvwZbGlBlD62LtXeMfT0+QMSd2v3wSYn4ns=
-			</data>
-		</dict>
-		<key>native-action-store-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9/hShntk/1dSQGD3Ut/In6oVxlAoR67Dpn2UQlNM064=
-			</data>
-		</dict>
-		<key>native-action-video-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yeOcOAZbtrhh+nfJvq2Q/P8i45xpZTh+j8ozCidjmig=
-			</data>
-		</dict>
-		<key>native-action-video-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1FxG9by0Wuzng/4maKm9suFYqkb04D/0M9PXoE/CRGw=
-			</data>
-		</dict>
-		<key>native-close-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Qersr4qbJEPDP+ASeCDbr9zPX831FmR3Bw4/nHI8Xgc=
-			</data>
-		</dict>
-		<key>native-close-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YY8vDby5fqjVX0ogDHEmoLjW26hMx8irR4ND5eG5b0g=
-			</data>
-		</dict>
-		<key>native-enter-fullscreen.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			K+5oHx5krapp2xuBpNzJ1r2jFMPs5WWWKh4fU/uqqLo=
-			</data>
-		</dict>
-		<key>native-enter-fullscreen@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			td9R2xoEaI/KTgDZeBY/WdKtwiljpC25H55xUP2DkzQ=
-			</data>
-		</dict>
-		<key>native-enter-fullscreen@3x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ByHkrezWnJ8wdDiORtZX65QIWE3qloL6lLDtbUp5dZQ=
-			</data>
-		</dict>
-		<key>native-exit-fullscreen.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1wIHM3KjQThewHqCZ48v3uARt2j5Rp3PQ8l8tKWDLu8=
-			</data>
-		</dict>
-		<key>native-exit-fullscreen@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3VckV/ioy773gMbg60cXdVUEQONYAYh96mdy3h0+Zc0=
-			</data>
-		</dict>
-		<key>native-exit-fullscreen@3x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M9uu9e443NwCgTC/7UQD263ZbRWr8XJC0I3ADln8KMA=
-			</data>
-		</dict>
-		<key>native-info-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qHCQMmk8HXiXAtJV0JLfsW0vFdMTgRehWzg1mrtQmxo=
-			</data>
-		</dict>
-		<key>native-info-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OacVkDkNNxfPVjK5o65jtGoDaQrrwtzGjqQNeCex4q0=
-			</data>
-		</dict>
-		<key>native-mute-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M8ISGLGxuWfJ7AljVOl7ma2vz1XdzB3LGX5ryF6btA8=
-			</data>
-		</dict>
-		<key>native-pause-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mqQDodBLRPG+qVFSyUvnR+xtx9NFcTcR1wG6j8UDd/I=
-			</data>
-		</dict>
-		<key>native-pause-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			A/BXQyJf22eoTLHqLSXi5wCYxqQpdefolhmrdCkQwoQ=
-			</data>
-		</dict>
-		<key>native-play-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JtqqgpBGBP47Px2DtbA69jI6/wr51iI0rhbI2xehris=
-			</data>
-		</dict>
-		<key>native-play-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			S1I7vjpVpfcUKlxUWxVWTnDb/1dZPF9A0T5P+XmETJM=
-			</data>
-		</dict>
-		<key>native-play-large-icon.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hf3M89jDe0olWyYfOUbe61/EKvSNt6whktpDRd8nhfE=
-			</data>
-		</dict>
-		<key>native-play-large-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sfyiDK5hWH05di0+tJssP+WKshOLnFOnSTEbts1434I=
-			</data>
-		</dict>
-		<key>native-slider-thumb.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7rF2FX9Xa300xtEFXwC3PP8otVnjqJbDNr5ZlfrVprc=
-			</data>
-		</dict>
-		<key>native-slider-thumb@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			9BwgAV2/ipyphxTkKDxnJtweHw2ipn4gNN+B7rMkpUg=
-			</data>
-		</dict>
-		<key>native-unmute-icon@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IbFxK+6HY7+FyBMSK/tkTI9qiYSurWfT+DQx6enwEe0=
-			</data>
-		</dict>
-		<key>skip-button.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			duKGoaPicGJqAMxQ+4SIDnhI8jnHlkeRXP0mV3YWTUA=
-			</data>
-		</dict>
-		<key>skip-button@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Dcx19+506XreSFsM5ZcUW4FUSPAVRm0+CdjGzAnBrEA=
-			</data>
-		</dict>
-		<key>skip-wait.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EAbjvS/LAu1rt36xH1y4IWZZ2LFlr4WIZdpvau9oVt8=
-			</data>
-		</dict>
-		<key>skip-wait@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qOLU2iCpiWBKeYfxawQaO8VrWkcxQlq76I3J2Y5CXwk=
-			</data>
-		</dict>
-		<key>unmute-button.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			IYrwrOI//sZS+V93I9Zs131vySoYPfAeLD5wF9aBbsU=
-			</data>
-		</dict>
-		<key>unmute-button@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jghabzpOpSOjThe7bIiiUOlJ3eJiKXLx5UuvNGAj17A=
-			</data>
-		</dict>
-		<key>video-close-button@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Op7/1jd471J9DRuCzNUAFLLDoMMBGxBdOwSHfZoLZ9U=
 			</data>
 		</dict>
 	</dict>

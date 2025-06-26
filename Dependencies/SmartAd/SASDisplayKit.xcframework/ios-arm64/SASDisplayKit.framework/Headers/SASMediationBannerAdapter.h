@@ -1,40 +1,45 @@
 //
 //  SASMediationBannerAdapter.h
-//  SmartAdServer
+//  SASDisplayKit
 //
-//  Created by Loïc GIRON DIT METAZ on 05/09/2018.
-//  Copyright © 2018 Smart AdServer. All rights reserved.
+//  Created by Loic GIRON DIT METAZ on 23/05/2024.
+//  Copyright © 2024 Smart AdServer. All rights reserved.
 //
 
-#import <SASDisplayKit/SASMediationBannerAdapterDelegate.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol SASMediationBannerAdapterDelegate;
+
 /**
- Protocol that must be implemented by mediation adapters that load and return banner ads.
+ Protocol implemented by mediation adapters that load and return banner ads.
  */
 @protocol SASMediationBannerAdapter <NSObject>
 
-@required
+/// The mediation banner adapter delegate if any, nil otherwise.
+@property (weak, nullable) id<SASMediationBannerAdapterDelegate> delegate;
+
+/// The name of the mediated SDK.
+@property (readonly) NSString *sdkName;
+
+/// The version of the mediated SDK.
+@property (readonly) NSString *sdkVersion;
+
+/// The version of the mediation adapter.
+@property (readonly) NSString *adapterVersion;
 
 /**
- Initialize a new instance of the banner adapter with an adapter delegate.
+ Load a mediation ad using a third party SDK.
  
- @param delegate An instance of the delegate you will use to provide information to Smart SDK.
- @return An initialized instance of the banner adapter.
+ @note The mediation adapter must signal the success or the failure of the ad loading using the delegate to allow
+ the mediation waterfall to work properly.
+ 
+ @param serverSideParameters A string parsed in the ad response representing the data to pass to the mediation adapter.
+ @param clientSideParameters A dictionary of client side parameters set by the publisher that can be forwarded to the third party SDK if any, nil otherwise.
  */
-- (instancetype)initWithDelegate:(id<SASMediationBannerAdapterDelegate>)delegate;
-
-/**
- Requests a mediated banner ad asynchronously.
- 
- Use the delegate provided in the init method to inform the SDK about the loading status of the ad.
- 
- @param serverParameterString A string containing all needed parameters (as returned by Smart ad delivery) to make the mediation ad call.
- @param clientParameters Additional client-side parameters (see SASMediationAdapterConstants.h for an exhaustive list).
- @param viewController The view controller currently displayed on screen, in which the banner will be displayed.
- */
-- (void)requestBannerWithServerParameterString:(NSString *)serverParameterString clientParameters:(NSDictionary *)clientParameters viewController:(UIViewController *)viewController;
+- (void)loadAdWithServerSideParameters:(NSString *)serverSideParameters
+                  clientSideParameters:(nullable NSDictionary<NSString *, id> *)clientSideParameters;
 
 @end
 

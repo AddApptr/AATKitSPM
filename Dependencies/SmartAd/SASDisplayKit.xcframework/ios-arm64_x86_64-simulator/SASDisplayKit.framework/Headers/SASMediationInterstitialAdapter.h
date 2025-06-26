@@ -1,53 +1,52 @@
 //
 //  SASMediationInterstitialAdapter.h
-//  SmartAdServer
+//  SASDisplayKit
 //
-//  Created by Loïc GIRON DIT METAZ on 05/09/2018.
-//  Copyright © 2018 Smart AdServer. All rights reserved.
+//  Created by Loic GIRON DIT METAZ on 03/06/2024.
+//  Copyright © 2024 Smart AdServer. All rights reserved.
 //
 
-#import <SASDisplayKit/SASMediationInterstitialAdapterDelegate.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol SASMediationInterstitialAdapterDelegate;
+
 /**
- Protocol that must be implemented by mediation adapters that load and return interstitial ads.
+ Protocol implemented by mediation adapters that load and show interstitial ads.
  */
 @protocol SASMediationInterstitialAdapter <NSObject>
 
-@required
+/// The mediation interstitial adapter delegate if any, nil otherwise.
+@property (weak, nullable) id<SASMediationInterstitialAdapterDelegate> delegate;
+
+/// The name of the mediated SDK.
+@property (readonly) NSString *sdkName;
+
+/// The version of the mediated SDK.
+@property (readonly) NSString *sdkVersion;
+
+/// The version of the mediation adapter.
+@property (readonly) NSString *adapterVersion;
 
 /**
- Initialize a new instance of the interstitial adapter with an adapter delegate.
+ Load a mediation ad using a third party SDK.
  
- @param delegate An instance of the delegate you will use to provide information to Smart SDK.
- @return An initialized instance of the interstitial adapter.
+ @note The mediation adapter must signal the success or the failure of the ad loading using the delegate to allow
+ the mediation waterfall to work properly.
+ 
+ @param serverSideParameters A string parsed in the ad response representing the data to pass to the mediation adapter.
+ @param clientSideParameters A dictionary of client side parameters set by the publisher that can be forwarded to the third party SDK if any, nil otherwise.
  */
-- (instancetype)initWithDelegate:(id<SASMediationInterstitialAdapterDelegate>)delegate;
+- (void)loadAdWithServerSideParameters:(NSString *)serverSideParameters
+                  clientSideParameters:(nullable NSDictionary<NSString *, id> *)clientSideParameters;
 
 /**
- Requests a mediated interstitial ad asynchronously.
+ Show the previously loaded interstitial ad.
  
- Use the delegate provided in the init method to inform the SDK about the loading status of the ad.
- 
- @param serverParameterString A string containing all needed parameters (as returned by Smart ad delivery) to make the mediation ad call.
- @param clientParameters Additional client-side parameters (see SASMediationAdapterConstants.h for an exhaustive list)..
+ @param modalParentViewController The view controller that should be used as parent of the interstitial ad being shown.
  */
-- (void)requestInterstitialWithServerParameterString:(NSString *)serverParameterString clientParameters:(NSDictionary *)clientParameters;
-
-/**
- Requests the adapter to show the currently loaded interstitial.
- 
- @param viewController The view controller the interstitial will be displayed into.
- */
-- (void)showInterstitialFromViewController:(UIViewController *)viewController;
-
-/**
- Return whether the interstitial is ready to be displayed or not.
- 
- @return YES if the interstitial is ready to be displayed, NO otherwise.
- */
-- (BOOL)isInterstitialReady;
+- (void)showWithModalParentViewController:(UIViewController *)modalParentViewController;
 
 @end
 

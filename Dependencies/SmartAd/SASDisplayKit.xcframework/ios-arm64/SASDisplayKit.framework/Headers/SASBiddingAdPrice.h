@@ -2,24 +2,25 @@
 //  SASBiddingAdPrice.h
 //  SASDisplayKit
 //
-//  Created by Loïc GIRON DIT METAZ on 13/06/2019.
-//  Copyright © 2019 Smart AdServer. All rights reserved.
+//  Created by Loic GIRON DIT METAZ on 29/10/2024.
+//  Copyright © 2024 Smart AdServer. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <SASDisplayKit/SASBiddingCurrency.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- Class representing the price of a bidding ad response.
+ Model class representing a bidding ad price.
  */
-@interface SASBiddingAdPrice : NSObject <NSCopying, NSCoding>
+@interface SASBiddingAdPrice : NSObject
 
-/// The price cpm of the bidding ad.
-@property (nonatomic, readonly) double cpm;
+/// The CPM (as double) of the bidding ad.
+@property (readonly) double cpm;
 
-/// The currency of the bidding ad.
-@property (nonatomic, readonly) NSString *currency;
+/// The currency of the cpm.
+@property (readonly) SASBiddingCurrency currency;
 
 - (instancetype)init NS_UNAVAILABLE;
 

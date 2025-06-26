@@ -2,40 +2,42 @@
 //  SASBiddingManagerDelegate.h
 //  SASDisplayKit
 //
-//  Created by Loïc GIRON DIT METAZ on 17/06/2019.
-//  Copyright © 2019 Smart AdServer. All rights reserved.
+//  Created by Loic GIRON DIT METAZ on 30/10/2024.
+//  Copyright © 2024 Smart AdServer. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <SASDisplayKit/SASBiddingAdResponse.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class SASBiddingManager;
+@class SASBiddingAdResponse;
 
 /**
- SASBiddingManager delegate protocol.
- 
- Implement this protocol to be notified when an ad bidding call is successful or failed and
- to retrieve the ad response if any.
+ SASBiddingManager delegate.
  */
 @protocol SASBiddingManagerDelegate <NSObject>
 
-/**
- Notifies the delegate that a valid ad response has been retrieved.
- 
- @param biddingManager The instance of SASBiddingManager that called this delegate method.
- @param biddingAdResponse The ad response that have been retrieved by the manager.
- */
-- (void)biddingManager:(SASBiddingManager *)biddingManager didLoadAdResponse:(SASBiddingAdResponse *)biddingAdResponse;
+@required
 
 /**
- Notifies the delegate that an error occurred during ad response loading.
+ Called when the bidding manager has loaded an ad response successfully.
  
- @param biddingManager The instance of SASBiddingManager that called this delegate method.
- @param error The error that occurred during the ad bidding call.
+ @note The ad response can be displayed using an instance of SASBannerView or SASInterstitialManager depending
+ on the requestion bidding ad format type.
+ 
+ @param biddingManager The instance of SASBiddingManager calling the delegate.
+ @param biddingAdResponse The ad response loaded by the bidding manager.
  */
-- (void)biddingManager:(SASBiddingManager *)biddingManager didFailToLoadWithError:(NSError *)error;
+- (void)biddingManager:(SASBiddingManager *)biddingManager didLoadWithBiddingAdResponse:(SASBiddingAdResponse *)biddingAdResponse;
+
+/**
+ Called when the bidding manager fails to load the ad.
+ 
+ @param biddingManager The instance of SASBiddingManager calling the delegate.
+ @param error The error preventing the bidding ad from being loaded.
+ */
+- (void)biddingManager:(SASBiddingManager *)biddingManager didFailToLoadWithError:(NSError *)error NS_SWIFT_NAME( biddingManager(_:didFailToLoad:) );
 
 @end
 

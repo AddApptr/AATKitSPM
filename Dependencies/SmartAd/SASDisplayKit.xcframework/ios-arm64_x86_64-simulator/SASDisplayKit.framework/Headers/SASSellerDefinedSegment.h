@@ -2,7 +2,7 @@
 //  SASSellerDefinedSegment.h
 //  SASDisplayKit
 //
-//  Created by Guillaume Laubier on 30/05/2023.
+//  Created by Julien GOMEZ on 10/08/2023.
 //  Copyright © 2023 Smart AdServer. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Object representing a Segment of both Seller Defined Audience and Seller Defined Content.
  */
-@interface SASSellerDefinedSegment : NSObject <NSCoding, NSCopying>
+@interface SASSellerDefinedSegment : NSObject <NSCoding>
 
 /// The ID of the Segment if any, nil otherwise.
 @property (nonatomic, readonly, nullable) NSString *ID;

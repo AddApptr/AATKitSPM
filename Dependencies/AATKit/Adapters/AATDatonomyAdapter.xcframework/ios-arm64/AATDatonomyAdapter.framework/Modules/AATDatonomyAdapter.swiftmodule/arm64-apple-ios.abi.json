@@ -1,0 +1,31 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AATDatonomyAdapter",
+    "printedName": "AATDatonomyAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATDatonomyAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATDatonomyAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

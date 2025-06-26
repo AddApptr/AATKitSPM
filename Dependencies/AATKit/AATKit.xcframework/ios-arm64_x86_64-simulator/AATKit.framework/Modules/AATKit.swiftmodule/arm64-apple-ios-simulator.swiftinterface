@@ -34,7 +34,10 @@ import _SwiftConcurrencyShims
   @objc public var showIDFA: Swift.Bool
   @objc public var showDeviceType: Swift.Bool
   @objc public var shareEmail: Swift.String?
-  @objc public init(appLogo: UIKit.UIImage?, title: Swift.String?, showBundleId: Swift.Bool = true, showTestMode: Swift.Bool = true, showLoadedAndLoadingAds: Swift.Bool = true, showDisabledNetworks: Swift.Bool = true, showRemovedNetworkSDKs: Swift.Bool = true, showDeviceType: Swift.Bool = true, showExtraSDKs: Swift.Bool = true, showConsent: Swift.Bool = true, showIDFA: Swift.Bool = true)
+  @objc public var showDebugLogsToggle: Swift.Bool
+  @objc public var showDeviceFilteredRulesToggle: Swift.Bool
+  @objc public var showCloseButton: Swift.Bool
+  @objc public init(appLogo: UIKit.UIImage?, title: Swift.String?, showBundleId: Swift.Bool = true, showTestMode: Swift.Bool = true, showLoadedAndLoadingAds: Swift.Bool = true, showDisabledNetworks: Swift.Bool = true, showRemovedNetworkSDKs: Swift.Bool = true, showDeviceType: Swift.Bool = true, showExtraSDKs: Swift.Bool = true, showConsent: Swift.Bool = true, showIDFA: Swift.Bool = true, showDebugLogsToggle: Swift.Bool = true, showDeviceFilteredRulesToggle: Swift.Bool = true, showCloseButton: Swift.Bool = false)
   @objc deinit
 }
 public protocol AATTargetingInformationProtocol : AnyObject {
@@ -216,7 +219,6 @@ extension AATKit.AATPlacementHistoryInfo : Swift.Identifiable {
   case ADMOB
   case EMPTY
   case APPLOVIN
-  case APPLOVINMAX
   case SMARTAD
   case SMARTADSERVERDIRECT
   case RTB2
@@ -1083,11 +1085,6 @@ public func == (lhs: AATKit.NetworkReachabilityManager.NetworkReachabilityStatus
 }
 @_hasMissingDesignatedInitializers public class AATDeviceManager {
   @objc deinit
-}
-public protocol AATApplovinMaxDriverProtocol {
-  static func setHasUserConsent(isObtained: Swift.Bool)
-  static func setIsChildDirected(_ isChildDirected: Swift.Bool)
-  static func setCCPAConsent(_ ccpaConsent: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers @objc public class AATManagedConsent : AATKit.AATConsentImplementation {
   @objc public init?(cmp: (any AATKit.AATCMPProtocol)?, delegate: any AATKit.AATManagedConsentDelegate, showIfNeededSetting: AATKit.AATShowIfNeededSetting = .serverSideControl)
