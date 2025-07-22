@@ -39,6 +39,7 @@ let package = Package(
         .library(name: "AATKit-Mintegral", targets: ["AATKit-Mintegral"]),
         .library(name: "AATKit-Facebook", targets: ["AATKit-Facebook"]),
         .library(name: "AATKit-DisplayIO", targets: ["AATKit-DisplayIO"]),
+        .library(name: "AATKit-UTIQ", targets: ["AATKit-UTIQ"]),
         .library(name: "AATAppNexusAdapter", targets: ["AATAppNexusAdapter"]),
         .library(name: "AATAmazonAdapter", targets: ["AATAmazonAdapter"]),
 
@@ -255,6 +256,10 @@ let package = Package(
         .target(name:"AATKit-DisplayIO",
                 dependencies: ["AATDisplayIO", "AATDisplayIOAdapter"],
                 path: "./Sources/DisplayIOSources"),
+
+        .target(name:"AATKit-UTIQ",
+                dependencies: ["AATUTIQ", "AATUTIQAdapter"],
+                path: "./Sources/UTIQSources"),
         // Mark: Binary Targets
         // AATKit
         .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
@@ -364,6 +369,9 @@ let package = Package(
         // DisplayIO
         .binaryTarget(name: "AATDisplayIO", path:"./Dependencies/DisplayIO/DIOSDK.xcframework"),
 
+        // UTIQ
+        .binaryTarget(name: "AATUTIQ", path: "./Dependencies/UTIQ/Utiq.xcframework"),
+
         // AATKit Adapters
         .binaryTarget(name: "AATAmazonAdapter", path: "./Dependencies/AATKit/Adapters/AATAmazonAdapter.xcframework"),
         .binaryTarget(name: "AATAppLovinAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinAdapter.xcframework"),
@@ -392,6 +400,7 @@ let package = Package(
         .binaryTarget(name: "AATSourcePointCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATSourcePointCMPAdapter.xcframework"),
         .binaryTarget(name: "AATAppConsentAdapter", path: "./Dependencies/AATKit/Adapters/AATAppConsentAdapter.xcframework"),
         .binaryTarget(name: "AATDisplayIOAdapter", path: "./Dependencies/AATKit/Adapters/AATDisplayIOAdapter.xcframework"),
+        .binaryTarget(name: "AATUTIQAdapter", path: "./Dependencies/AATKit/Adapters/AATUTIQAdapter.xcframework"),
 
     ]
 )
