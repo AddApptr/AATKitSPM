@@ -40,6 +40,7 @@ let package = Package(
         .library(name: "AATKit-UTIQ", targets: ["AATKit-UTIQ"]),
         .library(name: "AATAppNexusAdapter", targets: ["AATAppNexusAdapter"]),
         .library(name: "AATAmazonAdapter", targets: ["AATAmazonAdapter"]),
+        .library(name: "AATKit-AATMetaBiddingAdapter", targets: ["AATKit-AATMetaBiddingAdapter"]),
 
         // CMPs
         .library(name: "AATKit-GoogleCMP", targets: ["AATKit-GoogleCMP"]),
@@ -63,7 +64,8 @@ let package = Package(
                                                    "AATKit-Tappx",
                                                    "AATKit-Facebook",
                                                    "AATKit-AppNexus",
-                                                   "AATKit-Prebid"
+                                                   "AATKit-Prebid",
+                                                   "AATKit-AATMetaBiddingAdapter"
                                                   ]),
 
     ],
@@ -162,6 +164,14 @@ let package = Package(
                     "AATMetaAdapter"
                 ],
                 path: "./Sources/FacebookSources"),
+        // AATMetaBiddingAdapter
+        .target(name: "AATKit-AATMetaBiddingAdapter",
+                dependencies: [
+                    "AATKit",
+                    "AATKit-GraviteRTB",
+                    "AATKit-Facebook",
+                    "AATMetaBiddingAdapter"
+                ], path: "./Sources/MetaBidingSources"),
 
         .target(name:"AATKit-SmartAd",
                 dependencies: ["AATSASDisplayKit", "AATSmartAdAdapter"],
@@ -360,6 +370,6 @@ let package = Package(
         .binaryTarget(name: "AATAppConsentAdapter", path: "./Dependencies/AATKit/Adapters/AATAppConsentAdapter.xcframework"),
         .binaryTarget(name: "AATDisplayIOAdapter", path: "./Dependencies/AATKit/Adapters/AATDisplayIOAdapter.xcframework"),
         .binaryTarget(name: "AATUTIQAdapter", path: "./Dependencies/AATKit/Adapters/AATUTIQAdapter.xcframework"),
-
+        .binaryTarget(name: "AATMetaBiddingAdapter", path: "./Dependencies/AATKit/Adapters/AATMetaBiddingAdapter.xcframework")
     ]
 )
