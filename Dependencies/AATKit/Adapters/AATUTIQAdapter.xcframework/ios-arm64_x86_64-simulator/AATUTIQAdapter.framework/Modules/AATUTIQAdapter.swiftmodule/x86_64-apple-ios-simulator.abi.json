@@ -1,0 +1,43 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AATUTIQAdapter",
+    "printedName": "AATUTIQAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATUTIQAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Utiq",
+        "printedName": "Utiq",
+        "declKind": "Import",
+        "moduleName": "AATUTIQAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUTIQAdapter\/AATUTIQManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 260,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATUTIQAdapter\/AATUTIQManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 343,
+      "length": 3,
+      "value": "1.5"
+    }
+  ]
+}

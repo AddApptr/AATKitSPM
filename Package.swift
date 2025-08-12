@@ -39,6 +39,7 @@ let package = Package(
         .library(name: "AATKit-Mintegral", targets: ["AATKit-Mintegral"]),
         .library(name: "AATKit-Facebook", targets: ["AATKit-Facebook"]),
         .library(name: "AATKit-DisplayIO", targets: ["AATKit-DisplayIO"]),
+        .library(name: "AATKit-UTIQ", targets: ["AATKit-UTIQ"]),
         .library(name: "AATAppNexusAdapter", targets: ["AATAppNexusAdapter"]),
         .library(name: "AATAmazonAdapter", targets: ["AATAmazonAdapter"]),
 
@@ -71,11 +72,11 @@ let package = Package(
 
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: Version(13, 2, 0)),
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: Version(12, 4, 0)),
-        .package(url: "https://github.com/GeoEdgeSDK/AppHarbrSDK.git", exact: Version(1, 21, 1)),
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: Version(13, 3, 1)),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: Version(12, 7, 0)),
+        .package(url: "https://github.com/GeoEdgeSDK/AppHarbrSDK.git", exact: Version(1, 24, 1)),
         .package(url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"4.0.0"),
-        .package(url: "https://github.com/AddApptr/RTBSPM.git", exact: Version(1, 7, 0)),
+        .package(url: "https://github.com/AddApptr/RTBSPM.git", branch: "beta-1.8")
 //        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.1.3")), Conflict in AppLovin dependency
     ],
     targets: [
@@ -255,9 +256,13 @@ let package = Package(
         .target(name:"AATKit-DisplayIO",
                 dependencies: ["AATDisplayIO", "AATDisplayIOAdapter"],
                 path: "./Sources/DisplayIOSources"),
+
+        .target(name:"AATKit-UTIQ",
+                dependencies: ["AATUTIQ", "AATUTIQAdapter"],
+                path: "./Sources/UTIQSources"),
         // Mark: Binary Targets
         // AATKit
-            .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
+        .binaryTarget(name: "AATKit", path: "./Dependencies/AATKit/AATKit.xcframework"),
 
         // AATAdMobMediationAdapter
         .binaryTarget(name: "AATAdMobMediationAdapter", path: "./Dependencies/AATAdMobMediationAdapter/AATAdMobMediationAdapter.xcframework"),
@@ -332,13 +337,13 @@ let package = Package(
         // AppNexusSDK - for future updates, check https://github.com/appnexus/mobile-sdk-ios-spm/blob/main/Package.swift
         .binaryTarget(
             name: "AATOMSDK_Microsoft",
-            url: "https://adsdkprod.azureedge.net/mobile/ios/releases/9.5.0/dynamic/OMSDK_Microsoft.zip",
-            checksum: "22c9115cb46ee6301d8ef8972c2b77af0f00c55f93bc8cd28817ae62da99b670"
+            url: "https://adsdkprod.azureedge.net/mobile/ios/releases/9.6.0/dynamic/OMSDK_Microsoft.zip",
+            checksum: "c078770205c405a6a96e1608b30366921633bf930695a6d57f8cf423ab1b4c85"
         ),
         .binaryTarget(
             name: "AATAppNexusSDKTarget",
-            url: "https://adsdkprod.azureedge.net/mobile/ios/releases/9.5.0/dynamic/AppNexusSDKDynamic.zip",
-            checksum: "d9f48664619e1a51aa29d7a93cfcb561c015cd69c84aebf152c04ecf2c56f36f"
+            url: "https://adsdkprod.azureedge.net/mobile/ios/releases/9.6.0/dynamic/AppNexusSDKDynamic.zip",
+            checksum: "efe5347a9bcf85c15c4e2ee5fbf7d96e4dc14de39bedfb569bbd76757b22fffd"
         ),
 
         // Mintegral
@@ -363,6 +368,9 @@ let package = Package(
 
         // DisplayIO
         .binaryTarget(name: "AATDisplayIO", path:"./Dependencies/DisplayIO/DIOSDK.xcframework"),
+
+        // UTIQ
+        .binaryTarget(name: "AATUTIQ", path: "./Dependencies/UTIQ/Utiq.xcframework"),
 
         // AATKit Adapters
         .binaryTarget(name: "AATAmazonAdapter", path: "./Dependencies/AATKit/Adapters/AATAmazonAdapter.xcframework"),
@@ -392,6 +400,7 @@ let package = Package(
         .binaryTarget(name: "AATSourcePointCMPAdapter", path: "./Dependencies/AATKit/Adapters/AATSourcePointCMPAdapter.xcframework"),
         .binaryTarget(name: "AATAppConsentAdapter", path: "./Dependencies/AATKit/Adapters/AATAppConsentAdapter.xcframework"),
         .binaryTarget(name: "AATDisplayIOAdapter", path: "./Dependencies/AATKit/Adapters/AATDisplayIOAdapter.xcframework"),
+        .binaryTarget(name: "AATUTIQAdapter", path: "./Dependencies/AATKit/Adapters/AATUTIQAdapter.xcframework"),
 
     ]
 )
