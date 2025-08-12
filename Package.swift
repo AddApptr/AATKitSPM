@@ -20,10 +20,8 @@ let package = Package(
         .library(name: "AATKit-AppNexus", targets: ["AATKit-AppNexus"]),
         .library(name: "AATKit-AppHarbr", targets: ["AATKit-AppHarbr"]),
         .library(name: "AATKit-Amazon", targets: ["AATKit-Amazon"]),
-        .library(name: "AATKit-Criteo", targets: ["AATKit-Criteo"]),
         .library(name: "AATKit-FeedAd", targets: ["AATKit-FeedAd"]),
         .library(name: "AATKit-GraviteRTB", targets: ["AATKit-GraviteRTB"]),
-        .library(name: "AATKit-Smaato", targets: ["AATKit-Smaato"]),
         .library(name: "AATKit-SmartAd", targets: ["AATKit-SmartAd"]),
         .library(name: "AATKit-YOC", targets: ["AATKit-YOC"]),
         .library(name: "AATKit-InMobi", targets: ["AATKit-InMobi"]),
@@ -52,7 +50,6 @@ let package = Package(
         .library(name: "AATKit-Default", targets: ["AATKit-GoogleMobileAds",
                                                    "AATKit-AppLovin",
                                                    "AATKit-GraviteRTB",
-                                                   "AATKit-Smaato",
                                                    "AATKit-SmartAd",
                                                    "AATKit-YOC",
                                                    "AATKit-InMobi",
@@ -63,7 +60,6 @@ let package = Package(
                                                    "AATKit-Vungle",
                                                    "AATKit-Mintegral",
                                                    "AATKit-GooglePartnerBidding",
-                                                   "AATKit-Criteo",
                                                    "AATKit-Tappx",
                                                    "AATKit-Facebook",
                                                    "AATKit-AppNexus",
@@ -76,7 +72,7 @@ let package = Package(
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: Version(12, 7, 0)),
         .package(url: "https://github.com/GeoEdgeSDK/AppHarbrSDK.git", exact: Version(1, 24, 1)),
         .package(url: "https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git", "1.1.0"..<"4.0.0"),
-        .package(url: "https://github.com/AddApptr/RTBSPM.git", branch: "beta-1.8")
+        .package(url: "https://github.com/AddApptr/RTBSPM.git", exact: Version(1, 8, 0))
 //        .package(name: "TeadsSDK", url: "https://github.com/teads/TeadsSDK-iOS", .exact("5.1.3")), Conflict in AppLovin dependency
     ],
     targets: [
@@ -134,10 +130,6 @@ let package = Package(
                 dependencies: ["AATDTBiOSSDK", "AATAmazonAdapter"],
                 path: "./Sources/AmazonSources"),
 
-        .target(name:"AATKit-Criteo",
-                dependencies: ["AATCriteoPublisherSdk", "AATCriteoAdapter"],
-                path: "./Sources/CriteoSources"),
-
         .target(name:"AATKit-FeedAd",
                 dependencies: ["AATFeedAd", "AATFeedAdAdapter"],
                 path: "./Sources/FeedAdSources"),
@@ -170,22 +162,6 @@ let package = Package(
                     "AATMetaAdapter"
                 ],
                 path: "./Sources/FacebookSources"),
-
-        .target(name:"AATKit-Smaato",
-                dependencies: [
-                    "AATOMSDK_Smaato",
-                    "AATSmaatoSDKBanner",
-                    "AATSmaatoSDKCore",
-                    "AATSmaatoSDKInterstitial",
-                    "AATSmaatoSDKNative",
-                    "AATSmaatoSDKOpenMeasurement",
-                    "AATSmaatoSDKOutstream",
-                    "AATSmaatoSDKRewardedAds",
-                    "AATSmaatoSDKRichMedia",
-                    "AATSmaatoSDKVideo",
-                    "AATSmaatoAdapter"
-                ],
-                path: "./Sources/SmaatoSources"),
 
         .target(name:"AATKit-SmartAd",
                 dependencies: ["AATSASDisplayKit", "AATSmartAdAdapter"],
@@ -273,9 +249,6 @@ let package = Package(
         // Amazon
         .binaryTarget(name: "AATDTBiOSSDK", path: "./Dependencies/Amazon/DTBiOSSDK.xcframework"),
 
-        // Criteo
-        .binaryTarget(name: "AATCriteoPublisherSdk", path: "./Dependencies/Criteo/CriteoPublisherSdk.xcframework"),
-
         // FeedAd
         .binaryTarget(name: "AATFeedAd", path: "./Dependencies/FeedAd/FeedAd.xcframework"),
 
@@ -284,18 +257,6 @@ let package = Package(
         .binaryTarget(name: "AATOguryAds", path: "./Dependencies/Ogury/OguryAds.xcframework"),
         .binaryTarget(name: "AATOMSDK_Ogury", path: "./Dependencies/Ogury/OMSDK_Ogury.xcframework"),
         .binaryTarget(name: "AATOgurySdk", path: "./Dependencies/Ogury/OgurySdk.xcframework"),
-
-        // Smaato
-        .binaryTarget(name: "AATOMSDK_Smaato", path: "./Dependencies/Smaato/OMSDK_Smaato.xcframework"),
-        .binaryTarget(name: "AATSmaatoSDKBanner", path: "./Dependencies/Smaato/SmaatoSDKBanner.xcframework"),
-        .binaryTarget(name: "AATSmaatoSDKCore", path: "./Dependencies/Smaato/SmaatoSDKCore.xcframework"),
-        .binaryTarget(name: "AATSmaatoSDKInterstitial", path: "./Dependencies/Smaato/SmaatoSDKInterstitial.xcframework"),
-        .binaryTarget(name: "AATSmaatoSDKNative", path: "./Dependencies/Smaato/SmaatoSDKNative.xcframework"),
-        .binaryTarget(name: "AATSmaatoSDKOpenMeasurement", path: "./Dependencies/Smaato/SmaatoSDKOpenMeasurement.xcframework"),
-        .binaryTarget(name: "AATSmaatoSDKOutstream", path: "./Dependencies/Smaato/SmaatoSDKOutstream.xcframework"),
-        .binaryTarget(name: "AATSmaatoSDKRewardedAds", path: "./Dependencies/Smaato/SmaatoSDKRewardedAds.xcframework"),
-        .binaryTarget(name: "AATSmaatoSDKRichMedia", path: "./Dependencies/Smaato/SmaatoSDKRichMedia.xcframework"),
-        .binaryTarget(name: "AATSmaatoSDKVideo", path: "./Dependencies/Smaato/SmaatoSDKVideo.xcframework"),
 
         //SmartAd
         .binaryTarget(name: "AATSASDisplayKit", path: "./Dependencies/SmartAd/SASDisplayKit.xcframework"),
@@ -377,7 +338,6 @@ let package = Package(
         .binaryTarget(name: "AATAppLovinAdapter", path: "./Dependencies/AATKit/Adapters/AATAppLovinAdapter.xcframework"),
         .binaryTarget(name: "AATAppHarbrAdapter", path: "./Dependencies/AATKit/Adapters/AATAppHarbrAdapter.xcframework"),
         .binaryTarget(name: "AATAppNexusAdapter", path: "./Dependencies/AATKit/Adapters/AATAppNexusAdapter.xcframework"),
-        .binaryTarget(name: "AATCriteoAdapter", path: "./Dependencies/AATKit/Adapters/AATCriteoAdapter.xcframework"),
         .binaryTarget(name: "AATDFPPrebidAdapter", path: "./Dependencies/AATKit/Adapters/AATDFPPrebidAdapter.xcframework"),
         .binaryTarget(name: "AATFacebookAdapter", path: "./Dependencies/AATKit/Adapters/AATFacebookAdapter.xcframework"),
         .binaryTarget(name: "AATFeedAdAdapter", path: "./Dependencies/AATKit/Adapters/AATFeedAdAdapter.xcframework"),
@@ -389,7 +349,6 @@ let package = Package(
         .binaryTarget(name: "AATKidozAdapter", path: "./Dependencies/AATKit/Adapters/AATKidozAdapter.xcframework"),
         .binaryTarget(name: "AATOguryAdapter", path: "./Dependencies/AATKit/Adapters/AATOguryAdapter.xcframework"),
         .binaryTarget(name: "AATPubNativeAdapter", path: "./Dependencies/AATKit/Adapters/AATPubNativeAdapter.xcframework"),
-        .binaryTarget(name: "AATSmaatoAdapter", path: "./Dependencies/AATKit/Adapters/AATSmaatoAdapter.xcframework"),
         .binaryTarget(name: "AATSmartAdAdapter", path: "./Dependencies/AATKit/Adapters/AATSmartAdAdapter.xcframework"),
         .binaryTarget(name: "AATTappxAdapter", path: "./Dependencies/AATKit/Adapters/AATTappxAdapter.xcframework"),
         .binaryTarget(name: "AATTeadsAdapter", path: "./Dependencies/AATKit/Adapters/AATTeadsAdapter.xcframework"),

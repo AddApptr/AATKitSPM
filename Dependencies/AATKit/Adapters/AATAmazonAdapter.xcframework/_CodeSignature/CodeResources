@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATAmazonAdapter.framework/AATAmazonAdapter</key>
 		<data>
-		b97l18p0hxNQO15L1ZOWRMooYII=
+		CNMVNUucKpqB+N8EUyNMlSwgV3Q=
 		</data>
 		<key>ios-arm64/AATAmazonAdapter.framework/Headers/AATAmazonAdapter-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/AATAmazonAdapter.framework/Info.plist</key>
 		<data>
-		dOFTFMR4OT8v0wWUiB/rXWYjzAQ=
+		u9H2Hu0dC9Qs92XFC/FfG68VEn4=
 		</data>
 		<key>ios-arm64/AATAmazonAdapter.framework/Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/AATAmazonAdapter</key>
 		<data>
-		ZKEKkYL0HtIzDa7ZhQ/yl+aqYwQ=
+		QXWun+shdwTdro5BY/5V2dcT3t4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/Headers/AATAmazonAdapter-Swift.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/Info.plist</key>
 		<data>
-		RiVekgaXEdOB31naAUw/YusE1+c=
+		GOwYCwlAZmT4LMVxDmXJPCGlW/4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -92,26 +92,6 @@
 		<data>
 		0we/NvvDAD/KkrIWg/8oYQer8h0=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		I0Vx8F14l6U4aZGtLLGPGwVIbQk=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		OHyw0123MadZCRXwxr6OokBSzI0=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/_CodeSignature/CodeResources</key>
-		<data>
-		LFE4ppZDE0ZUJw9J0iJAonmKaA8=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -119,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b97l18p0hxNQO15L1ZOWRMooYII=
+			CNMVNUucKpqB+N8EUyNMlSwgV3Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			+LGNkSgQTgmBty2F2ZGlZBu2sRxtZ2HnigEgC+YOztI=
+			8Gdn3eMXJW0PDMPfOrcdvyo+q6V2dekjthVf9TGzuw8=
 			</data>
 		</dict>
 		<key>ios-arm64/AATAmazonAdapter.framework/Headers/AATAmazonAdapter-Swift.h</key>
@@ -152,11 +132,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dOFTFMR4OT8v0wWUiB/rXWYjzAQ=
+			u9H2Hu0dC9Qs92XFC/FfG68VEn4=
 			</data>
 			<key>hash2</key>
 			<data>
-			4NAbwN/d+i05nJ1ZG0Fkbz/BYwSi+LbTwFmollYtN84=
+			HOqDsRzFunh+b6iE6+K41wMMrA8/qKWrBFbzCfllMEY=
 			</data>
 		</dict>
 		<key>ios-arm64/AATAmazonAdapter.framework/Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -218,11 +198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZKEKkYL0HtIzDa7ZhQ/yl+aqYwQ=
+			QXWun+shdwTdro5BY/5V2dcT3t4=
 			</data>
 			<key>hash2</key>
 			<data>
-			plYtJUve4ubTkamFTYtRUZxmtzciYeE0UcynNi/PrYA=
+			8i8wxNLNWLP/mB12eQDRdZ8/8PcNQlFJSEmi0Hlc3AQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/Headers/AATAmazonAdapter-Swift.h</key>
@@ -251,11 +231,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RiVekgaXEdOB31naAUw/YusE1+c=
+			GOwYCwlAZmT4LMVxDmXJPCGlW/4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Guux/1a2NpCLBxxgu0QerU2TpFRja2U3DHKhudn0uCU=
+			4KsGKHy2IkYkjz5tBi6Aq8e1SYfSpY/znF8alhdV6Vw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/Modules/AATAmazonAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -355,61 +335,6 @@
 			<key>hash2</key>
 			<data>
 			4FaZ96pntLF7nUbSnk5humKLaWpu6YOEfXOvfBXOTso=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			I0Vx8F14l6U4aZGtLLGPGwVIbQk=
-			</data>
-			<key>hash2</key>
-			<data>
-			lvAUv6rGQtt5e228LHhmQliMHfURILoOknRy8AAIWgI=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OnX22wWFKRSOFN1+obRynMCeyXM=
-			</data>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OHyw0123MadZCRXwxr6OokBSzI0=
-			</data>
-			<key>hash2</key>
-			<data>
-			jgZ8WeZvZAiCgW+WgCakSqaLThaYeNLBjWC1xElOg7s=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LFE4ppZDE0ZUJw9J0iJAonmKaA8=
-			</data>
-			<key>hash2</key>
-			<data>
-			OR69RAzdedhDaF33mg4NoTSFz6TfqE/NxLxfcxW7RYI=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATAmazonAdapter.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 	</dict>

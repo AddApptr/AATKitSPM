@@ -1,0 +1,132 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AATMetaBiddingAdapter",
+    "printedName": "AATMetaBiddingAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "FBAudienceNetwork",
+        "printedName": "FBAudienceNetwork",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATMetaBiddingAdapter\/AATMetaBiddingAdapterManager.swift",
+      "kind": "StringLiteral",
+      "offset": 409,
+      "length": 6,
+      "value": "\"meta\""
+    }
+  ]
+}

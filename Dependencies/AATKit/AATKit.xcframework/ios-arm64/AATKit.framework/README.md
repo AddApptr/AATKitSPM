@@ -46,7 +46,6 @@ Using the aforementioned line is equivalent to this:
     pod 'AATKit/OguryAds'
     pod 'AATKit/PubNative'
     pod 'AATKit/Prebid'
-    pod 'AATKit/Smaato'
     pod 'AATKit/SmartAdServer'
     pod 'AATKit/Unity'
     pod 'AATKit/Vungle'

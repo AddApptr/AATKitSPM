@@ -16,6 +16,30 @@
       },
       {
         "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "AATAdMobDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATAdMobDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATAdMobDSPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -108,16 +132,23 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPRewardedVideo.swift",
+      "kind": "StringLiteral",
+      "offset": 338,
+      "length": 7,
+      "value": "\"Admob\""
+    },
+    {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdmobDSPInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 309,
+      "offset": 337,
       "length": 7,
       "value": "\"Admob\""
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATAdMobDSPAdapter\/AATAdMobDSPBanner.swift",
       "kind": "StringLiteral",
-      "offset": 285,
+      "offset": 313,
       "length": 7,
       "value": "\"Admob\""
     },

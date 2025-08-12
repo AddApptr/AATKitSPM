@@ -2,7 +2,7 @@
 //  KidozSDK.h
 //  KidozSDK
 //
-//  Created by Yarden Rosenberg on 02/05/2023.
+//  Created by Maria Yelfimova on 01/05/2024.
 //
 
 #import <Foundation/Foundation.h>

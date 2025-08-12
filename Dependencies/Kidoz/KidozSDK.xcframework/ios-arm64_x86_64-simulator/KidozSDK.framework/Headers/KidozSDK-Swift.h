@@ -285,8 +285,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 #endif
 
-#import <KidozSDK/KidozSDK.h>
-
 #endif
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
@@ -306,64 +304,87 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class UIImage;
-
-SWIFT_CLASS("_TtC8KidozSDK13AssetsManager")
-@interface AssetsManager : NSObject
-+ (UIImage * _Nonnull)getAnswerImageButtonFile SWIFT_WARN_UNUSED_RESULT;
-+ (UIImage * _Nonnull)getCrossBlueImageButtonFile SWIFT_WARN_UNUSED_RESULT;
-+ (UIImage * _Nonnull)getWebViewCloseButtonFile SWIFT_WARN_UNUSED_RESULT;
-+ (UIImage * _Nonnull)getDividerImageFile SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class KidozError;
-
-SWIFT_PROTOCOL("_TtP8KidozSDK19KidozBannerDelegate_")
-@protocol KidozBannerDelegate
-- (void)onBannerAdLoaded;
-- (void)onBannerAdFailedToLoadWithError:(KidozError * _Nonnull)error;
-- (void)onBannerAdShown;
-- (void)onBannerAdFailedToShowWithError:(KidozError * _Nonnull)error;
-- (void)onBannerAdImpression;
-- (void)onBannerAdClosed;
-@end
+typedef SWIFT_ENUM(NSInteger, BannerPosition, open) {
+  BannerPositionTop_center = 0,
+  BannerPositionBottom_center = 1,
+  BannerPositionTop_left = 2,
+  BannerPositionTop_right = 3,
+  BannerPositionBottom_left = 4,
+  BannerPositionBottom_right = 5,
+  BannerPositionNone = 6,
+};
 
 @class NSCoder;
 
-SWIFT_CLASS_NAMED("KidozBannerView")
-@interface KidozBannerView : UIView
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat BANNER_WIDTH;)
-+ (CGFloat)BANNER_WIDTH SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat BANNER_HEIGHT;)
-+ (CGFloat)BANNER_HEIGHT SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, strong) id <KidozBannerDelegate> _Nullable delegate;
+SWIFT_CLASS("_TtC8KidozSDK12KPBannerView")
+@interface KPBannerView : UIView
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)setAutoShowTo:(BOOL)autoShow;
 - (void)load;
 - (void)show;
-- (void)setBannerPosition:(BANNER_POSITION)bannerPosition;
+- (void)setBannerPosition:(enum BannerPosition)bannerPosition;
 - (void)close;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 @class NSString;
+@protocol KidozInitDelegate;
+
+SWIFT_CLASS_NAMED("Kidoz")
+@interface Kidoz : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Kidoz * _Nonnull instance;)
++ (Kidoz * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)initializeWithPublisherID:(NSString * _Nonnull)publisherID securityToken:(NSString * _Nonnull)securityToken delegate:(id <KidozInitDelegate> _Nonnull)delegate;
++ (void)suppressSKANWarnings;
++ (NSString * _Nonnull)getSdkVersion SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isSDKInitialized SWIFT_WARN_UNUSED_RESULT;
++ (void)setExtensionType:(NSString * _Nonnull)type version:(NSString * _Nonnull)version;
+@end
+
+@class KidozBannerView;
+@class KidozError;
+
+SWIFT_PROTOCOL("_TtP8KidozSDK19KidozBannerDelegate_")
+@protocol KidozBannerDelegate
+- (void)onBannerAdLoadedWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView;
+- (void)onBannerAdFailedToLoadWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView error:(KidozError * _Nonnull)error;
+- (void)onBannerAdShownWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView;
+- (void)onBannerAdFailedToShowWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView error:(KidozError * _Nonnull)error;
+- (void)onBannerAdImpressionWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView;
+- (void)onBannerAdClosedWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView;
+@end
+
+
+SWIFT_CLASS_NAMED("KidozBannerView")
+@interface KidozBannerView : KPBannerView
+- (void)setDelegateWithDelegate:(id <KidozBannerDelegate> _Nonnull)delegate;
+@property (nonatomic, strong) id <KidozBannerDelegate> _Nullable delegate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS_NAMED("KidozError")
 @interface KidozError : NSObject
 @property (nonatomic) NSInteger errorCode;
 @property (nonatomic, copy) NSString * _Nonnull message;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger LOAD_ERROR;)
-+ (NSInteger)LOAD_ERROR SWIFT_WARN_UNUSED_RESULT;
-+ (void)setLOAD_ERROR:(NSInteger)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger SHOW_ERROR;)
-+ (NSInteger)SHOW_ERROR SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSHOW_ERROR:(NSInteger)value;
-- (nonnull instancetype)initWithErrorCode:(NSInteger)errorCode message:(NSString * _Nonnull)message OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP8KidozSDK15SDKInitDelegate_")
+@protocol SDKInitDelegate
+- (void)onInitSuccess;
+- (void)onInitError:(NSString * _Nonnull)error;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8KidozSDK17KidozInitDelegate_")
+@protocol KidozInitDelegate <SDKInitDelegate>
 @end
 
 @protocol KidozInterstitialDelegate;
@@ -372,8 +393,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger SHOW_ERROR;)
 SWIFT_CLASS_NAMED("KidozInterstitialAd")
 @interface KidozInterstitialAd : NSObject
 + (void)loadWithDelegate:(id <KidozInterstitialDelegate> _Nonnull)delegate;
-- (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (void)showWithViewController:(UIViewController * _Nonnull)viewController;
+- (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -381,12 +402,12 @@ SWIFT_CLASS_NAMED("KidozInterstitialAd")
 
 SWIFT_PROTOCOL("_TtP8KidozSDK25KidozInterstitialDelegate_")
 @protocol KidozInterstitialDelegate
-- (void)onInterstitialAdLoadedWithAd:(KidozInterstitialAd * _Nonnull)ad;
-- (void)onInterstitialAdFailedToLoadWithError:(KidozError * _Nonnull)error;
-- (void)onInterstitialAdShownWithAd:(KidozInterstitialAd * _Nonnull)ad;
-- (void)onInterstitialAdFailedToShowWithError:(KidozError * _Nonnull)error;
-- (void)onInterstitialImpression;
-- (void)onInterstitialAdClosedWithAd:(KidozInterstitialAd * _Nonnull)ad;
+- (void)onInterstitialAdLoadedWithKidozInterstitialAd:(KidozInterstitialAd * _Nonnull)kidozInterstitialAd;
+- (void)onInterstitialAdFailedToLoadWithKidozError:(KidozError * _Nonnull)kidozError;
+- (void)onInterstitialAdShownWithKidozInterstitialAd:(KidozInterstitialAd * _Nonnull)kidozInterstitialAd;
+- (void)onInterstitialAdFailedToShowWithKidozInterstitialAd:(KidozInterstitialAd * _Nonnull)kidozInterstitialAd kidozError:(KidozError * _Nonnull)kidozError;
+- (void)onInterstitialImpressionWithKidozInterstitialAd:(KidozInterstitialAd * _Nonnull)kidozInterstitialAd;
+- (void)onInterstitialAdClosedWithKidozInterstitialAd:(KidozInterstitialAd * _Nonnull)kidozInterstitialAd;
 @end
 
 @protocol KidozRewardedDelegate;
@@ -394,8 +415,8 @@ SWIFT_PROTOCOL("_TtP8KidozSDK25KidozInterstitialDelegate_")
 SWIFT_CLASS_NAMED("KidozRewardedAd")
 @interface KidozRewardedAd : NSObject
 + (void)loadWithDelegate:(id <KidozRewardedDelegate> _Nonnull)delegate;
-- (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (void)showWithViewController:(UIViewController * _Nonnull)viewController;
+- (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -403,40 +424,21 @@ SWIFT_CLASS_NAMED("KidozRewardedAd")
 
 SWIFT_PROTOCOL("_TtP8KidozSDK21KidozRewardedDelegate_")
 @protocol KidozRewardedDelegate
-- (void)onRewardedAdLoadedWithAd:(KidozRewardedAd * _Nonnull)ad;
-- (void)onRewardedAdFailedToLoadWithError:(KidozError * _Nonnull)error;
-- (void)onRewardedAdShownWithAd:(KidozRewardedAd * _Nonnull)ad;
-- (void)onRewardedAdFailedToShowWithError:(KidozError * _Nonnull)error;
-- (void)onRewardReceivedWithAd:(KidozRewardedAd * _Nonnull)ad;
-- (void)onRewardedImpression;
-- (void)onRewardedAdClosedWithAd:(KidozRewardedAd * _Nonnull)ad;
-@end
-
-
-SWIFT_CLASS("_TtC8KidozSDK16KidozSessionData")
-@interface KidozSessionData : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isSKAdNetworkIdentifierSet;)
-+ (BOOL)isSKAdNetworkIdentifierSet SWIFT_WARN_UNUSED_RESULT;
-+ (void)setIsSKAdNetworkIdentifierSet:(BOOL)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable supportedSKADNetworkIds;)
-+ (NSString * _Nullable)supportedSKADNetworkIds SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportedSKADNetworkIds:(NSString * _Nullable)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull extensionType;)
-+ (NSString * _Nonnull)extensionType SWIFT_WARN_UNUSED_RESULT;
-+ (void)setExtensionType:(NSString * _Nonnull)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull extensionVersion;)
-+ (NSString * _Nonnull)extensionVersion SWIFT_WARN_UNUSED_RESULT;
-+ (void)setExtensionVersion:(NSString * _Nonnull)value;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)onRewardedAdLoadedWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd;
+- (void)onRewardedAdFailedToLoadWithKidozError:(KidozError * _Nonnull)kidozError;
+- (void)onRewardedAdShownWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd;
+- (void)onRewardedAdFailedToShowWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd kidozError:(KidozError * _Nonnull)kidozError;
+- (void)onRewardReceivedWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd;
+- (void)onRewardedImpressionWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd;
+- (void)onRewardedAdClosedWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd;
 @end
 
 
 SWIFT_CLASS_NAMED("PlistUtil")
 @interface PlistUtil : NSObject
-+ (BOOL)checkKidozSKADNetworkIdExistWithNetworkId:(NSString * _Nonnull)networkId SWIFT_WARN_UNUSED_RESULT;
-+ (NSString * _Nonnull)getSKADNetworkIds SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
@@ -444,10 +446,28 @@ SWIFT_CLASS_NAMED("TestUtils")
 @interface TestUtils : NSObject
 + (NSString * _Nullable)getEnvApiUrl SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getOverrideWaterfallUrl SWIFT_WARN_UNUSED_RESULT;
-+ (void)setEnvironmentWithEnvironmentStr:(NSString * _Nonnull)environmentStr;
++ (void)setEnvironmentWithSdkTypeStr:(NSString * _Nonnull)sdkTypeStr environmentStr:(NSString * _Nonnull)environmentStr;
++ (NSString * _Nonnull)getBundleVersion SWIFT_WARN_UNUSED_RESULT;
 + (void)setCampaignIdsWithCampaignIds:(NSString * _Nullable)campaignIds;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+SWIFT_CLASS("_TtC8KidozSDK12ToastMessage")
+@interface ToastMessage : NSObject
++ (void)showWithMessage:(NSString * _Nonnull)message;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS("_TtC8KidozSDK7UIUtils")
+@interface UIUtils : NSObject
++ (UIViewController * _Nonnull)topViewController SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -744,8 +764,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import UIKit;
 #endif
 
-#import <KidozSDK/KidozSDK.h>
-
 #endif
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
@@ -765,64 +783,87 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class UIImage;
-
-SWIFT_CLASS("_TtC8KidozSDK13AssetsManager")
-@interface AssetsManager : NSObject
-+ (UIImage * _Nonnull)getAnswerImageButtonFile SWIFT_WARN_UNUSED_RESULT;
-+ (UIImage * _Nonnull)getCrossBlueImageButtonFile SWIFT_WARN_UNUSED_RESULT;
-+ (UIImage * _Nonnull)getWebViewCloseButtonFile SWIFT_WARN_UNUSED_RESULT;
-+ (UIImage * _Nonnull)getDividerImageFile SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class KidozError;
-
-SWIFT_PROTOCOL("_TtP8KidozSDK19KidozBannerDelegate_")
-@protocol KidozBannerDelegate
-- (void)onBannerAdLoaded;
-- (void)onBannerAdFailedToLoadWithError:(KidozError * _Nonnull)error;
-- (void)onBannerAdShown;
-- (void)onBannerAdFailedToShowWithError:(KidozError * _Nonnull)error;
-- (void)onBannerAdImpression;
-- (void)onBannerAdClosed;
-@end
+typedef SWIFT_ENUM(NSInteger, BannerPosition, open) {
+  BannerPositionTop_center = 0,
+  BannerPositionBottom_center = 1,
+  BannerPositionTop_left = 2,
+  BannerPositionTop_right = 3,
+  BannerPositionBottom_left = 4,
+  BannerPositionBottom_right = 5,
+  BannerPositionNone = 6,
+};
 
 @class NSCoder;
 
-SWIFT_CLASS_NAMED("KidozBannerView")
-@interface KidozBannerView : UIView
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat BANNER_WIDTH;)
-+ (CGFloat)BANNER_WIDTH SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat BANNER_HEIGHT;)
-+ (CGFloat)BANNER_HEIGHT SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, strong) id <KidozBannerDelegate> _Nullable delegate;
+SWIFT_CLASS("_TtC8KidozSDK12KPBannerView")
+@interface KPBannerView : UIView
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)setAutoShowTo:(BOOL)autoShow;
 - (void)load;
 - (void)show;
-- (void)setBannerPosition:(BANNER_POSITION)bannerPosition;
+- (void)setBannerPosition:(enum BannerPosition)bannerPosition;
 - (void)close;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 @class NSString;
+@protocol KidozInitDelegate;
+
+SWIFT_CLASS_NAMED("Kidoz")
+@interface Kidoz : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Kidoz * _Nonnull instance;)
++ (Kidoz * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)initializeWithPublisherID:(NSString * _Nonnull)publisherID securityToken:(NSString * _Nonnull)securityToken delegate:(id <KidozInitDelegate> _Nonnull)delegate;
++ (void)suppressSKANWarnings;
++ (NSString * _Nonnull)getSdkVersion SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isSDKInitialized SWIFT_WARN_UNUSED_RESULT;
++ (void)setExtensionType:(NSString * _Nonnull)type version:(NSString * _Nonnull)version;
+@end
+
+@class KidozBannerView;
+@class KidozError;
+
+SWIFT_PROTOCOL("_TtP8KidozSDK19KidozBannerDelegate_")
+@protocol KidozBannerDelegate
+- (void)onBannerAdLoadedWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView;
+- (void)onBannerAdFailedToLoadWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView error:(KidozError * _Nonnull)error;
+- (void)onBannerAdShownWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView;
+- (void)onBannerAdFailedToShowWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView error:(KidozError * _Nonnull)error;
+- (void)onBannerAdImpressionWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView;
+- (void)onBannerAdClosedWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView;
+@end
+
+
+SWIFT_CLASS_NAMED("KidozBannerView")
+@interface KidozBannerView : KPBannerView
+- (void)setDelegateWithDelegate:(id <KidozBannerDelegate> _Nonnull)delegate;
+@property (nonatomic, strong) id <KidozBannerDelegate> _Nullable delegate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS_NAMED("KidozError")
 @interface KidozError : NSObject
 @property (nonatomic) NSInteger errorCode;
 @property (nonatomic, copy) NSString * _Nonnull message;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger LOAD_ERROR;)
-+ (NSInteger)LOAD_ERROR SWIFT_WARN_UNUSED_RESULT;
-+ (void)setLOAD_ERROR:(NSInteger)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger SHOW_ERROR;)
-+ (NSInteger)SHOW_ERROR SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSHOW_ERROR:(NSInteger)value;
-- (nonnull instancetype)initWithErrorCode:(NSInteger)errorCode message:(NSString * _Nonnull)message OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP8KidozSDK15SDKInitDelegate_")
+@protocol SDKInitDelegate
+- (void)onInitSuccess;
+- (void)onInitError:(NSString * _Nonnull)error;
+@end
+
+
+SWIFT_PROTOCOL("_TtP8KidozSDK17KidozInitDelegate_")
+@protocol KidozInitDelegate <SDKInitDelegate>
 @end
 
 @protocol KidozInterstitialDelegate;
@@ -831,8 +872,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) NSInteger SHOW_ERROR;)
 SWIFT_CLASS_NAMED("KidozInterstitialAd")
 @interface KidozInterstitialAd : NSObject
 + (void)loadWithDelegate:(id <KidozInterstitialDelegate> _Nonnull)delegate;
-- (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (void)showWithViewController:(UIViewController * _Nonnull)viewController;
+- (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -840,12 +881,12 @@ SWIFT_CLASS_NAMED("KidozInterstitialAd")
 
 SWIFT_PROTOCOL("_TtP8KidozSDK25KidozInterstitialDelegate_")
 @protocol KidozInterstitialDelegate
-- (void)onInterstitialAdLoadedWithAd:(KidozInterstitialAd * _Nonnull)ad;
-- (void)onInterstitialAdFailedToLoadWithError:(KidozError * _Nonnull)error;
-- (void)onInterstitialAdShownWithAd:(KidozInterstitialAd * _Nonnull)ad;
-- (void)onInterstitialAdFailedToShowWithError:(KidozError * _Nonnull)error;
-- (void)onInterstitialImpression;
-- (void)onInterstitialAdClosedWithAd:(KidozInterstitialAd * _Nonnull)ad;
+- (void)onInterstitialAdLoadedWithKidozInterstitialAd:(KidozInterstitialAd * _Nonnull)kidozInterstitialAd;
+- (void)onInterstitialAdFailedToLoadWithKidozError:(KidozError * _Nonnull)kidozError;
+- (void)onInterstitialAdShownWithKidozInterstitialAd:(KidozInterstitialAd * _Nonnull)kidozInterstitialAd;
+- (void)onInterstitialAdFailedToShowWithKidozInterstitialAd:(KidozInterstitialAd * _Nonnull)kidozInterstitialAd kidozError:(KidozError * _Nonnull)kidozError;
+- (void)onInterstitialImpressionWithKidozInterstitialAd:(KidozInterstitialAd * _Nonnull)kidozInterstitialAd;
+- (void)onInterstitialAdClosedWithKidozInterstitialAd:(KidozInterstitialAd * _Nonnull)kidozInterstitialAd;
 @end
 
 @protocol KidozRewardedDelegate;
@@ -853,8 +894,8 @@ SWIFT_PROTOCOL("_TtP8KidozSDK25KidozInterstitialDelegate_")
 SWIFT_CLASS_NAMED("KidozRewardedAd")
 @interface KidozRewardedAd : NSObject
 + (void)loadWithDelegate:(id <KidozRewardedDelegate> _Nonnull)delegate;
-- (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (void)showWithViewController:(UIViewController * _Nonnull)viewController;
+- (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -862,40 +903,21 @@ SWIFT_CLASS_NAMED("KidozRewardedAd")
 
 SWIFT_PROTOCOL("_TtP8KidozSDK21KidozRewardedDelegate_")
 @protocol KidozRewardedDelegate
-- (void)onRewardedAdLoadedWithAd:(KidozRewardedAd * _Nonnull)ad;
-- (void)onRewardedAdFailedToLoadWithError:(KidozError * _Nonnull)error;
-- (void)onRewardedAdShownWithAd:(KidozRewardedAd * _Nonnull)ad;
-- (void)onRewardedAdFailedToShowWithError:(KidozError * _Nonnull)error;
-- (void)onRewardReceivedWithAd:(KidozRewardedAd * _Nonnull)ad;
-- (void)onRewardedImpression;
-- (void)onRewardedAdClosedWithAd:(KidozRewardedAd * _Nonnull)ad;
-@end
-
-
-SWIFT_CLASS("_TtC8KidozSDK16KidozSessionData")
-@interface KidozSessionData : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL isSKAdNetworkIdentifierSet;)
-+ (BOOL)isSKAdNetworkIdentifierSet SWIFT_WARN_UNUSED_RESULT;
-+ (void)setIsSKAdNetworkIdentifierSet:(BOOL)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nullable supportedSKADNetworkIds;)
-+ (NSString * _Nullable)supportedSKADNetworkIds SWIFT_WARN_UNUSED_RESULT;
-+ (void)setSupportedSKADNetworkIds:(NSString * _Nullable)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull extensionType;)
-+ (NSString * _Nonnull)extensionType SWIFT_WARN_UNUSED_RESULT;
-+ (void)setExtensionType:(NSString * _Nonnull)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull extensionVersion;)
-+ (NSString * _Nonnull)extensionVersion SWIFT_WARN_UNUSED_RESULT;
-+ (void)setExtensionVersion:(NSString * _Nonnull)value;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)onRewardedAdLoadedWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd;
+- (void)onRewardedAdFailedToLoadWithKidozError:(KidozError * _Nonnull)kidozError;
+- (void)onRewardedAdShownWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd;
+- (void)onRewardedAdFailedToShowWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd kidozError:(KidozError * _Nonnull)kidozError;
+- (void)onRewardReceivedWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd;
+- (void)onRewardedImpressionWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd;
+- (void)onRewardedAdClosedWithKidozRewardedAd:(KidozRewardedAd * _Nonnull)kidozRewardedAd;
 @end
 
 
 SWIFT_CLASS_NAMED("PlistUtil")
 @interface PlistUtil : NSObject
-+ (BOOL)checkKidozSKADNetworkIdExistWithNetworkId:(NSString * _Nonnull)networkId SWIFT_WARN_UNUSED_RESULT;
-+ (NSString * _Nonnull)getSKADNetworkIds SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
@@ -903,10 +925,28 @@ SWIFT_CLASS_NAMED("TestUtils")
 @interface TestUtils : NSObject
 + (NSString * _Nullable)getEnvApiUrl SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)getOverrideWaterfallUrl SWIFT_WARN_UNUSED_RESULT;
-+ (void)setEnvironmentWithEnvironmentStr:(NSString * _Nonnull)environmentStr;
++ (void)setEnvironmentWithSdkTypeStr:(NSString * _Nonnull)sdkTypeStr environmentStr:(NSString * _Nonnull)environmentStr;
++ (NSString * _Nonnull)getBundleVersion SWIFT_WARN_UNUSED_RESULT;
 + (void)setCampaignIdsWithCampaignIds:(NSString * _Nullable)campaignIds;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+SWIFT_CLASS("_TtC8KidozSDK12ToastMessage")
+@interface ToastMessage : NSObject
++ (void)showWithMessage:(NSString * _Nonnull)message;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS("_TtC8KidozSDK7UIUtils")
+@interface UIUtils : NSObject
++ (UIViewController * _Nonnull)topViewController SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 #endif
 #if __has_attribute(external_source_symbol)

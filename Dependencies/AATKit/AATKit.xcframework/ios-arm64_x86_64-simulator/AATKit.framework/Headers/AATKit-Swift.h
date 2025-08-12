@@ -315,10 +315,15 @@ SWIFT_CLASS("_TtC6AATKit19AATAbstractAdConfig")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Represents possible positions for the AdChoices icon on a native ad.
 typedef SWIFT_ENUM(NSInteger, AATAdChoicesIconPosition, closed) {
+/// Position the AdChoices icon at the top-left corner.
   AATAdChoicesIconPositionTopLeft = 0,
+/// Position the AdChoices icon at the top-right corner.
   AATAdChoicesIconPositionTopRight = 1,
+/// Position the AdChoices icon at the bottom-left corner.
   AATAdChoicesIconPositionBottomLeft = 2,
+/// Position the AdChoices icon at the bottom-right corner.
   AATAdChoicesIconPositionBottomRight = 3,
 };
 
@@ -363,9 +368,12 @@ SWIFT_PROTOCOL("_TtP6AATKit20AATAdDisplayDelegate_")
 
 @class AATPriceInfo;
 
+/// Contains information about an ad, including its pricing details.
 SWIFT_CLASS("_TtC6AATKit9AATAdInfo")
 @interface AATAdInfo : NSObject
+/// The price information associated with the ad.
 @property (nonatomic, readonly, strong) AATPriceInfo * _Nullable priceInfo;
+/// A string representation of the <code>AATAdInfo</code>, useful for debugging and logging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -393,46 +401,76 @@ SWIFT_PROTOCOL("_TtP6AATKit28AATAdMobCustomEventsDelegate_")
 @end
 
 
+/// Configuration options for AdMob ads.
 SWIFT_CLASS("_TtC6AATKit15AATAdMobOptions")
 @interface AATAdMobOptions : NSObject
-/// Init AATAdMobOptions
-/// \param inlineBannerMaxHeight The maximum height for AdMob inline adaptive banners
+/// Initializes a new instance of <code>AATAdMobOptions</code>.
+/// \param inlineBannerMaxHeight The maximum height for AdMob inline adaptive banners.
 ///
 - (nonnull instancetype)initWithInlineBannerMaxHeight:(NSInteger)inlineBannerMaxHeight OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Represents supported ad networks used by AATKit.
+/// This enum lists all the ad networks integrated with the SDK.
 typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
+/// InMobi ad network.
   AATAdNetworkINMOBI = 0,
+/// Mintegral ad network.
   AATAdNetworkMINTEGRAL = 1,
+/// Google AdMob ad network.
   AATAdNetworkADMOB = 2,
+/// Represents no ad network.
   AATAdNetworkEMPTY = 3,
+/// AppLovin ad network.
   AATAdNetworkAPPLOVIN = 4,
+/// SmartAd ad network.
   AATAdNetworkSMARTAD = 5,
+/// SmartAd Server Direct integration.
   AATAdNetworkSMARTADSERVERDIRECT = 6,
+/// RTB2 ad network.
   AATAdNetworkRTB2 = 7,
+/// Google AdManager (DFP).
   AATAdNetworkDFP = 8,
-  AATAdNetworkSMAATO = 9,
-  AATAdNetworkFACEBOOK = 10,
-  AATAdNetworkFEEDAD = 11,
-  AATAdNetworkUNITY = 12,
-  AATAdNetworkAPPNEXUS = 13,
-  AATAdNetworkOGURY = 14,
-  AATAdNetworkCRITEOSDK = 15,
-  AATAdNetworkAMAZONHB = 16,
-  AATAdNetworkPUBNATIVE = 17,
-  AATAdNetworkTEADS = 18,
-  AATAdNetworkTAPPX = 19,
-  AATAdNetworkYOC = 20,
-  AATAdNetworkVUNGLE2 = 21,
-  AATAdNetworkDFPDIRECT = 22,
-  AATAdNetworkIRONSOURCENEW = 23,
-  AATAdNetworkGRAVITERTB = 24,
-  AATAdNetworkSUPERAWESOME = 25,
-  AATAdNetworkKIDOZ = 26,
-  AATAdNetworkDISPLAYIO = 27,
-  AATAdNetworkADMOBBIDDING = 28,
+/// Facebook Audience Network.
+  AATAdNetworkFACEBOOK = 9,
+/// FeedAd network.
+  AATAdNetworkFEEDAD = 10,
+/// Unity Ads network.
+  AATAdNetworkUNITY = 11,
+/// AppNexus (Xandr) ad network.
+  AATAdNetworkAPPNEXUS = 12,
+/// Ogury ad network.
+  AATAdNetworkOGURY = 13,
+/// Amazon Header Bidding.
+  AATAdNetworkAMAZONHB = 14,
+/// PubNative (HyBid) ad network.
+  AATAdNetworkPUBNATIVE = 15,
+/// Teads ad network.
+  AATAdNetworkTEADS = 16,
+/// Tappx ad network.
+  AATAdNetworkTAPPX = 17,
+/// YOC ad network.
+  AATAdNetworkYOC = 18,
+/// Vungle ad network.
+  AATAdNetworkVUNGLE2 = 19,
+/// DFP Direct integration.
+  AATAdNetworkDFPDIRECT = 20,
+/// IronSource  ad network.
+  AATAdNetworkIRONSOURCENEW = 21,
+/// Gravite RTBSDK ad network.
+  AATAdNetworkGRAVITERTB = 22,
+/// SuperAwesome ad network.
+  AATAdNetworkSUPERAWESOME = 23,
+/// Kidoz ad network.
+  AATAdNetworkKIDOZ = 24,
+/// Display IO ad network.
+  AATAdNetworkDISPLAYIO = 25,
+/// AdMob bidding network, used internally.
+  AATAdNetworkADMOBBIDDING = 26,
+/// Meta bidding network, used internally.
+  AATAdNetworkMETABIDDING = 27,
 };
 
 
@@ -453,25 +491,31 @@ SWIFT_PROTOCOL("_TtP6AATKit33AATAdNetworkDriverVersionProtocol_")
 @class AATSuperAwesomeOptions;
 @class AATGraviteRTBOptions;
 @class AATDisplayIOOptions;
+@class AATMetaBiddingOptions;
 
+/// Configuration container for multiple ad network options.
+/// This class aggregates the configuration options for various supported ad networks,
+/// allowing easy setup of network-specific settings in one place.
 SWIFT_CLASS("_TtC6AATKit20AATAdNetworksOptions")
 @interface AATAdNetworksOptions : NSObject
-/// Init AATAdNetworksOptions
-/// \param appNexusOptions AppNexus options. default is nil
+/// Initializes a new instance of <code>AATAdNetworksOptions</code> with optional parameters.
+/// \param appNexusOptions Configuration for AppNexus. Defaults to <code>nil</code>.
 ///
-/// \param feedAdOptions FeedAd options. default is nil
+/// \param feedAdOptions Configuration for feed ads. Defaults to <code>nil</code>.
 ///
-/// \param adMobOptions AdMob options. default is nil
+/// \param adMobOptions Configuration for AdMob. Defaults to <code>nil</code>.
 ///
-/// \param dfpOptions DFP options. default is nil
+/// \param dfpOptions Configuration for DFP. Defaults to <code>nil</code>.
 ///
-/// \param superAwesomeOptions SuperAwesome options. default is nil
+/// \param superAwesomeOptions Configuration for SuperAwesome. Defaults to <code>nil</code>.
 ///
-/// \param graviteRTBOptions Gravite RTBSDK options. default is nil
+/// \param graviteRTBOptions Configuration for Gravite RTB SDK. Defaults to <code>nil</code>.
 ///
-/// \param displayIOOptions DisplayIo options. default is nil
+/// \param displayIOOptions Configuration for Display IO. Defaults to <code>nil</code>.
 ///
-- (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions graviteRTBOptions:(AATGraviteRTBOptions * _Nullable)graviteRTBOptions displayIOOptions:(AATDisplayIOOptions * _Nullable)displayIOOptions OBJC_DESIGNATED_INITIALIZER;
+/// \param metaBiddingOptions Configuration for Meta bidding. Defaults to <code>nil</code>.
+///
+- (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions graviteRTBOptions:(AATGraviteRTBOptions * _Nullable)graviteRTBOptions displayIOOptions:(AATDisplayIOOptions * _Nullable)displayIOOptions metaBiddingOptions:(AATMetaBiddingOptions * _Nullable)metaBiddingOptions OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -541,22 +585,29 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATAdQualityManagerProtocol_")
 - (id <AATAdQualityDriverProtocol> _Nonnull)initDriver SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 @end
 
+/// Represents the ad formats supported by AATKit.
 typedef SWIFT_ENUM(NSInteger, AATAdType, open) {
+/// Fullscreen ads, covering the entire screen.
   AATAdTypeFullscreen = 0,
+/// Banner ads.
   AATAdTypeBanner = 1,
+/// Native ads, integrated within app content.
   AATAdTypeNative = 2,
+/// Rewarded ads that offer incentives to users.
   AATAdTypeRewarded = 3,
+/// App open ads.
   AATAdTypeAppOpen = 4,
 };
 
 @class NSNumber;
 
+/// Configuration options for AppNexus ads.
 SWIFT_CLASS("_TtC6AATKit18AATAppNexusOptions")
 @interface AATAppNexusOptions : NSObject
-/// Init AATAppNexusOptions
-/// \param autoCloseTime A delay in seconds after which  a full-screen ad will be dismissed, default value is nil.
+/// Initializes a new instance of <code>AATAppNexusOptions</code>.
+/// \param autoCloseTime Optional delay in seconds after which a full-screen ad will be dismissed. Default is <code>nil</code>.
 ///
-/// \param supportNativeBanner A Boolean that describe if Banner Ad can serve a Native Ad, default is false.
+/// \param supportNativeBanner Boolean indicating if banner ads can serve native ads. Default is <code>false</code>.
 ///
 - (nonnull instancetype)initWithAutoCloseTime:(NSNumber * _Nullable)autoCloseTime supportNativeBanner:(BOOL)supportNativeBanner OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -672,7 +723,13 @@ SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY
 - (void)requestAdWithRequest:(AATBannerRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(AATBannerPlacementWrapperView * _Nullable))completionHandler;
 /// Manually Count an Ad Space
 - (void)countAdSpace;
+/// Enables keeping creatives history
+/// \param size Maximum number of creatives to keep
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Get saved creatives history
+/// \param completion An array of <code>AATPlacementHistoryInfo</code> representing creatives history
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -681,21 +738,46 @@ SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY
 
 SWIFT_PROTOCOL("_TtP6AATKit25AATAsyncNativeAdPlacement_") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @protocol AATAsyncNativeAdPlacement <AATPlacement>
+/// Set the placement delegate that will listen to ad loading and display events.
 @property (nonatomic, strong) id <AATAsyncNativePlacementDelegate> _Nullable delegate;
+/// Sets the placement statistics delegate
 @property (nonatomic, strong) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
+/// Sets the placement impression delegate
 @property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
+/// Sets the targeting information for the placement
+/// Information provided for placement overrides targeting information overrides targeting information for application set by the <code>AATSDK/setTargetingInfo(info:)</code>
 @property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable targetingInfo;
+/// Sets the content targeting url for the placement.
+/// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+/// Requests placement reload
+///
+/// returns:
+/// AATNativeAdData
 - (void)reloadWithCompletionHandler:(void (^ _Nonnull)(id <AATNativeAdData> _Nullable))completionHandler;
+/// Returns how many ads are currently loading for given native ad placement.
+///
+/// returns:
+/// Number of ads that are currently loading for given placement.
 - (NSInteger)getNumberOfCurrentlyLoadingNativeAds SWIFT_WARN_UNUSED_RESULT;
+/// Returns true if there is an ad loaded.
+///
+/// returns:
+/// True if there is an ad loaded.
 - (BOOL)hasAd SWIFT_WARN_UNUSED_RESULT;
+/// Manually Count an Ad Space
 - (BOOL)reportAdSpace SWIFT_WARN_UNUSED_RESULT;
+/// Checks if the frequency cap has been reached.
+///
+/// returns:
+/// true if the frequency cap has been reached.
 - (BOOL)isFrequencyCapReached SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
+/// Conform to this protocol to listen to the AATAsyncNativePlacement events
 SWIFT_PROTOCOL("_TtP6AATKit31AATAsyncNativePlacementDelegate_")
 @protocol AATAsyncNativePlacementDelegate <AATAdDisplayDelegate>
 @end
@@ -745,7 +827,13 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATAutoLoadBannerPlacement_")
 /// \param alignment The alignment to set.
 ///
 - (void)setBannerAlignWithAlignment:(AATBannerAlign * _Nonnull)alignment;
+/// Enables the creative history tracking with a given maximum size.
+/// \param size The maximum number of creative history entries to retain.
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Retrieves the current creative history.
+/// \param completion A closure called with an array of <code>AATPlacementHistoryInfo</code> objects.
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -778,7 +866,13 @@ SWIFT_PROTOCOL("_TtP6AATKit35AATAutoLoadMultiSizeBannerPlacement_")
 - (void)startAutoReload;
 /// Stop the automatic reloading of the placement
 - (void)stopAutoReload;
+/// Enables the creative history tracking with a given maximum size.
+/// \param size The maximum number of creative history entries to retain.
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Retrieves the current creative history.
+/// \param completion A closure called with an array of <code>AATPlacementHistoryInfo</code> objects.
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -793,16 +887,17 @@ SWIFT_PROTOCOL("_TtP6AATKit43AATAutoLoadMultiSizeBannerPlacementDelegate_")
 enum VerticalAlign : NSInteger;
 enum HorizontalAlign : NSInteger;
 
+/// <code>AATBannerAlign</code> defines the alignment of a banner within its superview.
 SWIFT_CLASS("_TtC6AATKit14AATBannerAlign")
 @interface AATBannerAlign : NSObject
-/// Banner vertical align of type <code>VerticalAlign</code>
+/// Banner vertical alignment of type <code>VerticalAlign</code>.
 @property (nonatomic, readonly) enum VerticalAlign verticalAlign;
-/// Banner horizontal align of type <code>HorizontalAlign</code>
+/// Banner horizontal alignment of type <code>HorizontalAlign</code>.
 @property (nonatomic, readonly) enum HorizontalAlign horizontalAlign;
-/// Creates a new instance of <code>AATBannerAlign</code>
-/// \param horizontalAlign Banner horizontal align
+/// Creates a new instance of <code>AATBannerAlign</code>.
+/// \param horizontalAlign The horizontal alignment for the banner.
 ///
-/// \param verticalAlign Banner vertical align
+/// \param verticalAlign The vertical alignment for the banner.
 ///
 - (nonnull instancetype)initWithHorizontalAlign:(enum HorizontalAlign)horizontalAlign verticalAlign:(enum VerticalAlign)verticalAlign OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
@@ -810,21 +905,23 @@ SWIFT_CLASS("_TtC6AATKit14AATBannerAlign")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// <code>HorizontalAlign</code> specifies the possible horizontal alignments for a banner.
 typedef SWIFT_ENUM(NSInteger, HorizontalAlign, open) {
-/// Align the banner to the leading edge of the superview
+/// Aligns the banner to the leading (left in LTR, right in RTL) edge of the superview.
   HorizontalAlignLeading = 0,
-/// Align the banner to the trailing edge of the superview
+/// Aligns the banner to the trailing (right in LTR, left in RTL) edge of the superview.
   HorizontalAlignTrailing = 1,
-/// Align the banner to the center of the superview
+/// Aligns the banner to the center of the superview horizontally.
   HorizontalAlignCenter = 2,
 };
 
+/// <code>VerticalAlign</code> specifies the possible vertical alignments for a banner.
 typedef SWIFT_ENUM(NSInteger, VerticalAlign, open) {
-/// Align the banner to the top edge of the superview
+/// Aligns the banner to the top edge of the superview.
   VerticalAlignTop = 0,
-/// Align the banner to the bottom edge of the superview
+/// Aligns the banner to the bottom edge of the superview.
   VerticalAlignBottom = 1,
-/// Align the banner to the center of the superview
+/// Aligns the banner to the center of the superview vertically.
   VerticalAlignCenter = 2,
 };
 
@@ -871,7 +968,13 @@ SWIFT_PROTOCOL("_TtP6AATKit14AATBannerCache_")
 ///   </li>
 /// </ul>
 - (void)destroy;
+/// Enables the creative history tracking with a given maximum size.
+/// \param size The maximum number of creative history entries to retain.
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Retrieves the current creative history.
+/// \param completion A closure called with an array of <code>AATPlacementHistoryInfo</code> objects.
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -927,13 +1030,23 @@ SWIFT_PROTOCOL("_TtP6AATKit28AATBannerCacheStatusDelegate_")
 @end
 
 
-/// Banner configuration class
+/// Configuration class for banners, allowing customization of their behavior.
 SWIFT_CLASS("_TtC6AATKit22AATBannerConfiguration")
 @interface AATBannerConfiguration : NSObject
+/// A boolean indicating whether ad space counting is handled manually.
+/// If <code>true</code>, the developer is responsible for managing ad space counting; otherwise, it’s handled automatically.
 @property (nonatomic) BOOL isManualAdSpaceCounting;
+/// Options for configuring a collapsible banner.
+/// If <code>nil</code>, the banner will not be collapsible.
 @property (nonatomic, strong) AATCollapsibleBannerOptions * _Nullable collapsableBannerOptions;
+/// Initializes a new, default <code>AATBannerConfiguration</code> instance.
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Sets the number of workers to be used.
+/// \param numberOfWorkers The desired number of workers. Must be greater than 0.
+/// If a non-positive value is provided, the setting will be ignored and an error will be logged.
+///
 - (void)setNumberOfWorkers:(NSInteger)numberOfWorkers;
+/// A string representation of the <code>AATBannerConfiguration</code> instance, useful for debugging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
@@ -942,28 +1055,47 @@ SWIFT_CLASS("_TtC6AATKit22AATBannerConfiguration")
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 @end
 
+/// Defines standard banner ad placement sizes supported by AATKit.
+/// Each case corresponds to a specific banner dimension (width x height in points).
 typedef SWIFT_ENUM(NSInteger, AATBannerPlacementSize, open) {
+/// Banner size 320x53 points.
   AATBannerPlacementSizeBanner320x53 = 0,
+/// Banner size 320x50 points.
   AATBannerPlacementSizeBanner320x50 = 1,
+/// Banner size 375x50 points.
   AATBannerPlacementSizeBanner375x50 = 2,
+/// Banner size 390x50 points.
   AATBannerPlacementSizeBanner390x50 = 3,
+/// Banner size 414x50 points.
   AATBannerPlacementSizeBanner414x50 = 4,
+/// Banner size 428x50 points.
   AATBannerPlacementSizeBanner428x50 = 5,
+/// Banner size 768x90 points.
   AATBannerPlacementSizeBanner768x90 = 6,
+/// Banner size 300x250 points (medium rectangle).
   AATBannerPlacementSizeBanner300x250 = 7,
+/// Banner size 468x60 points (full banner).
   AATBannerPlacementSizeBanner468x60 = 8,
+/// Banner size 320x75 points.
   AATBannerPlacementSizeBanner320x75 = 9,
+/// Banner size 320x100 points.
   AATBannerPlacementSizeBanner320x100 = 10,
+/// Banner size 320x150 points.
   AATBannerPlacementSizeBanner320x150 = 11,
+/// Banner size 320x160 points.
   AATBannerPlacementSizeBanner320x160 = 12,
+/// Banner size 300x50 points.
   AATBannerPlacementSizeBanner300x50 = 13,
+/// Banner size 320x480 points.
   AATBannerPlacementSizeBanner320x480 = 14,
 };
 
 @class NSCoder;
 
+/// Loaded banner wrapper view
 SWIFT_CLASS("_TtC6AATKit29AATBannerPlacementWrapperView")
 @interface AATBannerPlacementWrapperView : UIView
+/// Loaded ad information
 @property (nonatomic, strong) AATAdInfo * _Nullable adInfo;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
@@ -971,40 +1103,58 @@ SWIFT_CLASS("_TtC6AATKit29AATBannerPlacementWrapperView")
 @end
 
 
-/// The banner request that will be used by the infeed banner placement
+/// The banner request that will be used by the infeed banner placement.
 SWIFT_CLASS("_TtC6AATKit16AATBannerRequest")
 @interface AATBannerRequest : NSObject
-/// The targeting information for this request.
+/// The targeting information for this request, typically used to
+/// narrow down the audience for ad delivery.
 @property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable targetingInformation;
-/// The content targeting url for this request
+/// The content targeting URL for this request, used for contextual ad targeting.
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// An array of content targeting URLs for this request, allowing for multiple content contexts.
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
-/// The dictionary of network key replacements for this request, allowing to replace macros defined in ad keys with actual values.
-/// Please contact your Account Manager before using this feature.
+/// A dictionary of network key replacements for this request.
+/// This allows for replacing macros defined in ad keys with actual values at runtime.
+/// Please contact your Account Manager before using this feature to ensure proper implementation.
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable networkKeyReplacements;
-/// Banner request delegate <code>AATBannerRequestDelegate</code>
+/// The delegate for this banner request, conforming to <code>AATBannerRequestDelegate</code>.
+/// This delegate receives callbacks related to the banner request lifecycle.
 @property (nonatomic, weak) id <AATBannerRequestDelegate> _Nullable delegate;
+/// GPID value to be passed to networks.
+@property (nonatomic, copy) NSString * _Nullable gpidExtension;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Constructs a new banner request
-/// \param delegate an instance conforming to <code>AATBannerRequestDelegate</code>
+/// Constructs a new banner request with a specified delegate.
+/// \param delegate An instance conforming to <code>AATBannerRequestDelegate</code> that will
+/// receive callbacks for this banner request.
 ///
 - (nonnull instancetype)initWithDelegate:(id <AATBannerRequestDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
-/// Update request sizes
-/// \param sizes a set of <code>AATBannerSize</code>
+/// Updates the banner sizes allowed for this request using an Objective-C compatible method.
+/// This method converts a set of raw integer values to <code>AATBannerSize</code> enums.
+/// \param sizes A set of <code>Int</code> values, where each integer corresponds to an <code>AATBannerSize</code> raw value.
+/// Invalid or out-of-range integer values will be ignored.
 ///
 - (void)setRequestBannerSizes:(NSSet<NSNumber *> * _Nonnull)sizes;
+/// A string representation of the <code>AATBannerRequest</code> instance, useful for debugging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 
+/// A protocol that defines methods for delegates of <code>AATBannerRequest</code> objects.
+/// The methods of this protocol allow you to control certain behaviors of the
+/// banner request, such as whether targeting information should be used for a specific ad network.
 SWIFT_PROTOCOL("_TtP6AATKit24AATBannerRequestDelegate_")
 @protocol AATBannerRequestDelegate
-/// Check if the request should use the targeting information or not for an ad network
-/// \param request an instance of <code>AATBannerRequest</code>
+/// Asks the delegate whether the targeting information in the request should be used for a given ad network.
+/// Implement this method if you need to dynamically control whether ad targeting
+/// should be applied based on the specific ad network.
+/// \param request The <code>AATBannerRequest</code> instance associated with the delegate.
 ///
-/// \param network an <code>AATAdNetwork</code>
+/// \param network The <code>AATAdNetwork</code> for which the targeting decision is being made.
 ///
+///
+/// returns:
+/// <code>true</code> if the targeting information should be used for the specified network; otherwise, <code>false</code>.
 - (BOOL)shouldUseTargetingFor:(AATBannerRequest * _Nonnull)request network:(enum AATAdNetwork)network SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -1012,28 +1162,48 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATBannerRequestDelegate_")
 /// Banner request error class
 SWIFT_CLASS("_TtC6AATKit21AATBannerRequestError")
 @interface AATBannerRequestError : NSObject
+/// String representation of the error
 @property (nonatomic, readonly, copy) NSString * _Nullable errorDescription;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Represents the various banner ad sizes supported by AATKit.
+/// Each case corresponds to a specific banner dimension or a grouping of multiple sizes.
 typedef SWIFT_ENUM(NSInteger, AATBannerSize, open) {
+/// Banner size 300x50 points.
   AATBannerSizeBanner300x50 = 0,
+/// Banner size 320x53 points.
   AATBannerSizeBanner320x53 = 1,
+/// Banner size 768x90 points.
   AATBannerSizeBanner768x90 = 2,
+/// Banner size 300x250 points (medium rectangle).
   AATBannerSizeBanner300x250 = 3,
+/// Banner size 468x60 points (full banner).
   AATBannerSizeBanner468x60 = 4,
+/// Represents multiple banner sizes.
   AATBannerSizeMultipleSizes = 5,
+/// Banner size 320x75 points.
   AATBannerSizeBanner320x75 = 6,
+/// Banner size 320x100 points.
   AATBannerSizeBanner320x100 = 7,
+/// Banner size 320x150 points.
   AATBannerSizeBanner320x150 = 8,
+/// Banner size 320x160 points.
   AATBannerSizeBanner320x160 = 9,
+/// Banner size 320x480 points.
   AATBannerSizeBanner320x480 = 10,
+/// Banner size 728x90 points (leaderboard).
   AATBannerSizeBanner728x90 = 11,
+/// Banner size 320x50 points.
   AATBannerSizeBanner320x50 = 12,
+/// Banner size 375x50 points.
   AATBannerSizeBanner375x50 = 13,
+/// Banner size 390x50 points.
   AATBannerSizeBanner390x50 = 14,
+/// Banner size 414x50 points.
   AATBannerSizeBanner414x50 = 15,
+/// Banner size 428x50 points.
   AATBannerSizeBanner428x50 = 16,
 };
 
@@ -1062,60 +1232,93 @@ SWIFT_PROTOCOL("_TtP6AATKit14AATCMPProtocol_")
 
 enum AATCollapsibleBannerPosition : NSInteger;
 
+/// Options for configuring the behavior and appearance of a collapsible banner.
 SWIFT_CLASS("_TtC6AATKit27AATCollapsibleBannerOptions")
 @interface AATCollapsibleBannerOptions : NSObject
+/// Initializes a new <code>AATCollapsibleBannerOptions</code> instance.
+/// \param position The position of the banner. Defaults to <code>.top</code>.
+///
+/// \param minDelay The minimum delay in seconds before the banner can be collapsed. Defaults to <code>0</code>.
+///
 - (nonnull instancetype)initWithPosition:(enum AATCollapsibleBannerPosition)position minDelay:(NSInteger)minDelay OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Defines the possible positions for a collapsible banner.
 typedef SWIFT_ENUM(NSInteger, AATCollapsibleBannerPosition, open) {
+/// The banner is positioned at the top of the screen.
   AATCollapsibleBannerPositionTop = 0,
+/// The banner is positioned at the bottom of the screen.
   AATCollapsibleBannerPositionBottom = 1,
 };
 
 @class AATConsentImplementation;
 
-/// AATKit Runtime Configurations
+/// AATKit Runtime Configurations.
+/// This class encapsulates runtime configuration settings for the AATKit SDK.
+/// Use this when you need to reconfigure AATKit behavior such as consent, geo-location usage, or ad verification.
+/// Configuration is preserved across instances using <code>oldConfiguration</code>.
 SWIFT_CLASS("_TtC6AATKit23AATRuntimeConfiguration")
 @interface AATRuntimeConfiguration : NSObject
-/// A Bool that indicates whether the consent is required or not. True by default. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling.</a>.
+/// Indicates whether user consent is required before requesting ads.
+/// Defaults to <code>true</code>.
+/// For more information, see <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling</a>.
 @property (nonatomic) BOOL consentRequired;
-/// The consent implementation that the SDK will use. Could be an instance of: <code>AATManagedConsent</code>, <code>AATSimpleConsent</code> or <code>AATVendorConsent</code>. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling.</a>.
+/// The consent implementation used by the SDK.
+/// Can be set to one of the following: <code>AATManagedConsent</code>, <code>AATSimpleConsent</code>, or <code>AATVendorConsent</code>.
+/// Defaults to <code>AATDefaultConsent</code>.
+/// For more information, see <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling</a>.
 @property (nonatomic, strong) AATConsentImplementation * _Nonnull consent;
-/// The AdQuality implementation that the SDK will use to verify ads.
+/// The ad quality manager responsible for verifying ad quality.
+/// This is an optional implementation of <code>AATAdQualityManagerProtocol</code>.
 @property (nonatomic, strong) id <AATAdQualityManagerProtocol> _Nullable adQualityManager;
-/// A Bool that indicates whether the location usage is enabled or not. False by default.
+/// Indicates whether geo-location usage is enabled.
+/// Defaults to <code>false</code>.
 @property (nonatomic) BOOL isUseGeoLocation;
-/// Creates the AATRuntimeConfiguration object to be used when reconfiguring AATKit.
-/// It will be automatically initialized with previously used values.
+/// Initializes a new runtime configuration.
+/// If a previously used configuration exists, it is used to initialize the new one.
+/// This allows persistent configuration across multiple SDK reinitializations.
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// A string representation of the current configuration.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 @protocol AATDelegate;
 
 /// AATKit Configurations
+/// This class provides options to configure the behavior of AATKit.
 SWIFT_CLASS("_TtC6AATKit16AATConfiguration")
 @interface AATConfiguration : AATRuntimeConfiguration
 /// Set this parameter to listen to <code>AATDelegate</code> callbacks.
 @property (nonatomic, weak) id <AATDelegate> _Nullable delegate;
-/// Set this parameter to let AATKit works with initial rules until downloading a new set.
-@property (nonatomic, copy) NSString * _Nullable initialRules;
-/// A Bool that indicates whether to cache downloaded rules or not.
+/// Optional string containing ad rules to use before new rules are downloaded.
+/// This is useful for ensuring ads start showing immediately on app launch.
+@property (nonatomic, copy) NSString * _Nullable initialRules SWIFT_DEPRECATED_MSG("initialRules is deprecated and will be removed in a future version.");
+/// Indicates whether the SDK should cache downloaded ad rules.
+/// Defaults to <code>true</code>. Cached rules will be reused when the server is not reachable.
 @property (nonatomic) BOOL shouldCacheRules;
-/// A Bool that indicates whether to skip ad networks that has no consent or not. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling#rule-skipping">Rules Skipping</a>.
+/// Indicates whether to skip ad networks that have no valid consent.
+/// Defaults to <code>false</code>. For more details, see <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling#rule-skipping">Rules Skipping</a>.
 @property (nonatomic) BOOL shouldSkipRules;
-/// A string that represents the test app bundleID. <em>Don’t forget to remove it before going live</em>.
+/// A test app bundle ID. <em>Don’t forget to remove it before going live</em>.
+/// <em>Important</em>: Remove this before releasing your app.
 @property (nonatomic, copy) NSString * _Nullable alternativeBundleId;
-/// A Bool that indicates whether to use the <code>AATConfiguration/alternativeBundleId</code> in the reporting or not.
+/// Whether to report events using the <code>alternativeBundleId</code>.
+/// Defaults to <code>true</code>.
 @property (nonatomic) BOOL shouldReportUsingAlternativeBundleId;
-/// A NSNumber that represents the test account ID that enables you to test your AATKit integration. <em>Don’t forget to remove it before going live</em>. For more information, see <a href="https://addapptr.gitbook.io/ios-integration/start/initialization#test-mode">AATKit Test Mode</a>.
+/// A test account ID used to enable AATKit test mode.
+/// <em>Important</em>: Remove this before releasing your app.
+/// See <a href="https://addapptr.gitbook.io/ios-integration/start/initialization#test-mode">AATKit Test Mode</a>.
 @property (nonatomic, strong) NSNumber * _Nullable testModeAccountId;
-/// A Bool that enables/disables the shake debug screen. True by default. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Debug Shake</a>.
+/// Enables or disables the shake gesture debug screen.
+/// Defaults to <code>true</code>. See <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Debug Shake</a>.
 @property (nonatomic) BOOL useDebugShake;
-/// an Object that describe some advanced configuration for some AdNetworks
+/// A Bool that enables/disables the use of  automatic generated userId. False by default.
+@property (nonatomic) BOOL useAutomaticPPID;
+/// Contains advanced configuration for specific ad networks.
 @property (nonatomic, strong) AATAdNetworksOptions * _Nullable adNetworksOptions;
+/// A textual representation of the configuration instance.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1126,25 +1329,37 @@ SWIFT_CLASS("_TtC6AATKit16AATConfiguration")
 @end
 
 
+/// Handles consent-related configurations.
 SWIFT_CLASS("_TtC6AATKit24AATConsentImplementation")
 @interface AATConsentImplementation : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Sets the set of ad networks that should stop if no user consent is given (Objective-C compatible version).
+/// This method maps integer values to corresponding <code>AATAdNetwork</code> enum cases. If an integer is out of bounds,
+/// a warning is logged and that value is ignored.
+/// \param stopSet A set of integer values representing the raw values of <code>AATAdNetwork</code> enums.
+///
 - (void)setNoConsentNetworkStopSet:(NSSet<NSNumber *> * _Nonnull)stopSet;
 @end
 
 
+/// Represents the currency used for pricing.
+/// Used in <code>AATPriceInfo</code> to specify the currency of the impression price.
 typedef SWIFT_ENUM(NSInteger, AATCurrency, open) {
+/// United States Dollar (USD).
   AATCurrencyUSD = 0,
+/// Euro (EUR).
   AATCurrencyEUR = 1,
+/// Unknown or unspecified currency.
   AATCurrencyUnknown = 2,
 };
 
 
+/// Configuration options for DFP (Google AdManager) ads.
 SWIFT_CLASS("_TtC6AATKit13AATDFPOptions")
 @interface AATDFPOptions : NSObject
-/// Init AATDFPOptions
-/// \param inlineBannerMaxHeight The maximum height for DFP inline adaptive banners
+/// Initializes a new instance of <code>AATDFPOptions</code>.
+/// \param inlineBannerMaxHeight The maximum height for DFP inline adaptive banners.
 ///
 - (nonnull instancetype)initWithInlineBannerMaxHeight:(NSInteger)inlineBannerMaxHeight OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1155,20 +1370,29 @@ SWIFT_CLASS("_TtC6AATKit13AATDFPOptions")
 
 SWIFT_CLASS("_TtC6AATKit12AATDebugInfo")
 @interface AATDebugInfo : NSObject
+/// Optional test bundle identifier used by the app.
 @property (nonatomic, copy) NSString * _Nullable testBundleId;
+/// Optional test identifier used by the app.
 @property (nonatomic, copy) NSString * _Nullable testId;
+/// String representing current consent information.
 @property (nonatomic, copy) NSString * _Nullable consentInfo;
+/// List of placement debug information objects.
 @property (nonatomic, copy) NSArray<PlacementDebugInfo *> * _Nonnull placementDebugInfo;
+/// Extra SDKs available.
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull extraSDK;
+/// Device type information (e.g., “iPhone13,4”).
 @property (nonatomic, copy) NSString * _Nonnull deviceType;
+/// The device’s Identifier for Advertisers string, if available.
 @property (nonatomic, copy) NSString * _Nullable idfaString;
+/// Returns a list of raw string values for available ad networks.
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull availableAdNetworks;
+/// Returns a list of raw string values for disabled ad networks.
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull disabledAdNetworks;
+/// Returns a list of raw string values for removed ad networks.
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull removedAdNetworks;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 @interface AATDebugInfo (SWIFT_EXTENSION(AATKit))
@@ -1176,21 +1400,33 @@ SWIFT_CLASS("_TtC6AATKit12AATDebugInfo")
 
 @class FrequencyCappingDebugInfo;
 
+/// A debug information object for a specific ad placement
 SWIFT_CLASS("_TtCC6AATKit12AATDebugInfo18PlacementDebugInfo")
 @interface PlacementDebugInfo : NSObject
+/// The name of the placement
 @property (nonatomic, copy) NSString * _Nonnull placementName;
+/// The type of the placement
 @property (nonatomic, copy) NSString * _Nonnull placementType;
+/// The active frequency capping rule applied to the placement (if any)
 @property (nonatomic, strong) FrequencyCappingDebugInfo * _Nullable activeFrequencyCapping;
+/// The interval in seconds for auto-reloading banner ads
 @property (nonatomic) NSInteger bannerAutoReloadInterval;
+/// The initial delay in seconds before loading the ad
 @property (nonatomic) NSInteger initialDelay;
+/// The remaining time in seconds before the next ad can be loaded
 @property (nonatomic) NSInteger remainingTime;
+/// An array of loaded ad debug information objects for the placement
 @property (nonatomic, copy) NSArray<AATAdDebugInfo *> * _Nonnull loadedAds;
+/// Indicates whether a new ad is currently being loaded
 @property (nonatomic) BOOL isLoadingNewAd;
+/// The last shown ad
 @property (nonatomic, strong) AATAdDebugInfo * _Nullable lastShownAd;
+/// Indicates whether Ad Quality is currently active for this placement
 @property (nonatomic) BOOL isAdQualityActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -1266,16 +1502,34 @@ SWIFT_PROTOCOL("_TtP6AATKit11AATDelegate_")
 @protocol AATDelegate
 @optional
 /// Notifies that the AATKit has obtained ad rules.
-/// \param fromTheServer Indicates if the rules came from the server. It will return false if the currently used rules come from the <code>AATSDK.setInitialRules(rules:)</code> method or the cached rules are used.
+/// This method is called when AATKit successfully fetches ad rules.
+/// \param fromTheServer A Boolean indicating the source of the rules:
+/// <ul>
+///   <li>
+///     <code>true</code>: The rules were fetched from the Gravite server.
+///   </li>
+///   <li>
+///     <code>false</code>: The rules are either the cached rules or the ones set with <code>AATSDK.setInitialRules(rules:)</code>.
+///   </li>
+/// </ul>
 ///
 - (void)AATKitObtainedAdRulesFromTheServer:(BOOL)fromTheServer;
-/// Notifies that application’s bundle ID was not recognized by the AddApptr server.
+/// Notifies that the application’s bundle ID was not recognized by the Gravite server.
+/// This typically occurs when the app is not correctly registered in the Gravite dashboard.
 - (void)AATKitUnknownBundleId;
 @end
 
 
+/// Configuration options for DisplayIO ad network.
 SWIFT_CLASS("_TtC6AATKit19AATDisplayIOOptions")
 @interface AATDisplayIOOptions : NSObject
+/// Initializes a new <code>AATDisplayIOOptions</code> instance.
+/// \param showSoundControl Whether to show the sound control.
+///
+/// \param interscrollerHeight The height of the interscroller ad.
+///
+/// \param interscrollerTopOffset The top offset of the interscroller ad.
+///
 - (nonnull instancetype)initWithShowSoundControl:(BOOL)showSoundControl interscrollerHeight:(NSInteger)interscrollerHeight interscrollerTopOffset:(NSInteger)interscrollerTopOffset OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1283,12 +1537,13 @@ SWIFT_CLASS("_TtC6AATKit19AATDisplayIOOptions")
 
 @class UIColor;
 
+/// Configuration options for Feed Ads.
 SWIFT_CLASS("_TtC6AATKit16AATFeedAdOptions")
 @interface AATFeedAdOptions : NSObject
-/// Init AATFeedAdOptions
-/// \param shutterColor Desired UIColor to be used for shutter, default is nil.
+/// Initializes a new instance of <code>AATFeedAdOptions</code>.
+/// \param shutterColor The desired shutter color. Defaults to <code>nil</code>.
 ///
-/// \param disableSpinner Boolean that describes if spinner should be disabled, default is false.
+/// \param disableSpinner A Boolean indicating if the spinner should be disabled. Defaults to <code>false</code>.
 ///
 - (nonnull instancetype)initWithShutterColor:(UIColor * _Nullable)shutterColor disableSpinner:(BOOL)disableSpinner OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1332,6 +1587,7 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+/// Last ad information
 @property (nonatomic, readonly, strong) AATAdInfo * _Nullable adInfo;
 /// Checks if the frequency cap has been reached.
 ///
@@ -1341,18 +1597,27 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 @end
 
 
+/// Represents the gender of the user for targeting purposes.
+/// Used in <code>AATUserTargeting</code> to help personalize ad delivery. Defaults to <code>AATGender/unknown</code> if not set or invalid.
 typedef SWIFT_ENUM(NSInteger, AATGender, open) {
+/// A male user.
   AATGenderMale = 0,
+/// A female user.
   AATGenderFemale = 1,
+/// A user who identifies as other.
   AATGenderOther = 2,
+/// An unknown or unspecified gender.
+/// This value will be ignored in targeting requests.
   AATGenderUnknown = 3,
 };
 
 
+/// Represents configuration options for the Gravite RTB integration.
 SWIFT_CLASS("_TtC6AATKit20AATGraviteRTBOptions")
 @interface AATGraviteRTBOptions : NSObject
-/// Init AATGraviteRTBOptions
-/// \param forceCloseButtonForMraid An option to force showing the SDK native close button even if the MRAID creative has one. If the MRAID creative has close button and <code>forceCloseButtonForMraid</code> is true, the MRAID creative would have 2 close buttons
+/// Initializes a new <code>AATGraviteRTBOptions</code> instance.
+/// \param forceCloseButtonForMraid A Boolean flag to force showing the SDK’s native close button even when the MRAID creative includes one.
+/// If set to <code>true</code>, both the SDK button and the creative’s button will be shown.
 ///
 - (nonnull instancetype)initWithForceCloseButtonForMraid:(BOOL)forceCloseButtonForMraid OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1361,24 +1626,26 @@ SWIFT_CLASS("_TtC6AATKit20AATGraviteRTBOptions")
 
 
 
-/// An object contains impression level information.
+/// Represents impression-level information for an ad.
+/// Contains details such as banner size, ad network, network key, direct deal status, and price info.
 SWIFT_CLASS("_TtC6AATKit13AATImpression")
 @interface AATImpression : NSObject
-/// Impression banner size
+/// The banner size for this impression, e.g. “320x50”. Can be <code>nil</code>.
 @property (nonatomic, readonly, copy) NSString * _Nullable bannerSize;
-/// Impression ad network
+/// The ad network responsible for this impression.
 @property (nonatomic, readonly) enum AATAdNetwork adNetwork;
-/// Impression ad network key
+/// The key identifying the ad network instance.
 @property (nonatomic, readonly, copy) NSString * _Nonnull networkKey;
-/// Is a direct deal impression
+/// Indicates if this impression was generated by a direct deal.
 @property (nonatomic, readonly) BOOL isDirectDeal;
-/// Impression price information
+/// Optional price information related to this impression.
 @property (nonatomic, readonly, strong) AATPriceInfo * _Nullable priceInfo;
+/// A string representation of the impression, useful for debugging and logging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-/// Gets the name of the impression ad network
+/// Retrieves the name of the ad network for this impression.
 ///
 /// returns:
-/// A string represents the name of the ad network
+/// A string representing the ad network name.
 - (NSString * _Nonnull)getAdNetworkName SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1418,7 +1685,13 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATInfeedBannerPlacement_")
 - (void)cancelWithRequest:(AATBannerRequest * _Nonnull)request;
 /// Manually Count an Ad Space
 - (void)countAdSpace;
+/// Enables the creative history tracking with a given maximum size.
+/// \param size The maximum number of creative history entries to retain.
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Retrieves the current creative history.
+/// \param completion A closure called with an array of <code>AATPlacementHistoryInfo</code> objects.
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -1468,33 +1741,37 @@ SWIFT_CLASS("_TtC6AATKit9AATLogger")
 @protocol AATManagedConsentDelegate;
 enum AATShowIfNeededSetting : NSInteger;
 
-/// The managed consent (should be initialized with <code>AATCMPProtocol</code>). Will fire the different events of the user consent interactions. See <code>AATManagedConsentDelegate</code>. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/managed-consent">Managed Consent</a>.
+/// The managed consent (should be initialized with <code>AATCMPProtocol</code>). Will fire the different events of the user consent interactions.
+/// See <code>AATManagedConsentDelegate</code>.
+/// For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/managed-consent">Managed Consent</a>.
 SWIFT_CLASS("_TtC6AATKit17AATManagedConsent")
 @interface AATManagedConsent : AATConsentImplementation
-/// Create an instance of <code>AATManagedConsent</code>. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/managed-consent">Managed Consent</a>.
-/// \param cmp an instance of <code>AATCMPProtocol</code>. currently either AATCMPGoogle or AATCMPSourcePoint
+/// Create an instance of <code>AATManagedConsent</code>.
+/// \param cmp An instance of <code>AATCMPProtocol</code> (e.g., AATCMPGoogle, AATCMPSourcePoint).
 ///
-/// \param delegate The delegate that will be notified about CMP events. Must not be null.
+/// \param delegate Delegate notified of CMP events.
 ///
-/// \param showIfNeededSetting an <code>AATShowIfNeededSetting</code> case that specify the consent dialog showing options.
+/// \param showIfNeededSetting The setting controlling if and when the consent showing options.
 ///
 - (nullable instancetype)initWithCmp:(id <AATCMPProtocol> _Nullable)cmp delegate:(id <AATManagedConsentDelegate> _Nonnull)delegate showIfNeededSetting:(enum AATShowIfNeededSetting)showIfNeededSetting OBJC_DESIGNATED_INITIALIZER;
-/// Presents the consent screen ONLY if it is required by the used CMP (for example if no user consent has been set yet). It is advised always to call this method when the first app controller is presented.
-/// \param viewController a view controller instance that will be used to present the CMP
+/// Presents the consent screen if required.
+/// Recommended to call when the app’s initial view controller is presented.
+/// \param viewController View controller used to present the CMP.
 ///
 - (void)showIfNeeded:(UIViewController * _Nonnull)viewController;
-/// Re-show the CMP if it is needed to be shown OR the user has rejected the consent
-/// \param viewController a view controller instance that will be used to present the CMP
+/// Re-show the CMP if it is needed or if the user has rejected the consent.
+/// \param daysAgo Minimum number of days before showing the CMP again.
 ///
-/// \param daysAgo Minimum number of days that should be passed before re-showing the CMP
+/// \param viewController View controller used to present the CMP.
 ///
 - (void)showIfNeededOrRejectedWithDaysAgo:(NSInteger)daysAgo viewController:(UIViewController * _Nonnull)viewController;
-/// Presents the consent screen, allowing the user to change consent settings
-/// \param viewController a view controller instance that will be used to present the CMP
+/// Presents the CMP for editing the consent settings.
+/// \param viewController View controller used to present the CMP.
 ///
 - (void)editConsent:(UIViewController * _Nonnull)viewController;
-/// Tells the CMP to reload. It does not need to be used unless some error occurs. You can call this method for example after receiving <code>CMPFailedToLoad(with:)</code>.
-/// \param viewController a view controller instance that will be used to present the CMP
+/// Reloads the CMP in case it failed previously.
+/// Should be used after a failed attempt such as <code>CMPFailedToLoad(with:)</code>.
+/// \param viewController View controller used to present the CMP.
 ///
 - (void)reload:(UIViewController * _Nonnull)viewController;
 @end
@@ -1514,6 +1791,7 @@ SWIFT_CLASS("_TtC6AATKit17AATManagedConsent")
 @end
 
 
+/// The delegate for receiving events from <code>AATManagedConsent</code> regarding CMP lifecycle.
 SWIFT_PROTOCOL("_TtP6AATKit25AATManagedConsentDelegate_")
 @protocol AATManagedConsentDelegate
 /// CMP is ready and needs to be shown
@@ -1538,31 +1816,45 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATManagedConsentDelegate_")
 - (void)managedConsentCMPFailedToShow:(AATManagedConsent * _Nonnull)managedConsent with:(NSString * _Nonnull)error;
 @end
 
+/// Describes the current state of managed user consent in the SDK.
 typedef SWIFT_ENUM(NSInteger, AATManagedConsentState, open) {
 /// No information about consent state.
   AATManagedConsentStateUnknown = 0,
 /// Consent has been declined by the user.
   AATManagedConsentStateWithheld = 1,
-/// Partial consent has been granted by the user - at least some purposes and some vendors were given consent.
+/// Partial consent has been granted by the user -
+/// at least some purposes and some vendors were given consent.
   AATManagedConsentStateCustom = 2,
 /// Full consent has been granted by the user.
   AATManagedConsentStateObtained = 3,
 };
 
-/// <ul>
-///   <li>
-///     AATKit rule mediation type
-///   </li>
-/// </ul>
+/// Represents the mediation type used by AATKit for ad rules.
 typedef SWIFT_ENUM(NSInteger, AATMediationType, closed) {
+/// Waterfall mediation type.
   AATMediationTypeWATERFALL = 1,
+/// Auction mediation type.
   AATMediationTypeAUCTION = 2,
+/// Mayo mediation type.
   AATMediationTypeMAYO = 3,
 };
 
+
+/// Configuration options for Meta Bidding integrations.
+/// Provides required identifiers for initializing Meta Bidding capabilities.
+SWIFT_CLASS("_TtC6AATKit21AATMetaBiddingOptions")
+@interface AATMetaBiddingOptions : NSObject
+/// Initializes a new instance of <code>AATMetaBiddingOptions</code> with the required platform and security identifiers.
+/// \param platformId The Meta platform identifier.
+///
+- (nonnull instancetype)initWithPlatformId:(NSString * _Nonnull)platformId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol AATMultiSizeBannerPlacementDelegate;
 
-SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_")
+SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_") SWIFT_DEPRECATED_MSG("Please use AATAutoLoadMultiSizeBannerPlacement instead. For more information please visit https://aatkit.gitbook.io/ios-integration/formats/banner/multi-size-auto-load-banner")
 @protocol AATMultiSizeBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATMultiSizeBannerPlacementDelegate> _Nullable delegate;
@@ -1628,44 +1920,68 @@ SWIFT_PROTOCOL("_TtP6AATKit35AATMultiSizeBannerPlacementDelegate_")
 
 @class AATNativeAdRating;
 
+/// A protocol that defines the data and interactions for a native ad.
+/// This protocol provides a standardized interface for accessing various assets
+/// and managing the lifecycle of a native ad, regardless of the underlying ad network.
 SWIFT_PROTOCOL("_TtP6AATKit15AATNativeAdData_")
 @protocol AATNativeAdData <NSObject>
-/// A String represents the title of the ad, or null if it is not available.
+/// A string representing the <em>title</em> of the ad.
+/// Returns <code>nil</code> if the title is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable title;
-/// A String represents the description of the ad, or null if it is not available.
+/// A string representing the <em>description</em> or body text of the ad.
+/// Returns <code>nil</code> if the description is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable adDescription;
-/// A String represents the call-to-action of the ad, or null if it is not available.
+/// A string representing the <em>call-to-action</em> (e.g., “Learn More”, “Install Now”).
+/// Returns <code>nil</code> if the call-to-action is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable callToAction;
-/// A String represents the URL of the image asset of the ad, or null if it is not available.
+/// A string representing the <em>URL of the main image asset</em> for the ad.
+/// Returns <code>nil</code> if the image URL is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable imageUrl;
-/// A String represents the URL of the icon asset of the ad, or null if it is not available.
+/// A string representing the <em>URL of the icon asset</em> for the ad.
+/// Returns <code>nil</code> if the icon URL is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable iconUrl;
-/// A NativeAdRating instance containing both value and scale of rating, or null if it is not available.
+/// An <code>AATNativeAdRating</code> instance containing both the value and scale of the ad’s rating.
+/// Returns <code>nil</code> if rating information is not available.
 @property (nonatomic, readonly, strong) AATNativeAdRating * _Nullable rating;
-/// A view represents the branding logo or ad information related to the ad network providing the native ad.
-/// Some networks like Facebook Audience Network or Flurry require this special view to be visible on native ads.
+/// A <code>UIView</code> representing the <em>branding logo or ad information</em> provided by the ad network.
+/// Some networks, such as Facebook Audience Network or Flurry, require this specific view
+/// to be visible when their native ads are displayed.
 @property (nonatomic, readonly, strong) UIView * _Nullable brandingLogo;
-/// A String represents the advertiser asset of the ad, or null if it is not available.
+/// A string representing the <em>advertiser’s name</em> or attribution.
+/// Returns <code>nil</code> if the advertiser information is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable advertiser;
-/// An AATAdNetwork represents the ad network providing the given native ad
+/// An <code>AATAdNetwork</code> enum value indicating the <em>ad network</em> that provided this native ad.
 @property (nonatomic, readonly) enum AATAdNetwork network;
+/// Additional information about the ad, represented by an <code>AATAdInfo</code> object.
+/// Returns <code>nil</code> if no additional information is available.
 @property (nonatomic, readonly, strong) AATAdInfo * _Nullable adInfo;
-/// Binds this native ad instance with given ViewGroup. Needed for click handling and tracking.
-/// \param view View used to render the native ad.
+/// Binds this native ad instance with the provided <code>UIView</code> hierarchy.
+/// This method is crucial for handling user interactions (like clicks) and for ad tracking.
+/// It should be called once the native ad’s content has been rendered into your app’s UI.
+/// \param view The main <code>UIView</code> that encompasses the entire native ad layout.
 ///
-/// \param mainImageView View used to show the main image of the ad. Can be null.
+/// \param mainImageView (Optional) The <code>UIView</code> specifically used to display the main image of the ad.
 ///
-/// \param iconView View used to show the icon of the native ad.
+/// \param iconView (Optional) The <code>UIView</code> specifically used to display the icon of the native ad.
 ///
-/// \param ctaView View used to show the Call To Action of the native ad.
+/// \param ctaView (Optional) The <code>UIView</code> specifically used to display the call-to-action button or label.
 ///
 - (void)attachToView:(UIView * _Nonnull)view mainImageView:(UIView * _Nullable)mainImageView iconView:(UIView * _Nullable)iconView ctaView:(UIView * _Nullable)ctaView;
-/// Removes the binding between the native ad and superview.
-/// Should be called when the native ad will no longer be presented and will be removed from the view hierarchy.
+/// Removes the binding between the native ad and its superview.
+/// This method should be called when the native ad is no longer visible or
+/// is about to be removed from the view hierarchy. It helps in releasing
+/// resources and stopping any ongoing tracking.
 - (void)detachFromLayout;
-/// A Bool tells if the native ad has expired and shall no longer be used.
+/// Checks if the native ad has <em>expired</em> and should no longer be used or displayed.
+///
+/// returns:
+/// <code>true</code> if the ad has expired; otherwise, <code>false</code>.
 - (BOOL)isExpired SWIFT_WARN_UNUSED_RESULT;
-/// A Bool tells if the native ad is ready to be displayed.
+/// Checks if the native ad is <em>ready to be displayed</em>.
+/// This typically means all necessary assets have been loaded and the ad is in a valid state.
+///
+/// returns:
+/// <code>true</code> if the ad is ready for display; otherwise, <code>false</code>.
 - (BOOL)isReady SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -1749,12 +2065,18 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATNativePlacementDelegate_")
 
 
 
+/// Placement history data
 SWIFT_CLASS("_TtC6AATKit23AATPlacementHistoryInfo")
 @interface AATPlacementHistoryInfo : NSObject
+/// The name of the ad network that served the ad.
 @property (nonatomic, copy) NSString * _Nonnull networkName;
+/// A unique key identifying the ad network placement.
 @property (nonatomic, copy) NSString * _Nonnull networkKey;
+/// A timestamp representing when the ad was served.
 @property (nonatomic) NSTimeInterval timestamp;
+/// A snapshot of the ad, if available.
 @property (nonatomic, strong) UIImage * _Nullable snapshot;
+/// An optional identifier for the creative that was displayed.
 @property (nonatomic, copy) NSString * _Nullable creativeID;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1782,29 +2104,37 @@ SWIFT_CLASS("_TtC6AATKit23AATPluginVersioningTool")
 
 enum AATPricePrecisionType : NSInteger;
 
+/// Contains pricing information for an ad impression.
+/// Includes the CPM price, the precision of the price, and the currency used.
 SWIFT_CLASS("_TtC6AATKit12AATPriceInfo")
 @interface AATPriceInfo : NSObject
-/// Impression CPM price
+/// The CPM price of the impression.
 @property (nonatomic) double price;
-/// Impression precision type
+/// The precision type of the price.
 @property (nonatomic) enum AATPricePrecisionType precision;
-/// Impression currency
+/// The currency of the price.
 @property (nonatomic) enum AATCurrency currency;
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+@interface AATPriceInfo (SWIFT_EXTENSION(AATKit))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+/// Represents the precision type of a price.
+/// Used to indicate how precise the CPM price value is.
 typedef SWIFT_ENUM(NSInteger, AATPricePrecisionType, open) {
-/// Unknown precision type
+/// Unknown precision type.
   AATPricePrecisionTypeUnknown = 0,
-/// Estimated precision type
+/// Estimated precision type.
   AATPricePrecisionTypeEstimated = 1,
-/// Floor price precision type
+/// Floor price precision type.
   AATPricePrecisionTypeFloor = 2,
-/// Publish provided precision type
+/// Publisher-provided precision type.
   AATPricePrecisionTypePublisherProvided = 3,
-/// Precise precision type
+/// Exact or precise price precision type.
   AATPricePrecisionTypeExact = 4,
 };
 
@@ -1819,36 +2149,39 @@ SWIFT_PROTOCOL("_TtP6AATKit18AATReportsDelegate_")
 @end
 
 
-/// The rewarded video incentive reward object
+/// Represents the incentive reward for a rewarded video.
+/// This object contains the reward’s name and value as strings.
 SWIFT_CLASS("_TtC6AATKit9AATReward")
 @interface AATReward : NSObject
-/// String represents the reward name
+/// The name of the reward (e.g., “Coins”, “Points”).
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
-/// String represents the reward value
+/// The value associated with the reward (e.g., “100”).
 @property (nonatomic, readonly, copy) NSString * _Nonnull value;
-/// Creates an instance of <code>AATReward</code>
-/// \param name The reward name
+/// Initializes a new reward object.
+/// \param name The reward name.
 ///
-/// \param value The reward value
+/// \param value The reward value.
 ///
 - (nonnull instancetype)initWithName:(NSString * _Nonnull)name value:(NSString * _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
+/// A string representation of the <code>AATReward</code>, useful for debugging and logging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-/// An object contains rewarded videos server-side verification data
+/// Contains server-side verification data for rewarded video ads.
+/// Used to provide user-specific information for verification during rewarded ad impressions.
 SWIFT_CLASS("_TtC6AATKit20AATRewardedAdSSVInfo")
 @interface AATRewardedAdSSVInfo : NSObject
-/// Impression user id
+/// The impression user identifier.
 @property (nonatomic, copy) NSString * _Nonnull userId;
-/// Custom string
+/// A custom string to send with the verification data. Optional.
 @property (nonatomic, copy) NSString * _Nullable customString;
-/// Create <code>AATRewardedAdSSVInfo</code> instance
-/// \param userId user id
+/// Creates an instance of <code>AATRewardedAdSSVInfo</code>.
+/// \param userId The user identifier associated with the impression.
 ///
-/// \param customString custom string
+/// \param customString An optional custom string to include in the verification data.
 ///
 - (nonnull instancetype)initWithUserId:(NSString * _Nonnull)userId customString:(NSString * _Nullable)customString OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -1919,235 +2252,265 @@ SWIFT_PROTOCOL("_TtP6AATKit33AATRewardedVideoPlacementDelegate_")
 @protocol AATStickyBannerPlacement;
 @class AATUserTargeting;
 
-/// AATKit main class that has the main public static methods
+/// AATKit main interface providing the core public static API methods.
+/// Use this class to initialize and configure AATKit, manage placements,
+/// and access global SDK settings and utilities.
 SWIFT_CLASS("_TtC6AATKit6AATSDK")
 @interface AATSDK : NSObject
-/// Get AATKit version
+/// Returns the current version of AATKit.
 ///
 /// returns:
-/// AATKit version.
+/// A string representing the SDK version.
 + (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Initializes the AATKit SDK. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/initialization">AATKit Initialization</a>.
-/// Should be called once during application initialization before any other calls to AATKit.
-/// \param configuration Configuration for AATKit. see <code>AATConfiguration</code>.
+/// Initializes the AATKit SDK.
+/// Call this once during your app’s startup sequence before using any other AATKit APIs.
+/// For more details, visit <a href="https://addapptr.gitbook.io/ios-integration/start/initialization">AATKit Initialization</a>.
+/// \param configuration The configuration object. See <code>AATConfiguration</code>.
 ///
 + (void)initAATKitWith:(AATConfiguration * _Nullable)configuration SWIFT_METHOD_FAMILY(none);
-/// Enables debug screen that will show after shaking the device. It is already enabled by default. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Shake Debug Screen</a>.
+/// Enables the debug screen that appears after shaking the device.
+/// Enabled by default.
+/// For more details, see <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Shake Debug Screen</a>.
 + (void)enableDebugScreen;
-/// Disables the debug screen appearing after shaking the device. It is enabled by default.  For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Shake Debug Screen</a>.
+/// Disables the debug screen triggered by shaking the device.
+/// Enabled by default.
+/// For more details, see <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Shake Debug Screen</a>.
 + (void)disableDebugScreen;
-/// Used for obtaining debug information (the same that would be presented in dialog after shaking the device if debug screen is enabled)
+/// Returns a string containing debug information.
+/// Equivalent to what is shown in the shake-to-debug screen.
 ///
 /// returns:
-/// String with debug information
+/// Debug information as a string.
 + (NSString * _Nonnull)getDebugInfo SWIFT_WARN_UNUSED_RESULT;
-/// Configure the debug screen that will be shown after shaking the device. If not called, the default values of <code>AATDebugScreenConfiguration</code> will be used
-/// \param configuration an instance of <code>AATDebugScreenConfiguration</code>
+/// Configures the appearance and behavior of the shake-to-debug screen.
+/// If not called, the default values of <code>AATDebugScreenConfiguration</code> will be used
+/// \param configuration An instance of <code>AATDebugScreenConfiguration</code>.
 ///
 + (void)configureDebugScreenWithConfiguration:(AATDebugScreenConfiguration * _Nonnull)configuration;
-/// Used for obtaining debug information (the same that would be presented in dialog after shaking the device if debug screen is enabled)
+/// Returns a structured debug info object.
 ///
 /// returns:
-/// <code>AATDebugInfo</code>
+/// An instance of <code>AATDebugInfo</code>, or <code>nil</code> if unavailable.
 + (AATDebugInfo * _Nullable)getDebugInfoObject SWIFT_WARN_UNUSED_RESULT;
-/// Gets the current SDK log level
+/// Returns the current SDK logging level.
 ///
 /// returns:
-/// The current <code>AATLogLevel</code> of the SDK
+/// The current log level. See <code>AATLogLevel</code>.
 + (enum AATLogLevel)getLogLevel SWIFT_WARN_UNUSED_RESULT;
-/// Allows to reconfigure the options for GDPR consent. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/initialization#reconfigure-aatkit">Reconfigure AATKit</a>.
-/// \param configuration New configuration. 
+/// Reconfigures runtime options such as GDPR consent.
+/// Use this when consent or other runtime-configurable parameters change.
+/// See <a href="https://addapptr.gitbook.io/ios-integration/start/initialization#reconfigure-aatkit">Reconfigure AATKit</a>.
+/// \param configuration The new runtime configuration.
 ///
 + (void)reconfigureWithConfiguration:(AATRuntimeConfiguration * _Nonnull)configuration;
-/// Checks if AATKit recognizes given device as tablet.
+/// Checks whether the current device is recognized as a tablet.
 ///
 /// returns:
-/// True if device is recognized as tablet, false otherwise.
+/// <code>true</code> if the device is a tablet, <code>false</code> otherwise.
 + (BOOL)isTablet SWIFT_WARN_UNUSED_RESULT;
-/// Get the <code>AATBannerPlacementSize</code> with maximum width that will fit on a given device in portrait screen orientation.
+/// Returns the banner size that best fits the device in portrait orientation.
 ///
 /// returns:
-/// <code>AATBannerPlacementSize</code> best fitting current device
+/// A suitable <code>AATBannerPlacementSize</code>.
 + (enum AATBannerPlacementSize)maximumBannerSizePortrait SWIFT_WARN_UNUSED_RESULT;
-/// Returns the <code>AATBannerPlacementSize</code> with maximum width that will fit on a given device in landscape screen orientation.
+/// Returns the banner size that best fits the device in landscape orientation.
 ///
 /// returns:
-/// <code>AATBannerPlacementSize</code> best fitting current device
+/// A suitable <code>AATBannerPlacementSize</code>.
 + (enum AATBannerPlacementSize)maximumBannerSizeLandscape SWIFT_WARN_UNUSED_RESULT;
+/// Returns a set of banner sizes that fit the device in landscape orientation.
+/// The Objective-C compatible version of <code>fittingBannerSizesPortrait()</code>.
+///
+/// returns:
+/// A set of compatible <code>AATBannerSize</code> values.
 + (NSSet<NSString *> * _Nonnull)fittingBannerSizesPortrait SWIFT_WARN_UNUSED_RESULT;
+/// Returns a set of banner sizes that fit the device in landscape orientation.
+/// The Objective-C compatible version of <code>fittingBannerSizesLandscape()</code>.
+///
+/// returns:
+/// A set of compatible <code>AATBannerSize</code> values.
 + (NSSet<NSString *> * _Nonnull)fittingBannerSizesLandscape SWIFT_WARN_UNUSED_RESULT;
-/// Notifies AATKit about viewController viewDidAppear. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/formats/general#handling-multiple-view-controllers">Handling View Controllers</a>.
-/// <em>NOTE:</em> This method will update the view controller for all existing placements
-/// \param controller the UIViewController that did appear
+/// Notifies AATKit that a view controller has appeared.
+/// Call this from <code>viewDidAppear</code> for every view controller using AATKit.
+/// For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/formats/general#handling-multiple-view-controllers">Handling View Controllers</a>.
+/// \param controller The visible view controller.
 ///
 + (void)controllerViewDidAppearWithController:(UIViewController * _Nonnull)controller;
-/// Notifies AATKit about the current controller disappear. Invoke this method in every controller that uses AATKit. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/formats/general#handling-multiple-view-controllers">Handling View Controllers</a>.
+/// Notifies AATKit that the current view controller is about to disappear.
+/// Call this from <code>viewWillDisappear</code> for any view controller using AATKit.
 + (void)controllerViewWillDisappear;
-/// Creates placement with given name and size.
-/// If the placement of given name and size already exists, it will be returned.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves a sticky banner placement.
+/// \param name Unique name for the placement (used in AddApptr dashboard).
 ///
-/// \param size Size of placement. Use <code>AATBannerPlacementSize</code>.
-///
-///
-/// returns:
-/// <code>AATStickyBannerPlacement</code> instance, or nil if placement cannot be created.
-+ (id <AATStickyBannerPlacement> _Nullable)createStickyBannerPlacementWithName:(NSString * _Nonnull)name size:(enum AATBannerPlacementSize)size SWIFT_WARN_UNUSED_RESULT;
-/// Creates a multi-size banner placement
-/// \param name placement name
+/// \param size The desired banner size. See <code>AATBannerPlacementSize</code>.
 ///
 ///
 /// returns:
-/// <code>AATMultiSizeBannerPlacement</code> instance, or nil if placement cannot be created.
-+ (id <AATMultiSizeBannerPlacement> _Nullable)createMultiSizeBannerPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-/// Creates placement with given name and size.
-/// If the placement of given name and size already exists, it will be returned.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
-///
-/// \param size Size of placement. Use <code>AATBannerPlacementSize</code>.
+/// An instance of <code>AATStickyBannerPlacement</code>, or <code>nil</code> if creation fails.
++ (id <AATStickyBannerPlacement> _Nullable)createStickyBannerPlacementWithName:(NSString * _Nonnull)name size:(enum AATBannerPlacementSize)size SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Please use createAutoLoadBannerPlacement instead. For more information please visit https://aatkit.gitbook.io/ios-integration/formats/banner/auto-load-banner");
+/// Creates or retrieves a multi-size banner placement.
+/// \param name Unique name for the placement.
 ///
 ///
 /// returns:
-/// <code>AATAutoLoadBannerPlacement</code> instance, or nil if placement cannot be created.
+/// An instance of <code>AATMultiSizeBannerPlacement</code>, or <code>nil</code> if creation fails.
++ (id <AATMultiSizeBannerPlacement> _Nullable)createMultiSizeBannerPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Please use createAutoLoadMultiSizeBannerPlacement instead. For more information please visit https://aatkit.gitbook.io/ios-integration/formats/banner/multi-size-auto-load-banner");
+/// Creates or retrieves an auto-loading banner placement.
+/// \param name Unique name for the placement.
+///
+/// \param size The banner size.
+///
+///
+/// returns:
+/// An instance of <code>AATAutoLoadBannerPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATAutoLoadBannerPlacement> _Nullable)createAutoLoadBannerPlacementWithName:(NSString * _Nonnull)name size:(enum AATBannerPlacementSize)size SWIFT_WARN_UNUSED_RESULT;
-/// Creates a multi-size banner placement
-/// \param name placement name
+/// Creates or retrieves an auto-loading multi-size banner placement.
+/// \param name Unique name for the placement.
 ///
 ///
 /// returns:
-/// <code>AATMultiSizeBannerPlacement</code> instance, or nil if placement cannot be created.
+/// An instance of <code>AATAutoLoadMultiSizeBannerPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATAutoLoadMultiSizeBannerPlacement> _Nullable)createAutoLoadMultiSizeBannerPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-/// Creates a new banner placement. If the banner placement of given name already exists, it will be returned.
-/// The placement will create a copy of the configuration.Any changes made to the configuration after placement is created will be ignored.
-/// The placement will ignore any changes made to configuration after it was created.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves an infeed banner placement.
+/// A copy of the configuration is made. Subsequent changes to the config have no effect.
+/// \param name Unique name for the placement.
 ///
-/// \param configuration The <code>AATBannerConfiguration</code> for this placement.
+/// \param configuration The banner configuration.
 ///
 ///
 /// returns:
-/// Banner placement instance, or null if the placement cannot be created.
+/// An <code>AATInfeedBannerPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATInfeedBannerPlacement> _Nullable)createInfeedBannerPlacementWithName:(NSString * _Nonnull)name configuration:(AATBannerConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
-/// Creates a new fullscreen ad placement.
-/// If the fullscreen ad placement of given name already exists, it will be returned.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves a fullscreen ad placement.
+/// \param name Unique name for the placement.
 ///
 ///
 /// returns:
-/// AATFullscreenPlacement, or nil if placement cannot be created.
+/// An <code>AATFullscreenPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATFullscreenPlacement> _Nullable)createFullscreenPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-/// Creates a new rewarded video placement.
-/// If the rewarded video ad placement of given name already exists, it will be returned.
-/// Only one Rewarded Video placement can be used within the app.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves a rewarded video placement.
+/// Only one rewarded video placement is supported per app.
+/// \param name Unique name for the placement.
 ///
 ///
 /// returns:
-/// AATPlacement, or nil if placement cannot be created.
+/// An <code>AATRewardedVideoPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATRewardedVideoPlacement> _Nullable)createRewardedVideoPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-/// Creates a new AppOpen placement.
-/// <em>NOTE:</em> You should register your <code>placementName</code> on the AddApptr website
-/// if you intend to target it with specific rules.
-/// \param placementName Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves an App Open ad placement.
+/// \param placementName Unique name for the placement.
 ///
 ///
 /// returns:
-/// AATAppOpenAdPlacement, or nil if placement cannot be created.
+/// An <code>AATAppOpenAdPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATAppOpenAdPlacement> _Nullable)createAppOpenAdPlacementWithPlacementName:(NSString * _Nonnull)placementName SWIFT_WARN_UNUSED_RESULT;
-/// Creates a new native ad placement.
-/// If the native ad placement of given name already exists, it will be returned.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves a native ad placement.
+/// \param name Unique name for the placement.
 ///
-/// \param supportsMainImage True if the native ads returned should have main image asset. Keep in mind that if main image is used, it has to be displayed.
+/// \param supportsMainImage Indicates whether returned ads should include a main image.
 ///
 ///
 /// returns:
-/// AATPlacement, or nil if placement cannot be created.
+/// An <code>AATNativeAdPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATNativeAdPlacement> _Nullable)createNativeAdPlacementWithName:(NSString * _Nonnull)name supportsMainImage:(BOOL)supportsMainImage SWIFT_WARN_UNUSED_RESULT;
-+ (id <AATBannerCache> _Nullable)createBannerCacheWithConfiguration:(AATBannerCacheConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
-/// Set NativeAd icon position.
-/// Set NativeAd icon position. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/formats/native-ads/network-specifics/native-ads-google#change-native-ad-aatadchoicesiconposition">Change Native Ad AATAdChoicesIconPosition</a>.
-+ (void)setAdChoicesIconPositionWithPosition:(enum AATAdChoicesIconPosition)position;
-/// Allows to enable or disable selected ad networks. By default all networks are enabled. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/disabling-ad-networks">Disable/Enable Ad Networks</a>.
-/// \param network Ad network.
+/// Creates or retrieves a banner cache.
+/// \param configuration Banner cache configurations
 ///
-/// \param enabled True to enable, false to disable.
+///
+/// returns:
+/// An <code>AATBannerCache</code>, or <code>nil</code> if creation fails.
++ (id <AATBannerCache> _Nullable)createBannerCacheWithConfiguration:(AATBannerCacheConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
+/// Sets the position for the native ad icon (AdChoices).
+/// \param position Desired icon position. See <code>AATAdChoicesIconPosition</code>.
+///
++ (void)setAdChoicesIconPositionWithPosition:(enum AATAdChoicesIconPosition)position;
+/// Enables or disables a specific ad network.
+/// \param network The ad network.
+///
+/// \param enabled <code>true</code> to enable, <code>false</code> to disable.
 ///
 + (void)setNetworkEnabledWithNetwork:(enum AATAdNetwork)network enabled:(BOOL)enabled;
-/// Returns true if ad network is enabled, false otherwise.
-/// \param network Ad network.
+/// Checks whether a given ad network is enabled.
+/// \param network The ad network.
 ///
 ///
 /// returns:
-/// True if ad network is enabled, false otherwise.
+/// <code>true</code> if enabled, <code>false</code> otherwise.
 + (BOOL)isNetworkEnabledWithNetwork:(enum AATAdNetwork)network SWIFT_WARN_UNUSED_RESULT;
-/// Get option from AATKit.
-/// Options can be obtained from the server or set using the <code>setOption(optionName:optionValue:)</code> method.
-/// \param optionName The name of the option to be checked.
+/// Retrieves the value of a given SDK option.
+/// Options can be configured via the SDK or fetched from the server.
+/// \param optionName The name of the option.
 ///
 ///
 /// returns:
-/// Value of the option or null if it is not set.
+/// The value of the option, or <code>nil</code> if not set.
 + (NSString * _Nullable)getOptionWithOptionName:(NSString * _Nonnull)optionName SWIFT_WARN_UNUSED_RESULT;
-/// Convenience method for checking if option is enabled in AATKit.
-/// Options can be obtained from the server or set using the <code>setOption(optionName:optionValue:)</code> method.
-/// \param optionName The name of the option to be checked.
+/// Checks whether a given option is enabled.
+/// An option is considered enabled if its value is “Yes”.
+/// \param optionName The name of the option.
 ///
 ///
 /// returns:
-/// True if option value is “Yes”, false otherwise.
+/// <code>true</code> if the option is enabled, <code>false</code> otherwise.
 + (BOOL)isOptionEnabledWithOptionName:(NSString * _Nonnull)optionName SWIFT_WARN_UNUSED_RESULT;
-/// Set option in AATKit. Options can also be obtained from the server.
-/// \param optionName The name of the option to be set.
+/// Sets the value for a custom SDK option.
+/// \param optionName The name of the option.
 ///
-/// \param optionValue The value of the option to be set.
+/// \param optionValue The value to assign to the option.
 ///
 + (void)setOptionWithOptionName:(NSString * _Nonnull)optionName optionValue:(NSString * _Nonnull)optionValue;
-/// Sets the targeting information for the application. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/targeting">AATKit Targeting</a>.
-/// This information will be used only if no placement-specific targeting is available.
-/// \param info Map with targeting information.
+/// Sets global targeting information for the app.
+/// This will be used only if no placement-specific targeting is set.
+/// For more info, see: https://addapptr.gitbook.io/ios-integration/advanced/targeting
+/// \param info A dictionary of targeting categories and values.
 ///
 + (void)setTargetingInfoWithInfo:(NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)info;
-/// Sets the user targeting information for the application.
-/// see
-/// \param userTargeting an instance of <code>AATUserTargeting</code>.
+/// Sets structured user targeting information.
+/// \param userTargeting An instance of <code>AATUserTargeting</code>.
 ///
 + (void)setUserTargetingWithUserTargeting:(AATUserTargeting * _Nonnull)userTargeting;
-/// Sets the content targeting url for the application. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/targeting#set-global-targeting-keywords">Set Global Content Targeting URL</a>.
-/// This information will be used only if no placement-specific targeting is available.
-/// \param targetingUrl The targeting url
+/// Sets a content-level targeting URL.
+/// This is used globally unless overridden per placement.
+/// For more info, see: https://addapptr.gitbook.io/ios-integration/advanced/targeting#set-global-targeting-keywords
+/// \param targetingUrl The targeting URL string.
 ///
 + (void)setContentTargetingUrlWithTargetingUrl:(NSString * _Nonnull)targetingUrl;
-/// Adds an ad network to the list of ad networks that receive targeting keywords (if any set).
-/// Adds an ad network to the list of ad networks that receive targeting keywords (if any set). For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/targeting#limit-ad-network-specific-keywords">Limit Ad Network specific Keywords</a>.
-/// \param network Chosen ad network.
+/// Adds a specific ad network to receive keyword targeting.
+/// For more info, see: https://addapptr.gitbook.io/ios-integration/advanced/targeting#limit-ad-network-specific-keywords
+/// \param network The target ad network.
 ///
 + (void)addAdNetworkForKeywordTargetingWithNetwork:(enum AATAdNetwork)network;
-/// Removes an ad network from the list of ad networks that receive targeting keywords (if any set). For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/targeting#limit-ad-network-specific-keywords">Limit Ad Network specific Keywords</a>.
-/// If no ad networks are added to the list, any set keywords will be delivered to all ad networks supporting keyword targeting.
-/// \param network Chosen ad network.
+/// Removes an ad network from receiving keyword targeting.
+/// If no network is explicitly added, all compatible networks will receive keywords.
+/// For more info, see: https://addapptr.gitbook.io/ios-integration/advanced/targeting#limit-ad-network-specific-keywords
+/// \param network The ad network to remove.
 ///
 + (void)removeAdNetworkForKeywordTargetingWithNetwork:(enum AATAdNetwork)network;
-/// Allows to set log level from code. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/initialization#log-levels">Use Log Levels</a>.
-/// \param logLevel Desired log level, as in <code>AATLogLevel</code> enum.
+/// Sets the log level for SDK output.
+/// \param logLevel Desired log level from the <code>AATLogLevel</code> enum.
 ///
 + (void)setLogLevelWithLogLevel:(enum AATLogLevel)logLevel;
-/// Mute video ads for ad networks which support muting video ads
-/// \param isMuted A bool to mute or not
+/// Mutes video ads for supported networks.
+/// \param isMuted <code>true</code> to mute, <code>false</code> to allow sound.
 ///
 + (void)setVideoAdsMuted:(BOOL)isMuted;
+/// Indicates whether the app is directed at children.
+/// \param isChildDirected <code>true</code> if the app targets children.
+///
 + (void)setIsChildDirected:(BOOL)isChildDirected;
-/// Sets the reports delegate that will receive reporting event callbacks. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/advanced-delegates/reports-delegate">Reports Delegate</a>.
-/// \param delegate the object that will receive reporting event callbacks
+/// Assigns the reports delegate to receive SDK reporting callbacks.
+/// \param delegate Object conforming to <code>AATReportsDelegate</code>.
 ///
 + (void)setReportsDelegate:(id <AATReportsDelegate> _Nonnull)delegate;
-/// Checks if consent is opt-in or not
+/// Checks if consent mode is opt-in.
 ///
 /// returns:
-/// True if consent is opt-in
+/// <code>true</code> if opt-in is required.
 + (BOOL)isConsentOptIn SWIFT_WARN_UNUSED_RESULT;
+/// Sets server-side verification info for rewarded ads.
+/// \param info An <code>AATRewardedAdSSVInfo</code> object.
+///
 + (void)setRewardedAdSSVInfoWithInfo:(AATRewardedAdSSVInfo * _Nonnull)info;
 @end
 
@@ -2181,6 +2544,7 @@ SWIFT_CLASS("_TtC6AATKit16AATSimpleConsent")
 @end
 
 
+/// A delegate to receive statistics events
 SWIFT_PROTOCOL("_TtP6AATKit21AATStatisticsDelegate_")
 @protocol AATStatisticsDelegate
 /// Notifies that an ad space has been counted.
@@ -2237,7 +2601,7 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATStatisticsDelegate_")
 
 @protocol AATStickyBannerPlacementDelegate;
 
-SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_")
+SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_") SWIFT_DEPRECATED_MSG("Please use AATAutoLoadBannerPlacement instead. For more information please visit https://aatkit.gitbook.io/ios-integration/formats/banner/auto-load-banner")
 @protocol AATStickyBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATStickyBannerPlacementDelegate> _Nullable delegate;
@@ -2296,7 +2660,13 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+/// Enables the creative history tracking with a given maximum size.
+/// \param size The maximum number of creative history entries to retain.
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Retrieves the current creative history.
+/// \param completion A closure called with an array of <code>AATPlacementHistoryInfo</code> objects.
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -2310,27 +2680,52 @@ SWIFT_PROTOCOL("_TtP6AATKit32AATStickyBannerPlacementDelegate_")
 @class InterstitialAdOptions;
 @class RewardedVideoOptions;
 
+/// Configuration options for SuperAwesome ad network integrations.
 SWIFT_CLASS("_TtC6AATKit22AATSuperAwesomeOptions")
 @interface AATSuperAwesomeOptions : NSObject
+/// Initializes a new <code>AATSuperAwesomeOptions</code> instance.
+/// \param bannerOptions Banner ad options.
+///
+/// \param interstitialAdOptions Interstitial ad options.
+///
+/// \param rewardedVideoOptionsOptions Rewarded video ad options.
+///
 - (nonnull instancetype)initWithBannerOptions:(BannerOptions * _Nullable)bannerOptions interstitialAdOptions:(InterstitialAdOptions * _Nullable)interstitialAdOptions rewardedVideoOptionsOptions:(RewardedVideoOptions * _Nullable)rewardedVideoOptionsOptions OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Orientation options for ads.
 typedef SWIFT_ENUM(NSInteger, Orientation, closed) {
+/// Any orientation.
   OrientationAny = 0,
+/// Portrait only.
   OrientationPortrait = 1,
+/// Landscape only.
   OrientationLandscape = 2,
 };
 
+/// Close button display behavior.
 typedef SWIFT_ENUM(NSInteger, CloseButtonState, closed) {
+/// Close button enabled with default delay.
   CloseButtonStateEnabled = 0,
+/// Close button enabled with no delay.
   CloseButtonStateEnabledNoDelay = 1,
 };
 
 
+/// Base network options for SuperAwesome ads.
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions14NetworkOptions")
 @interface NetworkOptions : NSObject
+/// Initializes a new <code>NetworkOptions</code> instance.
+/// \param parentalGateEnabled Enable or disable the Parental Gate.
+///
+/// \param bumperPageEnabled Enable or disable the Bumper page.
+///
+/// \param bumperPageCustomAppName Custom app name for the Bumper page.
+///
+/// \param bumperPageLogo Custom logo for the Bumper page.
+///
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2341,20 +2736,21 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions14NetworkOptions")
 @end
 
 
+/// Configuration options for SuperAwesome interstitial ads.
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @interface InterstitialAdOptions : NetworkOptions
-/// init <code>AATSuperAwesomeOptions/InterstitialAdOptions-swift.class</code>
-/// \param orientation ad orientation
+/// Initializes a new <code>InterstitialAdOptions</code> instance.
+/// \param orientation The orientation to display the ad. Default is <code>.any</code>.
 ///
-/// \param closeButtonState close button state of type <code>AATSuperAwesomeOptions/CloseButtonState</code>
+/// \param closeButtonState The state of the close button, of type <code>AATSuperAwesomeOptions/CloseButtonState</code>. Default is <code>.enabled</code>.
 ///
-/// \param parentalGateEnabled Enable/disable the Parental gate
+/// \param parentalGateEnabled Enable or disable the Parental Gate. Default is <code>false</code>.
 ///
-/// \param bumperPageEnabled Enable/disable the bumper page
+/// \param bumperPageEnabled Enable or disable the Bumper page. Default is <code>false</code>.
 ///
-/// \param bumperPageCustomAppName bumper page app name
+/// \param bumperPageCustomAppName Custom app name for the Bumper page.
 ///
-/// \param bumperPageLogo bumper page logo
+/// \param bumperPageLogo Custom logo image for the Bumper page.
 ///
 - (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
@@ -2365,18 +2761,19 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @end
 
 
+/// Banner ad options specific to SuperAwesome.
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
 @interface BannerOptions : NetworkOptions
-/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
-/// \param parentalGateEnabled Enable/disable the Parental gate
+/// Initializes a new <code>BannerOptions</code> instance.
+/// \param parentalGateEnabled Enables or disables the Parental Gate. Default is <code>false</code>.
 ///
-/// \param bumperPageEnabled Enable/disable the bumper page
+/// \param bumperPageEnabled Enables or disables the Bumper page. Default is <code>false</code>.
 ///
-/// \param bumperPageCustomAppName bumper page app name
+/// \param bumperPageCustomAppName Custom app name to display on the Bumper page.
 ///
-/// \param bumperPageLogo bumper page logo
+/// \param bumperPageLogo Custom logo image for the Bumper page.
 ///
-/// \param isBackgroundTransparent Enable/disable transparent background
+/// \param isBackgroundTransparent Enables or disables transparent background. Default is <code>true</code>.
 ///
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
@@ -2387,26 +2784,27 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
 @end
 
 
+/// Configuration options for SuperAwesome rewarded video ads.
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 @interface RewardedVideoOptions : InterstitialAdOptions
-/// init <code>AATSuperAwesomeOptions/RewardedVideoOptions</code>
-/// \param closeButtonAtEnd enable or disable auto-closing at the end
+/// Initializes a new <code>RewardedVideoOptions</code> instance.
+/// \param closeButtonAtEnd Enables or disables auto-closing at the end. Default is <code>false</code>.
 ///
-/// \param closeButtonWarningEnabled enable or disable close button warning
+/// \param smallClickEnabled Enables or disables the small click button. Default is <code>false</code>.
 ///
-/// \param smallClickEnabled enable or disable small close button click
+/// \param closeButtonWarningEnabled Enables or disables the close button warning. Default is <code>false</code>.
 ///
-/// \param orientation ad orientation
+/// \param orientation The ad orientation. Default is <code>.any</code>.
 ///
-/// \param closeButtonState close button state of type <code>AATSuperAwesomeOptions/CloseButtonState</code>
+/// \param closeButtonState The state of the close button of type <code>AATSuperAwesomeOptions/CloseButtonState</code>. Default is <code>.enabled</code>.
 ///
-/// \param parentalGateEnabled Enable/disable the Parental gate
+/// \param parentalGateEnabled Enables or disables the Parental Gate. Default is <code>false</code>.
 ///
-/// \param bumperPageEnabled Enable/disable the bumper page
+/// \param bumperPageEnabled Enables or disables the Bumper page. Default is <code>false</code>.
 ///
-/// \param bumperPageCustomAppName bumper page app name
+/// \param bumperPageCustomAppName Custom app name for the Bumper page.
 ///
-/// \param bumperPageLogo bumper page logo
+/// \param bumperPageLogo Custom logo image for the Bumper page.
 ///
 - (nonnull instancetype)initWithCloseButtonAtEnd:(BOOL)closeButtonAtEnd smallClickEnabled:(BOOL)smallClickEnabled closeButtonWarningEnabled:(BOOL)closeButtonWarningEnabled orientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
@@ -2421,28 +2819,20 @@ SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
 @end
 
 
+/// Represents user-specific targeting information used by AATKit.
 SWIFT_CLASS("_TtC6AATKit16AATUserTargeting")
 @interface AATUserTargeting : NSObject
-/// initialize <code>AATUserTargeting</code>
-/// \param userId user id
+/// Initializes a new instance of <code>AATUserTargeting</code> with optional user-specific targeting values.
+/// \param userId A unique identifier for the user.
 ///
-/// \param gender user gender.
-/// <ul>
-///   <li>
-///     <em>Important</em>: The default value is <code>AATGender.unknown</code> and will be ignored while performing the request.
-///   </li>
-/// </ul>
+/// \param gender The user’s gender. Default is <code>AATGender/unknown</code>.
 ///
-/// \param yearOfBirth user year of birth.
-/// <ul>
-///   <li>
-///     <em>Important</em>: it has to be a 4-digit number
-///   </li>
-/// </ul>
+/// \param yearOfBirth The user’s year of birth. Must be a 4-digit number; otherwise it will be ignored.
 ///
-/// \param keywords targeting keywords
+/// \param keywords Targeting keywords associated with the user.
 ///
 - (nonnull instancetype)initWithUserId:(NSString * _Nullable)userId gender:(enum AATGender)gender yearOfBirth:(NSNumber * _Nullable)yearOfBirth keywords:(NSArray<NSString *> * _Nullable)keywords OBJC_DESIGNATED_INITIALIZER;
+/// A string representation of the <code>AATUserTargeting</code> instance, useful for debugging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2467,6 +2857,7 @@ SWIFT_CLASS("_TtC6AATKit16AATVendorConsent")
 @end
 
 
+/// The delegate for receiving events from <code>AATVendorConsent</code>.
 SWIFT_PROTOCOL("_TtP6AATKit24AATVendorConsentDelegate_")
 @protocol AATVendorConsentDelegate
 /// Gets the consent for an ad network.
@@ -2511,18 +2902,24 @@ typedef SWIFT_ENUM(NSInteger, NonIABConsent, open) {
 @end
 
 
+/// Placement frequency capping information
 SWIFT_CLASS("_TtCCC6AATKit12AATDebugInfo18PlacementDebugInfo25FrequencyCappingDebugInfo")
 @interface FrequencyCappingDebugInfo : NSObject
+/// Maximum number of impressions allowed during a single session
 @property (nonatomic) NSInteger maxImpressionsPerSession;
+/// Maximum number of impressions allowed within one hour
 @property (nonatomic) NSInteger maxImpressionsPerHour;
+/// Maximum number of impressions allowed in a 24-hour period
 @property (nonatomic) NSInteger maxImpressionsPerDay;
+/// Maximum number of impressions allowed in a 7-day period
 @property (nonatomic) NSInteger maxImpressionsPerWeek;
+/// Maximum number of impressions allowed in a calendar month
 @property (nonatomic) NSInteger maxImpressionsPerMonth;
+/// Minimum required time (in seconds) between two impressions
 @property (nonatomic) NSTimeInterval minTimeBetweenImpressions;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 
@@ -2853,10 +3250,15 @@ SWIFT_CLASS("_TtC6AATKit19AATAbstractAdConfig")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Represents possible positions for the AdChoices icon on a native ad.
 typedef SWIFT_ENUM(NSInteger, AATAdChoicesIconPosition, closed) {
+/// Position the AdChoices icon at the top-left corner.
   AATAdChoicesIconPositionTopLeft = 0,
+/// Position the AdChoices icon at the top-right corner.
   AATAdChoicesIconPositionTopRight = 1,
+/// Position the AdChoices icon at the bottom-left corner.
   AATAdChoicesIconPositionBottomLeft = 2,
+/// Position the AdChoices icon at the bottom-right corner.
   AATAdChoicesIconPositionBottomRight = 3,
 };
 
@@ -2901,9 +3303,12 @@ SWIFT_PROTOCOL("_TtP6AATKit20AATAdDisplayDelegate_")
 
 @class AATPriceInfo;
 
+/// Contains information about an ad, including its pricing details.
 SWIFT_CLASS("_TtC6AATKit9AATAdInfo")
 @interface AATAdInfo : NSObject
+/// The price information associated with the ad.
 @property (nonatomic, readonly, strong) AATPriceInfo * _Nullable priceInfo;
+/// A string representation of the <code>AATAdInfo</code>, useful for debugging and logging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2931,46 +3336,76 @@ SWIFT_PROTOCOL("_TtP6AATKit28AATAdMobCustomEventsDelegate_")
 @end
 
 
+/// Configuration options for AdMob ads.
 SWIFT_CLASS("_TtC6AATKit15AATAdMobOptions")
 @interface AATAdMobOptions : NSObject
-/// Init AATAdMobOptions
-/// \param inlineBannerMaxHeight The maximum height for AdMob inline adaptive banners
+/// Initializes a new instance of <code>AATAdMobOptions</code>.
+/// \param inlineBannerMaxHeight The maximum height for AdMob inline adaptive banners.
 ///
 - (nonnull instancetype)initWithInlineBannerMaxHeight:(NSInteger)inlineBannerMaxHeight OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Represents supported ad networks used by AATKit.
+/// This enum lists all the ad networks integrated with the SDK.
 typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
+/// InMobi ad network.
   AATAdNetworkINMOBI = 0,
+/// Mintegral ad network.
   AATAdNetworkMINTEGRAL = 1,
+/// Google AdMob ad network.
   AATAdNetworkADMOB = 2,
+/// Represents no ad network.
   AATAdNetworkEMPTY = 3,
+/// AppLovin ad network.
   AATAdNetworkAPPLOVIN = 4,
+/// SmartAd ad network.
   AATAdNetworkSMARTAD = 5,
+/// SmartAd Server Direct integration.
   AATAdNetworkSMARTADSERVERDIRECT = 6,
+/// RTB2 ad network.
   AATAdNetworkRTB2 = 7,
+/// Google AdManager (DFP).
   AATAdNetworkDFP = 8,
-  AATAdNetworkSMAATO = 9,
-  AATAdNetworkFACEBOOK = 10,
-  AATAdNetworkFEEDAD = 11,
-  AATAdNetworkUNITY = 12,
-  AATAdNetworkAPPNEXUS = 13,
-  AATAdNetworkOGURY = 14,
-  AATAdNetworkCRITEOSDK = 15,
-  AATAdNetworkAMAZONHB = 16,
-  AATAdNetworkPUBNATIVE = 17,
-  AATAdNetworkTEADS = 18,
-  AATAdNetworkTAPPX = 19,
-  AATAdNetworkYOC = 20,
-  AATAdNetworkVUNGLE2 = 21,
-  AATAdNetworkDFPDIRECT = 22,
-  AATAdNetworkIRONSOURCENEW = 23,
-  AATAdNetworkGRAVITERTB = 24,
-  AATAdNetworkSUPERAWESOME = 25,
-  AATAdNetworkKIDOZ = 26,
-  AATAdNetworkDISPLAYIO = 27,
-  AATAdNetworkADMOBBIDDING = 28,
+/// Facebook Audience Network.
+  AATAdNetworkFACEBOOK = 9,
+/// FeedAd network.
+  AATAdNetworkFEEDAD = 10,
+/// Unity Ads network.
+  AATAdNetworkUNITY = 11,
+/// AppNexus (Xandr) ad network.
+  AATAdNetworkAPPNEXUS = 12,
+/// Ogury ad network.
+  AATAdNetworkOGURY = 13,
+/// Amazon Header Bidding.
+  AATAdNetworkAMAZONHB = 14,
+/// PubNative (HyBid) ad network.
+  AATAdNetworkPUBNATIVE = 15,
+/// Teads ad network.
+  AATAdNetworkTEADS = 16,
+/// Tappx ad network.
+  AATAdNetworkTAPPX = 17,
+/// YOC ad network.
+  AATAdNetworkYOC = 18,
+/// Vungle ad network.
+  AATAdNetworkVUNGLE2 = 19,
+/// DFP Direct integration.
+  AATAdNetworkDFPDIRECT = 20,
+/// IronSource  ad network.
+  AATAdNetworkIRONSOURCENEW = 21,
+/// Gravite RTBSDK ad network.
+  AATAdNetworkGRAVITERTB = 22,
+/// SuperAwesome ad network.
+  AATAdNetworkSUPERAWESOME = 23,
+/// Kidoz ad network.
+  AATAdNetworkKIDOZ = 24,
+/// Display IO ad network.
+  AATAdNetworkDISPLAYIO = 25,
+/// AdMob bidding network, used internally.
+  AATAdNetworkADMOBBIDDING = 26,
+/// Meta bidding network, used internally.
+  AATAdNetworkMETABIDDING = 27,
 };
 
 
@@ -2991,25 +3426,31 @@ SWIFT_PROTOCOL("_TtP6AATKit33AATAdNetworkDriverVersionProtocol_")
 @class AATSuperAwesomeOptions;
 @class AATGraviteRTBOptions;
 @class AATDisplayIOOptions;
+@class AATMetaBiddingOptions;
 
+/// Configuration container for multiple ad network options.
+/// This class aggregates the configuration options for various supported ad networks,
+/// allowing easy setup of network-specific settings in one place.
 SWIFT_CLASS("_TtC6AATKit20AATAdNetworksOptions")
 @interface AATAdNetworksOptions : NSObject
-/// Init AATAdNetworksOptions
-/// \param appNexusOptions AppNexus options. default is nil
+/// Initializes a new instance of <code>AATAdNetworksOptions</code> with optional parameters.
+/// \param appNexusOptions Configuration for AppNexus. Defaults to <code>nil</code>.
 ///
-/// \param feedAdOptions FeedAd options. default is nil
+/// \param feedAdOptions Configuration for feed ads. Defaults to <code>nil</code>.
 ///
-/// \param adMobOptions AdMob options. default is nil
+/// \param adMobOptions Configuration for AdMob. Defaults to <code>nil</code>.
 ///
-/// \param dfpOptions DFP options. default is nil
+/// \param dfpOptions Configuration for DFP. Defaults to <code>nil</code>.
 ///
-/// \param superAwesomeOptions SuperAwesome options. default is nil
+/// \param superAwesomeOptions Configuration for SuperAwesome. Defaults to <code>nil</code>.
 ///
-/// \param graviteRTBOptions Gravite RTBSDK options. default is nil
+/// \param graviteRTBOptions Configuration for Gravite RTB SDK. Defaults to <code>nil</code>.
 ///
-/// \param displayIOOptions DisplayIo options. default is nil
+/// \param displayIOOptions Configuration for Display IO. Defaults to <code>nil</code>.
 ///
-- (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions graviteRTBOptions:(AATGraviteRTBOptions * _Nullable)graviteRTBOptions displayIOOptions:(AATDisplayIOOptions * _Nullable)displayIOOptions OBJC_DESIGNATED_INITIALIZER;
+/// \param metaBiddingOptions Configuration for Meta bidding. Defaults to <code>nil</code>.
+///
+- (nonnull instancetype)initWithAppNexusOptions:(AATAppNexusOptions * _Nullable)appNexusOptions feedAdOptions:(AATFeedAdOptions * _Nullable)feedAdOptions adMobOptions:(AATAdMobOptions * _Nullable)adMobOptions dfpOptions:(AATDFPOptions * _Nullable)dfpOptions superAwesomeOptions:(AATSuperAwesomeOptions * _Nullable)superAwesomeOptions graviteRTBOptions:(AATGraviteRTBOptions * _Nullable)graviteRTBOptions displayIOOptions:(AATDisplayIOOptions * _Nullable)displayIOOptions metaBiddingOptions:(AATMetaBiddingOptions * _Nullable)metaBiddingOptions OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3079,22 +3520,29 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATAdQualityManagerProtocol_")
 - (id <AATAdQualityDriverProtocol> _Nonnull)initDriver SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
 @end
 
+/// Represents the ad formats supported by AATKit.
 typedef SWIFT_ENUM(NSInteger, AATAdType, open) {
+/// Fullscreen ads, covering the entire screen.
   AATAdTypeFullscreen = 0,
+/// Banner ads.
   AATAdTypeBanner = 1,
+/// Native ads, integrated within app content.
   AATAdTypeNative = 2,
+/// Rewarded ads that offer incentives to users.
   AATAdTypeRewarded = 3,
+/// App open ads.
   AATAdTypeAppOpen = 4,
 };
 
 @class NSNumber;
 
+/// Configuration options for AppNexus ads.
 SWIFT_CLASS("_TtC6AATKit18AATAppNexusOptions")
 @interface AATAppNexusOptions : NSObject
-/// Init AATAppNexusOptions
-/// \param autoCloseTime A delay in seconds after which  a full-screen ad will be dismissed, default value is nil.
+/// Initializes a new instance of <code>AATAppNexusOptions</code>.
+/// \param autoCloseTime Optional delay in seconds after which a full-screen ad will be dismissed. Default is <code>nil</code>.
 ///
-/// \param supportNativeBanner A Boolean that describe if Banner Ad can serve a Native Ad, default is false.
+/// \param supportNativeBanner Boolean indicating if banner ads can serve native ads. Default is <code>false</code>.
 ///
 - (nonnull instancetype)initWithAutoCloseTime:(NSNumber * _Nullable)autoCloseTime supportNativeBanner:(BOOL)supportNativeBanner OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -3210,7 +3658,13 @@ SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY
 - (void)requestAdWithRequest:(AATBannerRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(AATBannerPlacementWrapperView * _Nullable))completionHandler;
 /// Manually Count an Ad Space
 - (void)countAdSpace;
+/// Enables keeping creatives history
+/// \param size Maximum number of creatives to keep
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Get saved creatives history
+/// \param completion An array of <code>AATPlacementHistoryInfo</code> representing creatives history
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -3219,21 +3673,46 @@ SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY
 
 SWIFT_PROTOCOL("_TtP6AATKit25AATAsyncNativeAdPlacement_") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @protocol AATAsyncNativeAdPlacement <AATPlacement>
+/// Set the placement delegate that will listen to ad loading and display events.
 @property (nonatomic, strong) id <AATAsyncNativePlacementDelegate> _Nullable delegate;
+/// Sets the placement statistics delegate
 @property (nonatomic, strong) id <AATStatisticsDelegate> _Nullable statisticsDelegate;
+/// Sets the placement impression delegate
 @property (nonatomic, strong) id <AATImpressionDelegate> _Nullable impressionDelegate;
+/// Sets the targeting information for the placement
+/// Information provided for placement overrides targeting information overrides targeting information for application set by the <code>AATSDK/setTargetingInfo(info:)</code>
 @property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable targetingInfo;
+/// Sets the content targeting url for the placement.
+/// Information provided for placement overrides targeting information for application set by the <code>AATSDK/setContentTargetingUrl(targetingUrl:)</code>
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+/// Requests placement reload
+///
+/// returns:
+/// AATNativeAdData
 - (void)reloadWithCompletionHandler:(void (^ _Nonnull)(id <AATNativeAdData> _Nullable))completionHandler;
+/// Returns how many ads are currently loading for given native ad placement.
+///
+/// returns:
+/// Number of ads that are currently loading for given placement.
 - (NSInteger)getNumberOfCurrentlyLoadingNativeAds SWIFT_WARN_UNUSED_RESULT;
+/// Returns true if there is an ad loaded.
+///
+/// returns:
+/// True if there is an ad loaded.
 - (BOOL)hasAd SWIFT_WARN_UNUSED_RESULT;
+/// Manually Count an Ad Space
 - (BOOL)reportAdSpace SWIFT_WARN_UNUSED_RESULT;
+/// Checks if the frequency cap has been reached.
+///
+/// returns:
+/// true if the frequency cap has been reached.
 - (BOOL)isFrequencyCapReached SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
+/// Conform to this protocol to listen to the AATAsyncNativePlacement events
 SWIFT_PROTOCOL("_TtP6AATKit31AATAsyncNativePlacementDelegate_")
 @protocol AATAsyncNativePlacementDelegate <AATAdDisplayDelegate>
 @end
@@ -3283,7 +3762,13 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATAutoLoadBannerPlacement_")
 /// \param alignment The alignment to set.
 ///
 - (void)setBannerAlignWithAlignment:(AATBannerAlign * _Nonnull)alignment;
+/// Enables the creative history tracking with a given maximum size.
+/// \param size The maximum number of creative history entries to retain.
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Retrieves the current creative history.
+/// \param completion A closure called with an array of <code>AATPlacementHistoryInfo</code> objects.
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -3316,7 +3801,13 @@ SWIFT_PROTOCOL("_TtP6AATKit35AATAutoLoadMultiSizeBannerPlacement_")
 - (void)startAutoReload;
 /// Stop the automatic reloading of the placement
 - (void)stopAutoReload;
+/// Enables the creative history tracking with a given maximum size.
+/// \param size The maximum number of creative history entries to retain.
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Retrieves the current creative history.
+/// \param completion A closure called with an array of <code>AATPlacementHistoryInfo</code> objects.
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -3331,16 +3822,17 @@ SWIFT_PROTOCOL("_TtP6AATKit43AATAutoLoadMultiSizeBannerPlacementDelegate_")
 enum VerticalAlign : NSInteger;
 enum HorizontalAlign : NSInteger;
 
+/// <code>AATBannerAlign</code> defines the alignment of a banner within its superview.
 SWIFT_CLASS("_TtC6AATKit14AATBannerAlign")
 @interface AATBannerAlign : NSObject
-/// Banner vertical align of type <code>VerticalAlign</code>
+/// Banner vertical alignment of type <code>VerticalAlign</code>.
 @property (nonatomic, readonly) enum VerticalAlign verticalAlign;
-/// Banner horizontal align of type <code>HorizontalAlign</code>
+/// Banner horizontal alignment of type <code>HorizontalAlign</code>.
 @property (nonatomic, readonly) enum HorizontalAlign horizontalAlign;
-/// Creates a new instance of <code>AATBannerAlign</code>
-/// \param horizontalAlign Banner horizontal align
+/// Creates a new instance of <code>AATBannerAlign</code>.
+/// \param horizontalAlign The horizontal alignment for the banner.
 ///
-/// \param verticalAlign Banner vertical align
+/// \param verticalAlign The vertical alignment for the banner.
 ///
 - (nonnull instancetype)initWithHorizontalAlign:(enum HorizontalAlign)horizontalAlign verticalAlign:(enum VerticalAlign)verticalAlign OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
@@ -3348,21 +3840,23 @@ SWIFT_CLASS("_TtC6AATKit14AATBannerAlign")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// <code>HorizontalAlign</code> specifies the possible horizontal alignments for a banner.
 typedef SWIFT_ENUM(NSInteger, HorizontalAlign, open) {
-/// Align the banner to the leading edge of the superview
+/// Aligns the banner to the leading (left in LTR, right in RTL) edge of the superview.
   HorizontalAlignLeading = 0,
-/// Align the banner to the trailing edge of the superview
+/// Aligns the banner to the trailing (right in LTR, left in RTL) edge of the superview.
   HorizontalAlignTrailing = 1,
-/// Align the banner to the center of the superview
+/// Aligns the banner to the center of the superview horizontally.
   HorizontalAlignCenter = 2,
 };
 
+/// <code>VerticalAlign</code> specifies the possible vertical alignments for a banner.
 typedef SWIFT_ENUM(NSInteger, VerticalAlign, open) {
-/// Align the banner to the top edge of the superview
+/// Aligns the banner to the top edge of the superview.
   VerticalAlignTop = 0,
-/// Align the banner to the bottom edge of the superview
+/// Aligns the banner to the bottom edge of the superview.
   VerticalAlignBottom = 1,
-/// Align the banner to the center of the superview
+/// Aligns the banner to the center of the superview vertically.
   VerticalAlignCenter = 2,
 };
 
@@ -3409,7 +3903,13 @@ SWIFT_PROTOCOL("_TtP6AATKit14AATBannerCache_")
 ///   </li>
 /// </ul>
 - (void)destroy;
+/// Enables the creative history tracking with a given maximum size.
+/// \param size The maximum number of creative history entries to retain.
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Retrieves the current creative history.
+/// \param completion A closure called with an array of <code>AATPlacementHistoryInfo</code> objects.
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -3465,13 +3965,23 @@ SWIFT_PROTOCOL("_TtP6AATKit28AATBannerCacheStatusDelegate_")
 @end
 
 
-/// Banner configuration class
+/// Configuration class for banners, allowing customization of their behavior.
 SWIFT_CLASS("_TtC6AATKit22AATBannerConfiguration")
 @interface AATBannerConfiguration : NSObject
+/// A boolean indicating whether ad space counting is handled manually.
+/// If <code>true</code>, the developer is responsible for managing ad space counting; otherwise, it’s handled automatically.
 @property (nonatomic) BOOL isManualAdSpaceCounting;
+/// Options for configuring a collapsible banner.
+/// If <code>nil</code>, the banner will not be collapsible.
 @property (nonatomic, strong) AATCollapsibleBannerOptions * _Nullable collapsableBannerOptions;
+/// Initializes a new, default <code>AATBannerConfiguration</code> instance.
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Sets the number of workers to be used.
+/// \param numberOfWorkers The desired number of workers. Must be greater than 0.
+/// If a non-positive value is provided, the setting will be ignored and an error will be logged.
+///
 - (void)setNumberOfWorkers:(NSInteger)numberOfWorkers;
+/// A string representation of the <code>AATBannerConfiguration</code> instance, useful for debugging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
@@ -3480,28 +3990,47 @@ SWIFT_CLASS("_TtC6AATKit22AATBannerConfiguration")
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 @end
 
+/// Defines standard banner ad placement sizes supported by AATKit.
+/// Each case corresponds to a specific banner dimension (width x height in points).
 typedef SWIFT_ENUM(NSInteger, AATBannerPlacementSize, open) {
+/// Banner size 320x53 points.
   AATBannerPlacementSizeBanner320x53 = 0,
+/// Banner size 320x50 points.
   AATBannerPlacementSizeBanner320x50 = 1,
+/// Banner size 375x50 points.
   AATBannerPlacementSizeBanner375x50 = 2,
+/// Banner size 390x50 points.
   AATBannerPlacementSizeBanner390x50 = 3,
+/// Banner size 414x50 points.
   AATBannerPlacementSizeBanner414x50 = 4,
+/// Banner size 428x50 points.
   AATBannerPlacementSizeBanner428x50 = 5,
+/// Banner size 768x90 points.
   AATBannerPlacementSizeBanner768x90 = 6,
+/// Banner size 300x250 points (medium rectangle).
   AATBannerPlacementSizeBanner300x250 = 7,
+/// Banner size 468x60 points (full banner).
   AATBannerPlacementSizeBanner468x60 = 8,
+/// Banner size 320x75 points.
   AATBannerPlacementSizeBanner320x75 = 9,
+/// Banner size 320x100 points.
   AATBannerPlacementSizeBanner320x100 = 10,
+/// Banner size 320x150 points.
   AATBannerPlacementSizeBanner320x150 = 11,
+/// Banner size 320x160 points.
   AATBannerPlacementSizeBanner320x160 = 12,
+/// Banner size 300x50 points.
   AATBannerPlacementSizeBanner300x50 = 13,
+/// Banner size 320x480 points.
   AATBannerPlacementSizeBanner320x480 = 14,
 };
 
 @class NSCoder;
 
+/// Loaded banner wrapper view
 SWIFT_CLASS("_TtC6AATKit29AATBannerPlacementWrapperView")
 @interface AATBannerPlacementWrapperView : UIView
+/// Loaded ad information
 @property (nonatomic, strong) AATAdInfo * _Nullable adInfo;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)didMoveToSuperview;
@@ -3509,40 +4038,58 @@ SWIFT_CLASS("_TtC6AATKit29AATBannerPlacementWrapperView")
 @end
 
 
-/// The banner request that will be used by the infeed banner placement
+/// The banner request that will be used by the infeed banner placement.
 SWIFT_CLASS("_TtC6AATKit16AATBannerRequest")
 @interface AATBannerRequest : NSObject
-/// The targeting information for this request.
+/// The targeting information for this request, typically used to
+/// narrow down the audience for ad delivery.
 @property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nullable targetingInformation;
-/// The content targeting url for this request
+/// The content targeting URL for this request, used for contextual ad targeting.
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
+/// An array of content targeting URLs for this request, allowing for multiple content contexts.
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
-/// The dictionary of network key replacements for this request, allowing to replace macros defined in ad keys with actual values.
-/// Please contact your Account Manager before using this feature.
+/// A dictionary of network key replacements for this request.
+/// This allows for replacing macros defined in ad keys with actual values at runtime.
+/// Please contact your Account Manager before using this feature to ensure proper implementation.
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable networkKeyReplacements;
-/// Banner request delegate <code>AATBannerRequestDelegate</code>
+/// The delegate for this banner request, conforming to <code>AATBannerRequestDelegate</code>.
+/// This delegate receives callbacks related to the banner request lifecycle.
 @property (nonatomic, weak) id <AATBannerRequestDelegate> _Nullable delegate;
+/// GPID value to be passed to networks.
+@property (nonatomic, copy) NSString * _Nullable gpidExtension;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Constructs a new banner request
-/// \param delegate an instance conforming to <code>AATBannerRequestDelegate</code>
+/// Constructs a new banner request with a specified delegate.
+/// \param delegate An instance conforming to <code>AATBannerRequestDelegate</code> that will
+/// receive callbacks for this banner request.
 ///
 - (nonnull instancetype)initWithDelegate:(id <AATBannerRequestDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
-/// Update request sizes
-/// \param sizes a set of <code>AATBannerSize</code>
+/// Updates the banner sizes allowed for this request using an Objective-C compatible method.
+/// This method converts a set of raw integer values to <code>AATBannerSize</code> enums.
+/// \param sizes A set of <code>Int</code> values, where each integer corresponds to an <code>AATBannerSize</code> raw value.
+/// Invalid or out-of-range integer values will be ignored.
 ///
 - (void)setRequestBannerSizes:(NSSet<NSNumber *> * _Nonnull)sizes;
+/// A string representation of the <code>AATBannerRequest</code> instance, useful for debugging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 
+/// A protocol that defines methods for delegates of <code>AATBannerRequest</code> objects.
+/// The methods of this protocol allow you to control certain behaviors of the
+/// banner request, such as whether targeting information should be used for a specific ad network.
 SWIFT_PROTOCOL("_TtP6AATKit24AATBannerRequestDelegate_")
 @protocol AATBannerRequestDelegate
-/// Check if the request should use the targeting information or not for an ad network
-/// \param request an instance of <code>AATBannerRequest</code>
+/// Asks the delegate whether the targeting information in the request should be used for a given ad network.
+/// Implement this method if you need to dynamically control whether ad targeting
+/// should be applied based on the specific ad network.
+/// \param request The <code>AATBannerRequest</code> instance associated with the delegate.
 ///
-/// \param network an <code>AATAdNetwork</code>
+/// \param network The <code>AATAdNetwork</code> for which the targeting decision is being made.
 ///
+///
+/// returns:
+/// <code>true</code> if the targeting information should be used for the specified network; otherwise, <code>false</code>.
 - (BOOL)shouldUseTargetingFor:(AATBannerRequest * _Nonnull)request network:(enum AATAdNetwork)network SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -3550,28 +4097,48 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATBannerRequestDelegate_")
 /// Banner request error class
 SWIFT_CLASS("_TtC6AATKit21AATBannerRequestError")
 @interface AATBannerRequestError : NSObject
+/// String representation of the error
 @property (nonatomic, readonly, copy) NSString * _Nullable errorDescription;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Represents the various banner ad sizes supported by AATKit.
+/// Each case corresponds to a specific banner dimension or a grouping of multiple sizes.
 typedef SWIFT_ENUM(NSInteger, AATBannerSize, open) {
+/// Banner size 300x50 points.
   AATBannerSizeBanner300x50 = 0,
+/// Banner size 320x53 points.
   AATBannerSizeBanner320x53 = 1,
+/// Banner size 768x90 points.
   AATBannerSizeBanner768x90 = 2,
+/// Banner size 300x250 points (medium rectangle).
   AATBannerSizeBanner300x250 = 3,
+/// Banner size 468x60 points (full banner).
   AATBannerSizeBanner468x60 = 4,
+/// Represents multiple banner sizes.
   AATBannerSizeMultipleSizes = 5,
+/// Banner size 320x75 points.
   AATBannerSizeBanner320x75 = 6,
+/// Banner size 320x100 points.
   AATBannerSizeBanner320x100 = 7,
+/// Banner size 320x150 points.
   AATBannerSizeBanner320x150 = 8,
+/// Banner size 320x160 points.
   AATBannerSizeBanner320x160 = 9,
+/// Banner size 320x480 points.
   AATBannerSizeBanner320x480 = 10,
+/// Banner size 728x90 points (leaderboard).
   AATBannerSizeBanner728x90 = 11,
+/// Banner size 320x50 points.
   AATBannerSizeBanner320x50 = 12,
+/// Banner size 375x50 points.
   AATBannerSizeBanner375x50 = 13,
+/// Banner size 390x50 points.
   AATBannerSizeBanner390x50 = 14,
+/// Banner size 414x50 points.
   AATBannerSizeBanner414x50 = 15,
+/// Banner size 428x50 points.
   AATBannerSizeBanner428x50 = 16,
 };
 
@@ -3600,60 +4167,93 @@ SWIFT_PROTOCOL("_TtP6AATKit14AATCMPProtocol_")
 
 enum AATCollapsibleBannerPosition : NSInteger;
 
+/// Options for configuring the behavior and appearance of a collapsible banner.
 SWIFT_CLASS("_TtC6AATKit27AATCollapsibleBannerOptions")
 @interface AATCollapsibleBannerOptions : NSObject
+/// Initializes a new <code>AATCollapsibleBannerOptions</code> instance.
+/// \param position The position of the banner. Defaults to <code>.top</code>.
+///
+/// \param minDelay The minimum delay in seconds before the banner can be collapsed. Defaults to <code>0</code>.
+///
 - (nonnull instancetype)initWithPosition:(enum AATCollapsibleBannerPosition)position minDelay:(NSInteger)minDelay OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Defines the possible positions for a collapsible banner.
 typedef SWIFT_ENUM(NSInteger, AATCollapsibleBannerPosition, open) {
+/// The banner is positioned at the top of the screen.
   AATCollapsibleBannerPositionTop = 0,
+/// The banner is positioned at the bottom of the screen.
   AATCollapsibleBannerPositionBottom = 1,
 };
 
 @class AATConsentImplementation;
 
-/// AATKit Runtime Configurations
+/// AATKit Runtime Configurations.
+/// This class encapsulates runtime configuration settings for the AATKit SDK.
+/// Use this when you need to reconfigure AATKit behavior such as consent, geo-location usage, or ad verification.
+/// Configuration is preserved across instances using <code>oldConfiguration</code>.
 SWIFT_CLASS("_TtC6AATKit23AATRuntimeConfiguration")
 @interface AATRuntimeConfiguration : NSObject
-/// A Bool that indicates whether the consent is required or not. True by default. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling.</a>.
+/// Indicates whether user consent is required before requesting ads.
+/// Defaults to <code>true</code>.
+/// For more information, see <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling</a>.
 @property (nonatomic) BOOL consentRequired;
-/// The consent implementation that the SDK will use. Could be an instance of: <code>AATManagedConsent</code>, <code>AATSimpleConsent</code> or <code>AATVendorConsent</code>. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling.</a>.
+/// The consent implementation used by the SDK.
+/// Can be set to one of the following: <code>AATManagedConsent</code>, <code>AATSimpleConsent</code>, or <code>AATVendorConsent</code>.
+/// Defaults to <code>AATDefaultConsent</code>.
+/// For more information, see <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling">AATKit Consent Handling</a>.
 @property (nonatomic, strong) AATConsentImplementation * _Nonnull consent;
-/// The AdQuality implementation that the SDK will use to verify ads.
+/// The ad quality manager responsible for verifying ad quality.
+/// This is an optional implementation of <code>AATAdQualityManagerProtocol</code>.
 @property (nonatomic, strong) id <AATAdQualityManagerProtocol> _Nullable adQualityManager;
-/// A Bool that indicates whether the location usage is enabled or not. False by default.
+/// Indicates whether geo-location usage is enabled.
+/// Defaults to <code>false</code>.
 @property (nonatomic) BOOL isUseGeoLocation;
-/// Creates the AATRuntimeConfiguration object to be used when reconfiguring AATKit.
-/// It will be automatically initialized with previously used values.
+/// Initializes a new runtime configuration.
+/// If a previously used configuration exists, it is used to initialize the new one.
+/// This allows persistent configuration across multiple SDK reinitializations.
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// A string representation of the current configuration.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 @protocol AATDelegate;
 
 /// AATKit Configurations
+/// This class provides options to configure the behavior of AATKit.
 SWIFT_CLASS("_TtC6AATKit16AATConfiguration")
 @interface AATConfiguration : AATRuntimeConfiguration
 /// Set this parameter to listen to <code>AATDelegate</code> callbacks.
 @property (nonatomic, weak) id <AATDelegate> _Nullable delegate;
-/// Set this parameter to let AATKit works with initial rules until downloading a new set.
-@property (nonatomic, copy) NSString * _Nullable initialRules;
-/// A Bool that indicates whether to cache downloaded rules or not.
+/// Optional string containing ad rules to use before new rules are downloaded.
+/// This is useful for ensuring ads start showing immediately on app launch.
+@property (nonatomic, copy) NSString * _Nullable initialRules SWIFT_DEPRECATED_MSG("initialRules is deprecated and will be removed in a future version.");
+/// Indicates whether the SDK should cache downloaded ad rules.
+/// Defaults to <code>true</code>. Cached rules will be reused when the server is not reachable.
 @property (nonatomic) BOOL shouldCacheRules;
-/// A Bool that indicates whether to skip ad networks that has no consent or not. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling#rule-skipping">Rules Skipping</a>.
+/// Indicates whether to skip ad networks that have no valid consent.
+/// Defaults to <code>false</code>. For more details, see <a href="https://addapptr.gitbook.io/ios-integration/start/consent/general-handling#rule-skipping">Rules Skipping</a>.
 @property (nonatomic) BOOL shouldSkipRules;
-/// A string that represents the test app bundleID. <em>Don’t forget to remove it before going live</em>.
+/// A test app bundle ID. <em>Don’t forget to remove it before going live</em>.
+/// <em>Important</em>: Remove this before releasing your app.
 @property (nonatomic, copy) NSString * _Nullable alternativeBundleId;
-/// A Bool that indicates whether to use the <code>AATConfiguration/alternativeBundleId</code> in the reporting or not.
+/// Whether to report events using the <code>alternativeBundleId</code>.
+/// Defaults to <code>true</code>.
 @property (nonatomic) BOOL shouldReportUsingAlternativeBundleId;
-/// A NSNumber that represents the test account ID that enables you to test your AATKit integration. <em>Don’t forget to remove it before going live</em>. For more information, see <a href="https://addapptr.gitbook.io/ios-integration/start/initialization#test-mode">AATKit Test Mode</a>.
+/// A test account ID used to enable AATKit test mode.
+/// <em>Important</em>: Remove this before releasing your app.
+/// See <a href="https://addapptr.gitbook.io/ios-integration/start/initialization#test-mode">AATKit Test Mode</a>.
 @property (nonatomic, strong) NSNumber * _Nullable testModeAccountId;
-/// A Bool that enables/disables the shake debug screen. True by default. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Debug Shake</a>.
+/// Enables or disables the shake gesture debug screen.
+/// Defaults to <code>true</code>. See <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Debug Shake</a>.
 @property (nonatomic) BOOL useDebugShake;
-/// an Object that describe some advanced configuration for some AdNetworks
+/// A Bool that enables/disables the use of  automatic generated userId. False by default.
+@property (nonatomic) BOOL useAutomaticPPID;
+/// Contains advanced configuration for specific ad networks.
 @property (nonatomic, strong) AATAdNetworksOptions * _Nullable adNetworksOptions;
+/// A textual representation of the configuration instance.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -3664,25 +4264,37 @@ SWIFT_CLASS("_TtC6AATKit16AATConfiguration")
 @end
 
 
+/// Handles consent-related configurations.
 SWIFT_CLASS("_TtC6AATKit24AATConsentImplementation")
 @interface AATConsentImplementation : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// Sets the set of ad networks that should stop if no user consent is given (Objective-C compatible version).
+/// This method maps integer values to corresponding <code>AATAdNetwork</code> enum cases. If an integer is out of bounds,
+/// a warning is logged and that value is ignored.
+/// \param stopSet A set of integer values representing the raw values of <code>AATAdNetwork</code> enums.
+///
 - (void)setNoConsentNetworkStopSet:(NSSet<NSNumber *> * _Nonnull)stopSet;
 @end
 
 
+/// Represents the currency used for pricing.
+/// Used in <code>AATPriceInfo</code> to specify the currency of the impression price.
 typedef SWIFT_ENUM(NSInteger, AATCurrency, open) {
+/// United States Dollar (USD).
   AATCurrencyUSD = 0,
+/// Euro (EUR).
   AATCurrencyEUR = 1,
+/// Unknown or unspecified currency.
   AATCurrencyUnknown = 2,
 };
 
 
+/// Configuration options for DFP (Google AdManager) ads.
 SWIFT_CLASS("_TtC6AATKit13AATDFPOptions")
 @interface AATDFPOptions : NSObject
-/// Init AATDFPOptions
-/// \param inlineBannerMaxHeight The maximum height for DFP inline adaptive banners
+/// Initializes a new instance of <code>AATDFPOptions</code>.
+/// \param inlineBannerMaxHeight The maximum height for DFP inline adaptive banners.
 ///
 - (nonnull instancetype)initWithInlineBannerMaxHeight:(NSInteger)inlineBannerMaxHeight OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -3693,20 +4305,29 @@ SWIFT_CLASS("_TtC6AATKit13AATDFPOptions")
 
 SWIFT_CLASS("_TtC6AATKit12AATDebugInfo")
 @interface AATDebugInfo : NSObject
+/// Optional test bundle identifier used by the app.
 @property (nonatomic, copy) NSString * _Nullable testBundleId;
+/// Optional test identifier used by the app.
 @property (nonatomic, copy) NSString * _Nullable testId;
+/// String representing current consent information.
 @property (nonatomic, copy) NSString * _Nullable consentInfo;
+/// List of placement debug information objects.
 @property (nonatomic, copy) NSArray<PlacementDebugInfo *> * _Nonnull placementDebugInfo;
+/// Extra SDKs available.
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull extraSDK;
+/// Device type information (e.g., “iPhone13,4”).
 @property (nonatomic, copy) NSString * _Nonnull deviceType;
+/// The device’s Identifier for Advertisers string, if available.
 @property (nonatomic, copy) NSString * _Nullable idfaString;
+/// Returns a list of raw string values for available ad networks.
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull availableAdNetworks;
+/// Returns a list of raw string values for disabled ad networks.
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull disabledAdNetworks;
+/// Returns a list of raw string values for removed ad networks.
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull removedAdNetworks;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 @interface AATDebugInfo (SWIFT_EXTENSION(AATKit))
@@ -3714,21 +4335,33 @@ SWIFT_CLASS("_TtC6AATKit12AATDebugInfo")
 
 @class FrequencyCappingDebugInfo;
 
+/// A debug information object for a specific ad placement
 SWIFT_CLASS("_TtCC6AATKit12AATDebugInfo18PlacementDebugInfo")
 @interface PlacementDebugInfo : NSObject
+/// The name of the placement
 @property (nonatomic, copy) NSString * _Nonnull placementName;
+/// The type of the placement
 @property (nonatomic, copy) NSString * _Nonnull placementType;
+/// The active frequency capping rule applied to the placement (if any)
 @property (nonatomic, strong) FrequencyCappingDebugInfo * _Nullable activeFrequencyCapping;
+/// The interval in seconds for auto-reloading banner ads
 @property (nonatomic) NSInteger bannerAutoReloadInterval;
+/// The initial delay in seconds before loading the ad
 @property (nonatomic) NSInteger initialDelay;
+/// The remaining time in seconds before the next ad can be loaded
 @property (nonatomic) NSInteger remainingTime;
+/// An array of loaded ad debug information objects for the placement
 @property (nonatomic, copy) NSArray<AATAdDebugInfo *> * _Nonnull loadedAds;
+/// Indicates whether a new ad is currently being loaded
 @property (nonatomic) BOOL isLoadingNewAd;
+/// The last shown ad
 @property (nonatomic, strong) AATAdDebugInfo * _Nullable lastShownAd;
+/// Indicates whether Ad Quality is currently active for this placement
 @property (nonatomic) BOOL isAdQualityActive;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 
@@ -3804,16 +4437,34 @@ SWIFT_PROTOCOL("_TtP6AATKit11AATDelegate_")
 @protocol AATDelegate
 @optional
 /// Notifies that the AATKit has obtained ad rules.
-/// \param fromTheServer Indicates if the rules came from the server. It will return false if the currently used rules come from the <code>AATSDK.setInitialRules(rules:)</code> method or the cached rules are used.
+/// This method is called when AATKit successfully fetches ad rules.
+/// \param fromTheServer A Boolean indicating the source of the rules:
+/// <ul>
+///   <li>
+///     <code>true</code>: The rules were fetched from the Gravite server.
+///   </li>
+///   <li>
+///     <code>false</code>: The rules are either the cached rules or the ones set with <code>AATSDK.setInitialRules(rules:)</code>.
+///   </li>
+/// </ul>
 ///
 - (void)AATKitObtainedAdRulesFromTheServer:(BOOL)fromTheServer;
-/// Notifies that application’s bundle ID was not recognized by the AddApptr server.
+/// Notifies that the application’s bundle ID was not recognized by the Gravite server.
+/// This typically occurs when the app is not correctly registered in the Gravite dashboard.
 - (void)AATKitUnknownBundleId;
 @end
 
 
+/// Configuration options for DisplayIO ad network.
 SWIFT_CLASS("_TtC6AATKit19AATDisplayIOOptions")
 @interface AATDisplayIOOptions : NSObject
+/// Initializes a new <code>AATDisplayIOOptions</code> instance.
+/// \param showSoundControl Whether to show the sound control.
+///
+/// \param interscrollerHeight The height of the interscroller ad.
+///
+/// \param interscrollerTopOffset The top offset of the interscroller ad.
+///
 - (nonnull instancetype)initWithShowSoundControl:(BOOL)showSoundControl interscrollerHeight:(NSInteger)interscrollerHeight interscrollerTopOffset:(NSInteger)interscrollerTopOffset OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -3821,12 +4472,13 @@ SWIFT_CLASS("_TtC6AATKit19AATDisplayIOOptions")
 
 @class UIColor;
 
+/// Configuration options for Feed Ads.
 SWIFT_CLASS("_TtC6AATKit16AATFeedAdOptions")
 @interface AATFeedAdOptions : NSObject
-/// Init AATFeedAdOptions
-/// \param shutterColor Desired UIColor to be used for shutter, default is nil.
+/// Initializes a new instance of <code>AATFeedAdOptions</code>.
+/// \param shutterColor The desired shutter color. Defaults to <code>nil</code>.
 ///
-/// \param disableSpinner Boolean that describes if spinner should be disabled, default is false.
+/// \param disableSpinner A Boolean indicating if the spinner should be disabled. Defaults to <code>false</code>.
 ///
 - (nonnull instancetype)initWithShutterColor:(UIColor * _Nullable)shutterColor disableSpinner:(BOOL)disableSpinner OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -3870,6 +4522,7 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+/// Last ad information
 @property (nonatomic, readonly, strong) AATAdInfo * _Nullable adInfo;
 /// Checks if the frequency cap has been reached.
 ///
@@ -3879,18 +4532,27 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 @end
 
 
+/// Represents the gender of the user for targeting purposes.
+/// Used in <code>AATUserTargeting</code> to help personalize ad delivery. Defaults to <code>AATGender/unknown</code> if not set or invalid.
 typedef SWIFT_ENUM(NSInteger, AATGender, open) {
+/// A male user.
   AATGenderMale = 0,
+/// A female user.
   AATGenderFemale = 1,
+/// A user who identifies as other.
   AATGenderOther = 2,
+/// An unknown or unspecified gender.
+/// This value will be ignored in targeting requests.
   AATGenderUnknown = 3,
 };
 
 
+/// Represents configuration options for the Gravite RTB integration.
 SWIFT_CLASS("_TtC6AATKit20AATGraviteRTBOptions")
 @interface AATGraviteRTBOptions : NSObject
-/// Init AATGraviteRTBOptions
-/// \param forceCloseButtonForMraid An option to force showing the SDK native close button even if the MRAID creative has one. If the MRAID creative has close button and <code>forceCloseButtonForMraid</code> is true, the MRAID creative would have 2 close buttons
+/// Initializes a new <code>AATGraviteRTBOptions</code> instance.
+/// \param forceCloseButtonForMraid A Boolean flag to force showing the SDK’s native close button even when the MRAID creative includes one.
+/// If set to <code>true</code>, both the SDK button and the creative’s button will be shown.
 ///
 - (nonnull instancetype)initWithForceCloseButtonForMraid:(BOOL)forceCloseButtonForMraid OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -3899,24 +4561,26 @@ SWIFT_CLASS("_TtC6AATKit20AATGraviteRTBOptions")
 
 
 
-/// An object contains impression level information.
+/// Represents impression-level information for an ad.
+/// Contains details such as banner size, ad network, network key, direct deal status, and price info.
 SWIFT_CLASS("_TtC6AATKit13AATImpression")
 @interface AATImpression : NSObject
-/// Impression banner size
+/// The banner size for this impression, e.g. “320x50”. Can be <code>nil</code>.
 @property (nonatomic, readonly, copy) NSString * _Nullable bannerSize;
-/// Impression ad network
+/// The ad network responsible for this impression.
 @property (nonatomic, readonly) enum AATAdNetwork adNetwork;
-/// Impression ad network key
+/// The key identifying the ad network instance.
 @property (nonatomic, readonly, copy) NSString * _Nonnull networkKey;
-/// Is a direct deal impression
+/// Indicates if this impression was generated by a direct deal.
 @property (nonatomic, readonly) BOOL isDirectDeal;
-/// Impression price information
+/// Optional price information related to this impression.
 @property (nonatomic, readonly, strong) AATPriceInfo * _Nullable priceInfo;
+/// A string representation of the impression, useful for debugging and logging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
-/// Gets the name of the impression ad network
+/// Retrieves the name of the ad network for this impression.
 ///
 /// returns:
-/// A string represents the name of the ad network
+/// A string representing the ad network name.
 - (NSString * _Nonnull)getAdNetworkName SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -3956,7 +4620,13 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATInfeedBannerPlacement_")
 - (void)cancelWithRequest:(AATBannerRequest * _Nonnull)request;
 /// Manually Count an Ad Space
 - (void)countAdSpace;
+/// Enables the creative history tracking with a given maximum size.
+/// \param size The maximum number of creative history entries to retain.
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Retrieves the current creative history.
+/// \param completion A closure called with an array of <code>AATPlacementHistoryInfo</code> objects.
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -4006,33 +4676,37 @@ SWIFT_CLASS("_TtC6AATKit9AATLogger")
 @protocol AATManagedConsentDelegate;
 enum AATShowIfNeededSetting : NSInteger;
 
-/// The managed consent (should be initialized with <code>AATCMPProtocol</code>). Will fire the different events of the user consent interactions. See <code>AATManagedConsentDelegate</code>. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/managed-consent">Managed Consent</a>.
+/// The managed consent (should be initialized with <code>AATCMPProtocol</code>). Will fire the different events of the user consent interactions.
+/// See <code>AATManagedConsentDelegate</code>.
+/// For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/managed-consent">Managed Consent</a>.
 SWIFT_CLASS("_TtC6AATKit17AATManagedConsent")
 @interface AATManagedConsent : AATConsentImplementation
-/// Create an instance of <code>AATManagedConsent</code>. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/consent/managed-consent">Managed Consent</a>.
-/// \param cmp an instance of <code>AATCMPProtocol</code>. currently either AATCMPGoogle or AATCMPSourcePoint
+/// Create an instance of <code>AATManagedConsent</code>.
+/// \param cmp An instance of <code>AATCMPProtocol</code> (e.g., AATCMPGoogle, AATCMPSourcePoint).
 ///
-/// \param delegate The delegate that will be notified about CMP events. Must not be null.
+/// \param delegate Delegate notified of CMP events.
 ///
-/// \param showIfNeededSetting an <code>AATShowIfNeededSetting</code> case that specify the consent dialog showing options.
+/// \param showIfNeededSetting The setting controlling if and when the consent showing options.
 ///
 - (nullable instancetype)initWithCmp:(id <AATCMPProtocol> _Nullable)cmp delegate:(id <AATManagedConsentDelegate> _Nonnull)delegate showIfNeededSetting:(enum AATShowIfNeededSetting)showIfNeededSetting OBJC_DESIGNATED_INITIALIZER;
-/// Presents the consent screen ONLY if it is required by the used CMP (for example if no user consent has been set yet). It is advised always to call this method when the first app controller is presented.
-/// \param viewController a view controller instance that will be used to present the CMP
+/// Presents the consent screen if required.
+/// Recommended to call when the app’s initial view controller is presented.
+/// \param viewController View controller used to present the CMP.
 ///
 - (void)showIfNeeded:(UIViewController * _Nonnull)viewController;
-/// Re-show the CMP if it is needed to be shown OR the user has rejected the consent
-/// \param viewController a view controller instance that will be used to present the CMP
+/// Re-show the CMP if it is needed or if the user has rejected the consent.
+/// \param daysAgo Minimum number of days before showing the CMP again.
 ///
-/// \param daysAgo Minimum number of days that should be passed before re-showing the CMP
+/// \param viewController View controller used to present the CMP.
 ///
 - (void)showIfNeededOrRejectedWithDaysAgo:(NSInteger)daysAgo viewController:(UIViewController * _Nonnull)viewController;
-/// Presents the consent screen, allowing the user to change consent settings
-/// \param viewController a view controller instance that will be used to present the CMP
+/// Presents the CMP for editing the consent settings.
+/// \param viewController View controller used to present the CMP.
 ///
 - (void)editConsent:(UIViewController * _Nonnull)viewController;
-/// Tells the CMP to reload. It does not need to be used unless some error occurs. You can call this method for example after receiving <code>CMPFailedToLoad(with:)</code>.
-/// \param viewController a view controller instance that will be used to present the CMP
+/// Reloads the CMP in case it failed previously.
+/// Should be used after a failed attempt such as <code>CMPFailedToLoad(with:)</code>.
+/// \param viewController View controller used to present the CMP.
 ///
 - (void)reload:(UIViewController * _Nonnull)viewController;
 @end
@@ -4052,6 +4726,7 @@ SWIFT_CLASS("_TtC6AATKit17AATManagedConsent")
 @end
 
 
+/// The delegate for receiving events from <code>AATManagedConsent</code> regarding CMP lifecycle.
 SWIFT_PROTOCOL("_TtP6AATKit25AATManagedConsentDelegate_")
 @protocol AATManagedConsentDelegate
 /// CMP is ready and needs to be shown
@@ -4076,31 +4751,45 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATManagedConsentDelegate_")
 - (void)managedConsentCMPFailedToShow:(AATManagedConsent * _Nonnull)managedConsent with:(NSString * _Nonnull)error;
 @end
 
+/// Describes the current state of managed user consent in the SDK.
 typedef SWIFT_ENUM(NSInteger, AATManagedConsentState, open) {
 /// No information about consent state.
   AATManagedConsentStateUnknown = 0,
 /// Consent has been declined by the user.
   AATManagedConsentStateWithheld = 1,
-/// Partial consent has been granted by the user - at least some purposes and some vendors were given consent.
+/// Partial consent has been granted by the user -
+/// at least some purposes and some vendors were given consent.
   AATManagedConsentStateCustom = 2,
 /// Full consent has been granted by the user.
   AATManagedConsentStateObtained = 3,
 };
 
-/// <ul>
-///   <li>
-///     AATKit rule mediation type
-///   </li>
-/// </ul>
+/// Represents the mediation type used by AATKit for ad rules.
 typedef SWIFT_ENUM(NSInteger, AATMediationType, closed) {
+/// Waterfall mediation type.
   AATMediationTypeWATERFALL = 1,
+/// Auction mediation type.
   AATMediationTypeAUCTION = 2,
+/// Mayo mediation type.
   AATMediationTypeMAYO = 3,
 };
 
+
+/// Configuration options for Meta Bidding integrations.
+/// Provides required identifiers for initializing Meta Bidding capabilities.
+SWIFT_CLASS("_TtC6AATKit21AATMetaBiddingOptions")
+@interface AATMetaBiddingOptions : NSObject
+/// Initializes a new instance of <code>AATMetaBiddingOptions</code> with the required platform and security identifiers.
+/// \param platformId The Meta platform identifier.
+///
+- (nonnull instancetype)initWithPlatformId:(NSString * _Nonnull)platformId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol AATMultiSizeBannerPlacementDelegate;
 
-SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_")
+SWIFT_PROTOCOL("_TtP6AATKit27AATMultiSizeBannerPlacement_") SWIFT_DEPRECATED_MSG("Please use AATAutoLoadMultiSizeBannerPlacement instead. For more information please visit https://aatkit.gitbook.io/ios-integration/formats/banner/multi-size-auto-load-banner")
 @protocol AATMultiSizeBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATMultiSizeBannerPlacementDelegate> _Nullable delegate;
@@ -4166,44 +4855,68 @@ SWIFT_PROTOCOL("_TtP6AATKit35AATMultiSizeBannerPlacementDelegate_")
 
 @class AATNativeAdRating;
 
+/// A protocol that defines the data and interactions for a native ad.
+/// This protocol provides a standardized interface for accessing various assets
+/// and managing the lifecycle of a native ad, regardless of the underlying ad network.
 SWIFT_PROTOCOL("_TtP6AATKit15AATNativeAdData_")
 @protocol AATNativeAdData <NSObject>
-/// A String represents the title of the ad, or null if it is not available.
+/// A string representing the <em>title</em> of the ad.
+/// Returns <code>nil</code> if the title is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable title;
-/// A String represents the description of the ad, or null if it is not available.
+/// A string representing the <em>description</em> or body text of the ad.
+/// Returns <code>nil</code> if the description is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable adDescription;
-/// A String represents the call-to-action of the ad, or null if it is not available.
+/// A string representing the <em>call-to-action</em> (e.g., “Learn More”, “Install Now”).
+/// Returns <code>nil</code> if the call-to-action is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable callToAction;
-/// A String represents the URL of the image asset of the ad, or null if it is not available.
+/// A string representing the <em>URL of the main image asset</em> for the ad.
+/// Returns <code>nil</code> if the image URL is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable imageUrl;
-/// A String represents the URL of the icon asset of the ad, or null if it is not available.
+/// A string representing the <em>URL of the icon asset</em> for the ad.
+/// Returns <code>nil</code> if the icon URL is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable iconUrl;
-/// A NativeAdRating instance containing both value and scale of rating, or null if it is not available.
+/// An <code>AATNativeAdRating</code> instance containing both the value and scale of the ad’s rating.
+/// Returns <code>nil</code> if rating information is not available.
 @property (nonatomic, readonly, strong) AATNativeAdRating * _Nullable rating;
-/// A view represents the branding logo or ad information related to the ad network providing the native ad.
-/// Some networks like Facebook Audience Network or Flurry require this special view to be visible on native ads.
+/// A <code>UIView</code> representing the <em>branding logo or ad information</em> provided by the ad network.
+/// Some networks, such as Facebook Audience Network or Flurry, require this specific view
+/// to be visible when their native ads are displayed.
 @property (nonatomic, readonly, strong) UIView * _Nullable brandingLogo;
-/// A String represents the advertiser asset of the ad, or null if it is not available.
+/// A string representing the <em>advertiser’s name</em> or attribution.
+/// Returns <code>nil</code> if the advertiser information is not available.
 @property (nonatomic, readonly, copy) NSString * _Nullable advertiser;
-/// An AATAdNetwork represents the ad network providing the given native ad
+/// An <code>AATAdNetwork</code> enum value indicating the <em>ad network</em> that provided this native ad.
 @property (nonatomic, readonly) enum AATAdNetwork network;
+/// Additional information about the ad, represented by an <code>AATAdInfo</code> object.
+/// Returns <code>nil</code> if no additional information is available.
 @property (nonatomic, readonly, strong) AATAdInfo * _Nullable adInfo;
-/// Binds this native ad instance with given ViewGroup. Needed for click handling and tracking.
-/// \param view View used to render the native ad.
+/// Binds this native ad instance with the provided <code>UIView</code> hierarchy.
+/// This method is crucial for handling user interactions (like clicks) and for ad tracking.
+/// It should be called once the native ad’s content has been rendered into your app’s UI.
+/// \param view The main <code>UIView</code> that encompasses the entire native ad layout.
 ///
-/// \param mainImageView View used to show the main image of the ad. Can be null.
+/// \param mainImageView (Optional) The <code>UIView</code> specifically used to display the main image of the ad.
 ///
-/// \param iconView View used to show the icon of the native ad.
+/// \param iconView (Optional) The <code>UIView</code> specifically used to display the icon of the native ad.
 ///
-/// \param ctaView View used to show the Call To Action of the native ad.
+/// \param ctaView (Optional) The <code>UIView</code> specifically used to display the call-to-action button or label.
 ///
 - (void)attachToView:(UIView * _Nonnull)view mainImageView:(UIView * _Nullable)mainImageView iconView:(UIView * _Nullable)iconView ctaView:(UIView * _Nullable)ctaView;
-/// Removes the binding between the native ad and superview.
-/// Should be called when the native ad will no longer be presented and will be removed from the view hierarchy.
+/// Removes the binding between the native ad and its superview.
+/// This method should be called when the native ad is no longer visible or
+/// is about to be removed from the view hierarchy. It helps in releasing
+/// resources and stopping any ongoing tracking.
 - (void)detachFromLayout;
-/// A Bool tells if the native ad has expired and shall no longer be used.
+/// Checks if the native ad has <em>expired</em> and should no longer be used or displayed.
+///
+/// returns:
+/// <code>true</code> if the ad has expired; otherwise, <code>false</code>.
 - (BOOL)isExpired SWIFT_WARN_UNUSED_RESULT;
-/// A Bool tells if the native ad is ready to be displayed.
+/// Checks if the native ad is <em>ready to be displayed</em>.
+/// This typically means all necessary assets have been loaded and the ad is in a valid state.
+///
+/// returns:
+/// <code>true</code> if the ad is ready for display; otherwise, <code>false</code>.
 - (BOOL)isReady SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -4287,12 +5000,18 @@ SWIFT_PROTOCOL("_TtP6AATKit26AATNativePlacementDelegate_")
 
 
 
+/// Placement history data
 SWIFT_CLASS("_TtC6AATKit23AATPlacementHistoryInfo")
 @interface AATPlacementHistoryInfo : NSObject
+/// The name of the ad network that served the ad.
 @property (nonatomic, copy) NSString * _Nonnull networkName;
+/// A unique key identifying the ad network placement.
 @property (nonatomic, copy) NSString * _Nonnull networkKey;
+/// A timestamp representing when the ad was served.
 @property (nonatomic) NSTimeInterval timestamp;
+/// A snapshot of the ad, if available.
 @property (nonatomic, strong) UIImage * _Nullable snapshot;
+/// An optional identifier for the creative that was displayed.
 @property (nonatomic, copy) NSString * _Nullable creativeID;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -4320,29 +5039,37 @@ SWIFT_CLASS("_TtC6AATKit23AATPluginVersioningTool")
 
 enum AATPricePrecisionType : NSInteger;
 
+/// Contains pricing information for an ad impression.
+/// Includes the CPM price, the precision of the price, and the currency used.
 SWIFT_CLASS("_TtC6AATKit12AATPriceInfo")
 @interface AATPriceInfo : NSObject
-/// Impression CPM price
+/// The CPM price of the impression.
 @property (nonatomic) double price;
-/// Impression precision type
+/// The precision type of the price.
 @property (nonatomic) enum AATPricePrecisionType precision;
-/// Impression currency
+/// The currency of the price.
 @property (nonatomic) enum AATCurrency currency;
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+@interface AATPriceInfo (SWIFT_EXTENSION(AATKit))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+/// Represents the precision type of a price.
+/// Used to indicate how precise the CPM price value is.
 typedef SWIFT_ENUM(NSInteger, AATPricePrecisionType, open) {
-/// Unknown precision type
+/// Unknown precision type.
   AATPricePrecisionTypeUnknown = 0,
-/// Estimated precision type
+/// Estimated precision type.
   AATPricePrecisionTypeEstimated = 1,
-/// Floor price precision type
+/// Floor price precision type.
   AATPricePrecisionTypeFloor = 2,
-/// Publish provided precision type
+/// Publisher-provided precision type.
   AATPricePrecisionTypePublisherProvided = 3,
-/// Precise precision type
+/// Exact or precise price precision type.
   AATPricePrecisionTypeExact = 4,
 };
 
@@ -4357,36 +5084,39 @@ SWIFT_PROTOCOL("_TtP6AATKit18AATReportsDelegate_")
 @end
 
 
-/// The rewarded video incentive reward object
+/// Represents the incentive reward for a rewarded video.
+/// This object contains the reward’s name and value as strings.
 SWIFT_CLASS("_TtC6AATKit9AATReward")
 @interface AATReward : NSObject
-/// String represents the reward name
+/// The name of the reward (e.g., “Coins”, “Points”).
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
-/// String represents the reward value
+/// The value associated with the reward (e.g., “100”).
 @property (nonatomic, readonly, copy) NSString * _Nonnull value;
-/// Creates an instance of <code>AATReward</code>
-/// \param name The reward name
+/// Initializes a new reward object.
+/// \param name The reward name.
 ///
-/// \param value The reward value
+/// \param value The reward value.
 ///
 - (nonnull instancetype)initWithName:(NSString * _Nonnull)name value:(NSString * _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
+/// A string representation of the <code>AATReward</code>, useful for debugging and logging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-/// An object contains rewarded videos server-side verification data
+/// Contains server-side verification data for rewarded video ads.
+/// Used to provide user-specific information for verification during rewarded ad impressions.
 SWIFT_CLASS("_TtC6AATKit20AATRewardedAdSSVInfo")
 @interface AATRewardedAdSSVInfo : NSObject
-/// Impression user id
+/// The impression user identifier.
 @property (nonatomic, copy) NSString * _Nonnull userId;
-/// Custom string
+/// A custom string to send with the verification data. Optional.
 @property (nonatomic, copy) NSString * _Nullable customString;
-/// Create <code>AATRewardedAdSSVInfo</code> instance
-/// \param userId user id
+/// Creates an instance of <code>AATRewardedAdSSVInfo</code>.
+/// \param userId The user identifier associated with the impression.
 ///
-/// \param customString custom string
+/// \param customString An optional custom string to include in the verification data.
 ///
 - (nonnull instancetype)initWithUserId:(NSString * _Nonnull)userId customString:(NSString * _Nullable)customString OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
@@ -4457,235 +5187,265 @@ SWIFT_PROTOCOL("_TtP6AATKit33AATRewardedVideoPlacementDelegate_")
 @protocol AATStickyBannerPlacement;
 @class AATUserTargeting;
 
-/// AATKit main class that has the main public static methods
+/// AATKit main interface providing the core public static API methods.
+/// Use this class to initialize and configure AATKit, manage placements,
+/// and access global SDK settings and utilities.
 SWIFT_CLASS("_TtC6AATKit6AATSDK")
 @interface AATSDK : NSObject
-/// Get AATKit version
+/// Returns the current version of AATKit.
 ///
 /// returns:
-/// AATKit version.
+/// A string representing the SDK version.
 + (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// Initializes the AATKit SDK. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/initialization">AATKit Initialization</a>.
-/// Should be called once during application initialization before any other calls to AATKit.
-/// \param configuration Configuration for AATKit. see <code>AATConfiguration</code>.
+/// Initializes the AATKit SDK.
+/// Call this once during your app’s startup sequence before using any other AATKit APIs.
+/// For more details, visit <a href="https://addapptr.gitbook.io/ios-integration/start/initialization">AATKit Initialization</a>.
+/// \param configuration The configuration object. See <code>AATConfiguration</code>.
 ///
 + (void)initAATKitWith:(AATConfiguration * _Nullable)configuration SWIFT_METHOD_FAMILY(none);
-/// Enables debug screen that will show after shaking the device. It is already enabled by default. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Shake Debug Screen</a>.
+/// Enables the debug screen that appears after shaking the device.
+/// Enabled by default.
+/// For more details, see <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Shake Debug Screen</a>.
 + (void)enableDebugScreen;
-/// Disables the debug screen appearing after shaking the device. It is enabled by default.  For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Shake Debug Screen</a>.
+/// Disables the debug screen triggered by shaking the device.
+/// Enabled by default.
+/// For more details, see <a href="https://addapptr.gitbook.io/ios-integration/advanced/shake-debug">AATKit Shake Debug Screen</a>.
 + (void)disableDebugScreen;
-/// Used for obtaining debug information (the same that would be presented in dialog after shaking the device if debug screen is enabled)
+/// Returns a string containing debug information.
+/// Equivalent to what is shown in the shake-to-debug screen.
 ///
 /// returns:
-/// String with debug information
+/// Debug information as a string.
 + (NSString * _Nonnull)getDebugInfo SWIFT_WARN_UNUSED_RESULT;
-/// Configure the debug screen that will be shown after shaking the device. If not called, the default values of <code>AATDebugScreenConfiguration</code> will be used
-/// \param configuration an instance of <code>AATDebugScreenConfiguration</code>
+/// Configures the appearance and behavior of the shake-to-debug screen.
+/// If not called, the default values of <code>AATDebugScreenConfiguration</code> will be used
+/// \param configuration An instance of <code>AATDebugScreenConfiguration</code>.
 ///
 + (void)configureDebugScreenWithConfiguration:(AATDebugScreenConfiguration * _Nonnull)configuration;
-/// Used for obtaining debug information (the same that would be presented in dialog after shaking the device if debug screen is enabled)
+/// Returns a structured debug info object.
 ///
 /// returns:
-/// <code>AATDebugInfo</code>
+/// An instance of <code>AATDebugInfo</code>, or <code>nil</code> if unavailable.
 + (AATDebugInfo * _Nullable)getDebugInfoObject SWIFT_WARN_UNUSED_RESULT;
-/// Gets the current SDK log level
+/// Returns the current SDK logging level.
 ///
 /// returns:
-/// The current <code>AATLogLevel</code> of the SDK
+/// The current log level. See <code>AATLogLevel</code>.
 + (enum AATLogLevel)getLogLevel SWIFT_WARN_UNUSED_RESULT;
-/// Allows to reconfigure the options for GDPR consent. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/initialization#reconfigure-aatkit">Reconfigure AATKit</a>.
-/// \param configuration New configuration. 
+/// Reconfigures runtime options such as GDPR consent.
+/// Use this when consent or other runtime-configurable parameters change.
+/// See <a href="https://addapptr.gitbook.io/ios-integration/start/initialization#reconfigure-aatkit">Reconfigure AATKit</a>.
+/// \param configuration The new runtime configuration.
 ///
 + (void)reconfigureWithConfiguration:(AATRuntimeConfiguration * _Nonnull)configuration;
-/// Checks if AATKit recognizes given device as tablet.
+/// Checks whether the current device is recognized as a tablet.
 ///
 /// returns:
-/// True if device is recognized as tablet, false otherwise.
+/// <code>true</code> if the device is a tablet, <code>false</code> otherwise.
 + (BOOL)isTablet SWIFT_WARN_UNUSED_RESULT;
-/// Get the <code>AATBannerPlacementSize</code> with maximum width that will fit on a given device in portrait screen orientation.
+/// Returns the banner size that best fits the device in portrait orientation.
 ///
 /// returns:
-/// <code>AATBannerPlacementSize</code> best fitting current device
+/// A suitable <code>AATBannerPlacementSize</code>.
 + (enum AATBannerPlacementSize)maximumBannerSizePortrait SWIFT_WARN_UNUSED_RESULT;
-/// Returns the <code>AATBannerPlacementSize</code> with maximum width that will fit on a given device in landscape screen orientation.
+/// Returns the banner size that best fits the device in landscape orientation.
 ///
 /// returns:
-/// <code>AATBannerPlacementSize</code> best fitting current device
+/// A suitable <code>AATBannerPlacementSize</code>.
 + (enum AATBannerPlacementSize)maximumBannerSizeLandscape SWIFT_WARN_UNUSED_RESULT;
+/// Returns a set of banner sizes that fit the device in landscape orientation.
+/// The Objective-C compatible version of <code>fittingBannerSizesPortrait()</code>.
+///
+/// returns:
+/// A set of compatible <code>AATBannerSize</code> values.
 + (NSSet<NSString *> * _Nonnull)fittingBannerSizesPortrait SWIFT_WARN_UNUSED_RESULT;
+/// Returns a set of banner sizes that fit the device in landscape orientation.
+/// The Objective-C compatible version of <code>fittingBannerSizesLandscape()</code>.
+///
+/// returns:
+/// A set of compatible <code>AATBannerSize</code> values.
 + (NSSet<NSString *> * _Nonnull)fittingBannerSizesLandscape SWIFT_WARN_UNUSED_RESULT;
-/// Notifies AATKit about viewController viewDidAppear. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/formats/general#handling-multiple-view-controllers">Handling View Controllers</a>.
-/// <em>NOTE:</em> This method will update the view controller for all existing placements
-/// \param controller the UIViewController that did appear
+/// Notifies AATKit that a view controller has appeared.
+/// Call this from <code>viewDidAppear</code> for every view controller using AATKit.
+/// For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/formats/general#handling-multiple-view-controllers">Handling View Controllers</a>.
+/// \param controller The visible view controller.
 ///
 + (void)controllerViewDidAppearWithController:(UIViewController * _Nonnull)controller;
-/// Notifies AATKit about the current controller disappear. Invoke this method in every controller that uses AATKit. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/formats/general#handling-multiple-view-controllers">Handling View Controllers</a>.
+/// Notifies AATKit that the current view controller is about to disappear.
+/// Call this from <code>viewWillDisappear</code> for any view controller using AATKit.
 + (void)controllerViewWillDisappear;
-/// Creates placement with given name and size.
-/// If the placement of given name and size already exists, it will be returned.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves a sticky banner placement.
+/// \param name Unique name for the placement (used in AddApptr dashboard).
 ///
-/// \param size Size of placement. Use <code>AATBannerPlacementSize</code>.
-///
-///
-/// returns:
-/// <code>AATStickyBannerPlacement</code> instance, or nil if placement cannot be created.
-+ (id <AATStickyBannerPlacement> _Nullable)createStickyBannerPlacementWithName:(NSString * _Nonnull)name size:(enum AATBannerPlacementSize)size SWIFT_WARN_UNUSED_RESULT;
-/// Creates a multi-size banner placement
-/// \param name placement name
+/// \param size The desired banner size. See <code>AATBannerPlacementSize</code>.
 ///
 ///
 /// returns:
-/// <code>AATMultiSizeBannerPlacement</code> instance, or nil if placement cannot be created.
-+ (id <AATMultiSizeBannerPlacement> _Nullable)createMultiSizeBannerPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-/// Creates placement with given name and size.
-/// If the placement of given name and size already exists, it will be returned.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
-///
-/// \param size Size of placement. Use <code>AATBannerPlacementSize</code>.
+/// An instance of <code>AATStickyBannerPlacement</code>, or <code>nil</code> if creation fails.
++ (id <AATStickyBannerPlacement> _Nullable)createStickyBannerPlacementWithName:(NSString * _Nonnull)name size:(enum AATBannerPlacementSize)size SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Please use createAutoLoadBannerPlacement instead. For more information please visit https://aatkit.gitbook.io/ios-integration/formats/banner/auto-load-banner");
+/// Creates or retrieves a multi-size banner placement.
+/// \param name Unique name for the placement.
 ///
 ///
 /// returns:
-/// <code>AATAutoLoadBannerPlacement</code> instance, or nil if placement cannot be created.
+/// An instance of <code>AATMultiSizeBannerPlacement</code>, or <code>nil</code> if creation fails.
++ (id <AATMultiSizeBannerPlacement> _Nullable)createMultiSizeBannerPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Please use createAutoLoadMultiSizeBannerPlacement instead. For more information please visit https://aatkit.gitbook.io/ios-integration/formats/banner/multi-size-auto-load-banner");
+/// Creates or retrieves an auto-loading banner placement.
+/// \param name Unique name for the placement.
+///
+/// \param size The banner size.
+///
+///
+/// returns:
+/// An instance of <code>AATAutoLoadBannerPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATAutoLoadBannerPlacement> _Nullable)createAutoLoadBannerPlacementWithName:(NSString * _Nonnull)name size:(enum AATBannerPlacementSize)size SWIFT_WARN_UNUSED_RESULT;
-/// Creates a multi-size banner placement
-/// \param name placement name
+/// Creates or retrieves an auto-loading multi-size banner placement.
+/// \param name Unique name for the placement.
 ///
 ///
 /// returns:
-/// <code>AATMultiSizeBannerPlacement</code> instance, or nil if placement cannot be created.
+/// An instance of <code>AATAutoLoadMultiSizeBannerPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATAutoLoadMultiSizeBannerPlacement> _Nullable)createAutoLoadMultiSizeBannerPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-/// Creates a new banner placement. If the banner placement of given name already exists, it will be returned.
-/// The placement will create a copy of the configuration.Any changes made to the configuration after placement is created will be ignored.
-/// The placement will ignore any changes made to configuration after it was created.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves an infeed banner placement.
+/// A copy of the configuration is made. Subsequent changes to the config have no effect.
+/// \param name Unique name for the placement.
 ///
-/// \param configuration The <code>AATBannerConfiguration</code> for this placement.
+/// \param configuration The banner configuration.
 ///
 ///
 /// returns:
-/// Banner placement instance, or null if the placement cannot be created.
+/// An <code>AATInfeedBannerPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATInfeedBannerPlacement> _Nullable)createInfeedBannerPlacementWithName:(NSString * _Nonnull)name configuration:(AATBannerConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
-/// Creates a new fullscreen ad placement.
-/// If the fullscreen ad placement of given name already exists, it will be returned.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves a fullscreen ad placement.
+/// \param name Unique name for the placement.
 ///
 ///
 /// returns:
-/// AATFullscreenPlacement, or nil if placement cannot be created.
+/// An <code>AATFullscreenPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATFullscreenPlacement> _Nullable)createFullscreenPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-/// Creates a new rewarded video placement.
-/// If the rewarded video ad placement of given name already exists, it will be returned.
-/// Only one Rewarded Video placement can be used within the app.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves a rewarded video placement.
+/// Only one rewarded video placement is supported per app.
+/// \param name Unique name for the placement.
 ///
 ///
 /// returns:
-/// AATPlacement, or nil if placement cannot be created.
+/// An <code>AATRewardedVideoPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATRewardedVideoPlacement> _Nullable)createRewardedVideoPlacementWithName:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
-/// Creates a new AppOpen placement.
-/// <em>NOTE:</em> You should register your <code>placementName</code> on the AddApptr website
-/// if you intend to target it with specific rules.
-/// \param placementName Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves an App Open ad placement.
+/// \param placementName Unique name for the placement.
 ///
 ///
 /// returns:
-/// AATAppOpenAdPlacement, or nil if placement cannot be created.
+/// An <code>AATAppOpenAdPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATAppOpenAdPlacement> _Nullable)createAppOpenAdPlacementWithPlacementName:(NSString * _Nonnull)placementName SWIFT_WARN_UNUSED_RESULT;
-/// Creates a new native ad placement.
-/// If the native ad placement of given name already exists, it will be returned.
-/// \param name Unique name of placement. The same name will be used in addapptr.com account.
+/// Creates or retrieves a native ad placement.
+/// \param name Unique name for the placement.
 ///
-/// \param supportsMainImage True if the native ads returned should have main image asset. Keep in mind that if main image is used, it has to be displayed.
+/// \param supportsMainImage Indicates whether returned ads should include a main image.
 ///
 ///
 /// returns:
-/// AATPlacement, or nil if placement cannot be created.
+/// An <code>AATNativeAdPlacement</code>, or <code>nil</code> if creation fails.
 + (id <AATNativeAdPlacement> _Nullable)createNativeAdPlacementWithName:(NSString * _Nonnull)name supportsMainImage:(BOOL)supportsMainImage SWIFT_WARN_UNUSED_RESULT;
-+ (id <AATBannerCache> _Nullable)createBannerCacheWithConfiguration:(AATBannerCacheConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
-/// Set NativeAd icon position.
-/// Set NativeAd icon position. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/formats/native-ads/network-specifics/native-ads-google#change-native-ad-aatadchoicesiconposition">Change Native Ad AATAdChoicesIconPosition</a>.
-+ (void)setAdChoicesIconPositionWithPosition:(enum AATAdChoicesIconPosition)position;
-/// Allows to enable or disable selected ad networks. By default all networks are enabled. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/disabling-ad-networks">Disable/Enable Ad Networks</a>.
-/// \param network Ad network.
+/// Creates or retrieves a banner cache.
+/// \param configuration Banner cache configurations
 ///
-/// \param enabled True to enable, false to disable.
+///
+/// returns:
+/// An <code>AATBannerCache</code>, or <code>nil</code> if creation fails.
++ (id <AATBannerCache> _Nullable)createBannerCacheWithConfiguration:(AATBannerCacheConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
+/// Sets the position for the native ad icon (AdChoices).
+/// \param position Desired icon position. See <code>AATAdChoicesIconPosition</code>.
+///
++ (void)setAdChoicesIconPositionWithPosition:(enum AATAdChoicesIconPosition)position;
+/// Enables or disables a specific ad network.
+/// \param network The ad network.
+///
+/// \param enabled <code>true</code> to enable, <code>false</code> to disable.
 ///
 + (void)setNetworkEnabledWithNetwork:(enum AATAdNetwork)network enabled:(BOOL)enabled;
-/// Returns true if ad network is enabled, false otherwise.
-/// \param network Ad network.
+/// Checks whether a given ad network is enabled.
+/// \param network The ad network.
 ///
 ///
 /// returns:
-/// True if ad network is enabled, false otherwise.
+/// <code>true</code> if enabled, <code>false</code> otherwise.
 + (BOOL)isNetworkEnabledWithNetwork:(enum AATAdNetwork)network SWIFT_WARN_UNUSED_RESULT;
-/// Get option from AATKit.
-/// Options can be obtained from the server or set using the <code>setOption(optionName:optionValue:)</code> method.
-/// \param optionName The name of the option to be checked.
+/// Retrieves the value of a given SDK option.
+/// Options can be configured via the SDK or fetched from the server.
+/// \param optionName The name of the option.
 ///
 ///
 /// returns:
-/// Value of the option or null if it is not set.
+/// The value of the option, or <code>nil</code> if not set.
 + (NSString * _Nullable)getOptionWithOptionName:(NSString * _Nonnull)optionName SWIFT_WARN_UNUSED_RESULT;
-/// Convenience method for checking if option is enabled in AATKit.
-/// Options can be obtained from the server or set using the <code>setOption(optionName:optionValue:)</code> method.
-/// \param optionName The name of the option to be checked.
+/// Checks whether a given option is enabled.
+/// An option is considered enabled if its value is “Yes”.
+/// \param optionName The name of the option.
 ///
 ///
 /// returns:
-/// True if option value is “Yes”, false otherwise.
+/// <code>true</code> if the option is enabled, <code>false</code> otherwise.
 + (BOOL)isOptionEnabledWithOptionName:(NSString * _Nonnull)optionName SWIFT_WARN_UNUSED_RESULT;
-/// Set option in AATKit. Options can also be obtained from the server.
-/// \param optionName The name of the option to be set.
+/// Sets the value for a custom SDK option.
+/// \param optionName The name of the option.
 ///
-/// \param optionValue The value of the option to be set.
+/// \param optionValue The value to assign to the option.
 ///
 + (void)setOptionWithOptionName:(NSString * _Nonnull)optionName optionValue:(NSString * _Nonnull)optionValue;
-/// Sets the targeting information for the application. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/targeting">AATKit Targeting</a>.
-/// This information will be used only if no placement-specific targeting is available.
-/// \param info Map with targeting information.
+/// Sets global targeting information for the app.
+/// This will be used only if no placement-specific targeting is set.
+/// For more info, see: https://addapptr.gitbook.io/ios-integration/advanced/targeting
+/// \param info A dictionary of targeting categories and values.
 ///
 + (void)setTargetingInfoWithInfo:(NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)info;
-/// Sets the user targeting information for the application.
-/// see
-/// \param userTargeting an instance of <code>AATUserTargeting</code>.
+/// Sets structured user targeting information.
+/// \param userTargeting An instance of <code>AATUserTargeting</code>.
 ///
 + (void)setUserTargetingWithUserTargeting:(AATUserTargeting * _Nonnull)userTargeting;
-/// Sets the content targeting url for the application. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/targeting#set-global-targeting-keywords">Set Global Content Targeting URL</a>.
-/// This information will be used only if no placement-specific targeting is available.
-/// \param targetingUrl The targeting url
+/// Sets a content-level targeting URL.
+/// This is used globally unless overridden per placement.
+/// For more info, see: https://addapptr.gitbook.io/ios-integration/advanced/targeting#set-global-targeting-keywords
+/// \param targetingUrl The targeting URL string.
 ///
 + (void)setContentTargetingUrlWithTargetingUrl:(NSString * _Nonnull)targetingUrl;
-/// Adds an ad network to the list of ad networks that receive targeting keywords (if any set).
-/// Adds an ad network to the list of ad networks that receive targeting keywords (if any set). For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/targeting#limit-ad-network-specific-keywords">Limit Ad Network specific Keywords</a>.
-/// \param network Chosen ad network.
+/// Adds a specific ad network to receive keyword targeting.
+/// For more info, see: https://addapptr.gitbook.io/ios-integration/advanced/targeting#limit-ad-network-specific-keywords
+/// \param network The target ad network.
 ///
 + (void)addAdNetworkForKeywordTargetingWithNetwork:(enum AATAdNetwork)network;
-/// Removes an ad network from the list of ad networks that receive targeting keywords (if any set). For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/targeting#limit-ad-network-specific-keywords">Limit Ad Network specific Keywords</a>.
-/// If no ad networks are added to the list, any set keywords will be delivered to all ad networks supporting keyword targeting.
-/// \param network Chosen ad network.
+/// Removes an ad network from receiving keyword targeting.
+/// If no network is explicitly added, all compatible networks will receive keywords.
+/// For more info, see: https://addapptr.gitbook.io/ios-integration/advanced/targeting#limit-ad-network-specific-keywords
+/// \param network The ad network to remove.
 ///
 + (void)removeAdNetworkForKeywordTargetingWithNetwork:(enum AATAdNetwork)network;
-/// Allows to set log level from code. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/start/initialization#log-levels">Use Log Levels</a>.
-/// \param logLevel Desired log level, as in <code>AATLogLevel</code> enum.
+/// Sets the log level for SDK output.
+/// \param logLevel Desired log level from the <code>AATLogLevel</code> enum.
 ///
 + (void)setLogLevelWithLogLevel:(enum AATLogLevel)logLevel;
-/// Mute video ads for ad networks which support muting video ads
-/// \param isMuted A bool to mute or not
+/// Mutes video ads for supported networks.
+/// \param isMuted <code>true</code> to mute, <code>false</code> to allow sound.
 ///
 + (void)setVideoAdsMuted:(BOOL)isMuted;
+/// Indicates whether the app is directed at children.
+/// \param isChildDirected <code>true</code> if the app targets children.
+///
 + (void)setIsChildDirected:(BOOL)isChildDirected;
-/// Sets the reports delegate that will receive reporting event callbacks. For more information, visit <a href="https://addapptr.gitbook.io/ios-integration/advanced/advanced-delegates/reports-delegate">Reports Delegate</a>.
-/// \param delegate the object that will receive reporting event callbacks
+/// Assigns the reports delegate to receive SDK reporting callbacks.
+/// \param delegate Object conforming to <code>AATReportsDelegate</code>.
 ///
 + (void)setReportsDelegate:(id <AATReportsDelegate> _Nonnull)delegate;
-/// Checks if consent is opt-in or not
+/// Checks if consent mode is opt-in.
 ///
 /// returns:
-/// True if consent is opt-in
+/// <code>true</code> if opt-in is required.
 + (BOOL)isConsentOptIn SWIFT_WARN_UNUSED_RESULT;
+/// Sets server-side verification info for rewarded ads.
+/// \param info An <code>AATRewardedAdSSVInfo</code> object.
+///
 + (void)setRewardedAdSSVInfoWithInfo:(AATRewardedAdSSVInfo * _Nonnull)info;
 @end
 
@@ -4719,6 +5479,7 @@ SWIFT_CLASS("_TtC6AATKit16AATSimpleConsent")
 @end
 
 
+/// A delegate to receive statistics events
 SWIFT_PROTOCOL("_TtP6AATKit21AATStatisticsDelegate_")
 @protocol AATStatisticsDelegate
 /// Notifies that an ad space has been counted.
@@ -4775,7 +5536,7 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATStatisticsDelegate_")
 
 @protocol AATStickyBannerPlacementDelegate;
 
-SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_")
+SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_") SWIFT_DEPRECATED_MSG("Please use AATAutoLoadBannerPlacement instead. For more information please visit https://aatkit.gitbook.io/ios-integration/formats/banner/auto-load-banner")
 @protocol AATStickyBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATStickyBannerPlacementDelegate> _Nullable delegate;
@@ -4834,7 +5595,13 @@ SWIFT_PROTOCOL("_TtP6AATKit24AATStickyBannerPlacement_")
 @property (nonatomic, copy) NSString * _Nullable contentTargetingUrl;
 /// note: not all ad-networks supports multiple urls
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable multiContentTargetingUrls;
+/// Enables the creative history tracking with a given maximum size.
+/// \param size The maximum number of creative history entries to retain.
+///
 - (void)enableCreativeHistoryWithSize:(NSInteger)size;
+/// Retrieves the current creative history.
+/// \param completion A closure called with an array of <code>AATPlacementHistoryInfo</code> objects.
+///
 - (void)getCreativeHistoryWithCompletion:(void (^ _Nonnull)(NSArray<AATPlacementHistoryInfo *> * _Nonnull))completion;
 @end
 
@@ -4848,27 +5615,52 @@ SWIFT_PROTOCOL("_TtP6AATKit32AATStickyBannerPlacementDelegate_")
 @class InterstitialAdOptions;
 @class RewardedVideoOptions;
 
+/// Configuration options for SuperAwesome ad network integrations.
 SWIFT_CLASS("_TtC6AATKit22AATSuperAwesomeOptions")
 @interface AATSuperAwesomeOptions : NSObject
+/// Initializes a new <code>AATSuperAwesomeOptions</code> instance.
+/// \param bannerOptions Banner ad options.
+///
+/// \param interstitialAdOptions Interstitial ad options.
+///
+/// \param rewardedVideoOptionsOptions Rewarded video ad options.
+///
 - (nonnull instancetype)initWithBannerOptions:(BannerOptions * _Nullable)bannerOptions interstitialAdOptions:(InterstitialAdOptions * _Nullable)interstitialAdOptions rewardedVideoOptionsOptions:(RewardedVideoOptions * _Nullable)rewardedVideoOptionsOptions OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+/// Orientation options for ads.
 typedef SWIFT_ENUM(NSInteger, Orientation, closed) {
+/// Any orientation.
   OrientationAny = 0,
+/// Portrait only.
   OrientationPortrait = 1,
+/// Landscape only.
   OrientationLandscape = 2,
 };
 
+/// Close button display behavior.
 typedef SWIFT_ENUM(NSInteger, CloseButtonState, closed) {
+/// Close button enabled with default delay.
   CloseButtonStateEnabled = 0,
+/// Close button enabled with no delay.
   CloseButtonStateEnabledNoDelay = 1,
 };
 
 
+/// Base network options for SuperAwesome ads.
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions14NetworkOptions")
 @interface NetworkOptions : NSObject
+/// Initializes a new <code>NetworkOptions</code> instance.
+/// \param parentalGateEnabled Enable or disable the Parental Gate.
+///
+/// \param bumperPageEnabled Enable or disable the Bumper page.
+///
+/// \param bumperPageCustomAppName Custom app name for the Bumper page.
+///
+/// \param bumperPageLogo Custom logo for the Bumper page.
+///
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -4879,20 +5671,21 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions14NetworkOptions")
 @end
 
 
+/// Configuration options for SuperAwesome interstitial ads.
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @interface InterstitialAdOptions : NetworkOptions
-/// init <code>AATSuperAwesomeOptions/InterstitialAdOptions-swift.class</code>
-/// \param orientation ad orientation
+/// Initializes a new <code>InterstitialAdOptions</code> instance.
+/// \param orientation The orientation to display the ad. Default is <code>.any</code>.
 ///
-/// \param closeButtonState close button state of type <code>AATSuperAwesomeOptions/CloseButtonState</code>
+/// \param closeButtonState The state of the close button, of type <code>AATSuperAwesomeOptions/CloseButtonState</code>. Default is <code>.enabled</code>.
 ///
-/// \param parentalGateEnabled Enable/disable the Parental gate
+/// \param parentalGateEnabled Enable or disable the Parental Gate. Default is <code>false</code>.
 ///
-/// \param bumperPageEnabled Enable/disable the bumper page
+/// \param bumperPageEnabled Enable or disable the Bumper page. Default is <code>false</code>.
 ///
-/// \param bumperPageCustomAppName bumper page app name
+/// \param bumperPageCustomAppName Custom app name for the Bumper page.
 ///
-/// \param bumperPageLogo bumper page logo
+/// \param bumperPageLogo Custom logo image for the Bumper page.
 ///
 - (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
@@ -4903,18 +5696,19 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @end
 
 
+/// Banner ad options specific to SuperAwesome.
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
 @interface BannerOptions : NetworkOptions
-/// init <code>AATSuperAwesomeOptions/BannerOptions-swift.class</code>
-/// \param parentalGateEnabled Enable/disable the Parental gate
+/// Initializes a new <code>BannerOptions</code> instance.
+/// \param parentalGateEnabled Enables or disables the Parental Gate. Default is <code>false</code>.
 ///
-/// \param bumperPageEnabled Enable/disable the bumper page
+/// \param bumperPageEnabled Enables or disables the Bumper page. Default is <code>false</code>.
 ///
-/// \param bumperPageCustomAppName bumper page app name
+/// \param bumperPageCustomAppName Custom app name to display on the Bumper page.
 ///
-/// \param bumperPageLogo bumper page logo
+/// \param bumperPageLogo Custom logo image for the Bumper page.
 ///
-/// \param isBackgroundTransparent Enable/disable transparent background
+/// \param isBackgroundTransparent Enables or disables transparent background. Default is <code>true</code>.
 ///
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
@@ -4925,26 +5719,27 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
 @end
 
 
+/// Configuration options for SuperAwesome rewarded video ads.
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions20RewardedVideoOptions")
 @interface RewardedVideoOptions : InterstitialAdOptions
-/// init <code>AATSuperAwesomeOptions/RewardedVideoOptions</code>
-/// \param closeButtonAtEnd enable or disable auto-closing at the end
+/// Initializes a new <code>RewardedVideoOptions</code> instance.
+/// \param closeButtonAtEnd Enables or disables auto-closing at the end. Default is <code>false</code>.
 ///
-/// \param closeButtonWarningEnabled enable or disable close button warning
+/// \param smallClickEnabled Enables or disables the small click button. Default is <code>false</code>.
 ///
-/// \param smallClickEnabled enable or disable small close button click
+/// \param closeButtonWarningEnabled Enables or disables the close button warning. Default is <code>false</code>.
 ///
-/// \param orientation ad orientation
+/// \param orientation The ad orientation. Default is <code>.any</code>.
 ///
-/// \param closeButtonState close button state of type <code>AATSuperAwesomeOptions/CloseButtonState</code>
+/// \param closeButtonState The state of the close button of type <code>AATSuperAwesomeOptions/CloseButtonState</code>. Default is <code>.enabled</code>.
 ///
-/// \param parentalGateEnabled Enable/disable the Parental gate
+/// \param parentalGateEnabled Enables or disables the Parental Gate. Default is <code>false</code>.
 ///
-/// \param bumperPageEnabled Enable/disable the bumper page
+/// \param bumperPageEnabled Enables or disables the Bumper page. Default is <code>false</code>.
 ///
-/// \param bumperPageCustomAppName bumper page app name
+/// \param bumperPageCustomAppName Custom app name for the Bumper page.
 ///
-/// \param bumperPageLogo bumper page logo
+/// \param bumperPageLogo Custom logo image for the Bumper page.
 ///
 - (nonnull instancetype)initWithCloseButtonAtEnd:(BOOL)closeButtonAtEnd smallClickEnabled:(BOOL)smallClickEnabled closeButtonWarningEnabled:(BOOL)closeButtonWarningEnabled orientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
@@ -4959,28 +5754,20 @@ SWIFT_CLASS("_TtC6AATKit18AATSupplyChainData")
 @end
 
 
+/// Represents user-specific targeting information used by AATKit.
 SWIFT_CLASS("_TtC6AATKit16AATUserTargeting")
 @interface AATUserTargeting : NSObject
-/// initialize <code>AATUserTargeting</code>
-/// \param userId user id
+/// Initializes a new instance of <code>AATUserTargeting</code> with optional user-specific targeting values.
+/// \param userId A unique identifier for the user.
 ///
-/// \param gender user gender.
-/// <ul>
-///   <li>
-///     <em>Important</em>: The default value is <code>AATGender.unknown</code> and will be ignored while performing the request.
-///   </li>
-/// </ul>
+/// \param gender The user’s gender. Default is <code>AATGender/unknown</code>.
 ///
-/// \param yearOfBirth user year of birth.
-/// <ul>
-///   <li>
-///     <em>Important</em>: it has to be a 4-digit number
-///   </li>
-/// </ul>
+/// \param yearOfBirth The user’s year of birth. Must be a 4-digit number; otherwise it will be ignored.
 ///
-/// \param keywords targeting keywords
+/// \param keywords Targeting keywords associated with the user.
 ///
 - (nonnull instancetype)initWithUserId:(NSString * _Nullable)userId gender:(enum AATGender)gender yearOfBirth:(NSNumber * _Nullable)yearOfBirth keywords:(NSArray<NSString *> * _Nullable)keywords OBJC_DESIGNATED_INITIALIZER;
+/// A string representation of the <code>AATUserTargeting</code> instance, useful for debugging.
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -5005,6 +5792,7 @@ SWIFT_CLASS("_TtC6AATKit16AATVendorConsent")
 @end
 
 
+/// The delegate for receiving events from <code>AATVendorConsent</code>.
 SWIFT_PROTOCOL("_TtP6AATKit24AATVendorConsentDelegate_")
 @protocol AATVendorConsentDelegate
 /// Gets the consent for an ad network.
@@ -5049,18 +5837,24 @@ typedef SWIFT_ENUM(NSInteger, NonIABConsent, open) {
 @end
 
 
+/// Placement frequency capping information
 SWIFT_CLASS("_TtCCC6AATKit12AATDebugInfo18PlacementDebugInfo25FrequencyCappingDebugInfo")
 @interface FrequencyCappingDebugInfo : NSObject
+/// Maximum number of impressions allowed during a single session
 @property (nonatomic) NSInteger maxImpressionsPerSession;
+/// Maximum number of impressions allowed within one hour
 @property (nonatomic) NSInteger maxImpressionsPerHour;
+/// Maximum number of impressions allowed in a 24-hour period
 @property (nonatomic) NSInteger maxImpressionsPerDay;
+/// Maximum number of impressions allowed in a 7-day period
 @property (nonatomic) NSInteger maxImpressionsPerWeek;
+/// Maximum number of impressions allowed in a calendar month
 @property (nonatomic) NSInteger maxImpressionsPerMonth;
+/// Minimum required time (in seconds) between two impressions
 @property (nonatomic) NSTimeInterval minTimeBetweenImpressions;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 
 

@@ -4,85 +4,37 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/BaseConnectionRequest.h</key>
+		<key>Headers/KidozOMIDService.h</key>
 		<data>
-		OloZx5hV/h/2NnerSRAC2PODzO0=
+		wGF+rxu7EUXTMGAqsklOM62rDZ4=
 		</data>
-		<key>Headers/DeviceUtils.h</key>
+		<key>Headers/KidozOMIDSessionManager.h</key>
 		<data>
-		StfhXXgjnPwRTAVKvHpos39Fczk=
-		</data>
-		<key>Headers/FullscreenViewController.h</key>
-		<data>
-		3MSCcMjsSwT+mvkd6JigZVCFdD0=
-		</data>
-		<key>Headers/KDZEnums.h</key>
-		<data>
-		USXL6Pb1NKQlnzLFPicX9hz3ae8=
-		</data>
-		<key>Headers/KDZReachability.h</key>
-		<data>
-		O6nrIP70YKGFbIqBkCnvvaIEkAA=
-		</data>
-		<key>Headers/KZParentalLockViewController.h</key>
-		<data>
-		U9kd1XyNZYDlQxyh2xbIPr8O2+w=
-		</data>
-		<key>Headers/Kidoz.h</key>
-		<data>
-		jNz5207A7tHsGbUreTTOgmOftBI=
-		</data>
-		<key>Headers/KidozLog.h</key>
-		<data>
-		eVQar6ZFBgmXkPIihv3+dY27tyg=
+		KwKGF2dmYx1BsxlMcARBhnBKT68=
 		</data>
 		<key>Headers/KidozSDK-Bridging-Header.h</key>
 		<data>
-		P6fnpl7Y0KULkrlOJYDz6/tMB8M=
+		JNMG3XCvZ4CPkAcxS0JJrMv9IHo=
 		</data>
 		<key>Headers/KidozSDK-Swift.h</key>
 		<data>
-		Q4wNdeLGROrNzxMXOjGYru/45IY=
+		xd5kVd7X/t1dqdBkubIeBij8zXA=
 		</data>
 		<key>Headers/KidozSDK.h</key>
 		<data>
-		JndgqDKHXUaT0vrF8/atRNhw/g4=
-		</data>
-		<key>Headers/OMService.h</key>
-		<data>
-		04LlFWDEEwLj+Ht7R372pnfpacg=
-		</data>
-		<key>Headers/OMSessionAdapter.h</key>
-		<data>
-		rE6ArNmv/24a7pdpMSOEM6zR+Vw=
-		</data>
-		<key>Headers/OMSessionProtocol.h</key>
-		<data>
-		LrIMeVmA3OoRai8RooV1n9sUkr8=
-		</data>
-		<key>Headers/PropertiesObj.h</key>
-		<data>
-		pZMrYr0LOzK0nbu9zW/wcuA9IIQ=
-		</data>
-		<key>Headers/SDKAPIManager.h</key>
-		<data>
-		o++FYJfHHuIMAY8l2RyZ24njHpc=
-		</data>
-		<key>Headers/UIUtils.h</key>
-		<data>
-		yy/Y9LHW2mkMG+bSypMsfAzfRfg=
+		s2Hd2XxdDwWUyn7tThZcP1j5aWA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ltjo4whMPkNWRswrrYHhorLAxls=
+		1R7xj9h6kouNR+SPMZFPbnq63hE=
 		</data>
 		<key>Modules/KidozSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		H/vmLx/5TA5hIvyP2A+VwIEdxe4=
+		FhmvLogtIANQX8PWRKu00doIZHg=
 		</data>
 		<key>Modules/KidozSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		8p0CsN1DSeN+Vut0msoTwz2JJs0=
+		Vdjb8XCRoJrbOMc+Z1gb4XhbIhE=
 		</data>
 		<key>Modules/KidozSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -90,11 +42,11 @@
 		</data>
 		<key>Modules/KidozSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		8p0CsN1DSeN+Vut0msoTwz2JJs0=
+		Vdjb8XCRoJrbOMc+Z1gb4XhbIhE=
 		</data>
 		<key>Modules/KidozSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		EHF57uKZtU6/8DtesF5xz7WISXo=
+		7HD9vCKAy/FLV55mJdB1ThoNX9k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,213 +59,81 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/BaseConnectionRequest.h</key>
+		<key>Headers/KidozOMIDService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OloZx5hV/h/2NnerSRAC2PODzO0=
+			wGF+rxu7EUXTMGAqsklOM62rDZ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			MGdFpcu6Af/dp4AAHIR64CwfDyexW5yqKxFeQ29LKsY=
+			iG09vYc6MIyqGvTUn6xrKUcSNqepbu7M5MorOrIUKqk=
 			</data>
 		</dict>
-		<key>Headers/DeviceUtils.h</key>
+		<key>Headers/KidozOMIDSessionManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			StfhXXgjnPwRTAVKvHpos39Fczk=
+			KwKGF2dmYx1BsxlMcARBhnBKT68=
 			</data>
 			<key>hash2</key>
 			<data>
-			ngN5PHWu/hQ8B8S3VAHzJix1XPDJtXLO/RRyaKqUta4=
-			</data>
-		</dict>
-		<key>Headers/FullscreenViewController.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3MSCcMjsSwT+mvkd6JigZVCFdD0=
-			</data>
-			<key>hash2</key>
-			<data>
-			Qm/DeO+mHBIibIY8iTqExMrZmi8wGJ2UyzCppAsVjIY=
-			</data>
-		</dict>
-		<key>Headers/KDZEnums.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			USXL6Pb1NKQlnzLFPicX9hz3ae8=
-			</data>
-			<key>hash2</key>
-			<data>
-			jzVYNz7XQVcj4dUs3NfMovHY7DYsyirwDg76MKEug0c=
-			</data>
-		</dict>
-		<key>Headers/KDZReachability.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			O6nrIP70YKGFbIqBkCnvvaIEkAA=
-			</data>
-			<key>hash2</key>
-			<data>
-			Avu5Bf5NfO/OUQIszxmAlgPF7h3jVW2bDXZCXoZjjsw=
-			</data>
-		</dict>
-		<key>Headers/KZParentalLockViewController.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			U9kd1XyNZYDlQxyh2xbIPr8O2+w=
-			</data>
-			<key>hash2</key>
-			<data>
-			inPEoAEmwkMNB/X3h0qSdk1+tBAdSm50Mko/e1xGV/8=
-			</data>
-		</dict>
-		<key>Headers/Kidoz.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jNz5207A7tHsGbUreTTOgmOftBI=
-			</data>
-			<key>hash2</key>
-			<data>
-			eOifSnld3gcgbyLMMtC1yQCWOd4Z1JyUyCz1/mvKEP8=
-			</data>
-		</dict>
-		<key>Headers/KidozLog.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			eVQar6ZFBgmXkPIihv3+dY27tyg=
-			</data>
-			<key>hash2</key>
-			<data>
-			zlcJdgGVBaiIs6CFFoG2Vfb1gp3XyAJQRaUHFMNI+pE=
+			ngnEaVk0/uSVqH6SsBv0SUp2Pg0ItYoOGw7/jTA2ciE=
 			</data>
 		</dict>
 		<key>Headers/KidozSDK-Bridging-Header.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P6fnpl7Y0KULkrlOJYDz6/tMB8M=
+			JNMG3XCvZ4CPkAcxS0JJrMv9IHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			gRQUuWP6m4RGrhq7KxdhjPMf+DzU904HSqFRGhpsc5s=
+			uFsaoaRszkyCd4uayXodjgS79gYk5t2xJVJ1988Fk9M=
 			</data>
 		</dict>
 		<key>Headers/KidozSDK-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q4wNdeLGROrNzxMXOjGYru/45IY=
+			xd5kVd7X/t1dqdBkubIeBij8zXA=
 			</data>
 			<key>hash2</key>
 			<data>
-			v1M0aAYg+V5iYdSkQBJuXI+YtxNnu7TDeIYaL0j3+8s=
+			yoQRiHbhyU9Y5cuVImc+qV6r2cuaWo3bZ7bSIw6oifU=
 			</data>
 		</dict>
 		<key>Headers/KidozSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JndgqDKHXUaT0vrF8/atRNhw/g4=
+			s2Hd2XxdDwWUyn7tThZcP1j5aWA=
 			</data>
 			<key>hash2</key>
 			<data>
-			VXY5JYP1Z3o8H0mOu9EOis509arWCbNiLQJgGT2CVBU=
-			</data>
-		</dict>
-		<key>Headers/OMService.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			04LlFWDEEwLj+Ht7R372pnfpacg=
-			</data>
-			<key>hash2</key>
-			<data>
-			kYgnvzDXn1fs8khw4POcJePWRH/NsTlNqDwDdvXx0gc=
-			</data>
-		</dict>
-		<key>Headers/OMSessionAdapter.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rE6ArNmv/24a7pdpMSOEM6zR+Vw=
-			</data>
-			<key>hash2</key>
-			<data>
-			KkNygLgrZ3uQGBHqTUQS5lAIxDK0eP1Fv32XTUS9vn4=
-			</data>
-		</dict>
-		<key>Headers/OMSessionProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LrIMeVmA3OoRai8RooV1n9sUkr8=
-			</data>
-			<key>hash2</key>
-			<data>
-			LunCcMdduIg7rBn5WVx+flC0I3DgtXSjLtRHlXuEyAg=
-			</data>
-		</dict>
-		<key>Headers/PropertiesObj.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pZMrYr0LOzK0nbu9zW/wcuA9IIQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			nBFrKWUnOou1zgrrhJ3yinkuKyFIesglCpINX5va8/A=
-			</data>
-		</dict>
-		<key>Headers/SDKAPIManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			o++FYJfHHuIMAY8l2RyZ24njHpc=
-			</data>
-			<key>hash2</key>
-			<data>
-			vxcowMTPkrDIJm9C5HxTLYmMQVyNieCQlHX3e8iNb6E=
-			</data>
-		</dict>
-		<key>Headers/UIUtils.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yy/Y9LHW2mkMG+bSypMsfAzfRfg=
-			</data>
-			<key>hash2</key>
-			<data>
-			zQDzrqPnpCbxsAohbb3T93G4wFCbbotqJ8rZIU29z70=
+			tr3PBs4ZBNhgLRCWVOy2OWRpJUSrX4pXvQuDsd4g2ao=
 			</data>
 		</dict>
 		<key>Modules/KidozSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H/vmLx/5TA5hIvyP2A+VwIEdxe4=
+			FhmvLogtIANQX8PWRKu00doIZHg=
 			</data>
 			<key>hash2</key>
 			<data>
-			DncqecPSEN06rfOR/WwXpcj/AaqJJHOEtrXqJ/Sr+f4=
+			EVmqQ8NDHOCy8LYAGL1zDxLTkU3LCCyowpgVQkMD2Xw=
 			</data>
 		</dict>
 		<key>Modules/KidozSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8p0CsN1DSeN+Vut0msoTwz2JJs0=
+			Vdjb8XCRoJrbOMc+Z1gb4XhbIhE=
 			</data>
 			<key>hash2</key>
 			<data>
-			neBdKDO5vIg0KuoCbpyG00Ya+OMj34TJ4YH979SOkgA=
+			uiT5aelkS5tJmbk8Bckh5mfl4xXDRn1scrTsXsu7oZ8=
 			</data>
 		</dict>
 		<key>Modules/KidozSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -331,22 +151,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8p0CsN1DSeN+Vut0msoTwz2JJs0=
+			Vdjb8XCRoJrbOMc+Z1gb4XhbIhE=
 			</data>
 			<key>hash2</key>
 			<data>
-			neBdKDO5vIg0KuoCbpyG00Ya+OMj34TJ4YH979SOkgA=
+			uiT5aelkS5tJmbk8Bckh5mfl4xXDRn1scrTsXsu7oZ8=
 			</data>
 		</dict>
 		<key>Modules/KidozSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EHF57uKZtU6/8DtesF5xz7WISXo=
+			7HD9vCKAy/FLV55mJdB1ThoNX9k=
 			</data>
 			<key>hash2</key>
 			<data>
-			C9mzZfVslUnuSzcm6S7WZ4EPuxFZpmjJ9N0lJulGi1g=
+			yy8VsOAyR16OSH+ikWUVuQ+la8TF8Ah4UmuTShScKlY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

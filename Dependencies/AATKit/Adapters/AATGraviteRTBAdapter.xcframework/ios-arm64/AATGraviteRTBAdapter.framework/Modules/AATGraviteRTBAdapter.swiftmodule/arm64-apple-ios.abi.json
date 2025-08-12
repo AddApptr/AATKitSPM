@@ -71,6 +71,30 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATGraviteRTBAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATGraviteRTBAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATGraviteRTBAdapter"
+      },
+      {
+        "kind": "Import",
         "name": "AATKit",
         "printedName": "AATKit",
         "declKind": "Import",
@@ -170,11 +194,32 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATBidderHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 222,
+      "length": 20,
+      "value": "\"AATAdMobDSPAdapter\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATBidderHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 23,
+      "value": "\"AATMetaBiddingAdapter\""
+    },
+    {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/BidderConfigManager\/AATRTBRequestConfigManager.swift",
       "kind": "StringLiteral",
       "offset": 264,
       "length": 9,
       "value": "\"Gravite\""
+    },
+    {
+      "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBRewarded.swift",
+      "kind": "Array",
+      "offset": 756,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/matloub\/Data\/Projects\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGraviteRTBAdapter\/AATGraviteRTBManager.swift",

@@ -6,11 +6,11 @@
 	<dict>
 		<key>ios-arm64/AATGoogleAdsAdapter.framework/AATGoogleAdsAdapter</key>
 		<data>
-		fpQSzxjhI6n8wRfr5wfwKLkuyV0=
+		Vf/8vG75fUj07OC3LZL4tgPh1hk=
 		</data>
 		<key>ios-arm64/AATGoogleAdsAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
 		<data>
-		AgDiSwstGolKQ2FoVuaXFHhj9A4=
+		777IZWY9BKVDMIkaBJuTsYC/u+Y=
 		</data>
 		<key>ios-arm64/AATGoogleAdsAdapter.framework/GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>ios-arm64/AATGoogleAdsAdapter.framework/Info.plist</key>
 		<data>
-		cs+dW/WQM+SGwk2WKZRIoMbaKcw=
+		BldGKqV+k1uR2qt8x6h1J+qoY38=
 		</data>
 		<key>ios-arm64/AATGoogleAdsAdapter.framework/Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/AATGoogleAdsAdapter</key>
 		<data>
-		imhli7eGYBe/HQX3gfDmeMVsL7Q=
+		S1OVPBzXVUPE/Adu3oTnkl+bPlY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
 		<data>
-		yMh9L1YBU7j6FX0RBHrsGRRmsQU=
+		H8xaPr3S0HVaKKae9CpkanSwTyk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/Info.plist</key>
 		<data>
-		Jmj+ewdXD1JI2izHn91xrorPmu0=
+		ahnBEaqqZ14q6zxhoUVh9tY5NZ4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -124,26 +124,6 @@
 		<data>
 		k9OFlDPBRWfteJ+bfG12WAoBuls=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		yRrr7ZzFNmsPISkQPK98ulkoYT4=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		+1QZH6alw3V7k1rZYR9BfhSHk6k=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/_CodeSignature/CodeResources</key>
-		<data>
-		VhakzdcchO2J0hkGOlzQGMPXRbc=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -151,22 +131,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fpQSzxjhI6n8wRfr5wfwKLkuyV0=
+			Vf/8vG75fUj07OC3LZL4tgPh1hk=
 			</data>
 			<key>hash2</key>
 			<data>
-			aCdgl3mCy9iC/Em3gxy4jreMHKhjrjZn6l2SSW2dSdk=
+			NyuPbSKG1ZkRjLYZXty0bNx4iAwmpnt8dq4i6WWkRts=
 			</data>
 		</dict>
 		<key>ios-arm64/AATGoogleAdsAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AgDiSwstGolKQ2FoVuaXFHhj9A4=
+			777IZWY9BKVDMIkaBJuTsYC/u+Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			mcZC5LUE45GwOzGhcxEULL5ugS28eLBKAK3h0Lf3SIA=
+			d9zzkjWHvWJgnPpeyB/l0ZiGAIj0sJhVlWyH0ClUU88=
 			</data>
 		</dict>
 		<key>ios-arm64/AATGoogleAdsAdapter.framework/GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -206,11 +186,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cs+dW/WQM+SGwk2WKZRIoMbaKcw=
+			BldGKqV+k1uR2qt8x6h1J+qoY38=
 			</data>
 			<key>hash2</key>
 			<data>
-			/+xQOiZs/wNE3Bw68GZLmNoJpkgP5ybO3bkWVIALiQI=
+			rzvf42kE5cwbB7pLgtHRmzjUSRNIcHZEv40GuA/C7Fw=
 			</data>
 		</dict>
 		<key>ios-arm64/AATGoogleAdsAdapter.framework/Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -294,22 +274,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			imhli7eGYBe/HQX3gfDmeMVsL7Q=
+			S1OVPBzXVUPE/Adu3oTnkl+bPlY=
 			</data>
 			<key>hash2</key>
 			<data>
-			H+ObFGWykIBtUlXaZrwc1EUJyXGHMUjVnL40tqYYZfE=
+			13xoYBg4cT0+hROy18/HUVjl7UJ6OFDZtIbhdv8ko2E=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yMh9L1YBU7j6FX0RBHrsGRRmsQU=
+			H8xaPr3S0HVaKKae9CpkanSwTyk=
 			</data>
 			<key>hash2</key>
 			<data>
-			9j5YLyV//okSLswwyBz63Ssed/pLQ2GnLlu60BehHq0=
+			88HVmagMuvIVcHDMoIFIA65Ct3Xt1LwtaW7IzCGnWoU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -349,11 +329,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jmj+ewdXD1JI2izHn91xrorPmu0=
+			ahnBEaqqZ14q6zxhoUVh9tY5NZ4=
 			</data>
 			<key>hash2</key>
 			<data>
-			nabqDFECbZRY1wMntJx3cPWadHa9CxGSwEKaHL93Mhs=
+			REe7hVN2q3pGnb6io19DxudP/Fc2aBNnsKjuGVJYEf4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/Modules/AATGoogleAdsAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -475,61 +455,6 @@
 			<key>hash2</key>
 			<data>
 			RbetuZ/NLZYqHIAPv8wTJbV6f6QWX0FhgjI7tf/pyQA=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yRrr7ZzFNmsPISkQPK98ulkoYT4=
-			</data>
-			<key>hash2</key>
-			<data>
-			ne05fyJnSo6myjIl5rS9Ty3lIaYGC+BLmoOM/TC5698=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OnX22wWFKRSOFN1+obRynMCeyXM=
-			</data>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+1QZH6alw3V7k1rZYR9BfhSHk6k=
-			</data>
-			<key>hash2</key>
-			<data>
-			fjHrNdzYQ8gVV0S5OQCiBGmYBDiEEHF99Tij8/eYuQA=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VhakzdcchO2J0hkGOlzQGMPXRbc=
-			</data>
-			<key>hash2</key>
-			<data>
-			l+XhTS7TOetLGTLLznsJfV/SW/qYxHrdMEKtnLD5gFg=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATGoogleAdsAdapter.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 	</dict>

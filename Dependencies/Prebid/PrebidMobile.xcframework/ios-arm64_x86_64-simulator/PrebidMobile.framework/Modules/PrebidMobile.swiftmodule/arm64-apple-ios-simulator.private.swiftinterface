@@ -18,6 +18,23 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import ObjectiveC.runtime
+@_spi(PBMInternal) @objc(PBMCreativeViewDelegate) public protocol CreativeViewDelegate : ObjectiveC.NSObjectProtocol {
+  @_spi(PBMInternal) @objc func creativeDidComplete(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeDidDisplay(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeWasClicked(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeViewWasClicked(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeClickthroughDidClose(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeInterstitialDidClose(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeInterstitialDidLeaveApp(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeFullScreenDidFinish(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeDidSendRewardedEvent(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeReadyToReimplant(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeMraidDidCollapse(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc func creativeMraidDidExpand(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc optional func videoCreativeDidComplete(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc optional func videoWasMuted(_ creative: PrebidMobile.PBMAbstractCreative)
+  @_spi(PBMInternal) @objc optional func videoWasUnmuted(_ creative: PrebidMobile.PBMAbstractCreative)
+}
 @_inheritsConvenienceInitializers @objc public class SDKConsoleLogger : ObjectiveC.NSObject, PrebidMobile.PrebidLogger {
   @objc public func error(_ object: Any, filename: Swift.String, line: Swift.Int, function: Swift.String)
   @objc public func info(_ object: Any, filename: Swift.String, line: Swift.Int, function: Swift.String)
@@ -36,8 +53,14 @@ import ObjectiveC.runtime
   @objc public var bid: PrebidMobile.Bid? {
     get
   }
-  @objc required public init(fetchDemandResult: PrebidMobile.ResultCode, bid: PrebidMobile.Bid?, configId: Swift.String?, winNotifierBlock: @escaping PrebidMobile.PBMWinNotifierBlock, bidResponse: PrebidMobile.BidResponse?)
+  @objc required public init(fetchDemandResult: PrebidMobile.ResultCode, bid: PrebidMobile.Bid?, configId: Swift.String?, winNotifierBlock: @escaping PrebidMobile.WinNotifierBlock, bidResponse: PrebidMobile.BidResponse?)
   @objc deinit
+}
+@objc(PBMEventTrackerProtocol) public protocol EventTrackerProtocol {
+  @objc func trackEvent(_ event: PrebidMobile.TrackingEvent)
+  @objc func trackVideoAdLoaded(_ parameters: PrebidMobile.VideoVerificationParameters)
+  @objc func trackStartVideo(duration: Foundation.TimeInterval, volume: Swift.Double)
+  @objc(trackVolumeChanged:deviceVolume:) func trackVolumeChanged(playerVolume: Swift.Double, deviceVolume: Swift.Double)
 }
 @objc @_inheritsConvenienceInitializers public class BannerEventHandlerStandalone : ObjectiveC.NSObject, PrebidMobile.BannerEventHandler {
   @objc weak public var loadingDelegate: (any PrebidMobile.BannerEventLoadingDelegate)?
@@ -143,7 +166,7 @@ import ObjectiveC.runtime
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public protocol RewardedEventHandlerProtocol : PrebidMobile.PBMInterstitialAd {
+@objc public protocol RewardedEventHandlerProtocol : PrebidMobile.InterstitialAd {
   @objc weak var loadingDelegate: (any PrebidMobile.InterstitialEventLoadingDelegate)? { get set }
   @objc weak var interactionDelegate: (any PrebidMobile.RewardedEventInteractionDelegate)? { get set }
 }
@@ -186,12 +209,12 @@ import ObjectiveC.runtime
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public protocol InterstitialEventHandlerProtocol : PrebidMobile.PBMInterstitialAd {
+@objc(PBMInterstitialEventHandlerProtocol) public protocol InterstitialEventHandlerProtocol : PrebidMobile.InterstitialAd {
   @objc weak var loadingDelegate: (any PrebidMobile.InterstitialEventLoadingDelegate)? { get set }
   @objc weak var interactionDelegate: (any PrebidMobile.InterstitialEventInteractionDelegate)? { get set }
 }
 @objc(PBMServerEvent) @objcMembers public class ServerEvent : ObjectiveC.NSObject {
-  @objc public init(url: Swift.String, expectedEventType: PrebidMobile.PBMTrackingEvent)
+  @objc public init(url: Swift.String, expectedEventType: PrebidMobile.TrackingEvent)
   @objc deinit
 }
 @objc(PBMSKOverlayManager) @objcMembers public class SKOverlayManager : ObjectiveC.NSObject {
@@ -227,6 +250,22 @@ public typealias PrebidJSLibraryContentsCallback = (Swift.String?) -> ()
   @objc public func getOMSDKLibrary() -> Swift.String?
   @objc deinit
 }
+@_spi(PBMInternal) @objc(PBMTransaction) public protocol Transaction : ObjectiveC.NSObjectProtocol {
+  @_spi(PBMInternal) @objc var adConfiguration: PrebidMobile.AdConfiguration { get }
+  @_spi(PBMInternal) @objc var creatives: [PrebidMobile.PBMAbstractCreative] { get set }
+  @_spi(PBMInternal) @objc var creativeModels: [PrebidMobile.CreativeModel] { get set }
+  @_spi(PBMInternal) @objc var measurementSession: PrebidMobile.PBMOpenMeasurementSession { get set }
+  @_spi(PBMInternal) @objc var measurementWrapper: PrebidMobile.PBMOpenMeasurementWrapper { get set }
+  @_spi(PBMInternal) @objc var bid: PrebidMobile.Bid? { get set }
+  @_spi(PBMInternal) @objc weak var delegate: (any PrebidMobile.TransactionDelegate)? { get set }
+  @_spi(PBMInternal) @objc init(serverConnection: any PrebidMobile.PrebidServerConnectionProtocol, adConfiguration: PrebidMobile.AdConfiguration, models: [PrebidMobile.CreativeModel])
+  @_spi(PBMInternal) @objc func startCreativeFactory()
+  @_spi(PBMInternal) @objc func getAdDetails() -> PrebidMobile.AdDetails?
+  @_spi(PBMInternal) @objc func getFirstCreative() -> PrebidMobile.PBMAbstractCreative?
+  @_spi(PBMInternal) @objc func getCreative(after: PrebidMobile.PBMAbstractCreative) -> PrebidMobile.PBMAbstractCreative?
+  @_spi(PBMInternal) @objc func revenueForCreative(after: PrebidMobile.PBMAbstractCreative) -> Swift.String?
+  @_spi(PBMInternal) @objc func resetAdConfiguration(_ adConfiguration: PrebidMobile.AdConfiguration)
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class NativeData : ObjectiveC.NSObject {
   public var type: Swift.Int?
   public var length: Swift.Int?
@@ -236,9 +275,20 @@ public typealias PrebidJSLibraryContentsCallback = (Swift.String?) -> ()
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(PBMAgeUtils) @objcMembers public class AgeUtils : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc deinit
+@_spi(PBMInternal) @objc(PBMInterstitialAdLoaderDelegate) public protocol InterstitialAdLoaderDelegate {
+  @_spi(PBMInternal) @objc func interstitialAdLoader(_ interstitialAdLoader: any PrebidMobile.PBMInterstitialAdLoader, loadedAd showBlock: @escaping (_ viewController: UIKit.UIViewController?) -> Swift.Void, isReadyBlock: @escaping () -> Swift.Bool)
+  @_spi(PBMInternal) @objc func interstitialAdLoader(_ interstitialAdLoader: any PrebidMobile.PBMInterstitialAdLoader, createdInterstitialController interstitialController: PrebidMobile.InterstitialController)
+}
+@objc(PBMInterstitialLayout) public enum InterstitialLayout : Swift.Int {
+  case undefined
+  case portrait
+  case landscape
+  case aspectRatio
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class MediationRewardedAdUnit : PrebidMobile.MediationBaseInterstitialAdUnit {
   @objc public init(configId: Swift.String, mediationDelegate: any PrebidMobile.PrebidMediationDelegate)
@@ -283,15 +333,14 @@ public let PrebidLocalCacheIdKey: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @available(*, deprecated, message: "This class is deprecated. Please, use BannerAdUnit with video adFormat.")
-public class VideoAdUnit : PrebidMobile.AdUnit {
-  @objc public var parameters: PrebidMobile.VideoParameters {
-    @objc get
-    @objc set
-  }
-  @objc public init(configId: Swift.String, size: CoreFoundation.CGSize)
-  @objc public func addAdditionalSize(sizes: [CoreFoundation.CGSize])
-  @objc deinit
+public typealias WinNotifierBlock = (_ bid: PrebidMobile.Bid, _ adMarkupConsumer: @escaping PrebidMobile.AdMarkupStringHandler) -> Swift.Void
+@_spi(PBMInternal) public typealias WinNotifierFactoryBlock = (_ connection: any PrebidMobile.PrebidServerConnectionProtocol) -> PrebidMobile.WinNotifierBlock
+@_spi(PBMInternal) @objc(PBMWinNotifier) public protocol WinNotifier {
+  @_spi(PBMInternal) @objc init()
+  @_spi(PBMInternal) @objc static var factoryBlock: PrebidMobile.WinNotifierFactoryBlock { get }
+  @_spi(PBMInternal) @objc static func notifyThroughConnection(_ connection: any PrebidMobile.PrebidServerConnectionProtocol, winningBid: PrebidMobile.Bid, callback: @escaping PrebidMobile.AdMarkupStringHandler)
+  @_spi(PBMInternal) @objc static func winNotifierBlock(connection: any PrebidMobile.PrebidServerConnectionProtocol) -> PrebidMobile.WinNotifierBlock
+  @_spi(PBMInternal) @objc static func cacheUrl(fromTargeting targeting: [Swift.String : Swift.String], idKey: Swift.String) -> Swift.String?
 }
 @_inheritsConvenienceInitializers @objc public class IMAAdSlotSize : PrebidMobile.SingleContainerInt {
   @objc public static let Size400x300: PrebidMobile.IMAAdSlotSize
@@ -339,57 +388,12 @@ public class VideoAdUnit : PrebidMobile.AdUnit {
     @objc get
     @objc set
   }
-  @objc @available(*, deprecated, message: "Deprecated. Use setImpORTBConfig(_:) and getImpORTBConfig() for impression-level ORTB configuration.")
-  public var ortbConfig: Swift.String? {
-    @objc get
-    @objc set
-  }
   @objc public var configId: Swift.String {
     @objc get
   }
   @objc public func fetchDemand(completion: ((PrebidMobile.ResultCode) -> Swift.Void)?)
   @objc public func setImpORTBConfig(_ ortbConfig: Swift.String?)
   @objc public func getImpORTBConfig() -> Swift.String?
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
-  public func addContextData(key: Swift.String, value: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use updateExtData method instead.")
-  public func updateContextData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtData method instead.")
-  public func removeContextData(forKey: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtData method instead.")
-  public func clearContextData()
-  @objc public func addExtData(key: Swift.String, value: Swift.String)
-  @objc public func updateExtData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc public func removeExtData(forKey: Swift.String)
-  @objc public func clearExtData()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeyword method instead.")
-  public func addContextKeyword(_ newElement: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeywords method instead.")
-  public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtKeyword method instead.")
-  public func removeContextKeyword(_ element: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtKeywords method instead.")
-  public func clearContextKeywords()
-  @objc public func addExtKeyword(_ newElement: Swift.String)
-  @objc public func addExtKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc public func removeExtKeyword(_ element: Swift.String)
-  @objc public func clearExtKeywords()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func setAppContent(_ appContentObject: PrebidMobile.PBMORTBAppContent)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContent()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeAppContentData(_ dataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContentData()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearUserData()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ImpressionTasksExecutor {
@@ -399,13 +403,7 @@ public class VideoAdUnit : PrebidMobile.AdUnit {
   @objc public var source: Swift.String
   @objc public var uids: [PrebidMobile.UserUniqueID]
   @objc public var ext: [Swift.String : Any]?
-  @objc @available(*, deprecated, message: "Deprecated. This property will be removed in future releases.")
-  public var identifier: Swift.String?
-  @objc @available(*, deprecated, message: "Deprecated. This property will be removed in future releases.")
-  public var atype: Foundation.NSNumber?
   @objc public init(source: Swift.String, uids: [PrebidMobile.UserUniqueID], ext: [Swift.String : Any]? = nil)
-  @objc @available(*, deprecated, message: "Deprecated. This initializer will be removed in future releases.")
-  public init(source: Swift.String, identifier: Swift.String, atype: Foundation.NSNumber? = nil, ext: [Swift.String : Any]? = nil)
   @objc public func toJSONDictionary() -> [Swift.String : Any]
   @objc deinit
 }
@@ -455,11 +453,6 @@ public class VideoAdUnit : PrebidMobile.AdUnit {
     @objc get
     @objc set
   }
-  @objc @available(*, deprecated, message: "Deprecated. Use setImpORTBConfig(_:) and getImpORTBConfig() for impression-level ORTB configuration.")
-  public var ortbConfig: Swift.String? {
-    @objc get
-    @objc set
-  }
   @objc public var bannerParameters: PrebidMobile.BannerParameters {
     @objc get
   }
@@ -494,46 +487,6 @@ public class VideoAdUnit : PrebidMobile.AdUnit {
   @objc public func show(from controller: UIKit.UIViewController)
   @objc public func setImpORTBConfig(_ ortbConfig: Swift.String?)
   @objc public func getImpORTBConfig() -> Swift.String?
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
-  public func addContextData(_ data: Swift.String, forKey key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use updateExtData method instead.")
-  public func updateContextData(_ data: Swift.Set<Swift.String>, forKey key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtData method instead.")
-  public func removeContextDate(forKey key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtData method instead.")
-  public func clearContextData()
-  @objc public func addExtData(key: Swift.String, value: Swift.String)
-  @objc public func updateExtData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc public func removeExtData(forKey: Swift.String)
-  @objc public func clearExtData()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeyword method instead.")
-  public func addContextKeyword(_ newElement: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeywords method instead.")
-  public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtKeyword method instead.")
-  public func removeContextKeyword(_ element: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtKeywords method instead.")
-  public func clearContextKeywords()
-  @objc public func addExtKeyword(_ newElement: Swift.String)
-  @objc public func addExtKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc public func removeExtKeyword(_ element: Swift.String)
-  @objc public func clearExtKeywords()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func setAppContent(_ appContent: PrebidMobile.PBMORTBAppContent)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContent()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeAppContentDataObject(_ dataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContentDataObjects()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearUserData()
   @objc deinit
 }
 @objc public protocol BannerAdLoaderDelegate : ObjectiveC.NSObjectProtocol {
@@ -610,7 +563,7 @@ public typealias PBMNetworkReachableBlock = (PrebidMobile.Reachability?) -> Swif
   @objc public var customButtonPosition: CoreFoundation.CGRect
   @objc public var buttonArea: Swift.Double
   @objc public var isMRAID: Swift.Bool
-  @objc public var buttonTouchUpInsideBlock: PrebidMobile.PBMVoidBlock?
+  @objc public var buttonTouchUpInsideBlock: PrebidMobile.VoidBlock?
   @objc override dynamic public init()
   @objc public func setImage(_ image: UIKit.UIImage)
   @objc public func addButton(to view: UIKit.UIView, displayView: UIKit.UIView)
@@ -623,29 +576,14 @@ public typealias PBMNetworkReachableBlock = (PrebidMobile.Reachability?) -> Swif
   @objc public func buttonTappedAction()
   @objc deinit
 }
-@available(*, deprecated, message: "This enum is deprecated. In the upcoming major release, the enum will be removed.")
-@objc public enum PrebidHost : Swift.Int {
-  case Appnexus
-  case Rubicon
-  case Custom
-  public init?(rawValue: Swift.Int)
-  @available(*, deprecated, message: "This enum is deprecated. In the upcoming major release, the enum will be removed.")
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Host : ObjectiveC.NSObject {
   @objc public static let shared: PrebidMobile.Host
-  @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use setHostURL instead.")
-  @objc public func setCustomHostURL(_ urlString: Swift.String?) throws
   @objc public func setHostURL(_ urlString: Swift.String?, nonTrackingURLString: Swift.String?) throws
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use getHostURL instead.")
-  public func getHostURL(host: PrebidMobile.PrebidHost) throws -> Swift.String
   @objc public func getHostURL() throws -> Swift.String
   @objc public func verifyUrl(urlString: Swift.String?) -> Swift.Bool
   @objc deinit
 }
+public typealias VoidBlock = () -> Swift.Void
 @_inheritsConvenienceInitializers @objc(PBMMediationNativeUtils) @objcMembers public class MediationNativeUtils : ObjectiveC.NSObject {
   public static func findNative(in extras: [Swift.AnyHashable : Any]) -> Swift.Result<PrebidMobile.NativeAd, any Swift.Error>
   @objc override dynamic public init()
@@ -655,32 +593,6 @@ public typealias PBMNetworkReachableBlock = (PrebidMobile.Reachability?) -> Swif
   @objc public static var shared: PrebidMobile.Targeting
   @objc public var omidPartnerName: Swift.String?
   @objc public var omidPartnerVersion: Swift.String?
-  @objc @available(*, deprecated, message: "Deprecated by ORTB")
-  public var yearOfBirth: Swift.Int {
-    @objc get
-    @objc set
-  }
-  @objc @available(*, deprecated, message: "Deprecated by ORTB")
-  public func setYearOfBirth(yob: Swift.Int)
-  @objc @available(*, deprecated, message: "Deprecated by ORTB")
-  public func getYearOfBirth() -> Foundation.NSNumber
-  @objc public func clearYearOfBirth()
-  @objc @available(*, deprecated, message: "Deprecated by ORTB")
-  public var userGender: PrebidMobile.Gender {
-    @objc get
-    @objc set
-  }
-  @objc public func userGenderDescription() -> Swift.String?
-  @objc public var userID: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @available(*, deprecated, message: "This property is deprecated. In the upcoming major release, the property will be removed.")
-  public var buyerUID: Swift.String?
-  @objc @available(*, deprecated, message: "This property is deprecated.  This is an exchange-specific property.")
-  public var userCustomData: Swift.String?
-  @objc @available(*, deprecated, message: "Deprecated. This property will be removed in future releases. Please, use Targeting.setExternalUserIds(_:) instead.")
-  public var eids: [[Swift.String : Swift.AnyHashable]]?
   @objc public var userExt: [Swift.String : Swift.AnyHashable]?
   @objc public var coppa: Foundation.NSNumber? {
     @objc get
@@ -711,16 +623,6 @@ public typealias PBMNetworkReachableBlock = (PrebidMobile.Reachability?) -> Swif
   @objc public var forceSdkToChooseWinner: Swift.Bool
   @objc public func setExternalUserIds(_ externalUserIds: [PrebidMobile.ExternalUserId])
   @objc public func getExternalUserIds() -> [[Swift.String : Any]]?
-  @objc @available(*, deprecated, message: "Deprecated. SDK doesn't support storing External User IDs in application storage. This method will be removed in future releases.")
-  public func storeExternalUserId(_ externalUserId: PrebidMobile.ExternalUserId)
-  @objc @available(*, deprecated, message: "Deprecated. SDK doesn't support storing External User IDs in application storage. This method will be removed in future releases.")
-  public func fetchStoredExternalUserIds() -> [PrebidMobile.ExternalUserId]?
-  @objc @available(*, deprecated, message: "Deprecated. This method will be removed in future releases.")
-  public func fetchStoredExternalUserId(_ source: Swift.String) -> PrebidMobile.ExternalUserId?
-  @objc @available(*, deprecated, message: "Deprecated. This method will be removed in future releases.")
-  public func removeStoredExternalUserId(_ source: Swift.String)
-  @objc @available(*, deprecated, message: "Deprecated. This method will be removed in future releases.")
-  public func removeStoredExternalUserIds()
   @objc public var sendSharedId: Swift.Bool
   @objc public var sharedId: PrebidMobile.ExternalUserId {
     @objc get
@@ -736,20 +638,10 @@ public typealias PBMNetworkReachableBlock = (PrebidMobile.Reachability?) -> Swif
   @objc public var domain: Swift.String?
   @objc public var itunesID: Swift.String?
   @objc public var location: CoreLocation.CLLocation?
-  @available(*, deprecated, message: "This property is deprecated. In the upcoming major release, the property will be removed.")
-  public var locationPrecision: Swift.Int?
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed.")
-  public func setLocationPrecision(_ newValue: Foundation.NSNumber?)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed.")
-  public func getLocationPrecision() -> Foundation.NSNumber?
   @objc public var coordinate: Foundation.NSValue?
   @objc public func setGlobalORTBConfig(_ ortbConfig: Swift.String?)
   @objc public func getGlobalORTBConfig() -> Swift.String?
   @objc public func addParam(_ value: Swift.String, withName: Swift.String?)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed.")
-  public func setCustomParams(_ params: [Swift.String : Swift.String]?)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed.")
-  public func addCustomParam(_ value: Swift.String, withName: Swift.String?)
   @objc public func setLatitude(_ latitude: Swift.Double, longitude: Swift.Double)
   @objc public func addBidderToAccessControlList(_ bidderName: Swift.String)
   @objc public func removeBidderFromAccessControlList(_ bidderName: Swift.String)
@@ -758,62 +650,16 @@ public typealias PBMNetworkReachableBlock = (PrebidMobile.Reachability?) -> Swif
   @objc public var accessControlList: [Swift.String] {
     @objc get
   }
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed.")
-  public func addUserData(key: Swift.String, value: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed.")
-  public func updateUserData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed.")
-  public func removeUserData(for key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed.")
-  public func clearUserData()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed.")
-  public func getUserData() -> [Swift.String : [Swift.String]]
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed.")
-  public var userDataDictionary: [Swift.String : [Swift.String]] {
-    @objc get
-  }
   @objc public func addUserKeyword(_ newElement: Swift.String)
   @objc public func addUserKeywords(_ newElements: Swift.Set<Swift.String>)
   @objc public func removeUserKeyword(_ element: Swift.String)
   @objc public func clearUserKeywords()
   @objc public func getUserKeywords() -> [Swift.String]
-  @objc @available(*, deprecated, message: "This property is deprecated. Please, use getUserKeywords method instead.")
-  public var userKeywords: [Swift.String] {
-    @objc get
-  }
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addAppExtData method instead.")
-  public func addContextData(key: Swift.String, value: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use updateAppExtData method instead.")
-  public func updateContextData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeAppExtData method instead.")
-  public func removeContextData(for key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearAppExtData method instead.")
-  public func clearContextData()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use getAppExtData method instead.")
-  public func getContextData() -> [Swift.String : [Swift.String]]
-  @objc @available(*, deprecated, message: "This property is deprecated. Please, use getAppExtData method instead.")
-  public var contextDataDictionary: [Swift.String : [Swift.String]] {
-    @objc get
-  }
   @objc public func addAppExtData(key: Swift.String, value: Swift.String)
   @objc public func updateAppExtData(key: Swift.String, value: Swift.Set<Swift.String>)
   @objc public func removeAppExtData(for key: Swift.String)
   @objc public func clearAppExtData()
   @objc public func getAppExtData() -> [Swift.String : [Swift.String]]
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addAppKeyword method instead.")
-  public func addContextKeyword(_ newElement: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addAppKeywords method instead.")
-  public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeAppKeyword method instead.")
-  public func removeContextKeyword(_ element: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearAppKeywords method instead.")
-  public func clearContextKeywords()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use getAppKeywords method instead.")
-  public func getContextKeywords() -> [Swift.String]
-  @objc @available(*, deprecated, message: "This property is deprecated. Please, use getAppKeywords method instead.")
-  public var contextKeywords: [Swift.String] {
-    @objc get
-  }
   @objc public func addAppKeyword(_ newElement: Swift.String)
   @objc public func addAppKeywords(_ newElements: Swift.Set<Swift.String>)
   @objc public func removeAppKeyword(_ element: Swift.String)
@@ -844,11 +690,6 @@ public typealias PBMNetworkReachableBlock = (PrebidMobile.Reachability?) -> Swif
   @objc deinit
 }
 @objc public class BannerAdUnit : PrebidMobile.AdUnit, PrebidMobile.BannerBasedAdUnitProtocol, PrebidMobile.VideoBasedAdUnitProtocol {
-  @objc @available(*, deprecated, message: "This property is deprecated. Please, use bannerParameters instead.")
-  public var parameters: PrebidMobile.BannerParameters {
-    @objc get
-    @objc set
-  }
   @objc public var bannerParameters: PrebidMobile.BannerParameters {
     @objc get
     @objc set
@@ -864,6 +705,7 @@ public typealias PBMNetworkReachableBlock = (PrebidMobile.Reachability?) -> Swif
   @objc public init(configId: Swift.String, size: CoreFoundation.CGSize)
   @objc public func addAdditionalSize(sizes: [CoreFoundation.CGSize])
   @objc public func activatePrebidImpressionTracker(adView: UIKit.UIView)
+  @objc public func activatePrebidSKAdNetworkStoreKitAdsFlow(adView: UIKit.UIView)
   @objc deinit
 }
 @objc public class NativeAsset : ObjectiveC.NSObject {
@@ -925,13 +767,63 @@ public typealias PBMNetworkReachableBlock = (PrebidMobile.Reachability?) -> Swif
     get
   }
 }
+@_spi(PBMInternal) @objc public enum PBMErrorCode : Swift.Int {
+  @_spi(PBMInternal) case generalLinear = 400
+  @_spi(PBMInternal) case fileNotFound = 401
+  @_spi(PBMInternal) case generalNonLinearAds = 500
+  @_spi(PBMInternal) case general = 700
+  @_spi(PBMInternal) case undefined = 900
+  @_spi(PBMInternal) public init?(rawValue: Swift.Int)
+  @_spi(PBMInternal) public typealias RawValue = Swift.Int
+  @_spi(PBMInternal) public var rawValue: Swift.Int {
+    @_spi(PBMInternal) get
+  }
+}
+@_spi(PBMInternal) @objc public class PBMErrorType : ObjectiveC.NSObject, Swift.RawRepresentable {
+  @_spi(PBMInternal) public typealias RawValue = Swift.String
+  @_spi(PBMInternal) @objc final public let rawValue: Swift.String
+  @_spi(PBMInternal) required public init(rawValue: Swift.String)
+  @_spi(PBMInternal) @objc public static let invalidRequest: PrebidMobile.PBMErrorType
+  @_spi(PBMInternal) @objc public static let internalError: PrebidMobile.PBMErrorType
+  @_spi(PBMInternal) @objc public static let initError: PrebidMobile.PBMErrorType
+  @_spi(PBMInternal) @objc public static let serverError: PrebidMobile.PBMErrorType
+  @_spi(PBMInternal) @objc deinit
+}
+@_spi(PBMInternal) @_hasMissingDesignatedInitializers @objc public class PBMError : Foundation.NSError, @unchecked Swift.Sendable {
+  @_spi(PBMInternal) @objc public var message: Swift.String? {
+    @_spi(PBMInternal) @objc get
+  }
+  @_spi(PBMInternal) @objc public static func error(message: Swift.String, type: PrebidMobile.PBMErrorType) -> PrebidMobile.PBMError
+  @_spi(PBMInternal) @objc public static func error(description: Swift.String) -> PrebidMobile.PBMError
+  @_spi(PBMInternal) @objc public static func error(description: Swift.String, statusCode: PrebidMobile.PBMErrorCode) -> PrebidMobile.PBMError
+  @_spi(PBMInternal) @discardableResult
+  @objc public static func createError(_ error: Swift.UnsafeMutablePointer<Foundation.NSError?>?, message: Swift.String, type: PrebidMobile.PBMErrorType) -> Swift.Bool
+  @_spi(PBMInternal) @discardableResult
+  @objc public static func createError(_ error: Swift.UnsafeMutablePointer<Foundation.NSError?>?, description: Swift.String) -> Swift.Bool
+  @_spi(PBMInternal) @discardableResult
+  @objc public static func createError(_ error: Swift.UnsafeMutablePointer<Foundation.NSError?>?, description: Swift.String, statusCode: PrebidMobile.PBMErrorCode) -> Swift.Bool
+  @_spi(PBMInternal) @objc public static func requestInProgress() -> Foundation.NSError
+  @_spi(PBMInternal) @objc public static func prebidInvalidAccountId() -> Foundation.NSError
+  @_spi(PBMInternal) @objc public static func prebidInvalidConfigId() -> Foundation.NSError
+  @_spi(PBMInternal) @objc public static func prebidInvalidSize() -> Foundation.NSError
+  @_spi(PBMInternal) @objc public static func prebidServerURLInvalid(_ url: Swift.String) -> Foundation.NSError
+  @_spi(PBMInternal) @objc public static func serverError(_ errorBody: Swift.String) -> Foundation.NSError
+  @_spi(PBMInternal) @objc public static func jsonDictNotFound() -> Foundation.NSError
+  @_spi(PBMInternal) @objc public static func responseDeserializationFailed() -> Foundation.NSError
+  @_spi(PBMInternal) @objc public static func blankResponse() -> Foundation.NSError
+  @_spi(PBMInternal) @objc public static func noWinningBid() -> Foundation.NSError
+  @_spi(PBMInternal) @objc public static func prebidNoVastTagInMediaData() -> Foundation.NSError
+  @_spi(PBMInternal) @objc deinit
+}
+@_spi(PBMInternal) @objc public protocol PBMSwiftMigrationHelper {
+}
 @available(iOS 14.5, *)
-@objc(PBMSkadnEventTracker) @objcMembers public class SkadnEventTracker : ObjectiveC.NSObject, PrebidMobile.PBMEventTrackerProtocol {
+@objc(PBMSkadnEventTracker) @objcMembers public class SkadnEventTracker : ObjectiveC.NSObject, PrebidMobile.EventTrackerProtocol {
   @objc public init(with imp: StoreKit.SKAdImpression)
-  @objc public func trackEvent(_ event: PrebidMobile.PBMTrackingEvent)
-  @objc public func trackVideoAdLoaded(_ parameters: PrebidMobile.PBMVideoVerificationParameters!)
-  @objc public func trackStartVideo(withDuration duration: CoreFoundation.CGFloat, volume: CoreFoundation.CGFloat)
-  @objc public func trackVolumeChanged(_ playerVolume: CoreFoundation.CGFloat, deviceVolume: CoreFoundation.CGFloat)
+  @objc public func trackEvent(_ event: PrebidMobile.TrackingEvent)
+  @objc public func trackVideoAdLoaded(_ parameters: PrebidMobile.VideoVerificationParameters)
+  @objc public func trackStartVideo(duration: Foundation.TimeInterval, volume: Swift.Double)
+  @objc public func trackVolumeChanged(playerVolume: Swift.Double, deviceVolume: Swift.Double)
   @objc deinit
 }
 extension UIKit.UIView {
@@ -995,6 +887,9 @@ extension UIKit.UIView {
   public var rawValue: Swift.Int {
     get
   }
+}
+@_spi(PBMInternal) @objc public protocol PBMInterstitialAdLoader : PrebidMobile.InterstitialControllerLoadingDelegate, PrebidMobile.InterstitialEventLoadingDelegate, PrebidMobile.PBMAdLoaderProtocol {
+  @_spi(PBMInternal) @objc init(delegate: any PrebidMobile.InterstitialAdLoaderDelegate, eventHandler: any PrebidMobile.PrimaryAdRequesterProtocol)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class MediationInterstitialAdUnit : PrebidMobile.MediationBaseInterstitialAdUnit {
   @objc public var adFormats: Swift.Set<PrebidMobile.AdFormat> {
@@ -1071,16 +966,9 @@ extension UIKit.UIView {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc(PBMGender) public enum Gender : Swift.Int {
-  case unknown
-  case male
-  case female
-  case other
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+@_spi(PBMInternal) @objc(PBMTransactionDelegate) public protocol TransactionDelegate {
+  @_spi(PBMInternal) @objc func transactionReadyForDisplay(_ transaction: any PrebidMobile.Transaction)
+  @_spi(PBMInternal) @objc func transactionFailedToLoad(_ transaction: any PrebidMobile.Transaction, error: any Swift.Error)
 }
 @objc(PBMRewardedConfig) @objcMembers public class RewardedConfig : ObjectiveC.NSObject {
   @objc public var reward: PrebidMobile.PrebidReward? {
@@ -1115,13 +1003,13 @@ extension UIKit.UIView {
   @objc public init(ortbRewarded: PrebidMobile.PBMORTBRewardedConfiguration?)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc(PBMEventManager) @objcMembers public class EventManager : ObjectiveC.NSObject, PrebidMobile.PBMEventTrackerProtocol {
-  @objc public func registerTracker(_ tracker: any PrebidMobile.PBMEventTrackerProtocol)
-  @objc public func unregisterTracker(_ tracker: any PrebidMobile.PBMEventTrackerProtocol)
-  @objc public func trackEvent(_ event: PrebidMobile.PBMTrackingEvent)
-  @objc public func trackVideoAdLoaded(_ parameters: PrebidMobile.PBMVideoVerificationParameters!)
-  @objc public func trackStartVideo(withDuration duration: CoreFoundation.CGFloat, volume: CoreFoundation.CGFloat)
-  @objc public func trackVolumeChanged(_ playerVolume: CoreFoundation.CGFloat, deviceVolume: CoreFoundation.CGFloat)
+@_inheritsConvenienceInitializers @objc(PBMEventManager) @objcMembers public class EventManager : ObjectiveC.NSObject, PrebidMobile.EventTrackerProtocol {
+  @objc public func registerTracker(_ tracker: any PrebidMobile.EventTrackerProtocol)
+  @objc public func unregisterTracker(_ tracker: any PrebidMobile.EventTrackerProtocol)
+  @objc public func trackEvent(_ event: PrebidMobile.TrackingEvent)
+  @objc public func trackVideoAdLoaded(_ parameters: PrebidMobile.VideoVerificationParameters)
+  @objc public func trackStartVideo(duration: Foundation.TimeInterval, volume: Swift.Double)
+  @objc public func trackVolumeChanged(playerVolume: Swift.Double, deviceVolume: Swift.Double)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1139,22 +1027,34 @@ extension UIKit.UIView {
   @objc public static let severe: PrebidMobile.LogLevel
   @objc deinit
 }
-@objc @available(*, deprecated, message: "This class is deprecated. Please, use InterstitialAdUnit with video adFormat.")
-public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
-  @objc public var parameters: PrebidMobile.VideoParameters {
-    @objc get
-    @objc set
-  }
-  @objc public init(configId: Swift.String)
-  @objc convenience public init(configId: Swift.String, minWidthPerc: Swift.Int, minHeightPerc: Swift.Int)
-  @objc deinit
-}
-@objc extension PrebidMobile.PBMError {
-  @objc dynamic public class func demandResult(from error: (any Swift.Error)?) -> PrebidMobile.ResultCode
-}
 @objc public protocol DisplayViewLoadingDelegate : ObjectiveC.NSObjectProtocol {
   @objc func displayViewDidLoadAd(_ displayView: UIKit.UIView)
   @objc func displayView(_ displayView: UIKit.UIView, didFailWithError error: any Swift.Error)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(PBMLocationManager) @objcMembers public class LocationManager : ObjectiveC.NSObject {
+  @objc public static let shared: PrebidMobile.LocationManager
+  @objc public var locationUpdatesEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var coordinates: CoreLocation.CLLocationCoordinate2D {
+    @objc get
+  }
+  @objc public var coordinatesAreValid: Swift.Bool {
+    @objc get
+  }
+  @objc public var horizontalAccuracy: CoreLocation.CLLocationAccuracy {
+    @objc get
+  }
+  @objc public var timestamp: Foundation.Date? {
+    @objc get
+  }
+  @objc deinit
+}
+extension PrebidMobile.LocationManager : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(PBMNativeAdConfiguration) @objcMembers public class NativeAdConfiguration : ObjectiveC.NSObject {
   @objc public var version: Swift.String
@@ -1171,18 +1071,19 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
   @objc deinit
 }
 @objc public class RewardedVideoAdUnit : PrebidMobile.AdUnit, PrebidMobile.VideoBasedAdUnitProtocol {
-  @objc @available(*, deprecated, message: "This property is deprecated. Please, use videoParameters instead.")
-  public var parameters: PrebidMobile.VideoParameters {
-    @objc get
-    @objc set
-  }
   @objc public var videoParameters: PrebidMobile.VideoParameters {
     @objc get
     @objc set
   }
+  @objc public var supportSKOverlay: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc public init(configId: Swift.String)
-  @objc convenience public init(configId: Swift.String, minWidthPerc: Swift.Int, minHeightPerc: Swift.Int)
   @objc deinit
+  @objc convenience public init(configId: Swift.String, minWidthPerc: Swift.Int, minHeightPerc: Swift.Int)
+  @objc public func activateSKOverlayIfAvailable()
+  @objc public func dismissSKOverlayIfAvailable()
 }
 @objc public protocol InterstitialControllerInteractionDelegate : ObjectiveC.NSObjectProtocol {
   @objc func trackImpression(forInterstitialController: any PrebidMobile.PrebidMobileInterstitialControllerProtocol)
@@ -1235,11 +1136,6 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
     @objc get
     @objc set
   }
-  @available(*, deprecated, message: "Deprecated. Use setImpORTBConfig(_:) and getImpORTBConfig() for impression-level ORTB configuration.")
-  @objc @_Concurrency.MainActor @preconcurrency public var ortbConfig: Swift.String? {
-    @objc get
-    @objc set
-  }
   @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any PrebidMobile.BannerViewDelegate)?
   @objc @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, configID: Swift.String, adSize: CoreFoundation.CGSize, eventHandler: any PrebidMobile.BannerEventHandler)
   @objc @_Concurrency.MainActor @preconcurrency convenience public init(configID: Swift.String, eventHandler: any PrebidMobile.BannerEventHandler)
@@ -1251,46 +1147,6 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
   @objc @_Concurrency.MainActor @preconcurrency public func getImpORTBConfig() -> Swift.String?
   @objc @_Concurrency.MainActor @preconcurrency public func stopRefresh()
   @objc @_Concurrency.MainActor @preconcurrency public func setPluginEventDelegate(_ pluginEventDelegate: any PrebidMobile.PluginEventDelegate)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
-  @_Concurrency.MainActor @preconcurrency public func addContextData(_ data: Swift.String, forKey key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use updateExtData method instead.")
-  @_Concurrency.MainActor @preconcurrency public func updateContextData(_ data: Swift.Set<Swift.String>, forKey key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtData method instead.")
-  @_Concurrency.MainActor @preconcurrency public func removeContextDate(forKey key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtData method instead.")
-  @_Concurrency.MainActor @preconcurrency public func clearContextData()
-  @objc @_Concurrency.MainActor @preconcurrency public func addExtData(key: Swift.String, value: Swift.String)
-  @objc @_Concurrency.MainActor @preconcurrency public func updateExtData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc @_Concurrency.MainActor @preconcurrency public func removeExtData(forKey: Swift.String)
-  @objc @_Concurrency.MainActor @preconcurrency public func clearExtData()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeyword method instead.")
-  @_Concurrency.MainActor @preconcurrency public func addContextKeyword(_ newElement: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeywords method instead.")
-  @_Concurrency.MainActor @preconcurrency public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtKeyword method instead.")
-  @_Concurrency.MainActor @preconcurrency public func removeContextKeyword(_ element: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtKeywords method instead.")
-  @_Concurrency.MainActor @preconcurrency public func clearContextKeywords()
-  @objc @_Concurrency.MainActor @preconcurrency public func addExtKeyword(_ newElement: Swift.String)
-  @objc @_Concurrency.MainActor @preconcurrency public func addExtKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc @_Concurrency.MainActor @preconcurrency public func removeExtKeyword(_ element: Swift.String)
-  @objc @_Concurrency.MainActor @preconcurrency public func clearExtKeywords()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  @_Concurrency.MainActor @preconcurrency public func setAppContent(_ appContent: PrebidMobile.PBMORTBAppContent)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  @_Concurrency.MainActor @preconcurrency public func clearAppContent()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  @_Concurrency.MainActor @preconcurrency public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  @_Concurrency.MainActor @preconcurrency public func removeAppContentDataObject(_ dataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  @_Concurrency.MainActor @preconcurrency public func clearAppContentDataObjects()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  @_Concurrency.MainActor @preconcurrency public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  @_Concurrency.MainActor @preconcurrency public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  @_Concurrency.MainActor @preconcurrency public func clearUserData()
   @_Concurrency.MainActor @preconcurrency @objc public func trackImpression(forDisplayView: UIKit.UIView)
   @_Concurrency.MainActor @preconcurrency @objc public func viewControllerForModalPresentation(fromDisplayView: UIKit.UIView) -> UIKit.UIViewController?
   @_Concurrency.MainActor @preconcurrency @objc public func didLeaveApp(from displayView: UIKit.UIView)
@@ -1316,10 +1172,6 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class NativeAd : ObjectiveC.NSObject {
   @objc public var nativeAdMarkup: PrebidMobile.NativeAdMarkup?
   @objc weak public var delegate: (any PrebidMobile.NativeAdEventDelegate)?
-  @objc public var privacyUrl: Swift.String? {
-    @objc get
-    @objc set
-  }
   @objc public var titles: [PrebidMobile.NativeTitle] {
     @objc get
   }
@@ -1331,6 +1183,10 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
   }
   @objc public var eventTrackers: [PrebidMobile.NativeEventTrackerResponse]? {
     @objc get
+  }
+  @objc public var privacyUrl: Swift.String? {
+    @objc get
+    @objc set
   }
   @objc public func dataObjects(of dataType: PrebidMobile.NativeDataAssetType) -> [PrebidMobile.NativeData]
   @objc public func images(of imageType: PrebidMobile.NativeImageAssetType) -> [PrebidMobile.NativeImage]
@@ -1362,8 +1218,6 @@ public class VideoInterstitialAdUnit : PrebidMobile.AdUnit {
 }
 public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializationStatus, (any Swift.Error)?) -> Swift.Void)
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class Prebid : ObjectiveC.NSObject {
-  @objc public static let bidderNameAppNexus: Swift.String
-  @objc public static let bidderNameRubiconProject: Swift.String
   @objc public var timeoutUpdated: Swift.Bool
   @objc public var prebidServerAccountId: Swift.String
   @objc public var auctionSettingsId: Swift.String?
@@ -1377,19 +1231,12 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
     @objc get
     @objc set
   }
-  @objc @available(*, deprecated, message: "Deprecated. This property will be removed in future releases. Please, use Targeting.setExternalUserIds(_:) instead.")
-  public var externalUserIdArray: [PrebidMobile.ExternalUserId]
   @objc public static let shared: PrebidMobile.Prebid
   @objc public var version: Swift.String {
     @objc get
   }
   @objc public var omsdkVersion: Swift.String {
     @objc get
-  }
-  @objc @available(*, deprecated, message: "This property is deprecated. In the upcoming major release, the property will be removed. Please, use initializeSDK(serverURL:) instead.")
-  public var prebidServerHost: PrebidMobile.PrebidHost {
-    @objc get
-    @objc set
   }
   @objc public var customStatusEndpoint: Swift.String? {
     @objc get
@@ -1404,10 +1251,6 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public var useCacheForReportingWithRenderingAPI: Swift.Bool
   @objc public var creativeFactoryTimeout: Swift.Double
   @objc public var creativeFactoryTimeoutPreRenderContent: Swift.Double
-  @objc @available(*, deprecated, message: "This property is deprecated. In the upcoming major release, the property will be removed.")
-  public var useExternalClickthroughBrowser: Swift.Bool
-  @objc @available(*, deprecated, message: "This property is deprecated. In the upcoming major release, the property will be removed.")
-  public var impClickbrowserType: PrebidMobile.ClickbrowserType
   @objc public var debugLogFileEnabled: Swift.Bool {
     @objc get
     @objc set
@@ -1418,19 +1261,12 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   }
   @objc public var includeWinners: Swift.Bool
   @objc public var includeBidderKeys: Swift.Bool
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use initializeSDK(serverURL:) instead.")
-  public func setCustomPrebidServer(url: Swift.String) throws
+  @objc public var shouldDisableStatusCheck: Swift.Bool
   @objc public func addStoredBidResponse(bidder: Swift.String, responseId: Swift.String)
   @objc public func clearStoredBidResponses()
   @objc public func getStoredBidResponses() -> [[Swift.String : Swift.String]]?
   @objc public func addCustomHeader(name: Swift.String, value: Swift.String)
   @objc public func clearCustomHeaders()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use initializeSDK(serverURL:_:_) instead.")
-  public static func initializeSDK(_ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: PrebidMobile.PrebidInitializationCallback? = nil)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use initializeSDK(serverURL:gadMobileAdsVersion:_:) instead.")
-  public static func initializeSDK(gadMobileAdsVersion: Swift.String? = nil, _ completion: PrebidMobile.PrebidInitializationCallback? = nil)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use initializeSDK(serverURL:_:) instead.")
-  public static func initializeSDK(_ completion: PrebidMobile.PrebidInitializationCallback? = nil)
   @objc public static func initializeSDK(serverURL: Swift.String, _ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: PrebidMobile.PrebidInitializationCallback? = nil) throws
   @objc public static func initializeSDK(serverURL: Swift.String, nonTrackingURLString: Swift.String, _ gadMobileAdsObject: Swift.AnyObject? = nil, _ completion: PrebidMobile.PrebidInitializationCallback? = nil) throws
   @objc public static func initializeSDK(serverURL: Swift.String, gadMobileAdsVersion: Swift.String? = nil, _ completion: PrebidMobile.PrebidInitializationCallback? = nil) throws
@@ -1441,6 +1277,21 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public static func unregisterPluginRenderer(_ pluginRenderer: any PrebidMobile.PrebidMobilePluginRenderer)
   @objc public static func containsPluginRenderer(_ pluginRenderer: any PrebidMobile.PrebidMobilePluginRenderer) -> Swift.Bool
   @objc deinit
+}
+@_spi(PBMInternal) public typealias ModalStatePopHandler = (_ poppedState: (any PrebidMobile.ModalState)?) -> Swift.Void
+@_spi(PBMInternal) public typealias ModalStateAppLeavingHandler = (_ leavingState: (any PrebidMobile.ModalState)?) -> Swift.Void
+@_spi(PBMInternal) @objc(PBMModalState) public protocol ModalState {
+  @_spi(PBMInternal) @objc var adConfiguration: PrebidMobile.AdConfiguration? { get }
+  @_spi(PBMInternal) @objc var displayProperties: PrebidMobile.InterstitialDisplayProperties? { get }
+  @_spi(PBMInternal) @objc var view: UIKit.UIView? { get }
+  @_spi(PBMInternal) @objc var mraidState: PrebidMobile.PBMMRAIDState { get set }
+  @_spi(PBMInternal) @objc var onStatePopFinished: PrebidMobile.ModalStatePopHandler? { get }
+  @_spi(PBMInternal) @objc var onStateHasLeftApp: PrebidMobile.ModalStateAppLeavingHandler? { get }
+  @_spi(PBMInternal) @objc var nextOnStatePopFinished: PrebidMobile.ModalStatePopHandler? { get }
+  @_spi(PBMInternal) @objc var nextOnStateHasLeftApp: PrebidMobile.ModalStateAppLeavingHandler? { get }
+  @_spi(PBMInternal) @objc var onModalPushedBlock: PrebidMobile.PBMVoidBlock? { get set }
+  @_spi(PBMInternal) @objc var isRotationEnabled: Swift.Bool { get }
+  @_spi(PBMInternal) @objc init(view: UIKit.UIView, adConfiguration: PrebidMobile.AdConfiguration?, displayProperties: PrebidMobile.InterstitialDisplayProperties?, onStatePopFinished: PrebidMobile.ModalStatePopHandler?, onStateHasLeftApp: PrebidMobile.ModalStateAppLeavingHandler?, nextOnStatePopFinished: PrebidMobile.ModalStatePopHandler?, nextOnStateHasLeftApp: PrebidMobile.ModalStateAppLeavingHandler?, onModalPushedBlock: PrebidMobile.PBMVoidBlock?)
 }
 @objc @objcMembers public class MediationNativeAdUnit : ObjectiveC.NSObject {
   @objc public var nativeAdUnit: PrebidMobile.NativeRequest
@@ -1456,50 +1307,8 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public func setDURLSupport(_ dURLSupport: Swift.Int)
   @objc public func setPrivacy(_ privacy: Swift.Int)
   @objc public func setExt(_ ext: [Swift.String : Any])
-  @objc @available(*, deprecated, message: "Deprecated. Use setImpORTBConfig(_:) for impression-level ORTB configuration.")
-  public func setOrtbConfig(_ ortbConfig: Swift.String?)
-  @objc @available(*, deprecated, message: "Deprecated. Use getImpORTBConfig() for impression-level ORTB configuration.")
-  public func getOrtbConfig() -> Swift.String?
   @objc public func setImpORTBConfig(_ ortbConfig: Swift.String?)
   @objc public func getImpORTBConfig() -> Swift.String?
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func setAppContent(_ appContent: PrebidMobile.PBMORTBAppContent)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContent()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeAppContent(_ dataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearUserData()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
-  public func addContextData(key: Swift.String, value: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use updateExtData method instead.")
-  public func updateContextData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtData method instead.")
-  public func removeContextData(forKey: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtData method instead.")
-  public func clearContextData()
-  @objc public func addExtData(key: Swift.String, value: Swift.String)
-  @objc public func updateExtData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc public func removeExtData(forKey: Swift.String)
-  @objc public func clearExtData()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeyword method instead.")
-  public func addContextKeyword(_ newElement: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeywords method instead.")
-  public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtKeyword method instead.")
-  public func removeContextKeyword(_ element: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtKeywords method instead.")
-  public func clearContextKeywords()
-  @objc public func addExtKeyword(_ newElement: Swift.String)
-  @objc public func addExtKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc public func removeExtKeyword(_ element: Swift.String)
-  @objc public func clearExtKeywords()
   @objc public func fetchDemand(completion: ((PrebidMobile.ResultCode) -> Swift.Void)?)
   @objc deinit
 }
@@ -1527,7 +1336,7 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public func loadAd()
   @objc public func show()
   @objc public func viewControllerForModalPresentation() -> UIKit.UIViewController?
-  @objc public func adLoaded(_ pbmAdDetails: PrebidMobile.PBMAdDetails)
+  @objc public func adLoaded(_ pbmAdDetails: PrebidMobile.AdDetails)
   @objc public func failed(toLoad error: any Swift.Error)
   @objc public func adDidComplete()
   @objc public func adDidDisplay()
@@ -1536,17 +1345,61 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public func adDidLeaveApp()
   @objc public func adDidClose()
   @objc public func adDidSendRewardedEvent()
-  @objc public func interstitialDisplayProperties() -> PrebidMobile.PBMInterstitialDisplayProperties
+  @objc public func interstitialDisplayProperties() -> PrebidMobile.InterstitialDisplayProperties
   @objc public func adClickthroughDidClose()
   @objc public func adDidExpand()
   @objc public func adDidCollapse()
   @objc public func reportFailureWithError(_ error: (any Swift.Error)?)
   @objc deinit
 }
+@objc(PBMTrackingEvent) public enum TrackingEvent : Swift.Int {
+  case request = 0
+  case impression
+  case click
+  case overlayClick
+  case companionClick
+  case play
+  case pause
+  case resume
+  case rewind
+  case skip
+  case creativeView
+  case start
+  case firstQuartile
+  case midpoint
+  case thirdQuartile
+  case complete
+  case mute
+  case unmute
+  case fullscreen
+  case exitFullscreen
+  case normal
+  case expand
+  case collapse
+  case closeLinear
+  case closeOverlay
+  case acceptInvitation
+  case error
+  case loaded
+  case prebidWin
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_spi(PBMInternal) @_inheritsConvenienceInitializers @objc(PBMTrackingEventDescription) public class TrackingEventDescription : ObjectiveC.NSObject {
+  @_spi(PBMInternal) @objc public static func getDescription(_ event: PrebidMobile.TrackingEvent) -> Swift.String
+  @_spi(PBMInternal) @objc public static func getEvent(with description: Swift.String) -> PrebidMobile.TrackingEvent
+  @_spi(PBMInternal) @objc override dynamic public init()
+  @_spi(PBMInternal) @objc deinit
+}
 @objc public enum PrebidInitializationStatus : Swift.Int {
   case succeeded
   case failed
   case serverStatusWarning
+  case serverStatusSkipped
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1603,55 +1456,8 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
     @objc get
     @objc set
   }
-  @objc @available(*, deprecated, message: "Deprecated. Use setImpORTBConfig(_:) and getImpORTBConfig() for impression-level ORTB configuration.")
-  public var ortbConfig: Swift.String? {
-    @objc get
-    @objc set
-  }
   @objc public func setImpORTBConfig(_ ortbConfig: Swift.String?)
   @objc public func getImpORTBConfig() -> Swift.String?
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
-  public func addContextData(key: Swift.String, value: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use updateExtData method instead.")
-  public func updateContextData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtData method instead.")
-  public func removeContextData(forKey: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtData method instead.")
-  public func clearContextData()
-  @objc public func addExtData(key: Swift.String, value: Swift.String)
-  @objc public func updateExtData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc public func removeExtData(forKey: Swift.String)
-  @objc public func clearExtData()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeyword method instead.")
-  public func addContextKeyword(_ newElement: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeywords method instead.")
-  public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtKeyword method instead.")
-  public func removeContextKeyword(_ element: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtKeywords method instead.")
-  public func clearContextKeywords()
-  @objc public func addExtKeyword(_ newElement: Swift.String)
-  @objc public func addExtKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc public func removeExtKeyword(_ element: Swift.String)
-  @objc public func clearExtKeywords()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func setAppContent(_ appContentObject: PrebidMobile.PBMORTBAppContent)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.getGlobalORTBConfig method instead.")
-  public func getAppContent() -> PrebidMobile.PBMORTBAppContent?
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContent()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeAppContentData(_ dataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContentData()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearUserData()
   @objc public init(configID: Swift.String, size: CoreFoundation.CGSize, mediationDelegate: any PrebidMobile.PrebidMediationDelegate)
   @objc public func fetchDemand(completion: ((PrebidMobile.ResultCode) -> Swift.Void)?)
   @objc public func stopRefresh()
@@ -1666,6 +1472,21 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc optional func bannerViewWillPresentModal(_ bannerView: PrebidMobile.BannerView)
   @objc optional func bannerViewDidDismissModal(_ bannerView: PrebidMobile.BannerView)
 }
+@_inheritsConvenienceInitializers @objc(PBMInterstitialDisplayProperties) public class InterstitialDisplayProperties : ObjectiveC.NSObject, Swift.Copyable {
+  @objc public var closeDelay: Swift.Double
+  @objc public var closeDelayLeft: Swift.Double
+  @objc public var contentFrame: CoreFoundation.CGRect
+  @objc public var contentViewColor: UIKit.UIColor
+  @objc public var interstitialLayout: PrebidMobile.InterstitialLayout
+  @objc(rotationEnabled) public var isRotationEnabled: Swift.Bool {
+    @objc get
+  }
+  @objc public func setButtonImageHidden()
+  @objc override dynamic public init()
+  @objc public func getCloseButtonImage() -> UIKit.UIImage?
+  @objc override dynamic public func copy() -> Any
+  @objc deinit
+}
 @objc @objcMembers public class PrebidAdUnit : ObjectiveC.NSObject {
   @objc public var pbAdSlot: Swift.String? {
     @objc get
@@ -1676,33 +1497,22 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public func fetchDemand(request: PrebidMobile.PrebidRequest, completion: @escaping (PrebidMobile.BidInfo) -> Swift.Void)
   @objc public func activatePrebidAdViewImpressionTracker(adView: UIKit.UIView)
   @objc public func activatePrebidInterstitialImpressionTracker()
+  @objc public func activatePrebidBannerSKAdNetworkStoreKitAdsFlow(adView: UIKit.UIView)
+  @objc public func activatePrebidInterstitialSKAdNetworkStoreKitAdsFlow()
   @objc public func setAutoRefreshMillis(time: Swift.Double)
   @objc public func stopAutoRefresh()
   @objc public func resumeAutoRefresh()
+  @objc public func activateSKOverlayIfAvailable()
+  @objc public func dismissSKOverlayIfAvailable()
   @objc deinit
 }
 @objc @objcMembers public class PrebidRequest : ObjectiveC.NSObject {
   @objc public var adPosition: PrebidMobile.AdPosition
+  @objc public var supportSKOverlayForInterstitial: Swift.Bool
   @objc public init(bannerParameters: PrebidMobile.BannerParameters? = nil, videoParameters: PrebidMobile.VideoParameters? = nil, nativeParameters: PrebidMobile.NativeParameters? = nil, isInterstitial: Swift.Bool = false, isRewarded: Swift.Bool = false)
   @objc public func setGPID(_ gpid: Swift.String?)
   @objc public func setImpORTBConfig(_ ortbConfig: Swift.String?)
   @objc public func getImpORTBConfig() -> Swift.String?
-  @objc public func addExtData(key: Swift.String, value: Swift.String)
-  @objc public func updateExtData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc public func removeExtData(forKey: Swift.String)
-  @objc public func clearExtData()
-  @objc public func addExtKeyword(_ newElement: Swift.String)
-  @objc public func addExtKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc public func removeExtKeyword(_ element: Swift.String)
-  @objc public func clearExtKeywords()
-  @objc public func setAppContent(_ appContentObject: PrebidMobile.PBMORTBAppContent)
-  @objc public func clearAppContent()
-  @objc public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc public func removeAppContentData(_ dataObject: PrebidMobile.PBMORTBContentData)
-  @objc public func clearAppContentData()
-  @objc public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
-  @objc public func clearUserData()
   @objc deinit
 }
 @objc public protocol BannerEventLoadingDelegate : ObjectiveC.NSObjectProtocol {
@@ -1720,11 +1530,6 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
     @objc set
   }
   @objc public var adPosition: PrebidMobile.AdPosition {
-    @objc get
-    @objc set
-  }
-  @objc @available(*, deprecated, message: "Deprecated. Use setImpORTBConfig(_:) and getImpORTBConfig() for impression-level ORTB configuration.")
-  public var ortbConfig: Swift.String? {
     @objc get
     @objc set
   }
@@ -1774,46 +1579,6 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
   @objc public func show(from controller: UIKit.UIViewController)
   @objc public func setImpORTBConfig(_ ortbConfig: Swift.String?)
   @objc public func getImpORTBConfig() -> Swift.String?
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
-  public func addContextData(_ data: Swift.String, forKey key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use updateExtData method instead.")
-  public func updateContextData(_ data: Swift.Set<Swift.String>, forKey key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtData method instead.")
-  public func removeContextDate(forKey key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtData method instead.")
-  public func clearContextData()
-  @objc public func addExtData(key: Swift.String, value: Swift.String)
-  @objc public func updateExtData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc public func removeExtData(forKey: Swift.String)
-  @objc public func clearExtData()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeyword method instead.")
-  public func addContextKeyword(_ newElement: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeywords method instead.")
-  public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtKeyword method instead.")
-  public func removeContextKeyword(_ element: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtKeywords method instead.")
-  public func clearContextKeywords()
-  @objc public func addExtKeyword(_ newElement: Swift.String)
-  @objc public func addExtKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc public func removeExtKeyword(_ element: Swift.String)
-  @objc public func clearExtKeywords()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func setAppContent(_ appContent: PrebidMobile.PBMORTBAppContent)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContent()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeAppContentDataObject(_ dataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContentDataObjects()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearUserData()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(PBMDateFormatService) @objcMembers public class DateFormatService : ObjectiveC.NSObject {
@@ -1824,6 +1589,17 @@ public typealias PrebidInitializationCallback = ((PrebidMobile.PrebidInitializat
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(PBMArbitraryORTBService) @objcMembers public class ArbitraryORTBService : ObjectiveC.NSObject {
   @objc public static func merge(sdkORTB: [Swift.String : Any], impORTB: Swift.String?, globalORTB: Swift.String?) -> [Swift.String : Any]
   @objc deinit
+}
+@_spi(PBMInternal) @objc(PBMAdModelEventTracker) public class AdModelEventTracker : ObjectiveC.NSObject, PrebidMobile.EventTrackerProtocol {
+  @_spi(PBMInternal) @objc public init(creativeModel: PrebidMobile.CreativeModel, serverConnection: any PrebidMobile.PrebidServerConnectionProtocol)
+  @_spi(PBMInternal) @objc public func trackEvent(_ event: PrebidMobile.TrackingEvent)
+  @_spi(PBMInternal) @objc public func trackVideoAdLoaded(_ parameters: PrebidMobile.VideoVerificationParameters)
+  @_spi(PBMInternal) @objc public func trackStartVideo(duration: Foundation.TimeInterval, volume: Swift.Double)
+  @_spi(PBMInternal) @objc public func trackVolumeChanged(playerVolume: Swift.Double, deviceVolume: Swift.Double)
+  @_spi(PBMInternal) @objc deinit
+}
+@_spi(PBMInternal) @objc(PBMBidRequesterProtocol) public protocol BidRequesterProtocol {
+  @_spi(PBMInternal) @objc(requestBidsWithCompletion:) func requestBids(completion: @escaping (_ bidResponse: PrebidMobile.BidResponse?, _ error: (any Swift.Error)?) -> Swift.Void)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class NativeLink : ObjectiveC.NSObject {
   @objc public var url: Swift.String?
@@ -1850,60 +1626,10 @@ extension Foundation.NSString {
   }
   public init(configId: Swift.String, size: CoreFoundation.CGSize?, adFormats: Swift.Set<PrebidMobile.AdFormat>)
   @objc deinit
-  @objc @available(*, deprecated, message: "Deprecated. Use fetchDemand(completion: @escaping (_ bidInfo: BidInfo) -> Void) instead.")
-  dynamic public func fetchDemand(completion: @escaping (_ result: PrebidMobile.ResultCode, _ kvResultDict: [Swift.String : Swift.String]?) -> Swift.Void)
   @objc dynamic public func fetchDemand(completionBidInfo: @escaping (_ bidInfo: PrebidMobile.BidInfo) -> Swift.Void)
   @objc dynamic public func fetchDemand(adObject: Swift.AnyObject, completion: @escaping (_ result: PrebidMobile.ResultCode) -> Swift.Void)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
-  public func addContextData(key: Swift.String, value: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use updateExtData method instead.")
-  public func updateContextData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtData method instead.")
-  public func removeContextData(forKey: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtData method instead.")
-  public func clearContextData()
-  @objc public func addExtData(key: Swift.String, value: Swift.String)
-  @objc public func updateExtData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc public func removeExtData(forKey: Swift.String)
-  @objc public func clearExtData()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeyword method instead.")
-  public func addContextKeyword(_ newElement: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeywords method instead.")
-  public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtKeyword method instead.")
-  public func removeContextKeyword(_ element: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtKeywords method instead.")
-  public func clearContextKeywords()
-  @objc public func addExtKeyword(_ newElement: Swift.String)
-  @objc public func addExtKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc public func removeExtKeyword(_ element: Swift.String)
-  @objc public func clearExtKeywords()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func setAppContent(_ appContentObject: PrebidMobile.PBMORTBAppContent)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.getGlobalORTBConfig method instead.")
-  public func getAppContent() -> PrebidMobile.PBMORTBAppContent?
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContent()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeAppContentData(_ dataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearAppContentData()
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.getGlobalORTBConfig method instead.")
-  public func getUserData() -> [PrebidMobile.PBMORTBContentData]?
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
-  @objc @available(*, deprecated, message: "This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.")
-  public func clearUserData()
   @objc public func setGPID(_ gpid: Swift.String?)
   @objc public func getGPID() -> Swift.String?
-  @objc @available(*, deprecated, message: "Deprecated. Use setImpORTBConfig(_:) for impression-level ORTB configuration.")
-  public func setOrtbConfig(_ ortbObject: Swift.String?)
-  @objc @available(*, deprecated, message: "Deprecated. Use getImpORTBConfig() for impression-level ORTB configuration.")
-  public func getOrtbConfig() -> Swift.String?
   @objc public func setImpORTBConfig(_ ortbConfig: Swift.String?)
   @objc public func getImpORTBConfig() -> Swift.String?
   @objc public func setAutoRefreshMillis(time: Swift.Double)
@@ -1935,6 +1661,7 @@ extension Foundation.NSString {
   @objc public var linearity: PrebidMobile.SingleContainerInt?
   public var adSize: CoreFoundation.CGSize?
   @objc public var battr: [PrebidMobile.Signals.CreativeAttribute]?
+  public var isSkippable: Swift.Bool?
   @objc public var rawAPI: [Swift.Int]? {
     @objc get
   }
@@ -1945,6 +1672,9 @@ extension Foundation.NSString {
     @objc get
   }
   @objc public var rawBattrs: [Swift.Int]? {
+    @objc get
+  }
+  @objc public var rawSkippable: Foundation.NSNumber? {
     @objc get
   }
   @objc public init(mimes: [Swift.String])
@@ -1997,6 +1727,23 @@ extension Foundation.NSString {
     get
   }
 }
+@_spi(PBMInternal) @_inheritsConvenienceInitializers @objc(PBMFactory) public class Factory : ObjectiveC.NSObject {
+  @_spi(PBMInternal) @objc public static func createBidRequester(connection: any PrebidMobile.PrebidServerConnectionProtocol, sdkConfiguration: PrebidMobile.Prebid, targeting: PrebidMobile.Targeting, adUnitConfiguration: PrebidMobile.AdUnitConfig) -> any PrebidMobile.BidRequester
+  @_spi(PBMInternal) @objc public static let WinNotifierType: any PrebidMobile.WinNotifier.Type
+  @_spi(PBMInternal) @objc public static func createWinNotifier() -> any PrebidMobile.WinNotifier
+  @_spi(PBMInternal) @objc public static let AdViewManagerType: any PrebidMobile.AdViewManager.Type
+  @_spi(PBMInternal) @objc public static func createAdViewManager(connection: any PrebidMobile.PrebidServerConnectionProtocol, modalManagerDelegate: (any PrebidMobile.PBMModalManagerDelegate)?) -> any PrebidMobile.AdViewManager
+  @_spi(PBMInternal) @objc public static let TransactionType: any PrebidMobile.Transaction.Type
+  @_spi(PBMInternal) @objc public static func createTransaction(serverConnection: any PrebidMobile.PrebidServerConnectionProtocol, adConfiguration: PrebidMobile.AdConfiguration, models: [PrebidMobile.CreativeModel]) -> any PrebidMobile.Transaction
+  @_spi(PBMInternal) @objc public static let ViewExposureType: any PrebidMobile.ViewExposure.Type
+  @_spi(PBMInternal) @objc public static func createViewExposure(exposureFactor: Swift.Float, visibleRectangle: CoreFoundation.CGRect, occlusionRectangles: [Foundation.NSValue]?) -> any PrebidMobile.ViewExposure
+  @_spi(PBMInternal) @objc public static let ModalStateType: any PrebidMobile.ModalState.Type
+  @_spi(PBMInternal) @objc public static func createModalState(view: UIKit.UIView, adConfiguration: PrebidMobile.AdConfiguration?, displayProperties: PrebidMobile.InterstitialDisplayProperties?, onStatePopFinished: PrebidMobile.ModalStatePopHandler? = nil, onStateHasLeftApp: PrebidMobile.ModalStateAppLeavingHandler? = nil, nextOnStatePopFinished: PrebidMobile.ModalStatePopHandler? = nil, nextOnStateHasLeftApp: PrebidMobile.ModalStateAppLeavingHandler? = nil, onModalPushedBlock: PrebidMobile.VoidBlock? = nil) -> any PrebidMobile.ModalState
+  @_spi(PBMInternal) @objc public static let PBMInterstitialAdLoaderType: any PrebidMobile.PBMInterstitialAdLoader.Type
+  @_spi(PBMInternal) @objc public static func PBMInterstitialAdLoader(delegate: any PrebidMobile.InterstitialAdLoaderDelegate, eventHandler: any PrebidMobile.PrimaryAdRequesterProtocol) -> any PrebidMobile.PBMInterstitialAdLoader
+  @_spi(PBMInternal) @objc override dynamic public init()
+  @_spi(PBMInternal) @objc deinit
+}
 @objc(PBMBannerBasedAdUnitProtocol) public protocol BannerBasedAdUnitProtocol {
   @objc var bannerParameters: PrebidMobile.BannerParameters { get set }
 }
@@ -2032,11 +1779,6 @@ extension Foundation.NSString {
   @objc deinit
 }
 @objc public class InterstitialAdUnit : PrebidMobile.AdUnit, PrebidMobile.BannerBasedAdUnitProtocol, PrebidMobile.VideoBasedAdUnitProtocol {
-  @objc @available(*, deprecated, message: "This property is deprecated. Please, use bannerParameters instead.")
-  public var parameters: PrebidMobile.BannerParameters {
-    @objc get
-    @objc set
-  }
   @objc public var bannerParameters: PrebidMobile.BannerParameters {
     @objc get
     @objc set
@@ -2049,10 +1791,17 @@ extension Foundation.NSString {
     @objc get
     @objc set
   }
+  @objc public var supportSKOverlay: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc public init(configId: Swift.String)
+  @objc deinit
   @objc convenience public init(configId: Swift.String, minWidthPerc: Swift.Int, minHeightPerc: Swift.Int)
   @objc public func activatePrebidImpressionTracker()
-  @objc deinit
+  @objc public func activatePrebidSKAdNetworkStoreKitAdsFlow()
+  @objc public func activateSKOverlayIfAvailable()
+  @objc public func dismissSKOverlayIfAvailable()
 }
 @objc public protocol AdLoadFlowControllerDelegate : ObjectiveC.NSObjectProtocol {
   @objc func adLoadFlowController(_ adLoadFlowController: PrebidMobile.PBMAdLoadFlowController, failedWithError error: (any Swift.Error)?)
@@ -2079,9 +1828,6 @@ public let refreshIntervalDefault: Swift.Double
   @objc public var adSize: CoreFoundation.CGSize
   @objc public var minSizePerc: Foundation.NSValue?
   @objc public var adPosition: PrebidMobile.AdPosition
-  @objc public var extDataDictionary: [Swift.String : [Swift.String]] {
-    @objc get
-  }
   @objc public var nativeAdConfiguration: PrebidMobile.NativeAdConfiguration?
   @objc public var additionalSizes: [CoreFoundation.CGSize]? {
     @objc get
@@ -2092,56 +1838,12 @@ public let refreshIntervalDefault: Swift.Double
     @objc set
   }
   @objc public var gpid: Swift.String?
-  @objc public var ortbConfig: Swift.String? {
-    @objc get
-    @objc set
-  }
   @objc public var impORTBConfig: Swift.String? {
     @objc get
     @objc set
   }
   @objc convenience public init(configId: Swift.String)
   @objc public init(configId: Swift.String, size: CoreFoundation.CGSize)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtData method instead.")
-  public func addContextData(key: Swift.String, value: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use updateExtData method instead.")
-  public func updateContextData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtData method instead.")
-  public func removeContextData(for key: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtData method instead.")
-  public func clearContextData()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use getExtData method instead.")
-  public func getContextData() -> [Swift.String : [Swift.String]]
-  @objc public func addExtData(key: Swift.String, value: Swift.String)
-  @objc public func updateExtData(key: Swift.String, value: Swift.Set<Swift.String>)
-  @objc public func removeExtData(for key: Swift.String)
-  @objc public func clearExtData()
-  @objc public func getExtData() -> [Swift.String : [Swift.String]]
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeyword method instead.")
-  public func addContextKeyword(_ newElement: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use addExtKeywords method instead.")
-  public func addContextKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use removeExtKeyword method instead.")
-  public func removeContextKeyword(_ element: Swift.String)
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use clearExtKeywords method instead.")
-  public func clearContextKeywords()
-  @objc @available(*, deprecated, message: "This method is deprecated. Please, use getExtKeywords method instead.")
-  public func getContextKeywords() -> Swift.Set<Swift.String>
-  @objc public func addExtKeyword(_ newElement: Swift.String)
-  @objc public func addExtKeywords(_ newElements: Swift.Set<Swift.String>)
-  @objc public func removeExtKeyword(_ element: Swift.String)
-  @objc public func clearExtKeywords()
-  @objc public func getExtKeywords() -> Swift.Set<Swift.String>
-  @objc public func setAppContent(_ appContent: PrebidMobile.PBMORTBAppContent?)
-  @objc public func getAppContent() -> PrebidMobile.PBMORTBAppContent?
-  @objc public func clearAppContent()
-  @objc public func addAppContentData(_ dataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc public func removeAppContentData(_ dataObject: PrebidMobile.PBMORTBContentData)
-  @objc public func clearAppContentData()
-  @objc public func getUserData() -> [PrebidMobile.PBMORTBContentData]?
-  @objc public func addUserData(_ userDataObjects: [PrebidMobile.PBMORTBContentData])
-  @objc public func removeUserData(_ userDataObject: PrebidMobile.PBMORTBContentData)
-  @objc public func clearUserData()
   @objc public func setPbAdSlot(_ newElement: Swift.String?)
   @objc public func getPbAdSlot() -> Swift.String?
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -2197,7 +1899,7 @@ public let PREBID_MOBILE_RENDERER_NAME: Swift.String
   @objc deinit
 }
 @objc(PBMHiddenWebViewManager) @objcMembers public class HiddenWebViewManager : ObjectiveC.NSObject {
-  @objc public init(webView: WebKit.WKWebView, landingPageString: Swift.String)
+  @objc public init(frame: CoreFoundation.CGRect, landingPageString: Foundation.URL)
   @objc public func openHiddenWebView()
   @objc deinit
 }
@@ -2216,6 +1918,19 @@ public let PREBID_MOBILE_RENDERER_NAME: Swift.String
   @objc public static let ReviewSite: PrebidMobile.ContextSubType
   @objc public static let Custom: PrebidMobile.ContextSubType
   @objc required public init(integerLiteral value: Swift.Int)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(PBMVastTrackingEvents) public class VastTrackingEvents : ObjectiveC.NSObject {
+  @objc public var trackingEvents: [Swift.String : [Swift.String]] {
+    get
+  }
+  @objc public var progressOffsets: [Foundation.NSNumber] {
+    get
+  }
+  @objc public func addTrackingURL(_ url: Swift.String?, event: Swift.String?, attributes: [Swift.String : Swift.String]?)
+  @objc public func trackingURLs(forEvent event: Swift.String?) -> [Swift.String]?
+  @objc public func addTrackingEvents(_ events: PrebidMobile.VastTrackingEvents?)
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol PrebidLogger {
@@ -2253,15 +1968,18 @@ public let PREBID_MOBILE_RENDERER_NAME: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @objcMembers public class PrebidServerEventTracker : ObjectiveC.NSObject, PrebidMobile.PBMEventTrackerProtocol {
+@_spi(PBMInternal) @objc(PBMBidRequester) public protocol BidRequester : PrebidMobile.BidRequesterProtocol {
+  @_spi(PBMInternal) @objc init(connection: any PrebidMobile.PrebidServerConnectionProtocol, sdkConfiguration: PrebidMobile.Prebid, targeting: PrebidMobile.Targeting, adUnitConfiguration: PrebidMobile.AdUnitConfig)
+}
+@objc @objcMembers public class PrebidServerEventTracker : ObjectiveC.NSObject, PrebidMobile.EventTrackerProtocol {
   @objc public var serverEvents: [PrebidMobile.ServerEvent] {
     get
   }
   @objc public init(serverEvents: [PrebidMobile.ServerEvent] = [])
-  @objc public func trackEvent(_ event: PrebidMobile.PBMTrackingEvent)
-  @objc public func trackVideoAdLoaded(_ parameters: PrebidMobile.PBMVideoVerificationParameters!)
-  @objc public func trackStartVideo(withDuration duration: CoreFoundation.CGFloat, volume: CoreFoundation.CGFloat)
-  @objc public func trackVolumeChanged(_ playerVolume: CoreFoundation.CGFloat, deviceVolume: CoreFoundation.CGFloat)
+  @objc public func trackEvent(_ event: PrebidMobile.TrackingEvent)
+  @objc public func trackVideoAdLoaded(_ parameters: PrebidMobile.VideoVerificationParameters)
+  @objc public func trackStartVideo(duration: Foundation.TimeInterval, volume: Swift.Double)
+  @objc public func trackVolumeChanged(playerVolume: Swift.Double, deviceVolume: Swift.Double)
   @objc public func addServerEvents(_ serverEvents: [PrebidMobile.ServerEvent])
   @objc deinit
 }
@@ -2276,13 +1994,26 @@ public let PREBID_MOBILE_RENDERER_NAME: Swift.String
   @objc public static let banner: PrebidMobile.AdFormat
   @objc public static let video: PrebidMobile.AdFormat
   @objc public static let native: PrebidMobile.AdFormat
-  @objc @available(*, deprecated, message: "Display ad format is deprecated. Please, use banner ad format instead.")
-  public static let display: PrebidMobile.AdFormat
   @objc public static var allCases: [PrebidMobile.AdFormat] {
     @objc get
   }
   public typealias ArrayLiteralElement = PrebidMobile.AdFormat
   public typealias Element = PrebidMobile.AdFormat
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(PBMVideoVerificationResource) public class VideoVerificationResource : ObjectiveC.NSObject {
+  @objc public var url: Swift.String?
+  @objc public var vendorKey: Swift.String?
+  @objc public var params: Swift.String?
+  @objc public var apiFramework: Swift.String?
+  @objc public var trackingEvents: PrebidMobile.VastTrackingEvents?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(PBMVideoVerificationParameters) public class VideoVerificationParameters : ObjectiveC.NSObject {
+  @objc public var verificationResources: [PrebidMobile.VideoVerificationResource]
+  @objc public var autoPlay: Swift.Bool
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class InterstitialEventHandlerStandalone : ObjectiveC.NSObject, PrebidMobile.InterstitialEventHandlerProtocol {
@@ -2294,6 +2025,11 @@ public let PREBID_MOBILE_RENDERER_NAME: Swift.String
   @objc public func show(from controller: UIKit.UIViewController?)
   @objc public func requestAd(with bidResponse: PrebidMobile.BidResponse?)
   @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(PBMAdDetails) public class AdDetails : ObjectiveC.NSObject {
+  @objc final public let rawResponse: Swift.String
+  @objc final public let transactionId: Swift.String
   @objc deinit
 }
 @objc @objcMembers public class PrebidJSLibrary : ObjectiveC.NSObject {
@@ -2409,7 +2145,7 @@ public let PREBID_MOBILE_RENDERER_NAME: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public protocol BannerEventHandler : PrebidMobile.PBMPrimaryAdRequesterProtocol {
+@objc public protocol BannerEventHandler : PrebidMobile.PrimaryAdRequesterProtocol {
   @objc weak var loadingDelegate: (any PrebidMobile.BannerEventLoadingDelegate)? { get set }
   @objc weak var interactionDelegate: (any PrebidMobile.BannerEventInteractionDelegate)? { get set }
   @objc var adSizes: [CoreFoundation.CGSize] { get }
@@ -2419,11 +2155,17 @@ public let PREBID_MOBILE_RENDERER_NAME: Swift.String
   @objc public static func findPrebidCreativeSize(_ adView: UIKit.UIView, success: @escaping (CoreFoundation.CGSize) -> Swift.Void, failure: @escaping (any Swift.Error) -> Swift.Void)
   @objc deinit
 }
+public typealias AdMarkupStringHandler = (_ adMarkupString: Swift.String?) -> Swift.Void
 @objc public protocol InterstitialEventInteractionDelegate : ObjectiveC.NSObjectProtocol {
   @objc func willPresentAd()
   @objc func didDismissAd()
   @objc func willLeaveApp()
   @objc func didClickAd()
+}
+@objc(PBMInterstitialAd) public protocol InterstitialAd : PrebidMobile.PrimaryAdRequesterProtocol {
+  @objc var isReady: Swift.Bool { get }
+  @objc(showFromViewController:) func show(from viewController: UIKit.UIViewController?)
+  @objc optional func trackImpression()
 }
 @objc @objcMembers public class Bid : ObjectiveC.NSObject {
   @objc public static let KEY_RENDERER_NAME: Swift.String
@@ -2484,6 +2226,15 @@ public let PREBID_MOBILE_RENDERER_NAME: Swift.String
     @objc get
   }
 }
+@_spi(PBMInternal) @objc(PBMViewExposure) public protocol ViewExposure : ObjectiveC.NSObjectProtocol, PrebidMobile.PBMSwiftMigrationHelper {
+  @_spi(PBMInternal) @objc static func zeroExposure() -> any PrebidMobile.ViewExposure
+  @_spi(PBMInternal) @objc var exposureFactor: Swift.Float { get }
+  @_spi(PBMInternal) @objc var exposedPercentage: Swift.Float { get }
+  @_spi(PBMInternal) @objc var visibleRectangle: CoreFoundation.CGRect { get }
+  @_spi(PBMInternal) @objc var occlusionRectangles: [Foundation.NSValue]? { get }
+  @_spi(PBMInternal) @objc init(exposureFactor: Swift.Float, visibleRectangle: CoreFoundation.CGRect, occlusionRectangles: [Foundation.NSValue]?)
+  @_spi(PBMInternal) @objc func serialize(withFormatter formatter: Foundation.NumberFormatter) -> Swift.String
+}
 @_inheritsConvenienceInitializers @objc(PBMAdConfiguration) @objcMembers public class AdConfiguration : PrebidMobile.AutoRefreshCountConfig {
   @objc public var isOriginalAPI: Swift.Bool
   @objc public var adFormats: Swift.Set<PrebidMobile.AdFormat>
@@ -2500,7 +2251,7 @@ public let PREBID_MOBILE_RENDERER_NAME: Swift.String
   @objc public var presentAsInterstitial: Swift.Bool {
     @objc get
   }
-  @objc public var interstitialLayout: PrebidMobile.PBMInterstitialLayout
+  @objc public var interstitialLayout: PrebidMobile.InterstitialLayout
   @objc public var size: CoreFoundation.CGSize
   @objc public var isRewarded: Swift.Bool
   @objc public var isBuiltInVideo: Swift.Bool
@@ -2520,10 +2271,6 @@ public let PREBID_MOBILE_RENDERER_NAME: Swift.String
   }
   @objc public var clickHandlerOverride: ((() -> Swift.Void) -> Swift.Void)?
   @objc public var impORTBConfig: Swift.String?
-  @objc @available(*, deprecated, message: "This property is deprecated in favour of `impORTBConfig`.")
-  public var ortbConfig: Swift.String?
-  @objc @available(*, deprecated, message: "This method is deprecated and will be removed in future versions.")
-  public func getCheckedOrtbConfig() -> [Swift.String : Any]?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -2550,6 +2297,32 @@ extension PrebidMobile.PrebidMobilePluginRenderer {
   @objc override dynamic public init()
   @objc deinit
 }
+@_spi(PBMInternal) @_inheritsConvenienceInitializers @objc(PBMCreativeModel) public class CreativeModel : ObjectiveC.NSObject {
+  @_spi(PBMInternal) @objc public var adConfiguration: PrebidMobile.AdConfiguration?
+  @_spi(PBMInternal) @objc public var eventTracker: PrebidMobile.AdModelEventTracker?
+  @_spi(PBMInternal) @objc public var displayDurationInSeconds: Foundation.NSNumber?
+  @_spi(PBMInternal) @objc public var skipOffset: Foundation.NSNumber?
+  @_spi(PBMInternal) @objc public var width: Swift.Int
+  @_spi(PBMInternal) @objc public var height: Swift.Int
+  @_spi(PBMInternal) @objc public var html: Swift.String?
+  @_spi(PBMInternal) @objc public var targetURL: Swift.String?
+  @_spi(PBMInternal) @objc public var videoFileURL: Swift.String?
+  @_spi(PBMInternal) @objc public var revenue: Swift.String?
+  @_spi(PBMInternal) @objc public var verificationParameters: PrebidMobile.VideoVerificationParameters?
+  @_spi(PBMInternal) @objc public var trackingURLs: [Swift.String : [Swift.String]]
+  @_spi(PBMInternal) @objc public var adTrackingTemplateURL: Swift.String?
+  @_spi(PBMInternal) @objc public var adDetails: PrebidMobile.AdDetails?
+  @_spi(PBMInternal) @objc public var clickThroughURL: Swift.String?
+  @_spi(PBMInternal) @objc public var isCompanionAd: Swift.Bool
+  @_spi(PBMInternal) @objc public var hasCompanionAd: Swift.Bool
+  @_spi(PBMInternal) @objc public var userHasEarnedReward: Swift.Bool
+  @_spi(PBMInternal) @objc public var userPostRewardEventSent: Swift.Bool
+  @_spi(PBMInternal) @objc public var rewardTime: Foundation.NSNumber?
+  @_spi(PBMInternal) @objc public var postRewardTime: Foundation.NSNumber?
+  @_spi(PBMInternal) @objc override dynamic public init()
+  @_spi(PBMInternal) @objc public init(adConfiguration: PrebidMobile.AdConfiguration)
+  @_spi(PBMInternal) @objc deinit
+}
 @_inheritsConvenienceInitializers @objc(PBMSkadnParametersManager) @objcMembers public class SkadnParametersManager : ObjectiveC.NSObject {
   @objc @available(iOS 14.5, *)
   public static func getSkadnImpression(for skadnInfo: PrebidMobile.PBMORTBBidExtSkadn) -> StoreKit.SKAdImpression?
@@ -2571,6 +2344,14 @@ extension PrebidMobile.PrebidMobilePluginRenderer {
     get
   }
 }
+@objc(PBMPrimaryAdRequesterProtocol) public protocol PrimaryAdRequesterProtocol : ObjectiveC.NSObjectProtocol {
+  @objc(requestAdWithBidResponse:) func requestAd(with bidResponse: PrebidMobile.BidResponse?)
+}
+@_spi(PBMInternal) @objc(PBMThreadProtocol) public protocol ThreadProtocol {
+  @_spi(PBMInternal) @objc var isMainThread: Swift.Bool { get }
+}
+@_spi(PBMInternal) extension Foundation.Thread : PrebidMobile.ThreadProtocol {
+}
 public typealias PrebidServerResponseCallback = (PrebidMobile.PrebidServerResponse) -> Swift.Void
 @objc public protocol PrebidServerConnectionProtocol {
   @objc var userAgentService: PrebidMobile.UserAgentService { get }
@@ -2580,6 +2361,23 @@ public typealias PrebidServerResponseCallback = (PrebidMobile.PrebidServerRespon
   @objc func post(_ resourceURL: Swift.String?, data: Foundation.Data?, timeout: Foundation.TimeInterval, callback: @escaping PrebidMobile.PrebidServerResponseCallback)
   @objc func post(_ resourceURL: Swift.String?, contentType: Swift.String?, data: Foundation.Data?, timeout: Foundation.TimeInterval, callback: @escaping PrebidMobile.PrebidServerResponseCallback)
   @objc func download(_ resourceURL: Swift.String?, callback: @escaping PrebidMobile.PrebidServerResponseCallback)
+}
+@_spi(PBMInternal) @objc(PBMAdViewManager) public protocol AdViewManager : PrebidMobile.CreativeViewDelegate {
+  @_spi(PBMInternal) @objc var adConfiguration: PrebidMobile.AdConfiguration { get set }
+  @_spi(PBMInternal) @objc var modalManager: PrebidMobile.PBMModalManager { get set }
+  @_spi(PBMInternal) @objc weak var adViewManagerDelegate: (any PrebidMobile.PBMAdViewManagerDelegate)? { get set }
+  @_spi(PBMInternal) @objc var autoDisplayOnLoad: Swift.Bool { get set }
+  @_spi(PBMInternal) @objc var isCreativeOpened: Swift.Bool { get }
+  @_spi(PBMInternal) @objc var isMuted: Swift.Bool { get }
+  @_spi(PBMInternal) @objc init(connection: any PrebidMobile.PrebidServerConnectionProtocol, modalManagerDelegate: (any PrebidMobile.PBMModalManagerDelegate)?)
+  @_spi(PBMInternal) @objc func revenueForNextCreative() -> Swift.String?
+  @_spi(PBMInternal) @objc func isAbleToShowCurrentCreative() -> Swift.Bool
+  @_spi(PBMInternal) @objc func show()
+  @_spi(PBMInternal) @objc func pause()
+  @_spi(PBMInternal) @objc func resume()
+  @_spi(PBMInternal) @objc func mute()
+  @_spi(PBMInternal) @objc func unmute()
+  @_spi(PBMInternal) @objc func handleExternalTransaction(_ transaction: any PrebidMobile.Transaction)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class BannerParameters : ObjectiveC.NSObject {
   @objc public var api: [PrebidMobile.Signals.Api]?
@@ -2595,32 +2393,30 @@ public typealias PrebidServerResponseCallback = (PrebidMobile.PrebidServerRespon
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Utils : ObjectiveC.NSObject {
   @objc public static let shared: PrebidMobile.Utils
   @objc weak public var delegate: (any PrebidMobile.NativeAdDelegate)?
-  @available(*, deprecated, message: "MoPub is not available anymore. Use Prebid MAX adapters instead.")
-  @objc public func convertDictToMoPubKeywords(dict: Swift.Dictionary<Swift.String, Swift.String>) -> Swift.String
   @objc public func findNative(adObject: Swift.AnyObject)
   @objc deinit
 }
+extension PrebidMobile.InterstitialLayout : Swift.Equatable {}
+extension PrebidMobile.InterstitialLayout : Swift.Hashable {}
+extension PrebidMobile.InterstitialLayout : Swift.RawRepresentable {}
 extension PrebidMobile.NativeDataAssetType : Swift.Equatable {}
 extension PrebidMobile.NativeDataAssetType : Swift.Hashable {}
 extension PrebidMobile.NativeDataAssetType : Swift.RawRepresentable {}
-@available(*, deprecated, message: "This enum is deprecated. In the upcoming major release, the enum will be removed.")
-extension PrebidMobile.PrebidHost : Swift.Equatable {}
-@available(*, deprecated, message: "This enum is deprecated. In the upcoming major release, the enum will be removed.")
-extension PrebidMobile.PrebidHost : Swift.Hashable {}
-@available(*, deprecated, message: "This enum is deprecated. In the upcoming major release, the enum will be removed.")
-extension PrebidMobile.PrebidHost : Swift.RawRepresentable {}
 extension PrebidMobile.DataAsset : Swift.Equatable {}
 extension PrebidMobile.DataAsset : Swift.Hashable {}
 extension PrebidMobile.DataAsset : Swift.RawRepresentable {}
+@_spi(PBMInternal) extension PrebidMobile.PBMErrorCode : Swift.Equatable {}
+@_spi(PBMInternal) extension PrebidMobile.PBMErrorCode : Swift.Hashable {}
+@_spi(PBMInternal) extension PrebidMobile.PBMErrorCode : Swift.RawRepresentable {}
 extension PrebidMobile.Position : Swift.Equatable {}
 extension PrebidMobile.Position : Swift.Hashable {}
 extension PrebidMobile.Position : Swift.RawRepresentable {}
 extension PrebidMobile.ClickbrowserType : Swift.Equatable {}
 extension PrebidMobile.ClickbrowserType : Swift.Hashable {}
 extension PrebidMobile.ClickbrowserType : Swift.RawRepresentable {}
-extension PrebidMobile.Gender : Swift.Equatable {}
-extension PrebidMobile.Gender : Swift.Hashable {}
-extension PrebidMobile.Gender : Swift.RawRepresentable {}
+extension PrebidMobile.TrackingEvent : Swift.Equatable {}
+extension PrebidMobile.TrackingEvent : Swift.Hashable {}
+extension PrebidMobile.TrackingEvent : Swift.RawRepresentable {}
 extension PrebidMobile.PrebidInitializationStatus : Swift.Equatable {}
 extension PrebidMobile.PrebidInitializationStatus : Swift.Hashable {}
 extension PrebidMobile.PrebidInitializationStatus : Swift.RawRepresentable {}

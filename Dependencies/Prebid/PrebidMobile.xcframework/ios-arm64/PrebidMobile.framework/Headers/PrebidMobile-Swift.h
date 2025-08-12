@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
@@ -319,6 +320,7 @@ SWIFT_CLASS_NAMED("AutoRefreshCountConfig")
 @class BannerParameters;
 @class VideoParameters;
 @class NSNumber;
+enum PBMInterstitialLayout : NSInteger;
 @class PBMVideoControlsConfiguration;
 @class PBMRewardedConfig;
 @class NSString;
@@ -343,7 +345,7 @@ SWIFT_CLASS_NAMED("AdConfiguration")
 /// Returns the effective result by combining <code>isInterstitialAd</code> and <code>forceInterstitialPresentation</code>
 @property (nonatomic, readonly) BOOL presentAsInterstitial;
 /// Interstitial layout
-@property (nonatomic) PBMInterstitialLayout interstitialLayout;
+@property (nonatomic) enum PBMInterstitialLayout interstitialLayout;
 /// Size for the ad.
 @property (nonatomic) CGSize size;
 /// Sets an ad unit as an rewarded
@@ -363,14 +365,23 @@ SWIFT_CLASS_NAMED("AdConfiguration")
 @property (nonatomic) NSInteger viewableDuration;
 @property (nonatomic, copy) void (^ _Nullable clickHandlerOverride)(SWIFT_NOESCAPE void (^ _Nonnull)(void));
 @property (nonatomic, copy) NSString * _Nullable impORTBConfig;
-@property (nonatomic, copy) NSString * _Nullable ortbConfig SWIFT_DEPRECATED_MSG("This property is deprecated in favour of `impORTBConfig`.");
-- (NSDictionary<NSString *, id> * _Nullable)getCheckedOrtbConfig SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated and will be removed in future versions.");
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+/// Provides info about received ad.
+SWIFT_CLASS_NAMED("AdDetails")
+@interface PBMAdDetails : NSObject
+/// Raw data returned for the ad request.
+@property (nonatomic, readonly, copy) NSString * _Nonnull rawResponse;
+/// Unique identifier of the ad, that can be used for managing and reporting ad quality issues.
+@property (nonatomic, readonly, copy) NSString * _Nonnull transactionId;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// <code>AdFormat</code> is a class that represents different types of ad formats using an OptionSet.
-/// The class also includes a deprecated display format for backward compatibility, marked with a deprecation message.
 SWIFT_CLASS("_TtC12PrebidMobile8AdFormat")
 @interface AdFormat : NSObject
 /// The raw integer value representing the ad format.
@@ -396,10 +407,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AdFormat * _
 /// Represents a native ad format.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AdFormat * _Nonnull native;)
 + (AdFormat * _Nonnull)native SWIFT_WARN_UNUSED_RESULT;
-/// Represents a deprecated display ad format.
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AdFormat * _Nonnull display SWIFT_DEPRECATED_MSG("Display ad format is deprecated. Please, use banner ad format instead.");)
-+ (AdFormat * _Nonnull)display SWIFT_WARN_UNUSED_RESULT;
-/// An array containing all cases of ad formats, excluding deprecated ones.
+/// An array containing all cases of ad formats.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSArray<AdFormat *> * _Nonnull allCases;)
 + (NSArray<AdFormat *> * _Nonnull)allCases SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -414,6 +422,41 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile28AdLoadFlowControllerDelegate_")
 - (void)adLoadFlowControllerWillSendBidRequest:(PBMAdLoadFlowController * _Nonnull)adLoadFlowController;
 - (void)adLoadFlowControllerWillRequestPrimaryAd:(PBMAdLoadFlowController * _Nonnull)adLoadFlowController;
 - (BOOL)adLoadFlowControllerShouldContinue:(PBMAdLoadFlowController * _Nonnull)adLoadFlowController SWIFT_WARN_UNUSED_RESULT;
+@end
+
+enum PBMTrackingEvent : NSInteger;
+@class PBMVideoVerificationParameters;
+
+/// This protocol defines methods for tracking ad’s lifesycle.
+/// This protocol declares methods that needed for ad tracking in PrebidMobile. For now, we have two implementations:
+/// <ul>
+///   <li>
+///     AdModelEventTracker
+///   </li>
+///   <li>
+///     PBMOpenMeasurementEventTracker
+///   </li>
+/// </ul>
+SWIFT_PROTOCOL_NAMED("EventTrackerProtocol")
+@protocol PBMEventTrackerProtocol
+- (void)trackEvent:(enum PBMTrackingEvent)event;
+- (void)trackVideoAdLoaded:(PBMVideoVerificationParameters * _Nonnull)parameters;
+- (void)trackStartVideoWithDuration:(NSTimeInterval)duration volume:(double)volume;
+- (void)trackVolumeChanged:(double)playerVolume deviceVolume:(double)deviceVolume;
+@end
+
+@class PBMCreativeModel;
+@protocol PrebidServerConnectionProtocol;
+
+SWIFT_CLASS_NAMED("AdModelEventTracker")
+@interface PBMAdModelEventTracker : NSObject <PBMEventTrackerProtocol>
+- (nonnull instancetype)initWithCreativeModel:(PBMCreativeModel * _Nonnull)creativeModel serverConnection:(id <PrebidServerConnectionProtocol> _Nonnull)serverConnection OBJC_DESIGNATED_INITIALIZER;
+- (void)trackEvent:(enum PBMTrackingEvent)event;
+- (void)trackVideoAdLoaded:(PBMVideoVerificationParameters * _Nonnull)parameters;
+- (void)trackStartVideoWithDuration:(NSTimeInterval)duration volume:(double)volume;
+- (void)trackVolumeChanged:(double)playerVolume deviceVolume:(double)deviceVolume;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 /// Ad position on screen. Refer to List 5.4:
@@ -449,30 +492,16 @@ typedef SWIFT_ENUM_NAMED(NSInteger, PBMAdPosition, "AdPosition", open) {
   PBMAdPositionFullScreen = 7,
 };
 
-enum ResultCode : NSInteger;
 @class PBMBidInfo;
-@class PBMORTBAppContent;
-@class PBMORTBContentData;
+enum ResultCode : NSInteger;
 
 /// Base class for ad units built for original type of integration.
 SWIFT_CLASS("_TtC12PrebidMobile6AdUnit")
 @interface AdUnit : NSObject
-/// ORTB: imp[].ext.data.adslot
+/// ORTB: imp[].ext.data.pbadslot
 @property (nonatomic, copy) NSString * _Nullable pbAdSlot;
 /// The position of the ad on the screen.
 @property (nonatomic) enum PBMAdPosition adPosition;
-/// Makes bid request and provides the result as a dictionary of key-value pairs.
-/// \param completion A closure called with the result code and an optional dictionary of targeting keywords.
-/// <ul>
-///   <li>
-///     result: The result code indicating the outcome of the demand fetch.
-///   </li>
-///   <li>
-///     kvResultDict: A dictionary containing key-value pairs, or <code>nil</code> if no demand was fetched.
-///   </li>
-/// </ul>
-///
-- (void)fetchDemandWithCompletion:(void (^ _Nonnull)(enum ResultCode, NSDictionary<NSString *, NSString *> * _Nullable))completion SWIFT_DEPRECATED_MSG("Deprecated. Use fetchDemand(completion: @escaping (_ bidInfo: BidInfo) -> Void) instead.");
 /// Makes bid request  and provides the result as a <code>BidInfo</code> object.
 /// \param completionBidInfo A closure called with a <code>BidInfo</code> object representing the fetched demand.
 ///
@@ -483,82 +512,6 @@ SWIFT_CLASS("_TtC12PrebidMobile6AdUnit")
 /// \param completion A closure called with the result code indicating the outcome of the demand fetch.
 ///
 - (void)fetchDemandWithAdObject:(id _Nonnull)adObject completion:(void (^ _Nonnull)(enum ResultCode))completion;
-/// This method obtains the context data keyword & value for adunit context targeting
-/// If the key already exists the value will be appended to the list. No duplicates will be added
-- (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
-/// This method obtains the context data keyword & values for adunit context targeting
-/// The values if the key already exist will be replaced with the new set of values
-- (void)updateContextDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use updateExtData method instead.");
-/// This method allows to remove specific context data keyword & values set from adunit context targeting
-- (void)removeContextDataForKey:(NSString * _Nonnull)forKey SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtData method instead.");
-/// This method allows to remove all context data set from adunit context targeting
-- (void)clearContextData SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtData method instead.");
-/// This method obtains the ext data keyword & value for adunit targeting.
-/// If the key already exists the value will be appended to the list. No duplicates will be added
-- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-/// This method obtains the ext data keyword & values for adunit targeting
-/// The values if the key already exist will be replaced with the new set of values
-- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
-/// This method allows to remove specific ext data keyword & values set from adunit targeting
-- (void)removeExtDataForKey:(NSString * _Nonnull)forKey;
-/// This method allows to remove all ext data set from adunit targeting
-- (void)clearExtData;
-/// This method obtains the context keyword for adunit context targeting
-/// Inserts the given element in the set if it is not already present.
-- (void)addContextKeyword:(NSString * _Nonnull)newElement SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeyword method instead.");
-/// This method obtains the context keyword set for adunit context targeting
-/// Adds the elements of the given set to the set.
-- (void)addContextKeywords:(NSSet<NSString *> * _Nonnull)newElements SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeywords method instead.");
-/// This method allows to remove specific context keyword from adunit context targeting
-- (void)removeContextKeyword:(NSString * _Nonnull)element SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtKeyword method instead.");
-/// This method allows to remove all keywords from the set of adunit context targeting
-- (void)clearContextKeywords SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtKeywords method instead.");
-/// This method obtains the keyword for adunit targeting
-/// Inserts the given element in the set if it is not already present.
-- (void)addExtKeyword:(NSString * _Nonnull)newElement;
-/// This method obtains the keyword set for adunit targeting
-/// Adds the elements of the given set to the set.
-- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
-/// This method allows to remove specific keyword from adunit targeting
-- (void)removeExtKeyword:(NSString * _Nonnull)element;
-/// This method allows to remove all keywords from the set of adunit targeting
-- (void)clearExtKeywords;
-/// Sets the app content object, replacing any existing content.
-/// \param appContentObject The <code>PBMORTBAppContent</code> object representing the app’s content.
-///
-- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContentObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Retrieves the current app content object.
-///
-/// returns:
-/// The current <code>PBMORTBAppContent</code> object, or <code>nil</code> if no content is set.
-- (PBMORTBAppContent * _Nullable)getAppContent SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.getGlobalORTBConfig method instead.");
-/// Clears the current app content object.
-- (void)clearAppContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds an array of content data objects to the app content.
-/// \param dataObjects An array of <code>PBMORTBContentData</code> objects to add.
-///
-- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a specific content data object from the app content.
-/// \param dataObject The <code>PBMORTBContentData</code> object to remove.
-///
-- (void)removeAppContentData:(PBMORTBContentData * _Nonnull)dataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all content data objects from the app content.
-- (void)clearAppContentData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Retrieves the current user data.
-///
-/// returns:
-/// An array of <code>PBMORTBContentData</code> objects representing the user data, or <code>nil</code> if no data is available.
-- (NSArray<PBMORTBContentData *> * _Nullable)getUserData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.getGlobalORTBConfig method instead.");
-/// Adds an array of user data objects.
-/// \param userDataObjects An array of <code>PBMORTBContentData</code> objects to add to the user data.
-///
-- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a specific user data object.
-/// \param userDataObject The <code>PBMORTBContentData</code> object to remove from the user data.
-///
-- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all user data.
-- (void)clearUserData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
 /// Sets the GPID for the ad unit.
 /// \param gpid The GPID string to set. Can be <code>nil</code> to clear the GPID.
 ///
@@ -568,8 +521,6 @@ SWIFT_CLASS("_TtC12PrebidMobile6AdUnit")
 /// returns:
 /// The GPID string, or <code>nil</code> if no GPID is set.
 - (NSString * _Nullable)getGPID SWIFT_WARN_UNUSED_RESULT;
-- (void)setOrtbConfig:(NSString * _Nullable)ortbObject SWIFT_DEPRECATED_MSG("Deprecated. Use setImpORTBConfig(_:) for impression-level ORTB configuration.");
-- (NSString * _Nullable)getOrtbConfig SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Deprecated. Use getImpORTBConfig() for impression-level ORTB configuration.");
 /// Sets the impression-level OpenRTB configuration string for the ad unit.
 /// \param ortbObject The impression-level OpenRTB configuration string to set. Can be <code>nil</code> to clear the configuration.
 ///
@@ -599,45 +550,13 @@ SWIFT_CLASS("_TtC12PrebidMobile12AdUnitConfig")
 @property (nonatomic) CGSize adSize;
 @property (nonatomic, strong) NSValue * _Nullable minSizePerc;
 @property (nonatomic) enum PBMAdPosition adPosition;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull extDataDictionary;
 @property (nonatomic, strong) PBMNativeAdConfiguration * _Nullable nativeAdConfiguration;
 @property (nonatomic, copy) NSArray<NSValue *> * _Nullable additionalSizes;
 @property (nonatomic) NSTimeInterval refreshInterval;
 @property (nonatomic, copy) NSString * _Nullable gpid;
-@property (nonatomic, copy) NSString * _Nullable ortbConfig;
 @property (nonatomic, copy) NSString * _Nullable impORTBConfig;
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId;
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId size:(CGSize)size OBJC_DESIGNATED_INITIALIZER;
-- (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
-- (void)updateContextDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use updateExtData method instead.");
-- (void)removeContextDataFor:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtData method instead.");
-- (void)clearContextData SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtData method instead.");
-- (NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)getContextData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use getExtData method instead.");
-- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
-- (void)removeExtDataFor:(NSString * _Nonnull)key;
-- (void)clearExtData;
-- (NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)getExtData SWIFT_WARN_UNUSED_RESULT;
-- (void)addContextKeyword:(NSString * _Nonnull)newElement SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeyword method instead.");
-- (void)addContextKeywords:(NSSet<NSString *> * _Nonnull)newElements SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeywords method instead.");
-- (void)removeContextKeyword:(NSString * _Nonnull)element SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtKeyword method instead.");
-- (void)clearContextKeywords SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtKeywords method instead.");
-- (NSSet<NSString *> * _Nonnull)getContextKeywords SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use getExtKeywords method instead.");
-- (void)addExtKeyword:(NSString * _Nonnull)newElement;
-- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
-- (void)removeExtKeyword:(NSString * _Nonnull)element;
-- (void)clearExtKeywords;
-- (NSSet<NSString *> * _Nonnull)getExtKeywords SWIFT_WARN_UNUSED_RESULT;
-- (void)setAppContent:(PBMORTBAppContent * _Nullable)appContent;
-- (PBMORTBAppContent * _Nullable)getAppContent SWIFT_WARN_UNUSED_RESULT;
-- (void)clearAppContent;
-- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects;
-- (void)removeAppContentData:(PBMORTBContentData * _Nonnull)dataObject;
-- (void)clearAppContentData;
-- (NSArray<PBMORTBContentData *> * _Nullable)getUserData SWIFT_WARN_UNUSED_RESULT;
-- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects;
-- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject;
-- (void)clearUserData;
 - (void)setPbAdSlot:(NSString * _Nullable)newElement;
 - (NSString * _Nullable)getPbAdSlot SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
@@ -657,7 +576,7 @@ SWIFT_CLASS_NAMED("AdViewButtonDecorator")
 @property (nonatomic) CGRect customButtonPosition;
 @property (nonatomic) double buttonArea;
 @property (nonatomic) BOOL isMRAID;
-@property (nonatomic, copy) PBMVoidBlock _Nullable buttonTouchUpInsideBlock;
+@property (nonatomic, copy) void (^ _Nullable buttonTouchUpInsideBlock)(void);
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setImage:(UIImage * _Nonnull)image;
 - (void)addButtonTo:(UIView * _Nonnull)view displayView:(UIView * _Nonnull)displayView;
@@ -668,6 +587,52 @@ SWIFT_CLASS_NAMED("AdViewButtonDecorator")
 - (CGFloat)getButtonConstraintConstant SWIFT_WARN_UNUSED_RESULT;
 - (CGSize)getButtonSize SWIFT_WARN_UNUSED_RESULT;
 - (void)buttonTappedAction;
+@end
+
+@class PBMAbstractCreative;
+
+SWIFT_PROTOCOL_NAMED("CreativeViewDelegate")
+@protocol PBMCreativeViewDelegate <NSObject>
+- (void)creativeDidComplete:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeDidDisplay:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeWasClicked:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeViewWasClicked:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeClickthroughDidClose:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeInterstitialDidClose:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeInterstitialDidLeaveApp:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeFullScreenDidFinish:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeDidSendRewardedEvent:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeReadyToReimplant:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeMraidDidCollapse:(PBMAbstractCreative * _Nonnull)creative;
+- (void)creativeMraidDidExpand:(PBMAbstractCreative * _Nonnull)creative;
+@optional
+- (void)videoCreativeDidComplete:(PBMAbstractCreative * _Nonnull)creative;
+- (void)videoWasMuted:(PBMAbstractCreative * _Nonnull)creative;
+- (void)videoWasUnmuted:(PBMAbstractCreative * _Nonnull)creative;
+@end
+
+@class PBMModalManager;
+@protocol PBMAdViewManagerDelegate;
+@protocol PBMModalManagerDelegate;
+@protocol PBMTransaction;
+
+SWIFT_PROTOCOL_NAMED("AdViewManager")
+@protocol PBMAdViewManager <PBMCreativeViewDelegate>
+@property (nonatomic, strong) PBMAdConfiguration * _Nonnull adConfiguration;
+@property (nonatomic, strong) PBMModalManager * _Nonnull modalManager;
+@property (nonatomic, weak) id <PBMAdViewManagerDelegate> _Nullable adViewManagerDelegate;
+@property (nonatomic) BOOL autoDisplayOnLoad;
+@property (nonatomic, readonly) BOOL isCreativeOpened;
+@property (nonatomic, readonly) BOOL isMuted;
+- (nonnull instancetype)initWithConnection:(id <PrebidServerConnectionProtocol> _Nonnull)connection modalManagerDelegate:(id <PBMModalManagerDelegate> _Nullable)modalManagerDelegate;
+- (NSString * _Nullable)revenueForNextCreative SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isAbleToShowCurrentCreative SWIFT_WARN_UNUSED_RESULT;
+- (void)show;
+- (void)pause;
+- (void)resume;
+- (void)mute;
+- (void)unmute;
+- (void)handleExternalTransaction:(id <PBMTransaction> _Nonnull)transaction;
 @end
 
 
@@ -684,12 +649,6 @@ SWIFT_CLASS("_TtC12PrebidMobile11AdViewUtils")
 /// \param failure Closure called with an <code>Error</code> if the size could not be determined.
 ///
 + (void)findPrebidCreativeSize:(UIView * _Nonnull)adView success:(void (^ _Nonnull)(CGSize))success failure:(void (^ _Nonnull)(NSError * _Nonnull))failure;
-@end
-
-
-SWIFT_CLASS_NAMED("AgeUtils")
-@interface PBMAgeUtils : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -736,8 +695,6 @@ SWIFT_PROTOCOL_NAMED("BannerBasedAdUnitProtocol")
 /// A class representing a banner ad unit for original type of integration.
 SWIFT_CLASS("_TtC12PrebidMobile12BannerAdUnit")
 @interface BannerAdUnit : AdUnit <PBMBannerBasedAdUnitProtocol, PBMVideoBasedAdUnitProtocol>
-/// A deprecated property for banner ad parameters.
-@property (nonatomic, strong) BannerParameters * _Nonnull parameters SWIFT_DEPRECATED_MSG("This property is deprecated. Please, use bannerParameters instead.");
 /// The banner ad parameters used to configure the ad unit.
 @property (nonatomic, strong) BannerParameters * _Nonnull bannerParameters;
 /// The video ad parameters used to configure the ad unit.
@@ -758,8 +715,25 @@ SWIFT_CLASS("_TtC12PrebidMobile12BannerAdUnit")
 /// \param adView The ad view that contains ad creative(f.e. GAMBannerView). This object will be used later for tracking <code>burl</code>.
 ///
 - (void)activatePrebidImpressionTrackerWithAdView:(UIView * _Nonnull)adView;
+/// Activates Prebid’s SKAdNetwork StoreKit ads flow for the provided ad view.
+/// Ensure this method is called within the Google Mobile Ads ad received method
+/// (e.g., in the GADBannerViewDelegate’s <code>bannerViewDidReceiveAd</code> or similar callbacks).
+/// This feature is not available for video ads.
+/// \param adView The ad view that contains ad creative(f.e. GAMBannerView).
+///
+- (void)activatePrebidSKAdNetworkStoreKitAdsFlowWithAdView:(UIView * _Nonnull)adView;
 @end
 
+
+@class BidResponse;
+
+SWIFT_PROTOCOL_NAMED("PrimaryAdRequesterProtocol")
+@protocol PBMPrimaryAdRequesterProtocol <NSObject>
+/// @abstract PBM SDK calls this method when it has valid bid/s to pass to the ad server.
+/// @discussion Note that, if the PBM SDK does not have valid bids, <code>requestAdWithBidResponse:</code> will be called with a <code>nil</code> bid value.
+/// @param bidResponse bid response object having useful information that can be passed to the ad server SDK
+- (void)requestAdWithBidResponse:(BidResponse * _Nullable)bidResponse;
+@end
 
 @protocol BannerEventLoadingDelegate;
 @protocol BannerEventInteractionDelegate;
@@ -778,7 +752,6 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile18BannerEventHandler_")
 - (void)trackImpression;
 @end
 
-@class BidResponse;
 
 SWIFT_CLASS("_TtC12PrebidMobile28BannerEventHandlerStandalone")
 @interface BannerEventHandlerStandalone : NSObject <BannerEventHandler>
@@ -875,7 +848,6 @@ SWIFT_CLASS("_TtC12PrebidMobile10BannerView")
 @property (nonatomic, strong) AdFormat * _Nonnull adFormat;
 /// The position of the ad on the screen.
 @property (nonatomic) enum PBMAdPosition adPosition;
-@property (nonatomic, copy) NSString * _Nullable ortbConfig SWIFT_DEPRECATED_MSG("Deprecated. Use setImpORTBConfig(_:) and getImpORTBConfig() for impression-level ORTB configuration.");
 /// ORTB configuration string.
 @property (nonatomic, weak) id <BannerViewDelegate> _Nullable delegate;
 /// Initializes a new <code>BannerView</code>.
@@ -919,96 +891,6 @@ SWIFT_CLASS("_TtC12PrebidMobile10BannerView")
 - (void)stopRefresh;
 /// Subscribe to plugin renderer events
 - (void)setPluginEventDelegate:(id <PluginEventDelegate> _Nonnull)pluginEventDelegate;
-/// Adds context data for a specified key.
-/// \param data The data to add.
-///
-/// \param key The key associated with the data.
-///
-- (void)addContextData:(NSString * _Nonnull)data forKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
-/// Updates context data for a specified key.
-/// \param data A set of data to update.
-///
-/// \param key The key associated with the data.
-///
-- (void)updateContextData:(NSSet<NSString *> * _Nonnull)data forKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use updateExtData method instead.");
-/// Removes context data for a specified key.
-/// \param key The key associated with the data to remove.
-///
-- (void)removeContextDateForKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtData method instead.");
-/// Clears all context data.
-- (void)clearContextData SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtData method instead.");
-/// Adds ext data.
-/// \param key The key for the data.
-///
-/// \param value The value for the data.
-///
-- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-/// Updates ext data.
-/// \param key The key for the data.
-///
-/// \param value The value for the data.
-///
-- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
-/// Removes ext data.
-/// \param key The key for the data.
-///
-- (void)removeExtDataForKey:(NSString * _Nonnull)forKey;
-/// Clears ext data.
-- (void)clearExtData;
-/// Adds a context keyword.
-/// \param newElement The keyword to add.
-///
-- (void)addContextKeyword:(NSString * _Nonnull)newElement SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeyword method instead.");
-/// Adds a set of context keywords.
-/// \param newElements A set of keywords to add.
-///
-- (void)addContextKeywords:(NSSet<NSString *> * _Nonnull)newElements SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeywords method instead.");
-/// Removes a context keyword.
-/// \param element The keyword to remove.
-///
-- (void)removeContextKeyword:(NSString * _Nonnull)element SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtKeyword method instead.");
-/// Clears all context keywords.
-- (void)clearContextKeywords SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtKeywords method instead.");
-/// Adds an extended keyword.
-/// \param newElement The keyword to be added.
-///
-- (void)addExtKeyword:(NSString * _Nonnull)newElement;
-/// Adds multiple extended keywords.
-/// \param newElements A set of keywords to be added.
-///
-- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
-/// Removes an extended keyword.
-/// \param element The keyword to be removed.
-///
-- (void)removeExtKeyword:(NSString * _Nonnull)element;
-/// Clears all extended keywords.
-- (void)clearExtKeywords;
-/// Sets the app content data.
-/// \param appContent The app content data.
-///
-- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears the app content data.
-- (void)clearAppContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds app content data objects.
-/// \param dataObjects The data objects to be added.
-///
-- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes an app content data object.
-/// \param dataObject The data object to be removed.
-///
-- (void)removeAppContentDataObject:(PBMORTBContentData * _Nonnull)dataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all app content data objects.
-- (void)clearAppContentDataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds user data objects.
-/// \param userDataObjects The user data objects to be added.
-///
-- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a user data object.
-/// \param userDataObject The user data object to be removed.
-///
-- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all user data objects.
-- (void)clearUserData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
 - (void)trackImpressionForDisplayView:(UIView * _Nonnull)forDisplayView;
 - (UIViewController * _Nullable)viewControllerForModalPresentationFromDisplayView:(UIView * _Nonnull)fromDisplayView SWIFT_WARN_UNUSED_RESULT;
 - (void)didLeaveAppFrom:(UIView * _Nonnull)displayView;
@@ -1118,6 +1000,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @end
 
 
+
 @interface Bid (SWIFT_EXTENSION(PrebidMobile))
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull impressionTrackingURLs;
 @end
@@ -1146,6 +1029,21 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_PROTOCOL_NAMED("BidRequesterProtocol")
+@protocol PBMBidRequesterProtocol
+- (void)requestBidsWithCompletion:(void (^ _Nonnull)(BidResponse * _Nullable, NSError * _Nullable))completion;
+@end
+
+@class Prebid;
+@class Targeting;
+
+SWIFT_PROTOCOL_NAMED("BidRequester")
+@protocol PBMBidRequester <PBMBidRequesterProtocol>
+- (nonnull instancetype)initWithConnection:(id <PrebidServerConnectionProtocol> _Nonnull)connection sdkConfiguration:(Prebid * _Nonnull)sdkConfiguration targeting:(Targeting * _Nonnull)targeting adUnitConfiguration:(AdUnitConfig * _Nonnull)adUnitConfiguration;
+@end
+
+
 @class PBMORTBBidResponseExt;
 
 SWIFT_CLASS("_TtC12PrebidMobile11BidResponse")
@@ -1163,6 +1061,8 @@ SWIFT_CLASS("_TtC12PrebidMobile11BidResponse")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 SWIFT_CLASS_NAMED("CacheManager")
@@ -1261,6 +1161,35 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ContextType 
 - (nonnull instancetype)initWithIntegerLiteral:(NSInteger)value OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS_NAMED("CreativeModel")
+@interface PBMCreativeModel : NSObject
+@property (nonatomic, strong) PBMAdConfiguration * _Nullable adConfiguration;
+@property (nonatomic, strong) PBMAdModelEventTracker * _Nullable eventTracker;
+@property (nonatomic, strong) NSNumber * _Nullable displayDurationInSeconds;
+@property (nonatomic, strong) NSNumber * _Nullable skipOffset;
+@property (nonatomic) NSInteger width;
+@property (nonatomic) NSInteger height;
+@property (nonatomic, copy) NSString * _Nullable html;
+@property (nonatomic, copy) NSString * _Nullable targetURL;
+@property (nonatomic, copy) NSString * _Nullable videoFileURL;
+@property (nonatomic, copy) NSString * _Nullable revenue;
+@property (nonatomic, strong) PBMVideoVerificationParameters * _Nullable verificationParameters;
+@property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull trackingURLs;
+@property (nonatomic, copy) NSString * _Nullable adTrackingTemplateURL;
+@property (nonatomic, strong) PBMAdDetails * _Nullable adDetails;
+@property (nonatomic, copy) NSString * _Nullable clickThroughURL;
+@property (nonatomic) BOOL isCompanionAd;
+@property (nonatomic) BOOL hasCompanionAd;
+@property (nonatomic) BOOL userHasEarnedReward;
+@property (nonatomic) BOOL userPostRewardEventSent;
+@property (nonatomic, strong) NSNumber * _Nullable rewardTime;
+@property (nonatomic, strong) NSNumber * _Nullable postRewardTime;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAdConfiguration:(PBMAdConfiguration * _Nonnull)adConfiguration OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 /// Enum representing different types of native data assets.
 typedef SWIFT_ENUM(NSInteger, DataAsset, open) {
   DataAssetSponsored = 1,
@@ -1308,7 +1237,7 @@ SWIFT_CLASS("_TtC12PrebidMobile18DemandResponseInfo")
 @interface DemandResponseInfo : NSObject
 @property (nonatomic, readonly) enum ResultCode fetchDemandResult;
 @property (nonatomic, readonly, strong) Bid * _Nullable bid;
-- (nonnull instancetype)initWithFetchDemandResult:(enum ResultCode)fetchDemandResult bid:(Bid * _Nullable)bid configId:(NSString * _Nullable)configId winNotifierBlock:(PBMWinNotifierBlock _Nonnull)winNotifierBlock bidResponse:(BidResponse * _Nullable)bidResponse OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFetchDemandResult:(enum ResultCode)fetchDemandResult bid:(Bid * _Nullable)bid configId:(NSString * _Nullable)configId winNotifierBlock:(void (^ _Nonnull)(Bid * _Nonnull, void (^ _Nonnull)(NSString * _Nullable)))winNotifierBlock bidResponse:(BidResponse * _Nullable)bidResponse OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1331,23 +1260,23 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile26DisplayViewLoadingDelegate_")
 - (void)displayView:(UIView * _Nonnull)displayView didFailWithError:(NSError * _Nonnull)error;
 @end
 
-@class PBMVideoVerificationParameters;
 
 /// This class is a proxy container for event trackers.
 /// You can add (and remove) any quantity of trackers.
-/// Each tracker must correspond to PBMEventTrackerProtocol the PBMEventTracker Protocol.
-/// EventManager implements PBMEventTrackerProtocol.
+/// Each tracker must correspond to EventTrackerProtocol the EventTracker Protocol.
+/// EventManager implements EventTrackerProtocol.
 /// It broadcasts protocol calls to the all registered trackers.
 SWIFT_CLASS_NAMED("EventManager")
 @interface PBMEventManager : NSObject <PBMEventTrackerProtocol>
 - (void)registerTracker:(id <PBMEventTrackerProtocol> _Nonnull)tracker;
 - (void)unregisterTracker:(id <PBMEventTrackerProtocol> _Nonnull)tracker;
-- (void)trackEvent:(PBMTrackingEvent)event;
-- (void)trackVideoAdLoaded:(PBMVideoVerificationParameters * _Null_unspecified)parameters;
-- (void)trackStartVideoWithDuration:(CGFloat)duration volume:(CGFloat)volume;
-- (void)trackVolumeChanged:(CGFloat)playerVolume deviceVolume:(CGFloat)deviceVolume;
+- (void)trackEvent:(enum PBMTrackingEvent)event;
+- (void)trackVideoAdLoaded:(PBMVideoVerificationParameters * _Nonnull)parameters;
+- (void)trackStartVideoWithDuration:(NSTimeInterval)duration volume:(double)volume;
+- (void)trackVolumeChanged:(double)playerVolume deviceVolume:(double)deviceVolume;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 /// Native event tracking type.
@@ -1394,10 +1323,6 @@ SWIFT_CLASS("_TtC12PrebidMobile14ExternalUserId")
 @property (nonatomic, copy) NSArray<UserUniqueID *> * _Nonnull uids;
 /// Additional attributes related to the external user ID, represented as an optional dictionary.
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable ext;
-/// The identifier of the external user ID.
-@property (nonatomic, copy) NSString * _Nullable identifier SWIFT_DEPRECATED_MSG("Deprecated. This property will be removed in future releases.");
-/// The type of the external user ID, represented as an optional <code>NSNumber</code>.
-@property (nonatomic, strong) NSNumber * _Nullable atype SWIFT_DEPRECATED_MSG("Deprecated. This property will be removed in future releases.");
 /// Initializes a new <code>ExternalUserId</code> object.
 /// \param source The source of the external user ID (e.g., a third-party provider).
 ///
@@ -1406,60 +1331,53 @@ SWIFT_CLASS("_TtC12PrebidMobile14ExternalUserId")
 /// \param ext Optional dictionary for additional attributes related to the external user ID. Default is <code>nil</code>.
 ///
 - (nonnull instancetype)initWithSource:(NSString * _Nonnull)source uids:(NSArray<UserUniqueID *> * _Nonnull)uids ext:(NSDictionary<NSString *, id> * _Nullable)ext OBJC_DESIGNATED_INITIALIZER;
-/// Initialize ExternalUserId Class
-/// \param source Source of the External User Id String.
-///
-/// \param identifier String of the External User Id.
-///
-/// \param atype (Optional) Int of the External User Id.
-///
-/// \param ext (Optional) Dictionary of the External User Id.
-///
-- (nonnull instancetype)initWithSource:(NSString * _Nonnull)source identifier:(NSString * _Nonnull)identifier atype:(NSNumber * _Nullable)atype ext:(NSDictionary<NSString *, id> * _Nullable)ext OBJC_DESIGNATED_INITIALIZER SWIFT_DEPRECATED_MSG("Deprecated. This initializer will be removed in future releases.");
 /// Converts the <code>ExternalUserId</code> instance to a JSON dictionary.
 - (NSDictionary<NSString *, id> * _Nonnull)toJSONDictionary SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// An enumeration representing gender options for ad targeting or other purposes.
-/// This enum is used to specify different gender options and is intended for use in contexts where gender information may be relevant.
-/// <ul>
-///   <li>
-///     <code>unknown</code>: Gender is not specified or unknown.
-///   </li>
-///   <li>
-///     <code>male</code>: Represents the male gender.
-///   </li>
-///   <li>
-///     <code>female</code>: Represents the female gender.
-///   </li>
-///   <li>
-///     <code>other</code>: Represents any other gender that does not fit into the male or female categories.
-///   </li>
-/// </ul>
-typedef SWIFT_ENUM_NAMED(NSInteger, PBMGender, "Gender", open) {
-/// Gender is not specified or unknown.
-  PBMGenderUnknown = 0,
-/// Represents the male gender.
-  PBMGenderMale = 1,
-/// Represents the female gender.
-  PBMGenderFemale = 2,
-/// Represents any other gender that does not fit into the male or female categories.
-  PBMGenderOther = 3,
-};
+@protocol PBMWinNotifier;
+@protocol PBMViewExposure;
+@protocol PBMModalState;
+@class PBMInterstitialDisplayProperties;
+@protocol PBMInterstitialAdLoader;
+@protocol PBMInterstitialAdLoaderDelegate;
 
-@class WKWebView;
+SWIFT_CLASS_NAMED("Factory")
+@interface PBMFactory : NSObject
++ (id <PBMBidRequester> _Nonnull)createBidRequesterWithConnection:(id <PrebidServerConnectionProtocol> _Nonnull)connection sdkConfiguration:(Prebid * _Nonnull)sdkConfiguration targeting:(Targeting * _Nonnull)targeting adUnitConfiguration:(AdUnitConfig * _Nonnull)adUnitConfiguration SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class <PBMWinNotifier> _Nonnull WinNotifierType;)
++ (Class <PBMWinNotifier> _Nonnull)WinNotifierType SWIFT_WARN_UNUSED_RESULT;
++ (id <PBMWinNotifier> _Nonnull)createWinNotifier SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class <PBMAdViewManager> _Nonnull AdViewManagerType;)
++ (Class <PBMAdViewManager> _Nonnull)AdViewManagerType SWIFT_WARN_UNUSED_RESULT;
++ (id <PBMAdViewManager> _Nonnull)createAdViewManagerWithConnection:(id <PrebidServerConnectionProtocol> _Nonnull)connection modalManagerDelegate:(id <PBMModalManagerDelegate> _Nullable)modalManagerDelegate SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class <PBMTransaction> _Nonnull TransactionType;)
++ (Class <PBMTransaction> _Nonnull)TransactionType SWIFT_WARN_UNUSED_RESULT;
++ (id <PBMTransaction> _Nonnull)createTransactionWithServerConnection:(id <PrebidServerConnectionProtocol> _Nonnull)serverConnection adConfiguration:(PBMAdConfiguration * _Nonnull)adConfiguration models:(NSArray<PBMCreativeModel *> * _Nonnull)models SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class <PBMViewExposure> _Nonnull ViewExposureType;)
++ (Class <PBMViewExposure> _Nonnull)ViewExposureType SWIFT_WARN_UNUSED_RESULT;
++ (id <PBMViewExposure> _Nonnull)createViewExposureWithExposureFactor:(float)exposureFactor visibleRectangle:(CGRect)visibleRectangle occlusionRectangles:(NSArray<NSValue *> * _Nullable)occlusionRectangles SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class <PBMModalState> _Nonnull ModalStateType;)
++ (Class <PBMModalState> _Nonnull)ModalStateType SWIFT_WARN_UNUSED_RESULT;
++ (id <PBMModalState> _Nonnull)createModalStateWithView:(UIView * _Nonnull)view adConfiguration:(PBMAdConfiguration * _Nullable)adConfiguration displayProperties:(PBMInterstitialDisplayProperties * _Nullable)displayProperties onStatePopFinished:(void (^ _Nullable)(id <PBMModalState> _Nullable))onStatePopFinished onStateHasLeftApp:(void (^ _Nullable)(id <PBMModalState> _Nullable))onStateHasLeftApp nextOnStatePopFinished:(void (^ _Nullable)(id <PBMModalState> _Nullable))nextOnStatePopFinished nextOnStateHasLeftApp:(void (^ _Nullable)(id <PBMModalState> _Nullable))nextOnStateHasLeftApp onModalPushedBlock:(void (^ _Nullable)(void))onModalPushedBlock SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class <PBMInterstitialAdLoader> _Nonnull PBMInterstitialAdLoaderType;)
++ (Class <PBMInterstitialAdLoader> _Nonnull)PBMInterstitialAdLoaderType SWIFT_WARN_UNUSED_RESULT;
++ (id <PBMInterstitialAdLoader> _Nonnull)PBMInterstitialAdLoaderWithDelegate:(id <PBMInterstitialAdLoaderDelegate> _Nonnull)delegate eventHandler:(id <PBMPrimaryAdRequesterProtocol> _Nonnull)eventHandler SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSURL;
 
 SWIFT_CLASS_NAMED("HiddenWebViewManager")
 @interface PBMHiddenWebViewManager : NSObject
-- (nonnull instancetype)initWithWebView:(WKWebView * _Nonnull)webView landingPageString:(NSString * _Nonnull)landingPageString OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame landingPageString:(NSURL * _Nonnull)landingPageString OBJC_DESIGNATED_INITIALIZER;
 - (void)openHiddenWebView;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-enum PrebidHost : NSInteger;
 
 /// A singleton class that manages the Prebid server URL, including a custom URL.
 SWIFT_CLASS("_TtC12PrebidMobile4Host")
@@ -1469,11 +1387,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Host * _Nonn
 + (Host * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-/// The CustomHost property holds the URL for the custom prebid adaptor
-- (BOOL)setCustomHostURL:(NSString * _Nullable)urlString error:(NSError * _Nullable * _Nullable)error SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use setHostURL instead.");
 - (BOOL)setHostURL:(NSString * _Nullable)urlString nonTrackingURLString:(NSString * _Nullable)nonTrackingURLString error:(NSError * _Nullable * _Nullable)error;
-/// This function retrieves the prebid server URL for the selected host
-- (NSString * _Nullable)getHostURLWithHost:(enum PrebidHost)host error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use getHostURL instead.");
 - (NSString * _Nullable)getHostURLAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 /// This function verifies if the prebid server URL is in the url format
 - (BOOL)verifyUrlWithUrlString:(NSString * _Nullable)urlString SWIFT_WARN_UNUSED_RESULT;
@@ -1532,17 +1446,38 @@ SWIFT_CLASS("_TtC12PrebidMobile19InstreamVideoAdUnit")
 @end
 
 
+SWIFT_PROTOCOL_NAMED("InterstitialAd")
+@protocol PBMInterstitialAd <PBMPrimaryAdRequesterProtocol>
+/// @abstract Return whether an interstitial is ready for display
+@property (nonatomic, readonly) BOOL isReady;
+/// @abstract PBM SDK calls this method to show the interstitial ad from the ad server SDK
+/// @param controller view controller to be used for presenting the interstitial ad
+- (void)showFromViewController:(UIViewController * _Nullable)viewController;
+@optional
+/// @abstract Called by PBM SDK to notify primary ad server.
+- (void)trackImpression;
+@end
+
+@class InterstitialController;
+
+SWIFT_PROTOCOL_NAMED("InterstitialAdLoaderDelegate")
+@protocol PBMInterstitialAdLoaderDelegate
+- (void)interstitialAdLoader:(id <PBMInterstitialAdLoader> _Nonnull)interstitialAdLoader loadedAd:(void (^ _Nonnull)(UIViewController * _Nullable))showBlock isReadyBlock:(BOOL (^ _Nonnull)(void))isReadyBlock;
+- (void)interstitialAdLoader:(id <PBMInterstitialAdLoader> _Nonnull)interstitialAdLoader createdInterstitialController:(InterstitialController * _Nonnull)interstitialController;
+@end
+
+
 /// Represents an interstitial ad unit built for original type of integration.
 SWIFT_CLASS("_TtC12PrebidMobile18InterstitialAdUnit")
 @interface InterstitialAdUnit : AdUnit <PBMBannerBasedAdUnitProtocol, PBMVideoBasedAdUnitProtocol>
-/// The deprecated banner parameters for this ad unit.
-@property (nonatomic, strong) BannerParameters * _Nonnull parameters SWIFT_DEPRECATED_MSG("This property is deprecated. Please, use bannerParameters instead.");
 /// The banner parameters for this ad unit.
 @property (nonatomic, strong) BannerParameters * _Nonnull bannerParameters;
 /// The video parameters for this ad unit.
 @property (nonatomic, strong) VideoParameters * _Nonnull videoParameters;
 /// The ad formats for the ad unit.
 @property (nonatomic, copy) NSSet<AdFormat *> * _Nonnull adFormats;
+/// A flag that determines whether SKOverlay should be supported
+@property (nonatomic) BOOL supportSKOverlay;
 /// Initializes a new interstitial ad unit with a unique configuration identifier.
 /// \param configId The unique identifier for the ad unit configuration.
 ///
@@ -1555,7 +1490,16 @@ SWIFT_CLASS("_TtC12PrebidMobile18InterstitialAdUnit")
 /// \param minHeightPerc The minimum height percentage of the ad.
 ///
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId minWidthPerc:(NSInteger)minWidthPerc minHeightPerc:(NSInteger)minHeightPerc;
+/// Sets the view in which Prebid will start tracking an impression.
 - (void)activatePrebidImpressionTracker;
+/// Activates Prebid’s SKAdNetwork StoreKit ads flow.
+/// Ensure this method is called before presenting interstitials.
+/// This feature is not available for video ads.
+- (void)activatePrebidSKAdNetworkStoreKitAdsFlow;
+/// Attempts to display an <code>SKOverlay</code> if a valid configuration is available.
+- (void)activateSKOverlayIfAvailable;
+/// Dismisses the SKOverlay if presented.
+- (void)dismissSKOverlayIfAvailable;
 @end
 
 @class InterstitialRenderingAdUnit;
@@ -1594,8 +1538,6 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile42PrebidMobileInterstitialControllerProtocol_"
 
 @protocol InterstitialControllerLoadingDelegate;
 @protocol InterstitialControllerInteractionDelegate;
-@class PBMAdDetails;
-@class PBMInterstitialDisplayProperties;
 
 SWIFT_CLASS("_TtC12PrebidMobile22InterstitialController")
 @interface InterstitialController : NSObject <PBMAdViewManagerDelegate, PrebidMobileInterstitialControllerProtocol>
@@ -1687,11 +1629,27 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile37InterstitialControllerLoadingDelegate_")
 - (void)interstitialController:(id <PrebidMobileInterstitialControllerProtocol> _Nonnull)interstitialController didFailWithError:(NSError * _Nonnull)error;
 @end
 
+@class UIColor;
+
+SWIFT_CLASS_NAMED("InterstitialDisplayProperties")
+@interface PBMInterstitialDisplayProperties : NSObject
+@property (nonatomic) NSTimeInterval closeDelay;
+@property (nonatomic) NSTimeInterval closeDelayLeft;
+@property (nonatomic) CGRect contentFrame;
+@property (nonatomic, strong) UIColor * _Nonnull contentViewColor;
+@property (nonatomic) enum PBMInterstitialLayout interstitialLayout;
+@property (nonatomic, readonly) BOOL rotationEnabled;
+- (void)setButtonImageHidden;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (UIImage * _Nullable)getCloseButtonImage SWIFT_WARN_UNUSED_RESULT;
+- (id _Nonnull)copy SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @protocol InterstitialEventLoadingDelegate;
 @protocol InterstitialEventInteractionDelegate;
 
-SWIFT_PROTOCOL("_TtP12PrebidMobile32InterstitialEventHandlerProtocol_")
-@protocol InterstitialEventHandlerProtocol <PBMInterstitialAd>
+SWIFT_PROTOCOL_NAMED("InterstitialEventHandlerProtocol")
+@protocol PBMInterstitialEventHandlerProtocol <PBMInterstitialAd>
 /// Delegate for custom event handler to inform the PBM SDK about the events related to the ad server communication.
 @property (nonatomic, weak) id <InterstitialEventLoadingDelegate> _Nullable loadingDelegate;
 /// Delegate for custom event handler to inform the PBM SDK about the events related to the user’s interaction with the ad.
@@ -1700,7 +1658,7 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile32InterstitialEventHandlerProtocol_")
 
 
 SWIFT_CLASS("_TtC12PrebidMobile34InterstitialEventHandlerStandalone")
-@interface InterstitialEventHandlerStandalone : NSObject <InterstitialEventHandlerProtocol>
+@interface InterstitialEventHandlerStandalone : NSObject <PBMInterstitialEventHandlerProtocol>
 @property (nonatomic, weak) id <InterstitialEventLoadingDelegate> _Nullable loadingDelegate;
 @property (nonatomic, weak) id <InterstitialEventInteractionDelegate> _Nullable interactionDelegate;
 @property (nonatomic, readonly) BOOL isReady;
@@ -1730,6 +1688,14 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile32InterstitialEventLoadingDelegate_")
 - (void)failedWithError:(NSError * _Nullable)error;
 @end
 
+/// Determines the type of interstitial layout
+typedef SWIFT_ENUM_NAMED(NSInteger, PBMInterstitialLayout, "InterstitialLayout", open) {
+  PBMInterstitialLayoutUndefined = 0,
+  PBMInterstitialLayoutPortrait = 1,
+  PBMInterstitialLayoutLandscape = 2,
+  PBMInterstitialLayoutAspectRatio = 3,
+};
+
 
 /// Represents an interstitial ad unit. Built for rendering type of integration.
 SWIFT_CLASS("_TtC12PrebidMobile27InterstitialRenderingAdUnit")
@@ -1742,8 +1708,6 @@ SWIFT_CLASS("_TtC12PrebidMobile27InterstitialRenderingAdUnit")
 @property (nonatomic, copy) NSSet<AdFormat *> * _Nonnull adFormats;
 /// The position of the ad on the screen.
 @property (nonatomic) enum PBMAdPosition adPosition;
-/// The ORTB (OpenRTB) configuration string for the ad unit.
-@property (nonatomic, copy) NSString * _Nullable ortbConfig SWIFT_DEPRECATED_MSG("Deprecated. Use setImpORTBConfig(_:) and getImpORTBConfig() for impression-level ORTB configuration.");
 /// The banner parameters used for configuring ad unit.
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 /// The video parameters used for configuring ad unit.
@@ -1802,98 +1766,31 @@ SWIFT_CLASS("_TtC12PrebidMobile27InterstitialRenderingAdUnit")
 - (void)setImpORTBConfig:(NSString * _Nullable)ortbConfig;
 /// Returns the impression-level OpenRTB configuration string.
 - (NSString * _Nullable)getImpORTBConfig SWIFT_WARN_UNUSED_RESULT;
-/// Adds context data for a specified key.
-/// \param data The data to add.
-///
-/// \param key The key associated with the data.
-///
-- (void)addContextData:(NSString * _Nonnull)data forKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
-/// Updates context data for a specified key.
-/// \param data A set of data to update.
-///
-/// \param key The key associated with the data.
-///
-- (void)updateContextData:(NSSet<NSString *> * _Nonnull)data forKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use updateExtData method instead.");
-/// Removes context data for a specified key.
-/// \param key The key associated with the data to remove.
-///
-- (void)removeContextDateForKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtData method instead.");
-/// Clears all context data.
-- (void)clearContextData SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtData method instead.");
-/// Adds ext data.
-/// \param key The key for the data.
-///
-/// \param value The value for the data.
-///
-- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-/// Updates ext data.
-/// \param key The key for the data.
-///
-/// \param value The value for the data.
-///
-- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
-/// Removes ext data.
-/// \param key The key for the data.
-///
-- (void)removeExtDataForKey:(NSString * _Nonnull)forKey;
-/// Clears ext data.
-- (void)clearExtData;
-/// Adds a context keyword.
-/// \param newElement The keyword to add.
-///
-- (void)addContextKeyword:(NSString * _Nonnull)newElement SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeyword method instead.");
-/// Adds a set of context keywords.
-/// \param newElements A set of keywords to add.
-///
-- (void)addContextKeywords:(NSSet<NSString *> * _Nonnull)newElements SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeywords method instead.");
-/// Removes a context keyword.
-/// \param element The keyword to remove.
-///
-- (void)removeContextKeyword:(NSString * _Nonnull)element SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtKeyword method instead.");
-/// Clears all context keywords.
-- (void)clearContextKeywords SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtKeywords method instead.");
-/// Adds an extended keyword.
-/// \param newElement The keyword to be added.
-///
-- (void)addExtKeyword:(NSString * _Nonnull)newElement;
-/// Adds multiple extended keywords.
-/// \param newElements A set of keywords to be added.
-///
-- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
-/// Removes an extended keyword.
-/// \param element The keyword to be removed.
-///
-- (void)removeExtKeyword:(NSString * _Nonnull)element;
-/// Clears all extended keywords.
-- (void)clearExtKeywords;
-/// Sets the app content data.
-/// \param appContent The app content data.
-///
-- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears the app content data.
-- (void)clearAppContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds app content data objects.
-/// \param dataObjects The data objects to be added.
-///
-- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes an app content data object.
-/// \param dataObject The data object to be removed.
-///
-- (void)removeAppContentDataObject:(PBMORTBContentData * _Nonnull)dataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all app content data objects.
-- (void)clearAppContentDataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds user data objects.
-/// \param userDataObjects The user data objects to be added.
-///
-- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a user data object.
-/// \param userDataObject The user data object to be removed.
-///
-- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all user data objects.
-- (void)clearUserData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS_NAMED("LocationManager")
+@interface PBMLocationManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBMLocationManager * _Nonnull shared;)
++ (PBMLocationManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic) BOOL locationUpdatesEnabled;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinates;
+@property (nonatomic, readonly) BOOL coordinatesAreValid;
+@property (nonatomic, readonly) CLLocationAccuracy horizontalAccuracy;
+@property (nonatomic, readonly, copy) NSDate * _Nullable timestamp;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class CLLocationManager;
+@class CLLocation;
+
+@interface PBMLocationManager (SWIFT_EXTENSION(PrebidMobile)) <CLLocationManagerDelegate>
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 @end
 
 @class PBMLogLevel;
@@ -1977,85 +1874,12 @@ SWIFT_CLASS("_TtC12PrebidMobile21MediationBannerAdUnit")
 @property (nonatomic) NSTimeInterval refreshInterval;
 /// Additional sizes for the ad unit.
 @property (nonatomic, copy) NSArray<NSValue *> * _Nullable additionalSizes;
-/// The ORTB (OpenRTB) configuration string for the ad unit.
-@property (nonatomic, copy) NSString * _Nullable ortbConfig SWIFT_DEPRECATED_MSG("Deprecated. Use setImpORTBConfig(_:) and getImpORTBConfig() for impression-level ORTB configuration.");
 /// Sets the impression-level OpenRTB configuration string for the ad unit.
 /// \param ortbObject The  impression-level OpenRTB configuration string to set. Can be <code>nil</code> to clear the configuration.
 ///
 - (void)setImpORTBConfig:(NSString * _Nullable)ortbConfig;
 /// Returns the impression-level OpenRTB configuration string.
 - (NSString * _Nullable)getImpORTBConfig SWIFT_WARN_UNUSED_RESULT;
-/// This method obtains the context data keyword & value for adunit context targeting
-/// if the key already exists the value will be appended to the list. No duplicates will be added
-- (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
-/// This method obtains the context data keyword & values for adunit context targeting
-/// the values if the key already exist will be replaced with the new set of values
-- (void)updateContextDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use updateExtData method instead.");
-/// This method allows to remove specific context data keyword & values set from adunit context targeting
-- (void)removeContextDataForKey:(NSString * _Nonnull)forKey SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtData method instead.");
-/// This method allows to remove all context data set from adunit context targeting
-- (void)clearContextData SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtData method instead.");
-/// This method obtains the ext data keyword & value for adunit targeting.
-/// If the key already exists the value will be appended to the list. No duplicates will be added
-- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-/// This method obtains the ext data keyword & values for adunit targeting.
-/// The values if the key already exist will be replaced with the new set of values
-- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
-/// This method allows to remove specific ext data keyword & values set from adunit targeting
-- (void)removeExtDataForKey:(NSString * _Nonnull)forKey;
-/// This method allows to remove all ext data set from adunit targeting
-- (void)clearExtData;
-/// This method obtains the context keyword for adunit context targeting
-/// Inserts the given element in the set if it is not already present.
-- (void)addContextKeyword:(NSString * _Nonnull)newElement SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeyword method instead.");
-/// This method obtains the context keyword set for adunit context targeting
-/// Adds the elements of the given set to the set.
-- (void)addContextKeywords:(NSSet<NSString *> * _Nonnull)newElements SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeywords method instead.");
-/// This method allows to remove specific context keyword from adunit context targeting
-- (void)removeContextKeyword:(NSString * _Nonnull)element SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtKeyword method instead.");
-/// This method allows to remove all keywords from the set of adunit context targeting
-- (void)clearContextKeywords SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtKeywords method instead.");
-/// This method obtains the keyword for adunit targeting
-/// Inserts the given element in the set if it is not already present.
-- (void)addExtKeyword:(NSString * _Nonnull)newElement;
-/// This method obtains the keyword set for adunit targeting
-/// Adds the elements of the given set to the set.
-- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
-/// This method allows to remove specific keyword from adunit targeting
-- (void)removeExtKeyword:(NSString * _Nonnull)element;
-/// This method allows to remove all keywords from the set of adunit targeting
-- (void)clearExtKeywords;
-/// Sets the app content object, replacing any existing content.
-/// \param appContentObject The <code>PBMORTBAppContent</code> object representing the app’s content.
-///
-- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContentObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Retrieves the current app content object.
-///
-/// returns:
-/// The current <code>PBMORTBAppContent</code> object, or <code>nil</code> if no content is set.
-- (PBMORTBAppContent * _Nullable)getAppContent SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.getGlobalORTBConfig method instead.");
-/// Clears the current app content object.
-- (void)clearAppContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds an array of content data objects to the app content.
-/// \param dataObjects An array of <code>PBMORTBContentData</code> objects to add.
-///
-- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a specific content data object from the app content.
-/// \param dataObject The <code>PBMORTBContentData</code> object to remove.
-///
-- (void)removeAppContentData:(PBMORTBContentData * _Nonnull)dataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all content data objects from the app content.
-- (void)clearAppContentData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds an array of user data objects.
-/// \param userDataObjects An array of <code>PBMORTBContentData</code> objects to add to the user data.
-///
-- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a specific user data object.
-/// \param userDataObject The <code>PBMORTBContentData</code> object to remove from the user data.
-///
-- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all user data.
-- (void)clearUserData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
 /// Initializes a new mediation banner ad unit with the specified configuration ID, size, and mediation delegate.
 /// \param configID The unique identifier for the ad unit configuration.
 ///
@@ -2098,8 +1922,6 @@ SWIFT_CLASS("_TtC12PrebidMobile31MediationBaseInterstitialAdUnit")
 @property (nonatomic) double closeButtonArea;
 /// The position of the close button in the video ad.
 @property (nonatomic) enum PBMPosition closeButtonPosition;
-/// The ORTB (OpenRTB) configuration string for the ad unit.
-@property (nonatomic, copy) NSString * _Nullable ortbConfig SWIFT_DEPRECATED_MSG("Deprecated. Use setImpORTBConfig(_:) and getImpORTBConfig() for impression-level ORTB configuration.");
 /// The configuration ID for the ad unit.
 @property (nonatomic, readonly, copy) NSString * _Nonnull configId;
 /// Makes bid request and setups mediation parameters.
@@ -2112,72 +1934,6 @@ SWIFT_CLASS("_TtC12PrebidMobile31MediationBaseInterstitialAdUnit")
 - (void)setImpORTBConfig:(NSString * _Nullable)ortbConfig;
 /// Returns the impression-level OpenRTB configuration string.
 - (NSString * _Nullable)getImpORTBConfig SWIFT_WARN_UNUSED_RESULT;
-/// This method obtains the context data keyword & value for adunit context targeting
-/// if the key already exists the value will be appended to the list. No duplicates will be added
-- (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
-/// This method obtains the context data keyword & values for adunit context targeting
-/// the values if the key already exist will be replaced with the new set of values
-- (void)updateContextDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use updateExtData method instead.");
-/// This method allows to remove specific context data keyword & values set from adunit context targeting
-- (void)removeContextDataForKey:(NSString * _Nonnull)forKey SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtData method instead.");
-/// This method allows to remove all context data set from adunit context targeting
-- (void)clearContextData SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtData method instead.");
-/// This method obtains the ext data keyword & value for adunit targeting.
-/// If the key already exists the value will be appended to the list. No duplicates will be added
-- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-/// This method obtains the ext data keyword & values for adunit targeting.
-/// The values if the key already exist will be replaced with the new set of values
-- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
-/// This method allows to remove specific ext data keyword & values set from adunit targeting
-- (void)removeExtDataForKey:(NSString * _Nonnull)forKey;
-/// This method allows to remove all ext data set from adunit targeting
-- (void)clearExtData;
-/// This method obtains the context keyword for adunit context targeting
-/// Inserts the given element in the set if it is not already present.
-- (void)addContextKeyword:(NSString * _Nonnull)newElement SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeyword method instead.");
-/// This method obtains the context keyword set for adunit context targeting
-/// Adds the elements of the given set to the set.
-- (void)addContextKeywords:(NSSet<NSString *> * _Nonnull)newElements SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeywords method instead.");
-/// This method allows to remove specific context keyword from adunit context targeting
-- (void)removeContextKeyword:(NSString * _Nonnull)element SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtKeyword method instead.");
-/// This method allows to remove all keywords from the set of adunit context targeting
-- (void)clearContextKeywords SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtKeywords method instead.");
-/// This method obtains the keyword for adunit targeting
-/// Inserts the given element in the set if it is not already present.
-- (void)addExtKeyword:(NSString * _Nonnull)newElement;
-/// This method obtains the keyword set for adunit targeting
-/// Adds the elements of the given set to the set.
-- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
-/// This method allows to remove specific keyword from adunit targeting
-- (void)removeExtKeyword:(NSString * _Nonnull)element;
-/// This method allows to remove all keywords from the set of adunit targeting
-- (void)clearExtKeywords;
-/// Sets the app content object, replacing any existing content.
-/// \param appContentObject The <code>PBMORTBAppContent</code> object representing the app’s content.
-///
-- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContentObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears the current app content object.
-- (void)clearAppContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds an array of content data objects to the app content.
-/// \param dataObjects An array of <code>PBMORTBContentData</code> objects to add.
-///
-- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a specific content data object from the app content.
-/// \param dataObject The <code>PBMORTBContentData</code> object to remove.
-///
-- (void)removeAppContentData:(PBMORTBContentData * _Nonnull)dataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all content data objects from the app content.
-- (void)clearAppContentData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds an array of user data objects.
-/// \param userDataObjects An array of <code>PBMORTBContentData</code> objects to add to the user data.
-///
-- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a specific user data object.
-/// \param userDataObject The <code>PBMORTBContentData</code> object to remove from the user data.
-///
-- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all user data.
-- (void)clearUserData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2276,78 +2032,12 @@ SWIFT_CLASS("_TtC12PrebidMobile21MediationNativeAdUnit")
 /// \param ext A dictionary containing the extended data to set.
 ///
 - (void)setExt:(NSDictionary<NSString *, id> * _Nonnull)ext;
-- (void)setOrtbConfig:(NSString * _Nullable)ortbConfig SWIFT_DEPRECATED_MSG("Deprecated. Use setImpORTBConfig(_:) for impression-level ORTB configuration.");
-- (NSString * _Nullable)getOrtbConfig SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Deprecated. Use getImpORTBConfig() for impression-level ORTB configuration.");
 /// Sets the impression-level OpenRTB configuration string for the ad unit.
 /// \param ortbObject The  impression-level OpenRTB configuration string to set. Can be <code>nil</code> to clear the configuration.
 ///
 - (void)setImpORTBConfig:(NSString * _Nullable)ortbConfig;
 /// Returns the impression-level OpenRTB configuration string.
 - (NSString * _Nullable)getImpORTBConfig SWIFT_WARN_UNUSED_RESULT;
-/// Sets the app content object, replacing any existing content.
-/// \param appContent The <code>PBMORTBAppContent</code> object representing the app’s content.
-///
-- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears the current app content object.
-- (void)clearAppContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds an array of content data objects to the app content.
-/// \param dataObjects An array of <code>PBMORTBContentData</code> objects to add.
-///
-- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a specific content data object from the app content.
-/// \param dataObject The <code>PBMORTBContentData</code> object to remove.
-///
-- (void)removeAppContent:(PBMORTBContentData * _Nonnull)dataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds an array of user data objects.
-/// \param userDataObjects An array of <code>PBMORTBContentData</code> objects to add to the user data.
-///
-- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a specific user data object.
-/// \param userDataObject The <code>PBMORTBContentData</code> object to remove from the user data.
-///
-- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all user data.
-- (void)clearUserData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// This method obtains the context data keyword & value for adunit context targeting
-/// if the key already exists the value will be appended to the list. No duplicates will be added
-- (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
-/// This method obtains the context data keyword & values for adunit context targeting
-/// the values if the key already exist will be replaced with the new set of values
-- (void)updateContextDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use updateExtData method instead.");
-/// This method allows to remove specific context data keyword & values set from adunit context targeting
-- (void)removeContextDataForKey:(NSString * _Nonnull)forKey SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtData method instead.");
-/// This method allows to remove all context data set from adunit context targeting
-- (void)clearContextData SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtData method instead.");
-/// This method obtains the ext data keyword & value for adunit targeting.
-/// If the key already exists the value will be appended to the list. No duplicates will be added
-- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-/// This method obtains the ext data keyword & values for adunit targeting.
-/// The values if the key already exist will be replaced with the new set of values
-- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
-/// This method allows to remove specific ext data keyword & values set from adunit targeting
-- (void)removeExtDataForKey:(NSString * _Nonnull)forKey;
-/// This method allows to remove all ext data set from adunit targeting
-- (void)clearExtData;
-/// This method obtains the context keyword for adunit context targeting
-/// Inserts the given element in the set if it is not already present.
-- (void)addContextKeyword:(NSString * _Nonnull)newElement SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeyword method instead.");
-/// This method obtains the context keyword set for adunit context targeting
-/// Adds the elements of the given set to the set.
-- (void)addContextKeywords:(NSSet<NSString *> * _Nonnull)newElements SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeywords method instead.");
-/// This method allows to remove specific context keyword from adunit context targeting
-- (void)removeContextKeyword:(NSString * _Nonnull)element SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtKeyword method instead.");
-/// This method allows to remove all keywords from the set of adunit context targeting
-- (void)clearContextKeywords SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtKeywords method instead.");
-/// This method obtains the keyword for adunit targeting
-/// Inserts the given element in the set if it is not already present.
-- (void)addExtKeyword:(NSString * _Nonnull)newElement;
-/// This method obtains the keyword set for adunit targeting
-/// Adds the elements of the given set to the set.
-- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
-/// This method allows to remove specific keyword from adunit targeting
-- (void)removeExtKeyword:(NSString * _Nonnull)element;
-/// This method allows to remove all keywords from the set of adunit targeting
-- (void)clearExtKeywords;
 /// Makes bid request for the native ad unit and setups mediation parameters.
 /// \param completion The completion handler to call with the result code.
 ///
@@ -2385,6 +2075,22 @@ SWIFT_CLASS_NAMED("MediationUtils")
 @end
 
 
+SWIFT_PROTOCOL_NAMED("ModalState")
+@protocol PBMModalState
+@property (nonatomic, readonly, strong) PBMAdConfiguration * _Nullable adConfiguration;
+@property (nonatomic, readonly, strong) PBMInterstitialDisplayProperties * _Nullable displayProperties;
+@property (nonatomic, readonly, strong) UIView * _Nullable view;
+@property (nonatomic) PBMMRAIDState _Nonnull mraidState;
+@property (nonatomic, readonly, copy) void (^ _Nullable onStatePopFinished)(id <PBMModalState> _Nullable);
+@property (nonatomic, readonly, copy) void (^ _Nullable onStateHasLeftApp)(id <PBMModalState> _Nullable);
+@property (nonatomic, readonly, copy) void (^ _Nullable nextOnStatePopFinished)(id <PBMModalState> _Nullable);
+@property (nonatomic, readonly, copy) void (^ _Nullable nextOnStateHasLeftApp)(id <PBMModalState> _Nullable);
+@property (nonatomic, copy) PBMVoidBlock _Nullable onModalPushedBlock;
+@property (nonatomic, readonly) BOOL isRotationEnabled;
+- (nonnull instancetype)initWithView:(UIView * _Nonnull)view adConfiguration:(PBMAdConfiguration * _Nullable)adConfiguration displayProperties:(PBMInterstitialDisplayProperties * _Nullable)displayProperties onStatePopFinished:(void (^ _Nullable)(id <PBMModalState> _Nullable))onStatePopFinished onStateHasLeftApp:(void (^ _Nullable)(id <PBMModalState> _Nullable))onStateHasLeftApp nextOnStatePopFinished:(void (^ _Nullable)(id <PBMModalState> _Nullable))nextOnStatePopFinished nextOnStateHasLeftApp:(void (^ _Nullable)(id <PBMModalState> _Nullable))nextOnStateHasLeftApp onModalPushedBlock:(PBMVoidBlock _Nullable)onModalPushedBlock;
+@end
+
+
 @interface NSString (SWIFT_EXTENSION(PrebidMobile))
 @property (nonatomic, readonly, strong) UIImage * _Nullable base64DecodedImage;
 @end
@@ -2405,7 +2111,6 @@ SWIFT_CLASS("_TtC12PrebidMobile8NativeAd")
 @property (nonatomic, strong) NativeAdMarkup * _Nullable nativeAdMarkup;
 /// The delegate to receive native ad events.
 @property (nonatomic, weak) id <NativeAdEventDelegate> _Nullable delegate;
-@property (nonatomic, copy) NSString * _Nullable privacyUrl;
 /// Returns an array of titles from the native ad markup.
 @property (nonatomic, readonly, copy) NSArray<NativeTitle *> * _Nonnull titles;
 /// Returns an array of data objects from the native ad markup.
@@ -2414,6 +2119,7 @@ SWIFT_CLASS("_TtC12PrebidMobile8NativeAd")
 @property (nonatomic, readonly, copy) NSArray<NativeImage *> * _Nonnull images;
 /// Returns an array of event trackers from the native ad markup.
 @property (nonatomic, readonly, copy) NSArray<NativeEventTrackerResponse *> * _Nullable eventTrackers;
+@property (nonatomic, copy) NSString * _Nullable privacyUrl;
 /// Returns an array of data objects filtered by the specified data type.
 - (NSArray<NativeData *> * _Nonnull)dataObjectsOf:(enum NativeDataAssetType)dataType SWIFT_WARN_UNUSED_RESULT;
 /// Returns an array of images filtered by the specified image type.
@@ -2962,9 +2668,66 @@ typedef SWIFT_ENUM_NAMED(NSInteger, PBMNetworkType, "NetworkType", open) {
   PBMNetworkTypeOffline = 4,
 };
 
+@class PBMErrorType;
+enum PBMErrorCode : NSInteger;
 
-@interface PBMError (SWIFT_EXTENSION(PrebidMobile))
-+ (enum ResultCode)demandResultFrom:(NSError * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC12PrebidMobile8PBMError")
+@interface PBMError : NSError
+@property (nonatomic, readonly, copy) NSString * _Nullable message;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
++ (PBMError * _Nonnull)errorWithMessage:(NSString * _Nonnull)message type:(PBMErrorType * _Nonnull)type SWIFT_WARN_UNUSED_RESULT;
++ (PBMError * _Nonnull)errorWithDescription:(NSString * _Nonnull)description SWIFT_WARN_UNUSED_RESULT;
++ (PBMError * _Nonnull)errorWithDescription:(NSString * _Nonnull)description statusCode:(enum PBMErrorCode)statusCode SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)createError:(NSError * _Nullable * _Nullable)error message:(NSString * _Nonnull)message type:(PBMErrorType * _Nonnull)type;
++ (BOOL)createError:(NSError * _Nullable * _Nullable)error description:(NSString * _Nonnull)description;
++ (BOOL)createError:(NSError * _Nullable * _Nullable)error description:(NSString * _Nonnull)description statusCode:(enum PBMErrorCode)statusCode;
++ (NSError * _Nonnull)requestInProgress SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)prebidInvalidAccountId SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)prebidInvalidConfigId SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)prebidInvalidSize SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)prebidServerURLInvalid:(NSString * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)serverError:(NSString * _Nonnull)errorBody SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)jsonDictNotFound SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)responseDeserializationFailed SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)blankResponse SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)noWinningBid SWIFT_WARN_UNUSED_RESULT;
++ (NSError * _Nonnull)prebidNoVastTagInMediaData SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain code:(NSInteger)code userInfo:(NSDictionary<NSString *, id> * _Nullable)dict SWIFT_UNAVAILABLE;
+@end
+
+typedef SWIFT_ENUM(NSInteger, PBMErrorCode, open) {
+  PBMErrorCodeGeneralLinear = 400,
+  PBMErrorCodeFileNotFound = 401,
+  PBMErrorCodeGeneralNonLinearAds = 500,
+  PBMErrorCodeGeneral = 700,
+  PBMErrorCodeUndefined = 900,
+};
+
+
+SWIFT_CLASS("_TtC12PrebidMobile12PBMErrorType")
+@interface PBMErrorType : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull rawValue;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBMErrorType * _Nonnull invalidRequest;)
++ (PBMErrorType * _Nonnull)invalidRequest SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBMErrorType * _Nonnull internalError;)
++ (PBMErrorType * _Nonnull)internalError SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBMErrorType * _Nonnull initError;)
++ (PBMErrorType * _Nonnull)initError SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBMErrorType * _Nonnull serverError;)
++ (PBMErrorType * _Nonnull)serverError SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP12PrebidMobile23PBMInterstitialAdLoader_")
+@protocol PBMInterstitialAdLoader <InterstitialControllerLoadingDelegate, InterstitialEventLoadingDelegate, PBMAdLoaderProtocol>
+- (nonnull instancetype)initWithDelegate:(id <PBMInterstitialAdLoaderDelegate> _Nonnull)delegate eventHandler:(id <PBMPrimaryAdRequesterProtocol> _Nonnull)eventHandler;
+@end
+
+
+SWIFT_PROTOCOL("_TtP12PrebidMobile23PBMSwiftMigrationHelper_")
+@protocol PBMSwiftMigrationHelper
 @end
 
 @class NSURLQueryItem;
@@ -3019,12 +2782,6 @@ enum PrebidInitializationStatus : NSInteger;
 /// The <code>Prebid</code> class manages the configuration and initialization of the PrebidMobile SDK.
 SWIFT_CLASS("_TtC12PrebidMobile6Prebid")
 @interface Prebid : NSObject
-/// The name of the bidder for AppNexus.
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull bidderNameAppNexus;)
-+ (NSString * _Nonnull)bidderNameAppNexus SWIFT_WARN_UNUSED_RESULT;
-/// The name of the bidder for Rubicon Project.
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull bidderNameRubiconProject;)
-+ (NSString * _Nonnull)bidderNameRubiconProject SWIFT_WARN_UNUSED_RESULT;
 /// Indicates whether the timeout value has been updated.
 @property (nonatomic) BOOL timeoutUpdated;
 /// The Prebid Server account ID.
@@ -3046,8 +2803,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @property (nonatomic) BOOL shareGeoLocation;
 /// Set the desidered verbosity of the logs
 @property (nonatomic, strong) PBMLogLevel * _Nonnull logLevel;
-/// Array  containing objects that hold External UserId parameters.
-@property (nonatomic, copy) NSArray<ExternalUserId *> * _Nonnull externalUserIdArray SWIFT_DEPRECATED_MSG("Deprecated. This property will be removed in future releases. Please, use Targeting.setExternalUserIds(_:) instead.");
 /// The singleton instance of the <code>Prebid</code> class.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _Nonnull shared;)
 + (Prebid * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
@@ -3055,8 +2810,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 @property (nonatomic, readonly, copy) NSString * _Nonnull version;
 /// The version of the OM SDK.
 @property (nonatomic, readonly, copy) NSString * _Nonnull omsdkVersion;
-/// The host for the Prebid Server.
-@property (nonatomic) enum PrebidHost prebidServerHost SWIFT_DEPRECATED_MSG("This property is deprecated. In the upcoming major release, the property will be removed. Please, use initializeSDK(serverURL:) instead.");
 /// Custom status endpoint for the Prebid Server.
 @property (nonatomic, copy) NSString * _Nullable customStatusEndpoint;
 /// Timeout for Prebid requests in milliseconds.
@@ -3073,12 +2826,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 @property (nonatomic) NSTimeInterval creativeFactoryTimeout;
 /// Controls how long video and interstitial creatives have to load before it is considered a failure.
 @property (nonatomic) NSTimeInterval creativeFactoryTimeoutPreRenderContent;
-/// Controls whether to use PrebidMobile’s in-app browser or the Safari App for displaying ad clickthrough content.
-@property (nonatomic) BOOL useExternalClickthroughBrowser SWIFT_DEPRECATED_MSG("This property is deprecated. In the upcoming major release, the property will be removed.");
-/// Indicates the type of browser opened upon clicking the creative in an app, where embedded = 0, native = 1.
-/// Describes an <a href="https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-5-FINAL.pdf">OpenRTB</a> imp.clickbrowser attribute.
-/// Deprecated.
-@property (nonatomic) enum PBMClickbrowserType impClickbrowserType SWIFT_DEPRECATED_MSG("This property is deprecated. In the upcoming major release, the property will be removed.");
 /// If set to true, the output of PrebidMobile’s internal logger is written to a text file. This can be helpful for debugging. Defaults to false.
 @property (nonatomic) BOOL debugLogFileEnabled;
 /// If true, the SDK will periodically try to listen for location updates in order to request location-based ads.
@@ -3087,13 +2834,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 @property (nonatomic) BOOL includeWinners;
 /// If true, the sdk will add <code>includebidderkeys</code> flag inside the targeting object described in <a href="https://docs.prebid.org/prebid-server/endpoints/openrtb2/pbs-endpoint-auction.html#targeting">PBS Documentation</a>
 @property (nonatomic) BOOL includeBidderKeys;
-/// Sets a custom Prebid Server URL.
-/// \param url The custom Prebid Server URL.
-///
-///
-/// throws:
-/// An error if setting the custom host URL fails.
-- (BOOL)setCustomPrebidServerWithUrl:(NSString * _Nonnull)url error:(NSError * _Nullable * _Nullable)error SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use initializeSDK(serverURL:) instead.");
+/// If true, the SDK will not check the PBS status during initialization. This will save initialization time
+/// if the PBS endpoint is always live and handled client side
+@property (nonatomic) BOOL shouldDisableStatusCheck;
 /// Adds a stored bid response.
 /// \param bidder The name of the bidder.
 ///
@@ -3115,36 +2858,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Prebid * _No
 - (void)addCustomHeaderWithName:(NSString * _Nonnull)name value:(NSString * _Nonnull)value;
 /// Clears all custom HTTP headers.
 - (void)clearCustomHeaders;
-/// Initializes PrebidMobile SDK.
-/// Checks the status of Prebid Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
-/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
-/// The <code>host</code> value is obtained from <code>Prebid.shared.prebidServerHost</code>.
-/// Checks the version of GMA SDK. If the version is not supported - logs warning.
-/// Use this SDK initializer if you’re using PrebidMobile with GMA SDK.
-/// \param gadMobileAdsObject GADMobileAds object
-///
-/// \param completion returns initialization status and optional error
-///
-+ (void)initializeSDK:(id _Nullable)gadMobileAdsObject :(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use initializeSDK(serverURL:_:_) instead.");
-/// Initializes PrebidMobile SDK.
-/// Checks the status of Prebid Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
-/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
-/// The <code>host</code> value is obtained from <code>Prebid.shared.prebidServerHost</code>.
-/// Checks the version of GMA SDK. If the version is not supported - logs warning.
-/// Use this SDK initializer if you’re using PrebidMobile with GMA SDK.
-/// \param gadMobileAdsVersion GADMobileAds version string, use <code>GADGetStringFromVersionNumber(GADMobileAds.sharedInstance().versionNumber)</code> to get it
-///
-/// \param completion returns initialization status and optional error
-///
-+ (void)initializeSDKWithGadMobileAdsVersion:(NSString * _Nullable)gadMobileAdsVersion :(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use initializeSDK(serverURL:gadMobileAdsVersion:_:) instead.");
-/// Initializes PrebidMobile SDK.
-/// Checks the status of Prebid Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
-/// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
-/// The <code>host</code> value is obtained from <code>Prebid.shared.prebidServerHost</code>.
-/// Use this SDK initializer if you’re using PrebidMobile without GMA SDK.
-/// \param completion returns initialization status and optional error
-///
-+ (void)initializeSDK:(void (^ _Nullable)(enum PrebidInitializationStatus, NSError * _Nullable))completion SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use initializeSDK(serverURL:_:) instead.");
 /// Checks the status of Prebid Server. The <code>customStatusEndpoint</code> property is used as server status endpoint.
 /// If <code>customStatusEndpoint</code> property is not provided, the SDK will use default endpoint - <code>host</code> + <code>/status</code>.
 /// Checks the version of GMA SDK. If the version is not supported - logs warning.
@@ -3259,6 +2972,15 @@ SWIFT_CLASS("_TtC12PrebidMobile12PrebidAdUnit")
 - (void)activatePrebidAdViewImpressionTrackerWithAdView:(UIView * _Nonnull)adView;
 /// Activates interstitial impression tracker.
 - (void)activatePrebidInterstitialImpressionTracker;
+/// Activates Prebid’s SKAdNetwork StoreKit ads flow for the provided ad view.
+/// Note: Ensure this method is called within the Google Mobile Ads ad received method
+/// (e.g., in the GADBannerViewDelegate’s bannerViewDidReceiveAd or similar callbacks).
+/// \param adView The ad view that contains ad creative(f.e. GAMBannerView).
+///
+- (void)activatePrebidBannerSKAdNetworkStoreKitAdsFlowWithAdView:(UIView * _Nonnull)adView;
+/// Activates Prebid’s SKAdNetwork StoreKit ads flow.
+/// Note: Ensure this method is called before presenting interstitials.
+- (void)activatePrebidInterstitialSKAdNetworkStoreKitAdsFlow;
 /// This method allows to set the auto refresh period for the demand
 /// \param time refresh time interval
 ///
@@ -3267,6 +2989,10 @@ SWIFT_CLASS("_TtC12PrebidMobile12PrebidAdUnit")
 - (void)stopAutoRefresh;
 /// This method resumes the auto refresh of demand
 - (void)resumeAutoRefresh;
+/// Attempts to display an <code>SKOverlay</code> over interstitial if a valid configuration is available.
+- (void)activateSKOverlayIfAvailable;
+/// Dismisses the SKOverlay if presented
+- (void)dismissSKOverlayIfAvailable;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3297,16 +3023,6 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile19PrebidEventDelegate_")
 - (void)prebidBidRequestDidFinishWithRequestData:(NSData * _Nullable)requestData responseData:(NSData * _Nullable)responseData;
 @end
 
-/// <code>PrebidHost</code> represents various Prebid server hosts used for ad bidding.
-typedef SWIFT_ENUM(NSInteger, PrebidHost, open) {
-/// URL <a href="URL">https://ib.adnxs.com/openrtb2/prebid</a>
-  PrebidHostAppnexus = 0,
-/// URL <a href="URL">https://prebid-server.rubiconproject.com/openrtb2/auction</a>
-  PrebidHostRubicon = 1,
-/// Custom Prebid server URL. The URL for this case should be set separately.
-  PrebidHostCustom = 2,
-};
-
 
 SWIFT_CLASS("_TtC12PrebidMobile22PrebidImagesRepository")
 @interface PrebidImagesRepository : NSObject
@@ -3330,6 +3046,8 @@ typedef SWIFT_ENUM(NSInteger, PrebidInitializationStatus, open) {
   PrebidInitializationStatusFailed = 1,
 /// Something went wrong during PBS status checking.
   PrebidInitializationStatusServerStatusWarning = 2,
+/// Prebid SDK skipped status checking.
+  PrebidInitializationStatusServerStatusSkipped = 3,
 };
 
 
@@ -3535,6 +3253,8 @@ SWIFT_CLASS("_TtC12PrebidMobile13PrebidRequest")
 @interface PrebidRequest : NSObject
 /// The position of the ad on the screen.
 @property (nonatomic) enum PBMAdPosition adPosition;
+/// A flag that determines whether SKOverlay should be supported for interstitials
+@property (nonatomic) BOOL supportSKOverlayForInterstitial;
 /// Initializes a new <code>PrebidRequest</code> with the given parameters.
 /// \param bannerParameters The banner parameters for the ad request.
 ///
@@ -3557,52 +3277,6 @@ SWIFT_CLASS("_TtC12PrebidMobile13PrebidRequest")
 - (void)setImpORTBConfig:(NSString * _Nullable)ortbConfig;
 /// Returns the impression-level OpenRTB configuration string.
 - (NSString * _Nullable)getImpORTBConfig SWIFT_WARN_UNUSED_RESULT;
-/// This method obtains the ext data keyword & value for adunit targeting
-/// if the key already exists the value will be appended to the list. No duplicates will be added
-- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-/// This method obtains the ext data keyword & values for adunit targeting
-/// the values if the key already exist will be replaced with the new set of values
-- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
-/// This method allows to remove specific ext data keyword & values set from adunit targeting
-- (void)removeExtDataForKey:(NSString * _Nonnull)forKey;
-/// This method allows to remove all ext data set from adunit targeting
-- (void)clearExtData;
-/// This method obtains the keyword for adunit targeting
-/// Inserts the given element in the set if it is not already present.
-- (void)addExtKeyword:(NSString * _Nonnull)newElement;
-/// This method obtains the keyword set for adunit targeting
-/// Adds the elements of the given set to the set.
-- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
-/// This method allows to remove specific keyword from adunit targeting
-- (void)removeExtKeyword:(NSString * _Nonnull)element;
-/// This method allows to remove all keywords from the set of adunit targeting
-- (void)clearExtKeywords;
-/// Sets the app content for the ad request.
-/// \param appContentObject The <code>PBMORTBAppContent</code> to set.
-///
-- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContentObject;
-/// Clears the app content for the ad request.
-- (void)clearAppContent;
-/// Adds data to the app content.
-/// \param dataObjects The array of <code>PBMORTBContentData</code> to add.
-///
-- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects;
-/// Removes specific data from the app content.
-/// \param dataObject The <code>PBMORTBContentData</code> to remove.
-///
-- (void)removeAppContentData:(PBMORTBContentData * _Nonnull)dataObject;
-/// Clears all data from the app content.
-- (void)clearAppContentData;
-/// Adds user data to the ad request.
-/// \param userDataObjects The array of <code>PBMORTBContentData</code> to add.
-///
-- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects;
-/// Removes specific user data from the ad request.
-/// \param userDataObject The <code>PBMORTBContentData</code> to remove.
-///
-- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject;
-/// Clears all user data from the ad request.
-- (void)clearUserData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3665,10 +3339,10 @@ SWIFT_CLASS("_TtC12PrebidMobile24PrebidServerEventTracker")
 @interface PrebidServerEventTracker : NSObject <PBMEventTrackerProtocol>
 @property (nonatomic, readonly, copy) NSArray<PBMServerEvent *> * _Nonnull serverEvents;
 - (nonnull instancetype)initWithServerEvents:(NSArray<PBMServerEvent *> * _Nonnull)serverEvents OBJC_DESIGNATED_INITIALIZER;
-- (void)trackEvent:(PBMTrackingEvent)event;
-- (void)trackVideoAdLoaded:(PBMVideoVerificationParameters * _Null_unspecified)parameters;
-- (void)trackStartVideoWithDuration:(CGFloat)duration volume:(CGFloat)volume;
-- (void)trackVolumeChanged:(CGFloat)playerVolume deviceVolume:(CGFloat)deviceVolume;
+- (void)trackEvent:(enum PBMTrackingEvent)event;
+- (void)trackVideoAdLoaded:(PBMVideoVerificationParameters * _Nonnull)parameters;
+- (void)trackStartVideoWithDuration:(NSTimeInterval)duration volume:(double)volume;
+- (void)trackVolumeChanged:(double)playerVolume deviceVolume:(double)deviceVolume;
 - (void)addServerEvents:(NSArray<PBMServerEvent *> * _Nonnull)serverEvents;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -3687,6 +3361,7 @@ SWIFT_CLASS("_TtC12PrebidMobile20PrebidServerResponse")
 @property (nonatomic) NSInteger statusCode;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 SWIFT_CLASS_NAMED("Reachability")
@@ -3759,8 +3434,6 @@ SWIFT_CLASS("_TtC12PrebidMobile14RewardedAdUnit")
 @property (nonatomic, copy) NSSet<AdFormat *> * _Nonnull adFormats;
 /// The position of the ad on the screen.
 @property (nonatomic) enum PBMAdPosition adPosition;
-/// The ORTB (OpenRTB) configuration string for the ad unit.
-@property (nonatomic, copy) NSString * _Nullable ortbConfig SWIFT_DEPRECATED_MSG("Deprecated. Use setImpORTBConfig(_:) and getImpORTBConfig() for impression-level ORTB configuration.");
 /// The banner parameters used for configuring ad unit.
 @property (nonatomic, readonly, strong) BannerParameters * _Nonnull bannerParameters;
 /// The video parameters used for configuring ad unit.
@@ -3813,96 +3486,6 @@ SWIFT_CLASS("_TtC12PrebidMobile14RewardedAdUnit")
 - (void)setImpORTBConfig:(NSString * _Nullable)ortbConfig;
 /// Returns the impression-level OpenRTB configuration string.
 - (NSString * _Nullable)getImpORTBConfig SWIFT_WARN_UNUSED_RESULT;
-/// Adds context data for a specified key.
-/// \param data The data to add.
-///
-/// \param key The key associated with the data.
-///
-- (void)addContextData:(NSString * _Nonnull)data forKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtData method instead.");
-/// Updates context data for a specified key.
-/// \param data A set of data to update.
-///
-/// \param key The key associated with the data.
-///
-- (void)updateContextData:(NSSet<NSString *> * _Nonnull)data forKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use updateExtData method instead.");
-/// Removes context data for a specified key.
-/// \param key The key associated with the data to remove.
-///
-- (void)removeContextDateForKey:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtData method instead.");
-/// Clears all context data.
-- (void)clearContextData SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtData method instead.");
-/// Adds ext data.
-/// \param key The key for the data.
-///
-/// \param value The value for the data.
-///
-- (void)addExtDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value;
-/// Updates ext data.
-/// \param key The key for the data.
-///
-/// \param value The value for the data.
-///
-- (void)updateExtDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value;
-/// Removes ext data.
-/// \param key The key for the data.
-///
-- (void)removeExtDataForKey:(NSString * _Nonnull)forKey;
-/// Clears ext data.
-- (void)clearExtData;
-/// Adds a context keyword.
-/// \param newElement The keyword to add.
-///
-- (void)addContextKeyword:(NSString * _Nonnull)newElement SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeyword method instead.");
-/// Adds a set of context keywords.
-/// \param newElements A set of keywords to add.
-///
-- (void)addContextKeywords:(NSSet<NSString *> * _Nonnull)newElements SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addExtKeywords method instead.");
-/// Removes a context keyword.
-/// \param element The keyword to remove.
-///
-- (void)removeContextKeyword:(NSString * _Nonnull)element SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeExtKeyword method instead.");
-/// Clears all context keywords.
-- (void)clearContextKeywords SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearExtKeywords method instead.");
-/// Adds an extended keyword.
-/// \param newElement The keyword to be added.
-///
-- (void)addExtKeyword:(NSString * _Nonnull)newElement;
-/// Adds multiple extended keywords.
-/// \param newElements A set of keywords to be added.
-///
-- (void)addExtKeywords:(NSSet<NSString *> * _Nonnull)newElements;
-/// Removes an extended keyword.
-/// \param element The keyword to be removed.
-///
-- (void)removeExtKeyword:(NSString * _Nonnull)element;
-/// Clears all extended keywords.
-- (void)clearExtKeywords;
-/// Sets the app content data.
-/// \param appContent The app content data.
-///
-- (void)setAppContent:(PBMORTBAppContent * _Nonnull)appContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears the app content data.
-- (void)clearAppContent SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds app content data objects.
-/// \param dataObjects The data objects to be added.
-///
-- (void)addAppContentData:(NSArray<PBMORTBContentData *> * _Nonnull)dataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes an app content data object.
-/// \param dataObject The data object to be removed.
-///
-- (void)removeAppContentDataObject:(PBMORTBContentData * _Nonnull)dataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all app content data objects.
-- (void)clearAppContentDataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Adds user data objects.
-/// \param userDataObjects The user data objects to be added.
-///
-- (void)addUserData:(NSArray<PBMORTBContentData *> * _Nonnull)userDataObjects SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Removes a user data object.
-/// \param userDataObject The user data object to be removed.
-///
-- (void)removeUserData:(PBMORTBContentData * _Nonnull)userDataObject SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
-/// Clears all user data objects.
-- (void)clearUserData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed. Please, use Targeting.setGlobalORTBConfig method instead.");
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3984,12 +3567,10 @@ SWIFT_PROTOCOL("_TtP12PrebidMobile32RewardedEventInteractionDelegate_")
 /// Represents an rewarded ad unit for original type of integration.
 SWIFT_CLASS("_TtC12PrebidMobile19RewardedVideoAdUnit")
 @interface RewardedVideoAdUnit : AdUnit <PBMVideoBasedAdUnitProtocol>
-/// Deprecated property for video parameters.
-/// note:
-/// This property is deprecated. Please use <code>videoParameters</code> instead.
-@property (nonatomic, strong) VideoParameters * _Nonnull parameters SWIFT_DEPRECATED_MSG("This property is deprecated. Please, use videoParameters instead.");
 /// Property for video parameters.
 @property (nonatomic, strong) VideoParameters * _Nonnull videoParameters;
+/// A flag that determines whether SKOverlay should be supported
+@property (nonatomic) BOOL supportSKOverlay;
 /// Initializes a <code>RewardedVideoAdUnit</code> with the given configuration ID.
 /// \param configId The configuration ID for the ad unit.
 ///
@@ -4002,6 +3583,10 @@ SWIFT_CLASS("_TtC12PrebidMobile19RewardedVideoAdUnit")
 /// \param minHeightPerc The minimum height percentage for the ad unit.
 ///
 - (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId minWidthPerc:(NSInteger)minWidthPerc minHeightPerc:(NSInteger)minHeightPerc;
+/// Attempts to display an <code>SKOverlay</code> if a valid configuration is available.
+- (void)activateSKOverlayIfAvailable;
+/// Dismisses the SKOverlay if presented
+- (void)dismissSKOverlayIfAvailable;
 @end
 
 
@@ -4031,7 +3616,7 @@ SWIFT_CLASS_NAMED("SKOverlayManager")
 
 SWIFT_CLASS_NAMED("ServerEvent")
 @interface PBMServerEvent : NSObject
-- (nonnull instancetype)initWithUrl:(NSString * _Nonnull)url expectedEventType:(PBMTrackingEvent)expectedEventType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUrl:(NSString * _Nonnull)url expectedEventType:(enum PBMTrackingEvent)expectedEventType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -4376,10 +3961,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PBCreativeAt
 SWIFT_CLASS_NAMED("SkadnEventTracker") SWIFT_AVAILABILITY(ios,introduced=14.5)
 @interface PBMSkadnEventTracker : NSObject <PBMEventTrackerProtocol>
 - (nonnull instancetype)initWith:(SKAdImpression * _Nonnull)imp OBJC_DESIGNATED_INITIALIZER;
-- (void)trackEvent:(PBMTrackingEvent)event;
-- (void)trackVideoAdLoaded:(PBMVideoVerificationParameters * _Null_unspecified)parameters;
-- (void)trackStartVideoWithDuration:(CGFloat)duration volume:(CGFloat)volume;
-- (void)trackVolumeChanged:(CGFloat)playerVolume deviceVolume:(CGFloat)deviceVolume;
+- (void)trackEvent:(enum PBMTrackingEvent)event;
+- (void)trackVideoAdLoaded:(PBMVideoVerificationParameters * _Nonnull)parameters;
+- (void)trackStartVideoWithDuration:(NSTimeInterval)duration volume:(double)volume;
+- (void)trackVolumeChanged:(double)playerVolume deviceVolume:(double)deviceVolume;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -4392,11 +3977,10 @@ SWIFT_CLASS_NAMED("SkadnParametersManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class CLLocation;
 
 /// A class that manages targeting information for ads.
 /// This class provides properties and methods for setting and retrieving
-/// user-specific targeting information, such as user ID, gender, and custom
+/// user-specific targeting information, such as user ID, and custom
 /// data. It also includes details for OMID (Open Measurement Interface Definition)
 /// partner and supports managing user identity links and custom extensions.
 SWIFT_CLASS("_TtC12PrebidMobile9Targeting")
@@ -4409,31 +3993,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 @property (nonatomic, copy) NSString * _Nullable omidPartnerName;
 /// The version of the OMID partner.
 @property (nonatomic, copy) NSString * _Nullable omidPartnerVersion;
-/// Indicates user birth year.
-@property (nonatomic) NSInteger yearOfBirth SWIFT_DEPRECATED_MSG("Deprecated by ORTB");
-/// This method set the year of birth value
-- (void)setYearOfBirthWithYob:(NSInteger)yob SWIFT_DEPRECATED_MSG("Deprecated by ORTB");
-- (NSNumber * _Nonnull)getYearOfBirth SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Deprecated by ORTB");
-/// This method clears year of birth value set by the application developer
-- (void)clearYearOfBirth;
-/// Indicates the end-user’s gender.
-@property (nonatomic) enum PBMGender userGender SWIFT_DEPRECATED_MSG("Deprecated by ORTB");
-/// String representation of the users gender,
-/// where “M” = male, “F” = female, “O” = known to be other (i.e., omitted is unknown)
-- (NSString * _Nullable)userGenderDescription SWIFT_WARN_UNUSED_RESULT;
-/// Indicates the customer-provided user ID, if different from the Device ID.
-@property (nonatomic, copy) NSString * _Nullable userID;
-/// Buyer-specific ID for the user as mapped by the exchange for the buyer.
-/// Deprecated.
-@property (nonatomic, copy) NSString * _Nullable buyerUID SWIFT_DEPRECATED_MSG("This property is deprecated. In the upcoming major release, the property will be removed.");
-/// Optional feature to pass bidder data that was set in the
-/// exchange’s cookie. The string must be in base85 cookie safe
-/// characters and be in any format. Proper JSON encoding must
-/// be used to include “escaped” quotation marks.
-@property (nonatomic, copy) NSString * _Nullable userCustomData SWIFT_DEPRECATED_MSG("This property is deprecated.  This is an exchange-specific property.");
-/// Placeholder for User Identity Links.
-/// The data from this property will be added to usr.ext.eids
-@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSObject *> *> * _Nullable eids SWIFT_DEPRECATED_MSG("Deprecated. This property will be removed in future releases. Please, use Targeting.setExternalUserIds(_:) instead.");
 /// Placeholder for exchange-specific extensions to OpenRTB.
 @property (nonatomic, copy) NSDictionary<NSString *, NSObject *> * _Nullable userExt;
 /// Objective C analog of subjectToCOPPA
@@ -4456,16 +4015,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 - (void)setExternalUserIds:(NSArray<ExternalUserId *> * _Nonnull)externalUserIds;
 /// Retrieves the external user IDs in a dictionary format suitable for use in JSON.
 - (NSArray<NSDictionary<NSString *, id> *> * _Nullable)getExternalUserIds SWIFT_WARN_UNUSED_RESULT;
-/// This method allows to save External User Id
-- (void)storeExternalUserId:(ExternalUserId * _Nonnull)externalUserId SWIFT_DEPRECATED_MSG("Deprecated. SDK doesn't support storing External User IDs in application storage. This method will be removed in future releases.");
-/// This method allows to get all External User Ids
-- (NSArray<ExternalUserId *> * _Nullable)fetchStoredExternalUserIds SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Deprecated. SDK doesn't support storing External User IDs in application storage. This method will be removed in future releases.");
-/// This method allows to get External User Id by passing respective ‘source’ string as param
-- (ExternalUserId * _Nullable)fetchStoredExternalUserId:(NSString * _Nonnull)source SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Deprecated. This method will be removed in future releases.");
-/// This method allows to remove specific External User Id by passing respective ‘source’ string as param
-- (void)removeStoredExternalUserId:(NSString * _Nonnull)source SWIFT_DEPRECATED_MSG("Deprecated. This method will be removed in future releases.");
-/// This method allows to remove all the External User Ids
-- (void)removeStoredExternalUserIds SWIFT_DEPRECATED_MSG("Deprecated. This method will be removed in future releases.");
 /// When true, the SharedID external user id is added to outgoing auction requests.  App developers are
 /// encouraged to consult with their legal team before enabling this feature.
 /// See <code>Targeting.sharedId</code> for details.
@@ -4494,12 +4043,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 @property (nonatomic, copy) NSString * _Nullable itunesID;
 /// The application location for targeting
 @property (nonatomic, strong) CLLocation * _Nullable location;
-/// Objective-C API
-/// Deprecated.
-- (void)setLocationPrecision:(NSNumber * _Nullable)newValue SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed.");
-/// Objective-C API
-/// Deprecated.
-- (NSNumber * _Nullable)getLocationPrecision SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed.");
 /// CLLocationCoordinate2D.
 /// See CoreLocation framework documentation.
 @property (nonatomic, strong) NSValue * _Nullable coordinate;
@@ -4515,18 +4058,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 /// \param withName The name of the parameter. If <code>nil</code>, the parameter is not added.
 ///
 - (void)addParam:(NSString * _Nonnull)value withName:(NSString * _Nullable)withName;
-/// Sets custom parameters by adding each key-value pair to the parameter dictionary.
-/// \param params A dictionary of parameters to set. If <code>nil</code>, no parameters are added.
-/// Deprecated.
-///
-- (void)setCustomParams:(NSDictionary<NSString *, NSString *> * _Nullable)params SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed.");
-/// Adds a custom parameter to the parameter dictionary with a prefixed name.
-/// \param value The value of the custom parameter.
-///
-/// \param withName The name of the custom parameter. If <code>nil</code>, the parameter is not added.
-/// Deprecated.
-///
-- (void)addCustomParam:(NSString * _Nonnull)value withName:(NSString * _Nullable)withName SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed.");
 /// Store location in the user’s section
 - (void)setLatitude:(double)latitude longitude:(double)longitude;
 /// Adds a bidder to the access control list.
@@ -4549,34 +4080,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 /// returns:
 /// An array of bidder names in the access control list.
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull accessControlList;
-/// Adds user data for a specified key.
-/// \param key The key for the user data.
-///
-/// \param value The value to add for the specified key.
-///
-- (void)addUserDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed.");
-/// Updates user data for a specified key with a new set of values.
-/// \param key The key for the user data.
-///
-/// \param value The set of values to update for the specified key.
-///
-- (void)updateUserDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed.");
-/// Removes user data for a specified key.
-/// \param key The key for the user data to remove.
-///
-- (void)removeUserDataFor:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed.");
-/// Clears all user data.
-- (void)clearUserData SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed.");
-/// Retrieves all user data.
-///
-/// returns:
-/// A dictionary mapping keys to arrays of values.
-- (NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)getUserData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed.");
-/// User data dictionary for external use.
-///
-/// returns:
-/// A dictionary mapping keys to arrays of values.
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull userDataDictionary SWIFT_DEPRECATED_MSG("This method is deprecated. In the upcoming major release, the method will be removed.");
 /// Adds a user keyword.
 /// \param newElement The keyword to add.
 ///
@@ -4596,20 +4099,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 /// returns:
 /// An array of user keywords.
 - (NSArray<NSString *> * _Nonnull)getUserKeywords SWIFT_WARN_UNUSED_RESULT;
-/// Deprecated. Use <code>getUserKeywords</code> method instead.
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull userKeywords SWIFT_DEPRECATED_MSG("This property is deprecated. Please, use getUserKeywords method instead.");
-/// Deprecated. Use <code>addAppExtData</code> method instead.
-- (void)addContextDataWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addAppExtData method instead.");
-/// Deprecated. Use <code>updateAppExtData</code> method instead.
-- (void)updateContextDataWithKey:(NSString * _Nonnull)key value:(NSSet<NSString *> * _Nonnull)value SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use updateAppExtData method instead.");
-/// Deprecated. Use <code>removeAppExtData</code> method instead.
-- (void)removeContextDataFor:(NSString * _Nonnull)key SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeAppExtData method instead.");
-/// Deprecated. Use <code>clearAppExtData</code> method instead.
-- (void)clearContextData SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearAppExtData method instead.");
-/// Deprecated. Use <code>getAppExtData</code> method instead.
-- (NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)getContextData SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use getAppExtData method instead.");
-/// Deprecated. Use <code>getAppExtData</code> method instead.
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull contextDataDictionary SWIFT_DEPRECATED_MSG("This property is deprecated. Please, use getAppExtData method instead.");
 /// Adds application-specific data for a specified key.
 /// \param key The key for the application data.
 ///
@@ -4633,18 +4122,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 /// returns:
 /// A dictionary mapping keys to arrays of values.
 - (NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull)getAppExtData SWIFT_WARN_UNUSED_RESULT;
-/// Deprecated. Use <code>addAppKeyword</code> method instead.
-- (void)addContextKeyword:(NSString * _Nonnull)newElement SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addAppKeyword method instead.");
-/// Deprecated. Use <code>addAppKeywords</code> method instead.
-- (void)addContextKeywords:(NSSet<NSString *> * _Nonnull)newElements SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use addAppKeywords method instead.");
-/// Deprecated. Use <code>removeAppKeyword</code> method instead.
-- (void)removeContextKeyword:(NSString * _Nonnull)element SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use removeAppKeyword method instead.");
-/// Deprecated. Use <code>clearAppKeywords</code> method instead.
-- (void)clearContextKeywords SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use clearAppKeywords method instead.");
-/// Deprecated. Use <code>getAppKeywords</code> method instead.
-- (NSArray<NSString *> * _Nonnull)getContextKeywords SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is deprecated. Please, use getAppKeywords method instead.");
-/// Deprecated. Use <code>getAppKeywords</code> method instead.
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull contextKeywords SWIFT_DEPRECATED_MSG("This property is deprecated. Please, use getAppKeywords method instead.");
 /// Adds an application keyword.
 /// \param newElement The keyword to add.
 ///
@@ -4667,6 +4144,87 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) Targeting * _Nonnull s
 /// Dictionary of parameters.
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull parameterDictionary;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL_NAMED("ThreadProtocol")
+@protocol PBMThreadProtocol
+@property (nonatomic, readonly) BOOL isMainThread;
+@end
+
+
+@interface NSThread (SWIFT_EXTENSION(PrebidMobile)) <PBMThreadProtocol>
+@end
+
+
+typedef SWIFT_ENUM_NAMED(NSInteger, PBMTrackingEvent, "TrackingEvent", open) {
+  PBMTrackingEventRequest = 0,
+  PBMTrackingEventImpression = 1,
+  PBMTrackingEventClick = 2,
+  PBMTrackingEventOverlayClick = 3,
+  PBMTrackingEventCompanionClick = 4,
+  PBMTrackingEventPlay = 5,
+  PBMTrackingEventPause = 6,
+  PBMTrackingEventResume = 7,
+  PBMTrackingEventRewind = 8,
+  PBMTrackingEventSkip = 9,
+  PBMTrackingEventCreativeView = 10,
+  PBMTrackingEventStart = 11,
+  PBMTrackingEventFirstQuartile = 12,
+  PBMTrackingEventMidpoint = 13,
+  PBMTrackingEventThirdQuartile = 14,
+  PBMTrackingEventComplete = 15,
+  PBMTrackingEventMute = 16,
+  PBMTrackingEventUnmute = 17,
+  PBMTrackingEventFullscreen = 18,
+  PBMTrackingEventExitFullscreen = 19,
+  PBMTrackingEventNormal = 20,
+  PBMTrackingEventExpand = 21,
+  PBMTrackingEventCollapse = 22,
+  PBMTrackingEventCloseLinear = 23,
+  PBMTrackingEventCloseOverlay = 24,
+  PBMTrackingEventAcceptInvitation = 25,
+  PBMTrackingEventError = 26,
+  PBMTrackingEventLoaded = 27,
+  PBMTrackingEventPrebidWin = 28,
+  PBMTrackingEventUnknown = 29,
+};
+
+
+SWIFT_CLASS_NAMED("TrackingEventDescription")
+@interface PBMTrackingEventDescription : NSObject
++ (NSString * _Nonnull)getDescription:(enum PBMTrackingEvent)event SWIFT_WARN_UNUSED_RESULT;
++ (enum PBMTrackingEvent)getEventWith:(NSString * _Nonnull)description SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PBMOpenMeasurementSession;
+@class PBMOpenMeasurementWrapper;
+@protocol PBMTransactionDelegate;
+
+SWIFT_PROTOCOL_NAMED("Transaction")
+@protocol PBMTransaction <NSObject>
+@property (nonatomic, readonly, strong) PBMAdConfiguration * _Nonnull adConfiguration;
+@property (nonatomic, copy) NSArray<PBMAbstractCreative *> * _Nonnull creatives;
+@property (nonatomic, copy) NSArray<PBMCreativeModel *> * _Nonnull creativeModels;
+@property (nonatomic, strong) PBMOpenMeasurementSession * _Nonnull measurementSession;
+@property (nonatomic, strong) PBMOpenMeasurementWrapper * _Nonnull measurementWrapper;
+@property (nonatomic, strong) Bid * _Nullable bid;
+@property (nonatomic, weak) id <PBMTransactionDelegate> _Nullable delegate;
+- (nonnull instancetype)initWithServerConnection:(id <PrebidServerConnectionProtocol> _Nonnull)serverConnection adConfiguration:(PBMAdConfiguration * _Nonnull)adConfiguration models:(NSArray<PBMCreativeModel *> * _Nonnull)models;
+- (void)startCreativeFactory;
+- (PBMAdDetails * _Nullable)getAdDetails SWIFT_WARN_UNUSED_RESULT;
+- (PBMAbstractCreative * _Nullable)getFirstCreative SWIFT_WARN_UNUSED_RESULT;
+- (PBMAbstractCreative * _Nullable)getCreativeAfter:(PBMAbstractCreative * _Nonnull)after SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)revenueForCreativeAfter:(PBMAbstractCreative * _Nonnull)after SWIFT_WARN_UNUSED_RESULT;
+- (void)resetAdConfiguration:(PBMAdConfiguration * _Nonnull)adConfiguration;
+@end
+
+
+SWIFT_PROTOCOL_NAMED("TransactionDelegate")
+@protocol PBMTransactionDelegate
+- (void)transactionReadyForDisplay:(id <PBMTransaction> _Nonnull)transaction;
+- (void)transactionFailedToLoad:(id <PBMTransaction> _Nonnull)transaction error:(NSError * _Nonnull)error;
 @end
 
 
@@ -4720,8 +4278,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Utils * _Non
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 /// A delegate to handle native ad events.
 @property (nonatomic, weak) id <NativeAdDelegate> _Nullable delegate;
-/// Deprecated. MoPub is not available anymore. Use Prebid MAX adapters instead.
-- (NSString * _Nonnull)convertDictToMoPubKeywordsWithDict:(NSDictionary<NSString *, NSString *> * _Nonnull)dict SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("MoPub is not available anymore. Use Prebid MAX adapters instead.");
 /// Finds a native ad object within a given object.
 /// \param adObject The object to search within.
 ///
@@ -4729,21 +4285,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Utils * _Non
 @end
 
 
-/// A deprecated class for handling video ad units.
-SWIFT_CLASS("_TtC12PrebidMobile11VideoAdUnit") SWIFT_DEPRECATED_MSG("This class is deprecated. Please, use BannerAdUnit with video adFormat.")
-@interface VideoAdUnit : AdUnit
-/// The parameters for video ads associated with this ad unit.
-@property (nonatomic, strong) VideoParameters * _Nonnull parameters;
-/// Initializes a new instance of <code>VideoAdUnit</code> with the specified configuration ID and size.
-/// \param configId The configuration ID for the ad unit.
-///
-/// \param size The size of the ad unit.
-///
-- (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId size:(CGSize)size OBJC_DESIGNATED_INITIALIZER;
-/// Adds additional sizes to the ad unit.
-/// \param sizes An array of <code>CGSize</code> objects representing the additional sizes for the ad unit.
-///
-- (void)addAdditionalSizeWithSizes:(NSArray<NSValue *> * _Nonnull)sizes;
+SWIFT_CLASS_NAMED("VastTrackingEvents")
+@interface PBMVastTrackingEvents : NSObject
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSArray<NSString *> *> * _Nonnull trackingEvents;
+@property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nonnull progressOffsets;
+- (void)addTrackingURL:(NSString * _Nullable)url event:(NSString * _Nullable)event attributes:(NSDictionary<NSString *, NSString *> * _Nullable)attributes;
+- (NSArray<NSString *> * _Nullable)trackingURLsForEvent:(NSString * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (void)addTrackingEvents:(PBMVastTrackingEvents * _Nullable)events;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -4779,30 +4328,6 @@ SWIFT_CLASS_NAMED("VideoControlsConfiguration")
 /// Use to initialize video controls with server values.
 - (void)initializeWith:(PBMORTBAdConfiguration * _Nullable)ortbAdConfiguration;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-/// A deprecated class representing a video interstitial ad unit.
-/// This class is used to configure and manage video interstitial ads. It inherits from <code>AdUnit</code> and provides
-/// specific settings for video ads including interstitial ad configuration and placement.
-SWIFT_CLASS("_TtC12PrebidMobile23VideoInterstitialAdUnit") SWIFT_DEPRECATED_MSG("This class is deprecated. Please, use InterstitialAdUnit with video adFormat.")
-@interface VideoInterstitialAdUnit : AdUnit
-/// The video parameters for this ad unit.
-/// This property allows you to get or set the video parameters for the ad unit’s configuration.
-@property (nonatomic, strong) VideoParameters * _Nonnull parameters;
-/// Initializes a new instance of <code>VideoInterstitialAdUnit</code> with the specified configuration ID.
-/// The ad unit is configured as an interstitial ad with full screen placement and video parameters set for interstitial ads.
-/// \param configId The configuration ID for the ad unit.
-///
-- (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId OBJC_DESIGNATED_INITIALIZER;
-/// Convenience initializer to create a video interstitial ad unit with specified minimum width and height percentages.
-/// \param configId The configuration ID for the ad unit.
-///
-/// \param minWidthPerc The minimum width percentage of the ad unit.
-///
-/// \param minHeightPerc The minimum height percentage of the ad unit.
-///
-- (nonnull instancetype)initWithConfigId:(NSString * _Nonnull)configId minWidthPerc:(NSInteger)minWidthPerc minHeightPerc:(NSInteger)minHeightPerc;
 @end
 
 
@@ -4845,6 +4370,7 @@ SWIFT_CLASS("_TtC12PrebidMobile15VideoParameters")
 @property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nullable rawProtocols;
 /// Helper property
 @property (nonatomic, readonly, copy) NSArray<NSNumber *> * _Nullable rawBattrs;
+@property (nonatomic, readonly, strong) NSNumber * _Nullable rawSkippable;
 /// \param mimes supported MIME types
 ///
 - (nonnull instancetype)initWithMimes:(NSArray<NSString *> * _Nonnull)mimes OBJC_DESIGNATED_INITIALIZER;
@@ -4852,6 +4378,50 @@ SWIFT_CLASS("_TtC12PrebidMobile15VideoParameters")
 - (void)setSize:(NSValue * _Nonnull)size;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class PBMVideoVerificationResource;
+
+SWIFT_CLASS_NAMED("VideoVerificationParameters")
+@interface PBMVideoVerificationParameters : NSObject
+@property (nonatomic, copy) NSArray<PBMVideoVerificationResource *> * _Nonnull verificationResources;
+@property (nonatomic) BOOL autoPlay;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("VideoVerificationResource")
+@interface PBMVideoVerificationResource : NSObject
+@property (nonatomic, copy) NSString * _Nullable url;
+@property (nonatomic, copy) NSString * _Nullable vendorKey;
+@property (nonatomic, copy) NSString * _Nullable params;
+@property (nonatomic, copy) NSString * _Nullable apiFramework;
+@property (nonatomic, strong) PBMVastTrackingEvents * _Nullable trackingEvents;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSNumberFormatter;
+
+SWIFT_PROTOCOL_NAMED("ViewExposure")
+@protocol PBMViewExposure <NSObject, PBMSwiftMigrationHelper>
++ (id <PBMViewExposure> _Nonnull)zeroExposure SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly) float exposureFactor;
+@property (nonatomic, readonly) float exposedPercentage;
+@property (nonatomic, readonly) CGRect visibleRectangle;
+@property (nonatomic, readonly, copy) NSArray<NSValue *> * _Nullable occlusionRectangles;
+- (nonnull instancetype)initWithExposureFactor:(float)exposureFactor visibleRectangle:(CGRect)visibleRectangle occlusionRectangles:(NSArray<NSValue *> * _Nullable)occlusionRectangles;
+- (NSString * _Nonnull)serializeWithFormatter:(NSNumberFormatter * _Nonnull)formatter SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_PROTOCOL_NAMED("WinNotifier")
+@protocol PBMWinNotifier
+- (nonnull instancetype)init;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) void (^ _Nonnull (^ _Nonnull factoryBlock)(id <PrebidServerConnectionProtocol> _Nonnull))(Bid * _Nonnull, void (^ _Nonnull)(NSString * _Nullable));)
++ (void (^ _Nonnull (^ _Nonnull)(id <PrebidServerConnectionProtocol> _Nonnull))(Bid * _Nonnull, void (^ _Nonnull)(NSString * _Nullable)))factoryBlock SWIFT_WARN_UNUSED_RESULT;
++ (void)notifyThroughConnection:(id <PrebidServerConnectionProtocol> _Nonnull)connection winningBid:(Bid * _Nonnull)winningBid callback:(void (^ _Nonnull)(NSString * _Nullable))callback;
++ (void (^ _Nonnull)(Bid * _Nonnull, void (^ _Nonnull)(NSString * _Nullable)))winNotifierBlockWithConnection:(id <PrebidServerConnectionProtocol> _Nonnull)connection SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nullable)cacheUrlFromTargeting:(NSDictionary<NSString *, NSString *> * _Nonnull)targeting idKey:(NSString * _Nonnull)idKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 #endif

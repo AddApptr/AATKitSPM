@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATUnityAdapter.framework/AATUnityAdapter</key>
 		<data>
-		EUY3GIuF4IWx833IWXg0q7iyV74=
+		zb7Qrf29HWPywGbMN7M+T6sbSgg=
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Headers/AATUnityAdapter-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Info.plist</key>
 		<data>
-		2QUxg9SFgI3IYUuQbyXNtcbwcfk=
+		TBXPEbSZxRJkD+sARa1z34/54XY=
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/Info.plist</key>
 		<data>
-		vBuOoBqzO5pZu55unINFubxF/Uc=
+		T5vIzNa8t+rkm5S2nhM9vQ3FLsk=
 		</data>
 		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/AATUnityAdapter</key>
 		<data>
-		d1tNpfoo+6cbxTPacypR7PGtEe0=
+		HHXarNNwxNtlterlV78hAdD14Lg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Headers/AATUnityAdapter-Swift.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Info.plist</key>
 		<data>
-		j0OHBctA3NvbTpTY8XyHwz71CNQ=
+		/poapLHx8dFyWtxtqxcWFznCWOw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/Info.plist</key>
 		<data>
-		nmx6VHl6H8KRtyqSyUyaSRC6Af0=
+		TfLGIl6dQKBDyWjnCl6EGsuzacg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -124,26 +124,6 @@
 		<data>
 		6+hfCdXnixKm+657WUiXeprAN1c=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeDirectory</key>
-		<data>
-		7XlrjnWApZjJNdNDrpnn35EaVTU=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		2ELDFhuhpxopxo/pBkgz6g+IpTA=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeResources</key>
-		<data>
-		kiiqkflGXq4lxwEGSaLMI3i1jHo=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -151,11 +131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EUY3GIuF4IWx833IWXg0q7iyV74=
+			zb7Qrf29HWPywGbMN7M+T6sbSgg=
 			</data>
 			<key>hash2</key>
 			<data>
-			pp9q+emn3XemVAUwxAx8zeswgSLCtTVTW2y5UJvczxs=
+			xxlsb1wZaIjKeov8zI55sehtPxdHIHjiyZhj08CMxNw=
 			</data>
 		</dict>
 		<key>ios-arm64/AATUnityAdapter.framework/Headers/AATUnityAdapter-Swift.h</key>
@@ -184,11 +164,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2QUxg9SFgI3IYUuQbyXNtcbwcfk=
+			TBXPEbSZxRJkD+sARa1z34/54XY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ss1tVMMgwDD51rP4kjQ1OV79oovm8i/d81mCDTgh1nY=
+			4Oo/zVijOgQGrWo1Q7RYZxuYjtRj0RFUXbukl+gDOGw=
 			</data>
 		</dict>
 		<key>ios-arm64/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -250,11 +230,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vBuOoBqzO5pZu55unINFubxF/Uc=
+			T5vIzNa8t+rkm5S2nhM9vQ3FLsk=
 			</data>
 			<key>hash2</key>
 			<data>
-			7EvmYACMGWAlbbHNBsapWobbsZUUdh9wWDak8raOOEk=
+			sim4orDHJyA7nGBEsIeWfqngAqcEm6/cOGGZ/uZUkjY=
 			</data>
 		</dict>
 		<key>ios-arm64/AATUnityAdapter.framework/UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -294,11 +274,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d1tNpfoo+6cbxTPacypR7PGtEe0=
+			HHXarNNwxNtlterlV78hAdD14Lg=
 			</data>
 			<key>hash2</key>
 			<data>
-			rwci/intm0zLwNUGuH55Ua63ZaBQoVmperF30Wp702I=
+			c5K8GpUkDKlX+jmwa4M4L0lw8PXgUA7bBKvamiuKQ5o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Headers/AATUnityAdapter-Swift.h</key>
@@ -327,11 +307,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j0OHBctA3NvbTpTY8XyHwz71CNQ=
+			/poapLHx8dFyWtxtqxcWFznCWOw=
 			</data>
 			<key>hash2</key>
 			<data>
-			KIBmnRJhOAAZ+eQH9vYRHDigoggHY7BSMb6u+GS3NE0=
+			JsILtFfK66ASXE8gE9/TOJPeP5vQtoVgfdD/lYDeI+M=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/Modules/AATUnityAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -437,11 +417,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nmx6VHl6H8KRtyqSyUyaSRC6Af0=
+			TfLGIl6dQKBDyWjnCl6EGsuzacg=
 			</data>
 			<key>hash2</key>
 			<data>
-			m9urPh7BUIxsT/eWcdxampyf8oQ7gN704SSYe8ew/qo=
+			h6dC6kRBXvM81BPMsR54BMzl4aABkH7/0zJj3mJVlh0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/UnityAdsResources.bundle/PrivacyInfo.xcprivacy</key>
@@ -475,61 +455,6 @@
 			<key>hash2</key>
 			<data>
 			wdHo+ZxIr5eFSs8kgj8Q2jorPZzSti3/PJO59hk3RRw=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7XlrjnWApZjJNdNDrpnn35EaVTU=
-			</data>
-			<key>hash2</key>
-			<data>
-			UoVxenXgVutsNOEVen6DJLke+XoF+9wn7BSSYAGcLTo=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OnX22wWFKRSOFN1+obRynMCeyXM=
-			</data>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2ELDFhuhpxopxo/pBkgz6g+IpTA=
-			</data>
-			<key>hash2</key>
-			<data>
-			+rGxpnYa5GpQkkDVYMX08UnPqHkWzBdYbZ12S7fa5EY=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kiiqkflGXq4lxwEGSaLMI3i1jHo=
-			</data>
-			<key>hash2</key>
-			<data>
-			x5tA28kIF0SSFXYatRnnYe6jvACU0xTZS0w9cvXL/WY=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATUnityAdapter.framework/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 	</dict>
