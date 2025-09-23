@@ -50,6 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)prepareSKStoreProductViewController:(NSString*)urlString;
 -(NSString*)clickTrackingBeacon;
 - (BOOL)isEndcardAvailable;
+- (NSString *)description;
 
 @end
 

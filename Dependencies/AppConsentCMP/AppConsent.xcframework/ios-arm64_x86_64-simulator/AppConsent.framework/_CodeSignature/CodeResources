@@ -6,19 +6,19 @@
 	<dict>
 		<key>ACBasicLabelViewCell.nib</key>
 		<data>
-		5EEOtb1zrCUN67jRo6JUXLl4erc=
+		o9FModQ3Xz2h+L9CY1FPypIEaKQ=
 		</data>
 		<key>ACBasicViewCell.nib</key>
 		<data>
-		8Wu+8KZ2tvRORPxM6ScRqut8Fxc=
+		IP9ykCg5434qmp4yvuTCC6pp7ik=
 		</data>
 		<key>ACBasicWithoutPhotoViewCell.nib</key>
 		<data>
-		wdHS14gEnplb7bOoj+CAswY7Luk=
+		xAtPGyErMjrCP2gj/uo5tW7f4+w=
 		</data>
 		<key>ACBasicWithoutSwitchViewCell.nib</key>
 		<data>
-		t1Mp0aXStflD1cDVhAvaO7Sl7rk=
+		ehcMOrntCpoe2tsmIHBSsBhHNZo=
 		</data>
 		<key>ACButtonLayout.nib</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>ACButtonWithImage.nib</key>
 		<data>
-		O/xDAw16W8+Cb+3RFlld00lgLI8=
+		B7xNYvsj/Vt+qQpNLUGg3frz/+k=
 		</data>
 		<key>ACDescriptionHeaderCell.nib</key>
 		<data>
@@ -70,15 +70,11 @@
 		</data>
 		<key>ACDetailPurposeSwitchCell.nib</key>
 		<data>
-		ONmt99/XtiidEHWvfGXG3LeUpbw=
+		jMDF8Slz9OsVDId9lOHMBN/3YIg=
 		</data>
-		<key>ACErrorView.nib/objects-13.0+.nib</key>
+		<key>ACErrorView.nib</key>
 		<data>
-		wtVTHk3kKOHJD5gDaXkDGZb4esQ=
-		</data>
-		<key>ACErrorView.nib/runtime.nib</key>
-		<data>
-		alYVRJtmD+noFVDCadCqAwu3swQ=
+		jIGX9eIVQF4PfshDHDE3tLGSvvM=
 		</data>
 		<key>ACGeoDescCell.nib</key>
 		<data>
@@ -86,7 +82,7 @@
 		</data>
 		<key>ACGeoNoticeHeaderViewCell.nib</key>
 		<data>
-		nnwWW0pChPH5DBnoEJGlpbaJ0Ms=
+		4K8GvfapzMd66qi5nOpB2abVoHY=
 		</data>
 		<key>ACGeolocationDetailsStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -146,7 +142,7 @@
 		</data>
 		<key>ACPartnerCell.nib</key>
 		<data>
-		9OyisngrpQtIXu1M1Ftx9m0lpTI=
+		9DCBVnN6MEiJip9i8Ub3hKHIfy8=
 		</data>
 		<key>ACPartnerDetailStoryboard.storyboardc/2PK-FZ-Xep-view-hmK-Ii-aWo.nib/objects-12.3+.nib</key>
 		<data>
@@ -178,7 +174,7 @@
 		</data>
 		<key>ACProfileStoryboard.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		tdquJicz/fNpasQ+3zL02cBIHTs=
+		SiB1rvMMLZHbCFwrChc2bxcxFaM=
 		</data>
 		<key>ACPurposeFeatureMandatoryStoryboard.storyboardc/Info.plist</key>
 		<data>
@@ -218,7 +214,7 @@
 		</data>
 		<key>ACSegmentHeaderPage.nib</key>
 		<data>
-		VXk2HGR9wHBZXu/ytoTd/huvE9g=
+		PDQW8qavhimRvsEOETDOFaGP/qA=
 		</data>
 		<key>ACSegmentView.nib</key>
 		<data>
@@ -302,7 +298,7 @@
 		</data>
 		<key>ACTitleSubTitleViewCell.nib</key>
 		<data>
-		s+2OeUCKRw7jmpnduvXZm8BvqX8=
+		Jv4f2L49IpCZFS4MkQkaJkbiQ9Q=
 		</data>
 		<key>ACUnderlineTextView.nib</key>
 		<data>
@@ -322,7 +318,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		RRqYR5jlgj7CYQPIiMLk8ziXTQ8=
+		aczTVJBsvZZncMwaxI/LJ/SdKSI=
 		</data>
 		<key>Headers/ACNotice.h</key>
 		<data>
@@ -330,15 +326,15 @@
 		</data>
 		<key>Headers/AppConsent-Swift.h</key>
 		<data>
-		PzFoEZ6fz0cqiC0i/oJg64924xw=
+		dqcNKJVqgcAPLnKmWCJP/Uz46HQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SdNMDe5oFkR7HGhs7AS9+G2qFF0=
+		bhUXt4tGAAWCC79C34VTH6+yeZU=
 		</data>
 		<key>IntroductionStoryboard.storyboardc/0El-NE-sus-view-yCd-jH-jKA.nib</key>
 		<data>
-		oYzIfJcMWZeCjxQDbsYb+GT5YvY=
+		SRp9Vx297kWHVBTesjWaaLzXyTY=
 		</data>
 		<key>IntroductionStoryboard.storyboardc/ACSettingsStoryboard.nib</key>
 		<data>
@@ -362,43 +358,43 @@
 		</data>
 		<key>Modules/AppConsent.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		q0Q2+K3dCEO4kjWep+an9uM4EVw=
+		Cv+qd6Zl+qbG5crsEuJWy1BfWIU=
 		</data>
 		<key>Modules/AppConsent.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qP1tyQX2Jy4wwI4+p/GJwgLkWhU=
+		2zU1tsSclOSDKntynbPd3EZax9M=
 		</data>
 		<key>Modules/AppConsent.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3K975itu0VUTNIw6/oY2+P3TAkQ=
+		HK24NeMLTD60QaeCraMukZSEcU0=
 		</data>
 		<key>Modules/AppConsent.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qP1tyQX2Jy4wwI4+p/GJwgLkWhU=
+		2zU1tsSclOSDKntynbPd3EZax9M=
 		</data>
 		<key>Modules/AppConsent.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dDVo0sv406GCLXaG7OenQb5vzRg=
+		u32K7zSNl8wU/C8TZ4KbUW52iG8=
 		</data>
 		<key>Modules/AppConsent.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		q0Q2+K3dCEO4kjWep+an9uM4EVw=
+		Cv+qd6Zl+qbG5crsEuJWy1BfWIU=
 		</data>
 		<key>Modules/AppConsent.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WaqDfElh9EM8fM5uJ7tfd4AFBQ4=
+		Os3JbtK2EegyHxhv5OrZG0dlQ2s=
 		</data>
 		<key>Modules/AppConsent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2PLxT2L7UiRpM+ABKqS3s3HgSRs=
+		ArT8XDDDeLODb9Eg2LhtXIvDUks=
 		</data>
 		<key>Modules/AppConsent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WaqDfElh9EM8fM5uJ7tfd4AFBQ4=
+		Os3JbtK2EegyHxhv5OrZG0dlQ2s=
 		</data>
 		<key>Modules/AppConsent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		h7hAOrypszkg8qU0PRQUaRjFCiA=
+		bRzlj1rb/bqF45TIVAfKeZuqLGo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -454,35 +450,17 @@
 		</data>
 		<key>VendorsStoryboard.storyboardc/cUO-MZ-WIF-view-Rhn-zI-FaL.nib</key>
 		<data>
-		wjsgAZVa+jKKI3TAdQsfITQa5gQ=
+		5RjR/TEB2S1qKOIdoOmU8Rc8KoE=
 		</data>
 		<key>VendorsStoryboard.storyboardc/i1V-A3-W7C-view-0YE-Dc-l0e.nib</key>
 		<data>
 		K1uANeBpaEVUxF9OX3kefbOxr/k=
 		</data>
-		<key>bg.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sPas/s2VcihWnUH+F0+iTYFTQv8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>bg.lproj/appconsent.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			wIFrou+ylkGVZc74cRCxnENaBM4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>cs.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sPas/s2VcihWnUH+F0+iTYFTQv8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -496,29 +474,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>de.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			6Olgy2d26FthvY/NlOgo6Eb1L08=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>de.lproj/appconsent.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			pM7obzl3T8ICJ9DJeIUzDt2dGvw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sPas/s2VcihWnUH+F0+iTYFTQv8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -532,29 +492,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			G6eNo2dE9WaRhaJkK1oTOLoH6uY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>es.lproj/appconsent.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			ItD68vCJ0chqDgUsNPeuRJrXTf4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			p4ynxHIo6wsO5wE5eYwXZGbxLWM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -572,29 +514,11 @@
 		<data>
 		xvdb+KJHJiX9yeUWKCQhRARiDGw=
 		</data>
-		<key>it.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kwuTMcfXhUT8kPP0fbpd4azuQMw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>it.lproj/appconsent.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			rYKgGnwRAq92vxO/i++nlLo/NTM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>nl.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			P0+MTuPynQj071bCtq1eHLv41FA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -608,29 +532,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1t93DN1IA36GpWLdGO4jGiQW+cg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>pl.lproj/appconsent.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			KVHHEsev4zZ/TBU+nq3PKNxQuKs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			KBbMmE4JMMWmSp3c+fB/dETdpRc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -655,28 +561,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iSyE2CTvJCygDyN6laUEthghmn568I7i6sia7PfyZkg=
+			MJPewldxbt2cA30jOtFsJCzMXEt01DynkGKiDeNKuQ8=
 			</data>
 		</dict>
 		<key>ACBasicViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W1GfoBr1kiZQF2GVgcXG+M8p6/qdjHm3Z3YTRl335n0=
+			6fRvFL7A+ghTh8ES0IQ3xX4n5rxynmiEkC1CrxD7Yy4=
 			</data>
 		</dict>
 		<key>ACBasicWithoutPhotoViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yxa5WT/+iO9xGFwp6vSyRIvCcxOiUf6kqUBdwOgBtk0=
+			qgCpqRtyibH/gGzPZj5/ShxCwUDdhAJNUuYJb4Q16u8=
 			</data>
 		</dict>
 		<key>ACBasicWithoutSwitchViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5jBnSFFIT846lL3S/OqhTyMqvbXAK5f6FT5FbbaKSyA=
+			8apsLmydKSCCDjKKTR7m/tL35d1p5D45cY1wctoW6xc=
 			</data>
 		</dict>
 		<key>ACButtonLayout.nib</key>
@@ -690,7 +596,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bxA5vDf1qdK1XYoQ3YiE/445FeppkfqVU+q3OQGbxyc=
+			tgTzW6GYiwcpX7nRw9I+Z5VSCknYirIctRAV+tvAuSk=
 			</data>
 		</dict>
 		<key>ACDescriptionHeaderCell.nib</key>
@@ -767,21 +673,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gGCazVj5mN75PD1oL9gcT912cEnAbpP2z29IwWRb1Nk=
+			3Cu7Ehc22FHNMT7bINtvyJfT4rM+Weo5XbImrW1nCCw=
 			</data>
 		</dict>
-		<key>ACErrorView.nib/objects-13.0+.nib</key>
+		<key>ACErrorView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			asq7axow/95FBUBO/ngAWzZEa47CURGN6JUQeEFRbs8=
-			</data>
-		</dict>
-		<key>ACErrorView.nib/runtime.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WxHaK6fJvYdNIfr5YEpY3QE9IZKBdl9G4QpVZ/sja3Y=
+			yehnPHRxBNPLrhJCY9Dcmnh5AV9QN3WFvS2dTX4Bgdk=
 			</data>
 		</dict>
 		<key>ACGeoDescCell.nib</key>
@@ -795,7 +694,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t2P2XoxZa299AeN8chmM+UtxahP+xXJJguBlKGoZx78=
+			KFY4DO0biJ8a8VAiY/+QvQ7uk72L302PoA1dYsv4gUI=
 			</data>
 		</dict>
 		<key>ACGeolocationDetailsStoryboard.storyboardc/Info.plist</key>
@@ -900,7 +799,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FN66cnQkSb+sJKAWltTbSi3ClnVM3XbAaUHPxGqSJxI=
+			hknQBIoTQZVhRJzmukKA4q5I5HNlwgJ1ugaNoiIud+I=
 			</data>
 		</dict>
 		<key>ACPartnerDetailStoryboard.storyboardc/2PK-FZ-Xep-view-hmK-Ii-aWo.nib/objects-12.3+.nib</key>
@@ -956,7 +855,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cxXyR7vxFm8QUVqujjyGGNq5NYdtx4/MVtqxVD8R5Yg=
+			Bn+cjotkwb9voBnDuJ9PdKdp6Dvu9NW7iK2WS322KrM=
 			</data>
 		</dict>
 		<key>ACPurposeFeatureMandatoryStoryboard.storyboardc/Info.plist</key>
@@ -1026,7 +925,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hiOuvwQRgsZ9r/CGLxEs2aHLY5Zy2DvE9/mGcu7zO6E=
+			u6OeOpgQ2stdYzKiXACym9E45Dchlz+dL1nQVjIru/s=
 			</data>
 		</dict>
 		<key>ACSegmentView.nib</key>
@@ -1173,7 +1072,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dtobojjd2hiJ0xEQLJJWF9Dmmr0aeyzV/I4cpeEskyg=
+			YzGSdXqNK/6soZMrMv8Ax//xgklroJn62STlAe+Hq40=
 			</data>
 		</dict>
 		<key>ACUnderlineTextView.nib</key>
@@ -1208,7 +1107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			buZxaHQNjxjWyadDLlW9wTgKuxEOhCMZz/BEbc0Nxlw=
+			Mr4IVgegY3/0QTH3gSxbtcDc0FjEcqAioFRsR2bNa/M=
 			</data>
 		</dict>
 		<key>Headers/ACNotice.h</key>
@@ -1222,14 +1121,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8S8z2QtFeQFZefJGidNTmKUfNv3GHRgHG4pJ+RZwEWs=
+			GO4dlRhlrWcAWDW0aiZbiY1uzmqpe6xdyeoK+tib1wM=
 			</data>
 		</dict>
 		<key>IntroductionStoryboard.storyboardc/0El-NE-sus-view-yCd-jH-jKA.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KwqbSf8ljy1MSYv5wGmtTlBPT1QMs1T07bmdnSlhbBk=
+			ZJ2MbOnKqg8yEkpI6+TsDTZhTwK/OA8fmr6bs7+8mEw=
 			</data>
 		</dict>
 		<key>IntroductionStoryboard.storyboardc/ACSettingsStoryboard.nib</key>
@@ -1271,70 +1170,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w9DP+HG3FPq8wuskoaIvtwowJedFsIf8W+HranbT0RM=
+			toSSJd3n3Y72aVlplcHS64ifMOu35KlY5iXDNIpZXh0=
 			</data>
 		</dict>
 		<key>Modules/AppConsent.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tDqi3aVoyGhWsciEx8lJPkRpNp3xEofXac5Hi5diylY=
+			mwrQkFPikMCGZBmQHW/BOLxNlrVwukmg6+jkLnGfy/I=
 			</data>
 		</dict>
 		<key>Modules/AppConsent.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hE8OsO8q3NoEHlw8EBrSYnmB+IIbXmKEA9Rs35VAi80=
+			yi42dG679LRwacyn1EXmUwXUXmEb1aoKDiHBl/+iu9k=
 			</data>
 		</dict>
 		<key>Modules/AppConsent.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tDqi3aVoyGhWsciEx8lJPkRpNp3xEofXac5Hi5diylY=
+			mwrQkFPikMCGZBmQHW/BOLxNlrVwukmg6+jkLnGfy/I=
 			</data>
 		</dict>
 		<key>Modules/AppConsent.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2vZjZphNkW/dSKdoT7do+N+61tBVS/+LU/mTjCS8VZQ=
+			w1cY4rW6fb+xasip17s+DMe6Btohp2y5z/GsGJv0Dfs=
 			</data>
 		</dict>
 		<key>Modules/AppConsent.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w9DP+HG3FPq8wuskoaIvtwowJedFsIf8W+HranbT0RM=
+			toSSJd3n3Y72aVlplcHS64ifMOu35KlY5iXDNIpZXh0=
 			</data>
 		</dict>
 		<key>Modules/AppConsent.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IAKYnLh5dnd5eL0HEw7g4c0C2elB6A0jn77x9kexQRI=
+			Hail0Ni3EcDvDffdI6c1X+Sak73ol4TF4L+8ThSxHAM=
 			</data>
 		</dict>
 		<key>Modules/AppConsent.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Eq/P9dTcwA3gxgT1Bu0t3h8G35t7ulDAyLE0mcYR3Ls=
+			H+ylzp0vCM2V7l8pejmoo9Dh7wfbHhkHWCYYtS49RIw=
 			</data>
 		</dict>
 		<key>Modules/AppConsent.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IAKYnLh5dnd5eL0HEw7g4c0C2elB6A0jn77x9kexQRI=
+			Hail0Ni3EcDvDffdI6c1X+Sak73ol4TF4L+8ThSxHAM=
 			</data>
 		</dict>
 		<key>Modules/AppConsent.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5SLQYca96JFXMCyr4v0MlJUlIaWGoed3s/s+V1k8KT4=
+			Q4S5ddwCGa5vCA0XgJ9VNmBMbvxS+xT+yKogyLxhoZ0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1432,7 +1331,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F1nVlILovpZVjLE/XjzbLAwoZz3laNjHchXcuB1ZcDs=
+			p2rKp4rV93Q0XUfbx4xbZFroGQf6mwZsM6Oey65Srlo=
 			</data>
 		</dict>
 		<key>VendorsStoryboard.storyboardc/i1V-A3-W7C-view-0YE-Dc-l0e.nib</key>
@@ -1442,29 +1341,11 @@
 			3kHtrMQKQJpfJVWxJJBdW3ncIBGgzqh0tAyU+/ZF+SA=
 			</data>
 		</dict>
-		<key>bg.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vOYaawSQMhCI441GCQliwaL+v8ettsJM+pwHFz7Srwo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>bg.lproj/appconsent.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			0adaf06Vmo03+u8VRSjL9JzvLa9tWJ6gmgmoZ4sHu14=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>cs.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vOYaawSQMhCI441GCQliwaL+v8ettsJM+pwHFz7Srwo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1478,29 +1359,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>de.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dyMfTKXvwEyJ0JrwCd2legeaEYOZExlpQDphgHMBF8Q=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>de.lproj/appconsent.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			5rA1SUhlsUSR5uCQhUt4tlMgcEscQ3LOXHV3vCeNKNk=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vOYaawSQMhCI441GCQliwaL+v8ettsJM+pwHFz7Srwo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1514,29 +1377,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>es.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Ezars5t4boaFfGhm/ky+GKaUzyvjprsBQd/6yoQCuVY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>es.lproj/appconsent.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			X8x3o3VimlKXXujoWE1pfUGjjrjJWj18GddHa5a5os4=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>fr.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SZ90g1fF6Y2ry49A+uz9FQHNA4h1EZ19IpgOhqkgYEY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1557,29 +1402,11 @@
 			31Yx6GUKlMydRB9NSOagBNqwBkHMW+CxXxOd8MeM7ok=
 			</data>
 		</dict>
-		<key>it.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			32DojsW0Aeew1cgN6cWc6N/229sq2nBX5ew+Iq6qh3s=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>it.lproj/appconsent.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			mPpcc/QpG01nVxCWkv7bMdEXkNPz4AMM5E1c0Nn1tvM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>nl.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6BXJs8OnbbAMoX+NWZpKqqh8Ewec4ETznYi6Nbx1pWI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1593,29 +1420,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>pl.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DGRU1RwfD7mGMPkd0ZlOzWnR3X7HL/LrrHhMVwUshk8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>pl.lproj/appconsent.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			ZRM2CtLM3wEDwoGskaK7CYt/TzKWVjFX7CvagypIfH0=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>pt.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O9P+WRkxxG9lTgPv2+2pA32LvjOjkCdehqa6bUzLGe4=
 			</data>
 			<key>optional</key>
 			<true/>
