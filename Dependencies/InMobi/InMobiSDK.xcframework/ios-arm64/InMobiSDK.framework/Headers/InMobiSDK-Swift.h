@@ -362,6 +362,7 @@ SWIFT_CLASS("_TtC9InMobiSDK12IMConfigBase")
 @class MraidConfig;
 @class JSDownloaderConfig;
 @class Mraid3Config;
+@class PingV2Config;
 @class WebViewModeConfig;
 
 SWIFT_CLASS("_TtC9InMobiSDK9AdsConfig")
@@ -390,6 +391,7 @@ SWIFT_CLASS("_TtC9InMobiSDK9AdsConfig")
 @property (nonatomic, strong) MraidConfig * _Nonnull mraid;
 @property (nonatomic, strong) JSDownloaderConfig * _Nonnull jsDownloader;
 @property (nonatomic, strong) Mraid3Config * _Nonnull mraid3;
+@property (nonatomic, strong) PingV2Config * _Nonnull pingV2;
 - (NSString * _Nonnull)getAdServerUrl SWIFT_WARN_UNUSED_RESULT;
 - (WebViewModeConfig * _Nonnull)getWebviewConfigFor:(NSString * _Nonnull)type SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -427,6 +429,15 @@ SWIFT_CLASS("_TtC9InMobiSDK21AudioImpressionConfig")
 @property (nonatomic) NSInteger impressionMinPercentageViewed;
 @property (nonatomic) NSInteger impressionType;
 @property (nonatomic) NSInteger impressionMinTimeViewed;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9InMobiSDK9BTSConfig")
+@interface BTSConfig : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) NSTimeInterval expiry;
+@property (nonatomic) NSInteger maxEntries;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -566,6 +577,14 @@ SWIFT_CLASS("_TtC9InMobiSDK14ErrorLogConfig")
 SWIFT_CLASS("_TtC9InMobiSDK17ExperimentsConfig")
 @interface ExperimentsConfig : NSObject
 @property (nonatomic) BOOL networkRevamp;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9InMobiSDK13GestureConfig")
+@interface GestureConfig : NSObject
+@property (nonatomic) BOOL isHTEnable;
+@property (nonatomic) NSTimeInterval htThrottlingTime;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -976,6 +995,13 @@ SWIFT_CLASS("_TtC9InMobiSDK11IMComponent")
 @end
 
 
+
+
+SWIFT_CLASS("_TtC9InMobiSDK10IMDepthPPS")
+@interface IMDepthPPS : NSObject
+@property (nonatomic) BOOL enabled;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @protocol IMExposureTrackerDelegate;
 
@@ -1388,6 +1414,20 @@ SWIFT_CLASS("_TtC9InMobiSDK13IMMovableView")
 @end
 
 
+
+SWIFT_CLASS("_TtC9InMobiSDK16IMMraidConstants")
+@interface IMMraidConstants : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull COMMAND_LOAD_WEBVIEW;)
++ (NSString * _Nonnull)COMMAND_LOAD_WEBVIEW SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull COMMAND_SHOW_WEBVIEW;)
++ (NSString * _Nonnull)COMMAND_SHOW_WEBVIEW SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull COMMAND_DESTROY_WEBVIEW;)
++ (NSString * _Nonnull)COMMAND_DESTROY_WEBVIEW SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull COMMAND_SEND_MESSAGE;)
++ (NSString * _Nonnull)COMMAND_SEND_MESSAGE SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @protocol IMNativeDelegate;
 @class UIImage;
 @class NSURL;
@@ -1568,6 +1608,19 @@ SWIFT_PROTOCOL("_TtP9InMobiSDK16IMNativeDelegate_")
 @end
 
 
+SWIFT_CLASS("_TtC9InMobiSDK17IMPPSSignalConfig")
+@interface IMPPSSignalConfig : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) NSInteger expiry;
+@property (nonatomic) NSInteger count;
+@property (nonatomic) NSInteger precision;
+@property (nonatomic) NSInteger strLen;
+@property (nonatomic, strong) IMDepthPPS * _Nonnull depth;
+@property (nonatomic, strong) AnyDictionary * _Nullable allowedKeys;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 /// Use this class to set the compliance
 /// Client-side APIs to enable publishers to adhere to Privacy and Compliance on behalf of their users
 SWIFT_CLASS("_TtC9InMobiSDK19IMPrivacyCompliance")
@@ -1636,6 +1689,13 @@ typedef SWIFT_ENUM(NSInteger, IMSDKLogLevel, closed) {
   IMSDKLogLevelError = 1,
   IMSDKLogLevelDebug = 2,
 };
+
+
+SWIFT_CLASS("_TtC9InMobiSDK20IMSDKSwiftCommonUtil")
+@interface IMSDKSwiftCommonUtil : NSObject
++ (NSString * _Nonnull)applicationDisplayName SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 typedef SWIFT_ENUM(NSInteger, IMSKANConfigRequestModeType, open) {
   IMSKANConfigRequestModeTypeDisabled = 0,
@@ -2166,6 +2226,7 @@ SWIFT_CLASS("_TtC9InMobiSDK18JSDownloaderConfig")
 SWIFT_CLASS("_TtC9InMobiSDK8LPConfig")
 @interface LPConfig : NSObject
 @property (nonatomic) NSInteger maxFunnelsToTrackPerAd;
+@property (nonatomic) BOOL enableOnLpLifeCycleEvent;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2254,6 +2315,7 @@ SWIFT_CLASS("_TtC9InMobiSDK11MraidConfig")
 @property (nonatomic) NSInteger retryInterval;
 @property (nonatomic, copy) NSString * _Nonnull ios_url;
 @property (nonatomic) NSInteger maxRetries;
+@property (nonatomic) BOOL injectMainFrameOnly;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2299,6 +2361,88 @@ SWIFT_CLASS("_TtC9InMobiSDK10OmidConfig")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSUUID;
+
+SWIFT_CLASS("_TtC9InMobiSDK4Ping")
+@interface Ping : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull templateUniqueId;
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull id;
+@property (nonatomic) NSInteger retryCount;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol PingSource;
+
+SWIFT_CLASS("_TtC9InMobiSDK11PingCreator")
+@interface PingCreator : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
++ (NSArray<Ping *> * _Nonnull)getPingsFrom:(NSDictionary<NSString *, id> * _Nonnull)dictionary source:(id <PingSource> _Nullable)source isTelemetryEnabledForPings:(BOOL)isTelemetryEnabledForPings SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<Ping *> * _Nonnull)pingsFrom:(NSData * _Nonnull)jsonData source:(id <PingSource> _Nullable)source isTelemetryEnabledForPings:(BOOL)isTelemetryEnabledForPings SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC9InMobiSDK11PingManager")
+@interface PingManager : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PingManager * _Nonnull shared;)
++ (PingManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic) BOOL isTelemetryEnabled;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)removeRenderViewForUuid:(NSUUID * _Nullable)uuid;
+- (void)processWithPings:(NSArray<Ping *> * _Nonnull)pings source:(id <PingSource> _Nonnull)source;
+- (void)processPendingWithOnlyHighPriority:(BOOL)onlyHighPriority;
+@end
+
+
+SWIFT_PROTOCOL("_TtP9InMobiSDK10PingSource_")
+@protocol PingSource
+@property (nonatomic, readonly, copy) NSUUID * _Nonnull uuid;
+- (void)notifyPingSentCompletionWithPing:(Ping * _Nonnull)ping status:(NSInteger)status message:(NSString * _Nullable)message;
+- (NSDictionary<NSString *, NSObject *> * _Nullable)getAdDataJSON SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class PingV2SubConfig;
+@class PingV2RetryConfig;
+
+SWIFT_CLASS("_TtC9InMobiSDK12PingV2Config")
+@interface PingV2Config : NSObject
+@property (nonatomic) BOOL enabled;
+@property (nonatomic) NSInteger maxEntries;
+@property (nonatomic, strong) PingV2SubConfig * _Nonnull maxBatchSize;
+@property (nonatomic, strong) PingV2SubConfig * _Nonnull expiry;
+@property (nonatomic, strong) PingV2RetryConfig * _Nonnull retryConfig;
+@property (nonatomic, strong) PingV2SubConfig * _Nonnull interval;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PingV2RetrySubConfig;
+
+SWIFT_CLASS("_TtC9InMobiSDK17PingV2RetryConfig")
+@interface PingV2RetryConfig : NSObject
+@property (nonatomic, strong) PingV2RetrySubConfig * _Nonnull high;
+@property (nonatomic, strong) PingV2RetrySubConfig * _Nonnull normal;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9InMobiSDK20PingV2RetrySubConfig")
+@interface PingV2RetrySubConfig : NSObject
+@property (nonatomic) NSInteger maxRetries;
+@property (nonatomic) NSTimeInterval retryInterval;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC9InMobiSDK15PingV2SubConfig")
+@interface PingV2SubConfig : NSObject
+@property (nonatomic) NSTimeInterval high;
+@property (nonatomic) NSTimeInterval normal;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC9InMobiSDK15PublisherConfig")
 @interface PublisherConfig : NSObject
@@ -2307,6 +2451,9 @@ SWIFT_CLASS("_TtC9InMobiSDK15PublisherConfig")
 @property (nonatomic) BOOL enableMCO;
 @property (nonatomic) BOOL enableHB;
 @property (nonatomic) NSInteger payloadSize;
+@property (nonatomic, strong) IMPPSSignalConfig * _Nonnull obj;
+@property (nonatomic, strong, getter=auto, setter=setAuto:) IMPPSSignalConfig * _Nonnull auto_;
+@property (nonatomic, strong) IMPPSSignalConfig * _Nonnull direct;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2335,6 +2482,7 @@ SWIFT_CLASS("_TtC9InMobiSDK15RenderingConfig")
 @property (nonatomic) NSInteger picWidth;
 @property (nonatomic) BOOL enableSDKAVAudioSession;
 @property (nonatomic, strong) WebViewModeDictionaryConfig * _Nonnull webviewModeDictionary;
+@property (nonatomic, strong) GestureConfig * _Nonnull gestureConfig;
 - (BOOL)enablePubMuteControl_ SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -2407,6 +2555,7 @@ SWIFT_CLASS("_TtC9InMobiSDK12SignalConfig")
 @property (nonatomic, strong) PurchasesConfig * _Nonnull purchases;
 @property (nonatomic, strong) PublisherConfig * _Nonnull publisher;
 @property (nonatomic, strong) ExperimentsConfig * _Nonnull experiments;
+@property (nonatomic, strong) BTSConfig * _Nonnull bts;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2458,6 +2607,7 @@ SWIFT_CLASS("_TtC9InMobiSDK15TelemetryConfig")
 @property (nonatomic) NSInteger maxEventsToPersist;
 @property (nonatomic, strong) LPConfig * _Nonnull lpConfig;
 @property (nonatomic) double samplingFactor;
+@property (nonatomic) double pingSamplingFactor;
 @property (nonatomic) BOOL disableAllGeneralEvents;
 @property (nonatomic, strong) IMIncludeIds * _Nonnull includeIds;
 @property (nonatomic, strong) DatabaseConfig * _Nonnull databaseConfig;

@@ -315,6 +315,7 @@ typedef SWIFT_ENUM(NSInteger, BannerPosition, open) {
 };
 
 @class NSCoder;
+@class KPBid;
 
 SWIFT_CLASS("_TtC8KidozSDK12KPBannerView")
 @interface KPBannerView : UIView
@@ -322,13 +323,35 @@ SWIFT_CLASS("_TtC8KidozSDK12KPBannerView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)setAutoShowTo:(BOOL)autoShow;
 - (void)load;
+- (void)load:(KPBid * _Nonnull)bid;
 - (void)show;
 - (void)setBannerPosition:(enum BannerPosition)bannerPosition;
 - (void)close;
+@property (nonatomic, getter=isHidden) BOOL hidden;
+- (void)didMoveToWindow;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+@class NSDate;
 @class NSString;
+
+SWIFT_CLASS_NAMED("KPBid")
+@interface KPBid : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (BOOL)isExpired SWIFT_WARN_UNUSED_RESULT;
+- (NSDate * _Nullable)expirationDate SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+SWIFT_CLASS("_TtC8KidozSDK7KPError")
+@interface KPError : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol KidozInitDelegate;
 
 SWIFT_CLASS_NAMED("Kidoz")
@@ -357,12 +380,27 @@ SWIFT_PROTOCOL("_TtP8KidozSDK19KidozBannerDelegate_")
 - (void)onBannerAdClosedWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView;
 @end
 
+@protocol KidozBidRequestDelegate;
 
 SWIFT_CLASS_NAMED("KidozBannerView")
 @interface KidozBannerView : KPBannerView
-- (void)setDelegateWithDelegate:(id <KidozBannerDelegate> _Nonnull)delegate;
 @property (nonatomic, strong) id <KidozBannerDelegate> _Nullable delegate;
+- (void)setDelegateWithDelegate:(id <KidozBannerDelegate> _Nonnull)delegate;
++ (void)requestBidWithDelegate:(id <KidozBidRequestDelegate> _Nonnull)delegate;
++ (NSString * _Nullable)getSignal SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("KidozBid")
+@interface KidozBid : KPBid
+@end
+
+
+SWIFT_PROTOCOL("_TtP8KidozSDK23KidozBidRequestDelegate_")
+@protocol KidozBidRequestDelegate
+- (void)onKidozBidResponse:(KidozBid * _Nonnull)bid;
+- (void)onKidozError:(KidozError * _Nonnull)error;
 @end
 
 
@@ -393,8 +431,11 @@ SWIFT_PROTOCOL("_TtP8KidozSDK17KidozInitDelegate_")
 SWIFT_CLASS_NAMED("KidozInterstitialAd")
 @interface KidozInterstitialAd : NSObject
 + (void)loadWithDelegate:(id <KidozInterstitialDelegate> _Nonnull)delegate;
++ (void)loadWithBid:(KidozBid * _Nonnull)bid delegate:(id <KidozInterstitialDelegate> _Nonnull)delegate;
 - (void)showWithViewController:(UIViewController * _Nonnull)viewController;
 - (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
++ (void)requestBidWithDelegate:(id <KidozBidRequestDelegate> _Nonnull)delegate;
++ (NSString * _Nullable)getSignal SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -415,8 +456,11 @@ SWIFT_PROTOCOL("_TtP8KidozSDK25KidozInterstitialDelegate_")
 SWIFT_CLASS_NAMED("KidozRewardedAd")
 @interface KidozRewardedAd : NSObject
 + (void)loadWithDelegate:(id <KidozRewardedDelegate> _Nonnull)delegate;
++ (void)loadWithBid:(KidozBid * _Nonnull)bid delegate:(id <KidozRewardedDelegate> _Nonnull)delegate;
 - (void)showWithViewController:(UIViewController * _Nonnull)viewController;
 - (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
++ (void)requestBidWithDelegate:(id <KidozBidRequestDelegate> _Nonnull)delegate;
++ (NSString * _Nullable)getSignal SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -794,6 +838,7 @@ typedef SWIFT_ENUM(NSInteger, BannerPosition, open) {
 };
 
 @class NSCoder;
+@class KPBid;
 
 SWIFT_CLASS("_TtC8KidozSDK12KPBannerView")
 @interface KPBannerView : UIView
@@ -801,13 +846,35 @@ SWIFT_CLASS("_TtC8KidozSDK12KPBannerView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 - (void)setAutoShowTo:(BOOL)autoShow;
 - (void)load;
+- (void)load:(KPBid * _Nonnull)bid;
 - (void)show;
 - (void)setBannerPosition:(enum BannerPosition)bannerPosition;
 - (void)close;
+@property (nonatomic, getter=isHidden) BOOL hidden;
+- (void)didMoveToWindow;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+@class NSDate;
 @class NSString;
+
+SWIFT_CLASS_NAMED("KPBid")
+@interface KPBid : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (BOOL)isExpired SWIFT_WARN_UNUSED_RESULT;
+- (NSDate * _Nullable)expirationDate SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
+
+SWIFT_CLASS("_TtC8KidozSDK7KPError")
+@interface KPError : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol KidozInitDelegate;
 
 SWIFT_CLASS_NAMED("Kidoz")
@@ -836,12 +903,27 @@ SWIFT_PROTOCOL("_TtP8KidozSDK19KidozBannerDelegate_")
 - (void)onBannerAdClosedWithKidozBannerView:(KidozBannerView * _Nonnull)kidozBannerView;
 @end
 
+@protocol KidozBidRequestDelegate;
 
 SWIFT_CLASS_NAMED("KidozBannerView")
 @interface KidozBannerView : KPBannerView
-- (void)setDelegateWithDelegate:(id <KidozBannerDelegate> _Nonnull)delegate;
 @property (nonatomic, strong) id <KidozBannerDelegate> _Nullable delegate;
+- (void)setDelegateWithDelegate:(id <KidozBannerDelegate> _Nonnull)delegate;
++ (void)requestBidWithDelegate:(id <KidozBidRequestDelegate> _Nonnull)delegate;
++ (NSString * _Nullable)getSignal SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS_NAMED("KidozBid")
+@interface KidozBid : KPBid
+@end
+
+
+SWIFT_PROTOCOL("_TtP8KidozSDK23KidozBidRequestDelegate_")
+@protocol KidozBidRequestDelegate
+- (void)onKidozBidResponse:(KidozBid * _Nonnull)bid;
+- (void)onKidozError:(KidozError * _Nonnull)error;
 @end
 
 
@@ -872,8 +954,11 @@ SWIFT_PROTOCOL("_TtP8KidozSDK17KidozInitDelegate_")
 SWIFT_CLASS_NAMED("KidozInterstitialAd")
 @interface KidozInterstitialAd : NSObject
 + (void)loadWithDelegate:(id <KidozInterstitialDelegate> _Nonnull)delegate;
++ (void)loadWithBid:(KidozBid * _Nonnull)bid delegate:(id <KidozInterstitialDelegate> _Nonnull)delegate;
 - (void)showWithViewController:(UIViewController * _Nonnull)viewController;
 - (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
++ (void)requestBidWithDelegate:(id <KidozBidRequestDelegate> _Nonnull)delegate;
++ (NSString * _Nullable)getSignal SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -894,8 +979,11 @@ SWIFT_PROTOCOL("_TtP8KidozSDK25KidozInterstitialDelegate_")
 SWIFT_CLASS_NAMED("KidozRewardedAd")
 @interface KidozRewardedAd : NSObject
 + (void)loadWithDelegate:(id <KidozRewardedDelegate> _Nonnull)delegate;
++ (void)loadWithBid:(KidozBid * _Nonnull)bid delegate:(id <KidozRewardedDelegate> _Nonnull)delegate;
 - (void)showWithViewController:(UIViewController * _Nonnull)viewController;
 - (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
++ (void)requestBidWithDelegate:(id <KidozBidRequestDelegate> _Nonnull)delegate;
++ (NSString * _Nullable)getSignal SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

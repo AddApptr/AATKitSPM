@@ -448,6 +448,7 @@ SWIFT_PROTOCOL("_TtP21ConsentViewController17MessageController_")
 - (void)loadMessage;
 - (void)loadPrivacyManagerWithUrl:(NSURL * _Nonnull)url;
 - (void)closePrivacyManager;
+- (void)dismissMessage;
 @end
 
 SWIFT_CLASS("_TtC21ConsentViewController21MissingChildPmIdError")
@@ -649,6 +650,8 @@ SWIFT_PROTOCOL("_TtP21ConsentViewController17SPConsentDelegate_")
 - (void)onSPFinishedWithUserData:(SPUserData * _Nonnull)userData;
 /// called if something goes wrong during the entire lifecycle of the SDK
 - (void)onErrorWithError:(SPError * _Nonnull)error;
+/// called when the user is inactive
+- (void)onMessageInactivityTimeout;
 @end
 
 enum SPMessageLanguage : NSInteger;
@@ -686,6 +689,7 @@ SWIFT_PROTOCOL("_TtP21ConsentViewController19SPMessageUIDelegate_")
 - (void)action:(SPAction * _Nonnull)action from:(UIViewController * _Nonnull)controller;
 - (void)onError:(SPError * _Nonnull)error;
 - (void)finished:(UIViewController * _Nonnull)vcFinished;
+- (void)onMessageInactivityTimeout SWIFT_AVAILABILITY(tvos,unavailable);
 @end
 
 @interface SPConsentManager (SWIFT_EXTENSION(ConsentViewController)) <SPMessageUIDelegate>
@@ -716,6 +720,7 @@ SWIFT_PROTOCOL("_TtP21ConsentViewController10SPDelegate_")
 - (void)onConsentReadyWithUserData:(SPUserData * _Nonnull)userData;
 - (void)onSPFinishedWithUserData:(SPUserData * _Nonnull)userData;
 - (void)onError:(SPError * _Nonnull)error;
+- (void)onMessageInactivityTimeout;
 @end
 
 SWIFT_PROTOCOL("_TtP21ConsentViewController13SPPREFERENCES_") SWIFT_AVAILABILITY(ios,introduced=10)
@@ -758,6 +763,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)customConsentGDPRWithVendors:(NSArray<NSString *> * _Nonnull)vendors categories:(NSArray<NSString *> * _Nonnull)categories legIntCategories:(NSArray<NSString *> * _Nonnull)legIntCategories handler:(void (^ _Nonnull)(SPGDPRConsent * _Nonnull))handler;
 - (void)deleteCustomConsentGDPRWithVendors:(NSArray<NSString *> * _Nonnull)vendors categories:(NSArray<NSString *> * _Nonnull)categories legIntCategories:(NSArray<NSString *> * _Nonnull)legIntCategories handler:(void (^ _Nonnull)(SPGDPRConsent * _Nonnull))handler;
 - (void)rejectAllWithCampaignType:(enum SPCampaignType)campaignType;
+- (void)dismissMessage;
 @end
 
 @interface SPConsentManager (SWIFT_EXTENSION(ConsentViewController)) <SPSDK>
@@ -780,6 +786,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)customConsentGDPRWithVendors:(NSArray<NSString *> * _Nonnull)vendors categories:(NSArray<NSString *> * _Nonnull)categories legIntCategories:(NSArray<NSString *> * _Nonnull)legIntCategories handler:(void (^ _Nonnull)(SPGDPRConsent * _Nonnull))handler;
 - (void)deleteCustomConsentGDPRWithVendors:(NSArray<NSString *> * _Nonnull)vendors categories:(NSArray<NSString *> * _Nonnull)categories legIntCategories:(NSArray<NSString *> * _Nonnull)legIntCategories handler:(void (^ _Nonnull)(SPGDPRConsent * _Nonnull))handler;
 - (void)rejectAllWithCampaignType:(enum SPCampaignType)campaignType;
+- (void)dismissMessage;
 @end
 
 SWIFT_CLASS("_TtC21ConsentViewController13SPConsentable")
@@ -1009,6 +1016,7 @@ SWIFT_CLASS("_TtC21ConsentViewController23SPMessageViewController")
 - (void)loadMessage;
 - (void)loadPrivacyManagerWithUrl:(NSURL * _Nonnull)url;
 - (void)closePrivacyManager;
+- (void)dismissMessage;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
@@ -1036,6 +1044,7 @@ SWIFT_CLASS("_TtC21ConsentViewController15SPNativeMessage")
 /// The will get a call to <code>onSPUIFinished(_ controller: UIViewController)</code> when the PM
 /// is ready to be closed
 - (void)closePrivacyManager;
+- (void)dismissMessage;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1065,11 +1074,11 @@ typedef SWIFT_ENUM(NSInteger, SPOptinalBool, open) {
 @class Status;
 SWIFT_CLASS("_TtC21ConsentViewController20SPPreferencesConsent")
 @interface SPPreferencesConsent : NSObject <NSCopying>
-+ (SPPreferencesConsent * _Nonnull)empty SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, copy) NSString * _Nullable uuid;
 @property (nonatomic, copy) NSArray<Status *> * _Nonnull status;
 @property (nonatomic, copy) NSArray<Status *> * _Nonnull rejectedStatus;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
++ (SPPreferencesConsent * _Nonnull)empty SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1736,6 +1745,7 @@ SWIFT_PROTOCOL("_TtP21ConsentViewController17MessageController_")
 - (void)loadMessage;
 - (void)loadPrivacyManagerWithUrl:(NSURL * _Nonnull)url;
 - (void)closePrivacyManager;
+- (void)dismissMessage;
 @end
 
 SWIFT_CLASS("_TtC21ConsentViewController21MissingChildPmIdError")
@@ -1937,6 +1947,8 @@ SWIFT_PROTOCOL("_TtP21ConsentViewController17SPConsentDelegate_")
 - (void)onSPFinishedWithUserData:(SPUserData * _Nonnull)userData;
 /// called if something goes wrong during the entire lifecycle of the SDK
 - (void)onErrorWithError:(SPError * _Nonnull)error;
+/// called when the user is inactive
+- (void)onMessageInactivityTimeout;
 @end
 
 enum SPMessageLanguage : NSInteger;
@@ -1974,6 +1986,7 @@ SWIFT_PROTOCOL("_TtP21ConsentViewController19SPMessageUIDelegate_")
 - (void)action:(SPAction * _Nonnull)action from:(UIViewController * _Nonnull)controller;
 - (void)onError:(SPError * _Nonnull)error;
 - (void)finished:(UIViewController * _Nonnull)vcFinished;
+- (void)onMessageInactivityTimeout SWIFT_AVAILABILITY(tvos,unavailable);
 @end
 
 @interface SPConsentManager (SWIFT_EXTENSION(ConsentViewController)) <SPMessageUIDelegate>
@@ -2004,6 +2017,7 @@ SWIFT_PROTOCOL("_TtP21ConsentViewController10SPDelegate_")
 - (void)onConsentReadyWithUserData:(SPUserData * _Nonnull)userData;
 - (void)onSPFinishedWithUserData:(SPUserData * _Nonnull)userData;
 - (void)onError:(SPError * _Nonnull)error;
+- (void)onMessageInactivityTimeout;
 @end
 
 SWIFT_PROTOCOL("_TtP21ConsentViewController13SPPREFERENCES_") SWIFT_AVAILABILITY(ios,introduced=10)
@@ -2046,6 +2060,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)customConsentGDPRWithVendors:(NSArray<NSString *> * _Nonnull)vendors categories:(NSArray<NSString *> * _Nonnull)categories legIntCategories:(NSArray<NSString *> * _Nonnull)legIntCategories handler:(void (^ _Nonnull)(SPGDPRConsent * _Nonnull))handler;
 - (void)deleteCustomConsentGDPRWithVendors:(NSArray<NSString *> * _Nonnull)vendors categories:(NSArray<NSString *> * _Nonnull)categories legIntCategories:(NSArray<NSString *> * _Nonnull)legIntCategories handler:(void (^ _Nonnull)(SPGDPRConsent * _Nonnull))handler;
 - (void)rejectAllWithCampaignType:(enum SPCampaignType)campaignType;
+- (void)dismissMessage;
 @end
 
 @interface SPConsentManager (SWIFT_EXTENSION(ConsentViewController)) <SPSDK>
@@ -2068,6 +2083,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)customConsentGDPRWithVendors:(NSArray<NSString *> * _Nonnull)vendors categories:(NSArray<NSString *> * _Nonnull)categories legIntCategories:(NSArray<NSString *> * _Nonnull)legIntCategories handler:(void (^ _Nonnull)(SPGDPRConsent * _Nonnull))handler;
 - (void)deleteCustomConsentGDPRWithVendors:(NSArray<NSString *> * _Nonnull)vendors categories:(NSArray<NSString *> * _Nonnull)categories legIntCategories:(NSArray<NSString *> * _Nonnull)legIntCategories handler:(void (^ _Nonnull)(SPGDPRConsent * _Nonnull))handler;
 - (void)rejectAllWithCampaignType:(enum SPCampaignType)campaignType;
+- (void)dismissMessage;
 @end
 
 SWIFT_CLASS("_TtC21ConsentViewController13SPConsentable")
@@ -2297,6 +2313,7 @@ SWIFT_CLASS("_TtC21ConsentViewController23SPMessageViewController")
 - (void)loadMessage;
 - (void)loadPrivacyManagerWithUrl:(NSURL * _Nonnull)url;
 - (void)closePrivacyManager;
+- (void)dismissMessage;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
@@ -2324,6 +2341,7 @@ SWIFT_CLASS("_TtC21ConsentViewController15SPNativeMessage")
 /// The will get a call to <code>onSPUIFinished(_ controller: UIViewController)</code> when the PM
 /// is ready to be closed
 - (void)closePrivacyManager;
+- (void)dismissMessage;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2353,11 +2371,11 @@ typedef SWIFT_ENUM(NSInteger, SPOptinalBool, open) {
 @class Status;
 SWIFT_CLASS("_TtC21ConsentViewController20SPPreferencesConsent")
 @interface SPPreferencesConsent : NSObject <NSCopying>
-+ (SPPreferencesConsent * _Nonnull)empty SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, copy) NSString * _Nullable uuid;
 @property (nonatomic, copy) NSArray<Status *> * _Nonnull status;
 @property (nonatomic, copy) NSArray<Status *> * _Nonnull rejectedStatus;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
++ (SPPreferencesConsent * _Nonnull)empty SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

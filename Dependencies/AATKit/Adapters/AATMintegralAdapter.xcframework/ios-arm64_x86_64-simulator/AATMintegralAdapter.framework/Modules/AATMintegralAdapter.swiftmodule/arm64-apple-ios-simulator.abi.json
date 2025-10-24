@@ -47,6 +47,37 @@
       },
       {
         "kind": "Import",
+        "name": "MTGSDKNewInterstitial",
+        "printedName": "MTGSDKNewInterstitial",
+        "declKind": "Import",
+        "moduleName": "AATMintegralAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "MTGSDKSplash",
+        "printedName": "MTGSDKSplash",
+        "declKind": "Import",
+        "moduleName": "AATMintegralAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATMintegralAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMintegralAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "MTGSDKBanner",
         "printedName": "MTGSDKBanner",
         "declKind": "Import",
@@ -122,9 +153,9 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATMintegralAdapter\/AATMintegralFullscreen.swift",
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATMintegralAdapter\/AATMintegralAppOpen.swift",
       "kind": "StringLiteral",
-      "offset": 689,
+      "offset": 633,
       "length": 11,
       "value": "\"isAppOpen\""
     }

@@ -1,0 +1,170 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AATMolocoBiddingDSPAdapter",
+    "printedName": "AATMolocoBiddingDSPAdapter",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MolocoSDK",
+        "printedName": "MolocoSDK",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MolocoSDK",
+        "printedName": "MolocoSDK",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MolocoSDK",
+        "printedName": "MolocoSDK",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MolocoSDK",
+        "printedName": "MolocoSDK",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "RTBSDK",
+        "printedName": "RTBSDK",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATMolocoBiddingDSPAdapter"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATMolocoBiddingDSPAdapter\/AATMolocoBiddingDSPAdapterManager.swift",
+      "kind": "StringLiteral",
+      "offset": 248,
+      "length": 10,
+      "value": "\"AddApptr\""
+    },
+    {
+      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATMolocoBiddingDSPAdapter\/AATMolocoBiddingDSPAdapterManager.swift",
+      "kind": "StringLiteral",
+      "offset": 322,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

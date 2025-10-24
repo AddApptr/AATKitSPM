@@ -21,6 +21,7 @@ extern NSString *const kNetworkKey;
 extern NSString *const kSourceIdentifier;
 extern NSString *const kCampaignKey;
 extern NSString *const kiTunesItemKey;
+extern NSString *const kCountryCode;
 extern NSString *const kSourceAppKey;
 extern NSString *const kProductPageIDKey;
 extern NSString *const kFidelitiesKey;
@@ -63,6 +64,7 @@ extern NSString *const kSKAdNetworkVersion4_0;
 @property (strong, nonatomic) NSNumber *campaign;         // used for SKAN 2.0, 2.2 and 3
 @property (strong, nonatomic) NSNumber *sourceidentifier; // used for SKAN 4
 @property (strong, nonatomic) NSNumber *itunesitem;
+@property (strong, nonatomic) NSString *countrycode;
 @property (strong, nonatomic) NSNumber *sourceapp;
 @property (strong, nonatomic) NSString *productpageid;
 @property (strong, nonatomic) NSArray<Fidelity *> *fidelities;  // used for SKAN 2.2, 3, 4

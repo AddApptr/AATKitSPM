@@ -1,0 +1,6 @@
+framework module AATMolocoBiddingDSPAdapter {
+  umbrella header "AATMolocoBiddingDSPAdapter.h"
+  export *
+
+  module * { export * }
+}

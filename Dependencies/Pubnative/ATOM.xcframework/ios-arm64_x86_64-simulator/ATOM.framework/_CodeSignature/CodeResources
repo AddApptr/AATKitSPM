@@ -4,29 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Atom-demo/Atom.db</key>
-		<data>
-		KRz5aSz1ig8v0TtH0iox1o+yxpY=
-		</data>
-		<key>Atom-demo/Atom.sqbpro</key>
-		<data>
-		5ErPvO+2z7ZCFUakrb4MwyNpHHo=
-		</data>
 		<key>Atom-prod/Atom.db</key>
 		<data>
-		Hl36aymGm9URgSjMnWjyHXCLU4s=
+		aoj1mL3rwjRPTQVCA+iPyJKmp9g=
 		</data>
 		<key>Atom-prod/Atom.sqbpro</key>
 		<data>
-		Cjp+Abu4U3WTzYUgVZjWKsr/jV0=
+		9JOBsmSgVgXHd8XtX1nfqUtOeQE=
 		</data>
 		<key>Headers/ATOM-Swift.h</key>
 		<data>
-		rRgYx4yps+J9MqgbR64+fPEWYpo=
+		+59asBsrgvJH4SsLftHkwTEdBa8=
 		</data>
 		<key>Headers/ATOM.h</key>
 		<data>
-		+u65oL+KkQeMxHkZ+/7ODYe8xg8=
+		0VOZZw3c/hV3kYjXoAXJwfN/Rak=
 		</data>
 		<key>Headers/ATOMGDPRLocationDetector.h</key>
 		<data>
@@ -36,85 +28,53 @@
 		<data>
 		ex83d69uR1K0mgK3ca2X108OVnc=
 		</data>
-		<key>Headers/ATOMPublisherRestriction.h</key>
-		<data>
-		wPAFiNBMJUQWAHU4BVJJ7LRKNb0=
-		</data>
-		<key>Headers/ATOMTCFApi.h</key>
-		<data>
-		++cpEBih/E5MP1cXyRGa/DoOt8g=
-		</data>
-		<key>Headers/ATOMTCFModel.h</key>
-		<data>
-		ithpVShKL4XhdJrKm9aigqT3ivU=
-		</data>
-		<key>Headers/ATOMTCFv2StorageProtocol.h</key>
-		<data>
-		DHhruXSesxGHSbNQHf5L8TwkK6k=
-		</data>
-		<key>Headers/ATOMTCFv2Types.h</key>
-		<data>
-		jEH21QlPkdxTZnu/yiE5DcEgL6w=
-		</data>
-		<key>Headers/ATOMTCStringParser.h</key>
-		<data>
-		v4mc3UjrGGevdpajt5E0QttD90U=
-		</data>
 		<key>Headers/grdb_config.h</key>
 		<data>
 		e9NrE9WgyJPTBaVAfREhjcdV314=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qaynBlTYDPtzJ6a/DCcQEdfpQM4=
-		</data>
-		<key>Modules/ATOM.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
-		<data>
-		vAYzYY8Ry2ldVYQbdystWELPQdE=
-		</data>
-		<key>Modules/ATOM.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<data>
-		TO9BrWYWKU6QEoFU+5FV63biOxI=
+		UGMsD414nVldujjcIijcgg71gd8=
 		</data>
 		<key>Modules/ATOM.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		sAUpA7CB/pZzKeto07a2fEpPMDA=
+		PuVs6PqOuCeMYSdHLSRTlGnD8jQ=
 		</data>
 		<key>Modules/ATOM.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		MyV39esfjTaAaHZxea3wJSZEn14=
+		HHTJuhVAty3PrvVkioVdVWRdSKI=
 		</data>
 		<key>Modules/ATOM.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		UjRTeGY9ksKjLIGPVagu8DszgnM=
+		9Xq8jt0UE934FQShzwZyMlD183s=
 		</data>
 		<key>Modules/ATOM.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MyV39esfjTaAaHZxea3wJSZEn14=
+		HHTJuhVAty3PrvVkioVdVWRdSKI=
 		</data>
 		<key>Modules/ATOM.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Pwceczh1uxaUh07OSZmlOfqA2c8=
+		kR+M9w5wTbo91VeTEKPSh6Il/so=
 		</data>
 		<key>Modules/ATOM.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		sAUpA7CB/pZzKeto07a2fEpPMDA=
+		PuVs6PqOuCeMYSdHLSRTlGnD8jQ=
 		</data>
 		<key>Modules/ATOM.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/eI4PJfJwy8GP1W1d2wVl/r8eSA=
+		JUZjovrppYR/Ee3tCOhSfanXVzA=
 		</data>
 		<key>Modules/ATOM.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		FN0IfsWnxnaJMjDqN5Hx40o55/o=
+		U0mF3nPrIKUxBiuwSfw40uaOg4E=
 		</data>
 		<key>Modules/ATOM.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/eI4PJfJwy8GP1W1d2wVl/r8eSA=
+		JUZjovrppYR/Ee3tCOhSfanXVzA=
 		</data>
 		<key>Modules/ATOM.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UbD/65dBQyCMMrqqfCUD86H5YUM=
+		8ca7KToa1qnrrjcLFb2vS3b73qg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -131,46 +91,32 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Atom-demo/Atom.db</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gDmcRkShVeC/wNFH3j+WOwj9/g+VQmx8Q9LVELJUYgY=
-			</data>
-		</dict>
-		<key>Atom-demo/Atom.sqbpro</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2i/WoP8QXMJ+fao7vE8vyyzMckAHmLPlUFloV/AnAWA=
-			</data>
-		</dict>
 		<key>Atom-prod/Atom.db</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sr+AGC/Uvy88vGOkWkz+zi5Ho2bXR81De0BkGmFtabc=
+			faV9jIRygCe1WQtltM22n2a/x1sapMP7wKoMjCKGPRs=
 			</data>
 		</dict>
 		<key>Atom-prod/Atom.sqbpro</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7VzuapxLlvSUyJ/zuS6LpFyn6QLVx0Qv60c4z0BXnHY=
+			LYiC/Dn0tVBZYmGsE67rlVRtTju71YZMbxB/GD7H70U=
 			</data>
 		</dict>
 		<key>Headers/ATOM-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WmauJU+qITFP9TIz8Rq2QLvgBF8/ztLqqbQnOoqpuyE=
+			iDsy+0TK4rUBdEMSOnueOpaL9wPpR2TxHDf07CE0QRM=
 			</data>
 		</dict>
 		<key>Headers/ATOM.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CL4rhc1Rg8hqdtck7+8TbzXnIA7TyN0ADL4O3B9A+xM=
+			DSA2CCQvstdjHGdLAu/7IxxB0Szhz1b5AVnw39c5NPk=
 			</data>
 		</dict>
 		<key>Headers/ATOMGDPRLocationDetector.h</key>
@@ -187,48 +133,6 @@
 			7LSHSA4UvjPkIkgsHndBJlQBc2cqO/yR5BuzTFiT8g4=
 			</data>
 		</dict>
-		<key>Headers/ATOMPublisherRestriction.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rNtRbODAT4pbtxJQZ1tuwLIL6h27plAxtNJDfJkUYBo=
-			</data>
-		</dict>
-		<key>Headers/ATOMTCFApi.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Io4ka3Y3a6EGO27ggriYLZpUtNpALe2bKERQGoIiGbI=
-			</data>
-		</dict>
-		<key>Headers/ATOMTCFModel.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BKUceGNu+byppEMF5i7ZBXix2umz4x71sprA9JubE2M=
-			</data>
-		</dict>
-		<key>Headers/ATOMTCFv2StorageProtocol.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zdNtwVgGVam+RCMuixWV5Ff0Serya7Vi6hKkeUomEG4=
-			</data>
-		</dict>
-		<key>Headers/ATOMTCFv2Types.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			I9QQGjtUFEnSeiry6JPrKxSa0LVicimuJgyfCbgorOk=
-			</data>
-		</dict>
-		<key>Headers/ATOMTCStringParser.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QAe0DMrpLdkIAiHeiCQLVHbM3UOSdbKjEauwNPg1RBE=
-			</data>
-		</dict>
 		<key>Headers/grdb_config.h</key>
 		<dict>
 			<key>hash2</key>
@@ -236,88 +140,74 @@
 			6REQfZUjtseNt6+uETuN1Ui2DuQIqIHOsRsFJWrMSIc=
 			</data>
 		</dict>
-		<key>Modules/ATOM.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VkSC6GV1jCk+j2XkI4fvYk3ulMkTjt3dtVW8WINX7Aw=
-			</data>
-		</dict>
-		<key>Modules/ATOM.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			m3yMlhWdPy0cjeQ/jEu0dINuS9cBGPFulqXk1YrPyFk=
-			</data>
-		</dict>
 		<key>Modules/ATOM.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TdGMyX6w5YKDrAm8SKrJ9pgA/X5Z6NWsSqQUiQ8wE+M=
+			L30Tj13qPhHKVez2U5pnF9CgaYlQ1Bns6q11K7KbpoU=
 			</data>
 		</dict>
 		<key>Modules/ATOM.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UKCCTVQewFRANLoznn0MgWKuz1HmFTBExhsSAPt11R8=
+			dJl14rcIupID7cbYND1lP8R4Y0E3aEZ26s77eQjdL0k=
 			</data>
 		</dict>
 		<key>Modules/ATOM.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1AvxBoIyA4p1fr0xJ2OLSLYlOxQXlWJEiGC9Hbir2P0=
+			EReIh8DEmoF1kRKuu8ypirEcCsk1//+5LEXoPlnRc3I=
 			</data>
 		</dict>
 		<key>Modules/ATOM.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UKCCTVQewFRANLoznn0MgWKuz1HmFTBExhsSAPt11R8=
+			dJl14rcIupID7cbYND1lP8R4Y0E3aEZ26s77eQjdL0k=
 			</data>
 		</dict>
 		<key>Modules/ATOM.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c0Idx+2Ycj1XPtSiX91hot0BPmJnWIvTfq3D8C0RXMA=
+			SUzXeo3deT3w7LF7Kip40krXe1OhWQfQlpQIHNkaLOk=
 			</data>
 		</dict>
 		<key>Modules/ATOM.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TdGMyX6w5YKDrAm8SKrJ9pgA/X5Z6NWsSqQUiQ8wE+M=
+			L30Tj13qPhHKVez2U5pnF9CgaYlQ1Bns6q11K7KbpoU=
 			</data>
 		</dict>
 		<key>Modules/ATOM.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xyUfj8LcqcPWQWqoDlUiq6wq+bV8SFaedOIQ82I2TmI=
+			Tyn44Muei3XirkSSaL4VCn9JIlaJMzQAK41DZ8X80eM=
 			</data>
 		</dict>
 		<key>Modules/ATOM.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ESBzljzmKqMousWnlGfdCFhCF1Y6FIp/KAnoZLu2E7I=
+			HBLan3aFdyzMSjSHQuT4iGsn0nbvQiftlnFHY5149FM=
 			</data>
 		</dict>
 		<key>Modules/ATOM.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xyUfj8LcqcPWQWqoDlUiq6wq+bV8SFaedOIQ82I2TmI=
+			Tyn44Muei3XirkSSaL4VCn9JIlaJMzQAK41DZ8X80eM=
 			</data>
 		</dict>
 		<key>Modules/ATOM.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YogOaHPUhoF/mvx5MN2cmfQyZhidher/+XijvG2L2Q8=
+			2pzSquBYu0n23tCe1ZXwhlCbIx12SFnLqVj0CLB5fvQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

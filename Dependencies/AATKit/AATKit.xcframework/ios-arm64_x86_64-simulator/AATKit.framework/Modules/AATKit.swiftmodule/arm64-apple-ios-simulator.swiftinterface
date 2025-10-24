@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AATKit
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AATKit
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import AATKit
 import AdSupport
@@ -70,7 +70,6 @@ import _SwiftConcurrencyShims
   @objc func isExpired() -> Swift.Bool
   @objc func isReady() -> Swift.Bool
 }
-@available(iOS 13.0, *)
 @objc public protocol AATAsyncInfeedBannerPlacement : AATKit.AATPlacement {
   @objc var delegate: (any AATKit.AATInfeedBannerPlacementDelegate)? { get set }
   @objc var statisticsDelegate: (any AATKit.AATStatisticsDelegate)? { get set }
@@ -242,6 +241,7 @@ extension AATKit.AATPlacementHistoryInfo : Swift.Identifiable {
   case DISPLAYIO
   case ADMOBBIDDING
   case METABIDDING
+  case MOLOCOBIDDING
   public typealias AllCases = [AATKit.AATAdNetwork]
   nonisolated public static var allCases: [AATKit.AATAdNetwork] {
     get
@@ -360,6 +360,8 @@ extension AATKit.AATAdConfig {
   @objc func stopAutoReload()
   @objc @discardableResult
   func reload() -> Swift.Bool
+  @objc @discardableResult
+  func reload(forceLoad: Swift.Bool) -> Swift.Bool
   @objc func hasAd() -> Swift.Bool
   @objc @discardableResult
   func show() -> Swift.Bool
@@ -605,6 +607,7 @@ extension AATKit.AATConfiguration {
   @objc public var minDelay: Swift.Double
   @objc public var retryInterval: Foundation.TimeInterval
   @objc public init(placementName: Swift.String, size: Swift.Int)
+  @objc public init(placementName: Swift.String)
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -667,6 +670,16 @@ extension AATKit.AATConfiguration {
     get
   }
 }
+public enum AATBidderNames : Swift.String {
+  case admob
+  case meta
+  case moloco
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @objc public enum AATLogLevel : Swift.Int, Swift.CaseIterable {
   case verbose = 1
   case debug
@@ -712,7 +725,6 @@ extension AATKit.AATConfiguration {
   public func fetchUtiqData(driver: (any AATKit.AATUTIQDriverProtocol)?, completion: @escaping ((Swift.String?, Swift.String?) -> Swift.Void))
   @objc deinit
 }
-@available(iOS 13.0, *)
 @objc public protocol AATAsyncNativeAdPlacement : AATKit.AATPlacement {
   @objc var delegate: (any AATKit.AATAsyncNativePlacementDelegate)? { get set }
   @objc var statisticsDelegate: (any AATKit.AATStatisticsDelegate)? { get set }
@@ -744,6 +756,8 @@ extension AATKit.AATConfiguration {
 }
 extension AATKit.AATAdType : Swift.Hashable {
   public func hash(into hasher: inout Swift.Hasher)
+}
+@_documentation(visibility: internal) public protocol AATAppOpenAdDriverProtocol : AATKit.AATFullscreenAdDriverProtocol {
 }
 @objc public protocol AATNativeAdPlacement : AATKit.AATPlacement {
   @objc var delegate: (any AATKit.AATNativePlacementDelegate)? { get set }
@@ -916,6 +930,7 @@ extension AATKit.AATAdDriverLoggerProtocol {
   var bannerDriverName: Swift.String? { get }
   var nativeAdDriverName: Swift.String? { get }
   var fullScreenDriverName: Swift.String? { get }
+  var appOpenDriverName: Swift.String? { get }
   var rewardedDriverName: Swift.String? { get }
   func muteVideoAd(_ isMuted: Swift.Bool)
   func setAdChoicesIconPosition(position: AATKit.AATAdChoicesIconPosition?)
@@ -948,13 +963,11 @@ extension AATKit.AATAdDriverLoggerProtocol {
   @objc public static func createAutoLoadBannerPlacement(name: Swift.String, size: AATKit.AATBannerPlacementSize) -> (any AATKit.AATAutoLoadBannerPlacement)?
   @objc public static func createAutoLoadMultiSizeBannerPlacement(name: Swift.String) -> (any AATKit.AATAutoLoadMultiSizeBannerPlacement)?
   @objc public static func createInfeedBannerPlacement(name: Swift.String, configuration: AATKit.AATBannerConfiguration) -> (any AATKit.AATInfeedBannerPlacement)?
-  @available(iOS 13.0, *)
   public static func createAsyncInfeedBannerPlacement(name: Swift.String, configuration: AATKit.AATBannerConfiguration) -> (any AATKit.AATAsyncInfeedBannerPlacement)?
   @objc public static func createFullscreenPlacement(name: Swift.String) -> (any AATKit.AATFullscreenPlacement)?
   @objc public static func createRewardedVideoPlacement(name: Swift.String) -> (any AATKit.AATRewardedVideoPlacement)?
   @objc public static func createAppOpenAdPlacement(placementName: Swift.String) -> (any AATKit.AATAppOpenAdPlacement)?
   @objc public static func createNativeAdPlacement(name: Swift.String, supportsMainImage: Swift.Bool) -> (any AATKit.AATNativeAdPlacement)?
-  @available(iOS 13.0, *)
   public static func createAsyncNativeAdPlacement(name: Swift.String, supportsMainImage: Swift.Bool) -> (any AATKit.AATAsyncNativeAdPlacement)?
   @objc public static func createBannerCache(configuration: AATKit.AATBannerCacheConfiguration) -> (any AATKit.AATBannerCache)?
   @objc public static func setAdChoicesIconPosition(position: AATKit.AATAdChoicesIconPosition)
@@ -1017,6 +1030,13 @@ extension AATKit.AATFullscreenAdDriverProtocol {
   @objc func stopAutoReload()
   @objc func enableCreativeHistory(size: Swift.Int)
   @objc func getCreativeHistory(completion: @escaping ([AATKit.AATPlacementHistoryInfo]) -> Swift.Void)
+}
+@_documentation(visibility: internal) public protocol AATMolocoBiddingAdapterProtocol {
+  var appId: Swift.String? { get set }
+  var unitId: Swift.String? { get set }
+}
+@_documentation(visibility: internal) public protocol AATMolocoBiddingDriverProtocol {
+  static var shared: Self { get }
 }
 @_documentation(visibility: internal) public protocol AATAmazonHBDriverProtocol {
   static var shared: Self { get }
@@ -1132,6 +1152,8 @@ extension AATKit.AATManagedConsent {
   @objc var impressionDelegate: (any AATKit.AATImpressionDelegate)? { get set }
   @objc func startAutoReload()
   @objc func stopAutoReload()
+  @objc @discardableResult
+  func reload(forceLoad: Swift.Bool) -> Swift.Bool
   @objc @discardableResult
   func reload() -> Swift.Bool
   @objc func hasAd() -> Swift.Bool
@@ -1329,6 +1351,8 @@ extension AATKit.AATDebugInfo.PlacementDebugInfo {
   @objc var adQualityDelegate: (any AATKit.AATAdQualityDelegate)? { get set }
   @objc func startAutoReload()
   @objc func stopAutoReload()
+  @objc @discardableResult
+  func reload(forceLoad: Swift.Bool) -> Swift.Bool
   @objc @discardableResult
   func reload() -> Swift.Bool
   @objc func hasAd() -> Swift.Bool
@@ -1586,6 +1610,9 @@ extension AATKit.AATAdChoicesIconPosition : Swift.Sendable {}
 extension AATKit.AATAdChoicesIconPosition : Swift.BitwiseCopyable {}
 extension AATKit.AATCollapsibleBannerPosition : Swift.Equatable {}
 extension AATKit.AATCollapsibleBannerPosition : Swift.Hashable {}
+extension AATKit.AATBidderNames : Swift.Equatable {}
+extension AATKit.AATBidderNames : Swift.Hashable {}
+extension AATKit.AATBidderNames : Swift.RawRepresentable {}
 extension AATKit.AATLogLevel : Swift.Equatable {}
 extension AATKit.AATLogLevel : Swift.Hashable {}
 extension AATKit.AATLogLevel : Swift.RawRepresentable {}

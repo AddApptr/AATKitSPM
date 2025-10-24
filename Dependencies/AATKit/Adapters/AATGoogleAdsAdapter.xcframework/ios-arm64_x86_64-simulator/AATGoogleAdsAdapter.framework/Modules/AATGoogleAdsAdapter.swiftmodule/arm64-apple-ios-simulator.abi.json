@@ -143,6 +143,54 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATGoogleAdsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATGoogleAdsAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "AATGoogleAdsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AATGoogleAdsAdapter"
+      },
+      {
+        "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATGoogleAdsAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "AATGoogleAdsAdapter"
+      },
+      {
+        "kind": "Import",
         "name": "AATKit",
         "printedName": "AATKit",
         "declKind": "Import",
@@ -350,20 +398,6 @@
       "offset": 367,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AdMob\/AATAdMobFullscreen.swift",
-      "kind": "StringLiteral",
-      "offset": 224,
-      "length": 12,
-      "value": "\"Fullscreen\""
-    },
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATGoogleAdsAdapter\/AdMob\/AATAdMobFullscreen.swift",
-      "kind": "StringLiteral",
-      "offset": 255,
-      "length": 9,
-      "value": "\"AppOpen\""
     }
   ]
 }

@@ -2,7 +2,9 @@
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name HyBid
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import ATOM
 import AVFoundation
+import AdAttributionKit
 import AdSupport
 import AppTrackingTransparency
 import CoreBluetooth
@@ -11,35 +13,15 @@ import CoreTelephony
 import Foundation
 @_exported import HyBid
 import Network
+import StoreKit
 import Swift
 import SystemConfiguration
 import UIKit
 import WebKit
+import _AdAttributionKit_StoreKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public enum HyBidNotificationType : Swift.Int32 {
-  case SKStoreProductViewIsReadyToPresent
-  case SKStoreProductViewIsReadyToPresentForSDKStorekit
-  case SKStoreProductViewIsShown
-  case SKStoreProductViewIsDismissed
-  case SKStoreProductViewIsDismissedFromVideo
-  case AdFeedbackViewIsDismissed
-  case AdFeedbackViewDidShow
-  case InternalWebBrowserDidShow
-  case InternalWebBrowserDidDismissed
-  public init?(rawValue: Swift.Int32)
-  public typealias RawValue = Swift.Int32
-  public var rawValue: Swift.Int32 {
-    get
-  }
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidNotificationCenter : ObjectiveC.NSObject {
-  @objc public static let shared: HyBidNotificationCenter
-  @objc public func post(_ notificationType: HyBidNotificationType, object: Any? = nil, userInfo: [Swift.AnyHashable : Any]? = nil)
-  @objc public func addObserver(_ observer: Any, selector: ObjectiveC.Selector, notificationType: HyBidNotificationType, object: Any?)
-  @objc deinit
-}
 @_inheritsConvenienceInitializers @objc public class HyBidLogger : ObjectiveC.NSObject {
   public static var logLevel: HyBidLogLevel
   @objc(setLogLevel:) public static func setLogLevel(_ logLevel: HyBidLogLevel)
@@ -47,6 +29,13 @@ import _SwiftConcurrencyShims
   @objc public static func warningLog(fromClass className: Swift.String, fromMethod: Swift.String, withMessage: Swift.String)
   @objc public static func infoLog(fromClass className: Swift.String, fromMethod: Swift.String, withMessage: Swift.String)
   @objc public static func debugLog(fromClass className: Swift.String, fromMethod: Swift.String, withMessage: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class HyBidAdAttributionParameter : ObjectiveC.NSObject {
+  @objc public static let jwt: Swift.String
+  @objc public static let custom_market_place: Swift.String
+  @objc public static let reengagement_url: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -71,6 +60,7 @@ extension UIKit.UIViewController {
   }
   @objc public var openRtbApiURL: Swift.String
   @objc public var appID: Swift.String?
+  @objc public var customRemoteConfigURL: Swift.String?
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class HyBidImpressionConstants : ObjectiveC.NSObject {
@@ -116,6 +106,13 @@ extension HyBidMRAIDCloseCardView : HyBidContentInfoViewDelegate {
   @objc public func reportBeacon(for beacon: HyBidReportingBeacon)
   @objc public func clearBeacons()
   @objc public func reportVASTTracker(for tracker: HyBidReportingVASTTracker)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class ATOMManager : ObjectiveC.NSObject {
+  @objc public class func fireAdSessionEvent(data: HyBidAdSessionData)
+  @objc public class func createAdSessionData(from request: HyBidAdRequest?, ad: HyBidAd) -> HyBidAdSessionData
+  @objc public class func reportAdSessionDataSharedEvent(adSessionDict: [Swift.String : Any])
   @objc override dynamic public init()
   @objc deinit
 }
@@ -238,8 +235,36 @@ public typealias ReportingKey = Swift.String
   @objc public var eventType: Swift.String
   @objc public init(with eventType: Swift.String, adFormat: Swift.String? = nil, properties: [ReportingKey : Any]? = nil)
   @objc public init(with eventType: Swift.String, errorMessage: Swift.String? = nil, properties: [ReportingKey : Any]? = nil)
-  @objc public func toJSON() -> Swift.String
+  public func propertiesValue() -> Swift.String
   @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class HyBidSKAdNetworkViewController : ObjectiveC.NSObject {
+  @objc public static let shared: HyBidSKAdNetworkViewController
+  public var isStoreKitViewPresented: Swift.Bool {
+    get
+    set
+  }
+  @objc public var avoidAutoStoreKitPresentationAfterReplay: Swift.Bool
+  @objc public func presentStoreKitView(productParameters: Swift.Dictionary<Swift.String, Any>, adFormat: Swift.String, isAutoStoreKitView: Swift.Bool, ad: HyBidAd, rootViewController: UIKit.UIViewController)
+  @objc public func presentStoreKitView(productParameters: Swift.Dictionary<Swift.String, Any>, adFormat: Swift.String, isAutoStoreKitView: Swift.Bool, ad: HyBidAd)
+  @objc public func isSKProductViewControllerPresented() -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension HyBidSKAdNetworkViewController : StoreKit.SKStoreProductViewControllerDelegate {
+  @objc dynamic public func productViewControllerDidFinish(_ viewController: StoreKit.SKStoreProductViewController)
+}
+extension StoreKit.SKStoreProductViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var shouldAutorotate: Swift.Bool {
+    @objc get
+  }
 }
 @objc public enum HyBidOnTopOfType : Swift.Int, Swift.CaseIterable {
   case UNKNOWN_TOP_EVENT
@@ -263,6 +288,7 @@ public typealias ReportingKey = Swift.String
   @objc public static let DEFAULT_REWARDED_HTML_SKIP_OFFSET: Swift.Int
   @objc public static let DEFAULT_SKIP_OFFSET_WITHOUT_ENDCARD: Swift.Int
   @objc public static let DEFAULT_END_CARD_CLOSE_OFFSET: Swift.Int
+  @objc public static let DEFAULT_END_CARD_CLOSE_MAX_OFFSET: Swift.Int
   @objc public static let DEFAULT_REWARDED_VIDEO_MAX_SKIP_OFFSET: Swift.Int
   @objc public static let DEFAULT_INTERSTITIAL_VIDEO_MAX_SKIP_OFFSET: Swift.Int
   @objc public static let DEFAULT_REWARDED_HTML_MAX_SKIP_OFFSET: Swift.Int
@@ -279,6 +305,13 @@ public typealias ReportingKey = Swift.String
   @objc public init(offset: Foundation.NSNumber?, isCustom: Swift.Bool)
   @objc public init(offset: Foundation.NSNumber?, isCustom: Swift.Bool, style: Foundation.NSNumber = 0)
   @objc public func configure(offset: Foundation.NSNumber?, isCustom: Swift.Bool, style: Foundation.NSNumber = 0)
+  @objc deinit
+}
+@objc public class HyBidAdAttributionCustomClickAdsWrapper : ObjectiveC.NSObject {
+  @objc public init(ad: HyBidAd, adFormat: Swift.String? = nil)
+  @objc public func startImpression(adView: UIKit.UIView?)
+  @objc public func adHasCustomMarketPlace() -> Swift.Bool
+  @objc public func handlingCustomMarketPlace(completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidSessionManager : ObjectiveC.NSObject {
@@ -317,17 +350,12 @@ public typealias ReportingKey = Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class HyBidInternalWebBrowserNavigationController : UIKit.UINavigationController {
-  @objc @_Concurrency.MainActor @preconcurrency public static let shared: HyBidInternalWebBrowserNavigationController
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  @objc @_Concurrency.MainActor @preconcurrency public func navigateToURL(_ url: Swift.String, delegate: any HyBidInternalWebBrowserDelegate)
-  @objc @_Concurrency.MainActor @preconcurrency public func webBrowserNavigationBehaviourFromString(_ value: Swift.String?) -> HyBidWebBrowserNavigation
-  @available(iOS 5.0, *)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(rootViewController: UIKit.UIViewController)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+@_inheritsConvenienceInitializers @objc public class HyBidInternalWebBrowser : ObjectiveC.NSObject {
+  @objc public static let shared: HyBidInternalWebBrowser
+  @objc public var isInternalBrowserBeingPresented: Swift.Bool
+  @objc public func navigateToURL(_ url: Swift.String)
+  @objc public func webBrowserNavigationBehaviourFromString(_ value: Swift.String?) -> HyBidWebBrowserNavigation
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class HyBidLandingBehaviour : ObjectiveC.NSObject {
@@ -351,6 +379,9 @@ public typealias ReportingKey = Swift.String
   @objc public static let HYBID_OMSDK_VERSION: Swift.String
   @objc public static let HYBID_SDK_VERSION: Swift.String
   @objc public static let HYBID_OMSDK_IDENTIFIER: Swift.String
+  @objc public static let RENDERING_SUCCESS: Swift.String
+  @objc public static let AD_SESSION_DATA: Swift.String
+  @objc public static let PERCENT_VISIBLE: Swift.String
   @objc public static var mraidExpand: Swift.Bool
   @objc public static var showEndCard: Swift.Bool
   @objc public static var showCustomEndCard: Swift.Bool
@@ -366,6 +397,7 @@ public typealias ReportingKey = Swift.String
   @objc public static var pcVideoSkipOffset: HyBidSkipOffset
   @objc public static var interstitialActionBehaviour: HyBidInterstitialActionBehaviour
   @objc public static var endCardCloseOffset: HyBidSkipOffset
+  @objc public static var endCardCloseMaxOffset: HyBidSkipOffset
   @objc public static var nativeCloseButtonOffset: HyBidSkipOffset
   @objc public static var audioStatus: HyBidAudioStatus
   @objc public static var creativeAutoStorekitEnabled: Swift.Bool
@@ -377,7 +409,27 @@ public typealias ReportingKey = Swift.String
   @objc public static var iconSizeReducedInputValue: Swift.Bool
   @objc public static var navigationModeInputValue: Swift.String
   @objc public static var landingPageInputValue: Swift.Bool
+  @objc public static var ctaSizeTypeInputValue: Swift.String
+  @objc public static var ctaLocationTypeInputValue: Swift.String
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class HyBidAAKNetworkRequestModel : ObjectiveC.NSObject {
+  @objc public func getAAKNetworkIDsString() -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class HyBidVASTTracker : ObjectiveC.NSObject {
+  @objc final public let type: Swift.String
+  @objc final public let url: Swift.String
+  @objc final public let beaconName: Swift.String?
+  public static var safeTriggeredTrackers: [HyBidVASTTracker] {
+    get
+  }
+  @objc public init(type: Swift.String, url: Swift.String, beaconName: Swift.String? = nil)
+  @objc public func shouldBeTriggered() -> Swift.Bool
+  @objc public func addToTriggeredTrackersList()
+  @objc public static func cleanTriggeredTrackersList()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class HyBidCustomCTAView : UIKit.UIView {
@@ -389,6 +441,10 @@ extension HyBidCustomCTAView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func removeCustomCTA()
   @objc(changeDelegateFor:) @_Concurrency.MainActor @preconcurrency dynamic public func changeDelegate(delegate: any HyBidCustomCTAViewDelegate)
   @objc @_Concurrency.MainActor @preconcurrency public static func isCustomCTAValid(ad: HyBidAd) -> Swift.Bool
+}
+extension HyBidCustomCTAView : HyBidInterruptionDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adHasFocus()
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func adHasNoFocus()
 }
 @objc public protocol HyBidInterstitialAdDelegate {
   @objc func interstitialDidLoad()
@@ -422,6 +478,52 @@ extension HyBidCustomCTAView {
   @objc(showFromViewController:) public func show(from viewController: UIKit.UIViewController)
   @objc override dynamic public init()
   @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class HyBidInterruptionHandler : ObjectiveC.NSObject {
+  @objc public static let shared: HyBidInterruptionHandler
+  @objc weak public var delegate: (any HyBidInterruptionDelegate)?
+  @objc weak public var overlappingElementDelegate: (any HyBidInterruptionDelegate)?
+  @objc weak public var feedbackViewDelegate: (any HyBidAdFeedbackViewDelegate)?
+  @objc override dynamic public init()
+  @objc public func hasOnlyAppLifeCycleInterruption() -> Swift.Bool
+  @objc deinit
+}
+extension HyBidInterruptionHandler {
+  @objc dynamic public func vastEndCardWillShow()
+  @objc dynamic public func vastCustomEndCardWillShow()
+}
+extension HyBidInterruptionHandler {
+  public func productViewControllerIsReadyToShow()
+  public func productViewControllerWillShow()
+  public func productViewControllerDidShow(isAutoStoreKitView: Swift.Bool, adFormat: Swift.String)
+  public func productViewControllerDidFinish()
+  @objc dynamic public func productViewControllerDidFail(error: any Swift.Error)
+}
+extension HyBidInterruptionHandler : HyBidAdFeedbackViewDelegate {
+  @objc dynamic public func adFeedbackViewDidLoad()
+  @objc dynamic public func adFeedbackViewWillShow()
+  @objc dynamic public func adFeedbackViewDidShow()
+  @objc dynamic public func adFeedbackViewDidFailWithError(_ error: any Swift.Error)
+  @objc dynamic public func adFeedbackViewDidDismiss()
+}
+extension HyBidInterruptionHandler {
+  public func internalWebBrowserDidShow()
+  public func internalWebBrowserDidDismiss()
+}
+@objc public protocol HyBidInterruptionDelegate : ObjectiveC.NSObjectProtocol {
+  @objc optional func adHasNoFocus()
+  @objc optional func adHasFocus()
+  @objc optional func vastEndCardWillShow()
+  @objc optional func vastCustomEndCardWillShow()
+  @objc optional func willEnterForeground()
+  @objc optional func feedbackViewWillShow()
+  @objc optional func feedbackViewDidDismiss()
+  @objc optional func productViewControllerIsReadyToShow()
+  @objc optional func productViewControllerWillShow()
+  @objc optional func productViewControllerDidShow()
+  @objc optional func productViewControllerDidFail(error: any Swift.Error)
+  @objc optional func productViewControllerDidFinish()
+  @objc optional func internalWebBrowserDidShow()
 }
 @objc public protocol HyBidRewardedAdDelegate {
   @objc func rewardedDidLoad()
@@ -472,6 +574,41 @@ extension HyBidCustomCTAView {
   @objc override dynamic public init()
   @objc public func commandTypeWith(text: Swift.String) -> HyBidMRAIDCommand.HyBidMRAIDCommandType
   @objc deinit
+}
+@objc public class HyBidCTAData : ObjectiveC.NSObject {
+  @objc final public let size: HyBidCTASize
+  @objc final public let location: HyBidCTALocation
+  @objc final public let cornerRadius: CoreFoundation.CGFloat
+  @objc public init(size: HyBidCTASize, location: HyBidCTALocation)
+  @objc public static func sizeFromValue(_ value: Any) -> HyBidCTASize
+  @objc public static func locationFromValue(_ value: Any) -> HyBidCTALocation
+  @objc public func sizeValue() -> CoreFoundation.CGSize
+  @objc public func fontSize() -> CoreFoundation.CGFloat
+  @objc public func ctaImageWithFixedSize(image: UIKit.UIImage) -> UIKit.UIImage
+  @objc public func locationBottomConstraint() -> CoreFoundation.CGFloat
+  @objc public func locationLeadingConstraint() -> CoreFoundation.CGFloat
+  @objc public func accessibilityIdentifierString() -> Swift.String
+  @objc deinit
+}
+@objc public enum HyBidCTASize : Swift.Int32 {
+  @objc(HyBidCTASizeDefault) case defaultSize
+  case medium
+  case large
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
+}
+@objc public enum HyBidCTALocation : Swift.Int32 {
+  @objc(HyBidCTALocationDefault) case defaultLocation
+  case bottom_down
+  case bottom_up
+  public init?(rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+  public var rawValue: Swift.Int32 {
+    get
+  }
 }
 @objc public class HyBidReportingBeacon : ObjectiveC.NSObject {
   @objc public var properties: [ReportingKey : Any]?
@@ -530,6 +667,31 @@ extension HyBidCustomCTAView {
 }
 extension UIKit.UILabel {
   @_Concurrency.MainActor @preconcurrency public func changeTextFont(text: Swift.String, font: UIKit.UIFont)
+}
+@_inheritsConvenienceInitializers @available(iOS 17.4, *)
+@objc public class HyBidAppImpressionWrapper : ObjectiveC.NSObject {
+  @objc public static func createWithAd(_ ad: HyBidAd?, adFormat: Swift.String) async -> HyBidAppImpressionWrapper?
+  @objc public func createWithAd(_ ad: HyBidAd?, adFormat: Swift.String, completion: @escaping (HyBidAppImpressionWrapper?) -> Swift.Void)
+  @objc public func beginView(forAdFormat adFormat: Swift.String, completion: @escaping @convention(block) (Swift.Bool) -> Swift.Void)
+  @objc public func endView(forAdFormat adFormat: Swift.String, completion: @escaping @convention(block) (Swift.Bool) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 17.4, *)
+@objc public class HyBidAdAttributionSKOverlayManager : ObjectiveC.NSObject {
+  @objc public func getAppConfiguration(appIdentifier: Swift.String?, position: StoreKit.SKOverlay.Position, userDismissible: Swift.Bool, ad: HyBidAd, adFormat: Swift.String) async -> StoreKit.SKOverlay.AppConfiguration?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class HyBidAdSessionData : ObjectiveC.NSObject {
+  @objc public var creativeId: Swift.String?
+  @objc public var campaignId: Swift.String?
+  @objc public var bidPrice: Swift.String?
+  @objc public var adFormat: Swift.String?
+  @objc public var renderingStatus: Swift.String?
+  @objc public var viewability: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class HyBidViewbilityConfig : ObjectiveC.NSObject {
   @objc public static let sharedConfig: HyBidViewbilityConfig
@@ -613,6 +775,7 @@ extension UIKit.UILabel {
   @objc public static let LOAD: Swift.String
   @objc public static let LOAD_FAIL: Swift.String
   @objc public static let SHOW: Swift.String
+  @objc public static let REPLAY: Swift.String
   @objc public static let CACHE: Swift.String
   @objc public static let RESPONSE: Swift.String
   @objc public static let RENDER: Swift.String
@@ -647,6 +810,16 @@ extension UIKit.UILabel {
   @objc public static let SKOVERLAY_AUTOMATIC_CUSTOM_ENDCARD_CLICK: Swift.String
   @objc public static let AUTO_STORE_KIT_IMPRESSION: Swift.String
   @objc public static let AUTO_STORE_KIT_IMPRESSION_ERROR: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_AD_TYPE_MACRO: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_ERROR: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_HANDLE_TAP: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_HANDLE_TAP_ERROR: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_BEGIN_VIEW: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_BEGIN_VIEW_ERROR: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_END_VIEW: Swift.String
+  @objc public static let AD_ATTRIBUTION_KIT_APP_IMPRESSION_END_VIEW_ERROR: Swift.String
+  @objc public static let AD_SESSION_DATA_SHARED_TO_ATOM: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -702,9 +875,6 @@ extension UIKit.UILabel {
   @objc override dynamic public init()
   @objc deinit
 }
-extension HyBidNotificationType : Swift.Equatable {}
-extension HyBidNotificationType : Swift.Hashable {}
-extension HyBidNotificationType : Swift.RawRepresentable {}
 extension HyBidOnTopOfType : Swift.Equatable {}
 extension HyBidOnTopOfType : Swift.Hashable {}
 extension HyBidOnTopOfType : Swift.RawRepresentable {}
@@ -714,6 +884,12 @@ extension HyBidLandingBehaviour.HyBidLandingBehaviourType : Swift.RawRepresentab
 extension HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.Equatable {}
 extension HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.Hashable {}
 extension HyBidMRAIDCommand.HyBidMRAIDCommandType : Swift.RawRepresentable {}
+extension HyBidCTASize : Swift.Equatable {}
+extension HyBidCTASize : Swift.Hashable {}
+extension HyBidCTASize : Swift.RawRepresentable {}
+extension HyBidCTALocation : Swift.Equatable {}
+extension HyBidCTALocation : Swift.Hashable {}
+extension HyBidCTALocation : Swift.RawRepresentable {}
 extension HyBidGDPR.HyBidGDPRKeys : Swift.Equatable {}
 extension HyBidGDPR.HyBidGDPRKeys : Swift.Hashable {}
 extension HyBidGDPR.HyBidGDPRKeys : Swift.RawRepresentable {}

@@ -88,6 +88,16 @@
       },
       {
         "kind": "Import",
+        "name": "AATKit",
+        "printedName": "AATKit",
+        "declKind": "Import",
+        "moduleName": "AATMetaBiddingAdapter",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -120,13 +130,5 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": [
-    {
-      "filePath": "\/Users\/mahmoudamer\/Desktop\/Disk\/Repos\/aatkit-ios-swift\/AATKit\/AdNetworkAdapters\/AATMetaBiddingAdapter\/AATMetaBiddingAdapterManager.swift",
-      "kind": "StringLiteral",
-      "offset": 409,
-      "length": 6,
-      "value": "\"meta\""
-    }
-  ]
+  "ConstValues": []
 }

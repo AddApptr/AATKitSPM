@@ -12597,6 +12597,90 @@
           },
           {
             "kind": "Var",
+            "name": "storeOverlayDismissalError",
+            "printedName": "storeOverlayDismissalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VungleAdsSDK.VungleError.Type) -> VungleAdsSDK.VungleError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VungleError",
+                    "printedName": "VungleAdsSDK.VungleError",
+                    "usr": "c:@M@VungleAdsSDK@E@VungleError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VungleAdsSDK.VungleError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VungleError",
+                        "printedName": "VungleAdsSDK.VungleError",
+                        "usr": "c:@M@VungleAdsSDK@E@VungleError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@VungleAdsSDK@E@VungleError@VungleErrorStoreOverlayDismissalError",
+            "mangledName": "$s12VungleAdsSDK0A5ErrorO021storeOverlayDismissalD0yA2CmF",
+            "moduleName": "VungleAdsSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 95
+          },
+          {
+            "kind": "Var",
+            "name": "presenterDeallocatedBeforeLoadCompletion",
+            "printedName": "presenterDeallocatedBeforeLoadCompletion",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VungleAdsSDK.VungleError.Type) -> VungleAdsSDK.VungleError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VungleError",
+                    "printedName": "VungleAdsSDK.VungleError",
+                    "usr": "c:@M@VungleAdsSDK@E@VungleError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VungleAdsSDK.VungleError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VungleError",
+                        "printedName": "VungleAdsSDK.VungleError",
+                        "usr": "c:@M@VungleAdsSDK@E@VungleError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@VungleAdsSDK@E@VungleError@VungleErrorPresenterDeallocatedBeforeLoadCompletion",
+            "mangledName": "$s12VungleAdsSDK0A5ErrorO40presenterDeallocatedBeforeLoadCompletionyA2CmF",
+            "moduleName": "VungleAdsSDK",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 96
+          },
+          {
+            "kind": "Var",
             "name": "outOfMemory",
             "printedName": "outOfMemory",
             "children": [
@@ -12635,7 +12719,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 95
+            "fixedbinaryorder": 97
           },
           {
             "kind": "Var",
@@ -12677,7 +12761,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 96
+            "fixedbinaryorder": 98
           },
           {
             "kind": "Var",
@@ -12719,7 +12803,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 97
+            "fixedbinaryorder": 99
           },
           {
             "kind": "Var",
@@ -12761,7 +12845,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 98
+            "fixedbinaryorder": 100
           },
           {
             "kind": "Var",
@@ -12803,7 +12887,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 99
+            "fixedbinaryorder": 101
           },
           {
             "kind": "Var",
@@ -12845,7 +12929,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 100
+            "fixedbinaryorder": 102
           },
           {
             "kind": "Var",
@@ -12887,7 +12971,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 101
+            "fixedbinaryorder": 103
           },
           {
             "kind": "Var",
@@ -12929,7 +13013,7 @@
               "RawDocComment",
               "ObjC"
             ],
-            "fixedbinaryorder": 102
+            "fixedbinaryorder": 104
           },
           {
             "kind": "Constructor",
@@ -16605,3157 +16689,3241 @@
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "Array",
-      "offset": 29486,
+      "offset": 30180,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 50870,
+      "offset": 51986,
       "length": 15,
       "value": "\"SDKErrorBatch\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 50935,
+      "offset": 52051,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 50951,
+      "offset": 52067,
       "length": 8,
       "value": "\"errors\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52020,
+      "offset": 53136,
       "length": 10,
       "value": "\"SDKError\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52080,
+      "offset": 53196,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52096,
+      "offset": 53212,
       "length": 4,
       "value": "\"at\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52107,
+      "offset": 53223,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52123,
+      "offset": 53239,
       "length": 8,
       "value": "\"reason\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52138,
+      "offset": 53254,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52154,
+      "offset": 53270,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52170,
+      "offset": 53286,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52186,
+      "offset": 53302,
       "length": 9,
       "value": "\"eventId\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52202,
+      "offset": 53318,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52218,
+      "offset": 53334,
       "length": 6,
       "value": "\"make\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52231,
+      "offset": 53347,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52247,
+      "offset": 53363,
       "length": 7,
       "value": "\"model\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52261,
+      "offset": 53377,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52277,
+      "offset": 53393,
       "length": 4,
       "value": "\"os\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52288,
+      "offset": 53404,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52304,
+      "offset": 53420,
       "length": 11,
       "value": "\"osVersion\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52322,
+      "offset": 53438,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52338,
+      "offset": 53454,
       "length": 16,
       "value": "\"connectionType\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52361,
+      "offset": 53477,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52378,
+      "offset": 53494,
       "length": 22,
       "value": "\"connectionTypeDetail\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52407,
+      "offset": 53523,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52424,
+      "offset": 53540,
       "length": 22,
       "value": "\"placementReferenceId\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52453,
+      "offset": 53569,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52470,
+      "offset": 53586,
       "length": 12,
       "value": "\"creativeId\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52489,
+      "offset": 53605,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52506,
+      "offset": 53622,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52524,
+      "offset": 53640,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52541,
+      "offset": 53657,
       "length": 15,
       "value": "\"isHbPlacement\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 52563,
+      "offset": 53679,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 52580,
-      "length": 15,
-      "value": "\"placementType\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 52602,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 52619,
-      "length": 10,
-      "value": "\"adSource\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 52636,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 52653,
-      "length": 10,
-      "value": "\"appState\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 52670,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 52687,
-      "length": 15,
-      "value": "\"mediationName\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 52709,
-      "length": 2,
-      "value": "19"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 52726,
-      "length": 11,
-      "value": "\"vmVersion\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 52744,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 52762,
-      "length": 29,
-      "value": "\"connectionTypeDetailAndroid\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 52798,
-      "length": 3,
-      "value": "201"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 52816,
-      "length": 22,
-      "value": "\"isLowDataModeEnabled\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 52903,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 53412,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 53520,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "BooleanLiteral",
       "offset": 53696,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63141,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63157,
-      "length": 15,
-      "value": "\"UNKNOWN_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63179,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63195,
-      "length": 16,
-      "value": "\"INVALID_APP_ID\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63218,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63234,
-      "length": 24,
-      "value": "\"CURRENTLY_INITIALIZING\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63265,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63281,
-      "length": 21,
-      "value": "\"ALREADY_INITIALIZED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63309,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63325,
-      "length": 21,
-      "value": "\"SDK_NOT_INITIALIZED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63353,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63369,
-      "length": 18,
-      "value": "\"USER_AGENT_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63394,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63412,
-      "length": 19,
-      "value": "\"API_REQUEST_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63438,
-      "length": 3,
-      "value": "102"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63456,
-      "length": 25,
-      "value": "\"API_RESPONSE_DATA_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63488,
-      "length": 3,
-      "value": "103"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63506,
-      "length": 27,
-      "value": "\"API_RESPONSE_DECODE_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63540,
-      "length": 3,
-      "value": "104"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63558,
-      "length": 24,
-      "value": "\"API_FAILED_STATUS_CODE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63589,
-      "length": 3,
-      "value": "105"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63607,
-      "length": 22,
-      "value": "\"INVALID_TEMPLATE_URL\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63636,
-      "length": 3,
-      "value": "106"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63654,
-      "length": 31,
-      "value": "\"INVALID_REQUEST_BUILDER_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63692,
-      "length": 3,
-      "value": "109"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63710,
-      "length": 22,
-      "value": "\"TEMPLATE_UNZIP_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63739,
-      "length": 3,
-      "value": "110"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63757,
-      "length": 17,
-      "value": "\"INVALID_CTA_URL\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63781,
-      "length": 3,
-      "value": "111"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63799,
-      "length": 19,
-      "value": "\"INVALID_ASSET_URL\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63825,
-      "length": 3,
-      "value": "112"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63843,
-      "length": 21,
-      "value": "\"ASSET_REQUEST_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63871,
-      "length": 3,
-      "value": "113"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63889,
-      "length": 27,
-      "value": "\"ASSET_RESPONSE_DATA_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63923,
-      "length": 3,
-      "value": "114"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63941,
-      "length": 19,
-      "value": "\"ASSET_WRITE_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 63967,
-      "length": 3,
-      "value": "115"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 63985,
-      "length": 19,
-      "value": "\"INVALID_INDEX_URL\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64011,
-      "length": 3,
-      "value": "116"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64029,
-      "length": 19,
-      "value": "\"GZIP_ENCODE_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64055,
-      "length": 3,
-      "value": "117"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64073,
-      "length": 26,
-      "value": "\"ASSET_FAILED_STATUS_CODE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64106,
-      "length": 3,
-      "value": "118"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64124,
-      "length": 30,
-      "value": "\"PROTOBUF_SERIALIZATION_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64161,
-      "length": 3,
-      "value": "119"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64179,
-      "length": 19,
-      "value": "\"JSON_ENCODE_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64205,
-      "length": 3,
-      "value": "121"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64223,
-      "length": 12,
-      "value": "\"TPAT_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64242,
-      "length": 3,
-      "value": "122"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64260,
-      "length": 22,
-      "value": "\"INVALID_ADS_ENDPOINT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64289,
-      "length": 3,
-      "value": "123"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64307,
-      "length": 21,
-      "value": "\"INVALID_RI_ENDPOINT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64335,
-      "length": 3,
-      "value": "124"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64353,
-      "length": 28,
-      "value": "\"INVALID_LOG_ERROR_ENDPOINT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64388,
-      "length": 3,
-      "value": "125"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64406,
-      "length": 26,
-      "value": "\"INVALID_METRICS_ENDPOINT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64439,
-      "length": 3,
-      "value": "126"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64457,
-      "length": 33,
-      "value": "\"ASSET_FAILED_INSUFFICIENT_SPACE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64497,
-      "length": 3,
-      "value": "127"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64515,
-      "length": 33,
-      "value": "\"ASSET_FAILED_MAX_SPACE_EXCEEDED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64555,
-      "length": 3,
-      "value": "128"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64573,
-      "length": 18,
-      "value": "\"INVALID_TPAT_KEY\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64598,
-      "length": 3,
-      "value": "129"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64616,
-      "length": 18,
-      "value": "\"EMPTY_TPAT_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64641,
-      "length": 3,
-      "value": "130"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64659,
-      "length": 25,
-      "value": "\"MRAID_DOWNLOAD_JS_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64691,
-      "length": 3,
-      "value": "131"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64709,
-      "length": 23,
-      "value": "\"MRAID_JS_WRITE_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64739,
-      "length": 3,
-      "value": "132"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64757,
-      "length": 25,
-      "value": "\"OMSDK_DOWNLOAD_JS_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64789,
-      "length": 3,
-      "value": "133"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64807,
-      "length": 23,
-      "value": "\"OMSDK_JS_WRITE_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64837,
-      "length": 3,
-      "value": "134"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64855,
-      "length": 25,
-      "value": "\"STORE_REGION_CODE_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64887,
-      "length": 3,
-      "value": "135"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64905,
-      "length": 25,
-      "value": "\"INVALID_CONFIG_RESPONSE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64937,
-      "length": 3,
-      "value": "136"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64955,
-      "length": 19,
-      "value": "\"PRIVACY_URL_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 64981,
-      "length": 3,
-      "value": "137"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 64999,
-      "length": 19,
-      "value": "\"TPAT_RETRY_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65025,
-      "length": 3,
-      "value": "138"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65043,
-      "length": 23,
-      "value": "\"CONFIG_REFRESH_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65073,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65091,
-      "length": 24,
-      "value": "\"INVALID_EVENT_ID_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65122,
-      "length": 3,
-      "value": "201"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65140,
-      "length": 22,
-      "value": "\"INVALID_PLACEMENT_ID\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65169,
-      "length": 3,
-      "value": "202"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65187,
-      "length": 13,
-      "value": "\"AD_CONSUMED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65207,
-      "length": 3,
-      "value": "203"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65225,
-      "length": 15,
-      "value": "\"AD_IS_LOADING\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65247,
-      "length": 3,
-      "value": "204"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65265,
-      "length": 19,
-      "value": "\"AD_ALREADY_LOADED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65291,
-      "length": 3,
-      "value": "205"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65309,
-      "length": 15,
-      "value": "\"AD_IS_PLAYING\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65331,
-      "length": 3,
-      "value": "206"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65349,
-      "length": 19,
-      "value": "\"AD_ALREADY_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65375,
-      "length": 3,
-      "value": "207"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65393,
-      "length": 28,
-      "value": "\"PLACEMENT_AD_TYPE_MISMATCH\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65428,
-      "length": 3,
-      "value": "208"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65446,
-      "length": 21,
-      "value": "\"INVALID_BID_PAYLOAD\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65474,
-      "length": 3,
-      "value": "209"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65492,
-      "length": 26,
-      "value": "\"INVALID_JSON_BID_PAYLOAD\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65525,
-      "length": 3,
-      "value": "210"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65543,
-      "length": 15,
-      "value": "\"AD_NOT_LOADED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65565,
-      "length": 3,
-      "value": "212"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65583,
-      "length": 17,
-      "value": "\"PLACEMENT_SLEEP\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65607,
-      "length": 3,
-      "value": "213"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65625,
-      "length": 28,
-      "value": "\"INVALID_ADUNIT_BID_PAYLOAD\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65660,
-      "length": 3,
-      "value": "214"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65678,
-      "length": 26,
-      "value": "\"INVALID_GZIP_BID_PAYLOAD\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65711,
-      "length": 3,
-      "value": "215"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65729,
-      "length": 19,
-      "value": "\"AD_RESPONSE_EMPTY\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65755,
-      "length": 3,
-      "value": "216"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65773,
-      "length": 35,
-      "value": "\"AD_RESPONSE_INVALID_TEMPLATE_TYPE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65815,
-      "length": 3,
-      "value": "217"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65833,
-      "length": 23,
-      "value": "\"AD_RESPONSE_TIMED_OUT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65863,
-      "length": 3,
-      "value": "218"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65881,
-      "length": 25,
-      "value": "\"MRAID_JS_DOES_NOT_EXIST\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65913,
-      "length": 3,
-      "value": "219"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65931,
-      "length": 22,
-      "value": "\"MRAID_JS_COPY_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 65960,
-      "length": 3,
-      "value": "220"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 65978,
-      "length": 25,
-      "value": "\"AD_RESPONSE_RETRY_AFTER\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66010,
-      "length": 3,
-      "value": "221"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66028,
-      "length": 26,
-      "value": "\"AD_LOAD_FAIL_RETRY_AFTER\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66061,
-      "length": 3,
-      "value": "222"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66079,
-      "length": 32,
-      "value": "\"INVALID_WATERFALL_PLACEMENT_ID\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66118,
-      "length": 3,
-      "value": "223"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66136,
-      "length": 23,
-      "value": "\"STALE_CACHED_RESPONSE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66166,
-      "length": 3,
-      "value": "301"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66184,
-      "length": 13,
-      "value": "\"MRAID_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66204,
-      "length": 3,
-      "value": "302"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66222,
-      "length": 20,
-      "value": "\"INVALID_IFA_STATUS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66249,
-      "length": 3,
-      "value": "304"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66267,
-      "length": 12,
-      "value": "\"AD_EXPIRED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66286,
-      "length": 3,
-      "value": "305"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66304,
-      "length": 20,
-      "value": "\"MRAID_BRIDGE_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66331,
-      "length": 3,
-      "value": "307"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66349,
-      "length": 20,
-      "value": "\"AD_EXPIRED_ON_PLAY\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66376,
-      "length": 3,
-      "value": "308"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66394,
-      "length": 27,
-      "value": "\"AD_WIN_NOTIFICATION_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66428,
-      "length": 3,
-      "value": "309"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66446,
-      "length": 24,
-      "value": "\"ASSET_FAILED_TO_DELETE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66477,
-      "length": 3,
-      "value": "310"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66495,
-      "length": 24,
-      "value": "\"AD_HTML_FAILED_TO_LOAD\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66526,
-      "length": 3,
-      "value": "311"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66544,
-      "length": 21,
-      "value": "\"MRAID_JS_CALL_EMPTY\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66572,
-      "length": 3,
-      "value": "312"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66590,
-      "length": 22,
-      "value": "\"DEEPLINK_OPEN_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66619,
-      "length": 3,
-      "value": "313"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66637,
-      "length": 28,
-      "value": "\"EVALUATE_JAVASCRIPT_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66672,
-      "length": 3,
-      "value": "314"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66690,
-      "length": 26,
-      "value": "\"LINK_COMMAND_OPEN_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66723,
-      "length": 3,
-      "value": "315"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66741,
-      "length": 26,
-      "value": "\"JSON_PARAMS_ENCODE_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66774,
-      "length": 3,
-      "value": "316"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66792,
-      "length": 26,
-      "value": "\"GENERATE_JSON_DATA_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66825,
-      "length": 3,
-      "value": "317"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66843,
-      "length": 26,
-      "value": "\"AD_CLOSED_TEMPLATE_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66876,
-      "length": 3,
-      "value": "318"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66894,
-      "length": 29,
-      "value": "\"AD_CLOSED_MISSING_HEARTBEAT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66930,
-      "length": 3,
-      "value": "319"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 66948,
-      "length": 27,
-      "value": "\"SILENT_MODE_MONITOR_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 66982,
-      "length": 3,
-      "value": "320"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67000,
-      "length": 15,
-      "value": "\"WEBVIEW_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67022,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67040,
-      "length": 33,
-      "value": "\"CONCURRENT_PLAYBACK_UNSUPPORTED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67080,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67098,
-      "length": 26,
-      "value": "\"BANNER_VIEW_INVALID_SIZE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67131,
-      "length": 3,
-      "value": "600"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67149,
-      "length": 20,
-      "value": "\"NATIVE_ASSET_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67176,
-      "length": 4,
-      "value": "2000"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67195,
-      "length": 44,
-      "value": "\"WEB_VIEW_WEB_CONTENT_PROCESS_DID_TERMINATE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67246,
-      "length": 4,
-      "value": "2001"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67265,
-      "length": 28,
-      "value": "\"WEB_VIEW_FAILED_NAVIGATION\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67300,
-      "length": 4,
-      "value": "2002"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67319,
-      "length": 22,
-      "value": "\"STORE_KIT_LOAD_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67348,
-      "length": 4,
-      "value": "2003"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67367,
-      "length": 18,
-      "value": "\"OMSDK_COPY_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67392,
-      "length": 4,
-      "value": "2004"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67411,
-      "length": 26,
-      "value": "\"STORE_OVERLAY_LOAD_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67444,
-      "length": 4,
-      "value": "2005"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67463,
-      "length": 36,
-      "value": "\"REACHABILITY_INITIALIZATION_FAILED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67506,
-      "length": 4,
-      "value": "2006"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67525,
-      "length": 33,
-      "value": "\"UNKNOWN_RADIO_ACCESS_TECHNOLOGY\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67565,
-      "length": 4,
-      "value": "2007"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67584,
-      "length": 30,
-      "value": "\"STORE_KIT_PRESENTATION_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67621,
-      "length": 4,
-      "value": "2008"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67640,
-      "length": 34,
-      "value": "\"STORE_OVERLAY_PRESENTATION_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67681,
-      "length": 4,
-      "value": "2009"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67700,
-      "length": 24,
-      "value": "\"INVALID_PLAY_PARAMETER\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67731,
-      "length": 4,
-      "value": "3001"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67750,
-      "length": 15,
-      "value": "\"OUT_OF_MEMORY\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67772,
-      "length": 4,
-      "value": "4000"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67791,
-      "length": 27,
-      "value": "\"VUNGLE_OIT_CREATION_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67825,
-      "length": 5,
-      "value": "10001"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67845,
-      "length": 12,
-      "value": "\"AD_NO_FILL\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67864,
-      "length": 5,
-      "value": "10002"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67884,
-      "length": 24,
-      "value": "\"AD_LOAD_TOO_FREQUENTLY\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67915,
-      "length": 5,
-      "value": "20001"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67935,
-      "length": 17,
-      "value": "\"AD_SERVER_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 67959,
-      "length": 5,
-      "value": "30001"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 67979,
-      "length": 23,
-      "value": "\"AD_PUBLISHER_MISMATCH\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 68009,
-      "length": 5,
-      "value": "30002"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 68029,
-      "length": 31,
-      "value": "\"AD_INTERNAL_INTEGRATION_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 68067,
-      "length": 5,
-      "value": "30003"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 68087,
-      "length": 24,
-      "value": "\"CONFIG_NOT_FOUND_ERROR\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 68243,
-      "length": 13,
-      "value": "\"MetricBatch\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 68306,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 68322,
-      "length": 9,
-      "value": "\"metrics\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69394,
-      "length": 11,
-      "value": "\"SDKMetric\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69455,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69471,
-      "length": 6,
-      "value": "\"type\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69484,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69500,
-      "length": 7,
-      "value": "\"value\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69514,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69530,
-      "length": 6,
-      "value": "\"meta\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69543,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69559,
-      "length": 6,
-      "value": "\"make\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69572,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69588,
-      "length": 7,
-      "value": "\"model\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69602,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69618,
-      "length": 4,
-      "value": "\"os\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69629,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69645,
-      "length": 11,
-      "value": "\"osVersion\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69663,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69679,
-      "length": 16,
-      "value": "\"connectionType\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69702,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69718,
-      "length": 22,
-      "value": "\"connectionTypeDetail\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69747,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69764,
-      "length": 22,
-      "value": "\"placementReferenceId\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69793,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69810,
-      "length": 12,
-      "value": "\"creativeId\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69829,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69846,
-      "length": 9,
-      "value": "\"eventId\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69862,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69879,
-      "length": 11,
-      "value": "\"sessionId\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69897,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69914,
-      "length": 15,
-      "value": "\"isHbPlacement\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 69936,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 69953,
       "length": 15,
       "value": "\"placementType\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 69975,
+      "offset": 53718,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 69992,
+      "offset": 53735,
       "length": 10,
       "value": "\"adSource\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 70009,
+      "offset": 53752,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 70026,
-      "length": 15,
-      "value": "\"mediationName\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 70048,
-      "length": 2,
-      "value": "18"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 70065,
+      "offset": 53769,
       "length": 10,
       "value": "\"appState\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 70082,
-      "length": 2,
-      "value": "19"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 70099,
-      "length": 11,
-      "value": "\"vmVersion\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 70117,
-      "length": 3,
-      "value": "201"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 70135,
-      "length": 22,
-      "value": "\"isLowDataModeEnabled\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 70285,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 70742,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 70892,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "BooleanLiteral",
-      "offset": 70970,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79947,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 79963,
-      "length": 21,
-      "value": "\"UNKNOWN_METRIC_TYPE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 79991,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80007,
-      "length": 36,
-      "value": "\"AD_REQUEST_TO_RESPONSE_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80050,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80066,
-      "length": 33,
-      "value": "\"AD_RESPONSE_TO_SHOW_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80106,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80122,
-      "length": 32,
-      "value": "\"AD_SHOW_TO_DISPLAY_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80161,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80177,
-      "length": 33,
-      "value": "\"AD_DISPLAY_TO_CLICK_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80217,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80233,
-      "length": 28,
-      "value": "\"IOS_STORE_KIT_LOAD_TIME_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80268,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80284,
-      "length": 38,
-      "value": "\"INIT_REQUEST_TO_RESPONSE_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80329,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80345,
-      "length": 28,
-      "value": "\"ASSET_DOWNLOAD_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80380,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80396,
-      "length": 19,
-      "value": "\"LOCAL_ASSETS_USED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80422,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80438,
-      "length": 20,
-      "value": "\"REMOTE_ASSETS_USED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80465,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80482,
-      "length": 31,
-      "value": "\"TEMPLATE_DOWNLOAD_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80520,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80537,
-      "length": 36,
-      "value": "\"AD_REQUEST_TO_CALLBACK_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80580,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80597,
-      "length": 40,
-      "value": "\"AD_REQUEST_TO_CALLBACK_ADO_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80644,
-      "length": 2,
-      "value": "13"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80661,
-      "length": 17,
-      "value": "\"ASSET_FILE_SIZE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80685,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80702,
-      "length": 29,
-      "value": "\"USER_AGENT_LOAD_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80738,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80755,
-      "length": 19,
-      "value": "\"TEMPLATE_ZIP_SIZE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80781,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80798,
-      "length": 20,
-      "value": "\"CACHED_ASSETS_USED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80825,
-      "length": 2,
-      "value": "17"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80842,
-      "length": 13,
-      "value": "\"LOAD_AD_API\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80862,
+      "offset": 53786,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 80879,
-      "length": 12,
-      "value": "\"TPAT_FIRED\""
+      "offset": 53803,
+      "length": 15,
+      "value": "\"mediationName\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 80898,
+      "offset": 53825,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 80915,
-      "length": 14,
-      "value": "\"TPAT_SUCCESS\""
+      "offset": 53842,
+      "length": 11,
+      "value": "\"vmVersion\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 80936,
+      "offset": 53860,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 80953,
-      "length": 17,
-      "value": "\"WIN_NOTIF_FIRED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 80977,
-      "length": 2,
-      "value": "21"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 80994,
-      "length": 19,
-      "value": "\"WIN_NOTIF_SUCCESS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81020,
-      "length": 2,
-      "value": "22"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81037,
-      "length": 24,
-      "value": "\"AD_EXPIRED_BEFORE_PLAY\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81068,
-      "length": 2,
-      "value": "23"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81085,
-      "length": 13,
-      "value": "\"PLAY_AD_API\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81105,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81122,
+      "offset": 53877,
       "length": 14,
-      "value": "\"AD_LOAD_FAIL\""
+      "value": "\"isAdoEnabled\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 81143,
-      "length": 2,
-      "value": "25"
+      "offset": 53898,
+      "length": 3,
+      "value": "101"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 81160,
-      "length": 26,
-      "value": "\"VIEW_NOT_VISIBLE_ON_PLAY\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81193,
-      "length": 2,
-      "value": "26"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81210,
-      "length": 33,
-      "value": "\"MRAID_DOWNLOAD_JS_RETRY_SUCCESS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81250,
-      "length": 2,
-      "value": "27"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81267,
-      "length": 33,
-      "value": "\"OMSDK_DOWNLOAD_JS_RETRY_SUCCESS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81307,
-      "length": 2,
-      "value": "28"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81324,
-      "length": 20,
-      "value": "\"PRIVACY_URL_OPENED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81351,
-      "length": 2,
-      "value": "29"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81368,
-      "length": 23,
-      "value": "\"NOTIFICATION_REDIRECT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81398,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81415,
-      "length": 25,
-      "value": "\"AD_PLAY_RESET_ON_DEINIT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81447,
-      "length": 2,
-      "value": "31"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81464,
-      "length": 20,
-      "value": "\"TEMPLATE_HTML_SIZE\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81491,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81508,
-      "length": 25,
-      "value": "\"CONFIG_LOADED_FROM_INIT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81540,
-      "length": 2,
-      "value": "33"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81557,
-      "length": 28,
-      "value": "\"CONFIG_LOADED_FROM_AD_LOAD\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81592,
-      "length": 2,
-      "value": "34"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81609,
+      "offset": 53916,
       "length": 29,
-      "value": "\"CONFIG_LOADED_FROM_ADM_LOAD\""
+      "value": "\"connectionTypeDetailAndroid\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 81645,
-      "length": 2,
-      "value": "35"
+      "offset": 53952,
+      "length": 3,
+      "value": "201"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 81662,
-      "length": 32,
-      "value": "\"AD_SHOW_TO_PRESENT_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81701,
-      "length": 2,
-      "value": "36"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81718,
-      "length": 29,
-      "value": "\"AD_SHOW_TO_FAIL_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81754,
-      "length": 2,
-      "value": "37"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81771,
-      "length": 35,
-      "value": "\"AD_PRESENT_TO_DISPLAY_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81813,
-      "length": 2,
-      "value": "38"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81830,
-      "length": 21,
-      "value": "\"BID_TOKEN_REQUESTED\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81858,
-      "length": 2,
-      "value": "39"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81875,
-      "length": 43,
-      "value": "\"BID_TOKEN_REQUEST_TO_RESPONSE_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81925,
-      "length": 2,
-      "value": "40"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 81942,
-      "length": 39,
-      "value": "\"BID_TOKEN_REQUEST_TO_FAIL_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 81988,
-      "length": 2,
-      "value": "41"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82005,
-      "length": 38,
-      "value": "\"AD_LOAD_TO_FAIL_CALLBACK_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82050,
-      "length": 2,
-      "value": "42"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82067,
-      "length": 30,
-      "value": "\"AD_SHOW_TO_CLOSE_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82104,
-      "length": 2,
-      "value": "43"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82121,
-      "length": 33,
-      "value": "\"AD_LOAD_TO_CALLBACK_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82161,
-      "length": 2,
-      "value": "44"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82178,
-      "length": 37,
-      "value": "\"AD_LOAD_TO_CALLBACK_ADO_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82222,
-      "length": 2,
-      "value": "45"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82239,
-      "length": 14,
-      "value": "\"SDK_INIT_API\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82260,
-      "length": 2,
-      "value": "46"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82277,
-      "length": 16,
-      "value": "\"AD_START_EVENT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82300,
-      "length": 2,
-      "value": "47"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82317,
-      "length": 16,
-      "value": "\"AD_CLICK_EVENT\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82340,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82357,
-      "length": 35,
-      "value": "\"AD_SHOW_TO_VALIDATION_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82399,
-      "length": 2,
-      "value": "49"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82416,
-      "length": 38,
-      "value": "\"AD_VALIDATION_TO_PRESENT_DURATION_MS\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82461,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82478,
+      "offset": 53970,
       "length": 22,
-      "value": "\"AD_LEAVE_APPLICATION\""
+      "value": "\"isLowDataModeEnabled\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 82507,
-      "length": 2,
-      "value": "51"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82524,
-      "length": 16,
-      "value": "\"AD_REWARD_USER\""
+      "offset": 54057,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 82547,
-      "length": 2,
-      "value": "52"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82564,
-      "length": 34,
-      "value": "\"AD_REQUIRED_DOWNLOAD_DURATION_MS\""
+      "offset": 54566,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 82605,
-      "length": 2,
-      "value": "53"
+      "offset": 54674,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82622,
-      "length": 34,
-      "value": "\"AD_OPTIONAL_DOWNLOAD_DURATION_MS\""
+      "kind": "BooleanLiteral",
+      "offset": 54786,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82663,
-      "length": 2,
-      "value": "54"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82680,
-      "length": 33,
-      "value": "\"AD_BACKGROUND_BEFORE_IMPRESSION\""
+      "kind": "BooleanLiteral",
+      "offset": 54886,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 82720,
-      "length": 2,
-      "value": "55"
+      "offset": 64689,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 82737,
-      "length": 29,
-      "value": "\"AD_CLOSED_BEFORE_IMPRESSION\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 82773,
-      "length": 2,
-      "value": "56"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
-      "kind": "StringLiteral",
-      "offset": 82790,
+      "offset": 64705,
       "length": 15,
-      "value": "\"AD_VISIBILITY\""
+      "value": "\"UNKNOWN_ERROR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 82812,
-      "length": 2,
-      "value": "57"
+      "offset": 64727,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 82829,
-      "length": 38,
-      "value": "\"INIT_TO_SUCCESS_CALLBACK_DURATION_MS\""
+      "offset": 64743,
+      "length": 16,
+      "value": "\"INVALID_APP_ID\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 82874,
-      "length": 2,
-      "value": "58"
+      "offset": 64766,
+      "length": 1,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 82891,
+      "offset": 64782,
+      "length": 24,
+      "value": "\"CURRENTLY_INITIALIZING\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 64813,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 64829,
+      "length": 21,
+      "value": "\"ALREADY_INITIALIZED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 64857,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 64873,
+      "length": 21,
+      "value": "\"SDK_NOT_INITIALIZED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 64901,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 64917,
+      "length": 18,
+      "value": "\"USER_AGENT_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 64942,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 64960,
+      "length": 19,
+      "value": "\"API_REQUEST_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 64986,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65004,
+      "length": 25,
+      "value": "\"API_RESPONSE_DATA_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65036,
+      "length": 3,
+      "value": "103"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65054,
+      "length": 27,
+      "value": "\"API_RESPONSE_DECODE_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65088,
+      "length": 3,
+      "value": "104"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65106,
+      "length": 24,
+      "value": "\"API_FAILED_STATUS_CODE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65137,
+      "length": 3,
+      "value": "105"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65155,
+      "length": 22,
+      "value": "\"INVALID_TEMPLATE_URL\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65184,
+      "length": 3,
+      "value": "106"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65202,
+      "length": 31,
+      "value": "\"INVALID_REQUEST_BUILDER_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65240,
+      "length": 3,
+      "value": "109"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65258,
+      "length": 22,
+      "value": "\"TEMPLATE_UNZIP_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65287,
+      "length": 3,
+      "value": "110"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65305,
+      "length": 17,
+      "value": "\"INVALID_CTA_URL\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65329,
+      "length": 3,
+      "value": "111"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65347,
+      "length": 19,
+      "value": "\"INVALID_ASSET_URL\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65373,
+      "length": 3,
+      "value": "112"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65391,
+      "length": 21,
+      "value": "\"ASSET_REQUEST_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65419,
+      "length": 3,
+      "value": "113"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65437,
+      "length": 27,
+      "value": "\"ASSET_RESPONSE_DATA_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65471,
+      "length": 3,
+      "value": "114"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65489,
+      "length": 19,
+      "value": "\"ASSET_WRITE_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65515,
+      "length": 3,
+      "value": "115"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65533,
+      "length": 19,
+      "value": "\"INVALID_INDEX_URL\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65559,
+      "length": 3,
+      "value": "116"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65577,
+      "length": 19,
+      "value": "\"GZIP_ENCODE_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65603,
+      "length": 3,
+      "value": "117"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65621,
+      "length": 26,
+      "value": "\"ASSET_FAILED_STATUS_CODE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65654,
+      "length": 3,
+      "value": "118"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65672,
+      "length": 30,
+      "value": "\"PROTOBUF_SERIALIZATION_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65709,
+      "length": 3,
+      "value": "119"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65727,
+      "length": 19,
+      "value": "\"JSON_ENCODE_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65753,
+      "length": 3,
+      "value": "121"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65771,
+      "length": 12,
+      "value": "\"TPAT_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65790,
+      "length": 3,
+      "value": "122"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65808,
+      "length": 22,
+      "value": "\"INVALID_ADS_ENDPOINT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65837,
+      "length": 3,
+      "value": "123"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65855,
+      "length": 21,
+      "value": "\"INVALID_RI_ENDPOINT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65883,
+      "length": 3,
+      "value": "124"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65901,
+      "length": 28,
+      "value": "\"INVALID_LOG_ERROR_ENDPOINT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65936,
+      "length": 3,
+      "value": "125"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 65954,
+      "length": 26,
+      "value": "\"INVALID_METRICS_ENDPOINT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65987,
+      "length": 3,
+      "value": "126"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66005,
+      "length": 33,
+      "value": "\"ASSET_FAILED_INSUFFICIENT_SPACE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66045,
+      "length": 3,
+      "value": "127"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66063,
+      "length": 33,
+      "value": "\"ASSET_FAILED_MAX_SPACE_EXCEEDED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66103,
+      "length": 3,
+      "value": "128"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66121,
+      "length": 18,
+      "value": "\"INVALID_TPAT_KEY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66146,
+      "length": 3,
+      "value": "129"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66164,
+      "length": 18,
+      "value": "\"EMPTY_TPAT_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66189,
+      "length": 3,
+      "value": "130"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66207,
+      "length": 25,
+      "value": "\"MRAID_DOWNLOAD_JS_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66239,
+      "length": 3,
+      "value": "131"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66257,
+      "length": 23,
+      "value": "\"MRAID_JS_WRITE_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66287,
+      "length": 3,
+      "value": "132"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66305,
+      "length": 25,
+      "value": "\"OMSDK_DOWNLOAD_JS_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66337,
+      "length": 3,
+      "value": "133"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66355,
+      "length": 23,
+      "value": "\"OMSDK_JS_WRITE_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66385,
+      "length": 3,
+      "value": "134"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66403,
+      "length": 25,
+      "value": "\"STORE_REGION_CODE_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66435,
+      "length": 3,
+      "value": "135"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66453,
+      "length": 25,
+      "value": "\"INVALID_CONFIG_RESPONSE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66485,
+      "length": 3,
+      "value": "136"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66503,
+      "length": 19,
+      "value": "\"PRIVACY_URL_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66529,
+      "length": 3,
+      "value": "137"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66547,
+      "length": 19,
+      "value": "\"TPAT_RETRY_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66573,
+      "length": 3,
+      "value": "138"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66591,
+      "length": 23,
+      "value": "\"CONFIG_REFRESH_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66621,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66639,
+      "length": 24,
+      "value": "\"INVALID_EVENT_ID_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66670,
+      "length": 3,
+      "value": "201"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66688,
+      "length": 22,
+      "value": "\"INVALID_PLACEMENT_ID\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66717,
+      "length": 3,
+      "value": "202"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66735,
+      "length": 13,
+      "value": "\"AD_CONSUMED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66755,
+      "length": 3,
+      "value": "203"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66773,
+      "length": 15,
+      "value": "\"AD_IS_LOADING\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66795,
+      "length": 3,
+      "value": "204"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66813,
+      "length": 19,
+      "value": "\"AD_ALREADY_LOADED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66839,
+      "length": 3,
+      "value": "205"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66857,
+      "length": 15,
+      "value": "\"AD_IS_PLAYING\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66879,
+      "length": 3,
+      "value": "206"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66897,
+      "length": 19,
+      "value": "\"AD_ALREADY_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66923,
+      "length": 3,
+      "value": "207"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66941,
+      "length": 28,
+      "value": "\"PLACEMENT_AD_TYPE_MISMATCH\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 66976,
+      "length": 3,
+      "value": "208"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 66994,
+      "length": 21,
+      "value": "\"INVALID_BID_PAYLOAD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67022,
+      "length": 3,
+      "value": "209"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67040,
+      "length": 26,
+      "value": "\"INVALID_JSON_BID_PAYLOAD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67073,
+      "length": 3,
+      "value": "210"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67091,
+      "length": 15,
+      "value": "\"AD_NOT_LOADED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67113,
+      "length": 3,
+      "value": "212"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67131,
+      "length": 17,
+      "value": "\"PLACEMENT_SLEEP\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67155,
+      "length": 3,
+      "value": "213"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67173,
+      "length": 28,
+      "value": "\"INVALID_ADUNIT_BID_PAYLOAD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67208,
+      "length": 3,
+      "value": "214"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67226,
+      "length": 26,
+      "value": "\"INVALID_GZIP_BID_PAYLOAD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67259,
+      "length": 3,
+      "value": "215"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67277,
+      "length": 19,
+      "value": "\"AD_RESPONSE_EMPTY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67303,
+      "length": 3,
+      "value": "216"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67321,
       "length": 35,
-      "value": "\"INIT_TO_FAIL_CALLBACK_DURATION_MS\""
+      "value": "\"AD_RESPONSE_INVALID_TEMPLATE_TYPE\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 82933,
+      "offset": 67363,
+      "length": 3,
+      "value": "217"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67381,
+      "length": 23,
+      "value": "\"AD_RESPONSE_TIMED_OUT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67411,
+      "length": 3,
+      "value": "218"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67429,
+      "length": 25,
+      "value": "\"MRAID_JS_DOES_NOT_EXIST\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67461,
+      "length": 3,
+      "value": "219"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67479,
+      "length": 22,
+      "value": "\"MRAID_JS_COPY_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67508,
+      "length": 3,
+      "value": "220"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67526,
+      "length": 25,
+      "value": "\"AD_RESPONSE_RETRY_AFTER\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67558,
+      "length": 3,
+      "value": "221"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67576,
+      "length": 26,
+      "value": "\"AD_LOAD_FAIL_RETRY_AFTER\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67609,
+      "length": 3,
+      "value": "222"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67627,
+      "length": 32,
+      "value": "\"INVALID_WATERFALL_PLACEMENT_ID\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67666,
+      "length": 3,
+      "value": "223"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67684,
+      "length": 23,
+      "value": "\"STALE_CACHED_RESPONSE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67714,
+      "length": 3,
+      "value": "301"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67732,
+      "length": 13,
+      "value": "\"MRAID_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67752,
+      "length": 3,
+      "value": "302"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67770,
+      "length": 20,
+      "value": "\"INVALID_IFA_STATUS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67797,
+      "length": 3,
+      "value": "304"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67815,
+      "length": 12,
+      "value": "\"AD_EXPIRED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67834,
+      "length": 3,
+      "value": "305"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67852,
+      "length": 20,
+      "value": "\"MRAID_BRIDGE_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67879,
+      "length": 3,
+      "value": "307"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67897,
+      "length": 20,
+      "value": "\"AD_EXPIRED_ON_PLAY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67924,
+      "length": 3,
+      "value": "308"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67942,
+      "length": 27,
+      "value": "\"AD_WIN_NOTIFICATION_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 67976,
+      "length": 3,
+      "value": "309"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 67994,
+      "length": 24,
+      "value": "\"ASSET_FAILED_TO_DELETE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68025,
+      "length": 3,
+      "value": "310"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68043,
+      "length": 24,
+      "value": "\"AD_HTML_FAILED_TO_LOAD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68074,
+      "length": 3,
+      "value": "311"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68092,
+      "length": 21,
+      "value": "\"MRAID_JS_CALL_EMPTY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68120,
+      "length": 3,
+      "value": "312"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68138,
+      "length": 22,
+      "value": "\"DEEPLINK_OPEN_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68167,
+      "length": 3,
+      "value": "313"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68185,
+      "length": 28,
+      "value": "\"EVALUATE_JAVASCRIPT_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68220,
+      "length": 3,
+      "value": "314"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68238,
+      "length": 26,
+      "value": "\"LINK_COMMAND_OPEN_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68271,
+      "length": 3,
+      "value": "315"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68289,
+      "length": 26,
+      "value": "\"JSON_PARAMS_ENCODE_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68322,
+      "length": 3,
+      "value": "316"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68340,
+      "length": 26,
+      "value": "\"GENERATE_JSON_DATA_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68373,
+      "length": 3,
+      "value": "317"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68391,
+      "length": 26,
+      "value": "\"AD_CLOSED_TEMPLATE_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68424,
+      "length": 3,
+      "value": "318"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68442,
+      "length": 29,
+      "value": "\"AD_CLOSED_MISSING_HEARTBEAT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68478,
+      "length": 3,
+      "value": "319"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68496,
+      "length": 27,
+      "value": "\"SILENT_MODE_MONITOR_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68530,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68548,
+      "length": 15,
+      "value": "\"WEBVIEW_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68570,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68588,
+      "length": 33,
+      "value": "\"CONCURRENT_PLAYBACK_UNSUPPORTED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68628,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68646,
+      "length": 26,
+      "value": "\"BANNER_VIEW_INVALID_SIZE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68679,
+      "length": 3,
+      "value": "600"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 68697,
+      "length": 20,
+      "value": "\"NATIVE_ASSET_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 68724,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 82952,
-      "length": 28,
-      "value": "\"SKOVERLAY_PRESENTED_FOR_AD\""
+      "offset": 68743,
+      "length": 44,
+      "value": "\"WEB_VIEW_WEB_CONTENT_PROCESS_DID_TERMINATE\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 82987,
+      "offset": 68794,
       "length": 4,
       "value": "2001"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83006,
-      "length": 25,
-      "value": "\"SAFARI_PRESENTED_FOR_AD\""
+      "offset": 68813,
+      "length": 28,
+      "value": "\"WEB_VIEW_FAILED_NAVIGATION\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83038,
+      "offset": 68848,
       "length": 4,
       "value": "2002"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83057,
-      "length": 28,
-      "value": "\"STORE_KIT_PRESENTED_FOR_AD\""
+      "offset": 68867,
+      "length": 22,
+      "value": "\"STORE_KIT_LOAD_ERROR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83092,
+      "offset": 68896,
       "length": 4,
       "value": "2003"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83111,
-      "length": 21,
-      "value": "\"STORE_KIT_NOT_READY\""
+      "offset": 68915,
+      "length": 18,
+      "value": "\"OMSDK_COPY_ERROR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83139,
+      "offset": 68940,
       "length": 4,
       "value": "2004"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83158,
+      "offset": 68959,
       "length": 26,
-      "value": "\"LAUNCH_STORE_KIT_REQUEST\""
+      "value": "\"STORE_OVERLAY_LOAD_ERROR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83191,
+      "offset": 68992,
       "length": 4,
       "value": "2005"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83210,
-      "length": 26,
-      "value": "\"LAUNCH_SKOVERLAY_REQUEST\""
+      "offset": 69011,
+      "length": 36,
+      "value": "\"REACHABILITY_INITIALIZATION_FAILED\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83243,
+      "offset": 69054,
       "length": 4,
       "value": "2006"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83262,
-      "length": 23,
-      "value": "\"LAUNCH_SAFARI_REQUEST\""
+      "offset": 69073,
+      "length": 33,
+      "value": "\"UNKNOWN_RADIO_ACCESS_TECHNOLOGY\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83292,
+      "offset": 69113,
       "length": 4,
       "value": "2007"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83311,
-      "length": 17,
-      "value": "\"IDFV_RESTRICTED\""
+      "offset": 69132,
+      "length": 30,
+      "value": "\"STORE_KIT_PRESENTATION_ERROR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83335,
+      "offset": 69169,
       "length": 4,
       "value": "2008"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83354,
-      "length": 36,
-      "value": "\"NOTIFICATION_WAIT_FOR_CONNECTIVITY\""
+      "offset": 69188,
+      "length": 34,
+      "value": "\"STORE_OVERLAY_PRESENTATION_ERROR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83397,
+      "offset": 69229,
       "length": 4,
       "value": "2009"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83416,
-      "length": 20,
-      "value": "\"IDFV_VALUE_CHANGED\""
+      "offset": 69248,
+      "length": 24,
+      "value": "\"INVALID_PLAY_PARAMETER\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83443,
+      "offset": 69279,
       "length": 4,
       "value": "2010"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83462,
-      "length": 15,
-      "value": "\"AD_WILL_CLOSE\""
+      "offset": 69298,
+      "length": 31,
+      "value": "\"STORE_OVERLAY_DISMISSAL_ERROR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83484,
+      "offset": 69336,
       "length": 4,
       "value": "2011"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83503,
-      "length": 38,
-      "value": "\"APP_TERM_DURING_AD_BEFORE_IMPRESSION\""
+      "offset": 69355,
+      "length": 46,
+      "value": "\"PRESENTER_DEALLOCATED_BEFORE_LOAD_COMPLETION\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83548,
+      "offset": 69408,
       "length": 4,
       "value": "3001"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83567,
+      "offset": 69427,
+      "length": 15,
+      "value": "\"OUT_OF_MEMORY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 69449,
+      "length": 4,
+      "value": "4000"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 69468,
+      "length": 27,
+      "value": "\"VUNGLE_OIT_CREATION_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 69502,
+      "length": 5,
+      "value": "10001"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 69522,
+      "length": 12,
+      "value": "\"AD_NO_FILL\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 69541,
+      "length": 5,
+      "value": "10002"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 69561,
+      "length": 24,
+      "value": "\"AD_LOAD_TOO_FREQUENTLY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 69592,
+      "length": 5,
+      "value": "20001"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 69612,
+      "length": 17,
+      "value": "\"AD_SERVER_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 69636,
+      "length": 5,
+      "value": "30001"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 69656,
+      "length": 23,
+      "value": "\"AD_PUBLISHER_MISMATCH\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 69686,
+      "length": 5,
+      "value": "30002"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 69706,
+      "length": 31,
+      "value": "\"AD_INTERNAL_INTEGRATION_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 69744,
+      "length": 5,
+      "value": "30003"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 69764,
+      "length": 24,
+      "value": "\"CONFIG_NOT_FOUND_ERROR\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 69920,
+      "length": 13,
+      "value": "\"MetricBatch\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 69983,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 69999,
+      "length": 9,
+      "value": "\"metrics\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71071,
+      "length": 11,
+      "value": "\"SDKMetric\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71132,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71148,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71161,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71177,
+      "length": 7,
+      "value": "\"value\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71191,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71207,
+      "length": 6,
+      "value": "\"meta\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71220,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71236,
+      "length": 6,
+      "value": "\"make\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71249,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71265,
+      "length": 7,
+      "value": "\"model\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71279,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71295,
+      "length": 4,
+      "value": "\"os\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71306,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71322,
+      "length": 11,
+      "value": "\"osVersion\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71340,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71356,
+      "length": 16,
+      "value": "\"connectionType\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71379,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71395,
+      "length": 22,
+      "value": "\"connectionTypeDetail\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71424,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71441,
+      "length": 22,
+      "value": "\"placementReferenceId\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71470,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71487,
+      "length": 12,
+      "value": "\"creativeId\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71506,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71523,
+      "length": 9,
+      "value": "\"eventId\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71539,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71556,
+      "length": 11,
+      "value": "\"sessionId\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71574,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71591,
+      "length": 15,
+      "value": "\"isHbPlacement\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71613,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71630,
+      "length": 15,
+      "value": "\"placementType\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71652,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71669,
+      "length": 10,
+      "value": "\"adSource\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71686,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71703,
+      "length": 15,
+      "value": "\"mediationName\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71725,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71742,
+      "length": 10,
+      "value": "\"appState\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71759,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71776,
+      "length": 11,
+      "value": "\"vmVersion\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71794,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71811,
+      "length": 14,
+      "value": "\"isAdoEnabled\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 71832,
+      "length": 3,
+      "value": "201"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 71850,
+      "length": 22,
+      "value": "\"isLowDataModeEnabled\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 72000,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 72457,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 72607,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "BooleanLiteral",
+      "offset": 72677,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "BooleanLiteral",
+      "offset": 72721,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82056,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82072,
+      "length": 21,
+      "value": "\"UNKNOWN_METRIC_TYPE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82100,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82116,
+      "length": 36,
+      "value": "\"AD_REQUEST_TO_RESPONSE_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82159,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82175,
+      "length": 33,
+      "value": "\"AD_RESPONSE_TO_SHOW_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82215,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82231,
+      "length": 32,
+      "value": "\"AD_SHOW_TO_DISPLAY_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82270,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82286,
+      "length": 33,
+      "value": "\"AD_DISPLAY_TO_CLICK_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82326,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82342,
+      "length": 28,
+      "value": "\"IOS_STORE_KIT_LOAD_TIME_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82377,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82393,
+      "length": 38,
+      "value": "\"INIT_REQUEST_TO_RESPONSE_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82438,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82454,
+      "length": 28,
+      "value": "\"ASSET_DOWNLOAD_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82489,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82505,
+      "length": 19,
+      "value": "\"LOCAL_ASSETS_USED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82531,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82547,
+      "length": 20,
+      "value": "\"REMOTE_ASSETS_USED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82574,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82591,
+      "length": 31,
+      "value": "\"TEMPLATE_DOWNLOAD_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82629,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82646,
+      "length": 36,
+      "value": "\"AD_REQUEST_TO_CALLBACK_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82689,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82706,
+      "length": 40,
+      "value": "\"AD_REQUEST_TO_CALLBACK_ADO_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82753,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82770,
+      "length": 17,
+      "value": "\"ASSET_FILE_SIZE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82794,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82811,
+      "length": 29,
+      "value": "\"USER_AGENT_LOAD_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82847,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82864,
+      "length": 19,
+      "value": "\"TEMPLATE_ZIP_SIZE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82890,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82907,
+      "length": 20,
+      "value": "\"CACHED_ASSETS_USED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82934,
+      "length": 2,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82951,
+      "length": 13,
+      "value": "\"LOAD_AD_API\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 82971,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 82988,
+      "length": 12,
+      "value": "\"TPAT_FIRED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83007,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83024,
+      "length": 14,
+      "value": "\"TPAT_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83045,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83062,
+      "length": 17,
+      "value": "\"WIN_NOTIF_FIRED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83086,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83103,
+      "length": 19,
+      "value": "\"WIN_NOTIF_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83129,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83146,
+      "length": 24,
+      "value": "\"AD_EXPIRED_BEFORE_PLAY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83177,
+      "length": 2,
+      "value": "23"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83194,
+      "length": 13,
+      "value": "\"PLAY_AD_API\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83214,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83231,
+      "length": 14,
+      "value": "\"AD_LOAD_FAIL\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83252,
+      "length": 2,
+      "value": "25"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83269,
+      "length": 26,
+      "value": "\"VIEW_NOT_VISIBLE_ON_PLAY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83302,
+      "length": 2,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83319,
+      "length": 33,
+      "value": "\"MRAID_DOWNLOAD_JS_RETRY_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83359,
+      "length": 2,
+      "value": "27"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83376,
+      "length": 33,
+      "value": "\"OMSDK_DOWNLOAD_JS_RETRY_SUCCESS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83416,
+      "length": 2,
+      "value": "28"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83433,
+      "length": 20,
+      "value": "\"PRIVACY_URL_OPENED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83460,
+      "length": 2,
+      "value": "29"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83477,
+      "length": 23,
+      "value": "\"NOTIFICATION_REDIRECT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83507,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83524,
+      "length": 25,
+      "value": "\"AD_PLAY_RESET_ON_DEINIT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83556,
+      "length": 2,
+      "value": "31"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83573,
+      "length": 20,
+      "value": "\"TEMPLATE_HTML_SIZE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83600,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83617,
+      "length": 25,
+      "value": "\"CONFIG_LOADED_FROM_INIT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83649,
+      "length": 2,
+      "value": "33"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83666,
+      "length": 28,
+      "value": "\"CONFIG_LOADED_FROM_AD_LOAD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83701,
+      "length": 2,
+      "value": "34"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83718,
+      "length": 29,
+      "value": "\"CONFIG_LOADED_FROM_ADM_LOAD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83754,
+      "length": 2,
+      "value": "35"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83771,
+      "length": 32,
+      "value": "\"AD_SHOW_TO_PRESENT_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83810,
+      "length": 2,
+      "value": "36"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83827,
+      "length": 29,
+      "value": "\"AD_SHOW_TO_FAIL_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83863,
+      "length": 2,
+      "value": "37"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83880,
+      "length": 35,
+      "value": "\"AD_PRESENT_TO_DISPLAY_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83922,
+      "length": 2,
+      "value": "38"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83939,
+      "length": 21,
+      "value": "\"BID_TOKEN_REQUESTED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 83967,
+      "length": 2,
+      "value": "39"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 83984,
+      "length": 43,
+      "value": "\"BID_TOKEN_REQUEST_TO_RESPONSE_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84034,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84051,
+      "length": 39,
+      "value": "\"BID_TOKEN_REQUEST_TO_FAIL_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84097,
+      "length": 2,
+      "value": "41"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84114,
+      "length": 38,
+      "value": "\"AD_LOAD_TO_FAIL_CALLBACK_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84159,
+      "length": 2,
+      "value": "42"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84176,
+      "length": 30,
+      "value": "\"AD_SHOW_TO_CLOSE_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84213,
+      "length": 2,
+      "value": "43"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84230,
+      "length": 33,
+      "value": "\"AD_LOAD_TO_CALLBACK_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84270,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84287,
+      "length": 37,
+      "value": "\"AD_LOAD_TO_CALLBACK_ADO_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84331,
+      "length": 2,
+      "value": "45"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84348,
+      "length": 14,
+      "value": "\"SDK_INIT_API\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84369,
+      "length": 2,
+      "value": "46"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84386,
+      "length": 16,
+      "value": "\"AD_START_EVENT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84409,
+      "length": 2,
+      "value": "47"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84426,
+      "length": 16,
+      "value": "\"AD_CLICK_EVENT\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84449,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84466,
+      "length": 35,
+      "value": "\"AD_SHOW_TO_VALIDATION_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84508,
+      "length": 2,
+      "value": "49"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84525,
+      "length": 38,
+      "value": "\"AD_VALIDATION_TO_PRESENT_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84570,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84587,
+      "length": 22,
+      "value": "\"AD_LEAVE_APPLICATION\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84616,
+      "length": 2,
+      "value": "51"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84633,
+      "length": 16,
+      "value": "\"AD_REWARD_USER\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84656,
+      "length": 2,
+      "value": "52"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84673,
+      "length": 34,
+      "value": "\"AD_REQUIRED_DOWNLOAD_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84714,
+      "length": 2,
+      "value": "53"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84731,
+      "length": 34,
+      "value": "\"AD_OPTIONAL_DOWNLOAD_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84772,
+      "length": 2,
+      "value": "54"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84789,
+      "length": 33,
+      "value": "\"AD_BACKGROUND_BEFORE_IMPRESSION\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84829,
+      "length": 2,
+      "value": "55"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84846,
+      "length": 29,
+      "value": "\"AD_CLOSED_BEFORE_IMPRESSION\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84882,
+      "length": 2,
+      "value": "56"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84899,
+      "length": 15,
+      "value": "\"AD_VISIBILITY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84921,
+      "length": 2,
+      "value": "57"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 84938,
+      "length": 38,
+      "value": "\"INIT_TO_SUCCESS_CALLBACK_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 84983,
+      "length": 2,
+      "value": "58"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85000,
+      "length": 35,
+      "value": "\"INIT_TO_FAIL_CALLBACK_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85042,
+      "length": 2,
+      "value": "59"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85059,
+      "length": 36,
+      "value": "\"AD_START_TO_BACKGROUND_DURATION_MS\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85102,
+      "length": 4,
+      "value": "2000"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85121,
+      "length": 28,
+      "value": "\"SKOVERLAY_PRESENTED_FOR_AD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85156,
+      "length": 4,
+      "value": "2001"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85175,
+      "length": 25,
+      "value": "\"SAFARI_PRESENTED_FOR_AD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85207,
+      "length": 4,
+      "value": "2002"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85226,
+      "length": 28,
+      "value": "\"STORE_KIT_PRESENTED_FOR_AD\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85261,
+      "length": 4,
+      "value": "2003"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85280,
+      "length": 21,
+      "value": "\"STORE_KIT_NOT_READY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85308,
+      "length": 4,
+      "value": "2004"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85327,
+      "length": 26,
+      "value": "\"LAUNCH_STORE_KIT_REQUEST\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85360,
+      "length": 4,
+      "value": "2005"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85379,
+      "length": 26,
+      "value": "\"LAUNCH_SKOVERLAY_REQUEST\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85412,
+      "length": 4,
+      "value": "2006"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85431,
+      "length": 23,
+      "value": "\"LAUNCH_SAFARI_REQUEST\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85461,
+      "length": 4,
+      "value": "2007"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85480,
+      "length": 17,
+      "value": "\"IDFV_RESTRICTED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85504,
+      "length": 4,
+      "value": "2008"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85523,
+      "length": 36,
+      "value": "\"NOTIFICATION_WAIT_FOR_CONNECTIVITY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85566,
+      "length": 4,
+      "value": "2009"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85585,
+      "length": 20,
+      "value": "\"IDFV_VALUE_CHANGED\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85612,
+      "length": 4,
+      "value": "2010"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85631,
+      "length": 15,
+      "value": "\"AD_WILL_CLOSE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85653,
+      "length": 4,
+      "value": "2011"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85672,
+      "length": 38,
+      "value": "\"APP_TERM_DURING_AD_BEFORE_IMPRESSION\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 85717,
+      "length": 4,
+      "value": "3001"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 85736,
       "length": 30,
       "value": "\"HARDWARE_ACCELERATE_DISABLED\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 83604,
+      "offset": 85773,
       "length": 4,
       "value": "3002"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/protobuf\/sdk.pb.swift",
       "kind": "StringLiteral",
-      "offset": 83623,
+      "offset": 85792,
       "length": 22,
       "value": "\"BANNER_AUTO_REDIRECT\""
     },
@@ -26484,7 +26652,7 @@
       "kind": "StringLiteral",
       "offset": 79,
       "length": 7,
-      "value": "\"7.5.2\""
+      "value": "\"7.5.3\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/Constants.swift",
@@ -27861,63 +28029,70 @@
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1575,
+      "offset": 1616,
       "length": 7,
       "value": "\"Apple\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1654,
+      "offset": 1695,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1928,
+      "offset": 1969,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2058,
+      "offset": 2099,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/DeviceInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2217,
+      "offset": 2258,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/DeviceInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 2247,
+      "offset": 2288,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2435,
+      "offset": 2476,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/DeviceInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2665,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/DeviceInfo.swift",
       "kind": "BooleanLiteral",
-      "offset": 2858,
+      "offset": 2938,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Utils\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 3150,
+      "offset": 3230,
       "length": 22,
       "value": "\"!*'();:@&=+$,\/?%#[] \""
     },
@@ -29065,56 +29240,70 @@
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Public\/VungleError.swift",
       "kind": "IntegerLiteral",
-      "offset": 10693,
+      "offset": 10748,
+      "length": 4,
+      "value": "2010"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Public\/VungleError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10886,
+      "length": 4,
+      "value": "2011"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Public\/VungleError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10937,
       "length": 4,
       "value": "3001"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Public\/VungleError.swift",
       "kind": "IntegerLiteral",
-      "offset": 10802,
+      "offset": 11046,
       "length": 4,
       "value": "4000"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Public\/VungleError.swift",
       "kind": "IntegerLiteral",
-      "offset": 10863,
+      "offset": 11107,
       "length": 5,
       "value": "10001"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Public\/VungleError.swift",
       "kind": "IntegerLiteral",
-      "offset": 10954,
+      "offset": 11198,
       "length": 5,
       "value": "10002"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Public\/VungleError.swift",
       "kind": "IntegerLiteral",
-      "offset": 11047,
+      "offset": 11291,
       "length": 5,
       "value": "20001"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Public\/VungleError.swift",
       "kind": "IntegerLiteral",
-      "offset": 11126,
+      "offset": 11370,
       "length": 5,
       "value": "30001"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Public\/VungleError.swift",
       "kind": "IntegerLiteral",
-      "offset": 11227,
+      "offset": 11471,
       "length": 5,
       "value": "30002"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Public\/VungleError.swift",
       "kind": "IntegerLiteral",
-      "offset": 11330,
+      "offset": 11574,
       "length": 5,
       "value": "30003"
     },
@@ -29513,119 +29702,126 @@
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 4636,
+      "offset": 4670,
       "length": 16,
       "value": "\"user_app_state\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 4675,
+      "offset": 4709,
       "length": 9,
       "value": "\"os_name\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 4712,
+      "offset": 4746,
       "length": 14,
       "value": "\"volume_level\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 4755,
+      "offset": 4789,
       "length": 15,
       "value": "\"battery_level\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 4806,
+      "offset": 4840,
       "length": 23,
       "value": "\"battery_saver_enabled\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 4858,
+      "offset": 4892,
       "length": 15,
       "value": "\"battery_state\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 4964,
+      "offset": 4998,
       "length": 24,
       "value": "\"connection_type_detail\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 5019,
+      "offset": 5053,
       "length": 17,
       "value": "\"connection_type\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 5103,
+      "offset": 5137,
       "length": 11,
       "value": "\"time_zone\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 5147,
+      "offset": 5181,
       "length": 20,
       "value": "\"store_country_code\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 5196,
+      "offset": 5230,
       "length": 5,
       "value": "\"oit\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 5230,
+      "offset": 5264,
       "length": 5,
       "value": "\"ort\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 5514,
+      "offset": 5305,
+      "length": 5,
+      "value": "\"sit\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
+      "kind": "StringLiteral",
+      "offset": 5589,
       "length": 16,
       "value": "\"is_paying_user\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 5564,
+      "offset": 5639,
       "length": 21,
       "value": "\"days_in_application\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 5630,
+      "offset": 5705,
       "length": 33,
       "value": "\"consecutive_days_in_application\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 5695,
+      "offset": 5770,
       "length": 19,
       "value": "\"ads_clicked_count\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/vng-ios-sdk\/vng-ios-sdk\/Model\/RequestBody.swift",
       "kind": "StringLiteral",
-      "offset": 5742,
+      "offset": 5817,
       "length": 15,
       "value": "\"is_viral_user\""
     },

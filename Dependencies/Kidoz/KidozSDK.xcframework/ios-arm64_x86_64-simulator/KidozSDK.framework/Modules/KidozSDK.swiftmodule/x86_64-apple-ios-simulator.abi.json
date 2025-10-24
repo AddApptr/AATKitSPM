@@ -5,6 +5,891 @@
     "printedName": "KidozSDK",
     "children": [
       {
+        "kind": "TypeDecl",
+        "name": "KPBid",
+        "printedName": "KPBid",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8KidozSDK5KPBidC2idSSvp",
+            "mangledName": "$s8KidozSDK5KPBidC2idSSvp",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8KidozSDK5KPBidC2idSSvg",
+                "mangledName": "$s8KidozSDK5KPBidC2idSSvg",
+                "moduleName": "KidozSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "price",
+            "printedName": "price",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8KidozSDK5KPBidC5priceSdvp",
+            "mangledName": "$s8KidozSDK5KPBidC5priceSdvp",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8KidozSDK5KPBidC5priceSdvg",
+                "mangledName": "$s8KidozSDK5KPBidC5priceSdvg",
+                "moduleName": "KidozSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currency",
+            "printedName": "currency",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8KidozSDK5KPBidC8currencySSvp",
+            "mangledName": "$s8KidozSDK5KPBidC8currencySSvp",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8KidozSDK5KPBidC8currencySSvg",
+                "mangledName": "$s8KidozSDK5KPBidC8currencySSvg",
+                "moduleName": "KidozSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adType",
+            "printedName": "adType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8KidozSDK5KPBidC6adTypeSSvp",
+            "mangledName": "$s8KidozSDK5KPBidC6adTypeSSvp",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8KidozSDK5KPBidC6adTypeSSvg",
+                "mangledName": "$s8KidozSDK5KPBidC6adTypeSSvg",
+                "moduleName": "KidozSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(bidResponse:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KPBid",
+                "printedName": "KidozSDK.KPBid",
+                "usr": "c:@M@KidozSDK@objc(cs)KPBid"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8KidozSDK5KPBidC11bidResponseACSS_tcfc",
+            "mangledName": "$s8KidozSDK5KPBidC11bidResponseACSS_tcfc",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "isExpired",
+            "printedName": "isExpired()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KPBid(im)isExpired",
+            "mangledName": "$s8KidozSDK5KPBidC9isExpiredSbyF",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "expirationDate",
+            "printedName": "expirationDate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KPBid(im)expirationDate",
+            "mangledName": "$s8KidozSDK5KPBidC14expirationDate10Foundation0E0VSgyF",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "confirmWin",
+            "printedName": "confirmWin(nextHighestPrice:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8KidozSDK5KPBidC10confirmWin16nextHighestPriceySd_tF",
+            "mangledName": "$s8KidozSDK5KPBidC10confirmWin16nextHighestPriceySd_tF",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "confirmLoss",
+            "printedName": "confirmLoss(winningPrice:lossReason:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8KidozSDK5KPBidC11confirmLoss12winningPrice10lossReasonySd_SitF",
+            "mangledName": "$s8KidozSDK5KPBidC11confirmLoss12winningPrice10lossReasonySd_SitF",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@KidozSDK@objc(cs)KPBid(py)description",
+            "mangledName": "$s8KidozSDK5KPBidC11descriptionSSvp",
+            "moduleName": "KidozSDK",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@KidozSDK@objc(cs)KPBid(im)description",
+                "mangledName": "$s8KidozSDK5KPBidC11descriptionSSvg",
+                "moduleName": "KidozSDK",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "LostReason",
+            "printedName": "LostReason",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "impressionOpportunityExpired",
+                "printedName": "impressionOpportunityExpired",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KidozSDK.KPBid.LostReason.Type) -> KidozSDK.KPBid.LostReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LostReason",
+                        "printedName": "KidozSDK.KPBid.LostReason",
+                        "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KidozSDK.KPBid.LostReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LostReason",
+                            "printedName": "KidozSDK.KPBid.LostReason",
+                            "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8KidozSDK5KPBidC10LostReasonO28impressionOpportunityExpiredyA2EmF",
+                "mangledName": "$s8KidozSDK5KPBidC10LostReasonO28impressionOpportunityExpiredyA2EmF",
+                "moduleName": "KidozSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "missingBidPrice",
+                "printedName": "missingBidPrice",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KidozSDK.KPBid.LostReason.Type) -> KidozSDK.KPBid.LostReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LostReason",
+                        "printedName": "KidozSDK.KPBid.LostReason",
+                        "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KidozSDK.KPBid.LostReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LostReason",
+                            "printedName": "KidozSDK.KPBid.LostReason",
+                            "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8KidozSDK5KPBidC10LostReasonO15missingBidPriceyA2EmF",
+                "mangledName": "$s8KidozSDK5KPBidC10LostReasonO15missingBidPriceyA2EmF",
+                "moduleName": "KidozSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "missingMinimumCreativeApprovalData",
+                "printedName": "missingMinimumCreativeApprovalData",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KidozSDK.KPBid.LostReason.Type) -> KidozSDK.KPBid.LostReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LostReason",
+                        "printedName": "KidozSDK.KPBid.LostReason",
+                        "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KidozSDK.KPBid.LostReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LostReason",
+                            "printedName": "KidozSDK.KPBid.LostReason",
+                            "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8KidozSDK5KPBidC10LostReasonO34missingMinimumCreativeApprovalDatayA2EmF",
+                "mangledName": "$s8KidozSDK5KPBidC10LostReasonO34missingMinimumCreativeApprovalDatayA2EmF",
+                "moduleName": "KidozSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "bidBelowAuctionFloor",
+                "printedName": "bidBelowAuctionFloor",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KidozSDK.KPBid.LostReason.Type) -> KidozSDK.KPBid.LostReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LostReason",
+                        "printedName": "KidozSDK.KPBid.LostReason",
+                        "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KidozSDK.KPBid.LostReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LostReason",
+                            "printedName": "KidozSDK.KPBid.LostReason",
+                            "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8KidozSDK5KPBidC10LostReasonO20bidBelowAuctionFlooryA2EmF",
+                "mangledName": "$s8KidozSDK5KPBidC10LostReasonO20bidBelowAuctionFlooryA2EmF",
+                "moduleName": "KidozSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "bidBelowDealFloor",
+                "printedName": "bidBelowDealFloor",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KidozSDK.KPBid.LostReason.Type) -> KidozSDK.KPBid.LostReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LostReason",
+                        "printedName": "KidozSDK.KPBid.LostReason",
+                        "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KidozSDK.KPBid.LostReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LostReason",
+                            "printedName": "KidozSDK.KPBid.LostReason",
+                            "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8KidozSDK5KPBidC10LostReasonO17bidBelowDealFlooryA2EmF",
+                "mangledName": "$s8KidozSDK5KPBidC10LostReasonO17bidBelowDealFlooryA2EmF",
+                "moduleName": "KidozSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "lostToHigherBid",
+                "printedName": "lostToHigherBid",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KidozSDK.KPBid.LostReason.Type) -> KidozSDK.KPBid.LostReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LostReason",
+                        "printedName": "KidozSDK.KPBid.LostReason",
+                        "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KidozSDK.KPBid.LostReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LostReason",
+                            "printedName": "KidozSDK.KPBid.LostReason",
+                            "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8KidozSDK5KPBidC10LostReasonO15lostToHigherBidyA2EmF",
+                "mangledName": "$s8KidozSDK5KPBidC10LostReasonO15lostToHigherBidyA2EmF",
+                "moduleName": "KidozSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "lostToPMPBid",
+                "printedName": "lostToPMPBid",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KidozSDK.KPBid.LostReason.Type) -> KidozSDK.KPBid.LostReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LostReason",
+                        "printedName": "KidozSDK.KPBid.LostReason",
+                        "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KidozSDK.KPBid.LostReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LostReason",
+                            "printedName": "KidozSDK.KPBid.LostReason",
+                            "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8KidozSDK5KPBidC10LostReasonO12lostToPMPBidyA2EmF",
+                "mangledName": "$s8KidozSDK5KPBidC10LostReasonO12lostToPMPBidyA2EmF",
+                "moduleName": "KidozSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "buyerSeatBlocked",
+                "printedName": "buyerSeatBlocked",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(KidozSDK.KPBid.LostReason.Type) -> KidozSDK.KPBid.LostReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LostReason",
+                        "printedName": "KidozSDK.KPBid.LostReason",
+                        "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "KidozSDK.KPBid.LostReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LostReason",
+                            "printedName": "KidozSDK.KPBid.LostReason",
+                            "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:8KidozSDK5KPBidC10LostReasonO16buyerSeatBlockedyA2EmF",
+                "mangledName": "$s8KidozSDK5KPBidC10LostReasonO16buyerSeatBlockedyA2EmF",
+                "moduleName": "KidozSDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KidozSDK.KPBid.LostReason?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LostReason",
+                        "printedName": "KidozSDK.KPBid.LostReason",
+                        "usr": "s:8KidozSDK5KPBidC10LostReasonO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:8KidozSDK5KPBidC10LostReasonO8rawValueAESgSi_tcfc",
+                "mangledName": "$s8KidozSDK5KPBidC10LostReasonO8rawValueAESgSi_tcfc",
+                "moduleName": "KidozSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8KidozSDK5KPBidC10LostReasonO8rawValueSivp",
+                "mangledName": "$s8KidozSDK5KPBidC10LostReasonO8rawValueSivp",
+                "moduleName": "KidozSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8KidozSDK5KPBidC10LostReasonO8rawValueSivg",
+                    "mangledName": "$s8KidozSDK5KPBidC10LostReasonO8rawValueSivg",
+                    "moduleName": "KidozSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:8KidozSDK5KPBidC10LostReasonO",
+            "mangledName": "$s8KidozSDK5KPBidC10LostReasonO",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KidozSDK@objc(cs)KPBid",
+        "mangledName": "$s8KidozSDK5KPBidC",
+        "moduleName": "KidozSDK",
+        "objc_name": "KPBid",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -63,6 +948,319 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "KidozBid",
+        "printedName": "KidozBid",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(bidResponse:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBid",
+                "printedName": "KidozSDK.KidozBid",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozBid"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8KidozSDK0A3BidC11bidResponseACSS_tcfc",
+            "mangledName": "$s8KidozSDK0A3BidC11bidResponseACSS_tcfc",
+            "moduleName": "KidozSDK",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KidozSDK@objc(cs)KidozBid",
+        "mangledName": "$s8KidozSDK0A3BidC",
+        "moduleName": "KidozSDK",
+        "objc_name": "KidozBid",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:@M@KidozSDK@objc(cs)KPBid",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "KidozSDK.KPBid",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KidozSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KPError",
+        "printedName": "KPError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@KidozSDK@objc(cs)KPError(py)description",
+            "mangledName": "$s8KidozSDK7KPErrorC11descriptionSSvp",
+            "moduleName": "KidozSDK",
+            "overriding": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@KidozSDK@objc(cs)KPError(im)description",
+                "mangledName": "$s8KidozSDK7KPErrorC11descriptionSSvg",
+                "moduleName": "KidozSDK",
+                "overriding": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KPError",
+                "printedName": "KidozSDK.KPError",
+                "usr": "c:@M@KidozSDK@objc(cs)KPError"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KidozSDK@objc(cs)KPError(im)init",
+            "mangledName": "$s8KidozSDK7KPErrorCACycfc",
+            "moduleName": "KidozSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KidozSDK@objc(cs)KPError",
+        "mangledName": "$s8KidozSDK7KPErrorC",
+        "moduleName": "KidozSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KidozSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "KidozRewardedAd",
         "printedName": "KidozRewardedAd",
         "children": [
@@ -89,6 +1287,42 @@
             "moduleName": "KidozSDK",
             "static": true,
             "objc_name": "loadWithDelegate:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(bid:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBid",
+                "printedName": "KidozSDK.KidozBid",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozBid"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozRewardedDelegate",
+                "printedName": "any KidozSDK.KidozRewardedDelegate",
+                "usr": "c:@M@KidozSDK@objc(pl)KidozRewardedDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KidozRewardedAd(cm)loadWithBid:delegate:",
+            "mangledName": "$s8KidozSDK0A10RewardedAdC4load3bid8delegateyAA0A3BidC_AA0aC8Delegate_ptFZ",
+            "moduleName": "KidozSDK",
+            "static": true,
+            "objc_name": "loadWithBid:delegate:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -141,6 +1375,68 @@
             "mangledName": "$s8KidozSDK0A10RewardedAdC8isLoadedSbyF",
             "moduleName": "KidozSDK",
             "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestBid",
+            "printedName": "requestBid(delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBidRequestDelegate",
+                "printedName": "any KidozSDK.KidozBidRequestDelegate",
+                "usr": "c:@M@KidozSDK@objc(pl)KidozBidRequestDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KidozRewardedAd(cm)requestBidWithDelegate:",
+            "mangledName": "$s8KidozSDK0A10RewardedAdC10requestBid8delegateyAA0aF15RequestDelegate_p_tFZ",
+            "moduleName": "KidozSDK",
+            "static": true,
+            "objc_name": "requestBidWithDelegate:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSignal",
+            "printedName": "getSignal()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KidozRewardedAd(cm)getSignal",
+            "mangledName": "$s8KidozSDK0A10RewardedAdC9getSignalSSSgyFZ",
+            "moduleName": "KidozSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
               "AccessControl",
               "ObjC"
             ],
@@ -435,16 +1731,6 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "KidozSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
         "moduleName": "KidozSDK"
       },
       {
@@ -641,6 +1927,35 @@
           },
           {
             "kind": "Function",
+            "name": "load",
+            "printedName": "load(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KPBid",
+                "printedName": "KidozSDK.KPBid",
+                "usr": "c:@M@KidozSDK@objc(cs)KPBid"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KPBannerView(im)load:",
+            "mangledName": "$s8KidozSDK12KPBannerViewC4loadyyAA5KPBidCF",
+            "moduleName": "KidozSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "show",
             "printedName": "show()",
             "children": [
@@ -711,6 +2026,117 @@
               "Custom",
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isHidden",
+            "printedName": "isHidden",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@KidozSDK@objc(cs)KPBannerView(py)hidden",
+            "mangledName": "$s8KidozSDK12KPBannerViewC8isHiddenSbvp",
+            "moduleName": "KidozSDK",
+            "overriding": true,
+            "objc_name": "hidden",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@KidozSDK@objc(cs)KPBannerView(im)isHidden",
+                "mangledName": "$s8KidozSDK12KPBannerViewC8isHiddenSbvg",
+                "moduleName": "KidozSDK",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "isHidden",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@KidozSDK@objc(cs)KPBannerView(im)setHidden:",
+                "mangledName": "$s8KidozSDK12KPBannerViewC8isHiddenSbvs",
+                "moduleName": "KidozSDK",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "setHidden:",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "didMoveToWindow",
+            "printedName": "didMoveToWindow()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KPBannerView(im)didMoveToWindow",
+            "mangledName": "$s8KidozSDK12KPBannerViewC15didMoveToWindowyyF",
+            "moduleName": "KidozSDK",
+            "overriding": true,
+            "objc_name": "didMoveToWindow",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1721,36 +3147,6 @@
         "printedName": "KidozBannerView",
         "children": [
           {
-            "kind": "Function",
-            "name": "setDelegate",
-            "printedName": "setDelegate(delegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "KidozBannerDelegate",
-                "printedName": "any KidozSDK.KidozBannerDelegate",
-                "usr": "c:@M@KidozSDK@objc(pl)KidozBannerDelegate"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KidozSDK@objc(cs)KidozBannerView(im)setDelegateWithDelegate:",
-            "mangledName": "$s8KidozSDK0A10BannerViewC11setDelegate8delegateyAA0acF0_p_tF",
-            "moduleName": "KidozSDK",
-            "objc_name": "setDelegateWithDelegate:",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Var",
             "name": "delegate",
             "printedName": "delegate",
@@ -1868,6 +3264,102 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "setDelegate",
+            "printedName": "setDelegate(delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBannerDelegate",
+                "printedName": "any KidozSDK.KidozBannerDelegate",
+                "usr": "c:@M@KidozSDK@objc(pl)KidozBannerDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KidozBannerView(im)setDelegateWithDelegate:",
+            "mangledName": "$s8KidozSDK0A10BannerViewC11setDelegate8delegateyAA0acF0_p_tF",
+            "moduleName": "KidozSDK",
+            "objc_name": "setDelegateWithDelegate:",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestBid",
+            "printedName": "requestBid(delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBidRequestDelegate",
+                "printedName": "any KidozSDK.KidozBidRequestDelegate",
+                "usr": "c:@M@KidozSDK@objc(pl)KidozBidRequestDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KidozBannerView(cm)requestBidWithDelegate:",
+            "mangledName": "$s8KidozSDK0A10BannerViewC10requestBid8delegateyAA0aF15RequestDelegate_p_tFZ",
+            "moduleName": "KidozSDK",
+            "static": true,
+            "objc_name": "requestBidWithDelegate:",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSignal",
+            "printedName": "getSignal()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KidozBannerView(cm)getSignal",
+            "mangledName": "$s8KidozSDK0A10BannerViewC9getSignalSSSgyFZ",
+            "moduleName": "KidozSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Constructor",
@@ -3347,6 +4839,57 @@
           },
           {
             "kind": "Function",
+            "name": "isRTBTestMode",
+            "printedName": "isRTBTestMode()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8KidozSDK9TestUtilsC13isRTBTestModeSbyFZ",
+            "mangledName": "$s8KidozSDK9TestUtilsC13isRTBTestModeSbyFZ",
+            "moduleName": "KidozSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setRTBTestMode",
+            "printedName": "setRTBTestMode(isRTBTestMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8KidozSDK9TestUtilsC14setRTBTestMode02isfG0ySb_tFZ",
+            "mangledName": "$s8KidozSDK9TestUtilsC14setRTBTestMode02isfG0ySb_tFZ",
+            "moduleName": "KidozSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setEnvironment",
             "printedName": "setEnvironment(sdkTypeStr:environmentStr:)",
             "children": [
@@ -3824,6 +5367,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KidozSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "StoreKit",
         "printedName": "StoreKit",
         "declKind": "Import",
@@ -4034,6 +5587,111 @@
         "declKind": "Protocol",
         "usr": "c:@M@KidozSDK@objc(pl)KidozInterstitialDelegate",
         "mangledName": "$s8KidozSDK0A20InterstitialDelegateP",
+        "moduleName": "KidozSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KidozSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KidozBidRequestDelegate",
+        "printedName": "KidozBidRequestDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onBidResponse",
+            "printedName": "onBidResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBid",
+                "printedName": "KidozSDK.KidozBid",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozBid"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(pl)KidozBidRequestDelegate(im)onKidozBidResponse:",
+            "mangledName": "$s8KidozSDK0A18BidRequestDelegateP02onC8ResponseyyAA0aC0CF",
+            "moduleName": "KidozSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : KidozSDK.KidozBidRequestDelegate>",
+            "sugared_genericSig": "<Self where Self : KidozSDK.KidozBidRequestDelegate>",
+            "protocolReq": true,
+            "objc_name": "onKidozBidResponse:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozError",
+                "printedName": "KidozSDK.KidozError",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(pl)KidozBidRequestDelegate(im)onKidozError:",
+            "mangledName": "$s8KidozSDK0A18BidRequestDelegateP7onErroryyAA0aG0CF",
+            "moduleName": "KidozSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : KidozSDK.KidozBidRequestDelegate>",
+            "sugared_genericSig": "<Self where Self : KidozSDK.KidozBidRequestDelegate>",
+            "protocolReq": true,
+            "objc_name": "onKidozError:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@KidozSDK@objc(pl)KidozBidRequestDelegate",
+        "mangledName": "$s8KidozSDK0A18BidRequestDelegateP",
         "moduleName": "KidozSDK",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
@@ -5379,6 +7037,13 @@
       },
       {
         "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "KidozSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5451,6 +7116,42 @@
           },
           {
             "kind": "Function",
+            "name": "load",
+            "printedName": "load(bid:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBid",
+                "printedName": "KidozSDK.KidozBid",
+                "usr": "c:@M@KidozSDK@objc(cs)KidozBid"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozInterstitialDelegate",
+                "printedName": "any KidozSDK.KidozInterstitialDelegate",
+                "usr": "c:@M@KidozSDK@objc(pl)KidozInterstitialDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KidozInterstitialAd(cm)loadWithBid:delegate:",
+            "mangledName": "$s8KidozSDK0A14InterstitialAdC4load3bid8delegateyAA0A3BidC_AA0aC8Delegate_ptFZ",
+            "moduleName": "KidozSDK",
+            "static": true,
+            "objc_name": "loadWithBid:delegate:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "show",
             "printedName": "show(viewController:)",
             "children": [
@@ -5494,6 +7195,68 @@
             "mangledName": "$s8KidozSDK0A14InterstitialAdC8isLoadedSbyF",
             "moduleName": "KidozSDK",
             "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestBid",
+            "printedName": "requestBid(delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KidozBidRequestDelegate",
+                "printedName": "any KidozSDK.KidozBidRequestDelegate",
+                "usr": "c:@M@KidozSDK@objc(pl)KidozBidRequestDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KidozInterstitialAd(cm)requestBidWithDelegate:",
+            "mangledName": "$s8KidozSDK0A14InterstitialAdC10requestBid8delegateyAA0aF15RequestDelegate_p_tFZ",
+            "moduleName": "KidozSDK",
+            "static": true,
+            "objc_name": "requestBidWithDelegate:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSignal",
+            "printedName": "getSignal()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KidozSDK@objc(cs)KidozInterstitialAd(cm)getSignal",
+            "mangledName": "$s8KidozSDK0A14InterstitialAdC9getSignalSSSgyFZ",
+            "moduleName": "KidozSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
               "AccessControl",
               "ObjC"
             ],
@@ -5611,6 +7374,104 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "BooleanLiteral",
+      "offset": 248,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "StringLiteral",
+      "offset": 4005,
+      "length": 92,
+      "value": "\"\nid: \""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "StringLiteral",
+      "offset": 4017,
+      "length": 1,
+      "value": "\",\nprice: \""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "StringLiteral",
+      "offset": 4035,
+      "length": 1,
+      "value": "\",\ncurrency: \""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "StringLiteral",
+      "offset": 4059,
+      "length": 1,
+      "value": "\",\nexpiration: \""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "StringLiteral",
+      "offset": 4096,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4198,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4231,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4283,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4322,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4359,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4394,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4426,
+      "length": 3,
+      "value": "103"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBid.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4462,
+      "length": 3,
+      "value": "104"
+    },
+    {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/RedirectType.swift",
       "kind": "IntegerLiteral",
       "offset": 160,
@@ -5651,6 +7512,97 @@
       "offset": 191,
       "length": 5,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 287,
+      "length": 5,
+      "value": "10000"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 321,
+      "length": 5,
+      "value": "10400"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 352,
+      "length": 5,
+      "value": "10404"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 394,
+      "length": 5,
+      "value": "10414"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 442,
+      "length": 5,
+      "value": "10415"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 487,
+      "length": 5,
+      "value": "10415"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 522,
+      "length": 5,
+      "value": "10416"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 556,
+      "length": 5,
+      "value": "10417"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 590,
+      "length": 5,
+      "value": "10500"
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "StringLiteral",
+      "offset": 771,
+      "length": 45,
+      "value": "\"errorCode: \""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "StringLiteral",
+      "offset": 795,
+      "length": 7,
+      "value": "\" message: \""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPError.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/StringUtils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1737,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/InternetConnectionStatus.swift",
@@ -5891,60 +7843,11 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/AdError.swift",
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/RTB\/KPBidManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 280,
-      "length": 5,
-      "value": "10000"
-    },
-    {
-      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/AdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 314,
-      "length": 5,
-      "value": "10400"
-    },
-    {
-      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/AdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 345,
-      "length": 5,
-      "value": "10404"
-    },
-    {
-      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/AdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 379,
-      "length": 5,
-      "value": "10500"
-    },
-    {
-      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/AdError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 427,
-      "length": 5,
-      "value": "10414"
-    },
-    {
-      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/AdError.swift",
-      "kind": "StringLiteral",
-      "offset": 597,
-      "length": 45,
-      "value": "\"errorCode: \""
-    },
-    {
-      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/AdError.swift",
-      "kind": "StringLiteral",
-      "offset": 621,
-      "length": 7,
-      "value": "\" message: \""
-    },
-    {
-      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/AdError.swift",
-      "kind": "StringLiteral",
-      "offset": 641,
-      "length": 3,
-      "value": "\"\""
+      "offset": 3787,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/Banner\/KPBannerView.swift",
@@ -5990,57 +7893,64 @@
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/ClickThroughViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2882,
+      "length": 17,
+      "value": "\"kp_close_button\""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/ClickThroughViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3020,
+      "offset": 3079,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/ClickThroughViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3049,
+      "offset": 3108,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/ClickThroughViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3115,
+      "offset": 3174,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/ClickThroughViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3230,
+      "offset": 3289,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/ClickThroughViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3236,
+      "offset": 3295,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/ClickThroughViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3313,
+      "offset": 3372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/ClickThroughViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3342,
+      "offset": 3401,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/ClickThroughViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4388,
+      "offset": 4447,
       "length": 4,
       "value": "true"
     },
@@ -6082,7 +7992,7 @@
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/Banner\/BannerManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 473,
+      "offset": 510,
       "length": 4,
       "value": "true"
     },
@@ -6173,49 +8083,49 @@
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/WebViewWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 773,
+      "offset": 906,
       "length": 13,
       "value": "\"orientation\""
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/WebViewWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1109,
+      "offset": 1242,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/WebViewWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1154,
+      "offset": 1287,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/WebViewWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1198,
+      "offset": 1331,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/WebViewWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1455,
+      "offset": 1588,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/WebViewWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1566,
+      "offset": 1699,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/WebViewWrappers\/WebViewWrapper.swift",
       "kind": "Array",
-      "offset": 1685,
+      "offset": 1818,
       "length": 2,
       "value": "[]"
     },
@@ -6297,6 +8207,13 @@
       "value": "\"TEST_WATERFALL_URL_KEY\""
     },
     {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/TestUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 572,
+      "length": 22,
+      "value": "\"IS_RTB_TEST_MODE_KEY\""
+    },
+    {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/KPSessionData.swift",
       "kind": "BooleanLiteral",
       "offset": 200,
@@ -6365,6 +8282,13 @@
       "offset": 248,
       "length": 21,
       "value": "\"DEFAULT_INSTANCE_ID\""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/Fullscreen\/Interstitial\/KPInterstitialAd.swift",
+      "kind": "StringLiteral",
+      "offset": 1696,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KidozSDK\/KidozSDK\/KidozAPIConfiguration.swift",
@@ -6448,7 +8372,7 @@
       "kind": "StringLiteral",
       "offset": 20,
       "length": 8,
-      "value": "\"10.0.3\""
+      "value": "\"10.1.0\""
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/ParentalGate\/GateViewModel.swift",
@@ -6507,16 +8431,23 @@
       "value": "\"DEFAULT_INSTANCE_ID\""
     },
     {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/Fullscreen\/Rewarded\/KPRewardedAd.swift",
+      "kind": "StringLiteral",
+      "offset": 1589,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/Fullscreen\/FullscreenAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 288,
+      "offset": 295,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/AdUnits\/Fullscreen\/FullscreenAdManager.swift",
       "kind": "Array",
-      "offset": 353,
+      "offset": 360,
       "length": 2,
       "value": "[]"
     },
@@ -6589,6 +8520,13 @@
       "offset": 782,
       "length": 7,
       "value": "\"nonce\""
+    },
+    {
+      "filePath": "\/Users\/yarden\/Development\/iOS\/kpadplayer-ios-sdk\/KPAdPlayerSDK\/Utils\/Extensions\/Dictionary+JSON.swift",
+      "kind": "BooleanLiteral",
+      "offset": 198,
+      "length": 5,
+      "value": "false"
     }
   ]
 }

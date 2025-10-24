@@ -339,6 +339,7 @@ SWIFT_CLASS("_TtC6AATKit11AATAdConfig")
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
 @class NSString;
 
 @interface AATAdConfig (SWIFT_EXTENSION(AATKit))
@@ -471,6 +472,7 @@ typedef SWIFT_ENUM(NSInteger, AATAdNetwork, open) {
   AATAdNetworkADMOBBIDDING = 26,
 /// Meta bidding network, used internally.
   AATAdNetworkMETABIDDING = 27,
+  AATAdNetworkMOLOCOBIDDING = 28,
 };
 
 
@@ -641,6 +643,10 @@ SWIFT_PROTOCOL("_TtP6AATKit21AATAppOpenAdPlacement_")
 - (void)startAutoReload;
 /// Stop the automatic reloading of the placement.
 - (void)stopAutoReload;
+/// load a single ad
+/// \param forceLoad True if you want to be clear the previously loaded ad before loading a new ad
+///
+- (BOOL)reloadWithForceLoad:(BOOL)forceLoad;
 /// Requests placement reload.
 /// Works only if automatic reloading is disabled. In this case, the placement will not request a new ad after showing the current loaded one.
 - (BOOL)reload;
@@ -703,7 +709,7 @@ SWIFT_PROTOCOL("_TtP6AATKit27AATAppOpenPlacementDelegate_")
 @class AATBannerPlacementWrapperView;
 @class AATPlacementHistoryInfo;
 
-SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY(ios,introduced=13.0)
+SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_")
 @protocol AATAsyncInfeedBannerPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events
 @property (nonatomic, strong) id <AATInfeedBannerPlacementDelegate> _Nullable delegate;
@@ -736,7 +742,7 @@ SWIFT_PROTOCOL("_TtP6AATKit29AATAsyncInfeedBannerPlacement_") SWIFT_AVAILABILITY
 @protocol AATAsyncNativePlacementDelegate;
 @protocol AATNativeAdData;
 
-SWIFT_PROTOCOL("_TtP6AATKit25AATAsyncNativeAdPlacement_") SWIFT_AVAILABILITY(ios,introduced=13.0)
+SWIFT_PROTOCOL("_TtP6AATKit25AATAsyncNativeAdPlacement_")
 @protocol AATAsyncNativeAdPlacement <AATPlacement>
 /// Set the placement delegate that will listen to ad loading and display events.
 @property (nonatomic, strong) id <AATAsyncNativePlacementDelegate> _Nullable delegate;
@@ -1002,6 +1008,10 @@ SWIFT_CLASS("_TtC6AATKit27AATBannerCacheConfiguration")
 /// \param size the desired cache size
 ///
 - (nonnull instancetype)initWithPlacementName:(NSString * _Nonnull)placementName size:(NSInteger)size OBJC_DESIGNATED_INITIALIZER;
+/// Init the <code>AATBannerCacheConfiguration</code> object
+/// \param placementName the placement name
+///
+- (nonnull instancetype)initWithPlacementName:(NSString * _Nonnull)placementName OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1566,6 +1576,10 @@ SWIFT_PROTOCOL("_TtP6AATKit22AATFullscreenPlacement_")
 - (void)startAutoReload;
 /// Stop the automatic reloading of the placement.
 - (void)stopAutoReload;
+/// load a single ad
+/// \param forceLoad True if you want to be clear the previously loaded ad before loading a new ad
+///
+- (BOOL)reloadWithForceLoad:(BOOL)forceLoad;
 /// Requests placement reload.
 /// Works only if automatic reloading is disabled. In this case, the placement will not request a new ad after showing the current loaded one.
 - (BOOL)reload;
@@ -2209,6 +2223,10 @@ SWIFT_PROTOCOL("_TtP6AATKit25AATRewardedVideoPlacement_")
 /// Requests placement reload.
 /// Works only if automatic reloading is disabled. In this case, the placement will not request a new ad after showing the current loaded one.
 - (BOOL)reload;
+/// load a single ad
+/// \param forceLoad True if you want to be clear the previously loaded ad before loading a new ad
+///
+- (BOOL)reloadWithForceLoad:(BOOL)forceLoad;
 /// Returns true if there is an ad loaded.
 ///
 /// returns:
@@ -2736,6 +2754,29 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions14NetworkOptions")
 @end
 
 
+/// Banner ad options specific to SuperAwesome.
+SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
+@interface BannerOptions : NetworkOptions
+/// Initializes a new <code>BannerOptions</code> instance.
+/// \param parentalGateEnabled Enables or disables the Parental Gate. Default is <code>false</code>.
+///
+/// \param bumperPageEnabled Enables or disables the Bumper page. Default is <code>false</code>.
+///
+/// \param bumperPageCustomAppName Custom app name to display on the Bumper page.
+///
+/// \param bumperPageLogo Custom logo image for the Bumper page.
+///
+/// \param isBackgroundTransparent Enables or disables transparent background. Default is <code>true</code>.
+///
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
+@end
+
+
+@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
+@end
+
+
 /// Configuration options for SuperAwesome interstitial ads.
 SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 @interface InterstitialAdOptions : NetworkOptions
@@ -2753,29 +2794,6 @@ SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions21InterstitialAdOptions")
 /// \param bumperPageLogo Custom logo image for the Bumper page.
 ///
 - (nonnull instancetype)initWithOrientation:(enum Orientation)orientation closeButtonState:(enum CloseButtonState)closeButtonState parentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
-@end
-
-
-@interface AATSuperAwesomeOptions (SWIFT_EXTENSION(AATKit))
-@end
-
-
-/// Banner ad options specific to SuperAwesome.
-SWIFT_CLASS("_TtCC6AATKit22AATSuperAwesomeOptions13BannerOptions")
-@interface BannerOptions : NetworkOptions
-/// Initializes a new <code>BannerOptions</code> instance.
-/// \param parentalGateEnabled Enables or disables the Parental Gate. Default is <code>false</code>.
-///
-/// \param bumperPageEnabled Enables or disables the Bumper page. Default is <code>false</code>.
-///
-/// \param bumperPageCustomAppName Custom app name to display on the Bumper page.
-///
-/// \param bumperPageLogo Custom logo image for the Bumper page.
-///
-/// \param isBackgroundTransparent Enables or disables transparent background. Default is <code>true</code>.
-///
-- (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo isBackgroundTransparent:(BOOL)isBackgroundTransparent OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithParentalGateEnabled:(BOOL)parentalGateEnabled bumperPageEnabled:(BOOL)bumperPageEnabled bumperPageCustomAppName:(NSString * _Nullable)bumperPageCustomAppName bumperPageLogo:(UIImage * _Nullable)bumperPageLogo SWIFT_UNAVAILABLE;
 @end
 

@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/AATMetaBiddingAdapter</key>
 		<data>
-		mD97VjCszgTp0h+BvI2Nnr4lO/o=
+		5W3duDhDY0bnDpnVTf0ZgaMsmCk=
 		</data>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/FBAudienceNetwork.bundle/Info.plist</key>
 		<data>
@@ -15,14 +15,6 @@
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/FBAudienceNetwork.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
 		iJf6SpfSfy71MDcGI+K9k1a78DU=
-		</data>
-		<key>ios-arm64/AATMetaBiddingAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
-		<data>
-		RkTIXkD6EQ4oW4SBIzlomjA9E3c=
-		</data>
-		<key>ios-arm64/AATMetaBiddingAdapter.framework/GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		VWCA3MeaiPMoOAS1uOteTSLX8js=
 		</data>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Headers/AATAdMobDSPAdapter.h</key>
 		<data>
@@ -34,39 +26,31 @@
 		</data>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Info.plist</key>
 		<data>
-		3medsJqoOB+xq2YUWNrlvb5oAmM=
+		NaWV4xTZ5fANi88E76XvciU26Ds=
 		</data>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		5l5rGwjtKsg3/Qel9vd1Th8wSP0=
+		WNiPS74CFCpVhB/295/8LPgx+XE=
 		</data>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		B8ugMeGx7/eXir7V9q/hIH4Akdg=
+		vNeKXWpswkmojP7vMJ6T9lzFZmE=
 		</data>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		hSrmVCo3+E0yKIUhD/gTgZDCQAA=
+		gvFBn/uQPa3PR9FqIMjISJsURWs=
 		</data>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		B8ugMeGx7/eXir7V9q/hIH4Akdg=
+		vNeKXWpswkmojP7vMJ6T9lzFZmE=
 		</data>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Modules/module.modulemap</key>
 		<data>
 		9vU2fnOAqOKhZjy5y677VFuv9bo=
 		</data>
-		<key>ios-arm64/AATMetaBiddingAdapter.framework/UserMessagingPlatformResources.bundle/Info.plist</key>
-		<data>
-		VImeaoHC7CWVzlmPZon/F3UIhQM=
-		</data>
-		<key>ios-arm64/AATMetaBiddingAdapter.framework/UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		k9OFlDPBRWfteJ+bfG12WAoBuls=
-		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/AATMetaBiddingAdapter</key>
 		<data>
-		iJlIUxLc1JU8Ny8KS0ZCHmsHlbo=
+		EUSA6JIQqHkFpL5zzDOEbIYfLOU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/FBAudienceNetwork.bundle/Info.plist</key>
 		<data>
@@ -75,14 +59,6 @@
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/FBAudienceNetwork.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
 		iJf6SpfSfy71MDcGI+K9k1a78DU=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
-		<data>
-		+6puPR41J83CU5FluHRZWUw6x/4=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		VWCA3MeaiPMoOAS1uOteTSLX8js=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Headers/AATAdMobDSPAdapter.h</key>
 		<data>
@@ -94,51 +70,43 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Info.plist</key>
 		<data>
-		d7Lzb87LC5YyLZcHzKh5xitQUKY=
+		F9zMzIHT/fklxd9SCqcpy+ZQjck=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5l5rGwjtKsg3/Qel9vd1Th8wSP0=
+		WNiPS74CFCpVhB/295/8LPgx+XE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		h2L9W3Hkb1uz4WjAgw0wzjcwN8Y=
+		I4Pc5L9OD+JKfQOQpZNmbe68tyM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5QmedumRf5qUf89OU7c3+drYdMw=
+		i0xW5JyPhh0vO3al+aJbqIFuZKc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		h2L9W3Hkb1uz4WjAgw0wzjcwN8Y=
+		I4Pc5L9OD+JKfQOQpZNmbe68tyM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5l5rGwjtKsg3/Qel9vd1Th8wSP0=
+		WNiPS74CFCpVhB/295/8LPgx+XE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		CcBdYwEIim1H7a4R8NvVsYIE3n0=
+		mHjB8Y4/TIWhKKOMGEd/5WmBio0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pprIs8qMDC5vyB79v1IIr4stMbc=
+		oOy4tsrqxQof7BFxGbO8XEfZ6Io=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		CcBdYwEIim1H7a4R8NvVsYIE3n0=
+		mHjB8Y4/TIWhKKOMGEd/5WmBio0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/module.modulemap</key>
 		<data>
 		9vU2fnOAqOKhZjy5y677VFuv9bo=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/UserMessagingPlatformResources.bundle/Info.plist</key>
-		<data>
-		JLy/FMBSmsyoNOU2uEPz/OiG9u0=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		k9OFlDPBRWfteJ+bfG12WAoBuls=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -147,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mD97VjCszgTp0h+BvI2Nnr4lO/o=
+			5W3duDhDY0bnDpnVTf0ZgaMsmCk=
 			</data>
 			<key>hash2</key>
 			<data>
-			L4N455j1Sfy5fiUquv6wIu9vzhKXdon2K4nqaXirvXQ=
+			FyI13CW21MgvolTS7QpDErl488b531CdXgVIdox7wqI=
 			</data>
 		</dict>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/FBAudienceNetwork.bundle/Info.plist</key>
@@ -174,28 +142,6 @@
 			<key>hash2</key>
 			<data>
 			cSw93xWtIPxdaMlNpIyJu23eaMe/V5QkksYayESwhlc=
-			</data>
-		</dict>
-		<key>ios-arm64/AATMetaBiddingAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RkTIXkD6EQ4oW4SBIzlomjA9E3c=
-			</data>
-			<key>hash2</key>
-			<data>
-			cdauSqJlYD0xR04B/fZ2BWQwddZj9iPljTp8WrdWvH0=
-			</data>
-		</dict>
-		<key>ios-arm64/AATMetaBiddingAdapter.framework/GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VWCA3MeaiPMoOAS1uOteTSLX8js=
-			</data>
-			<key>hash2</key>
-			<data>
-			afsRJYL8I/wGxjXJYdJio/e0tWVNKEeHSR3jAA2t+dI=
 			</data>
 		</dict>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Headers/AATAdMobDSPAdapter.h</key>
@@ -224,55 +170,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3medsJqoOB+xq2YUWNrlvb5oAmM=
+			NaWV4xTZ5fANi88E76XvciU26Ds=
 			</data>
 			<key>hash2</key>
 			<data>
-			jp1cZgFkKZRgzSF94yDWYOmBCkuSVMWW5kiLsdMnExU=
+			dn80SUpKZ/U0LJxPFxc2/I7Kn+wx/Tvqssxqo5VsvCw=
 			</data>
 		</dict>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5l5rGwjtKsg3/Qel9vd1Th8wSP0=
+			WNiPS74CFCpVhB/295/8LPgx+XE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tUQ+dXkJqfu+ZsfU7qE7kSxghCGoc6Eyosw491t9vVU=
+			P5YPvGL8MSBERVXJO8KKQ4qMSm5/S4GARgKUgqToEBM=
 			</data>
 		</dict>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			B8ugMeGx7/eXir7V9q/hIH4Akdg=
+			vNeKXWpswkmojP7vMJ6T9lzFZmE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hre1uth6x75f/heZMFc73bAAWYv5yxXXYIzhkyUj4AM=
+			1MVIEmM82LzLJaAzLDNdOM8YRYS0ueKWoBBdaa4K9i4=
 			</data>
 		</dict>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hSrmVCo3+E0yKIUhD/gTgZDCQAA=
+			gvFBn/uQPa3PR9FqIMjISJsURWs=
 			</data>
 			<key>hash2</key>
 			<data>
-			H+/DRp7ugb4lUxxtz8Q3Fv/RxSzPn4o2FvsI0DbvX64=
+			lU2QyH811Pq6Of95L0vWBj90zc87w3n9Su0injefSFc=
 			</data>
 		</dict>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			B8ugMeGx7/eXir7V9q/hIH4Akdg=
+			vNeKXWpswkmojP7vMJ6T9lzFZmE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hre1uth6x75f/heZMFc73bAAWYv5yxXXYIzhkyUj4AM=
+			1MVIEmM82LzLJaAzLDNdOM8YRYS0ueKWoBBdaa4K9i4=
 			</data>
 		</dict>
 		<key>ios-arm64/AATMetaBiddingAdapter.framework/Modules/module.modulemap</key>
@@ -286,37 +232,15 @@
 			SZKi62tNPBr2yOquVST00IJqV42MAMGKAvheu78fIB8=
 			</data>
 		</dict>
-		<key>ios-arm64/AATMetaBiddingAdapter.framework/UserMessagingPlatformResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VImeaoHC7CWVzlmPZon/F3UIhQM=
-			</data>
-			<key>hash2</key>
-			<data>
-			OgOG0rR+VB6gMKK3JuXhuLCdCVUikhlI/MPpac5MF+Q=
-			</data>
-		</dict>
-		<key>ios-arm64/AATMetaBiddingAdapter.framework/UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			k9OFlDPBRWfteJ+bfG12WAoBuls=
-			</data>
-			<key>hash2</key>
-			<data>
-			RbetuZ/NLZYqHIAPv8wTJbV6f6QWX0FhgjI7tf/pyQA=
-			</data>
-		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/AATMetaBiddingAdapter</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iJlIUxLc1JU8Ny8KS0ZCHmsHlbo=
+			EUSA6JIQqHkFpL5zzDOEbIYfLOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			M+vEHnXooK5ACqo/HBj16pxKY2QjC3nPAGiHhNYLUsI=
+			iKZ2IIMrabVL93z337k88xWDQWr56LVmPH6uxsQgee8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/FBAudienceNetwork.bundle/Info.plist</key>
@@ -339,28 +263,6 @@
 			<key>hash2</key>
 			<data>
 			cSw93xWtIPxdaMlNpIyJu23eaMe/V5QkksYayESwhlc=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/GoogleMobileAdsResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+6puPR41J83CU5FluHRZWUw6x/4=
-			</data>
-			<key>hash2</key>
-			<data>
-			hOAdsd8Z+5aljkhri545YlcDJKb/ZvTSrzBTeWbJ8iw=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/GoogleMobileAdsResources.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			VWCA3MeaiPMoOAS1uOteTSLX8js=
-			</data>
-			<key>hash2</key>
-			<data>
-			afsRJYL8I/wGxjXJYdJio/e0tWVNKEeHSR3jAA2t+dI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Headers/AATAdMobDSPAdapter.h</key>
@@ -389,99 +291,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d7Lzb87LC5YyLZcHzKh5xitQUKY=
+			F9zMzIHT/fklxd9SCqcpy+ZQjck=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q3rSVVHtHMw/VowdKFERm/q8iBH0BDILiIk4ZG2rvAE=
+			qbo9sBrD4GSden0+3ZuUtAqOs0ho9IH2msnDAcGC6nM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5l5rGwjtKsg3/Qel9vd1Th8wSP0=
+			WNiPS74CFCpVhB/295/8LPgx+XE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tUQ+dXkJqfu+ZsfU7qE7kSxghCGoc6Eyosw491t9vVU=
+			P5YPvGL8MSBERVXJO8KKQ4qMSm5/S4GARgKUgqToEBM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h2L9W3Hkb1uz4WjAgw0wzjcwN8Y=
+			I4Pc5L9OD+JKfQOQpZNmbe68tyM=
 			</data>
 			<key>hash2</key>
 			<data>
-			wPJm8X29zu1jl5bhlhs/R4hak/QOR3WrSVh4VNelGHg=
+			jtzb+5BbhcISSLwr9WmeUDTps03VHoxqdSRj7gl5fCk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5QmedumRf5qUf89OU7c3+drYdMw=
+			i0xW5JyPhh0vO3al+aJbqIFuZKc=
 			</data>
 			<key>hash2</key>
 			<data>
-			9Y/AQ6Aiv4ZHGOkC1ZPNwILbur+0TCKHY++3cFNJUAY=
+			2HftC+LwWuLUgaWwDTfGouqG7ZjSncSin5hdhQA0Nc4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h2L9W3Hkb1uz4WjAgw0wzjcwN8Y=
+			I4Pc5L9OD+JKfQOQpZNmbe68tyM=
 			</data>
 			<key>hash2</key>
 			<data>
-			wPJm8X29zu1jl5bhlhs/R4hak/QOR3WrSVh4VNelGHg=
+			jtzb+5BbhcISSLwr9WmeUDTps03VHoxqdSRj7gl5fCk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5l5rGwjtKsg3/Qel9vd1Th8wSP0=
+			WNiPS74CFCpVhB/295/8LPgx+XE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tUQ+dXkJqfu+ZsfU7qE7kSxghCGoc6Eyosw491t9vVU=
+			P5YPvGL8MSBERVXJO8KKQ4qMSm5/S4GARgKUgqToEBM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CcBdYwEIim1H7a4R8NvVsYIE3n0=
+			mHjB8Y4/TIWhKKOMGEd/5WmBio0=
 			</data>
 			<key>hash2</key>
 			<data>
-			oqDWAqno8TavCVn230ZfM0LqoTp8tR2kXljW6Ccdcfo=
+			7vu+ISKffcBHJ5uGqkKR7tOBCSQNaSBZvE6mEG97ZCI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pprIs8qMDC5vyB79v1IIr4stMbc=
+			oOy4tsrqxQof7BFxGbO8XEfZ6Io=
 			</data>
 			<key>hash2</key>
 			<data>
-			UsjBh6d1JxpypXY4gfAF9kA4awksfGMsfPY/k+m8+9g=
+			3GxSDufpOsroGm4lM8+8HLhN6AX23wnpApwppllKlxY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/AATMetaBiddingAdapter.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CcBdYwEIim1H7a4R8NvVsYIE3n0=
+			mHjB8Y4/TIWhKKOMGEd/5WmBio0=
 			</data>
 			<key>hash2</key>
 			<data>
-			oqDWAqno8TavCVn230ZfM0LqoTp8tR2kXljW6Ccdcfo=
+			7vu+ISKffcBHJ5uGqkKR7tOBCSQNaSBZvE6mEG97ZCI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/Modules/module.modulemap</key>
@@ -493,28 +395,6 @@
 			<key>hash2</key>
 			<data>
 			SZKi62tNPBr2yOquVST00IJqV42MAMGKAvheu78fIB8=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/UserMessagingPlatformResources.bundle/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JLy/FMBSmsyoNOU2uEPz/OiG9u0=
-			</data>
-			<key>hash2</key>
-			<data>
-			RPHGQ2phXiS3U184QSVpV05rrB4LbxDqrt2KK2xRZts=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AATMetaBiddingAdapter.framework/UserMessagingPlatformResources.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			k9OFlDPBRWfteJ+bfG12WAoBuls=
-			</data>
-			<key>hash2</key>
-			<data>
-			RbetuZ/NLZYqHIAPv8wTJbV6f6QWX0FhgjI7tf/pyQA=
 			</data>
 		</dict>
 	</dict>

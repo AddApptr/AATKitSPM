@@ -71,40 +71,6 @@
         "printedName": "KidozSDK",
         "declKind": "Import",
         "moduleName": "AATKidozAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "AATKit",
-        "printedName": "AATKit",
-        "declKind": "Import",
-        "moduleName": "AATKidozAdapter",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KidozSDK",
-        "printedName": "KidozSDK",
-        "declKind": "Import",
-        "moduleName": "AATKidozAdapter"
-      },
-      {
-        "kind": "Import",
-        "name": "AATKit",
-        "printedName": "AATKit",
-        "declKind": "Import",
-        "moduleName": "AATKidozAdapter",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KidozSDK",
-        "printedName": "KidozSDK",
-        "declKind": "Import",
-        "moduleName": "AATKidozAdapter"
       }
     ],
     "json_format_version": 8

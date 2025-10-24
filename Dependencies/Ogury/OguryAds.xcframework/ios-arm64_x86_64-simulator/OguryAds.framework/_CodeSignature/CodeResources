@@ -4,82 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/StoreKitTest.framework/Info.plist</key>
-		<data>
-		HABOf/z7GTCR4rlUbmEsPmlp9s0=
-		</data>
-		<key>Frameworks/StoreKitTest.framework/StoreKitTest</key>
-		<data>
-		jLD+38+b3r96UK3TK0vXyPN6S7g=
-		</data>
-		<key>Frameworks/StoreKitTest.framework/_CodeSignature/CodeResources</key>
-		<data>
-		PYM23SlMGa+2YjA7tM+8F1JDEdk=
-		</data>
-		<key>Frameworks/StoreKitTest.framework/version.plist</key>
-		<data>
-		w8UiePacZpMRVrBr13KBpt9GNo8=
-		</data>
-		<key>Frameworks/libswiftAccelerate.dylib</key>
-		<data>
-		y8Tv5r0s9i31yFg5mHQtkT0H0YY=
-		</data>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<data>
-		e+etht4vXG3Nm4Pga0/xdTbO1tc=
-		</data>
-		<key>Frameworks/libswiftCoreFoundation.dylib</key>
-		<data>
-		7yjtiy9fbmg39z+5ktRgqFY4hG0=
-		</data>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<data>
-		E4S7h29mVSdHwiomBzERowifWEE=
-		</data>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<data>
-		uxJ3YlmhN+1i/k11KhcBxmzoGGk=
-		</data>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<data>
-		TEqw4FfX5cM5Kqb6/RRC1yMPX/E=
-		</data>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<data>
-		n6PasKK5e3hrAYssTyb/ccH3IQA=
-		</data>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<data>
-		YxM5m5ORfOrvsZdoMAluyrOTk8s=
-		</data>
-		<key>Frameworks/libswiftMetal.dylib</key>
-		<data>
-		lW6xa0z3rMRqCERgbUII+mYKuW8=
-		</data>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<data>
-		svO5IbgGlNDCwLpdoS1ItKOwbVI=
-		</data>
-		<key>Frameworks/libswiftQuartzCore.dylib</key>
-		<data>
-		xYegneVi5bl5gkR/RvQsEB2myNo=
-		</data>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<data>
-		lPYRlcOQDallbL3DQEPru2pjf68=
-		</data>
-		<key>Frameworks/libswift_Concurrency.dylib</key>
-		<data>
-		RiHusyrNbUBpFP9/mJiEiOSMSsA=
-		</data>
-		<key>Frameworks/libswiftos.dylib</key>
-		<data>
-		03rBz2x9hqDBwAMSOaVpvKMChyw=
-		</data>
-		<key>Frameworks/libswiftsimd.dylib</key>
-		<data>
-		d/gO0Lef+BmXtgMmYbAHn1KjB74=
-		</data>
 		<key>Headers/OguryAdError.h</key>
 		<data>
 		HO3AmsyTuo4Z0TVQ1bQ3uB8yMek=
@@ -122,7 +46,7 @@
 		</data>
 		<key>Headers/OguryMediation.h</key>
 		<data>
-		tJqm6CyjxNBfM3ECtttwYPt/FwY=
+		1ouFjXqru3ikT+zeVssYG9jduM4=
 		</data>
 		<key>Headers/OguryOffset.h</key>
 		<data>
@@ -158,242 +82,61 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rViobiykWDJWQnLjpv1NRhdbHQI=
+		mMOEynurV80L6GgsW0GuB+/5fsc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		l4jfV95e8aN1Yw7JqgnaDn4DUag=
+		guuBi/3vMjt+8nc28rR/7+79Q0M=
 		</data>
 		<key>Modules/module.private.modulemap</key>
 		<data>
-		5VlW+d5jjWakSfeaRtPu3G1ihVk=
+		guuBi/3vMjt+8nc28rR/7+79Q0M=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		uChE/Okb8gLs7gMXEUzx7q2w9Pc=
 		</data>
+		<key>PrivateHeaders/OGAAd+Private.h</key>
+		<data>
+		RA2/dl1o0s8E0kpwv2PHCVzgzr8=
+		</data>
+		<key>PrivateHeaders/OGAAdLogMessage.h</key>
+		<data>
+		yGOPJFIj29yiOp/j2s/zRejU4v8=
+		</data>
 		<key>PrivateHeaders/OGAInternal.h</key>
 		<data>
-		AID5ppJoTROdjkib3++Tc1LvTk0=
+		+1EXHB1CerLJzzoCUd1XKyQKr64=
+		</data>
+		<key>PrivateHeaders/OGALog.h</key>
+		<data>
+		jiDIvXxtyrrTGam7aHapHMxn37Y=
+		</data>
+		<key>PrivateHeaders/OGAMonitoringLogMessage.h</key>
+		<data>
+		vUssZPHS8IzhK4urSZb8O7i7Xrs=
+		</data>
+		<key>PrivateHeaders/OGAMraidLogMessage.h</key>
+		<data>
+		CM5RYR9lc0CxnPZC7MEEiQ0hPMw=
+		</data>
+		<key>PrivateHeaders/OGASdkConsumer.h</key>
+		<data>
+		9cb0xJxJ0SSuuJC5VgSwF4jUl1w=
+		</data>
+		<key>PrivateHeaders/OGAWebViewUserAgentService.h</key>
+		<data>
+		51dFEJt1Nu7NY5Q6vn88EaU8sLQ=
+		</data>
+		<key>PrivateHeaders/OguryAds+Log.h</key>
+		<data>
+		/xXk9z/rLRv+EuSAXR3Tn/i2iqI=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/StoreKitTest.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HABOf/z7GTCR4rlUbmEsPmlp9s0=
-			</data>
-			<key>hash2</key>
-			<data>
-			bb8PXCsJKcyMbdrB8LaOy1DE6ABRheeEdRJWoZEMFrU=
-			</data>
-		</dict>
-		<key>Frameworks/StoreKitTest.framework/StoreKitTest</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jLD+38+b3r96UK3TK0vXyPN6S7g=
-			</data>
-			<key>hash2</key>
-			<data>
-			/v0HmPwuELaZnukf1wtYWA2A8VLV1rRC1v/9UOt/hfc=
-			</data>
-		</dict>
-		<key>Frameworks/StoreKitTest.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PYM23SlMGa+2YjA7tM+8F1JDEdk=
-			</data>
-			<key>hash2</key>
-			<data>
-			wxHkGL5S20vxfVFGUVMwTiOeoITATHcYJ8nK47ZD6is=
-			</data>
-		</dict>
-		<key>Frameworks/StoreKitTest.framework/version.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			w8UiePacZpMRVrBr13KBpt9GNo8=
-			</data>
-			<key>hash2</key>
-			<data>
-			h+N8oKoyewuFOozKQWwDDdEU7JbTyrg92VZvaW/oORY=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftAccelerate.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			y8Tv5r0s9i31yFg5mHQtkT0H0YY=
-			</data>
-			<key>hash2</key>
-			<data>
-			Bz7v7K4ZA7rAUWGqJd41x4ZkRpgsBlN1nNWXU9wrUjs=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			e+etht4vXG3Nm4Pga0/xdTbO1tc=
-			</data>
-			<key>hash2</key>
-			<data>
-			KwuTZxDrWIp+2NaOf8uQ1VHpBCT49F1VkqUR8QdJ33k=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreFoundation.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7yjtiy9fbmg39z+5ktRgqFY4hG0=
-			</data>
-			<key>hash2</key>
-			<data>
-			16qgRqHxuhewuN/w6J/68Y8orYO7GEezGmSTl+dT+/g=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			E4S7h29mVSdHwiomBzERowifWEE=
-			</data>
-			<key>hash2</key>
-			<data>
-			BirHaumjja5SJSKuIr/6eDicxW92icQCgLJ/1NF9bkU=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			uxJ3YlmhN+1i/k11KhcBxmzoGGk=
-			</data>
-			<key>hash2</key>
-			<data>
-			8qEohMKlqEHIkjqEyiixoVN/SdBIVmI7CtnYAKcRYeQ=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TEqw4FfX5cM5Kqb6/RRC1yMPX/E=
-			</data>
-			<key>hash2</key>
-			<data>
-			Fao+nkG30UiGaYKByo7YS9eWwT3MaVraxVGTFo/0M3I=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			n6PasKK5e3hrAYssTyb/ccH3IQA=
-			</data>
-			<key>hash2</key>
-			<data>
-			NquPaEQO7X6If48BPSI5GY8HnO0AbtDBp2eo3eC2j2c=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YxM5m5ORfOrvsZdoMAluyrOTk8s=
-			</data>
-			<key>hash2</key>
-			<data>
-			LDZQ6NHe247syzVYTYbgMABPH/PBAgVbcf+aRQ07Blw=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftMetal.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lW6xa0z3rMRqCERgbUII+mYKuW8=
-			</data>
-			<key>hash2</key>
-			<data>
-			sWlf80k9TOUIvxlp5xG+ZAGScrs5Iu4k7ysdNdF2pBk=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			svO5IbgGlNDCwLpdoS1ItKOwbVI=
-			</data>
-			<key>hash2</key>
-			<data>
-			UMQoiaw61sDBO5uNLdBTnAOToG/xkW6uPCzdWdmPMl4=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftQuartzCore.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			xYegneVi5bl5gkR/RvQsEB2myNo=
-			</data>
-			<key>hash2</key>
-			<data>
-			XF28v8ejKjfvFavGk5LZ+/GWXL9wt2TgmHkE74RmFR8=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lPYRlcOQDallbL3DQEPru2pjf68=
-			</data>
-			<key>hash2</key>
-			<data>
-			OvYuAB28oI+5z9+QKuZ4PMV0wTfeOfMEOM77wZjq2i8=
-			</data>
-		</dict>
-		<key>Frameworks/libswift_Concurrency.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			RiHusyrNbUBpFP9/mJiEiOSMSsA=
-			</data>
-			<key>hash2</key>
-			<data>
-			00/tLxqdsUmOtcmWZ9nef6MNOxQ4tx7XvNYs2jINIUw=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftos.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			03rBz2x9hqDBwAMSOaVpvKMChyw=
-			</data>
-			<key>hash2</key>
-			<data>
-			gfLO5w1W+FlUPVtpJvR/tbjeO8t8EfoRtMVZYfvKB7s=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftsimd.dylib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			d/gO0Lef+BmXtgMmYbAHn1KjB74=
-			</data>
-			<key>hash2</key>
-			<data>
-			Nl+HQWS+q9PTEeMRK/QaTGvHNTxslalf1rZDR6+WqpY=
-			</data>
-		</dict>
 		<key>Headers/OguryAdError.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HO3AmsyTuo4Z0TVQ1bQ3uB8yMek=
-			</data>
 			<key>hash2</key>
 			<data>
 			paZuc0bjZscG+iW8tFD4WAoBkYa+eceI9edAB4v6qvo=
@@ -401,10 +144,6 @@
 		</dict>
 		<key>Headers/OguryAds.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rKqASok/CRZoYTFv0ETmOrAIcjs=
-			</data>
 			<key>hash2</key>
 			<data>
 			38RC0bROtU+KwIpxPNwu7beEgnV4Hhn5xTVew0CCj/0=
@@ -412,10 +151,6 @@
 		</dict>
 		<key>Headers/OguryBannerAdSize.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WvKLhzodKVNHE9IhS64knEuyLFY=
-			</data>
 			<key>hash2</key>
 			<data>
 			AoH2Vhl01S2fo4AY8qeVJJcAEGVK+E9G2RXOF/KTQa8=
@@ -423,10 +158,6 @@
 		</dict>
 		<key>Headers/OguryBannerAdView.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ma54HGfJlQUjsfwW5OdSilMF9Cg=
-			</data>
 			<key>hash2</key>
 			<data>
 			jBkxVVpep7JxfWih2t2Tf5X+B7E3Yhazf8Bz6d0WlFI=
@@ -434,10 +165,6 @@
 		</dict>
 		<key>Headers/OguryBannerAdViewDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xb5qgldUdjJ3wamDo9wEYbea86s=
-			</data>
 			<key>hash2</key>
 			<data>
 			L47g4zkzVZd4loFAloQ8iwx3O3WpnIxcHFJnQRECUE8=
@@ -445,10 +172,6 @@
 		</dict>
 		<key>Headers/OguryBidTokenErrorCode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			0Fb0cWBqPzJiniuvaEC1YAkT1hY=
-			</data>
 			<key>hash2</key>
 			<data>
 			nVQmA75GGZd/zGuYCOUSavDcxWiMOnlRWUQomv9b/Os=
@@ -456,10 +179,6 @@
 		</dict>
 		<key>Headers/OguryBidTokenService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9lCD0fdPYRKE3V0gyDTQs1sK8LY=
-			</data>
 			<key>hash2</key>
 			<data>
 			NsSyQ+0YSCz8+zDHd0pmS7kzxYtOgGS8/XtDIwXAX/s=
@@ -467,10 +186,6 @@
 		</dict>
 		<key>Headers/OguryInterstitialAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3LNNz8q6h0OEGcapEoiEc/jI15M=
-			</data>
 			<key>hash2</key>
 			<data>
 			2BhrCgck+KFVWEyqVICbbim9vJiwcJqgZDhDfHA9PAo=
@@ -478,10 +193,6 @@
 		</dict>
 		<key>Headers/OguryInterstitialAdDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Tf6FT45flXgnCKyPCZXBSU626aQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			44IUsQoJK8J6eB5dE/2cfO3sg4kUjW+jDZDcZtF1S/w=
@@ -489,10 +200,6 @@
 		</dict>
 		<key>Headers/OguryLoadErrorCode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xEBt22UGIePZ4VfBkVYI1V3kwds=
-			</data>
 			<key>hash2</key>
 			<data>
 			zv9E2c1/0PtBESI+0glCbNrd13fn+6IJe4JqoWN2J6M=
@@ -500,21 +207,13 @@
 		</dict>
 		<key>Headers/OguryMediation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tJqm6CyjxNBfM3ECtttwYPt/FwY=
-			</data>
 			<key>hash2</key>
 			<data>
-			qjK8yD+3CeFxmy5/Hx8cTxdqsMZrrae7Q8OOwsCFjbU=
+			La1bsTAPfDCn5NRLjimNjHlJ9WM2ogVlQkE44e7diu8=
 			</data>
 		</dict>
 		<key>Headers/OguryOffset.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pfBHszF8b5KEqOnij53uzQUNhJ0=
-			</data>
 			<key>hash2</key>
 			<data>
 			tQblicnv5lBMkgKu3sPI8tUFFsIihrh8XqGeo0pfoH4=
@@ -522,10 +221,6 @@
 		</dict>
 		<key>Headers/OguryRectCorner.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fzRft5TDoLjyG4ODyoOEuJOcgFo=
-			</data>
 			<key>hash2</key>
 			<data>
 			E3wN571BNfud/CX1FXmVcGrbD0fE5PGx2HhIfErXrgk=
@@ -533,10 +228,6 @@
 		</dict>
 		<key>Headers/OguryReward.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lQHptadNuYejUuPs9++oy95g9E0=
-			</data>
 			<key>hash2</key>
 			<data>
 			Cm3NDJ/K3HmwyeFjltZPYYpufGjMxqFeFxGAE5WTsos=
@@ -544,10 +235,6 @@
 		</dict>
 		<key>Headers/OguryRewardedAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5ZJNH3uN48k0bCWQl/9XSBht3kQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			ep8hBt5BBW1xpfV5+t3CKhufuNQ8hXq4tEXmGDMQm/4=
@@ -555,10 +242,6 @@
 		</dict>
 		<key>Headers/OguryRewardedAdDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			sGJlskGq4VVBWH2Af3kQeIfgIh0=
-			</data>
 			<key>hash2</key>
 			<data>
 			Q1lk6zO/IDzhLriEcTZxGeHCmqhND9pFdmqMUW0wrr8=
@@ -566,10 +249,6 @@
 		</dict>
 		<key>Headers/OguryShowErrorCode.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			q2styp0F3oa5WOwxtFh71N5vIcw=
-			</data>
 			<key>hash2</key>
 			<data>
 			Pu8+jgt6q1K/I7ONi6Rvl4mKMjlE9DUV4s33QllK56A=
@@ -577,10 +256,6 @@
 		</dict>
 		<key>Headers/OguryThumbnailAd.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Vsh1q2Ax3T5M3W17bs+uqWX4f+c=
-			</data>
 			<key>hash2</key>
 			<data>
 			Yox6MIrjZ27AQbVffyDxXIywN92yE53CvxmUE6fsqKg=
@@ -588,10 +263,6 @@
 		</dict>
 		<key>Headers/OguryThumbnailAdDelegate.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8p4AIgflmOKC05keGgEx6O3xgfo=
-			</data>
 			<key>hash2</key>
 			<data>
 			NYz5K9kHBLzHuF2ZxOSXTnrbUV4O3Ns1sySmah46gtI=
@@ -599,46 +270,86 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			l4jfV95e8aN1Yw7JqgnaDn4DUag=
-			</data>
 			<key>hash2</key>
 			<data>
-			0yI2jq+/IVJV/P6Ia/fgzmq8Xg3VAPTjPgnPSEaJ9Bk=
+			UxwCeH/gZbRdc3TvAA0/PG2aIrTMcnaqE9gAvGaqOq0=
 			</data>
 		</dict>
 		<key>Modules/module.private.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5VlW+d5jjWakSfeaRtPu3G1ihVk=
-			</data>
 			<key>hash2</key>
 			<data>
-			xTH1+Mf/UIZBhBuypzvxipK+KUNCv0l8J65k3d4u/Io=
+			UxwCeH/gZbRdc3TvAA0/PG2aIrTMcnaqE9gAvGaqOq0=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uChE/Okb8gLs7gMXEUzx7q2w9Pc=
-			</data>
 			<key>hash2</key>
 			<data>
 			XYJTrt2yogm/CRrfKDcirTkNSiwUHeqsh28qqqYRkJU=
 			</data>
 		</dict>
-		<key>PrivateHeaders/OGAInternal.h</key>
+		<key>PrivateHeaders/OGAAd+Private.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AID5ppJoTROdjkib3++Tc1LvTk0=
-			</data>
 			<key>hash2</key>
 			<data>
-			ToWodea70cJjntyoZOswTuzb6WDHjlmyuMM+pmq4K3g=
+			gWit28X5ksAut4VbetCsh1Jt2eDOjwiLh6EwrPEUr3E=
+			</data>
+		</dict>
+		<key>PrivateHeaders/OGAAdLogMessage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mHTQQ90NT3S3NHWkch0xB1sZKlZBQQ4vVmrqAQvKaEM=
+			</data>
+		</dict>
+		<key>PrivateHeaders/OGAInternal.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qi9YLFMRolBUzGAlhZWenEjoHi96InqzBMo8O229xQ8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/OGALog.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ySt19uQQWKPtPeB7JbMdebqi3IcLHy92SxLz3X8yTUk=
+			</data>
+		</dict>
+		<key>PrivateHeaders/OGAMonitoringLogMessage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6Gtr4xDq6AUiJtyEd2G+DahOj0iZ9Kb0hkc8vxHy698=
+			</data>
+		</dict>
+		<key>PrivateHeaders/OGAMraidLogMessage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ES2D/fnfq+Kgddb7HAipBJgkIiPX17RX9h2/gGVPE28=
+			</data>
+		</dict>
+		<key>PrivateHeaders/OGASdkConsumer.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZqRoyeCNncCAOF9/IC0vv1+D+jHU1+3dnji51ayELRA=
+			</data>
+		</dict>
+		<key>PrivateHeaders/OGAWebViewUserAgentService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KTk912y6X5FkM5wMIakTVPLk1cdV79VjLQz5JEHRD48=
+			</data>
+		</dict>
+		<key>PrivateHeaders/OguryAds+Log.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			liM1qztGshqFCZ5AwQzH+7SkKEUiSKuKZPaMpMoj9V8=
 			</data>
 		</dict>
 	</dict>
