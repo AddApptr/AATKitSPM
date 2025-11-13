@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AATKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AATKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 @_exported import AATKit
 import AdSupport
 import AppTrackingTransparency
@@ -206,7 +206,7 @@ extension AATKit.AATAdDriverProtocol {
 }
 @available(iOS 15.0, *)
 extension AATKit.AATPlacementHistoryInfo : Swift.Identifiable {
-  @available(iOS 15.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @available(iOS 15.0, *)
   public typealias ID = Swift.ObjectIdentifier
 }
 @_documentation(visibility: internal) @objc public protocol AATAdMobCustomEvents {
@@ -507,7 +507,7 @@ extension AATKit.AATConfiguration {
   @objc deinit
 }
 @objc public protocol AATInfeedBannerPlacement : AATKit.AATPlacement {
-  typealias AATRequestCompletion = ((_ view: AATKit.AATBannerPlacementWrapperView?, _ error: AATKit.AATBannerRequestError?) -> Swift.Void)
+  typealias AATRequestCompletion = (_ view: AATKit.AATBannerPlacementWrapperView?, _ error: AATKit.AATBannerRequestError?) -> Swift.Void
   @objc var delegate: (any AATKit.AATInfeedBannerPlacementDelegate)? { get set }
   @objc var statisticsDelegate: (any AATKit.AATStatisticsDelegate)? { get set }
   @objc var impressionDelegate: (any AATKit.AATImpressionDelegate)? { get set }
@@ -704,12 +704,12 @@ extension AATKit.AATConfiguration {
   @objc deinit
 }
 @_documentation(visibility: internal) public protocol AATUTIQDriverProtocol : AATKit.AATInitializable {
-  func fetchUtiqData(completion: @escaping ((Swift.String?, Swift.String?) -> Swift.Void))
+  func fetchUtiqData(completion: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers @_documentation(visibility: internal) public class AATUTIQDriver {
   public static let shared: AATKit.AATUTIQDriver
   public func initDriver() -> (any AATKit.AATUTIQDriverProtocol)?
-  public func fetchUtiqData(driver: (any AATKit.AATUTIQDriverProtocol)?, completion: @escaping ((Swift.String?, Swift.String?) -> Swift.Void))
+  public func fetchUtiqData(driver: (any AATKit.AATUTIQDriverProtocol)?, completion: @escaping (Swift.String?, Swift.String?) -> Swift.Void)
   @objc deinit
 }
 @available(iOS 13.0, *)
@@ -1262,13 +1262,12 @@ extension AATKit.AATDebugInfo.PlacementDebugInfo {
   public var creativeId: Swift.String?
   public var bidder: Swift.String?
   public init(network: AATKit.AATAdNetwork, timestamp: Foundation.TimeInterval = Date().timeIntervalSince1970, creativeId: Swift.String?, bidder: Swift.String? = nil)
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Swift.ObjectIdentifier
   @objc deinit
 }
 @available(iOS 15.0, *)
 @_documentation(visibility: internal) extension AATKit.AATDebugInfo.PlacementDebugInfo : Swift.Identifiable {
-  @available(iOS 15.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @available(iOS 15.0, *)
   public typealias ID = Swift.ObjectIdentifier
 }
 @objc public protocol AATReportsDelegate {
@@ -1398,9 +1397,9 @@ extension AATKit.AATDebugInfo.PlacementDebugInfo {
 }
 @_documentation(visibility: internal) public protocol AATDFPPreBidDriverProtocol {
   static var timeOutInSeconds: Foundation.TimeInterval { get }
-  static func loadBannerAd(extraInfo: Swift.String, bannerSize: CoreFoundation.CGSize, request: Any, completion: @escaping ((Any) -> Swift.Void))
-  static func loadFullscreenAd(extraInfo: Swift.String, request: Any, completion: @escaping ((Any) -> Swift.Void))
-  static func loadRewardedAd(extraInfo: Swift.String, request: Any, completion: @escaping ((Any) -> Swift.Void))
+  static func loadBannerAd(extraInfo: Swift.String, bannerSize: CoreFoundation.CGSize, request: Any, completion: @escaping (Any) -> Swift.Void)
+  static func loadFullscreenAd(extraInfo: Swift.String, request: Any, completion: @escaping (Any) -> Swift.Void)
+  static func loadRewardedAd(extraInfo: Swift.String, request: Any, completion: @escaping (Any) -> Swift.Void)
   static func setIsChildDirected(_ isChildDirected: Swift.Bool)
   static func findPrebidCreativeSize(bannerView: UIKit.UIView)
 }
